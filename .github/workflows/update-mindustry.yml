@@ -2,8 +2,8 @@ name: 更新 Mindustry 版本与门禁
 
 on:
   schedule:
-    # 每 30 分钟一次；GitHub 的 schedule 可能延迟几分钟到十几分钟
-    - cron: "*/30 * * * *"
+    # 每小时 :07 / :37 一次，避开整点高峰（GitHub 的 schedule 在整点高负载时可能延迟几分钟到十几分钟，甚至丢弃）
+    - cron: "7,37 * * * *"
   workflow_dispatch:
   push:
     branches: [main]

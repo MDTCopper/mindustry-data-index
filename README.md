@@ -8,8 +8,8 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 | 数据集 | 产物 | 用途 | 更新频率 |
 | --- | --- | --- | --- |
 | 模组索引 | `index.json`、`releases/<owner>_<repo>.json` | 官方模组列表里每个模组的全部 release、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接 | 每天一次 |
-| 游戏版本列表 | `mindustry/versions.json` | 官方 Mindustry 全部正式版 + 最新 BE，字段与启动器 `remote/mindustry_versions.json` 快照兼容 | 每 30 分钟一次 |
-| 最小版本门禁 | `mindustry/mod-gate.json` | 每个游戏版本要求的最低模组版本（脚本模组 / Java 模组），与启动器 `remote/mmgvm.hjson` 同语义 | 每 30 分钟一次 |
+| 游戏版本列表 | `mindustry/versions.json` | 官方 Mindustry 全部正式版 + 最新 BE，字段与启动器 `remote/mindustry_versions.json` 快照兼容 | 约每 30 分钟一次 |
+| 最小版本门禁 | `mindustry/mod-gate.json` | 每个游戏版本要求的最低模组版本（脚本模组 / Java 模组），与启动器 `remote/mmgvm.hjson` 同语义 | 约每 30 分钟一次 |
 
 ## 数据源
 
@@ -76,8 +76,9 @@ mindustry/heartbeat.json        # 每日心跳，仅用于保持仓库活跃（�
 
 - `.github/workflows/update-mods.yml`：每天 02:23 UTC 一次 + `workflow_dispatch` + `push`（仅脚本/依赖/
   自身 workflow 变化时），更新模组索引。
-- `.github/workflows/update-mindustry.yml`：每 30 分钟一次（`*/30 * * * *`）+ `workflow_dispatch` + `push`，
-  更新版本列表与门禁。GitHub 的 `schedule` 可能延迟几分钟到十几分钟，不保证整点。
+- `.github/workflows/update-mindustry.yml`：约每 30 分钟一次（cron `7,37 * * * *`，即每小时 :07 / :37，
+  避开整点高峰）+ `workflow_dispatch` + `push`，更新版本列表与门禁。GitHub 的 `schedule` 可能延迟几分钟
+  到十几分钟，整点高负载时甚至会被丢弃，所以不要把频率理解成严格定时。
 - 两个工作流共用一个 concurrency 组（`data-update`），不会同时提交；有实质变化才 commit + push
   （`index.json` / per-mod 文件 / versions / gate 都只比较数据主体，未变化不重写）。
 - **Actions 权限**：`update-*` 工作流里声明了 `permissions: contents: write`。如果仓库的

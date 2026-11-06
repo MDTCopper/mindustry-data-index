@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, rm, writeFile, unlink } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { validateDir } from '../src/validate.js';
+import { validateDir, isValidReleasesPath } from '../src/validate.js';
 import { VERSIONS_API } from '../src/versions.js';
 import {
   GATE_BASELINE_URL,
@@ -13,8 +13,8 @@ import {
 
 const GENERATED_AT = '2026-11-06T03:00:00.000Z';
 
-function validFixture() {
-  const repo = 'owner/demo';
+function validFixture(repo = 'owner/demo') {
+  const stem = repo.replace('/', '_');
   const release = {
     tag: 'v1.0',
     name: '1.0',
@@ -57,11 +57,9 @@ function validFixture() {
           hasIcon: true,
           hasScripts: false,
           hasJava: true,
-          iconUrl:
-            'https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/owner_demo',
+          iconUrl: `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/${stem}`,
           iconHash: null,
-          releasesPath: 'releases/owner_demo.json',
-          releaseCount: 1,
+          releasesPath: `releases/${stem}.json`,          releaseCount: 1,
           latestRelease: {
             tag: 'v1.0',
             name: '1.0',
@@ -90,10 +88,8 @@ async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mods-index-validate-'));
   await mkdir(path.join(dir, 'releases'), { recursive: true });
   await writeFile(path.join(dir, 'index.json'), JSON.stringify(index, null, 2));
-  await writeFile(
-    path.join(dir, 'releases', 'owner_demo.json'),
-    JSON.stringify(releaseFile, null, 2),
-  );
+  const relPath = `releases/${releaseFile.repo.replace('/', '_')}.json`;
+  await writeFile(path.join(dir, relPath), JSON.stringify(releaseFile, null, 2));
   return dir;
 }
 
@@ -322,4 +318,47 @@ test('hasIcon=false 却给 iconUrl、iconHash 类型不对会被发现', async (
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('iconUrl 与 repo/hasIcon 不一致')));
   assert.ok(result.errors.some((message) => message.includes('iconHash 应为非空字符串或 null')));
+});
+
+// ---------- releasesPath 路径段校验（repo 名以点结尾） ----------
+
+test('isValidReleasesPath：只按路径段判断，文件名中间的 .. 合法', () => {
+  assert.equal(isValidReleasesPath('releases/foo_bar..json'), true);
+  assert.equal(isValidReleasesPath('releases/maksimk792_some-music..json'), true);
+  assert.equal(isValidReleasesPath('releases/owner_repo.json'), true);
+
+  assert.equal(isValidReleasesPath('releases/../x.json'), false);
+  assert.equal(isValidReleasesPath('releases/a/b.json'), false);
+  assert.equal(isValidReleasesPath('releases//x.json'), false);
+  assert.equal(isValidReleasesPath('index.json'), false);
+  assert.equal(isValidReleasesPath('releases/foo.txt'), false);
+  assert.equal(isValidReleasesPath('releases/..'), false);
+  assert.equal(isValidReleasesPath(null), false);
+});
+
+test('repo 名以点结尾（文件名含 ..）时正常校验、不再误报未引用', async (t) => {
+  const fixture = validFixture('maksimk792/some-music.');
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.warnings, []);
+  assert.equal(result.modCount, 1);
+  assert.equal(result.releaseFileCount, 1);
+});
+
+test('releasesPath 含路径穿越 / 多层目录会被判非法', async (t) => {
+  const traversal = validFixture();
+  traversal.index.mods[0].releasesPath = 'releases/../x.json';
+  const dir = await makeFixtureDir(traversal);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('releasesPath 非法')));
+
+  const nested = validFixture();
+  nested.index.mods[0].releasesPath = 'releases/a/b.json';
+  const nestedDir = await makeFixtureDir(nested);
+  t.after(() => rm(nestedDir, { recursive: true, force: true }));
+  const nestedResult = await validateDir(nestedDir);
+  assert.ok(nestedResult.errors.some((message) => message.includes('releasesPath 非法')));
 });

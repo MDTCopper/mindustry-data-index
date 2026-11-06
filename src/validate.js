@@ -62,6 +62,26 @@ function isNumberOrNull(value) {
   return value === null || typeof value === 'number';
 }
 
+// releases/<文件名>.json 的路径保护：按路径段判断，不能只看子串 `..`。
+// 官方列表里确有 repo 名以点结尾（如 maksimk792/some-music.），文件名中间会出现合法的 `..`
+// （releases/maksimk792_some-music..json），不能当成路径穿越。
+// 口径与 paths.js 的 resolveReleaseFile 一致：只允许 releases/ 下的单层 .json。
+export function isValidReleasesPath(relPath) {
+  if (
+    typeof relPath !== 'string' ||
+    !relPath.startsWith(`${RELEASES_DIR}/`) ||
+    !relPath.endsWith('.json')
+  ) {
+    return false;
+  }
+  const segments = relPath.split('/');
+  if (segments.length !== 2) {
+    return false;
+  }
+  const fileName = segments[1];
+  return fileName !== '' && fileName !== '.' && fileName !== '..';
+}
+
 export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
   if (!isPlainObject(file)) {
     errors.push('release 文件顶层不是对象');
@@ -248,12 +268,7 @@ export function validateIndexData(
       repos.add(key);
     }
     if (mod.releasesPath !== null) {
-      if (
-        typeof mod.releasesPath !== 'string' ||
-        !mod.releasesPath.startsWith(`${RELEASES_DIR}/`) ||
-        !mod.releasesPath.endsWith('.json') ||
-        mod.releasesPath.split('/').includes('..')
-      ) {
+      if (!isValidReleasesPath(mod.releasesPath)) {
         errors.push(`${where}.releasesPath 非法：${JSON.stringify(mod.releasesPath)}`);
       } else if (releaseFiles && !releaseFiles.has(mod.releasesPath)) {
         errors.push(`${where}.releasesPath 指向的文件不存在：${mod.releasesPath}`);
@@ -625,7 +640,7 @@ export async function validateDir(dir) {
         if (!isPlainObject(mod) || typeof mod.repo !== 'string') {
           continue;
         }
-        if (typeof mod.releasesPath !== 'string' || mod.releasesPath.includes('..')) {
+        if (!isValidReleasesPath(mod.releasesPath)) {
           continue;
         }
         const file = loaded.get(mod.releasesPath);
