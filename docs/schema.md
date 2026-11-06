@@ -647,7 +647,75 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 本仓全部数据文件的 JSON Schema（draft 2020-12），文件名对应数据文件：`index.json`、`releases.json`、
 `community-index.json`、`community-releases.json`、`summary.json`、`community-summary.json`、
 `versions.json`、`mod-gate.json`、`java-gate.json`、`refresh-state.json`、`community-refresh-state.json`、
-`blacklist-state.json`、`status.json`、`changes.json`。`releases.json` 的 `formatVersion` 固定 `2`。
+`blacklist-state.json`、`status.json`、`changes.json`、`heat-index.json`、`heat-history.json`、
+`heat-commit-state.json`、`repo-created.json`。`releases.json` 的 `formatVersion` 固定 `2`。
+
+## heat/（热度表）
+
+### heat/index.json
+
+官方+社区全量模组的热度明细。所有窗口键为字符串 `"1"/"7"/"30"/"180"`：
+
+```json
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-11-06T12:00:00.000Z",
+  "source": { "official": 993, "community": 456 },
+  "mods": [
+    {
+      "repo": "owner/mod",
+      "namePlain": "Mod",
+      "source": "official",
+      "totalDownloads": 12345,
+      "totalStars": 67,
+      "downloadChanges": { "1": 0, "7": 3, "30": 10, "180": 120 },
+      "starChanges": { "1": 0, "7": 1, "30": 2, "180": 9 },
+      "releaseUpdates": { "1": 0, "7": 1, "30": 1, "180": 4 },
+      "commits": { "1": 0.14, "7": 1, "30": 4, "180": 22 },
+      "downloadsScore": 0.5234,
+      "starsScore": 0.6012,
+      "updateScore": 0.4001,
+      "newModMultiplier": 1.1523,
+      "penalty": 0.0521,
+      "score": 0.7123,
+      "rank": 1
+    }
+  ]
+}
+```
+
+- 百分位归一、窗口权重、组件公式、新 mod 倍率与惩罚见 README「热度表」；`score` 不裁剪，可 >1 或 <0。
+- `rank` 为 1..N 唯一排名（分数降序、同分按 repo 升序）；`commits` 是 participation 周粒度的近似值。
+- repo 集合必须与 `index.json` + `community/index.json` 的并集一致。
+
+### heat/summary.csv
+
+`heat/index.json` 的扁平表，列顺序固定：`repo,namePlain,source,totalDownloads,totalStars,`
+`downloads|stars|releaseUpdates|commits × 1d/7d/30d/180d,downloadsScore,starsScore,updateScore,newModMultiplier,penalty,score,rank`；
+UTF-8 BOM + CRLF。
+
+### heat/history/{daily,weekly,monthly}/
+
+每份快照：`{formatVersion:1, generatedAt, mods:{repo:{stars,totalDownloads}}}`。
+文件名分别为 `YYYY-MM-DD.json` / `YYYY-Www.json` / `YYYY-MM.json`；保留 daily 7、weekly 6、monthly 6 份，
+超出由更新流程删除。早期窗口缺失时热度变化按 0。
+
+### state/heat-commit-stats.json
+
+```json
+{ "formatVersion": 1, "fetchedAt": "UTC ISO|null", "complete": true, "stats": { "owner/mod": [52 个周提交数] } }
+```
+
+每周刷新一次；`complete=false` 表示上次配额不足未抓全，下次继续。配额不足时沿用旧缓存。
+窗口提交数按 52 周数组与 `fetchedAt` 的周边界按重叠比例近似。
+
+### state/repo-created.json
+
+```json
+{ "formatVersion": 1, "updatedAt": "UTC ISO|null", "repos": { "owner/mod": "UTC ISO|null" } }
+```
+
+`repos` 缺键 = 尚未抓取，`null` = 已抓但不可用；抓到的 `created_at` 永久复用。
 
 ## mindustry/heartbeat.json
 

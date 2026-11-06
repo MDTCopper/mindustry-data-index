@@ -47,6 +47,11 @@ mindustry/java-gate.json                # Java 模组门禁（rules + 逐版本 
 mindustry/heartbeat.json                # 每日心跳，仅用于保持仓库活跃（见下）
 status.json                             # 每次运行后的健康状态（各数据集/API/validate 摘要）
 changes.json                            # 滚动变更流（最近 500 条 mod/release/tag 变化）
+heat/index.json                         # 热度表（官方+社区全量：多窗口指标/组件/倍率/惩罚/score/rank）
+heat/summary.csv                        # 热度表扁平 CSV（UTF-8 BOM）
+heat/history/{daily,weekly,monthly}/    # 下载/星标历史快照（daily 保留 7、weekly/monthly 各 6）
+state/heat-commit-stats.json            # participation 52 周提交统计缓存（每周刷新）
+state/repo-created.json                 # 仓库 created_at 永久缓存（新 mod 年龄用）
 schema/*.json                           # 各数据文件的 JSON Schema（draft 2020-12，见 docs/schema.md）
 ```
 
@@ -74,6 +79,8 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/status.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/changes.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/schema/index.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/heat/index.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/heat/summary.csv`
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
@@ -195,6 +202,31 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   （`[red]`、`[#00ff00]`、`[]` 等）、换行与多余空白；普通英文方括号（如 `[Mod]`）不会被误删。
   `summary.json/csv` 增加 `namePlain` 列（紧跟 `name`）便于搜索。
 
+## 热度表（heat/）
+
+`heat/index.json` 对官方+社区**全量**模组计算热度，字段与算法：
+
+- 每个指标、每个窗口（1d/7d/30d/180d）先 `log1p`（负变化用 signed log1p），再跨全量做**百分位排名 0~1**
+  （并列取平均名次，不用 min-max/z-score）；窗口按权重合成：下载变化 `.45/.30/.20/.05`、
+  星标变化 `.20/.45/.30/.05`、release 更新与提交数同为 `.45/.30/.20/.05`；缺失窗口按 0。
+- `下载量 = 总下载量百分位×0.6 + 下载变化合成×0.4`；
+  `星标量 = 总星标百分位×0.6 + 星标变化合成×0.4`（用户原文写「总下载量」，按语义修正为总星标）；
+  `更新量 = release 更新数合成×0.7 + 提交数合成×0.3`。
+- `总分 = (下载量×0.35 + 星标量×0.5 + 更新量×0.15) × 新mod倍率 − 长期未更新惩罚×0.3`。
+  **分数不裁剪**，可 >1 或 <0，输出保留 4 位小数；`rank` 按分数降序唯一排名。
+- **新 mod 倍率**：180 天内从 `1.325` 指数衰减（`1.325^(1-age/180)`，越往后降得越慢），≥180 天 clamp `1`；
+  年龄优先取 `created_at`（缓存 `state/repo-created.json`，一次抓取永久复用），拿不到用最早 release 时间。
+- **长期未更新惩罚**：超过 360 天未 release / 无提交各按 `1-exp(-overrun/180)` 饱和，按 `7:3` 合成（0~1），
+  总分中再乘 `0.3` 扣减。
+- **提交数**：`GET /repos/{repo}/stats/participation`（52 周），每周刷新一次缓存到
+  `state/heat-commit-stats.json`（官方+社区约 1500 次/周；配额不足沿用旧缓存，下次续抓）；
+  按周粒度近似到各窗口。
+- **历史快照**：`heat/history/daily/YYYY-MM-DD.json`、`weekly/YYYY-Www.json`、`monthly/YYYY-MM.json`，
+  每份只存 `{formatVersion, generatedAt, mods:{repo:{stars,totalDownloads}}}`；保留 daily 7 / weekly 6 /
+  monthly 6 份，超出删除。快照从上线后开始积累，1d 变化下一轮可用，7d/30d/180d 需等对应历史积累（缺失按 0）。
+- 本地验证：`node src/main.js --datasets heat --out tmp/heat --heat-max-api 0`（完全离线，只用缓存与历史；
+  用 `--heat-max-api 2` 可限制 API 次数）。
+
 ## 更新节奏
 
 - `.github/workflows/update-mods.yml`：每 2 小时一次（cron `17 */2 * * *`）+ `workflow_dispatch` + `push`
@@ -226,6 +258,7 @@ npm run validate -- --dir .           # 校验产物
 node src/main.js --datasets mods --out .                 # 全量更新模组索引（需要 GITHUB_TOKEN）
 node src/main.js --datasets mods,community --out .       # 官方 + 社区（社区需要搜索配额）
 node src/main.js --datasets versions,gate --out .        # 更新版本列表与门禁
+node src/main.js --datasets heat --out .                  # 单独重算热度表
 node src/main.js --migrate --out .                        # 本地 schemaVersion 1→2 迁移（0 API）
 ```
 

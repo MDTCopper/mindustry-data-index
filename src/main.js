@@ -4,7 +4,7 @@
 import path from 'node:path';
 import process from 'node:process';
 import { pathToFileURL } from 'node:url';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir, mkdir, unlink } from 'node:fs/promises';
 import { HttpClient, HttpError, RateLimitError, createPool } from './github.js';
 import { MODS_URL, fetchModsJson, modIconUrl } from './mods-source.js';
 import {
@@ -43,11 +43,41 @@ import { CHANGES_REL_PATH, diffModEntry, diffReleaseFiles, mergeChanges, normali
 import { STATUS_REL_PATH, apiStatus, buildStatus } from './status.js';
 import { validateDir } from './validate.js';
 import { CURRENT_FORMAT_VERSION, migrateDataDir, needsMigration, migrateReleaseFileData } from './migrate.js';
+import {
+  DOWNLOAD_WINDOW_WEIGHTS,
+  HEAT_COMMIT_STATE_REL_PATH,
+  HEAT_CREATED_STATE_REL_PATH,
+  HEAT_FORMAT_VERSION,
+  HEAT_HISTORY_DIR,
+  HEAT_INDEX_REL_PATH,
+  HEAT_SUMMARY_REL_PATH,
+  HEAT_WINDOWS,
+  HISTORY_LIMITS,
+  HEAT_SUMMARY_COLUMNS,
+  buildSnapshot,
+  commitsInWindow,
+  computeHeat,
+  daysBetween,
+  daysSinceLastCommit,
+  earliestReleasePublishedAt,
+  findSnapshotAtOrBefore,
+  formatDateKey,
+  formatMonthKey,
+  formatWeekKey,
+  heatSummaryRow,
+  latestReleasePublishedAt,
+  percentileRanks,
+  releaseUpdatesInWindow,
+  round4,
+  selectHistoryFiles,
+  snapshotValue,
+} from './heat.js';
 import { computeModStats } from './stats.js';
 import {
   buildSummary,
   summaryBodyChanged,
   summaryCsv,
+  csvEscape,
 } from './summary.js';
 import {
   REFRESH_STATE_REL_PATH,
@@ -107,12 +137,12 @@ import {
   splitLegacyGateFile,
 } from './mod-gate.js';
 
-const DATASETS = ['mods', 'community', 'versions', 'gate'];
+const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate'];
 
 const USAGE = `用法：node src/main.js [选项]
 
 选项：
-  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,versions,gate，默认 mods
+  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate，默认 mods
   --out <目录>        产物目录，默认 .
   --token <token>     GitHub token，默认读环境变量 GITHUB_TOKEN
   --repos a/b,c/d     只跑指定仓库（仅 mods 数据集，本地验证用）
@@ -120,6 +150,7 @@ const USAGE = `用法：node src/main.js [选项]
   --community-limit <n>        社区模组最多处理 n 个（仅 community，本地验证用）
   --community-search-windows <n> 只搜前 n 个时间窗（仅 community，本地验证用）
   --community-max-candidates <n> 最多探测 n 个候选仓库（仅 community，本地验证用）
+  --heat-max-api <n>  heat 数据集最多发 n 次 participation/created_at API（0=完全离线，本地验证用）
   --threads <n>       同时处理的仓库数，默认 8
   --raw-threads <n>   raw.githubusercontent 并发数，默认 16
   --versions-pages <n>  只抓 Mindustry 版本列表前 n 页（仅本地验证，正式运行不要用）
@@ -154,6 +185,7 @@ export function parseArgs(argv) {
     communityLimit: null,
     communitySearchWindows: null,
     communityMaxCandidates: null,
+    heatMaxApi: null,
     cache: true,
     keepMissingFiles: false,
     migrate: false,
@@ -244,6 +276,14 @@ export function parseArgs(argv) {
           takeValue(),
         );
         break;
+      case '--heat-max-api': {
+        const value = takeValue();
+        if (!/^\d+$/.test(value)) {
+          throw new UsageError(`--heat-max-api 需要非负整数，收到：${value}`);
+        }
+        options.heatMaxApi = Number(value);
+        break;
+      }
       case '--threads':
         options.threads = requirePositiveInt('--threads', takeValue());
         break;
@@ -300,6 +340,9 @@ export function parseArgs(argv) {
     throw new UsageError(
       '--community-limit / --community-search-windows / --community-max-candidates 只用于 community 数据集',
     );
+  }
+  if (options.heatMaxApi !== null && !options.datasets.includes('heat')) {
+    throw new UsageError('--heat-max-api 只用于 heat 数据集');
   }
   return options;
 }
@@ -1534,6 +1577,504 @@ async function runCommunity(options, context) {
   };
 }
 
+// ---------- heat 数据集（热度表） ----------
+
+const HEAT_CACHE_FRESH_MS = 7 * 24 * 60 * 60 * 1000;
+const HEAT_HISTORY_KINDS = ['daily', 'weekly', 'monthly'];
+
+async function loadHeatSnapshots(outDir, log) {
+  const snapshots = [];
+  for (const kind of HEAT_HISTORY_KINDS) {
+    const dir = path.join(outDir, HEAT_HISTORY_DIR, kind);
+    let files;
+    try {
+      files = await readdir(dir);
+    } catch (error) {
+      if (error.code !== 'ENOENT') {
+        log(`[警告] heat/${kind} 历史目录不可用：${error.message}`);
+      }
+      continue;
+    }
+    for (const file of files) {
+      if (!file.endsWith('.json')) {
+        continue;
+      }
+      try {
+        const data = await readJsonIfExists(path.join(dir, file));
+        if (data && data.mods && typeof data.generatedAt === 'string') {
+          snapshots.push({ kind, file, generatedAt: data.generatedAt, mods: data.mods });
+        }
+      } catch (error) {
+        log(`[警告] heat 历史 ${kind}/${file} 不可用：${error.message}`);
+      }
+    }
+  }
+  return snapshots;
+}
+
+async function loadHeatMods(outDir, log) {
+  const mods = [];
+  const officialIndex = await readJsonIfExists(path.join(outDir, INDEX_FILE)).catch(() => null);
+  for (const entry of Array.isArray(officialIndex?.mods) ? officialIndex.mods : []) {
+    mods.push({
+      repo: entry.repo,
+      namePlain: entry.namePlain ?? '',
+      source: 'official',
+      hasJava: entry.hasJava === true,
+    });
+  }
+  const communityIndex = await readJsonIfExists(
+    path.join(outDir, COMMUNITY_DIR, 'index.json'),
+  ).catch(() => null);
+  for (const entry of Array.isArray(communityIndex?.mods) ? communityIndex.mods : []) {
+    mods.push({
+      repo: entry.repo,
+      namePlain: entry.namePlain ?? '',
+      source: 'community',
+      hasJava: entry.hasJava === true,
+    });
+  }
+  if (mods.length === 0) {
+    log('[heat] 没有可用的 index（先跑 mods/community）');
+  }
+  return mods;
+}
+
+async function loadHeatToolkit(outDir, log) {
+  const summary = new Map();
+  for (const [relPath, source] of [
+    ['summary.json', 'official'],
+    [path.join('community', 'summary.json'), 'community'],
+  ]) {
+    const file = await readJsonIfExists(path.join(outDir, relPath)).catch(() => null);
+    for (const row of Array.isArray(file?.mods) ? file.mods : []) {
+      summary.set(row.repo, {
+        stars: Number(row.stars) || 0,
+        totalDownloads: Number(row.totalDownloads) || 0,
+        source,
+      });
+    }
+  }
+  const releases = new Map();
+  const readReleases = async (relPath) => {
+    try {
+      const file = await readJsonIfExists(relPath);
+      return Array.isArray(file?.releases) ? file.releases : [];
+    } catch {
+      return [];
+    }
+  };
+  return { summary, readReleases };
+}
+
+function normalizeCommitState(raw) {
+  const stats = {};
+  if (raw && typeof raw.stats === 'object' && !Array.isArray(raw.stats)) {
+    for (const [repo, weeks] of Object.entries(raw.stats)) {
+      if (Array.isArray(weeks)) {
+        stats[repo] = weeks.map((value) => (Number.isFinite(Number(value)) ? Number(value) : 0));
+      }
+    }
+  }
+  return {
+    formatVersion: 1,
+    fetchedAt: typeof raw?.fetchedAt === 'string' ? raw.fetchedAt : null,
+    complete: raw?.complete === true,
+    stats,
+  };
+}
+
+function normalizeCreatedState(raw) {
+  const repos = {};
+  if (raw && typeof raw.repos === 'object' && !Array.isArray(raw.repos)) {
+    for (const [repo, value] of Object.entries(raw.repos)) {
+      repos[repo] = typeof value === 'string' ? value : null;
+    }
+  }
+  return {
+    formatVersion: 1,
+    updatedAt: typeof raw?.updatedAt === 'string' ? raw.updatedAt : null,
+    repos,
+  };
+}
+
+async function refreshHeatCommitStats({
+  apiClient,
+  repos,
+  outDir,
+  state,
+  log,
+  abortState,
+  maxApi,
+  threads,
+  nowMs,
+  now,
+}) {
+  const stale =
+    !state.fetchedAt ||
+    !state.complete ||
+    nowMs - Date.parse(state.fetchedAt) >= HEAT_CACHE_FRESH_MS;
+  if (!stale || repos.length === 0) {
+    return state;
+  }
+  const stats = { ...state.stats };
+  let calls = 0;
+  let aborted = false;
+  const pool = createPool(threads);
+  await Promise.all(
+    repos.map((repo) =>
+      pool.run(async () => {
+        if (
+          aborted ||
+          abortState?.aborted ||
+          apiClient.hasLowQuota?.(5) ||
+          (maxApi !== null && calls >= maxApi)
+        ) {
+          return;
+        }
+        calls += 1;
+        try {
+          const response = await apiClient.get(
+            `https://api.github.com/repos/${repo}/stats/participation`,
+          );
+          if (response.status === 200) {
+            const data = JSON.parse(response.text ?? '{}');
+            if (Array.isArray(data.all)) {
+              stats[repo] = data.all.map((value) =>
+                Number.isFinite(Number(value)) ? Number(value) : 0,
+              );
+            }
+          }
+        } catch (error) {
+          if (error?.name === 'RateLimitError' || error?.status === 403 || error?.status === 429) {
+            aborted = true;
+            if (abortState) {
+              abortState.aborted = true;
+              abortState.reason = 'rate-limit';
+            }
+          } else {
+            log(`[heat] ${repo} participation 不可用：${error.message}`);
+          }
+        }
+      }),
+    ),
+  );
+  const complete =
+    !aborted &&
+    (maxApi === null || calls < maxApi) &&
+    repos.every((repo) => Array.isArray(stats[repo]));
+  log(
+    `[heat] participation 缓存：${calls} 次请求，${Object.keys(stats).length} 个仓库${complete ? '（最新）' : '（未完成，下次续）'}`,
+  );
+  return {
+    formatVersion: 1,
+    fetchedAt: complete ? now : (state.fetchedAt ?? now),
+    complete,
+    stats,
+  };
+}
+
+async function refreshRepoCreated({
+  apiClient,
+  repos,
+  state,
+  log,
+  abortState,
+  maxApi,
+  threads,
+  now,
+}) {
+  const missing = repos.filter(
+    (repo) => !Object.prototype.hasOwnProperty.call(state.repos, repo),
+  );
+  if (missing.length === 0) {
+    return state;
+  }
+  const reposMap = { ...state.repos };
+  let calls = 0;
+  let aborted = false;
+  const pool = createPool(threads);
+  await Promise.all(
+    missing.map((repo) =>
+      pool.run(async () => {
+        if (
+          aborted ||
+          abortState?.aborted ||
+          apiClient.hasLowQuota?.(5) ||
+          (maxApi !== null && calls >= maxApi)
+        ) {
+          return;
+        }
+        calls += 1;
+        try {
+          const response = await apiClient.get(`https://api.github.com/repos/${repo}`);
+          if (response.status === 200) {
+            const data = JSON.parse(response.text ?? '{}');
+            reposMap[repo] =
+              typeof data.created_at === 'string' ? data.created_at : null;
+          } else if (response.status === 404) {
+            reposMap[repo] = null;
+          }
+        } catch (error) {
+          if (error?.name === 'RateLimitError' || error?.status === 403 || error?.status === 429) {
+            aborted = true;
+            if (abortState) {
+              abortState.aborted = true;
+              abortState.reason = 'rate-limit';
+            }
+          } else {
+            log(`[heat] ${repo} created_at 不可用：${error.message}`);
+          }
+        }
+      }),
+    ),
+  );
+  log(`[heat] repo created_at：${calls} 次请求，已缓存 ${Object.keys(reposMap).length} 个仓库`);
+  if (calls === 0 || JSON.stringify(reposMap) === JSON.stringify(state.repos)) {
+    return state;
+  }
+  return { formatVersion: 1, updatedAt: now, repos: reposMap };
+}
+
+function heatCsv(entries, { csvEscape }) {
+  const lines = [HEAT_SUMMARY_COLUMNS.join(',')];
+  for (const entry of entries) {
+    const row = heatSummaryRow(entry);
+    lines.push(HEAT_SUMMARY_COLUMNS.map((column) => csvEscape(row[column])).join(','));
+  }
+  return `\uFEFF${lines.join('\r\n')}\r\n`;
+}
+
+async function writeHeatHistory({ outDir, mods, now, nowMs, log }) {
+  const generatedAt = now;
+  const snapshot = buildSnapshot(mods, generatedAt);
+  const keys = {
+    daily: formatDateKey(new Date(nowMs)),
+    weekly: formatWeekKey(new Date(nowMs)),
+    monthly: formatMonthKey(new Date(nowMs)),
+  };
+  let written = 0;
+  for (const kind of HEAT_HISTORY_KINDS) {
+    const dir = path.join(outDir, HEAT_HISTORY_DIR, kind);
+    await mkdir(dir, { recursive: true });
+    const file = path.join(dir, `${keys[kind]}.json`);
+    const previous = await readJsonIfExists(file).catch(() => null);
+    if (!previous || JSON.stringify(previous) !== JSON.stringify(snapshot)) {
+      await writeJsonAtomic(file, snapshot);
+      written += 1;
+    }
+    let files = [];
+    try {
+      files = (await readdir(dir)).filter((name) => name.endsWith('.json'));
+    } catch (error) {
+      log(`[heat] 历史目录 ${kind} 读取失败：${error.message}`);
+    }
+    const keysList = files.map((name) => name.slice(0, -'.json'.length));
+    const { remove } = selectHistoryFiles(keysList, kind);
+    for (const key of remove) {
+      await unlink(path.join(dir, `${key}.json`)).catch(() => {});
+    }
+  }
+  return written;
+}
+
+async function runHeat(options, context) {
+  const { apiClient, outDir, log } = context;
+  const nowMs = Date.now();
+  const now = new Date(nowMs).toISOString();
+  const dayMs = 86_400_000;
+  const mods = await loadHeatMods(outDir, log);
+  if (mods.length === 0) {
+    return { code: 0, changed: false, modCount: 0, commitsFetched: 0, createdFetched: 0 };
+  }
+  const { summary, readReleases } = await loadHeatToolkit(outDir, log);
+  const previousSnapshots = await loadHeatSnapshots(outDir, log);
+
+  const commitPath = path.join(outDir, HEAT_COMMIT_STATE_REL_PATH);
+  let commitState = normalizeCommitState(
+    await readJsonIfExists(commitPath).catch(() => null),
+  );
+  const repoList = mods.map((mod) => mod.repo);
+  const commitBefore = JSON.stringify(commitState.stats);
+  commitState = await refreshHeatCommitStats({
+    apiClient,
+    repos: repoList,
+    outDir,
+    state: commitState,
+    log,
+    abortState: context.abortState,
+    maxApi: options.heatMaxApi,
+    threads: options.threads,
+    nowMs,
+    now,
+  });
+  const commitChanged = JSON.stringify(commitState.stats) !== commitBefore;
+  await writeJsonAtomic(commitPath, commitState);
+
+  const createdPath = path.join(outDir, HEAT_CREATED_STATE_REL_PATH);
+  let createdState = normalizeCreatedState(
+    await readJsonIfExists(createdPath).catch(() => null),
+  );
+  const createdBefore = JSON.stringify(createdState.repos);
+  createdState = await refreshRepoCreated({
+    apiClient,
+    repos: repoList,
+    state: createdState,
+    log,
+    abortState: context.abortState,
+    maxApi: options.heatMaxApi,
+    threads: options.threads,
+    now,
+  });
+  const createdChanged = JSON.stringify(createdState.repos) !== createdBefore;
+  await writeJsonAtomic(createdPath, createdState);
+
+  const releaseCache = new Map();
+  const releaseFor = async (mod) => {
+    if (!releaseCache.has(mod.repo)) {
+      const relPath =
+        mod.source === 'community'
+          ? path.join(outDir, COMMUNITY_DIR, releasesRelPath(mod.repo))
+          : path.join(outDir, releasesRelPath(mod.repo));
+      releaseCache.set(mod.repo, await readReleases(relPath));
+    }
+    return releaseCache.get(mod.repo);
+  };
+
+  const heatInputs = [];
+  for (const mod of mods) {
+    const totals = summary.get(mod.repo);
+    const releases = await releaseFor(mod);
+    const createdAt = createdState.repos[mod.repo];
+    const createdMs = createdAt ? Date.parse(createdAt) : null;
+    const earliestRelease = earliestReleasePublishedAt(releases);
+    const ageDays =
+      createdMs !== null && !Number.isNaN(createdMs)
+        ? daysBetween(createdMs, nowMs)
+        : earliestRelease !== null
+          ? daysBetween(earliestRelease, nowMs)
+          : null;
+    const lastReleaseMs = latestReleasePublishedAt(releases);
+    const daysSinceRelease =
+      lastReleaseMs !== null
+        ? daysBetween(lastReleaseMs, nowMs)
+        : ageDays;
+    const commitWeeks = commitState.stats[mod.repo] ?? [];
+    const daysSinceCommit = daysSinceLastCommit(
+      commitWeeks,
+      commitState.fetchedAt,
+      nowMs,
+    );
+    const downloadChanges = {};
+    const starChanges = {};
+    for (const window of HEAT_WINDOWS) {
+      const target = nowMs - window * dayMs;
+      const snapshot = findSnapshotAtOrBefore(previousSnapshots, target);
+      const baseDownloads = snapshotValue(snapshot, mod.repo, 'totalDownloads');
+      const baseStars = snapshotValue(snapshot, mod.repo, 'stars');
+      downloadChanges[window] = snapshot
+        ? (Number(totals?.totalDownloads) || 0) - baseDownloads
+        : 0;
+      starChanges[window] = snapshot
+        ? (Number(totals?.stars) || 0) - baseStars
+        : 0;
+    }
+    heatInputs.push({
+      repo: mod.repo,
+      namePlain: mod.namePlain,
+      source: mod.source,
+      totalDownloads: Number(totals?.totalDownloads) || 0,
+      totalStars: Number(totals?.stars) || 0,
+      downloadChanges,
+      starChanges,
+      releaseUpdates: Object.fromEntries(
+        HEAT_WINDOWS.map((window) => [
+          window,
+          releaseUpdatesInWindow(releases, nowMs, window),
+        ]),
+      ),
+      commits: Object.fromEntries(
+        HEAT_WINDOWS.map((window) => [
+          window,
+          commitsInWindow(commitWeeks, commitState.fetchedAt, nowMs, window),
+        ]),
+      ),
+      ageDays,
+      daysSinceRelease,
+      daysSinceCommit,
+    });
+  }
+
+  const { entries } = computeHeat(heatInputs);
+  for (const entry of entries) {
+    entry.downloadsScore = round4(entry.downloadsScore);
+    entry.starsScore = round4(entry.starsScore);
+    entry.updateScore = round4(entry.updateScore);
+    entry.newModMultiplier = round4(entry.newModMultiplier);
+    entry.penalty = round4(entry.penalty);
+    entry.score = round4(entry.score);
+    for (const window of HEAT_WINDOWS) {
+      entry.commits[window] = round4(entry.commits[window]);
+    }
+  }
+  const heatIndex = {
+    formatVersion: HEAT_FORMAT_VERSION,
+    generatedAt: now,
+    source: {
+      official: mods.filter((mod) => mod.source === 'official').length,
+      community: mods.filter((mod) => mod.source === 'community').length,
+    },
+    mods: entries,
+  };
+  const heatIndexPath = path.join(outDir, HEAT_INDEX_REL_PATH);
+  const previousHeat = await readJsonIfExists(heatIndexPath).catch(() => null);
+  const heatChanged =
+    !previousHeat || JSON.stringify(previousHeat.mods) !== JSON.stringify(entries);
+  await mkdir(path.dirname(heatIndexPath), { recursive: true });
+  if (heatChanged) {
+    await writeJsonAtomic(heatIndexPath, heatIndex);
+  }
+  const csv = heatCsv(entries, { csvEscape });
+  const csvPath = path.join(outDir, HEAT_SUMMARY_REL_PATH);
+  let previousCsv = null;
+  try {
+    previousCsv = await readTextIfExists(csvPath);
+  } catch {}
+  if (previousCsv !== csv) {
+    await writeTextAtomic(csvPath, csv);
+  }
+  const historyWritten = await writeHeatHistory({
+    outDir,
+    mods: heatInputs.map((mod) => ({
+      repo: mod.repo,
+      totalStars: mod.totalStars,
+      totalDownloads: mod.totalDownloads,
+    })),
+    now,
+    nowMs,
+    log,
+  });
+
+  if (commitChanged) {
+    log('[heat] participation 缓存已更新');
+  }
+  if (createdChanged) {
+    log('[heat] repo created_at 缓存已更新');
+  }
+  console.log(
+    `[heat] ${entries.length} 个模组（官方 ${heatIndex.source.official} / 社区 ${heatIndex.source.community}），` +
+      `top1 ${entries[0]?.repo ?? '无'}，快照写入 ${historyWritten} 个`,
+  );
+  return {
+    code: 0,
+    changed: heatChanged,
+    modCount: entries.length,
+    historyWritten,
+    commitsFetched: commitChanged,
+    createdFetched: createdChanged,
+  };
+}
+
 // ---------- versions 数据集 ----------
 
 function isoSeconds(date = new Date()) {
@@ -2000,6 +2541,7 @@ export async function run(argv) {
   let gateChanged = false;
   let modsResult = null;
   let communityResult = null;
+  let heatResult = null;
   let versionsResult = null;
   let gateResult = null;
 
@@ -2021,6 +2563,10 @@ export async function run(argv) {
     communitySummaryChanged = result.summaryChanged ?? false;
     communityStateChanged = result.stateChanged ?? false;
     communityUnprocessed = result.unprocessed ?? 0;
+  }
+  if (options.datasets.includes('heat')) {
+    heatResult = await runHeat(options, context);
+    exitCode = Math.max(exitCode, heatResult.code);
   }
   if (options.datasets.includes('versions')) {
     versionsResult = await runVersions(options, context);
@@ -2114,6 +2660,9 @@ export async function run(argv) {
         : '') +
       (options.datasets.includes('versions') ? `，versions ${versionsChanged ? '已更新' : '未变'}` : '') +
       (options.datasets.includes('gate') ? `，gate ${gateChanged ? '已更新' : '未变'}` : '') +
+      (options.datasets.includes('heat')
+        ? `，heat ${heatResult?.modCount ?? 0} 个模组${heatResult?.historyWritten ? `、快照 ${heatResult.historyWritten} 份` : ''}`
+        : '') +
       (statusWritten ? `，status ${statusWritten ? '已更新' : '未变'}` : '') +
       (changesWritten ? '，changes 已更新' : ''),
   );

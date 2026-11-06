@@ -4,7 +4,7 @@
 import path from 'node:path';
 import process from 'node:process';
 import { pathToFileURL } from 'node:url';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { INDEX_FILE, RELEASES_DIR, listReleaseFiles } from './writer.js';
 import { MOD_ICON_BASE } from './mods-source.js';
 import { computeModStats } from './stats.js';
@@ -26,6 +26,16 @@ import {
   gateTypeConfig,
   mergeGateRules,
 } from './mod-gate.js';
+import {
+  HEAT_COMMIT_STATE_REL_PATH,
+  HEAT_CREATED_STATE_REL_PATH,
+  HEAT_HISTORY_DIR,
+  HEAT_INDEX_REL_PATH,
+  HEAT_SUMMARY_REL_PATH,
+  HEAT_WINDOWS,
+  HISTORY_LIMITS,
+  HEAT_SUMMARY_COLUMNS,
+} from './heat.js';
 
 const HEARTBEAT_REL_PATH = 'mindustry/heartbeat.json';
 
@@ -1188,8 +1198,218 @@ export function validateChangesData(changes, { errors, warnings } = {}) {
   return { count: changes.length };
 }
 
-async function readJsonIfPresent(file) {
-  try {
+// ---------- heat（热度表） ----------
+
+const HEAT_SOURCE_VALUES = ['official', 'community'];
+
+function isFiniteNumberOrNull(value, { allowNull = false } = {}) {
+  if (value === null && allowNull) {
+    return true;
+  }
+  return typeof value === 'number' && Number.isFinite(value);
+}
+
+export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {}) {
+  if (!isPlainObject(heat)) {
+    errors.push(`${HEAT_INDEX_REL_PATH} 顶层不是对象`);
+    return { modCount: 0 };
+  }
+  if (heat.formatVersion !== 1) {
+    errors.push(`${HEAT_INDEX_REL_PATH}.formatVersion 应为 1`);
+  }
+  if (!isIsoDate(heat.generatedAt)) {
+    errors.push(`${HEAT_INDEX_REL_PATH}.generatedAt 缺失或不是 ISO 时间`);
+  }
+  if (!isPlainObject(heat.source)) {
+    errors.push(`${HEAT_INDEX_REL_PATH}.source 缺失`);
+  } else {
+    for (const field of ['official', 'community']) {
+      if (!Number.isInteger(heat.source[field]) || heat.source[field] < 0) {
+        errors.push(`${HEAT_INDEX_REL_PATH}.source.${field} 应为非负整数`);
+      }
+    }
+  }
+  if (!Array.isArray(heat.mods)) {
+    errors.push(`${HEAT_INDEX_REL_PATH}.mods 不是数组`);
+    return { modCount: 0 };
+  }
+  const repos = new Set();
+  for (const [index, entry] of heat.mods.entries()) {
+    const where = `${HEAT_INDEX_REL_PATH}.mods[${index}]`;
+    if (!isPlainObject(entry)) {
+      errors.push(`${where} 不是对象`);
+      continue;
+    }
+    if (typeof entry.repo !== 'string' || !/^[^/]+\/[^/]+$/.test(entry.repo)) {
+      errors.push(`${where}.repo 非法`);
+    } else if (repos.has(entry.repo.toLowerCase())) {
+      errors.push(`${where}.repo 重复：${entry.repo}`);
+    } else {
+      repos.add(entry.repo.toLowerCase());
+    }
+    if (typeof entry.namePlain !== 'string') {
+      errors.push(`${where}.namePlain 应为字符串`);
+    }
+    if (!HEAT_SOURCE_VALUES.includes(entry.source)) {
+      errors.push(`${where}.source 非法`);
+    }
+    for (const field of ['totalDownloads', 'totalStars']) {
+      if (!isFiniteNumberOrNull(entry[field]) || entry[field] < 0) {
+        errors.push(`${where}.${field} 应为非负数字`);
+      }
+    }
+    for (const field of ['downloadChanges', 'starChanges', 'releaseUpdates', 'commits']) {
+      const windows = entry[field];
+      if (!isPlainObject(windows)) {
+        errors.push(`${where}.${field} 不是对象`);
+        continue;
+      }
+      for (const window of HEAT_WINDOWS) {
+        if (!isFiniteNumberOrNull(windows[window])) {
+          errors.push(`${where}.${field}.${window} 应为数字`);
+        }
+      }
+    }
+    for (const field of ['downloadsScore', 'starsScore', 'updateScore', 'newModMultiplier', 'penalty', 'score']) {
+      if (!isFiniteNumberOrNull(entry[field])) {
+        errors.push(`${where}.${field} 应为有限数字（NaN/Infinity 不允许）`);
+      }
+    }
+    if (isFiniteNumberOrNull(entry.newModMultiplier)) {
+      if (entry.newModMultiplier < 1 - 1e-9 || entry.newModMultiplier > 1.325 + 1e-9) {
+        errors.push(`${where}.newModMultiplier 应在 [1, 1.325]`);
+      }
+    }
+    if (isFiniteNumberOrNull(entry.penalty)) {
+      if (entry.penalty < 0 || entry.penalty > 1) {
+        errors.push(`${where}.penalty 应在 [0, 1]`);
+      }
+    }
+    if (!Number.isInteger(entry.rank) || entry.rank < 1) {
+      errors.push(`${where}.rank 应为正整数`);
+    }
+  }
+  // 排名：1..N 唯一，按分数降序
+  const ranks = heat.mods.map((entry) => entry?.rank).filter((value) => Number.isInteger(value));
+  const uniqueRanks = new Set(ranks);
+  if (ranks.length !== heat.mods.length || uniqueRanks.size !== heat.mods.length) {
+    errors.push(`${HEAT_INDEX_REL_PATH} 的 rank 不是 1..N 唯一`);
+  } else {
+    for (let index = 0; index < heat.mods.length; index += 1) {
+      if (heat.mods[index].rank !== index + 1) {
+        errors.push(`${HEAT_INDEX_REL_PATH}.mods[${index}].rank 应为 ${index + 1}`);
+      }
+      if (index > 0) {
+        const previous = heat.mods[index - 1].score;
+        const current = heat.mods[index].score;
+        if (isFiniteNumberOrNull(previous) && isFiniteNumberOrNull(current) && previous < current) {
+          errors.push(`${HEAT_INDEX_REL_PATH}.mods[${index}] 没有按 score 降序`);
+        }
+      }
+    }
+  }
+  if (expectedRepos) {
+    const expected = new Set([...expectedRepos].map((repo) => repo.toLowerCase()));
+    const missing = [...expected].filter((repo) => !repos.has(repo));
+    const extra = [...repos].filter((repo) => !expected.has(repo));
+    if (missing.length > 0) {
+      errors.push(`${HEAT_INDEX_REL_PATH} 缺少 ${missing.length} 个 index 里的 repo（如 ${missing.slice(0, 3).join('、')}）`);
+    }
+    if (extra.length > 0) {
+      errors.push(`${HEAT_INDEX_REL_PATH} 多出 ${extra.length} 个不在 index 里的 repo（如 ${extra.slice(0, 3).join('、')}）`);
+    }
+  }
+  return { modCount: heat.mods.length };
+}
+
+export function validateHeatHistorySnapshot(snapshot, { where, errors }) {
+  if (!isPlainObject(snapshot)) {
+    errors.push(`${where} 顶层不是对象`);
+    return;
+  }
+  if (snapshot.formatVersion !== 1) {
+    errors.push(`${where}.formatVersion 应为 1`);
+  }
+  if (!isIsoDate(snapshot.generatedAt)) {
+    errors.push(`${where}.generatedAt 缺失或不是 ISO 时间`);
+  }
+  if (!isPlainObject(snapshot.mods)) {
+    errors.push(`${where}.mods 不是对象`);
+    return;
+  }
+  for (const [repo, value] of Object.entries(snapshot.mods)) {
+    if (!/^[^/]+\/[^/]+$/.test(repo) || !isPlainObject(value)) {
+      errors.push(`${where}.mods.${repo} 形状非法`);
+      continue;
+    }
+    for (const field of ['stars', 'totalDownloads']) {
+      if (!isFiniteNumberOrNull(value[field]) || value[field] < 0) {
+        errors.push(`${where}.mods.${repo}.${field} 应为非负数字`);
+      }
+    }
+  }
+}
+
+export function validateHeatCommitState(state, { errors } = {}) {
+  if (!isPlainObject(state)) {
+    errors.push(`${HEAT_COMMIT_STATE_REL_PATH} 顶层不是对象`);
+    return;
+  }
+  if (state.formatVersion !== 1) {
+    errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.formatVersion 应为 1`);
+  }
+  if (state.fetchedAt !== null && !isIsoDate(state.fetchedAt)) {
+    errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.fetchedAt 应为 ISO 时间或 null`);
+  }
+  if (typeof state.complete !== 'boolean') {
+    errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.complete 应为布尔值`);
+  }
+  if (!isPlainObject(state.stats)) {
+    errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.stats 不是对象`);
+    return;
+  }
+  for (const [repo, weeks] of Object.entries(state.stats)) {
+    if (!/^[^/]+\/[^/]+$/.test(repo)) {
+      errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.stats.${repo} repo 非法`);
+      continue;
+    }
+    if (!Array.isArray(weeks) || weeks.length !== 52) {
+      errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.stats.${repo} 应为 52 周数组`);
+      continue;
+    }
+    if (!weeks.every((value) => isFiniteNumberOrNull(value))) {
+      errors.push(`${HEAT_COMMIT_STATE_REL_PATH}.stats.${repo} 含非数字`);
+    }
+  }
+}
+
+export function validateHeatCreatedState(state, { errors } = {}) {
+  if (!isPlainObject(state)) {
+    errors.push(`${HEAT_CREATED_STATE_REL_PATH} 顶层不是对象`);
+    return;
+  }
+  if (state.formatVersion !== 1) {
+    errors.push(`${HEAT_CREATED_STATE_REL_PATH}.formatVersion 应为 1`);
+  }
+  if (state.updatedAt !== null && !isIsoDate(state.updatedAt)) {
+    errors.push(`${HEAT_CREATED_STATE_REL_PATH}.updatedAt 应为 ISO 时间或 null`);
+  }
+  if (!isPlainObject(state.repos)) {
+    errors.push(`${HEAT_CREATED_STATE_REL_PATH}.repos 不是对象`);
+    return;
+  }
+  for (const [repo, value] of Object.entries(state.repos)) {
+    if (!/^[^/]+\/[^/]+$/.test(repo)) {
+      errors.push(`${HEAT_CREATED_STATE_REL_PATH}.repos.${repo} repo 非法`);
+      continue;
+    }
+    if (value !== null && !isIsoDate(value)) {
+      errors.push(`${HEAT_CREATED_STATE_REL_PATH}.repos.${repo} 应为 ISO 时间或 null`);
+    }
+  }
+}
+
+async function readJsonIfPresent(file) {  try {
     return { exists: true, data: JSON.parse(await readFile(file, 'utf8')) };
   } catch (error) {
     if (error.code === 'ENOENT') {
@@ -1230,6 +1450,8 @@ export async function validateDir(dir) {
     communitySummaryRowCount: 0,
     communityStateModCount: 0,
     changesCount: 0,
+    heatModCount: 0,
+    heatHistoryCounts: { daily: 0, weekly: 0, monthly: 0 },
     present: [],
   };
 
@@ -1259,6 +1481,26 @@ export async function validateDir(dir) {
   );
   const statusFile = await readJsonIfPresent(path.join(outDir, STATUS_REL_PATH));
   const changesFile = await readJsonIfPresent(path.join(outDir, CHANGES_REL_PATH));
+  const heatIndexFile = await readJsonIfPresent(path.join(outDir, HEAT_INDEX_REL_PATH));
+  const heatSummaryCsvFile = await readTextIfPresent(
+    path.join(outDir, HEAT_SUMMARY_REL_PATH),
+  );
+  const heatCommitStateFile = await readJsonIfPresent(
+    path.join(outDir, HEAT_COMMIT_STATE_REL_PATH),
+  );
+  const heatCreatedStateFile = await readJsonIfPresent(
+    path.join(outDir, HEAT_CREATED_STATE_REL_PATH),
+  );
+  const heatHistoryFiles = {};
+  for (const kind of ['daily', 'weekly', 'monthly']) {
+    try {
+      heatHistoryFiles[kind] = (await readdir(path.join(outDir, HEAT_HISTORY_DIR, kind))).filter(
+        (name) => name.endsWith('.json'),
+      );
+    } catch {
+      heatHistoryFiles[kind] = [];
+    }
+  }
   const gameVersions = gameVersionsFromFile(versionsFile.data);
 
   if (
@@ -1644,6 +1886,88 @@ export async function validateDir(dir) {
     warnings.push(`缺少 ${CHANGES_REL_PATH}（可能是尚未运行过新版本）`);
   }
 
+  // heat：存在时校验（允许还没有热度表）
+  if (heatIndexFile.exists) {
+    result.present.push(HEAT_INDEX_REL_PATH);
+    const officialReposForHeat = (Array.isArray(indexFile.data?.mods)
+      ? indexFile.data.mods
+      : []
+    ).map((mod) => mod?.repo);
+    const communityReposForHeat = (Array.isArray(communityIndexFile.data?.mods)
+      ? communityIndexFile.data.mods
+      : []
+    ).map((mod) => mod?.repo);
+    const expectedRepos = [...officialReposForHeat, ...communityReposForHeat].filter(
+      (repo) => typeof repo === 'string',
+    );
+    if (heatIndexFile.error) {
+      errors.push(`${HEAT_INDEX_REL_PATH} 无法解析：${heatIndexFile.error.message}`);
+    } else {
+      result.heatModCount = validateHeatIndexData(heatIndexFile.data, {
+        expectedRepos,
+        errors,
+      }).modCount;
+      if (!heatSummaryCsvFile.exists) {
+        errors.push(`缺少 ${HEAT_SUMMARY_REL_PATH}`);
+      } else if (heatSummaryCsvFile.error) {
+        errors.push(`${HEAT_SUMMARY_REL_PATH} 无法读取：${heatSummaryCsvFile.error.message}`);
+      } else {
+        result.present.push(HEAT_SUMMARY_REL_PATH);
+        const rows = parseCsv(heatSummaryCsvFile.text);
+        if (rows[0]?.join(',') !== HEAT_SUMMARY_COLUMNS.join(',')) {
+          errors.push(`${HEAT_SUMMARY_REL_PATH} 表头与 heat 列定义不一致`);
+        } else if (rows.length - 1 !== heatIndexFile.data.mods.length) {
+          errors.push(
+            `${HEAT_SUMMARY_REL_PATH} 行数（${rows.length - 1}）与 heat mods 数量不一致`,
+          );
+        }
+      }
+    }
+    for (const kind of ['daily', 'weekly', 'monthly']) {
+      const files = heatHistoryFiles[kind];
+      result.heatHistoryCounts[kind] = files.length;
+      if (files.length > HISTORY_LIMITS[kind]) {
+        errors.push(
+          `${HEAT_HISTORY_DIR}/${kind} 超过保留数量（${files.length} > ${HISTORY_LIMITS[kind]}）`,
+        );
+      }
+      for (const file of files) {
+        const relPath = path.join(HEAT_HISTORY_DIR, kind, file);
+        const pattern =
+          kind === 'daily'
+            ? /^\d{4}-\d{2}-\d{2}\.json$/
+            : kind === 'weekly'
+              ? /^\d{4}-W\d{2}\.json$/
+              : /^\d{4}-\d{2}\.json$/;
+        if (!pattern.test(file)) {
+          errors.push(`${relPath} 文件名不符合 ${kind} 格式`);
+        }
+        const snapshotFile = await readJsonIfPresent(path.join(outDir, relPath));
+        if (snapshotFile.error) {
+          errors.push(`${relPath} 无法解析：${snapshotFile.error.message}`);
+        } else {
+          validateHeatHistorySnapshot(snapshotFile.data, { where: relPath, errors });
+        }
+      }
+    }
+  }
+  if (heatCommitStateFile.exists) {
+    result.present.push(HEAT_COMMIT_STATE_REL_PATH);
+    if (heatCommitStateFile.error) {
+      errors.push(`${HEAT_COMMIT_STATE_REL_PATH} 无法解析：${heatCommitStateFile.error.message}`);
+    } else {
+      validateHeatCommitState(heatCommitStateFile.data, { errors });
+    }
+  }
+  if (heatCreatedStateFile.exists) {
+    result.present.push(HEAT_CREATED_STATE_REL_PATH);
+    if (heatCreatedStateFile.error) {
+      errors.push(`${HEAT_CREATED_STATE_REL_PATH} 无法解析：${heatCreatedStateFile.error.message}`);
+    } else {
+      validateHeatCreatedState(heatCreatedStateFile.data, { errors });
+    }
+  }
+
   return result;
 }
 
@@ -1698,6 +2022,12 @@ async function main(argv) {
   }
   if (result.present.includes(CHANGES_REL_PATH)) {
     console.log(`changes.json：${result.changesCount} 条变更`);
+  }
+  if (result.present.includes(HEAT_INDEX_REL_PATH)) {
+    const { daily, weekly, monthly } = result.heatHistoryCounts;
+    console.log(
+      `heat：${result.heatModCount} 个模组，历史快照 daily ${daily} / weekly ${weekly} / monthly ${monthly}`,
+    );
   }
   if (result.present.includes(VERSIONS_REL_PATH)) {
     console.log(

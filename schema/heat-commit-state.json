@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-commit-state.json",
+  "title": "heat-commit-state",
+  "description": "participation 周统计缓存 state/heat-commit-stats.json",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "fetchedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "complete": {
+      "type": "boolean"
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 52,
+        "maxItems": 52,
+        "items": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "fetchedAt",
+    "complete",
+    "stats"
+  ],
+  "additionalProperties": true
+}

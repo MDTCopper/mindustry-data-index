@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-index.json",
+  "title": "heat-index",
+  "description": "热度表 heat/index.json（官方+社区全量）",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "source": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-source.json",
+      "title": "heat 来源计数",
+      "description": "object",
+      "type": {
+        "official": {
+          "type": "integer"
+        },
+        "community": {
+          "type": "integer"
+        }
+      },
+      "items": [
+        "official",
+        "community"
+      ]
+    },
+    "mods": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-mod.json",
+        "title": "单个模组的热度明细",
+        "description": "object",
+        "type": {
+          "repo": {
+            "type": "string"
+          },
+          "namePlain": {
+            "type": "string"
+          },
+          "source": {
+            "enum": [
+              "official",
+              "community"
+            ]
+          },
+          "totalDownloads": {
+            "type": "number"
+          },
+          "totalStars": {
+            "type": "number"
+          },
+          "downloadChanges": {
+            "type": "object",
+            "description": "各窗口下载量变化（1d/7d/30d/180d）",
+            "properties": {
+              "1": {
+                "type": "number"
+              },
+              "7": {
+                "type": "number"
+              },
+              "30": {
+                "type": "number"
+              },
+              "180": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "1",
+              "7",
+              "30",
+              "180"
+            ],
+            "additionalProperties": false
+          },
+          "starChanges": {
+            "type": "object",
+            "description": "各窗口星标变化",
+            "properties": {
+              "1": {
+                "type": "number"
+              },
+              "7": {
+                "type": "number"
+              },
+              "30": {
+                "type": "number"
+              },
+              "180": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "1",
+              "7",
+              "30",
+              "180"
+            ],
+            "additionalProperties": false
+          },
+          "releaseUpdates": {
+            "type": "object",
+            "description": "各窗口 release 更新数",
+            "properties": {
+              "1": {
+                "type": "number"
+              },
+              "7": {
+                "type": "number"
+              },
+              "30": {
+                "type": "number"
+              },
+              "180": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "1",
+              "7",
+              "30",
+              "180"
+            ],
+            "additionalProperties": false
+          },
+          "commits": {
+            "type": "object",
+            "description": "各窗口提交数（participation 周粒度近似）",
+            "properties": {
+              "1": {
+                "type": "number"
+              },
+              "7": {
+                "type": "number"
+              },
+              "30": {
+                "type": "number"
+              },
+              "180": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "1",
+              "7",
+              "30",
+              "180"
+            ],
+            "additionalProperties": false
+          },
+          "downloadsScore": {
+            "type": "number"
+          },
+          "starsScore": {
+            "type": "number"
+          },
+          "updateScore": {
+            "type": "number"
+          },
+          "newModMultiplier": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1.325
+          },
+          "penalty": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "score": {
+            "type": "number"
+          },
+          "rank": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "items": [
+          "repo",
+          "namePlain",
+          "source",
+          "totalDownloads",
+          "totalStars",
+          "downloadChanges",
+          "starChanges",
+          "releaseUpdates",
+          "commits",
+          "downloadsScore",
+          "starsScore",
+          "updateScore",
+          "newModMultiplier",
+          "penalty",
+          "score",
+          "rank"
+        ]
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "source",
+    "mods"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-history.json",
+  "title": "heat-history",
+  "description": "热度历史快照 daily/weekly/monthly/YYYY-*.json",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "mods": {
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-history-mod.json",
+        "title": "历史快照里的单模组值",
+        "description": "object",
+        "type": {
+          "stars": {
+            "type": "number"
+          },
+          "totalDownloads": {
+            "type": "number"
+          }
+        },
+        "items": [
+          "stars",
+          "totalDownloads"
+        ]
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "mods"
+  ],
+  "additionalProperties": true
+}

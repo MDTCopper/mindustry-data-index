@@ -21,11 +21,15 @@ const EXPECTED_REQUIRED = {
   'community-refresh-state.json': ['formatVersion', 'updatedAt', 'mods'],
   'blacklist-state.json': ['formatVersion', 'fetchedAt', 'sourceUrl', 'sourceHash', 'nameBlacklist', 'blacklist', 'globalBlacklist'],
   'status.json': ['formatVersion', 'generatedAt', 'datasets', 'api', 'validate'],
+  'heat-index.json': ['formatVersion', 'generatedAt', 'source', 'mods'],
+  'heat-history.json': ['formatVersion', 'generatedAt', 'mods'],
+  'heat-commit-state.json': ['formatVersion', 'fetchedAt', 'complete', 'stats'],
+  'repo-created.json': ['formatVersion', 'updatedAt', 'repos'],
 };
 
 test('schema/: 全部是合法 JSON 且使用 draft 2020-12', () => {
   const files = readdirSync(schemaDir).filter((name) => name.endsWith('.json'));
-  assert.ok(files.length >= 14);
+  assert.ok(files.length >= 18);
   for (const name of files) {
     const schema = JSON.parse(readFileSync(path.join(schemaDir, name), 'utf8'));
     assert.equal(schema.$schema, 'https://json-schema.org/draft/2020-12/schema', name);

@@ -4,8 +4,9 @@ import { mkdtemp, mkdir, readFile, rm, writeFile, unlink } from 'node:fs/promise
 import os from 'node:os';
 import path from 'node:path';
 import { validateDir, validateReleaseFileData, validateIndexData, validateStatusData, validateChangesData, isValidReleasesPath } from '../src/validate.js';
+import { HEAT_SUMMARY_COLUMNS, heatSummaryRow, buildSnapshot } from '../src/heat.js';
 import { VERSIONS_API } from '../src/versions.js';
-import { buildSummary, summaryCsv } from '../src/summary.js';
+import { buildSummary, summaryCsv, csvEscape } from '../src/summary.js';
 import {
   buildGateFile,
   mergeGateRules,
@@ -953,4 +954,111 @@ test('validateChangesData：合法变更通过，非法 action/dataset/时间被
   assert.ok(errors.some((message) => message.includes('.dataset')));
   assert.ok(errors.some((message) => message.includes('.repo')));
   assert.ok(errors.some((message) => message.includes('.action')));
+});
+
+// ---------- heat ----------
+
+function heatEntry(repo, rank, score) {
+  return {
+    repo,
+    namePlain: repo.split('/')[1],
+    source: 'official',
+    totalDownloads: 10,
+    totalStars: 2,
+    downloadChanges: { 1: 1, 7: 2, 30: 3, 180: 4 },
+    starChanges: { 1: 0, 7: 1, 30: 1, 180: 2 },
+    releaseUpdates: { 1: 0, 7: 1, 30: 1, 180: 1 },
+    commits: { 1: 0.14, 7: 1, 30: 4, 180: 20 },
+    downloadsScore: 0.5,
+    starsScore: 0.6,
+    updateScore: 0.4,
+    newModMultiplier: 1.2,
+    penalty: 0.1,
+    score,
+    rank,
+  };
+}
+
+async function addHeatFixture(dir, { entries = [heatEntry('owner/demo', 1, 0.42)] } = {}) {
+  const heatDir = path.join(dir, 'heat');
+  await mkdir(path.join(heatDir, 'history', 'daily'), { recursive: true });
+  await mkdir(path.join(heatDir, 'history', 'weekly'), { recursive: true });
+  await mkdir(path.join(heatDir, 'history', 'monthly'), { recursive: true });
+  await writeFile(
+    path.join(heatDir, 'index.json'),
+    JSON.stringify(
+      {
+        formatVersion: 1,
+        generatedAt: GENERATED_AT,
+        source: { official: entries.length, community: 0 },
+        mods: entries,
+      },
+      null,
+      2,
+    ),
+  );
+  const lines = [HEAT_SUMMARY_COLUMNS.join(',')];
+  for (const entry of entries) {
+    const row = heatSummaryRow(entry);
+    lines.push(HEAT_SUMMARY_COLUMNS.map((column) => csvEscape(row[column])).join(','));
+  }
+  await writeFile(path.join(heatDir, 'summary.csv'), `\uFEFF${lines.join('\r\n')}\r\n`);
+  const snapshot = buildSnapshot(
+    entries.map((entry) => ({
+      repo: entry.repo,
+      totalStars: entry.totalStars,
+      totalDownloads: entry.totalDownloads,
+    })),
+    GENERATED_AT,
+  );
+  await writeFile(path.join(heatDir, 'history', 'daily', '2026-11-06.json'), JSON.stringify(snapshot));
+  await writeFile(path.join(heatDir, 'history', 'weekly', '2026-W45.json'), JSON.stringify(snapshot));
+  await writeFile(path.join(heatDir, 'history', 'monthly', '2026-11.json'), JSON.stringify(snapshot));
+  await mkdir(path.join(dir, 'state'), { recursive: true });
+  await writeFile(
+    path.join(dir, 'state', 'heat-commit-stats.json'),
+    JSON.stringify({
+      formatVersion: 1,
+      fetchedAt: GENERATED_AT,
+      complete: true,
+      stats: { 'owner/demo': Array.from({ length: 52 }, () => 1) },
+    }),
+  );
+  await writeFile(
+    path.join(dir, 'state', 'repo-created.json'),
+    JSON.stringify({
+      formatVersion: 1,
+      updatedAt: GENERATED_AT,
+      repos: { 'owner/demo': '2026-01-01T00:00:00Z' },
+    }),
+  );
+}
+
+test('validateDir：合法 heat 数据通过', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await addHeatFixture(dir);
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.warnings, []);
+  assert.equal(result.heatModCount, 1);
+  assert.deepEqual(result.heatHistoryCounts, { daily: 1, weekly: 1, monthly: 1 });
+});
+
+test('validateDir：heat repo 集合与 index 不一致 / rank 重复 / 历史快照超量会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const entries = [heatEntry('owner/demo', 1, 0.42), heatEntry('extra/repo', 1, 0.1)];
+  await addHeatFixture(dir, { entries });
+  const snapshot = buildSnapshot([], GENERATED_AT);
+  for (let day = 1; day <= 8; day += 1) {
+    await writeFile(
+      path.join(dir, 'heat', 'history', 'daily', `2026-10-0${day}.json`),
+      JSON.stringify(snapshot),
+    );
+  }
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('多出')));
+  assert.ok(result.errors.some((message) => message.includes('rank 不是 1..N 唯一')));
+  assert.ok(result.errors.some((message) => message.includes('超过保留数量')));
 });
