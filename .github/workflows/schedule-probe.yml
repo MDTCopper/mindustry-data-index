@@ -1,0 +1,18 @@
+﻿name: schedule-probe
+
+# 临时诊断：确认本仓库的 schedule 是否会被 GitHub 触发（验证完即删）
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 记录触发时间
+        run: echo "schedule probe ran at $(date -u +%Y-%m-%dT%H:%M:%SZ) event=${{ github.event_name }}"
