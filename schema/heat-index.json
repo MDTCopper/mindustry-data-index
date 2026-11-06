@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-index.json",
   "title": "heat-index",
-  "description": "热度表 heat/index.json（官方+社区全量）",
+  "description": "热度表 heat/index.json（官方+社区全量，v2 占比归一 + 活动递减收益）",
   "type": "object",
   "properties": {
     "formatVersion": {
@@ -13,11 +13,8 @@
       "description": "UTC ISO 8601 时间"
     },
     "source": {
-      "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-source.json",
-      "title": "heat 来源计数",
-      "description": "object",
-      "type": {
+      "type": "object",
+      "properties": {
         "official": {
           "type": "integer"
         },
@@ -25,19 +22,17 @@
           "type": "integer"
         }
       },
-      "items": [
+      "required": [
         "official",
         "community"
-      ]
+      ],
+      "additionalProperties": false
     },
     "mods": {
       "type": "array",
       "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/heat-mod.json",
-        "title": "单个模组的热度明细",
-        "description": "object",
-        "type": {
+        "type": "object",
+        "properties": {
           "repo": {
             "type": "string"
           },
@@ -55,6 +50,54 @@
           },
           "totalStars": {
             "type": "number"
+          },
+          "stockShare": {
+            "type": "object",
+            "properties": {
+              "downloads": {
+                "type": "number"
+              },
+              "stars": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "downloads",
+              "stars"
+            ],
+            "additionalProperties": false
+          },
+          "stockMag": {
+            "type": "object",
+            "properties": {
+              "downloads": {
+                "type": "number"
+              },
+              "stars": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "downloads",
+              "stars"
+            ],
+            "additionalProperties": false
+          },
+          "stockScore": {
+            "type": "object",
+            "properties": {
+              "downloads": {
+                "type": "number"
+              },
+              "stars": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "downloads",
+              "stars"
+            ],
+            "additionalProperties": false
           },
           "downloadChanges": {
             "type": "object",
@@ -83,7 +126,7 @@
           },
           "starChanges": {
             "type": "object",
-            "description": "各窗口星标变化",
+            "description": "各窗口星标变化（1d/7d/30d/180d）",
             "properties": {
               "1": {
                 "type": "number"
@@ -108,15 +151,15 @@
           },
           "releaseUpdates": {
             "type": "object",
-            "description": "各窗口 release 更新数",
+            "description": "各窗口 release 更新数（7/30/90/180d）",
             "properties": {
-              "1": {
-                "type": "number"
-              },
               "7": {
                 "type": "number"
               },
               "30": {
+                "type": "number"
+              },
+              "90": {
                 "type": "number"
               },
               "180": {
@@ -124,24 +167,24 @@
               }
             },
             "required": [
-              "1",
               "7",
               "30",
+              "90",
               "180"
             ],
             "additionalProperties": false
           },
           "commits": {
             "type": "object",
-            "description": "各窗口提交数（participation 周粒度近似）",
+            "description": "各窗口提交数（7/30/90/180d，participation 周粒度近似）",
             "properties": {
-              "1": {
-                "type": "number"
-              },
               "7": {
                 "type": "number"
               },
               "30": {
+                "type": "number"
+              },
+              "90": {
                 "type": "number"
               },
               "180": {
@@ -149,12 +192,30 @@
               }
             },
             "required": [
-              "1",
               "7",
               "30",
+              "90",
               "180"
             ],
             "additionalProperties": false
+          },
+          "releaseActivityRaw": {
+            "type": "number",
+            "minimum": 0
+          },
+          "commitActivityRaw": {
+            "type": "number",
+            "minimum": 0
+          },
+          "releaseActivity": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "commitActivity": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
           },
           "downloadsScore": {
             "type": "number"
@@ -183,16 +244,23 @@
             "minimum": 1
           }
         },
-        "items": [
+        "required": [
           "repo",
           "namePlain",
           "source",
           "totalDownloads",
           "totalStars",
+          "stockShare",
+          "stockMag",
+          "stockScore",
           "downloadChanges",
           "starChanges",
           "releaseUpdates",
           "commits",
+          "releaseActivityRaw",
+          "commitActivityRaw",
+          "releaseActivity",
+          "commitActivity",
           "downloadsScore",
           "starsScore",
           "updateScore",
@@ -200,7 +268,8 @@
           "penalty",
           "score",
           "rank"
-        ]
+        ],
+        "additionalProperties": true
       }
     }
   },

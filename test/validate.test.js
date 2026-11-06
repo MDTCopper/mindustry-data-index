@@ -965,10 +965,17 @@ function heatEntry(repo, rank, score) {
     source: 'official',
     totalDownloads: 10,
     totalStars: 2,
+    stockShare: { downloads: 0.5, stars: 0.5 },
+    stockMag: { downloads: 0.7, stars: 0.7 },
+    stockScore: { downloads: 0.62, stars: 0.62 },
     downloadChanges: { 1: 1, 7: 2, 30: 3, 180: 4 },
     starChanges: { 1: 0, 7: 1, 30: 1, 180: 2 },
-    releaseUpdates: { 1: 0, 7: 1, 30: 1, 180: 1 },
-    commits: { 1: 0.14, 7: 1, 30: 4, 180: 20 },
+    releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
+    commits: { 7: 1, 30: 4, 90: 10, 180: 20 },
+    releaseActivityRaw: 0.8,
+    commitActivityRaw: 1.2,
+    releaseActivity: 0.6,
+    commitActivity: 0.9,
     downloadsScore: 0.5,
     starsScore: 0.6,
     updateScore: 0.4,
@@ -980,6 +987,13 @@ function heatEntry(repo, rank, score) {
 }
 
 async function addHeatFixture(dir, { entries = [heatEntry('owner/demo', 1, 0.42)] } = {}) {
+  // 让 stockShare 之和≈1（校验会检查占比和）
+  const share = entries.length > 0 ? 1 / entries.length : 0;
+  for (const entry of entries) {
+    entry.stockShare = { downloads: share, stars: share };
+    entry.stockMag = { downloads: 1, stars: 1 };
+    entry.stockScore = { downloads: 0.9, stars: 0.9 };
+  }
   const heatDir = path.join(dir, 'heat');
   await mkdir(path.join(heatDir, 'history', 'daily'), { recursive: true });
   await mkdir(path.join(heatDir, 'history', 'weekly'), { recursive: true });

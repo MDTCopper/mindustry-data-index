@@ -1,18 +1,23 @@
 // 热度表核心计算（纯函数，便于单测）
 //
-// 所有指标先按窗口取原始变化，再 signed log1p / log1p 后跨全量做百分位排名 0~1，
-// 然后按窗口权重合成组件；缺失窗口（历史快照还没积累到/没有提交统计）按 0 处理。
+// v2：存量指标用「占全量百分比 + sqrt 柔化 + 少量百分位」；变化量/活动量仍用百分位/log1p，
+// 窗口全 0 记 0；release/提交活动改为更长窗口 + log1p 递减收益后按最大值归一化；新 mod 倍率更陡。
 
 export const HEAT_FORMAT_VERSION = 1;
 export const HEAT_WINDOWS = [1, 7, 30, 180];
+export const UPDATE_WINDOWS = [7, 30, 90, 180];
 export const DOWNLOAD_WINDOW_WEIGHTS = { 1: 0.45, 7: 0.3, 30: 0.2, 180: 0.05 };
 export const STAR_WINDOW_WEIGHTS = { 1: 0.2, 7: 0.45, 30: 0.3, 180: 0.05 };
-export const UPDATE_WINDOW_WEIGHTS = { 1: 0.45, 7: 0.3, 30: 0.2, 180: 0.05 };
+export const UPDATE_WINDOW_WEIGHTS = { 7: 0.15, 30: 0.35, 90: 0.25, 180: 0.25 };
 export const TOTAL_WEIGHT = 0.6;
 export const CHANGE_WEIGHT = 0.4;
-export const COMPONENT_WEIGHTS = { downloads: 0.35, stars: 0.5, update: 0.15 };
+export const STOCK_MAG_WEIGHT = 0.8;
+export const STOCK_PERCENTILE_WEIGHT = 0.2;
+export const STOCK_DROP_RATIO = 1e-4;
+export const COMPONENT_WEIGHTS = { downloads: 0.4, stars: 0.5, update: 0.1 };
 export const NEW_MOD_DAYS = 180;
 export const NEW_MOD_MAX_MULTIPLIER = 1.325;
+export const NEW_MOD_DECAY_DAYS = 30;
 export const PENALTY_START_DAYS = 360;
 export const PENALTY_SATURATION_DAYS = 180;
 export const PENALTY_WEIGHT = 0.3;
@@ -70,19 +75,54 @@ export function weightedChange(percentiles, weights) {
   return sum;
 }
 
-// 新 mod 倍率：180 天内从 1.325 指数衰减到 1，之后 clamp 1
+// v2 新 mod 倍率：180 天内 1 + 0.325 * exp(-age/30)，30d≈1.12、60d≈1.04、90d≈1.016，之后 clamp 1
 export function newModMultiplier(ageDays) {
   if (ageDays === null || ageDays === undefined || !Number.isFinite(Number(ageDays))) {
     return 1;
   }
   const age = Number(ageDays);
-  if (age <= 0) {
-    return NEW_MOD_MAX_MULTIPLIER;
-  }
   if (age >= NEW_MOD_DAYS) {
     return 1;
   }
-  return NEW_MOD_MAX_MULTIPLIER ** (1 - age / NEW_MOD_DAYS);
+  const effectiveAge = Math.max(0, age);
+  return 1 + (NEW_MOD_MAX_MULTIPLIER - 1) * Math.exp(-effectiveAge / NEW_MOD_DECAY_DAYS);
+}
+
+// 存量分数：占全量百分比为主 + sqrt 柔化 + 少量百分位；占比小到可忽略直接抹除
+export function stockScores(values) {
+  const numbers = values.map((value) => (Number.isFinite(Number(value)) ? Math.max(0, Number(value)) : 0));
+  const total = numbers.reduce((sum, value) => sum + value, 0);
+  const shares = numbers.map((value) => (total > 0 ? value / total : 0));
+  const maxShare = shares.reduce((max, value) => (value > max ? value : max), 0);
+  const percentiles = percentileRanks(numbers.map((value) => Math.log1p(value)));
+  const mags = shares.map((share) => {
+    if (maxShare <= 0 || share < maxShare * STOCK_DROP_RATIO) {
+      return 0;
+    }
+    return Math.sqrt(Math.min(1, share / maxShare));
+  });
+  const scores = mags.map(
+    (mag, index) =>
+      STOCK_MAG_WEIGHT * mag + STOCK_PERCENTILE_WEIGHT * percentiles[index],
+  );
+  return { total, shares, maxShare, mags, percentiles, scores };
+}
+
+export function normalizeByMax(values) {
+  const numbers = values.map((value) => (Number.isFinite(Number(value)) ? Number(value) : 0));
+  const max = numbers.reduce((current, value) => (value > current ? value : current), 0);
+  return numbers.map((value) => (max > 0 ? value / max : 0));
+}
+
+// 活动量：Σ 窗口权重 × log1p(窗口计数) → 按全量最大值归一化（递减收益）
+export function activityScores(countsByWindow) {
+  return countsByWindow.map((counts) => {
+    let raw = 0;
+    for (const window of UPDATE_WINDOWS) {
+      raw += (UPDATE_WINDOW_WEIGHTS[window] ?? 0) * Math.log1p(Math.max(0, counts[window] ?? 0));
+    }
+    return raw;
+  });
 }
 
 // 长期未更新惩罚（0~1）：超 360 天的 release / 提交各自 1-exp(-overrun/180) 饱和，7:3 合成
@@ -220,98 +260,59 @@ export function earliestReleasePublishedAt(releases) {
   return earliest;
 }
 
-export function buildHeatEntry({
-  repo,
-  namePlain,
-  source,
-  totalDownloads,
-  totalStars,
-  downloadChanges,
-  starChanges,
-  releaseUpdates,
-  commits,
-  ageDays,
-  penalty,
-  rank,
-}) {
-  const downloadChangeValues = {};
-  const starChangeValues = {};
-  const releaseUpdateValues = {};
-  const commitValues = {};
-  for (const window of HEAT_WINDOWS) {
-    downloadChangeValues[window] = downloadChanges?.[window] ?? 0;
-    starChangeValues[window] = starChanges?.[window] ?? 0;
-    releaseUpdateValues[window] = releaseUpdates?.[window] ?? 0;
-    commitValues[window] = commits?.[window] ?? 0;
+function windowPercentile(values, rawValues) {
+  if (rawValues.every((value) => value === 0)) {
+    return values.map(() => 0);
   }
-  const entry = {
-    repo,
-    namePlain: namePlain ?? '',
-    source,
-    totalDownloads: Number(totalDownloads) || 0,
-    totalStars: Number(totalStars) || 0,
-    downloadChanges: downloadChangeValues,
-    starChanges: starChangeValues,
-    releaseUpdates: releaseUpdateValues,
-    commits: commitValues,
-    downloadsScore: 0,
-    starsScore: 0,
-    updateScore: 0,
-    newModMultiplier: newModMultiplier(ageDays),
-    penalty,
-    score: 0,
-    rank: rank ?? null,
-  };
-  entry.downloadsScore = 0;
-  entry.starsScore = 0;
-  entry.updateScore = 0;
-  return entry;
+  return percentileRanks(values);
 }
 
-// 归一化 + 组件 + 总分/排名。mods: [{repo, namePlain, source, totalDownloads, totalStars, downloadChanges, starChanges, releaseUpdates, commits, ageDays, penalty}]
+// v2 归一化 + 组件 + 总分/排名
+// mods: [{repo, namePlain, source, totalDownloads, totalStars, downloadChanges, starChanges,
+//         releaseUpdates(7/30/90/180), commits(7/30/90/180), ageDays, daysSinceRelease, daysSinceCommit}]
 export function computeHeat(mods) {
   const count = mods.length;
-  const downloadTotal = percentileRanks(mods.map((mod) => signedLog1p(mod.totalDownloads)));
-  const starTotal = percentileRanks(mods.map((mod) => signedLog1p(mod.totalStars)));
+  const downloadStock = stockScores(mods.map((mod) => mod.totalDownloads));
+  const starStock = stockScores(mods.map((mod) => mod.totalStars));
+
   const downloadPercentiles = {};
   const starPercentiles = {};
-  const releasePercentiles = {};
-  const commitPercentiles = {};
   for (const window of HEAT_WINDOWS) {
-    downloadPercentiles[window] = percentileRanks(
-      mods.map((mod) => signedLog1p(mod.downloadChanges?.[window] ?? 0)),
+    const downloadRaw = mods.map((mod) => mod.downloadChanges?.[window] ?? 0);
+    downloadPercentiles[window] = windowPercentile(
+      downloadRaw.map((value) => signedLog1p(value)),
+      downloadRaw,
     );
-    starPercentiles[window] = percentileRanks(
-      mods.map((mod) => signedLog1p(mod.starChanges?.[window] ?? 0)),
-    );
-    releasePercentiles[window] = percentileRanks(
-      mods.map((mod) => signedLog1p(mod.releaseUpdates?.[window] ?? 0)),
-    );
-    commitPercentiles[window] = percentileRanks(
-      mods.map((mod) => signedLog1p(mod.commits?.[window] ?? 0)),
+    const starRaw = mods.map((mod) => mod.starChanges?.[window] ?? 0);
+    starPercentiles[window] = windowPercentile(
+      starRaw.map((value) => signedLog1p(value)),
+      starRaw,
     );
   }
+
+  const releaseRaw = activityScores(mods.map((mod) => mod.releaseUpdates ?? {}));
+  const commitRaw = activityScores(mods.map((mod) => mod.commits ?? {}));
+  const releaseActivity = normalizeByMax(releaseRaw);
+  const commitActivity = normalizeByMax(commitRaw);
 
   const entries = mods.map((mod, index) => {
     const downloadChangeScore = weightedChange(
-      Object.fromEntries(HEAT_WINDOWS.map((window) => [window, downloadPercentiles[window][index]])),
+      Object.fromEntries(
+        HEAT_WINDOWS.map((window) => [window, downloadPercentiles[window][index]]),
+      ),
       DOWNLOAD_WINDOW_WEIGHTS,
     );
     const starChangeScore = weightedChange(
-      Object.fromEntries(HEAT_WINDOWS.map((window) => [window, starPercentiles[window][index]])),
+      Object.fromEntries(
+        HEAT_WINDOWS.map((window) => [window, starPercentiles[window][index]]),
+      ),
       STAR_WINDOW_WEIGHTS,
     );
-    const releaseScore = weightedChange(
-      Object.fromEntries(HEAT_WINDOWS.map((window) => [window, releasePercentiles[window][index]])),
-      UPDATE_WINDOW_WEIGHTS,
-    );
-    const commitScore = weightedChange(
-      Object.fromEntries(HEAT_WINDOWS.map((window) => [window, commitPercentiles[window][index]])),
-      UPDATE_WINDOW_WEIGHTS,
-    );
-    const downloadsScore = downloadTotal[index] * TOTAL_WEIGHT + downloadChangeScore * CHANGE_WEIGHT;
-    const starsScore = starTotal[index] * TOTAL_WEIGHT + starChangeScore * CHANGE_WEIGHT;
-    const updateScore = releaseScore * 0.7 + commitScore * 0.3;
+    const downloadsScore =
+      TOTAL_WEIGHT * downloadStock.scores[index] + CHANGE_WEIGHT * downloadChangeScore;
+    const starsScore =
+      TOTAL_WEIGHT * starStock.scores[index] + CHANGE_WEIGHT * starChangeScore;
+    const updateScore = 0.7 * releaseActivity[index] + 0.3 * commitActivity[index];
     const multiplier = newModMultiplier(mod.ageDays);
     const penalty = longInactivityPenalty({
       daysSinceRelease: mod.daysSinceRelease ?? null,
@@ -329,6 +330,18 @@ export function computeHeat(mods) {
       source: mod.source,
       totalDownloads: mod.totalDownloads ?? 0,
       totalStars: mod.totalStars ?? 0,
+      stockShare: {
+        downloads: downloadStock.shares[index],
+        stars: starStock.shares[index],
+      },
+      stockMag: {
+        downloads: downloadStock.mags[index],
+        stars: starStock.mags[index],
+      },
+      stockScore: {
+        downloads: downloadStock.scores[index],
+        stars: starStock.scores[index],
+      },
       downloadChanges: Object.fromEntries(
         HEAT_WINDOWS.map((window) => [window, mod.downloadChanges?.[window] ?? 0]),
       ),
@@ -336,11 +349,15 @@ export function computeHeat(mods) {
         HEAT_WINDOWS.map((window) => [window, mod.starChanges?.[window] ?? 0]),
       ),
       releaseUpdates: Object.fromEntries(
-        HEAT_WINDOWS.map((window) => [window, mod.releaseUpdates?.[window] ?? 0]),
+        UPDATE_WINDOWS.map((window) => [window, mod.releaseUpdates?.[window] ?? 0]),
       ),
       commits: Object.fromEntries(
-        HEAT_WINDOWS.map((window) => [window, mod.commits?.[window] ?? 0]),
+        UPDATE_WINDOWS.map((window) => [window, mod.commits?.[window] ?? 0]),
       ),
+      releaseActivityRaw: releaseRaw[index],
+      commitActivityRaw: commitRaw[index],
+      releaseActivity: releaseActivity[index],
+      commitActivity: commitActivity[index],
       downloadsScore,
       starsScore,
       updateScore,
@@ -417,6 +434,10 @@ export const HEAT_SUMMARY_COLUMNS = [
   'source',
   'totalDownloads',
   'totalStars',
+  'stockShareDownloads',
+  'stockShareStars',
+  'stockMagDownloads',
+  'stockMagStars',
   'downloads1d',
   'downloads7d',
   'downloads30d',
@@ -425,14 +446,18 @@ export const HEAT_SUMMARY_COLUMNS = [
   'stars7d',
   'stars30d',
   'stars180d',
-  'releaseUpdates1d',
   'releaseUpdates7d',
   'releaseUpdates30d',
+  'releaseUpdates90d',
   'releaseUpdates180d',
-  'commits1d',
   'commits7d',
   'commits30d',
+  'commits90d',
   'commits180d',
+  'releaseActivityRaw',
+  'commitActivityRaw',
+  'releaseActivity',
+  'commitActivity',
   'downloadsScore',
   'starsScore',
   'updateScore',
@@ -449,6 +474,14 @@ export function heatSummaryRow(entry) {
     source: entry.source,
     totalDownloads: entry.totalDownloads,
     totalStars: entry.totalStars,
+    stockShareDownloads: entry.stockShare?.downloads ?? 0,
+    stockShareStars: entry.stockShare?.stars ?? 0,
+    stockMagDownloads: entry.stockMag?.downloads ?? 0,
+    stockMagStars: entry.stockMag?.stars ?? 0,
+    releaseActivityRaw: entry.releaseActivityRaw ?? 0,
+    commitActivityRaw: entry.commitActivityRaw ?? 0,
+    releaseActivity: entry.releaseActivity ?? 0,
+    commitActivity: entry.commitActivity ?? 0,
     downloadsScore: entry.downloadsScore,
     starsScore: entry.starsScore,
     updateScore: entry.updateScore,
@@ -460,6 +493,8 @@ export function heatSummaryRow(entry) {
   for (const window of HEAT_WINDOWS) {
     row[`downloads${window}d`] = entry.downloadChanges?.[window] ?? 0;
     row[`stars${window}d`] = entry.starChanges?.[window] ?? 0;
+  }
+  for (const window of UPDATE_WINDOWS) {
     row[`releaseUpdates${window}d`] = entry.releaseUpdates?.[window] ?? 0;
     row[`commits${window}d`] = entry.commits?.[window] ?? 0;
   }

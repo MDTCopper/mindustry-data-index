@@ -17,6 +17,9 @@ import {
   releaseUpdatesInWindow,
   selectHistoryFiles,
   signedLog1p,
+  stockScores,
+  normalizeByMax,
+  activityScores,
 } from '../src/heat.js';
 
 const NOW = Date.parse('2026-11-06T12:00:00.000Z');
@@ -41,15 +44,18 @@ test('percentileRanks：0~1 百分位，极端值只占最高位不挤压其余'
   assert.deepEqual(percentileRanks([1, 1, 2]), [0.25, 0.25, 1].map((value) => value));
 });
 
-test('newModMultiplier：180 天内 1.325→1 指数衰减，之后 clamp 1', () => {
-  assert.equal(newModMultiplier(0), 1.325);
+test('newModMultiplier：180 天内 1+0.325*exp(-age/30)，之后 clamp 1', () => {
+  assert.ok(Math.abs(newModMultiplier(0) - 1.325) < 1e-9);
+  assert.ok(Math.abs(newModMultiplier(30) - 1.1195) < 0.001);
+  assert.ok(Math.abs(newModMultiplier(60) - 1.0439) < 0.001);
+  assert.ok(Math.abs(newModMultiplier(90) - 1.0162) < 0.001);
   assert.equal(newModMultiplier(180), 1);
   assert.equal(newModMultiplier(999), 1);
   assert.equal(newModMultiplier(null), 1);
-  const mid = newModMultiplier(90);
-  assert.ok(mid > 1 && mid < 1.325);
-  assert.ok(newModMultiplier(30) > newModMultiplier(60));
-  assert.ok(newModMultiplier(60) > newModMultiplier(120));
+  assert.ok(newModMultiplier(10) > newModMultiplier(40));
+  assert.ok(newModMultiplier(40) > newModMultiplier(100));
+  // 比 v1 更陡
+  assert.ok(newModMultiplier(30) < 1.325 ** (1 - 30 / 180));
 });
 
 test('longInactivityPenalty：360 天内为 0，之后 1-exp(-overrun/180) 饱和合成 7:3', () => {
@@ -130,6 +136,36 @@ test('buildSnapshot / 日期 key：格式稳定', () => {
   assert.match(formatWeekKey(date), /^2026-W\d{2}$/);
 });
 
+test('stockScores：占总量百分比为主、sqrt 柔化、极小占比抹除', () => {
+  const result = stockScores([1000, 250, 0, 0.00001]);
+  const sum = result.shares.reduce((total, value) => total + value, 0);
+  assert.ok(Math.abs(sum - 1) < 1e-9);
+  assert.ok(Math.abs(result.shares[0] - 1000 / 1250.00001) < 1e-12);
+  assert.equal(result.mags[0], 1);
+  assert.ok(Math.abs(result.mags[1] - Math.sqrt(0.25)) < 1e-9);
+  assert.equal(result.mags[2], 0);
+  // 远小于 maxShare * 1e-4 的占比直接抹除
+  assert.equal(result.mags[3], 0);
+  assert.equal(result.scores[3], 0.2 * result.percentiles[3]);
+  assert.equal(stockScores([0, 0]).total, 0);
+});
+
+test('activityScores / normalizeByMax：log1p 递减收益 + 最大值归一', () => {
+  const raw = activityScores([
+    { 7: 1, 30: 1, 90: 1, 180: 1 },
+    { 7: 100, 30: 100, 90: 100, 180: 100 },
+    { 7: 0, 30: 0, 90: 0, 180: 0 },
+  ]);
+  assert.equal(raw[2], 0);
+  assert.ok(raw[1] > raw[0]);
+  // 100 次不是 1 次的 100 倍（递减收益）
+  assert.ok(raw[1] < raw[0] * 10);
+  const normalized = normalizeByMax(raw);
+  assert.equal(normalized[1], 1);
+  assert.ok(normalized[0] > 0 && normalized[0] < 1);
+  assert.deepEqual(normalizeByMax([0, 0]), [0, 0]);
+});
+
 test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按分数降序', () => {
   const mods = [
     {
@@ -140,8 +176,8 @@ test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按�
       totalStars: 1e6,
       downloadChanges: { 1: 5000, 7: 5000, 30: 5000, 180: 5000 },
       starChanges: { 1: 100, 7: 100, 30: 100, 180: 100 },
-      releaseUpdates: { 1: 1, 7: 1, 30: 1, 180: 1 },
-      commits: { 1: 7, 7: 7, 30: 7, 180: 7 },
+      releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
+      commits: { 7: 70, 30: 70, 90: 70, 180: 70 },
       ageDays: 10,
       daysSinceRelease: 1,
       daysSinceCommit: 1,
@@ -170,4 +206,11 @@ test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按�
   assert.ok(entries.every((entry) => Number.isFinite(entry.score)));
   assert.deepEqual(entries[0].downloadChanges, { 1: 5000, 7: 5000, 30: 5000, 180: 5000 });
   assert.deepEqual(entries[1].downloadChanges, { 1: 0, 7: 0, 30: 0, 180: 0 });
+  assert.ok(Math.abs(entries[0].stockShare.downloads - 1) < 1e-9);
+  assert.equal(entries[0].stockMag.downloads, 1);
+  assert.equal(entries[0].releaseActivity, 1);
+  assert.equal(entries[0].commitActivity, 1);
+  assert.deepEqual(Object.keys(entries[0].releaseUpdates), ['7', '30', '90', '180']);
+  assert.equal(entries[1].stockShare.downloads, 0);
+  assert.equal(entries[1].stockMag.stars, 0);
 });

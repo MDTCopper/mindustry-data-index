@@ -33,6 +33,7 @@ import {
   HEAT_INDEX_REL_PATH,
   HEAT_SUMMARY_REL_PATH,
   HEAT_WINDOWS,
+  UPDATE_WINDOWS,
   HISTORY_LIMITS,
   HEAT_SUMMARY_COLUMNS,
 } from './heat.js';
@@ -1234,6 +1235,8 @@ export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {
     return { modCount: 0 };
   }
   const repos = new Set();
+  let downloadShareSum = 0;
+  let starShareSum = 0;
   for (const [index, entry] of heat.mods.entries()) {
     const where = `${HEAT_INDEX_REL_PATH}.mods[${index}]`;
     if (!isPlainObject(entry)) {
@@ -1258,7 +1261,45 @@ export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {
         errors.push(`${where}.${field} 应为非负数字`);
       }
     }
-    for (const field of ['downloadChanges', 'starChanges', 'releaseUpdates', 'commits']) {
+    for (const field of ['stockShare', 'stockMag', 'stockScore']) {
+      const stock = entry[field];
+      if (!isPlainObject(stock)) {
+        errors.push(`${where}.${field} 不是对象`);
+        continue;
+      }
+      for (const metric of ['downloads', 'stars']) {
+        if (!isFiniteNumberOrNull(stock[metric])) {
+          errors.push(`${where}.${field}.${metric} 应为有限数字`);
+        }
+      }
+    }
+    if (isPlainObject(entry.stockShare)) {
+      for (const metric of ['downloads', 'stars']) {
+        const share = entry.stockShare[metric];
+        if (isFiniteNumberOrNull(share)) {
+          if (share < 0 || share > 1 + 1e-9) {
+            errors.push(`${where}.stockShare.${metric} 应在 [0, 1]`);
+          }
+          if (metric === 'downloads') {
+            downloadShareSum += share;
+          } else {
+            starShareSum += share;
+          }
+        }
+      }
+    }
+    for (const field of ['stockMag', 'stockScore']) {
+      if (!isPlainObject(entry[field])) {
+        continue;
+      }
+      for (const metric of ['downloads', 'stars']) {
+        const value = entry[field][metric];
+        if (isFiniteNumberOrNull(value) && (value < 0 || value > 1 + 1e-9)) {
+          errors.push(`${where}.${field}.${metric} 应在 [0, 1]`);
+        }
+      }
+    }
+    for (const field of ['downloadChanges', 'starChanges']) {
       const windows = entry[field];
       if (!isPlainObject(windows)) {
         errors.push(`${where}.${field} 不是对象`);
@@ -1268,6 +1309,28 @@ export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {
         if (!isFiniteNumberOrNull(windows[window])) {
           errors.push(`${where}.${field}.${window} 应为数字`);
         }
+      }
+    }
+    for (const field of ['releaseUpdates', 'commits']) {
+      const windows = entry[field];
+      if (!isPlainObject(windows)) {
+        errors.push(`${where}.${field} 不是对象`);
+        continue;
+      }
+      for (const window of UPDATE_WINDOWS) {
+        if (!isFiniteNumberOrNull(windows[window])) {
+          errors.push(`${where}.${field}.${window} 应为数字`);
+        }
+      }
+    }
+    for (const field of ['releaseActivityRaw', 'commitActivityRaw']) {
+      if (!isFiniteNumberOrNull(entry[field]) || entry[field] < 0) {
+        errors.push(`${where}.${field} 应为非负有限数字`);
+      }
+    }
+    for (const field of ['releaseActivity', 'commitActivity']) {
+      if (!isFiniteNumberOrNull(entry[field]) || entry[field] < 0 || entry[field] > 1 + 1e-9) {
+        errors.push(`${where}.${field} 应在 [0, 1]`);
       }
     }
     for (const field of ['downloadsScore', 'starsScore', 'updateScore', 'newModMultiplier', 'penalty', 'score']) {
@@ -1287,6 +1350,21 @@ export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {
     }
     if (!Number.isInteger(entry.rank) || entry.rank < 1) {
       errors.push(`${where}.rank 应为正整数`);
+    }
+  }
+  // 占比总和：所有模组的 share 之和应≈1（全量全 0 时为 0）
+  if (heat.mods.length > 0) {
+    const hasDownloads = heat.mods.some(
+      (entry) => isFiniteNumberOrNull(entry?.totalDownloads) && entry.totalDownloads > 0,
+    );
+    const hasStars = heat.mods.some(
+      (entry) => isFiniteNumberOrNull(entry?.totalStars) && entry.totalStars > 0,
+    );
+    if (hasDownloads && Math.abs(downloadShareSum - 1) > 1e-3) {
+      errors.push(`${HEAT_INDEX_REL_PATH} 的 downloads stockShare 之和应≈1（实际 ${downloadShareSum.toFixed(6)}）`);
+    }
+    if (hasStars && Math.abs(starShareSum - 1) > 1e-3) {
+      errors.push(`${HEAT_INDEX_REL_PATH} 的 stars stockShare 之和应≈1（实际 ${starShareSum.toFixed(6)}）`);
     }
   }
   // 排名：1..N 唯一，按分数降序

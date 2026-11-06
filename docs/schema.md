@@ -654,7 +654,8 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 
 ### heat/index.json
 
-官方+社区全量模组的热度明细。所有窗口键为字符串 `"1"/"7"/"30"/"180"`：
+官方+社区全量模组的热度明细（v2）。下载/星标变化窗口键为 `"1"/"7"/"30"/"180"`，
+release/提交活动窗口键为 `"7"/"30"/"90"/"180"`：
 
 ```json
 {
@@ -668,10 +669,17 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
       "source": "official",
       "totalDownloads": 12345,
       "totalStars": 67,
+      "stockShare": { "downloads": 0.0213, "stars": 0.0042 },
+      "stockMag": { "downloads": 0.732, "stars": 0.41 },
+      "stockScore": { "downloads": 0.61, "stars": 0.45 },
       "downloadChanges": { "1": 0, "7": 3, "30": 10, "180": 120 },
       "starChanges": { "1": 0, "7": 1, "30": 2, "180": 9 },
-      "releaseUpdates": { "1": 0, "7": 1, "30": 1, "180": 4 },
-      "commits": { "1": 0.14, "7": 1, "30": 4, "180": 22 },
+      "releaseUpdates": { "7": 1, "30": 2, "90": 4, "180": 6 },
+      "commits": { "7": 1, "30": 4, "90": 12, "180": 22 },
+      "releaseActivityRaw": 0.81,
+      "commitActivityRaw": 1.42,
+      "releaseActivity": 0.7,
+      "commitActivity": 0.9,
       "downloadsScore": 0.5234,
       "starsScore": 0.6012,
       "updateScore": 0.4001,
@@ -684,15 +692,17 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 }
 ```
 
-- 百分位归一、窗口权重、组件公式、新 mod 倍率与惩罚见 README「热度表」；`score` 不裁剪，可 >1 或 <0。
-- `rank` 为 1..N 唯一排名（分数降序、同分按 repo 升序）；`commits` 是 participation 周粒度的近似值。
+- 存量占比/柔化、窗口权重、活动递减收益、新 mod 倍率与惩罚见 README「热度表」；`score` 不裁剪，可 >1 或 <0。
+- `stockShare` 之和≈1（validator 会校验，全量全 0 时允许 0）；`rank` 为 1..N 唯一排名
+  （分数降序、同分按 repo 升序）；`commits` 是 participation 周粒度的近似值。
 - repo 集合必须与 `index.json` + `community/index.json` 的并集一致。
 
 ### heat/summary.csv
 
 `heat/index.json` 的扁平表，列顺序固定：`repo,namePlain,source,totalDownloads,totalStars,`
-`downloads|stars|releaseUpdates|commits × 1d/7d/30d/180d,downloadsScore,starsScore,updateScore,newModMultiplier,penalty,score,rank`；
-UTF-8 BOM + CRLF。
+`stockShare{Downloads,Stars},stockMag{Downloads,Stars},downloads|stars × 1d/7d/30d/180d,`
+`releaseUpdates|commits × 7d/30d/90d/180d,releaseActivityRaw,commitActivityRaw,releaseActivity,commitActivity,`
+`downloadsScore,starsScore,updateScore,newModMultiplier,penalty,score,rank`；UTF-8 BOM + CRLF。
 
 ### heat/history/{daily,weekly,monthly}/
 

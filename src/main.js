@@ -52,6 +52,7 @@ import {
   HEAT_INDEX_REL_PATH,
   HEAT_SUMMARY_REL_PATH,
   HEAT_WINDOWS,
+  UPDATE_WINDOWS,
   HISTORY_LIMITS,
   HEAT_SUMMARY_COLUMNS,
   buildSnapshot,
@@ -1988,13 +1989,13 @@ async function runHeat(options, context) {
       downloadChanges,
       starChanges,
       releaseUpdates: Object.fromEntries(
-        HEAT_WINDOWS.map((window) => [
+        UPDATE_WINDOWS.map((window) => [
           window,
           releaseUpdatesInWindow(releases, nowMs, window),
         ]),
       ),
       commits: Object.fromEntries(
-        HEAT_WINDOWS.map((window) => [
+        UPDATE_WINDOWS.map((window) => [
           window,
           commitsInWindow(commitWeeks, commitState.fetchedAt, nowMs, window),
         ]),
@@ -2007,15 +2008,13 @@ async function runHeat(options, context) {
 
   const { entries } = computeHeat(heatInputs);
   for (const entry of entries) {
+    // 只对最终展示分做 4 位小数；占比/柔化/活动原始值保留全精度便于核对（占比和≈1 校验需要）
     entry.downloadsScore = round4(entry.downloadsScore);
     entry.starsScore = round4(entry.starsScore);
     entry.updateScore = round4(entry.updateScore);
     entry.newModMultiplier = round4(entry.newModMultiplier);
     entry.penalty = round4(entry.penalty);
     entry.score = round4(entry.score);
-    for (const window of HEAT_WINDOWS) {
-      entry.commits[window] = round4(entry.commits[window]);
-    }
   }
   const heatIndex = {
     formatVersion: HEAT_FORMAT_VERSION,
