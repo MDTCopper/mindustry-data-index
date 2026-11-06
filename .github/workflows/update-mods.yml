@@ -40,6 +40,11 @@ jobs:
       - name: 安装依赖
         run: npm ci
 
+      - name: 迁移旧 schemaVersion（0 API）
+        # formatVersion 1 → 2：旧 per-mod 文件、index、summary、status/changes 本地一次性补新字段；
+        # 已迁移时是 no-op，保证即使本轮 API 配额不足，validate 也不会因旧结构报错。
+        run: node src/main.js --migrate --out .
+
       - name: 更新模组索引
         # 官方：2h/周/月分档刷新；社区：GitHub topic 扫描 + Anuken 黑名单同步，与官方同构（独立 state）。
         # 配额共享：先官方后社区，不足时停止本次、保留已抓结果，下次按最久未刷新续跑。
