@@ -1,9 +1,9 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-06T13:57:08.230Z",
+  "generatedAt": "2026-11-06T14:52:40.602Z",
   "source": {
     "modsUrl": "https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json",
-    "modCount": 993
+    "modCount": 994
   },
   "mods": [
     {
@@ -6800,7 +6800,7 @@
       "descriptionPlain": "Runs the Mindustry campaign on a dedicated server: sector loading/saving, admin sector switching and admin research commands.",
       "version": "0.0.1-alpha",
       "minGameVersion": "160",
-      "lastUpdated": "2026-11-06T11:52:53Z",
+      "lastUpdated": "2026-11-06T13:38:51Z",
       "stars": 2,
       "hasIcon": false,
       "hasScripts": false,
@@ -11652,7 +11652,7 @@
       "descriptionPlain": "Java import of gier: revitalized. Plays different",
       "version": "v1",
       "minGameVersion": "160",
-      "lastUpdated": "2026-11-06T03:58:00Z",
+      "lastUpdated": "2026-11-06T13:57:38Z",
       "stars": 1,
       "hasIcon": false,
       "hasScripts": false,
@@ -12887,6 +12887,46 @@
       "latestCompatible": null,
       "compatRanges": 0,
       "releaseDataUpdatedAt": "2026-11-06T13:57:05.916Z"
+    },
+    {
+      "repo": "gghanera/mp-sectors",
+      "internalName": "mp-sectors",
+      "name": "MP Sectors",
+      "namePlain": "MP Sectors",
+      "author": "GGhanera",
+      "authorPlain": "GGhanera",
+      "descriptionPlain": "Runs one campaign sector per server instance, with a shared campaign folder (sector saves, sector info, research). Server-side only. Part of the multi-sector campaign setup.",
+      "version": "0.3.0",
+      "minGameVersion": "160",
+      "lastUpdated": "2026-11-06T13:56:54Z",
+      "stars": 0,
+      "hasIcon": false,
+      "hasScripts": false,
+      "hasJava": true,
+      "iosCompatible": null,
+      "legacyCompatible": null,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "releases/gghanera/mp-sectors.json",
+      "releaseCount": 1,
+      "tagCount": 1,
+      "removedCount": 0,
+      "totalDownloads": 1,
+      "allAssetsDownloads": 4,
+      "latestDownloads": 1,
+      "latestSizeBytes": 19453000,
+      "totalSizeBytes": 19453000,
+      "latestRelease": {
+        "tag": "v2.1.0",
+        "name": "MP Sectors 2.1.0",
+        "prerelease": false,
+        "publishedAt": "2026-11-06T13:15:24Z",
+        "downloads": 1,
+        "sizeBytes": 19453000
+      },
+      "latestCompatible": "v2.1.0",
+      "compatRanges": 1,
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "ggllfr/envalloc",
@@ -17997,7 +18037,7 @@
       },
       "latestCompatible": null,
       "compatRanges": 0,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:05.916Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "lossasikos/envedges",
@@ -18170,7 +18210,7 @@
       "version": "1.13",
       "minGameVersion": "160",
       "lastUpdated": "2026-11-03T13:00:34Z",
-      "stars": 14,
+      "stars": 15,
       "hasIcon": true,
       "hasScripts": false,
       "hasJava": true,
@@ -19297,7 +19337,7 @@
       "descriptionPlain": "原版扩展(VE) Vanilla Expansion 当前版本：2.1.2.6 - 区块更新第五部分 Current version: 2.1.2.6 - Sector Update Part 5. 最新可玩区块：镜林潭、寒尘界限、暗岩哨站、瓜瓤平原 Newest playable sector: Mirror Swamp, Icy Boundary, Slate Guardpost, Fruit Flats 当前开发阶段：第二章 - 玛瑞斯 Current development phase: Chapter 2 - Maress 请及时跟进版本。 The newer the better. 反馈请到QQ群：1036743313(7群) Also discuss everything and report issues on Vanilla Expansion's Discord server! 增加了少量原版科技树扩展内容以及塞普罗战役、行星发射终端后的一系列新内容。 经过一段时间的战役，塞普罗上的敌军已遭受重创，然而这些敌方炮塔与单位只是按照简单逻辑行事的空壳，敌人的活跃部队早在反击开始之前就已通过行星际加速器抵达并驻扎在另一颗星球了。尽快拿下行星发射终端，做好准备，追击敌人。 Enemies on Serpulo had been almost eradicated now. But these enemy facilities were just simple, unconscious dummies. The real, active army of Crux had already arrived at another planet far away from Serpulo through the interplanetary accelerator, slowly constructing new, more powerful bases there. Capture planetary launch terminal as soon as possible. And then, chase them. 注：新内容剧情时期为终端后，占领行星发射终端才能进行新的战役，即使这些区块的难度并不对应终端后。 Caution: Serpulo campaign (PLT&pre-PLT) fully completion is required. [accent]特别感谢名单： [accent]Special thanks: [accent]·悠闲的小凡（拉进交流群、参与测试等） [accent]·Momiji142857（整理并发布蓝图集、制作模组Java版、参与测试、指出地图错误等） [accent]·LS（Java多配方工厂前置库） [accent]·CN方柠檬FNM（新建队伍JS） [accent]·closesnew（激发模组制作、拉进交流群、制作hc版地图） [accent]·pardon（多配方工厂教程） [accent]·III_埃米伊斯_III（提供Json星球写法参考） [accent]·RC-C814（提供数据库排序JS参考） [accent]·€dm align（ [accent]·桜（提供区块图标文件名参考、指出地图错误等） [accent]·⌬⌬苏泽（处理autotile贴图） [accent]·miner（PartProgress高级写法、Json列表添加写法） [accent]·guiY归某人（提供数据库共享内容思路） [accent]·希恩斯（参与测试、指出地图错误等） [accent]·裙带菜Undaria（提供替换UI图标方法、制作材质包） [accent]·牢迁（建筑连锁特性） [accent]·燧影（爆混厂贴图） [accent]·屑钍.exe（飞碟压制场） [accent]·DeepSeek（单位命名、Bundle批量重排） [accent]·刘啊庆云 [accent]·bro只是喜欢猫猫 [accent]·水桶 [accent]·玖撧一壹丨 [accent]·Jimmy [accent]·幽灵 [accent]·一个双管炮 [accent]·Editors of Mindustry Unofficial Fandom Wiki（Mindustry Lore） [accent]·所有参与测试、提出建议和汇报错误的网友们 [accent]模组游玩反馈说明： [accent]Feedback instructions: 模组的开发、讨论与反馈集中在小凡群及其分群。模组没有开放专属的群，现有的群不限制交流内容。 反馈问题前，请检查模组版本、游戏版本、内容描述等信息，不要问已在模组文本中给出方案或新版本中已解决的问题，除非方案不可用、不清晰或问题未完全解决。 模组在移动端可能有卡顿甚至装上后无法游戏，这类问题暂无法解决，尽量不要混模。 模组的某些版本可能含有影响体验的错误或者常见问题，这些错误和问题暂时无法解决，是对应版本的正常现象。请耐心等待修复，不要反馈，否则后果自负。 The mod might be laggy on phones. Sometimes it may cause crashes when trying to enter the game. So far, such issues have no solutions. Loading VE together with other large mods is not recommended. There might be issues or problems that cannot be resolved right now. Please wait for later solutions patiently.",
       "version": "2.1.2.6",
       "minGameVersion": "160",
-      "lastUpdated": "2026-11-03T15:34:08Z",
+      "lastUpdated": "2026-11-06T13:10:45Z",
       "stars": 49,
       "hasIcon": true,
       "hasScripts": false,
@@ -21007,7 +21047,7 @@
       "version": "1.0.0-B-热狗？热狐！",
       "minGameVersion": "136",
       "lastUpdated": "2025-11-06T12:49:06Z",
-      "stars": 9,
+      "stars": 10,
       "hasIcon": true,
       "hasScripts": false,
       "hasJava": false,
@@ -26189,7 +26229,7 @@
       "version": "4.0.6.3",
       "minGameVersion": "160",
       "lastUpdated": "2026-10-31T16:11:52Z",
-      "stars": 162,
+      "stars": 163,
       "hasIcon": true,
       "hasScripts": false,
       "hasJava": true,
@@ -28940,10 +28980,10 @@
       "namePlain": "Anser Custom Difficulty",
       "author": "SarakaUnciv",
       "authorPlain": "SarakaUnciv",
-      "descriptionPlain": "1. This mod let you customize Casual Difficulty in game setting also make other Difficulty harder 2. Make all serpulo sector enemy base and can be turn off and require restart Make all Serpulo numbered sector enemy base Vanilla enemy base sector now have Extreme threat while other sector now have Eradication threat Vanilla enemy base sector map does not effect by threat level meaning they still have the same building (and wave?) as in vanilla Numbered sector that does not have enemy base in vanilla this mod will make them generate base Check out my other Anser mod name Comment on my Youtube if you wanna talk to me Link in repo It took me 3 attempt to beat Nuclear Production Complex with my OP Anser mod And then lost NPC after enemy send attack 1 time This mod was made in build 160.7",
-      "version": "2.0",
+      "descriptionPlain": "1. This mod let you customize Casual Difficulty in game setting also make other Difficulty harder 2. Make all serpulo sector enemy base and can be turn off and require restart Make all Serpulo numbered sector enemy base Vanilla enemy base sector now have Extreme threat while other sector now have Eradication threat Vanilla enemy base sector map does not effect by threat level meaning they still have the same building (and wave?) as in vanilla Numbered sector that does not have enemy base in vanilla this mod will make them generate base 3. Mark all serpulo vanilla enemy base sector with icon Eradication threat is marked with melting other threat is marked with shocked WARNING this mod will overwrite icon on all serpulo vanilla enemy base sector and can't be turn off Check out my other Anser mod name Comment on my Youtube if you wanna talk to me Link in repo It took me 3 attempt to beat Nuclear Production Complex with my OP Anser mod And then lost NPC after enemy send attack 1 time This mod was made in build 160.7",
+      "version": "2.1",
       "minGameVersion": "147",
-      "lastUpdated": "2026-11-06T09:12:12Z",
+      "lastUpdated": "2026-11-06T12:07:22Z",
       "stars": 0,
       "hasIcon": false,
       "hasScripts": true,
@@ -32084,7 +32124,7 @@
       "descriptionPlain": "Exoprosopa adds a new planet, Frostnova, into the game. Frostnova is a deceptively frozen planet. A volatile and hazardous tundra hides a dormant faction, Astral. It has a fully playable campaign with 19 campaign and 11 optional maps. Polished content & linear campaign progression. Contains over 320 pieces of unique content, including blocks, liquids, items, units and specialized guardian. Pure modded without reuse any vanilla content. [accent]If you find any issues or want to gives suggestions feel free to join the Exoprosopa Discord server. Check it on my profile. My username is tnmspiroctmain. Exoprosopa is available in the following languages: - English - Indonesian - Russian - Simplified Chinese Enjoy!",
       "version": "0.95",
       "minGameVersion": "160",
-      "lastUpdated": "2026-11-05T10:00:19Z",
+      "lastUpdated": "2026-11-06T13:58:17Z",
       "stars": 74,
       "hasIcon": true,
       "hasScripts": false,
@@ -36260,7 +36300,7 @@
       "descriptionPlain": "幻境永无止境 模组交流群：470748556 密码：2023730 服务器:103.40.14.91:42275 备用:114.66.28.186:45689",
       "version": "0.21",
       "minGameVersion": "160",
-      "lastUpdated": "2026-11-02T07:57:23Z",
+      "lastUpdated": "2026-11-06T13:03:55Z",
       "stars": 5,
       "hasIcon": true,
       "hasScripts": false,
@@ -36506,8 +36546,8 @@
       "releaseCount": 34,
       "tagCount": 40,
       "removedCount": 0,
-      "totalDownloads": 1582,
-      "allAssetsDownloads": 1582,
+      "totalDownloads": 1583,
+      "allAssetsDownloads": 1583,
       "latestDownloads": 18,
       "latestSizeBytes": 8563034,
       "totalSizeBytes": 285369797,
@@ -36521,7 +36561,7 @@
       },
       "latestCompatible": "1-20260804-123437",
       "compatRanges": 2,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zerattel/zmrpgu",
@@ -36594,7 +36634,7 @@
       },
       "latestCompatible": "v1.3",
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zinq7/beacons-yay",
@@ -36634,7 +36674,7 @@
       },
       "latestCompatible": null,
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zinwire/mine-dust",
@@ -36674,7 +36714,7 @@
       },
       "latestCompatible": "mindustry-mod",
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zion8992/zion-music",
@@ -36747,7 +36787,7 @@
       },
       "latestCompatible": "v1.0",
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zoggers-cc/major",
@@ -36886,7 +36926,7 @@
       },
       "latestCompatible": "Mindustry-mods",
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zxcurated/english-mlog",
@@ -36926,7 +36966,7 @@
       },
       "latestCompatible": "3",
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     },
     {
       "repo": "zxsrxt-kebab-case/mindustry-noweather",
@@ -36966,7 +37006,7 @@
       },
       "latestCompatible": "v0.13.0",
       "compatRanges": 1,
-      "releaseDataUpdatedAt": "2026-11-06T13:57:08.230Z"
+      "releaseDataUpdatedAt": "2026-11-06T14:52:40.602Z"
     }
   ],
   "skipped": []
