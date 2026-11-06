@@ -1,11 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "576576/mdtc",
-  "generatedAt": "2026-11-06T08:50:43.533Z",
-  "source": {
-    "releasesEtag": "W/\"66e8381351fcb3cb9b10dd68133ed84a138d782583f736558244cbc259901030\"",
-    "releasesFetchedAt": "2026-11-06T08:50:43.533Z"
-  },
+  "generatedAt": "2026-11-06T09:15:30.583Z",
   "releases": [
     {
       "tag": "nightly",
@@ -50,33 +46,6 @@
       ]
     },
     {
-      "tag": "v2.0.4-beta",
-      "name": "Beta 2.0.4",
-      "prerelease": false,
-      "publishedAt": "2026-05-17T07:55:39Z",
-      "htmlUrl": "https://github.com/576576/mdtC/releases/tag/v2.0.4-beta",
-      "modVersion": "${version}",
-      "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/576576/mdtC/releases/download/v2.0.4-beta/mdtc-2.0.4-Desktop.jar",
-      "sourceArchiveUrl": "https://github.com/576576/mdtc/archive/refs/tags/v2.0.4-beta.zip",
-      "assets": [
-        {
-          "name": "mdtc-2.0.4-Cli.jar",
-          "size": 492808,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/576576/mdtC/releases/download/v2.0.4-beta/mdtc-2.0.4-Cli.jar"
-        },
-        {
-          "name": "mdtc-2.0.4-Desktop.jar",
-          "size": 1615857,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/576576/mdtC/releases/download/v2.0.4-beta/mdtc-2.0.4-Desktop.jar"
-        }
-      ]
-    },
-    {
       "tag": "alpha-latest",
       "name": "Alpha (5dd1028)",
       "prerelease": false,
@@ -100,6 +69,33 @@
           "size": 1616406,
           "downloadCount": 2,
           "downloadUrl": "https://github.com/576576/mdtC/releases/download/alpha-latest/mdtc-5dd1028-Desktop.jar"
+        }
+      ]
+    },
+    {
+      "tag": "v2.0.4-beta",
+      "name": "Beta 2.0.4",
+      "prerelease": false,
+      "publishedAt": "2026-05-17T07:55:39Z",
+      "htmlUrl": "https://github.com/576576/mdtC/releases/tag/v2.0.4-beta",
+      "modVersion": "${version}",
+      "minGameVersion": "157",
+      "metadataPath": "mod.hjson",
+      "metadataStatus": "ok",
+      "downloadUrl": "https://github.com/576576/mdtC/releases/download/v2.0.4-beta/mdtc-2.0.4-Desktop.jar",
+      "sourceArchiveUrl": "https://github.com/576576/mdtc/archive/refs/tags/v2.0.4-beta.zip",
+      "assets": [
+        {
+          "name": "mdtc-2.0.4-Cli.jar",
+          "size": 492808,
+          "downloadCount": 4,
+          "downloadUrl": "https://github.com/576576/mdtC/releases/download/v2.0.4-beta/mdtc-2.0.4-Cli.jar"
+        },
+        {
+          "name": "mdtc-2.0.4-Desktop.jar",
+          "size": 1615857,
+          "downloadCount": 2,
+          "downloadUrl": "https://github.com/576576/mdtC/releases/download/v2.0.4-beta/mdtc-2.0.4-Desktop.jar"
         }
       ]
     },
