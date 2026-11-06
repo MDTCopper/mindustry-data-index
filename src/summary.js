@@ -16,6 +16,7 @@ export const SUMMARY_COLUMNS = [
   'latestModVersion',
   'latestMinGameVersion',
   'iconUrl',
+  'releasesPath',
 ];
 
 function compareRows(left, right) {

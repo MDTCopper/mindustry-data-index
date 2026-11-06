@@ -51,7 +51,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.json summary.json summary.csv
-          # releases / state 目录首次运行时可能还没有文件
+          # -A 覆盖 releases/<owner>/<repo>.json 新结构的新增目录，以及旧 flat 文件迁移后的删除
           git add -A releases 2>/dev/null || true
           git add -A state 2>/dev/null || true
           if git diff --cached --quiet; then

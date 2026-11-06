@@ -14,6 +14,11 @@ import {
 
 const GENERATED_AT = '2026-11-06T03:00:00.000Z';
 
+function releasesRelPath(repo) {
+  const [owner, name] = repo.split('/');
+  return `releases/${owner}/${name}.json`;
+}
+
 function validFixture(repo = 'owner/demo') {
   const stem = repo.replace('/', '_');
   const release = {
@@ -60,7 +65,7 @@ function validFixture(repo = 'owner/demo') {
           hasJava: true,
           iconUrl: `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/${stem}`,
           iconHash: null,
-          releasesPath: `releases/${stem}.json`,
+          releasesPath: releasesRelPath(repo),
           releaseCount: 1,
           totalDownloads: 4,
           allAssetsDownloads: 4,
@@ -107,6 +112,7 @@ function summaryRow(entry, releaseFile) {
     latestModVersion: first?.modVersion ?? null,
     latestMinGameVersion: first?.minGameVersion ?? null,
     iconUrl: entry.iconUrl,
+    releasesPath: entry.releasesPath,
   };
 }
 
@@ -121,7 +127,8 @@ async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mods-index-validate-'));
   await mkdir(path.join(dir, 'releases'), { recursive: true });
   await writeFile(path.join(dir, 'index.json'), JSON.stringify(index, null, 2));
-  const relPath = `releases/${releaseFile.repo.replace('/', '_')}.json`;
+  const relPath = releasesRelPath(releaseFile.repo);
+  await mkdir(path.dirname(path.join(dir, relPath)), { recursive: true });
   await writeFile(path.join(dir, relPath), JSON.stringify(releaseFile, null, 2));
   await writeSummaryFiles(dir, index, releaseFile);
   return dir;
@@ -167,7 +174,7 @@ test('releasesPath 指向的文件不存在能被发现', async (t) => {
   const fixture = validFixture();
   const dir = await makeFixtureDir(fixture);
   t.after(() => rm(dir, { recursive: true, force: true }));
-  await unlink(path.join(dir, 'releases', 'owner_demo.json'));
+  await unlink(path.join(dir, 'releases', 'owner', 'demo.json'));
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('文件不存在')));
 });
@@ -185,7 +192,8 @@ test('未被 index 引用的 releases 文件只算警告', async (t) => {
   const fixture = validFixture();
   const dir = await makeFixtureDir(fixture);
   t.after(() => rm(dir, { recursive: true, force: true }));
-  await writeFile(path.join(dir, 'releases', 'extra_extra.json'), '{}');
+  await mkdir(path.join(dir, 'releases', 'extra'), { recursive: true });
+  await writeFile(path.join(dir, 'releases', 'extra', 'extra.json'), '{}');
   const result = await validateDir(dir);
   assert.deepEqual(result.errors, []);
   assert.ok(result.warnings.some((message) => message.includes('没有被 index 引用')));
@@ -354,19 +362,20 @@ test('hasIcon=false 却给 iconUrl、iconHash 类型不对会被发现', async (
   assert.ok(result.errors.some((message) => message.includes('iconHash 应为非空字符串或 null')));
 });
 
-// ---------- releasesPath 路径段校验（repo 名以点结尾） ----------
+// ---------- releasesPath 路径段校验（新 owner/repo 结构） ----------
 
-test('isValidReleasesPath：只按路径段判断，文件名中间的 .. 合法', () => {
-  assert.equal(isValidReleasesPath('releases/foo_bar..json'), true);
-  assert.equal(isValidReleasesPath('releases/maksimk792_some-music..json'), true);
-  assert.equal(isValidReleasesPath('releases/owner_repo.json'), true);
+test('isValidReleasesPath：新路径三段合法，旧 flat / 穿越 / 多层目录非法', () => {
+  assert.equal(isValidReleasesPath('releases/owner/repo.json'), true);
+  assert.equal(isValidReleasesPath('releases/Anuken/Example-Mod_2.json'), true);
+  assert.equal(isValidReleasesPath('releases/maksimk792/some-music..json'), true);
 
+  assert.equal(isValidReleasesPath('releases/owner_repo.json'), false); // 旧 flat
   assert.equal(isValidReleasesPath('releases/../x.json'), false);
-  assert.equal(isValidReleasesPath('releases/a/b.json'), false);
-  assert.equal(isValidReleasesPath('releases//x.json'), false);
+  assert.equal(isValidReleasesPath('releases/a/b/c.json'), false);
+  assert.equal(isValidReleasesPath('releases//repo.json'), false);
+  assert.equal(isValidReleasesPath('releases/owner/.json'), false);
   assert.equal(isValidReleasesPath('index.json'), false);
-  assert.equal(isValidReleasesPath('releases/foo.txt'), false);
-  assert.equal(isValidReleasesPath('releases/..'), false);
+  assert.equal(isValidReleasesPath('releases/owner/repo.txt'), false);
   assert.equal(isValidReleasesPath(null), false);
 });
 
@@ -381,7 +390,7 @@ test('repo 名以点结尾（文件名含 ..）时正常校验、不再误报未
   assert.equal(result.releaseFileCount, 1);
 });
 
-test('releasesPath 含路径穿越 / 多层目录会被判非法', async (t) => {
+test('releasesPath 含路径穿越 / 更深目录会被判非法', async (t) => {
   const traversal = validFixture();
   traversal.index.mods[0].releasesPath = 'releases/../x.json';
   const dir = await makeFixtureDir(traversal);
@@ -390,11 +399,24 @@ test('releasesPath 含路径穿越 / 多层目录会被判非法', async (t) => 
   assert.ok(result.errors.some((message) => message.includes('releasesPath 非法')));
 
   const nested = validFixture();
-  nested.index.mods[0].releasesPath = 'releases/a/b.json';
+  nested.index.mods[0].releasesPath = 'releases/a/b/c.json';
   const nestedDir = await makeFixtureDir(nested);
   t.after(() => rm(nestedDir, { recursive: true, force: true }));
   const nestedResult = await validateDir(nestedDir);
   assert.ok(nestedResult.errors.some((message) => message.includes('releasesPath 非法')));
+});
+
+test('旧 flat 文件仍存在时给迁移未完成 warning', async (t) => {
+  const fixture = validFixture();
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await writeFile(
+    path.join(dir, 'releases', 'owner_demo.json'),
+    JSON.stringify(fixture.releaseFile, null, 2),
+  );
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.ok(result.warnings.some((message) => message.includes('旧 flat 路径')));
 });
 
 // ---------- 下载量/体积统计与总表 ----------

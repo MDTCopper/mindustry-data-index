@@ -2,7 +2,8 @@
 
 数据文件分三组：
 
-- 模组索引：仓库根目录的 `index.json` 与 `releases/<owner>_<repo>.json`；
+- 模组索引：仓库根目录的 `index.json` 与 `releases/<owner>/<repo>.json`（旧 flat 路径
+  `releases/<owner>_<repo>.json` 已废弃，运行时自动迁移并删除）；
 - Mindustry 版本列表：`mindustry/versions.json`；
 - 最小版本门禁：`mindustry/mod-gate.json`；
 - 另有一个维护用文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
@@ -61,7 +62,7 @@
 | `hasScripts` / `hasJava` | boolean | 官方列表的脚本/Java 标记 |
 | `iconUrl` | string \| null | 官方图标地址 `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/<owner>_<repo>`（repo 的 `/` 换成 `_`，不带扩展名，与启动器 `githubModIconBase` 一致）。`hasIcon === false` 时为 `null`；只记地址，不下载图标字节 |
 | `iconHash` | string \| null | 官方列表的 `iconHash` 原样保留（多数模组没有），供客户端按哈希做图标缓存 |
-| `releasesPath` | string \| null | per-mod 文件相对路径（`releases/<owner>_<repo>.json`）；`null` 表示尚未成功抓取过（见 `skipped`） |
+| `releasesPath` | string \| null | per-mod 文件相对路径（`releases/<owner>/<repo>.json`，owner/name 保留大小写）；`null` 表示尚未成功抓取过（见 `skipped`） |
 | `releaseCount` | number | 该模组 release 条数（不含 draft）；抓取失败时保留旧值 |
 | `totalDownloads` | number | 历史累计下载量：所有 release 的**首选资产** `downloadCount` 之和（首选资产口径见下；无首选资产按 0） |
 | `allAssetsDownloads` | number | 所有 release 的全部资产 `downloadCount` 之和（完整口径，含非首选资产） |
@@ -84,13 +85,18 @@
 | `repo` | string | 本次抓取失败的仓库 |
 | `reason` | string | `http-404`、`http-451`、`http-5xx` 等 HTTP 状态，或 `network`、`rate-limit` |
 
-抓取失败时保留旧 `releases/*.json` 与旧 `releaseCount` / `latestRelease`；若从未成功抓取过，
+抓取失败时保留旧 `releases/<owner>/<repo>.json` 与旧 `releaseCount` / `latestRelease`；若从未成功抓取过，
 `releasesPath` 为 `null`、`releaseCount` 为 `0`、`latestRelease` 为 `null`，统计字段为 0 / `null`。
 
-## releases/<owner>_<repo>.json
+## releases/<owner>/<repo>.json
 
 **只存数据**：分页 ETag 与抓取时间在 `state/refresh.json`，这里不再放 `source`（旧格式文件里的
 `source.releasesEtag` / `releasesFetchedAt` 读取时兼容忽略，不参与内容比较）。
+
+路径按 repo 的 owner/name 分目录并保留大小写。**迁移**：旧 flat 路径 `releases/<owner>_<repo>.json`
+已废弃；运行时优先读新路径，新路径不存在则读旧 flat 文件当缓存（`generatedAt`、`source`、分页 state
+全部沿用），把内容写到新路径后删除旧文件，不会重新抓取（迁移首轮会重写文件位置，之后 0 变化）。
+`validate` 发现旧 flat 文件会给「迁移未完成」警告。
 
 ```json
 {
@@ -175,7 +181,8 @@
       "latestPrerelease": false,
       "latestModVersion": "2.0-159",
       "latestMinGameVersion": "159",
-      "iconUrl": "https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/sk7725_betamindy"
+      "iconUrl": "https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/sk7725_betamindy",
+      "releasesPath": "releases/sk7725/betamindy.json"
     }
   ]
 }
@@ -189,7 +196,7 @@
 | `totals.releases` | number | 所有模组 `releaseCount` 之和 |
 | `totals.downloads` | number | 所有模组 `totalDownloads` 之和 |
 | `totals.sizeBytes` | number | 所有模组 `totalSizeBytes` 之和（`null` 按 0 计） |
-| `mods[].repo` 等 | string | `repo`/`name`/`author`/`latestTag`/`latestModVersion`/`latestMinGameVersion`/`iconUrl`，无值时为 `null` |
+| `mods[].repo` 等 | string | `repo`/`name`/`author`/`latestTag`/`latestModVersion`/`latestMinGameVersion`/`iconUrl`/`releasesPath`，无值时为 `null` |
 | `mods[].stars` / 统计字段 | number \| null | 与 index 条目同名字段一致；`latestSizeBytes`/`totalSizeBytes` 可为 `null` |
 | `mods[].latestPrerelease` | boolean \| null | 最新 release 的预发布标记 |
 
@@ -197,7 +204,7 @@
 
 与 `summary.json` 的 `mods[]` 同列（不含 `totals`），列顺序：
 
-`repo,name,author,stars,releaseCount,totalDownloads,allAssetsDownloads,latestDownloads,latestSizeBytes,totalSizeBytes,latestTag,latestPrerelease,latestModVersion,latestMinGameVersion,iconUrl`
+`repo,name,author,stars,releaseCount,totalDownloads,allAssetsDownloads,latestDownloads,latestSizeBytes,totalSizeBytes,latestTag,latestPrerelease,latestModVersion,latestMinGameVersion,iconUrl,releasesPath`
 
 - UTF-8 **带 BOM**（Excel 直接打开中文不乱码），CRLF 换行；
 - 逗号、双引号、换行按 CSV 规则转义（字段加引号、内部 `"` 写成 `""`）；
@@ -235,7 +242,7 @@
 第 4 页起每 90 天。每轮按 `fetchedAt` 判断到期页，第 1 页带旧 ETag 条件请求；抓到的页按 tag 覆盖缓存，
 没抓到的旧条目保留；合并后按 `publishedAt` 降序（同时间按 tag 升序）。
 
-per-mod 文件与调度状态分离：ETag 每天变也不会重写 `releases/*.json`，只有 `releases` 数据真的变化
+per-mod 文件与调度状态分离：ETag 每天变也不会重写 `releases/<owner>/<repo>.json`，只有 `releases` 数据真的变化
 （下载量/体积/元数据）才重写；调度时间变化只改 `state/refresh.json`。`--no-cache` 会忽略 state 与旧文件，
 全量抓所有页。
 

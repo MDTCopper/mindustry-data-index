@@ -7,7 +7,7 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 
 | 数据集 | 产物 | 用途 | 更新频率 |
 | --- | --- | --- | --- |
-| 模组索引 | `index.json`、`releases/<owner>_<repo>.json` | 官方模组列表里每个模组的全部 release、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接 | 每天一次 |
+| 模组索引 | `index.json`、`releases/<owner>/<repo>.json` | 官方模组列表里每个模组的全部 release、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接 | 每天一次 |
 | 游戏版本列表 | `mindustry/versions.json` | 官方 Mindustry 全部正式版 + 最新 BE，字段与启动器 `remote/mindustry_versions.json` 快照兼容 | 约每 30 分钟一次 |
 | 最小版本门禁 | `mindustry/mod-gate.json` | 每个游戏版本要求的最低模组版本（脚本模组 / Java 模组），与启动器 `remote/mmgvm.hjson` 同语义 | 约每 30 分钟一次 |
 
@@ -27,25 +27,29 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 ## 产物与 raw 地址
 
 ```
-index.json                      # 全量模组索引（官方列表顺序，含下载量/体积统计）
-releases/<owner>_<repo>.json    # 单个模组的全部 release + 逐 tag 元数据（只存数据）
-summary.json                    # 下载量/体积总表（含全局合计，按下载量降序）
-summary.csv                     # 同一份总表的 CSV（UTF-8 BOM，Excel 直接打开）
-state/refresh.json              # 分页调度缓存（各模组第 1 页 ETag + 深层页最近抓取时间）
-mindustry/versions.json         # Mindustry 可用版本列表（正式版 + 最新 BE）
-mindustry/mod-gate.json         # 逐版本最小模组版本门禁 + 合并后的 rules
-mindustry/heartbeat.json        # 每日心跳，仅用于保持仓库活跃（见下）
+index.json                              # 全量模组索引（官方列表顺序，含下载量/体积统计）
+releases/<owner>/<repo>.json            # 单个模组的全部 release + 逐 tag 元数据（只存数据）
+summary.json                            # 下载量/体积总表（含全局合计，按下载量降序）
+summary.csv                             # 同一份总表的 CSV（UTF-8 BOM，Excel 直接打开）
+state/refresh.json                      # 分页调度缓存（各模组第 1 页 ETag + 深层页最近抓取时间）
+mindustry/versions.json                 # Mindustry 可用版本列表（正式版 + 最新 BE）
+mindustry/mod-gate.json                 # 逐版本最小模组版本门禁 + 合并后的 rules
+mindustry/heartbeat.json                # 每日心跳，仅用于保持仓库活跃（见下）
 ```
 
-`releases/` 文件名把 repo 里的 `/` 换成 `_` 并保留大小写（如 `releases/Anuken_ExampleMod.json`）。
+per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写保留（如
+`releases/Anuken/ExampleMod.json`、`releases/mindustrytool/mindustrytoolmod.json`）。
+旧版本的 flat 路径 `releases/<owner>_<repo>.json` 已废弃：运行时会优先读新路径，新路径不存在时
+读旧 flat 文件当缓存（数据、`generatedAt`、分页 state 都沿用），**本轮把内容写到新路径后删除旧文件**，
+不会触发重新抓取；迁移完成后 `releases/` 下只保留新结构。
 产物可直接按 raw 地址读取，例如：
 
-- `https://raw.githubusercontent.com/<你的账号>/mindustry-data-index/main/index.json`
-- `https://raw.githubusercontent.com/<你的账号>/mindustry-data-index/main/summary.json`
-- `https://raw.githubusercontent.com/<你的账号>/mindustry-data-index/main/summary.csv`
-- `https://raw.githubusercontent.com/<你的账号>/mindustry-data-index/main/releases/Anuken_ExampleMod.json`
-- `https://raw.githubusercontent.com/<你的账号>/mindustry-data-index/main/mindustry/versions.json`
-- `https://raw.githubusercontent.com/<你的账号>/mindustry-data-index/main/mindustry/mod-gate.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/index.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/summary.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/summary.csv`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/releases/Anuken/ExampleMod.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/versions.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/mod-gate.json`
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
@@ -56,15 +60,15 @@ mindustry/heartbeat.json        # 每日心跳，仅用于保持仓库活跃（�
   `latestDownloads`、`latestSizeBytes`、`totalSizeBytes`；`latestRelease` 里也带 `downloads`/`sizeBytes`。
   `skipped` 记录本次抓取失败的仓库。`iconUrl` 与启动器 `githubModIconBase` 一致
   （`icons/<owner>_<repo>`，`hasIcon === false` 时为 `null`），`iconHash` 原样保留官方值供客户端做缓存。
-- `releases/*.json`：每条 release 有 `tag`、`name`、`prerelease`、`publishedAt`、`htmlUrl`、
+- `releases/<owner>/<repo>.json`：每条 release 有 `tag`、`name`、`prerelease`、`publishedAt`、`htmlUrl`、
   `modVersion`、`minGameVersion`、`metadataPath`、`metadataStatus`、`downloadUrl`、
   `sourceArchiveUrl`、`assets`。**首选资产口径与 `downloadUrl` 一致**：`hasJava` 取体积最大的 `.jar`，
   否则取体积最大的 `.zip`；没有对应资产时下载量按 0、体积为 `null`（`downloadUrl` 仍回落源码归档，
   启动器对「Java 模组没有 jar」是禁用下载、不给按钮）。
 - `summary.json`：`totals`（`mods`/`releases`/`downloads`/`sizeBytes` 全局合计）+ `mods[]`
   （`repo`、`name`、`author`、`stars`、`releaseCount`、5 个统计字段、`latestTag`/`latestPrerelease`/
-  `latestModVersion`/`latestMinGameVersion`、`iconUrl`），按 `totalDownloads` 降序（并列按 `stars`
-  降序、`repo` 升序）；无 release / 无资产的模组也保留，数值为 0 或 `null`。
+  `latestModVersion`/`latestMinGameVersion`、`iconUrl`、`releasesPath`），按 `totalDownloads` 降序
+  （并列按 `stars` 降序、`repo` 升序）；无 release / 无资产的模组也保留，数值为 0 或 `null`。
 - `summary.csv`：与 `summary.json` 同列（不含 `totals`），UTF-8 **带 BOM**、CRLF 换行，逗号/引号/换行
   按 CSV 规则转义，可直接用 Excel 打开。
 - `state/refresh.json`：只给增量调度用（`page1Etag` + `page1FetchedAt` + 深层页抓取时间），
@@ -142,7 +146,7 @@ node src/main.js --out tmp/gate --datasets gate \
 | `--versions-pages <n>` | 只抓版本列表前 n 页（仅本地验证，正式运行不要用） |
 | `--versions-file <路径>` | 门禁用本地版本快照当输入（仅 `gate`） |
 | `--no-cache` | 忽略旧产物与 `state/refresh.json`，全量重抓（所有页都抓、不复用旧元数据） |
-| `--keep-missing-files` | 不删除官方列表中已消失模组的 `releases/*.json` |
+| `--keep-missing-files` | 不删除官方列表中已消失模组的 `releases/<owner>/<repo>.json` |
 | `--dry-run` | 只抓取与计算，不写文件 |
 | `--verbose` | 输出增量细节（304、新抓/复用元数据、请求统计） |
 
@@ -185,7 +189,10 @@ GitHub releases API 每页最多 100 条、按新→旧返回。越老的 tag �
 
 ## 限制
 
-- 只覆盖官方模组列表内的模组；列表里被移除的模组，其 `releases/*.json` 会在下次全量运行中删除。
+- 只覆盖官方模组列表内的模组；列表里被移除的模组，其 `releases/<owner>/<repo>.json` 会在下次全量运行中删除。
+- **路径迁移**：per-mod 文件已从 `releases/<owner>_<repo>.json` 改为 `releases/<owner>/<repo>.json`。
+  首次运行会读取旧 flat 文件当缓存、写入新路径并删除旧文件（不重新抓取）；之后只走新路径，
+  `validate` 若发现旧 flat 文件会给出「迁移未完成」警告。
 - **tag ≠ release**：只收录 GitHub 上有 release 的 tag，仓库里没有建 release 的 tag 不会出现。
   官方列表里有不少模组 0 tag / 0 release，这类模组照样有 per-mod 文件（`releases: []`、`releaseCount: 0`）。
 - **特殊 tag**：取 raw 元数据时优先对整个 tag 做 URL 编码（CJK、`+`、含 `/` 的 tag 实测可取），

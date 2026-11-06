@@ -2,7 +2,7 @@
 
 import { mkdir, readdir, readFile, rename, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { resolveReleaseFile } from './paths.js';
+import { resolveReleaseFileForDelete } from './paths.js';
 
 export const INDEX_FILE = 'index.json';
 export const RELEASES_DIR = 'releases';
@@ -77,26 +77,37 @@ export function indexBodyChanged(previous, next) {
   return false;
 }
 
+// 递归枚举 releases/**/*.json（返回 posix 相对路径），兼容旧 flat 文件
 export async function listReleaseFiles(outDir) {
-  let entries;
-  try {
-    entries = await readdir(path.join(outDir, RELEASES_DIR), {
-      withFileTypes: true,
-    });
-  } catch (error) {
-    if (error.code === 'ENOENT') {
-      return [];
+  const releasesDir = path.join(outDir, RELEASES_DIR);
+  const files = [];
+
+  async function walk(dir, prefix) {
+    let entries;
+    try {
+      entries = await readdir(dir, { withFileTypes: true });
+    } catch (error) {
+      if (error.code === 'ENOENT' && dir === releasesDir) {
+        return;
+      }
+      throw error;
     }
-    throw error;
+    for (const entry of entries) {
+      const relPath = `${prefix}/${entry.name}`;
+      if (entry.isDirectory()) {
+        await walk(path.join(dir, entry.name), relPath);
+      } else if (entry.isFile() && entry.name.endsWith('.json')) {
+        files.push(relPath);
+      }
+    }
   }
-  return entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
-    .map((entry) => `${RELEASES_DIR}/${entry.name}`)
-    .sort();
+
+  await walk(releasesDir, RELEASES_DIR);
+  return files.sort();
 }
 
 export async function deleteReleaseFile(outDir, relPath) {
-  const file = resolveReleaseFile(outDir, relPath);
+  const file = resolveReleaseFileForDelete(outDir, relPath);
   try {
     await unlink(file);
     return true;

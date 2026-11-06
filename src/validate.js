@@ -72,7 +72,33 @@ function isNumberOrNull(value) {
 // 官方列表里确有 repo 名以点结尾（如 maksimk792/some-music.），文件名中间会出现合法的 `..`
 // （releases/maksimk792_some-music..json），不能当成路径穿越。
 // 口径与 paths.js 的 resolveReleaseFile 一致：只允许 releases/ 下的单层 .json。
+// 新路径：releases/<owner>/<repo>.json 恰好三段；旧 flat 路径单独识别用于迁移 warning
 export function isValidReleasesPath(relPath) {
+  if (
+    typeof relPath !== 'string' ||
+    !relPath.startsWith(`${RELEASES_DIR}/`) ||
+    !relPath.endsWith('.json')
+  ) {
+    return false;
+  }
+  const segments = relPath.split('/');
+  if (segments.length !== 3) {
+    return false;
+  }
+  const [dir, owner, fileName] = segments;
+  return (
+    dir === RELEASES_DIR &&
+    owner !== '' &&
+    owner !== '.' &&
+    owner !== '..' &&
+    fileName !== '' &&
+    fileName !== '.' &&
+    fileName !== '..' &&
+    fileName.length > '.json'.length
+  );
+}
+
+export function isLegacyReleasesPath(relPath) {
   if (
     typeof relPath !== 'string' ||
     !relPath.startsWith(`${RELEASES_DIR}/`) ||
@@ -628,6 +654,7 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
     'latestModVersion',
     'latestMinGameVersion',
     'iconUrl',
+    'releasesPath',
   ];
   for (const [position, row] of summary.mods.entries()) {
     const where = `summary.mods[${position}]`;
@@ -689,6 +716,9 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
     }
     if (row.iconUrl !== indexEntry.iconUrl) {
       errors.push(`${where}.iconUrl 与 index 不一致`);
+    }
+    if (row.releasesPath !== (indexEntry.releasesPath ?? null)) {
+      errors.push(`${where}.releasesPath 与 index 不一致`);
     }
   }
   for (const mod of indexMods) {
@@ -936,7 +966,9 @@ export async function validateDir(dir) {
         }
       }
       for (const relPath of releaseFiles) {
-        if (!usedFiles.has(relPath)) {
+        if (isLegacyReleasesPath(relPath)) {
+          warnings.push(`${relPath} 是旧 flat 路径（迁移未完成）`);
+        } else if (!usedFiles.has(relPath)) {
           warnings.push(`${relPath} 没有被 index 引用`);
         }
       }

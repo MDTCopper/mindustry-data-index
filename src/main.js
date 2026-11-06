@@ -32,7 +32,13 @@ import {
   normalizeRefreshState,
   stateBodyChanged,
 } from './refresh-state.js';
-import { releasesRelPath, resolveReleaseFile, assertRepo } from './paths.js';
+import {
+  releasesRelPath,
+  releasesLegacyRelPath,
+  resolveReleaseFile,
+  resolveReleaseFileForDelete,
+  assertRepo,
+} from './paths.js';
 import {
   readJsonIfExists,
   readTextIfExists,
@@ -337,18 +343,34 @@ async function processMod(context) {
     previousState,
   } = context;
   const relPath = releasesRelPath(mod.repo);
+  const legacyRelPath = releasesLegacyRelPath(mod.repo);
   const oldEntry = oldEntries.get(mod.repo.toLowerCase()) ?? null;
   const hasJava = mod.hasJava === true;
 
   let previous = null;
+  let legacyToDelete = null;
   if (options.cache) {
     try {
-      const oldFile = await readJsonIfExists(resolveReleaseFile(outDir, relPath));
-      if (oldFile && oldFile.repo === mod.repo && Array.isArray(oldFile.releases)) {
-        previous = oldFile;
+      const newFile = await readJsonIfExists(resolveReleaseFile(outDir, relPath));
+      if (newFile && newFile.repo === mod.repo && Array.isArray(newFile.releases)) {
+        previous = newFile;
       }
     } catch (error) {
-      log(`[警告] ${mod.repo} 的旧数据不可用：${error.message}`);
+      log(`[警告] ${mod.repo} 的新路径数据不可用：${error.message}`);
+    }
+    if (!previous) {
+      // 兼容旧 flat 路径：读出来当缓存，本轮迁到 releases/<owner>/<repo>.json 后删除旧文件
+      try {
+        const legacyFile = await readJsonIfExists(
+          resolveReleaseFileForDelete(outDir, legacyRelPath),
+        );
+        if (legacyFile && legacyFile.repo === mod.repo && Array.isArray(legacyFile.releases)) {
+          previous = legacyFile;
+          legacyToDelete = legacyRelPath;
+        }
+      } catch (error) {
+        log(`[警告] ${mod.repo} 的旧 flat 数据不可用：${error.message}`);
+      }
     }
   }
 
@@ -423,13 +445,25 @@ async function processMod(context) {
     const nextFile = buildReleasesFile({
       repo: mod.repo,
       releases: mergedReleases,
-      generatedAt: now,
+      // 数据没变但只是迁移路径时沿用旧 generatedAt，避免 index 的 releaseDataUpdatedAt 抖动
+      generatedAt: releaseFileBodyChanged(previous, {
+        formatVersion: 1,
+        repo: mod.repo,
+        releases: mergedReleases,
+      })
+        ? now
+        : (previous?.generatedAt ?? now),
     });
     const changed = releaseFileBodyChanged(previous, nextFile);
-    if (changed && !options.dryRun) {
+    const shouldWrite = changed || legacyToDelete !== null;
+    if (shouldWrite && !options.dryRun) {
       await writeJsonAtomic(resolveReleaseFile(outDir, relPath), nextFile);
+      if (legacyToDelete !== null) {
+        await deleteReleaseFile(outDir, legacyToDelete);
+        log(`[${mod.repo}] 旧 flat 文件已迁移到 ${relPath}`);
+      }
     }
-    const finalFile = changed ? nextFile : (previous ?? nextFile);
+    const finalFile = shouldWrite ? nextFile : (previous ?? nextFile);
 
     // 更新本模组的分页调度状态
     const nextState = cloneModState(modState);
@@ -475,11 +509,27 @@ async function processMod(context) {
       changed,
     };
   } catch (error) {
-    // 单页失败：保留旧数据/旧 state，记 skipped，不写坏文件
+    // 单页失败：保留旧数据/旧 state，记 skipped，不写坏文件；但旧 flat 文件仍尽量迁移到新路径
     console.error(`[跳过] ${mod.repo}：${error.message}`);
+    let finalFile = previous;
+    if (previous && legacyToDelete !== null && !options.dryRun) {
+      try {
+        finalFile = buildReleasesFile({
+          repo: mod.repo,
+          releases: previous.releases,
+          generatedAt: previous.generatedAt ?? now,
+        });
+        await writeJsonAtomic(resolveReleaseFile(outDir, relPath), finalFile);
+        await deleteReleaseFile(outDir, legacyToDelete);
+        log(`[${mod.repo}] 旧 flat 文件已迁移到 ${relPath}（本次抓取失败，保留旧数据）`);
+      } catch (migrationError) {
+        log(`[警告] ${mod.repo} 迁移旧路径失败：${migrationError.message}`);
+        finalFile = previous;
+      }
+    }
     return {
-      entry: buildIndexEntry(mod, previous, { relPath, oldEntry }),
-      file: previous,
+      entry: buildIndexEntry(mod, finalFile, { relPath, oldEntry }),
+      file: finalFile,
       state: previousState.mods[mod.repo],
       skipped: { repo: mod.repo, reason: skipReason(error) },
       changed: false,
@@ -521,7 +571,7 @@ async function loadRefreshState(outDir, log) {
   }
 }
 
-async function runMods(options, context) {
+export async function runMods(options, context) {
   const { apiClient, rawClient, outDir, log } = context;
 
   let mods;
@@ -657,6 +707,7 @@ async function runMods(options, context) {
       latestModVersion: first?.modVersion ?? null,
       latestMinGameVersion: first?.minGameVersion ?? null,
       iconUrl: modIconUrl(mod.repo, mod.hasIcon),
+      releasesPath: result.entry.releasesPath,
     };
   });
   const summary = buildSummary({ rows: summaryRows, generatedAt: now });
