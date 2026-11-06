@@ -41,10 +41,9 @@ jobs:
         run: npm ci
 
       - name: 更新模组索引
-        # 刷新分档（state/refresh.json 判断到期）：最新 100 tag（releases/tags 第 1 页）每 2 小时，
-        # 第 2 页每周，全量（所有页）每月。API 配额不足时停止本次、保留已抓结果，下次按最久未刷新续跑。
-        # per-mod 文件只在 releases 数据真的变化时重写。
-        run: node src/main.js --datasets mods --out .
+        # 官方：2h/周/月分档刷新；社区：GitHub topic 扫描 + Anuken 黑名单同步，与官方同构（独立 state）。
+        # 配额共享：先官方后社区，不足时停止本次、保留已抓结果，下次按最久未刷新续跑。
+        run: node src/main.js --datasets mods,community --out .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -55,6 +54,8 @@ jobs:
           git add index.json summary.json summary.csv
           # -A 覆盖 releases/<owner>/<repo>.json 新结构的新增目录，以及旧 flat 文件迁移后的删除
           git add -A releases 2>/dev/null || true
+          git add -A community 2>/dev/null || true
+          # state/ 含官方 refresh、社区 refresh 与 Anuken 黑名单缓存
           git add -A state 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "没有数据变化，跳过提交"

@@ -3,11 +3,12 @@
 Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Actions 定时抓取并自动提交，
 供启动器/网站直接读 raw 文件，避免运行时直连 GitHub API（匿名限流、慢、看不到完整历史）。
 
-当前包含三类数据：
+当前包含四类数据：
 
 | 数据集 | 产物 | 用途 | 更新频率 |
 | --- | --- | --- | --- |
-| 模组索引 | `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv` | 官方模组列表里每个模组的全部 git tag、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接、下载量/体积 | 最新 100 tag 每 2 小时；第 2 页每周；全量每月 |
+| 模组索引（官方） | `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv` | 官方模组列表里每个模组的全部 git tag、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接、下载量/体积 | 最新 100 tag 每 2 小时；第 2 页每周；全量每月 |
+| 模组索引（社区） | `community/index.json`、`community/releases/<owner>/<repo>.json`、`community/summary.json/csv` | GitHub `mindustry-mod` topic 扫描到的、不在官方列表里的社区模组（结构同官方，条目带 `source:"topic"`） | 同官方分档；发现/黑名单每天同步 |
 | 游戏版本列表 | `mindustry/versions.json` | 官方 Mindustry 全部正式版 + 最新 BE，字段与启动器 `remote/mindustry_versions.json` 快照兼容 | 约每 30 分钟一次 |
 | 最小版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 普通/脚本模组与 Java 模组**分开**的最低模组版本门禁，语义来自 mmgvm | 约每 30 分钟一次 |
 
@@ -15,11 +16,14 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 
 | 数据 | 地址 |
 | --- | --- |
-| 模组名单 | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json` |
+| 模组名单（官方） | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json` |
+| 社区模组发现 | GitHub 搜索 API：`mindustry-mod in:topics archived:false template:false pushed:2022-05-01..<end>`（按时间窗分区取全） |
+| Anuken 黑名单源 | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/src/modupdater/ModUpdater.java` |
 | 模组 release 列表 | `https://api.github.com/repos/<owner>/<repo>/releases`（分页取全，含 prerelease/draft 标记） |
 | 模组全部 git tag | `https://api.github.com/repos/<owner>/<repo>/tags`（分页取全；用于补全没有建 Release 的 tag） |
 | 每个 tag 的模组元数据 | `https://raw.githubusercontent.com/<owner>/<repo>/<tag>/mod.hjson`（候选 `mod.json`、`assets/mod.hjson`、`assets/mod.json`） |
-| 模组图标地址 | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/<owner>_<repo>`（只记录地址，不下载图标字节） |
+| 社区仓库元数据/图标 | 默认分支的 `mod.json`/`mod.hjson`（root 或 assets/）与 `icon.png`/`assets/icon.png` |
+| 模组图标地址（官方） | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/<owner>_<repo>`（只记录地址，不下载图标字节） |
 | 游戏正式版列表 | `https://api.github.com/repos/Anuken/Mindustry/releases`（分页取全，当前约 200 条） |
 | 最新 BE | `https://api.github.com/repos/Anuken/MindustryBuilds/releases?per_page=1` |
 | 游戏源码门禁常量 | `https://raw.githubusercontent.com/Anuken/Mindustry/<tag>/core/src/mindustry/Vars.java`（候选路径 + tree API 兜底） |
@@ -28,11 +32,15 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 ## 产物与 raw 地址
 
 ```
-index.json                              # 全量模组索引（官方列表顺序，含下载量/体积/ tag 数统计）
-releases/<owner>/<repo>.json            # 单个模组的全部 git tag（有 Release 的 + tag-only）+ 逐 tag 元数据
-summary.json                            # 下载量/体积总表（含全局合计，按下载量降序）
-summary.csv                             # 同一份总表的 CSV（UTF-8 BOM，Excel 直接打开）
-state/refresh.json                      # 调度缓存（第 1/2 页/全量/ tag 列表最近抓取时间）
+index.json                              # 全量官方模组索引（官方列表顺序，含下载量/体积/ tag 数统计）
+releases/<owner>/<repo>.json            # 官方模组的全部 git tag（有 Release 的 + tag-only）+ 逐 tag 元数据
+summary.json / summary.csv              # 官方下载量/体积总表
+community/index.json                    # 社区模组索引（结构同官方，条目 source:"topic"）
+community/releases/<owner>/<repo>.json  # 社区模组 per-mod 数据（与官方完全同构）
+community/summary.json / .csv           # 社区总表（同官方结构）
+state/refresh.json                      # 官方调度缓存（第 1/2 页/全量/ tag 列表最近抓取时间）
+state/community-refresh.json            # 社区调度缓存（与官方同结构、独立）
+state/blacklist.json                    # Anuken 黑名单同步缓存（含源码 hash / fetchedAt）
 mindustry/versions.json                 # Mindustry 可用版本列表（正式版 + 最新 BE）
 mindustry/mod-gate.json                 # 普通/脚本模组门禁（rules + 逐版本 value）
 mindustry/java-gate.json                # Java 模组门禁（rules + 逐版本 value）
@@ -53,6 +61,9 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/versions.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/mod-gate.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/java-gate.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/index.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/summary.csv`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/releases/Slava0135/reFine.json`
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
@@ -107,6 +118,33 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   提取（147 起源码里有 `minModGameVersion`/`minJavaModGameVersion`），源码没有常量的老版本才回落到基线。
   两种类型的门禁是分开的：普通/脚本模组读 `mod-gate.json`，Java 模组读 `java-gate.json`。
 
+## 社区模组（topic 扫描）
+
+官方 `mods.json` 之外的社区模组用 GitHub topic 扫描发现，产物放在 `community/`，结构与官方完全同构
+（`community/index.json` + `community/releases/<owner>/<repo>.json` + `community/summary.json/csv`，
+条目额外带 `source:"topic"`，`releasesPath` 为 `community/releases/...`）：
+
+- **发现查询**：`mindustry-mod in:topics archived:false template:false pushed:2022-05-01..<end>`，
+  `sort=updated`、`per_page=100`；搜索 API 单查询最多 1000 条，脚本先看 `total_count`，
+  超过 1000 就把 pushed 时间窗继续二分（从 2022-05 起按半年预切），分页取全后按 `full_name` 小写去重。
+- **Anuken 黑名单同步**：每天抓一次
+  `Anuken/MindustryMods/src/modupdater/ModUpdater.java`，用正则抽取
+  `nameBlacklist`（full_name 前缀、忽略大小写）、`blacklist`（repo 精确、忽略大小写）、
+  `globalBlacklist`（Base64 解码后的正则，作用于 mod 名称/描述）；解析结果缓存到
+  `state/blacklist.json`（含源码 hash + fetchedAt）。源码格式变化/拉取失败时沿用缓存并 warning，不阻断运行。
+- **收录标准**（与 Anuken 一致）：不在官方 `mods.json`；非 archived / 非 template；
+  默认分支 root 或 `assets/` 有可解析的 `mod.json`/`mod.hjson`；`minGameVersion >= 136`；
+  `hideBrowser: true` 排除；命中任意黑名单排除。
+- **条目字段**：`name`/`author`/`version`/`minGameVersion`/`description` 取仓库 mod 元数据；
+  `stars`/`lastUpdated` 取搜索结果的 star 数与 updated_at；`hasJava`/`hasScripts` 用元数据近似
+  （有 `main` 且无 `scripts` 记 Java，有 `scripts` 记脚本）；`iconUrl` 仅在默认分支
+  `icon.png` 或 `assets/icon.png` 实际命中（raw 200）时给出，否则 `null`。
+- **刷新**：与官方同分档（最新 100 tag 每 2 小时、第 2 页每周、每月全量），使用独立的
+  `state/community-refresh.json`；官方先跑、社区后跑共享 API 配额，不足时同样优雅停止并在下次续跑。
+- 工作流 `update-mods.yml` 跑 `--datasets mods,community`，提交 `community/`、`state/community-refresh.json`
+  与 `state/blacklist.json`。本地验证可用
+  `--community-limit` / `--community-search-windows` / `--community-max-candidates` 控制规模（搜索配额很小）。
+
 ## 更新节奏
 
 - `.github/workflows/update-mods.yml`：每 2 小时一次（cron `17 */2 * * *`）+ `workflow_dispatch` + `push`
@@ -136,6 +174,7 @@ npm ci
 npm test                              # 离线单元测试
 npm run validate -- --dir .           # 校验产物
 node src/main.js --datasets mods --out .                 # 全量更新模组索引（需要 GITHUB_TOKEN）
+node src/main.js --datasets mods,community --out .       # 官方 + 社区（社区需要搜索配额）
 node src/main.js --datasets versions,gate --out .        # 更新版本列表与门禁
 ```
 
@@ -150,6 +189,10 @@ node src/main.js --out tmp/live --repos "annguyen2k8/mindustrypackloader,cardill
 node src/main.js --out tmp/versions --datasets versions --versions-pages 1 --verbose
 node src/main.js --out tmp/gate --datasets gate \
   --versions-file "C:/Users/ASUS/Desktop/copper_launcher/remote/mindustry_versions.json" --verbose
+
+# 社区发现只搜第一个时间窗、最多探测 6 个候选、只处理 3 个（搜索匿名配额只有 10/min）
+node src/main.js --out tmp/community --datasets community \
+  --community-search-windows 1 --community-max-candidates 6 --community-limit 3 --verbose
 ```
 
 参数（`--help` 可看完整说明）：
@@ -232,8 +275,13 @@ GitHub releases / tags API 每页最多 100 条、按新→旧返回。越老的
   `minJavaModGameVersion`，这些版本的门禁值来自启动器 mmgvm 基线。门禁值以官方源码为准，源码位置变化时
   靠候选路径与 tree 兜底，仍找不到则回落到基线。普通/脚本模组读 `mod-gate.json`，Java 模组读
   `java-gate.json`，两份的 `value` 不要混用。
+- **社区模组**：只收录 topic 扫描发现且符合 Anuken 收录标准的仓库；需要 `mod.json`/`mod.hjson`
+  可解析（否则排除）；`minGameVersion` 按数字前缀比较（需 ≥136）；`hasJava`/`hasScripts` 是近似值；
+  图标只在 `icon.png`/`assets/icon.png` 实际存在时提供。搜索 API 有独立限流（带 token 30/min、
+  匿名 10/min），发现阶段已节流；单查询 1000 条上限用 pushed 时间窗二分规避。黑名单每天同步一次，
+  源格式变化时沿用旧缓存，最长可能滞后约 1 天。
 - 受 GitHub API 限流约束：Actions 里用 `GITHUB_TOKEN`（每小时 5000 次）；本地匿名只有每小时 60 次，
   全量跑模组索引务必带上 token。配额剩余 ≤5 时本次运行会优雅停止（保留已抓结果、exit 0），下次按
   最久未刷新优先继续；单次运行内等待重置超过 15 分钟时相关仓库记为 `rate-limit` 跳过。
-- `--repos` / `--limit` / `--versions-pages` / `--versions-file` 属于本地验证模式，不要拿子集产物覆盖正式数据。
+- `--repos` / `--limit` / `--community-*` / `--versions-*` 属于本地验证模式，不要拿子集产物覆盖正式数据。
 - 数据是公开信息，但受抓取节奏限制不保证实时：模组最新 100 tag 每 2 小时、其余历史按周/月，版本/门禁约每 30 分钟一次。

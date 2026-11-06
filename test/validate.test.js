@@ -562,3 +562,165 @@ test('tagCount / releaseCount 与文件条数不一致会被发现', async (t) =
   assert.ok(result.errors.some((message) => message.includes('tagCount（3）')));
   assert.ok(result.errors.some((message) => message.includes('hasRelease=true 条数')));
 });
+
+// ---------- 社区模组（community/） ----------
+
+function communityFixture({ repo = 'communitymods/demo' } = {}) {
+  const release = {
+    tag: 'v1.0',
+    name: '1.0',
+    hasRelease: true,
+    prerelease: false,
+    publishedAt: '2026-10-01T12:00:00Z',
+    htmlUrl: `https://github.com/${repo}/releases/tag/v1.0`,
+    modVersion: '1.0',
+    minGameVersion: '146',
+    metadataPath: 'mod.hjson',
+    metadataStatus: 'ok',
+    downloadUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
+    sourceArchiveUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
+    assets: [],
+  };
+  const entry = {
+    repo,
+    source: 'topic',
+    internalName: null,
+    name: 'Demo',
+    author: 'author',
+    version: '1.0',
+    minGameVersion: '146',
+    description: 'a community mod',
+    lastUpdated: '2026-11-01T00:00:00Z',
+    stars: 2,
+    hasIcon: false,
+    hasScripts: false,
+    hasJava: false,
+    iconUrl: null,
+    iconHash: null,
+    releasesPath: `community/releases/${repo}.json`,
+    releaseCount: 1,
+    tagCount: 1,
+    totalDownloads: 0,
+    allAssetsDownloads: 0,
+    latestDownloads: 0,
+    latestSizeBytes: null,
+    totalSizeBytes: null,
+    latestRelease: {
+      tag: 'v1.0',
+      name: '1.0',
+      prerelease: false,
+      publishedAt: '2026-10-01T12:00:00Z',
+      downloads: 0,
+      sizeBytes: null,
+    },
+    releaseDataUpdatedAt: GENERATED_AT,
+  };
+  return {
+    index: {
+      formatVersion: 1,
+      generatedAt: GENERATED_AT,
+      source: {
+        source: 'topic',
+        query: 'mindustry-mod in:topics archived:false template:false',
+        officialCount: 1,
+      },
+      mods: [entry],
+      skipped: [],
+    },
+    releaseFile: { formatVersion: 1, repo, generatedAt: GENERATED_AT, releases: [release] },
+    entry,
+    release,
+  };
+}
+
+async function addCommunityFixture(dir, fixture = communityFixture()) {
+  const communityDir = path.join(dir, 'community');
+  await mkdir(path.join(communityDir, 'releases', 'communitymods'), { recursive: true });
+  await writeFile(
+    path.join(communityDir, 'index.json'),
+    JSON.stringify(fixture.index, null, 2),
+  );
+  const filePath = path.join(communityDir, 'releases', `${fixture.releaseFile.repo}.json`);
+  await mkdir(path.dirname(filePath), { recursive: true });
+  await writeFile(filePath, JSON.stringify(fixture.releaseFile, null, 2));
+  const row = {
+    repo: fixture.entry.repo,
+    name: fixture.entry.name,
+    author: fixture.entry.author,
+    stars: fixture.entry.stars,
+    releaseCount: fixture.entry.releaseCount,
+    tagCount: fixture.entry.tagCount,
+    totalDownloads: fixture.entry.totalDownloads,
+    allAssetsDownloads: fixture.entry.allAssetsDownloads,
+    latestDownloads: fixture.entry.latestDownloads,
+    latestSizeBytes: fixture.entry.latestSizeBytes,
+    totalSizeBytes: fixture.entry.totalSizeBytes,
+    latestTag: fixture.entry.latestRelease.tag,
+    latestPrerelease: fixture.entry.latestRelease.prerelease,
+    latestModVersion: fixture.release.modVersion,
+    latestMinGameVersion: fixture.release.minGameVersion,
+    iconUrl: null,
+    releasesPath: fixture.entry.releasesPath,
+  };
+  const summary = buildSummary({ rows: [row], generatedAt: GENERATED_AT });
+  await writeFile(
+    path.join(communityDir, 'summary.json'),
+    JSON.stringify(summary, null, 2),
+  );
+  await writeFile(path.join(communityDir, 'summary.csv'), summaryCsv(summary.mods));
+  await mkdir(path.join(dir, 'state'), { recursive: true });
+  await writeFile(
+    path.join(dir, 'state', 'community-refresh.json'),
+    JSON.stringify(
+      {
+        formatVersion: 1,
+        updatedAt: GENERATED_AT,
+        mods: {
+          [fixture.entry.repo]: {
+            page1Etag: null,
+            page1FetchedAt: GENERATED_AT,
+            page2FetchedAt: GENERATED_AT,
+            fullFetchedAt: GENERATED_AT,
+            tagsFetchedAt: GENERATED_AT,
+          },
+        },
+      },
+      null,
+      2,
+    ),
+  );
+}
+
+test('合法 community 数据（index/releases/summary/state）校验通过', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await addCommunityFixture(dir);
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.warnings, []);
+  assert.equal(result.communityModCount, 1);
+  assert.equal(result.communityReleaseFileCount, 1);
+  assert.equal(result.communitySummaryRowCount, 1);
+});
+
+test('community 与官方 repo 重复会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  // 用官方 fixture 的 repo（owner/demo）构造社区条目
+  const fixture = communityFixture({ repo: 'owner/demo' });
+  fixture.index.source.officialCount = 1;
+  fixture.entry.repo = 'owner/demo';
+  await addCommunityFixture(dir, fixture);
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('与官方列表重复')));
+});
+
+test('community 条目 source 不是 topic 会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const fixture = communityFixture();
+  fixture.index.mods[0].source = 'official';
+  await addCommunityFixture(dir, fixture);
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('source 应为 "topic"')));
+});

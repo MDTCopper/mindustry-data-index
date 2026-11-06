@@ -1,9 +1,12 @@
 # 数据 schema
 
-数据文件分三组：
+数据文件分四组：
 
 - 模组索引：仓库根目录的 `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv`、
   `state/refresh.json`（旧 flat 路径 `releases/<owner>_<repo>.json` 已废弃，运行时自动迁移并删除）；
+- 社区模组：`community/index.json`、`community/releases/<owner>/<repo>.json`、
+  `community/summary.json/csv`、`state/community-refresh.json`、`state/blacklist.json`
+  （结构同官方，条目带 `source:"topic"`）；
 - Mindustry 版本列表：`mindustry/versions.json`；
 - 最小版本门禁：`mindustry/mod-gate.json`（普通/脚本模组）与 `mindustry/java-gate.json`（Java 模组）；
 - 另有一个维护用文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
@@ -410,6 +413,102 @@ v147 首次出现）。147 起从 `core/src/mindustry/Vars.java` 同时提取两
 - `source=baseline` 的老版本也缓存：每轮按最新 mmgvm 规则本地重算（不抓源码），基线变化时只影响这些版本。
   稳态每轮只有 1 次 raw 请求（拉 mmgvm 基线）+ 0 次 API。
 - 两份文件的 `versions` / `rules` / `source` 分别比较，各自没变时不重写。
+
+## community/（社区模组）
+
+官方 `mods.json` 之外的社区模组，来源是 GitHub topic 扫描（`mindustry-mod in:topics`），结构尽量与官方同构，
+方便客户端用同一套解析逻辑读「官方 vs 社区」。
+
+### community/index.json
+
+```json
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-11-06T03:00:00.000Z",
+  "source": {
+    "source": "topic",
+    "query": "mindustry-mod in:topics archived:false template:false",
+    "officialCount": 993
+  },
+  "mods": [
+    {
+      "repo": "Slava0135/reFine",
+      "source": "topic",
+      "internalName": null,
+      "name": "reFine",
+      "author": "Slava0135",
+      "version": "3.1",
+      "minGameVersion": "136",
+      "description": "…",
+      "lastUpdated": "2026-11-01T00:00:00Z",
+      "stars": 12,
+      "hasIcon": true,
+      "hasScripts": false,
+      "hasJava": true,
+      "iconUrl": "https://raw.githubusercontent.com/Slava0135/reFine/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Slava0135/reFine.json",
+      "releaseCount": 8,
+      "tagCount": 8,
+      "totalDownloads": 5502,
+      "allAssetsDownloads": 5502,
+      "latestDownloads": 123,
+      "latestSizeBytes": 2472052,
+      "totalSizeBytes": 19163090,
+      "latestRelease": { "tag": "3.1", "name": "reFine 3.1", "prerelease": false, "publishedAt": "…", "downloads": 123, "sizeBytes": 2472052 },
+      "releaseDataUpdatedAt": "2026-11-06T03:00:00.000Z"
+    }
+  ],
+  "skipped": []
+}
+```
+
+- 条目字段与官方 `index.json` 同义，额外要求 `source: "topic"`；`internalName` 固定 `null`；
+  `description` 是 mod 元数据里的描述；`iconUrl` 只有在默认分支 `icon.png` / `assets/icon.png`
+  实际命中时给出（https 地址），否则 `null`。
+- `source.query` 是基础发现查询（分页/时间窗细节不落盘，避免每日无意义 diff）。
+- 官方/社区 repo 不允许重复（校验会报错）；归档、模板、黑名单、`minGameVersion < 136`、
+  `hideBrowser`、无 mod 元数据的仓库不会出现。
+
+### community/releases/<owner>/<repo>.json
+
+与官方 per-mod 文件**完全同构**：`formatVersion`/`repo`/`generatedAt`/`releases[]`
+（全部 git tag、`hasRelease`/tag-only、下载链接、逐 tag 元数据、排序规则都一致）。
+`community/index.json` 的 `releasesPath` 是 `community/` 前缀的根相对路径。
+
+### community/summary.json / summary.csv
+
+与官方总表同构（16 列 + `releasesPath`，`tagCount` 紧跟 `releaseCount`），统计口径相同；
+区别只是覆盖社区模组、且行数较少。
+
+### state/community-refresh.json
+
+与官方 `state/refresh.json` 同结构（`page1FetchedAt` 2h / `page2FetchedAt` 7d /
+`fullFetchedAt` 30d / `tagsFetchedAt`），key 仍是 repo，独立文件；配额不足时与官方共用同一个停止逻辑，
+官方先跑、社区后跑，下次按最久未刷新续跑。
+
+### state/blacklist.json（Anuken 黑名单同步缓存）
+
+每天从
+`https://raw.githubusercontent.com/Anuken/MindustryMods/master/src/modupdater/ModUpdater.java`
+抽取一次：
+
+```json
+{
+  "formatVersion": 1,
+  "fetchedAt": "2026-11-06T03:00:00.000Z",
+  "sourceUrl": "https://raw.githubusercontent.com/Anuken/MindustryMods/master/src/modupdater/ModUpdater.java",
+  "sourceHash": "sha256…",
+  "nameBlacklist": ["theee145", "o7", "…"],
+  "blacklist": ["anuken/examplemod", "…"],
+  "globalBlacklist": { "source": "gay|racist|uuid", "flags": "i" }
+}
+```
+
+- `nameBlacklist`：对 `full_name` 做**前缀**匹配（忽略大小写）。
+- `blacklist`：对 repo 做**精确**匹配（忽略大小写）。
+- `globalBlacklist`：Base64 解码后的正则，作用于 mod 名称 + 描述。
+- 源格式变化/拉取失败时沿用旧缓存并 warning，不会崩溃；当天未到期时不重复拉取。
 
 ## mindustry/heartbeat.json
 

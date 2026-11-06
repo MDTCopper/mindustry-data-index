@@ -20,6 +20,21 @@ import {
   buildReleasesFile,
 } from './releases.js';
 import { fetchAllTags, fetchTagPages } from './tags.js';
+import {
+  COMMUNITY_DIR,
+  COMMUNITY_SOURCE,
+  COMMUNITY_STATE_REL_PATH,
+  buildCommunityIndexEntry,
+  buildCommunityMod,
+  normalizeCommunityCandidates,
+  probeAndFilterCandidates,
+} from './community.js';
+import {
+  TOPIC_QUERY_BASE,
+  buildSearchWindows,
+  discoverCommunityRepos,
+} from './community-source.js';
+import { loadBlacklist } from './blacklist.js';
 import { fetchModMetadata } from './mod-meta.js';
 import { computeModStats } from './stats.js';
 import {
@@ -85,16 +100,19 @@ import {
   splitLegacyGateFile,
 } from './mod-gate.js';
 
-const DATASETS = ['mods', 'versions', 'gate'];
+const DATASETS = ['mods', 'community', 'versions', 'gate'];
 
 const USAGE = `用法：node src/main.js [选项]
 
 选项：
-  --datasets <列表>   要更新的数据集，逗号分隔：mods,versions,gate，默认 mods
+  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,versions,gate，默认 mods
   --out <目录>        产物目录，默认 .
   --token <token>     GitHub token，默认读环境变量 GITHUB_TOKEN
   --repos a/b,c/d     只跑指定仓库（仅 mods 数据集，本地验证用）
   --limit <n>         最多处理 n 个模组（仅 mods 数据集）
+  --community-limit <n>        社区模组最多处理 n 个（仅 community，本地验证用）
+  --community-search-windows <n> 只搜前 n 个时间窗（仅 community，本地验证用）
+  --community-max-candidates <n> 最多探测 n 个候选仓库（仅 community，本地验证用）
   --threads <n>       同时处理的仓库数，默认 8
   --raw-threads <n>   raw.githubusercontent 并发数，默认 16
   --versions-pages <n>  只抓 Mindustry 版本列表前 n 页（仅本地验证，正式运行不要用）
@@ -125,6 +143,9 @@ export function parseArgs(argv) {
     rawThreads: 16,
     versionsPages: null,
     versionsFile: null,
+    communityLimit: null,
+    communitySearchWindows: null,
+    communityMaxCandidates: null,
     cache: true,
     keepMissingFiles: false,
     dryRun: false,
@@ -199,6 +220,21 @@ export function parseArgs(argv) {
       case '--limit':
         options.limit = requirePositiveInt('--limit', takeValue());
         break;
+      case '--community-limit':
+        options.communityLimit = requirePositiveInt('--community-limit', takeValue());
+        break;
+      case '--community-search-windows':
+        options.communitySearchWindows = requirePositiveInt(
+          '--community-search-windows',
+          takeValue(),
+        );
+        break;
+      case '--community-max-candidates':
+        options.communityMaxCandidates = requirePositiveInt(
+          '--community-max-candidates',
+          takeValue(),
+        );
+        break;
       case '--threads':
         options.threads = requirePositiveInt('--threads', takeValue());
         break;
@@ -242,6 +278,16 @@ export function parseArgs(argv) {
   }
   if (options.versionsFile !== null && !options.datasets.includes('gate')) {
     throw new UsageError('--versions-file 只用于 gate 数据集');
+  }
+  if (
+    (options.communityLimit !== null ||
+      options.communitySearchWindows !== null ||
+      options.communityMaxCandidates !== null) &&
+    !options.datasets.includes('community')
+  ) {
+    throw new UsageError(
+      '--community-limit / --community-search-windows / --community-max-candidates 只用于 community 数据集',
+    );
   }
   return options;
 }
@@ -351,9 +397,9 @@ export function sortModsForRefresh(mods, previousState) {
   });
 }
 
-function unprocessedModResult({ mod, previous, modState, relPath, oldEntry, reason }) {
+function unprocessedModResult({ mod, previous, modState, relPath, oldEntry, reason, buildEntry = buildIndexEntry }) {
   return {
-    entry: buildIndexEntry(mod, previous, { relPath, oldEntry }),
+    entry: buildEntry(mod, previous, { relPath, oldEntry }),
     file: previous,
     state: modState ?? null,
     skipped: null,
@@ -377,7 +423,12 @@ async function processMod(context) {
     oldEntries,
     previousState,
     abortState,
+    dataset = {},
   } = context;
+  // 官方 / 社区共用同一套抓取与合并逻辑，只切换输出目录与 index 条目构造器
+  const workDir = dataset.outDir ?? outDir;
+  const buildEntry = dataset.buildEntry ?? buildIndexEntry;
+  const allowLegacy = dataset.allowLegacy !== false;
   const relPath = releasesRelPath(mod.repo);
   const legacyRelPath = releasesLegacyRelPath(mod.repo);
   const oldEntry = oldEntries.get(mod.repo.toLowerCase()) ?? null;
@@ -387,18 +438,18 @@ async function processMod(context) {
   let legacyToDelete = null;
   if (options.cache) {
     try {
-      const newFile = await readJsonIfExists(resolveReleaseFile(outDir, relPath));
+      const newFile = await readJsonIfExists(resolveReleaseFile(workDir, relPath));
       if (newFile && newFile.repo === mod.repo && Array.isArray(newFile.releases)) {
         previous = newFile;
       }
     } catch (error) {
       log(`[警告] ${mod.repo} 的新路径数据不可用：${error.message}`);
     }
-    if (!previous) {
+    if (!previous && allowLegacy) {
       // 兼容旧 flat 路径：读出来当缓存，本轮迁到 releases/<owner>/<repo>.json 后删除旧文件
       try {
         const legacyFile = await readJsonIfExists(
-          resolveReleaseFileForDelete(outDir, legacyRelPath),
+          resolveReleaseFileForDelete(workDir, legacyRelPath),
         );
         if (legacyFile && legacyFile.repo === mod.repo && Array.isArray(legacyFile.releases)) {
           previous = legacyFile;
@@ -436,6 +487,7 @@ async function processMod(context) {
       relPath,
       oldEntry,
       reason: 'quota',
+      buildEntry,
     });
   }
 
@@ -594,9 +646,9 @@ async function processMod(context) {
     const changed = releaseFileBodyChanged(previous, nextFile);
     const shouldWrite = changed || legacyToDelete !== null;
     if (shouldWrite && !options.dryRun) {
-      await writeJsonAtomic(resolveReleaseFile(outDir, relPath), nextFile);
+      await writeJsonAtomic(resolveReleaseFile(workDir, relPath), nextFile);
       if (legacyToDelete !== null) {
-        await deleteReleaseFile(outDir, legacyToDelete);
+        await deleteReleaseFile(workDir, legacyToDelete);
         log(`[${mod.repo}] 旧 flat 文件已迁移到 ${relPath}`);
       }
     }
@@ -658,7 +710,7 @@ async function processMod(context) {
       log(`[${mod.repo}] 内容未变（${parts.join('、')}已刷新，文件不重写）`);
     }
     return {
-      entry: buildIndexEntry(mod, finalFile, { relPath, oldEntry }),
+      entry: buildEntry(mod, finalFile, { relPath, oldEntry, stats: computeModStats(finalFile?.releases ?? [], hasJava) }),
       file: finalFile,
       state: nextState,
       skipped: null,
@@ -682,8 +734,8 @@ async function processMod(context) {
           releases: previous.releases,
           generatedAt: previous.generatedAt ?? now,
         });
-        await writeJsonAtomic(resolveReleaseFile(outDir, relPath), finalFile);
-        await deleteReleaseFile(outDir, legacyToDelete);
+        await writeJsonAtomic(resolveReleaseFile(workDir, relPath), finalFile);
+        await deleteReleaseFile(workDir, legacyToDelete);
         log(`[${mod.repo}] 旧 flat 文件已迁移到 ${relPath}（本次抓取失败，保留旧数据）`);
       } catch (migrationError) {
         log(`[警告] ${mod.repo} 迁移旧路径失败：${migrationError.message}`);
@@ -691,7 +743,7 @@ async function processMod(context) {
       }
     }
     return {
-      entry: buildIndexEntry(mod, finalFile, { relPath, oldEntry }),
+      entry: buildEntry(mod, finalFile, { relPath, oldEntry, stats: computeModStats(finalFile?.releases ?? [], hasJava) }),
       file: finalFile,
       state: previousState.mods[mod.repo],
       skipped: { repo: mod.repo, reason: skipReason(error) },
@@ -724,13 +776,13 @@ async function cleanupMissing(outDir, selected, log) {
   }
 }
 
-async function loadRefreshState(outDir, log) {
-  const file = path.join(outDir, REFRESH_STATE_REL_PATH);
+async function loadRefreshState(outDir, log, relPath = REFRESH_STATE_REL_PATH) {
+  const file = path.join(outDir, relPath);
   try {
     const raw = await readJsonIfExists(file);
     return { file, exists: raw !== null, state: normalizeRefreshState(raw) };
   } catch (error) {
-    log(`[警告] ${REFRESH_STATE_REL_PATH} 不可用，按首次运行处理：${error.message}`);
+    log(`[警告] ${relPath} 不可用，按首次运行处理：${error.message}`);
     return { file, exists: false, state: normalizeRefreshState(null) };
   }
 }
@@ -786,7 +838,7 @@ export async function runMods(options, context) {
   const nowMs = Date.now();
   const resultsByRepo = new Map();
   // API 配额不足时：停止发新请求、保留已抓结果、exit 0；未处理的模组下次按「最久未刷新」优先
-  const abortState = { aborted: false, reason: null };
+  const abortState = context.abortState ?? { aborted: false, reason: null };
   const processingOrder = sortModsForRefresh(selected, previousState);
   let completed = 0;
 
@@ -944,6 +996,270 @@ export async function runMods(options, context) {
     summaryChanged: summaryChanged || csvChanged,
     stateChanged,
     unprocessed: notProcessedCount,
+  };
+}
+
+// ---------- community 数据集 ----------
+
+function isCommunityLimited(options) {
+  return (
+    options.communityLimit !== null ||
+    options.communitySearchWindows !== null ||
+    options.communityMaxCandidates !== null
+  );
+}
+
+function communitySummaryRows(results, selectedMods) {
+  return results.map((result, index) => {
+    const mod = selectedMods[index];
+    const firstRelease = result.file?.releases?.find(isReleaseEntry) ?? null;
+    return {
+      repo: mod.repo,
+      name: mod.name,
+      author: mod.author,
+      stars: mod.stars,
+      releaseCount: result.entry.releaseCount,
+      tagCount: result.entry.tagCount,
+      totalDownloads: result.entry.totalDownloads,
+      allAssetsDownloads: result.entry.allAssetsDownloads,
+      latestDownloads: result.entry.latestDownloads,
+      latestSizeBytes: result.entry.latestSizeBytes,
+      totalSizeBytes: result.entry.totalSizeBytes,
+      latestTag: firstRelease?.tag ?? null,
+      latestPrerelease: firstRelease ? firstRelease.prerelease : null,
+      latestModVersion: firstRelease?.modVersion ?? null,
+      latestMinGameVersion: firstRelease?.minGameVersion ?? null,
+      iconUrl: result.entry.iconUrl,
+      releasesPath: result.entry.releasesPath,
+    };
+  });
+}
+
+// 社区模组：topic 搜索发现 → 黑名单/官方去重/收录标准过滤 → 与官方同构的 per-mod 抓取与 2h/周/月刷新
+async function runCommunity(options, context) {
+  const { apiClient, rawClient, outDir, log } = context;
+  const communityDir = path.join(outDir, COMMUNITY_DIR);
+  const abortState = context.abortState ?? { aborted: false, reason: null };
+
+  let officialMods;
+  try {
+    officialMods = await fetchModsJson(rawClient);
+  } catch (error) {
+    console.error(`无法获取官方模组列表（社区去重用）：${error.message}`);
+    return { code: 1, changed: 0 };
+  }
+  const officialRepos = new Set(officialMods.map((mod) => mod.repo.toLowerCase()));
+
+  const { blacklist } = await loadBlacklist({ rawClient, outDir, log, now: Date.now() });
+
+  if (abortState.aborted || apiClient.hasLowQuota?.(5)) {
+    if (!abortState.aborted) {
+      abortState.aborted = true;
+      abortState.reason = 'quota';
+    }
+    console.warn('[社区] API 配额不足，本次跳过社区模组，下次继续');
+    return { code: 0, changed: 0, unprocessed: 0, community: true };
+  }
+
+  const limited = isCommunityLimited(options);
+  const allWindows = buildSearchWindows();
+  const windows =
+    options.communitySearchWindows !== null
+      ? allWindows.slice(0, options.communitySearchWindows)
+      : allWindows;
+  const throttleMs = limited ? 0 : 2000;
+  let discovery;
+  try {
+    discovery = await discoverCommunityRepos(apiClient, {
+      windows,
+      maxCandidates: options.communityMaxCandidates,
+      throttleMs,
+      log,
+    });
+  } catch (error) {
+    console.error(`社区模组发现失败：${error.message}`);
+    return { code: 1, changed: 0 };
+  }
+  const candidates = normalizeCommunityCandidates(discovery.candidates);
+  console.log(
+    `[community] 搜索到 ${candidates.length} 个候选仓库（搜索请求 ${discovery.stats.requests} 次、${discovery.stats.windows} 个时间窗、去重 ${discovery.stats.duplicates} 次）`,
+  );
+
+  const { eligible, stats } = await probeAndFilterCandidates({
+    candidates,
+    rawClient,
+    apiClient,
+    officialRepos,
+    blacklist,
+    log,
+    maxCandidates: options.communityMaxCandidates,
+  });
+  console.log(
+    `[community] 过滤：官方已有 ${stats.official}、归档 ${stats.archived}、模板 ${stats.template}、` +
+      `黑名单 ${stats.blacklisted}、无元数据 ${stats.noMetadata}、minGameVersion<136 ${stats.lowVersion}、` +
+      `hideBrowser ${stats.hidden}；收录 ${eligible.length}`,
+  );
+
+  let selectedMods = eligible.map((item) =>
+    buildCommunityMod({
+      candidate: item.candidate,
+      metadata: item.metadata,
+      iconUrl: item.iconUrl,
+    }),
+  );
+  if (options.communityLimit !== null) {
+    selectedMods = selectedMods.slice(0, options.communityLimit);
+  }
+  selectedMods.sort((left, right) => left.repo.localeCompare(right.repo));
+
+  let oldIndex = null;
+  try {
+    oldIndex = await readJsonIfExists(path.join(communityDir, 'index.json'));
+  } catch (error) {
+    log(`[警告] 旧 community/index.json 不可用：${error.message}`);
+  }
+  const oldEntries = new Map(
+    (Array.isArray(oldIndex?.mods) ? oldIndex.mods : [])
+      .filter((entry) => typeof entry?.repo === 'string')
+      .map((entry) => [entry.repo.toLowerCase(), entry]),
+  );
+  const stateLoaded = await loadRefreshState(outDir, log, COMMUNITY_STATE_REL_PATH);
+  const previousState = stateLoaded.state;
+
+  const rawPool = createPool(options.rawThreads);
+  const apiPool = createPool(options.threads);
+  const now = new Date().toISOString();
+  const nowMs = Date.now();
+  const dataset = {
+    outDir: communityDir,
+    allowLegacy: false,
+    buildEntry: buildCommunityIndexEntry,
+  };
+  const resultsByRepo = new Map();
+  let completed = 0;
+  const processingOrder = sortModsForRefresh(selectedMods, previousState);
+  await Promise.all(
+    processingOrder.map((mod) =>
+      apiPool.run(async () => {
+        const result = await processMod({
+          mod,
+          options,
+          apiClient,
+          rawClient,
+          rawPool,
+          outDir: communityDir,
+          now,
+          nowMs,
+          log,
+          oldEntries,
+          previousState,
+          abortState,
+          dataset,
+        });
+        resultsByRepo.set(mod.repo, result);
+        completed += 1;
+        if (!options.verbose && selectedMods.length > 20 && completed % 25 === 0) {
+          console.log(`[community] 进度：${completed}/${selectedMods.length}`);
+        }
+      }),
+    ),
+  );
+  const results = selectedMods.map((mod) => resultsByRepo.get(mod.repo));
+  const unprocessed = results.filter((result) => result.unprocessed).length;
+  const rateLimited = results.filter((result) => result.skipped?.reason === 'rate-limit').length;
+  const notProcessed = unprocessed + rateLimited;
+  if (abortState.aborted && notProcessed > 0) {
+    console.warn(
+      `[警告] 社区模组：API 配额不足，本次未处理 ${notProcessed}/${selectedMods.length} 个，已保留已抓结果；下次按最久未刷新继续`,
+    );
+  }
+  const skipped = results.filter((result) => result.skipped).map((result) => result.skipped);
+
+  // state：本地验证（限流参数）时保留其它模组状态，正式运行时只保留收录列表
+  const stateMods = limited ? { ...previousState.mods } : {};
+  for (const [index, result] of results.entries()) {
+    const repo = selectedMods[index].repo;
+    if (result.state) {
+      stateMods[repo] = result.state;
+    } else if (previousState.mods[repo]) {
+      stateMods[repo] = previousState.mods[repo];
+    }
+  }
+  const nextState = buildRefreshStateFile({ mods: stateMods, updatedAt: now });
+  const stateChanged = stateBodyChanged(previousState, nextState);
+  if (!options.dryRun && stateChanged) {
+    await writeJsonAtomic(stateLoaded.file, nextState);
+  }
+
+  const index = {
+    formatVersion: 1,
+    generatedAt: now,
+    source: {
+      source: COMMUNITY_SOURCE,
+      query: TOPIC_QUERY_BASE,
+      officialCount: officialRepos.size,
+    },
+    mods: results.map((result) => result.entry),
+    skipped,
+  };
+  const indexChanged = indexBodyChanged(oldIndex, index);
+  if (!options.dryRun && indexChanged) {
+    await writeJsonAtomic(path.join(communityDir, 'index.json'), index);
+  } else if (!indexChanged) {
+    log('[community] index 内容未变，保留旧文件');
+  }
+  if (!options.dryRun && !limited && !options.keepMissingFiles) {
+    await cleanupMissing(communityDir, selectedMods, log);
+  }
+
+  const summaryRows = communitySummaryRows(results, selectedMods);
+  const summary = buildSummary({ rows: summaryRows, generatedAt: now });
+  const summaryFile = path.join(communityDir, 'summary.json');
+  const summaryCsvFile = path.join(communityDir, 'summary.csv');
+  let previousSummary = null;
+  let previousCsv = null;
+  if (options.cache) {
+    try {
+      previousSummary = await readJsonIfExists(summaryFile);
+    } catch (error) {
+      log(`[警告] 旧 community/summary.json 不可用：${error.message}`);
+    }
+    try {
+      previousCsv = await readTextIfExists(summaryCsvFile);
+    } catch (error) {
+      log(`[警告] 旧 community/summary.csv 不可用：${error.message}`);
+    }
+  }
+  const summaryChanged = summaryBodyChanged(previousSummary, summary);
+  const nextCsv = summaryCsv(summary.mods);
+  const csvChanged = previousCsv !== nextCsv;
+  if (!options.dryRun) {
+    if (summaryChanged) {
+      await writeJsonAtomic(summaryFile, summary);
+    }
+    if (csvChanged) {
+      await writeTextAtomic(summaryCsvFile, nextCsv);
+    }
+  }
+
+  const changed = results.filter((result) => result.changed).length;
+  console.log(
+    `[community] ${selectedMods.length} 个模组，${changed} 个 release 文件有变化，` +
+      `index ${indexChanged ? '已更新' : '未变'}，summary ${summaryChanged || csvChanged ? '已更新' : '未变'}，` +
+      `state ${stateChanged ? '已更新' : '未变'}，${skipped.length} 个抓取失败` +
+      (notProcessed > 0 ? `，${notProcessed} 个因配额不足未处理` : ''),
+  );
+  return {
+    code: 0,
+    changed,
+    indexChanged,
+    summaryChanged: summaryChanged || csvChanged,
+    stateChanged,
+    unprocessed: notProcessed,
+    community: true,
+    candidates: candidates.length,
+    eligible: eligible.length,
+    stats,
   };
 }
 
@@ -1327,11 +1643,15 @@ export async function run(argv) {
 
   // 子集模式会写出「只含所选模组」的 index.json，绝不能落在当前目录（正式仓库根）
   if (
-    (options.repos !== null || options.limit !== null) &&
+    (options.repos !== null ||
+      options.limit !== null ||
+      options.communityLimit !== null ||
+      options.communitySearchWindows !== null ||
+      options.communityMaxCandidates !== null) &&
     path.resolve(options.out) === path.resolve(process.cwd())
   ) {
     console.error(
-      '参数错误：--repos / --limit 是子集模式，必须用 --out 指定临时输出目录（如 --out tmp/live），不能指向当前目录，避免把正式 index.json 裁剪成子集',
+      '参数错误：--repos / --limit / 社区小规模验证参数属于子集模式，必须用 --out 指定临时输出目录（如 --out tmp/live），不能指向当前目录，避免把正式数据裁剪成子集',
     );
     return 2;
   }
@@ -1355,6 +1675,8 @@ export async function run(argv) {
     log,
     now: new Date().toISOString(),
     versionsReleases: null,
+    // 官方与社区共享同一配额状态：官方先跑，配额不足时社区直接跳过，下次续跑
+    abortState: { aborted: false, reason: null },
   };
 
   let exitCode = 0;
@@ -1362,6 +1684,11 @@ export async function run(argv) {
   let modsIndexChanged = false;
   let modsSummaryChanged = false;
   let modsStateChanged = false;
+  let communityChanged = 0;
+  let communityIndexChanged = false;
+  let communitySummaryChanged = false;
+  let communityStateChanged = false;
+  let communityUnprocessed = 0;
   let versionsChanged = false;
   let gateChanged = false;
 
@@ -1372,6 +1699,15 @@ export async function run(argv) {
     modsIndexChanged = result.indexChanged;
     modsSummaryChanged = result.summaryChanged;
     modsStateChanged = result.stateChanged;
+  }
+  if (options.datasets.includes('community')) {
+    const result = await runCommunity(options, context);
+    exitCode = Math.max(exitCode, result.code);
+    communityChanged = result.changed ?? 0;
+    communityIndexChanged = result.indexChanged ?? false;
+    communitySummaryChanged = result.summaryChanged ?? false;
+    communityStateChanged = result.stateChanged ?? false;
+    communityUnprocessed = result.unprocessed ?? 0;
   }
   if (options.datasets.includes('versions')) {
     const result = await runVersions(options, context);
@@ -1390,6 +1726,9 @@ export async function run(argv) {
     `完成（${options.datasets.join(',')}）：用时 ${elapsed} 秒` +
       (options.datasets.includes('mods')
         ? `，release 文件变化 ${modsChanged} 个、index ${modsIndexChanged ? '已更新' : '未变'}、summary ${modsSummaryChanged ? '已更新' : '未变'}、state ${modsStateChanged ? '已更新' : '未变'}`
+        : '') +
+      (options.datasets.includes('community')
+        ? `，社区 release 文件变化 ${communityChanged} 个、index ${communityIndexChanged ? '已更新' : '未变'}、summary ${communitySummaryChanged ? '已更新' : '未变'}、state ${communityStateChanged ? '已更新' : '未变'}${communityUnprocessed > 0 ? `、${communityUnprocessed} 个未处理` : ''}`
         : '') +
       (options.datasets.includes('versions') ? `，versions ${versionsChanged ? '已更新' : '未变'}` : '') +
       (options.datasets.includes('gate') ? `，gate ${gateChanged ? '已更新' : '未变'}` : ''),

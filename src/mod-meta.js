@@ -155,6 +155,73 @@ export function parseModMetadata(text) {
   throw lastError ?? new Error('mod 元数据解析失败');
 }
 
+function scriptsOf(value) {
+  if (Array.isArray(value)) {
+    return value.length > 0;
+  }
+  return typeof value === 'string' && value.trim().length > 0;
+}
+
+// 社区模组发现需要完整字段：name/author/description/hideBrowser/scripts/main
+export function parseModMetadataDocument(text) {
+  let parsed;
+  try {
+    parsed = parseHjson(text);
+  } catch {
+    try {
+      parsed = parseHjson(repairQuotedNewlines(text));
+    } catch {
+      parsed = null;
+    }
+  }
+  if (parsed === null || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    return null;
+  }
+  const hasScripts = scriptsOf(parsed.scripts);
+  const hasMain = typeof parsed.main === 'string' && parsed.main.trim().length > 0;
+  const name = typeof parsed.name === 'string' ? parsed.name.trim() : '';
+  const author = typeof parsed.author === 'string' ? parsed.author.trim() : '';
+  const description = typeof parsed.description === 'string' ? parsed.description : '';
+  return {
+    name: name || null,
+    author: author || null,
+    description,
+    modVersion: toText(parsed.version),
+    minGameVersion: toText(parsed.minGameVersion),
+    hideBrowser: parsed.hideBrowser === true,
+    hasScripts,
+    // 与官方列表口径近似：有 main 且没有 scripts 视为 Java 模组
+    hasJava: hasMain && !hasScripts,
+  };
+}
+
+// 用默认分支读社区仓库的 mod 元数据（root 或 assets/ 的 mod.json / mod.hjson）
+const COMMUNITY_CANDIDATES = ['mod.json', 'mod.hjson', 'assets/mod.json', 'assets/mod.hjson'];
+
+export async function fetchCommunityModMetadata(client, { repo, ref }) {
+  for (const filePath of COMMUNITY_CANDIDATES) {
+    for (const url of rawFileUrlVariants(repo, ref, filePath)) {
+      let response;
+      try {
+        response = await client.get(url);
+      } catch {
+        continue;
+      }
+      if (response.status === 404) {
+        continue;
+      }
+      if (response.status !== 200) {
+        return { found: false, reason: `http-${response.status}` };
+      }
+      const metadata = parseModMetadataDocument(response.text);
+      if (metadata) {
+        return { found: true, path: filePath, metadata };
+      }
+    }
+  }
+  return { found: false, reason: 'missing' };
+}
+
 function metadataResult(path, status, parsed = null) {
   return {
     metadataPath: path,
