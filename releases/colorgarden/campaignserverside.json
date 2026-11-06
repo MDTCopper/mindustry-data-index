@@ -1,8 +1,32 @@
 {
   "formatVersion": 2,
   "repo": "colorgarden/campaignserverside",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
+  "generatedAt": "2026-11-06T15:20:56.922Z",
   "releases": [
+    {
+      "tag": "v0.0.2-alpha",
+      "name": "0.0.2-alpha",
+      "hasRelease": true,
+      "prerelease": true,
+      "publishedAt": "2026-11-06T14:05:42Z",
+      "htmlUrl": "https://github.com/colorgarden/CampaignServerSide/releases/tag/v0.0.2-alpha",
+      "modVersion": "0.0.2-alpha",
+      "minGameVersion": "160",
+      "metadataPath": "mod.hjson",
+      "metadataStatus": "ok",
+      "downloadUrl": "https://github.com/colorgarden/CampaignServerSide/releases/download/v0.0.2-alpha/CampaignServerSide.jar",
+      "sourceArchiveUrl": "https://github.com/colorgarden/campaignserverside/archive/refs/tags/v0.0.2-alpha.zip",
+      "assets": [
+        {
+          "name": "CampaignServerSide.jar",
+          "size": 192877,
+          "downloadCount": 1,
+          "downloadUrl": "https://github.com/colorgarden/CampaignServerSide/releases/download/v0.0.2-alpha/CampaignServerSide.jar"
+        }
+      ],
+      "commitSha": "65b511382e918a2651fca37cac5fc023c34b5e86",
+      "archiveByCommitUrl": "https://github.com/colorgarden/campaignserverside/archive/65b511382e918a2651fca37cac5fc023c34b5e86.zip"
+    },
     {
       "tag": "v0.0.1-alpha",
       "name": "0.0.1-alpha",
@@ -30,8 +54,8 @@
   ],
   "compat": [
     {
-      "tag": "v0.0.1-alpha",
-      "modVersion": "0.0.1-alpha",
+      "tag": "v0.0.2-alpha",
+      "modVersion": "0.0.2-alpha",
       "minGameVersion": "160",
       "maxGameVersion": null,
       "hasRelease": true
