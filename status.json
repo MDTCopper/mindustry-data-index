@@ -1,30 +1,40 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-06T13:35:23.538Z",
+  "generatedAt": "2026-11-06T14:04:20.527Z",
   "datasets": {
-    "official": null,
-    "community": null,
+    "official": {
+      "updatedAt": "2026-11-06T13:57:08.230Z",
+      "modCount": 993,
+      "releaseCount": 5219,
+      "skipped": []
+    },
+    "community": {
+      "updatedAt": "2026-11-06T14:02:18.855Z",
+      "modCount": 457,
+      "releaseCount": 1396,
+      "skipped": []
+    },
     "versions": {
-      "updatedAt": "2026-11-06T13:35:22.847Z",
+      "updatedAt": "2026-11-06T13:57:05.916Z",
       "modCount": null,
       "releaseCount": 205,
       "skipped": []
     },
     "gate": {
-      "updatedAt": "2026-11-06T13:35:23.113Z",
+      "updatedAt": "2026-11-06T10:55:10.534Z",
       "modCount": null,
       "releaseCount": null,
       "skipped": []
     }
   },
   "api": {
-    "requests": 2,
-    "remaining": 3010,
+    "requests": 2923,
+    "remaining": 73,
     "resetAt": "2026-11-06T14:05:25.000Z"
   },
   "validate": {
-    "errors": 7824,
-    "warnings": 1,
+    "errors": 0,
+    "warnings": 0,
     "presentFiles": [
       "index.json",
       "summary.json",
@@ -38,7 +48,12 @@
       "mindustry/mod-gate.json",
       "mindustry/java-gate.json",
       "mindustry/heartbeat.json",
-      "status.json"
+      "status.json",
+      "changes.json",
+      "heat/index.json",
+      "heat/summary.csv",
+      "state/heat-commit-stats.json",
+      "state/repo-created.json"
     ]
   }
 }

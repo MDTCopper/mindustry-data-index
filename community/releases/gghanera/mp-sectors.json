@@ -1,0 +1,72 @@
+{
+  "formatVersion": 2,
+  "repo": "gghanera/mp-sectors",
+  "generatedAt": "2026-11-06T14:02:18.855Z",
+  "releases": [
+    {
+      "tag": "v2.1.0",
+      "name": "MP Sectors 2.1.0",
+      "hasRelease": true,
+      "prerelease": false,
+      "publishedAt": "2026-11-06T13:15:24Z",
+      "htmlUrl": "https://github.com/gghanera/mp-sectors/releases/tag/v2.1.0",
+      "modVersion": "0.3.0",
+      "minGameVersion": "160",
+      "metadataPath": "mod.hjson",
+      "metadataStatus": "ok",
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.0/server-release.jar",
+      "sourceArchiveUrl": "https://github.com/gghanera/mp-sectors/archive/refs/tags/v2.1.0.zip",
+      "assets": [
+        {
+          "name": "any-research.jar",
+          "size": 10228,
+          "downloadCount": 1,
+          "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.0/any-research.jar"
+        },
+        {
+          "name": "mp-campaign.jar",
+          "size": 49102,
+          "downloadCount": 1,
+          "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.0/mp-campaign.jar"
+        },
+        {
+          "name": "MP-Sectors-2.1.0.zip",
+          "size": 19102624,
+          "downloadCount": 0,
+          "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.0/MP-Sectors-2.1.0.zip"
+        },
+        {
+          "name": "mp-sectors.jar",
+          "size": 75166,
+          "downloadCount": 1,
+          "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.0/mp-sectors.jar"
+        },
+        {
+          "name": "server-release.jar",
+          "size": 19453000,
+          "downloadCount": 1,
+          "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.0/server-release.jar"
+        }
+      ],
+      "commitSha": "cc3949c3b46b89e9054105f002f1b97eac09eb46",
+      "archiveByCommitUrl": "https://github.com/gghanera/mp-sectors/archive/cc3949c3b46b89e9054105f002f1b97eac09eb46.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v2.1.0",
+      "modVersion": "0.3.0",
+      "minGameVersion": "160",
+      "maxGameVersion": null,
+      "hasRelease": true
+    }
+  ],
+  "meta": {
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mpsectors.MpSectorsMod",
+    "hasScripts": false,
+    "hasJava": true
+  }
+}

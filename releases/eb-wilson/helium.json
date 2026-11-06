@@ -1,7 +1,7 @@
 {
-  "formatVersion": 1,
+  "formatVersion": 2,
   "repo": "eb-wilson/helium",
-  "generatedAt": "2026-11-06T13:05:25.386Z",
+  "generatedAt": "2026-11-06T13:57:08.230Z",
   "releases": [
     {
       "tag": "beta-1.7",
@@ -486,5 +486,13 @@
       "maxGameVersion": null,
       "hasRelease": true
     }
-  ]
+  ],
+  "meta": {
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "helium.Helium",
+    "hasScripts": false,
+    "hasJava": true
+  }
 }
