@@ -16,16 +16,14 @@ export const STOCK_PERCENTILE_WEIGHT = 0.2;
 export const COMPONENT_WEIGHTS = { downloads: 0.4, stars: 0.5, update: 0.1 };
 export const MAINTENANCE_ACTIVE_DAYS = 180;
 export const MAINTENANCE_STALE_DAYS = 360;
-// 推荐过滤阈值（集中配置；测试/调用方可通过参数覆盖）
-export const RECOMMEND_DEFAULTS = {
-  minScore: 0,
-  staleMaxDownloads: 0,
-  staleMaxStars: 20,
-};
-export const RECOMMEND_HIDDEN_REASONS = ['score-below-min', 'stale-low-activity'];
-export const MAINTENANCE_STATUSES = ['active', 'low', 'stale'];
+// 默认预筛：score >= MIN_SCORE 才进默认列表；阈值集中在这里，可调
+export const MIN_SCORE = 0;
+export const RECOMMEND_DEFAULTS = { minScore: MIN_SCORE };
+export const RECOMMEND_HIDDEN_REASONS = ['score-below-min'];
 export const HEAT_RECOMMEND_REL_PATH = 'heat/recommend.json';
 export const HEAT_RECOMMEND_CSV_REL_PATH = 'heat/recommend.csv';
+export const FULL_INDEX_REL_PATH = 'index-full.json';
+export const COMMUNITY_FULL_INDEX_REL_PATH = 'community/index-full.json';
 export const NEW_MOD_DAYS = 180;
 export const NEW_MOD_MAX_MULTIPLIER = 1.325;
 export const NEW_MOD_DECAY_DAYS = 30;
@@ -138,23 +136,16 @@ export function maintenanceStatus({ daysSinceRelease, daysSinceCommit, ageDays =
   return 'stale';
 }
 
-// 推荐过滤：默认 score<0 或（stale 且无下载且星标<20）隐藏；阈值可通过 overrides 覆盖
+// 默认预筛：只按 score >= MIN_SCORE 判断，不再按长期停更过滤（老 mod 可能过去很好）
 export function recommendationFor(entry, overrides = {}) {
   const options = { ...RECOMMEND_DEFAULTS, ...overrides };
   if (Number(entry?.score) < options.minScore) {
     return { visible: false, reason: 'score-below-min' };
   }
-  if (
-    entry?.maintenance?.status === 'stale' &&
-    (Number(entry?.totalDownloads) || 0) <= options.staleMaxDownloads &&
-    (Number(entry?.totalStars) || 0) < options.staleMaxStars
-  ) {
-    return { visible: false, reason: 'stale-low-activity' };
-  }
   return { visible: true, reason: null };
 }
 
-// 注入 index 条目的 heat 对象（热度与模组列表合并后的唯一入口）
+// 注入 index 条目的 heat 对象：只保留 6 个字段（权重与参数固定在仓库代码 src/heat.js）
 export function heatIndexFields(entry) {
   return {
     score: entry.score,
@@ -162,30 +153,15 @@ export function heatIndexFields(entry) {
     downloadsScore: entry.downloadsScore,
     starsScore: entry.starsScore,
     updateScore: entry.updateScore,
-    newModMultiplier: entry.newModMultiplier,
-    penalty: entry.penalty,
-    maintenance: {
-      lastReleaseAt: entry.maintenance?.lastReleaseAt ?? null,
-      lastCommitAt: entry.maintenance?.lastCommitAt ?? null,
-      daysSinceRelease: entry.maintenance?.daysSinceRelease ?? null,
-      daysSinceCommit: entry.maintenance?.daysSinceCommit ?? null,
-      status: entry.maintenance?.status ?? 'stale',
-    },
     recommendVisible: entry.recommend?.visible === true,
-    recommendReason: entry.recommend?.reason ?? null,
-    downloadChanges: entry.downloadChanges,
-    starChanges: entry.starChanges,
-    releaseUpdates: entry.releaseUpdates,
-    commits: entry.commits,
   };
 }
 
-// summary 总表里的 4 个热度列
+// summary 总表里的 3 个热度列
 export function heatSummaryFields(entry) {
   return {
     heatScore: entry.score,
     heatRank: entry.rank,
-    maintenanceStatus: entry.maintenance?.status ?? null,
     recommendVisible: entry.recommend?.visible === true,
   };
 }

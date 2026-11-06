@@ -20,7 +20,6 @@ export const SUMMARY_COLUMNS = [
   'iconUrl',
   'heatScore',
   'heatRank',
-  'maintenanceStatus',
   'recommendVisible',
   'releasesPath',
 ];

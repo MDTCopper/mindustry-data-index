@@ -35,8 +35,10 @@ import {
   HEAT_WINDOWS,
   UPDATE_WINDOWS,
   HISTORY_LIMITS,
-  MAINTENANCE_STATUSES,
   RECOMMEND_HIDDEN_REASONS,
+  MIN_SCORE,
+  FULL_INDEX_REL_PATH,
+  COMMUNITY_FULL_INDEX_REL_PATH,
 } from './heat.js';
 
 const HEARTBEAT_REL_PATH = 'mindustry/heartbeat.json';
@@ -377,7 +379,21 @@ export function validateIndexHeat(mod, { where, errors }) {
     errors.push(`${where}.heat 缺失或不是对象（热度已合并进 index.json）`);
     return;
   }
-  for (const field of ['score', 'downloadsScore', 'starsScore', 'updateScore', 'newModMultiplier', 'penalty']) {
+  const keys = Object.keys(heat);
+  const expected = [
+    'score',
+    'rank',
+    'downloadsScore',
+    'starsScore',
+    'updateScore',
+    'recommendVisible',
+  ];
+  for (const key of keys) {
+    if (!expected.includes(key)) {
+      errors.push(`${where}.heat 含多余字段 ${key}（只允许 6 个精简字段）`);
+    }
+  }
+  for (const field of ['score', 'downloadsScore', 'starsScore', 'updateScore']) {
     if (!isFiniteNumberOrNull(heat[field])) {
       errors.push(`${where}.heat.${field} 应为有限数字`);
     }
@@ -387,59 +403,43 @@ export function validateIndexHeat(mod, { where, errors }) {
   }
   if (typeof heat.recommendVisible !== 'boolean') {
     errors.push(`${where}.heat.recommendVisible 应为布尔值`);
-  }
-  if (
-    heat.recommendReason !== null &&
-    !RECOMMEND_HIDDEN_REASONS.includes(heat.recommendReason)
+  } else if (
+    isFiniteNumberOrNull(heat.score) &&
+    heat.recommendVisible !== heat.score >= MIN_SCORE
   ) {
-    errors.push(`${where}.heat.recommendReason 非法：${JSON.stringify(heat.recommendReason)}`);
+    errors.push(`${where}.heat.recommendVisible 应为 score >= ${MIN_SCORE}`);
   }
-  if (heat.recommendVisible === true && heat.recommendReason !== null) {
-    errors.push(`${where}.heat.recommendReason 在 recommendVisible=true 时应为 null`);
+  if (expected.some((field) => !(field in heat))) {
+    errors.push(`${where}.heat 缺少 6 个字段之一：${expected.join(', ')}`);
   }
-  if (heat.recommendVisible === false && heat.recommendReason === null) {
-    errors.push(`${where}.heat.recommendReason 在 recommendVisible=false 时不能为 null`);
+}
+
+// 默认列表必须严格等于全量列表按 recommendVisible 过滤（保持顺序/heat 一致）
+export function validateDefaultListConsistency(defaultIndex, fullIndex, { label, errors }) {
+  if (!isPlainObject(defaultIndex) || !Array.isArray(defaultIndex.mods)) {
+    errors.push(`${label} 默认列表缺失或 mods 不是数组`);
+    return;
   }
-  if (!isPlainObject(heat.maintenance)) {
-    errors.push(`${where}.heat.maintenance 不是对象`);
-  } else {
-    if (!MAINTENANCE_STATUSES.includes(heat.maintenance.status)) {
-      errors.push(`${where}.heat.maintenance.status 非法`);
-    }
-    for (const field of ['lastReleaseAt', 'lastCommitAt']) {
-      if (heat.maintenance[field] !== null && !isIsoDate(heat.maintenance[field])) {
-        errors.push(`${where}.heat.maintenance.${field} 应为 ISO 时间或 null`);
-      }
-    }
-    for (const field of ['daysSinceRelease', 'daysSinceCommit']) {
-      if (
-        heat.maintenance[field] !== null &&
-        (!isFiniteNumberOrNull(heat.maintenance[field]) || heat.maintenance[field] < 0)
-      ) {
-        errors.push(`${where}.heat.maintenance.${field} 应为非负数字或 null`);
-      }
-    }
+  if (!isPlainObject(fullIndex) || !Array.isArray(fullIndex.mods)) {
+    errors.push(`${label} 全量列表缺失或 mods 不是数组`);
+    return;
   }
-  for (const field of ['downloadChanges', 'starChanges']) {
-    if (!isPlainObject(heat[field])) {
-      errors.push(`${where}.heat.${field} 不是对象`);
-      continue;
-    }
-    for (const window of HEAT_WINDOWS) {
-      if (!isFiniteNumberOrNull(heat[field][window])) {
-        errors.push(`${where}.heat.${field}.${window} 应为数字`);
-      }
+  const expected = fullIndex.mods.filter((mod) => mod?.heat?.recommendVisible === true);
+  const defaultRepos = defaultIndex.mods.map((mod) => mod?.repo);
+  const expectedRepos = expected.map((mod) => mod?.repo);
+  if (JSON.stringify(defaultRepos) !== JSON.stringify(expectedRepos)) {
+    errors.push(`${label} 默认列表必须等于全量列表按 recommendVisible 过滤的结果`);
+    return;
+  }
+  for (const [position, mod] of defaultIndex.mods.entries()) {
+    if (JSON.stringify(mod.heat) !== JSON.stringify(expected[position].heat)) {
+      errors.push(`${label} 默认列表 ${mod.repo} 的 heat 与全量列表不一致`);
     }
   }
-  for (const field of ['releaseUpdates', 'commits']) {
-    if (!isPlainObject(heat[field])) {
-      errors.push(`${where}.heat.${field} 不是对象`);
-      continue;
-    }
-    for (const window of UPDATE_WINDOWS) {
-      if (!isFiniteNumberOrNull(heat[field][window])) {
-        errors.push(`${where}.heat.${field}.${window} 应为数字`);
-      }
+  // 全量列表里隐藏项必须 recommendVisible=false，可见项 true（按定义即可，额外校验字段存在）
+  for (const mod of fullIndex.mods) {
+    if (typeof mod?.heat?.recommendVisible !== 'boolean') {
+      errors.push(`${label} 全量列表 ${mod?.repo} 缺少 heat.recommendVisible`);
     }
   }
 }
@@ -1056,14 +1056,6 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
       errors.push(`${where}.heatRank 应为正整数`);
     } else if (indexEntry.heat && row.heatRank !== indexEntry.heat.rank) {
       errors.push(`${where}.heatRank 与 index.heat.rank 不一致`);
-    }
-    if (!MAINTENANCE_STATUSES.includes(row.maintenanceStatus)) {
-      errors.push(`${where}.maintenanceStatus 非法`);
-    } else if (
-      indexEntry.heat?.maintenance &&
-      row.maintenanceStatus !== indexEntry.heat.maintenance.status
-    ) {
-      errors.push(`${where}.maintenanceStatus 与 index.heat.maintenance 不一致`);
     }
     if (typeof row.recommendVisible !== 'boolean') {
       errors.push(`${where}.recommendVisible 应为布尔值`);
@@ -1687,6 +1679,7 @@ export async function validateDir(dir) {
   };
 
   const indexFile = await readJsonIfPresent(path.join(outDir, INDEX_FILE));
+  const indexFullFile = await readJsonIfPresent(path.join(outDir, FULL_INDEX_REL_PATH));
   const versionsFile = await readJsonIfPresent(path.join(outDir, VERSIONS_REL_PATH));
   const modGateFile = await readJsonIfPresent(path.join(outDir, GATE_REL_PATHS.mod));
   const javaGateFile = await readJsonIfPresent(path.join(outDir, GATE_REL_PATHS.java));
@@ -1700,6 +1693,9 @@ export async function validateDir(dir) {
   );
   const communityIndexFile = await readJsonIfPresent(
     path.join(outDir, COMMUNITY_DIR, 'index.json'),
+  );
+  const communityFullIndexFile = await readJsonIfPresent(
+    path.join(outDir, COMMUNITY_FULL_INDEX_REL_PATH),
   );
   const communitySummaryFile = await readJsonIfPresent(
     path.join(outDir, COMMUNITY_DIR, 'summary.json'),
@@ -1752,7 +1748,21 @@ export async function validateDir(dir) {
     if (indexFile.error) {
       errors.push(`${INDEX_FILE} 无法解析：${indexFile.error.message}`);
     } else {
-      validateIndexData(indexFile.data, { errors, warnings, releaseFiles });
+      if (!indexFullFile.exists) {
+        errors.push(`缺少 ${FULL_INDEX_REL_PATH}（全量列表）`);
+      } else if (indexFullFile.error) {
+        errors.push(`${FULL_INDEX_REL_PATH} 无法解析：${indexFullFile.error.message}`);
+      } else {
+        result.present.push(FULL_INDEX_REL_PATH);
+        validateIndexData(indexFullFile.data, { errors, warnings, releaseFiles });
+        validateDefaultListConsistency(indexFile.data, indexFullFile.data, {
+          label: INDEX_FILE,
+          errors,
+        });
+      }
+      validateIndexData(indexFile.data, { errors, warnings });
+      const officialFullData =
+        indexFullFile.exists && !indexFullFile.error ? indexFullFile.data : indexFile.data;
       const loaded = new Map();
       for (const relPath of releaseFiles) {
         try {
@@ -1762,7 +1772,7 @@ export async function validateDir(dir) {
         }
       }
       const usedFiles = new Set();
-      const mods = Array.isArray(indexFile.data?.mods) ? indexFile.data.mods : [];
+      const mods = Array.isArray(officialFullData?.mods) ? officialFullData.mods : [];
       for (const mod of mods) {
         if (!isPlainObject(mod) || typeof mod.repo !== 'string') {
           continue;
@@ -1858,7 +1868,7 @@ export async function validateDir(dir) {
       } else {
         result.present.push('summary.json');
         const summaryResult = validateSummaryData(summaryFile.data, {
-          index: indexFile.data,
+          index: officialFullData,
           errors,
           warnings,
         });
@@ -1893,19 +1903,42 @@ export async function validateDir(dir) {
         errors.push(`${COMMUNITY_DIR}/releases 枚举失败：${error.message}`);
       }
       result.communityReleaseFileCount = communityReleaseFiles.size;
-      const officialMods = Array.isArray(indexFile.data?.mods) ? indexFile.data.mods : [];
+      const officialFullData =
+        indexFullFile.exists && !indexFullFile.error ? indexFullFile.data : indexFile.data;
+      const officialMods = Array.isArray(officialFullData?.mods) ? officialFullData.mods : [];
       const officialRepos = new Set(
         officialMods
           .filter((mod) => typeof mod?.repo === 'string')
           .map((mod) => mod.repo.toLowerCase()),
       );
+      if (!communityFullIndexFile.exists) {
+        errors.push(`缺少 ${COMMUNITY_FULL_INDEX_REL_PATH}（社区全量列表）`);
+      } else if (communityFullIndexFile.error) {
+        errors.push(`${COMMUNITY_FULL_INDEX_REL_PATH} 无法解析：${communityFullIndexFile.error.message}`);
+      } else {
+        result.present.push(COMMUNITY_FULL_INDEX_REL_PATH);
+        validateIndexData(communityFullIndexFile.data, {
+          errors,
+          warnings,
+          releaseFiles: communityReleaseFiles,
+          mode: 'community',
+          officialRepos,
+        });
+        validateDefaultListConsistency(communityIndexFile.data, communityFullIndexFile.data, {
+          label: `${COMMUNITY_DIR}/index.json`,
+          errors,
+        });
+      }
       validateIndexData(communityIndexFile.data, {
         errors,
         warnings,
-        releaseFiles: communityReleaseFiles,
         mode: 'community',
         officialRepos,
       });
+      const communityFullData =
+        communityFullIndexFile.exists && !communityFullIndexFile.error
+          ? communityFullIndexFile.data
+          : communityIndexFile.data;
 
       const loaded = new Map();
       for (const relPath of communityReleaseFiles) {
@@ -1916,8 +1949,8 @@ export async function validateDir(dir) {
         }
       }
       const usedFiles = new Set();
-      const communityMods = Array.isArray(communityIndexFile.data?.mods)
-        ? communityIndexFile.data.mods
+      const communityMods = Array.isArray(communityFullData?.mods)
+        ? communityFullData.mods
         : [];
       for (const mod of communityMods) {
         if (
@@ -2008,7 +2041,7 @@ export async function validateDir(dir) {
           errors.push(`${COMMUNITY_DIR}/summary.json 无法解析：${communitySummaryFile.error.message}`);
         } else {
           const summaryResult = validateSummaryData(communitySummaryFile.data, {
-            index: communityIndexFile.data,
+            index: communityFullData,
             errors,
             warnings,
           });
@@ -2118,9 +2151,17 @@ export async function validateDir(dir) {
   }
 
   // heat 已合并进 index.json / community/index.json / summary；这里做全局排名与旧文件一致性校验
-  const officialModsForHeat = Array.isArray(indexFile.data?.mods) ? indexFile.data.mods : [];
-  const communityModsForHeat = Array.isArray(communityIndexFile.data?.mods)
-    ? communityIndexFile.data.mods
+  const officialFullForHeat =
+    indexFullFile.exists && !indexFullFile.error ? indexFullFile.data : indexFile.data;
+  const communityFullForHeat =
+    communityFullIndexFile.exists && !communityFullIndexFile.error
+      ? communityFullIndexFile.data
+      : communityIndexFile.data;
+  const officialModsForHeat = Array.isArray(officialFullForHeat?.mods)
+    ? officialFullForHeat.mods
+    : [];
+  const communityModsForHeat = Array.isArray(communityFullForHeat?.mods)
+    ? communityFullForHeat.mods
     : [];
   const allHeatEntries = [];
   for (const mod of [...officialModsForHeat, ...communityModsForHeat]) {

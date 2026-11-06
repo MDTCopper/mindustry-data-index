@@ -9,8 +9,10 @@ const schemaDir = path.join(repoRoot, 'schema');
 
 const EXPECTED_REQUIRED = {
   'index.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
+  'index-full.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
   'releases.json': ['formatVersion', 'repo', 'generatedAt', 'releases', 'compat', 'meta'],
   'community-index.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
+  'community-index-full.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
   'community-releases.json': ['formatVersion', 'repo', 'generatedAt', 'releases', 'compat', 'meta'],
   'summary.json': ['formatVersion', 'generatedAt', 'totals', 'mods'],
   'community-summary.json': ['formatVersion', 'generatedAt', 'totals', 'mods'],
@@ -28,7 +30,7 @@ const EXPECTED_REQUIRED = {
 
 test('schema/: 全部是合法 JSON 且使用 draft 2020-12', () => {
   const files = readdirSync(schemaDir).filter((name) => name.endsWith('.json'));
-  assert.ok(files.length >= 17);
+  assert.ok(files.length >= 19);
   for (const name of files) {
     const schema = JSON.parse(readFileSync(path.join(schemaDir, name), 'utf8'));
     assert.equal(schema.$schema, 'https://json-schema.org/draft/2020-12/schema', name);
@@ -60,9 +62,15 @@ test('schema/: 关键数据文件 required 字段齐全，formatVersion 与当�
   assert.ok(community.properties.mods.items.required.includes('heat'));
 
   const summary = JSON.parse(readFileSync(path.join(schemaDir, 'summary.json'), 'utf8'));
-  for (const field of ['heatScore', 'heatRank', 'maintenanceStatus', 'recommendVisible']) {
+  for (const field of ['heatScore', 'heatRank', 'recommendVisible']) {
     assert.ok(summary.properties.mods.items.required.includes(field), `summary 条目缺少 ${field}`);
   }
+  assert.ok(!('maintenanceStatus' in summary.properties.mods.items.properties));
+  const heatFields = index.properties.mods.items.properties.heat.required;
+  assert.deepEqual(
+    [...heatFields].sort(),
+    ['downloadsScore', 'rank', 'recommendVisible', 'score', 'starsScore', 'updateScore'].sort(),
+  );
 
   const changes = JSON.parse(readFileSync(path.join(schemaDir, 'changes.json'), 'utf8'));
   assert.equal(changes.type, 'array');

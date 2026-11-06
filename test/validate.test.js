@@ -21,21 +21,7 @@ function defaultHeat(rank = 1, score = 0.5 / rank) {
     downloadsScore: 0.5,
     starsScore: 0.6,
     updateScore: 0.4,
-    newModMultiplier: 1.1,
-    penalty: 0,
-    maintenance: {
-      lastReleaseAt: '2026-10-01T12:00:00Z',
-      lastCommitAt: '2026-10-01T12:00:00Z',
-      daysSinceRelease: 36,
-      daysSinceCommit: 36,
-      status: 'active',
-    },
-    recommendVisible: true,
-    recommendReason: null,
-    downloadChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
-    starChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
-    releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
-    commits: { 7: 1, 30: 1, 90: 1, 180: 1 },
+    recommendVisible: score >= 0,
   };
 }
 
@@ -164,7 +150,6 @@ function summaryRow(entry, releaseFile) {
       ? {
           heatScore: entry.heat.score,
           heatRank: entry.heat.rank,
-          maintenanceStatus: entry.heat.maintenance.status,
           recommendVisible: entry.heat.recommendVisible,
         }
       : {}),
@@ -183,12 +168,21 @@ async function writeSummaryFiles(dir, index, releaseFile) {
 async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mods-index-validate-'));
   ensureHeat(index);
+  const fullIndex = JSON.parse(JSON.stringify(index));
+  const visibleIndex = {
+    ...fullIndex,
+    source: fullIndex.source
+      ? { ...fullIndex.source, modCount: fullIndex.mods.filter((mod) => mod.heat?.recommendVisible === true).length }
+      : fullIndex.source,
+    mods: fullIndex.mods.filter((mod) => mod.heat?.recommendVisible === true),
+  };
   await mkdir(path.join(dir, 'releases'), { recursive: true });
-  await writeFile(path.join(dir, 'index.json'), JSON.stringify(index, null, 2));
+  await writeFile(path.join(dir, 'index-full.json'), JSON.stringify(fullIndex, null, 2));
+  await writeFile(path.join(dir, 'index.json'), JSON.stringify(visibleIndex, null, 2));
   const relPath = releasesRelPath(releaseFile.repo);
   await mkdir(path.dirname(path.join(dir, relPath)), { recursive: true });
   await writeFile(path.join(dir, relPath), JSON.stringify(releaseFile, null, 2));
-  await writeSummaryFiles(dir, index, releaseFile);
+  await writeSummaryFiles(dir, fullIndex, releaseFile);
   await writeFile(
     path.join(dir, 'status.json'),
     JSON.stringify(
@@ -743,14 +737,28 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
   const communityDir = path.join(dir, 'community');
   let officialCount = 0;
   try {
-    const officialIndex = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+    const officialIndex = JSON.parse(
+      await readFile(path.join(dir, 'index-full.json'), 'utf8'),
+    );
     officialCount = Array.isArray(officialIndex.mods) ? officialIndex.mods.length : 0;
   } catch {}
   ensureHeat(fixture.index, officialCount);
+  const communityFull = JSON.parse(JSON.stringify(fixture.index));
+  const communityVisible = {
+    ...communityFull,
+    source: communityFull.source
+      ? { ...communityFull.source, modCount: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true).length }
+      : communityFull.source,
+    mods: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true),
+  };
   await mkdir(path.join(communityDir, 'releases', 'communitymods'), { recursive: true });
   await writeFile(
+    path.join(communityDir, 'index-full.json'),
+    JSON.stringify(communityFull, null, 2),
+  );
+  await writeFile(
     path.join(communityDir, 'index.json'),
-    JSON.stringify(fixture.index, null, 2),
+    JSON.stringify(communityVisible, null, 2),
   );
   const filePath = path.join(communityDir, 'releases', `${fixture.releaseFile.repo}.json`);
   await mkdir(path.dirname(filePath), { recursive: true });
@@ -774,7 +782,6 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
     iconUrl: null,
     heatScore: fixture.index.mods[0].heat.score,
     heatRank: fixture.index.mods[0].heat.rank,
-    maintenanceStatus: fixture.index.mods[0].heat.maintenance.status,
     recommendVisible: fixture.index.mods[0].heat.recommendVisible,
     releasesPath: fixture.entry.releasesPath,
   };
@@ -1059,20 +1066,26 @@ test('validateDir：缺少 index.heat 字段会被发现', async (t) => {
 test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发现', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
-  // 社区条目默认 rank=1，与官方 rank=1 重复
   await addCommunityFixture(dir);
-  const communityPath = path.join(dir, 'community', 'index.json');
-  const community = JSON.parse(await readFile(communityPath, 'utf8'));
-  community.mods[0].heat.rank = 1;
-  await writeFile(communityPath, JSON.stringify(community, null, 2));
+  const writeCommunity = async (updater) => {
+    for (const file of ['index.json', 'index-full.json']) {
+      const filePath = path.join(dir, 'community', file);
+      const data = JSON.parse(await readFile(filePath, 'utf8'));
+      updater(data.mods[0]);
+      await writeFile(filePath, JSON.stringify(data, null, 2));
+    }
+  };
+  // 社区全量/默认条目 rank=1，与官方 rank=1 重复
+  await writeCommunity((mod) => {
+    mod.heat.rank = 1;
+  });
   const duplicate = await validateDir(dir);
   assert.ok(duplicate.errors.some((message) => message.includes('全局 heat.rank 重复')));
   // 修正为 rank=2 但分数更高 → 排序不一致
-  const communityIndexPath = path.join(dir, 'community', 'index.json');
-  const communityIndex = JSON.parse(await readFile(communityIndexPath, 'utf8'));
-  communityIndex.mods[0].heat.rank = 2;
-  communityIndex.mods[0].heat.score = 0.9;
-  await writeFile(communityIndexPath, JSON.stringify(communityIndex, null, 2));
+  await writeCommunity((mod) => {
+    mod.heat.rank = 2;
+    mod.heat.score = 0.9;
+  });
   const summaryPath = path.join(dir, 'community', 'summary.json');
   const summary = JSON.parse(await readFile(summaryPath, 'utf8'));
   summary.mods[0].heatScore = 0.9;
@@ -1080,6 +1093,33 @@ test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发�
   await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const wrongOrder = await validateDir(dir);
   assert.ok(wrongOrder.errors.some((message) => message.includes('heat.rank 与分数排序不一致')));
+});
+
+test('validateDir：默认列表不等于全量按 recommendVisible 过滤会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const indexPath = path.join(dir, 'index.json');
+  const index = JSON.parse(await readFile(indexPath, 'utf8'));
+  index.mods = [];
+  index.source.modCount = 0;
+  await writeFile(indexPath, JSON.stringify(index, null, 2));
+  const result = await validateDir(dir);
+  assert.ok(
+    result.errors.some((message) => message.includes('默认列表必须等于全量列表按 recommendVisible 过滤')),
+  );
+});
+
+test('validateDir：heat 出现第 7 个字段会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  for (const file of ['index.json', 'index-full.json']) {
+    const filePath = path.join(dir, file);
+    const index = JSON.parse(await readFile(filePath, 'utf8'));
+    index.mods[0].heat.maintenance = { status: 'active' };
+    await writeFile(filePath, JSON.stringify(index, null, 2));
+  }
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('含多余字段 maintenance')));
 });
 
 test('validateDir：summary 热度列与 index.heat 不一致会被发现', async (t) => {

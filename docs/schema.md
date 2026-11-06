@@ -644,18 +644,21 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 
 ## schema/*.json
 
-本仓全部数据文件的 JSON Schema（draft 2020-12），文件名对应数据文件：`index.json`、`releases.json`、
-`community-index.json`、`community-releases.json`、`summary.json`、`community-summary.json`、
+本仓全部数据文件的 JSON Schema（draft 2020-12），文件名对应数据文件：`index.json`、
+`index-full.json`、`releases.json`、`community-index.json`、`community-index-full.json`、
+`community-releases.json`、`summary.json`、`community-summary.json`、
 `versions.json`、`mod-gate.json`、`java-gate.json`、`refresh-state.json`、`community-refresh-state.json`、
 `blacklist-state.json`、`status.json`、`changes.json`、`heat-history.json`、
 `heat-commit-state.json`、`repo-created.json`。`releases.json` 的 `formatVersion` 固定 `2`；
 `heat` 已并入 index / summary，不再有 `heat-index.json` schema。
 
-## heat（已合并进模组列表）
+## heat（已合并进模组列表、默认预筛）
 
 热度不再单独输出 `heat/index.json` / `heat/summary.csv`（旧路径已废弃、不再生成）。
-每个官方/社区 index 条目带 `heat` 对象，`summary.json/csv` 带 `heatScore`/`heatRank`/
-`maintenanceStatus`/`recommendVisible` 列。`heat.rank` 是官方+社区合并后的全局名次。
+官方/社区各有两份列表：`index.json` / `community/index.json` 是**默认列表**（只含
+`recommendVisible=true`），`index-full.json` / `community/index-full.json` 是全量列表；
+两份列表条目都带同一个精简 `heat` 对象（恰好 6 个字段）。`summary.json/csv` 仍是全量，
+带 `heatScore`/`heatRank`/`recommendVisible` 列。`heat.rank` 是官方+社区合并后的全局名次。
 
 ```json
 "heat": {
@@ -664,38 +667,17 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
   "downloadsScore": 0.0354,
   "starsScore": 0.433,
   "updateScore": 0.2206,
-  "newModMultiplier": 1,
-  "penalty": 0,
-  "maintenance": {
-    "lastReleaseAt": "2026-09-14T14:19:11.000Z",
-    "lastCommitAt": "2026-10-09T14:02:23.828Z",
-    "daysSinceRelease": 53.06,
-    "daysSinceCommit": 28.07,
-    "status": "active"
-  },
-  "recommendVisible": true,
-  "recommendReason": null,
-  "downloadChanges": { "1": 0, "7": 0, "30": 0, "180": 0 },
-  "starChanges": { "1": 0, "7": 0, "30": 0, "180": 0 },
-  "releaseUpdates": { "7": 0, "30": 0, "90": 1, "180": 4 },
-  "commits": { "7": 0, "30": 3.3, "90": 44.2, "180": 89.5 }
+  "recommendVisible": true
 }
 ```
 
-- 下载/星标变化窗口键为 `"1"/"7"/"30"/"180"`，release/提交活动窗口键为 `"7"/"30"/"90"/"180"`；
-  `commits` 是 participation 周粒度的近似值。存量/变化/活动/倍率/惩罚公式见 README「热度与模组列表」。
-- `maintenance.status`：`active`（≤180 天有 release 或提交）、`low`（180~360 天）、`stale`（>360 天无活动）。
-- `recommendVisible` + `recommendReason`：Copper 启动器「只看活跃」开关用；默认隐藏 `score<0`
-  （`score-below-min`）或 stale 且无下载且星标<20（`stale-low-activity`），阈值集中在
-  `src/heat.js` 的 `RECOMMEND_DEFAULTS`。
-- validator 会校验全局 `heat.rank` 1..N 唯一且与分数降序一致、summary 热度列与 index 一致；
-  旧的 `heat/index.json` 若仍存在只给废弃警告。
+- 权重/窗口/倍率/惩罚等参数固定在仓库代码 `src/heat.js`；输出不再携带这些中间值。
+- `recommendVisible = score >= MIN_SCORE`（`MIN_SCORE` 默认 `0`，常量在 `src/heat.js`），
+  不按长期停更过滤；默认列表严格等于全量列表按该字段过滤的结果。
+- validator 会校验：默认列表 == 全量过滤结果、全局 `heat.rank` 1..N 唯一且与分数降序一致、
+  heat 恰好 6 字段、summary 热度列与全量 index 一致；旧 `heat/index.json` 若仍存在只给废弃警告。
 
 ### heat/history/{daily,weekly,monthly}/
-
-每份快照：`{formatVersion:1, generatedAt, mods:{repo:{stars,totalDownloads}}}`。
-文件名分别为 `YYYY-MM-DD.json` / `YYYY-Www.json` / `YYYY-MM.json`；保留 daily 7、weekly 6、monthly 6 份，
-超出由更新流程删除。早期窗口缺失时热度变化按 0。
 
 每份快照：`{formatVersion:1, generatedAt, mods:{repo:{stars,totalDownloads}}}`。
 文件名分别为 `YYYY-MM-DD.json` / `YYYY-Www.json` / `YYYY-MM.json`；保留 daily 7、weekly 6、monthly 6 份，

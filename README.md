@@ -53,9 +53,10 @@ state/repo-created.json                 # 仓库 created_at 永久缓存（新 m
 schema/*.json                           # 各数据文件的 JSON Schema（draft 2020-12，见 docs/schema.md）
 ```
 
-热度（`score`/`rank`/维护状态/只看活跃）已**合并进模组列表**：`index.json`、`community/index.json`
-每个条目带 `heat` 对象，`summary.json/csv` 带 `heatScore`/`heatRank`/`maintenanceStatus`/
-`recommendVisible` 列；旧的独立 `heat/index.json`、`heat/summary.csv` 不再生成（见下文「热度与模组列表」）。
+热度（`heat` 6 字段 / 只看活跃）已**合并进模组列表**且默认预筛：`index.json`、`community/index.json`
+只含 `recommendVisible=true` 的默认列表；全量列表在 `index-full.json`、`community/index-full.json`。
+`summary.json/csv` 仍是全量，带 `heatScore`/`heatRank`/`recommendVisible` 列；旧的独立
+`heat/index.json`、`heat/summary.csv` 不再生成（见下文「热度与模组列表」）。
 
 per-mod 文件当前 `formatVersion` 为 **2**（schemaVersion）：v1 缺少 `compat`/`meta`/`commitSha`
 等字段；运行时读到 v1 会用缓存数据本地重算并写回（不额外发 API），也可以先跑一次
@@ -68,7 +69,8 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 不会触发重新抓取；迁移完成后 `releases/` 下只保留新结构。
 产物可直接按 raw 地址读取，例如：
 
-- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/index.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/index.json`（默认列表）
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/index-full.json`（全量）
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/summary.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/summary.csv`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/releases/Anuken/ExampleMod.json`
@@ -205,21 +207,24 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   （`[red]`、`[#00ff00]`、`[]` 等）、换行与多余空白；普通英文方括号（如 `[Mod]`）不会被误删。
   `summary.json/csv` 增加 `namePlain` 列（紧跟 `name`）便于搜索。
 
-## 热度与模组列表（已合并）
+## 热度与模组列表（已合并、默认预筛）
 
-热度对官方+社区**全量**模组计算，**不单独出表**：结果注入
-`index.json` / `community/index.json` 的每个条目 `heat` 对象，并同步到
-`summary.json/csv` 的 `heatScore`/`heatRank`/`maintenanceStatus`/`recommendVisible` 列。
-`heat` 的 `rank` 是官方+社区合并后的**全局**名次；排序仍按 `heatScore` 降序。旧路径
-`heat/index.json`、`heat/summary.csv` 不再生成（历史快照 `heat/history/` 保留）。
+热度对官方+社区**全量**模组计算，不单独出表。官方/社区各有两份列表：
 
-`heat` 字段：`score`、`rank`、`downloadsScore`、`starsScore`、`updateScore`、`newModMultiplier`、
-`penalty`、`maintenance`、`recommendVisible`、`recommendReason`，以及 1d/7d/30d/180d 的
-`downloadChanges`/`starChanges` 与 7d/30d/90d/180d 的 `releaseUpdates`/`commits` 原始窗口值。
+- `index.json` / `community/index.json`：**默认列表**，只含 `recommendVisible=true`（`score >= MIN_SCORE`）的模组；
+- `index-full.json` / `community/index-full.json`：全量列表（含隐藏模组），其余字段完全一致。
+
+两条列表的每个条目都带同一个精简 `heat` 对象（只有 6 个字段）：
+`{score, rank, downloadsScore, starsScore, updateScore, recommendVisible}`；`rank` 是官方+社区合并后的
+**全局**名次。`summary.json/csv` 仍是全量，新增 `heatScore`/`heatRank`/`recommendVisible` 列。
+旧路径 `heat/index.json`、`heat/summary.csv` 不再生成（历史快照 `heat/history/` 保留）。
+
+> 权重、窗口、倍率、惩罚等参数全部固定在仓库代码 [src/heat.js](src/heat.js)（README 不重复列常量），
+> 输出里不携带这些中间值。
 
 - **存量分（总下载、总星标各一套）**：`share = value / Σ同指标`；`mag = sqrt(min(1, share/maxShare))`；
   `stockScore = 0.8×mag + 0.2×百分位(value)`。占比为主、sqrt 柔化，百分位只做少量修正。
-  **不再硬抹除**：占比很小的模组 `mag` 自然接近 0，但不会被强制归零；原始值为 0 的仍为 0。
+  **不硬抹除**：占比很小的模组 `mag` 自然接近 0，但不会被强制归零；原始值为 0 的仍为 0。
 - **变化分**：每个窗口（1d/7d/30d/180d）先 signed log1p 再跨全量百分位；**窗口全 0 时该窗口记 0**
   （不再白拿平均名次）。窗口权重：下载变化 `.45/.30/.20/.05`、星标变化 `.20/.45/.30/.05`；
   `下载量 = 0.6×存量分(下载) + 0.4×下载变化分`；`星标量 = 0.6×存量分(星标) + 0.4×星标变化分`。
@@ -236,15 +241,10 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   （无下载数据仍按正常权重、下载 0 分）。
 - **长期未更新惩罚**：超过 360 天未 release / 无提交各按 `1-exp(-overrun/180)` 饱和，按 `7:3` 合成（0~1），
   总分中再乘 `0.3` 扣减。
-- **维护状态 `maintenance`**：`lastReleaseAt`/`lastCommitAt`（ISO 或 null）、
-  `daysSinceRelease`/`daysSinceCommit`（天或 null）、`status`：≤180 天有 release 或提交 = `active`；
-  180~360 天 = `low`；>360 天且无 release/提交 = `stale`（缺失活动用仓库年龄兜底）。
-- **只看活跃（`recommendVisible`）**：Copper 启动器的过滤开关。默认隐藏两类：
-  `score < 0`（`recommendReason: "score-below-min"`）或
-  `maintenance.status === "stale" && totalDownloads === 0 && totalStars < 20`
-  （`recommendReason: "stale-low-activity"`）；其余 `recommendVisible: true`、reason 为 `null`。
-  阈值集中在 `src/heat.js` 的 `RECOMMEND_DEFAULTS`（`minScore`/`staleMaxDownloads`/`staleMaxStars`），
-  可调；启动器侧直接按 `recommendVisible` 过滤即可，不需要第二套过滤数据。
+- **只看活跃（`recommendVisible`）**：Copper 启动器的过滤开关，规则只有
+  `recommendVisible = score >= MIN_SCORE`（`MIN_SCORE` 默认 `0`，常量在 `src/heat.js` 可调），
+  **不再按长期停更过滤**（老 mod 过去可能很好，不能直接隐藏）。默认列表由该字段过滤得到；
+  启动器侧也可拿全量列表自行过滤，不需要第二套过滤数据。
 - **提交数**：`GET /repos/{repo}/stats/participation`（52 周），每周刷新一次缓存到
   `state/heat-commit-stats.json`（官方+社区约 1500 次/周；配额不足沿用旧缓存，下次续抓）；
   按周粒度近似聚合到 7/30/90/180 天窗口。

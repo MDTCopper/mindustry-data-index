@@ -131,13 +131,6 @@
             "type": "integer",
             "minimum": 1
           },
-          "maintenanceStatus": {
-            "enum": [
-              "active",
-              "low",
-              "stale"
-            ]
-          },
           "recommendVisible": {
             "type": "boolean"
           }
@@ -163,7 +156,6 @@
           "releasesPath",
           "heatScore",
           "heatRank",
-          "maintenanceStatus",
           "recommendVisible"
         ],
         "additionalProperties": true

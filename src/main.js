@@ -47,6 +47,8 @@ import {
   DOWNLOAD_WINDOW_WEIGHTS,
   HEAT_COMMIT_STATE_REL_PATH,
   HEAT_CREATED_STATE_REL_PATH,
+  COMMUNITY_FULL_INDEX_REL_PATH,
+  FULL_INDEX_REL_PATH,
   HEAT_FORMAT_VERSION,
   HEAT_HISTORY_DIR,
   HEAT_INDEX_REL_PATH,
@@ -1623,25 +1625,26 @@ async function loadHeatSnapshots(outDir, log) {
 
 async function loadHeatMods(outDir, log) {
   const mods = [];
-  const officialIndex = await readJsonIfExists(path.join(outDir, INDEX_FILE)).catch(() => null);
-  for (const entry of Array.isArray(officialIndex?.mods) ? officialIndex.mods : []) {
-    mods.push({
-      repo: entry.repo,
-      namePlain: entry.namePlain ?? '',
-      source: 'official',
-      hasJava: entry.hasJava === true,
-    });
-  }
-  const communityIndex = await readJsonIfExists(
-    path.join(outDir, COMMUNITY_DIR, 'index.json'),
-  ).catch(() => null);
-  for (const entry of Array.isArray(communityIndex?.mods) ? communityIndex.mods : []) {
-    mods.push({
-      repo: entry.repo,
-      namePlain: entry.namePlain ?? '',
-      source: 'community',
-      hasJava: entry.hasJava === true,
-    });
+  for (const [relPath, source] of [
+    [FULL_INDEX_REL_PATH, 'official'],
+    [COMMUNITY_FULL_INDEX_REL_PATH, 'community'],
+  ]) {
+    const file = await readJsonIfExists(path.join(outDir, relPath)).catch(() => null);
+    const fallbackPath =
+      source === 'official'
+        ? path.join(outDir, INDEX_FILE)
+        : path.join(outDir, COMMUNITY_DIR, 'index.json');
+    const index =
+      file ??
+      (await readJsonIfExists(fallbackPath).catch(() => null));
+    for (const entry of Array.isArray(index?.mods) ? index.mods : []) {
+      mods.push({
+        repo: entry.repo,
+        namePlain: entry.namePlain ?? '',
+        source,
+        hasJava: entry.hasJava === true,
+      });
+    }
   }
   if (mods.length === 0) {
     log('[heat] 没有可用的 index（先跑 mods/community）');
@@ -2057,24 +2060,41 @@ async function runHeat(options, context) {
   entries.forEach((entry, index) => {
     entry.rank = index + 1;
   });
-  // 热度不再单独落盘：注入官方/社区 index 与两份 summary，模组列表即唯一入口
+  // 热度注入：全量列表写 index-full.json，默认列表 index.json 只留 recommendVisible=true
   const heatByRepo = new Map(entries.map((entry) => [entry.repo.toLowerCase(), entry]));
   let heatChanged = false;
-  const injectGroup = async ({ indexRelPath, summaryRelPath }) => {
+  const injectGroup = async ({ indexRelPath, fullIndexRelPath, summaryRelPath }) => {
     const indexPath = path.join(outDir, indexRelPath);
-    let index = null;
+    const fullIndexPath = path.join(outDir, fullIndexRelPath);
+    let source = null;
     try {
-      index = await readJsonIfExists(indexPath);
+      source =
+        (await readJsonIfExists(fullIndexPath).catch(() => null)) ??
+        (await readJsonIfExists(indexPath));
     } catch (error) {
       log(`[警告] ${indexRelPath} 不可用，无法注入 heat：${error.message}`);
       return;
     }
-    if (!index || !Array.isArray(index.mods)) {
+    if (!source || !Array.isArray(source.mods)) {
       return;
     }
-    const nextIndex = injectHeatIntoIndex(index, heatByRepo);
-    if (JSON.stringify(index) !== JSON.stringify(nextIndex)) {
-      await writeJsonAtomic(indexPath, nextIndex);
+    const fullIndex = injectHeatIntoIndex(source, heatByRepo);
+    const visibleMods = fullIndex.mods.filter((mod) => mod.heat?.recommendVisible === true);
+    const visibleIndex = {
+      ...fullIndex,
+      source:
+        fullIndex.source && typeof fullIndex.source === 'object'
+          ? { ...fullIndex.source, modCount: visibleMods.length }
+          : fullIndex.source,
+      mods: visibleMods,
+    };
+    if (JSON.stringify(source) !== JSON.stringify(fullIndex) || !(await readJsonIfExists(fullIndexPath).catch(() => null))) {
+      await writeJsonAtomic(fullIndexPath, fullIndex);
+      heatChanged = true;
+    }
+    const previousVisible = await readJsonIfExists(indexPath).catch(() => null);
+    if (JSON.stringify(previousVisible) !== JSON.stringify(visibleIndex)) {
+      await writeJsonAtomic(indexPath, visibleIndex);
       heatChanged = true;
     }
 
@@ -2084,8 +2104,8 @@ async function runHeat(options, context) {
       Array.isArray(previousSummary?.mods) ? previousSummary.mods : [],
       heatByRepo,
     );
-    if (rows.length !== nextIndex.mods.length) {
-      rows = nextIndex.mods.map((mod) => {
+    if (rows.length !== fullIndex.mods.length) {
+      rows = fullIndex.mods.map((mod) => {
         const heatEntry = heatByRepo.get(mod.repo?.toLowerCase());
         return {
           repo: mod.repo,
@@ -2110,7 +2130,7 @@ async function runHeat(options, context) {
         };
       });
     }
-    const summary = buildSummary({ rows, generatedAt: index.generatedAt ?? now });
+    const summary = buildSummary({ rows, generatedAt: fullIndex.generatedAt ?? now });
     if (summaryBodyChanged(previousSummary, summary)) {
       await writeJsonAtomic(summaryPath, summary);
       heatChanged = true;
@@ -2125,9 +2145,14 @@ async function runHeat(options, context) {
       heatChanged = true;
     }
   };
-  await injectGroup({ indexRelPath: INDEX_FILE, summaryRelPath: 'summary.json' });
+  await injectGroup({
+    indexRelPath: INDEX_FILE,
+    fullIndexRelPath: FULL_INDEX_REL_PATH,
+    summaryRelPath: 'summary.json',
+  });
   await injectGroup({
     indexRelPath: path.join(COMMUNITY_DIR, 'index.json'),
+    fullIndexRelPath: COMMUNITY_FULL_INDEX_REL_PATH,
     summaryRelPath: path.join(COMMUNITY_DIR, 'summary.json'),
   });
   // 旧的独立热度表路径不再生成，清理遗留文件
