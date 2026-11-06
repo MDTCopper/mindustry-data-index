@@ -242,6 +242,29 @@
           "rank": {
             "type": "integer",
             "minimum": 1
+          },
+          "downloadsMissing": {
+            "type": "boolean"
+          },
+          "effectiveWeights": {
+            "type": "object",
+            "properties": {
+              "downloads": {
+                "type": "number"
+              },
+              "stars": {
+                "type": "number"
+              },
+              "update": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "downloads",
+              "stars",
+              "update"
+            ],
+            "additionalProperties": false
           }
         },
         "required": [
@@ -267,7 +290,9 @@
           "newModMultiplier",
           "penalty",
           "score",
-          "rank"
+          "rank",
+          "downloadsMissing",
+          "effectiveWeights"
         ],
         "additionalProperties": true
       }

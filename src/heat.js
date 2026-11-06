@@ -318,18 +318,36 @@ export function computeHeat(mods) {
       daysSinceRelease: mod.daysSinceRelease ?? null,
       daysSinceCommit: mod.daysSinceCommit ?? null,
     });
-    const score =
-      (downloadsScore * COMPONENT_WEIGHTS.downloads +
-        starsScore * COMPONENT_WEIGHTS.stars +
-        updateScore * COMPONENT_WEIGHTS.update) *
-        multiplier -
-      penalty * PENALTY_WEIGHT;
+    // 非 Java 且没有任何 release 资产下载量：下载项视为缺失（不是 0 分），剩余权重按比例重归一
+    const downloadsMissing =
+      mod.hasJava === false && (Number(mod.totalDownloads) || 0) === 0;
+    const availableWeight =
+      COMPONENT_WEIGHTS.stars + COMPONENT_WEIGHTS.update;
+    const effectiveWeights = downloadsMissing
+      ? {
+          downloads: 0,
+          stars: COMPONENT_WEIGHTS.stars / availableWeight,
+          update: COMPONENT_WEIGHTS.update / availableWeight,
+        }
+      : { ...COMPONENT_WEIGHTS };
+    const score = downloadsMissing
+      ? (starsScore * COMPONENT_WEIGHTS.stars + updateScore * COMPONENT_WEIGHTS.update) /
+          availableWeight *
+          multiplier -
+        penalty * PENALTY_WEIGHT
+      : (downloadsScore * COMPONENT_WEIGHTS.downloads +
+          starsScore * COMPONENT_WEIGHTS.stars +
+          updateScore * COMPONENT_WEIGHTS.update) *
+          multiplier -
+        penalty * PENALTY_WEIGHT;
     return {
       repo: mod.repo,
       namePlain: mod.namePlain ?? '',
       source: mod.source,
       totalDownloads: mod.totalDownloads ?? 0,
       totalStars: mod.totalStars ?? 0,
+      downloadsMissing,
+      effectiveWeights,
       stockShare: {
         downloads: downloadStock.shares[index],
         stars: starStock.shares[index],
@@ -438,6 +456,10 @@ export const HEAT_SUMMARY_COLUMNS = [
   'stockShareStars',
   'stockMagDownloads',
   'stockMagStars',
+  'downloadsMissing',
+  'effectiveWeightDownloads',
+  'effectiveWeightStars',
+  'effectiveWeightUpdate',
   'downloads1d',
   'downloads7d',
   'downloads30d',
@@ -478,6 +500,10 @@ export function heatSummaryRow(entry) {
     stockShareStars: entry.stockShare?.stars ?? 0,
     stockMagDownloads: entry.stockMag?.downloads ?? 0,
     stockMagStars: entry.stockMag?.stars ?? 0,
+    downloadsMissing: entry.downloadsMissing === true,
+    effectiveWeightDownloads: entry.effectiveWeights?.downloads ?? 0,
+    effectiveWeightStars: entry.effectiveWeights?.stars ?? 0,
+    effectiveWeightUpdate: entry.effectiveWeights?.update ?? 0,
     releaseActivityRaw: entry.releaseActivityRaw ?? 0,
     commitActivityRaw: entry.commitActivityRaw ?? 0,
     releaseActivity: entry.releaseActivity ?? 0,

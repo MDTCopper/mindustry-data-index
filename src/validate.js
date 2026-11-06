@@ -1210,7 +1210,10 @@ function isFiniteNumberOrNull(value, { allowNull = false } = {}) {
   return typeof value === 'number' && Number.isFinite(value);
 }
 
-export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {}) {
+export function validateHeatIndexData(
+  heat,
+  { expectedRepos = null, hasJavaByRepo = null, errors } = {},
+) {
   if (!isPlainObject(heat)) {
     errors.push(`${HEAT_INDEX_REL_PATH} 顶层不是对象`);
     return { modCount: 0 };
@@ -1297,6 +1300,57 @@ export function validateHeatIndexData(heat, { expectedRepos = null, errors } = {
         if (isFiniteNumberOrNull(value) && (value < 0 || value > 1 + 1e-9)) {
           errors.push(`${where}.${field}.${metric} 应在 [0, 1]`);
         }
+      }
+    }
+    // 下载缺失标记与重归一权重
+    if (typeof entry.downloadsMissing !== 'boolean') {
+      errors.push(`${where}.downloadsMissing 应为布尔值`);
+    }
+    if (!isPlainObject(entry.effectiveWeights)) {
+      errors.push(`${where}.effectiveWeights 不是对象`);
+    } else {
+      const weights = entry.effectiveWeights;
+      for (const field of ['downloads', 'stars', 'update']) {
+        if (!isFiniteNumberOrNull(weights[field])) {
+          errors.push(`${where}.effectiveWeights.${field} 应为有限数字`);
+        }
+      }
+      if (
+        isFiniteNumberOrNull(weights.downloads) &&
+        isFiniteNumberOrNull(weights.stars) &&
+        isFiniteNumberOrNull(weights.update)
+      ) {
+        const sum = weights.downloads + weights.stars + weights.update;
+        if (Math.abs(sum - 1) > 1e-3) {
+          errors.push(`${where}.effectiveWeights 之和应≈1（实际 ${sum.toFixed(6)}）`);
+        }
+        if (entry.downloadsMissing === true) {
+          if (weights.downloads !== 0) {
+            errors.push(`${where}.effectiveWeights.downloads 在下载缺失时应为 0`);
+          }
+          if (Math.abs(weights.stars - 0.5 / 0.6) > 1e-3) {
+            errors.push(`${where}.effectiveWeights.stars 应为 0.8333（0.5/0.6）`);
+          }
+          if (Math.abs(weights.update - 0.1 / 0.6) > 1e-3) {
+            errors.push(`${where}.effectiveWeights.update 应为 0.1667（0.1/0.6）`);
+          }
+        } else if (
+          Math.abs(weights.downloads - 0.4) > 1e-3 ||
+          Math.abs(weights.stars - 0.5) > 1e-3 ||
+          Math.abs(weights.update - 0.1) > 1e-3
+        ) {
+          errors.push(`${where}.effectiveWeights 与正常权重 0.4/0.5/0.1 不一致`);
+        }
+      }
+    }
+    if (hasJavaByRepo && typeof entry.repo === 'string') {
+      const hasJava = hasJavaByRepo.get(entry.repo.toLowerCase());
+      const expectedMissing =
+        hasJava === false && (Number(entry.totalDownloads) || 0) === 0;
+      if (entry.downloadsMissing !== expectedMissing) {
+        errors.push(
+          `${where}.downloadsMissing 与 index 元数据不一致（hasJava=${hasJava}，totalDownloads=${entry.totalDownloads}）`,
+        );
       }
     }
     for (const field of ['downloadChanges', 'starChanges']) {
@@ -1978,11 +2032,23 @@ export async function validateDir(dir) {
     const expectedRepos = [...officialReposForHeat, ...communityReposForHeat].filter(
       (repo) => typeof repo === 'string',
     );
+    const hasJavaByRepo = new Map();
+    for (const mod of [
+      ...(Array.isArray(indexFile.data?.mods) ? indexFile.data.mods : []),
+      ...(Array.isArray(communityIndexFile.data?.mods)
+        ? communityIndexFile.data.mods
+        : []),
+    ]) {
+      if (mod && typeof mod.repo === 'string') {
+        hasJavaByRepo.set(mod.repo.toLowerCase(), mod.hasJava);
+      }
+    }
     if (heatIndexFile.error) {
       errors.push(`${HEAT_INDEX_REL_PATH} 无法解析：${heatIndexFile.error.message}`);
     } else {
       result.heatModCount = validateHeatIndexData(heatIndexFile.data, {
         expectedRepos,
+        hasJavaByRepo,
         errors,
       }).modCount;
       if (!heatSummaryCsvFile.exists) {

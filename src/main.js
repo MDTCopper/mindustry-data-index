@@ -1986,6 +1986,7 @@ async function runHeat(options, context) {
       source: mod.source,
       totalDownloads: Number(totals?.totalDownloads) || 0,
       totalStars: Number(totals?.stars) || 0,
+      hasJava: mod.hasJava === true,
       downloadChanges,
       starChanges,
       releaseUpdates: Object.fromEntries(
@@ -2015,6 +2016,9 @@ async function runHeat(options, context) {
     entry.newModMultiplier = round4(entry.newModMultiplier);
     entry.penalty = round4(entry.penalty);
     entry.score = round4(entry.score);
+    entry.effectiveWeights.downloads = round4(entry.effectiveWeights.downloads);
+    entry.effectiveWeights.stars = round4(entry.effectiveWeights.stars);
+    entry.effectiveWeights.update = round4(entry.effectiveWeights.update);
   }
   const heatIndex = {
     formatVersion: HEAT_FORMAT_VERSION,

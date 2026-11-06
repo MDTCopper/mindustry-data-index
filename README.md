@@ -219,6 +219,11 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   **分数不裁剪**，可 >1 或 <0，输出保留 4 位小数；`rank` 按分数降序唯一排名（同分 repo 升序）。
 - **新 mod 倍率**：180 天内 `1 + 0.325×exp(-age/30)`（30d≈1.12、60d≈1.04、90d≈1.016，之后 clamp 1）；
   年龄优先取 `created_at`（缓存 `state/repo-created.json`，一次抓取永久复用），拿不到用最早 release 时间。
+- **非 Java 且没有 release 资产下载量**（`hasJava === false && totalDownloads === 0`，即 JSON/JS 走 main
+  分支、没有可统计资产）的模组：下载项视为**缺失**而不是 0 分——移除下载 0.40 权重，剩余
+  `(星标×0.5 + 更新×0.1) / 0.6` 按比例重归一，再乘倍率并扣惩罚；条目写 `downloadsMissing: true` 与
+  `effectiveWeights {downloads:0, stars:0.8333, update:0.1667}`。Java 模组不受此规则影响（无下载数据仍按
+  正常权重、下载 0 分）。下载原始字段与组件分保留，便于核对。
 - **长期未更新惩罚**：超过 360 天未 release / 无提交各按 `1-exp(-overrun/180)` 饱和，按 `7:3` 合成（0~1），
   总分中再乘 `0.3` 扣减。
 - **提交数**：`GET /repos/{repo}/stats/participation`（52 周），每周刷新一次缓存到

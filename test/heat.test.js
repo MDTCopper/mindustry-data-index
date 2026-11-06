@@ -166,6 +166,74 @@ test('activityScores / normalizeByMax：log1p 递减收益 + 最大值归一', (
   assert.deepEqual(normalizeByMax([0, 0]), [0, 0]);
 });
 
+test('computeHeat：非 Java 且无下载数据 → downloadsMissing 并重归一权重；Java 不处理', () => {
+  const mods = [
+    {
+      repo: 'nonjava/missing',
+      namePlain: 'Missing',
+      source: 'official',
+      hasJava: false,
+      totalDownloads: 0,
+      totalStars: 300,
+      downloadChanges: {},
+      starChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
+      releaseUpdates: {},
+      commits: {},
+      ageDays: 200,
+      daysSinceRelease: 30,
+      daysSinceCommit: 30,
+    },
+    {
+      repo: 'java/zero',
+      namePlain: 'JavaZero',
+      source: 'official',
+      hasJava: true,
+      totalDownloads: 0,
+      totalStars: 10,
+      downloadChanges: {},
+      starChanges: {},
+      releaseUpdates: {},
+      commits: {},
+      ageDays: 200,
+      daysSinceRelease: 30,
+      daysSinceCommit: 30,
+    },
+    {
+      repo: 'normal/mod',
+      namePlain: 'Normal',
+      source: 'official',
+      hasJava: false,
+      totalDownloads: 1000,
+      totalStars: 20,
+      downloadChanges: {},
+      starChanges: {},
+      releaseUpdates: {},
+      commits: {},
+      ageDays: 200,
+      daysSinceRelease: 30,
+      daysSinceCommit: 30,
+    },
+  ];
+  const { entries } = computeHeat(mods);
+  const byRepo = new Map(entries.map((entry) => [entry.repo, entry]));
+  const missing = byRepo.get('nonjava/missing');
+  const javaZero = byRepo.get('java/zero');
+  const normal = byRepo.get('normal/mod');
+  assert.equal(missing.downloadsMissing, true);
+  assert.deepEqual(missing.effectiveWeights, {
+    downloads: 0,
+    stars: 0.5 / 0.6,
+    update: 0.1 / 0.6,
+  });
+  const expected =
+    (missing.starsScore * 0.5 + missing.updateScore * 0.1) / 0.6 - missing.penalty * 0.3;
+  assert.ok(Math.abs(missing.score - expected) < 1e-9);
+  assert.equal(javaZero.downloadsMissing, false);
+  assert.deepEqual(javaZero.effectiveWeights, { downloads: 0.4, stars: 0.5, update: 0.1 });
+  assert.equal(normal.downloadsMissing, false);
+  assert.equal(entries[0].repo, 'nonjava/missing');
+});
+
 test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按分数降序', () => {
   const mods = [
     {
@@ -174,6 +242,7 @@ test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按�
       source: 'official',
       totalDownloads: 1e9,
       totalStars: 1e6,
+      hasJava: false,
       downloadChanges: { 1: 5000, 7: 5000, 30: 5000, 180: 5000 },
       starChanges: { 1: 100, 7: 100, 30: 100, 180: 100 },
       releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },

@@ -968,6 +968,8 @@ function heatEntry(repo, rank, score) {
     stockShare: { downloads: 0.5, stars: 0.5 },
     stockMag: { downloads: 0.7, stars: 0.7 },
     stockScore: { downloads: 0.62, stars: 0.62 },
+    downloadsMissing: false,
+    effectiveWeights: { downloads: 0.4, stars: 0.5, update: 0.1 },
     downloadChanges: { 1: 1, 7: 2, 30: 3, 180: 4 },
     starChanges: { 1: 0, 7: 1, 30: 1, 180: 2 },
     releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
@@ -1075,4 +1077,23 @@ test('validateDir：heat repo 集合与 index 不一致 / rank 重复 / 历史�
   assert.ok(result.errors.some((message) => message.includes('多出')));
   assert.ok(result.errors.some((message) => message.includes('rank 不是 1..N 唯一')));
   assert.ok(result.errors.some((message) => message.includes('超过保留数量')));
+});
+
+test('validateDir：downloadsMissing 与 index 的 hasJava 不一致会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  // index 里 owner/demo hasJava=true，heat 却标成下载缺失
+  const entries = [
+    {
+      ...heatEntry('owner/demo', 1, 0.42),
+      totalDownloads: 0,
+      downloadsMissing: true,
+      effectiveWeights: { downloads: 0, stars: 0.8333, update: 0.1667 },
+    },
+  ];
+  await addHeatFixture(dir, { entries });
+  const result = await validateDir(dir);
+  assert.ok(
+    result.errors.some((message) => message.includes('downloadsMissing 与 index 元数据不一致')),
+  );
 });

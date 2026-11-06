@@ -672,6 +672,8 @@ release/提交活动窗口键为 `"7"/"30"/"90"/"180"`：
       "stockShare": { "downloads": 0.0213, "stars": 0.0042 },
       "stockMag": { "downloads": 0.732, "stars": 0.41 },
       "stockScore": { "downloads": 0.61, "stars": 0.45 },
+      "downloadsMissing": false,
+      "effectiveWeights": { "downloads": 0.4, "stars": 0.5, "update": 0.1 },
       "downloadChanges": { "1": 0, "7": 3, "30": 10, "180": 120 },
       "starChanges": { "1": 0, "7": 1, "30": 2, "180": 9 },
       "releaseUpdates": { "7": 1, "30": 2, "90": 4, "180": 6 },
@@ -696,6 +698,11 @@ release/提交活动窗口键为 `"7"/"30"/"90"/"180"`：
 - `stockShare` 之和≈1（validator 会校验，全量全 0 时允许 0）；`rank` 为 1..N 唯一排名
   （分数降序、同分按 repo 升序）；`commits` 是 participation 周粒度的近似值。
 - repo 集合必须与 `index.json` + `community/index.json` 的并集一致。
+- `downloadsMissing`：当对应 index/community 条目 `hasJava === false` 且 `totalDownloads === 0` 时为 `true`
+  （非 Java、没有 release 资产下载量），此时下载项视为缺失：`effectiveWeights` 为
+  `{downloads:0, stars:0.8333, update:0.1667}`（剩余 0.5/0.1 按 /0.6 重归一），
+  总分 = `(starsScore×0.5 + updateScore×0.1)/0.6×倍率 − 惩罚×0.3`；Java 模组即使无下载数据
+  也保持 `downloadsMissing:false` 与正常权重。validator 会与 index 元数据交叉校验该标记。
 
 ### heat/summary.csv
 
