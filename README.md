@@ -70,15 +70,18 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `index.json`：官方列表字段（`repo`、`internalName`、`name`、`author`、`version`、`minGameVersion`、
   `lastUpdated`、`stars`、`hasIcon`、`hasScripts`、`hasJava`，原样保留类型与脏值）加上
   `iconUrl`、`iconHash`、`releasesPath`、`releaseCount`（有 GitHub Release 的 tag 数）、`tagCount`
-  （全部 git tag 数）、`latestRelease`、`releaseDataUpdatedAt`，
+  （全部 git tag 数，含已删除留档）、`removedCount`（作者已删除的 tag 数）、`latestRelease`、
+  `latestCompatible`（当前最新游戏版本下推荐的 tag，没有则为 `null`）、`compatRanges`（兼容区间段数）、
+  `releaseDataUpdatedAt`，
   以及下载量/体积统计：`totalDownloads`（历史累计，按首选资产）、`allAssetsDownloads`（全部资产）、
-  `latestDownloads`、`latestSizeBytes`、`totalSizeBytes`；`latestRelease` 是「最新的有 Release 的条目」，
+  `latestDownloads`、`latestSizeBytes`、`totalSizeBytes`；`latestRelease` 是「最新的有 Release 且未被删除的条目」，
   并带 `downloads`/`sizeBytes`。`skipped` 记录本次抓取失败的仓库。`iconUrl` 与启动器
   `githubModIconBase` 一致（`icons/<owner>_<repo>`，`hasIcon === false` 时为 `null`），
   `iconHash` 原样保留官方值供客户端做缓存。
 - `releases/<owner>/<repo>.json`：收录该仓库的**全部 git tag**。每条有 `tag`、`name`、`hasRelease`、
   `prerelease`、`publishedAt`、`htmlUrl`、`modVersion`、`minGameVersion`、`metadataPath`、
-  `metadataStatus`、`downloadUrl`、`sourceArchiveUrl`、`assets`。
+  `metadataStatus`、`downloadUrl`、`sourceArchiveUrl`、`assets`、`commitSha`、`archiveByCommitUrl`，
+  以及删除留档字段 `removed`/`removedAt`（可选，仅被作者删除的条目出现）。
   - `hasRelease === true`：GitHub Release 条目，`prerelease`/`publishedAt` 来自 Release，资产按 release
     接口取；`downloadUrl` 用首选资产（`hasJava` 取体积最大的 `.jar`，否则 `.zip`），没有对应资产回落源码归档。
     启动器对「Java 模组没有 jar」是禁用下载、不给按钮。
@@ -88,6 +91,18 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   - 排序：有 Release 的条目在前（`publishedAt` 降序、同时间 tag 升序），tag-only 条目在后
     （tag 名称自然降序，如 `v1.10` 在 `v1.9` 前）。
   - **首选资产口径**：与 `downloadUrl` 一致；没有对应资产时下载量按 0、体积为 `null`。
+  - **tag 被作者删除**：条目不删，标 `removed: true` + `removedAt`（UTC ISO），`index.json` 的
+    `removedCount` 记录数量，`tagCount` 仍是条目总数。只在「全量 tags / releases 刷新」（每月一次或
+    `--no-cache`）时做缺失判定；只刷第 1/2 页时不能判定远处条目被删，绝不误标。上游重新出现的 tag
+    会清掉 `removed`。每条同时记录 `commitSha`（tags API 的 `commit.sha`）与
+    `archiveByCommitUrl = https://github.com/<repo>/archive/<sha>.zip`：tag 删除后只要 commit 未被
+    GitHub GC，仍可 best-effort 下载源码归档；拿不到 sha 时为 `null`。
+  - **`compat`（游戏版本 → 推荐 tag）**：按发布时间的从新到旧，为每个有 `minGameVersion` 的条目计算
+    `gameVersion ∈ [minGameVersion, maxGameVersion)` 时推荐该 tag；上界取「该模组类型门禁值第一次超过
+    该条目的 `minGameVersion` 的游戏版本」（普通/脚本读 `mod-gate.json`，Java 读 `java-gate.json`），
+    且不盖过更新条目的最小版本；`maxGameVersion: null` 表示无上界。推荐优先 `hasRelease: true`；
+    tag-only 只填补 release 未覆盖的区间（`hasRelease: false`，下载走归档）。没有 release /
+    `minGameVersion` 的模组为 `[]`。相邻区间不重叠，若某个游戏版本没有任何兼容 release，允许出现空档。
 - `summary.json`：`totals`（`mods`/`releases`/`downloads`/`sizeBytes` 全局合计，`releases` 只统计有 Release
   的条目）+ `mods[]`（`repo`、`name`、`author`、`stars`、`releaseCount`、`tagCount`、5 个统计字段、
   `latestTag`/`latestPrerelease`/`latestModVersion`/`latestMinGameVersion`、`iconUrl`、`releasesPath`），
@@ -280,6 +295,9 @@ GitHub releases / tags API 每页最多 100 条、按新→旧返回。越老的
   图标只在 `icon.png`/`assets/icon.png` 实际存在时提供。搜索 API 有独立限流（带 token 30/min、
   匿名 10/min），发现阶段已节流；单查询 1000 条上限用 pushed 时间窗二分规避。黑名单每天同步一次，
   源格式变化时沿用旧缓存，最长可能滞后约 1 天。
+- **删除留档 / compat 的时效**：删除判定只在每月全量刷新（或 `--no-cache`）时做，平时不误标；
+  `commitSha` 兜底依赖 GitHub 尚未 GC 该 commit（best-effort，不是永久保证）；`compat` 由发布时的
+  releases、门禁与版本列表预计算，门禁/游戏版本更新后要等下一次模组刷新（2h/周/月分档）才会重算。
 - 受 GitHub API 限流约束：Actions 里用 `GITHUB_TOKEN`（每小时 5000 次）；本地匿名只有每小时 60 次，
   全量跑模组索引务必带上 token。配额剩余 ≤5 时本次运行会优雅停止（保留已抓结果、exit 0），下次按
   最久未刷新优先继续；单次运行内等待重置超过 15 分钟时相关仓库记为 `rate-limit` 跳过。

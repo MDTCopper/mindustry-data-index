@@ -111,6 +111,114 @@ export function buildTagOnlyRelease({ repo, tag }) {
   };
 }
 
+// tag 被作者删除后，只要 commit 未被 GitHub GC，仍可用 archive/<sha>.zip 兜底下载（best-effort）
+export function archiveByCommitUrl(repo, sha) {
+  if (typeof sha !== 'string' || sha.length === 0) {
+    return null;
+  }
+  return `https://github.com/${assertRepo(repo)}/archive/${sha}.zip`;
+}
+
+// 合并 sha / 删除留档：
+// - 全量 tags 刷新时，缓存里有、上游 tags 没有的条目保留并标 removed
+// - 全量 releases 刷新时，缓存里有、上游 releases 没有的 release 条目保留并标 removed
+// - 只刷新部分页时不能判定远处条目被删，不标 removed；本轮确实看到的上游 tag 会清掉 removed
+export function mergeWithShaAndRemovals({
+  repo,
+  entries,
+  previousEntries = [],
+  fullTagEntries = null,
+  partialTagEntries = [],
+  fullReleaseTags = null,
+  removedAt,
+}) {
+  const entryByTag = new Map();
+  for (const entry of entries) {
+    if (entry && typeof entry.tag === 'string') {
+      entryByTag.set(entry.tag, { ...entry });
+    }
+  }
+  const previousByTag = new Map();
+  for (const entry of previousEntries) {
+    if (entry && typeof entry.tag === 'string') {
+      previousByTag.set(entry.tag, entry);
+    }
+  }
+
+  const fullTagNames = fullTagEntries
+    ? new Set(fullTagEntries.map((entry) => entry.name))
+    : null;
+  const partialTagNames = new Set(
+    partialTagEntries.map((entry) => entry.name),
+  );
+
+  // 全量 releases 刷新：上游没有的旧 release 条目留档
+  if (fullReleaseTags) {
+    for (const [tag, oldEntry] of previousByTag) {
+      if (
+        isReleaseEntry(oldEntry) &&
+        !fullReleaseTags.has(tag) &&
+        !entryByTag.has(tag)
+      ) {
+        entryByTag.set(tag, { ...oldEntry, removed: true, removedAt });
+      }
+    }
+  }
+  // 全量 tags 刷新：上游 tag 列表里没有的条目（含 release）留档
+  if (fullTagNames) {
+    for (const [tag, oldEntry] of previousByTag) {
+      if (!fullTagNames.has(tag) && !entryByTag.has(tag)) {
+        entryByTag.set(tag, { ...oldEntry, removed: true, removedAt });
+      }
+    }
+    for (const [tag, entry] of entryByTag) {
+      if (fullTagNames.has(tag)) {
+        delete entry.removed;
+        delete entry.removedAt;
+      }
+    }
+  }
+  // 部分页刷新只清理本轮看到的上游 tag 的 removed，不做“缺失=被删”判断
+  if (partialTagNames.size > 0) {
+    for (const [tag, entry] of entryByTag) {
+      if (partialTagNames.has(tag)) {
+        delete entry.removed;
+        delete entry.removedAt;
+      }
+    }
+  }
+
+  // commit sha：旧条目 sha → 本轮抓到的 tags 覆盖 → 现有条目保留
+  const shaByTag = new Map();
+  for (const [tag, oldEntry] of previousByTag) {
+    if (typeof oldEntry.commitSha === 'string' && oldEntry.commitSha) {
+      shaByTag.set(tag, oldEntry.commitSha);
+    }
+  }
+  const fetchedTagEntries = [
+    ...(fullTagEntries ?? []),
+    ...partialTagEntries,
+  ];
+  for (const tagEntry of fetchedTagEntries) {
+    if (tagEntry && typeof tagEntry.name === 'string' && tagEntry.commitSha) {
+      shaByTag.set(tagEntry.name, tagEntry.commitSha);
+    }
+  }
+
+  const merged = [];
+  for (const [tag, entry] of entryByTag) {
+    const sha =
+      shaByTag.get(tag) ??
+      (typeof entry.commitSha === 'string' && entry.commitSha ? entry.commitSha : null);
+    merged.push({
+      ...entry,
+      commitSha: sha,
+      archiveByCommitUrl: archiveByCommitUrl(repo, sha),
+    });
+  }
+  return sortReleases(merged);
+}
+
 export function normalizeReleases(raws, { repo, hasJava }) {
   if (!Array.isArray(raws)) {
     throw new Error(`${repo} 的 release 数据不是数组`);
@@ -298,11 +406,12 @@ export async function mergeReleaseMetadata({
 }
 
 // per-mod 文件只存数据：ETag/调度时间放到 state/refresh.json，避免每日仅因 ETag 变化重写 991 个文件
-export function buildReleasesFile({ repo, releases, generatedAt }) {
+export function buildReleasesFile({ repo, releases, compat = [], generatedAt }) {
   return {
     formatVersion: 1,
     repo,
     generatedAt,
     releases,
+    compat,
   };
 }

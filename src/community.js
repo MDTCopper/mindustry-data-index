@@ -4,6 +4,7 @@ import { rawFileUrlVariants } from './releases.js';
 import { fetchCommunityModMetadata } from './mod-meta.js';
 import { assertRepo } from './paths.js';
 import { isBlacklisted } from './blacklist.js';
+import { latestCompatibleTag } from './compat.js';
 
 export const COMMUNITY_DIR = 'community';
 export const COMMUNITY_STATE_REL_PATH = 'state/community-refresh.json';
@@ -137,15 +138,25 @@ export function buildCommunityMod({ candidate, metadata, iconUrl }) {
   };
 }
 
-export function buildCommunityIndexEntry(mod, file, { relPath, oldEntry = null, stats = null }) {
+export function buildCommunityIndexEntry(
+  mod,
+  file,
+  { relPath, oldEntry = null, stats = null, compat = null, gameVersions = [] } = {},
+) {
   const hasFile = Array.isArray(file?.releases);
   const releases = hasFile ? file.releases : [];
   const releaseEntries = releases.filter((entry) => entry?.hasRelease !== false);
-  const first = releaseEntries[0] ?? null;
+  const first =
+    releaseEntries.find((entry) => entry.removed !== true) ??
+    releaseEntries[0] ??
+    null;
   const releaseCount = hasFile
     ? releaseEntries.length
     : (oldEntry?.releaseCount ?? 0);
   const tagCount = hasFile ? releases.length : (oldEntry?.tagCount ?? releaseCount);
+  const fileCompat = Array.isArray(compat)
+    ? compat
+    : (Array.isArray(file?.compat) ? file.compat : []);
   const computed = stats ?? {
     totalDownloads: 0,
     allAssetsDownloads: 0,
@@ -187,12 +198,17 @@ export function buildCommunityIndexEntry(mod, file, { relPath, oldEntry = null, 
       : (oldEntry?.releasesPath ?? (file ? `${COMMUNITY_DIR}/${relPath}` : null)),
     releaseCount,
     tagCount,
+    removedCount: hasFile
+      ? releases.filter((entry) => entry?.removed === true).length
+      : (oldEntry?.removedCount ?? 0),
     totalDownloads: computed.totalDownloads,
     allAssetsDownloads: computed.allAssetsDownloads,
     latestDownloads: computed.latestDownloads,
     latestSizeBytes: computed.latestSizeBytes,
     totalSizeBytes: computed.totalSizeBytes,
     latestRelease,
+    latestCompatible: latestCompatibleTag(fileCompat, gameVersions),
+    compatRanges: fileCompat.length,
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
   };
 }

@@ -15,6 +15,8 @@ import {
   fetchAllReleasePages,
   fetchReleasePages,
   mergeReleaseMetadata,
+  mergeWithShaAndRemovals,
+  archiveByCommitUrl,
   buildReleasesFile,
 } from '../src/releases.js';
 
@@ -302,7 +304,7 @@ test('mergeReleaseMetadata：旧 ok 复用、新 tag 与未成功旧 tag 才抓�
   assert.equal(v2.metadataPath, 'mod.hjson');
 });
 
-test('buildReleasesFile：只存 formatVersion / repo / generatedAt / releases', () => {
+test('buildReleasesFile：formatVersion / repo / generatedAt / releases / compat', () => {
   const file = buildReleasesFile({
     repo: 'owner/repo',
     releases: [],
@@ -313,7 +315,17 @@ test('buildReleasesFile：只存 formatVersion / repo / generatedAt / releases',
     repo: 'owner/repo',
     generatedAt: '2026-11-06T03:00:00.000Z',
     releases: [],
+    compat: [],
   });
+  assert.deepEqual(
+    buildReleasesFile({
+      repo: 'owner/repo',
+      releases: [],
+      compat: [{ tag: 'v1' }],
+      generatedAt: '2026-11-06T03:00:00.000Z',
+    }).compat,
+    [{ tag: 'v1' }],
+  );
 });
 
 test('normalizeRelease：有 Release 的条目 hasRelease=true', () => {
@@ -388,4 +400,134 @@ test('mergeReleasesByTag：后补建 Release 的 tag 覆盖旧 tag-only 条目',
   assert.equal(merged[0].hasRelease, true);
   assert.equal(merged[0].publishedAt, '2026-10-02T00:00:00Z');
   assert.equal(merged[1].hasRelease, false);
+});
+
+// ---------- commit sha / 删除留档 ----------
+
+const SHA_A = 'a'.repeat(40);
+const SHA_B = 'b'.repeat(40);
+const REMOVED_AT = '2026-11-06T03:00:00.000Z';
+
+test('archiveByCommitUrl：repo + sha 生成 GitHub 源码归档地址，sha 为空返回 null', () => {
+  assert.equal(
+    archiveByCommitUrl('Owner/Repo', SHA_A),
+    `https://github.com/Owner/Repo/archive/${SHA_A}.zip`,
+  );
+  assert.equal(archiveByCommitUrl('Owner/Repo', null), null);
+  assert.equal(archiveByCommitUrl('Owner/Repo', ''), null);
+});
+
+test('mergeWithShaAndRemovals：给 release 与 tag-only 条目补 commitSha / archiveByCommitUrl', () => {
+  const entries = [
+    { tag: 'v2', hasRelease: true, publishedAt: '2026-10-02T00:00:00Z', assets: [] },
+    { tag: 'v1', hasRelease: false, prerelease: null, publishedAt: null, assets: [] },
+  ];
+  const previous = [
+    { tag: 'v2', hasRelease: true, commitSha: SHA_A, publishedAt: '2026-10-02T00:00:00Z', assets: [] },
+    { tag: 'v1', hasRelease: false, commitSha: SHA_B, prerelease: null, publishedAt: null, assets: [] },
+  ];
+  const merged = mergeWithShaAndRemovals({
+    repo: 'Owner/Repo',
+    entries,
+    previousEntries: previous,
+    partialTagEntries: [{ name: 'v2', commitSha: SHA_B }],
+    removedAt: REMOVED_AT,
+  });
+  const byTag = new Map(merged.map((entry) => [entry.tag, entry]));
+  // 本轮抓到的 tag sha 覆盖旧缓存
+  assert.equal(byTag.get('v2').commitSha, SHA_B);
+  assert.equal(byTag.get('v2').archiveByCommitUrl, `https://github.com/Owner/Repo/archive/${SHA_B}.zip`);
+  // 没在本轮抓到的沿用旧 sha
+  assert.equal(byTag.get('v1').commitSha, SHA_B);
+  assert.equal(
+    byTag.get('v1').archiveByCommitUrl,
+    `https://github.com/Owner/Repo/archive/${SHA_B}.zip`,
+  );
+  assert.equal(byTag.get('v2').removed, undefined);
+});
+
+test('mergeWithShaAndRemovals：全量 tags 刷新时缺失 tag 保留并标 removed:true + removedAt', () => {
+  const previous = [
+    { tag: 'v2', hasRelease: true, commitSha: SHA_A, publishedAt: '2026-10-02T00:00:00Z', assets: [] },
+    { tag: 'v1', hasRelease: false, commitSha: SHA_B, prerelease: null, publishedAt: null, assets: [] },
+  ];
+  const entries = [
+    { tag: 'v2', hasRelease: true, publishedAt: '2026-10-02T00:00:00Z', assets: [] },
+  ];
+  const merged = mergeWithShaAndRemovals({
+    repo: 'Owner/Repo',
+    entries,
+    previousEntries: previous,
+    fullTagEntries: [{ name: 'v2', commitSha: SHA_A }],
+    fullReleaseTags: new Set(['v2']),
+    removedAt: REMOVED_AT,
+  });
+  const removed = merged.find((entry) => entry.tag === 'v1');
+  assert.ok(removed);
+  assert.equal(removed.removed, true);
+  assert.equal(removed.removedAt, REMOVED_AT);
+  // 保留原有下载兜底字段
+  assert.equal(removed.commitSha, SHA_B);
+  assert.equal(removed.archiveByCommitUrl, `https://github.com/Owner/Repo/archive/${SHA_B}.zip`);
+  assert.equal(merged.find((entry) => entry.tag === 'v2').removed, undefined);
+});
+
+test('mergeWithShaAndRemovals：全量 releases 刷新时缺失 release 保留并标 removed', () => {
+  const previous = [
+    { tag: 'v3', hasRelease: true, commitSha: SHA_A, publishedAt: '2026-10-03T00:00:00Z', assets: [] },
+    { tag: 'v2', hasRelease: true, commitSha: SHA_B, publishedAt: '2026-10-02T00:00:00Z', assets: [] },
+  ];
+  const merged = mergeWithShaAndRemovals({
+    repo: 'Owner/Repo',
+    entries: [{ tag: 'v3', hasRelease: true, publishedAt: '2026-10-03T00:00:00Z', assets: [] }],
+    previousEntries: previous,
+    fullReleaseTags: new Set(['v3']),
+    removedAt: REMOVED_AT,
+  });
+  const removed = merged.find((entry) => entry.tag === 'v2');
+  assert.equal(removed.removed, true);
+  assert.equal(removed.removedAt, REMOVED_AT);
+  assert.equal(merged.find((entry) => entry.tag === 'v3').removed, undefined);
+});
+
+test('mergeWithShaAndRemovals：只刷部分页时不把远处缺失条目误标 removed', () => {
+  const previous = [
+    { tag: 'v1', hasRelease: true, commitSha: SHA_A, publishedAt: '2026-10-01T00:00:00Z', assets: [] },
+  ];
+  const merged = mergeWithShaAndRemovals({
+    repo: 'Owner/Repo',
+    entries: [{ ...previous[0] }],
+    previousEntries: previous,
+    partialTagEntries: [{ name: 'v2', commitSha: SHA_B }],
+    removedAt: REMOVED_AT,
+  });
+  assert.equal(merged.length, 1);
+  assert.equal(merged[0].tag, 'v1');
+  assert.equal(merged[0].removed, undefined);
+});
+
+test('mergeWithShaAndRemovals：上游重新出现的 tag 会清掉 removed 标记', () => {
+  const previous = [
+    {
+      tag: 'v1',
+      hasRelease: false,
+      commitSha: SHA_A,
+      removed: true,
+      removedAt: REMOVED_AT,
+      prerelease: null,
+      publishedAt: null,
+      assets: [],
+    },
+  ];
+  const merged = mergeWithShaAndRemovals({
+    repo: 'Owner/Repo',
+    entries: [{ ...previous[0] }],
+    previousEntries: previous,
+    partialTagEntries: [{ name: 'v1', commitSha: SHA_B }],
+    removedAt: REMOVED_AT,
+  });
+  assert.equal(merged.length, 1);
+  assert.equal(merged[0].removed, undefined);
+  assert.equal(merged[0].removedAt, undefined);
+  assert.equal(merged[0].commitSha, SHA_B);
 });

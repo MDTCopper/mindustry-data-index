@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, readFile, rm, writeFile, unlink } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { validateDir, isValidReleasesPath } from '../src/validate.js';
+import { validateDir, validateReleaseFileData, validateIndexData, isValidReleasesPath } from '../src/validate.js';
 import { VERSIONS_API } from '../src/versions.js';
 import { buildSummary, summaryCsv } from '../src/summary.js';
 import {
@@ -68,6 +68,7 @@ function validFixture(repo = 'owner/demo') {
           releasesPath: releasesRelPath(repo),
           releaseCount: 1,
           tagCount: 1,
+          removedCount: 0,
           totalDownloads: 4,
           allAssetsDownloads: 4,
           latestDownloads: 4,
@@ -81,6 +82,8 @@ function validFixture(repo = 'owner/demo') {
             downloads: 4,
             sizeBytes: 123,
           },
+          latestCompatible: null,
+          compatRanges: 0,
           releaseDataUpdatedAt: GENERATED_AT,
         },
       ],
@@ -91,6 +94,7 @@ function validFixture(repo = 'owner/demo') {
       repo,
       generatedAt: GENERATED_AT,
       releases: [release],
+      compat: [],
     },
   };
 }
@@ -600,6 +604,7 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
     releasesPath: `community/releases/${repo}.json`,
     releaseCount: 1,
     tagCount: 1,
+    removedCount: 0,
     totalDownloads: 0,
     allAssetsDownloads: 0,
     latestDownloads: 0,
@@ -613,6 +618,8 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
       downloads: 0,
       sizeBytes: null,
     },
+    latestCompatible: null,
+    compatRanges: 0,
     releaseDataUpdatedAt: GENERATED_AT,
   };
   return {
@@ -627,7 +634,13 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
       mods: [entry],
       skipped: [],
     },
-    releaseFile: { formatVersion: 1, repo, generatedAt: GENERATED_AT, releases: [release] },
+    releaseFile: {
+      formatVersion: 1,
+      repo,
+      generatedAt: GENERATED_AT,
+      releases: [release],
+      compat: [],
+    },
     entry,
     release,
   };
@@ -723,4 +736,124 @@ test('community 条目 source 不是 topic 会被发现', async (t) => {
   await addCommunityFixture(dir, fixture);
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('source 应为 "topic"')));
+});
+
+// ---------- A1/A2：commitSha / removed / compat ----------
+
+const SHA = 'a'.repeat(40);
+
+test('release 文件 compat 合法时通过', () => {
+  const fixture = validFixture();
+  fixture.releaseFile.compat = [
+    {
+      tag: 'v1.0',
+      modVersion: '1.0',
+      minGameVersion: '146',
+      maxGameVersion: null,
+      hasRelease: true,
+    },
+  ];
+  const errors = [];
+  validateReleaseFileData(fixture.releaseFile, { errors });
+  assert.deepEqual(errors, []);
+});
+
+test('compat：引用不存在的 tag / 已删除条目 / 区间重叠会被发现', () => {
+  const base = (compat) => ({
+    ...validFixture().releaseFile,
+    compat,
+  });
+  let errors = [];
+  validateReleaseFileData(
+    base([
+      { tag: 'v9', modVersion: '9', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
+    ]),
+    { errors },
+  );
+  assert.ok(errors.some((message) => message.includes('tag 不存在于 releases')));
+
+  const removedFile = validFixture().releaseFile;
+  removedFile.releases[0].removed = true;
+  removedFile.releases[0].removedAt = GENERATED_AT;
+  errors = [];
+  validateReleaseFileData(
+    {
+      ...removedFile,
+      compat: [
+        { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
+      ],
+    },
+    { errors },
+  );
+  assert.ok(errors.some((message) => message.includes('已删除留档')));
+
+  const overlapping = [
+    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: 160, hasRelease: true },
+    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '154', maxGameVersion: null, hasRelease: true },
+  ];
+  errors = [];
+  validateReleaseFileData(base(overlapping), { errors });
+  assert.ok(errors.some((message) => message.includes('重叠')));
+});
+
+test('commitSha / archiveByCommitUrl / removedAt 校验', () => {
+  const file = validFixture().releaseFile;
+  file.releases[0].commitSha = SHA;
+  file.releases[0].archiveByCommitUrl = `https://github.com/owner/demo/archive/${SHA}.zip`;
+  let errors = [];
+  validateReleaseFileData(file, { errors });
+  assert.deepEqual(errors, []);
+
+  file.releases[0].archiveByCommitUrl = 'https://github.com/owner/demo/archive/wrong.zip';
+  errors = [];
+  validateReleaseFileData(file, { errors });
+  assert.ok(errors.some((message) => message.includes('archiveByCommitUrl')));
+
+  const removed = validFixture().releaseFile;
+  removed.releases[0].removed = true;
+  errors = [];
+  validateReleaseFileData(removed, { errors });
+  assert.ok(errors.some((message) => message.includes('removedAt')));
+});
+
+test('index removedCount / compatRanges / latestCompatible 字段校验', () => {
+  const fixture = validFixture();
+  let errors = [];
+  validateIndexData(fixture.index, { errors });
+  assert.deepEqual(errors, []);
+
+  fixture.index.mods[0].removedCount = 5;
+  fixture.index.mods[0].compatRanges = -1;
+  fixture.index.mods[0].latestCompatible = 42;
+  errors = [];
+  validateIndexData(fixture.index, { errors });
+  assert.ok(errors.some((message) => message.includes('removedCount 不能大于')));
+  assert.ok(errors.some((message) => message.includes('compatRanges')));
+  assert.ok(errors.some((message) => message.includes('latestCompatible')));
+});
+
+test('validateDir：compat 与 index 的 compatRanges / removedCount 一致性', async (t) => {
+  const fixture = validFixture();
+  fixture.releaseFile.compat = [
+    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
+  ];
+  fixture.index.mods[0].compatRanges = 1;
+  // 没有游戏版本数据时 latestCompatible 应为 null
+  fixture.index.mods[0].latestCompatible = null;
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+});
+
+test('validateDir：compatRanges 与文件不一致会被发现', async (t) => {
+  const fixture = validFixture();
+  fixture.releaseFile.compat = [
+    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
+  ];
+  fixture.index.mods[0].compatRanges = 2;
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('compatRanges')));
 });

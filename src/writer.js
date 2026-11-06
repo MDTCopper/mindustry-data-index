@@ -49,8 +49,8 @@ export async function ensureReleasesDir(outDir) {
   return dir;
 }
 
-// per-mod 文件只存统计数据：source 是旧格式字段（读取时忽略），比较时也不看；
-// generatedAt 变化不算内容变化，只有 releases（含下载量/体积/元数据）真的变了才重写
+// per-mod 文件只存数据：source 是旧格式字段（读取时忽略），比较时也不看；
+// generatedAt 变化不算内容变化，只有 releases / compat 真的变了才重写
 export function releaseFileBodyChanged(previous, next) {
   if (!previous) {
     return true;
@@ -61,7 +61,10 @@ export function releaseFileBodyChanged(previous, next) {
   if (previous.repo !== next.repo) {
     return true;
   }
-  return JSON.stringify(previous.releases) !== JSON.stringify(next.releases);
+  if (JSON.stringify(previous.releases) !== JSON.stringify(next.releases)) {
+    return true;
+  }
+  return JSON.stringify(previous.compat ?? []) !== JSON.stringify(next.compat ?? []);
 }
 
 // index.json 同理：generatedAt 每次都变，比较其余数据主体，没变化就不写

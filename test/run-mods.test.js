@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { parseArgs, runMods, sortModsForRefresh } from '../src/main.js';
@@ -47,8 +47,8 @@ function makeApiClient(getImpl, { remaining = null } = {}) {
   };
 }
 
-async function run(dir, apiClient, mods) {
-  const options = parseArgs(['--out', dir, '--repos', 'a/one,b/two']);
+async function run(dir, apiClient, mods, repos = ['a/one', 'b/two']) {
+  const options = parseArgs(['--out', dir, '--repos', repos.join(',')]);
   const originalLog = console.log;
   const originalError = console.error;
   const originalWarn = console.warn;
@@ -147,4 +147,133 @@ test('运行前剩余配额已不足：不发请求、全部计为未处理、ex
   assert.equal(result.unprocessed, 2);
   assert.equal(apiCalls.length, 0);
   await assert.rejects(readdir(path.join(dir, 'releases')), /ENOENT/);
+});
+
+// ---------- A1：commit sha / 删除留档 ----------
+
+const SHA_V1 = '1'.repeat(40);
+const SHA_V2 = '2'.repeat(40);
+
+function releaseFixture(tag, sha = null) {
+  return {
+    tag,
+    name: tag,
+    hasRelease: true,
+    prerelease: false,
+    publishedAt: '2026-10-01T00:00:00Z',
+    htmlUrl: `https://github.com/a/one/releases/tag/${tag}`,
+    modVersion: tag.replace(/^v/, ''),
+    minGameVersion: '146',
+    metadataPath: 'mod.hjson',
+    metadataStatus: 'ok',
+    downloadUrl: `https://github.com/a/one/releases/download/${tag}/mod.jar`,
+    sourceArchiveUrl: `https://github.com/a/one/archive/refs/tags/${tag}.zip`,
+    assets: [],
+    ...(sha ? { commitSha: sha, archiveByCommitUrl: `https://github.com/a/one/archive/${sha}.zip` } : {}),
+  };
+}
+
+async function seedMod(dir, releases, stateEntry) {
+  await mkdir(path.join(dir, 'releases', 'a'), { recursive: true });
+  await writeFile(
+    path.join(dir, 'releases', 'a', 'one.json'),
+    JSON.stringify(
+      { formatVersion: 1, repo: 'a/one', generatedAt: '2026-10-02T00:00:00.000Z', releases, compat: [] },
+      null,
+      2,
+    ),
+  );
+  await mkdir(path.join(dir, 'state'), { recursive: true });
+  await writeFile(
+    path.join(dir, 'state', 'refresh.json'),
+    JSON.stringify(
+      { formatVersion: 1, updatedAt: '2026-10-02T00:00:00.000Z', mods: { 'a/one': stateEntry } },
+      null,
+      2,
+    ),
+  );
+}
+
+function tagItems(entries) {
+  return entries.map(([name, sha]) => ({ name, commit: { sha } }));
+}
+
+function tagAwareApi({ releases = [], tags = [] }) {
+  return makeApiClient((url) => {
+    if (url.includes('/releases?')) {
+      return { status: 200, text: JSON.stringify(releases) };
+    }
+    if (url.includes('/tags?')) {
+      return { status: 200, text: JSON.stringify(tagItems(tags)) };
+    }
+    return { status: 200, text: '[]' };
+  });
+}
+
+test('全量刷新：上游删除的 tag 保留在文件里并标 removed，index 记录 removedCount', async (t) => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-removed-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const mods = [officialMod('a/one')];
+  // 缓存里 v1/v2 都有 commit sha；本轮上游只剩 v2
+  await seedMod(
+    dir,
+    [releaseFixture('v2', SHA_V2), releaseFixture('v1', SHA_V1)],
+    {
+      page1Etag: null,
+      page1FetchedAt: '2026-11-06T00:00:00.000Z',
+      page2FetchedAt: '2026-11-06T00:00:00.000Z',
+      fullFetchedAt: '2020-01-01T00:00:00.000Z',
+      tagsFetchedAt: '2026-11-06T00:00:00.000Z',
+    },
+  );
+  const result = await run(dir, tagAwareApi({ tags: [['v2', SHA_V2]] }), mods, ['a/one']);
+  assert.equal(result.code, 0);
+
+  const file = JSON.parse(
+    await readFile(path.join(dir, 'releases', 'a', 'one.json'), 'utf8'),
+  );
+  const byTag = new Map(file.releases.map((entry) => [entry.tag, entry]));
+  assert.equal(file.releases.length, 2);
+  assert.equal(byTag.get('v2').removed, undefined);
+  assert.equal(byTag.get('v1').removed, true);
+  assert.equal(byTag.get('v1').removedAt, byTag.get('v1').removedAt);
+  assert.ok(Date.parse(byTag.get('v1').removedAt));
+  assert.equal(byTag.get('v2').commitSha, SHA_V2);
+  assert.equal(
+    byTag.get('v2').archiveByCommitUrl,
+    `https://github.com/a/one/archive/${SHA_V2}.zip`,
+  );
+
+  const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+  assert.equal(index.mods[0].removedCount, 1);
+  assert.equal(index.mods[0].tagCount, 2);
+  // 上游 release 取消但 tag 还在：条目退化为 tag-only，不算删除
+  assert.equal(index.mods[0].releaseCount, 1);
+  assert.equal(byTag.get('v2').hasRelease, false);
+});
+
+test('只刷部分页：不上游缺失判定为删除，远处缓存条目保持不变', async (t) => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-partial-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const mods = [officialMod('a/one')];
+  const nowIso = new Date().toISOString();
+  await seedMod(dir, [releaseFixture('v1', SHA_V1)], {
+    page1Etag: null,
+    page1FetchedAt: '2020-01-01T00:00:00.000Z',
+    page2FetchedAt: nowIso,
+    fullFetchedAt: nowIso,
+    tagsFetchedAt: nowIso,
+  });
+  // 第 1 页 tags 只看到 v2；v1 没看到但这是部分刷新，不能标记删除
+  const result = await run(dir, tagAwareApi({ tags: [['v2', SHA_V2]] }), mods, ['a/one']);
+  assert.equal(result.code, 0);
+
+  const file = JSON.parse(
+    await readFile(path.join(dir, 'releases', 'a', 'one.json'), 'utf8'),
+  );
+  const byTag = new Map(file.releases.map((entry) => [entry.tag, entry]));
+  assert.equal(byTag.get('v1').removed, undefined);
+  assert.equal(byTag.get('v1').commitSha, SHA_V1);
+  assert.equal(byTag.get('v2').hasRelease, false);
+  assert.equal(byTag.get('v2').commitSha, SHA_V2);
 });

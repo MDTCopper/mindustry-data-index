@@ -66,13 +66,16 @@
 | `iconHash` | string \| null | 官方列表的 `iconHash` 原样保留（多数模组没有），供客户端按哈希做图标缓存 |
 | `releasesPath` | string \| null | per-mod 文件相对路径（`releases/<owner>/<repo>.json`，owner/name 保留大小写）；`null` 表示尚未成功抓取过（见 `skipped`） |
 | `releaseCount` | number | 有 GitHub Release 的条目数（`hasRelease===true`）；抓取失败时保留旧值 |
-| `tagCount` | number | 全部 git tag 数（文件 `releases` 数组长度，含 tag-only 条目） |
+| `tagCount` | number | 全部 git tag 数（文件 `releases` 数组长度，含 tag-only 与 removed 条目） |
+| `removedCount` | number | 已删除留档条目数（文件里 `removed === true` 的条数） |
+| `latestCompatible` | string \| null | 当前最新游戏版本下 `compat` 推荐的 tag；没有兼容版本为 `null` |
+| `compatRanges` | number | `compat` 区间段数 |
 | `totalDownloads` | number | 历史累计下载量：所有 Release 条目的**首选资产** `downloadCount` 之和（tag-only 无资产，按 0；口径见下） |
 | `allAssetsDownloads` | number | 所有 Release 条目的全部资产 `downloadCount` 之和（完整口径，含非首选资产） |
 | `latestDownloads` | number | 最新一个有 Release 条目首选资产的 `downloadCount`（没有首选资产为 0） |
 | `latestSizeBytes` | number \| null | 最新一个有 Release 条目首选资产的 `size`（没有首选资产为 `null`） |
 | `totalSizeBytes` | number \| null | 所有 Release 条目首选资产 `size` 之和（历史版本总体积；一条首选资产都没有为 `null`） |
-| `latestRelease` | object \| null | 文件里最新一条 `hasRelease===true` 条目的 `{ tag, name, prerelease, publishedAt, downloads, sizeBytes }`；没有 Release 或尚未抓取时为 `null` |
+| `latestRelease` | object \| null | 文件里最新一条 `hasRelease===true` 且未被删除的条目 `{ tag, name, prerelease, publishedAt, downloads, sizeBytes }`；没有 Release 或尚未抓取时为 `null` |
 | `releaseDataUpdatedAt` | string \| null | per-mod 文件最近一次**内容变化**时间；文件内容未变时保持不变（不是每天刷新） |
 
 **首选资产口径**：与 `downloadUrl` 一致——`hasJava` 取体积最大的 `.jar`，否则取体积最大的 `.zip`；
@@ -108,7 +111,8 @@
   "formatVersion": 1,
   "repo": "owner/repo",
   "generatedAt": "2026-11-06T03:00:00.000Z",
-  "releases": []
+  "releases": [],
+  "compat": []
 }
 ```
 
@@ -136,6 +140,54 @@
 | `downloadUrl` | string | 推荐下载链接，规则见下；tag-only 条目固定等于 `sourceArchiveUrl` |
 | `sourceArchiveUrl` | string | 源码归档 `https://github.com/<repo>/archive/refs/tags/<tag>.zip`，永远带 `tag` 的 URL 转义 |
 | `assets` | array | Release 资产全量，顺序与 API 一致：`{ name, size, downloadCount, downloadUrl }`；tag-only 条目为空数组 |
+| `commitSha` | string \| null | tags API 的 `commit.sha`（40 位小写十六进制）；拿不到或旧数据为 `null` |
+| `archiveByCommitUrl` | string \| null | `https://github.com/<repo>/archive/<commitSha>.zip`，tag 被删后 best-effort 下载；`commitSha` 为 `null` 时本字段也为 `null` |
+| `removed` | boolean（可选） | `true` 表示该 tag/release 已从上游删除，仅保留历史数据；不出现表示仍存在 |
+| `removedAt` | string（可选） | 检测到删除的时间（UTC ISO）；只在 `removed === true` 时存在 |
+
+### compat：游戏版本 → 推荐 tag
+
+`compat` 是预计算的推荐区间，官方与社区同构。语义：当 `gameVersion ∈ [minGameVersion, maxGameVersion)`
+（`maxGameVersion` 不含；`null` 表示无上界）时，`tag` 是该模组的推荐版本。
+
+```json
+"compat": [
+  { "tag": "v2.1.0", "modVersion": "2.1.0", "minGameVersion": "154", "maxGameVersion": 159.7, "hasRelease": true },
+  { "tag": "v2.3.0", "modVersion": "2.3.0", "minGameVersion": "159.7", "maxGameVersion": null, "hasRelease": true }
+]
+```
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `tag` | string | 必须存在于 `releases[]`，且不能是 `removed` 条目 |
+| `modVersion` | string \| null | 该条目的 `modVersion` |
+| `minGameVersion` | string | 该条目的 `minGameVersion`（区间起点） |
+| `maxGameVersion` | number \| null | 区间终点（不含）：门禁值第一次超过该条目 `minGameVersion` 的游戏版本，且不盖过更新条目的最小版本；无上界为 `null` |
+| `hasRelease` | boolean | 与 `releases[]` 中同 tag 条目的 `hasRelease` 一致 |
+
+计算规则：
+
+- 只考虑未被删除、`minGameVersion` 可解析为数字的条目；按 `publishedAt` 从新到旧生成区间，
+  同一游戏版本有多个兼容 release 时取「最新发布的」；
+- 上界用门禁判断：普通/脚本模组读 `mod-gate.json`，Java 模组读 `java-gate.json`；对条目的
+  `minGameVersion = M`，找到第一个门禁值 `> M` 的游戏版本作为上界（`null` 表示当前没有更高门禁）；
+  `mindustry/versions.json` 提供游戏版本序列；
+- 推荐优先 `hasRelease: true`；tag-only 条目（`hasRelease: false`）只在 release 未覆盖的区间出现，
+  下载走 `sourceArchiveUrl`/`archiveByCommitUrl`；
+- 输出按 `minGameVersion` 升序，相邻区间不重叠；若某段游戏版本没有任何兼容 release，允许留空档
+  （不伪造兼容性）。没有 release / 没有 `minGameVersion` 的模组为 `[]`。
+- `index.json` 里的 `latestCompatible` = 当前最新游戏版本所在的兼容区间 tag（没有则为 `null`），
+  `compatRanges` = `compat.length`。
+
+### tag 删除留档
+
+- 只有「全量 tags 刷新」和「全量 releases 刷新」（每月一次，或 `--no-cache`）才对比缓存与上游；
+  缺失的条目保留在 `releases[]` 里并标 `removed: true` + `removedAt`，不静默删除；
+- 只刷新第 1/2 页（2h/周）时**不做**缺失判定，避免把远处没抓到的 tag 误标为删除；
+  本轮确实看到的上游 tag 会清掉 `removed`（作者恢复 tag 的情况）；
+- `index.json` 的 `removedCount` 统计 removed 条目数；`tagCount`/`releaseCount` 仍按全部条目数计；
+- `commitSha` 与 `archiveByCommitUrl` 给客户端提供 tag 删除后的下载兜底（best-effort，依赖 GitHub
+  尚未 GC commit）：`validate` 检查 sha 为 40 位小写十六进制、archive 地址与 repo/sha 一致。
 
 ### tag-only 条目（无 GitHub Release 的 git tag）
 
@@ -155,7 +207,9 @@
   "metadataStatus": "ok",
   "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
   "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
-  "assets": []
+  "assets": [],
+  "commitSha": "…",
+  "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/<sha>.zip"
 }
 ```
 

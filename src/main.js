@@ -14,12 +14,14 @@ import {
   normalizeReleases,
   mergeReleaseMetadata,
   mergeReleasesByTag,
+  mergeWithShaAndRemovals,
   buildTagOnlyRelease,
   isReleaseEntry,
   sortReleases,
   buildReleasesFile,
 } from './releases.js';
-import { fetchAllTags, fetchTagPages } from './tags.js';
+import { fetchAllTagEntries, fetchTagPages } from './tags.js';
+import { buildCompat, gameVersionsFromFile, latestCompatibleTag } from './compat.js';
 import {
   COMMUNITY_DIR,
   COMMUNITY_SOURCE,
@@ -294,12 +296,21 @@ export function parseArgs(argv) {
 
 // ---------- mods 数据集 ----------
 
-function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
+function buildIndexEntry(
+  mod,
+  file,
+  { relPath, oldEntry = null, stats: providedStats = null, compat = null, gameVersions = [] } = {},
+) {
   const hasFile = Array.isArray(file?.releases);
   const releases = hasFile ? file.releases : [];
   const releaseEntries = releases.filter(isReleaseEntry);
-  const stats = computeModStats(releases, mod.hasJava === true);
-  const first = releaseEntries[0] ?? null;
+  const stats = providedStats ?? computeModStats(releases, mod.hasJava === true);
+  // 推荐/最新版本优先取未被作者删除的条目
+  const first = releaseEntries.find((entry) => entry.removed !== true) ?? releaseEntries[0] ?? null;
+  const removedCount = releases.filter((entry) => entry.removed === true).length;
+  const fileCompat = Array.isArray(compat)
+    ? compat
+    : (Array.isArray(file?.compat) ? file.compat : []);
   const releaseCount = hasFile
     ? releaseEntries.length
     : typeof oldEntry?.releaseCount === 'number'
@@ -322,6 +333,8 @@ function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
     : hasFile
       ? null
       : (oldEntry?.latestRelease ?? null);
+  const hasCompat = fileCompat.length > 0 || gameVersions.length > 0;
+  const releaseDataUpdatedAt = file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null;
 
   return {
     repo: mod.repo,
@@ -343,13 +356,18 @@ function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
       : (oldEntry?.releasesPath ?? (file ? relPath : null)),
     releaseCount,
     tagCount,
+    removedCount: hasFile ? removedCount : (oldEntry?.removedCount ?? 0),
     totalDownloads: stats.totalDownloads,
     allAssetsDownloads: stats.allAssetsDownloads,
     latestDownloads: stats.latestDownloads,
     latestSizeBytes: stats.latestSizeBytes,
     totalSizeBytes: stats.totalSizeBytes,
     latestRelease,
-    releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
+    latestCompatible: hasCompat
+      ? latestCompatibleTag(fileCompat, gameVersions)
+      : (oldEntry?.latestCompatible ?? null),
+    compatRanges: hasCompat ? fileCompat.length : (oldEntry?.compatRanges ?? 0),
+    releaseDataUpdatedAt,
   };
 }
 
@@ -501,12 +519,19 @@ async function processMod(context) {
 
     let releasePageResults = [];
     let tagPageResults = [];
-    let fullTagNames = null;
+    let fullTagEntries = null;
     if (plan.full) {
       releasePageResults = await fetchAllReleasePages(apiClient, mod.repo);
-      const tagAll = await fetchAllTags(apiClient, mod.repo);
-      fullTagNames = tagAll.tags;
-      tagPageResults = [{ page: 1, names: tagAll.tags, complete: true }];
+      const tagAll = await fetchAllTagEntries(apiClient, mod.repo);
+      fullTagEntries = tagAll.entries;
+      tagPageResults = [
+        {
+          page: 1,
+          entries: tagAll.entries,
+          names: tagAll.entries.map((entry) => entry.name),
+          complete: true,
+        },
+      ];
     } else {
       const pages = [];
       if (plan.page1) {
@@ -566,79 +591,95 @@ async function processMod(context) {
         })
       : { releases: [], metaFetched: 0, metaReused: 0 };
 
-    // 合并条目：全量时直接用本次抓到的全部 release；否则按 tag 合并保留没抓的旧页。
-    // 旧文件没有 hasRelease 字段 → 统一补成 true（一次性迁移）
+    // 合并条目：全量时以本次抓到的 release 为准（旧 tag-only 也先放进来保留元数据）；
+    // 否则按 tag 合并保留没抓的旧页。旧文件没有 hasRelease 字段 → 统一补成 true（一次性迁移）
     let entries = plan.full
       ? metaMerged.releases.map((release) => ({ ...release, hasRelease: true }))
       : mergeReleasesByTag(previous?.releases ?? [], metaMerged.releases).map(
           (release) => (isReleaseEntry(release) ? { ...release, hasRelease: true } : release),
         );
-
-    // tag-only 条目：全量时按完整 tag 列表重建（删除已不存在的 tag），否则增量补新 tag
-    const tagsFetched = tagPageResults.length > 0;
-    if (fullTagNames !== null) {
-      const present = new Set(entries.map((release) => release.tag));
-      const tagOnly = fullTagNames
-        .filter((tag) => !present.has(tag))
-        .map((tag) => buildTagOnlyRelease({ repo: mod.repo, tag }));
-      if (tagOnly.length > 0) {
-        const tagMeta = await mergeReleaseMetadata({
-          previousReleases: previous?.releases ?? [],
-          releases: tagOnly,
-          fetchMetadata: (tag) =>
-            rawPool.run(() =>
-              fetchModMetadata(rawClient, {
-                repo: mod.repo,
-                tag,
-                hasJava,
-              }),
-            ),
-        });
-        entries.push(...tagMeta.releases);
-        metaMerged.metaFetched += tagMeta.metaFetched;
-        metaMerged.metaReused += tagMeta.metaReused;
-      }
-    } else if (tagsFetched) {
-      const present = new Set(entries.map((release) => release.tag));
-      const newTagNames = [];
-      for (const tagPage of tagPageResults) {
-        for (const name of tagPage.names) {
-          if (!present.has(name)) {
-            present.add(name);
-            newTagNames.push(name);
-          }
+    if (plan.full) {
+      for (const oldEntry of previous?.releases ?? []) {
+        if (!isReleaseEntry(oldEntry) && typeof oldEntry.tag === 'string') {
+          entries.push({ ...oldEntry });
         }
       }
-      if (newTagNames.length > 0) {
-        const tagOnly = newTagNames.map((tag) =>
-          buildTagOnlyRelease({ repo: mod.repo, tag }),
+    }
+
+    // 新 tag-only：上游 tags 里有、当前条目里没有的 tag
+    const fetchedTagEntries = plan.full
+      ? fullTagEntries
+      : tagPageResults.flatMap((page) =>
+          Array.isArray(page.entries)
+            ? page.entries
+            : page.names.map((name) => ({ name, commitSha: null })),
         );
-        const tagMeta = await mergeReleaseMetadata({
-          previousReleases: previous?.releases ?? [],
-          releases: tagOnly,
-          fetchMetadata: (tag) =>
-            rawPool.run(() =>
-              fetchModMetadata(rawClient, {
-                repo: mod.repo,
-                tag,
-                hasJava,
-              }),
-            ),
-        });
-        entries.push(...tagMeta.releases);
-        metaMerged.metaFetched += tagMeta.metaFetched;
-        metaMerged.metaReused += tagMeta.metaReused;
+    const presentTags = new Set(entries.map((entry) => entry.tag));
+    const newTagNames = [];
+    for (const tagEntry of fetchedTagEntries) {
+      if (!presentTags.has(tagEntry.name)) {
+        presentTags.add(tagEntry.name);
+        newTagNames.push(tagEntry.name);
       }
     }
-    entries = sortReleases(entries);
+    if (newTagNames.length > 0) {
+      const tagOnly = newTagNames.map((tag) =>
+        buildTagOnlyRelease({ repo: mod.repo, tag }),
+      );
+      const tagMeta = await mergeReleaseMetadata({
+        previousReleases: previous?.releases ?? [],
+        releases: tagOnly,
+        fetchMetadata: (tag) =>
+          rawPool.run(() =>
+            fetchModMetadata(rawClient, {
+              repo: mod.repo,
+              tag,
+              hasJava,
+            }),
+          ),
+      });
+      entries.push(...tagMeta.releases);
+      metaMerged.metaFetched += tagMeta.metaFetched;
+      metaMerged.metaReused += tagMeta.metaReused;
+    }
+
+    // commit sha + 删除留档（只在本轮确实做了全量刷新时判断“缺失=被删”）
+    const tagsFetched = tagPageResults.length > 0;
+    const partialTagEntries = plan.full ? [] : fetchedTagEntries;
+    entries = mergeWithShaAndRemovals({
+      repo: mod.repo,
+      entries,
+      previousEntries: previous?.releases ?? [],
+      fullTagEntries: plan.full ? fullTagEntries : null,
+      partialTagEntries,
+      fullReleaseTags: plan.full
+        ? new Set(metaMerged.releases.map((release) => release.tag))
+        : null,
+      removedAt: now,
+    });
+
+    // 预计算「游戏版本 → 推荐 tag」兼容区间（官方/社区同构）
+    const compatData = context.compatData ?? null;
+    const compat = compatData
+      ? buildCompat({
+          entries,
+          gameVersions: compatData.gameVersions,
+          gateFile: hasJava ? compatData.javaGate : compatData.modGate,
+        })
+      : Array.isArray(previous?.compat)
+        ? previous.compat
+        : [];
+
     const nextFile = buildReleasesFile({
       repo: mod.repo,
       releases: entries,
+      compat,
       // 数据没变但只是迁移路径时沿用旧 generatedAt，避免 index 的 releaseDataUpdatedAt 抖动
       generatedAt: releaseFileBodyChanged(previous, {
         formatVersion: 1,
         repo: mod.repo,
         releases: entries,
+        compat,
       })
         ? now
         : (previous?.generatedAt ?? now),
@@ -695,9 +736,10 @@ async function processMod(context) {
     }
 
     const releaseEntryCount = nextFile.releases.filter(isReleaseEntry).length;
+    const removedCount = nextFile.releases.filter((entry) => entry.removed === true).length;
     if (changed) {
       log(
-        `[${mod.repo}] ${nextFile.releases.length} 个 tag（${releaseEntryCount} 个有 Release），元数据新抓 ${metaMerged.metaFetched} 个、复用 ${metaMerged.metaReused} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
+        `[${mod.repo}] ${nextFile.releases.length} 个 tag（${releaseEntryCount} 个有 Release，${removedCount} 个已删除留档），compat ${compat.length} 段，元数据新抓 ${metaMerged.metaFetched} 个、复用 ${metaMerged.metaReused} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
       );
     } else if (fetchedReleasePages.size > 0 || tagsFetched) {
       const parts = [];
@@ -710,7 +752,13 @@ async function processMod(context) {
       log(`[${mod.repo}] 内容未变（${parts.join('、')}已刷新，文件不重写）`);
     }
     return {
-      entry: buildEntry(mod, finalFile, { relPath, oldEntry, stats: computeModStats(finalFile?.releases ?? [], hasJava) }),
+      entry: buildEntry(mod, finalFile, {
+        relPath,
+        oldEntry,
+        stats: computeModStats(finalFile?.releases ?? [], hasJava),
+        compat: finalFile?.compat ?? [],
+        gameVersions: compatData?.gameVersions ?? [],
+      }),
       file: finalFile,
       state: nextState,
       skipped: null,
@@ -743,7 +791,13 @@ async function processMod(context) {
       }
     }
     return {
-      entry: buildEntry(mod, finalFile, { relPath, oldEntry, stats: computeModStats(finalFile?.releases ?? [], hasJava) }),
+      entry: buildEntry(mod, finalFile, {
+        relPath,
+        oldEntry,
+        stats: computeModStats(finalFile?.releases ?? [], hasJava),
+        compat: finalFile?.compat ?? [],
+        gameVersions: context.compatData?.gameVersions ?? [],
+      }),
       file: finalFile,
       state: previousState.mods[mod.repo],
       skipped: { repo: mod.repo, reason: skipReason(error) },
@@ -785,6 +839,33 @@ async function loadRefreshState(outDir, log, relPath = REFRESH_STATE_REL_PATH) {
     log(`[警告] ${relPath} 不可用，按首次运行处理：${error.message}`);
     return { file, exists: false, state: normalizeRefreshState(null) };
   }
+}
+
+// 兼容区间需要游戏版本列表 + 两份门禁（官方数据目录下）
+async function loadCompatData(outDir, log) {
+  let versionsFile = null;
+  let modGate = null;
+  let javaGate = null;
+  try {
+    versionsFile = await readJsonIfExists(path.join(outDir, VERSIONS_REL_PATH));
+  } catch (error) {
+    log(`[警告] ${VERSIONS_REL_PATH} 不可用，compat 将为空：${error.message}`);
+  }
+  try {
+    modGate = await readJsonIfExists(path.join(outDir, GATE_REL_PATHS.mod));
+  } catch (error) {
+    log(`[警告] ${GATE_REL_PATHS.mod} 不可用，compat 将为空：${error.message}`);
+  }
+  try {
+    javaGate = await readJsonIfExists(path.join(outDir, GATE_REL_PATHS.java));
+  } catch (error) {
+    log(`[警告] ${GATE_REL_PATHS.java} 不可用，compat 将为空：${error.message}`);
+  }
+  return {
+    gameVersions: gameVersionsFromFile(versionsFile),
+    modGate,
+    javaGate,
+  };
 }
 
 export async function runMods(options, context) {
@@ -831,6 +912,7 @@ export async function runMods(options, context) {
   );
   const stateLoaded = await loadRefreshState(outDir, log);
   const previousState = stateLoaded.state;
+  const compatData = await loadCompatData(outDir, log);
 
   const rawPool = createPool(options.rawThreads);
   const apiPool = createPool(options.threads);
@@ -858,6 +940,7 @@ export async function runMods(options, context) {
           oldEntries,
           previousState,
           abortState,
+          compatData,
         });
         resultsByRepo.set(mod.repo, result);
         completed += 1;
@@ -1125,6 +1208,7 @@ async function runCommunity(options, context) {
   );
   const stateLoaded = await loadRefreshState(outDir, log, COMMUNITY_STATE_REL_PATH);
   const previousState = stateLoaded.state;
+  const compatData = await loadCompatData(outDir, log);
 
   const rawPool = createPool(options.rawThreads);
   const apiPool = createPool(options.threads);
@@ -1155,6 +1239,7 @@ async function runCommunity(options, context) {
           previousState,
           abortState,
           dataset,
+          compatData,
         });
         resultsByRepo.set(mod.repo, result);
         completed += 1;

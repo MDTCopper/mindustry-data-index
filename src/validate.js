@@ -14,6 +14,7 @@ import {
 } from './summary.js';
 import { REFRESH_STATE_REL_PATH } from './refresh-state.js';
 import { COMMUNITY_DIR, COMMUNITY_STATE_REL_PATH } from './community.js';
+import { latestCompatibleTag, parseGameVersion, gameVersionsFromFile } from './compat.js';
 import { VERSIONS_REL_PATH, VERSIONS_API } from './versions.js';
 import {
   GATE_REL_PATHS,
@@ -192,6 +193,38 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
     if (release.metadataPath !== null && typeof release.metadataPath !== 'string') {
       errors.push(`${where}.metadataPath 应为字符串或 null`);
     }
+    // commit sha：tag 被删后 archive/<sha>.zip 的兜底（旧数据可没有该字段）
+    if (release.commitSha !== undefined && release.commitSha !== null) {
+      if (
+        typeof release.commitSha !== 'string' ||
+        !/^[0-9a-f]{40}$/.test(release.commitSha)
+      ) {
+        errors.push(`${where}.commitSha 不是 40 位小写 SHA`);
+      } else {
+        const expectedArchive = `https://github.com/${file.repo}/archive/${release.commitSha}.zip`;
+        if (release.archiveByCommitUrl !== expectedArchive) {
+          errors.push(
+            `${where}.archiveByCommitUrl 与 repo/sha 不一致：${JSON.stringify(release.archiveByCommitUrl)}`,
+          );
+        }
+      }
+    } else if (
+      release.archiveByCommitUrl !== undefined &&
+      release.archiveByCommitUrl !== null
+    ) {
+      errors.push(`${where}.archiveByCommitUrl 在没有 commitSha 时应为 null`);
+    }
+    // 上游删除留档
+    if (release.removed !== undefined && typeof release.removed !== 'boolean') {
+      errors.push(`${where}.removed 应为布尔值`);
+    }
+    if (release.removed === true) {
+      if (!isIsoDate(release.removedAt)) {
+        errors.push(`${where}.removedAt 在 removed=true 时应为 ISO 时间`);
+      }
+    } else if (release.removedAt !== undefined && release.removedAt !== null) {
+      errors.push(`${where}.removedAt 应只在 removed=true 时存在`);
+    }
     if (!METADATA_STATUSES.has(release.metadataStatus)) {
       errors.push(
         `${where}.metadataStatus 非法：${JSON.stringify(release.metadataStatus)}`,
@@ -223,6 +256,73 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
         errors.push(`${where}.assets[${assetIndex}] 字段不完整`);
       }
     }
+  }
+
+  validateCompatData(file, { tags, errors });
+}
+
+// compat：游戏版本 → 推荐 tag 的区间；必须引用存在的、未被删除的 tag，区间升序且不重叠
+function validateCompatData(file, { tags, errors }) {
+  if (!Array.isArray(file.compat)) {
+    errors.push('compat 不是数组');
+    return;
+  }
+  const releaseByTag = new Map();
+  for (const release of file.releases) {
+    if (release && typeof release.tag === 'string') {
+      releaseByTag.set(release.tag, release);
+    }
+  }
+  let previous = null;
+  for (const [index, item] of file.compat.entries()) {
+    const where = `compat[${index}]`;
+    if (!isPlainObject(item)) {
+      errors.push(`${where} 不是对象`);
+      continue;
+    }
+    if (typeof item.tag !== 'string' || !releaseByTag.has(item.tag)) {
+      errors.push(`${where}.tag 不存在于 releases：${JSON.stringify(item.tag)}`);
+    } else if (releaseByTag.get(item.tag).removed === true) {
+      errors.push(`${where}.tag 指向已删除留档的条目：${item.tag}`);
+    }
+    if (item.modVersion !== null && typeof item.modVersion !== 'string') {
+      errors.push(`${where}.modVersion 应为字符串或 null`);
+    }
+    if (typeof item.minGameVersion !== 'string') {
+      errors.push(`${where}.minGameVersion 应为字符串`);
+    }
+    const min = parseGameVersion(item.minGameVersion);
+    if (min === null) {
+      errors.push(`${where}.minGameVersion 无法解析为数字`);
+    }
+    if (item.maxGameVersion !== null && !Number.isFinite(item.maxGameVersion)) {
+      errors.push(`${where}.maxGameVersion 应为数字或 null`);
+    }
+    if (
+      min !== null &&
+      Number.isFinite(item.maxGameVersion) &&
+      item.maxGameVersion <= min
+    ) {
+      errors.push(`${where}.maxGameVersion 必须大于 minGameVersion`);
+    }
+    if (typeof item.hasRelease !== 'boolean') {
+      errors.push(`${where}.hasRelease 应为布尔值`);
+    } else if (releaseByTag.has(item.tag) && releaseByTag.get(item.tag).hasRelease !== item.hasRelease) {
+      errors.push(`${where}.hasRelease 与 releases 条目不一致`);
+    }
+    if (previous) {
+      const prevMin = parseGameVersion(previous.minGameVersion);
+      if (prevMin !== null && min !== null && prevMin > min) {
+        errors.push(`${where} 没有按 minGameVersion 升序排列`);
+      }
+      if (previous.maxGameVersion !== null && min !== null && previous.maxGameVersion > min) {
+        errors.push(`${where} 与上一段区间重叠`);
+      }
+      if (previous.maxGameVersion === null) {
+        errors.push(`${where} 在上一段无上界区间之后仍然存在`);
+      }
+    }
+    previous = item;
   }
 }
 
@@ -380,6 +480,21 @@ export function validateIndexData(
       mod.releaseCount > mod.tagCount
     ) {
       errors.push(`${where}.releaseCount 不能大于 tagCount`);
+    }
+    if (!Number.isInteger(mod.removedCount) || mod.removedCount < 0) {
+      errors.push(`${where}.removedCount 应为非负整数`);
+    } else if (Number.isInteger(mod.tagCount) && mod.removedCount > mod.tagCount) {
+      errors.push(`${where}.removedCount 不能大于 tagCount`);
+    }
+    if (!Number.isInteger(mod.compatRanges) || mod.compatRanges < 0) {
+      errors.push(`${where}.compatRanges 应为非负整数`);
+    }
+    if (
+      mod.latestCompatible !== null &&
+      mod.latestCompatible !== undefined &&
+      typeof mod.latestCompatible !== 'string'
+    ) {
+      errors.push(`${where}.latestCompatible 应为字符串或 null`);
     }
     for (const field of ['totalDownloads', 'allAssetsDownloads', 'latestDownloads']) {
       if (!Number.isInteger(mod[field]) || mod[field] < 0) {
@@ -995,6 +1110,7 @@ export async function validateDir(dir) {
   const communityStateFile = await readJsonIfPresent(
     path.join(outDir, COMMUNITY_STATE_REL_PATH),
   );
+  const gameVersions = gameVersionsFromFile(versionsFile.data);
 
   if (
     !indexFile.exists &&
@@ -1058,10 +1174,30 @@ export async function validateDir(dir) {
             `mods ${mod.repo} 的 tagCount（${mod.tagCount}）与文件条数（${file.releases.length}）不一致`,
           );
         }
-        const firstTag = releaseEntries[0]?.tag ?? null;
+        const removedEntries = file.releases.filter((entry) => entry?.removed === true).length;
+        if (mod.removedCount !== removedEntries) {
+          errors.push(
+            `mods ${mod.repo} 的 removedCount（${mod.removedCount}）与文件条数（${removedEntries}）不一致`,
+          );
+        }
+        const compat = Array.isArray(file.compat) ? file.compat : [];
+        if (mod.compatRanges !== compat.length) {
+          errors.push(
+            `mods ${mod.repo} 的 compatRanges（${mod.compatRanges}）与 compat 条数（${compat.length}）不一致`,
+          );
+        }
+        const expectedLatestCompatible = latestCompatibleTag(compat, gameVersions);
+        if (mod.latestCompatible !== expectedLatestCompatible) {
+          errors.push(
+            `mods ${mod.repo} 的 latestCompatible（${mod.latestCompatible}）与 compat 重算（${expectedLatestCompatible}）不一致`,
+          );
+        }
+        const firstTag =
+          (releaseEntries.find((entry) => entry?.removed !== true) ?? releaseEntries[0])
+            ?.tag ?? null;
         if ((mod.latestRelease?.tag ?? null) !== firstTag) {
           errors.push(
-            `mods ${mod.repo} 的 latestRelease.tag（${mod.latestRelease?.tag ?? null}）与文件首个 Release 条目（${firstTag}）不一致`,
+            `mods ${mod.repo} 的 latestRelease.tag（${mod.latestRelease?.tag ?? null}）与文件首个未删除 Release 条目（${firstTag}）不一致`,
           );
         }
         if (mod.releaseDataUpdatedAt !== file.generatedAt) {
@@ -1193,10 +1329,30 @@ export async function validateDir(dir) {
             `community ${mod.repo} 的 tagCount（${mod.tagCount}）与文件条数（${file.releases.length}）不一致`,
           );
         }
-        const firstTag = releaseEntries[0]?.tag ?? null;
+        const removedEntries = file.releases.filter((entry) => entry?.removed === true).length;
+        if (mod.removedCount !== removedEntries) {
+          errors.push(
+            `community ${mod.repo} 的 removedCount（${mod.removedCount}）与文件条数（${removedEntries}）不一致`,
+          );
+        }
+        const compat = Array.isArray(file.compat) ? file.compat : [];
+        if (mod.compatRanges !== compat.length) {
+          errors.push(
+            `community ${mod.repo} 的 compatRanges（${mod.compatRanges}）与 compat 条数（${compat.length}）不一致`,
+          );
+        }
+        const expectedLatestCompatible = latestCompatibleTag(compat, gameVersions);
+        if (mod.latestCompatible !== expectedLatestCompatible) {
+          errors.push(
+            `community ${mod.repo} 的 latestCompatible（${mod.latestCompatible}）与 compat 重算（${expectedLatestCompatible}）不一致`,
+          );
+        }
+        const firstTag =
+          (releaseEntries.find((entry) => entry?.removed !== true) ?? releaseEntries[0])
+            ?.tag ?? null;
         if ((mod.latestRelease?.tag ?? null) !== firstTag) {
           errors.push(
-            `community ${mod.repo} 的 latestRelease.tag 与文件首个 Release 条目（${firstTag}）不一致`,
+            `community ${mod.repo} 的 latestRelease.tag 与文件首个未删除 Release 条目（${firstTag}）不一致`,
           );
         }
         if (mod.releaseDataUpdatedAt !== file.generatedAt) {
