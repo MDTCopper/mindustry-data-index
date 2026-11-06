@@ -63,8 +63,16 @@
 | `iconHash` | string \| null | 官方列表的 `iconHash` 原样保留（多数模组没有），供客户端按哈希做图标缓存 |
 | `releasesPath` | string \| null | per-mod 文件相对路径（`releases/<owner>_<repo>.json`）；`null` 表示尚未成功抓取过（见 `skipped`） |
 | `releaseCount` | number | 该模组 release 条数（不含 draft）；抓取失败时保留旧值 |
-| `latestRelease` | object \| null | `releases` 首条（GitHub API 新→旧）的 `{ tag, name, prerelease, publishedAt }`；无 release 或尚未抓取时为 `null` |
+| `totalDownloads` | number | 历史累计下载量：所有 release 的**首选资产** `downloadCount` 之和（首选资产口径见下；无首选资产按 0） |
+| `allAssetsDownloads` | number | 所有 release 的全部资产 `downloadCount` 之和（完整口径，含非首选资产） |
+| `latestDownloads` | number | 最新一条 release 首选资产的 `downloadCount`（没有首选资产为 0） |
+| `latestSizeBytes` | number \| null | 最新一条 release 首选资产的 `size`（没有首选资产为 `null`） |
+| `totalSizeBytes` | number \| null | 所有 release 首选资产 `size` 之和（历史版本总体积；一条首选资产都没有为 `null`） |
+| `latestRelease` | object \| null | `releases` 首条（新→旧）的 `{ tag, name, prerelease, publishedAt, downloads, sizeBytes }`；无 release 或尚未抓取时为 `null` |
 | `releaseDataUpdatedAt` | string \| null | per-mod 文件最近一次**内容变化**时间；文件内容未变时保持不变（不是每天刷新） |
+
+**首选资产口径**：与 `downloadUrl` 一致——`hasJava` 取体积最大的 `.jar`，否则取体积最大的 `.zip`；
+没有对应后缀的资产时下载量按 0、体积为 `null`（`downloadUrl` 仍回落源码归档）。
 
 `description`、官方列表里的 `releases` 映射等大字段不放进 `index.json`；`iconHash` 保留（450 条左右
 有值，体积小且可用于缓存）。
@@ -77,19 +85,18 @@
 | `reason` | string | `http-404`、`http-451`、`http-5xx` 等 HTTP 状态，或 `network`、`rate-limit` |
 
 抓取失败时保留旧 `releases/*.json` 与旧 `releaseCount` / `latestRelease`；若从未成功抓取过，
-`releasesPath` 为 `null`、`releaseCount` 为 `0`、`latestRelease` 为 `null`。
+`releasesPath` 为 `null`、`releaseCount` 为 `0`、`latestRelease` 为 `null`，统计字段为 0 / `null`。
 
 ## releases/<owner>_<repo>.json
+
+**只存数据**：分页 ETag 与抓取时间在 `state/refresh.json`，这里不再放 `source`（旧格式文件里的
+`source.releasesEtag` / `releasesFetchedAt` 读取时兼容忽略，不参与内容比较）。
 
 ```json
 {
   "formatVersion": 1,
   "repo": "owner/repo",
   "generatedAt": "2026-11-06T03:00:00.000Z",
-  "source": {
-    "releasesEtag": "\"W/...\"",
-    "releasesFetchedAt": "2026-11-06T03:00:00.000Z"
-  },
   "releases": []
 }
 ```
@@ -98,10 +105,8 @@
 | --- | --- | --- |
 | `formatVersion` | number | 固定 `1` |
 | `repo` | string | `owner/name` |
-| `generatedAt` | string | 本文件最近一次**内容变化**时间，只有数据主体变化时才更新 |
-| `source.releasesEtag` | string \| null | release 接口第一页的 ETag，下次带 `If-None-Match` 请求；`null` 表示没拿到，下次无条件请求 |
-| `source.releasesFetchedAt` | string \| null | 最近一次实际抓到 release 内容的时间；**304 不更新**（304 整份文件不重写） |
-| `releases` | array | 按 GitHub API 返回顺序（新→旧），不重排 |
+| `generatedAt` | string | 本文件最近一次**内容变化**时间，只有 `releases` 真的变化时才更新 |
+| `releases` | array | 合并后的全部 release：抓到的页按 tag 覆盖缓存（下载量随之更新），没抓到的旧条目保留；按 `publishedAt` 降序、同一时间按 `tag` 升序 |
 
 ### releases[] 条目
 
@@ -143,6 +148,96 @@
 
 `prerelease` 只忠实反映 GitHub release 上的勾选状态，不参与 `latestRelease` 的挑选——
 `latestRelease` 就是 `releases[0]`。使用方若只要正式版，自行过滤 `prerelease === false`。
+
+## summary.json
+
+下载量与体积总表：由 `index.json` 的统计字段聚合，按 `totalDownloads` 降序（并列按 `stars` 降序、
+`repo` 升序）。无 release / 无资产的模组也会出现，数值为 0 或 `null`。
+
+```json
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-11-06T03:00:00.000Z",
+  "totals": { "mods": 991, "releases": 5218, "downloads": 4893625, "sizeBytes": 21575732426 },
+  "mods": [
+    {
+      "repo": "sk7725/betamindy",
+      "name": "BetaMindy",
+      "author": "sk7725",
+      "stars": 375,
+      "releaseCount": 51,
+      "totalDownloads": 534141,
+      "allAssetsDownloads": 534783,
+      "latestDownloads": 21918,
+      "latestSizeBytes": 18277217,
+      "totalSizeBytes": 238987571,
+      "latestTag": "v2.01",
+      "latestPrerelease": false,
+      "latestModVersion": "2.0-159",
+      "latestMinGameVersion": "159",
+      "iconUrl": "https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/sk7725_betamindy"
+    }
+  ]
+}
+```
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `formatVersion` | number | 固定 `1` |
+| `generatedAt` | string | 本文件最近一次**内容变化**时间；未变化不刷新 |
+| `totals.mods` | number | 模组数（= `index.mods` 数量） |
+| `totals.releases` | number | 所有模组 `releaseCount` 之和 |
+| `totals.downloads` | number | 所有模组 `totalDownloads` 之和 |
+| `totals.sizeBytes` | number | 所有模组 `totalSizeBytes` 之和（`null` 按 0 计） |
+| `mods[].repo` 等 | string | `repo`/`name`/`author`/`latestTag`/`latestModVersion`/`latestMinGameVersion`/`iconUrl`，无值时为 `null` |
+| `mods[].stars` / 统计字段 | number \| null | 与 index 条目同名字段一致；`latestSizeBytes`/`totalSizeBytes` 可为 `null` |
+| `mods[].latestPrerelease` | boolean \| null | 最新 release 的预发布标记 |
+
+## summary.csv
+
+与 `summary.json` 的 `mods[]` 同列（不含 `totals`），列顺序：
+
+`repo,name,author,stars,releaseCount,totalDownloads,allAssetsDownloads,latestDownloads,latestSizeBytes,totalSizeBytes,latestTag,latestPrerelease,latestModVersion,latestMinGameVersion,iconUrl`
+
+- UTF-8 **带 BOM**（Excel 直接打开中文不乱码），CRLF 换行；
+- 逗号、双引号、换行按 CSV 规则转义（字段加引号、内部 `"` 写成 `""`）；
+- `null` 输出为空字段，布尔输出 `true`/`false`。
+
+## state/refresh.json
+
+分页调度缓存，只给增量刷新用，使用方不需要读取：
+
+```json
+{
+  "formatVersion": 1,
+  "updatedAt": "2026-11-06T03:00:00.000Z",
+  "mods": {
+    "mindustrytool/mindustrytoolmod": {
+      "page1Etag": "\"W/...\"",
+      "page1FetchedAt": "2026-11-06T03:00:00.000Z",
+      "pages": { "2": "2026-11-01T03:00:00.000Z" }
+    }
+  }
+}
+```
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `formatVersion` | number | 固定 `1` |
+| `updatedAt` | string | 文件最近一次写入时间 |
+| `mods.<repo>.page1Etag` | string \| null | 第 1 页 `If-None-Match` 用 |
+| `mods.<repo>.page1FetchedAt` | string \| null | 第 1 页最近一次抓取时间（每天一次判断） |
+| `mods.<repo>.pages.<n>` | string | 第 n 页（n≥2）最近一次抓取时间（7/30/90 天到期判断） |
+
+### 按 tag 新旧分档刷新
+
+分档常量在 `src/refresh-state.js` 的 `REFRESH_TIERS`：第 1 页每天、第 2 页每 7 天、第 3 页每 30 天、
+第 4 页起每 90 天。每轮按 `fetchedAt` 判断到期页，第 1 页带旧 ETag 条件请求；抓到的页按 tag 覆盖缓存，
+没抓到的旧条目保留；合并后按 `publishedAt` 降序（同时间按 tag 升序）。
+
+per-mod 文件与调度状态分离：ETag 每天变也不会重写 `releases/*.json`，只有 `releases` 数据真的变化
+（下载量/体积/元数据）才重写；调度时间变化只改 `state/refresh.json`。`--no-cache` 会忽略 state 与旧文件，
+全量抓所有页。
 
 ## mindustry/versions.json
 

@@ -7,6 +7,12 @@ import { pathToFileURL } from 'node:url';
 import { readFile } from 'node:fs/promises';
 import { INDEX_FILE, RELEASES_DIR, listReleaseFiles } from './writer.js';
 import { MOD_ICON_BASE } from './mods-source.js';
+import { computeModStats } from './stats.js';
+import {
+  SUMMARY_COLUMNS,
+  parseCsv,
+} from './summary.js';
+import { REFRESH_STATE_REL_PATH } from './refresh-state.js';
 import { VERSIONS_REL_PATH, VERSIONS_API } from './versions.js';
 import {
   GATE_REL_PATH,
@@ -98,19 +104,7 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
   if (!isIsoDate(file.generatedAt)) {
     errors.push('generatedAt 缺失或不是 ISO 时间');
   }
-  if (!isPlainObject(file.source)) {
-    errors.push('source 缺失');
-  } else {
-    if (file.source.releasesEtag !== null && typeof file.source.releasesEtag !== 'string') {
-      errors.push('source.releasesEtag 应为字符串或 null');
-    }
-    if (
-      file.source.releasesFetchedAt !== null &&
-      !isIsoDate(file.source.releasesFetchedAt)
-    ) {
-      errors.push('source.releasesFetchedAt 应为 ISO 时间或 null');
-    }
-  }
+  // 新格式不再写 source（分页调度已挪到 state/refresh.json）；旧文件里的 source 兼容忽略
   if (!Array.isArray(file.releases)) {
     errors.push('releases 不是数组');
     return;
@@ -277,6 +271,16 @@ export function validateIndexData(
     if (!Number.isInteger(mod.releaseCount) || mod.releaseCount < 0) {
       errors.push(`${where}.releaseCount 应为非负整数`);
     }
+    for (const field of ['totalDownloads', 'allAssetsDownloads', 'latestDownloads']) {
+      if (!Number.isInteger(mod[field]) || mod[field] < 0) {
+        errors.push(`${where}.${field} 应为非负整数`);
+      }
+    }
+    for (const field of ['latestSizeBytes', 'totalSizeBytes']) {
+      if (mod[field] !== null && (!Number.isInteger(mod[field]) || mod[field] < 0)) {
+        errors.push(`${where}.${field} 应为非负整数或 null`);
+      }
+    }
     if (mod.latestRelease !== null) {
       if (
         !isPlainObject(mod.latestRelease) ||
@@ -284,7 +288,11 @@ export function validateIndexData(
         typeof mod.latestRelease.name !== 'string' ||
         typeof mod.latestRelease.prerelease !== 'boolean' ||
         (mod.latestRelease.publishedAt !== null &&
-          typeof mod.latestRelease.publishedAt !== 'string')
+          typeof mod.latestRelease.publishedAt !== 'string') ||
+        !Number.isInteger(mod.latestRelease.downloads) ||
+        (mod.latestRelease.sizeBytes !== null &&
+          (!Number.isInteger(mod.latestRelease.sizeBytes) ||
+            mod.latestRelease.sizeBytes < 0))
       ) {
         errors.push(`${where}.latestRelease 字段不完整`);
       }
@@ -578,6 +586,229 @@ export function validateHeartbeatData(file, { errors } = {}) {
   }
 }
 
+function summaryCell(value) {
+  return value === null || value === undefined ? '' : String(value);
+}
+
+// summary.json：与 index、各 per-mod 文件的一致性 + 排序/合计
+export function validateSummaryData(summary, { index, errors, warnings } = {}) {
+  if (!isPlainObject(summary)) {
+    errors.push('summary.json 顶层不是对象');
+    return { rowCount: 0 };
+  }
+  if (summary.formatVersion !== 1) {
+    errors.push(
+      `summary.formatVersion 应为 1，实际为 ${JSON.stringify(summary.formatVersion)}`,
+    );
+  }
+  if (!isIsoDate(summary.generatedAt)) {
+    errors.push('summary.generatedAt 缺失或不是 ISO 时间');
+  }
+  if (!isPlainObject(summary.totals)) {
+    errors.push('summary.totals 缺失');
+  }
+  if (!Array.isArray(summary.mods)) {
+    errors.push('summary.mods 不是数组');
+    return { rowCount: 0 };
+  }
+
+  const indexMods = Array.isArray(index?.mods) ? index.mods : [];
+  const indexByRepo = new Map(
+    indexMods
+      .filter((mod) => isPlainObject(mod) && typeof mod.repo === 'string')
+      .map((mod) => [mod.repo, mod]),
+  );
+  let lastRow = null;
+  const seenRepos = new Set();
+  const required = [
+    'repo',
+    'name',
+    'author',
+    'latestTag',
+    'latestModVersion',
+    'latestMinGameVersion',
+    'iconUrl',
+  ];
+  for (const [position, row] of summary.mods.entries()) {
+    const where = `summary.mods[${position}]`;
+    if (!isPlainObject(row)) {
+      errors.push(`${where} 不是对象`);
+      continue;
+    }
+    for (const field of required) {
+      if (row[field] !== null && typeof row[field] !== 'string') {
+        errors.push(`${where}.${field} 应为字符串或 null`);
+      }
+    }
+    if (row.latestPrerelease !== null && typeof row.latestPrerelease !== 'boolean') {
+      errors.push(`${where}.latestPrerelease 应为布尔值或 null`);
+    }
+    if (!Number.isInteger(row.stars) || row.stars < 0) {
+      errors.push(`${where}.stars 应为非负整数`);
+    }
+    for (const field of ['releaseCount', 'totalDownloads', 'allAssetsDownloads', 'latestDownloads']) {
+      if (!Number.isInteger(row[field]) || row[field] < 0) {
+        errors.push(`${where}.${field} 应为非负整数`);
+      }
+    }
+    for (const field of ['latestSizeBytes', 'totalSizeBytes']) {
+      if (row[field] !== null && (!Number.isInteger(row[field]) || row[field] < 0)) {
+        errors.push(`${where}.${field} 应为非负整数或 null`);
+      }
+    }
+    if (typeof row.repo === 'string') {
+      if (seenRepos.has(row.repo)) {
+        errors.push(`${where}.repo 重复：${row.repo}`);
+      }
+      seenRepos.add(row.repo);
+    }
+    // 排序：totalDownloads 降序、stars 降序、repo 升序
+    if (lastRow) {
+      const okOrder =
+        lastRow.totalDownloads > row.totalDownloads ||
+        (lastRow.totalDownloads === row.totalDownloads &&
+          (lastRow.stars > row.stars ||
+            (lastRow.stars === row.stars && lastRow.repo < row.repo)));
+      if (!okOrder) {
+        errors.push(`${where} 排序错误（应为 totalDownloads 降序、stars 降序、repo 升序）`);
+      }
+    }
+    lastRow = row;
+    const indexEntry = indexByRepo.get(row.repo);
+    if (!indexEntry) {
+      errors.push(`${where}.repo 不在 index.mods 里：${row.repo}`);
+      continue;
+    }
+    for (const field of ['releaseCount', 'totalDownloads', 'allAssetsDownloads', 'latestDownloads', 'latestSizeBytes', 'totalSizeBytes']) {
+      if (row[field] !== indexEntry[field]) {
+        errors.push(`${where}.${field} 与 index 不一致`);
+      }
+    }
+    if (row.latestTag !== (indexEntry.latestRelease?.tag ?? null)) {
+      errors.push(`${where}.latestTag 与 index 不一致`);
+    }
+    if (row.iconUrl !== indexEntry.iconUrl) {
+      errors.push(`${where}.iconUrl 与 index 不一致`);
+    }
+  }
+  for (const mod of indexMods) {
+    if (isPlainObject(mod) && typeof mod.repo === 'string' && !seenRepos.has(mod.repo)) {
+      errors.push(`index 里的 ${mod.repo} 不在 summary.mods 里`);
+    }
+  }
+
+  if (isPlainObject(summary.totals)) {
+    const totals = summary.totals;
+    for (const field of ['mods', 'releases', 'downloads', 'sizeBytes']) {
+      if (!Number.isInteger(totals[field]) || totals[field] < 0) {
+        errors.push(`summary.totals.${field} 应为非负整数`);
+      }
+    }
+    const expectedReleases = indexMods.reduce(
+      (sum, mod) => sum + (Number.isInteger(mod.releaseCount) ? mod.releaseCount : 0),
+      0,
+    );
+    const expectedDownloads = indexMods.reduce(
+      (sum, mod) => sum + (Number.isInteger(mod.totalDownloads) ? mod.totalDownloads : 0),
+      0,
+    );
+    const expectedSize = indexMods.reduce(
+      (sum, mod) => sum + (Number.isInteger(mod.totalSizeBytes) ? mod.totalSizeBytes : 0),
+      0,
+    );
+    if (totals.mods !== indexMods.length) {
+      errors.push('summary.totals.mods 与 index 模组数不一致');
+    }
+    if (totals.releases !== expectedReleases) {
+      errors.push('summary.totals.releases 与 index 合计不一致');
+    }
+    if (totals.downloads !== expectedDownloads) {
+      errors.push('summary.totals.downloads 与 index 合计不一致');
+    }
+    if (totals.sizeBytes !== expectedSize) {
+      errors.push('summary.totals.sizeBytes 与 index 合计不一致');
+    }
+  }
+  void warnings;
+  return { rowCount: summary.mods.length };
+}
+
+export function validateSummaryCsv(text, summary, { errors } = {}) {
+  if (typeof text !== 'string') {
+    errors.push('summary.csv 缺失');
+    return;
+  }
+  if (!text.startsWith('\uFEFF')) {
+    errors.push('summary.csv 缺少 UTF-8 BOM');
+  }
+  const rows = parseCsv(text);
+  if (rows.length === 0) {
+    errors.push('summary.csv 为空');
+    return;
+  }
+  if (JSON.stringify(rows[0]) !== JSON.stringify(SUMMARY_COLUMNS)) {
+    errors.push('summary.csv 表头与约定不一致');
+  }
+  const dataRows = rows.slice(1);
+  const mods = Array.isArray(summary?.mods) ? summary.mods : [];
+  if (dataRows.length !== mods.length) {
+    errors.push(
+      `summary.csv 行数（${dataRows.length}）与 summary.json mods 数（${mods.length}）不一致`,
+    );
+    return;
+  }
+  const expected = mods.map((row) =>
+    SUMMARY_COLUMNS.map((column) => summaryCell(row[column])),
+  );
+  for (const [index, row] of dataRows.entries()) {
+    if (JSON.stringify(row) !== JSON.stringify(expected[index])) {
+      errors.push(`summary.csv 第 ${index + 2} 行与 summary.json 不一致`);
+      break;
+    }
+  }
+}
+
+export function validateRefreshStateData(state, { errors } = {}) {
+  if (!isPlainObject(state)) {
+    errors.push('state/refresh.json 顶层不是对象');
+    return { modCount: 0 };
+  }
+  if (state.formatVersion !== 1) {
+    errors.push(
+      `state.formatVersion 应为 1，实际为 ${JSON.stringify(state.formatVersion)}`,
+    );
+  }
+  if (!isIsoDate(state.updatedAt)) {
+    errors.push('state.updatedAt 缺失或不是 ISO 时间');
+  }
+  if (!isPlainObject(state.mods)) {
+    errors.push('state.mods 不是对象');
+    return { modCount: 0 };
+  }
+  for (const [repo, entry] of Object.entries(state.mods)) {
+    if (!repo.includes('/') || !isPlainObject(entry)) {
+      errors.push(`state.mods.${repo} 形状非法`);
+      continue;
+    }
+    if (entry.page1Etag !== null && typeof entry.page1Etag !== 'string') {
+      errors.push(`state.mods.${repo}.page1Etag 应为字符串或 null`);
+    }
+    if (entry.page1FetchedAt !== null && !isIsoDate(entry.page1FetchedAt)) {
+      errors.push(`state.mods.${repo}.page1FetchedAt 应为 ISO 时间或 null`);
+    }
+    if (!isPlainObject(entry.pages)) {
+      errors.push(`state.mods.${repo}.pages 不是对象`);
+      continue;
+    }
+    for (const [page, fetchedAt] of Object.entries(entry.pages)) {
+      if (!/^\d+$/.test(page) || Number(page) < 2 || !isIsoDate(fetchedAt)) {
+        errors.push(`state.mods.${repo}.pages.${page} 形状非法`);
+      }
+    }
+  }
+  return { modCount: Object.keys(state.mods).length };
+}
+
 async function readJsonIfPresent(file) {
   try {
     return { exists: true, data: JSON.parse(await readFile(file, 'utf8')) };
@@ -586,6 +817,17 @@ async function readJsonIfPresent(file) {
       return { exists: false, data: null };
     }
     return { exists: true, data: null, error };
+  }
+}
+
+async function readTextIfPresent(file) {
+  try {
+    return { exists: true, text: await readFile(file, 'utf8') };
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return { exists: false, text: null };
+    }
+    return { exists: true, text: null, error };
   }
 }
 
@@ -603,6 +845,8 @@ export async function validateDir(dir) {
     latestBe: null,
     gateVersionCount: 0,
     gateRuleCount: 0,
+    summaryRowCount: 0,
+    refreshStateModCount: 0,
     present: [],
   };
 
@@ -611,6 +855,11 @@ export async function validateDir(dir) {
   const gateFile = await readJsonIfPresent(path.join(outDir, GATE_REL_PATH));
   const heartbeatFile = await readJsonIfPresent(
     path.join(outDir, HEARTBEAT_REL_PATH),
+  );
+  const summaryFile = await readJsonIfPresent(path.join(outDir, 'summary.json'));
+  const summaryCsvFile = await readTextIfPresent(path.join(outDir, 'summary.csv'));
+  const refreshStateFile = await readJsonIfPresent(
+    path.join(outDir, REFRESH_STATE_REL_PATH),
   );
 
   if (!indexFile.exists && !versionsFile.exists && !gateFile.exists) {
@@ -670,6 +919,21 @@ export async function validateDir(dir) {
         if (mod.releaseDataUpdatedAt !== file.generatedAt) {
           errors.push(`mods ${mod.repo} 的 releaseDataUpdatedAt 与文件 generatedAt 不一致`);
         }
+        // 统计字段可由 per-mod 的 releases 重算核对
+        const stats = computeModStats(file.releases, mod.hasJava === true);
+        for (const field of ['totalDownloads', 'allAssetsDownloads', 'latestDownloads', 'latestSizeBytes', 'totalSizeBytes']) {
+          if (mod[field] !== stats[field]) {
+            errors.push(`mods ${mod.repo} 的 ${field} 与 per-mod 数据重算不一致`);
+          }
+        }
+        if (mod.latestRelease && typeof mod.latestRelease === 'object') {
+          if (mod.latestRelease.downloads !== stats.latestDownloads) {
+            errors.push(`mods ${mod.repo} 的 latestRelease.downloads 与重算不一致`);
+          }
+          if (mod.latestRelease.sizeBytes !== stats.latestSizeBytes) {
+            errors.push(`mods ${mod.repo} 的 latestRelease.sizeBytes 与重算不一致`);
+          }
+        }
       }
       for (const relPath of releaseFiles) {
         if (!usedFiles.has(relPath)) {
@@ -677,9 +941,43 @@ export async function validateDir(dir) {
         }
       }
       result.modCount = mods.length;
+
+      // 总表：与 index 一致 + CSV 行数/内容一致
+      if (!summaryFile.exists) {
+        warnings.push('缺少 summary.json（可能是旧数据 / 尚未重新生成）');
+      } else if (summaryFile.error) {
+        errors.push(`summary.json 无法解析：${summaryFile.error.message}`);
+      } else {
+        result.present.push('summary.json');
+        const summaryResult = validateSummaryData(summaryFile.data, {
+          index: indexFile.data,
+          errors,
+          warnings,
+        });
+        result.summaryRowCount = summaryResult.rowCount;
+        if (!summaryCsvFile.exists) {
+          errors.push('缺少 summary.csv');
+        } else if (summaryCsvFile.error) {
+          errors.push(`summary.csv 无法读取：${summaryCsvFile.error.message}`);
+        } else {
+          result.present.push('summary.csv');
+          validateSummaryCsv(summaryCsvFile.text, summaryFile.data, { errors });
+        }
+      }
     }
   } else {
     warnings.push(`找不到 ${INDEX_FILE}（模组索引尚未生成）`);
+  }
+
+  if (refreshStateFile.exists) {
+    result.present.push(REFRESH_STATE_REL_PATH);
+    if (refreshStateFile.error) {
+      errors.push(`${REFRESH_STATE_REL_PATH} 无法解析：${refreshStateFile.error.message}`);
+    } else {
+      result.refreshStateModCount = validateRefreshStateData(refreshStateFile.data, {
+        errors,
+      }).modCount;
+    }
   }
 
   if (versionsFile.exists) {
@@ -749,6 +1047,12 @@ async function main(argv) {
   }
   if (result.present.includes(INDEX_FILE)) {
     console.log(`index.json：${result.modCount} 个模组，${result.releaseFileCount} 个 releases 文件`);
+  }
+  if (result.present.includes('summary.json')) {
+    console.log(`summary：${result.summaryRowCount} 行（summary.json + summary.csv）`);
+  }
+  if (result.present.includes(REFRESH_STATE_REL_PATH)) {
+    console.log(`state/refresh.json：${result.refreshStateModCount} 个模组分页缓存`);
   }
   if (result.present.includes(VERSIONS_REL_PATH)) {
     console.log(

@@ -8,16 +8,36 @@ import { readFile } from 'node:fs/promises';
 import { HttpClient, HttpError, RateLimitError, createPool } from './github.js';
 import { MODS_URL, fetchModsJson, modIconUrl } from './mods-source.js';
 import {
-  fetchReleases,
+  PER_PAGE,
+  fetchAllReleasePages,
+  fetchReleasePages,
   normalizeReleases,
   mergeReleaseMetadata,
+  mergeReleasesByTag,
   buildReleasesFile,
 } from './releases.js';
 import { fetchModMetadata } from './mod-meta.js';
+import { computeModStats } from './stats.js';
+import {
+  buildSummary,
+  summaryBodyChanged,
+  summaryCsv,
+} from './summary.js';
+import {
+  REFRESH_STATE_REL_PATH,
+  bootstrapModState,
+  buildRefreshStateFile,
+  cloneModState,
+  isPageDue,
+  normalizeRefreshState,
+  stateBodyChanged,
+} from './refresh-state.js';
 import { releasesRelPath, resolveReleaseFile, assertRepo } from './paths.js';
 import {
   readJsonIfExists,
+  readTextIfExists,
   writeJsonAtomic,
+  writeTextAtomic,
   releaseFileBodyChanged,
   indexBodyChanged,
   ensureReleasesDir,
@@ -216,6 +236,7 @@ export function parseArgs(argv) {
 function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
   const hasFile = Array.isArray(file?.releases);
   const releases = hasFile ? file.releases : [];
+  const stats = computeModStats(releases, mod.hasJava === true);
   const first = releases[0] ?? null;
   const releaseCount = hasFile
     ? releases.length
@@ -228,6 +249,8 @@ function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
         name: first.name,
         prerelease: first.prerelease,
         publishedAt: first.publishedAt,
+        downloads: stats.latestDownloads,
+        sizeBytes: stats.latestSizeBytes,
       }
     : hasFile
       ? null
@@ -252,6 +275,11 @@ function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
       ? relPath
       : (oldEntry?.releasesPath ?? (file ? relPath : null)),
     releaseCount,
+    totalDownloads: stats.totalDownloads,
+    allAssetsDownloads: stats.allAssetsDownloads,
+    latestDownloads: stats.latestDownloads,
+    latestSizeBytes: stats.latestSizeBytes,
+    totalSizeBytes: stats.totalSizeBytes,
     latestRelease,
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
   };
@@ -265,10 +293,52 @@ function skipReason(error) {
   return status ? `http-${status}` : 'network';
 }
 
+function maxPageInState(modState) {
+  const pages = Object.keys(modState?.pages ?? {})
+    .map((page) => Number(page))
+    .filter((page) => Number.isInteger(page) && page >= 2);
+  return pages.length > 0 ? Math.max(...pages) : 1;
+}
+
+// 本轮要抓哪些页：无缓存/--no-cache 全量；否则第 1 页每天、深层页按 7/30/90 天到期
+function planModPages({ previousFile, modState, forceFull, now }) {
+  if (forceFull || !previousFile) {
+    return { mode: 'full' };
+  }
+  const knownPageCount = Math.max(
+    1,
+    Math.ceil(previousFile.releases.length / PER_PAGE),
+    maxPageInState(modState),
+  );
+  const pages = [];
+  if (isPageDue(modState?.page1FetchedAt ?? null, 1, now)) {
+    pages.push(1);
+  }
+  for (let page = 2; page <= knownPageCount; page += 1) {
+    if (isPageDue(modState?.pages?.[String(page)] ?? null, page, now)) {
+      pages.push(page);
+    }
+  }
+  return { mode: 'tiered', pages };
+}
+
 async function processMod(context) {
-  const { mod, options, rawPool, rawClient, apiClient, outDir, now, log, oldEntries } = context;
+  const {
+    mod,
+    options,
+    rawPool,
+    rawClient,
+    apiClient,
+    outDir,
+    now,
+    nowMs,
+    log,
+    oldEntries,
+    previousState,
+  } = context;
   const relPath = releasesRelPath(mod.repo);
   const oldEntry = oldEntries.get(mod.repo.toLowerCase()) ?? null;
+  const hasJava = mod.hasJava === true;
 
   let previous = null;
   if (options.cache) {
@@ -282,70 +352,135 @@ async function processMod(context) {
     }
   }
 
+  // 分页缓存从 state/refresh.json 读取；旧 per-mod 文件里的 source 只用于一次性迁移
+  let modState;
+  if (options.cache) {
+    modState = previousState.mods[mod.repo];
+    if (!modState && previous) {
+      modState = bootstrapModState({
+        legacySource: previous.source ?? null,
+        releaseCount: previous.releases.length,
+        fallbackFetchedAt: previous.generatedAt ?? null,
+      });
+    }
+  }
+
   try {
-    const fetched = await fetchReleases(apiClient, mod.repo, {
-      etag: previous?.source?.releasesEtag ?? null,
+    const plan = planModPages({
+      previousFile: previous,
+      modState,
+      forceFull: !options.cache,
+      now: nowMs,
     });
 
-    if (fetched.notModified && previous) {
-      log(
-        `[${mod.repo}] releases 304，复用 ${previous.releases.length} 条旧数据，不再请求 mod.hjson`,
-      );
-      return {
-        entry: buildIndexEntry(mod, previous, { relPath, oldEntry }),
-        skipped: null,
-        changed: false,
-      };
+    let fetchedPages = [];
+    if (plan.mode === 'full') {
+      fetchedPages = await fetchAllReleasePages(apiClient, mod.repo);
+    } else if (plan.pages.length > 0) {
+      const etags = {};
+      if (plan.pages.includes(1) && modState?.page1Etag) {
+        etags[1] = modState.page1Etag;
+      }
+      fetchedPages = await fetchReleasePages(apiClient, mod.repo, {
+        pages: plan.pages,
+        etags,
+      });
     }
 
-    const releases = normalizeReleases(fetched.raws, {
-      repo: mod.repo,
-      hasJava: mod.hasJava === true,
-    });
-    const merged = await mergeReleaseMetadata({
-      previousReleases: previous?.releases ?? [],
-      releases,
-      fetchMetadata: (tag) =>
-        rawPool.run(() =>
-          fetchModMetadata(rawClient, {
-            repo: mod.repo,
-            tag,
-            hasJava: mod.hasJava === true,
-          }),
-        ),
-    });
+    const fetchedReleases = [];
+    let firstPageCount = null;
+    for (const pageResult of fetchedPages) {
+      if (pageResult.page === 1 && !pageResult.notModified) {
+        firstPageCount = pageResult.items.length;
+      }
+      if (!pageResult.notModified) {
+        fetchedReleases.push(
+          ...normalizeReleases(pageResult.items, { repo: mod.repo, hasJava }),
+        );
+      }
+    }
+
+    const metaMerged = fetchedReleases.length > 0
+      ? await mergeReleaseMetadata({
+          previousReleases: previous?.releases ?? [],
+          releases: fetchedReleases,
+          fetchMetadata: (tag) =>
+            rawPool.run(() =>
+              fetchModMetadata(rawClient, {
+                repo: mod.repo,
+                tag,
+                hasJava,
+              }),
+            ),
+        })
+      : { releases: [], metaFetched: 0, metaReused: 0 };
+
+    // 按 tag 合并：抓到的页覆盖缓存同 tag（下载量更新），没抓到的旧条目保留
+    const mergedReleases = mergeReleasesByTag(
+      previous?.releases ?? [],
+      metaMerged.releases,
+    );
     const nextFile = buildReleasesFile({
       repo: mod.repo,
-      releases: merged.releases,
-      etag: fetched.etag,
-      fetchedAt: now,
+      releases: mergedReleases,
+      generatedAt: now,
     });
     const changed = releaseFileBodyChanged(previous, nextFile);
-    if (changed) {
-      if (!options.dryRun) {
-        await writeJsonAtomic(resolveReleaseFile(outDir, relPath), nextFile);
+    if (changed && !options.dryRun) {
+      await writeJsonAtomic(resolveReleaseFile(outDir, relPath), nextFile);
+    }
+    const finalFile = changed ? nextFile : (previous ?? nextFile);
+
+    // 更新本模组的分页调度状态
+    const nextState = cloneModState(modState);
+    for (const pageResult of fetchedPages) {
+      const page = pageResult.page;
+      if (page === 1) {
+        nextState.page1FetchedAt = now;
+        if (!pageResult.notModified) {
+          nextState.page1Etag = pageResult.etag ?? null;
+        }
+      } else {
+        nextState.pages[String(page)] = now;
       }
-      log(
-        `[${mod.repo}] release ${nextFile.releases.length} 条，元数据新抓 ${merged.metaFetched} 个、复用 ${merged.metaReused} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
-      );
-      return {
-        entry: buildIndexEntry(mod, nextFile, { relPath, oldEntry }),
-        skipped: null,
-        changed: true,
-      };
+    }
+    const neededPages = Math.max(
+      1,
+      Math.ceil(finalFile.releases.length / PER_PAGE),
+    );
+    for (const key of Object.keys(nextState.pages)) {
+      if (Number(key) > neededPages) {
+        delete nextState.pages[key];
+      }
+    }
+    if (firstPageCount !== null && firstPageCount < PER_PAGE) {
+      // 第 1 页不足 100 条：该模组没有更深页
+      nextState.pages = {};
     }
 
-    log(`[${mod.repo}] release 内容未变，保留旧文件`);
+    if (changed) {
+      log(
+        `[${mod.repo}] release ${nextFile.releases.length} 条，元数据新抓 ${metaMerged.metaFetched} 个、复用 ${metaMerged.metaReused} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
+      );
+    } else if (fetchedPages.length > 0) {
+      log(
+        `[${mod.repo}] release 内容未变（第 ${fetchedPages.map((page) => page.page).join('、')} 页已刷新，文件不重写）`,
+      );
+    }
     return {
-      entry: buildIndexEntry(mod, previous, { relPath, oldEntry }),
+      entry: buildIndexEntry(mod, finalFile, { relPath, oldEntry }),
+      file: finalFile,
+      state: nextState,
       skipped: null,
-      changed: false,
+      changed,
     };
   } catch (error) {
-    // 单个仓库失败不终止整体：旧文件与旧索引字段保留
+    // 单页失败：保留旧数据/旧 state，记 skipped，不写坏文件
     console.error(`[跳过] ${mod.repo}：${error.message}`);
     return {
       entry: buildIndexEntry(mod, previous, { relPath, oldEntry }),
+      file: previous,
+      state: previousState.mods[mod.repo],
       skipped: { repo: mod.repo, reason: skipReason(error) },
       changed: false,
     };
@@ -372,6 +507,17 @@ async function cleanupMissing(outDir, selected, log) {
   }
   if (removed > 0) {
     log(`清理 ${removed} 个已不在官方列表中的 releases 文件`);
+  }
+}
+
+async function loadRefreshState(outDir, log) {
+  const file = path.join(outDir, REFRESH_STATE_REL_PATH);
+  try {
+    const raw = await readJsonIfExists(file);
+    return { file, exists: raw !== null, state: normalizeRefreshState(raw) };
+  } catch (error) {
+    log(`[警告] ${REFRESH_STATE_REL_PATH} 不可用，按首次运行处理：${error.message}`);
+    return { file, exists: false, state: normalizeRefreshState(null) };
   }
 }
 
@@ -417,10 +563,13 @@ async function runMods(options, context) {
       .filter((entry) => typeof entry?.repo === 'string')
       .map((entry) => [entry.repo.toLowerCase(), entry]),
   );
+  const stateLoaded = await loadRefreshState(outDir, log);
+  const previousState = stateLoaded.state;
 
   const rawPool = createPool(options.rawThreads);
   const apiPool = createPool(options.threads);
   const now = new Date().toISOString();
+  const nowMs = Date.now();
   const results = new Array(selected.length);
   let completed = 0;
 
@@ -435,8 +584,10 @@ async function runMods(options, context) {
           rawPool,
           outDir,
           now,
+          nowMs,
           log,
           oldEntries,
+          previousState,
         });
         completed += 1;
         if (!options.verbose && selected.length > 20 && completed % 50 === 0) {
@@ -447,6 +598,24 @@ async function runMods(options, context) {
   );
 
   const skipped = results.filter((result) => result.skipped).map((result) => result.skipped);
+  const isSubset = options.repos !== null || options.limit !== null;
+
+  // 分页调度缓存：子集模式保留其它模组的状态；全量模式只保留官方列表里的模组
+  const stateMods = isSubset ? { ...previousState.mods } : {};
+  for (const [index, result] of results.entries()) {
+    const repo = selected[index].repo;
+    if (result.state) {
+      stateMods[repo] = result.state;
+    } else if (previousState.mods[repo]) {
+      stateMods[repo] = previousState.mods[repo];
+    }
+  }
+  const nextState = buildRefreshStateFile({ mods: stateMods, updatedAt: now });
+  const stateChanged = stateBodyChanged(previousState, nextState);
+  if (!options.dryRun && stateChanged) {
+    await writeJsonAtomic(stateLoaded.file, nextState);
+  }
+
   const index = {
     formatVersion: 1,
     generatedAt: now,
@@ -457,21 +626,74 @@ async function runMods(options, context) {
     mods: results.map((result) => result.entry),
     skipped,
   };
-
-  const isSubset = options.repos !== null || options.limit !== null;
-  if (!options.dryRun && !options.keepMissingFiles && !isSubset) {
-    await cleanupMissing(outDir, selected, log);
-  }
-
-  const changed = results.filter((result) => result.changed).length;
   const indexChanged = indexBodyChanged(oldIndex, index);
   if (!options.dryRun && indexChanged) {
     await writeJsonAtomic(path.join(outDir, INDEX_FILE), index);
   } else if (!indexChanged) {
     log('[mods] index 内容未变，保留旧文件');
   }
+
+  if (!options.dryRun && !options.keepMissingFiles && !isSubset) {
+    await cleanupMissing(outDir, selected, log);
+  }
+
+  // 总表：基于合并后的完整 releases 聚合
+  const summaryRows = results.map((result, index) => {
+    const mod = selected[index];
+    const first = result.file?.releases?.[0] ?? null;
+    return {
+      repo: mod.repo,
+      name: mod.name,
+      author: mod.author,
+      stars: mod.stars,
+      releaseCount: result.entry.releaseCount,
+      totalDownloads: result.entry.totalDownloads,
+      allAssetsDownloads: result.entry.allAssetsDownloads,
+      latestDownloads: result.entry.latestDownloads,
+      latestSizeBytes: result.entry.latestSizeBytes,
+      totalSizeBytes: result.entry.totalSizeBytes,
+      latestTag: first?.tag ?? null,
+      latestPrerelease: first ? first.prerelease : null,
+      latestModVersion: first?.modVersion ?? null,
+      latestMinGameVersion: first?.minGameVersion ?? null,
+      iconUrl: modIconUrl(mod.repo, mod.hasIcon),
+    };
+  });
+  const summary = buildSummary({ rows: summaryRows, generatedAt: now });
+  const summaryFile = path.join(outDir, 'summary.json');
+  const summaryCsvFile = path.join(outDir, 'summary.csv');
+  let previousSummary = null;
+  let previousCsv = null;
+  if (options.cache) {
+    try {
+      previousSummary = await readJsonIfExists(summaryFile);
+    } catch (error) {
+      log(`[警告] 旧 summary.json 不可用：${error.message}`);
+    }
+    try {
+      previousCsv = await readTextIfExists(summaryCsvFile);
+    } catch (error) {
+      log(`[警告] 旧 summary.csv 不可用：${error.message}`);
+    }
+  }
+  const summaryChanged = summaryBodyChanged(previousSummary, summary);
+  const nextCsv = summaryCsv(summary.mods);
+  const csvChanged = previousCsv !== nextCsv;
+  if (!options.dryRun) {
+    if (summaryChanged) {
+      await writeJsonAtomic(summaryFile, summary);
+    }
+    if (csvChanged) {
+      await writeTextAtomic(summaryCsvFile, nextCsv);
+    }
+  }
+
+  const changed = results.filter((result) => result.changed).length;
   console.log(
-    `[mods] ${selected.length} 个模组，${changed} 个 release 文件有变化，index ${indexChanged ? '已更新' : '未变'}，${skipped.length} 个抓取失败`,
+    `[mods] ${selected.length} 个模组，${changed} 个 release 文件有变化，` +
+      `index ${indexChanged ? '已更新' : '未变'}，` +
+      `summary ${summaryChanged || csvChanged ? '已更新' : '未变'}，` +
+      `state ${stateChanged ? '已更新' : '未变'}，${skipped.length} 个抓取失败`,
   );
   if (skipped.length > 0) {
     const preview = skipped.slice(0, 5).map((item) => `${item.repo}（${item.reason}）`);
@@ -479,7 +701,7 @@ async function runMods(options, context) {
       `[警告] ${skipped.length} 个仓库抓取失败，已保留旧数据：${preview.join('、')}${skipped.length > 5 ? ' 等' : ''}`,
     );
   }
-  return { code: 0, changed, indexChanged };
+  return { code: 0, changed, indexChanged, summaryChanged: summaryChanged || csvChanged, stateChanged };
 }
 
 // ---------- versions 数据集 ----------
@@ -821,6 +1043,8 @@ export async function run(argv) {
   let exitCode = 0;
   let modsChanged = 0;
   let modsIndexChanged = false;
+  let modsSummaryChanged = false;
+  let modsStateChanged = false;
   let versionsChanged = false;
   let gateChanged = false;
 
@@ -829,6 +1053,8 @@ export async function run(argv) {
     exitCode = Math.max(exitCode, result.code);
     modsChanged = result.changed;
     modsIndexChanged = result.indexChanged;
+    modsSummaryChanged = result.summaryChanged;
+    modsStateChanged = result.stateChanged;
   }
   if (options.datasets.includes('versions')) {
     const result = await runVersions(options, context);
@@ -846,7 +1072,7 @@ export async function run(argv) {
   console.log(
     `完成（${options.datasets.join(',')}）：用时 ${elapsed} 秒` +
       (options.datasets.includes('mods')
-        ? `，release 文件变化 ${modsChanged} 个、index ${modsIndexChanged ? '已更新' : '未变'}`
+        ? `，release 文件变化 ${modsChanged} 个、index ${modsIndexChanged ? '已更新' : '未变'}、summary ${modsSummaryChanged ? '已更新' : '未变'}、state ${modsStateChanged ? '已更新' : '未变'}`
         : '') +
       (options.datasets.includes('versions') ? `，versions ${versionsChanged ? '已更新' : '未变'}` : '') +
       (options.datasets.includes('gate') ? `，gate ${gateChanged ? '已更新' : '未变'}` : ''),

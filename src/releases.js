@@ -2,7 +2,7 @@
 
 import { assertRepo } from './paths.js';
 
-const PER_PAGE = 100;
+export const PER_PAGE = 100;
 const MAX_PAGES = 100;
 
 export function apiReleasesUrl(repo, page, perPage = PER_PAGE) {
@@ -99,63 +99,93 @@ export function normalizeReleases(raws, { repo, hasJava }) {
   return releases;
 }
 
-// Link 头里有没有 rel="next"；没有 Link 头时由「不足一页」判断
-export function hasNextPage(linkHeader) {
-  if (!linkHeader) {
-    return null;
-  }
-  return /rel="next"/.test(linkHeader);
+// 按 publishedAt 降序、同一时间按 tag 升序；没有 publishedAt 的排最后
+export function sortReleases(releases) {
+  return [...releases].sort((a, b) => {
+    const timeA = a?.publishedAt ? Date.parse(a.publishedAt) : Number.NaN;
+    const timeB = b?.publishedAt ? Date.parse(b.publishedAt) : Number.NaN;
+    const valueA = Number.isNaN(timeA) ? -Infinity : timeA;
+    const valueB = Number.isNaN(timeB) ? -Infinity : timeB;
+    if (valueA !== valueB) {
+      return valueB - valueA;
+    }
+    const tagA = String(a?.tag ?? '');
+    const tagB = String(b?.tag ?? '');
+    return tagA < tagB ? -1 : tagA > tagB ? 1 : 0;
+  });
 }
 
-// 拉全部 release：第一页带旧 ETag，304 直接整份复用
-export async function fetchReleases(client, repo, { etag = null } = {}) {
-  const items = [];
-  let latestEtag = null;
-  for (let page = 1; page <= MAX_PAGES; page += 1) {
-    const response = await client.get(apiReleasesUrl(repo, page), {
-      etag: page === 1 ? etag : null,
-    });
-    if (response.status === 304) {
-      if (page !== 1) {
-        throw new Error(`${repo} 第 ${page} 页意外返回 304`);
-      }
-      return { notModified: true };
+// 按 tag 合并：API 返回的 release 覆盖缓存同 tag 条目（下载量必须更新），
+// 缓存里不在这几页的旧条目保留；保留条目的元数据不会被重抓。
+export function mergeReleasesByTag(previousReleases = [], fetchedReleases = []) {
+  const byTag = new Map();
+  for (const release of previousReleases) {
+    if (release && typeof release.tag === 'string') {
+      byTag.set(release.tag, release);
     }
-    if (response.status !== 200) {
-      const error = new Error(
-        `${repo} 的 release 接口返回 HTTP ${response.status}`,
-      );
-      error.status = response.status;
-      throw error;
+  }
+  for (const release of fetchedReleases) {
+    if (release && typeof release.tag === 'string') {
+      byTag.set(release.tag, release);
     }
-    let pageItems;
-    try {
-      pageItems = JSON.parse(response.text);
-    } catch (error) {
-      throw new Error(`${repo} 第 ${page} 页返回的 JSON 无法解析：${error.message}`);
-    }
-    if (!Array.isArray(pageItems)) {
-      throw new Error(`${repo} 第 ${page} 页返回的不是数组`);
-    }
-    if (page === 1) {
-      latestEtag = response.etag ?? null;
-    }
-    items.push(...pageItems);
+  }
+  return sortReleases([...byTag.values()]);
+}
 
-    const next = hasNextPage(response.headers?.get?.('link'));
-    if (next === false) {
+async function fetchReleasesPage(client, repo, page, { etag = null } = {}) {
+  const response = await client.get(apiReleasesUrl(repo, page), { etag });
+  if (response.status === 304) {
+    return { notModified: true, items: [], etag: response.etag ?? etag };
+  }
+  if (response.status !== 200) {
+    const error = new Error(`${repo} 的 release 接口第 ${page} 页返回 HTTP ${response.status}`);
+    error.status = response.status;
+    throw error;
+  }
+  let pageItems;
+  try {
+    pageItems = JSON.parse(response.text);
+  } catch (error) {
+    throw new Error(`${repo} 第 ${page} 页返回的 JSON 无法解析：${error.message}`);
+  }
+  if (!Array.isArray(pageItems)) {
+    throw new Error(`${repo} 第 ${page} 页返回的不是数组`);
+  }
+  return {
+    notModified: false,
+    items: pageItems,
+    etag: response.etag ?? null,
+  };
+}
+
+// 全量抓取（首次运行 / --no-cache）：从第 1 页抓到不足一页为止
+export async function fetchAllReleasePages(client, repo, { maxPages = MAX_PAGES } = {}) {
+  const pages = [];
+  for (let page = 1; page <= maxPages; page += 1) {
+    const result = await fetchReleasesPage(client, repo, page);
+    pages.push({ page, ...result });
+    if (result.items.length < PER_PAGE) {
       break;
     }
-    if (pageItems.length < PER_PAGE) {
-      break;
-    }
-    if (page === MAX_PAGES) {
+    if (page === maxPages) {
       console.warn(
         `[警告] ${repo} 的 release 超过 ${MAX_PAGES * PER_PAGE} 条，已到分页上限，可能不完整`,
       );
     }
   }
-  return { notModified: false, raws: items, etag: latestEtag };
+  return pages;
+}
+
+// 按计划抓指定页（页 → 旧 ETag）；到期判断在调用方做
+export async function fetchReleasePages(client, repo, { pages = [], etags = {} } = {}) {
+  const results = [];
+  for (const page of pages) {
+    const result = await fetchReleasesPage(client, repo, page, {
+      etag: etags[page] ?? null,
+    });
+    results.push({ page, ...result });
+  }
+  return results;
 }
 
 // 只有新 tag 或旧元数据没抓成功的 tag 才请求 mod.hjson；旧条目元数据原样复用
@@ -209,15 +239,12 @@ export async function mergeReleaseMetadata({
   return { releases: merged, metaFetched, metaReused };
 }
 
-export function buildReleasesFile({ repo, releases, etag, fetchedAt }) {
+// per-mod 文件只存数据：ETag/调度时间放到 state/refresh.json，避免每日仅因 ETag 变化重写 991 个文件
+export function buildReleasesFile({ repo, releases, generatedAt }) {
   return {
     formatVersion: 1,
     repo,
-    generatedAt: fetchedAt,
-    source: {
-      releasesEtag: etag ?? null,
-      releasesFetchedAt: fetchedAt,
-    },
+    generatedAt,
     releases,
   };
 }

@@ -37,7 +37,7 @@ test('indexBodyChanged：mods / source / skipped / formatVersion 变化都算变
   assert.equal(indexBodyChanged(null, previous), true);
 });
 
-test('releaseFileBodyChanged：忽略 generatedAt，但 source/releases/repo 变化算变化', () => {
+test('releaseFileBodyChanged：忽略 generatedAt / 旧 source，只有 releases 变化才重写', () => {
   const previous = {
     formatVersion: 1,
     repo: 'owner/demo',
@@ -45,17 +45,15 @@ test('releaseFileBodyChanged：忽略 generatedAt，但 source/releases/repo 变
     source: { releasesEtag: 'W/"a"', releasesFetchedAt: '2026-11-06T03:00:00.000Z' },
     releases: [{ tag: 'v1' }],
   };
-  const next = { ...previous, generatedAt: '2026-11-07T03:00:00.000Z' };
+  const next = {
+    formatVersion: 1,
+    repo: 'owner/demo',
+    generatedAt: '2026-11-07T03:00:00.000Z',
+    releases: [{ tag: 'v1' }],
+  };
   assert.equal(releaseFileBodyChanged(previous, next), false);
   assert.equal(
     releaseFileBodyChanged(previous, { ...next, releases: [{ tag: 'v2' }] }),
-    true,
-  );
-  assert.equal(
-    releaseFileBodyChanged(previous, {
-      ...next,
-      source: { ...previous.source, releasesEtag: 'W/"b"' },
-    }),
     true,
   );
   assert.equal(releaseFileBodyChanged(null, previous), true);

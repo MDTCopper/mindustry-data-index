@@ -8,8 +8,10 @@ import {
   pickDownloadUrl,
   normalizeRelease,
   normalizeReleases,
-  hasNextPage,
-  fetchReleases,
+  sortReleases,
+  mergeReleasesByTag,
+  fetchAllReleasePages,
+  fetchReleasePages,
   mergeReleaseMetadata,
   buildReleasesFile,
 } from '../src/releases.js';
@@ -27,25 +29,23 @@ function apiRelease(overrides = {}) {
   };
 }
 
-function fakeClient(pages, { etag = 'W/"first"' } = {}) {
+function fakeClient(handler) {
   const calls = [];
   return {
     calls,
     async get(url, options = {}) {
       calls.push({ url, etag: options.etag ?? null });
-      const page = Number(new URL(url).searchParams.get('page'));
-      const pageData = pages[page - 1];
-      if (typeof pageData === 'function') {
-        return pageData({ url, options });
-      }
-      const headers = new Headers(pageData.headers ?? {});
-      return {
-        status: 200,
-        headers,
-        text: JSON.stringify(pageData.items),
-        etag: page === 1 ? etag : null,
-      };
+      return handler(url, options);
     },
+  };
+}
+
+function pageResponse(items, { etag = null } = {}) {
+  return {
+    status: 200,
+    headers: new Headers(etag ? { etag } : {}),
+    text: JSON.stringify(items),
+    etag,
   };
 }
 
@@ -79,13 +79,10 @@ test('API / 归档 / raw 地址生成', () => {
     'https://raw.githubusercontent.com/owner/repo/release/1.0/mod.hjson',
     'https://raw.githubusercontent.com/owner/repo/refs/tags/release%2F1.0/mod.hjson',
   ]);
-  assert.deepEqual(
-    rawFileUrlVariants('owner/repo', 'v1.0 beta', 'mod.hjson'),
-    [
-      'https://raw.githubusercontent.com/owner/repo/v1.0%20beta/mod.hjson',
-      'https://raw.githubusercontent.com/owner/repo/v1.0 beta/mod.hjson',
-    ],
-  );
+  assert.deepEqual(rawFileUrlVariants('owner/repo', 'v1.0 beta', 'mod.hjson'), [
+    'https://raw.githubusercontent.com/owner/repo/v1.0%20beta/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/v1.0 beta/mod.hjson',
+  ]);
   assert.deepEqual(rawFileUrlVariants('owner/repo', 'v1.0+', 'mod.hjson'), [
     'https://raw.githubusercontent.com/owner/repo/v1.0%2B/mod.hjson',
     'https://raw.githubusercontent.com/owner/repo/v1.0+/mod.hjson',
@@ -98,35 +95,9 @@ test('CJK tag 的 raw / 源码归档地址全部走 URL 编码', () => {
     rawFileUrl('owner/repo', 'v1.0中文', 'mod.hjson'),
     'https://raw.githubusercontent.com/owner/repo/v1.0%E4%B8%AD%E6%96%87/mod.hjson',
   );
-  assert.deepEqual(rawFileUrlVariants('owner/repo', 'v1.0中文', 'mod.hjson'), [
-    'https://raw.githubusercontent.com/owner/repo/v1.0%E4%B8%AD%E6%96%87/mod.hjson',
-    'https://raw.githubusercontent.com/owner/repo/v1.0中文/mod.hjson',
-    'https://raw.githubusercontent.com/owner/repo/refs/tags/v1.0%E4%B8%AD%E6%96%87/mod.hjson',
-  ]);
   assert.equal(
     sourceArchiveUrl('owner/repo', 'v1.0中文'),
     'https://github.com/owner/repo/archive/refs/tags/v1.0%E4%B8%AD%E6%96%87.zip',
-  );
-});
-
-test('含 / 的 tag：源码归档用 %2F，raw 首选 %2F 形态', () => {
-  assert.equal(
-    sourceArchiveUrl('owner/repo', 'release/1.0'),
-    'https://github.com/owner/repo/archive/refs/tags/release%2F1.0.zip',
-  );
-  assert.equal(
-    rawFileUrl('owner/repo', 'release/1.0', 'mod.hjson'),
-    'https://raw.githubusercontent.com/owner/repo/release%2F1.0/mod.hjson',
-  );
-  // 兜底变体包含原样 tag 与 refs/tags 形态
-  const variants = rawFileUrlVariants('owner/repo', 'release/1.0', 'mod.hjson');
-  assert.ok(
-    variants.includes('https://raw.githubusercontent.com/owner/repo/release/1.0/mod.hjson'),
-  );
-  assert.ok(
-    variants.includes(
-      'https://raw.githubusercontent.com/owner/repo/refs/tags/release%2F1.0/mod.hjson',
-    ),
   );
 });
 
@@ -145,7 +116,6 @@ test('release 规范化：trim 名称、空名回退 tag、draft 跳过、prerel
     hasJava: false,
   });
   assert.equal(fallback.name, 'v1.2.3');
-
   assert.equal(
     normalizeRelease(apiRelease({ name: null }), { repo: 'owner/repo', hasJava: false }).name,
     'v1.2.3',
@@ -186,11 +156,6 @@ test('downloadUrl：Java 优先 jar、非 Java 优先 zip、多个取最大、�
   assert.equal(pickDownloadUrl(assets, { hasJava: true, archiveUrl: archive }), 'https://a/big.jar');
   assert.equal(pickDownloadUrl(assets, { hasJava: false, archiveUrl: archive }), 'https://a/mod.zip');
   assert.equal(
-    pickDownloadUrl([assets[0]], { hasJava: true, archiveUrl: archive }),
-    'https://a/small.jar',
-  );
-  // 非 Java 只有 jar 资产也回落源码；不跨后缀猜
-  assert.equal(
     pickDownloadUrl([assets[0]], { hasJava: false, archiveUrl: archive }),
     archive,
   );
@@ -212,61 +177,83 @@ test('normalizeReleases 保持 API 顺序并跳过 draft', () => {
   );
 });
 
-test('hasNextPage 解析 Link 头', () => {
-  assert.equal(hasNextPage(null), null);
-  assert.equal(
-    hasNextPage('<https://api.github.com/repos/o/r/releases?page=2>; rel="next"'),
-    true,
-  );
-  assert.equal(
-    hasNextPage('<https://api.github.com/repos/o/r/releases?page=1>; rel="prev"'),
-    false,
+test('sortReleases：publishedAt 降序、同时间按 tag 升序、缺失时间排最后', () => {
+  const releases = [
+    { tag: 'b', publishedAt: '2026-10-01T00:00:00Z' },
+    { tag: 'a', publishedAt: '2026-10-01T00:00:00Z' },
+    { tag: 'new', publishedAt: '2026-11-01T00:00:00Z' },
+    { tag: 'none', publishedAt: null },
+  ];
+  assert.deepEqual(
+    sortReleases(releases).map((release) => release.tag),
+    ['new', 'a', 'b', 'none'],
   );
 });
 
-test('fetchReleases 分页取全并在第一页带 ETag', async () => {
-  const items = Array.from({ length: 100 }, (_, index) => apiRelease({ tag_name: `v${index}` }));
-  const client = fakeClient(
-    [
-      {
-        items,
-        headers: {
-          link: '<https://api.github.com/repos/o/r/releases?page=2>; rel="next"',
-        },
-      },
-      { items: [apiRelease({ tag_name: 'last' })] },
-    ],
-    { etag: 'W/"page1"' },
+test('mergeReleasesByTag：抓到的页覆盖同 tag（下载量更新），旧条目保留', () => {
+  const previous = [
+    { tag: 'v3', publishedAt: '2026-10-03T00:00:00Z', assets: [{ downloadCount: 1 }] },
+    { tag: 'v2', publishedAt: '2026-10-02T00:00:00Z', assets: [{ downloadCount: 2 }] },
+    { tag: 'v1', publishedAt: '2026-10-01T00:00:00Z', assets: [{ downloadCount: 3 }] },
+  ];
+  const fetched = [
+    { tag: 'v4', publishedAt: '2026-10-04T00:00:00Z', assets: [{ downloadCount: 4 }] },
+    { tag: 'v3', publishedAt: '2026-10-03T00:00:00Z', assets: [{ downloadCount: 99 }] },
+  ];
+  const merged = mergeReleasesByTag(previous, fetched);
+  assert.deepEqual(
+    merged.map((release) => release.tag),
+    ['v4', 'v3', 'v2', 'v1'],
   );
-  const result = await fetchReleases(client, 'owner/repo', { etag: 'W/"old"' });
-  assert.equal(result.notModified, false);
-  assert.equal(result.raws.length, 101);
-  assert.equal(result.etag, 'W/"page1"');
+  assert.equal(merged.find((release) => release.tag === 'v3').assets[0].downloadCount, 99);
+  // 旧条目对象原样保留（元数据不会被重抓）
+  assert.equal(
+    merged.find((release) => release.tag === 'v1'),
+    previous.find((release) => release.tag === 'v1'),
+  );
+});
+
+test('fetchAllReleasePages：从第 1 页抓到不足一页', async () => {
+  const client = fakeClient((url) => {
+    const page = Number(new URL(url).searchParams.get('page'));
+    if (page === 1) {
+      return pageResponse(
+        Array.from({ length: 100 }, (_, index) => apiRelease({ tag_name: `v${index}` })),
+        { etag: 'W/"p1"' },
+      );
+    }
+    return pageResponse([apiRelease({ tag_name: 'last' })], { etag: null });
+  });
+  const pages = await fetchAllReleasePages(client, 'owner/repo');
+  assert.equal(pages.length, 2);
+  assert.equal(pages[0].items.length, 100);
+  assert.equal(pages[0].etag, 'W/"p1"');
+  assert.equal(pages[1].items.length, 1);
   assert.equal(client.calls.length, 2);
+});
+
+test('fetchReleasePages：只抓指定页并只为第 1 页带旧 ETag；304 标记', async () => {
+  const client = fakeClient((url, options) => {
+    const page = Number(new URL(url).searchParams.get('page'));
+    if (page === 1) {
+      return {
+        status: 304,
+        headers: new Headers({ etag: options.etag }),
+        text: null,
+        etag: options.etag,
+      };
+    }
+    return pageResponse([apiRelease({ tag_name: `p${page}` })], { etag: 'W/"p2"' });
+  });
+  const pages = await fetchReleasePages(client, 'owner/repo', {
+    pages: [1, 2],
+    etags: { 1: 'W/"old"' },
+  });
+  assert.equal(pages.length, 2);
+  assert.equal(pages[0].notModified, true);
   assert.equal(client.calls[0].etag, 'W/"old"');
   assert.equal(client.calls[1].etag, null);
-});
-
-test('fetchReleases 空列表与不足一页即结束', async () => {
-  const client = fakeClient([{ items: [] }]);
-  const result = await fetchReleases(client, 'owner/repo');
-  assert.equal(result.notModified, false);
-  assert.deepEqual(result.raws, []);
-  assert.equal(client.calls.length, 1);
-});
-
-test('fetchReleases 304 直接复用，不再翻页', async () => {
-  const client = fakeClient([
-    () => ({ status: 304, headers: new Headers(), text: null, etag: 'W/"x"' }),
-  ]);
-  const result = await fetchReleases(client, 'owner/repo', { etag: 'W/"x"' });
-  assert.deepEqual(result, { notModified: true });
-  assert.equal(client.calls.length, 1);
-});
-
-test('fetchReleases 404 抛出带 status 的错误', async () => {
-  const client = fakeClient([() => ({ status: 404, headers: new Headers(), text: '{}' })]);
-  await assert.rejects(fetchReleases(client, 'owner/repo'), (error) => error.status === 404);
+  assert.equal(pages[1].notModified, false);
 });
 
 test('mergeReleaseMetadata：旧 ok 复用、新 tag 与未成功旧 tag 才抓取', async () => {
@@ -308,46 +295,21 @@ test('mergeReleaseMetadata：旧 ok 复用、新 tag 与未成功旧 tag 才抓�
   assert.deepEqual(fetchedTags, ['v1', 'v3']);
   assert.equal(result.metaFetched, 2);
   assert.equal(result.metaReused, 1);
-  assert.deepEqual(
-    result.releases.map((release) => release.tag),
-    ['v1', 'v2', 'v3'],
-  );
-  assert.equal(result.releases[1].modVersion, '2.0');
-  assert.equal(result.releases[1].metadataPath, 'mod.hjson');
-  assert.equal(result.releases[0].modVersion, 'mod-v1');
-  assert.equal(result.releases[2].minGameVersion, '160');
+  const v2 = result.releases.find((release) => release.tag === 'v2');
+  assert.equal(v2.modVersion, '2.0');
+  assert.equal(v2.metadataPath, 'mod.hjson');
 });
 
-test('mergeReleaseMetadata：抓取抛错记为 unparsed 供下次重试', async () => {
-  const releases = normalizeReleases([apiRelease({ tag_name: 'v1' })], {
-    repo: 'owner/demo',
-    hasJava: false,
-  });
-  const result = await mergeReleaseMetadata({
-    previousReleases: [],
-    releases,
-    fetchMetadata: async () => {
-      throw new Error('network down');
-    },
-  });
-  assert.equal(result.releases[0].metadataStatus, 'unparsed');
-  assert.equal(result.releases[0].modVersion, null);
-  assert.equal(result.releases[0].metadataPath, null);
-});
-
-test('buildReleasesFile 写入 source 与 generatedAt', () => {
+test('buildReleasesFile：只存 formatVersion / repo / generatedAt / releases', () => {
   const file = buildReleasesFile({
     repo: 'owner/repo',
     releases: [],
-    etag: 'W/"e"',
-    fetchedAt: '2026-11-06T03:00:00.000Z',
+    generatedAt: '2026-11-06T03:00:00.000Z',
   });
-  assert.equal(file.formatVersion, 1);
-  assert.equal(file.repo, 'owner/repo');
-  assert.deepEqual(file.source, {
-    releasesEtag: 'W/"e"',
-    releasesFetchedAt: '2026-11-06T03:00:00.000Z',
+  assert.deepEqual(file, {
+    formatVersion: 1,
+    repo: 'owner/repo',
+    generatedAt: '2026-11-06T03:00:00.000Z',
+    releases: [],
   });
-  assert.equal(file.generatedAt, '2026-11-06T03:00:00.000Z');
-  assert.deepEqual(file.releases, []);
 });

@@ -1,10 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, rm, writeFile, unlink } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, rm, writeFile, unlink } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { validateDir, isValidReleasesPath } from '../src/validate.js';
 import { VERSIONS_API } from '../src/versions.js';
+import { buildSummary, summaryCsv } from '../src/summary.js';
 import {
   GATE_BASELINE_URL,
   GATE_REPO,
@@ -59,12 +60,20 @@ function validFixture(repo = 'owner/demo') {
           hasJava: true,
           iconUrl: `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/${stem}`,
           iconHash: null,
-          releasesPath: `releases/${stem}.json`,          releaseCount: 1,
+          releasesPath: `releases/${stem}.json`,
+          releaseCount: 1,
+          totalDownloads: 4,
+          allAssetsDownloads: 4,
+          latestDownloads: 4,
+          latestSizeBytes: 123,
+          totalSizeBytes: 123,
           latestRelease: {
             tag: 'v1.0',
             name: '1.0',
             prerelease: false,
             publishedAt: '2026-10-01T12:00:00Z',
+            downloads: 4,
+            sizeBytes: 123,
           },
           releaseDataUpdatedAt: GENERATED_AT,
         },
@@ -75,13 +84,37 @@ function validFixture(repo = 'owner/demo') {
       formatVersion: 1,
       repo,
       generatedAt: GENERATED_AT,
-      source: {
-        releasesEtag: 'W/"e"',
-        releasesFetchedAt: GENERATED_AT,
-      },
       releases: [release],
     },
   };
+}
+
+function summaryRow(entry, releaseFile) {
+  const first = releaseFile.releases[0] ?? null;
+  return {
+    repo: entry.repo,
+    name: entry.name,
+    author: entry.author,
+    stars: entry.stars,
+    releaseCount: entry.releaseCount,
+    totalDownloads: entry.totalDownloads,
+    allAssetsDownloads: entry.allAssetsDownloads,
+    latestDownloads: entry.latestDownloads,
+    latestSizeBytes: entry.latestSizeBytes,
+    totalSizeBytes: entry.totalSizeBytes,
+    latestTag: first?.tag ?? null,
+    latestPrerelease: first ? first.prerelease : null,
+    latestModVersion: first?.modVersion ?? null,
+    latestMinGameVersion: first?.minGameVersion ?? null,
+    iconUrl: entry.iconUrl,
+  };
+}
+
+async function writeSummaryFiles(dir, index, releaseFile) {
+  const rows = index.mods.map((entry) => summaryRow(entry, releaseFile));
+  const summary = buildSummary({ rows, generatedAt: GENERATED_AT });
+  await writeFile(path.join(dir, 'summary.json'), JSON.stringify(summary, null, 2));
+  await writeFile(path.join(dir, 'summary.csv'), summaryCsv(summary.mods));
 }
 
 async function makeFixtureDir({ index, releaseFile } = validFixture()) {
@@ -90,6 +123,7 @@ async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   await writeFile(path.join(dir, 'index.json'), JSON.stringify(index, null, 2));
   const relPath = `releases/${releaseFile.repo.replace('/', '_')}.json`;
   await writeFile(path.join(dir, relPath), JSON.stringify(releaseFile, null, 2));
+  await writeSummaryFiles(dir, index, releaseFile);
   return dir;
 }
 
@@ -361,4 +395,72 @@ test('releasesPath 含路径穿越 / 多层目录会被判非法', async (t) => 
   t.after(() => rm(nestedDir, { recursive: true, force: true }));
   const nestedResult = await validateDir(nestedDir);
   assert.ok(nestedResult.errors.some((message) => message.includes('releasesPath 非法')));
+});
+
+// ---------- 下载量/体积统计与总表 ----------
+
+test('index 统计字段与 per-mod 数据重算不一致会被发现', async (t) => {
+  const fixture = validFixture();
+  fixture.index.mods[0].totalDownloads = 999;
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.ok(
+    result.errors.some((message) => message.includes('totalDownloads 与 per-mod 数据重算不一致')),
+  );
+});
+
+test('缺 summary.json 只给警告（旧数据兼容）', async (t) => {
+  const fixture = validFixture();
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await unlink(path.join(dir, 'summary.json'));
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.ok(result.warnings.some((message) => message.includes('缺少 summary.json')));
+});
+
+test('summary totals / 行内容与 index 不一致会被发现', async (t) => {
+  const fixture = validFixture();
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const summary = JSON.parse(
+    await readFile(path.join(dir, 'summary.json'), 'utf8'),
+  );
+  summary.totals.downloads = 999;
+  summary.mods[0].releaseCount = 5;
+  await writeFile(path.join(dir, 'summary.json'), JSON.stringify(summary, null, 2));
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('summary.totals.downloads')));
+  assert.ok(result.errors.some((message) => message.includes('releaseCount 与 index 不一致')));
+});
+
+test('summary.csv 行数与内容不一致会被发现', async (t) => {
+  const fixture = validFixture();
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await writeFile(
+    path.join(dir, 'summary.csv'),
+    '\uFEFF' + 'repo,name\r\n' + 'only,two\r\n',
+  );
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('summary.csv 表头')));
+});
+
+test('state/refresh.json 形状不合法会被发现', async (t) => {
+  const fixture = validFixture();
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await mkdir(path.join(dir, 'state'), { recursive: true });
+  await writeFile(
+    path.join(dir, 'state', 'refresh.json'),
+    JSON.stringify({
+      formatVersion: 1,
+      updatedAt: GENERATED_AT,
+      mods: { 'owner/demo': { page1Etag: 5, page1FetchedAt: 'x', pages: { 1: 'x' } } },
+    }),
+  );
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('page1Etag')));
+  assert.ok(result.errors.some((message) => message.includes('pages')));
 });

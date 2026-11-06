@@ -25,13 +25,32 @@ export async function writeJsonAtomic(file, value) {
   await rename(temp, file);
 }
 
+export async function readTextIfExists(file) {
+  try {
+    return await readFile(file, 'utf8');
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return null;
+    }
+    throw new Error(`读取 ${file} 失败：${error.message}`);
+  }
+}
+
+export async function writeTextAtomic(file, text) {
+  await mkdir(path.dirname(file), { recursive: true });
+  const temp = `${file}.${process.pid}.tmp`;
+  await writeFile(temp, text, 'utf8');
+  await rename(temp, file);
+}
+
 export async function ensureReleasesDir(outDir) {
   const dir = path.join(outDir, RELEASES_DIR);
   await mkdir(dir, { recursive: true });
   return dir;
 }
 
-// 数据主体是否变化：generatedAt 变化不算内容变化，否则每天都会重写全部文件
+// per-mod 文件只存统计数据：source 是旧格式字段（读取时忽略），比较时也不看；
+// generatedAt 变化不算内容变化，只有 releases（含下载量/体积/元数据）真的变了才重写
 export function releaseFileBodyChanged(previous, next) {
   if (!previous) {
     return true;
@@ -40,9 +59,6 @@ export function releaseFileBodyChanged(previous, next) {
     return true;
   }
   if (previous.repo !== next.repo) {
-    return true;
-  }
-  if (JSON.stringify(previous.source) !== JSON.stringify(next.source)) {
     return true;
   }
   return JSON.stringify(previous.releases) !== JSON.stringify(next.releases);

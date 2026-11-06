@@ -40,6 +40,8 @@ jobs:
         run: npm ci
 
       - name: 更新模组索引
+        # 按 tag 新旧分档刷新：第 1 页每天、第 2 页 7 天、第 3 页 30 天、第 4 页起 90 天。
+        # per-mod 文件只在 releases 数据真的变化时重写；ETag/分页时间存在 state/refresh.json。
         run: node src/main.js --datasets mods --out .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,9 +50,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.json
-          # releases 目录首次运行时可能还没有文件
+          git add index.json summary.json summary.csv
+          # releases / state 目录首次运行时可能还没有文件
           git add -A releases 2>/dev/null || true
+          git add -A state 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "没有数据变化，跳过提交"
             exit 0
