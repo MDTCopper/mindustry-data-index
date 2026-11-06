@@ -1,0 +1,58 @@
+name: 更新模组索引
+
+on:
+  schedule:
+    # 每天 02:23 UTC（北京时间 10:23），避开整点高峰
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write
+
+# 定时与推送触发的更新不并发，但也不打断正在进行的更新
+concurrency:
+  group: mods-index-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 更新索引
+        run: node src/main.js --out .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 提交并推送数据变化
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          # releases 目录首次运行时可能还没有文件
+          git add -A releases 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "没有数据变化，跳过提交"
+          else
+            git commit -m "[auto-update]"
+            git push
+          fi

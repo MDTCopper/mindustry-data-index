@@ -1,0 +1,19 @@
+{
+  "name": "mindustry-mods-index",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mindustry 官方模组列表的补充索引：全部 release tag、预发布标识、模组与最低游戏版本、下载链接",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "update": "node src/main.js --out .",
+    "validate": "node src/validate.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "hjson": "^3.2.2"
+  }
+}
