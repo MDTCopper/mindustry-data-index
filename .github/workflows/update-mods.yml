@@ -40,8 +40,9 @@ jobs:
         run: npm ci
 
       - name: 更新模组索引
-        # 按 tag 新旧分档刷新：第 1 页每天、第 2 页 7 天、第 3 页 30 天、第 4 页起 90 天。
-        # per-mod 文件只在 releases 数据真的变化时重写；ETag/分页时间存在 state/refresh.json。
+        # 按 tag 新旧分档刷新 releases：第 1 页每天、第 2 页 7 天、第 3 页 30 天、第 4 页起 90 天；
+        # 另外每天全量抓一次 git tag 列表，补全没有 GitHub Release 的 tag（tag-only 条目）。
+        # per-mod 文件只在 releases 数据真的变化时重写；ETag/分页/tag 时间存在 state/refresh.json。
         run: node src/main.js --datasets mods --out .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

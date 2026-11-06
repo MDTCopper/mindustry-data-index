@@ -16,6 +16,7 @@ function row(overrides = {}) {
     author: 'author',
     stars: 1,
     releaseCount: 2,
+    tagCount: 5,
     totalDownloads: 10,
     allAssetsDownloads: 12,
     latestDownloads: 6,
@@ -26,6 +27,7 @@ function row(overrides = {}) {
     latestModVersion: '1.0',
     latestMinGameVersion: '146',
     iconUrl: 'https://example.com/icon',
+    releasesPath: 'releases/owner/demo.json',
     ...overrides,
   };
 }
@@ -102,6 +104,10 @@ test('summaryCsv：BOM + 表头 + 与 json 同列，可按 CSV 解析回来', ()
   assert.ok(csv.endsWith('\r\n'));
   const parsed = parseCsv(csv);
   assert.deepEqual(parsed[0], SUMMARY_COLUMNS);
+  // tagCount 紧跟 releaseCount；releasesPath 放最后一列
+  assert.equal(parsed[0][4], 'releaseCount');
+  assert.equal(parsed[0][5], 'tagCount');
+  assert.equal(parsed[0][parsed[0].length - 1], 'releasesPath');
   const expectedCells = SUMMARY_COLUMNS.map((column) => {
     const value = rows[0][column];
     return value === null || value === undefined ? '' : String(value);

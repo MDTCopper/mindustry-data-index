@@ -6,6 +6,7 @@ export const SUMMARY_COLUMNS = [
   'author',
   'stars',
   'releaseCount',
+  'tagCount',
   'totalDownloads',
   'allAssetsDownloads',
   'latestDownloads',

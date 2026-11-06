@@ -3,10 +3,12 @@ import assert from 'node:assert/strict';
 import {
   REFRESH_STATE_REL_PATH,
   REFRESH_TIERS,
+  TAGS_REFRESH_INTERVAL_MS,
   bootstrapModState,
   buildRefreshStateFile,
   cloneModState,
   isPageDue,
+  isTagsDue,
   normalizeRefreshState,
   pageRefreshIntervalMs,
   stateBodyChanged,
@@ -97,4 +99,58 @@ test('stateBodyChanged / buildRefreshStateFile / cloneModState', () => {
   const clone = cloneModState(mods['owner/demo']);
   clone.pages['2'] = '2026-11-06T03:00:00.000Z';
   assert.deepEqual(mods['owner/demo'].pages, {});
+});
+
+test('isTagsDue：tag 列表 24 小时刷新一次，缺失/非法时间视为到期', () => {
+  assert.equal(TAGS_REFRESH_INTERVAL_MS, DAY);
+  const at = (msAgo) => new Date(NOW - msAgo).toISOString();
+  assert.equal(isTagsDue(null, NOW), true);
+  assert.equal(isTagsDue(undefined, NOW), true);
+  assert.equal(isTagsDue('bad', NOW), true);
+  assert.equal(isTagsDue(at(DAY - 1), NOW), false);
+  assert.equal(isTagsDue(at(DAY), NOW), true);
+});
+
+test('state 保存 tagsFetchedAt；normalize/clone 兼容缺字段', () => {
+  const state = normalizeRefreshState({
+    formatVersion: 1,
+    updatedAt: '2026-11-06T03:00:00.000Z',
+    mods: {
+      'owner/demo': {
+        page1Etag: 'W/"a"',
+        page1FetchedAt: '2026-11-06T03:00:00.000Z',
+        pages: {},
+        tagsFetchedAt: '2026-11-06T04:00:00.000Z',
+      },
+      'owner/old': { page1Etag: null, page1FetchedAt: null, pages: {} },
+    },
+  });
+  assert.equal(
+    state.mods['owner/demo'].tagsFetchedAt,
+    '2026-11-06T04:00:00.000Z',
+  );
+  assert.equal(state.mods['owner/old'].tagsFetchedAt, null);
+  assert.equal(
+    cloneModState(state.mods['owner/demo']).tagsFetchedAt,
+    '2026-11-06T04:00:00.000Z',
+  );
+  const changed = buildRefreshStateFile({
+    mods: {
+      'owner/demo': {
+        ...state.mods['owner/demo'],
+        tagsFetchedAt: '2026-11-07T04:00:00.000Z',
+      },
+    },
+    updatedAt: '2026-11-07T00:00:00.000Z',
+  });
+  assert.equal(
+    stateBodyChanged(
+      buildRefreshStateFile({
+        mods: { 'owner/demo': state.mods['owner/demo'] },
+        updatedAt: '2026-11-06T00:00:00.000Z',
+      }),
+      changed,
+    ),
+    true,
+  );
 });

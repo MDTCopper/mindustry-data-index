@@ -10,6 +10,8 @@ import {
   normalizeReleases,
   sortReleases,
   mergeReleasesByTag,
+  buildTagOnlyRelease,
+  isReleaseEntry,
   fetchAllReleasePages,
   fetchReleasePages,
   mergeReleaseMetadata,
@@ -312,4 +314,78 @@ test('buildReleasesFile：只存 formatVersion / repo / generatedAt / releases',
     generatedAt: '2026-11-06T03:00:00.000Z',
     releases: [],
   });
+});
+
+test('normalizeRelease：有 Release 的条目 hasRelease=true', () => {
+  const release = normalizeRelease(apiRelease(), { repo: 'owner/repo', hasJava: false });
+  assert.equal(release.hasRelease, true);
+});
+
+test('isReleaseEntry：缺字段视作 release，只有 false 才是 tag-only', () => {
+  assert.equal(isReleaseEntry({ tag: 'v1' }), true);
+  assert.equal(isReleaseEntry({ tag: 'v1', hasRelease: true }), true);
+  assert.equal(isReleaseEntry({ tag: 'v1', hasRelease: false }), false);
+  assert.equal(isReleaseEntry(null), false);
+});
+
+test('buildTagOnlyRelease：tag-only 字段齐全、下载回落源码归档', () => {
+  const entry = buildTagOnlyRelease({ repo: 'oscillatorium/alef-null', tag: 'v1.04' });
+  assert.deepEqual(entry, {
+    tag: 'v1.04',
+    name: 'v1.04',
+    hasRelease: false,
+    prerelease: null,
+    publishedAt: null,
+    htmlUrl: 'https://github.com/oscillatorium/alef-null/tree/v1.04',
+    modVersion: null,
+    minGameVersion: null,
+    metadataPath: null,
+    metadataStatus: null,
+    downloadUrl:
+      'https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip',
+    sourceArchiveUrl:
+      'https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip',
+    assets: [],
+  });
+  assert.equal(
+    buildTagOnlyRelease({ repo: 'owner/repo', tag: 'v1.0 beta' }).sourceArchiveUrl,
+    'https://github.com/owner/repo/archive/refs/tags/v1.0%20beta.zip',
+  );
+});
+
+test('sortReleases：Release 条目在前（publishedAt 降序），tag-only 在后（tag 自然降序）', () => {
+  const entries = [
+    { tag: 'v0.9', hasRelease: false },
+    { tag: 'v1.10', publishedAt: '2026-10-10T00:00:00Z', hasRelease: true },
+    { tag: 'v1.2', publishedAt: '2026-10-02T00:00:00Z', hasRelease: true },
+    { tag: 'v1.9', hasRelease: false },
+    { tag: 'v0.11', hasRelease: false },
+  ];
+  assert.deepEqual(
+    sortReleases(entries).map((entry) => entry.tag),
+    ['v1.10', 'v1.2', 'v1.9', 'v0.11', 'v0.9'],
+  );
+  // 缺 hasRelease 的旧条目视作 release
+  assert.deepEqual(
+    sortReleases([
+      { tag: 'v1', hasRelease: false },
+      { tag: 'v2', publishedAt: '2026-10-01T00:00:00Z' },
+    ]).map((entry) => entry.tag),
+    ['v2', 'v1'],
+  );
+});
+
+test('mergeReleasesByTag：后补建 Release 的 tag 覆盖旧 tag-only 条目', () => {
+  const previous = [
+    { tag: 'v2', hasRelease: false, prerelease: null, publishedAt: null, assets: [] },
+    { tag: 'v1', hasRelease: false, prerelease: null, publishedAt: null, assets: [] },
+  ];
+  const fetched = [
+    { tag: 'v2', hasRelease: true, prerelease: false, publishedAt: '2026-10-02T00:00:00Z', assets: [] },
+  ];
+  const merged = mergeReleasesByTag(previous, fetched);
+  assert.deepEqual(merged.map((entry) => entry.tag), ['v2', 'v1']);
+  assert.equal(merged[0].hasRelease, true);
+  assert.equal(merged[0].publishedAt, '2026-10-02T00:00:00Z');
+  assert.equal(merged[1].hasRelease, false);
 });

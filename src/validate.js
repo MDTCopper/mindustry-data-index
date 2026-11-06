@@ -157,11 +157,31 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
       }
       tags.add(release.tag);
     }
-    if (typeof release.prerelease !== 'boolean') {
-      errors.push(`${where}.prerelease 不是布尔值`);
+    const tagOnly = release.hasRelease === false;
+    if (typeof release.hasRelease !== 'boolean') {
+      errors.push(`${where}.hasRelease 应为布尔值`);
     }
-    if (release.publishedAt !== null && !isIsoDate(release.publishedAt)) {
-      errors.push(`${where}.publishedAt 应为 ISO 时间或 null`);
+    if (tagOnly) {
+      // 没有 GitHub Release 的 tag：无法判定 prerelease/发布时间，下载地址必须是源码归档
+      if (release.prerelease !== null) {
+        errors.push(`${where}.prerelease 在 hasRelease=false 时应为 null`);
+      }
+      if (release.publishedAt !== null) {
+        errors.push(`${where}.publishedAt 在 hasRelease=false 时应为 null`);
+      }
+      if (Array.isArray(release.assets) && release.assets.length > 0) {
+        errors.push(`${where}.assets 在 hasRelease=false 时应为空数组`);
+      }
+      if (release.downloadUrl !== release.sourceArchiveUrl) {
+        errors.push(`${where}.downloadUrl 在 hasRelease=false 时应等于 sourceArchiveUrl`);
+      }
+    } else {
+      if (typeof release.prerelease !== 'boolean') {
+        errors.push(`${where}.prerelease 不是布尔值`);
+      }
+      if (release.publishedAt !== null && !isIsoDate(release.publishedAt)) {
+        errors.push(`${where}.publishedAt 应为 ISO 时间或 null`);
+      }
     }
     for (const field of ['modVersion', 'minGameVersion']) {
       if (release[field] !== null && typeof release[field] !== 'string') {
@@ -296,6 +316,16 @@ export function validateIndexData(
     }
     if (!Number.isInteger(mod.releaseCount) || mod.releaseCount < 0) {
       errors.push(`${where}.releaseCount 应为非负整数`);
+    }
+    if (!Number.isInteger(mod.tagCount) || mod.tagCount < 0) {
+      errors.push(`${where}.tagCount 应为非负整数`);
+    }
+    if (
+      Number.isInteger(mod.releaseCount) &&
+      Number.isInteger(mod.tagCount) &&
+      mod.releaseCount > mod.tagCount
+    ) {
+      errors.push(`${where}.releaseCount 不能大于 tagCount`);
     }
     for (const field of ['totalDownloads', 'allAssetsDownloads', 'latestDownloads']) {
       if (!Number.isInteger(mod[field]) || mod[field] < 0) {
@@ -673,7 +703,7 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
     if (!Number.isInteger(row.stars) || row.stars < 0) {
       errors.push(`${where}.stars 应为非负整数`);
     }
-    for (const field of ['releaseCount', 'totalDownloads', 'allAssetsDownloads', 'latestDownloads']) {
+    for (const field of ['releaseCount', 'tagCount', 'totalDownloads', 'allAssetsDownloads', 'latestDownloads']) {
       if (!Number.isInteger(row[field]) || row[field] < 0) {
         errors.push(`${where}.${field} 应为非负整数`);
       }
@@ -706,7 +736,7 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
       errors.push(`${where}.repo 不在 index.mods 里：${row.repo}`);
       continue;
     }
-    for (const field of ['releaseCount', 'totalDownloads', 'allAssetsDownloads', 'latestDownloads', 'latestSizeBytes', 'totalSizeBytes']) {
+    for (const field of ['releaseCount', 'tagCount', 'totalDownloads', 'allAssetsDownloads', 'latestDownloads', 'latestSizeBytes', 'totalSizeBytes']) {
       if (row[field] !== indexEntry[field]) {
         errors.push(`${where}.${field} 与 index 不一致`);
       }
@@ -826,6 +856,13 @@ export function validateRefreshStateData(state, { errors } = {}) {
     if (entry.page1FetchedAt !== null && !isIsoDate(entry.page1FetchedAt)) {
       errors.push(`state.mods.${repo}.page1FetchedAt 应为 ISO 时间或 null`);
     }
+    if (
+      entry.tagsFetchedAt !== undefined &&
+      entry.tagsFetchedAt !== null &&
+      !isIsoDate(entry.tagsFetchedAt)
+    ) {
+      errors.push(`state.mods.${repo}.tagsFetchedAt 应为 ISO 时间或 null`);
+    }
     if (!isPlainObject(entry.pages)) {
       errors.push(`state.mods.${repo}.pages 不是对象`);
       continue;
@@ -935,15 +972,23 @@ export async function validateDir(dir) {
         if (!Array.isArray(file.releases)) {
           continue;
         }
-        if (mod.releaseCount !== file.releases.length) {
+        const releaseEntries = file.releases.filter(
+          (entry) => entry?.hasRelease !== false,
+        );
+        if (mod.releaseCount !== releaseEntries.length) {
           errors.push(
-            `mods ${mod.repo} 的 releaseCount（${mod.releaseCount}）与文件条数（${file.releases.length}）不一致`,
+            `mods ${mod.repo} 的 releaseCount（${mod.releaseCount}）与 hasRelease=true 条数（${releaseEntries.length}）不一致`,
           );
         }
-        const firstTag = file.releases[0]?.tag ?? null;
+        if (mod.tagCount !== file.releases.length) {
+          errors.push(
+            `mods ${mod.repo} 的 tagCount（${mod.tagCount}）与文件条数（${file.releases.length}）不一致`,
+          );
+        }
+        const firstTag = releaseEntries[0]?.tag ?? null;
         if ((mod.latestRelease?.tag ?? null) !== firstTag) {
           errors.push(
-            `mods ${mod.repo} 的 latestRelease.tag（${mod.latestRelease?.tag ?? null}）与文件首条（${firstTag}）不一致`,
+            `mods ${mod.repo} 的 latestRelease.tag（${mod.latestRelease?.tag ?? null}）与文件首个 Release 条目（${firstTag}）不一致`,
           );
         }
         if (mod.releaseDataUpdatedAt !== file.generatedAt) {

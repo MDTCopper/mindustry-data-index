@@ -24,6 +24,7 @@ function validFixture(repo = 'owner/demo') {
   const release = {
     tag: 'v1.0',
     name: '1.0',
+    hasRelease: true,
     prerelease: false,
     publishedAt: '2026-10-01T12:00:00Z',
     htmlUrl: `https://github.com/${repo}/releases/tag/v1.0`,
@@ -67,6 +68,7 @@ function validFixture(repo = 'owner/demo') {
           iconHash: null,
           releasesPath: releasesRelPath(repo),
           releaseCount: 1,
+          tagCount: 1,
           totalDownloads: 4,
           allAssetsDownloads: 4,
           latestDownloads: 4,
@@ -95,13 +97,14 @@ function validFixture(repo = 'owner/demo') {
 }
 
 function summaryRow(entry, releaseFile) {
-  const first = releaseFile.releases[0] ?? null;
+  const first = releaseFile.releases.find((release) => release.hasRelease !== false) ?? null;
   return {
     repo: entry.repo,
     name: entry.name,
     author: entry.author,
     stars: entry.stars,
     releaseCount: entry.releaseCount,
+    tagCount: entry.tagCount,
     totalDownloads: entry.totalDownloads,
     allAssetsDownloads: entry.allAssetsDownloads,
     latestDownloads: entry.latestDownloads,
@@ -485,4 +488,66 @@ test('state/refresh.json 形状不合法会被发现', async (t) => {
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('page1Etag')));
   assert.ok(result.errors.some((message) => message.includes('pages')));
+});
+
+// ---------- tag-only（无 GitHub Release 的 git tag） ----------
+
+function tagOnlyEntry(repo, tag = 'v0.9') {
+  const archive = `https://github.com/${repo}/archive/refs/tags/${tag}.zip`;
+  return {
+    tag,
+    name: tag,
+    hasRelease: false,
+    prerelease: null,
+    publishedAt: null,
+    htmlUrl: `https://github.com/${repo}/tree/${tag}`,
+    modVersion: null,
+    minGameVersion: null,
+    metadataPath: null,
+    metadataStatus: 'missing',
+    downloadUrl: archive,
+    sourceArchiveUrl: archive,
+    assets: [],
+  };
+}
+
+function withTagOnly(fixture = validFixture()) {
+  fixture.releaseFile.releases.push(tagOnlyEntry(fixture.releaseFile.repo));
+  fixture.index.mods[0].tagCount = 2;
+  return fixture;
+}
+
+test('tag-only 条目（hasRelease=false）校验通过', async (t) => {
+  const dir = await makeFixtureDir(withTagOnly());
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.warnings, []);
+});
+
+test('tag-only 条目字段不合法会被发现', async (t) => {
+  const fixture = withTagOnly();
+  const tagOnly = fixture.releaseFile.releases[1];
+  tagOnly.prerelease = false;
+  tagOnly.publishedAt = '2026-10-01T12:00:00Z';
+  tagOnly.assets = [{ name: 'x.jar', size: 1, downloadCount: 0, downloadUrl: 'https://x' }];
+  tagOnly.downloadUrl = 'https://github.com/owner/demo/releases/download/v0.9/x.jar';
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('prerelease 在 hasRelease=false')));
+  assert.ok(result.errors.some((message) => message.includes('publishedAt 在 hasRelease=false')));
+  assert.ok(result.errors.some((message) => message.includes('assets 在 hasRelease=false')));
+  assert.ok(result.errors.some((message) => message.includes('downloadUrl 在 hasRelease=false')));
+});
+
+test('tagCount / releaseCount 与文件条数不一致会被发现', async (t) => {
+  const fixture = withTagOnly();
+  fixture.index.mods[0].tagCount = 3;
+  fixture.index.mods[0].releaseCount = 2;
+  const dir = await makeFixtureDir(fixture);
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('tagCount（3）')));
+  assert.ok(result.errors.some((message) => message.includes('hasRelease=true 条数')));
 });

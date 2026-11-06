@@ -63,17 +63,18 @@
 | `iconUrl` | string \| null | 官方图标地址 `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/<owner>_<repo>`（repo 的 `/` 换成 `_`，不带扩展名，与启动器 `githubModIconBase` 一致）。`hasIcon === false` 时为 `null`；只记地址，不下载图标字节 |
 | `iconHash` | string \| null | 官方列表的 `iconHash` 原样保留（多数模组没有），供客户端按哈希做图标缓存 |
 | `releasesPath` | string \| null | per-mod 文件相对路径（`releases/<owner>/<repo>.json`，owner/name 保留大小写）；`null` 表示尚未成功抓取过（见 `skipped`） |
-| `releaseCount` | number | 该模组 release 条数（不含 draft）；抓取失败时保留旧值 |
-| `totalDownloads` | number | 历史累计下载量：所有 release 的**首选资产** `downloadCount` 之和（首选资产口径见下；无首选资产按 0） |
-| `allAssetsDownloads` | number | 所有 release 的全部资产 `downloadCount` 之和（完整口径，含非首选资产） |
-| `latestDownloads` | number | 最新一条 release 首选资产的 `downloadCount`（没有首选资产为 0） |
-| `latestSizeBytes` | number \| null | 最新一条 release 首选资产的 `size`（没有首选资产为 `null`） |
-| `totalSizeBytes` | number \| null | 所有 release 首选资产 `size` 之和（历史版本总体积；一条首选资产都没有为 `null`） |
-| `latestRelease` | object \| null | `releases` 首条（新→旧）的 `{ tag, name, prerelease, publishedAt, downloads, sizeBytes }`；无 release 或尚未抓取时为 `null` |
+| `releaseCount` | number | 有 GitHub Release 的条目数（`hasRelease===true`）；抓取失败时保留旧值 |
+| `tagCount` | number | 全部 git tag 数（文件 `releases` 数组长度，含 tag-only 条目） |
+| `totalDownloads` | number | 历史累计下载量：所有 Release 条目的**首选资产** `downloadCount` 之和（tag-only 无资产，按 0；口径见下） |
+| `allAssetsDownloads` | number | 所有 Release 条目的全部资产 `downloadCount` 之和（完整口径，含非首选资产） |
+| `latestDownloads` | number | 最新一个有 Release 条目首选资产的 `downloadCount`（没有首选资产为 0） |
+| `latestSizeBytes` | number \| null | 最新一个有 Release 条目首选资产的 `size`（没有首选资产为 `null`） |
+| `totalSizeBytes` | number \| null | 所有 Release 条目首选资产 `size` 之和（历史版本总体积；一条首选资产都没有为 `null`） |
+| `latestRelease` | object \| null | 文件里最新一条 `hasRelease===true` 条目的 `{ tag, name, prerelease, publishedAt, downloads, sizeBytes }`；没有 Release 或尚未抓取时为 `null` |
 | `releaseDataUpdatedAt` | string \| null | per-mod 文件最近一次**内容变化**时间；文件内容未变时保持不变（不是每天刷新） |
 
 **首选资产口径**：与 `downloadUrl` 一致——`hasJava` 取体积最大的 `.jar`，否则取体积最大的 `.zip`；
-没有对应后缀的资产时下载量按 0、体积为 `null`（`downloadUrl` 仍回落源码归档）。
+没有对应后缀的资产时下载量按 0、体积为 `null`（`downloadUrl` 仍回落源码归档）。tag-only 条目不影响统计。
 
 `description`、官方列表里的 `releases` 映射等大字段不放进 `index.json`；`iconHash` 保留（450 条左右
 有值，体积小且可用于缓存）。
@@ -90,8 +91,10 @@
 
 ## releases/<owner>/<repo>.json
 
-**只存数据**：分页 ETag 与抓取时间在 `state/refresh.json`，这里不再放 `source`（旧格式文件里的
-`source.releasesEtag` / `releasesFetchedAt` 读取时兼容忽略，不参与内容比较）。
+**收录全部 git tag**：`/repos/{owner}/{repo}/tags` 分页取全，加上 releases 接口的 Release 数据，按 tag 名合并。
+没有 GitHub Release 的 tag 生成 tag-only 条目（`hasRelease: false`）。**只存数据**：分页 ETag 与抓取时间在
+`state/refresh.json`，这里不再放 `source`（旧格式文件里的 `source.releasesEtag` / `releasesFetchedAt`
+读取时兼容忽略，不参与内容比较）。
 
 路径按 repo 的 owner/name 分目录并保留大小写。**迁移**：旧 flat 路径 `releases/<owner>_<repo>.json`
 已废弃；运行时优先读新路径，新路径不存在则读旧 flat 文件当缓存（`generatedAt`、`source`、分页 state
@@ -112,24 +115,51 @@
 | `formatVersion` | number | 固定 `1` |
 | `repo` | string | `owner/name` |
 | `generatedAt` | string | 本文件最近一次**内容变化**时间，只有 `releases` 真的变化时才更新 |
-| `releases` | array | 合并后的全部 release：抓到的页按 tag 覆盖缓存（下载量随之更新），没抓到的旧条目保留；按 `publishedAt` 降序、同一时间按 `tag` 升序 |
+| `releases` | array | 全部 git tag：Release 条目（`hasRelease===true`）在前，按 `publishedAt` 降序、同一时间按 `tag` 升序；tag-only 条目（`hasRelease===false`）在后，按 tag 名称自然降序（`v1.10` 在 `v1.9` 前） |
 
 ### releases[] 条目
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
-| `tag` | string | release 的 tag 名 |
-| `name` | string | release 名称，先 trim 首尾空白；空则回退 `tag`（官方数据里有尾随空格） |
-| `prerelease` | boolean | GitHub 的预发布标记，原样保留；`draft` release 已跳过 |
-| `publishedAt` | string \| null | GitHub 的 `published_at` |
-| `htmlUrl` | string | release 页面地址 |
+| `tag` | string | tag 名 |
+| `name` | string | Release 名称（trim；空则回退 tag）；tag-only 条目等于 tag |
+| `hasRelease` | boolean | `true` 表示有 GitHub Release；`false` 表示只有 git tag。旧文件缺该字段时视为 `true` |
+| `prerelease` | boolean \| null | Release 的预发布标记；tag-only 条目为 `null`（无法判定） |
+| `publishedAt` | string \| null | Release 的 `published_at`；tag-only 条目为 `null` |
+| `htmlUrl` | string | Release 页面地址；tag-only 为 `https://github.com/<owner>/<repo>/tree/<tag>` |
 | `modVersion` | string \| null | 该 tag 下 mod 元数据的 `version`；数字转字符串；缺失为 `null` |
 | `minGameVersion` | string \| null | 该 tag 下 mod 元数据的 `minGameVersion`；数字转字符串，字符串原样（含脏值）；缺失为 `null` |
 | `metadataPath` | string \| null | 实际命中的元数据路径：`mod.hjson` / `mod.json` / `assets/mod.hjson` / `assets/mod.json`；未命中为 `null` |
 | `metadataStatus` | string | `ok` / `missing` / `unparsed`，见下 |
-| `downloadUrl` | string | 推荐下载链接，规则见下 |
+| `downloadUrl` | string | 推荐下载链接，规则见下；tag-only 条目固定等于 `sourceArchiveUrl` |
 | `sourceArchiveUrl` | string | 源码归档 `https://github.com/<repo>/archive/refs/tags/<tag>.zip`，永远带 `tag` 的 URL 转义 |
-| `assets` | array | release 资产全量，顺序与 API 一致：`{ name, size, downloadCount, downloadUrl }` |
+| `assets` | array | Release 资产全量，顺序与 API 一致：`{ name, size, downloadCount, downloadUrl }`；tag-only 条目为空数组 |
+
+### tag-only 条目（无 GitHub Release 的 git tag）
+
+`oscillatorium/alef-null` 有 15 个 git tag，但只有 5 个建了 Release；其余 10 个会以如下形状出现：
+
+```json
+{
+  "tag": "v1.04",
+  "name": "v1.04",
+  "hasRelease": false,
+  "prerelease": null,
+  "publishedAt": null,
+  "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v1.04",
+  "modVersion": "...",
+  "minGameVersion": "...",
+  "metadataPath": "mod.hjson",
+  "metadataStatus": "ok",
+  "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
+  "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
+  "assets": []
+}
+```
+
+- 元数据（`modVersion`/`minGameVersion`）同样按 tag 读 `mod.hjson`，可命中；
+- 同一 tag 后来补建 Release 时，下一轮会被 Release 数据覆盖（`hasRelease` 变 `true`，补上 assets/时间）；
+- `validate` 会检查 tag-only 的 `prerelease`/`publishedAt` 为 `null`、`assets` 为空、`downloadUrl === sourceArchiveUrl`。
 
 ### metadataStatus 语义
 
@@ -153,12 +183,14 @@
 ### prerelease 语义
 
 `prerelease` 只忠实反映 GitHub release 上的勾选状态，不参与 `latestRelease` 的挑选——
-`latestRelease` 就是 `releases[0]`。使用方若只要正式版，自行过滤 `prerelease === false`。
+`latestRelease` 是文件里第一条 `hasRelease === true` 的条目。tag-only 条目的 `prerelease` 为 `null`
+（无法判定）。使用方若只要正式版，自行过滤 `hasRelease === true && prerelease === false`。
 
 ## summary.json
 
 下载量与体积总表：由 `index.json` 的统计字段聚合，按 `totalDownloads` 降序（并列按 `stars` 降序、
-`repo` 升序）。无 release / 无资产的模组也会出现，数值为 0 或 `null`。
+`repo` 升序）。无 Release / 无资产的模组也会出现，数值为 0 或 `null`；下载量/体积只按 Release 资产算，
+tag-only 条目不影响口径。
 
 ```json
 {
@@ -172,6 +204,7 @@
       "author": "sk7725",
       "stars": 375,
       "releaseCount": 51,
+      "tagCount": 51,
       "totalDownloads": 534141,
       "allAssetsDownloads": 534783,
       "latestDownloads": 21918,
@@ -193,18 +226,18 @@
 | `formatVersion` | number | 固定 `1` |
 | `generatedAt` | string | 本文件最近一次**内容变化**时间；未变化不刷新 |
 | `totals.mods` | number | 模组数（= `index.mods` 数量） |
-| `totals.releases` | number | 所有模组 `releaseCount` 之和 |
+| `totals.releases` | number | 所有模组 `releaseCount` 之和（只含有 Release 的条目） |
 | `totals.downloads` | number | 所有模组 `totalDownloads` 之和 |
 | `totals.sizeBytes` | number | 所有模组 `totalSizeBytes` 之和（`null` 按 0 计） |
 | `mods[].repo` 等 | string | `repo`/`name`/`author`/`latestTag`/`latestModVersion`/`latestMinGameVersion`/`iconUrl`/`releasesPath`，无值时为 `null` |
-| `mods[].stars` / 统计字段 | number \| null | 与 index 条目同名字段一致；`latestSizeBytes`/`totalSizeBytes` 可为 `null` |
-| `mods[].latestPrerelease` | boolean \| null | 最新 release 的预发布标记 |
+| `mods[].stars` / `releaseCount` / `tagCount` / 统计字段 | number \| null | 与 index 条目同名字段一致；`latestSizeBytes`/`totalSizeBytes` 可为 `null` |
+| `mods[].latestPrerelease` | boolean \| null | 最新 Release 条目的预发布标记 |
 
 ## summary.csv
 
 与 `summary.json` 的 `mods[]` 同列（不含 `totals`），列顺序：
 
-`repo,name,author,stars,releaseCount,totalDownloads,allAssetsDownloads,latestDownloads,latestSizeBytes,totalSizeBytes,latestTag,latestPrerelease,latestModVersion,latestMinGameVersion,iconUrl,releasesPath`
+`repo,name,author,stars,releaseCount,tagCount,totalDownloads,allAssetsDownloads,latestDownloads,latestSizeBytes,totalSizeBytes,latestTag,latestPrerelease,latestModVersion,latestMinGameVersion,iconUrl,releasesPath`
 
 - UTF-8 **带 BOM**（Excel 直接打开中文不乱码），CRLF 换行；
 - 逗号、双引号、换行按 CSV 规则转义（字段加引号、内部 `"` 写成 `""`）；
@@ -222,7 +255,8 @@
     "mindustrytool/mindustrytoolmod": {
       "page1Etag": "\"W/...\"",
       "page1FetchedAt": "2026-11-06T03:00:00.000Z",
-      "pages": { "2": "2026-11-01T03:00:00.000Z" }
+      "pages": { "2": "2026-11-01T03:00:00.000Z" },
+      "tagsFetchedAt": "2026-11-06T03:00:00.000Z"
     }
   }
 }
@@ -235,16 +269,18 @@
 | `mods.<repo>.page1Etag` | string \| null | 第 1 页 `If-None-Match` 用 |
 | `mods.<repo>.page1FetchedAt` | string \| null | 第 1 页最近一次抓取时间（每天一次判断） |
 | `mods.<repo>.pages.<n>` | string | 第 n 页（n≥2）最近一次抓取时间（7/30/90 天到期判断） |
+| `mods.<repo>.tagsFetchedAt` | string \| null | 该模组 git tag 列表最近一次全量抓取时间（每天一次判断） |
 
 ### 按 tag 新旧分档刷新
 
 分档常量在 `src/refresh-state.js` 的 `REFRESH_TIERS`：第 1 页每天、第 2 页每 7 天、第 3 页每 30 天、
 第 4 页起每 90 天。每轮按 `fetchedAt` 判断到期页，第 1 页带旧 ETag 条件请求；抓到的页按 tag 覆盖缓存，
 没抓到的旧条目保留；合并后按 `publishedAt` 降序（同时间按 tag 升序）。
+**git tag 列表**与 releases 分档独立，每天全量抓一次（`tagsFetchedAt` 判断），用于补全 tag-only 条目。
 
 per-mod 文件与调度状态分离：ETag 每天变也不会重写 `releases/<owner>/<repo>.json`，只有 `releases` 数据真的变化
-（下载量/体积/元数据）才重写；调度时间变化只改 `state/refresh.json`。`--no-cache` 会忽略 state 与旧文件，
-全量抓所有页。
+（下载量/体积/元数据/tag 列表新增）才重写；调度时间变化只改 `state/refresh.json`。`--no-cache` 会忽略 state 与旧文件，
+全量抓所有 releases 页与 tag 列表。
 
 ## mindustry/versions.json
 

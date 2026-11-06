@@ -72,6 +72,7 @@ export function normalizeRelease(raw, { repo, hasJava }) {
     tag,
     // 官方数据里有 name 带尾随空格的 release，空名回退 tag
     name: name || tag,
+    hasRelease: true,
     prerelease: raw.prerelease === true,
     publishedAt: raw.published_at ?? null,
     htmlUrl: raw.html_url ?? null,
@@ -82,6 +83,31 @@ export function normalizeRelease(raw, { repo, hasJava }) {
     downloadUrl: pickDownloadUrl(assets, { hasJava, archiveUrl }),
     sourceArchiveUrl: archiveUrl,
     assets,
+  };
+}
+
+// 旧文件没有 hasRelease 字段 → 视作 release 条目
+export function isReleaseEntry(entry) {
+  return Boolean(entry) && entry.hasRelease !== false;
+}
+
+// 无 GitHub Release 的 git tag：不能判定 prerelease/发布时间，下载地址用源码归档
+export function buildTagOnlyRelease({ repo, tag }) {
+  const archiveUrl = sourceArchiveUrl(repo, tag);
+  return {
+    tag,
+    name: tag,
+    hasRelease: false,
+    prerelease: null,
+    publishedAt: null,
+    htmlUrl: `https://github.com/${assertRepo(repo)}/tree/${encodeURIComponent(tag)}`,
+    modVersion: null,
+    minGameVersion: null,
+    metadataPath: null,
+    metadataStatus: null,
+    downloadUrl: archiveUrl,
+    sourceArchiveUrl: archiveUrl,
+    assets: [],
   };
 }
 
@@ -99,9 +125,41 @@ export function normalizeReleases(raws, { repo, hasJava }) {
   return releases;
 }
 
-// 按 publishedAt 降序、同一时间按 tag 升序；没有 publishedAt 的排最后
+// tag 名自然比较（v1.10 > v1.9），用于 tag-only 条目排序
+function naturalCompare(left, right) {
+  const chunks = (value) => String(value).match(/\d+|\D+/g) ?? [];
+  const a = chunks(left);
+  const b = chunks(right);
+  const length = Math.min(a.length, b.length);
+  for (let index = 0; index < length; index += 1) {
+    const chunkA = a[index];
+    const chunkB = b[index];
+    const digitsA = /^\d+$/.test(chunkA);
+    const digitsB = /^\d+$/.test(chunkB);
+    if (digitsA && digitsB) {
+      const diff = Number(chunkA) - Number(chunkB);
+      if (diff !== 0) {
+        return diff;
+      }
+    } else if (chunkA !== chunkB) {
+      return chunkA < chunkB ? -1 : 1;
+    }
+  }
+  return a.length - b.length;
+}
+
+// 排序：有 Release 的条目在前（publishedAt 降序、同时间 tag 升序），
+// tag-only 条目在后（tag 名称自然降序）
 export function sortReleases(releases) {
   return [...releases].sort((a, b) => {
+    const releaseA = isReleaseEntry(a);
+    const releaseB = isReleaseEntry(b);
+    if (releaseA !== releaseB) {
+      return releaseA ? -1 : 1;
+    }
+    if (!releaseA) {
+      return -naturalCompare(a?.tag ?? '', b?.tag ?? '');
+    }
     const timeA = a?.publishedAt ? Date.parse(a.publishedAt) : Number.NaN;
     const timeB = b?.publishedAt ? Date.parse(b.publishedAt) : Number.NaN;
     const valueA = Number.isNaN(timeA) ? -Infinity : timeA;

@@ -68,7 +68,13 @@ function fakeClients() {
     apiClient: {
       async get(url) {
         apiCalls.push(url);
-        throw new Error('迁移不应触发 API 抓取');
+        if (url.includes('/tags?')) {
+          return {
+            status: 200,
+            text: JSON.stringify([{ name: 'v1.0' }, { name: 'v0.9' }]),
+          };
+        }
+        throw new Error('迁移不应触发 release 抓取');
       },
     },
     rawClient: {
@@ -80,7 +86,8 @@ function fakeClients() {
             text: JSON.stringify([officialMod('owner/demo')]),
           };
         }
-        throw new Error(`迁移不应请求 ${url}`);
+        // mod.hjson 不存在时 fetchModMetadata 会按 404 记 missing
+        return { status: 404, text: '' };
       },
     },
   };
@@ -119,34 +126,50 @@ test('旧 flat 文件迁移：读旧当缓存 → 写新路径 → 删旧文件�
   });
 
   assert.equal(result.code, 0);
-  assert.equal(clients.apiCalls.length, 0, '迁移不应消耗 API');
+  // 只应请求 tags（releases 页不重抓）
+  assert.equal(clients.apiCalls.length, 1, '只应抓一次 tags');
+  assert.ok(clients.apiCalls[0].includes('/tags?'));
   // 旧 flat 删除、新路径生成
   await assert.rejects(stat(path.join(dir, 'releases', 'owner_demo.json')), /ENOENT/);
   const newFile = JSON.parse(
     await readFile(path.join(dir, 'releases', 'owner', 'demo.json'), 'utf8'),
   );
   assert.equal(newFile.repo, repo);
-  // 迁移不改变数据与 generatedAt，且不再写 source
-  assert.equal(newFile.generatedAt, GENERATED_AT);
-  assert.deepEqual(newFile.releases, legacyReleaseFile(repo).releases);
   assert.equal('source' in newFile, false);
+  // 原有 Release 条目保留并标 hasRelease=true；缺失的 git tag 补成 tag-only 条目
+  assert.equal(newFile.releases.length, 2);
+  assert.equal(newFile.releases[0].tag, 'v1.0');
+  assert.equal(newFile.releases[0].hasRelease, true);
+  assert.equal(newFile.releases[1].tag, 'v0.9');
+  assert.equal(newFile.releases[1].hasRelease, false);
+  assert.equal(newFile.releases[1].prerelease, null);
+  assert.equal(newFile.releases[1].publishedAt, null);
+  assert.deepEqual(newFile.releases[1].assets, []);
+  assert.equal(
+    newFile.releases[1].downloadUrl,
+    'https://github.com/owner/demo/archive/refs/tags/v0.9.zip',
+  );
 
-  // index：releasesPath 新格式、releaseDataUpdatedAt 与文件一致
+  // index：releasesPath 新格式、releaseDataUpdatedAt 与文件一致、tagCount/releaseCount
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
   assert.equal(index.mods[0].releasesPath, 'releases/owner/demo.json');
-  assert.equal(index.mods[0].releaseDataUpdatedAt, GENERATED_AT);
+  assert.equal(index.mods[0].releaseDataUpdatedAt, newFile.generatedAt);
+  assert.equal(index.mods[0].tagCount, 2);
+  assert.equal(index.mods[0].releaseCount, 1);
 
-  // state：以 repo 为键，第 1 页 ETag/时间从旧 source 迁移
+  // state：以 repo 为键，第 1 页 ETag/时间从旧 source 迁移，tagsFetchedAt 已记录
   const state = JSON.parse(
     await readFile(path.join(dir, 'state', 'refresh.json'), 'utf8'),
   );
   const entry = state.mods[repo];
   assert.equal(entry.page1Etag, 'W/"legacy"');
   assert.equal(entry.page1FetchedAt, FETCHED_AT);
+  assert.equal(typeof entry.tagsFetchedAt, 'string');
 
-  // summary 带释放路径列
+  // summary 带释放路径与 tagCount 列
   const summary = JSON.parse(await readFile(path.join(dir, 'summary.json'), 'utf8'));
   assert.equal(summary.mods[0].releasesPath, 'releases/owner/demo.json');
+  assert.equal(summary.mods[0].tagCount, 2);
   const csv = await readFile(path.join(dir, 'summary.csv'), 'utf8');
   assert.ok(csv.startsWith('\uFEFF'));
   assert.ok(csv.split('\r\n')[0].endsWith(',releasesPath'));
@@ -170,6 +193,7 @@ test('旧 flat 文件迁移：读旧当缓存 → 写新路径 → 删旧文件�
   assert.equal(second.indexChanged, false);
   assert.equal(second.summaryChanged, false);
   assert.equal(second.stateChanged, false);
+  assert.equal(clients.apiCalls.length, 1, '第二次运行不再抓 tags/releases');
   assert.equal(await hashFile(path.join(dir, 'index.json')), hashes.index);
   assert.equal(await hashFile(path.join(dir, 'summary.json')), hashes.summary);
   assert.equal(await hashFile(path.join(dir, 'summary.csv')), hashes.csv);

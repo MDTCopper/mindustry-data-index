@@ -14,8 +14,12 @@ import {
   normalizeReleases,
   mergeReleaseMetadata,
   mergeReleasesByTag,
+  buildTagOnlyRelease,
+  isReleaseEntry,
+  sortReleases,
   buildReleasesFile,
 } from './releases.js';
+import { fetchAllTags } from './tags.js';
 import { fetchModMetadata } from './mod-meta.js';
 import { computeModStats } from './stats.js';
 import {
@@ -29,6 +33,7 @@ import {
   buildRefreshStateFile,
   cloneModState,
   isPageDue,
+  isTagsDue,
   normalizeRefreshState,
   stateBodyChanged,
 } from './refresh-state.js';
@@ -242,13 +247,19 @@ export function parseArgs(argv) {
 function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
   const hasFile = Array.isArray(file?.releases);
   const releases = hasFile ? file.releases : [];
+  const releaseEntries = releases.filter(isReleaseEntry);
   const stats = computeModStats(releases, mod.hasJava === true);
-  const first = releases[0] ?? null;
+  const first = releaseEntries[0] ?? null;
   const releaseCount = hasFile
-    ? releases.length
+    ? releaseEntries.length
     : typeof oldEntry?.releaseCount === 'number'
       ? oldEntry.releaseCount
       : 0;
+  const tagCount = hasFile
+    ? releases.length
+    : typeof oldEntry?.tagCount === 'number'
+      ? oldEntry.tagCount
+      : releaseCount;
   const latestRelease = first
     ? {
         tag: first.tag,
@@ -281,6 +292,7 @@ function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
       ? relPath
       : (oldEntry?.releasesPath ?? (file ? relPath : null)),
     releaseCount,
+    tagCount,
     totalDownloads: stats.totalDownloads,
     allAssetsDownloads: stats.allAssetsDownloads,
     latestDownloads: stats.latestDownloads,
@@ -437,19 +449,56 @@ async function processMod(context) {
         })
       : { releases: [], metaFetched: 0, metaReused: 0 };
 
-    // 按 tag 合并：抓到的页覆盖缓存同 tag（下载量更新），没抓到的旧条目保留
-    const mergedReleases = mergeReleasesByTag(
+    // 按 tag 合并：抓到的页覆盖缓存同 tag（下载量更新），没抓到的旧条目保留；
+    // 旧文件没有 hasRelease 字段 → 统一补成 true（一次性迁移）
+    let entries = mergeReleasesByTag(
       previous?.releases ?? [],
       metaMerged.releases,
-    );
+    ).map((release) => (isReleaseEntry(release) ? { ...release, hasRelease: true } : release));
+
+    // 全部 git tag：每天全量抓一次，把没有 Release 的 tag 补成 tag-only 条目
+    let tagsFetched = false;
+    let tagFetchedCount = 0;
+    if (!options.cache || isTagsDue(modState?.tagsFetchedAt ?? null, nowMs)) {
+      try {
+        const tagResult = await fetchAllTags(apiClient, mod.repo);
+        tagsFetched = true;
+        tagFetchedCount = tagResult.tags.length;
+        const present = new Set(entries.map((release) => release.tag));
+        const tagOnly = tagResult.tags
+          .filter((tag) => !present.has(tag))
+          .map((tag) => buildTagOnlyRelease({ repo: mod.repo, tag }));
+        if (tagOnly.length > 0) {
+          const tagMeta = await mergeReleaseMetadata({
+            previousReleases: previous?.releases ?? [],
+            releases: tagOnly,
+            fetchMetadata: (tag) =>
+              rawPool.run(() =>
+                fetchModMetadata(rawClient, {
+                  repo: mod.repo,
+                  tag,
+                  hasJava,
+                }),
+              ),
+          });
+          entries.push(...tagMeta.releases);
+          metaMerged.metaFetched += tagMeta.metaFetched;
+          metaMerged.metaReused += tagMeta.metaReused;
+        }
+      } catch (error) {
+        // tag 列表失败不影响 release 数据：沿用旧 tag-only 条目，下次再抓
+        log(`[警告] ${mod.repo} 的 git tag 列表抓取失败，沿用旧数据：${error.message}`);
+      }
+    }
+    entries = sortReleases(entries);
     const nextFile = buildReleasesFile({
       repo: mod.repo,
-      releases: mergedReleases,
+      releases: entries,
       // 数据没变但只是迁移路径时沿用旧 generatedAt，避免 index 的 releaseDataUpdatedAt 抖动
       generatedAt: releaseFileBodyChanged(previous, {
         formatVersion: 1,
         repo: mod.repo,
-        releases: mergedReleases,
+        releases: entries,
       })
         ? now
         : (previous?.generatedAt ?? now),
@@ -465,8 +514,11 @@ async function processMod(context) {
     }
     const finalFile = shouldWrite ? nextFile : (previous ?? nextFile);
 
-    // 更新本模组的分页调度状态
+    // 更新本模组的分页/tag 调度状态
     const nextState = cloneModState(modState);
+    if (tagsFetched) {
+      nextState.tagsFetchedAt = now;
+    }
     for (const pageResult of fetchedPages) {
       const page = pageResult.page;
       if (page === 1) {
@@ -492,13 +544,14 @@ async function processMod(context) {
       nextState.pages = {};
     }
 
+    const releaseEntryCount = nextFile.releases.filter(isReleaseEntry).length;
     if (changed) {
       log(
-        `[${mod.repo}] release ${nextFile.releases.length} 条，元数据新抓 ${metaMerged.metaFetched} 个、复用 ${metaMerged.metaReused} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
+        `[${mod.repo}] ${nextFile.releases.length} 个 tag（${releaseEntryCount} 个有 Release），元数据新抓 ${metaMerged.metaFetched} 个、复用 ${metaMerged.metaReused} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
       );
-    } else if (fetchedPages.length > 0) {
+    } else if (fetchedPages.length > 0 || tagsFetched) {
       log(
-        `[${mod.repo}] release 内容未变（第 ${fetchedPages.map((page) => page.page).join('、')} 页已刷新，文件不重写）`,
+        `[${mod.repo}] 内容未变（${fetchedPages.length > 0 ? `release 第 ${fetchedPages.map((page) => page.page).join('、')} 页` : ''}${fetchedPages.length > 0 && tagsFetched ? '、' : ''}${tagsFetched ? `tag 列表 ${tagFetchedCount} 个` : ''}已刷新，文件不重写）`,
       );
     }
     return {
@@ -690,22 +743,23 @@ export async function runMods(options, context) {
   // 总表：基于合并后的完整 releases 聚合
   const summaryRows = results.map((result, index) => {
     const mod = selected[index];
-    const first = result.file?.releases?.[0] ?? null;
+    const firstRelease = result.file?.releases?.find(isReleaseEntry) ?? null;
     return {
       repo: mod.repo,
       name: mod.name,
       author: mod.author,
       stars: mod.stars,
       releaseCount: result.entry.releaseCount,
+      tagCount: result.entry.tagCount,
       totalDownloads: result.entry.totalDownloads,
       allAssetsDownloads: result.entry.allAssetsDownloads,
       latestDownloads: result.entry.latestDownloads,
       latestSizeBytes: result.entry.latestSizeBytes,
       totalSizeBytes: result.entry.totalSizeBytes,
-      latestTag: first?.tag ?? null,
-      latestPrerelease: first ? first.prerelease : null,
-      latestModVersion: first?.modVersion ?? null,
-      latestMinGameVersion: first?.minGameVersion ?? null,
+      latestTag: firstRelease?.tag ?? null,
+      latestPrerelease: firstRelease ? firstRelease.prerelease : null,
+      latestModVersion: firstRelease?.modVersion ?? null,
+      latestMinGameVersion: firstRelease?.minGameVersion ?? null,
       iconUrl: modIconUrl(mod.repo, mod.hasIcon),
       releasesPath: result.entry.releasesPath,
     };

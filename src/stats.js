@@ -31,7 +31,10 @@ export function preferredAsset(assets, hasJava) {
 }
 
 export function computeModStats(releases, hasJava) {
-  const list = Array.isArray(releases) ? releases : [];
+  // tag-only 条目没有 release 资产，统计只按有 Release 的条目算（hasRelease 缺省视作 release）
+  const list = (Array.isArray(releases) ? releases : []).filter(
+    (release) => release?.hasRelease !== false,
+  );
   let totalDownloads = 0;
   let allAssetsDownloads = 0;
   let latestDownloads = 0;

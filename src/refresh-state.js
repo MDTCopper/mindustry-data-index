@@ -33,8 +33,22 @@ export function isPageDue(fetchedAt, page, now = Date.now()) {
   return now - time >= pageRefreshIntervalMs(page);
 }
 
+// git tag 列表每天全量抓一次（分页取全；与 releases 分档独立）
+export const TAGS_REFRESH_INTERVAL_MS = DAY_MS;
+
+export function isTagsDue(tagsFetchedAt, now = Date.now()) {
+  if (typeof tagsFetchedAt !== 'string' || !tagsFetchedAt) {
+    return true;
+  }
+  const time = Date.parse(tagsFetchedAt);
+  if (Number.isNaN(time)) {
+    return true;
+  }
+  return now - time >= TAGS_REFRESH_INTERVAL_MS;
+}
+
 function emptyModState() {
-  return { page1Etag: null, page1FetchedAt: null, pages: {} };
+  return { page1Etag: null, page1FetchedAt: null, pages: {}, tagsFetchedAt: null };
 }
 
 // state 文件清洗；格式不对按空 state 处理（首次运行/迁移）
@@ -60,6 +74,8 @@ export function normalizeRefreshState(raw) {
         page1FetchedAt:
           typeof entry.page1FetchedAt === 'string' ? entry.page1FetchedAt : null,
         pages,
+        tagsFetchedAt:
+          typeof entry.tagsFetchedAt === 'string' ? entry.tagsFetchedAt : null,
       };
     }
   }
@@ -78,6 +94,7 @@ export function cloneModState(entry) {
     page1Etag: entry.page1Etag ?? null,
     page1FetchedAt: entry.page1FetchedAt ?? null,
     pages: { ...entry.pages },
+    tagsFetchedAt: entry.tagsFetchedAt ?? null,
   };
 }
 

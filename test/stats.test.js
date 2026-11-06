@@ -79,3 +79,35 @@ test('computeModStats：最新一条无首选资产时 latest 为 0/null，但�
     totalSizeBytes: 50,
   });
 });
+
+test('computeModStats：tag-only 条目不影响统计与 latest（按有 Release 的条目算）', () => {
+  const entries = [
+    { tag: 'v2.0', hasRelease: true, assets: [{ name: 'mod.jar', size: 50, downloadCount: 4 }] },
+    { tag: 'v1.9', hasRelease: false, assets: [] },
+    { tag: 'v1.8', hasRelease: false, assets: [] },
+  ];
+  assert.deepEqual(computeModStats(entries, true), {
+    totalDownloads: 4,
+    allAssetsDownloads: 4,
+    latestDownloads: 4,
+    latestSizeBytes: 50,
+    totalSizeBytes: 50,
+  });
+  // 只有 tag-only 时统计为 0/null
+  assert.deepEqual(
+    computeModStats(
+      [
+        { tag: 'v1', hasRelease: false, assets: [] },
+        { tag: 'v2', hasRelease: false, assets: [] },
+      ],
+      true,
+    ),
+    {
+      totalDownloads: 0,
+      allAssetsDownloads: 0,
+      latestDownloads: 0,
+      latestSizeBytes: null,
+      totalSizeBytes: null,
+    },
+  );
+});

@@ -17,6 +17,7 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 | --- | --- |
 | 模组名单 | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json` |
 | 模组 release 列表 | `https://api.github.com/repos/<owner>/<repo>/releases`（分页取全，含 prerelease/draft 标记） |
+| 模组全部 git tag | `https://api.github.com/repos/<owner>/<repo>/tags`（分页取全；用于补全没有建 Release 的 tag） |
 | 每个 tag 的模组元数据 | `https://raw.githubusercontent.com/<owner>/<repo>/<tag>/mod.hjson`（候选 `mod.json`、`assets/mod.hjson`、`assets/mod.json`） |
 | 模组图标地址 | `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/<owner>_<repo>`（只记录地址，不下载图标字节） |
 | 游戏正式版列表 | `https://api.github.com/repos/Anuken/Mindustry/releases`（分页取全，当前约 200 条） |
@@ -27,11 +28,11 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 ## 产物与 raw 地址
 
 ```
-index.json                              # 全量模组索引（官方列表顺序，含下载量/体积统计）
-releases/<owner>/<repo>.json            # 单个模组的全部 release + 逐 tag 元数据（只存数据）
+index.json                              # 全量模组索引（官方列表顺序，含下载量/体积/ tag 数统计）
+releases/<owner>/<repo>.json            # 单个模组的全部 git tag（有 Release 的 + tag-only）+ 逐 tag 元数据
 summary.json                            # 下载量/体积总表（含全局合计，按下载量降序）
 summary.csv                             # 同一份总表的 CSV（UTF-8 BOM，Excel 直接打开）
-state/refresh.json                      # 分页调度缓存（各模组第 1 页 ETag + 深层页最近抓取时间）
+state/refresh.json                      # 调度缓存（第 1 页 ETag、深层页与 tag 列表最近抓取时间）
 mindustry/versions.json                 # Mindustry 可用版本列表（正式版 + 最新 BE）
 mindustry/mod-gate.json                 # 逐版本最小模组版本门禁 + 合并后的 rules
 mindustry/heartbeat.json                # 每日心跳，仅用于保持仓库活跃（见下）
@@ -55,24 +56,34 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 
 - `index.json`：官方列表字段（`repo`、`internalName`、`name`、`author`、`version`、`minGameVersion`、
   `lastUpdated`、`stars`、`hasIcon`、`hasScripts`、`hasJava`，原样保留类型与脏值）加上
-  `iconUrl`、`iconHash`、`releasesPath`、`releaseCount`、`latestRelease`、`releaseDataUpdatedAt`，
+  `iconUrl`、`iconHash`、`releasesPath`、`releaseCount`（有 GitHub Release 的 tag 数）、`tagCount`
+  （全部 git tag 数）、`latestRelease`、`releaseDataUpdatedAt`，
   以及下载量/体积统计：`totalDownloads`（历史累计，按首选资产）、`allAssetsDownloads`（全部资产）、
-  `latestDownloads`、`latestSizeBytes`、`totalSizeBytes`；`latestRelease` 里也带 `downloads`/`sizeBytes`。
-  `skipped` 记录本次抓取失败的仓库。`iconUrl` 与启动器 `githubModIconBase` 一致
-  （`icons/<owner>_<repo>`，`hasIcon === false` 时为 `null`），`iconHash` 原样保留官方值供客户端做缓存。
-- `releases/<owner>/<repo>.json`：每条 release 有 `tag`、`name`、`prerelease`、`publishedAt`、`htmlUrl`、
-  `modVersion`、`minGameVersion`、`metadataPath`、`metadataStatus`、`downloadUrl`、
-  `sourceArchiveUrl`、`assets`。**首选资产口径与 `downloadUrl` 一致**：`hasJava` 取体积最大的 `.jar`，
-  否则取体积最大的 `.zip`；没有对应资产时下载量按 0、体积为 `null`（`downloadUrl` 仍回落源码归档，
-  启动器对「Java 模组没有 jar」是禁用下载、不给按钮）。
-- `summary.json`：`totals`（`mods`/`releases`/`downloads`/`sizeBytes` 全局合计）+ `mods[]`
-  （`repo`、`name`、`author`、`stars`、`releaseCount`、5 个统计字段、`latestTag`/`latestPrerelease`/
-  `latestModVersion`/`latestMinGameVersion`、`iconUrl`、`releasesPath`），按 `totalDownloads` 降序
-  （并列按 `stars` 降序、`repo` 升序）；无 release / 无资产的模组也保留，数值为 0 或 `null`。
-- `summary.csv`：与 `summary.json` 同列（不含 `totals`），UTF-8 **带 BOM**、CRLF 换行，逗号/引号/换行
-  按 CSV 规则转义，可直接用 Excel 打开。
-- `state/refresh.json`：只给增量调度用（`page1Etag` + `page1FetchedAt` + 深层页抓取时间），
-  使用方不需要读取；它只在 ETag / 抓取时间变化时更新，每天是一次小 diff。
+  `latestDownloads`、`latestSizeBytes`、`totalSizeBytes`；`latestRelease` 是「最新的有 Release 的条目」，
+  并带 `downloads`/`sizeBytes`。`skipped` 记录本次抓取失败的仓库。`iconUrl` 与启动器
+  `githubModIconBase` 一致（`icons/<owner>_<repo>`，`hasIcon === false` 时为 `null`），
+  `iconHash` 原样保留官方值供客户端做缓存。
+- `releases/<owner>/<repo>.json`：收录该仓库的**全部 git tag**。每条有 `tag`、`name`、`hasRelease`、
+  `prerelease`、`publishedAt`、`htmlUrl`、`modVersion`、`minGameVersion`、`metadataPath`、
+  `metadataStatus`、`downloadUrl`、`sourceArchiveUrl`、`assets`。
+  - `hasRelease === true`：GitHub Release 条目，`prerelease`/`publishedAt` 来自 Release，资产按 release
+    接口取；`downloadUrl` 用首选资产（`hasJava` 取体积最大的 `.jar`，否则 `.zip`），没有对应资产回落源码归档。
+    启动器对「Java 模组没有 jar」是禁用下载、不给按钮。
+  - `hasRelease === false`：只有 git tag、没有建 Release，此时 `prerelease`/`publishedAt` 为 `null`
+    （无法判定），`assets` 为空，`downloadUrl` 就是源码归档地址，`htmlUrl` 指向 `tree/<tag>`。
+    元数据（`modVersion`/`minGameVersion`）仍按 tag 抓取，抓不到为 `null`。
+  - 排序：有 Release 的条目在前（`publishedAt` 降序、同时间 tag 升序），tag-only 条目在后
+    （tag 名称自然降序，如 `v1.10` 在 `v1.9` 前）。
+  - **首选资产口径**：与 `downloadUrl` 一致；没有对应资产时下载量按 0、体积为 `null`。
+- `summary.json`：`totals`（`mods`/`releases`/`downloads`/`sizeBytes` 全局合计，`releases` 只统计有 Release
+  的条目）+ `mods[]`（`repo`、`name`、`author`、`stars`、`releaseCount`、`tagCount`、5 个统计字段、
+  `latestTag`/`latestPrerelease`/`latestModVersion`/`latestMinGameVersion`、`iconUrl`、`releasesPath`），
+  按 `totalDownloads` 降序（并列按 `stars` 降序、`repo` 升序）；下载量/体积只按 Release 资产算，
+  tag-only 条目不受影响（0/null）；无 Release / 无资产的模组也保留。
+- `summary.csv`：与 `summary.json` 同列（不含 `totals`；`tagCount` 紧跟 `releaseCount`，
+  `releasesPath` 为最后一列），UTF-8 **带 BOM**、CRLF 换行，逗号/引号/换行按 CSV 规则转义，可直接用 Excel 打开。
+- `state/refresh.json`：只给增量调度用（`page1Etag` + `page1FetchedAt` + 深层页抓取时间 +
+  `tagsFetchedAt`），使用方不需要读取；它只在 ETag / 抓取时间变化时更新，每天是一次小 diff。
 - `mindustry/versions.json`：`update_time`、`source`、`releases[]`（`name`/`tag_name`/`published_at`/
   `body`（空串）/`reactions.total_count`/`assets[]`）、`latest_be`（没有 `reactions` 键）、
   `etags`（增量缓存，使用方可忽略）。启动器 `MindustryReleaseListSnapshot.parse` 直接可读。
@@ -166,17 +177,21 @@ GitHub releases API 每页最多 100 条、按新→旧返回。越老的 tag �
 - 每轮只抓「到期的页」：第 1 页带 `If-None-Match` 条件请求，304 就只更新调度时间；深层页到期才抓。
   抓到的页按 tag 合并覆盖缓存（下载量随之更新），没抓的旧条目原样保留、元数据不重抓，合并后按
   `publishedAt` 降序（同时间按 tag 升序）。
-- **缓存与数据分离**：per-mod 文件只存 `releases` 数据，只有数据真的变化才重写；ETag 与各页抓取时间
-  存在 `state/refresh.json`。这样即使 GitHub 的 ETag 天天变，也不会把 991 个 release 文件全部重写，
+- **全部 git tag** 与 releases 分档独立：每个模组的 tag 列表每天全量抓一次
+  （`/repos/{owner}/{repo}/tags`，分页取全），把没有 Release 的 tag 补成 tag-only 条目；
+  当天抓过就记在 `state/refresh.json` 的 `tagsFetchedAt`，同一天不重复抓。
+- **缓存与数据分离**：per-mod 文件只存 `releases` 数据，只有数据真的变化才重写；ETag 与各页/ tag 列表
+  抓取时间存在 `state/refresh.json`。这样即使 GitHub 的 ETag 天天变，也不会把 991 个 release 文件全部重写，
   每天最多产生一次很小的 `state/refresh.json` diff。
-- 首次运行无缓存 / `--no-cache` 时全量抓所有页；单页抓取失败保留该页旧数据、该模组记入 `index.skipped`，
-  不影响其它模组，退出码仍为 0。
+- 首次运行无缓存 / `--no-cache` 时全量抓所有 releases 页与 tag 列表；单页/ tag 列表抓取失败保留旧数据、
+  该模组记入 `index.skipped`，不影响其它模组，退出码仍为 0。
 
 ## 增量机制
 
-- **模组索引**：按上面的分档刷新读 releases；只有抓到的页里出现旧文件没有的 tag、或旧条目
-  `metadataStatus != ok` 时，才去读这些 tag 的 `mod.hjson`。per-mod 文件、`index.json`、`summary.json`、
-  `summary.csv` 都只在数据主体变化时重写（`generatedAt` 只在内容变化时更新）。
+- **模组索引**：按上面的分档刷新读 releases、每天抓一次全部 git tag；只有抓到的页/ tag 里出现旧文件
+  没有的 tag、或旧条目 `metadataStatus != ok` 时，才去读这些 tag 的 `mod.hjson`。
+  per-mod 文件、`index.json`、`summary.json`、`summary.csv` 都只在数据主体变化时重写
+  （`generatedAt` 只在内容变化时更新）。
 - **统计与总表**：每轮都基于合并后的完整 releases 重新算下载量/体积；数值没变就不重写总表。
 - **版本列表**：正式版第一页与 BE 各带旧 ETag；304 就复用旧数据。第一页 200 且里面全是已知 release 时
   只把第一页与本地其余合并（不翻后面页）；只有出现未知 release id（或本地还没有列表）才翻页重建完整列表
@@ -193,8 +208,12 @@ GitHub releases API 每页最多 100 条、按新→旧返回。越老的 tag �
 - **路径迁移**：per-mod 文件已从 `releases/<owner>_<repo>.json` 改为 `releases/<owner>/<repo>.json`。
   首次运行会读取旧 flat 文件当缓存、写入新路径并删除旧文件（不重新抓取）；之后只走新路径，
   `validate` 若发现旧 flat 文件会给出「迁移未完成」警告。
-- **tag ≠ release**：只收录 GitHub 上有 release 的 tag，仓库里没有建 release 的 tag 不会出现。
-  官方列表里有不少模组 0 tag / 0 release，这类模组照样有 per-mod 文件（`releases: []`、`releaseCount: 0`）。
+- **全部 git tag**：收录仓库里的所有 git tag，而不只是建了 GitHub Release 的；没有 Release 的 tag 也
+  会出现在数据里（`hasRelease: false`、`prerelease`/`publishedAt` 为 `null`、下载地址用源码归档）。
+  例：`oscillatorium/alef-null` 有 15 个 git tag、其中 5 个建了 Release，会得到 15 条
+  （5 条 `hasRelease=true` + 10 条 `false`）。tag-only 条目的 mod 元数据同样会尽量抓取，抓不到为 `null`。
+  官方列表里有不少模组 0 tag / 0 release，这类模组照样有 per-mod 文件（`releases: []`、`tagCount: 0`）。
+- **同一 tag 后来补建 Release**：以 Release 数据覆盖旧的 tag-only 条目（下载量/资产/时间随之补上）。
 - **特殊 tag**：取 raw 元数据时优先对整个 tag 做 URL 编码（CJK、`+`、含 `/` 的 tag 实测可取），
   失败再回退原样 tag 与 `refs/tags/<tag>` 形态。
 - `mod.hjson` 取不到时 `modVersion` / `minGameVersion` 为 `null`，`metadataStatus` 说明原因。
