@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "SeuEarth/Factroundustry",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v2.0.0",
@@ -23,7 +23,9 @@
           "downloadCount": 319,
           "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v2.0.0/SpaceEarthEXFactroundustry.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v.1.1.0",
@@ -45,7 +47,9 @@
           "downloadCount": 21,
           "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v.1.1.0/SpaceEarthEXFactroundustry.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.0.0",
@@ -67,7 +71,25 @@
           "downloadCount": 69,
           "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v1.0.0/SpaceEarthEXFactroundustry.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v.1.1.0",
+      "modVersion": "1",
+      "minGameVersion": "137",
+      "maxGameVersion": 139,
+      "hasRelease": true
+    },
+    {
+      "tag": "v2.0.0",
+      "modVersion": "1",
+      "minGameVersion": "139",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

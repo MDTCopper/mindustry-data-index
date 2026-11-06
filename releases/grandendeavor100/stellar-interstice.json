@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "grandendeavor100/stellar-interstice",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "GammaRelease1.3",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.3.zip",
       "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.3.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "fb49eecbb95ab2ba6a67a9a0bddd0c88bf65ba73",
+      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/fb49eecbb95ab2ba6a67a9a0bddd0c88bf65ba73.zip"
     },
     {
       "tag": "GammaRelease1.2",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.2.zip",
       "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "bbd8e0fce6dca35417194d4b584d9965e32b23e5",
+      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/bbd8e0fce6dca35417194d4b584d9965e32b23e5.zip"
     },
     {
       "tag": "GammaRelease",
@@ -46,7 +50,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease.zip",
       "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "593bfd26d4dfcde7c95a7151505cce3c6f22fa7b",
+      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/593bfd26d4dfcde7c95a7151505cce3c6f22fa7b.zip"
     },
     {
       "tag": "BetaRelease",
@@ -61,7 +67,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/BetaRelease.zip",
       "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/BetaRelease.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "55ba4b8fd2ca10bfd0c29f57c8199ea251ca9208",
+      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/55ba4b8fd2ca10bfd0c29f57c8199ea251ca9208.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "BetaRelease",
+      "modVersion": "1.0",
+      "minGameVersion": "142",
+      "maxGameVersion": 145,
+      "hasRelease": true
+    },
+    {
+      "tag": "GammaRelease1.3",
+      "modVersion": "1.0",
+      "minGameVersion": "145",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "rqddqwq/darksteel",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "0.11",
@@ -23,7 +23,9 @@
           "downloadCount": 206,
           "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/0.11/darksteel.jar"
         }
-      ]
+      ],
+      "commitSha": "f5ac5cd652e4ac6e7eb107b873a7cb7f32a6a755",
+      "archiveByCommitUrl": "https://github.com/rqddqwq/darksteel/archive/f5ac5cd652e4ac6e7eb107b873a7cb7f32a6a755.zip"
     },
     {
       "tag": "darksteel",
@@ -45,7 +47,25 @@
           "downloadCount": 210,
           "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/darksteel/default.jar"
         }
-      ]
+      ],
+      "commitSha": "83d1e1408dd37be11827272733e4cb0e6c49ccfe",
+      "archiveByCommitUrl": "https://github.com/rqddqwq/darksteel/archive/83d1e1408dd37be11827272733e4cb0e6c49ccfe.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "darksteel",
+      "modVersion": "0.07",
+      "minGameVersion": "154",
+      "maxGameVersion": 160,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.11",
+      "modVersion": "0.09",
+      "minGameVersion": "160",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "sh1penfire/meld",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "aspectless-meld",
@@ -23,7 +23,9 @@
           "downloadCount": 34,
           "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/aspectless-meld/aspectless-meld.zip"
         }
-      ]
+      ],
+      "commitSha": "a88ba539b501ed9cc6f92302dae7e80aa4187287",
+      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/a88ba539b501ed9cc6f92302dae7e80aa4187287.zip"
     },
     {
       "tag": "meld-v146",
@@ -45,7 +47,9 @@
           "downloadCount": 399,
           "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/meld-v146/Meld-v146.zip"
         }
-      ]
+      ],
+      "commitSha": "e760ef08d8a3a58df6b1e8d75ba9e230618be5ad",
+      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/e760ef08d8a3a58df6b1e8d75ba9e230618be5ad.zip"
     },
     {
       "tag": "gameplay-test2",
@@ -67,7 +71,9 @@
           "downloadCount": 34,
           "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test2/meld-gameplay-test2.zip"
         }
-      ]
+      ],
+      "commitSha": "d321f4cdb7525b8b732ec9d7f22123a9d9ece607",
+      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/d321f4cdb7525b8b732ec9d7f22123a9d9ece607.zip"
     },
     {
       "tag": "gameplay-test",
@@ -89,7 +95,25 @@
           "downloadCount": 23,
           "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test/meld-gameplay-test.zip"
         }
-      ]
+      ],
+      "commitSha": "53ba9090429435ccda48e431c9cf4b9e6442c2c0",
+      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/53ba9090429435ccda48e431c9cf4b9e6442c2c0.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "meld-v146",
+      "modVersion": null,
+      "minGameVersion": "146",
+      "maxGameVersion": 151.1,
+      "hasRelease": true
+    },
+    {
+      "tag": "aspectless-meld",
+      "modVersion": "hjson gamma",
+      "minGameVersion": "151.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

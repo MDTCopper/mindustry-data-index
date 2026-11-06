@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "I-hope1/mod.make",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v1.4.3",
@@ -23,7 +23,9 @@
           "downloadCount": 883,
           "downloadUrl": "https://github.com/I-hope1/mod.make/releases/download/v1.4.3/mod.make-1.4.3.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.4.2",
@@ -45,7 +47,9 @@
           "downloadCount": 258,
           "downloadUrl": "https://github.com/I-hope1/mod.make/releases/download/v1.4.2/mod.make-1.4.2.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.4",
@@ -67,7 +71,9 @@
           "downloadCount": 215,
           "downloadUrl": "https://github.com/I-hope1/mod.make/releases/download/v1.4/mod.make136-1.4.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.21-alpha",
@@ -89,7 +95,9 @@
           "downloadCount": 32,
           "downloadUrl": "https://github.com/I-hope1/mod.make/releases/download/v1.21-alpha/mod.make.1.21.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.2-alpha",
@@ -111,7 +119,9 @@
           "downloadCount": 45,
           "downloadUrl": "https://github.com/I-hope1/mod.make/releases/download/v1.2-alpha/mod.make.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v2.3-beta",
@@ -126,7 +136,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/I-hope1/mod.make/archive/refs/tags/v2.3-beta.zip",
       "sourceArchiveUrl": "https://github.com/I-hope1/mod.make/archive/refs/tags/v2.3-beta.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "vbeta2.2",
@@ -141,7 +153,32 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/I-hope1/mod.make/archive/refs/tags/vbeta2.2.zip",
       "sourceArchiveUrl": "https://github.com/I-hope1/mod.make/archive/refs/tags/vbeta2.2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "vbeta2.2",
+      "modVersion": "beta2.2",
+      "minGameVersion": "105",
+      "maxGameVersion": 110,
+      "hasRelease": false
+    },
+    {
+      "tag": "v1.4",
+      "modVersion": "1.1",
+      "minGameVersion": "110",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.4.3",
+      "modVersion": "1.4.3",
+      "minGameVersion": "136",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

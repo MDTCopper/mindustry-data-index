@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "ReinKageno/AdditionalDistributionUtilities",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v1.2.0-release",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/refs/tags/v1.2.0-release.zip",
       "sourceArchiveUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/refs/tags/v1.2.0-release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.1.0-release",
@@ -38,7 +40,25 @@
           "downloadCount": 23,
           "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/releases/download/v1.1.0-release/ADU-v1.1.0-release.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.1.0-release",
+      "modVersion": "v.1.1.0 [[green]RELEASE",
+      "minGameVersion": "141",
+      "maxGameVersion": 145,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.2.0-release",
+      "modVersion": "v.1.2.0 Release",
+      "minGameVersion": "145",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

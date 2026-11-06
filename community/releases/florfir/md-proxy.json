@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "florfir/md-proxy",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v3",
@@ -23,7 +23,9 @@
           "downloadCount": 75,
           "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v3/md-proxy.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v2",
@@ -45,7 +47,9 @@
           "downloadCount": 101,
           "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v2/md-proxyDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1",
@@ -67,7 +71,18 @@
           "downloadCount": 51,
           "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v1/md-proxyDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v3",
+      "modVersion": "1",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

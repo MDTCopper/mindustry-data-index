@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "wmf-industries/terios",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.1",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.1.zip",
       "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "f05e7baeabbba50c27f07763ec95bb249ed043a5",
+      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/f05e7baeabbba50c27f07763ec95bb249ed043a5.zip"
     },
     {
       "tag": "v1",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.zip",
       "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "b927eac111863951258dd52a7349f96b9e3f05c7",
+      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/b927eac111863951258dd52a7349f96b9e3f05c7.zip"
     },
     {
       "tag": "B1",
@@ -53,7 +57,9 @@
           "downloadCount": 32,
           "downloadUrl": "https://github.com/WMF-Industries/Terios/releases/download/B1/TeriosBeta1.zip"
         }
-      ]
+      ],
+      "commitSha": "7785945708d6e943bc31798e9d12b9f44f307e12",
+      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/7785945708d6e943bc31798e9d12b9f44f307e12.zip"
     },
     {
       "tag": "A1",
@@ -68,7 +74,32 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/A1.zip",
       "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/A1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "6ba43fe2a52c71743136fc5f00fcb3957f0a8157",
+      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/6ba43fe2a52c71743136fc5f00fcb3957f0a8157.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "B1",
+      "modVersion": "Beta",
+      "minGameVersion": "127",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1",
+      "modVersion": "v1",
+      "minGameVersion": "137",
+      "maxGameVersion": 158,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.1",
+      "modVersion": "v1.1",
+      "minGameVersion": "158",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

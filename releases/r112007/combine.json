@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "r112007/combine",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "2.8.8.1",
@@ -20,10 +20,12 @@
         {
           "name": "2.8.8.1.jar",
           "size": 5871295,
-          "downloadCount": 61,
+          "downloadCount": 80,
           "downloadUrl": "https://github.com/R112007/combine/releases/download/2.8.8.1/2.8.8.1.jar"
         }
-      ]
+      ],
+      "commitSha": "61f9608c8fa4ad025d11f3e552243dbdb47872f3",
+      "archiveByCommitUrl": "https://github.com/r112007/combine/archive/61f9608c8fa4ad025d11f3e552243dbdb47872f3.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -45,7 +47,9 @@
           "downloadCount": 48,
           "downloadUrl": "https://github.com/R112007/combine/releases/download/mindustry-mod/2.8.8.jar"
         }
-      ]
+      ],
+      "commitSha": "2fcded05bb7bea8d8c5b5e27b8c436a6ff3f38b3",
+      "archiveByCommitUrl": "https://github.com/r112007/combine/archive/2fcded05bb7bea8d8c5b5e27b8c436a6ff3f38b3.zip"
     },
     {
       "tag": "2.7.8",
@@ -67,7 +71,18 @@
           "downloadCount": 1513,
           "downloadUrl": "https://github.com/R112007/combine/releases/download/2.7.8/2.7.8.jar"
         }
-      ]
+      ],
+      "commitSha": "2fcded05bb7bea8d8c5b5e27b8c436a6ff3f38b3",
+      "archiveByCommitUrl": "https://github.com/r112007/combine/archive/2fcded05bb7bea8d8c5b5e27b8c436a6ff3f38b3.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "2.8.8.1",
+      "modVersion": "2.8",
+      "minGameVersion": "160.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

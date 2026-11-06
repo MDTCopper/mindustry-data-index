@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "konkitoman/SpeedCtlMan",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "V0.2",
@@ -23,7 +23,9 @@
           "downloadCount": 9237,
           "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.2/SpeedCtlMan.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "V0.1",
@@ -45,7 +47,25 @@
           "downloadCount": 223,
           "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.1/SpeedCtlMan.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "V0.1",
+      "modVersion": "0.1",
+      "minGameVersion": "136",
+      "maxGameVersion": 137,
+      "hasRelease": true
+    },
+    {
+      "tag": "V0.2",
+      "modVersion": "0.2",
+      "minGameVersion": "137",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

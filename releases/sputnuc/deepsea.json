@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "sputnuc/deepsea",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "alpha-0-3_start-of-rework",
@@ -20,10 +20,12 @@
         {
           "name": "DeepSea.jar",
           "size": 12895338,
-          "downloadCount": 1200,
+          "downloadCount": 1201,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-3_start-of-rework/DeepSea.jar"
         }
-      ]
+      ],
+      "commitSha": "93227a330ef96edaaed63c73f4267082da117e77",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/93227a330ef96edaaed63c73f4267082da117e77.zip"
     },
     {
       "tag": "alpha-0-2",
@@ -45,7 +47,9 @@
           "downloadCount": 3990,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-2/DeepSea.jar"
         }
-      ]
+      ],
+      "commitSha": "7d0ee5a19fb30b3e3f28362a286ad774fbf655bc",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/7d0ee5a19fb30b3e3f28362a286ad774fbf655bc.zip"
     },
     {
       "tag": "alpha-0-1-1",
@@ -67,7 +71,9 @@
           "downloadCount": 410,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1-1/DeepSea.jar"
         }
-      ]
+      ],
+      "commitSha": "d084a95606280d7f5254442f24dc9f38335fb15c",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/d084a95606280d7f5254442f24dc9f38335fb15c.zip"
     },
     {
       "tag": "alpha-0-1",
@@ -89,7 +95,9 @@
           "downloadCount": 32,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1/DeepSeaDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "3d279ff8596e1146a58a50044fea46267c2114a8",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/3d279ff8596e1146a58a50044fea46267c2114a8.zip"
     },
     {
       "tag": "alpha-0-0-3",
@@ -111,7 +119,9 @@
           "downloadCount": 67,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-3/DeepSea.jar"
         }
-      ]
+      ],
+      "commitSha": "3bb1eb6df7fcc50630fb57b97740ec2935f7b72f",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/3bb1eb6df7fcc50630fb57b97740ec2935f7b72f.zip"
     },
     {
       "tag": "alpha-0-0-2",
@@ -133,7 +143,9 @@
           "downloadCount": 536,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-2/DeepSea.jar"
         }
-      ]
+      ],
+      "commitSha": "7e50f1867fcd6e0ae839275b0ca06d190f9e0c3d",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/7e50f1867fcd6e0ae839275b0ca06d190f9e0c3d.zip"
     },
     {
       "tag": "alpha-0-0-1",
@@ -155,7 +167,25 @@
           "downloadCount": 54,
           "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-1/DeepSea.jar"
         }
-      ]
+      ],
+      "commitSha": "970c515d00991bbc824b6b2090288e7cb1f56e7e",
+      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/970c515d00991bbc824b6b2090288e7cb1f56e7e.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "alpha-0-2",
+      "modVersion": "0.2",
+      "minGameVersion": "154.3",
+      "maxGameVersion": 159,
+      "hasRelease": true
+    },
+    {
+      "tag": "alpha-0-3_start-of-rework",
+      "modVersion": "0.2.1",
+      "minGameVersion": "159",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

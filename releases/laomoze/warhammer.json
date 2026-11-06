@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "laomoze/warhammer",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "beta3.8",
@@ -20,10 +20,12 @@
         {
           "name": "WARHAMMER-beta.3.82.jar",
           "size": 19149804,
-          "downloadCount": 2084,
+          "downloadCount": 2093,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/beta3.8/WARHAMMER-beta.3.82.jar"
         }
-      ]
+      ],
+      "commitSha": "6adaa210af31fb5a623559d961c71284f0c8cbf1",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/6adaa210af31fb5a623559d961c71284f0c8cbf1.zip"
     },
     {
       "tag": "beta3.7",
@@ -45,7 +47,9 @@
           "downloadCount": 1069,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/beta3.7/WARHAMMERServer-beta.3.73.jar"
         }
-      ]
+      ],
+      "commitSha": "82ad99185c97bafd4bbd193f2c87333386b68c21",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/82ad99185c97bafd4bbd193f2c87333386b68c21.zip"
     },
     {
       "tag": "beta3.2",
@@ -67,7 +71,9 @@
           "downloadCount": 1148,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/beta3.2/WARHAMMERServer-beta.3.3.jar"
         }
-      ]
+      ],
+      "commitSha": "00df0ea62691beed2e8e666c8cd4fcb1c615d45f",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/00df0ea62691beed2e8e666c8cd4fcb1c615d45f.zip"
     },
     {
       "tag": "ServiceBeta",
@@ -89,7 +95,9 @@
           "downloadCount": 4481,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/ServiceBeta/WARHAMMERServer-beta.3.41.jar"
         }
-      ]
+      ],
+      "commitSha": "4a500b710192a4118ff8c8b007014eea85e774bb",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/4a500b710192a4118ff8c8b007014eea85e774bb.zip"
     },
     {
       "tag": "Beta0.8",
@@ -111,7 +119,9 @@
           "downloadCount": 1692,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/Beta0.8/WARHAMMER.jar"
         }
-      ]
+      ],
+      "commitSha": "8e3205f18188d8cecb3c48732f293cda004e9d68",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/8e3205f18188d8cecb3c48732f293cda004e9d68.zip"
     },
     {
       "tag": "Beta0.5",
@@ -133,7 +143,9 @@
           "downloadCount": 1640,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/Beta0.5/WARHAMMER.jar"
         }
-      ]
+      ],
+      "commitSha": "ad8e128d82af6c2bac0a0aa6b3cbb6b468a4c8e4",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/ad8e128d82af6c2bac0a0aa6b3cbb6b468a4c8e4.zip"
     },
     {
       "tag": "beta.0.2",
@@ -155,7 +167,9 @@
           "downloadCount": 2135,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/beta.0.2/WARHAMMER.jar"
         }
-      ]
+      ],
+      "commitSha": "4a2aac68ea3562191dc6d26c662acea9e41a0a0b",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/4a2aac68ea3562191dc6d26c662acea9e41a0a0b.zip"
     },
     {
       "tag": "beta",
@@ -177,7 +191,9 @@
           "downloadCount": 453,
           "downloadUrl": "https://github.com/laomoze/WarHammer/releases/download/beta/WARHAMMER.jar"
         }
-      ]
+      ],
+      "commitSha": "c2d98b1af9fbcddd6aec7d25e6dbe6f6cd49468f",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/c2d98b1af9fbcddd6aec7d25e6dbe6f6cd49468f.zip"
     },
     {
       "tag": "ServiceBeta1.8",
@@ -192,7 +208,39 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/laomoze/warhammer/archive/refs/tags/ServiceBeta1.8.zip",
       "sourceArchiveUrl": "https://github.com/laomoze/warhammer/archive/refs/tags/ServiceBeta1.8.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "9da660c95dd1693443a8e690e13edc0e4066b674",
+      "archiveByCommitUrl": "https://github.com/laomoze/warhammer/archive/9da660c95dd1693443a8e690e13edc0e4066b674.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "Beta0.5",
+      "modVersion": "beta.0.4",
+      "minGameVersion": "154",
+      "maxGameVersion": 154.2,
+      "hasRelease": true
+    },
+    {
+      "tag": "ServiceBeta",
+      "modVersion": "beta.2.1",
+      "minGameVersion": "154.2",
+      "maxGameVersion": 159,
+      "hasRelease": true
+    },
+    {
+      "tag": "beta3.2",
+      "modVersion": "beta.3.2",
+      "minGameVersion": "159",
+      "maxGameVersion": 160.1,
+      "hasRelease": true
+    },
+    {
+      "tag": "beta3.8",
+      "modVersion": "beta.3.81",
+      "minGameVersion": "160.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

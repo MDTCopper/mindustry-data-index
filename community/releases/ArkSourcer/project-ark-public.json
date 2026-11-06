@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "ArkSourcer/project-ark-public",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "PPv1.1-alpha",
@@ -23,7 +23,9 @@
           "downloadCount": 264,
           "downloadUrl": "https://github.com/ArkSourcer/project-ark-public/releases/download/PPv1.1-alpha/Project.Paradox-public.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "PPv1.0.5-beta",
@@ -45,7 +47,9 @@
           "downloadCount": 22,
           "downloadUrl": "https://github.com/ArkSourcer/project-ark-public/releases/download/PPv1.0.5-beta/Project.Paradox-public.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "HAv1.0.1-beta",
@@ -67,7 +71,18 @@
           "downloadCount": 25,
           "downloadUrl": "https://github.com/ArkSourcer/project-ark-public/releases/download/HAv1.0.1-beta/Heavy.Armament.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "PPv1.1-alpha",
+      "modVersion": "v1.1-Alpha",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

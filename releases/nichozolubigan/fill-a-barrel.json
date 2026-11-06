@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "nichozolubigan/fill-a-barrel",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "New-update",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/New-update.zip",
       "sourceArchiveUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/New-update.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "7c4b034baf1224100bef5e1149a6faa757d510d7",
+      "archiveByCommitUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/7c4b034baf1224100bef5e1149a6faa757d510d7.zip"
     },
     {
       "tag": "Prototype",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Prototype.zip",
       "sourceArchiveUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Prototype.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "1dfa12400b593d3a5c2d406f806e0d66280b119b",
+      "archiveByCommitUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/1dfa12400b593d3a5c2d406f806e0d66280b119b.zip"
     },
     {
       "tag": "Main-Release",
@@ -46,7 +50,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Main-Release.zip",
       "sourceArchiveUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Main-Release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "fb59fbfde97e52a39614585db86d22fed9d7c9e3",
+      "archiveByCommitUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/fb59fbfde97e52a39614585db86d22fed9d7c9e3.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "Prototype",
+      "modVersion": "1.0 PR1",
+      "minGameVersion": "136",
+      "maxGameVersion": 154,
+      "hasRelease": true
+    },
+    {
+      "tag": "New-update",
+      "modVersion": "1.09",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

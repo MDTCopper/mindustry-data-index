@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "Eclipse-04/Avkott",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "0.1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 26299,
           "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1.1/Avkott-inside-a-jar.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "0.1",
@@ -45,7 +47,18 @@
           "downloadCount": 332,
           "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1/Avkott.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "0.1.1",
+      "modVersion": "0.1",
+      "minGameVersion": "136",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

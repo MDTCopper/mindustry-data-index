@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "argon1321/simple-additions",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "release3",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release3.zip",
       "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release3.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "705cdc457f1273a84fdd03fed34bb5789041ab48",
+      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/705cdc457f1273a84fdd03fed34bb5789041ab48.zip"
     },
     {
       "tag": "release4",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release4.zip",
       "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release4.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "8f2493d62b50a956c960d06f991efa0373b04221",
+      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/8f2493d62b50a956c960d06f991efa0373b04221.zip"
     },
     {
       "tag": "release2",
@@ -46,7 +50,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release2.zip",
       "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "ec6c3ade75ff368b51773a403f6465797c58182f",
+      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/ec6c3ade75ff368b51773a403f6465797c58182f.zip"
     },
     {
       "tag": "release",
@@ -61,7 +67,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release.zip",
       "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "cbf6c1619d471c104a4b9f808275921a916abec4",
+      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/cbf6c1619d471c104a4b9f808275921a916abec4.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "release",
+      "modVersion": "0.2",
+      "minGameVersion": "150.1",
+      "maxGameVersion": 153,
+      "hasRelease": true
+    },
+    {
+      "tag": "release3",
+      "modVersion": "0.4",
+      "minGameVersion": "153",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

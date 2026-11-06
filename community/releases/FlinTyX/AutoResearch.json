@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "FlinTyX/AutoResearch",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v1.2",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.2.zip",
       "sourceArchiveUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.0",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.0.zip",
       "sourceArchiveUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v0.1-beta",
@@ -46,7 +50,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v0.1-beta.zip",
       "sourceArchiveUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v0.1-beta.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v0.1-beta",
+      "modVersion": "0.1 Algorithm",
+      "minGameVersion": "130",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.2",
+      "modVersion": "Algorithm 1.2",
+      "minGameVersion": "141",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "dong-wo-long/enhancementturrets",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.0.0-patch",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/dong-wo-long/enhancementturrets/archive/refs/tags/v1.0.0-patch.zip",
       "sourceArchiveUrl": "https://github.com/dong-wo-long/enhancementturrets/archive/refs/tags/v1.0.0-patch.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "2e6a4023fa161c496f4c751e2870ce46f293010e",
+      "archiveByCommitUrl": "https://github.com/dong-wo-long/enhancementturrets/archive/2e6a4023fa161c496f4c751e2870ce46f293010e.zip"
     },
     {
       "tag": "v1.0.0-beta",
@@ -31,7 +33,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/dong-wo-long/enhancementturrets/archive/refs/tags/v1.0.0-beta.zip",
       "sourceArchiveUrl": "https://github.com/dong-wo-long/enhancementturrets/archive/refs/tags/v1.0.0-beta.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "b753953356ee0b9d67e2b8913227b21b3740713f",
+      "archiveByCommitUrl": "https://github.com/dong-wo-long/enhancementturrets/archive/b753953356ee0b9d67e2b8913227b21b3740713f.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.0.0-patch",
+      "modVersion": "v1.0.33 beta",
+      "minGameVersion": "146",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

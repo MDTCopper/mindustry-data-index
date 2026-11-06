@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "uujuju1/Monolith",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "0.3",
@@ -23,7 +23,9 @@
           "downloadCount": 3617,
           "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.3/Monolith.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "0.2",
@@ -45,7 +47,9 @@
           "downloadCount": 1121,
           "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.2/Monolith.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "0.1",
@@ -67,7 +71,32 @@
           "downloadCount": 480,
           "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.1/Monolith.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "0.1",
+      "modVersion": "Ancient",
+      "minGameVersion": "136",
+      "maxGameVersion": 138,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.2",
+      "modVersion": "v0.2",
+      "minGameVersion": "138",
+      "maxGameVersion": 139,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.3",
+      "modVersion": "v0.3",
+      "minGameVersion": "139",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "redonomo-team/colorspectrum",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "0.12a",
@@ -23,7 +23,9 @@
           "downloadCount": 57,
           "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/0.12a/Redonomo.zip"
         }
-      ]
+      ],
+      "commitSha": "e950d7603e9b67aad2b34b7151a57fce694edcfb",
+      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/e950d7603e9b67aad2b34b7151a57fce694edcfb.zip"
     },
     {
       "tag": "pre-release-3",
@@ -45,7 +47,9 @@
           "downloadCount": 19,
           "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/pre-release-3/Redonomo-main.zip"
         }
-      ]
+      ],
+      "commitSha": "8d2840482cc7e42c1dfa7e27f3f6f831d480f250",
+      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/8d2840482cc7e42c1dfa7e27f3f6f831d480f250.zip"
     },
     {
       "tag": "pre-release-1",
@@ -60,7 +64,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/pre-release-1.zip",
       "sourceArchiveUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/pre-release-1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "2aec63a1a5e883f6cb0e7d60fc3922a7d9263951",
+      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/2aec63a1a5e883f6cb0e7d60fc3922a7d9263951.zip"
     },
     {
       "tag": "1.0",
@@ -75,7 +81,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/1.0.zip",
       "sourceArchiveUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "6a6fb0eb82b2f6799e6b89ffa497a8f08212ff3e",
+      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/6a6fb0eb82b2f6799e6b89ffa497a8f08212ff3e.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "pre-release-3",
+      "modVersion": "1.0",
+      "minGameVersion": "140",
+      "maxGameVersion": 145,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.12a",
+      "modVersion": "0.12a",
+      "minGameVersion": "145",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

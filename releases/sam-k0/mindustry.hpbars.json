@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "sam-k0/mindustry.hpbars",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "26.04.19",
@@ -23,7 +23,9 @@
           "downloadCount": 1288,
           "downloadUrl": "https://github.com/sam-k0/Mindustry.HPBars/releases/download/26.04.19/Mindustry.HPBars.jar"
         }
-      ]
+      ],
+      "commitSha": "8118763fa4f7aafb29ed6484a795c97b0f36e580",
+      "archiveByCommitUrl": "https://github.com/sam-k0/mindustry.hpbars/archive/8118763fa4f7aafb29ed6484a795c97b0f36e580.zip"
     },
     {
       "tag": "24.08.03",
@@ -45,7 +47,25 @@
           "downloadCount": 1657,
           "downloadUrl": "https://github.com/sam-k0/Mindustry.HPBars/releases/download/24.08.03/sam-k0.hpbars.jar"
         }
-      ]
+      ],
+      "commitSha": "b05682efc02ff16bab9df5dec9d9d3a1bb40d0e6",
+      "archiveByCommitUrl": "https://github.com/sam-k0/mindustry.hpbars/archive/b05682efc02ff16bab9df5dec9d9d3a1bb40d0e6.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "24.08.03",
+      "modVersion": "24.08.03",
+      "minGameVersion": "146",
+      "maxGameVersion": 147,
+      "hasRelease": true
+    },
+    {
+      "tag": "26.04.19",
+      "modVersion": "26.04.19",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

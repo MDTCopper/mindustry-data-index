@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "shenqixingqioule/dawn",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "alpha-0-2-2",
@@ -20,10 +20,12 @@
         {
           "name": "default.jar",
           "size": 675805,
-          "downloadCount": 370,
+          "downloadCount": 371,
           "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-2/default.jar"
         }
-      ]
+      ],
+      "commitSha": "f17dc34022738b25048c22724075aafecf2f6f2f",
+      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/f17dc34022738b25048c22724075aafecf2f6f2f.zip"
     },
     {
       "tag": "alpha-0-2-1",
@@ -45,7 +47,9 @@
           "downloadCount": 10,
           "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-1/default.jar"
         }
-      ]
+      ],
+      "commitSha": "7934e72b5644b210be36bef0d85f1e7a6fe245ae",
+      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/7934e72b5644b210be36bef0d85f1e7a6fe245ae.zip"
     },
     {
       "tag": "alpha-0-2",
@@ -60,7 +64,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-2.zip",
       "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "cf14ec237a15c8cfb8b3ca26abc282dc37bbe9a2",
+      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/cf14ec237a15c8cfb8b3ca26abc282dc37bbe9a2.zip"
     },
     {
       "tag": "alpha-0-1-1",
@@ -75,7 +81,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1-1.zip",
       "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1-1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "7e53f67860ad67be4d93873b62579e5e03c56a1c",
+      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/7e53f67860ad67be4d93873b62579e5e03c56a1c.zip"
     },
     {
       "tag": "alpha-0-1",
@@ -90,7 +98,32 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1.zip",
       "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "25ded4af8842df7cc8e9d8cfbf02ad33eadb6b5d",
+      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/25ded4af8842df7cc8e9d8cfbf02ad33eadb6b5d.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "alpha-0-2",
+      "modVersion": "alpha-0-2",
+      "minGameVersion": "157.3",
+      "maxGameVersion": 160.5,
+      "hasRelease": true
+    },
+    {
+      "tag": "alpha-0-2-1",
+      "modVersion": "alpha-0-2",
+      "minGameVersion": "160.5",
+      "maxGameVersion": 160.7,
+      "hasRelease": true
+    },
+    {
+      "tag": "alpha-0-2-2",
+      "modVersion": "alpha-0-2-2",
+      "minGameVersion": "160.7",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "aevorlum/liminal-protocol",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "V.test.0.0.38.4",
@@ -20,10 +20,12 @@
         {
           "name": "Liminal-Protocol-V.test.0.0.38.4.jar",
           "size": 25862473,
-          "downloadCount": 2820,
+          "downloadCount": 2824,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.4/Liminal-Protocol-V.test.0.0.38.4.jar"
         }
-      ]
+      ],
+      "commitSha": "6287714eb40bf48d3eef9e74ff671b4887b4162f",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/6287714eb40bf48d3eef9e74ff671b4887b4162f.zip"
     },
     {
       "tag": "V.test.0.0.38.3",
@@ -51,7 +53,9 @@
           "downloadCount": 5,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.3/Liminal-ProtocolDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "434507f1c18e59c372a9777e754c13c6f94307fa",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/434507f1c18e59c372a9777e754c13c6f94307fa.zip"
     },
     {
       "tag": "V.test.0.0.38.2-1",
@@ -73,7 +77,9 @@
           "downloadCount": 1185,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2-1/Liminal-Protocol-V.test.0.0.38.2-1.jar"
         }
-      ]
+      ],
+      "commitSha": "609e5484960ea39c0fb9163cbdf4894579eddaa6",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/609e5484960ea39c0fb9163cbdf4894579eddaa6.zip"
     },
     {
       "tag": "V.test.0.0.38.2",
@@ -101,7 +107,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2/Liminal-ProtocolDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "330a940bf6e0f4c06993081b48ea469c4ecc5dc2",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/330a940bf6e0f4c06993081b48ea469c4ecc5dc2.zip"
     },
     {
       "tag": "V.test.0.0.38.1",
@@ -129,7 +137,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.1/Liminal-ProtocolDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "33a339bf300e46f49a70479ec501893d61d67f6a",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/33a339bf300e46f49a70479ec501893d61d67f6a.zip"
     },
     {
       "tag": "V.test.0.0.38.0",
@@ -157,7 +167,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.0/Liminal-ProtocolDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "cee3ec6aada10e8e959911f9d7b8b34ee761be39",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/cee3ec6aada10e8e959911f9d7b8b34ee761be39.zip"
     },
     {
       "tag": "V.test.0.0.37.9",
@@ -185,7 +197,9 @@
           "downloadCount": 6,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.37.9/Liminal-ProtocolDesktop-V.test.0.0.37.9.jar"
         }
-      ]
+      ],
+      "commitSha": "cbc9f96f2f54ccbe19da243961cdeff9e4c579bf",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/cbc9f96f2f54ccbe19da243961cdeff9e4c579bf.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -207,7 +221,25 @@
           "downloadCount": 20,
           "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/mindustry-mod/Liminal.Protocol-V.test.0.0.37.8.zip"
         }
-      ]
+      ],
+      "commitSha": "cda0fbd0b36535bf910a87ba65c25832ce085b4d",
+      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/cda0fbd0b36535bf910a87ba65c25832ce085b4d.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "V.test.0.0.38.2-1",
+      "modVersion": "V.test.0.0.38.2-126.06.17",
+      "minGameVersion": "157",
+      "maxGameVersion": 159,
+      "hasRelease": true
+    },
+    {
+      "tag": "V.test.0.0.38.4",
+      "modVersion": "V.test.0.0.38.3-1-26.07.10",
+      "minGameVersion": "159",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

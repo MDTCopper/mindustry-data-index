@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "spore-biometh-team/sandmod",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "V1.0.2.1",
@@ -20,10 +20,12 @@
         {
           "name": "SandMod.jar",
           "size": 343679,
-          "downloadCount": 895,
+          "downloadCount": 896,
           "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2.1/SandMod.jar"
         }
-      ]
+      ],
+      "commitSha": "c576339c64115e925bf8f30e8cebc22af5906023",
+      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/c576339c64115e925bf8f30e8cebc22af5906023.zip"
     },
     {
       "tag": "V1.0.2",
@@ -45,7 +47,9 @@
           "downloadCount": 106,
           "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2/Gregtech.jar.jar"
         }
-      ]
+      ],
+      "commitSha": "2be00e901a1f39c3a5e87a4d04b766c5797dcc81",
+      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/2be00e901a1f39c3a5e87a4d04b766c5797dcc81.zip"
     },
     {
       "tag": "V1.0.1",
@@ -67,7 +71,9 @@
           "downloadCount": 4478,
           "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.1/Gregtech.jar"
         }
-      ]
+      ],
+      "commitSha": "0cab4eb38eee6d17988843e515ced1a02a1f84f4",
+      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/0cab4eb38eee6d17988843e515ced1a02a1f84f4.zip"
     },
     {
       "tag": "V1.0",
@@ -89,7 +95,25 @@
           "downloadCount": 400,
           "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0/Gregtech.jar"
         }
-      ]
+      ],
+      "commitSha": "01e6ff1a7fb300c84a42b7e286fefb516b09d424",
+      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/01e6ff1a7fb300c84a42b7e286fefb516b09d424.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "V1.0.2",
+      "modVersion": "1.0.2",
+      "minGameVersion": "140",
+      "maxGameVersion": 147,
+      "hasRelease": true
+    },
+    {
+      "tag": "V1.0.2.1",
+      "modVersion": "1.0.2",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

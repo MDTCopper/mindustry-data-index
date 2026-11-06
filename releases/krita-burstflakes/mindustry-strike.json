@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "krita-burstflakes/mindustry-strike",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "2.0_version",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/2.0_version.zip",
       "sourceArchiveUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/2.0_version.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "e2c0e1e373b7735280a669e1f4b17e19b2c154f0",
+      "archiveByCommitUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/e2c0e1e373b7735280a669e1f4b17e19b2c154f0.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -31,7 +33,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "eb7ccec5c39abc4870d05297db24f8f936667027",
+      "archiveByCommitUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/eb7ccec5c39abc4870d05297db24f8f936667027.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "mindustry-mod",
+      "modVersion": "1.0",
+      "minGameVersion": "141.3",
+      "maxGameVersion": 146,
+      "hasRelease": true
+    },
+    {
+      "tag": "2.0_version",
+      "modVersion": "2.0",
+      "minGameVersion": "146",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

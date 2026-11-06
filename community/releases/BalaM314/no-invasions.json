@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "BalaM314/no-invasions",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v7",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.zip",
       "sourceArchiveUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v7.1",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.1.zip",
       "sourceArchiveUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v6",
@@ -46,7 +50,32 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v6.zip",
       "sourceArchiveUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v6.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v6",
+      "modVersion": "1.0",
+      "minGameVersion": "115",
+      "maxGameVersion": 127,
+      "hasRelease": true
+    },
+    {
+      "tag": "v7.1",
+      "modVersion": "1.0",
+      "minGameVersion": "127",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "v7",
+      "modVersion": "1.0",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "mortzavoy57/NTMind",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v1.4.0",
@@ -23,7 +23,9 @@
           "downloadCount": 13,
           "downloadUrl": "https://github.com/mortzavoy57/NTMind/releases/download/v1.4.0/NTMind.1.4.0.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "mindustry",
@@ -38,7 +40,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/mindustry.zip",
       "sourceArchiveUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/mindustry.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "1.4.0",
@@ -53,7 +57,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/1.4.0.zip",
       "sourceArchiveUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/1.4.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.4.0",
+      "modVersion": "1.4",
+      "minGameVersion": "158",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

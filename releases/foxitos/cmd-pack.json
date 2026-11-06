@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "foxitos/cmd-pack",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "release-v2",
@@ -23,7 +23,9 @@
           "downloadCount": 273,
           "downloadUrl": "https://github.com/foxitOS/CMD-pack/releases/download/release-v2/CMD-pack-main.zip"
         }
-      ]
+      ],
+      "commitSha": "6162f4cf256f27d9b35f2d26efd7d05cba0f892a",
+      "archiveByCommitUrl": "https://github.com/foxitos/cmd-pack/archive/6162f4cf256f27d9b35f2d26efd7d05cba0f892a.zip"
     },
     {
       "tag": "release-v1",
@@ -45,7 +47,25 @@
           "downloadCount": 63,
           "downloadUrl": "https://github.com/foxitOS/CMD-pack/releases/download/release-v1/CMD-pack-main.zip"
         }
-      ]
+      ],
+      "commitSha": "a562fa5850f6a166a0e7392d218b3992f468dbf3",
+      "archiveByCommitUrl": "https://github.com/foxitos/cmd-pack/archive/a562fa5850f6a166a0e7392d218b3992f468dbf3.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "release-v1",
+      "modVersion": "1.0.0,",
+      "minGameVersion": "142",
+      "maxGameVersion": 145.1,
+      "hasRelease": true
+    },
+    {
+      "tag": "release-v2",
+      "modVersion": "2.0.0,",
+      "minGameVersion": "145.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

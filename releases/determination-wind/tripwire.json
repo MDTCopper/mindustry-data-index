@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "determination-wind/tripwire",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 52,
           "downloadUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/download/v1.1.1/Tripwire-1.1.1.zip"
         }
-      ]
+      ],
+      "commitSha": "8dce7c12be03ebcbf06f2d4c37e801f87f43b78c",
+      "archiveByCommitUrl": "https://github.com/determination-wind/tripwire/archive/8dce7c12be03ebcbf06f2d4c37e801f87f43b78c.zip"
     },
     {
       "tag": "v1.1.0",
@@ -45,7 +47,9 @@
           "downloadCount": 14,
           "downloadUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/download/v1.1.0/Tripwire-1.1.0.zip"
         }
-      ]
+      ],
+      "commitSha": "e07d54f197263ca65805ba6948c2c94a97f066ba",
+      "archiveByCommitUrl": "https://github.com/determination-wind/tripwire/archive/e07d54f197263ca65805ba6948c2c94a97f066ba.zip"
     },
     {
       "tag": "v1.0.0",
@@ -67,7 +71,25 @@
           "downloadCount": 1721,
           "downloadUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/download/v1.0.0/Tripwire-1.0.0.zip"
         }
-      ]
+      ],
+      "commitSha": "cacbff564b6ea9618bd3acdb1f925af7d260795b",
+      "archiveByCommitUrl": "https://github.com/determination-wind/tripwire/archive/cacbff564b6ea9618bd3acdb1f925af7d260795b.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.1.0",
+      "modVersion": "1.1.0",
+      "minGameVersion": "154",
+      "maxGameVersion": 159,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.1.1",
+      "modVersion": "1.1.1",
+      "minGameVersion": "159",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

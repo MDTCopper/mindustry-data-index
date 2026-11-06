@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "DaGamerFiles/classic-music",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v2.0",
@@ -29,7 +29,9 @@
           "downloadCount": 109,
           "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v2.0/classic-music-ogg.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.0",
@@ -51,7 +53,25 @@
           "downloadCount": 131,
           "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v1.0/classic-music.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.0",
+      "modVersion": "1.6",
+      "minGameVersion": "103",
+      "maxGameVersion": 105,
+      "hasRelease": true
+    },
+    {
+      "tag": "v2.0",
+      "modVersion": "2.0",
+      "minGameVersion": "105",
+      "maxGameVersion": 136,
+      "hasRelease": true
     }
   ]
 }

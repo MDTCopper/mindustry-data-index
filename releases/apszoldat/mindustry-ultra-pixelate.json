@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "apszoldat/mindustry-ultra-pixelate",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 514,
           "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.1/mindustry-ultra-pixelate.jar"
         }
-      ]
+      ],
+      "commitSha": "738c31b04cf6775a795e4cadf240a102837a73fc",
+      "archiveByCommitUrl": "https://github.com/apszoldat/mindustry-ultra-pixelate/archive/738c31b04cf6775a795e4cadf240a102837a73fc.zip"
     },
     {
       "tag": "v1.0",
@@ -45,7 +47,25 @@
           "downloadCount": 1301,
           "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.0/mindustry-ultra-pixelate.jar"
         }
-      ]
+      ],
+      "commitSha": "d7090ee1036afe8fbab636f1ceac9c06876e218f",
+      "archiveByCommitUrl": "https://github.com/apszoldat/mindustry-ultra-pixelate/archive/d7090ee1036afe8fbab636f1ceac9c06876e218f.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.0",
+      "modVersion": "1",
+      "minGameVersion": "140",
+      "maxGameVersion": 147,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.1",
+      "modVersion": "1.1",
+      "minGameVersion": "159",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

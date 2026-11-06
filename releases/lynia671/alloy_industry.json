@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "lynia671/alloy_industry",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "02",
@@ -23,7 +23,9 @@
           "downloadCount": 25,
           "downloadUrl": "https://github.com/Lynia671/Alloy_Industry/releases/download/02/beta-v0.7.4.8.zip"
         }
-      ]
+      ],
+      "commitSha": "9d6a49a9481a3367516191912c8e044b027d5099",
+      "archiveByCommitUrl": "https://github.com/lynia671/alloy_industry/archive/9d6a49a9481a3367516191912c8e044b027d5099.zip"
     },
     {
       "tag": "z01",
@@ -45,7 +47,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/Lynia671/Alloy_Industry/releases/download/z01/beta-v0.7.4.7.zip"
         }
-      ]
+      ],
+      "commitSha": "9d6a49a9481a3367516191912c8e044b027d5099",
+      "archiveByCommitUrl": "https://github.com/lynia671/alloy_industry/archive/9d6a49a9481a3367516191912c8e044b027d5099.zip"
     },
     {
       "tag": "Mindustry",
@@ -67,7 +71,9 @@
           "downloadCount": 3,
           "downloadUrl": "https://github.com/Lynia671/Alloy_Industry/releases/download/Mindustry/beta-v0.7.4.3.zip"
         }
-      ]
+      ],
+      "commitSha": "101b71f4263fe95398a69988780604602e891a8a",
+      "archiveByCommitUrl": "https://github.com/lynia671/alloy_industry/archive/101b71f4263fe95398a69988780604602e891a8a.zip"
     },
     {
       "tag": "Alloy_Industry",
@@ -89,7 +95,9 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/Lynia671/Alloy_Industry/releases/download/Alloy_Industry/default.7z"
         }
-      ]
+      ],
+      "commitSha": "101b71f4263fe95398a69988780604602e891a8a",
+      "archiveByCommitUrl": "https://github.com/lynia671/alloy_industry/archive/101b71f4263fe95398a69988780604602e891a8a.zip"
     },
     {
       "tag": "Beta",
@@ -111,7 +119,25 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/Lynia671/Alloy_Industry/releases/download/Beta/beta0.7pre3build04.zip"
         }
-      ]
+      ],
+      "commitSha": "101b71f4263fe95398a69988780604602e891a8a",
+      "archiveByCommitUrl": "https://github.com/lynia671/alloy_industry/archive/101b71f4263fe95398a69988780604602e891a8a.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "Mindustry",
+      "modVersion": "beta-v0.7-TestPreBuilding04",
+      "minGameVersion": "155.4",
+      "maxGameVersion": 157,
+      "hasRelease": true
+    },
+    {
+      "tag": "02",
+      "modVersion": "beta-v0.7-TestPreBuilding04",
+      "minGameVersion": "157",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

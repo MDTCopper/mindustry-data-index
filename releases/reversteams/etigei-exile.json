@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "reversteams/etigei-exile",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v2.1.8",
@@ -23,7 +23,9 @@
           "downloadCount": 119,
           "downloadUrl": "https://github.com/ReversTeams/etigei-exile/releases/download/v2.1.8/etigei-exile-v2.1.8.zip"
         }
-      ]
+      ],
+      "commitSha": "9e1bad21aa8d65b9cbfec4b762d86a754efb50f9",
+      "archiveByCommitUrl": "https://github.com/reversteams/etigei-exile/archive/9e1bad21aa8d65b9cbfec4b762d86a754efb50f9.zip"
     },
     {
       "tag": "v2.1.0",
@@ -38,7 +40,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v2.1.0.zip",
       "sourceArchiveUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v2.1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "19ec658d031a7a91e98443a795ed265f089e4366",
+      "archiveByCommitUrl": "https://github.com/reversteams/etigei-exile/archive/19ec658d031a7a91e98443a795ed265f089e4366.zip"
     },
     {
       "tag": "v1.1",
@@ -53,7 +57,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v1.1.zip",
       "sourceArchiveUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v1.1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "7a58cc1fb0df3acd8c49c650213a82c1f520a34f",
+      "archiveByCommitUrl": "https://github.com/reversteams/etigei-exile/archive/7a58cc1fb0df3acd8c49c650213a82c1f520a34f.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v2.1.8",
+      "modVersion": "2.1.7",
+      "minGameVersion": "146",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

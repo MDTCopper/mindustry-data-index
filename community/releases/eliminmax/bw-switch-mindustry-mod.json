@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "eliminmax/bw-switch-mindustry-mod",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "release-1.0.1",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.1.zip",
       "sourceArchiveUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "release-1.0",
@@ -31,7 +33,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.zip",
       "sourceArchiveUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "release-1.0.1",
+      "modVersion": "1.0",
+      "minGameVersion": "140.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

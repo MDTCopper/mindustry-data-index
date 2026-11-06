@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "equalzzz/mindustry-modlib",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v0.1.2-alpha",
@@ -20,10 +20,12 @@
         {
           "name": "ModLib.jar",
           "size": 4715625,
-          "downloadCount": 288,
+          "downloadCount": 289,
           "downloadUrl": "https://github.com/Equalzzz/Mindustry-ModLib/releases/download/v0.1.2-alpha/ModLib.jar"
         }
-      ]
+      ],
+      "commitSha": "33326193c47ed424711d896a0e42d0cd1df23d23",
+      "archiveByCommitUrl": "https://github.com/equalzzz/mindustry-modlib/archive/33326193c47ed424711d896a0e42d0cd1df23d23.zip"
     },
     {
       "tag": "v0.1.1",
@@ -45,7 +47,9 @@
           "downloadCount": 3,
           "downloadUrl": "https://github.com/Equalzzz/Mindustry-ModLib/releases/download/v0.1.1/ModLib.jar"
         }
-      ]
+      ],
+      "commitSha": "b89fd7db4715285ea16521b31bba8383ce54e02c",
+      "archiveByCommitUrl": "https://github.com/equalzzz/mindustry-modlib/archive/b89fd7db4715285ea16521b31bba8383ce54e02c.zip"
     },
     {
       "tag": "v0.1.0",
@@ -67,7 +71,18 @@
           "downloadCount": 3,
           "downloadUrl": "https://github.com/Equalzzz/Mindustry-ModLib/releases/download/v0.1.0/ModLib.jar"
         }
-      ]
+      ],
+      "commitSha": "fa95779e66c507da797a5d9a050ab09f6b32780a",
+      "archiveByCommitUrl": "https://github.com/equalzzz/mindustry-modlib/archive/fa95779e66c507da797a5d9a050ab09f6b32780a.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v0.1.2-alpha",
+      "modVersion": "${version}",
+      "minGameVersion": "158",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

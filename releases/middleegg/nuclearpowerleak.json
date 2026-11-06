@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "middleegg/nuclearpowerleak",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "First",
@@ -23,7 +23,9 @@
           "downloadCount": 16,
           "downloadUrl": "https://github.com/middleegg/NuclearPowerLeak/releases/download/First/NuclearPowerLeak1.0.1.zip"
         }
-      ]
+      ],
+      "commitSha": "d8eafb1520d6843aaf25e62702351d43942fa3d0",
+      "archiveByCommitUrl": "https://github.com/middleegg/nuclearpowerleak/archive/d8eafb1520d6843aaf25e62702351d43942fa3d0.zip"
     },
     {
       "tag": "JsonMod",
@@ -38,7 +40,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/JsonMod.zip",
       "sourceArchiveUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/JsonMod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "0f7ed9b597c64ab2341a420074329ac24d36486d",
+      "archiveByCommitUrl": "https://github.com/middleegg/nuclearpowerleak/archive/0f7ed9b597c64ab2341a420074329ac24d36486d.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "First",
+      "modVersion": "1.0.1",
+      "minGameVersion": "158",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "BlackDeluxeCat/ShadowShader",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "1.2.0",
@@ -23,7 +23,9 @@
           "downloadCount": 6934,
           "downloadUrl": "https://github.com/BlackDeluxeCat/ShadowShader/releases/download/1.2.0/ShadowShader.1.2.0-144.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "1.1",
@@ -45,7 +47,9 @@
           "downloadCount": 1250,
           "downloadUrl": "https://github.com/BlackDeluxeCat/ShadowShader/releases/download/1.1/ShadowShader.1.1-141.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "1.0.1",
@@ -67,7 +71,9 @@
           "downloadCount": 1034,
           "downloadUrl": "https://github.com/BlackDeluxeCat/ShadowShader/releases/download/1.0.1/ShadowShader.1.0.1-140.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "1.0",
@@ -89,7 +95,32 @@
           "downloadCount": 47,
           "downloadUrl": "https://github.com/BlackDeluxeCat/ShadowShader/releases/download/1.0/ShadowShader.1.0-140.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "1.0.1",
+      "modVersion": "1.0.1",
+      "minGameVersion": "140",
+      "maxGameVersion": 141,
+      "hasRelease": true
+    },
+    {
+      "tag": "1.1",
+      "modVersion": "1.1",
+      "minGameVersion": "141",
+      "maxGameVersion": 144.1,
+      "hasRelease": true
+    },
+    {
+      "tag": "1.2.0",
+      "modVersion": "1.2",
+      "minGameVersion": "144.1",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

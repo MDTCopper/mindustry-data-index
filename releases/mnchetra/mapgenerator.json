@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "mnchetra/mapgenerator",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.3",
@@ -23,7 +23,9 @@
           "downloadCount": 2051,
           "downloadUrl": "https://github.com/mnchetra/MapGenerator/releases/download/v1.3/MapGenerator.jar"
         }
-      ]
+      ],
+      "commitSha": "aa62c34c14a741543aba2bdbf237f19e5d6e6841",
+      "archiveByCommitUrl": "https://github.com/mnchetra/mapgenerator/archive/aa62c34c14a741543aba2bdbf237f19e5d6e6841.zip"
     },
     {
       "tag": "v1.2",
@@ -45,7 +47,9 @@
           "downloadCount": 6,
           "downloadUrl": "https://github.com/mnchetra/MapGenerator/releases/download/v1.2/MapGenerator.jar"
         }
-      ]
+      ],
+      "commitSha": "0bfb4709b2ae35abf79fc0daf80af9ca01366e6f",
+      "archiveByCommitUrl": "https://github.com/mnchetra/mapgenerator/archive/0bfb4709b2ae35abf79fc0daf80af9ca01366e6f.zip"
     },
     {
       "tag": "v1.1",
@@ -67,7 +71,9 @@
           "downloadCount": 83,
           "downloadUrl": "https://github.com/mnchetra/MapGenerator/releases/download/v1.1/MapGenerator.jar"
         }
-      ]
+      ],
+      "commitSha": "6f80c827a7b2e35b75afcda53b0aa8fcf74561e7",
+      "archiveByCommitUrl": "https://github.com/mnchetra/mapgenerator/archive/6f80c827a7b2e35b75afcda53b0aa8fcf74561e7.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -82,7 +88,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/mnchetra/mapgenerator/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/mnchetra/mapgenerator/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "018cacf375f6dcaee34263c1c12b03f6a8fa7475",
+      "archiveByCommitUrl": "https://github.com/mnchetra/mapgenerator/archive/018cacf375f6dcaee34263c1c12b03f6a8fa7475.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "mindustry-mod",
+      "modVersion": "1.0",
+      "minGameVersion": "145",
+      "maxGameVersion": 147,
+      "hasRelease": false
+    },
+    {
+      "tag": "v1.3",
+      "modVersion": "1.2",
+      "minGameVersion": "159",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

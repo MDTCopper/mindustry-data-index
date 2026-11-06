@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "liplum/BottledLiquid",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "AUTOR",
@@ -23,7 +23,9 @@
           "downloadCount": 4379,
           "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/AUTOR/bottled-liquid-3.0.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v2.0",
@@ -45,7 +47,9 @@
           "downloadCount": 102,
           "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v2.0/bottled-liquid-1.0.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.0",
@@ -67,7 +71,32 @@
           "downloadCount": 55,
           "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v1.0/BottledLiquid.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.0",
+      "modVersion": "1",
+      "minGameVersion": "126",
+      "maxGameVersion": 135,
+      "hasRelease": true
+    },
+    {
+      "tag": "v2.0",
+      "modVersion": "2",
+      "minGameVersion": "135",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "AUTOR",
+      "modVersion": "3.0",
+      "minGameVersion": "136",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "johnnywu2k/void",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.4",
@@ -23,7 +23,9 @@
           "downloadCount": 1600,
           "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.4/Void.jar"
         }
-      ]
+      ],
+      "commitSha": "f213b4d2f04d70c515cf77c9d41e8c8134657e06",
+      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/f213b4d2f04d70c515cf77c9d41e8c8134657e06.zip"
     },
     {
       "tag": "v1.3",
@@ -45,7 +47,9 @@
           "downloadCount": 1008,
           "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.3/Void.jar"
         }
-      ]
+      ],
+      "commitSha": "df624ef731e2c65c2e1c8a9a6b1a0550edbdc6bf",
+      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/df624ef731e2c65c2e1c8a9a6b1a0550edbdc6bf.zip"
     },
     {
       "tag": "v1.2",
@@ -67,7 +71,9 @@
           "downloadCount": 618,
           "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.2/Void.jar"
         }
-      ]
+      ],
+      "commitSha": "df315c275e29e11a303d781eede43a7cb07498d1",
+      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/df315c275e29e11a303d781eede43a7cb07498d1.zip"
     },
     {
       "tag": "v1.1",
@@ -89,7 +95,9 @@
           "downloadCount": 350,
           "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.1/Void.jar"
         }
-      ]
+      ],
+      "commitSha": "f0221d66ec61de215ee65f1db1cbe388c5158663",
+      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/f0221d66ec61de215ee65f1db1cbe388c5158663.zip"
     },
     {
       "tag": "v1.0",
@@ -104,7 +112,32 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.0.zip",
       "sourceArchiveUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "76601761a10e727d739b0f8494f4057d608585ec",
+      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/76601761a10e727d739b0f8494f4057d608585ec.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.0",
+      "modVersion": "1.0",
+      "minGameVersion": "146",
+      "maxGameVersion": 147,
+      "hasRelease": false
+    },
+    {
+      "tag": "v1.3",
+      "modVersion": "1.1",
+      "minGameVersion": "147",
+      "maxGameVersion": 154,
+      "hasRelease": true
+    },
+    {
+      "tag": "v1.4",
+      "modVersion": "1.4",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

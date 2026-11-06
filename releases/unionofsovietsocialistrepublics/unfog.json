@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "unionofsovietsocialistrepublics/unfog",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "V2",
@@ -23,7 +23,9 @@
           "downloadCount": 16,
           "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V2/Unfog.zip"
         }
-      ]
+      ],
+      "commitSha": "77d8d633efe6542d7129dc4f6fea7b3ec60fb00a",
+      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/77d8d633efe6542d7129dc4f6fea7b3ec60fb00a.zip"
     },
     {
       "tag": "V1.5",
@@ -45,7 +47,9 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1.5/Unfog.zip"
         }
-      ]
+      ],
+      "commitSha": "77d8d633efe6542d7129dc4f6fea7b3ec60fb00a",
+      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/77d8d633efe6542d7129dc4f6fea7b3ec60fb00a.zip"
     },
     {
       "tag": "V1",
@@ -67,7 +71,25 @@
           "downloadCount": 11,
           "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1/Unfog.zip"
         }
-      ]
+      ],
+      "commitSha": "b33eabb56ad853edca6bed1c1e99091b73500ed2",
+      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/b33eabb56ad853edca6bed1c1e99091b73500ed2.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "V1",
+      "modVersion": "0.1",
+      "minGameVersion": "144.3",
+      "maxGameVersion": 154,
+      "hasRelease": true
+    },
+    {
+      "tag": "V2",
+      "modVersion": "0.2",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "aerialasfofotherprojects/Mindustrialist",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "alpha-0.1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 6942,
           "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1.1/Mindustrialist.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "alpha-0.1",
@@ -45,7 +47,9 @@
           "downloadCount": 1659,
           "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1/Mindustrialist.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "mindustry-mod",
@@ -60,7 +64,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "alpha-0.1.1",
+      "modVersion": "1",
+      "minGameVersion": "145",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

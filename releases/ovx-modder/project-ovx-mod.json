@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "ovx-modder/project-ovx-mod",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "V0.9",
@@ -23,7 +23,9 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.9/Project-OVX-project.zip"
         }
-      ]
+      ],
+      "commitSha": "b10f462d7717b7e869995bb794c222263fac9a0a",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/b10f462d7717b7e869995bb794c222263fac9a0a.zip"
     },
     {
       "tag": "V0.8",
@@ -45,7 +47,9 @@
           "downloadCount": 8,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.8/Project-OVX-MOD.zip"
         }
-      ]
+      ],
+      "commitSha": "819b1147438bbc4b0ce9338cd0655a422694bb9b",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/819b1147438bbc4b0ce9338cd0655a422694bb9b.zip"
     },
     {
       "tag": "V0.7",
@@ -67,7 +71,9 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.7/Project-OVX-MOD.zip"
         }
-      ]
+      ],
+      "commitSha": "6dbc083fb297f9bb6c2f6dfdcd430282c1f7ce2b",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/6dbc083fb297f9bb6c2f6dfdcd430282c1f7ce2b.zip"
     },
     {
       "tag": "V0.6",
@@ -89,7 +95,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.6/Project-OVX-MOD.zip"
         }
-      ]
+      ],
+      "commitSha": "329e379e79a1d502440c4bd4ec7a8d63eb7e4172",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/329e379e79a1d502440c4bd4ec7a8d63eb7e4172.zip"
     },
     {
       "tag": "V0.5",
@@ -111,7 +119,9 @@
           "downloadCount": 0,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.5/Project-OVX-MOD.zip"
         }
-      ]
+      ],
+      "commitSha": "3482de32453e2fc8dc59ce4a9eb80a92b228ae46",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/3482de32453e2fc8dc59ce4a9eb80a92b228ae46.zip"
     },
     {
       "tag": "Pre-releass",
@@ -133,7 +143,9 @@
           "downloadCount": 0,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Pre-releass/version-0.4.zip"
         }
-      ]
+      ],
+      "commitSha": "161161377ae54196628ef37c9caa8a8dbc879861",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/161161377ae54196628ef37c9caa8a8dbc879861.zip"
     },
     {
       "tag": "Mindustry-Mod",
@@ -155,7 +167,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Mindustry-Mod/power.belt.v0.2.zip"
         }
-      ]
+      ],
+      "commitSha": "68ad95458aee8f816974edd9e0a66bb2810a123c",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/68ad95458aee8f816974edd9e0a66bb2810a123c.zip"
     },
     {
       "tag": "Release",
@@ -170,7 +184,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Release.zip",
       "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "c4205dbfe6555cf90f2f6c9b6da2de0d1499d815",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/c4205dbfe6555cf90f2f6c9b6da2de0d1499d815.zip"
     },
     {
       "tag": "Mindustry",
@@ -185,7 +201,25 @@
       "metadataStatus": "missing",
       "downloadUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Mindustry.zip",
       "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Mindustry.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "64b6cd965669a4efbbd9173ab2acbca264a3e6a9",
+      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/64b6cd965669a4efbbd9173ab2acbca264a3e6a9.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "Mindustry-Mod",
+      "modVersion": "0.2",
+      "minGameVersion": "158",
+      "maxGameVersion": 160,
+      "hasRelease": true
+    },
+    {
+      "tag": "V0.9",
+      "modVersion": "0.9",
+      "minGameVersion": "160",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

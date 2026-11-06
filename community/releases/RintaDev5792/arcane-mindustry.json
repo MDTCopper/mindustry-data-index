@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "RintaDev5792/arcane-mindustry",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "beta2",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta2.zip",
       "sourceArchiveUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "beta",
@@ -31,7 +33,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta.zip",
       "sourceArchiveUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "beta2",
+      "modVersion": "Beta V0.2",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

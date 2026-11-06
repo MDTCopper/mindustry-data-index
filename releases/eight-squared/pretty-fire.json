@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "eight-squared/pretty-fire",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 37,
           "downloadUrl": "https://github.com/Eight-Squared/pretty-fire/releases/download/1.1/pretty-fire-149.zip"
         }
-      ]
+      ],
+      "commitSha": "e179ac5a26171068fec9de4b40bb4fd2562883b9",
+      "archiveByCommitUrl": "https://github.com/eight-squared/pretty-fire/archive/e179ac5a26171068fec9de4b40bb4fd2562883b9.zip"
     },
     {
       "tag": "1.0",
@@ -45,7 +47,25 @@
           "downloadCount": 10,
           "downloadUrl": "https://github.com/Eight-Squared/pretty-fire/releases/download/1.0/pretty-fire-7-146-.zip"
         }
-      ]
+      ],
+      "commitSha": "706d5ca51e3ea20437a597a771758595e4dd9b3a",
+      "archiveByCommitUrl": "https://github.com/eight-squared/pretty-fire/archive/706d5ca51e3ea20437a597a771758595e4dd9b3a.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "1.0",
+      "modVersion": "1",
+      "minGameVersion": "146",
+      "maxGameVersion": 149,
+      "hasRelease": true
+    },
+    {
+      "tag": "1.1",
+      "modVersion": "1",
+      "minGameVersion": "149",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

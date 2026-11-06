@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "mnchetra/quickschema",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.2",
@@ -23,7 +23,9 @@
           "downloadCount": 703,
           "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.2/QuickSchema.jar"
         }
-      ]
+      ],
+      "commitSha": "ffb1c487b56c8c94f5220c52c55e7a9e11ca814b",
+      "archiveByCommitUrl": "https://github.com/mnchetra/quickschema/archive/ffb1c487b56c8c94f5220c52c55e7a9e11ca814b.zip"
     },
     {
       "tag": "v1.1",
@@ -45,7 +47,9 @@
           "downloadCount": 18,
           "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.1/QuickSchema.jar"
         }
-      ]
+      ],
+      "commitSha": "f7bbae56ebff209f2bffc60ebfa9a9fd9799ccef",
+      "archiveByCommitUrl": "https://github.com/mnchetra/quickschema/archive/f7bbae56ebff209f2bffc60ebfa9a9fd9799ccef.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -60,7 +64,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/mnchetra/quickschema/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/mnchetra/quickschema/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "261679cc7ca0c5f74f9773b435ce3b57b97144cc",
+      "archiveByCommitUrl": "https://github.com/mnchetra/quickschema/archive/261679cc7ca0c5f74f9773b435ce3b57b97144cc.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.2",
+      "modVersion": "1.2",
+      "minGameVersion": "158",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

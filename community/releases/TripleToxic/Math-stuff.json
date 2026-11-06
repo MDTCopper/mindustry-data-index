@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "TripleToxic/Math-stuff",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "v3.0",
@@ -23,7 +23,9 @@
           "downloadCount": 2226,
           "downloadUrl": "https://github.com/TripleToxic/Math-stuff/releases/download/v3.0/Math-stuff.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "v1.1",
@@ -45,7 +47,9 @@
           "downloadCount": 2469,
           "downloadUrl": "https://github.com/TripleToxic/Math-stuff/releases/download/v1.1/Math-stuff.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "1.0",
@@ -67,7 +71,9 @@
           "downloadCount": 28,
           "downloadUrl": "https://github.com/TripleToxic/Math-stuff/releases/download/1.0/ComplexFunction.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "mindustry-mod",
@@ -82,7 +88,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/TripleToxic/Math-stuff/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/TripleToxic/Math-stuff/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "1.1",
@@ -97,7 +105,32 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/TripleToxic/Math-stuff/archive/refs/tags/1.1.zip",
       "sourceArchiveUrl": "https://github.com/TripleToxic/Math-stuff/archive/refs/tags/1.1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "mindustry-mod",
+      "modVersion": "1",
+      "minGameVersion": "138",
+      "maxGameVersion": 140,
+      "hasRelease": false
+    },
+    {
+      "tag": "v1.1",
+      "modVersion": "1.1",
+      "minGameVersion": "140",
+      "maxGameVersion": 143,
+      "hasRelease": true
+    },
+    {
+      "tag": "v3.0",
+      "modVersion": "3",
+      "minGameVersion": "143",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

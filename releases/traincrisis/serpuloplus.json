@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "traincrisis/serpuloplus",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "0.4",
@@ -23,7 +23,9 @@
           "downloadCount": 39,
           "downloadUrl": "https://github.com/traincrisis/SerpuloPlus/releases/download/0.4/SerpuloPlus-PR0.4.zip"
         }
-      ]
+      ],
+      "commitSha": "d24c5ee24d5e6367d4f7b7c3e99233d93720f5f4",
+      "archiveByCommitUrl": "https://github.com/traincrisis/serpuloplus/archive/d24c5ee24d5e6367d4f7b7c3e99233d93720f5f4.zip"
     },
     {
       "tag": "0.3.1",
@@ -45,7 +47,9 @@
           "downloadCount": 15,
           "downloadUrl": "https://github.com/traincrisis/SerpuloPlus/releases/download/0.3.1/SerpuloPlus-PR0.3.1.zip"
         }
-      ]
+      ],
+      "commitSha": "fd881d97ebf8957c5341795b79db2e3794737f69",
+      "archiveByCommitUrl": "https://github.com/traincrisis/serpuloplus/archive/fd881d97ebf8957c5341795b79db2e3794737f69.zip"
     },
     {
       "tag": "0.3",
@@ -67,7 +71,9 @@
           "downloadCount": 2,
           "downloadUrl": "https://github.com/traincrisis/SerpuloPlus/releases/download/0.3/SerpuloPlus-PR0.3.zip"
         }
-      ]
+      ],
+      "commitSha": "52d79d335e88ef88c7ce76f13a478a8291da5f86",
+      "archiveByCommitUrl": "https://github.com/traincrisis/serpuloplus/archive/52d79d335e88ef88c7ce76f13a478a8291da5f86.zip"
     },
     {
       "tag": "0.2",
@@ -89,7 +95,25 @@
           "downloadCount": 6,
           "downloadUrl": "https://github.com/traincrisis/SerpuloPlus/releases/download/0.2/SerpuloPlus-PR0.2.zip"
         }
-      ]
+      ],
+      "commitSha": "e99a4c9ecfd6f702fa5c8a4fe98d338fbb35a135",
+      "archiveByCommitUrl": "https://github.com/traincrisis/serpuloplus/archive/e99a4c9ecfd6f702fa5c8a4fe98d338fbb35a135.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "0.2",
+      "modVersion": "PR0.2",
+      "minGameVersion": "155",
+      "maxGameVersion": 157,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.4",
+      "modVersion": "PR0.4",
+      "minGameVersion": "157",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

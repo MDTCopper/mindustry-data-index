@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "xeloboyo/factoriodustry",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "0.5.4-alpha",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.5.4-alpha.zip",
       "sourceArchiveUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.5.4-alpha.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "a1b2dd3306194c6e3213cbafaad9e700e55f88bc",
+      "archiveByCommitUrl": "https://github.com/xeloboyo/factoriodustry/archive/a1b2dd3306194c6e3213cbafaad9e700e55f88bc.zip"
     },
     {
       "tag": "0.3.5",
@@ -31,7 +33,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.3.5.zip",
       "sourceArchiveUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.3.5.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "06df4b3a56df12f813c5c2fe91569bbc47b0797a",
+      "archiveByCommitUrl": "https://github.com/xeloboyo/factoriodustry/archive/06df4b3a56df12f813c5c2fe91569bbc47b0797a.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "0.3.5",
+      "modVersion": "0.3.5",
+      "minGameVersion": "104.0",
+      "maxGameVersion": 105,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.5.4-alpha",
+      "modVersion": "0.4.1",
+      "minGameVersion": "140.4",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

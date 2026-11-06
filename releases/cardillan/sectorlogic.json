@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "cardillan/sectorlogic",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v0.1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 46,
           "downloadUrl": "https://github.com/cardillan/SectorLogic/releases/download/v0.1.1/SectorLogic.jar"
         }
-      ]
+      ],
+      "commitSha": "71c3611ade680eec6a56a0b0a580d89fd7ce57be",
+      "archiveByCommitUrl": "https://github.com/cardillan/sectorlogic/archive/71c3611ade680eec6a56a0b0a580d89fd7ce57be.zip"
     },
     {
       "tag": "v0.1.0",
@@ -38,7 +40,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/cardillan/sectorlogic/archive/refs/tags/v0.1.0.zip",
       "sourceArchiveUrl": "https://github.com/cardillan/sectorlogic/archive/refs/tags/v0.1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "d921bd057ea8b77d26e3904112268e81978bcf5f",
+      "archiveByCommitUrl": "https://github.com/cardillan/sectorlogic/archive/d921bd057ea8b77d26e3904112268e81978bcf5f.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v0.1.0",
+      "modVersion": "0.1.0",
+      "minGameVersion": "147",
+      "maxGameVersion": 154,
+      "hasRelease": false
+    },
+    {
+      "tag": "v0.1.1",
+      "modVersion": "0.1.1",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

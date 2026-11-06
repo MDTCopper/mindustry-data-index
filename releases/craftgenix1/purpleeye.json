@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "craftgenix1/purpleeye",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "test-release1",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release1.zip",
       "sourceArchiveUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "b4c49aa3586be5fee2cefb84ddcbd90fd05b6e3f",
+      "archiveByCommitUrl": "https://github.com/craftgenix1/purpleeye/archive/b4c49aa3586be5fee2cefb84ddcbd90fd05b6e3f.zip"
     },
     {
       "tag": "test-release",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release.zip",
       "sourceArchiveUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "bff1328a054147e64edfc6ff0578b137fc544af2",
+      "archiveByCommitUrl": "https://github.com/craftgenix1/purpleeye/archive/bff1328a054147e64edfc6ff0578b137fc544af2.zip"
     },
     {
       "tag": "fix",
@@ -46,7 +50,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/fix.zip",
       "sourceArchiveUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/fix.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "0cf6f4bd0c94e468bfc215a3958e79a741daf216",
+      "archiveByCommitUrl": "https://github.com/craftgenix1/purpleeye/archive/0cf6f4bd0c94e468bfc215a3958e79a741daf216.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "test-release1",
+      "modVersion": "Pre-content",
+      "minGameVersion": "149",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

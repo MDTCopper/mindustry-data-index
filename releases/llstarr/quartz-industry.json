@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "llstarr/quartz-industry",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "quartzindustry1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/llstarr/quartz-industry/releases/download/quartzindustry1.1/QuartzIndustry.zip"
         }
-      ]
+      ],
+      "commitSha": "b13b610001e9ba4ef5a8741af8f9afec452d8673",
+      "archiveByCommitUrl": "https://github.com/llstarr/quartz-industry/archive/b13b610001e9ba4ef5a8741af8f9afec452d8673.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -45,7 +47,18 @@
           "downloadCount": 1,
           "downloadUrl": "https://github.com/llstarr/quartz-industry/releases/download/mindustry-mod/quartz-industry.zip"
         }
-      ]
+      ],
+      "commitSha": "f25c5cb557ac10742508059bea11b87ef292a6f7",
+      "archiveByCommitUrl": "https://github.com/llstarr/quartz-industry/archive/f25c5cb557ac10742508059bea11b87ef292a6f7.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "quartzindustry1.1",
+      "modVersion": "1.1",
+      "minGameVersion": "149",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

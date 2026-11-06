@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "unquis/fading-revelations-remake",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v2.5.0",
@@ -20,10 +20,12 @@
         {
           "name": "FadingRevelations.jar",
           "size": 13177687,
-          "downloadCount": 5597,
+          "downloadCount": 5599,
           "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.5.0/FadingRevelations.jar"
         }
-      ]
+      ],
+      "commitSha": "4893763a81a253a4a57d08cc31fc45c1fb2c3ba1",
+      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/4893763a81a253a4a57d08cc31fc45c1fb2c3ba1.zip"
     },
     {
       "tag": "v2.4.0",
@@ -42,10 +44,12 @@
         {
           "name": "FadingRevelations.jar",
           "size": 13395262,
-          "downloadCount": 3486,
+          "downloadCount": 3487,
           "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.4.0/FadingRevelations.jar"
         }
-      ]
+      ],
+      "commitSha": "1bad04adbc977d73268491f8c76c7dcbe36d94ae",
+      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/1bad04adbc977d73268491f8c76c7dcbe36d94ae.zip"
     },
     {
       "tag": "v2.3.1-alpha",
@@ -67,7 +71,9 @@
           "downloadCount": 2010,
           "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.3.1-alpha/FadingRevelations.jar"
         }
-      ]
+      ],
+      "commitSha": "a04bdda0facee86efb25718536af83f2ae7d315e",
+      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/a04bdda0facee86efb25718536af83f2ae7d315e.zip"
     },
     {
       "tag": "patch",
@@ -82,7 +88,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/patch.zip",
       "sourceArchiveUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/patch.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "829aaa0e63a4d93398adcd5ebfd329b5e912e856",
+      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/829aaa0e63a4d93398adcd5ebfd329b5e912e856.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "patch",
+      "modVersion": "2.3.1",
+      "minGameVersion": "144.3",
+      "maxGameVersion": 147,
+      "hasRelease": false
+    },
+    {
+      "tag": "v2.5.0",
+      "modVersion": "2.5.0",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

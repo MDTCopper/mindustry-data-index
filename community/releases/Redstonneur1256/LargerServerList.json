@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "Redstonneur1256/LargerServerList",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "0.3",
@@ -23,7 +23,9 @@
           "downloadCount": 1431,
           "downloadUrl": "https://github.com/Redstonneur1256/LargerServerList/releases/download/0.3/LargerServerList.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "0.2",
@@ -45,7 +47,9 @@
           "downloadCount": 38,
           "downloadUrl": "https://github.com/Redstonneur1256/LargerServerList/releases/download/0.2/LargerServerList.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "0.1",
@@ -67,7 +71,25 @@
           "downloadCount": 280,
           "downloadUrl": "https://github.com/Redstonneur1256/LargerServerList/releases/download/0.1/LargerServerList.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "0.1",
+      "modVersion": "@version@",
+      "minGameVersion": "142",
+      "maxGameVersion": 143,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.3",
+      "modVersion": "@version@",
+      "minGameVersion": "143",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

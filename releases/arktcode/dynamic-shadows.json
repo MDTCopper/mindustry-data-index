@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "arktcode/dynamic-shadows",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "1.6.2.160.5",
@@ -20,10 +20,12 @@
         {
           "name": "dynamic-shadows-main.jar",
           "size": 177867,
-          "downloadCount": 1074,
+          "downloadCount": 1078,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/1.6.2.160.5/dynamic-shadows-main.jar"
         }
-      ]
+      ],
+      "commitSha": "37cd3313ecfc2736b784849524db8bd363b0acec",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/37cd3313ecfc2736b784849524db8bd363b0acec.zip"
     },
     {
       "tag": "1.6.160.5",
@@ -45,7 +47,9 @@
           "downloadCount": 54,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/1.6.160.5/dynamic-shadows-main.jar"
         }
-      ]
+      ],
+      "commitSha": "f277f8e9a732436f5a702961ebd505c16b53e27c",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/f277f8e9a732436f5a702961ebd505c16b53e27c.zip"
     },
     {
       "tag": "1.5.159.7",
@@ -67,7 +71,9 @@
           "downloadCount": 1481,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/1.5.159.7/dynamic-shadows-main.jar"
         }
-      ]
+      ],
+      "commitSha": "657025b22ad1cd5aece318fe0e182f811b67cd51",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/657025b22ad1cd5aece318fe0e182f811b67cd51.zip"
     },
     {
       "tag": "1.1.159.7DS",
@@ -89,7 +95,9 @@
           "downloadCount": 360,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/1.1.159.7DS/dynamic-shadows-main.jar"
         }
-      ]
+      ],
+      "commitSha": "0c75623ff42b3150b18c76eeb3716d7ac393c797",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/0c75623ff42b3150b18c76eeb3716d7ac393c797.zip"
     },
     {
       "tag": "1.05.158.1DS",
@@ -111,7 +119,9 @@
           "downloadCount": 1820,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/1.05.158.1DS/dynamicShadows.jar"
         }
-      ]
+      ],
+      "commitSha": "9a6f87a25bab74ec056989ef50a62a205f2dcbef",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/9a6f87a25bab74ec056989ef50a62a205f2dcbef.zip"
     },
     {
       "tag": "0.85.157.4DS",
@@ -133,7 +143,9 @@
           "downloadCount": 1572,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/0.85.157.4DS/dynamicShadows.jar"
         }
-      ]
+      ],
+      "commitSha": "58ed704b0d38a605ec324d1b128a2125f8b3fae7",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/58ed704b0d38a605ec324d1b128a2125f8b3fae7.zip"
     },
     {
       "tag": "0.7.157.4DS",
@@ -155,7 +167,9 @@
           "downloadCount": 161,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/0.7.157.4DS/dynamicShadows.jar"
         }
-      ]
+      ],
+      "commitSha": "91d4d6111139248d4f16f5ab8f6697fbaaf26f21",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/91d4d6111139248d4f16f5ab8f6697fbaaf26f21.zip"
     },
     {
       "tag": "0.6.157.4DS",
@@ -177,7 +191,32 @@
           "downloadCount": 138,
           "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/0.6.157.4DS/dynamicShadows.jar"
         }
-      ]
+      ],
+      "commitSha": "93fa8fd0339e93d5b9f4a6e45ad8cfd551494340",
+      "archiveByCommitUrl": "https://github.com/arktcode/dynamic-shadows/archive/93fa8fd0339e93d5b9f4a6e45ad8cfd551494340.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "1.05.158.1DS",
+      "modVersion": "0.85.157.4",
+      "minGameVersion": "157.4",
+      "maxGameVersion": 159.7,
+      "hasRelease": true
+    },
+    {
+      "tag": "1.6.160.5",
+      "modVersion": "1.5.159.7",
+      "minGameVersion": "159.7",
+      "maxGameVersion": 160.5,
+      "hasRelease": true
+    },
+    {
+      "tag": "1.6.2.160.5",
+      "modVersion": "1.6.2.160.5",
+      "minGameVersion": "160.5",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

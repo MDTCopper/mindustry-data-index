@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "darkjeanne/schempack-manager",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "release_1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 850,
           "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.1/schempack-manager.jar"
         }
-      ]
+      ],
+      "commitSha": "52440a8248bdafe8fd94a351438d5a85483c484b",
+      "archiveByCommitUrl": "https://github.com/darkjeanne/schempack-manager/archive/52440a8248bdafe8fd94a351438d5a85483c484b.zip"
     },
     {
       "tag": "release_1.0",
@@ -45,7 +47,18 @@
           "downloadCount": 325,
           "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.0/schempack-manager.jar"
         }
-      ]
+      ],
+      "commitSha": "722e63c8fc5275140addb0e0c8516c1b0ab5d1da",
+      "archiveByCommitUrl": "https://github.com/darkjeanne/schempack-manager/archive/722e63c8fc5275140addb0e0c8516c1b0ab5d1da.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "release_1.1",
+      "modVersion": "1.0.1",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

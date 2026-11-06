@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "oleglysukhin/admintool",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "1.1",
@@ -23,7 +23,9 @@
           "downloadCount": 387,
           "downloadUrl": "https://github.com/oleglysukhin/AdminTool/releases/download/1.1/AdminTool.zip"
         }
-      ]
+      ],
+      "commitSha": "3c65e67fecc9d8f1b7fcb2ade01d2e9c0cc2d892",
+      "archiveByCommitUrl": "https://github.com/oleglysukhin/admintool/archive/3c65e67fecc9d8f1b7fcb2ade01d2e9c0cc2d892.zip"
     },
     {
       "tag": "1.0",
@@ -38,7 +40,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/oleglysukhin/admintool/archive/refs/tags/1.0.zip",
       "sourceArchiveUrl": "https://github.com/oleglysukhin/admintool/archive/refs/tags/1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "78d4f4d42eeefe395ac157389079ff72c0419420",
+      "archiveByCommitUrl": "https://github.com/oleglysukhin/admintool/archive/78d4f4d42eeefe395ac157389079ff72c0419420.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "1.0",
+      "modVersion": "1.0",
+      "minGameVersion": "122",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "1.1",
+      "modVersion": "1.1",
+      "minGameVersion": "140",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

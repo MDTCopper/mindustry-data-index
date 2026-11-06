@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "Heroblack303/Stardustry",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "mindustry-mod-v7",
@@ -23,7 +23,9 @@
           "downloadCount": 42,
           "downloadUrl": "https://github.com/Heroblack303/Stardustry/releases/download/mindustry-mod-v7/stardustry.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "zomberbeta",
@@ -45,7 +47,18 @@
           "downloadCount": 15,
           "downloadUrl": "https://github.com/Heroblack303/Stardustry/releases/download/zomberbeta/stardustry.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "mindustry-mod-v7",
+      "modVersion": "0.1",
+      "minGameVersion": "145.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

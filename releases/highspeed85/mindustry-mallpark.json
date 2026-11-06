@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "highspeed85/mindustry-mallpark",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v2026.04.27",
@@ -23,7 +23,9 @@
           "downloadCount": 321,
           "downloadUrl": "https://github.com/HighSpeed85/mindustry-mallpark/releases/download/v2026.04.27/mindustry-mallpark.jar"
         }
-      ]
+      ],
+      "commitSha": "a5bbad5ed7faf8741d3522ed70ddfbb7b406e704",
+      "archiveByCommitUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/a5bbad5ed7faf8741d3522ed70ddfbb7b406e704.zip"
     },
     {
       "tag": "v2025.05.03",
@@ -38,7 +40,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/refs/tags/v2025.05.03.zip",
       "sourceArchiveUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/refs/tags/v2025.05.03.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "ddc33d250b69eb72dce4ebae1406969a9f726f14",
+      "archiveByCommitUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/ddc33d250b69eb72dce4ebae1406969a9f726f14.zip"
     },
     {
       "tag": "v2025.04.25",
@@ -53,7 +57,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/refs/tags/v2025.04.25.zip",
       "sourceArchiveUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/refs/tags/v2025.04.25.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "8e023b8a85bf9b3e12ada707dcdad0ce4e2f5814",
+      "archiveByCommitUrl": "https://github.com/highspeed85/mindustry-mallpark/archive/8e023b8a85bf9b3e12ada707dcdad0ce4e2f5814.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v2025.05.03",
+      "modVersion": "2025.05.03",
+      "minGameVersion": "146",
+      "maxGameVersion": 147,
+      "hasRelease": true
+    },
+    {
+      "tag": "v2026.04.27",
+      "modVersion": "2026.04.27",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

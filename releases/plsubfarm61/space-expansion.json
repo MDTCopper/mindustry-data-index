@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "plsubfarm61/space-expansion",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "black-hole-test",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/black-hole-test.zip",
       "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/black-hole-test.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "39bfa437b08fb7dfba6e6ca5d086d315cdfc61a7",
+      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/39bfa437b08fb7dfba6e6ca5d086d315cdfc61a7.zip"
     },
     {
       "tag": "base",
@@ -31,7 +33,9 @@
       "metadataStatus": "missing",
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/base.zip",
       "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/base.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "d9812aec835be78b4038817bc1beffcf2dc9ec67",
+      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/d9812aec835be78b4038817bc1beffcf2dc9ec67.zip"
     },
     {
       "tag": "test",
@@ -46,7 +50,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/test.zip",
       "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/test.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "dfb61c7a2dd869896b6be1f8af55c150ffeda5d2",
+      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/dfb61c7a2dd869896b6be1f8af55c150ffeda5d2.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -61,7 +67,18 @@
       "metadataStatus": "missing",
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "d9812aec835be78b4038817bc1beffcf2dc9ec67",
+      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/d9812aec835be78b4038817bc1beffcf2dc9ec67.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "black-hole-test",
+      "modVersion": "0.01",
+      "minGameVersion": "146",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

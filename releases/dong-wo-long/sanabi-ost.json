@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "dong-wo-long/sanabi-ost",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v1.1.0-release",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.1.0-release.zip",
       "sourceArchiveUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.1.0-release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "b840cc43d55386881cc79773698d69a7666fc791",
+      "archiveByCommitUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/b840cc43d55386881cc79773698d69a7666fc791.zip"
     },
     {
       "tag": "v1.0.0-release",
@@ -31,7 +33,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.0.0-release.zip",
       "sourceArchiveUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.0.0-release.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "e2c469e787c662a30b134aa026274b097a20e0d0",
+      "archiveByCommitUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/e2c469e787c662a30b134aa026274b097a20e0d0.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.1.0-release",
+      "modVersion": "v1.1.0",
+      "minGameVersion": "146",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

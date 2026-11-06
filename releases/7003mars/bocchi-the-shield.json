@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "7003mars/bocchi-the-shield",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v2",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/7003mars/bocchi-the-shield/archive/refs/tags/v2.zip",
       "sourceArchiveUrl": "https://github.com/7003mars/bocchi-the-shield/archive/refs/tags/v2.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "41a0d55702158d139907839a6cdbf79ac7e7f3d9",
+      "archiveByCommitUrl": "https://github.com/7003mars/bocchi-the-shield/archive/41a0d55702158d139907839a6cdbf79ac7e7f3d9.zip"
     },
     {
       "tag": "v1.03",
@@ -38,7 +40,9 @@
           "downloadCount": 7043,
           "downloadUrl": "https://github.com/7003Mars/bocchi-the-shield/releases/download/v1.03/bocchi-the-shield-1.0.jar"
         }
-      ]
+      ],
+      "commitSha": "996a888b19a2e6c4006e210df09143810e4315c0",
+      "archiveByCommitUrl": "https://github.com/7003mars/bocchi-the-shield/archive/996a888b19a2e6c4006e210df09143810e4315c0.zip"
     },
     {
       "tag": "v1.02",
@@ -60,7 +64,9 @@
           "downloadCount": 1184,
           "downloadUrl": "https://github.com/7003Mars/bocchi-the-shield/releases/download/v1.02/bocchi-the-shield-1.0.jar"
         }
-      ]
+      ],
+      "commitSha": "d4fd247a2cccdc7a7be66e8567ccf4feefe35ddb",
+      "archiveByCommitUrl": "https://github.com/7003mars/bocchi-the-shield/archive/d4fd247a2cccdc7a7be66e8567ccf4feefe35ddb.zip"
     },
     {
       "tag": "v1.01",
@@ -82,7 +88,9 @@
           "downloadCount": 210,
           "downloadUrl": "https://github.com/7003Mars/bocchi-the-shield/releases/download/v1.01/bocchi-the-shield-1.0.jar"
         }
-      ]
+      ],
+      "commitSha": "542638bcd96775c04f99180aca8d7c677fa044c5",
+      "archiveByCommitUrl": "https://github.com/7003mars/bocchi-the-shield/archive/542638bcd96775c04f99180aca8d7c677fa044c5.zip"
     },
     {
       "tag": "new",
@@ -104,7 +112,9 @@
           "downloadCount": 55,
           "downloadUrl": "https://github.com/7003Mars/bocchi-the-shield/releases/download/new/boccher-1.0.jar"
         }
-      ]
+      ],
+      "commitSha": "85c059cea34943727292fdf155d49788be11dadc",
+      "archiveByCommitUrl": "https://github.com/7003mars/bocchi-the-shield/archive/85c059cea34943727292fdf155d49788be11dadc.zip"
     },
     {
       "tag": "v1.0",
@@ -119,7 +129,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/7003mars/bocchi-the-shield/archive/refs/tags/v1.0.zip",
       "sourceArchiveUrl": "https://github.com/7003mars/bocchi-the-shield/archive/refs/tags/v1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "85c059cea34943727292fdf155d49788be11dadc",
+      "archiveByCommitUrl": "https://github.com/7003mars/bocchi-the-shield/archive/85c059cea34943727292fdf155d49788be11dadc.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v1.03",
+      "modVersion": "1.0",
+      "minGameVersion": "141",
+      "maxGameVersion": 147,
+      "hasRelease": true
+    },
+    {
+      "tag": "v2",
+      "modVersion": "1.0",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

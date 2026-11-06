@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "KirillRum/Mega-Builds",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "Alpha-0.1",
@@ -23,7 +23,9 @@
           "downloadCount": 23,
           "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha-0.1/Mega-Builds.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "Alpha",
@@ -45,7 +47,18 @@
           "downloadCount": 14,
           "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha/MindustryModMy.zip"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "Alpha-0.1",
+      "modVersion": "Fix update",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "AForgetfulness/TowerDefense",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "mindustry-mod",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/AForgetfulness/TowerDefense/archive/refs/tags/mindustry-mod.zip",
       "sourceArchiveUrl": "https://github.com/AForgetfulness/TowerDefense/archive/refs/tags/mindustry-mod.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "mindustry",
@@ -31,7 +33,18 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/AForgetfulness/TowerDefense/archive/refs/tags/mindustry.zip",
       "sourceArchiveUrl": "https://github.com/AForgetfulness/TowerDefense/archive/refs/tags/mindustry.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "mindustry-mod",
+      "modVersion": "1",
+      "minGameVersion": "140.1",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

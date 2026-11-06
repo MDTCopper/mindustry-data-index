@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "StudioSharded/Reunited",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "vb",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/StudioSharded/Reunited/archive/refs/tags/vb.zip",
       "sourceArchiveUrl": "https://github.com/StudioSharded/Reunited/archive/refs/tags/vb.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "va",
@@ -38,7 +40,18 @@
           "downloadCount": 53,
           "downloadUrl": "https://github.com/StudioSharded/Reunited/releases/download/va/InfernumDustry.jar"
         }
-      ]
+      ],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "vb",
+      "modVersion": "p-a0.1",
+      "minGameVersion": "146",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

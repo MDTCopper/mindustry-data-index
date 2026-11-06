@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "routerxdd/drift-units",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "drift2",
@@ -23,7 +23,9 @@
           "downloadCount": 47,
           "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift2/Drift-units.zip"
         }
-      ]
+      ],
+      "commitSha": "c5580b110aefdc66c161f492317daf06afdba2d2",
+      "archiveByCommitUrl": "https://github.com/routerxdd/drift-units/archive/c5580b110aefdc66c161f492317daf06afdba2d2.zip"
     },
     {
       "tag": "drift1",
@@ -45,7 +47,18 @@
           "downloadCount": 10,
           "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift1/Drift-units.zip"
         }
-      ]
+      ],
+      "commitSha": "ee8a33ca7de88c9ec5ebcf09a2d604b5b72d9611",
+      "archiveByCommitUrl": "https://github.com/routerxdd/drift-units/archive/ee8a33ca7de88c9ec5ebcf09a2d604b5b72d9611.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "drift2",
+      "modVersion": "lol",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "deercarbonate/azimuth",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "0.5",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/0.5.zip",
       "sourceArchiveUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/0.5.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "6dffa873beb7d67c3ce545297c24ea8849913640",
+      "archiveByCommitUrl": "https://github.com/deercarbonate/azimuth/archive/6dffa873beb7d67c3ce545297c24ea8849913640.zip"
     },
     {
       "tag": "Minor_update",
@@ -31,7 +33,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Minor_update.zip",
       "sourceArchiveUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Minor_update.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "e82dca9d1dcd442134e3708ceef78934e2cd109b",
+      "archiveByCommitUrl": "https://github.com/deercarbonate/azimuth/archive/e82dca9d1dcd442134e3708ceef78934e2cd109b.zip"
     },
     {
       "tag": "Bugfixes",
@@ -46,7 +50,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Bugfixes.zip",
       "sourceArchiveUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Bugfixes.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "855c43408e5064324725b8f618221f645adb5243",
+      "archiveByCommitUrl": "https://github.com/deercarbonate/azimuth/archive/855c43408e5064324725b8f618221f645adb5243.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "Minor_update",
+      "modVersion": "0.32",
+      "minGameVersion": "154",
+      "maxGameVersion": 160,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.5",
+      "modVersion": "0.51",
+      "minGameVersion": "160",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

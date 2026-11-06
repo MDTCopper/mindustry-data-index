@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "sk7725/timecontrol",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v7",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v7.zip",
       "sourceArchiveUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v7.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "cd7733a2ffe0f66df9551215e182554cd3c4aff5",
+      "archiveByCommitUrl": "https://github.com/sk7725/timecontrol/archive/cd7733a2ffe0f66df9551215e182554cd3c4aff5.zip"
     },
     {
       "tag": "v6",
@@ -31,7 +33,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v6.zip",
       "sourceArchiveUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v6.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": "a25863701a8620a6c876de0fa1acb085989997b1",
+      "archiveByCommitUrl": "https://github.com/sk7725/timecontrol/archive/a25863701a8620a6c876de0fa1acb085989997b1.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v6",
+      "modVersion": "0.2",
+      "minGameVersion": "108",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "v7",
+      "modVersion": "0.2",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

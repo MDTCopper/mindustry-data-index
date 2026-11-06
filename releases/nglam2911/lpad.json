@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "nglam2911/lpad",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "0.0.2",
@@ -23,7 +23,9 @@
           "downloadCount": 220,
           "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.2/LPad-0.0.2.jar"
         }
-      ]
+      ],
+      "commitSha": "5e4571dbb5d0128970646848d501a3684c84df08",
+      "archiveByCommitUrl": "https://github.com/nglam2911/lpad/archive/5e4571dbb5d0128970646848d501a3684c84df08.zip"
     },
     {
       "tag": "0.0.1",
@@ -45,7 +47,25 @@
           "downloadCount": 89,
           "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.1/LPad-0.0.1.jar"
         }
-      ]
+      ],
+      "commitSha": "226aad283efc9ec929d0ac34651e4517d70a7b71",
+      "archiveByCommitUrl": "https://github.com/nglam2911/lpad/archive/226aad283efc9ec929d0ac34651e4517d70a7b71.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "0.0.1",
+      "modVersion": "0.0.1",
+      "minGameVersion": "157",
+      "maxGameVersion": 158,
+      "hasRelease": true
+    },
+    {
+      "tag": "0.0.2",
+      "modVersion": "0.0.2",
+      "minGameVersion": "158",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

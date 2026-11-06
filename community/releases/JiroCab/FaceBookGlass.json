@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "JiroCab/FaceBookGlass",
-  "generatedAt": "2026-11-06T12:49:59.683Z",
+  "generatedAt": "2026-11-06T13:12:50.184Z",
   "releases": [
     {
       "tag": "V-1.1",
@@ -16,7 +16,9 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/JiroCab/FaceBookGlass/archive/refs/tags/V-1.1.zip",
       "sourceArchiveUrl": "https://github.com/JiroCab/FaceBookGlass/archive/refs/tags/V-1.1.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
     },
     {
       "tag": "V-1.0",
@@ -31,7 +33,25 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/JiroCab/FaceBookGlass/archive/refs/tags/V-1.0.zip",
       "sourceArchiveUrl": "https://github.com/JiroCab/FaceBookGlass/archive/refs/tags/V-1.0.zip",
-      "assets": []
+      "assets": [],
+      "commitSha": null,
+      "archiveByCommitUrl": null
+    }
+  ],
+  "compat": [
+    {
+      "tag": "V-1.0",
+      "modVersion": "1.0",
+      "minGameVersion": "105",
+      "maxGameVersion": 136,
+      "hasRelease": true
+    },
+    {
+      "tag": "V-1.1",
+      "modVersion": "1.0",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "kukoldiki/md-proxy",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v3",
@@ -23,7 +23,9 @@
           "downloadCount": 75,
           "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v3/md-proxy.jar"
         }
-      ]
+      ],
+      "commitSha": "94886e76b2b51cd54c3b233ff810cc71fb52d43d",
+      "archiveByCommitUrl": "https://github.com/kukoldiki/md-proxy/archive/94886e76b2b51cd54c3b233ff810cc71fb52d43d.zip"
     },
     {
       "tag": "v2",
@@ -45,7 +47,9 @@
           "downloadCount": 101,
           "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v2/md-proxyDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "58f0c98f07110b8c3a7d90f94f1a2499f116439f",
+      "archiveByCommitUrl": "https://github.com/kukoldiki/md-proxy/archive/58f0c98f07110b8c3a7d90f94f1a2499f116439f.zip"
     },
     {
       "tag": "v1",
@@ -67,7 +71,18 @@
           "downloadCount": 51,
           "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v1/md-proxyDesktop.jar"
         }
-      ]
+      ],
+      "commitSha": "ee6b73ec3573595aa152af4b680fdcc98ca79d0c",
+      "archiveByCommitUrl": "https://github.com/kukoldiki/md-proxy/archive/ee6b73ec3573595aa152af4b680fdcc98ca79d0c.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v3",
+      "modVersion": "1",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

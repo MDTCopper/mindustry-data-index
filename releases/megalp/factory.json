@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "megalp/factory",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "2.5.1",
@@ -23,7 +23,9 @@
           "downloadCount": 41,
           "downloadUrl": "https://github.com/MegaLP/factory/releases/download/2.5.1/Factory.zip"
         }
-      ]
+      ],
+      "commitSha": "7f25c36df5a1ebac288ee729169704b13b53010e",
+      "archiveByCommitUrl": "https://github.com/megalp/factory/archive/7f25c36df5a1ebac288ee729169704b13b53010e.zip"
     },
     {
       "tag": "mindustry-mod",
@@ -45,7 +47,25 @@
           "downloadCount": 3,
           "downloadUrl": "https://github.com/MegaLP/factory/releases/download/mindustry-mod/Factory.zip"
         }
-      ]
+      ],
+      "commitSha": "536d32cf87b53119b747a4b7098cb7c3c2f5bf22",
+      "archiveByCommitUrl": "https://github.com/megalp/factory/archive/536d32cf87b53119b747a4b7098cb7c3c2f5bf22.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "mindustry-mod",
+      "modVersion": "2.0.11",
+      "minGameVersion": "138.1",
+      "maxGameVersion": 145,
+      "hasRelease": true
+    },
+    {
+      "tag": "2.5.1",
+      "modVersion": "2.5.1",
+      "minGameVersion": "145",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

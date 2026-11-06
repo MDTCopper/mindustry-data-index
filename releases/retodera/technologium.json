@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "retodera/technologium",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v0.5.1-hotfix1",
@@ -20,10 +20,12 @@
         {
           "name": "technologium.jar",
           "size": 33335626,
-          "downloadCount": 339,
+          "downloadCount": 340,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1-hotfix1/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "7d534d2e8cf901c78cdd67f474d0e992ab45bf5a",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/7d534d2e8cf901c78cdd67f474d0e992ab45bf5a.zip"
     },
     {
       "tag": "v0.5.1",
@@ -45,7 +47,9 @@
           "downloadCount": 77,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "7d534d2e8cf901c78cdd67f474d0e992ab45bf5a",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/7d534d2e8cf901c78cdd67f474d0e992ab45bf5a.zip"
     },
     {
       "tag": "v0.4.3-beta",
@@ -67,7 +71,9 @@
           "downloadCount": 183,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.3-beta/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "31112a2f6292347a2f4930e5df1cea91e244fac8",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/31112a2f6292347a2f4930e5df1cea91e244fac8.zip"
     },
     {
       "tag": "v0.4.2",
@@ -86,10 +92,12 @@
         {
           "name": "technologium.jar",
           "size": 3531102,
-          "downloadCount": 10997,
+          "downloadCount": 11000,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.2/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "07343111092549e3827e91ff0f2ffc1b57729ca7",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/07343111092549e3827e91ff0f2ffc1b57729ca7.zip"
     },
     {
       "tag": "v0.4.1",
@@ -111,7 +119,9 @@
           "downloadCount": 848,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.1/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "9cf8ae5d5f68515cc9a04342156852b83682b362",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/9cf8ae5d5f68515cc9a04342156852b83682b362.zip"
     },
     {
       "tag": "v0.4",
@@ -133,7 +143,9 @@
           "downloadCount": 423,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "f9c2d3acd09964bbc6ca416ea3beb6773140100c",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/f9c2d3acd09964bbc6ca416ea3beb6773140100c.zip"
     },
     {
       "tag": "v0.3",
@@ -155,7 +167,32 @@
           "downloadCount": 1317,
           "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.3/technologium.jar"
         }
-      ]
+      ],
+      "commitSha": "7866c2fea6a52c052f3a6c53c794236420961aef",
+      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/7866c2fea6a52c052f3a6c53c794236420961aef.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v0.4.2",
+      "modVersion": "v0.4",
+      "minGameVersion": "145",
+      "maxGameVersion": 147,
+      "hasRelease": true
+    },
+    {
+      "tag": "v0.4.3-beta",
+      "modVersion": "v0.4.4",
+      "minGameVersion": "147",
+      "maxGameVersion": 154,
+      "hasRelease": true
+    },
+    {
+      "tag": "v0.5.1-hotfix1",
+      "modVersion": "v0.5.1",
+      "minGameVersion": "154",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

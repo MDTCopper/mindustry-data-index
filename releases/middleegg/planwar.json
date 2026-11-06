@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "middleegg/planwar",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "OfficialVersion",
@@ -23,7 +23,9 @@
           "downloadCount": 11,
           "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/OfficialVersion/PlanWar-Integrate-0.0.0.2.jar"
         }
-      ]
+      ],
+      "commitSha": "ab44c4760db66055413631657d73363b145933d7",
+      "archiveByCommitUrl": "https://github.com/middleegg/planwar/archive/ab44c4760db66055413631657d73363b145933d7.zip"
     },
     {
       "tag": "First-Version",
@@ -45,7 +47,18 @@
           "downloadCount": 4,
           "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/First-Version/PlanWar-Integrate-0.0.0.1.jar"
         }
-      ]
+      ],
+      "commitSha": "bf4f762c8462cb4a8ee527033e8f6ab54ab05553",
+      "archiveByCommitUrl": "https://github.com/middleegg/planwar/archive/bf4f762c8462cb4a8ee527033e8f6ab54ab05553.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "OfficialVersion",
+      "modVersion": "0.0.1",
+      "minGameVersion": "155",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

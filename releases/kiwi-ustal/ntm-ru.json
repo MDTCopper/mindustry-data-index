@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "kiwi-ustal/ntm-ru",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "3.1",
@@ -23,7 +23,9 @@
           "downloadCount": 45,
           "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/3.1/ntmru.zip"
         }
-      ]
+      ],
+      "commitSha": "8ac084a5d48d2e68554fbba6b253e8aa4eb1e614",
+      "archiveByCommitUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/8ac084a5d48d2e68554fbba6b253e8aa4eb1e614.zip"
     },
     {
       "tag": "2.8-1.1",
@@ -45,7 +47,9 @@
           "downloadCount": 14,
           "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8-1.1/ntmru.zip"
         }
-      ]
+      ],
+      "commitSha": "7f34df982f8a653770a5693534806b15bd019f50",
+      "archiveByCommitUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/7f34df982f8a653770a5693534806b15bd019f50.zip"
     },
     {
       "tag": "2.8",
@@ -67,7 +71,18 @@
           "downloadCount": 5,
           "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8/ntmru.zip"
         }
-      ]
+      ],
+      "commitSha": "dc10e903df0e81def5032ca6415594feac678ead",
+      "archiveByCommitUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/dc10e903df0e81def5032ca6415594feac678ead.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "3.1",
+      "modVersion": "2.8 1.1",
+      "minGameVersion": "136",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }

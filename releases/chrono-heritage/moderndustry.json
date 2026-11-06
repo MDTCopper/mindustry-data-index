@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "chrono-heritage/moderndustry",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v0.02",
@@ -23,7 +23,9 @@
           "downloadCount": 4394,
           "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.02/chrono-moderndustry-v0.02.jar"
         }
-      ]
+      ],
+      "commitSha": "5833900c031c0a238c1fd87238b15fe2b7f208b6",
+      "archiveByCommitUrl": "https://github.com/chrono-heritage/moderndustry/archive/5833900c031c0a238c1fd87238b15fe2b7f208b6.zip"
     },
     {
       "tag": "v0.0",
@@ -45,7 +47,25 @@
           "downloadCount": 87,
           "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.0/Moderndustry-v0.01.jar"
         }
-      ]
+      ],
+      "commitSha": "bed551b7268c7bf3fa6cf9e18f56f475f328e9e0",
+      "archiveByCommitUrl": "https://github.com/chrono-heritage/moderndustry/archive/bed551b7268c7bf3fa6cf9e18f56f475f328e9e0.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v0.0",
+      "modVersion": "v0.01",
+      "minGameVersion": "145.1",
+      "maxGameVersion": 146,
+      "hasRelease": true
+    },
+    {
+      "tag": "v0.02",
+      "modVersion": "v0.01",
+      "minGameVersion": "146",
+      "maxGameVersion": 147,
+      "hasRelease": true
     }
   ]
 }

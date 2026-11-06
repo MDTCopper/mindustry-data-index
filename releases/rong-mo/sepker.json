@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "rong-mo/sepker",
-  "generatedAt": "2026-11-06T10:55:22.660Z",
+  "generatedAt": "2026-11-06T13:05:25.386Z",
   "releases": [
     {
       "tag": "v0.6.11",
@@ -20,10 +20,12 @@
         {
           "name": "V0.6.11.jar",
           "size": 1537351,
-          "downloadCount": 70,
+          "downloadCount": 71,
           "downloadUrl": "https://github.com/rong-mo/sepker/releases/download/v0.6.11/V0.6.11.jar"
         }
-      ]
+      ],
+      "commitSha": "8ca5cd67f8fe184abafd174847d4450b4a0f5c85",
+      "archiveByCommitUrl": "https://github.com/rong-mo/sepker/archive/8ca5cd67f8fe184abafd174847d4450b4a0f5c85.zip"
     },
     {
       "tag": "v0.6.10",
@@ -45,7 +47,18 @@
           "downloadCount": 10,
           "downloadUrl": "https://github.com/rong-mo/sepker/releases/download/v0.6.10/V0.6.10.jar"
         }
-      ]
+      ],
+      "commitSha": "411cea605c464ef9c81dd50e62e71bd9ee193073",
+      "archiveByCommitUrl": "https://github.com/rong-mo/sepker/archive/411cea605c464ef9c81dd50e62e71bd9ee193073.zip"
+    }
+  ],
+  "compat": [
+    {
+      "tag": "v0.6.11",
+      "modVersion": "0.6.11",
+      "minGameVersion": "159",
+      "maxGameVersion": null,
+      "hasRelease": true
     }
   ]
 }
