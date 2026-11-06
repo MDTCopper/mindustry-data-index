@@ -131,11 +131,18 @@ export class HttpClient {
       notModified: 0,
       rateLimitWaits: 0,
       rateLimitWaitMs: 0,
+      remaining: null,
+      resetAt: null,
     };
   }
 
   log(message) {
     this.logger?.(message);
+  }
+
+  // 剩余配额 ≤阈值时视为「配额不足」，用于优雅中止本次运行（下次续跑）
+  hasLowQuota(threshold = 5) {
+    return this.stats.remaining !== null && this.stats.remaining <= threshold;
   }
 
   // 剩余配额 ≤5 时先等到重置，避免请求半路被拒
@@ -145,6 +152,8 @@ export class HttpClient {
     if (remaining === null || reset === null) {
       return;
     }
+    this.stats.remaining = remaining;
+    this.stats.resetAt = reset * 1000;
     if (remaining <= 5) {
       const until = reset * 1000 + 1000;
       if (until > this.gateUntil) {

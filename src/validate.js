@@ -15,11 +15,11 @@ import {
 import { REFRESH_STATE_REL_PATH } from './refresh-state.js';
 import { VERSIONS_REL_PATH, VERSIONS_API } from './versions.js';
 import {
-  GATE_REL_PATH,
+  GATE_REL_PATHS,
   GATE_REPO,
   GATE_BASELINE_URL,
-  GATE_CONSTANTS,
   gateStartVersion,
+  gateTypeConfig,
   mergeGateRules,
 } from './mod-gate.js';
 
@@ -482,48 +482,54 @@ export function validateVersionsData(file, { errors, warnings } = {}) {
   };
 }
 
-export function validateGateData(file, { errors } = {}) {
+export function validateGateData(file, { type, errors } = {}) {
+  const config = gateTypeConfig(type);
+  const label = `${config.gate}-gate`;
   if (!isPlainObject(file)) {
-    errors.push('mod-gate.json 顶层不是对象');
+    errors.push(`${label}.json 顶层不是对象`);
     return { versionCount: 0, ruleCount: 0 };
   }
   if (file.formatVersion !== 1) {
-    errors.push(`mod-gate.formatVersion 应为 1，实际为 ${JSON.stringify(file.formatVersion)}`);
+    errors.push(`${label}.formatVersion 应为 1，实际为 ${JSON.stringify(file.formatVersion)}`);
+  }
+  if (file.gate !== config.gate) {
+    errors.push(`${label}.gate 应为 ${config.gate}，实际为 ${JSON.stringify(file.gate)}`);
   }
   if (!isIsoDate(file.generatedAt)) {
-    errors.push('mod-gate.generatedAt 缺失或不是 ISO 时间');
+    errors.push(`${label}.generatedAt 缺失或不是 ISO 时间`);
   }
   if (!isPlainObject(file.source)) {
-    errors.push('mod-gate.source 缺失');
+    errors.push(`${label}.source 缺失`);
   } else {
     if (file.source.repo !== GATE_REPO) {
-      errors.push(`mod-gate.source.repo 应为 ${GATE_REPO}`);
+      errors.push(`${label}.source.repo 应为 ${GATE_REPO}`);
     }
     if (
       typeof file.source.baseline !== 'string' ||
       !file.source.baseline.startsWith('https://')
     ) {
-      errors.push('mod-gate.source.baseline 应为 https 地址');
+      errors.push(`${label}.source.baseline 应为 https 地址`);
     }
     if (file.source.baseline !== GATE_BASELINE_URL) {
-      errors.push(`mod-gate.source.baseline 应为 ${GATE_BASELINE_URL}`);
+      errors.push(`${label}.source.baseline 应为 ${GATE_BASELINE_URL}`);
     }
     if (
       !Array.isArray(file.source.constants) ||
-      GATE_CONSTANTS.some((name) => !file.source.constants.includes(name))
+      file.source.constants.length !== 1 ||
+      file.source.constants[0] !== config.constant
     ) {
-      errors.push('mod-gate.source.constants 缺少门禁常量名');
+      errors.push(`${label}.source.constants 应只包含 ${config.constant}`);
     }
     if (
       !Array.isArray(file.source.resolvedPaths) ||
       file.source.resolvedPaths.some((item) => typeof item !== 'string')
     ) {
-      errors.push('mod-gate.source.resolvedPaths 应为字符串数组');
+      errors.push(`${label}.source.resolvedPaths 应为字符串数组`);
     }
   }
 
   if (!Array.isArray(file.rules) || file.rules.length === 0) {
-    errors.push('mod-gate.rules 不是非空数组');
+    errors.push(`${label}.rules 不是非空数组`);
     return { versionCount: 0, ruleCount: 0 };
   }
   const rules = file.rules;
@@ -539,10 +545,8 @@ export function validateGateData(file, { errors } = {}) {
     if (!isNumberOrNull(rule.max)) {
       errors.push(`${where}.max 应为数字或 null`);
     }
-    for (const field of ['mod', 'java']) {
-      if (!Number.isInteger(rule[field])) {
-        errors.push(`${where}.${field} 应为整数`);
-      }
+    if (!Number.isInteger(rule.value)) {
+      errors.push(`${where}.value 应为整数`);
     }
     if (!GATE_SOURCES.has(rule.source)) {
       errors.push(`${where}.source 非法：${JSON.stringify(rule.source)}`);
@@ -565,11 +569,7 @@ export function validateGateData(file, { errors } = {}) {
         errors.push(`rules[${index}] 与下一条不连续：max=${rule.max}，next.min=${next.min}`);
       }
     }
-    if (
-      next !== undefined &&
-      rule?.mod === next?.mod &&
-      rule?.java === next?.java
-    ) {
+    if (next !== undefined && rule?.value === next?.value) {
       errors.push(`rules[${index}] 与下一条门禁值相同，未合并`);
     }
   }
@@ -579,7 +579,7 @@ export function validateGateData(file, { errors } = {}) {
   }
 
   if (!Array.isArray(file.versions) || file.versions.length === 0) {
-    errors.push('mod-gate.versions 不是非空数组');
+    errors.push(`${label}.versions 不是非空数组`);
     return { versionCount: 0, ruleCount: rules.length };
   }
   const versions = file.versions;
@@ -609,10 +609,8 @@ export function validateGateData(file, { errors } = {}) {
       }
       lastVersion = item.version;
     }
-    for (const field of ['mod', 'java']) {
-      if (!Number.isInteger(item[field])) {
-        errors.push(`${where}.${field} 应为整数`);
-      }
+    if (!Number.isInteger(item.value)) {
+      errors.push(`${where}.value 应为整数`);
     }
     if (!GATE_SOURCES.has(item.source)) {
       errors.push(`${where}.source 非法：${JSON.stringify(item.source)}`);
@@ -853,23 +851,22 @@ export function validateRefreshStateData(state, { errors } = {}) {
     if (entry.page1Etag !== null && typeof entry.page1Etag !== 'string') {
       errors.push(`state.mods.${repo}.page1Etag 应为字符串或 null`);
     }
-    if (entry.page1FetchedAt !== null && !isIsoDate(entry.page1FetchedAt)) {
-      errors.push(`state.mods.${repo}.page1FetchedAt 应为 ISO 时间或 null`);
+    for (const field of ['page1FetchedAt', 'page2FetchedAt', 'fullFetchedAt', 'tagsFetchedAt']) {
+      const value = entry[field];
+      if (value !== undefined && value !== null && !isIsoDate(value)) {
+        errors.push(`state.mods.${repo}.${field} 应为 ISO 时间或 null`);
+      }
     }
-    if (
-      entry.tagsFetchedAt !== undefined &&
-      entry.tagsFetchedAt !== null &&
-      !isIsoDate(entry.tagsFetchedAt)
-    ) {
-      errors.push(`state.mods.${repo}.tagsFetchedAt 应为 ISO 时间或 null`);
-    }
-    if (!isPlainObject(entry.pages)) {
-      errors.push(`state.mods.${repo}.pages 不是对象`);
-      continue;
-    }
-    for (const [page, fetchedAt] of Object.entries(entry.pages)) {
-      if (!/^\d+$/.test(page) || Number(page) < 2 || !isIsoDate(fetchedAt)) {
-        errors.push(`state.mods.${repo}.pages.${page} 形状非法`);
+    // 旧格式可能还有 pages 映射；新格式只存 page1/page2/full/tags 时间
+    if (entry.pages !== undefined) {
+      if (!isPlainObject(entry.pages)) {
+        errors.push(`state.mods.${repo}.pages 不是对象`);
+        continue;
+      }
+      for (const [page, fetchedAt] of Object.entries(entry.pages)) {
+        if (!/^\d+$/.test(page) || Number(page) < 2 || !isIsoDate(fetchedAt)) {
+          errors.push(`state.mods.${repo}.pages.${page} 形状非法`);
+        }
       }
     }
   }
@@ -910,8 +907,7 @@ export async function validateDir(dir) {
     releaseFileCount: releaseFiles.size,
     versionsCount: 0,
     latestBe: null,
-    gateVersionCount: 0,
-    gateRuleCount: 0,
+    gates: { mod: null, java: null },
     summaryRowCount: 0,
     refreshStateModCount: 0,
     present: [],
@@ -919,7 +915,8 @@ export async function validateDir(dir) {
 
   const indexFile = await readJsonIfPresent(path.join(outDir, INDEX_FILE));
   const versionsFile = await readJsonIfPresent(path.join(outDir, VERSIONS_REL_PATH));
-  const gateFile = await readJsonIfPresent(path.join(outDir, GATE_REL_PATH));
+  const modGateFile = await readJsonIfPresent(path.join(outDir, GATE_REL_PATHS.mod));
+  const javaGateFile = await readJsonIfPresent(path.join(outDir, GATE_REL_PATHS.java));
   const heartbeatFile = await readJsonIfPresent(
     path.join(outDir, HEARTBEAT_REL_PATH),
   );
@@ -929,9 +926,9 @@ export async function validateDir(dir) {
     path.join(outDir, REFRESH_STATE_REL_PATH),
   );
 
-  if (!indexFile.exists && !versionsFile.exists && !gateFile.exists) {
+  if (!indexFile.exists && !versionsFile.exists && !modGateFile.exists && !javaGateFile.exists) {
     errors.push(
-      `找不到任何数据文件（${INDEX_FILE} / ${VERSIONS_REL_PATH} / ${GATE_REL_PATH}）`,
+      `找不到任何数据文件（${INDEX_FILE} / ${VERSIONS_REL_PATH} / ${GATE_REL_PATHS.mod} / ${GATE_REL_PATHS.java}）`,
     );
     return result;
   }
@@ -1071,14 +1068,25 @@ export async function validateDir(dir) {
     }
   }
 
-  if (gateFile.exists) {
-    result.present.push(GATE_REL_PATH);
+  const anyGatePresent = modGateFile.exists || javaGateFile.exists;
+  for (const type of ['mod', 'java']) {
+    const gateFile = type === 'mod' ? modGateFile : javaGateFile;
+    const relPath = GATE_REL_PATHS[type];
+    if (!gateFile.exists) {
+      if (anyGatePresent || versionsFile.exists) {
+        warnings.push(`缺少 ${relPath}（门禁尚未生成或仍是旧合并格式）`);
+      }
+      continue;
+    }
+    result.present.push(relPath);
     if (gateFile.error) {
-      errors.push(`${GATE_REL_PATH} 无法解析：${gateFile.error.message}`);
+      errors.push(`${relPath} 无法解析：${gateFile.error.message}`);
     } else {
-      const gateResult = validateGateData(gateFile.data, { errors });
-      result.gateVersionCount = gateResult.versionCount;
-      result.gateRuleCount = gateResult.ruleCount;
+      const gateResult = validateGateData(gateFile.data, { type, errors });
+      result.gates[type] = {
+        versionCount: gateResult.versionCount,
+        ruleCount: gateResult.ruleCount,
+      };
     }
   }
 
@@ -1136,10 +1144,13 @@ async function main(argv) {
       `versions.json：${result.versionsCount} 条正式版，最新 BE ${result.latestBe ?? '无'}`,
     );
   }
-  if (result.present.includes(GATE_REL_PATH)) {
-    console.log(
-      `mod-gate.json：${result.gateVersionCount} 个版本 / ${result.gateRuleCount} 条规则`,
-    );
+  for (const type of ['mod', 'java']) {
+    const relPath = GATE_REL_PATHS[type];
+    if (!result.present.includes(relPath) || !result.gates[type]) {
+      continue;
+    }
+    const { versionCount, ruleCount } = result.gates[type];
+    console.log(`${relPath}：${versionCount} 个版本 / ${ruleCount} 条规则`);
   }
   for (const warning of result.warnings) {
     console.warn(`警告：${warning}`);

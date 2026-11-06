@@ -1,28 +1,34 @@
-// 分页调度缓存（state/refresh.json）：只存 ETag 与深层页最近抓取时间，不存 release 数据。
-// 这样「下载量变了」只改 per-mod 的 releases 文件，每日的调度时间戳只改这一个小文件。
+// 刷新调度缓存（state/refresh.json）：只存 ETag 与最近抓取时间，不存 release 数据。
+// 频率：最新 100 tag（releases/tags 第 1 页）每 2 小时；第 2 页每周；全量（所有页）每月。
 
 export const REFRESH_STATE_REL_PATH = 'state/refresh.json';
-const DAY_MS = 24 * 60 * 60 * 1000;
 
-// 按页分档：第 1 页每天、第 2 页每 7 天、第 3 页每 30 天、第 4 页起每 90 天
+const TWO_HOURS_MS = 2 * 60 * 60 * 1000;
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+const MONTH_MS = 30 * 24 * 60 * 60 * 1000;
+
+// 分档：第 1 页 2 小时、第 2 页每周、全量（第 3 页起 + 所有 tags 页）每月
 export const REFRESH_TIERS = [
-  { fromPage: 1, intervalMs: 1 * DAY_MS },
-  { fromPage: 2, intervalMs: 7 * DAY_MS },
-  { fromPage: 3, intervalMs: 30 * DAY_MS },
-  { fromPage: 4, intervalMs: 90 * DAY_MS },
+  { page: 1, intervalMs: TWO_HOURS_MS, label: '2h' },
+  { page: 2, intervalMs: WEEK_MS, label: 'week' },
+  { page: 'full', intervalMs: MONTH_MS, label: 'month' },
 ];
 
+export const PAGE1_INTERVAL_MS = TWO_HOURS_MS;
+export const PAGE2_INTERVAL_MS = WEEK_MS;
+export const FULL_INTERVAL_MS = MONTH_MS;
+
 export function pageRefreshIntervalMs(page) {
-  let interval = REFRESH_TIERS[0].intervalMs;
-  for (const tier of REFRESH_TIERS) {
-    if (page >= tier.fromPage) {
-      interval = tier.intervalMs;
-    }
+  if (page === 1) {
+    return PAGE1_INTERVAL_MS;
   }
-  return interval;
+  if (page === 2) {
+    return PAGE2_INTERVAL_MS;
+  }
+  return FULL_INTERVAL_MS;
 }
 
-export function isPageDue(fetchedAt, page, now = Date.now()) {
+function isDue(fetchedAt, intervalMs, now) {
   if (typeof fetchedAt !== 'string' || !fetchedAt) {
     return true;
   }
@@ -30,28 +36,50 @@ export function isPageDue(fetchedAt, page, now = Date.now()) {
   if (Number.isNaN(time)) {
     return true;
   }
-  return now - time >= pageRefreshIntervalMs(page);
+  return now - time >= intervalMs;
 }
 
-// git tag 列表每天全量抓一次（分页取全；与 releases 分档独立）
-export const TAGS_REFRESH_INTERVAL_MS = DAY_MS;
+// 第 1/2 页与全量的到期判断（now 可注入，便于测试）
+export function isPageDue(fetchedAt, page, now = Date.now()) {
+  return isDue(fetchedAt, pageRefreshIntervalMs(page), now);
+}
 
+export const isPage1Due = (fetchedAt, now = Date.now()) =>
+  isDue(fetchedAt, PAGE1_INTERVAL_MS, now);
+export const isPage2Due = (fetchedAt, now = Date.now()) =>
+  isDue(fetchedAt, PAGE2_INTERVAL_MS, now);
+export const isFullDue = (fetchedAt, now = Date.now()) =>
+  isDue(fetchedAt, FULL_INTERVAL_MS, now);
+
+// 兼容旧调用：tag 列表跟随 page1 tier（2h）；page2/full 的 tags 页跟随对应 tier
 export function isTagsDue(tagsFetchedAt, now = Date.now()) {
-  if (typeof tagsFetchedAt !== 'string' || !tagsFetchedAt) {
-    return true;
-  }
-  const time = Date.parse(tagsFetchedAt);
-  if (Number.isNaN(time)) {
-    return true;
-  }
-  return now - time >= TAGS_REFRESH_INTERVAL_MS;
+  return isDue(tagsFetchedAt, PAGE1_INTERVAL_MS, now);
 }
 
 function emptyModState() {
-  return { page1Etag: null, page1FetchedAt: null, pages: {}, tagsFetchedAt: null };
+  return {
+    page1Etag: null,
+    page1FetchedAt: null,
+    page2FetchedAt: null,
+    fullFetchedAt: null,
+    tagsFetchedAt: null,
+  };
 }
 
-// state 文件清洗；格式不对按空 state 处理（首次运行/迁移）
+function latestPageTimestamp(pages) {
+  let latest = null;
+  for (const fetchedAt of Object.values(pages ?? {})) {
+    if (typeof fetchedAt !== 'string') {
+      continue;
+    }
+    if (latest === null || Date.parse(fetchedAt) > Date.parse(latest)) {
+      latest = fetchedAt;
+    }
+  }
+  return latest;
+}
+
+// state 文件清洗；兼容旧格式（pages 映射 + 24h/7d/30d/90d 分档）迁移
 export function normalizeRefreshState(raw) {
   const mods = {};
   const sourceMods = raw && typeof raw === 'object' ? raw.mods : null;
@@ -69,11 +97,25 @@ export function normalizeRefreshState(raw) {
           }
         }
       }
+      const page1FetchedAt =
+        typeof entry.page1FetchedAt === 'string' ? entry.page1FetchedAt : null;
+      // 旧格式：pages["2"] / 更深页 → page2FetchedAt / fullFetchedAt
+      const legacyDeep = Object.fromEntries(
+        Object.entries(pages).filter(([page]) => Number(page) >= 3),
+      );
+      const page2FetchedAt =
+        typeof entry.page2FetchedAt === 'string'
+          ? entry.page2FetchedAt
+          : (pages['2'] ?? null);
+      const fullFetchedAt =
+        typeof entry.fullFetchedAt === 'string'
+          ? entry.fullFetchedAt
+          : (latestPageTimestamp(legacyDeep) ?? page2FetchedAt ?? page1FetchedAt);
       mods[repo] = {
         page1Etag: typeof entry.page1Etag === 'string' ? entry.page1Etag : null,
-        page1FetchedAt:
-          typeof entry.page1FetchedAt === 'string' ? entry.page1FetchedAt : null,
-        pages,
+        page1FetchedAt,
+        page2FetchedAt,
+        fullFetchedAt,
         tagsFetchedAt:
           typeof entry.tagsFetchedAt === 'string' ? entry.tagsFetchedAt : null,
       };
@@ -93,13 +135,14 @@ export function cloneModState(entry) {
   return {
     page1Etag: entry.page1Etag ?? null,
     page1FetchedAt: entry.page1FetchedAt ?? null,
-    pages: { ...entry.pages },
+    page2FetchedAt: entry.page2FetchedAt ?? null,
+    fullFetchedAt: entry.fullFetchedAt ?? null,
     tagsFetchedAt: entry.tagsFetchedAt ?? null,
   };
 }
 
-// 旧 per-mod 文件的 source.releasesEtag / releasesFetchedAt 视为第 1 页缓存；
-// 深层页按 releases 数量推断，把时间记成同一次抓取，避免升级后立刻全量重抓。
+// 旧 per-mod 文件迁移：第 1 页沿用旧 source 时间；旧数据默认视为「已拿到当时完整页」，
+// page2/full 时间跟第 1 页一致，避免升级后立刻全量重抓
 export function bootstrapModState({ legacySource, releaseCount, fallbackFetchedAt }) {
   const state = emptyModState();
   const fetchedAt =
@@ -109,13 +152,31 @@ export function bootstrapModState({ legacySource, releaseCount, fallbackFetchedA
   state.page1Etag =
     typeof legacySource?.releasesEtag === 'string' ? legacySource.releasesEtag : null;
   state.page1FetchedAt = fetchedAt;
-  const pageCount = Math.ceil((releaseCount ?? 0) / 100);
-  for (let page = 2; page <= pageCount; page += 1) {
-    if (fetchedAt) {
-      state.pages[String(page)] = fetchedAt;
-    }
+  const count = releaseCount ?? 0;
+  if (count > 0) {
+    // 旧数据视为已拿到当时完整的页：page2/full 同一起算点，避免升级后立刻抓第 2 页/全量
+    state.fullFetchedAt = fetchedAt;
+    state.page2FetchedAt = fetchedAt;
   }
   return state;
+}
+
+// 最近一次刷新时间（API 不足时排队用：越久没刷新越优先）
+export function lastRefreshedAt(entry) {
+  const values = [
+    entry?.page1FetchedAt,
+    entry?.page2FetchedAt,
+    entry?.fullFetchedAt,
+    entry?.tagsFetchedAt,
+  ].filter((value) => typeof value === 'string' && value);
+  let latest = 0;
+  for (const value of values) {
+    const time = Date.parse(value);
+    if (!Number.isNaN(time) && time > latest) {
+      latest = time;
+    }
+  }
+  return latest;
 }
 
 export function stateBodyChanged(previous, next) {

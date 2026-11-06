@@ -34,6 +34,21 @@ export async function fetchTagsPage(client, repo, page) {
   return normalizeTags(JSON.parse(response.text ?? '[]'));
 }
 
+// 按计划抓指定 tag 页（页 1 每 2 小时、页 2 每周、页 3+ 每月全量）
+export async function fetchTagPages(client, repo, pages = []) {
+  const results = [];
+  for (const page of pages) {
+    const names = await fetchTagsPage(client, repo, page);
+    results.push({
+      page,
+      names,
+      // 不足 100 条说明后面没有更多 tag 页
+      complete: names.length < TAGS_PER_PAGE,
+    });
+  }
+  return results;
+}
+
 // 分页取全部 tag；最后一页不足 100 条即结束
 export async function fetchAllTags(client, repo, { maxPages = MAX_TAG_PAGES } = {}) {
   const tags = [];

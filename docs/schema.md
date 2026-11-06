@@ -2,14 +2,13 @@
 
 数据文件分三组：
 
-- 模组索引：仓库根目录的 `index.json` 与 `releases/<owner>/<repo>.json`（旧 flat 路径
-  `releases/<owner>_<repo>.json` 已废弃，运行时自动迁移并删除）；
+- 模组索引：仓库根目录的 `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv`、
+  `state/refresh.json`（旧 flat 路径 `releases/<owner>_<repo>.json` 已废弃，运行时自动迁移并删除）；
 - Mindustry 版本列表：`mindustry/versions.json`；
-- 最小版本门禁：`mindustry/mod-gate.json`；
+- 最小版本门禁：`mindustry/mod-gate.json`（普通/脚本模组）与 `mindustry/java-gate.json`（Java 模组）；
 - 另有一个维护用文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
 
-模组索引两份文件的 `formatVersion` 当前均为 `1`；`mod-gate.json` 也有 `formatVersion`（当前 `1`）。
-字段变化时递增并同步修改本文档。
+上述数据文件都有 `formatVersion`（当前 `1`）。字段变化时递增并同步修改本文档。
 
 约定：
 
@@ -245,7 +244,7 @@ tag-only 条目不影响口径。
 
 ## state/refresh.json
 
-分页调度缓存，只给增量刷新用，使用方不需要读取：
+刷新调度缓存，只给增量刷新用，使用方不需要读取：
 
 ```json
 {
@@ -255,7 +254,8 @@ tag-only 条目不影响口径。
     "mindustrytool/mindustrytoolmod": {
       "page1Etag": "\"W/...\"",
       "page1FetchedAt": "2026-11-06T03:00:00.000Z",
-      "pages": { "2": "2026-11-01T03:00:00.000Z" },
+      "page2FetchedAt": "2026-11-01T03:00:00.000Z",
+      "fullFetchedAt": "2026-10-10T03:00:00.000Z",
       "tagsFetchedAt": "2026-11-06T03:00:00.000Z"
     }
   }
@@ -267,20 +267,34 @@ tag-only 条目不影响口径。
 | `formatVersion` | number | 固定 `1` |
 | `updatedAt` | string | 文件最近一次写入时间 |
 | `mods.<repo>.page1Etag` | string \| null | 第 1 页 `If-None-Match` 用 |
-| `mods.<repo>.page1FetchedAt` | string \| null | 第 1 页最近一次抓取时间（每天一次判断） |
-| `mods.<repo>.pages.<n>` | string | 第 n 页（n≥2）最近一次抓取时间（7/30/90 天到期判断） |
-| `mods.<repo>.tagsFetchedAt` | string \| null | 该模组 git tag 列表最近一次全量抓取时间（每天一次判断） |
+| `mods.<repo>.page1FetchedAt` | string \| null | 最新 100 tag（releases 第 1 页 + tags 第 1 页）最近抓取时间，2 小时到期 |
+| `mods.<repo>.page2FetchedAt` | string \| null | 第 2 页（101–200）最近抓取时间，7 天到期 |
+| `mods.<repo>.fullFetchedAt` | string \| null | 全量（所有 releases/tags 页）最近抓取时间，30 天到期 |
+| `mods.<repo>.tagsFetchedAt` | string \| null | 该模组 tag 列表最近一次抓取时间（跟随所在 tier，便于观测） |
 
-### 按 tag 新旧分档刷新
+旧格式（`pages: {"2": ...}` + 24h/7d/30d/90d 分档）运行时自动迁移到上述字段；`--no-cache` 忽略 state。
 
-分档常量在 `src/refresh-state.js` 的 `REFRESH_TIERS`：第 1 页每天、第 2 页每 7 天、第 3 页每 30 天、
-第 4 页起每 90 天。每轮按 `fetchedAt` 判断到期页，第 1 页带旧 ETag 条件请求；抓到的页按 tag 覆盖缓存，
-没抓到的旧条目保留；合并后按 `publishedAt` 降序（同时间按 tag 升序）。
-**git tag 列表**与 releases 分档独立，每天全量抓一次（`tagsFetchedAt` 判断），用于补全 tag-only 条目。
+### 刷新频率：2 小时 / 每周 / 每月全量
 
-per-mod 文件与调度状态分离：ETag 每天变也不会重写 `releases/<owner>/<repo>.json`，只有 `releases` 数据真的变化
-（下载量/体积/元数据/tag 列表新增）才重写；调度时间变化只改 `state/refresh.json`。`--no-cache` 会忽略 state 与旧文件，
-全量抓所有 releases 页与 tag 列表。
+分档常量在 `src/refresh-state.js` 的 `REFRESH_TIERS`：
+
+| 频率 | 覆盖范围 | 抓取内容 |
+| --- | --- | --- |
+| 每 2 小时 | 最新 100 个 tag | releases 第 1 页 + tags 第 1 页 |
+| 每周 | 第 2 页（101–200） | releases 第 2 页 + tags 第 2 页 |
+| 每月 | 全量 | 所有 releases 页 + 所有 tags 页 |
+
+每轮按 `fetchedAt` 判断到期页，第 1 页带旧 ETag 条件请求；抓到的页按 tag 覆盖缓存，
+没抓到的旧条目保留；合并后按 `publishedAt` 降序（同时间按 tag 升序）。全量刷新会按完整 tag 列表重建
+tag-only 条目（删除已不存在的 tag）。
+
+**API 不足时续跑**：运行中剩余配额 ≤5 或遇到限流（`RateLimitError`）时停止发起新请求、保留已抓结果并
+正常退出（exit 0）；下次运行按「最近抓取时间升序」排队，优先补上次没跑到的模组；全量刷新同样按模组
+粒度分次推进，只有完成的模组才更新 `fullFetchedAt`。
+
+per-mod 文件与调度状态分离：ETag 频繁变化也不会重写 `releases/<owner>/<repo>.json`，只有数据真的变化
+（下载量/体积/元数据/tag 列表新增）才重写；调度时间变化只改 `state/refresh.json`。`--no-cache` 会忽略 state
+与旧文件，全量抓所有 releases 页与 tag 列表。
 
 ## mindustry/versions.json
 
@@ -328,41 +342,48 @@ GitHub 的值。
 - `releases` / `latest_be` 没变时不重写文件；`update_time` 只在内容变化时更新。
 - 不把 304 当免费：每轮固定只发上述 2 次 API，避免匿名/低配额下被打爆。
 
-## mindustry/mod-gate.json
+## mindustry/mod-gate.json / mindustry/java-gate.json
 
-最小模组版本门禁：每个游戏版本要求的最低模组版本（`mod` = 普通/脚本模组，`java` = Java 模组）。
-`rules` 与启动器 `remote/mmgvm.hjson` 同语义，且生成结果与当前 mmgvm 逐项一致。
+最小模组版本门禁拆成两份文件：**普通/脚本模组**读 `mindustry/mod-gate.json`，
+**Java 模组**读 `mindustry/java-gate.json`。两者字段完全相同，只有 `gate`、
+`source.constants` 与逐版本 `value` 的含义不同；旧合并文件（一条规则里同时有 `mod`/`java`）
+运行时自动拆分迁移，最终两份文件各自独立。
 
 ```json
 {
   "formatVersion": 1,
   "generatedAt": "2026-11-06T03:00:00.000Z",
+  "gate": "mod",
   "source": {
     "repo": "Anuken/Mindustry",
     "baseline": "https://raw.githubusercontent.com/MDTCopper/launcher/main/remote/mmgvm.hjson",
-    "constants": ["minModGameVersion", "minJavaModGameVersion"],
+    "constants": ["minModGameVersion"],
     "resolvedPaths": ["core/src/mindustry/Vars.java"]
   },
-  "rules": [{ "min": 97, "max": 105, "mod": 97, "java": 97, "source": "baseline" }],
-  "versions": [{ "tag": "v147", "version": 147, "mod": 136, "java": 147, "source": "game-source" }]
+  "rules": [{ "min": 97, "max": 105, "value": 97, "source": "baseline" }],
+  "versions": [{ "tag": "v147", "version": 147, "value": 136, "source": "game-source" }]
 }
 ```
+
+`java-gate.json` 同结构，`gate: "java"`，`source.constants: ["minJavaModGameVersion"]`，
+`value` 是 Java 模组门禁（如 97/105/136/147/154）。两份都不再出现 `mod`/`java` 两列。
 
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
 | `formatVersion` | number | 固定 `1` |
 | `generatedAt` | string | 本文件最近一次**内容变化**时间 |
+| `gate` | string | `mod`（普通/脚本）或 `java`（Java 模组）；启动器据此选择对应文件 |
 | `source.repo` | string | 固定 `Anuken/Mindustry` |
 | `source.baseline` | string | 基线 mmgvm 地址（147 之前源码没有常量时用它的 rules） |
-| `source.constants` | string[] | 从源码提取的常量名 |
+| `source.constants` | string[] | 本类型从源码提取的常量名，只含一个 |
 | `source.resolvedPaths` | string[] | 实际命中过常量的源码路径，代码位置变化时用它追踪 |
-| `rules` | array | 合并后的门禁区间 |
+| `rules` | array | 合并后的门禁区间：`min` 含、`max` 不含，最后一条 `max` 为 `null`；`value` 为该区间要求的最低模组主版本 |
 | `versions` | array | 逐版本明细（只含 `v<数字>[.<数字>]` 正式版，从 97 开始） |
 
 ### rules[] 语义
 
-- `min` 含、`max` 不含；最后一条 `max` 为 `null`（无上限）；连续且 `(mod, java)` 相同的版本已合并，
-  相邻两条的 `mod`/`java` 一定不同。第一条 `min` 固定为 `97`（与 mmgvm 口径一致）。
+- `min` 含、`max` 不含；最后一条 `max` 为 `null`（无上限）；连续且 `value` 相同的版本已合并，
+  相邻两条的 `value` 一定不同。第一条 `min` 固定为 `97`（与 mmgvm 口径一致）。
 - `source`：`game-source`（该区间的版本都从官方源码提取到常量）、`baseline`（都来自 mmgvm 基线）、
   `mixed`（区间里两种来源都有，正常数据不会出现，仅在基线/源码交替时兜底）。
 
@@ -372,23 +393,23 @@ GitHub 的值。
 | --- | --- | --- |
 | `tag` | string | 形如 `v147` / `v154.2` |
 | `version` | number | tag 里的数字，升序且不重复 |
-| `mod` | number | 该版本游戏要求的最低普通模组版本 |
-| `java` | number | 该版本游戏要求的最低 Java 模组版本 |
+| `value` | number | 该版本游戏要求的最低模组主版本（mod 或 java，取决于文件） |
 | `source` | string | `game-source` / `baseline` |
 
-147 之前的版本源码里没有 `minModGameVersion` / `minJavaModGameVersion`，这些版本的 `mod`/`java`
+147 之前的版本源码里没有 `minModGameVersion` / `minJavaModGameVersion`，这些版本的 `value`
 直接走 mmgvm 基线查询（`min <= version < max` 命中），**不逐版本尝试源码候选路径**
 （代码里 `GATE_SOURCE_CONSTANT_SINCE = 147`；依据是逐 tag 实测 v105/v136/v146 等老版本均无这两个常量，
-v147 首次出现）。147 起从 `core/src/mindustry/Vars.java` 提取（候选路径还包括
+v147 首次出现）。147 起从 `core/src/mindustry/Vars.java` 同时提取两个常量（候选路径还包括
 `core/src/mindustry/core/Vars.java` 等，候选全 404 且上一版本有常量时才用 1 次 tree API 找移动后的
 `Vars.java` / `Version.java`）；`source.resolvedPaths` 记录实际命中的路径。
 
 ### 更新与增量
 
-- 上一份 `mod-gate.json` 里 `source=game-source` 的版本不重复抓源码；只有新版本才扫描。
+- 两份文件各自读取自己的上一版缓存；旧合并 `mod-gate.json` 会在首次运行时拆成两份。
+- `source=game-source` 的版本不重复抓源码；只有新版本才扫描。
 - `source=baseline` 的老版本也缓存：每轮按最新 mmgvm 规则本地重算（不抓源码），基线变化时只影响这些版本。
   稳态每轮只有 1 次 raw 请求（拉 mmgvm 基线）+ 0 次 API。
-- `versions` / `rules` / `source` 没变时不重写文件。
+- 两份文件的 `versions` / `rules` / `source` 分别比较，各自没变时不重写。
 
 ## mindustry/heartbeat.json
 

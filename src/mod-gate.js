@@ -3,11 +3,43 @@
 
 import { parse as parseHjson } from 'hjson';
 
-export const GATE_REL_PATH = 'mindustry/mod-gate.json';
+export const MOD_GATE_REL_PATH = 'mindustry/mod-gate.json';
+export const JAVA_GATE_REL_PATH = 'mindustry/java-gate.json';
+export const GATE_REL_PATHS = {
+  mod: MOD_GATE_REL_PATH,
+  java: JAVA_GATE_REL_PATH,
+};
 export const GATE_REPO = 'Anuken/Mindustry';
 export const GATE_BASELINE_URL =
   'https://raw.githubusercontent.com/MDTCopper/launcher/main/remote/mmgvm.hjson';
-export const GATE_CONSTANTS = ['minModGameVersion', 'minJavaModGameVersion'];
+
+// 两种门禁分开存储：普通/脚本模组用 minModGameVersion，Java 模组用 minJavaModGameVersion
+export const GATE_TYPES = [
+  {
+    key: 'mod',
+    gate: 'mod',
+    constant: 'minModGameVersion',
+    baselineField: 'mod',
+    label: '普通/脚本模组',
+  },
+  {
+    key: 'java',
+    gate: 'java',
+    constant: 'minJavaModGameVersion',
+    baselineField: 'java',
+    label: 'Java 模组',
+  },
+];
+
+export const GATE_CONSTANTS = GATE_TYPES.map((type) => type.constant);
+
+export function gateTypeConfig(type) {
+  const config = GATE_TYPES.find((item) => item.key === type);
+  if (!config) {
+    throw new Error(`未知门禁类型：${type}`);
+  }
+  return config;
+}
 
 // 代码位置可能变：老版本在 core/src/mindustry/Vars.java，新版可能挪到 core/ 或改名
 export const GATE_CANDIDATE_PATHS = [
@@ -115,12 +147,12 @@ export function baselineLookup(rules, version) {
   return null;
 }
 
-// 逐版本结果合并成连续规则：min 含、max 不含，最后一条 max 为 null
+// 逐版本结果合并成连续规则：min 含、max 不含，最后一条 max 为 null；按 value 合并
 export function mergeGateRules(versions) {
   const groups = [];
   for (const item of versions) {
     const last = groups[groups.length - 1];
-    if (last && last.mod === item.mod && last.java === item.java) {
+    if (last && last.value === item.value) {
       last.sources.add(item.source);
       continue;
     }
@@ -130,18 +162,15 @@ export function mergeGateRules(versions) {
     groups.push({
       min: item.version,
       max: null,
-      mod: item.mod,
-      java: item.java,
+      value: item.value,
       sources: new Set([item.source]),
     });
   }
   return groups.map((group) => ({
     min: group.min,
     max: group.max,
-    mod: group.mod,
-    java: group.java,
-    source:
-      group.sources.size === 1 ? [...group.sources][0] : 'mixed',
+    value: group.value,
+    source: group.sources.size === 1 ? [...group.sources][0] : 'mixed',
   }));
 }
 
@@ -210,14 +239,17 @@ export async function resolveVersionGate({
   return { found: false };
 }
 
-export function buildGateFile({ versions, rules, resolvedPaths, generatedAt }) {
+export function buildGateFile({ type, versions, rules, resolvedPaths, generatedAt }) {
+  const config = gateTypeConfig(type);
   return {
     formatVersion: 1,
     generatedAt,
+    // 区分两份文件；启动器按 gate 选择对应门禁
+    gate: config.gate,
     source: {
       repo: GATE_REPO,
       baseline: GATE_BASELINE_URL,
-      constants: [...GATE_CONSTANTS],
+      constants: [config.constant],
       resolvedPaths: [...new Set(resolvedPaths)].sort(),
     },
     rules,
@@ -229,6 +261,9 @@ export function gateBodyChanged(previous, next) {
   if (!previous) {
     return true;
   }
+  if (previous.formatVersion !== next.formatVersion || previous.gate !== next.gate) {
+    return true;
+  }
   if (JSON.stringify(previous.source) !== JSON.stringify(next.source)) {
     return true;
   }
@@ -236,6 +271,46 @@ export function gateBodyChanged(previous, next) {
     return true;
   }
   return JSON.stringify(previous.versions) !== JSON.stringify(next.versions);
+}
+
+// 旧合并文件（一条规则里同时有 mod/java）拆成两份缓存，仅迁移读取用
+export function splitLegacyGateFile(file) {
+  if (!file || typeof file !== 'object' || file.gate || !Array.isArray(file.versions)) {
+    return null;
+  }
+  const versions = file.versions;
+  if (
+    versions.length === 0 ||
+    !versions.every(
+      (item) => Number.isInteger(item?.mod) && Number.isInteger(item?.java),
+    )
+  ) {
+    return null;
+  }
+  const build = (field, constant) => ({
+    gate: field,
+    source: {
+      repo: file.source?.repo ?? GATE_REPO,
+      baseline: file.source?.baseline ?? GATE_BASELINE_URL,
+      constants: [constant],
+      resolvedPaths: Array.isArray(file.source?.resolvedPaths)
+        ? file.source.resolvedPaths
+        : [],
+    },
+    rules: (Array.isArray(file.rules) ? file.rules : []).map((rule) => ({
+      min: rule.min,
+      max: rule.max,
+      value: rule[field],
+      source: rule.source,
+    })),
+    versions: versions.map((item) => ({
+      tag: item.tag,
+      version: item.version,
+      value: item[field],
+      source: item.source,
+    })),
+  });
+  return { mod: build('mod', 'minModGameVersion'), java: build('java', 'minJavaModGameVersion') };
 }
 
 export function gateStartVersion() {

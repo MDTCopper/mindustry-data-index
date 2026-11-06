@@ -2,8 +2,9 @@ name: 更新模组索引
 
 on:
   schedule:
-    # 每天 02:23 UTC（北京时间 10:23），避开整点高峰
-    - cron: "23 2 * * *"
+    # 每 2 小时一次（每小时 :17，避开整点高峰）；最新 100 tag 每 2 小时刷新，
+    # 第 2 页每周、全量每月由脚本内 state/refresh.json 的到期判断控制
+    - cron: "17 */2 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -40,9 +41,9 @@ jobs:
         run: npm ci
 
       - name: 更新模组索引
-        # 按 tag 新旧分档刷新 releases：第 1 页每天、第 2 页 7 天、第 3 页 30 天、第 4 页起 90 天；
-        # 另外每天全量抓一次 git tag 列表，补全没有 GitHub Release 的 tag（tag-only 条目）。
-        # per-mod 文件只在 releases 数据真的变化时重写；ETag/分页/tag 时间存在 state/refresh.json。
+        # 刷新分档（state/refresh.json 判断到期）：最新 100 tag（releases/tags 第 1 页）每 2 小时，
+        # 第 2 页每周，全量（所有页）每月。API 配额不足时停止本次、保留已抓结果，下次按最久未刷新续跑。
+        # per-mod 文件只在 releases 数据真的变化时重写。
         run: node src/main.js --datasets mods --out .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

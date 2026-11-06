@@ -7,8 +7,7 @@ import { validateDir, isValidReleasesPath } from '../src/validate.js';
 import { VERSIONS_API } from '../src/versions.js';
 import { buildSummary, summaryCsv } from '../src/summary.js';
 import {
-  GATE_BASELINE_URL,
-  GATE_REPO,
+  buildGateFile,
   mergeGateRules,
 } from '../src/mod-gate.js';
 
@@ -239,41 +238,53 @@ function versionsFixture() {
 }
 
 function gateFixture() {
-  const versions = [
+  const combined = [
     { tag: 'v97', version: 97, mod: 97, java: 97, source: 'baseline' },
     { tag: 'v147', version: 147, mod: 136, java: 147, source: 'game-source' },
     { tag: 'v154.2', version: 154.2, mod: 136, java: 154, source: 'game-source' },
   ];
-  return {
-    formatVersion: 1,
-    generatedAt: GENERATED_AT,
-    source: {
-      repo: GATE_REPO,
-      baseline: GATE_BASELINE_URL,
-      constants: ['minModGameVersion', 'minJavaModGameVersion'],
+  const build = (type) => {
+    const versions = combined.map((item) => ({
+      tag: item.tag,
+      version: item.version,
+      value: item[type],
+      source: item.source,
+    }));
+    return buildGateFile({
+      type,
+      versions,
+      rules: mergeGateRules(versions),
       resolvedPaths: ['core/src/mindustry/Vars.java'],
-    },
-    rules: mergeGateRules(versions),
-    versions,
+      generatedAt: GENERATED_AT,
+    });
   };
+  return { mod: build('mod'), java: build('java') };
 }
 
 async function makeMindustryDir({ versions = versionsFixture(), gate = gateFixture() } = {}) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-data-validate-'));
   await mkdir(path.join(dir, 'mindustry'), { recursive: true });
   await writeFile(path.join(dir, 'mindustry', 'versions.json'), JSON.stringify(versions, null, 2));
-  await writeFile(path.join(dir, 'mindustry', 'mod-gate.json'), JSON.stringify(gate, null, 2));
+  await writeFile(
+    path.join(dir, 'mindustry', 'mod-gate.json'),
+    JSON.stringify(gate.mod, null, 2),
+  );
+  await writeFile(
+    path.join(dir, 'mindustry', 'java-gate.json'),
+    JSON.stringify(gate.java, null, 2),
+  );
   return dir;
 }
 
-test('合法的 versions.json / mod-gate.json 通过校验', async (t) => {
+test('合法的 versions.json / mod-gate.json / java-gate.json 通过校验', async (t) => {
   const dir = await makeMindustryDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
   const result = await validateDir(dir);
   assert.deepEqual(result.errors, []);
   assert.equal(result.versionsCount, 2);
   assert.equal(result.latestBe, '28065');
-  assert.equal(result.gateVersionCount, 3);
+  assert.equal(result.gates.mod.versionCount, 3);
+  assert.equal(result.gates.java.versionCount, 3);
   assert.ok(result.warnings.some((message) => message.includes('找不到 index.json')));
 });
 
@@ -299,11 +310,11 @@ test('versions 缺 reactions / body 非空 / 重复 tag 会被发现', async (t)
   assert.ok(result.errors.some((message) => message.includes('tag_name 重复')));
 });
 
-test('mod-gate 规则不连续 / 未合并 / 与 versions 不一致会被发现', async (t) => {
+test('gate 规则不连续 / 未合并 / 与 versions 不一致会被发现', async (t) => {
   const gate = gateFixture();
-  gate.rules = [
-    { min: 97, max: 147, mod: 97, java: 97, source: 'baseline' },
-    { min: 148, max: null, mod: 136, java: 147, source: 'game-source' },
+  gate.mod.rules = [
+    { min: 97, max: 147, value: 97, source: 'baseline' },
+    { min: 148, max: null, value: 136, source: 'game-source' },
   ];
   const dir = await makeMindustryDir({ gate });
   t.after(() => rm(dir, { recursive: true, force: true }));
@@ -312,11 +323,11 @@ test('mod-gate 规则不连续 / 未合并 / 与 versions 不一致会被发现'
   assert.ok(result.errors.some((message) => message.includes('合并结果不一致')));
 });
 
-test('mod-gate 版本未升序 / 最后规则 max 不为 null 会被发现', async (t) => {
+test('gate 版本未升序 / 最后规则 max 不为 null 会被发现', async (t) => {
   const gate = gateFixture();
-  gate.versions = [...gate.versions].reverse();
-  gate.rules[gate.rules.length - 1] = {
-    ...gate.rules[gate.rules.length - 1],
+  gate.mod.versions = [...gate.mod.versions].reverse();
+  gate.mod.rules[gate.mod.rules.length - 1] = {
+    ...gate.mod.rules[gate.mod.rules.length - 1],
     max: 999,
   };
   const dir = await makeMindustryDir({ gate });

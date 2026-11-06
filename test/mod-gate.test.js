@@ -17,6 +17,7 @@ import {
   rawSourceUrl,
   regularVersions,
   resolveVersionGate,
+  splitLegacyGateFile,
   treeApiUrl,
 } from '../src/mod-gate.js';
 
@@ -132,30 +133,29 @@ test('normalizeBaselineRules 拒绝非法规则', () => {
 
 test('mergeGateRules：连续相同值合并，从 97 开始，最后 max=null', () => {
   const versions = [
-    { tag: 'v97', version: 97, mod: 97, java: 97, source: 'baseline' },
-    { tag: 'v104', version: 104, mod: 97, java: 97, source: 'baseline' },
-    { tag: 'v105', version: 105, mod: 105, java: 105, source: 'baseline' },
-    { tag: 'v136', version: 136, mod: 136, java: 136, source: 'baseline' },
-    { tag: 'v147', version: 147, mod: 136, java: 147, source: 'game-source' },
-    { tag: 'v154', version: 154, mod: 136, java: 147, source: 'game-source' },
-    { tag: 'v154.2', version: 154.2, mod: 136, java: 154, source: 'game-source' },
+    { tag: 'v97', version: 97, value: 97, source: 'baseline' },
+    { tag: 'v104', version: 104, value: 97, source: 'baseline' },
+    { tag: 'v105', version: 105, value: 105, source: 'baseline' },
+    { tag: 'v136', version: 136, value: 136, source: 'baseline' },
+    { tag: 'v147', version: 147, value: 136, source: 'game-source' },
+    { tag: 'v154', version: 154, value: 136, source: 'game-source' },
+    { tag: 'v154.2', version: 154.2, value: 154, source: 'game-source' },
   ];
   assert.deepEqual(mergeGateRules(versions), [
-    { min: 97, max: 105, mod: 97, java: 97, source: 'baseline' },
-    { min: 105, max: 136, mod: 105, java: 105, source: 'baseline' },
-    { min: 136, max: 147, mod: 136, java: 136, source: 'baseline' },
-    { min: 147, max: 154.2, mod: 136, java: 147, source: 'game-source' },
-    { min: 154.2, max: null, mod: 136, java: 154, source: 'game-source' },
+    { min: 97, max: 105, value: 97, source: 'baseline' },
+    { min: 105, max: 136, value: 105, source: 'baseline' },
+    { min: 136, max: 154.2, value: 136, source: 'mixed' },
+    { min: 154.2, max: null, value: 154, source: 'game-source' },
   ]);
 });
 
 test('mergeGateRules：混合来源标 mixed，单条规则 max 为 null', () => {
   assert.deepEqual(
     mergeGateRules([
-      { version: 97, mod: 97, java: 97, source: 'baseline' },
-      { version: 98, mod: 97, java: 97, source: 'game-source' },
+      { version: 97, value: 97, source: 'baseline' },
+      { version: 98, value: 97, source: 'game-source' },
     ]),
-    [{ min: 97, max: null, mod: 97, java: 97, source: 'mixed' }],
+    [{ min: 97, max: null, value: 97, source: 'mixed' }],
   );
 });
 
@@ -233,28 +233,80 @@ test('findGateSourcePaths 只挑 core 下的 Vars/Version.java 并优先 mindust
   ]);
 });
 
-test('buildGateFile 形状与 gateBodyChanged 忽略 generatedAt', () => {
-  const versions = [
-    { tag: 'v97', version: 97, mod: 97, java: 97, source: 'baseline' },
-    { tag: 'v147', version: 147, mod: 136, java: 147, source: 'game-source' },
+test('buildGateFile：mod/java 两份各自只含自己的常量与 value', () => {
+  const modVersions = [
+    { tag: 'v97', version: 97, value: 97, source: 'baseline' },
+    { tag: 'v147', version: 147, value: 136, source: 'game-source' },
   ];
-  const rules = mergeGateRules(versions);
-  const file = buildGateFile({
-    versions,
-    rules,
+  const modFile = buildGateFile({
+    type: 'mod',
+    versions: modVersions,
+    rules: mergeGateRules(modVersions),
     resolvedPaths: ['core/src/mindustry/Vars.java'],
     generatedAt: '2026-11-06T03:00:00.000Z',
   });
-  assert.equal(file.formatVersion, 1);
-  assert.equal(file.source.repo, GATE_REPO);
-  assert.equal(file.source.baseline, GATE_BASELINE_URL);
-  assert.deepEqual(file.source.constants, ['minModGameVersion', 'minJavaModGameVersion']);
-  assert.deepEqual(file.source.resolvedPaths, ['core/src/mindustry/Vars.java']);
-  assert.equal(file.rules[0].min, gateStartVersion());
-  assert.deepEqual(file.versions, versions);
+  assert.equal(modFile.formatVersion, 1);
+  assert.equal(modFile.gate, 'mod');
+  assert.equal(modFile.source.repo, GATE_REPO);
+  assert.equal(modFile.source.baseline, GATE_BASELINE_URL);
+  assert.deepEqual(modFile.source.constants, ['minModGameVersion']);
+  assert.deepEqual(modFile.source.resolvedPaths, ['core/src/mindustry/Vars.java']);
+  assert.equal(modFile.rules[0].min, gateStartVersion());
+  assert.deepEqual(modFile.versions, modVersions);
 
-  const sameBody = { ...file, generatedAt: '2026-11-06T04:00:00.000Z' };
-  assert.equal(gateBodyChanged(file, sameBody), false);
-  const changedRules = { ...file, rules: [{ ...file.rules[0], java: 98 }] };
-  assert.equal(gateBodyChanged(file, changedRules), true);
+  const javaFile = buildGateFile({
+    type: 'java',
+    versions: [
+      { tag: 'v97', version: 97, value: 97, source: 'baseline' },
+      { tag: 'v147', version: 147, value: 147, source: 'game-source' },
+    ],
+    rules: mergeGateRules([
+      { tag: 'v97', version: 97, value: 97, source: 'baseline' },
+      { tag: 'v147', version: 147, value: 147, source: 'game-source' },
+    ]),
+    resolvedPaths: [],
+    generatedAt: '2026-11-06T03:00:00.000Z',
+  });
+  assert.equal(javaFile.gate, 'java');
+  assert.deepEqual(javaFile.source.constants, ['minJavaModGameVersion']);
+
+  const sameBody = { ...modFile, generatedAt: '2026-11-06T04:00:00.000Z' };
+  assert.equal(gateBodyChanged(modFile, sameBody), false);
+  assert.equal(
+    gateBodyChanged(modFile, { ...modFile, rules: [{ ...modFile.rules[0], value: 98 }] }),
+    true,
+  );
+  // gate 字段不同（mod vs java）也算变化
+  assert.equal(gateBodyChanged(modFile, javaFile), true);
+});
+
+test('splitLegacyGateFile：旧合并文件拆成 mod/java 两份缓存', () => {
+  const legacy = {
+    formatVersion: 1,
+    generatedAt: '2026-11-06T03:00:00.000Z',
+    source: {
+      repo: GATE_REPO,
+      baseline: GATE_BASELINE_URL,
+      constants: ['minModGameVersion', 'minJavaModGameVersion'],
+      resolvedPaths: ['core/src/mindustry/Vars.java'],
+    },
+    rules: [{ min: 97, max: null, mod: 136, java: 154, source: 'game-source' }],
+    versions: [
+      { tag: 'v97', version: 97, mod: 136, java: 154, source: 'game-source' },
+    ],
+  };
+  const split = splitLegacyGateFile(legacy);
+  assert.equal(split.mod.gate, 'mod');
+  assert.deepEqual(split.mod.source.constants, ['minModGameVersion']);
+  assert.deepEqual(split.mod.versions, [
+    { tag: 'v97', version: 97, value: 136, source: 'game-source' },
+  ]);
+  assert.deepEqual(split.mod.rules, [
+    { min: 97, max: null, value: 136, source: 'game-source' },
+  ]);
+  assert.deepEqual(split.java.versions, [
+    { tag: 'v97', version: 97, value: 154, source: 'game-source' },
+  ]);
+  assert.equal(splitLegacyGateFile({ formatVersion: 1, gate: 'mod' }), null);
+  assert.equal(splitLegacyGateFile(null), null);
 });

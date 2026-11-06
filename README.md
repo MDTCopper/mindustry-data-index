@@ -7,9 +7,9 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 
 | 数据集 | 产物 | 用途 | 更新频率 |
 | --- | --- | --- | --- |
-| 模组索引 | `index.json`、`releases/<owner>/<repo>.json` | 官方模组列表里每个模组的全部 release、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接 | 每天一次 |
+| 模组索引 | `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv` | 官方模组列表里每个模组的全部 git tag、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接、下载量/体积 | 最新 100 tag 每 2 小时；第 2 页每周；全量每月 |
 | 游戏版本列表 | `mindustry/versions.json` | 官方 Mindustry 全部正式版 + 最新 BE，字段与启动器 `remote/mindustry_versions.json` 快照兼容 | 约每 30 分钟一次 |
-| 最小版本门禁 | `mindustry/mod-gate.json` | 每个游戏版本要求的最低模组版本（脚本模组 / Java 模组），与启动器 `remote/mmgvm.hjson` 同语义 | 约每 30 分钟一次 |
+| 最小版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 普通/脚本模组与 Java 模组**分开**的最低模组版本门禁，语义来自 mmgvm | 约每 30 分钟一次 |
 
 ## 数据源
 
@@ -32,9 +32,10 @@ index.json                              # 全量模组索引（官方列表顺�
 releases/<owner>/<repo>.json            # 单个模组的全部 git tag（有 Release 的 + tag-only）+ 逐 tag 元数据
 summary.json                            # 下载量/体积总表（含全局合计，按下载量降序）
 summary.csv                             # 同一份总表的 CSV（UTF-8 BOM，Excel 直接打开）
-state/refresh.json                      # 调度缓存（第 1 页 ETag、深层页与 tag 列表最近抓取时间）
+state/refresh.json                      # 调度缓存（第 1/2 页/全量/ tag 列表最近抓取时间）
 mindustry/versions.json                 # Mindustry 可用版本列表（正式版 + 最新 BE）
-mindustry/mod-gate.json                 # 逐版本最小模组版本门禁 + 合并后的 rules
+mindustry/mod-gate.json                 # 普通/脚本模组门禁（rules + 逐版本 value）
+mindustry/java-gate.json                # Java 模组门禁（rules + 逐版本 value）
 mindustry/heartbeat.json                # 每日心跳，仅用于保持仓库活跃（见下）
 ```
 
@@ -51,6 +52,7 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/releases/Anuken/ExampleMod.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/versions.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/mod-gate.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/java-gate.json`
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
@@ -82,42 +84,49 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   tag-only 条目不受影响（0/null）；无 Release / 无资产的模组也保留。
 - `summary.csv`：与 `summary.json` 同列（不含 `totals`；`tagCount` 紧跟 `releaseCount`，
   `releasesPath` 为最后一列），UTF-8 **带 BOM**、CRLF 换行，逗号/引号/换行按 CSV 规则转义，可直接用 Excel 打开。
-- `state/refresh.json`：只给增量调度用（`page1Etag` + `page1FetchedAt` + 深层页抓取时间 +
-  `tagsFetchedAt`），使用方不需要读取；它只在 ETag / 抓取时间变化时更新，每天是一次小 diff。
+- `state/refresh.json`：只给增量调度用（`page1Etag` + `page1FetchedAt`（2h）/ `page2FetchedAt`（7d）/
+  `fullFetchedAt`（30d）/ `tagsFetchedAt`），使用方不需要读取；它只在 ETag / 抓取时间变化时更新，每天是一次小 diff。
 - `mindustry/versions.json`：`update_time`、`source`、`releases[]`（`name`/`tag_name`/`published_at`/
   `body`（空串）/`reactions.total_count`/`assets[]`）、`latest_be`（没有 `reactions` 键）、
   `etags`（增量缓存，使用方可忽略）。启动器 `MindustryReleaseListSnapshot.parse` 直接可读。
-- `mindustry/mod-gate.json`：`rules[]`（`min` 含、`max` 不含，最后一条 `max` 为 `null`，与
-  `remote/mmgvm.hjson` 同义）、`versions[]`（每个正式版标签的 `mod`/`java` 值与来源
-  `game-source`/`baseline`）、`source.resolvedPaths`（实际读到的源码路径，便于追踪位置变化）。
+- `mindustry/mod-gate.json`（普通/脚本模组）与 `mindustry/java-gate.json`（Java 模组）：两份独立文件，
+  字段相同：`gate`（`"mod"` / `"java"`）、`source.constants`（各自只含 `minModGameVersion` /
+  `minJavaModGameVersion`）、`rules[]`（`min` 含、`max` 不含，最后一条 `max` 为 `null`，`value` 是该范围
+  要求的最低模组主版本）、`versions[]`（每个正式版标签的 `value` 与来源 `game-source`/`baseline`）。
+  启动器接入时按模组类型分别读对应文件，不要混用两列。
 
 ## 和官方 mods.json / 启动器快照的关系
 
-- **官方 `mods.json`**：谁能在游戏内下载（当前约 991 个模组的权威名单，数量会随时间变化），
+- **官方 `mods.json`**：谁能在游戏内下载（当前约 992 个模组的权威名单，数量会随时间变化），
   每个模组只有当前版本信息。本仓库只覆盖官方列表里的模组，不新增、不删减，补充历史 release 与逐 tag 元数据。
 - **启动器 `remote/mindustry_versions.json`**：历史版本快照。本仓库的 `mindustry/versions.json`
   用同一套精简字段，可直接被 `MindustryReleaseListSnapshot.parse` 读取；额外多一个 `latest_be`
   与仅供增量用的 `etags`。
-- **启动器 `remote/mmgvm.hjson`**：模组版本门禁基线。`mindustry/mod-gate.json` 的 `rules` 与它完全同义
-  （生成结果的 rules 与当前 mmgvm 逐项一致），区别是门禁值优先从各版本官方源码提取（147 起源码里有
-  `minModGameVersion`/`minJavaModGameVersion`），源码没有常量的老版本才回落到 mmgvm 基线。
+- **启动器 `remote/mmgvm.hjson`**：模组版本门禁基线。`mindustry/mod-gate.json` / `java-gate.json` 的
+  `rules` 分别与 mmgvm 的 `mod` / `java` 字段同义（生成结果逐项一致），区别是门禁值优先从各版本官方源码
+  提取（147 起源码里有 `minModGameVersion`/`minJavaModGameVersion`），源码没有常量的老版本才回落到基线。
+  两种类型的门禁是分开的：普通/脚本模组读 `mod-gate.json`，Java 模组读 `java-gate.json`。
 
 ## 更新节奏
 
-- `.github/workflows/update-mods.yml`：每天 02:23 UTC 一次 + `workflow_dispatch` + `push`（仅脚本/依赖/
-  自身 workflow 变化时），更新模组索引。
+- `.github/workflows/update-mods.yml`：每 2 小时一次（cron `17 */2 * * *`）+ `workflow_dispatch` + `push`
+  （仅脚本/依赖/自身 workflow 变化时），更新模组索引。刷新分档由 `state/refresh.json` 控制：
+  **最新 100 tag（releases/tags 第 1 页）每 2 小时、第 2 页每周、全量（所有页）每月**。
+  **API 配额不足时**（运行中剩余 ≤5 或遇到限流）：停止本次的新请求、保留已抓结果、正常退出（exit 0），
+  日志会写「本次未处理 N 个，下次继续」；下次运行按「最近抓取时间升序」排队，优先补上次没跑到的模组，
+  全量刷新也会按模组粒度分次续跑（每个模组完成才推进 `fullFetchedAt`）。
 - `.github/workflows/update-mindustry.yml`：约每 30 分钟一次（cron `7,37 * * * *`，即每小时 :07 / :37，
   避开整点高峰）+ `workflow_dispatch` + `push`，更新版本列表与门禁。GitHub 的 `schedule` 可能延迟几分钟
   到十几分钟，整点高负载时甚至会被丢弃，所以不要把频率理解成严格定时。
 - 两个工作流共用一个 concurrency 组（`data-update`），不会同时提交；有实质变化才 commit + push
-  （`index.json` / per-mod 文件 / versions / gate 都只比较数据主体，未变化不重写）。
+  （`index.json` / per-mod 文件 / versions / 两份 gate / summary 都只比较数据主体，未变化不重写）。
 - **Actions 权限**：`update-*` 工作流里声明了 `permissions: contents: write`。如果仓库的
   Settings → Actions → General → Workflow permissions 选的是只读（Read repository contents），
   声明会被降级、push 会失败；需要改成「Read and write permissions」或给 Workflow 单独授权。
 - **每日心跳**：GitHub 在仓库 60 天没有任何提交时会暂停 `schedule`。版本/门禁数据可能长期无变化，
   所以 `update-mindustry.yml` 在没有数据变化、且 `mindustry/heartbeat.json` 里的日期不是今天时，
   会更新心跳并提交一次（最多每天 1 次）；有数据变化时顺带刷新心跳。心跳文件损坏 / 读不到
-  `lastCheck` 时用文件 mtime 的日期兜底，避免变成每 30 分钟提交一次。模组索引每天基本都有变化，
+  `lastCheck` 时用文件 mtime 的日期兜底，避免变成每 30 分钟提交一次。模组索引每 2 小时基本都有变化，
   两个工作流合起来足够让仓库保持活跃。
 
 ## 本地运行
@@ -161,34 +170,35 @@ node src/main.js --out tmp/gate --datasets gate \
 | `--dry-run` | 只抓取与计算，不写文件 |
 | `--verbose` | 输出增量细节（304、新抓/复用元数据、请求统计） |
 
-## 按 tag 新旧分档刷新
+## 刷新频率（2 小时 / 每周 / 每月全量）
 
-GitHub releases API 每页最多 100 条、按新→旧返回。越老的 tag 下载频率越低，但 `downloadCount` 仍会缓慢
-变化（体积与元数据不会变），所以按页分档刷新，用更少的请求覆盖全部历史：
+GitHub releases / tags API 每页最多 100 条、按新→旧返回。越老的 tag 下载频率越低，但 `downloadCount` 仍会
+缓慢变化（体积与元数据不会变），所以按页分档刷新，用更少的请求覆盖全部历史：
 
-| 页 | 覆盖的 release | 刷新周期 |
+| 频率 | 覆盖范围 | 抓取内容 |
 | --- | --- | --- |
-| 第 1 页 | 最近 100 条 | 每天 |
-| 第 2 页 | 101–200 条 | 每 7 天 |
-| 第 3 页 | 201–300 条 | 每 30 天 |
-| 第 4 页起 | 301 条以后 | 每 90 天（3 个月全量覆盖一轮） |
+| 每 2 小时 | 最新 100 个 tag | releases 第 1 页 + tags 第 1 页 |
+| 每周 | 第 2 页（101–200） | releases 第 2 页 + tags 第 2 页 |
+| 每月 | 全量 | 所有 releases 页 + 所有 tags 页 |
 
-- 分档参数集中在 `src/refresh-state.js` 的 `REFRESH_TIERS`，便于以后调整。
+- 分档参数集中在 `src/refresh-state.js` 的 `REFRESH_TIERS`（`page1FetchedAt` / `page2FetchedAt` /
+  `fullFetchedAt` / `tagsFetchedAt`），到期判断可注入当前时间测试。
 - 每轮只抓「到期的页」：第 1 页带 `If-None-Match` 条件请求，304 就只更新调度时间；深层页到期才抓。
   抓到的页按 tag 合并覆盖缓存（下载量随之更新），没抓的旧条目原样保留、元数据不重抓，合并后按
   `publishedAt` 降序（同时间按 tag 升序）。
-- **全部 git tag** 与 releases 分档独立：每个模组的 tag 列表每天全量抓一次
-  （`/repos/{owner}/{repo}/tags`，分页取全），把没有 Release 的 tag 补成 tag-only 条目；
-  当天抓过就记在 `state/refresh.json` 的 `tagsFetchedAt`，同一天不重复抓。
-- **缓存与数据分离**：per-mod 文件只存 `releases` 数据，只有数据真的变化才重写；ETag 与各页/ tag 列表
-  抓取时间存在 `state/refresh.json`。这样即使 GitHub 的 ETag 天天变，也不会把 991 个 release 文件全部重写，
-  每天最多产生一次很小的 `state/refresh.json` diff。
+- **全部 git tag** 跟随同一分档：tags 第 1 页每 2 小时、第 2 页每周、第 3 页起每月；把没有 Release 的 tag
+  补成 tag-only 条目。全量刷新时按完整 tag 列表重建 tag-only（删掉已不存在的 tag）。
+- **缓存与数据分离**：per-mod 文件只存数据，只有数据真的变化才重写；ETag 与各 tier 的抓取时间存在
+  `state/refresh.json`。即使 ETag 频繁变化，也不会把 991 个 release 文件全部重写。
+- **API 不足时优雅续跑**：运行中剩余配额 ≤5 或遇到限流（`RateLimitError`）时，停止发起新的请求、
+  保留已抓结果并正常退出（exit 0），日志写「本次未处理 N 个，下次继续」。下次运行按「最近抓取时间升序」
+  排队，优先补上次没跑到的模组（也适用于每月全量：按模组粒度分次续跑，已完成的才推进 `fullFetchedAt`）。
 - 首次运行无缓存 / `--no-cache` 时全量抓所有 releases 页与 tag 列表；单页/ tag 列表抓取失败保留旧数据、
   该模组记入 `index.skipped`，不影响其它模组，退出码仍为 0。
 
 ## 增量机制
 
-- **模组索引**：按上面的分档刷新读 releases、每天抓一次全部 git tag；只有抓到的页/ tag 里出现旧文件
+- **模组索引**：按上面的分档刷新读 releases、抓全部 git tag；只有抓到的页/ tag 里出现旧文件
   没有的 tag、或旧条目 `metadataStatus != ok` 时，才去读这些 tag 的 `mod.hjson`。
   per-mod 文件、`index.json`、`summary.json`、`summary.csv` 都只在数据主体变化时重写
   （`generatedAt` 只在内容变化时更新）。
@@ -196,9 +206,10 @@ GitHub releases API 每页最多 100 条、按新→旧返回。越老的 tag �
 - **版本列表**：正式版第一页与 BE 各带旧 ETag；304 就复用旧数据。第一页 200 且里面全是已知 release 时
   只把第一页与本地其余合并（不翻后面页）；只有出现未知 release id（或本地还没有列表）才翻页重建完整列表
   （当前约 3 页）。`releases`/`latest_be` 没变时不重写文件（`update_time` 只在内容变化时更新）。
-- **门禁**：上一份 `mod-gate.json` 里 `source=game-source` 的版本不重复抓源码，只有新版本才扫描
-  （候选路径全 404 且上一个版本有常量时，才额外用 1 次 tree API 找移动后的文件）。`rules`/`versions`/`source`
-  没变时不重写文件。
+- **门禁**：拆成 `mod-gate.json` 与 `java-gate.json` 两份。旧合并文件会自动迁移（读取旧版本里的
+  `mod`/`java` 列作缓存）；`source=game-source` 的版本不重复抓源码，只有新版本才扫描
+  （候选路径全 404 且上一个版本有常量时，才额外用 1 次 tree API 找移动后的文件）。两份文件各自比较
+  `rules`/`versions`/`source`，没变时不重写。
 - 单个模组抓取失败不终止整体：保留旧产物、记入 `index.skipped`、退出码仍为 0；官方列表拉取失败退出码 1。
   `versions` 的正式版列表拉取失败退出码 1；BE 拉取失败只警告并沿用旧值。
 
@@ -219,9 +230,10 @@ GitHub releases API 每页最多 100 条、按新→旧返回。越老的 tag �
 - `mod.hjson` 取不到时 `modVersion` / `minGameVersion` 为 `null`，`metadataStatus` 说明原因。
 - 门禁只覆盖 `v<数字>[.<数字>]` 形态的正式版；147 之前源码里没有 `minModGameVersion` /
   `minJavaModGameVersion`，这些版本的门禁值来自启动器 mmgvm 基线。门禁值以官方源码为准，源码位置变化时
-  靠候选路径与 tree 兜底，仍找不到则回落到基线。
+  靠候选路径与 tree 兜底，仍找不到则回落到基线。普通/脚本模组读 `mod-gate.json`，Java 模组读
+  `java-gate.json`，两份的 `value` 不要混用。
 - 受 GitHub API 限流约束：Actions 里用 `GITHUB_TOKEN`（每小时 5000 次）；本地匿名只有每小时 60 次，
-  全量跑模组索引务必带上 token。配额剩余 ≤5 时脚本会等到重置，重置时间超过 15 分钟时相关仓库记为
-  `rate-limit` 跳过（下次重试）。
+  全量跑模组索引务必带上 token。配额剩余 ≤5 时本次运行会优雅停止（保留已抓结果、exit 0），下次按
+  最久未刷新优先继续；单次运行内等待重置超过 15 分钟时相关仓库记为 `rate-limit` 跳过。
 - `--repos` / `--limit` / `--versions-pages` / `--versions-file` 属于本地验证模式，不要拿子集产物覆盖正式数据。
-- 数据是公开信息，但受抓取节奏限制不保证实时：模组索引每天一次，版本/门禁约每 30 分钟一次。
+- 数据是公开信息，但受抓取节奏限制不保证实时：模组最新 100 tag 每 2 小时、其余历史按周/月，版本/门禁约每 30 分钟一次。
