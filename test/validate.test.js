@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, readFile, rm, writeFile, unlink } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { validateDir, validateReleaseFileData, validateIndexData, isValidReleasesPath } from '../src/validate.js';
+import { validateDir, validateReleaseFileData, validateIndexData, validateStatusData, validateChangesData, isValidReleasesPath } from '../src/validate.js';
 import { VERSIONS_API } from '../src/versions.js';
 import { buildSummary, summaryCsv } from '../src/summary.js';
 import {
@@ -55,7 +55,10 @@ function validFixture(repo = 'owner/demo') {
           repo,
           internalName: 'demo',
           name: 'Demo',
+          namePlain: 'Demo',
           author: 'author',
+          authorPlain: 'author',
+          descriptionPlain: '',
           version: '1.0',
           minGameVersion: '146',
           lastUpdated: '2026-10-01T00:00:00Z',
@@ -63,6 +66,8 @@ function validFixture(repo = 'owner/demo') {
           hasIcon: true,
           hasScripts: false,
           hasJava: true,
+          iosCompatible: false,
+          legacyCompatible: true,
           iconUrl: `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/${stem}`,
           iconHash: null,
           releasesPath: releasesRelPath(repo),
@@ -90,11 +95,12 @@ function validFixture(repo = 'owner/demo') {
       skipped: [],
     },
     releaseFile: {
-      formatVersion: 1,
+      formatVersion: 2,
       repo,
       generatedAt: GENERATED_AT,
       releases: [release],
       compat: [],
+      meta: null,
     },
   };
 }
@@ -104,6 +110,7 @@ function summaryRow(entry, releaseFile) {
   return {
     repo: entry.repo,
     name: entry.name,
+    namePlain: entry.namePlain ?? '',
     author: entry.author,
     stars: entry.stars,
     releaseCount: entry.releaseCount,
@@ -137,6 +144,41 @@ async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   await mkdir(path.dirname(path.join(dir, relPath)), { recursive: true });
   await writeFile(path.join(dir, relPath), JSON.stringify(releaseFile, null, 2));
   await writeSummaryFiles(dir, index, releaseFile);
+  await writeFile(
+    path.join(dir, 'status.json'),
+    JSON.stringify(
+      {
+        formatVersion: 1,
+        generatedAt: GENERATED_AT,
+        datasets: {
+          official: { updatedAt: GENERATED_AT, modCount: 1, releaseCount: 1, skipped: [] },
+          community: null,
+          versions: null,
+          gate: null,
+        },
+        api: { requests: 1, remaining: 100, resetAt: null },
+        validate: { errors: 0, warnings: 0, presentFiles: ['index.json'] },
+      },
+      null,
+      2,
+    ),
+  );
+  await writeFile(
+    path.join(dir, 'changes.json'),
+    JSON.stringify(
+      [
+        {
+          at: GENERATED_AT,
+          dataset: 'official',
+          repo: 'owner/demo',
+          action: 'mod-added',
+          namePlain: 'Demo',
+        },
+      ],
+      null,
+      2,
+    ),
+  );
   return dir;
 }
 
@@ -590,15 +632,20 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
     source: 'topic',
     internalName: null,
     name: 'Demo',
+    namePlain: 'Demo',
     author: 'author',
+    authorPlain: 'author',
     version: '1.0',
     minGameVersion: '146',
     description: 'a community mod',
+    descriptionPlain: 'a community mod',
     lastUpdated: '2026-11-01T00:00:00Z',
     stars: 2,
     hasIcon: false,
     hasScripts: false,
     hasJava: false,
+    iosCompatible: null,
+    legacyCompatible: null,
     iconUrl: null,
     iconHash: null,
     releasesPath: `community/releases/${repo}.json`,
@@ -635,11 +682,12 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
       skipped: [],
     },
     releaseFile: {
-      formatVersion: 1,
+      formatVersion: 2,
       repo,
       generatedAt: GENERATED_AT,
       releases: [release],
       compat: [],
+      meta: null,
     },
     entry,
     release,
@@ -856,4 +904,53 @@ test('validateDir：compatRanges 与文件不一致会被发现', async (t) => {
   t.after(() => rm(dir, { recursive: true, force: true }));
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('compatRanges')));
+});
+
+// ---------- status.json / changes.json ----------
+
+test('validateStatusData：合法结构通过，缺字段/类型错误被发现', () => {
+  const status = {
+    formatVersion: 1,
+    generatedAt: GENERATED_AT,
+    datasets: {
+      official: { updatedAt: GENERATED_AT, modCount: 1, releaseCount: 2, skipped: [] },
+      community: null,
+      versions: null,
+      gate: null,
+    },
+    api: { requests: 3, remaining: 5, resetAt: null },
+    validate: { errors: 0, warnings: 0, presentFiles: ['index.json'] },
+  };
+  let errors = [];
+  validateStatusData(status, { errors });
+  assert.deepEqual(errors, []);
+
+  status.api.requests = -1;
+  status.datasets.official.releaseCount = 'x';
+  delete status.validate.presentFiles;
+  errors = [];
+  validateStatusData(status, { errors });
+  assert.ok(errors.some((message) => message.includes('api.requests')));
+  assert.ok(errors.some((message) => message.includes('releaseCount')));
+  assert.ok(errors.some((message) => message.includes('presentFiles')));
+});
+
+test('validateChangesData：合法变更通过，非法 action/dataset/时间被发现', () => {
+  const valid = [
+    { at: GENERATED_AT, dataset: 'official', repo: 'owner/demo', action: 'release-added', tag: 'v1' },
+    { at: GENERATED_AT, dataset: 'community', repo: 'owner/demo', action: 'mod-added', namePlain: 'Demo' },
+  ];
+  let errors = [];
+  assert.equal(validateChangesData(valid, { errors }).count, 2);
+  assert.deepEqual(errors, []);
+
+  const invalid = [
+    { at: 'not-a-date', dataset: 'other', repo: 'bad', action: 'unknown' },
+  ];
+  errors = [];
+  validateChangesData(invalid, { errors });
+  assert.ok(errors.some((message) => message.includes('.at')));
+  assert.ok(errors.some((message) => message.includes('.dataset')));
+  assert.ok(errors.some((message) => message.includes('.repo')));
+  assert.ok(errors.some((message) => message.includes('.action')));
 });

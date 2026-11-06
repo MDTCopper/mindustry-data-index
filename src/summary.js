@@ -3,6 +3,7 @@
 export const SUMMARY_COLUMNS = [
   'repo',
   'name',
+  'namePlain',
   'author',
   'stars',
   'releaseCount',

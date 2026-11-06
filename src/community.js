@@ -5,6 +5,7 @@ import { fetchCommunityModMetadata } from './mod-meta.js';
 import { assertRepo } from './paths.js';
 import { isBlacklisted } from './blacklist.js';
 import { latestCompatibleTag } from './compat.js';
+import { plainFields } from './plain.js';
 
 export const COMMUNITY_DIR = 'community';
 export const COMMUNITY_STATE_REL_PATH = 'state/community-refresh.json';
@@ -157,6 +158,10 @@ export function buildCommunityIndexEntry(
   const fileCompat = Array.isArray(compat)
     ? compat
     : (Array.isArray(file?.compat) ? file.compat : []);
+  const meta = file?.meta && typeof file.meta === 'object' ? file.meta : null;
+  const hasScripts = meta ? meta.hasScripts === true : mod.hasScripts === true;
+  const hasJava = meta ? meta.hasJava === true : mod.hasJava === true;
+  const plain = plainFields(mod);
   const computed = stats ?? {
     totalDownloads: 0,
     allAssetsDownloads: 0,
@@ -182,15 +187,20 @@ export function buildCommunityIndexEntry(
     source: COMMUNITY_SOURCE,
     internalName: null,
     name: mod.name,
+    namePlain: plain.namePlain,
     author: mod.author,
+    authorPlain: plain.authorPlain,
+    description: mod.description ?? '',
+    descriptionPlain: plain.descriptionPlain,
     version: mod.version,
     minGameVersion: mod.minGameVersion,
-    description: mod.description ?? '',
     lastUpdated: mod.lastUpdated,
     stars: mod.stars,
     hasIcon: mod.hasIcon,
-    hasScripts: mod.hasScripts,
-    hasJava: mod.hasJava,
+    hasScripts,
+    hasJava,
+    iosCompatible: null,
+    legacyCompatible: null,
     iconUrl: mod.iconUrl ?? null,
     iconHash: null,
     releasesPath: hasFile

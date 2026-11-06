@@ -52,6 +52,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.json summary.json summary.csv
+          # 运行健康状态与滚动变更流（每次运行都更新，属于预期的小额提交）
+          git add status.json changes.json 2>/dev/null || true
           # -A 覆盖 releases/<owner>/<repo>.json 新结构的新增目录，以及旧 flat 文件迁移后的删除
           git add -A releases 2>/dev/null || true
           git add -A community 2>/dev/null || true

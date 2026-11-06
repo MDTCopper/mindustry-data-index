@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/blacklist-state.json",
+  "title": "blacklist-state",
+  "description": "Anuken 黑名单同步缓存 state/blacklist.json",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "fetchedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "sourceHash": {
+      "type": "string"
+    },
+    "nameBlacklist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blacklist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "globalBlacklist": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/global-blacklist.json",
+          "title": "global-blacklist",
+          "description": "Base64 解码后的正则",
+          "type": "object",
+          "properties": {
+            "source": {
+              "type": "string"
+            },
+            "flags": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "flags"
+          ],
+          "additionalProperties": true
+        }
+      ]
+    }
+  },
+  "required": [
+    "formatVersion",
+    "fetchedAt",
+    "sourceUrl",
+    "sourceHash",
+    "nameBlacklist",
+    "blacklist",
+    "globalBlacklist"
+  ],
+  "additionalProperties": true
+}

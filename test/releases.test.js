@@ -311,11 +311,12 @@ test('buildReleasesFile：formatVersion / repo / generatedAt / releases / compat
     generatedAt: '2026-11-06T03:00:00.000Z',
   });
   assert.deepEqual(file, {
-    formatVersion: 1,
+    formatVersion: 2,
     repo: 'owner/repo',
     generatedAt: '2026-11-06T03:00:00.000Z',
     releases: [],
     compat: [],
+    meta: null,
   });
   assert.deepEqual(
     buildReleasesFile({

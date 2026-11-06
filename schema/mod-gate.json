@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/mod-gate.json",
+  "title": "mod-gate",
+  "description": "mod 门禁文件",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "gate": {
+      "const": "mod"
+    },
+    "source": {
+      "type": "object"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/gate-rule.json",
+        "title": "gate-rule",
+        "description": "门禁区间规则",
+        "type": "object",
+        "properties": {
+          "min": {
+            "type": "number"
+          },
+          "max": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "value": {
+            "type": "integer"
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "min",
+          "max",
+          "value"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/gate-version.json",
+        "title": "gate-version",
+        "description": "逐版本门禁",
+        "type": "object",
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "version": {
+            "type": "number"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "tag",
+          "version",
+          "value"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "gate",
+    "source",
+    "rules",
+    "versions"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/summary.json",
+  "title": "summary",
+  "description": "summary.json（官方与社区同构）",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "totals": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/summary-totals.json",
+      "title": "summary-totals",
+      "description": "全局合计",
+      "type": "object",
+      "properties": {
+        "mods": {
+          "type": "integer"
+        },
+        "releases": {
+          "type": "integer"
+        },
+        "downloads": {
+          "type": "integer"
+        },
+        "sizeBytes": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "mods",
+        "releases",
+        "downloads",
+        "sizeBytes"
+      ],
+      "additionalProperties": true
+    },
+    "mods": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/summary-row.json",
+        "title": "summary-row",
+        "description": "总表一行（列顺序即 CSV 列顺序）",
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "namePlain": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "stars": {
+            "type": "integer"
+          },
+          "releaseCount": {
+            "type": "integer"
+          },
+          "tagCount": {
+            "type": "integer"
+          },
+          "totalDownloads": {
+            "type": "integer"
+          },
+          "allAssetsDownloads": {
+            "type": "integer"
+          },
+          "latestDownloads": {
+            "type": "integer"
+          },
+          "latestSizeBytes": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "totalSizeBytes": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "latestTag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "latestPrerelease": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "latestModVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "latestMinGameVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "iconUrl": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "releasesPath": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "repo",
+          "name",
+          "namePlain",
+          "author",
+          "stars",
+          "releaseCount",
+          "tagCount",
+          "totalDownloads",
+          "allAssetsDownloads",
+          "latestDownloads",
+          "latestSizeBytes",
+          "totalSizeBytes",
+          "latestTag",
+          "latestPrerelease",
+          "latestModVersion",
+          "latestMinGameVersion",
+          "iconUrl",
+          "releasesPath"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "totals",
+    "mods"
+  ],
+  "additionalProperties": true
+}

@@ -22,6 +22,9 @@ const COPIED_FIELDS = [
   'hasScripts',
   'hasJava',
   'iconHash',
+  'description',
+  'iosCompatible',
+  'legacyCompatible',
 ];
 
 export async function fetchModsJson(client) {

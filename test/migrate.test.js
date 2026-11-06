@@ -6,6 +6,12 @@ import os from 'node:os';
 import path from 'node:path';
 import { parseArgs, runMods } from '../src/main.js';
 import { MODS_URL } from '../src/mods-source.js';
+import {
+  CURRENT_FORMAT_VERSION,
+  migrateDataDir,
+  migrateReleaseFileData,
+  needsMigration,
+} from '../src/migrate.js';
 
 const GENERATED_AT = '2026-11-06T03:00:00.000Z';
 const FETCHED_AT = new Date(Date.now() - 60 * 60 * 1000).toISOString();
@@ -29,7 +35,7 @@ function officialMod(repo) {
 
 function legacyReleaseFile(repo) {
   return {
-    formatVersion: 1,
+    formatVersion: 2,
     repo,
     generatedAt: GENERATED_AT,
     source: { releasesEtag: 'W/"legacy"', releasesFetchedAt: FETCHED_AT },
@@ -56,6 +62,8 @@ function legacyReleaseFile(repo) {
         ],
       },
     ],
+    compat: [],
+    meta: null,
   };
 }
 
@@ -202,4 +210,203 @@ test('旧 flat 文件迁移：读旧当缓存 → 写新路径 → 删旧文件�
     await hashFile(path.join(dir, 'releases', 'owner', 'demo.json')),
     hashes.release,
   );
+});
+
+test('处理旧 per-mod 文件（formatVersion 1）时本地迁移到 2，且不额外发 API', async (t) => {
+  const repo = 'owner/demo';
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-schema-migrate-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await mkdir(path.join(dir, 'releases', 'owner'), { recursive: true });
+  await mkdir(path.join(dir, 'mindustry'), { recursive: true });
+  await writeFile(
+    path.join(dir, 'releases', 'owner', 'demo.json'),
+    JSON.stringify(
+      {
+        formatVersion: 1,
+        repo,
+        generatedAt: GENERATED_AT,
+        releases: [
+          {
+            tag: 'v1.0',
+            name: '1.0',
+            prerelease: false,
+            publishedAt: '2026-10-01T12:00:00Z',
+            htmlUrl: `https://github.com/${repo}/releases/tag/v1.0`,
+            modVersion: '1.0',
+            minGameVersion: '146',
+            metadataPath: 'mod.hjson',
+            metadataStatus: 'ok',
+            downloadUrl: `https://github.com/${repo}/downloads/v1.0.jar`,
+            sourceArchiveUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
+            assets: [],
+            hasRelease: true,
+          },
+        ],
+      },
+      null,
+      2,
+    ),
+  );
+  await writeFile(
+    path.join(dir, 'mindustry', 'versions.json'),
+    JSON.stringify({ releases: [{ tag_name: 'v160.7' }] }),
+  );
+  const clients = fakeClients();
+  const originalLog = console.log;
+  const originalError = console.error;
+  console.log = () => {};
+  console.error = () => {};
+  t.after(() => {
+    console.log = originalLog;
+    console.error = originalError;
+  });
+  const result = await runMods(parseArgs(['--out', dir, '--repos', repo]), {
+    apiClient: clients.apiClient,
+    rawClient: clients.rawClient,
+    outDir: dir,
+    log: () => {},
+  });
+  assert.equal(result.code, 0);
+  assert.equal(clients.apiCalls.length, 0, `迁移不应发 API 请求：${JSON.stringify(clients.apiCalls)}`);
+  const file = JSON.parse(
+    await readFile(path.join(dir, 'releases', 'owner', 'demo.json'), 'utf8'),
+  );
+  assert.equal(file.formatVersion, CURRENT_FORMAT_VERSION);
+  assert.ok(Array.isArray(file.compat));
+  assert.equal('meta' in file, true);
+  assert.equal(file.meta, null);
+  assert.equal(file.releases[0].commitSha, null);
+  assert.equal(file.releases[0].archiveByCommitUrl, null);
+  const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+  assert.equal(index.mods[0].removedCount, 0);
+  assert.equal(index.mods[0].compatRanges, file.compat.length);
+});
+
+test('migrateDataDir：官方+社区旧文件一次性迁移，第二次 0 文件变化', async (t) => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-migrate-dir-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const officialRepo = 'owner/demo';
+  const communityRepo = 'community/demo';
+  const oldRelease = (repo) => ({
+    formatVersion: 1,
+    repo,
+    generatedAt: GENERATED_AT,
+    releases: [
+      {
+        tag: 'v1.0',
+        name: '1.0',
+        hasRelease: true,
+        prerelease: false,
+        publishedAt: '2026-10-01T12:00:00Z',
+        htmlUrl: `https://github.com/${repo}/releases/tag/v1.0`,
+        modVersion: '1.0',
+        minGameVersion: '146',
+        metadataPath: 'mod.hjson',
+        metadataStatus: 'ok',
+        downloadUrl: `https://github.com/${repo}/downloads/v1.0.jar`,
+        sourceArchiveUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
+        assets: [],
+      },
+    ],
+  });
+  await mkdir(path.join(dir, 'releases', 'owner'), { recursive: true });
+  await mkdir(path.join(dir, 'community', 'releases', 'community'), { recursive: true });
+  await mkdir(path.join(dir, 'mindustry'), { recursive: true });
+  await writeFile(path.join(dir, 'releases', 'owner', 'demo.json'), JSON.stringify(oldRelease(officialRepo)));
+  await writeFile(
+    path.join(dir, 'community', 'releases', 'community', 'demo.json'),
+    JSON.stringify(oldRelease(communityRepo)),
+  );
+  const indexEntry = (repo, pathValue, extra = {}) => ({
+    repo,
+    internalName: 'demo',
+    name: 'Demo',
+    author: 'author',
+    version: '1.0',
+    minGameVersion: '146',
+    lastUpdated: '2026-10-01T00:00:00Z',
+    stars: 1,
+    hasIcon: false,
+    hasScripts: false,
+    hasJava: false,
+    iconUrl: null,
+    iconHash: null,
+    releasesPath: pathValue,
+    releaseCount: 1,
+    tagCount: 1,
+    totalDownloads: 0,
+    allAssetsDownloads: 0,
+    latestDownloads: 0,
+    latestSizeBytes: null,
+    totalSizeBytes: null,
+    latestRelease: { tag: 'v1.0', name: '1.0', prerelease: false, publishedAt: '2026-10-01T12:00:00Z', downloads: 0, sizeBytes: null },
+    releaseDataUpdatedAt: GENERATED_AT,
+    ...extra,
+  });
+  await writeFile(
+    path.join(dir, 'index.json'),
+    JSON.stringify({
+      formatVersion: 1,
+      generatedAt: GENERATED_AT,
+      source: { modsUrl: 'https://example.com/mods.json', modCount: 1 },
+      mods: [indexEntry(officialRepo, 'releases/owner/demo.json')],
+      skipped: [],
+    }),
+  );
+  await writeFile(
+    path.join(dir, 'community', 'index.json'),
+    JSON.stringify({
+      formatVersion: 1,
+      generatedAt: GENERATED_AT,
+      source: { source: 'topic', query: 'mindustry-mod in:topics', officialCount: 1 },
+      mods: [
+        indexEntry(communityRepo, 'community/releases/community/demo.json', {
+          source: 'topic',
+          description: 'desc',
+        }),
+      ],
+      skipped: [],
+    }),
+  );
+  await writeFile(
+    path.join(dir, 'mindustry', 'versions.json'),
+    JSON.stringify({
+      update_time: GENERATED_AT,
+      source: 'test',
+      releases: [{ name: 'v160.7', tag_name: 'v160.7', published_at: GENERATED_AT, body: '', reactions: { total_count: 0 }, assets: [] }],
+      latest_be: null,
+    }),
+  );
+
+  const first = await migrateDataDir({ outDir: dir, now: GENERATED_AT });
+  assert.equal(first.officialFiles, 1);
+  assert.equal(first.communityFiles, 1);
+  for (const file of [
+    path.join(dir, 'releases', 'owner', 'demo.json'),
+    path.join(dir, 'community', 'releases', 'community', 'demo.json'),
+  ]) {
+    const data = JSON.parse(await readFile(file, 'utf8'));
+    assert.equal(data.formatVersion, CURRENT_FORMAT_VERSION);
+    assert.ok(Array.isArray(data.compat));
+    assert.equal('meta' in data, true);
+  }
+  const officialIndex = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+  assert.equal(officialIndex.mods[0].removedCount, 0);
+  const communityIndex = JSON.parse(
+    await readFile(path.join(dir, 'community', 'index.json'), 'utf8'),
+  );
+  assert.equal(communityIndex.mods[0].removedCount, 0);
+
+  // 第二次：所有 per-mod 文件都不再重写
+  const second = await migrateDataDir({ outDir: dir, now: GENERATED_AT });
+  assert.equal(second.officialFiles, 0);
+  assert.equal(second.communityFiles, 0);
+});
+
+test('needsMigration：formatVersion / compat / meta 缺失都视为需要迁移', () => {
+  assert.equal(needsMigration(null), true);
+  assert.equal(needsMigration({ formatVersion: 1 }), true);
+  assert.equal(needsMigration({ formatVersion: 2, compat: [] }), true);
+  assert.equal(needsMigration({ formatVersion: 2, compat: [], meta: null }), false);
+  assert.equal(migrateReleaseFileData({ repo: 'a/b', previous: { formatVersion: 1, releases: [] }, compatData: null, now: GENERATED_AT, hasJava: false }).formatVersion, CURRENT_FORMAT_VERSION);
 });

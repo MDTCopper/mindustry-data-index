@@ -11,7 +11,19 @@
 - 最小版本门禁：`mindustry/mod-gate.json`（普通/脚本模组）与 `mindustry/java-gate.json`（Java 模组）；
 - 另有一个维护用文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
 
-上述数据文件都有 `formatVersion`（当前 `1`）。字段变化时递增并同步修改本文档。
+外加两个运行状态文件（根目录）：`status.json`（健康状态）、`changes.json`（滚动变更流）；
+以及 `schema/*.json`（本仓数据文件的 JSON Schema draft 2020-12）。
+
+上述数据文件都有 `formatVersion`：index/summary/versions/gate/state/status/changes 当前为 `1`，
+per-mod `releases/*.json` 当前 schemaVersion 为 **`2`**。字段变化时递增并同步修改本文档。
+
+### per-mod schemaVersion 1 → 2
+
+- v1：只有 `{formatVersion:1, repo, generatedAt, releases}`，无 `compat`/`meta`/`commitSha`/删除留档。
+- v2：`formatVersion:2`，新增 `compat`、`meta`，以及条目的 `commitSha`/`archiveByCommitUrl`/`removed`/`removedAt`。
+- 迁移：运行时读到 v1 文件会用已有缓存数据本地重算（不额外发 API）并写回；也可以运行
+  `node src/main.js --migrate --out .` 一次性迁移全部旧文件/index/summary/status/changes。
+  `validate` 对 v1 文件会报错，迁移后应为 0 错 0 警。
 
 约定：
 
@@ -54,8 +66,13 @@
 | --- | --- | --- |
 | `repo` | string | `owner/name`，来自官方列表，作为唯一键 |
 | `internalName` | string | 模组内部名，来自官方列表 |
-| `name` | string | 显示名，来自官方列表 |
+| `name` | string | 显示名，来自官方列表（可能含 Mindustry 颜色标记） |
+| `namePlain` | string | 去掉颜色标记/换行/多余空白后的名称，供搜索 |
 | `author` | string | 作者，来自官方列表（可能含 Mindustry 颜色标记与换行） |
+| `authorPlain` | string | 作者纯文本 |
+| `descriptionPlain` | string | 描述纯文本（官方列表没有描述时为空串） |
+| `iosCompatible` | boolean \| null | 官方列表字段透传 |
+| `legacyCompatible` | boolean \| null | 官方列表字段透传 |
 | `version` | string | 官方列表记录的当前版本，原样保留 |
 | `minGameVersion` | string | 官方列表记录的最低游戏版本，原样保留（含脏值） |
 | `lastUpdated` | string | 官方列表记录的更新时间 |
@@ -108,11 +125,12 @@
 
 ```json
 {
-  "formatVersion": 1,
+  "formatVersion": 2,
   "repo": "owner/repo",
   "generatedAt": "2026-11-06T03:00:00.000Z",
   "releases": [],
-  "compat": []
+  "compat": [],
+  "meta": null
 }
 ```
 
@@ -188,6 +206,32 @@
 - `index.json` 的 `removedCount` 统计 removed 条目数；`tagCount`/`releaseCount` 仍按全部条目数计；
 - `commitSha` 与 `archiveByCommitUrl` 给客户端提供 tag 删除后的下载兜底（best-effort，依赖 GitHub
   尚未 GC commit）：`validate` 检查 sha 为 40 位小写十六进制、archive 地址与 repo/sha 一致。
+
+### meta：最新 tag 的完整 mod 元数据
+
+per-mod 文件里的 `meta` 取该模组最新一个未删除 tag 的 `mod.json`/`mod.hjson` 解析结果，拿不到为 `null`：
+
+```json
+"meta": {
+  "dependencies": { "mindustry": "146", "loader": "154" },
+  "hidden": false,
+  "legacyCompatible": true,
+  "main": "mindustry.MyMod",
+  "hasScripts": false,
+  "hasJava": true
+}
+```
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `dependencies` | object | 原样保留元数据里的 `dependencies`（缺失为 `{}`） |
+| `hidden` | boolean | 元数据 `hidden === true` |
+| `legacyCompatible` | boolean | 元数据 `legacyCompatible === true` |
+| `main` | string \| null | Java 入口类；没有为 `null` |
+| `hasScripts` | boolean | 元数据有非空 `scripts` |
+| `hasJava` | boolean | `main` 存在且没有 `scripts` |
+
+index 条目的 `hasJava`/`hasScripts` 优先采用 `meta` 的校正结果（拿不到 meta 时保持官方列表原值）。
 
 ### tag-only 条目（无 GitHub Release 的 git tag）
 
@@ -563,6 +607,47 @@ v147 首次出现）。147 起从 `core/src/mindustry/Vars.java` 同时提取两
 - `blacklist`：对 repo 做**精确**匹配（忽略大小写）。
 - `globalBlacklist`：Base64 解码后的正则，作用于 mod 名称 + 描述。
 - 源格式变化/拉取失败时沿用旧缓存并 warning，不会崩溃；当天未到期时不重复拉取。
+
+## status.json（运行健康状态）
+
+```json
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-11-06T03:00:00.000Z",
+  "datasets": {
+    "official": { "updatedAt": "…", "modCount": 993, "releaseCount": 5000, "skipped": [] },
+    "community": { "updatedAt": "…", "modCount": 456, "releaseCount": 800, "skipped": [] },
+    "versions": { "updatedAt": "…", "modCount": null, "releaseCount": 205, "skipped": [] },
+    "gate": { "updatedAt": "…", "modCount": null, "releaseCount": null, "skipped": [] }
+  },
+  "api": { "requests": 1200, "remaining": 3800, "resetAt": "2026-11-06T04:00:00.000Z" },
+  "validate": { "errors": 0, "warnings": 0, "presentFiles": ["index.json", "community/index.json", "…"] }
+}
+```
+
+每次运行都会重写（`generatedAt` 变化，属于预期的小额提交）。只运行部分数据集时，其它数据集沿用上一份
+status；`remaining`/`resetAt` 拿不到为 `null`。
+
+## changes.json（滚动变更流）
+
+顶层是数组，新变更在前，最多 500 条：
+
+```json
+[
+  { "at": "2026-11-06T03:00:00.000Z", "dataset": "official", "repo": "owner/mod", "action": "release-added", "tag": "v2.0", "version": "2.0", "namePlain": "Mod" }
+]
+```
+
+`action`：`mod-added` / `mod-updated`（name/version/minGameVersion/latestRelease tag 等关键字段变化；
+stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建立时只写初始快照
+（批量 `mod-added`，超出 500 条截断）。
+
+## schema/*.json
+
+本仓全部数据文件的 JSON Schema（draft 2020-12），文件名对应数据文件：`index.json`、`releases.json`、
+`community-index.json`、`community-releases.json`、`summary.json`、`community-summary.json`、
+`versions.json`、`mod-gate.json`、`java-gate.json`、`refresh-state.json`、`community-refresh-state.json`、
+`blacklist-state.json`、`status.json`、`changes.json`。`releases.json` 的 `formatVersion` 固定 `2`。
 
 ## mindustry/heartbeat.json
 

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/versions.json",
+  "title": "versions",
+  "description": "Mindustry 版本列表 mindustry/versions.json",
+  "type": "object",
+  "properties": {
+    "update_time": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "releases": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/version-release.json",
+        "title": "version-release",
+        "description": "启动器快照兼容的版本条目",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "tag_name": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "reactions": {
+            "type": "object"
+          },
+          "assets": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "tag_name",
+          "published_at",
+          "body",
+          "reactions",
+          "assets"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "latest_be": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/latest-be.json",
+          "title": "latest-be",
+          "description": "最新 BE（不带 reactions）",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "tag_name": {
+              "type": "string"
+            },
+            "published_at": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "assets": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "name",
+            "tag_name",
+            "published_at",
+            "body",
+            "assets"
+          ],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "etags": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "update_time",
+    "source",
+    "releases",
+    "latest_be"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/changes.json",
+  "title": "changes",
+  "description": "滚动变更流 changes.json（最多 500 条，新变更在前）",
+  "type": "array",
+  "maxItems": 500,
+  "items": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/change-entry.json",
+    "title": "change-entry",
+    "description": "一条变更",
+    "type": "object",
+    "properties": {
+      "at": {
+        "type": "string",
+        "description": "UTC ISO 8601 时间"
+      },
+      "dataset": {
+        "enum": [
+          "official",
+          "community"
+        ]
+      },
+      "repo": {
+        "type": "string"
+      },
+      "action": {
+        "enum": [
+          "mod-added",
+          "mod-updated",
+          "release-added",
+          "tag-removed",
+          "release-removed"
+        ]
+      },
+      "tag": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "namePlain": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "at",
+      "dataset",
+      "repo",
+      "action"
+    ],
+    "additionalProperties": true
+  }
+}

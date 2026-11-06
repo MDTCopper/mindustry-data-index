@@ -51,6 +51,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A mindustry 2>/dev/null || true
+          git add status.json 2>/dev/null || true
           data_changed=0
           if ! git diff --cached --quiet; then
             data_changed=1

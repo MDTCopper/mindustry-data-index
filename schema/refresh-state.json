@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/refresh-state.json",
+  "title": "refresh-state",
+  "description": "分页调度状态（官方与社区同构）",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "updatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "mods": {
+      "type": "object",
+      "additionalProperties": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/mod-state.json",
+        "title": "mod-state",
+        "description": "单个模组的抓取时间/ETag",
+        "type": "object",
+        "properties": {
+          "page1Etag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "page1FetchedAt": {
+            "type": "string",
+            "description": "UTC ISO 8601 时间"
+          },
+          "page2FetchedAt": {
+            "type": "string",
+            "description": "UTC ISO 8601 时间"
+          },
+          "fullFetchedAt": {
+            "type": "string",
+            "description": "UTC ISO 8601 时间"
+          },
+          "tagsFetchedAt": {
+            "type": "string",
+            "description": "UTC ISO 8601 时间"
+          }
+        },
+        "required": [
+          "page1Etag",
+          "page1FetchedAt",
+          "page2FetchedAt",
+          "fullFetchedAt",
+          "tagsFetchedAt"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "updatedAt",
+    "mods"
+  ],
+  "additionalProperties": true
+}

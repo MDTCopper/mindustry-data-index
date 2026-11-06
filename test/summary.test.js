@@ -13,6 +13,7 @@ function row(overrides = {}) {
   return {
     repo: 'owner/demo',
     name: 'Demo',
+    namePlain: 'Demo',
     author: 'author',
     stars: 1,
     releaseCount: 2,
@@ -104,9 +105,9 @@ test('summaryCsv：BOM + 表头 + 与 json 同列，可按 CSV 解析回来', ()
   assert.ok(csv.endsWith('\r\n'));
   const parsed = parseCsv(csv);
   assert.deepEqual(parsed[0], SUMMARY_COLUMNS);
-  // tagCount 紧跟 releaseCount；releasesPath 放最后一列
-  assert.equal(parsed[0][4], 'releaseCount');
-  assert.equal(parsed[0][5], 'tagCount');
+  // tagCount 紧跟 releaseCount；namePlain 紧跟 name；releasesPath 放最后一列
+  assert.equal(parsed[0].indexOf('tagCount'), parsed[0].indexOf('releaseCount') + 1);
+  assert.equal(parsed[0].indexOf('namePlain'), parsed[0].indexOf('name') + 1);
   assert.equal(parsed[0][parsed[0].length - 1], 'releasesPath');
   const expectedCells = SUMMARY_COLUMNS.map((column) => {
     const value = rows[0][column];

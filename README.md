@@ -45,7 +45,14 @@ mindustry/versions.json                 # Mindustry 可用版本列表（正式�
 mindustry/mod-gate.json                 # 普通/脚本模组门禁（rules + 逐版本 value）
 mindustry/java-gate.json                # Java 模组门禁（rules + 逐版本 value）
 mindustry/heartbeat.json                # 每日心跳，仅用于保持仓库活跃（见下）
+status.json                             # 每次运行后的健康状态（各数据集/API/validate 摘要）
+changes.json                            # 滚动变更流（最近 500 条 mod/release/tag 变化）
+schema/*.json                           # 各数据文件的 JSON Schema（draft 2020-12，见 docs/schema.md）
 ```
+
+per-mod 文件当前 `formatVersion` 为 **2**（schemaVersion）：v1 缺少 `compat`/`meta`/`commitSha`
+等字段；运行时读到 v1 会用缓存数据本地重算并写回（不额外发 API），也可以先跑一次
+`node src/main.js --migrate --out .` 一次性迁移全部旧文件。
 
 per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写保留（如
 `releases/Anuken/ExampleMod.json`、`releases/mindustrytool/mindustrytoolmod.json`）。
@@ -64,6 +71,9 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/index.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/summary.csv`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/releases/Slava0135/reFine.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/status.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/changes.json`
+- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/schema/index.json`
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
@@ -160,6 +170,31 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   与 `state/blacklist.json`。本地验证可用
   `--community-limit` / `--community-search-windows` / `--community-max-candidates` 控制规模（搜索配额很小）。
 
+## 健康状态 / 变更流 / JSON Schema
+
+- **`status.json`**：每次运行后都会更新（运行日志性质，即使数据没变也写）。包含
+  `datasets.{official,community,versions,gate}` 的 `updatedAt`/`modCount`/`releaseCount`/`skipped[]`、
+  本次运行的 `api.{requests,remaining,resetAt}`、以及 `validate.{errors,warnings,presentFiles}` 摘要。
+  只运行部分数据集时，其它数据集沿用上一份 status。
+- **`changes.json`**：滚动变更流，新变更在前，最多 500 条；记录
+  `mod-added`/`mod-updated`（`mod-updated` 只在 name/version/minGameVersion/latestRelease tag 等关键字段变化时记，stars 不记）、
+  `release-added`/`tag-removed`/`release-removed`（官方与社区都记）。首次建立时只写初始快照
+  （批量 `mod-added`，由 500 条上限截断）。
+- **`schema/*.json`**：`index.json`、`releases/*.json`、`community/index.json`、`community/releases/*.json`、
+  两份 summary、`mindustry/versions.json`、两份 gate、`state/*.json`、`status.json`、`changes.json`
+  的 JSON Schema（draft 2020-12），见 [schema/](schema/)。字段细节见 [docs/schema.md](docs/schema.md)；
+  测试会校验 schema 是合法 JSON 且关键 required 字段齐全。
+
+## 元数据补全与纯文本字段
+
+- 官方 index 条目透传 `iosCompatible`/`legacyCompatible`；per-mod 文件新增 `meta`（取最新 tag 的
+  `mod.json`/`mod.hjson`）：`{dependencies, hidden, legacyCompatible, main, hasScripts, hasJava}`，
+  拿不到元数据时为 `null`。**`hasJava`/`hasScripts` 校正规则**：`meta.main` 存在且没有 `scripts` →
+  `hasJava: true`，有 `scripts` → `hasScripts: true`；拿不到 meta 时保持官方列表原值。
+- index（官方+社区）每条新增 `namePlain`/`authorPlain`/`descriptionPlain`：去掉 Mindustry 富文本颜色标记
+  （`[red]`、`[#00ff00]`、`[]` 等）、换行与多余空白；普通英文方括号（如 `[Mod]`）不会被误删。
+  `summary.json/csv` 增加 `namePlain` 列（紧跟 `name`）便于搜索。
+
 ## 更新节奏
 
 - `.github/workflows/update-mods.yml`：每 2 小时一次（cron `17 */2 * * *`）+ `workflow_dispatch` + `push`
@@ -191,6 +226,7 @@ npm run validate -- --dir .           # 校验产物
 node src/main.js --datasets mods --out .                 # 全量更新模组索引（需要 GITHUB_TOKEN）
 node src/main.js --datasets mods,community --out .       # 官方 + 社区（社区需要搜索配额）
 node src/main.js --datasets versions,gate --out .        # 更新版本列表与门禁
+node src/main.js --migrate --out .                        # 本地 schemaVersion 1→2 迁移（0 API）
 ```
 
 本地验证建议：

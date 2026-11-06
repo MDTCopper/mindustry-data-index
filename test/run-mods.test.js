@@ -47,7 +47,7 @@ function makeApiClient(getImpl, { remaining = null } = {}) {
   };
 }
 
-async function run(dir, apiClient, mods, repos = ['a/one', 'b/two']) {
+async function run(dir, apiClient, mods, repos = ['a/one', 'b/two'], rawClient = makeRawClient(mods)) {
   const options = parseArgs(['--out', dir, '--repos', repos.join(',')]);
   const originalLog = console.log;
   const originalError = console.error;
@@ -58,7 +58,7 @@ async function run(dir, apiClient, mods, repos = ['a/one', 'b/two']) {
   try {
     return await runMods(options, {
       apiClient,
-      rawClient: makeRawClient(mods),
+      rawClient,
       outDir: dir,
       log: () => {},
     });
@@ -149,6 +149,65 @@ test('运行前剩余配额已不足：不发请求、全部计为未处理、ex
   await assert.rejects(readdir(path.join(dir, 'releases')), /ENOENT/);
 });
 
+test('index 始终带 removedCount（没有删除时为 0）与纯文本字段', async (t) => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-newfields-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const mods = [officialMod('a/one')];
+  const result = await run(dir, tagAwareApi({ tags: [['v1', SHA_V1]] }), mods, ['a/one']);
+  assert.equal(result.code, 0);
+  const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+  assert.equal(index.mods[0].removedCount, 0);
+  assert.equal(typeof index.mods[0].namePlain, 'string');
+  assert.equal(typeof index.mods[0].authorPlain, 'string');
+  assert.equal(typeof index.mods[0].descriptionPlain, 'string');
+  assert.equal('iosCompatible' in index.mods[0], true);
+  assert.equal('legacyCompatible' in index.mods[0], true);
+});
+
+test('C8：最新 tag 元数据写入 per-mod meta，并校正 index 的 hasJava/hasScripts', async (t) => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-meta-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const mod = { ...officialMod('a/one'), hasJava: false, hasScripts: false };
+  const mods = [mod];
+  const rawClient = {
+    async get(url) {
+      if (url === MODS_URL) {
+        return { status: 200, text: JSON.stringify([{ ...mod, description: '[red]desc[]' }]) };
+      }
+      if (url.endsWith('/mod.hjson') || url.endsWith('/mod.json')) {
+        return {
+          status: 200,
+          text: '{ name: "Demo", main: "a.b", dependencies: { mindustry: "146" }, description: "[red]desc[]" }',
+        };
+      }
+      return { status: 404, text: '' };
+    },
+  };
+  const result = await run(
+    dir,
+    tagAwareApi({ tags: [['v1', SHA_V1]] }),
+    mods,
+    ['a/one'],
+    rawClient,
+  );
+  assert.equal(result.code, 0);
+  const file = JSON.parse(
+    await readFile(path.join(dir, 'releases', 'a', 'one.json'), 'utf8'),
+  );
+  assert.deepEqual(file.meta, {
+    dependencies: { mindustry: '146' },
+    hidden: false,
+    legacyCompatible: false,
+    main: 'a.b',
+    hasScripts: false,
+    hasJava: true,
+  });
+  const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+  assert.equal(index.mods[0].hasJava, true);
+  assert.equal(index.mods[0].hasScripts, false);
+  assert.equal(index.mods[0].descriptionPlain, 'desc');
+});
+
 // ---------- A1：commit sha / 删除留档 ----------
 
 const SHA_V1 = '1'.repeat(40);
@@ -178,7 +237,7 @@ async function seedMod(dir, releases, stateEntry) {
   await writeFile(
     path.join(dir, 'releases', 'a', 'one.json'),
     JSON.stringify(
-      { formatVersion: 1, repo: 'a/one', generatedAt: '2026-10-02T00:00:00.000Z', releases, compat: [] },
+      { formatVersion: 2, repo: 'a/one', generatedAt: '2026-10-02T00:00:00.000Z', releases, compat: [], meta: null },
       null,
       2,
     ),

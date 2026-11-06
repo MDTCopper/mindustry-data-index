@@ -64,7 +64,10 @@ export function releaseFileBodyChanged(previous, next) {
   if (JSON.stringify(previous.releases) !== JSON.stringify(next.releases)) {
     return true;
   }
-  return JSON.stringify(previous.compat ?? []) !== JSON.stringify(next.compat ?? []);
+  if (JSON.stringify(previous.compat ?? []) !== JSON.stringify(next.compat ?? [])) {
+    return true;
+  }
+  return JSON.stringify(previous.meta ?? null) !== JSON.stringify(next.meta ?? null);
 }
 
 // index.json 同理：generatedAt 每次都变，比较其余数据主体，没变化就不写

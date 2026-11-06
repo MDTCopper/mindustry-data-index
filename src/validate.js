@@ -15,6 +15,8 @@ import {
 import { REFRESH_STATE_REL_PATH } from './refresh-state.js';
 import { COMMUNITY_DIR, COMMUNITY_STATE_REL_PATH } from './community.js';
 import { latestCompatibleTag, parseGameVersion, gameVersionsFromFile } from './compat.js';
+import { STATUS_REL_PATH, DATASET_KEYS } from './status.js';
+import { CHANGES_REL_PATH, CHANGE_ACTIONS, MAX_CHANGES } from './changes.js';
 import { VERSIONS_REL_PATH, VERSIONS_API } from './versions.js';
 import {
   GATE_REL_PATHS,
@@ -121,8 +123,10 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
     errors.push('release 文件顶层不是对象');
     return;
   }
-  if (file.formatVersion !== 1) {
-    errors.push(`formatVersion 应为 1，实际为 ${JSON.stringify(file.formatVersion)}`);
+  if (file.formatVersion !== 2) {
+    errors.push(
+      `formatVersion 应为 2（当前 schemaVersion），实际为 ${JSON.stringify(file.formatVersion)}；旧文件请运行 --migrate 或等下一次刷新迁移`,
+    );
   }
   if (typeof file.repo !== 'string' || !/^[^/]+\/[^/]+$/.test(file.repo)) {
     errors.push(`repo 字段非法：${JSON.stringify(file.repo)}`);
@@ -137,6 +141,7 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
     errors.push('releases 不是数组');
     return;
   }
+  validateFileMeta(file, { errors });
 
   const tags = new Set();
   const archivePrefix = file.repo
@@ -259,6 +264,33 @@ export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
   }
 
   validateCompatData(file, { tags, errors });
+}
+
+// C8：per-mod 最新 tag 元数据（拿不到为 null）
+function validateFileMeta(file, { errors }) {
+  if (file.meta === undefined) {
+    errors.push('meta 缺失（新格式应为对象或 null）');
+    return;
+  }
+  if (file.meta === null) {
+    return;
+  }
+  const meta = file.meta;
+  if (!isPlainObject(meta)) {
+    errors.push('meta 不是对象或 null');
+    return;
+  }
+  if (!isPlainObject(meta.dependencies)) {
+    errors.push('meta.dependencies 应为对象');
+  }
+  for (const field of ['hidden', 'legacyCompatible', 'hasScripts', 'hasJava']) {
+    if (typeof meta[field] !== 'boolean') {
+      errors.push(`meta.${field} 应为布尔值`);
+    }
+  }
+  if (meta.main !== null && meta.main !== undefined && typeof meta.main !== 'string') {
+    errors.push('meta.main 应为字符串或 null');
+  }
 }
 
 // compat：游戏版本 → 推荐 tag 的区间；必须引用存在的、未被删除的 tag，区间升序且不重叠
@@ -416,6 +448,17 @@ export function validateIndexData(
         if (typeof mod[field] !== 'string') {
           errors.push(`${where}.${field} 应为字符串`);
         }
+      }
+    }
+    // C10：纯文本搜索字段；C8：iOS / legacy 兼容标记（官方列表透传，社区无来源为 null）
+    for (const field of ['namePlain', 'authorPlain', 'descriptionPlain']) {
+      if (typeof mod[field] !== 'string') {
+        errors.push(`${where}.${field} 应为字符串`);
+      }
+    }
+    for (const field of ['iosCompatible', 'legacyCompatible']) {
+      if (mod[field] !== null && mod[field] !== undefined && typeof mod[field] !== 'boolean') {
+        errors.push(`${where}.${field} 应为布尔值或 null`);
       }
     }
     if (typeof mod.stars !== 'number') {
@@ -1042,6 +1085,109 @@ export function validateRefreshStateData(state, { errors } = {}) {
   return { modCount: Object.keys(state.mods).length };
 }
 
+// B4：status.json（运行日志性质，允许没有；存在时结构要稳定）
+export function validateStatusData(status, { errors } = {}) {
+  if (!isPlainObject(status)) {
+    errors.push(`${STATUS_REL_PATH} 顶层不是对象`);
+    return;
+  }
+  if (status.formatVersion !== 1) {
+    errors.push(`${STATUS_REL_PATH}.formatVersion 应为 1`);
+  }
+  if (!isIsoDate(status.generatedAt)) {
+    errors.push(`${STATUS_REL_PATH}.generatedAt 缺失或不是 ISO 时间`);
+  }
+  if (!isPlainObject(status.datasets)) {
+    errors.push(`${STATUS_REL_PATH}.datasets 不是对象`);
+  } else {
+    for (const key of DATASET_KEYS) {
+      const entry = status.datasets[key];
+      if (entry === null || entry === undefined) {
+        continue;
+      }
+      if (!isPlainObject(entry)) {
+        errors.push(`${STATUS_REL_PATH}.datasets.${key} 不是对象`);
+        continue;
+      }
+      if (entry.updatedAt !== null && !isIsoDate(entry.updatedAt)) {
+        errors.push(`${STATUS_REL_PATH}.datasets.${key}.updatedAt 应为 ISO 时间或 null`);
+      }
+      for (const field of ['modCount', 'releaseCount']) {
+        if (entry[field] !== null && (!Number.isInteger(entry[field]) || entry[field] < 0)) {
+          errors.push(`${STATUS_REL_PATH}.datasets.${key}.${field} 应为非负整数或 null`);
+        }
+      }
+      if (!Array.isArray(entry.skipped)) {
+        errors.push(`${STATUS_REL_PATH}.datasets.${key}.skipped 不是数组`);
+      }
+    }
+  }
+  if (!isPlainObject(status.api)) {
+    errors.push(`${STATUS_REL_PATH}.api 不是对象`);
+  } else {
+    if (!Number.isInteger(status.api.requests) || status.api.requests < 0) {
+      errors.push(`${STATUS_REL_PATH}.api.requests 应为非负整数`);
+    }
+    if (
+      status.api.remaining !== null &&
+      (!Number.isInteger(status.api.remaining) || status.api.remaining < 0)
+    ) {
+      errors.push(`${STATUS_REL_PATH}.api.remaining 应为非负整数或 null`);
+    }
+    if (status.api.resetAt !== null && !isIsoDate(status.api.resetAt)) {
+      errors.push(`${STATUS_REL_PATH}.api.resetAt 应为 ISO 时间或 null`);
+    }
+  }
+  if (!isPlainObject(status.validate)) {
+    errors.push(`${STATUS_REL_PATH}.validate 不是对象`);
+  } else {
+    for (const field of ['errors', 'warnings']) {
+      if (!Number.isInteger(status.validate[field]) || status.validate[field] < 0) {
+        errors.push(`${STATUS_REL_PATH}.validate.${field} 应为非负整数`);
+      }
+    }
+    if (!Array.isArray(status.validate.presentFiles)) {
+      errors.push(`${STATUS_REL_PATH}.validate.presentFiles 不是数组`);
+    }
+  }
+}
+
+// B5：changes.json（滚动变更流，最多 500 条）
+export function validateChangesData(changes, { errors, warnings } = {}) {
+  if (!Array.isArray(changes)) {
+    errors.push(`${CHANGES_REL_PATH} 顶层不是数组`);
+    return { count: 0 };
+  }
+  if (changes.length > MAX_CHANGES) {
+    errors.push(`${CHANGES_REL_PATH} 超过 ${MAX_CHANGES} 条（实际 ${changes.length}）`);
+  }
+  for (const [index, entry] of changes.entries()) {
+    const where = `${CHANGES_REL_PATH}[${index}]`;
+    if (!isPlainObject(entry)) {
+      errors.push(`${where} 不是对象`);
+      continue;
+    }
+    if (!isIsoDate(entry.at)) {
+      errors.push(`${where}.at 缺失或不是 ISO 时间`);
+    }
+    if (entry.dataset !== 'official' && entry.dataset !== 'community') {
+      errors.push(`${where}.dataset 非法：${JSON.stringify(entry.dataset)}`);
+    }
+    if (typeof entry.repo !== 'string' || !/^[^/]+\/[^/]+$/.test(entry.repo)) {
+      errors.push(`${where}.repo 非法`);
+    }
+    if (!CHANGE_ACTIONS.includes(entry.action)) {
+      errors.push(`${where}.action 非法：${JSON.stringify(entry.action)}`);
+    }
+    for (const field of ['tag', 'version', 'namePlain']) {
+      if (entry[field] !== undefined && typeof entry[field] !== 'string') {
+        errors.push(`${where}.${field} 应为字符串`);
+      }
+    }
+  }
+  return { count: changes.length };
+}
+
 async function readJsonIfPresent(file) {
   try {
     return { exists: true, data: JSON.parse(await readFile(file, 'utf8')) };
@@ -1083,6 +1229,7 @@ export async function validateDir(dir) {
     communityReleaseFileCount: 0,
     communitySummaryRowCount: 0,
     communityStateModCount: 0,
+    changesCount: 0,
     present: [],
   };
 
@@ -1110,6 +1257,8 @@ export async function validateDir(dir) {
   const communityStateFile = await readJsonIfPresent(
     path.join(outDir, COMMUNITY_STATE_REL_PATH),
   );
+  const statusFile = await readJsonIfPresent(path.join(outDir, STATUS_REL_PATH));
+  const changesFile = await readJsonIfPresent(path.join(outDir, CHANGES_REL_PATH));
   const gameVersions = gameVersionsFromFile(versionsFile.data);
 
   if (
@@ -1473,6 +1622,28 @@ export async function validateDir(dir) {
     }
   }
 
+  // B4/B5：运行状态与变更流（允许缺失；存在时校验结构）
+  if (statusFile.exists) {
+    result.present.push(STATUS_REL_PATH);
+    if (statusFile.error) {
+      errors.push(`${STATUS_REL_PATH} 无法解析：${statusFile.error.message}`);
+    } else {
+      validateStatusData(statusFile.data, { errors });
+    }
+  } else {
+    warnings.push(`缺少 ${STATUS_REL_PATH}（可能是尚未运行过新版本）`);
+  }
+  if (changesFile.exists) {
+    result.present.push(CHANGES_REL_PATH);
+    if (changesFile.error) {
+      errors.push(`${CHANGES_REL_PATH} 无法解析：${changesFile.error.message}`);
+    } else {
+      result.changesCount = validateChangesData(changesFile.data, { errors, warnings }).count;
+    }
+  } else {
+    warnings.push(`缺少 ${CHANGES_REL_PATH}（可能是尚未运行过新版本）`);
+  }
+
   return result;
 }
 
@@ -1521,6 +1692,12 @@ async function main(argv) {
   }
   if (result.present.includes(COMMUNITY_STATE_REL_PATH)) {
     console.log(`state/community-refresh.json：${result.communityStateModCount} 个模组分页缓存`);
+  }
+  if (result.present.includes(STATUS_REL_PATH)) {
+    console.log(`status.json：已生成（数据集 ${DATASET_KEYS.filter((key) => result.present.length > 0).length} 类）`);
+  }
+  if (result.present.includes(CHANGES_REL_PATH)) {
+    console.log(`changes.json：${result.changesCount} 条变更`);
   }
   if (result.present.includes(VERSIONS_REL_PATH)) {
     console.log(

@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/releases.json",
+  "title": "releases",
+  "description": "per-mod 文件（官方与社区同构，schemaVersion=2）",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 2
+    },
+    "repo": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "releases": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/release-entry.json",
+        "title": "release-entry",
+        "description": "per-mod 文件里的一个 tag/Release 条目",
+        "type": "object",
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "hasRelease": {
+            "type": "boolean"
+          },
+          "prerelease": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "publishedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "htmlUrl": {
+            "type": "string"
+          },
+          "modVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "minGameVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadataPath": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadataStatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "downloadUrl": {
+            "type": "string"
+          },
+          "sourceArchiveUrl": {
+            "type": "string"
+          },
+          "assets": {
+            "type": "array"
+          },
+          "commitSha": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "archiveByCommitUrl": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "removed": {
+            "type": "boolean"
+          },
+          "removedAt": {
+            "type": "string",
+            "description": "UTC ISO 8601 时间"
+          }
+        },
+        "required": [
+          "tag",
+          "name",
+          "hasRelease",
+          "downloadUrl",
+          "sourceArchiveUrl",
+          "assets"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "compat": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/compat-entry.json",
+        "title": "compat-entry",
+        "description": "游戏版本 → 推荐 tag 区间",
+        "type": "object",
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "modVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "minGameVersion": {
+            "type": "string"
+          },
+          "maxGameVersion": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "hasRelease": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "tag",
+          "minGameVersion",
+          "maxGameVersion",
+          "hasRelease"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "meta": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/file-meta.json",
+          "title": "file-meta",
+          "description": "最新 tag 的完整 mod 元数据",
+          "type": "object",
+          "properties": {
+            "dependencies": {
+              "type": "object"
+            },
+            "hidden": {
+              "type": "boolean"
+            },
+            "legacyCompatible": {
+              "type": "boolean"
+            },
+            "main": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "hasScripts": {
+              "type": "boolean"
+            },
+            "hasJava": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "dependencies",
+            "hidden",
+            "legacyCompatible",
+            "main",
+            "hasScripts",
+            "hasJava"
+          ],
+          "additionalProperties": true
+        }
+      ]
+    }
+  },
+  "required": [
+    "formatVersion",
+    "repo",
+    "generatedAt",
+    "releases",
+    "compat",
+    "meta"
+  ],
+  "additionalProperties": true
+}

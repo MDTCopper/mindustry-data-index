@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status.json",
+  "title": "status",
+  "description": "运行健康状态 status.json",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "datasets": {
+      "type": "object",
+      "properties": {
+        "official": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status-dataset.json",
+              "title": "status-dataset",
+              "description": "单个数据集的健康状态",
+              "type": "object",
+              "properties": {
+                "updatedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "UTC ISO 时间或 null"
+                },
+                "modCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "releaseCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "skipped": {
+                  "type": "array",
+                  "items": {
+                    "$schema": "https://json-schema.org/draft/2020-12/schema",
+                    "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/skipped.json",
+                    "title": "skipped",
+                    "description": "抓取失败",
+                    "type": "object",
+                    "properties": {
+                      "repo": {
+                        "type": "string"
+                      },
+                      "reason": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "repo",
+                      "reason"
+                    ],
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "required": [
+                "updatedAt",
+                "modCount",
+                "releaseCount",
+                "skipped"
+              ],
+              "additionalProperties": true
+            }
+          ]
+        },
+        "community": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status-dataset.json",
+              "title": "status-dataset",
+              "description": "单个数据集的健康状态",
+              "type": "object",
+              "properties": {
+                "updatedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "UTC ISO 时间或 null"
+                },
+                "modCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "releaseCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "skipped": {
+                  "type": "array",
+                  "items": {
+                    "$schema": "https://json-schema.org/draft/2020-12/schema",
+                    "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/skipped.json",
+                    "title": "skipped",
+                    "description": "抓取失败",
+                    "type": "object",
+                    "properties": {
+                      "repo": {
+                        "type": "string"
+                      },
+                      "reason": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "repo",
+                      "reason"
+                    ],
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "required": [
+                "updatedAt",
+                "modCount",
+                "releaseCount",
+                "skipped"
+              ],
+              "additionalProperties": true
+            }
+          ]
+        },
+        "versions": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status-dataset.json",
+              "title": "status-dataset",
+              "description": "单个数据集的健康状态",
+              "type": "object",
+              "properties": {
+                "updatedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "UTC ISO 时间或 null"
+                },
+                "modCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "releaseCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "skipped": {
+                  "type": "array",
+                  "items": {
+                    "$schema": "https://json-schema.org/draft/2020-12/schema",
+                    "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/skipped.json",
+                    "title": "skipped",
+                    "description": "抓取失败",
+                    "type": "object",
+                    "properties": {
+                      "repo": {
+                        "type": "string"
+                      },
+                      "reason": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "repo",
+                      "reason"
+                    ],
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "required": [
+                "updatedAt",
+                "modCount",
+                "releaseCount",
+                "skipped"
+              ],
+              "additionalProperties": true
+            }
+          ]
+        },
+        "gate": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status-dataset.json",
+              "title": "status-dataset",
+              "description": "单个数据集的健康状态",
+              "type": "object",
+              "properties": {
+                "updatedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "UTC ISO 时间或 null"
+                },
+                "modCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "releaseCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "非负整数或 null"
+                },
+                "skipped": {
+                  "type": "array",
+                  "items": {
+                    "$schema": "https://json-schema.org/draft/2020-12/schema",
+                    "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/skipped.json",
+                    "title": "skipped",
+                    "description": "抓取失败",
+                    "type": "object",
+                    "properties": {
+                      "repo": {
+                        "type": "string"
+                      },
+                      "reason": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "repo",
+                      "reason"
+                    ],
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "required": [
+                "updatedAt",
+                "modCount",
+                "releaseCount",
+                "skipped"
+              ],
+              "additionalProperties": true
+            }
+          ]
+        }
+      },
+      "required": [
+        "official",
+        "community",
+        "versions",
+        "gate"
+      ],
+      "additionalProperties": false
+    },
+    "api": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status-api.json",
+      "title": "status-api",
+      "description": "本次运行的 API 统计",
+      "type": "object",
+      "properties": {
+        "requests": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "resetAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "UTC ISO 时间或 null"
+        }
+      },
+      "required": [
+        "requests",
+        "remaining",
+        "resetAt"
+      ],
+      "additionalProperties": true
+    },
+    "validate": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/status-validate.json",
+      "title": "status-validate",
+      "description": "validate 摘要",
+      "type": "object",
+      "properties": {
+        "errors": {
+          "type": "integer"
+        },
+        "warnings": {
+          "type": "integer"
+        },
+        "presentFiles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "errors",
+        "warnings",
+        "presentFiles"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "datasets",
+    "api",
+    "validate"
+  ],
+  "additionalProperties": true
+}

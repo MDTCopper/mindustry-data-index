@@ -405,13 +405,17 @@ export async function mergeReleaseMetadata({
   return { releases: merged, metaFetched, metaReused };
 }
 
+// per-mod 文件当前 schemaVersion：v2 = compat/meta/commitSha/删除留档（v1 由迁移逻辑本地补全）
+export const RELEASES_FORMAT_VERSION = 2;
+
 // per-mod 文件只存数据：ETag/调度时间放到 state/refresh.json，避免每日仅因 ETag 变化重写 991 个文件
-export function buildReleasesFile({ repo, releases, compat = [], generatedAt }) {
+export function buildReleasesFile({ repo, releases, compat = [], meta = null, generatedAt }) {
   return {
-    formatVersion: 1,
+    formatVersion: RELEASES_FORMAT_VERSION,
     repo,
     generatedAt,
     releases,
     compat,
+    meta,
   };
 }

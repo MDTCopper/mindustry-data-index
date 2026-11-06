@@ -189,9 +189,33 @@ export function parseModMetadataDocument(text) {
     modVersion: toText(parsed.version),
     minGameVersion: toText(parsed.minGameVersion),
     hideBrowser: parsed.hideBrowser === true,
+    hidden: parsed.hidden === true,
+    legacyCompatible: parsed.legacyCompatible === true,
+    main: hasMain ? parsed.main.trim() : null,
+    dependencies:
+      parsed.dependencies !== null &&
+      typeof parsed.dependencies === 'object' &&
+      !Array.isArray(parsed.dependencies)
+        ? parsed.dependencies
+        : {},
     hasScripts,
     // 与官方列表口径近似：有 main 且没有 scripts 视为 Java 模组
     hasJava: hasMain && !hasScripts,
+  };
+}
+
+// per-mod 文件里的 meta：只保留最新 tag 元数据里对客户端有用的字段
+export function metaFromDocument(metadata) {
+  if (!metadata) {
+    return null;
+  }
+  return {
+    dependencies: metadata.dependencies ?? {},
+    hidden: metadata.hidden === true,
+    legacyCompatible: metadata.legacyCompatible === true,
+    main: typeof metadata.main === 'string' ? metadata.main : null,
+    hasScripts: metadata.hasScripts === true,
+    hasJava: metadata.hasJava === true,
   };
 }
 
@@ -266,4 +290,46 @@ export async function fetchModMetadata(client, { repo, tag, hasJava }) {
     return metadataResult(failedPath ?? null, 'unparsed');
   }
   return metadataResult(null, 'missing');
+}
+
+// 读取完整 mod 元数据文档（dependencies/hidden/legacyCompatible/main/scripts），供 per-mod meta 用
+export async function fetchModMetadataDocument(client, { repo, tag, hasJava }) {
+  let failedPath = null;
+  let transportFailed = false;
+  for (const path of candidateMetadataPaths(hasJava)) {
+    const urls = rawFileUrlVariants(repo, tag, path);
+    for (const [variantIndex, url] of urls.entries()) {
+      let response;
+      try {
+        response = await client.get(url);
+      } catch {
+        if (variantIndex === 0) {
+          transportFailed = true;
+        }
+        continue;
+      }
+      if (response.status === 404) {
+        continue;
+      }
+      if (response.status !== 200) {
+        return { found: false, path: failedPath ?? null, status: 'unparsed', meta: null };
+      }
+      const metadata = parseModMetadataDocument(response.text);
+      if (metadata) {
+        return {
+          found: true,
+          path,
+          status: 'ok',
+          metadata,
+          meta: metaFromDocument(metadata),
+        };
+      }
+      failedPath ??= path;
+      break;
+    }
+  }
+  if (failedPath || transportFailed) {
+    return { found: false, path: failedPath ?? null, status: 'unparsed', meta: null };
+  }
+  return { found: false, path: null, status: 'missing', meta: null };
 }

@@ -37,7 +37,12 @@ import {
   discoverCommunityRepos,
 } from './community-source.js';
 import { loadBlacklist } from './blacklist.js';
-import { fetchModMetadata } from './mod-meta.js';
+import { fetchModMetadata, fetchModMetadataDocument } from './mod-meta.js';
+import { plainFields } from './plain.js';
+import { CHANGES_REL_PATH, diffModEntry, diffReleaseFiles, mergeChanges, normalizeChanges } from './changes.js';
+import { STATUS_REL_PATH, apiStatus, buildStatus } from './status.js';
+import { validateDir } from './validate.js';
+import { CURRENT_FORMAT_VERSION, migrateDataDir, needsMigration, migrateReleaseFileData } from './migrate.js';
 import { computeModStats } from './stats.js';
 import {
   buildSummary,
@@ -121,6 +126,7 @@ const USAGE = `用法：node src/main.js [选项]
   --versions-file <路径> 门禁用本地版本快照当输入（如启动器 remote/mindustry_versions.json）
   --no-cache          忽略旧产物，全量重抓（不使用 ETag、不复用旧数据）
   --keep-missing-files  不删除官方列表中已消失模组的 releases/*.json（仅 mods）
+  --migrate           只做 schemaVersion 1→2 本地迁移（0 API），迁移旧文件/index/summary/status/changes
   --dry-run           只抓取与计算，不写任何文件
   --verbose           输出增量细节
   --help              显示本帮助`;
@@ -150,6 +156,7 @@ export function parseArgs(argv) {
     communityMaxCandidates: null,
     cache: true,
     keepMissingFiles: false,
+    migrate: false,
     dryRun: false,
     verbose: false,
     help: false,
@@ -258,6 +265,9 @@ export function parseArgs(argv) {
       case '--keep-missing-files':
         options.keepMissingFiles = true;
         break;
+      case '--migrate':
+        options.migrate = true;
+        break;
       case '--dry-run':
         options.dryRun = true;
         break;
@@ -304,7 +314,12 @@ function buildIndexEntry(
   const hasFile = Array.isArray(file?.releases);
   const releases = hasFile ? file.releases : [];
   const releaseEntries = releases.filter(isReleaseEntry);
-  const stats = providedStats ?? computeModStats(releases, mod.hasJava === true);
+  // C8：per-mod 最新 tag 元数据能解析时，校正 hasJava/hasScripts（拿不到保持官方列表原值）
+  const meta = file?.meta && typeof file.meta === 'object' ? file.meta : null;
+  const hasJava = meta ? meta.hasJava === true : mod.hasJava === true;
+  const hasScripts = meta ? meta.hasScripts === true : mod.hasScripts === true;
+  const stats = providedStats ?? computeModStats(releases, hasJava);
+  const plain = plainFields(mod);
   // 推荐/最新版本优先取未被作者删除的条目
   const first = releaseEntries.find((entry) => entry.removed !== true) ?? releaseEntries[0] ?? null;
   const removedCount = releases.filter((entry) => entry.removed === true).length;
@@ -340,14 +355,19 @@ function buildIndexEntry(
     repo: mod.repo,
     internalName: mod.internalName,
     name: mod.name,
+    namePlain: plain.namePlain,
     author: mod.author,
+    authorPlain: plain.authorPlain,
+    descriptionPlain: plain.descriptionPlain,
     version: mod.version,
     minGameVersion: mod.minGameVersion,
     lastUpdated: mod.lastUpdated,
     stars: mod.stars,
     hasIcon: mod.hasIcon,
-    hasScripts: mod.hasScripts,
-    hasJava: mod.hasJava,
+    hasScripts,
+    hasJava,
+    iosCompatible: mod.iosCompatible ?? null,
+    legacyCompatible: mod.legacyCompatible ?? null,
     // 只记录地址不下载字节；hasIcon === false 才为 null
     iconUrl: modIconUrl(mod.repo, mod.hasIcon),
     iconHash: mod.iconHash ?? null,
@@ -477,6 +497,43 @@ async function processMod(context) {
         log(`[警告] ${mod.repo} 的旧 flat 数据不可用：${error.message}`);
       }
     }
+  }
+
+  // schemaVersion 迁移：旧文件（formatVersion < 2）用已有缓存本地重算新字段并重写，不额外发 API；
+  // 即使本次刷新不到期 / 配额不足，也先完成迁移，避免新代码读旧结构一直报错。
+  if (previous && needsMigration(previous)) {
+    const migrated = migrateReleaseFileData({
+      repo: mod.repo,
+      previous,
+      compatData: context.compatData ?? null,
+      now,
+      hasJava,
+    });
+    if (!options.dryRun) {
+      await writeJsonAtomic(resolveReleaseFile(workDir, relPath), migrated);
+      if (legacyToDelete !== null) {
+        await deleteReleaseFile(workDir, legacyToDelete);
+      }
+    }
+    const migratedHasJava = migrated.meta ? migrated.meta.hasJava === true : hasJava;
+    log(`[${mod.repo}] formatVersion 1 → ${CURRENT_FORMAT_VERSION} 本地迁移（0 API）`);
+    return {
+      entry: buildEntry(mod, migrated, {
+        relPath,
+        oldEntry,
+        stats: computeModStats(migrated.releases, migratedHasJava),
+        compat: migrated.compat,
+        gameVersions: context.compatData?.gameVersions ?? [],
+      }),
+      file: migrated,
+      previousFile: previous,
+      state: previousState.mods[mod.repo] ?? null,
+      skipped: null,
+      changed: true,
+      unprocessed: false,
+      changes: [],
+      migrated: true,
+    };
   }
 
   // 刷新缓存从 state/refresh.json 读取；旧 per-mod 文件里的 source 只用于一次性迁移
@@ -670,16 +727,39 @@ async function processMod(context) {
         ? previous.compat
         : [];
 
+    // C8：最新 tag 的完整 mod 元数据 → per-mod meta（拿不到保持 null）
+    const latestEntry =
+      entries.find((entry) => entry.removed !== true && isReleaseEntry(entry)) ??
+      entries.find((entry) => entry.removed !== true) ??
+      entries[0] ??
+      null;
+    let fileMeta = null;
+    if (latestEntry) {
+      try {
+        const metaResult = await fetchModMetadataDocument(rawClient, {
+          repo: mod.repo,
+          tag: latestEntry.tag,
+          hasJava,
+        });
+        fileMeta = metaResult.found ? metaResult.meta : null;
+      } catch (error) {
+        log(`[警告] ${mod.repo} 最新 tag 元数据读取失败：${error.message}`);
+      }
+    }
+    const effectiveHasJava = fileMeta ? fileMeta.hasJava === true : hasJava;
+
     const nextFile = buildReleasesFile({
       repo: mod.repo,
       releases: entries,
       compat,
+      meta: fileMeta,
       // 数据没变但只是迁移路径时沿用旧 generatedAt，避免 index 的 releaseDataUpdatedAt 抖动
       generatedAt: releaseFileBodyChanged(previous, {
-        formatVersion: 1,
+        formatVersion: CURRENT_FORMAT_VERSION,
         repo: mod.repo,
         releases: entries,
         compat,
+        meta: fileMeta,
       })
         ? now
         : (previous?.generatedAt ?? now),
@@ -694,6 +774,18 @@ async function processMod(context) {
       }
     }
     const finalFile = shouldWrite ? nextFile : (previous ?? nextFile);
+
+    // B5：release/tag 级变更（首次建立 changes.json 时只记初始快照，避免一次刷出上千条）
+    const datasetName = dataset.name ?? 'official';
+    const changes = diffReleaseFiles({
+      dataset: datasetName,
+      repo: mod.repo,
+      previousFile: previous,
+      currentFile: finalFile,
+      at: now,
+      namePlain: plainFields(mod).namePlain,
+      initialSnapshot: context.initialChanges === true,
+    });
 
     // 更新本模组的刷新调度状态
     const nextState = cloneModState(modState);
@@ -755,15 +847,17 @@ async function processMod(context) {
       entry: buildEntry(mod, finalFile, {
         relPath,
         oldEntry,
-        stats: computeModStats(finalFile?.releases ?? [], hasJava),
+        stats: computeModStats(finalFile?.releases ?? [], effectiveHasJava),
         compat: finalFile?.compat ?? [],
         gameVersions: compatData?.gameVersions ?? [],
       }),
       file: finalFile,
+      previousFile: previous,
       state: nextState,
       skipped: null,
       changed,
       unprocessed: false,
+      changes,
     };
   } catch (error) {
     const rateLimited =
@@ -780,6 +874,8 @@ async function processMod(context) {
         finalFile = buildReleasesFile({
           repo: mod.repo,
           releases: previous.releases,
+          compat: previous.compat ?? [],
+          meta: previous.meta ?? null,
           generatedAt: previous.generatedAt ?? now,
         });
         await writeJsonAtomic(resolveReleaseFile(workDir, relPath), finalFile);
@@ -790,15 +886,17 @@ async function processMod(context) {
         finalFile = previous;
       }
     }
+    const catchHasJava = finalFile?.meta ? finalFile.meta.hasJava === true : hasJava;
     return {
       entry: buildEntry(mod, finalFile, {
         relPath,
         oldEntry,
-        stats: computeModStats(finalFile?.releases ?? [], hasJava),
+        stats: computeModStats(finalFile?.releases ?? [], catchHasJava),
         compat: finalFile?.compat ?? [],
         gameVersions: context.compatData?.gameVersions ?? [],
       }),
       file: finalFile,
+      previousFile: previous,
       state: previousState.mods[mod.repo],
       skipped: { repo: mod.repo, reason: skipReason(error) },
       changed: false,
@@ -838,6 +936,17 @@ async function loadRefreshState(outDir, log, relPath = REFRESH_STATE_REL_PATH) {
   } catch (error) {
     log(`[警告] ${relPath} 不可用，按首次运行处理：${error.message}`);
     return { file, exists: false, state: normalizeRefreshState(null) };
+  }
+}
+
+// B5：读取上一份 changes.json（不存在 = 首次建立，只记初始快照）
+async function loadChanges(outDir, log) {
+  try {
+    const raw = await readJsonIfExists(path.join(outDir, CHANGES_REL_PATH));
+    return { exists: raw !== null, changes: normalizeChanges(raw) };
+  } catch (error) {
+    log(`[警告] ${CHANGES_REL_PATH} 不可用，按首次运行处理：${error.message}`);
+    return { exists: false, changes: [] };
   }
 }
 
@@ -1012,6 +1121,7 @@ export async function runMods(options, context) {
     return {
       repo: mod.repo,
       name: mod.name,
+      namePlain: result.entry.namePlain ?? '',
       author: mod.author,
       stars: mod.stars,
       releaseCount: result.entry.releaseCount,
@@ -1072,6 +1182,42 @@ export async function runMods(options, context) {
       `[警告] ${skipped.length} 个仓库抓取失败，已保留旧数据：${preview.join('、')}${skipped.length > 5 ? ' 等' : ''}`,
     );
   }
+  const modChanges = [];
+  for (const [index, mod] of selected.entries()) {
+    const result = results[index];
+    if (!result) {
+      continue;
+    }
+    const namePlain = result.entry?.namePlain ?? '';
+    if (context.initialChanges) {
+      // 首次建立 changes.json：只记初始快照（批量 mod-added，最终由滚动上限截断）
+      modChanges.push({
+        at: now,
+        dataset: 'official',
+        repo: mod.repo,
+        action: 'mod-added',
+        ...(namePlain ? { namePlain } : {}),
+      });
+    } else {
+      modChanges.push(
+        ...diffModEntry({
+          dataset: 'official',
+          repo: mod.repo,
+          previousEntry: oldEntries.get(mod.repo.toLowerCase()) ?? null,
+          currentEntry: result.entry,
+          at: now,
+          namePlain,
+        }),
+      );
+    }
+    modChanges.push(...(result.changes ?? []));
+  }
+  const stats = {
+    updatedAt: now,
+    modCount: selected.length,
+    releaseCount: results.reduce((sum, result) => sum + (result.entry?.releaseCount ?? 0), 0),
+    skipped,
+  };
   return {
     code: 0,
     changed,
@@ -1079,6 +1225,8 @@ export async function runMods(options, context) {
     summaryChanged: summaryChanged || csvChanged,
     stateChanged,
     unprocessed: notProcessedCount,
+    changes: modChanges,
+    stats,
   };
 }
 
@@ -1099,6 +1247,7 @@ function communitySummaryRows(results, selectedMods) {
     return {
       repo: mod.repo,
       name: mod.name,
+      namePlain: result.entry.namePlain ?? '',
       author: mod.author,
       stars: mod.stars,
       releaseCount: result.entry.releaseCount,
@@ -1334,6 +1483,41 @@ async function runCommunity(options, context) {
       `state ${stateChanged ? '已更新' : '未变'}，${skipped.length} 个抓取失败` +
       (notProcessed > 0 ? `，${notProcessed} 个因配额不足未处理` : ''),
   );
+  const communityChanges = [];
+  for (const [index, mod] of selectedMods.entries()) {
+    const result = results[index];
+    if (!result) {
+      continue;
+    }
+    const namePlain = result.entry?.namePlain ?? '';
+    if (context.initialChanges) {
+      communityChanges.push({
+        at: now,
+        dataset: 'community',
+        repo: mod.repo,
+        action: 'mod-added',
+        ...(namePlain ? { namePlain } : {}),
+      });
+    } else {
+      communityChanges.push(
+        ...diffModEntry({
+          dataset: 'community',
+          repo: mod.repo,
+          previousEntry: oldEntries.get(mod.repo.toLowerCase()) ?? null,
+          currentEntry: result.entry,
+          at: now,
+          namePlain,
+        }),
+      );
+    }
+    communityChanges.push(...(result.changes ?? []));
+  }
+  const datasetStats = {
+    updatedAt: now,
+    modCount: selectedMods.length,
+    releaseCount: results.reduce((sum, result) => sum + (result.entry?.releaseCount ?? 0), 0),
+    skipped,
+  };
   return {
     code: 0,
     changed,
@@ -1345,6 +1529,8 @@ async function runCommunity(options, context) {
     candidates: candidates.length,
     eligible: eligible.length,
     stats,
+    changes: communityChanges,
+    datasetStats,
   };
 }
 
@@ -1436,7 +1622,17 @@ async function runVersions(options, context) {
   } else {
     console.log('[versions] 无变化，保留旧文件');
   }
-  return { code: 0, releases, changed };
+  return {
+    code: 0,
+    releases,
+    changed,
+    stats: {
+      updatedAt: new Date().toISOString(),
+      modCount: null,
+      releaseCount: releases.length,
+      skipped: [],
+    },
+  };
 }
 
 // ---------- gate 数据集 ----------
@@ -1704,7 +1900,16 @@ async function runGate(options, context) {
   } else {
     console.log('[gate] mod/java 门禁均无变化，保留旧文件');
   }
-  return { code: 0, changed };
+  return {
+    code: 0,
+    changed,
+    stats: {
+      updatedAt: new Date().toISOString(),
+      modCount: null,
+      releaseCount: null,
+      skipped: [],
+    },
+  };
 }
 
 // ---------- 入口 ----------
@@ -1723,6 +1928,20 @@ export async function run(argv) {
   }
   if (options.help) {
     printUsage();
+    return 0;
+  }
+  if (options.migrate) {
+    const outDir = path.resolve(options.out);
+    const log = options.verbose ? (message) => console.log(message) : () => {};
+    const now = new Date().toISOString();
+    if (!options.dryRun) {
+      const result = await migrateDataDir({ outDir, log, now });
+      console.log(
+        `[migrate] 完成：官方文件 ${result.officialFiles} 个、社区文件 ${result.communityFiles} 个、index 条目 ${result.entries} 个`,
+      );
+    } else {
+      console.log('[migrate] dry-run：不写文件');
+    }
     return 0;
   }
 
@@ -1753,6 +1972,7 @@ export async function run(argv) {
   const apiClient = new HttpClient({ token: options.token, logger: httpLog });
   // raw 域名不需要 token，也不该把凭据发过去
   const rawClient = new HttpClient({ token: null, logger: httpLog });
+  const changesLoaded = await loadChanges(outDir, log);
   const context = {
     apiClient,
     rawClient,
@@ -1762,6 +1982,8 @@ export async function run(argv) {
     versionsReleases: null,
     // 官方与社区共享同一配额状态：官方先跑，配额不足时社区直接跳过，下次续跑
     abortState: { aborted: false, reason: null },
+    previousChanges: changesLoaded.changes,
+    initialChanges: !changesLoaded.exists,
   };
 
   let exitCode = 0;
@@ -1776,9 +1998,14 @@ export async function run(argv) {
   let communityUnprocessed = 0;
   let versionsChanged = false;
   let gateChanged = false;
+  let modsResult = null;
+  let communityResult = null;
+  let versionsResult = null;
+  let gateResult = null;
 
   if (options.datasets.includes('mods')) {
-    const result = await runMods(options, context);
+    modsResult = await runMods(options, context);
+    const result = modsResult;
     exitCode = Math.max(exitCode, result.code);
     modsChanged = result.changed;
     modsIndexChanged = result.indexChanged;
@@ -1786,7 +2013,8 @@ export async function run(argv) {
     modsStateChanged = result.stateChanged;
   }
   if (options.datasets.includes('community')) {
-    const result = await runCommunity(options, context);
+    communityResult = await runCommunity(options, context);
+    const result = communityResult;
     exitCode = Math.max(exitCode, result.code);
     communityChanged = result.changed ?? 0;
     communityIndexChanged = result.indexChanged ?? false;
@@ -1795,15 +2023,84 @@ export async function run(argv) {
     communityUnprocessed = result.unprocessed ?? 0;
   }
   if (options.datasets.includes('versions')) {
-    const result = await runVersions(options, context);
+    versionsResult = await runVersions(options, context);
+    const result = versionsResult;
     exitCode = Math.max(exitCode, result.code);
     versionsChanged = result.changed;
     context.versionsReleases = result.releases;
   }
   if (options.datasets.includes('gate')) {
-    const result = await runGate(options, context);
+    gateResult = await runGate(options, context);
+    const result = gateResult;
     exitCode = Math.max(exitCode, result.code);
     gateChanged = result.changed;
+  }
+
+  // B5：滚动变更流（新变更在前，最多 500 条）；首次建立时只有初始快照 mod-added
+  let changesWritten = false;
+  let statusWritten = false;
+  if (!options.dryRun) {
+    const newChanges = [
+      ...(modsResult?.changes ?? []),
+      ...(communityResult?.changes ?? []),
+    ];
+    const nextChanges = mergeChanges(newChanges, context.previousChanges);
+    if (JSON.stringify(context.previousChanges) !== JSON.stringify(nextChanges)) {
+      await writeJsonAtomic(path.join(outDir, CHANGES_REL_PATH), nextChanges);
+      changesWritten = true;
+    }
+    // B4：健康状态（运行日志性质，无数据变化也更新；未运行的数据集沿用上一份 status）
+    const datasets = {};
+    if (modsResult?.stats) {
+      datasets.official = modsResult.stats;
+    }
+    if (communityResult?.datasetStats) {
+      datasets.community = communityResult.datasetStats;
+    }
+    if (versionsResult?.stats) {
+      datasets.versions = versionsResult.stats;
+    }
+    if (gateResult?.stats) {
+      datasets.gate = gateResult.stats;
+    }
+    let previousStatus = null;
+    try {
+      previousStatus = await readJsonIfExists(path.join(outDir, STATUS_REL_PATH));
+    } catch (error) {
+      log(`[警告] 旧 ${STATUS_REL_PATH} 不可用：${error.message}`);
+    }
+    let validation = { errors: 0, warnings: 0, presentFiles: [] };
+    try {
+      const validationResult = await validateDir(outDir);
+      validation = {
+        errors: validationResult.errors.length,
+        warnings: validationResult.warnings.length,
+        presentFiles: validationResult.present,
+      };
+    } catch (error) {
+      log(`[警告] status 的 validate 摘要生成失败：${error.message}`);
+    }
+    const status = buildStatus({
+      generatedAt: new Date().toISOString(),
+      previous: previousStatus,
+      datasets,
+      api: apiStatus(apiClient),
+      validate: validation,
+    });
+    await writeJsonAtomic(path.join(outDir, STATUS_REL_PATH), status);
+    // status 写完后重新算一次 validate（避免把“status 自身缺失”的 warning 记进去）
+    try {
+      const validationResult = await validateDir(outDir);
+      status.validate = {
+        errors: validationResult.errors.length,
+        warnings: validationResult.warnings.length,
+        presentFiles: validationResult.present,
+      };
+      await writeJsonAtomic(path.join(outDir, STATUS_REL_PATH), status);
+    } catch (error) {
+      log(`[警告] status 的 validate 复核失败：${error.message}`);
+    }
+    statusWritten = true;
   }
 
   const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
@@ -1816,7 +2113,9 @@ export async function run(argv) {
         ? `，社区 release 文件变化 ${communityChanged} 个、index ${communityIndexChanged ? '已更新' : '未变'}、summary ${communitySummaryChanged ? '已更新' : '未变'}、state ${communityStateChanged ? '已更新' : '未变'}${communityUnprocessed > 0 ? `、${communityUnprocessed} 个未处理` : ''}`
         : '') +
       (options.datasets.includes('versions') ? `，versions ${versionsChanged ? '已更新' : '未变'}` : '') +
-      (options.datasets.includes('gate') ? `，gate ${gateChanged ? '已更新' : '未变'}` : ''),
+      (options.datasets.includes('gate') ? `，gate ${gateChanged ? '已更新' : '未变'}` : '') +
+      (statusWritten ? `，status ${statusWritten ? '已更新' : '未变'}` : '') +
+      (changesWritten ? '，changes 已更新' : ''),
   );
   if (options.verbose) {
     const api = apiClient.stats;
