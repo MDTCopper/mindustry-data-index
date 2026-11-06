@@ -18,6 +18,10 @@ export const SUMMARY_COLUMNS = [
   'latestModVersion',
   'latestMinGameVersion',
   'iconUrl',
+  'heatScore',
+  'heatRank',
+  'maintenanceStatus',
+  'recommendVisible',
   'releasesPath',
 ];
 

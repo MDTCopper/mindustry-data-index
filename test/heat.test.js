@@ -18,6 +18,12 @@ import {
   selectHistoryFiles,
   signedLog1p,
   stockScores,
+  maintenanceStatus,
+  recommendationFor,
+  heatIndexFields,
+  heatSummaryFields,
+  injectHeatIntoIndex,
+  injectHeatIntoSummaryRows,
   normalizeByMax,
   activityScores,
 } from '../src/heat.js';
@@ -136,7 +142,7 @@ test('buildSnapshot / 日期 key：格式稳定', () => {
   assert.match(formatWeekKey(date), /^2026-W\d{2}$/);
 });
 
-test('stockScores：占总量百分比为主、sqrt 柔化、极小占比抹除', () => {
+test('stockScores：占总量百分比为主、sqrt 柔化、极小占比自然接近 0（不硬抹除）', () => {
   const result = stockScores([1000, 250, 0, 0.00001]);
   const sum = result.shares.reduce((total, value) => total + value, 0);
   assert.ok(Math.abs(sum - 1) < 1e-9);
@@ -144,10 +150,45 @@ test('stockScores：占总量百分比为主、sqrt 柔化、极小占比抹除'
   assert.equal(result.mags[0], 1);
   assert.ok(Math.abs(result.mags[1] - Math.sqrt(0.25)) < 1e-9);
   assert.equal(result.mags[2], 0);
-  // 远小于 maxShare * 1e-4 的占比直接抹除
-  assert.equal(result.mags[3], 0);
-  assert.equal(result.scores[3], 0.2 * result.percentiles[3]);
+  // 极小占比不再强制归 0：mag = sqrt(share/maxShare) 自然很小
+  assert.ok(result.mags[3] > 0, '极小占比应保留非零值');
+  assert.ok(result.mags[3] < 1e-3, `极小占比应自然接近 0：${result.mags[3]}`);
+  assert.ok(result.scores[3] >= 0.2 * result.percentiles[3]);
   assert.equal(stockScores([0, 0]).total, 0);
+});
+
+test('maintenanceStatus：≤180 active、180~360 low、>360 stale（缺失活动用年龄兜底）', () => {
+  assert.equal(maintenanceStatus({ daysSinceRelease: 0, daysSinceCommit: 0 }), 'active');
+  assert.equal(maintenanceStatus({ daysSinceRelease: 180, daysSinceCommit: null }), 'active');
+  assert.equal(maintenanceStatus({ daysSinceRelease: 181, daysSinceCommit: 300 }), 'low');
+  assert.equal(maintenanceStatus({ daysSinceRelease: null, daysSinceCommit: 360 }), 'low');
+  assert.equal(maintenanceStatus({ daysSinceRelease: 361, daysSinceCommit: null }), 'stale');
+  assert.equal(maintenanceStatus({ daysSinceRelease: null, daysSinceCommit: null, ageDays: 100 }), 'active');
+  assert.equal(maintenanceStatus({ daysSinceRelease: null, daysSinceCommit: null, ageDays: 500 }), 'stale');
+  assert.equal(maintenanceStatus({ daysSinceRelease: null, daysSinceCommit: null }), 'stale');
+});
+
+test('recommendationFor：score<0 / stale 低活跃两种过滤原因；阈值可覆盖', () => {
+  const active = { score: 0.5, totalDownloads: 100, totalStars: 10, maintenance: { status: 'active' } };
+  assert.deepEqual(recommendationFor(active), { visible: true, reason: null });
+  assert.deepEqual(recommendationFor({ ...active, score: -0.01 }), {
+    visible: false,
+    reason: 'score-below-min',
+  });
+  const staleLow = { score: 0.1, totalDownloads: 0, totalStars: 19, maintenance: { status: 'stale' } };
+  assert.deepEqual(recommendationFor(staleLow), {
+    visible: false,
+    reason: 'stale-low-activity',
+  });
+  // 星标足够或还有下载的 stale 不被隐藏
+  assert.equal(recommendationFor({ ...staleLow, totalStars: 20 }).visible, true);
+  assert.equal(recommendationFor({ ...staleLow, totalDownloads: 5 }).visible, true);
+  // 阈值可调
+  assert.equal(recommendationFor(staleLow, { staleMaxStars: 10 }).visible, true);
+  assert.deepEqual(
+    recommendationFor({ ...active, score: 0.05 }, { minScore: 0.1 }),
+    { visible: false, reason: 'score-below-min' },
+  );
 });
 
 test('activityScores / normalizeByMax：log1p 递减收益 + 最大值归一', () => {
@@ -234,6 +275,49 @@ test('computeHeat：非 Java 且无下载数据 → downloadsMissing 并重归�
   assert.equal(entries[0].repo, 'nonjava/missing');
 });
 
+test('injectHeatIntoIndex / SummaryRows：热度合并进模组列表与总表', () => {
+  const entry = {
+    repo: 'owner/mod',
+    score: 0.42,
+    rank: 7,
+    downloadsScore: 0.5,
+    starsScore: 0.6,
+    updateScore: 0.4,
+    newModMultiplier: 1.1,
+    penalty: 0.01,
+    maintenance: { status: 'active', lastReleaseAt: null, lastCommitAt: null, daysSinceRelease: 1, daysSinceCommit: 1 },
+    recommend: { visible: false, reason: 'stale-low-activity' },
+    downloadChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
+    starChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
+    releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
+    commits: { 7: 1, 30: 1, 90: 1, 180: 1 },
+  };
+  const heatByRepo = new Map([['owner/mod', entry]]);
+  const index = injectHeatIntoIndex(
+    { formatVersion: 1, mods: [{ repo: 'owner/mod', name: 'Mod' }] },
+    heatByRepo,
+  );
+  assert.equal(index.mods[0].heat.score, 0.42);
+  assert.equal(index.mods[0].heat.rank, 7);
+  assert.equal(index.mods[0].heat.recommendVisible, false);
+  assert.equal(index.mods[0].heat.recommendReason, 'stale-low-activity');
+  assert.equal(index.mods[0].name, 'Mod');
+  const rows = injectHeatIntoSummaryRows(
+    [{ repo: 'owner/mod', totalDownloads: 3 }],
+    heatByRepo,
+  );
+  assert.deepEqual(
+    {
+      heatScore: rows[0].heatScore,
+      heatRank: rows[0].heatRank,
+      maintenanceStatus: rows[0].maintenanceStatus,
+      recommendVisible: rows[0].recommendVisible,
+    },
+    { heatScore: 0.42, heatRank: 7, maintenanceStatus: 'active', recommendVisible: false },
+  );
+  assert.equal(rows[0].totalDownloads, 3);
+});
+
 test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按分数降序', () => {
   const mods = [
     {
@@ -282,4 +366,21 @@ test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按�
   assert.deepEqual(Object.keys(entries[0].releaseUpdates), ['7', '30', '90', '180']);
   assert.equal(entries[1].stockShare.downloads, 0);
   assert.equal(entries[1].stockMag.stars, 0);
+  // task-18：maintenance / recommend / index heat 投影
+  assert.equal(entries[0].maintenance.status, 'active');
+  assert.equal(entries[0].recommend.visible, true);
+  assert.equal(entries[1].maintenance.status, 'stale');
+  assert.equal(entries[1].recommend.visible, false);
+  assert.equal(entries[1].recommend.reason, 'score-below-min');
+  const projected = heatIndexFields(entries[0]);
+  assert.equal(projected.score, entries[0].score);
+  assert.equal(projected.rank, 1);
+  assert.equal(projected.recommendVisible, true);
+  assert.equal(projected.maintenance.status, 'active');
+  assert.deepEqual(heatSummaryFields(entries[0]), {
+    heatScore: entries[0].score,
+    heatRank: 1,
+    maintenanceStatus: 'active',
+    recommendVisible: true,
+  });
 });

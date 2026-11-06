@@ -35,7 +35,8 @@ import {
   HEAT_WINDOWS,
   UPDATE_WINDOWS,
   HISTORY_LIMITS,
-  HEAT_SUMMARY_COLUMNS,
+  MAINTENANCE_STATUSES,
+  RECOMMEND_HIDDEN_REASONS,
 } from './heat.js';
 
 const HEARTBEAT_REL_PATH = 'mindustry/heartbeat.json';
@@ -369,6 +370,80 @@ function validateCompatData(file, { tags, errors }) {
   }
 }
 
+// 模组列表里的 heat 对象（热度已合并进 index，不再有独立 heat/index.json）
+export function validateIndexHeat(mod, { where, errors }) {
+  const heat = mod.heat;
+  if (!isPlainObject(heat)) {
+    errors.push(`${where}.heat 缺失或不是对象（热度已合并进 index.json）`);
+    return;
+  }
+  for (const field of ['score', 'downloadsScore', 'starsScore', 'updateScore', 'newModMultiplier', 'penalty']) {
+    if (!isFiniteNumberOrNull(heat[field])) {
+      errors.push(`${where}.heat.${field} 应为有限数字`);
+    }
+  }
+  if (!Number.isInteger(heat.rank) || heat.rank < 1) {
+    errors.push(`${where}.heat.rank 应为正整数`);
+  }
+  if (typeof heat.recommendVisible !== 'boolean') {
+    errors.push(`${where}.heat.recommendVisible 应为布尔值`);
+  }
+  if (
+    heat.recommendReason !== null &&
+    !RECOMMEND_HIDDEN_REASONS.includes(heat.recommendReason)
+  ) {
+    errors.push(`${where}.heat.recommendReason 非法：${JSON.stringify(heat.recommendReason)}`);
+  }
+  if (heat.recommendVisible === true && heat.recommendReason !== null) {
+    errors.push(`${where}.heat.recommendReason 在 recommendVisible=true 时应为 null`);
+  }
+  if (heat.recommendVisible === false && heat.recommendReason === null) {
+    errors.push(`${where}.heat.recommendReason 在 recommendVisible=false 时不能为 null`);
+  }
+  if (!isPlainObject(heat.maintenance)) {
+    errors.push(`${where}.heat.maintenance 不是对象`);
+  } else {
+    if (!MAINTENANCE_STATUSES.includes(heat.maintenance.status)) {
+      errors.push(`${where}.heat.maintenance.status 非法`);
+    }
+    for (const field of ['lastReleaseAt', 'lastCommitAt']) {
+      if (heat.maintenance[field] !== null && !isIsoDate(heat.maintenance[field])) {
+        errors.push(`${where}.heat.maintenance.${field} 应为 ISO 时间或 null`);
+      }
+    }
+    for (const field of ['daysSinceRelease', 'daysSinceCommit']) {
+      if (
+        heat.maintenance[field] !== null &&
+        (!isFiniteNumberOrNull(heat.maintenance[field]) || heat.maintenance[field] < 0)
+      ) {
+        errors.push(`${where}.heat.maintenance.${field} 应为非负数字或 null`);
+      }
+    }
+  }
+  for (const field of ['downloadChanges', 'starChanges']) {
+    if (!isPlainObject(heat[field])) {
+      errors.push(`${where}.heat.${field} 不是对象`);
+      continue;
+    }
+    for (const window of HEAT_WINDOWS) {
+      if (!isFiniteNumberOrNull(heat[field][window])) {
+        errors.push(`${where}.heat.${field}.${window} 应为数字`);
+      }
+    }
+  }
+  for (const field of ['releaseUpdates', 'commits']) {
+    if (!isPlainObject(heat[field])) {
+      errors.push(`${where}.heat.${field} 不是对象`);
+      continue;
+    }
+    for (const window of UPDATE_WINDOWS) {
+      if (!isFiniteNumberOrNull(heat[field][window])) {
+        errors.push(`${where}.heat.${field}.${window} 应为数字`);
+      }
+    }
+  }
+}
+
 export function validateIndexData(
   index,
   { errors, warnings, releaseFiles = null, mode = 'official', officialRepos = null } = {},
@@ -472,6 +547,7 @@ export function validateIndexData(
         errors.push(`${where}.${field} 应为布尔值或 null`);
       }
     }
+    validateIndexHeat(mod, { where, errors });
     if (typeof mod.stars !== 'number') {
       errors.push(`${where}.stars 应为数字`);
     }
@@ -970,6 +1046,29 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
     }
     if (row.releasesPath !== (indexEntry.releasesPath ?? null)) {
       errors.push(`${where}.releasesPath 与 index 不一致`);
+    }
+    if (!isFiniteNumberOrNull(row.heatScore)) {
+      errors.push(`${where}.heatScore 应为有限数字`);
+    } else if (indexEntry.heat && row.heatScore !== indexEntry.heat.score) {
+      errors.push(`${where}.heatScore 与 index.heat.score 不一致`);
+    }
+    if (!Number.isInteger(row.heatRank) || row.heatRank < 1) {
+      errors.push(`${where}.heatRank 应为正整数`);
+    } else if (indexEntry.heat && row.heatRank !== indexEntry.heat.rank) {
+      errors.push(`${where}.heatRank 与 index.heat.rank 不一致`);
+    }
+    if (!MAINTENANCE_STATUSES.includes(row.maintenanceStatus)) {
+      errors.push(`${where}.maintenanceStatus 非法`);
+    } else if (
+      indexEntry.heat?.maintenance &&
+      row.maintenanceStatus !== indexEntry.heat.maintenance.status
+    ) {
+      errors.push(`${where}.maintenanceStatus 与 index.heat.maintenance 不一致`);
+    }
+    if (typeof row.recommendVisible !== 'boolean') {
+      errors.push(`${where}.recommendVisible 应为布尔值`);
+    } else if (indexEntry.heat && row.recommendVisible !== indexEntry.heat.recommendVisible) {
+      errors.push(`${where}.recommendVisible 与 index.heat 不一致`);
     }
   }
   for (const mod of indexMods) {
@@ -2018,80 +2117,79 @@ export async function validateDir(dir) {
     warnings.push(`缺少 ${CHANGES_REL_PATH}（可能是尚未运行过新版本）`);
   }
 
-  // heat：存在时校验（允许还没有热度表）
-  if (heatIndexFile.exists) {
-    result.present.push(HEAT_INDEX_REL_PATH);
-    const officialReposForHeat = (Array.isArray(indexFile.data?.mods)
-      ? indexFile.data.mods
-      : []
-    ).map((mod) => mod?.repo);
-    const communityReposForHeat = (Array.isArray(communityIndexFile.data?.mods)
-      ? communityIndexFile.data.mods
-      : []
-    ).map((mod) => mod?.repo);
-    const expectedRepos = [...officialReposForHeat, ...communityReposForHeat].filter(
-      (repo) => typeof repo === 'string',
-    );
-    const hasJavaByRepo = new Map();
-    for (const mod of [
-      ...(Array.isArray(indexFile.data?.mods) ? indexFile.data.mods : []),
-      ...(Array.isArray(communityIndexFile.data?.mods)
-        ? communityIndexFile.data.mods
-        : []),
-    ]) {
-      if (mod && typeof mod.repo === 'string') {
-        hasJavaByRepo.set(mod.repo.toLowerCase(), mod.hasJava);
-      }
+  // heat 已合并进 index.json / community/index.json / summary；这里做全局排名与旧文件一致性校验
+  const officialModsForHeat = Array.isArray(indexFile.data?.mods) ? indexFile.data.mods : [];
+  const communityModsForHeat = Array.isArray(communityIndexFile.data?.mods)
+    ? communityIndexFile.data.mods
+    : [];
+  const allHeatEntries = [];
+  for (const mod of [...officialModsForHeat, ...communityModsForHeat]) {
+    if (isPlainObject(mod) && typeof mod.repo === 'string' && isPlainObject(mod.heat)) {
+      allHeatEntries.push({ repo: mod.repo, heat: mod.heat });
     }
-    if (heatIndexFile.error) {
-      errors.push(`${HEAT_INDEX_REL_PATH} 无法解析：${heatIndexFile.error.message}`);
-    } else {
-      result.heatModCount = validateHeatIndexData(heatIndexFile.data, {
-        expectedRepos,
-        hasJavaByRepo,
-        errors,
-      }).modCount;
-      if (!heatSummaryCsvFile.exists) {
-        errors.push(`缺少 ${HEAT_SUMMARY_REL_PATH}`);
-      } else if (heatSummaryCsvFile.error) {
-        errors.push(`${HEAT_SUMMARY_REL_PATH} 无法读取：${heatSummaryCsvFile.error.message}`);
-      } else {
-        result.present.push(HEAT_SUMMARY_REL_PATH);
-        const rows = parseCsv(heatSummaryCsvFile.text);
-        if (rows[0]?.join(',') !== HEAT_SUMMARY_COLUMNS.join(',')) {
-          errors.push(`${HEAT_SUMMARY_REL_PATH} 表头与 heat 列定义不一致`);
-        } else if (rows.length - 1 !== heatIndexFile.data.mods.length) {
-          errors.push(
-            `${HEAT_SUMMARY_REL_PATH} 行数（${rows.length - 1}）与 heat mods 数量不一致`,
-          );
-        }
+  }
+  result.heatModCount = allHeatEntries.length;
+  const seenRanks = new Set();
+  for (const { heat } of allHeatEntries) {
+    if (Number.isInteger(heat.rank)) {
+      if (seenRanks.has(heat.rank)) {
+        errors.push(`${HEAT_INDEX_REL_PATH} 全局 heat.rank 重复：${heat.rank}`);
       }
+      seenRanks.add(heat.rank);
     }
-    for (const kind of ['daily', 'weekly', 'monthly']) {
-      const files = heatHistoryFiles[kind];
-      result.heatHistoryCounts[kind] = files.length;
-      if (files.length > HISTORY_LIMITS[kind]) {
+  }
+  if (allHeatEntries.length > 0) {
+    if (seenRanks.size !== allHeatEntries.length) {
+      errors.push('index.json / community/index.json 的全局 heat.rank 不是 1..N 唯一');
+    }
+    const byScore = [...allHeatEntries].sort((left, right) => {
+      if (right.heat.score !== left.heat.score) {
+        return right.heat.score - left.heat.score;
+      }
+      return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
+    });
+    for (const [position, item] of byScore.entries()) {
+      if (item.heat.rank !== position + 1) {
         errors.push(
-          `${HEAT_HISTORY_DIR}/${kind} 超过保留数量（${files.length} > ${HISTORY_LIMITS[kind]}）`,
+          `index.json / community/index.json 的 heat.rank 与分数排序不一致：${item.repo} 应为 ${position + 1}`,
         );
       }
-      for (const file of files) {
-        const relPath = path.join(HEAT_HISTORY_DIR, kind, file);
-        const pattern =
-          kind === 'daily'
-            ? /^\d{4}-\d{2}-\d{2}\.json$/
-            : kind === 'weekly'
-              ? /^\d{4}-W\d{2}\.json$/
-              : /^\d{4}-\d{2}\.json$/;
-        if (!pattern.test(file)) {
-          errors.push(`${relPath} 文件名不符合 ${kind} 格式`);
-        }
-        const snapshotFile = await readJsonIfPresent(path.join(outDir, relPath));
-        if (snapshotFile.error) {
-          errors.push(`${relPath} 无法解析：${snapshotFile.error.message}`);
-        } else {
-          validateHeatHistorySnapshot(snapshotFile.data, { where: relPath, errors });
-        }
+    }
+  }
+  if (heatIndexFile.exists) {
+    warnings.push(
+      '旧 heat/index.json 已废弃（热度已合并进 index.json / community/index.json）；运行 heat 数据集会自动清理',
+    );
+  }
+  if (heatSummaryCsvFile.exists) {
+    warnings.push(
+      '旧 heat/summary.csv 已废弃（热度列已合并进 summary.csv）；运行 heat 数据集会自动清理',
+    );
+  }
+  for (const kind of ['daily', 'weekly', 'monthly']) {
+    const files = heatHistoryFiles[kind];
+    result.heatHistoryCounts[kind] = files.length;
+    if (files.length > HISTORY_LIMITS[kind]) {
+      errors.push(
+        `${HEAT_HISTORY_DIR}/${kind} 超过保留数量（${files.length} > ${HISTORY_LIMITS[kind]}）`,
+      );
+    }
+    for (const file of files) {
+      const relPath = path.join(HEAT_HISTORY_DIR, kind, file);
+      const pattern =
+        kind === 'daily'
+          ? /^\d{4}-\d{2}-\d{2}\.json$/
+          : kind === 'weekly'
+            ? /^\d{4}-W\d{2}\.json$/
+            : /^\d{4}-\d{2}\.json$/;
+      if (!pattern.test(file)) {
+        errors.push(`${relPath} 文件名不符合 ${kind} 格式`);
+      }
+      const snapshotFile = await readJsonIfPresent(path.join(outDir, relPath));
+      if (snapshotFile.error) {
+        errors.push(`${relPath} 无法解析：${snapshotFile.error.message}`);
+      } else {
+        validateHeatHistorySnapshot(snapshotFile.data, { where: relPath, errors });
       }
     }
   }

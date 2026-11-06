@@ -123,6 +123,23 @@
           },
           "releasesPath": {
             "type": "string"
+          },
+          "heatScore": {
+            "type": "number"
+          },
+          "heatRank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "maintenanceStatus": {
+            "enum": [
+              "active",
+              "low",
+              "stale"
+            ]
+          },
+          "recommendVisible": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -143,7 +160,11 @@
           "latestModVersion",
           "latestMinGameVersion",
           "iconUrl",
-          "releasesPath"
+          "releasesPath",
+          "heatScore",
+          "heatRank",
+          "maintenanceStatus",
+          "recommendVisible"
         ],
         "additionalProperties": true
       }

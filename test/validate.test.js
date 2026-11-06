@@ -14,6 +14,40 @@ import {
 
 const GENERATED_AT = '2026-11-06T03:00:00.000Z';
 
+function defaultHeat(rank = 1, score = 0.5 / rank) {
+  return {
+    score,
+    rank,
+    downloadsScore: 0.5,
+    starsScore: 0.6,
+    updateScore: 0.4,
+    newModMultiplier: 1.1,
+    penalty: 0,
+    maintenance: {
+      lastReleaseAt: '2026-10-01T12:00:00Z',
+      lastCommitAt: '2026-10-01T12:00:00Z',
+      daysSinceRelease: 36,
+      daysSinceCommit: 36,
+      status: 'active',
+    },
+    recommendVisible: true,
+    recommendReason: null,
+    downloadChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
+    starChanges: { 1: 0, 7: 0, 30: 0, 180: 0 },
+    releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
+    commits: { 7: 1, 30: 1, 90: 1, 180: 1 },
+  };
+}
+
+function ensureHeat(index, startRank = 0) {
+  for (const [position, mod] of (index?.mods ?? []).entries()) {
+    if (!mod.heat) {
+      mod.heat = defaultHeat(startRank + position + 1);
+    }
+  }
+  return index;
+}
+
 function releasesRelPath(repo) {
   const [owner, name] = repo.split('/');
   return `releases/${owner}/${name}.json`;
@@ -126,11 +160,20 @@ function summaryRow(entry, releaseFile) {
     latestModVersion: first?.modVersion ?? null,
     latestMinGameVersion: first?.minGameVersion ?? null,
     iconUrl: entry.iconUrl,
+    ...(entry.heat
+      ? {
+          heatScore: entry.heat.score,
+          heatRank: entry.heat.rank,
+          maintenanceStatus: entry.heat.maintenance.status,
+          recommendVisible: entry.heat.recommendVisible,
+        }
+      : {}),
     releasesPath: entry.releasesPath,
   };
 }
 
 async function writeSummaryFiles(dir, index, releaseFile) {
+  ensureHeat(index);
   const rows = index.mods.map((entry) => summaryRow(entry, releaseFile));
   const summary = buildSummary({ rows, generatedAt: GENERATED_AT });
   await writeFile(path.join(dir, 'summary.json'), JSON.stringify(summary, null, 2));
@@ -139,6 +182,7 @@ async function writeSummaryFiles(dir, index, releaseFile) {
 
 async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mods-index-validate-'));
+  ensureHeat(index);
   await mkdir(path.join(dir, 'releases'), { recursive: true });
   await writeFile(path.join(dir, 'index.json'), JSON.stringify(index, null, 2));
   const relPath = releasesRelPath(releaseFile.repo);
@@ -697,6 +741,12 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
 
 async function addCommunityFixture(dir, fixture = communityFixture()) {
   const communityDir = path.join(dir, 'community');
+  let officialCount = 0;
+  try {
+    const officialIndex = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
+    officialCount = Array.isArray(officialIndex.mods) ? officialIndex.mods.length : 0;
+  } catch {}
+  ensureHeat(fixture.index, officialCount);
   await mkdir(path.join(communityDir, 'releases', 'communitymods'), { recursive: true });
   await writeFile(
     path.join(communityDir, 'index.json'),
@@ -722,6 +772,10 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
     latestModVersion: fixture.release.modVersion,
     latestMinGameVersion: fixture.release.minGameVersion,
     iconUrl: null,
+    heatScore: fixture.index.mods[0].heat.score,
+    heatRank: fixture.index.mods[0].heat.rank,
+    maintenanceStatus: fixture.index.mods[0].heat.maintenance.status,
+    recommendVisible: fixture.index.mods[0].heat.recommendVisible,
     releasesPath: fixture.entry.releasesPath,
   };
   const summary = buildSummary({ rows: [row], generatedAt: GENERATED_AT });
@@ -867,6 +921,7 @@ test('commitSha / archiveByCommitUrl / removedAt 校验', () => {
 
 test('index removedCount / compatRanges / latestCompatible 字段校验', () => {
   const fixture = validFixture();
+  ensureHeat(fixture.index);
   let errors = [];
   validateIndexData(fixture.index, { errors });
   assert.deepEqual(errors, []);
@@ -956,144 +1011,102 @@ test('validateChangesData：合法变更通过，非法 action/dataset/时间被
   assert.ok(errors.some((message) => message.includes('.action')));
 });
 
-// ---------- heat ----------
+// ---------- heat（已合并进 index / summary） ----------
 
-function heatEntry(repo, rank, score) {
-  return {
-    repo,
-    namePlain: repo.split('/')[1],
-    source: 'official',
-    totalDownloads: 10,
-    totalStars: 2,
-    stockShare: { downloads: 0.5, stars: 0.5 },
-    stockMag: { downloads: 0.7, stars: 0.7 },
-    stockScore: { downloads: 0.62, stars: 0.62 },
-    downloadsMissing: false,
-    effectiveWeights: { downloads: 0.4, stars: 0.5, update: 0.1 },
-    downloadChanges: { 1: 1, 7: 2, 30: 3, 180: 4 },
-    starChanges: { 1: 0, 7: 1, 30: 1, 180: 2 },
-    releaseUpdates: { 7: 1, 30: 1, 90: 1, 180: 1 },
-    commits: { 7: 1, 30: 4, 90: 10, 180: 20 },
-    releaseActivityRaw: 0.8,
-    commitActivityRaw: 1.2,
-    releaseActivity: 0.6,
-    commitActivity: 0.9,
-    downloadsScore: 0.5,
-    starsScore: 0.6,
-    updateScore: 0.4,
-    newModMultiplier: 1.2,
-    penalty: 0.1,
-    score,
-    rank,
-  };
-}
-
-async function addHeatFixture(dir, { entries = [heatEntry('owner/demo', 1, 0.42)] } = {}) {
-  // 让 stockShare 之和≈1（校验会检查占比和）
-  const share = entries.length > 0 ? 1 / entries.length : 0;
-  for (const entry of entries) {
-    entry.stockShare = { downloads: share, stars: share };
-    entry.stockMag = { downloads: 1, stars: 1 };
-    entry.stockScore = { downloads: 0.9, stars: 0.9 };
-  }
+async function addHeatHistory(dir, { daily = 1 } = {}) {
   const heatDir = path.join(dir, 'heat');
   await mkdir(path.join(heatDir, 'history', 'daily'), { recursive: true });
   await mkdir(path.join(heatDir, 'history', 'weekly'), { recursive: true });
   await mkdir(path.join(heatDir, 'history', 'monthly'), { recursive: true });
-  await writeFile(
-    path.join(heatDir, 'index.json'),
-    JSON.stringify(
-      {
-        formatVersion: 1,
-        generatedAt: GENERATED_AT,
-        source: { official: entries.length, community: 0 },
-        mods: entries,
-      },
-      null,
-      2,
-    ),
-  );
-  const lines = [HEAT_SUMMARY_COLUMNS.join(',')];
-  for (const entry of entries) {
-    const row = heatSummaryRow(entry);
-    lines.push(HEAT_SUMMARY_COLUMNS.map((column) => csvEscape(row[column])).join(','));
+  const snapshot = buildSnapshot([], GENERATED_AT);
+  for (let day = 1; day <= daily; day += 1) {
+    await writeFile(
+      path.join(heatDir, 'history', 'daily', `2026-10-${String(day).padStart(2, '0')}.json`),
+      JSON.stringify(snapshot),
+    );
   }
-  await writeFile(path.join(heatDir, 'summary.csv'), `\uFEFF${lines.join('\r\n')}\r\n`);
-  const snapshot = buildSnapshot(
-    entries.map((entry) => ({
-      repo: entry.repo,
-      totalStars: entry.totalStars,
-      totalDownloads: entry.totalDownloads,
-    })),
-    GENERATED_AT,
-  );
-  await writeFile(path.join(heatDir, 'history', 'daily', '2026-11-06.json'), JSON.stringify(snapshot));
-  await writeFile(path.join(heatDir, 'history', 'weekly', '2026-W45.json'), JSON.stringify(snapshot));
-  await writeFile(path.join(heatDir, 'history', 'monthly', '2026-11.json'), JSON.stringify(snapshot));
-  await mkdir(path.join(dir, 'state'), { recursive: true });
   await writeFile(
-    path.join(dir, 'state', 'heat-commit-stats.json'),
-    JSON.stringify({
-      formatVersion: 1,
-      fetchedAt: GENERATED_AT,
-      complete: true,
-      stats: { 'owner/demo': Array.from({ length: 52 }, () => 1) },
-    }),
+    path.join(heatDir, 'history', 'weekly', '2026-W45.json'),
+    JSON.stringify(snapshot),
   );
   await writeFile(
-    path.join(dir, 'state', 'repo-created.json'),
-    JSON.stringify({
-      formatVersion: 1,
-      updatedAt: GENERATED_AT,
-      repos: { 'owner/demo': '2026-01-01T00:00:00Z' },
-    }),
+    path.join(heatDir, 'history', 'monthly', '2026-11.json'),
+    JSON.stringify(snapshot),
   );
 }
 
-test('validateDir：合法 heat 数据通过', async (t) => {
+test('validateDir：index.heat 与历史快照合法时通过', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
-  await addHeatFixture(dir);
+  await addHeatHistory(dir);
   const result = await validateDir(dir);
   assert.deepEqual(result.errors, []);
-  assert.deepEqual(result.warnings, []);
   assert.equal(result.heatModCount, 1);
   assert.deepEqual(result.heatHistoryCounts, { daily: 1, weekly: 1, monthly: 1 });
 });
 
-test('validateDir：heat repo 集合与 index 不一致 / rank 重复 / 历史快照超量会被发现', async (t) => {
+test('validateDir：缺少 index.heat 字段会被发现', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
-  const entries = [heatEntry('owner/demo', 1, 0.42), heatEntry('extra/repo', 1, 0.1)];
-  await addHeatFixture(dir, { entries });
-  const snapshot = buildSnapshot([], GENERATED_AT);
-  for (let day = 1; day <= 8; day += 1) {
-    await writeFile(
-      path.join(dir, 'heat', 'history', 'daily', `2026-10-0${day}.json`),
-      JSON.stringify(snapshot),
-    );
-  }
+  const indexPath = path.join(dir, 'index.json');
+  const index = JSON.parse(await readFile(indexPath, 'utf8'));
+  delete index.mods[0].heat;
+  await writeFile(indexPath, JSON.stringify(index, null, 2));
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('多出')));
-  assert.ok(result.errors.some((message) => message.includes('rank 不是 1..N 唯一')));
-  assert.ok(result.errors.some((message) => message.includes('超过保留数量')));
+  assert.ok(result.errors.some((message) => message.includes('.heat 缺失或不是对象')));
 });
 
-test('validateDir：downloadsMissing 与 index 的 hasJava 不一致会被发现', async (t) => {
+test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发现', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
-  // index 里 owner/demo hasJava=true，heat 却标成下载缺失
-  const entries = [
-    {
-      ...heatEntry('owner/demo', 1, 0.42),
-      totalDownloads: 0,
-      downloadsMissing: true,
-      effectiveWeights: { downloads: 0, stars: 0.8333, update: 0.1667 },
-    },
-  ];
-  await addHeatFixture(dir, { entries });
+  // 社区条目默认 rank=1，与官方 rank=1 重复
+  await addCommunityFixture(dir);
+  const communityPath = path.join(dir, 'community', 'index.json');
+  const community = JSON.parse(await readFile(communityPath, 'utf8'));
+  community.mods[0].heat.rank = 1;
+  await writeFile(communityPath, JSON.stringify(community, null, 2));
+  const duplicate = await validateDir(dir);
+  assert.ok(duplicate.errors.some((message) => message.includes('全局 heat.rank 重复')));
+  // 修正为 rank=2 但分数更高 → 排序不一致
+  const communityIndexPath = path.join(dir, 'community', 'index.json');
+  const communityIndex = JSON.parse(await readFile(communityIndexPath, 'utf8'));
+  communityIndex.mods[0].heat.rank = 2;
+  communityIndex.mods[0].heat.score = 0.9;
+  await writeFile(communityIndexPath, JSON.stringify(communityIndex, null, 2));
+  const summaryPath = path.join(dir, 'community', 'summary.json');
+  const summary = JSON.parse(await readFile(summaryPath, 'utf8'));
+  summary.mods[0].heatScore = 0.9;
+  summary.mods[0].heatRank = 2;
+  await writeFile(summaryPath, JSON.stringify(summary, null, 2));
+  const wrongOrder = await validateDir(dir);
+  assert.ok(wrongOrder.errors.some((message) => message.includes('heat.rank 与分数排序不一致')));
+});
+
+test('validateDir：summary 热度列与 index.heat 不一致会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  const summaryPath = path.join(dir, 'summary.json');
+  const summary = JSON.parse(await readFile(summaryPath, 'utf8'));
+  summary.mods[0].heatScore = 0.123;
+  await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const result = await validateDir(dir);
-  assert.ok(
-    result.errors.some((message) => message.includes('downloadsMissing 与 index 元数据不一致')),
-  );
+  assert.ok(result.errors.some((message) => message.includes('heatScore 与 index.heat.score 不一致')));
+});
+
+test('validateDir：旧 heat/index.json 只给废弃 warning', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await mkdir(path.join(dir, 'heat'), { recursive: true });
+  await writeFile(path.join(dir, 'heat', 'index.json'), '{}');
+  const result = await validateDir(dir);
+  assert.deepEqual(result.errors, []);
+  assert.ok(result.warnings.some((message) => message.includes('旧 heat/index.json 已废弃')));
+});
+
+test('validateDir：heat 历史快照超量会被发现', async (t) => {
+  const dir = await makeFixtureDir();
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await addHeatHistory(dir, { daily: 8 });
+  const result = await validateDir(dir);
+  assert.ok(result.errors.some((message) => message.includes('超过保留数量')));
 });

@@ -224,6 +224,121 @@
           },
           "description": {
             "type": "string"
+          },
+          "heat": {
+            "type": "object",
+            "description": "热度（官方+社区全局排名，heat 与模组列表合并）",
+            "properties": {
+              "score": {
+                "type": "number"
+              },
+              "rank": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "downloadsScore": {
+                "type": "number"
+              },
+              "starsScore": {
+                "type": "number"
+              },
+              "updateScore": {
+                "type": "number"
+              },
+              "newModMultiplier": {
+                "type": "number"
+              },
+              "penalty": {
+                "type": "number"
+              },
+              "maintenance": {
+                "type": "object",
+                "properties": {
+                  "lastReleaseAt": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "lastCommitAt": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "daysSinceRelease": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "daysSinceCommit": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "active",
+                      "low",
+                      "stale"
+                    ]
+                  }
+                },
+                "required": [
+                  "lastReleaseAt",
+                  "lastCommitAt",
+                  "daysSinceRelease",
+                  "daysSinceCommit",
+                  "status"
+                ],
+                "additionalProperties": false
+              },
+              "recommendVisible": {
+                "type": "boolean"
+              },
+              "recommendReason": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  null,
+                  "score-below-min",
+                  "stale-low-activity"
+                ]
+              },
+              "downloadChanges": {
+                "type": "object"
+              },
+              "starChanges": {
+                "type": "object"
+              },
+              "releaseUpdates": {
+                "type": "object"
+              },
+              "commits": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "score",
+              "rank",
+              "downloadsScore",
+              "starsScore",
+              "updateScore",
+              "newModMultiplier",
+              "penalty",
+              "maintenance",
+              "recommendVisible",
+              "recommendReason",
+              "downloadChanges",
+              "starChanges",
+              "releaseUpdates",
+              "commits"
+            ],
+            "additionalProperties": false
           }
         },
         "required": [
@@ -259,7 +374,8 @@
           "compatRanges",
           "releaseDataUpdatedAt",
           "source",
-          "description"
+          "description",
+          "heat"
         ],
         "additionalProperties": true
       }

@@ -50,9 +50,12 @@ import {
   HEAT_FORMAT_VERSION,
   HEAT_HISTORY_DIR,
   HEAT_INDEX_REL_PATH,
+  HEAT_RECOMMEND_CSV_REL_PATH,
+  HEAT_RECOMMEND_REL_PATH,
   HEAT_SUMMARY_REL_PATH,
   HEAT_WINDOWS,
   UPDATE_WINDOWS,
+  RECOMMEND_DEFAULTS,
   HISTORY_LIMITS,
   HEAT_SUMMARY_COLUMNS,
   buildSnapshot,
@@ -66,7 +69,12 @@ import {
   formatMonthKey,
   formatWeekKey,
   heatSummaryRow,
+  heatIndexFields,
+  heatSummaryFields,
+  injectHeatIntoIndex,
+  injectHeatIntoSummaryRows,
   latestReleasePublishedAt,
+  maintenanceStatus,
   percentileRanks,
   releaseUpdatesInWindow,
   round4,
@@ -1966,6 +1974,24 @@ async function runHeat(options, context) {
       commitState.fetchedAt,
       nowMs,
     );
+    const lastReleaseAt =
+      lastReleaseMs !== null ? new Date(lastReleaseMs).toISOString() : null;
+    const lastCommitAt =
+      daysSinceCommit !== null
+        ? new Date(nowMs - daysSinceCommit * dayMs).toISOString()
+        : null;
+    const maintenance = {
+      lastReleaseAt,
+      lastCommitAt,
+      daysSinceRelease:
+        lastReleaseMs !== null ? daysBetween(lastReleaseMs, nowMs) : null,
+      daysSinceCommit,
+      status: maintenanceStatus({
+        daysSinceRelease: lastReleaseMs !== null ? daysBetween(lastReleaseMs, nowMs) : null,
+        daysSinceCommit,
+        ageDays,
+      }),
+    };
     const downloadChanges = {};
     const starChanges = {};
     for (const window of HEAT_WINDOWS) {
@@ -1987,6 +2013,7 @@ async function runHeat(options, context) {
       totalDownloads: Number(totals?.totalDownloads) || 0,
       totalStars: Number(totals?.stars) || 0,
       hasJava: mod.hasJava === true,
+      maintenance,
       downloadChanges,
       starChanges,
       releaseUpdates: Object.fromEntries(
@@ -2020,32 +2047,108 @@ async function runHeat(options, context) {
     entry.effectiveWeights.stars = round4(entry.effectiveWeights.stars);
     entry.effectiveWeights.update = round4(entry.effectiveWeights.update);
   }
-  const heatIndex = {
-    formatVersion: HEAT_FORMAT_VERSION,
-    generatedAt: now,
-    source: {
-      official: mods.filter((mod) => mod.source === 'official').length,
-      community: mods.filter((mod) => mod.source === 'community').length,
-    },
-    mods: entries,
+  // 按 4 位小数后的展示分重新排序并编号，保证 rank 与落盘分数严格一致
+  entries.sort((left, right) => {
+    if (right.score !== left.score) {
+      return right.score - left.score;
+    }
+    return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
+  });
+  entries.forEach((entry, index) => {
+    entry.rank = index + 1;
+  });
+  // 热度不再单独落盘：注入官方/社区 index 与两份 summary，模组列表即唯一入口
+  const heatByRepo = new Map(entries.map((entry) => [entry.repo.toLowerCase(), entry]));
+  let heatChanged = false;
+  const injectGroup = async ({ indexRelPath, summaryRelPath }) => {
+    const indexPath = path.join(outDir, indexRelPath);
+    let index = null;
+    try {
+      index = await readJsonIfExists(indexPath);
+    } catch (error) {
+      log(`[警告] ${indexRelPath} 不可用，无法注入 heat：${error.message}`);
+      return;
+    }
+    if (!index || !Array.isArray(index.mods)) {
+      return;
+    }
+    const nextIndex = injectHeatIntoIndex(index, heatByRepo);
+    if (JSON.stringify(index) !== JSON.stringify(nextIndex)) {
+      await writeJsonAtomic(indexPath, nextIndex);
+      heatChanged = true;
+    }
+
+    const summaryPath = path.join(outDir, summaryRelPath);
+    const previousSummary = await readJsonIfExists(summaryPath).catch(() => null);
+    let rows = injectHeatIntoSummaryRows(
+      Array.isArray(previousSummary?.mods) ? previousSummary.mods : [],
+      heatByRepo,
+    );
+    if (rows.length !== nextIndex.mods.length) {
+      rows = nextIndex.mods.map((mod) => {
+        const heatEntry = heatByRepo.get(mod.repo?.toLowerCase());
+        return {
+          repo: mod.repo,
+          name: mod.name,
+          namePlain: mod.namePlain ?? '',
+          author: mod.author,
+          stars: mod.stars,
+          releaseCount: mod.releaseCount,
+          tagCount: mod.tagCount,
+          totalDownloads: mod.totalDownloads,
+          allAssetsDownloads: mod.allAssetsDownloads,
+          latestDownloads: mod.latestDownloads,
+          latestSizeBytes: mod.latestSizeBytes,
+          totalSizeBytes: mod.totalSizeBytes,
+          latestTag: mod.latestRelease?.tag ?? null,
+          latestPrerelease: mod.latestRelease?.prerelease ?? null,
+          latestModVersion: null,
+          latestMinGameVersion: null,
+          iconUrl: mod.iconUrl,
+          releasesPath: mod.releasesPath,
+          ...(heatEntry ? heatSummaryFields(heatEntry) : {}),
+        };
+      });
+    }
+    const summary = buildSummary({ rows, generatedAt: index.generatedAt ?? now });
+    if (summaryBodyChanged(previousSummary, summary)) {
+      await writeJsonAtomic(summaryPath, summary);
+      heatChanged = true;
+    }
+    const nextCsv = summaryCsv(summary.mods);
+    let previousCsv = null;
+    try {
+      previousCsv = await readTextIfExists(summaryPath.replace(/\.json$/, '.csv'));
+    } catch {}
+    if (previousCsv !== nextCsv) {
+      await writeTextAtomic(summaryPath.replace(/\.json$/, '.csv'), nextCsv);
+      heatChanged = true;
+    }
   };
-  const heatIndexPath = path.join(outDir, HEAT_INDEX_REL_PATH);
-  const previousHeat = await readJsonIfExists(heatIndexPath).catch(() => null);
-  const heatChanged =
-    !previousHeat || JSON.stringify(previousHeat.mods) !== JSON.stringify(entries);
-  await mkdir(path.dirname(heatIndexPath), { recursive: true });
-  if (heatChanged) {
-    await writeJsonAtomic(heatIndexPath, heatIndex);
+  await injectGroup({ indexRelPath: INDEX_FILE, summaryRelPath: 'summary.json' });
+  await injectGroup({
+    indexRelPath: path.join(COMMUNITY_DIR, 'index.json'),
+    summaryRelPath: path.join(COMMUNITY_DIR, 'summary.json'),
+  });
+  // 旧的独立热度表路径不再生成，清理遗留文件
+  for (const legacyRel of [
+    HEAT_INDEX_REL_PATH,
+    HEAT_SUMMARY_REL_PATH,
+    HEAT_RECOMMEND_REL_PATH,
+    HEAT_RECOMMEND_CSV_REL_PATH,
+  ]) {
+    const legacyPath = path.join(outDir, legacyRel);
+    try {
+      await unlink(legacyPath);
+      heatChanged = true;
+    } catch (error) {
+      if (error.code !== 'ENOENT') {
+        log(`[警告] 清理旧热度文件 ${legacyRel} 失败：${error.message}`);
+      }
+    }
   }
-  const csv = heatCsv(entries, { csvEscape });
-  const csvPath = path.join(outDir, HEAT_SUMMARY_REL_PATH);
-  let previousCsv = null;
-  try {
-    previousCsv = await readTextIfExists(csvPath);
-  } catch {}
-  if (previousCsv !== csv) {
-    await writeTextAtomic(csvPath, csv);
-  }
+  const visibleEntries = entries.filter((entry) => entry.recommend?.visible === true);
+  const hiddenCount = entries.length - visibleEntries.length;
   const historyWritten = await writeHeatHistory({
     outDir,
     mods: heatInputs.map((mod) => ({
@@ -2064,14 +2167,17 @@ async function runHeat(options, context) {
   if (createdChanged) {
     log('[heat] repo created_at 缓存已更新');
   }
+  const officialCount = mods.filter((mod) => mod.source === 'official').length;
+  const communityCount = mods.filter((mod) => mod.source === 'community').length;
   console.log(
-    `[heat] ${entries.length} 个模组（官方 ${heatIndex.source.official} / 社区 ${heatIndex.source.community}），` +
-      `top1 ${entries[0]?.repo ?? '无'}，快照写入 ${historyWritten} 个`,
+    `[heat] ${entries.length} 个模组（官方 ${officialCount} / 社区 ${communityCount}），` +
+      `只看活跃 ${visibleEntries.length} 个（隐藏 ${hiddenCount} 个），top1 ${entries[0]?.repo ?? '无'}，快照写入 ${historyWritten} 个`,
   );
   return {
     code: 0,
     changed: heatChanged,
     modCount: entries.length,
+    recommendCount: visibleEntries.length,
     historyWritten,
     commitsFetched: commitChanged,
     createdFetched: createdChanged,

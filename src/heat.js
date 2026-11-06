@@ -13,8 +13,19 @@ export const TOTAL_WEIGHT = 0.6;
 export const CHANGE_WEIGHT = 0.4;
 export const STOCK_MAG_WEIGHT = 0.8;
 export const STOCK_PERCENTILE_WEIGHT = 0.2;
-export const STOCK_DROP_RATIO = 1e-4;
 export const COMPONENT_WEIGHTS = { downloads: 0.4, stars: 0.5, update: 0.1 };
+export const MAINTENANCE_ACTIVE_DAYS = 180;
+export const MAINTENANCE_STALE_DAYS = 360;
+// 推荐过滤阈值（集中配置；测试/调用方可通过参数覆盖）
+export const RECOMMEND_DEFAULTS = {
+  minScore: 0,
+  staleMaxDownloads: 0,
+  staleMaxStars: 20,
+};
+export const RECOMMEND_HIDDEN_REASONS = ['score-below-min', 'stale-low-activity'];
+export const MAINTENANCE_STATUSES = ['active', 'low', 'stale'];
+export const HEAT_RECOMMEND_REL_PATH = 'heat/recommend.json';
+export const HEAT_RECOMMEND_CSV_REL_PATH = 'heat/recommend.csv';
 export const NEW_MOD_DAYS = 180;
 export const NEW_MOD_MAX_MULTIPLIER = 1.325;
 export const NEW_MOD_DECAY_DAYS = 30;
@@ -88,7 +99,7 @@ export function newModMultiplier(ageDays) {
   return 1 + (NEW_MOD_MAX_MULTIPLIER - 1) * Math.exp(-effectiveAge / NEW_MOD_DECAY_DAYS);
 }
 
-// 存量分数：占全量百分比为主 + sqrt 柔化 + 少量百分位；占比小到可忽略直接抹除
+// 存量分数：占全量百分比为主 + sqrt 柔化 + 少量百分位；不硬抹除，share 小则 mag 自然接近 0
 export function stockScores(values) {
   const numbers = values.map((value) => (Number.isFinite(Number(value)) ? Math.max(0, Number(value)) : 0));
   const total = numbers.reduce((sum, value) => sum + value, 0);
@@ -96,7 +107,7 @@ export function stockScores(values) {
   const maxShare = shares.reduce((max, value) => (value > max ? value : max), 0);
   const percentiles = percentileRanks(numbers.map((value) => Math.log1p(value)));
   const mags = shares.map((share) => {
-    if (maxShare <= 0 || share < maxShare * STOCK_DROP_RATIO) {
+    if (maxShare <= 0 || share <= 0) {
       return 0;
     }
     return Math.sqrt(Math.min(1, share / maxShare));
@@ -106,6 +117,105 @@ export function stockScores(values) {
       STOCK_MAG_WEIGHT * mag + STOCK_PERCENTILE_WEIGHT * percentiles[index],
   );
   return { total, shares, maxShare, mags, percentiles, scores };
+}
+
+// 维护状态：min(最近 release 天数, 最近提交天数) ≤180 active；≤360 low；否则 stale。
+// 缺失的 days 用 ageDays 兜底（视为从创建起没有活动）。
+export function maintenanceStatus({ daysSinceRelease, daysSinceCommit, ageDays = null }) {
+  const fallback = Number.isFinite(ageDays) ? ageDays : Infinity;
+  const releaseDays = Number.isFinite(daysSinceRelease) ? daysSinceRelease : fallback;
+  const commitDays = Number.isFinite(daysSinceCommit) ? daysSinceCommit : fallback;
+  const recent = Math.min(releaseDays, commitDays);
+  if (!Number.isFinite(recent)) {
+    return 'stale';
+  }
+  if (recent <= MAINTENANCE_ACTIVE_DAYS) {
+    return 'active';
+  }
+  if (recent <= MAINTENANCE_STALE_DAYS) {
+    return 'low';
+  }
+  return 'stale';
+}
+
+// 推荐过滤：默认 score<0 或（stale 且无下载且星标<20）隐藏；阈值可通过 overrides 覆盖
+export function recommendationFor(entry, overrides = {}) {
+  const options = { ...RECOMMEND_DEFAULTS, ...overrides };
+  if (Number(entry?.score) < options.minScore) {
+    return { visible: false, reason: 'score-below-min' };
+  }
+  if (
+    entry?.maintenance?.status === 'stale' &&
+    (Number(entry?.totalDownloads) || 0) <= options.staleMaxDownloads &&
+    (Number(entry?.totalStars) || 0) < options.staleMaxStars
+  ) {
+    return { visible: false, reason: 'stale-low-activity' };
+  }
+  return { visible: true, reason: null };
+}
+
+// 注入 index 条目的 heat 对象（热度与模组列表合并后的唯一入口）
+export function heatIndexFields(entry) {
+  return {
+    score: entry.score,
+    rank: entry.rank,
+    downloadsScore: entry.downloadsScore,
+    starsScore: entry.starsScore,
+    updateScore: entry.updateScore,
+    newModMultiplier: entry.newModMultiplier,
+    penalty: entry.penalty,
+    maintenance: {
+      lastReleaseAt: entry.maintenance?.lastReleaseAt ?? null,
+      lastCommitAt: entry.maintenance?.lastCommitAt ?? null,
+      daysSinceRelease: entry.maintenance?.daysSinceRelease ?? null,
+      daysSinceCommit: entry.maintenance?.daysSinceCommit ?? null,
+      status: entry.maintenance?.status ?? 'stale',
+    },
+    recommendVisible: entry.recommend?.visible === true,
+    recommendReason: entry.recommend?.reason ?? null,
+    downloadChanges: entry.downloadChanges,
+    starChanges: entry.starChanges,
+    releaseUpdates: entry.releaseUpdates,
+    commits: entry.commits,
+  };
+}
+
+// summary 总表里的 4 个热度列
+export function heatSummaryFields(entry) {
+  return {
+    heatScore: entry.score,
+    heatRank: entry.rank,
+    maintenanceStatus: entry.maintenance?.status ?? null,
+    recommendVisible: entry.recommend?.visible === true,
+  };
+}
+
+// 把 heat 注入 index.mods（heatByRepo: Map<lowercase repo, entry>）
+export function injectHeatIntoIndex(index, heatByRepo) {
+  if (!index || !Array.isArray(index.mods)) {
+    return index;
+  }
+  return {
+    ...index,
+    mods: index.mods.map((mod) => {
+      const heatEntry = heatByRepo.get(mod.repo?.toLowerCase());
+      if (!heatEntry) {
+        return mod;
+      }
+      return { ...mod, heat: heatIndexFields(heatEntry) };
+    }),
+  };
+}
+
+// 把热度列注入 summary 行（保留原有行字段）
+export function injectHeatIntoSummaryRows(rows, heatByRepo) {
+  if (!Array.isArray(rows)) {
+    return rows;
+  }
+  return rows.map((row) => {
+    const heatEntry = heatByRepo.get(row.repo?.toLowerCase());
+    return heatEntry ? { ...row, ...heatSummaryFields(heatEntry) } : row;
+  });
 }
 
 export function normalizeByMax(values) {
@@ -270,7 +380,7 @@ function windowPercentile(values, rawValues) {
 // v2 归一化 + 组件 + 总分/排名
 // mods: [{repo, namePlain, source, totalDownloads, totalStars, downloadChanges, starChanges,
 //         releaseUpdates(7/30/90/180), commits(7/30/90/180), ageDays, daysSinceRelease, daysSinceCommit}]
-export function computeHeat(mods) {
+export function computeHeat(mods, { recommendOptions = {} } = {}) {
   const count = mods.length;
   const downloadStock = stockScores(mods.map((mod) => mod.totalDownloads));
   const starStock = stockScores(mods.map((mod) => mod.totalStars));
@@ -340,7 +450,7 @@ export function computeHeat(mods) {
           updateScore * COMPONENT_WEIGHTS.update) *
           multiplier -
         penalty * PENALTY_WEIGHT;
-    return {
+    const entry = {
       repo: mod.repo,
       namePlain: mod.namePlain ?? '',
       source: mod.source,
@@ -381,9 +491,23 @@ export function computeHeat(mods) {
       updateScore,
       newModMultiplier: multiplier,
       penalty,
+      maintenance:
+        mod.maintenance ?? {
+          lastReleaseAt: null,
+          lastCommitAt: null,
+          daysSinceRelease: mod.daysSinceRelease ?? null,
+          daysSinceCommit: mod.daysSinceCommit ?? null,
+          status: maintenanceStatus({
+            daysSinceRelease: mod.daysSinceRelease ?? null,
+            daysSinceCommit: mod.daysSinceCommit ?? null,
+            ageDays: mod.ageDays ?? null,
+          }),
+        },
       score,
       rank: null,
     };
+    entry.recommend = recommendationFor(entry, recommendOptions);
+    return entry;
   });
 
   const sorted = [...entries].sort((left, right) => {

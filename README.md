@@ -47,13 +47,15 @@ mindustry/java-gate.json                # Java 模组门禁（rules + 逐版本 
 mindustry/heartbeat.json                # 每日心跳，仅用于保持仓库活跃（见下）
 status.json                             # 每次运行后的健康状态（各数据集/API/validate 摘要）
 changes.json                            # 滚动变更流（最近 500 条 mod/release/tag 变化）
-heat/index.json                         # 热度表（官方+社区全量：多窗口指标/组件/倍率/惩罚/score/rank）
-heat/summary.csv                        # 热度表扁平 CSV（UTF-8 BOM）
 heat/history/{daily,weekly,monthly}/    # 下载/星标历史快照（daily 保留 7、weekly/monthly 各 6）
 state/heat-commit-stats.json            # participation 52 周提交统计缓存（每周刷新）
 state/repo-created.json                 # 仓库 created_at 永久缓存（新 mod 年龄用）
 schema/*.json                           # 各数据文件的 JSON Schema（draft 2020-12，见 docs/schema.md）
 ```
+
+热度（`score`/`rank`/维护状态/只看活跃）已**合并进模组列表**：`index.json`、`community/index.json`
+每个条目带 `heat` 对象，`summary.json/csv` 带 `heatScore`/`heatRank`/`maintenanceStatus`/
+`recommendVisible` 列；旧的独立 `heat/index.json`、`heat/summary.csv` 不再生成（见下文「热度与模组列表」）。
 
 per-mod 文件当前 `formatVersion` 为 **2**（schemaVersion）：v1 缺少 `compat`/`meta`/`commitSha`
 等字段；运行时读到 v1 会用缓存数据本地重算并写回（不额外发 API），也可以先跑一次
@@ -79,8 +81,9 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/status.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/changes.json`
 - `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/schema/index.json`
-- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/heat/index.json`
-- `https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/heat/summary.csv`
+
+> 热度已合并进 `index.json` / `community/index.json` / `summary.json|csv`，旧路径
+> `heat/index.json`、`heat/summary.csv` 不再生成；历史快照仍在 `heat/history/`。
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
@@ -202,13 +205,21 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   （`[red]`、`[#00ff00]`、`[]` 等）、换行与多余空白；普通英文方括号（如 `[Mod]`）不会被误删。
   `summary.json/csv` 增加 `namePlain` 列（紧跟 `name`）便于搜索。
 
-## 热度表（heat/）
+## 热度与模组列表（已合并）
 
-`heat/index.json` 对官方+社区**全量**模组计算热度（v2 公式），字段与算法：
+热度对官方+社区**全量**模组计算，**不单独出表**：结果注入
+`index.json` / `community/index.json` 的每个条目 `heat` 对象，并同步到
+`summary.json/csv` 的 `heatScore`/`heatRank`/`maintenanceStatus`/`recommendVisible` 列。
+`heat` 的 `rank` 是官方+社区合并后的**全局**名次；排序仍按 `heatScore` 降序。旧路径
+`heat/index.json`、`heat/summary.csv` 不再生成（历史快照 `heat/history/` 保留）。
 
-- **存量分（总下载、总星标各一套）**：`share = value / Σ同指标`；`share < maxShare×1e-4` 直接记 0（小到可忽略）；
-  `mag = sqrt(min(1, share/maxShare))`；`stockScore = 0.8×mag + 0.2×百分位(value)`。占比为主、sqrt 柔化，
-  百分位只做少量修正（避免纯百分位让存量末端没有差距）。
+`heat` 字段：`score`、`rank`、`downloadsScore`、`starsScore`、`updateScore`、`newModMultiplier`、
+`penalty`、`maintenance`、`recommendVisible`、`recommendReason`，以及 1d/7d/30d/180d 的
+`downloadChanges`/`starChanges` 与 7d/30d/90d/180d 的 `releaseUpdates`/`commits` 原始窗口值。
+
+- **存量分（总下载、总星标各一套）**：`share = value / Σ同指标`；`mag = sqrt(min(1, share/maxShare))`；
+  `stockScore = 0.8×mag + 0.2×百分位(value)`。占比为主、sqrt 柔化，百分位只做少量修正。
+  **不再硬抹除**：占比很小的模组 `mag` 自然接近 0，但不会被强制归零；原始值为 0 的仍为 0。
 - **变化分**：每个窗口（1d/7d/30d/180d）先 signed log1p 再跨全量百分位；**窗口全 0 时该窗口记 0**
   （不再白拿平均名次）。窗口权重：下载变化 `.45/.30/.20/.05`、星标变化 `.20/.45/.30/.05`；
   `下载量 = 0.6×存量分(下载) + 0.4×下载变化分`；`星标量 = 0.6×存量分(星标) + 0.4×星标变化分`。
@@ -216,21 +227,27 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   提交活动同理（participation 聚合到 7/30/90/180 天），各自按全量最大值归一化到 0~1；
   `更新量 = 0.7×release 活动 + 0.3×提交活动`。少量提交拿较多分，大量提交每个后续提交收益更小。
 - `总分 = (下载量×0.40 + 星标量×0.50 + 更新量×0.10) × 新mod倍率 − 长期未更新惩罚×0.3`。
-  **分数不裁剪**，可 >1 或 <0，输出保留 4 位小数；`rank` 按分数降序唯一排名（同分 repo 升序）。
+  **分数不裁剪**，可 >1 或 <0，保留 4 位小数；`rank` 按展示分降序唯一排名（同分 repo 升序）。
 - **新 mod 倍率**：180 天内 `1 + 0.325×exp(-age/30)`（30d≈1.12、60d≈1.04、90d≈1.016，之后 clamp 1）；
   年龄优先取 `created_at`（缓存 `state/repo-created.json`，一次抓取永久复用），拿不到用最早 release 时间。
 - **非 Java 且没有 release 资产下载量**（`hasJava === false && totalDownloads === 0`，即 JSON/JS 走 main
   分支、没有可统计资产）的模组：下载项视为**缺失**而不是 0 分——移除下载 0.40 权重，剩余
-  `(星标×0.5 + 更新×0.1) / 0.6` 按比例重归一，再乘倍率并扣惩罚；条目写 `downloadsMissing: true` 与
-  `effectiveWeights {downloads:0, stars:0.8333, update:0.1667}`。Java 模组不受此规则影响（无下载数据仍按
-  正常权重、下载 0 分）。下载原始字段与组件分保留，便于核对。
+  `(星标×0.5 + 更新×0.1) / 0.6` 按比例重归一，再乘倍率并扣惩罚。Java 模组不受此规则影响
+  （无下载数据仍按正常权重、下载 0 分）。
 - **长期未更新惩罚**：超过 360 天未 release / 无提交各按 `1-exp(-overrun/180)` 饱和，按 `7:3` 合成（0~1），
   总分中再乘 `0.3` 扣减。
+- **维护状态 `maintenance`**：`lastReleaseAt`/`lastCommitAt`（ISO 或 null）、
+  `daysSinceRelease`/`daysSinceCommit`（天或 null）、`status`：≤180 天有 release 或提交 = `active`；
+  180~360 天 = `low`；>360 天且无 release/提交 = `stale`（缺失活动用仓库年龄兜底）。
+- **只看活跃（`recommendVisible`）**：Copper 启动器的过滤开关。默认隐藏两类：
+  `score < 0`（`recommendReason: "score-below-min"`）或
+  `maintenance.status === "stale" && totalDownloads === 0 && totalStars < 20`
+  （`recommendReason: "stale-low-activity"`）；其余 `recommendVisible: true`、reason 为 `null`。
+  阈值集中在 `src/heat.js` 的 `RECOMMEND_DEFAULTS`（`minScore`/`staleMaxDownloads`/`staleMaxStars`），
+  可调；启动器侧直接按 `recommendVisible` 过滤即可，不需要第二套过滤数据。
 - **提交数**：`GET /repos/{repo}/stats/participation`（52 周），每周刷新一次缓存到
   `state/heat-commit-stats.json`（官方+社区约 1500 次/周；配额不足沿用旧缓存，下次续抓）；
   按周粒度近似聚合到 7/30/90/180 天窗口。
-- `heat/index.json` 每条保留各窗口原始值，并新增 `stockShare`/`stockMag`/`stockScore`（下载/星标各一份）、
-  `releaseActivityRaw`/`commitActivityRaw`、`releaseActivity`/`commitActivity`，便于核对公式。
 - **历史快照**：`heat/history/daily/YYYY-MM-DD.json`、`weekly/YYYY-Www.json`、`monthly/YYYY-MM.json`，
   每份只存 `{formatVersion, generatedAt, mods:{repo:{stars,totalDownloads}}}`；保留 daily 7 / weekly 6 /
   monthly 6 份，超出删除。快照从上线后开始积累，1d 变化下一轮可用，7d/30d/180d 需等对应历史积累（缺失按 0）。
@@ -268,7 +285,7 @@ npm run validate -- --dir .           # 校验产物
 node src/main.js --datasets mods --out .                 # 全量更新模组索引（需要 GITHUB_TOKEN）
 node src/main.js --datasets mods,community --out .       # 官方 + 社区（社区需要搜索配额）
 node src/main.js --datasets versions,gate --out .        # 更新版本列表与门禁
-node src/main.js --datasets heat --out .                  # 单独重算热度表
+node src/main.js --datasets heat --out .                  # 重算热度并注入 index/summary
 node src/main.js --migrate --out .                        # 本地 schemaVersion 1→2 迁移（0 API）
 ```
 

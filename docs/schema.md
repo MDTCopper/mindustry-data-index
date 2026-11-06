@@ -647,71 +647,55 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 本仓全部数据文件的 JSON Schema（draft 2020-12），文件名对应数据文件：`index.json`、`releases.json`、
 `community-index.json`、`community-releases.json`、`summary.json`、`community-summary.json`、
 `versions.json`、`mod-gate.json`、`java-gate.json`、`refresh-state.json`、`community-refresh-state.json`、
-`blacklist-state.json`、`status.json`、`changes.json`、`heat-index.json`、`heat-history.json`、
-`heat-commit-state.json`、`repo-created.json`。`releases.json` 的 `formatVersion` 固定 `2`。
+`blacklist-state.json`、`status.json`、`changes.json`、`heat-history.json`、
+`heat-commit-state.json`、`repo-created.json`。`releases.json` 的 `formatVersion` 固定 `2`；
+`heat` 已并入 index / summary，不再有 `heat-index.json` schema。
 
-## heat/（热度表）
+## heat（已合并进模组列表）
 
-### heat/index.json
-
-官方+社区全量模组的热度明细（v2）。下载/星标变化窗口键为 `"1"/"7"/"30"/"180"`，
-release/提交活动窗口键为 `"7"/"30"/"90"/"180"`：
+热度不再单独输出 `heat/index.json` / `heat/summary.csv`（旧路径已废弃、不再生成）。
+每个官方/社区 index 条目带 `heat` 对象，`summary.json/csv` 带 `heatScore`/`heatRank`/
+`maintenanceStatus`/`recommendVisible` 列。`heat.rank` 是官方+社区合并后的全局名次。
 
 ```json
-{
-  "formatVersion": 1,
-  "generatedAt": "2026-11-06T12:00:00.000Z",
-  "source": { "official": 993, "community": 456 },
-  "mods": [
-    {
-      "repo": "owner/mod",
-      "namePlain": "Mod",
-      "source": "official",
-      "totalDownloads": 12345,
-      "totalStars": 67,
-      "stockShare": { "downloads": 0.0213, "stars": 0.0042 },
-      "stockMag": { "downloads": 0.732, "stars": 0.41 },
-      "stockScore": { "downloads": 0.61, "stars": 0.45 },
-      "downloadsMissing": false,
-      "effectiveWeights": { "downloads": 0.4, "stars": 0.5, "update": 0.1 },
-      "downloadChanges": { "1": 0, "7": 3, "30": 10, "180": 120 },
-      "starChanges": { "1": 0, "7": 1, "30": 2, "180": 9 },
-      "releaseUpdates": { "7": 1, "30": 2, "90": 4, "180": 6 },
-      "commits": { "7": 1, "30": 4, "90": 12, "180": 22 },
-      "releaseActivityRaw": 0.81,
-      "commitActivityRaw": 1.42,
-      "releaseActivity": 0.7,
-      "commitActivity": 0.9,
-      "downloadsScore": 0.5234,
-      "starsScore": 0.6012,
-      "updateScore": 0.4001,
-      "newModMultiplier": 1.1523,
-      "penalty": 0.0521,
-      "score": 0.7123,
-      "rank": 1
-    }
-  ]
+"heat": {
+  "score": 0.3976,
+  "rank": 4,
+  "downloadsScore": 0.0354,
+  "starsScore": 0.433,
+  "updateScore": 0.2206,
+  "newModMultiplier": 1,
+  "penalty": 0,
+  "maintenance": {
+    "lastReleaseAt": "2026-09-14T14:19:11.000Z",
+    "lastCommitAt": "2026-10-09T14:02:23.828Z",
+    "daysSinceRelease": 53.06,
+    "daysSinceCommit": 28.07,
+    "status": "active"
+  },
+  "recommendVisible": true,
+  "recommendReason": null,
+  "downloadChanges": { "1": 0, "7": 0, "30": 0, "180": 0 },
+  "starChanges": { "1": 0, "7": 0, "30": 0, "180": 0 },
+  "releaseUpdates": { "7": 0, "30": 0, "90": 1, "180": 4 },
+  "commits": { "7": 0, "30": 3.3, "90": 44.2, "180": 89.5 }
 }
 ```
 
-- 存量占比/柔化、窗口权重、活动递减收益、新 mod 倍率与惩罚见 README「热度表」；`score` 不裁剪，可 >1 或 <0。
-- `stockShare` 之和≈1（validator 会校验，全量全 0 时允许 0）；`rank` 为 1..N 唯一排名
-  （分数降序、同分按 repo 升序）；`commits` 是 participation 周粒度的近似值。
-- repo 集合必须与 `index.json` + `community/index.json` 的并集一致。
-- `downloadsMissing`：当对应 index/community 条目 `hasJava === false` 且 `totalDownloads === 0` 时为 `true`
-  （非 Java、没有 release 资产下载量），此时下载项视为缺失：`effectiveWeights` 为
-  `{downloads:0, stars:0.8333, update:0.1667}`（剩余 0.5/0.1 按 /0.6 重归一），
-  总分 = `(starsScore×0.5 + updateScore×0.1)/0.6×倍率 − 惩罚×0.3`；Java 模组即使无下载数据
-  也保持 `downloadsMissing:false` 与正常权重。validator 会与 index 元数据交叉校验该标记。
-
-### heat/summary.csv
-
-`heat/index.json` 的扁平表，列顺序固定：`repo,namePlain,source,totalDownloads,totalStars,`
-`stockShare{Downloads,Stars},stockMag{Downloads,Stars},downloads|stars × 1d/7d/30d/180d,`
-`releaseUpdates|commits × 7d/30d/90d/180d,releaseActivityRaw,commitActivityRaw,releaseActivity,commitActivity,`
-`downloadsScore,starsScore,updateScore,newModMultiplier,penalty,score,rank`；UTF-8 BOM + CRLF。
+- 下载/星标变化窗口键为 `"1"/"7"/"30"/"180"`，release/提交活动窗口键为 `"7"/"30"/"90"/"180"`；
+  `commits` 是 participation 周粒度的近似值。存量/变化/活动/倍率/惩罚公式见 README「热度与模组列表」。
+- `maintenance.status`：`active`（≤180 天有 release 或提交）、`low`（180~360 天）、`stale`（>360 天无活动）。
+- `recommendVisible` + `recommendReason`：Copper 启动器「只看活跃」开关用；默认隐藏 `score<0`
+  （`score-below-min`）或 stale 且无下载且星标<20（`stale-low-activity`），阈值集中在
+  `src/heat.js` 的 `RECOMMEND_DEFAULTS`。
+- validator 会校验全局 `heat.rank` 1..N 唯一且与分数降序一致、summary 热度列与 index 一致；
+  旧的 `heat/index.json` 若仍存在只给废弃警告。
 
 ### heat/history/{daily,weekly,monthly}/
+
+每份快照：`{formatVersion:1, generatedAt, mods:{repo:{stars,totalDownloads}}}`。
+文件名分别为 `YYYY-MM-DD.json` / `YYYY-Www.json` / `YYYY-MM.json`；保留 daily 7、weekly 6、monthly 6 份，
+超出由更新流程删除。早期窗口缺失时热度变化按 0。
 
 每份快照：`{formatVersion:1, generatedAt, mods:{repo:{stars,totalDownloads}}}`。
 文件名分别为 `YYYY-MM-DD.json` / `YYYY-Www.json` / `YYYY-MM.json`；保留 daily 7、weekly 6、monthly 6 份，
