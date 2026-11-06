@@ -30,6 +30,10 @@ jobs:
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
+        with:
+          # 取最新默认分支而不是 event SHA：两个 update workflow 共用 concurrency 串行，
+          # 后跑者要能看到先跑者刚推送的提交（含 status.json/versions 等），避免 rebase 冲突
+          ref: main
 
       - name: 安装 Node.js
         uses: actions/setup-node@v4

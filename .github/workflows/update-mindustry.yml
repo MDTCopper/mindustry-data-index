@@ -29,6 +29,10 @@ jobs:
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
+        with:
+          # 取最新默认分支而不是 event SHA：两个 update workflow 共用 concurrency 串行，
+          # 后跑者要能看到先跑者刚推送的提交，避免 pull --rebase 时相对旧基线冲突
+          ref: main
 
       - name: 安装 Node.js
         uses: actions/setup-node@v4
@@ -51,7 +55,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A mindustry 2>/dev/null || true
-          git add status.json 2>/dev/null || true
+          # status.json 只由 update-mods 统一提交（本 workflow 也会写 status，但不提交，避免两个
+          # workflow 都改同一个文件导致 rebase 冲突）
           data_changed=0
           if ! git diff --cached --quiet; then
             data_changed=1
