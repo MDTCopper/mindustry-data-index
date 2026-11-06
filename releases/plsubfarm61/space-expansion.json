@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "repo": "plsubfarm61/space-expansion",
-  "generatedAt": "2026-11-06T08:50:43.533Z",
+  "generatedAt": "2026-11-06T10:21:20.131Z",
   "releases": [
     {
       "tag": "black-hole-test",
@@ -15,7 +15,8 @@
       "metadataStatus": "ok",
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/black-hole-test.zip",
       "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/black-hole-test.zip",
-      "assets": []
+      "assets": [],
+      "hasRelease": true
     },
     {
       "tag": "base",
@@ -29,6 +30,37 @@
       "metadataStatus": "missing",
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/base.zip",
       "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/base.zip",
+      "assets": [],
+      "hasRelease": true
+    },
+    {
+      "tag": "test",
+      "name": "test",
+      "hasRelease": false,
+      "prerelease": null,
+      "publishedAt": null,
+      "htmlUrl": "https://github.com/plsubfarm61/space-expansion/tree/test",
+      "modVersion": "0.01",
+      "minGameVersion": "146",
+      "metadataPath": "mod.hjson",
+      "metadataStatus": "ok",
+      "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/test.zip",
+      "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/test.zip",
+      "assets": []
+    },
+    {
+      "tag": "mindustry-mod",
+      "name": "mindustry-mod",
+      "hasRelease": false,
+      "prerelease": null,
+      "publishedAt": null,
+      "htmlUrl": "https://github.com/plsubfarm61/space-expansion/tree/mindustry-mod",
+      "modVersion": null,
+      "minGameVersion": null,
+      "metadataPath": null,
+      "metadataStatus": "missing",
+      "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/mindustry-mod.zip",
+      "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/mindustry-mod.zip",
       "assets": []
     }
   ]
