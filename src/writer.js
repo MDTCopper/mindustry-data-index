@@ -48,6 +48,19 @@ export function releaseFileBodyChanged(previous, next) {
   return JSON.stringify(previous.releases) !== JSON.stringify(next.releases);
 }
 
+// index.json 同理：generatedAt 每次都变，比较其余数据主体，没变化就不写
+export function indexBodyChanged(previous, next) {
+  if (!previous) {
+    return true;
+  }
+  for (const field of ['formatVersion', 'source', 'mods', 'skipped']) {
+    if (JSON.stringify(previous[field]) !== JSON.stringify(next[field])) {
+      return true;
+    }
+  }
+  return false;
+}
+
 export async function listReleaseFiles(outDir) {
   let entries;
   try {

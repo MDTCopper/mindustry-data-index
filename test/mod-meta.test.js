@@ -110,6 +110,21 @@ test('宽松修复只动普通引号字符串里的换行', () => {
   assert.equal(repairQuotedNewlines(escaped), escaped);
 });
 
+test('严格解析与宽松修复都失败时用正则兜底捞 version / minGameVersion', () => {
+  assert.deepEqual(parseModMetadata('{{{\nversion: "1.2.3"\nminGameVersion: 146\n}'), {
+    modVersion: '1.2.3',
+    minGameVersion: '146',
+  });
+  assert.deepEqual(parseModMetadata('{{{\nversion: 2.0\n'), {
+    modVersion: '2.0',
+    minGameVersion: null,
+  });
+  assert.deepEqual(parseModMetadata('{{{\nminGameVersion: "157.1，"\n'), {
+    modVersion: null,
+    minGameVersion: '157.1，',
+  });
+});
+
 test('fetchModMetadata：hasJava 命中 assets/mod.json', async () => {
   const client = fakeRawClient({
     'assets/mod.json': JSON.stringify({ version: '3.0', minGameVersion: 160 }),
@@ -123,8 +138,10 @@ test('fetchModMetadata：hasJava 命中 assets/mod.json', async () => {
   assert.equal(result.metadataPath, 'assets/mod.json');
   assert.equal(result.modVersion, '3.0');
   assert.equal(result.minGameVersion, '160');
-  assert.equal(client.calls.length, 4);
+  // tag 带空格时先试编码形态、再试原样形态：4 个候选路径里前 3 个各 2 次，第 4 个第 1 次命中
+  assert.equal(client.calls.length, 7);
   assert.match(client.calls[0], /v1%20beta\/mod\.hjson$/);
+  assert.match(client.calls[1], /v1 beta\/mod\.hjson$/);
 });
 
 test('fetchModMetadata：非 Java 直接命中 mod.json 并立即停止', async () => {

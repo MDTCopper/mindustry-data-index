@@ -1,7 +1,7 @@
 // GitHub / raw 的 HTTP 层：token、超时、重试、限流等待、ETag、并发池
 
 export const API_HOST = 'api.github.com';
-const DEFAULT_USER_AGENT = 'mindustry-mods-index';
+const DEFAULT_USER_AGENT = 'mindustry-data-index';
 const DEFAULT_TIMEOUT_MS = 30_000;
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_MAX_RATE_WAIT_MS = 15 * 60 * 1000;

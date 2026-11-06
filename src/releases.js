@@ -14,10 +14,25 @@ export function sourceArchiveUrl(repo, tag) {
   return `https://github.com/${assertRepo(repo)}/archive/refs/tags/${encodeURIComponent(tag)}.zip`;
 }
 
-// raw 文件地址：tag 要转义但保留 `/`（tag 里可能带斜杠）
+// raw 文件地址：优先整个 tag 走 encodeURIComponent（CJK、+、/ 都实测可取）；
+// tag 含特殊字符时再准备「原样 tag」与 refs/tags 两种回退，见 rawFileUrlVariants
 export function rawFileUrl(repo, tag, filePath) {
-  const ref = encodeURIComponent(tag).replace(/%2F/gi, '/');
+  const ref = encodeURIComponent(tag);
   return `https://raw.githubusercontent.com/${assertRepo(repo)}/${ref}/${filePath}`;
+}
+
+export function rawFileUrlVariants(repo, tag, filePath) {
+  const base = `https://raw.githubusercontent.com/${assertRepo(repo)}`;
+  const encoded = encodeURIComponent(tag);
+  const urls = [`${base}/${encoded}/${filePath}`];
+  if (encoded !== tag) {
+    urls.push(`${base}/${tag}/${filePath}`);
+  }
+  // 特殊 tag 才需要 refs/tags 兜底，普通 tag 不额外增加请求
+  if (/[^\x20-\x7e]|[/+#?]/.test(tag)) {
+    urls.push(`${base}/refs/tags/${encoded}/${filePath}`);
+  }
+  return [...new Set(urls)];
 }
 
 // 启动器口径：hasJava 取 jar、否则取 zip，多个按体积取最大；都没有就回落源码归档

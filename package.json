@@ -1,15 +1,17 @@
 {
-  "name": "mindustry-mods-index",
+  "name": "mindustry-data-index",
   "version": "1.0.0",
   "private": true,
-  "description": "Mindustry 官方模组列表的补充索引：全部 release tag、预发布标识、模组与最低游戏版本、下载链接",
+  "description": "Mindustry 可自动化数据索引：官方模组列表补充（全部 release）、Mindustry 可用版本列表、最小模组版本门禁",
   "type": "module",
   "engines": {
     "node": ">=24"
   },
   "scripts": {
     "start": "node src/main.js",
-    "update": "node src/main.js --out .",
+    "update": "node src/main.js --datasets mods --out .",
+    "update:mods": "node src/main.js --datasets mods --out .",
+    "update:mindustry": "node src/main.js --datasets versions,gate --out .",
     "validate": "node src/validate.js",
     "test": "node --test"
   },

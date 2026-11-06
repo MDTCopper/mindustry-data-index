@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// CLI 入口：官方 mods.json → 增量抓 release 与 mod 元数据 → 写 index.json 与 releases/*.json
+// CLI 入口：按 --datasets 更新模组索引、Mindustry 可用版本列表、最小版本门禁
 
 import path from 'node:path';
 import process from 'node:process';
 import { pathToFileURL } from 'node:url';
+import { readFile } from 'node:fs/promises';
 import { HttpClient, HttpError, RateLimitError, createPool } from './github.js';
-import { MODS_URL, fetchModsJson } from './mods-source.js';
+import { MODS_URL, fetchModsJson, modIconUrl } from './mods-source.js';
 import {
   fetchReleases,
   normalizeReleases,
@@ -18,23 +19,53 @@ import {
   readJsonIfExists,
   writeJsonAtomic,
   releaseFileBodyChanged,
+  indexBodyChanged,
   ensureReleasesDir,
   listReleaseFiles,
   deleteReleaseFile,
   INDEX_FILE,
 } from './writer.js';
+import {
+  VERSIONS_REL_PATH,
+  buildVersionsFile,
+  versionsBodyChanged,
+  fetchAllVersions,
+  fetchLatestBe,
+  fetchVersionsIncremental,
+  trimRelease,
+} from './versions.js';
+import {
+  GATE_REL_PATH,
+  GATE_BASELINE_URL,
+  GATE_SOURCE_CONSTANT_SINCE,
+  BUILTIN_GATE_RULES,
+  baselineLookup,
+  buildGateFile,
+  gateBodyChanged,
+  gateStartVersion,
+  mergeGateRules,
+  normalizeBaselineRules,
+  parseBaselineText,
+  regularVersions,
+  resolveVersionGate,
+} from './mod-gate.js';
+
+const DATASETS = ['mods', 'versions', 'gate'];
 
 const USAGE = `用法：node src/main.js [选项]
 
 选项：
+  --datasets <列表>   要更新的数据集，逗号分隔：mods,versions,gate，默认 mods
   --out <目录>        产物目录，默认 .
   --token <token>     GitHub token，默认读环境变量 GITHUB_TOKEN
-  --repos a/b,c/d     只跑指定仓库（本地验证用；此模式不清理其它文件，index 只含这些条目）
-  --limit <n>         最多处理 n 个模组（官方列表顺序）
+  --repos a/b,c/d     只跑指定仓库（仅 mods 数据集，本地验证用）
+  --limit <n>         最多处理 n 个模组（仅 mods 数据集）
   --threads <n>       同时处理的仓库数，默认 8
   --raw-threads <n>   raw.githubusercontent 并发数，默认 16
+  --versions-pages <n>  只抓 Mindustry 版本列表前 n 页（仅本地验证，正式运行不要用）
+  --versions-file <路径> 门禁用本地版本快照当输入（如启动器 remote/mindustry_versions.json）
   --no-cache          忽略旧产物，全量重抓（不使用 ETag、不复用旧数据）
-  --keep-missing-files  不删除官方列表中已消失模组的 releases/*.json
+  --keep-missing-files  不删除官方列表中已消失模组的 releases/*.json（仅 mods）
   --dry-run           只抓取与计算，不写任何文件
   --verbose           输出增量细节
   --help              显示本帮助`;
@@ -50,12 +81,15 @@ function requirePositiveInt(name, value) {
 
 export function parseArgs(argv) {
   const options = {
+    datasets: ['mods'],
     out: '.',
     token: process.env.GITHUB_TOKEN || null,
     repos: null,
     limit: null,
     threads: 8,
     rawThreads: 16,
+    versionsPages: null,
+    versionsFile: null,
     cache: true,
     keepMissingFiles: false,
     dryRun: false,
@@ -83,6 +117,23 @@ export function parseArgs(argv) {
     };
 
     switch (name) {
+      case '--datasets': {
+        const list = takeValue()
+          .split(',')
+          .map((item) => item.trim())
+          .filter(Boolean);
+        if (list.length === 0) {
+          throw new UsageError('--datasets 不能为空');
+        }
+        const invalid = list.filter((item) => !DATASETS.includes(item));
+        if (invalid.length > 0) {
+          throw new UsageError(
+            `--datasets 只支持 ${DATASETS.join(',')}，收到：${invalid.join(',')}`,
+          );
+        }
+        options.datasets = [...new Set(list)];
+        break;
+      }
       case '--out':
         options.out = takeValue();
         if (!options.out.trim()) {
@@ -119,6 +170,15 @@ export function parseArgs(argv) {
       case '--raw-threads':
         options.rawThreads = requirePositiveInt('--raw-threads', takeValue());
         break;
+      case '--versions-pages':
+        options.versionsPages = requirePositiveInt('--versions-pages', takeValue());
+        break;
+      case '--versions-file':
+        options.versionsFile = takeValue();
+        if (!options.versionsFile.trim()) {
+          throw new UsageError('--versions-file 不能为空');
+        }
+        break;
       case '--no-cache':
         options.cache = false;
         break;
@@ -138,8 +198,20 @@ export function parseArgs(argv) {
         throw new UsageError(`未知选项：${name}`);
     }
   }
+
+  if ((options.repos !== null || options.limit !== null) && !options.datasets.includes('mods')) {
+    throw new UsageError('--repos / --limit 只用于 mods 数据集');
+  }
+  if (options.versionsPages !== null && !options.datasets.includes('versions')) {
+    throw new UsageError('--versions-pages 只用于 versions 数据集');
+  }
+  if (options.versionsFile !== null && !options.datasets.includes('gate')) {
+    throw new UsageError('--versions-file 只用于 gate 数据集');
+  }
   return options;
 }
+
+// ---------- mods 数据集 ----------
 
 function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
   const hasFile = Array.isArray(file?.releases);
@@ -173,6 +245,9 @@ function buildIndexEntry(mod, file, { relPath, oldEntry = null } = {}) {
     hasIcon: mod.hasIcon,
     hasScripts: mod.hasScripts,
     hasJava: mod.hasJava,
+    // 只记录地址不下载字节；hasIcon === false 才为 null
+    iconUrl: modIconUrl(mod.repo, mod.hasIcon),
+    iconHash: mod.iconHash ?? null,
     releasesPath: hasFile
       ? relPath
       : (oldEntry?.releasesPath ?? (file ? relPath : null)),
@@ -300,41 +375,15 @@ async function cleanupMissing(outDir, selected, log) {
   }
 }
 
-export async function run(argv) {
-  let options;
-  try {
-    options = parseArgs(argv);
-  } catch (error) {
-    if (error instanceof UsageError) {
-      console.error(`参数错误：${error.message}\n`);
-      printUsage();
-      return 2;
-    }
-    throw error;
-  }
-  if (options.help) {
-    printUsage();
-    return 0;
-  }
-
-  const startedAt = Date.now();
-  const log = options.verbose ? (message) => console.log(message) : () => {};
-  const httpLog = options.verbose ? (message) => console.log(`  [http] ${message}`) : null;
-  const outDir = path.resolve(options.out);
-  if (!options.dryRun) {
-    await ensureReleasesDir(outDir);
-  }
-
-  const apiClient = new HttpClient({ token: options.token, logger: httpLog });
-  // raw 域名不需要 token，也不该把凭据发过去
-  const rawClient = new HttpClient({ token: null, logger: httpLog });
+async function runMods(options, context) {
+  const { apiClient, rawClient, outDir, log } = context;
 
   let mods;
   try {
     mods = await fetchModsJson(rawClient);
   } catch (error) {
     console.error(`无法获取官方模组列表：${error.message}`);
-    return 1;
+    return { code: 1, changed: 0 };
   }
   console.log(`官方列表：${mods.length} 个模组`);
 
@@ -352,7 +401,7 @@ export async function run(argv) {
       console.error(
         `以下仓库不在官方模组列表中，无法按官方字段抓取：${missing.join(', ')}`,
       );
-      return 1;
+      return { code: 1, changed: 0 };
     }
     const wanted = new Set(options.repos.map((repo) => repo.toLowerCase()));
     // 子集也保持官方列表顺序
@@ -409,19 +458,20 @@ export async function run(argv) {
     skipped,
   };
 
-  if (!options.dryRun) {
-    await writeJsonAtomic(path.join(outDir, INDEX_FILE), index);
-  }
-
   const isSubset = options.repos !== null || options.limit !== null;
   if (!options.dryRun && !options.keepMissingFiles && !isSubset) {
     await cleanupMissing(outDir, selected, log);
   }
 
   const changed = results.filter((result) => result.changed).length;
-  const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
+  const indexChanged = indexBodyChanged(oldIndex, index);
+  if (!options.dryRun && indexChanged) {
+    await writeJsonAtomic(path.join(outDir, INDEX_FILE), index);
+  } else if (!indexChanged) {
+    log('[mods] index 内容未变，保留旧文件');
+  }
   console.log(
-    `完成：${selected.length} 个模组，${changed} 个 release 文件有变化，${skipped.length} 个抓取失败，用时 ${elapsed} 秒`,
+    `[mods] ${selected.length} 个模组，${changed} 个 release 文件有变化，index ${indexChanged ? '已更新' : '未变'}，${skipped.length} 个抓取失败`,
   );
   if (skipped.length > 0) {
     const preview = skipped.slice(0, 5).map((item) => `${item.repo}（${item.reason}）`);
@@ -429,6 +479,378 @@ export async function run(argv) {
       `[警告] ${skipped.length} 个仓库抓取失败，已保留旧数据：${preview.join('、')}${skipped.length > 5 ? ' 等' : ''}`,
     );
   }
+  return { code: 0, changed, indexChanged };
+}
+
+// ---------- versions 数据集 ----------
+
+function isoSeconds(date = new Date()) {
+  return date.toISOString().replace(/\.\d{3}Z$/, 'Z');
+}
+
+async function runVersions(options, context) {
+  const { apiClient, outDir, log } = context;
+  const file = path.join(outDir, VERSIONS_REL_PATH);
+
+  let previous = null;
+  if (options.cache) {
+    try {
+      previous = await readJsonIfExists(file);
+    } catch (error) {
+      log(`[警告] 旧 versions.json 不可用，按首次运行处理：${error.message}`);
+    }
+  }
+  const previousReleases = Array.isArray(previous?.releases) ? previous.releases : null;
+
+  let releasesResult;
+  try {
+    releasesResult = await fetchVersionsIncremental(apiClient, {
+      etag: previousReleases ? (previous?.etags?.releases ?? null) : null,
+      localReleases: previousReleases,
+      maxPages: options.versionsPages,
+    });
+  } catch (error) {
+    console.error(`获取 Mindustry 版本列表失败：${error.message}`);
+    return { code: 1, releases: null, changed: false };
+  }
+
+  const releases = releasesResult.notModified && previousReleases
+    ? previousReleases
+    : releasesResult.releases;
+  if (releasesResult.notModified && previousReleases) {
+    log(`[versions] 正式版列表 304，复用 ${previousReleases.length} 条旧数据`);
+  } else if (releasesResult.rebuilt) {
+    log(
+      `[versions] 第一页出现新 release，重建完整列表（${releasesResult.fetchedPages} 页）`,
+    );
+  } else {
+    log(`[versions] 只用第一页增量合并（${releasesResult.fetchedPages} 页）`);
+  }
+
+  let beResult;
+  try {
+    beResult = await fetchLatestBe(apiClient, {
+      etag: previous?.latest_be ? (previous?.etags?.latestBe ?? null) : null,
+    });
+  } catch (error) {
+    console.warn(`[警告] 获取最新 BE 失败，沿用旧值：${error.message}`);
+    beResult = { notModified: true };
+  }
+  const latestBe = beResult.notModified
+    ? (previous?.latest_be ?? null)
+    : beResult.release;
+  if (beResult.notModified && previous?.latest_be) {
+    log('[versions] 最新 BE 304，复用旧数据');
+  }
+
+  const nextFile = buildVersionsFile({
+    releases,
+    latestBe,
+    etags: {
+      releases: releasesResult.notModified
+        ? (previous?.etags?.releases ?? null)
+        : releasesResult.etag,
+      latestBe: beResult.notModified
+        ? (previous?.etags?.latestBe ?? null)
+        : beResult.etag,
+    },
+    updateTime: isoSeconds(),
+  });
+  const changed = versionsBodyChanged(previous, nextFile);
+  if (changed) {
+    if (!options.dryRun) {
+      await writeJsonAtomic(file, nextFile);
+    }
+    log(
+      `[versions] 正式版 ${releases.length} 条 + BE ${latestBe?.tag_name ?? '无'}${options.dryRun ? '（dry-run 未写入）' : ''}`,
+    );
+    console.log(
+      `[versions] 更新：正式版 ${releases.length} 条，最新 BE ${latestBe?.tag_name ?? '无'}`,
+    );
+  } else {
+    console.log('[versions] 无变化，保留旧文件');
+  }
+  return { code: 0, releases, changed };
+}
+
+// ---------- gate 数据集 ----------
+
+async function loadVersionsInput(options, context) {
+  if (context.versionsReleases) {
+    return context.versionsReleases;
+  }
+  if (options.versionsFile) {
+    const file = path.resolve(options.versionsFile);
+    const data = JSON.parse(await readFile(file, 'utf8'));
+    if (Array.isArray(data)) {
+      return data;
+    }
+    if (Array.isArray(data?.releases)) {
+      return data.releases;
+    }
+    throw new Error(`${file} 里没有 releases 数组`);
+  }
+  try {
+    const cached = await readJsonIfExists(
+      path.join(context.outDir, VERSIONS_REL_PATH),
+    );
+    if (Array.isArray(cached?.releases)) {
+      context.log(`[gate] 用 ${VERSIONS_REL_PATH} 作版本输入`);
+      return cached.releases;
+    }
+  } catch (error) {
+    context.log(`[警告] ${VERSIONS_REL_PATH} 不可用：${error.message}`);
+  }
+  context.log('[gate] 没有本地版本列表，现抓 Mindustry releases');
+  const fetched = await fetchAllVersions(context.apiClient, {});
+  return fetched.notModified ? [] : fetched.raws.map(trimRelease);
+}
+
+async function loadGateBaseline(context, previousRules) {
+  try {
+    const response = await context.rawClient.get(GATE_BASELINE_URL);
+    if (response.status === 200) {
+      const rules = parseBaselineText(response.text);
+      if (rules) {
+        context.log('[gate] 基线规则来自 mmgvm.hjson');
+        return rules;
+      }
+    }
+  } catch (error) {
+    context.log(`[警告] 拉取 mmgvm 基线失败：${error.message}`);
+  }
+  const previous = normalizeBaselineRules(previousRules);
+  if (previous) {
+    context.log('[gate] 基线规则沿用上一份 mod-gate.json');
+    return previous;
+  }
+  context.log('[gate] 基线规则使用内置兜底表');
+  return BUILTIN_GATE_RULES;
+}
+
+async function runGate(options, context) {
+  const file = path.join(context.outDir, GATE_REL_PATH);
+  let previous = null;
+  if (options.cache) {
+    try {
+      previous = await readJsonIfExists(file);
+    } catch (error) {
+      context.log(`[警告] 旧 mod-gate.json 不可用，按首次运行处理：${error.message}`);
+    }
+  }
+
+  let versionsInput;
+  try {
+    versionsInput = await loadVersionsInput(options, context);
+  } catch (error) {
+    console.error(`获取门禁的版本输入失败：${error.message}`);
+    return { code: 1, changed: false };
+  }
+  const regular = regularVersions(versionsInput).filter(
+    (item) => item.version >= gateStartVersion(),
+  );
+  if (regular.length === 0) {
+    console.error('[gate] 版本输入里没有可用的正式版 tag，无法生成门禁');
+    return { code: 1, changed: false };
+  }
+
+  const baseline = await loadGateBaseline(context, previous?.rules);
+  const previousByTag = new Map(
+    (Array.isArray(previous?.versions) ? previous.versions : [])
+      .filter((item) => typeof item?.tag === 'string')
+      .map((item) => [item.tag, item]),
+  );
+  const resolvedPaths = new Set(
+    Array.isArray(previous?.source?.resolvedPaths) ? previous.source.resolvedPaths : [],
+  );
+  const results = [];
+  let previousHadConstants = false;
+
+  for (const { tag, version } of regular) {
+    const cached = previousByTag.get(tag);
+    if (
+      cached &&
+      cached.source === 'game-source' &&
+      Number.isInteger(cached.mod) &&
+      Number.isInteger(cached.java)
+    ) {
+      results.push({ tag, version, mod: cached.mod, java: cached.java, source: 'game-source' });
+      previousHadConstants = true;
+      continue;
+    }
+    if (
+      cached &&
+      cached.source === 'baseline' &&
+      Number.isInteger(cached.mod) &&
+      Number.isInteger(cached.java)
+    ) {
+      // 老版本不再抓源码；基线规则变了就按新基线重算，没变直接复用
+      const lookup = baselineLookup(baseline, version);
+      if (lookup) {
+        results.push({
+          tag,
+          version,
+          mod: lookup.mod,
+          java: lookup.java,
+          source: 'baseline',
+        });
+        previousHadConstants = false;
+        continue;
+      }
+    }
+
+    // v147 之前的源码没有门禁常量，直接查基线，省掉每版 4 次候选路径请求
+    if (version < GATE_SOURCE_CONSTANT_SINCE) {
+      const lookup = baselineLookup(baseline, version);
+      if (lookup) {
+        results.push({ tag, version, mod: lookup.mod, java: lookup.java, source: 'baseline' });
+        previousHadConstants = false;
+        continue;
+      }
+    }
+
+    let resolved = null;
+    try {
+      resolved = await resolveVersionGate({
+        tag,
+        rawClient: context.rawClient,
+        apiClient: context.apiClient,
+        allowTree: previousHadConstants,
+      });
+    } catch (error) {
+      context.log(`[警告] ${tag} 源码门禁读取失败，走基线：${error.message}`);
+    }
+    if (resolved?.found) {
+      resolvedPaths.add(resolved.path);
+      results.push({
+        tag,
+        version,
+        mod: resolved.mod,
+        java: resolved.java,
+        source: 'game-source',
+      });
+      previousHadConstants = true;
+      continue;
+    }
+
+    const lookup = baselineLookup(baseline, version);
+    if (!lookup) {
+      context.log(`[警告] ${tag} 既无源码常量也不在基线规则内，跳过`);
+      previousHadConstants = false;
+      continue;
+    }
+    results.push({ tag, version, mod: lookup.mod, java: lookup.java, source: 'baseline' });
+    previousHadConstants = false;
+  }
+
+  const rules = mergeGateRules(results);
+  const nextFile = buildGateFile({
+    versions: results,
+    rules,
+    resolvedPaths: [...resolvedPaths],
+    generatedAt: context.now,
+  });
+  const changed = gateBodyChanged(previous, nextFile);
+  if (changed) {
+    if (!options.dryRun) {
+      await writeJsonAtomic(file, nextFile);
+    }
+    context.log(
+      `[gate] ${results.length} 个版本，${rules.length} 条规则，源码常量版本 ${results.filter((item) => item.source === 'game-source').length} 个${options.dryRun ? '（dry-run 未写入）' : ''}`,
+    );
+    console.log(
+      `[gate] 更新：${results.length} 个版本 / ${rules.length} 条规则，源码命中 ${results.filter((item) => item.source === 'game-source').length} 个`,
+    );
+  } else {
+    console.log('[gate] 无变化，保留旧文件');
+  }
+  return { code: 0, changed };
+}
+
+// ---------- 入口 ----------
+
+export async function run(argv) {
+  let options;
+  try {
+    options = parseArgs(argv);
+  } catch (error) {
+    if (error instanceof UsageError) {
+      console.error(`参数错误：${error.message}\n`);
+      printUsage();
+      return 2;
+    }
+    throw error;
+  }
+  if (options.help) {
+    printUsage();
+    return 0;
+  }
+
+  // 子集模式会写出「只含所选模组」的 index.json，绝不能落在当前目录（正式仓库根）
+  if (
+    (options.repos !== null || options.limit !== null) &&
+    path.resolve(options.out) === path.resolve(process.cwd())
+  ) {
+    console.error(
+      '参数错误：--repos / --limit 是子集模式，必须用 --out 指定临时输出目录（如 --out tmp/live），不能指向当前目录，避免把正式 index.json 裁剪成子集',
+    );
+    return 2;
+  }
+
+  const startedAt = Date.now();
+  const log = options.verbose ? (message) => console.log(message) : () => {};
+  const httpLog = options.verbose ? (message) => console.log(`  [http] ${message}`) : null;
+  const outDir = path.resolve(options.out);
+
+  if (!options.dryRun && options.datasets.includes('mods')) {
+    await ensureReleasesDir(outDir);
+  }
+
+  const apiClient = new HttpClient({ token: options.token, logger: httpLog });
+  // raw 域名不需要 token，也不该把凭据发过去
+  const rawClient = new HttpClient({ token: null, logger: httpLog });
+  const context = {
+    apiClient,
+    rawClient,
+    outDir,
+    log,
+    now: new Date().toISOString(),
+    versionsReleases: null,
+  };
+
+  let exitCode = 0;
+  let modsChanged = 0;
+  let modsIndexChanged = false;
+  let versionsChanged = false;
+  let gateChanged = false;
+
+  if (options.datasets.includes('mods')) {
+    const result = await runMods(options, context);
+    exitCode = Math.max(exitCode, result.code);
+    modsChanged = result.changed;
+    modsIndexChanged = result.indexChanged;
+  }
+  if (options.datasets.includes('versions')) {
+    const result = await runVersions(options, context);
+    exitCode = Math.max(exitCode, result.code);
+    versionsChanged = result.changed;
+    context.versionsReleases = result.releases;
+  }
+  if (options.datasets.includes('gate')) {
+    const result = await runGate(options, context);
+    exitCode = Math.max(exitCode, result.code);
+    gateChanged = result.changed;
+  }
+
+  const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
+  console.log(
+    `完成（${options.datasets.join(',')}）：用时 ${elapsed} 秒` +
+      (options.datasets.includes('mods')
+        ? `，release 文件变化 ${modsChanged} 个、index ${modsIndexChanged ? '已更新' : '未变'}`
+        : '') +
+      (options.datasets.includes('versions') ? `，versions ${versionsChanged ? '已更新' : '未变'}` : '') +
+      (options.datasets.includes('gate') ? `，gate ${gateChanged ? '已更新' : '未变'}` : ''),
+  );
   if (options.verbose) {
     const api = apiClient.stats;
     const raw = rawClient.stats;
@@ -437,7 +859,7 @@ export async function run(argv) {
         `raw ${raw.requests} 次，合计 ${api.requests + raw.requests} 次`,
     );
   }
-  return 0;
+  return exitCode;
 }
 
 function printUsage() {

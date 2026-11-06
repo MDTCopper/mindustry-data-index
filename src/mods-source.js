@@ -4,6 +4,9 @@ import { assertRepo } from './paths.js';
 
 export const MODS_URL =
   'https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json';
+// 官方图标地址：icons/<owner>_<repo>，不带扩展名（与启动器 githubModIconBase 一致）
+export const MOD_ICON_BASE =
+  'https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons';
 
 // 官方列表里的字段原样保留类型与脏值（如 minGameVersion 的 "157.1，"），不在这里清洗
 const COPIED_FIELDS = [
@@ -18,6 +21,7 @@ const COPIED_FIELDS = [
   'hasIcon',
   'hasScripts',
   'hasJava',
+  'iconHash',
 ];
 
 export async function fetchModsJson(client) {
@@ -32,6 +36,15 @@ export async function fetchModsJson(client) {
     throw new Error(`官方 mods.json 不是合法 JSON：${error.message}`);
   }
   return normalizeMods(raw);
+}
+
+// 图标地址语义对齐启动器：只有明确 hasIcon === false 才没有图标；
+// true 或官方列表缺字段（null）时也给地址，由客户端自己决定是否试一次
+export function modIconUrl(repo, hasIcon) {
+  if (hasIcon === false) {
+    return null;
+  }
+  return `${MOD_ICON_BASE}/${assertRepo(repo).replace('/', '_')}`;
 }
 
 export function normalizeMods(raw) {
@@ -59,8 +72,8 @@ export function normalizeMods(raw) {
     for (const field of COPIED_FIELDS) {
       mod[field] = item[field] ?? null;
     }
-    // 布尔字段缺省为 false，其余缺失保持 null，交给 index 原样体现
-    for (const field of ['hasIcon', 'hasScripts', 'hasJava']) {
+    // hasIcon 缺字段时保持 null（决定 iconUrl 是否给出），hasScripts/hasJava 缺省为 false
+    for (const field of ['hasScripts', 'hasJava']) {
       if (mod[field] === null) {
         mod[field] = false;
       }

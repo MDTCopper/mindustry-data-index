@@ -131,7 +131,7 @@ test('HttpClient：token 只发给 api.github.com', async () => {
   await client.get('https://raw.githubusercontent.com/o/r/main/mod.hjson');
   assert.equal(calls[0].options.headers.Authorization, 'Bearer secret');
   assert.equal(calls[1].options.headers.Authorization, undefined);
-  assert.match(calls[0].options.headers['User-Agent'], /mindustry-mods-index/);
+  assert.match(calls[0].options.headers['User-Agent'], /mindustry-data-index/);
 });
 
 test('HttpClient：网络错误重试耗尽后抛 HttpError', async () => {

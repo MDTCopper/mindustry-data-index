@@ -1,7 +1,14 @@
 # 数据 schema
 
-仓库根目录的数据文件：`index.json` 与 `releases/<owner>_<repo>.json`。
-两份文件的 `formatVersion` 当前均为 `1`，字段变化时递增并同步修改本文档。
+数据文件分三组：
+
+- 模组索引：仓库根目录的 `index.json` 与 `releases/<owner>_<repo>.json`；
+- Mindustry 版本列表：`mindustry/versions.json`；
+- 最小版本门禁：`mindustry/mod-gate.json`；
+- 另有一个维护用文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
+
+模组索引两份文件的 `formatVersion` 当前均为 `1`；`mod-gate.json` 也有 `formatVersion`（当前 `1`）。
+字段变化时递增并同步修改本文档。
 
 约定：
 
@@ -10,6 +17,9 @@
 - `null` 表示「没有这个信息」，与空字符串、空数组区分。
 - 官方列表字段（`version`、`minGameVersion`、`stars` 等）原样保留官方 `mods.json` 的类型与脏值，
   不做数字化清洗（官方数据里出现过 `"157.1，"` 这样的 `minGameVersion`）。
+- 两种元数据扩展名（`mod.hjson` / `mod.json`）都按 HJSON 解析（两者都可能出现无引号 key、
+  `#` / `//` 注释、`'''` 多行串）；严格解析失败会做一次「字符串内裸换行」宽松修复，仍失败再用正则
+  兜底只取 `version` / `minGameVersion`，值原样保留字符串、不强转数字。
 
 ## index.json
 
@@ -19,7 +29,7 @@
   "generatedAt": "2026-11-06T03:00:00.000Z",
   "source": {
     "modsUrl": "https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json",
-    "modCount": 990
+    "modCount": 991
   },
   "mods": [],
   "skipped": []
@@ -29,9 +39,9 @@
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
 | `formatVersion` | number | 固定 `1` |
-| `generatedAt` | string | 本次生成时间；每天更新都会变化 |
+| `generatedAt` | string | `index.json` 数据主体最近一次变化时间；内容未变时不刷新（与 per-mod 文件口径一致） |
 | `source.modsUrl` | string | 官方模组列表地址 |
-| `source.modCount` | number | 本次 `mods` 条目数；全量运行时等于官方列表模组数 |
+| `source.modCount` | number | 本次 `mods` 条目数；全量运行时等于官方列表模组数（当前约 991） |
 | `mods` | array | 模组条目，顺序与官方 `mods.json` 一致 |
 | `skipped` | array | 本次抓取失败的仓库，见下 |
 
@@ -47,13 +57,17 @@
 | `minGameVersion` | string | 官方列表记录的最低游戏版本，原样保留（含脏值） |
 | `lastUpdated` | string | 官方列表记录的更新时间 |
 | `stars` | number | GitHub stars（官方列表值） |
-| `hasIcon` / `hasScripts` / `hasJava` | boolean | 官方列表的图标/脚本/Java 标记 |
+| `hasIcon` | boolean \| null | 官方列表的图标标记；官方列表缺该字段时为 `null`（此时仍会给 `iconUrl`，由客户端决定是否试一次） |
+| `hasScripts` / `hasJava` | boolean | 官方列表的脚本/Java 标记 |
+| `iconUrl` | string \| null | 官方图标地址 `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/<owner>_<repo>`（repo 的 `/` 换成 `_`，不带扩展名，与启动器 `githubModIconBase` 一致）。`hasIcon === false` 时为 `null`；只记地址，不下载图标字节 |
+| `iconHash` | string \| null | 官方列表的 `iconHash` 原样保留（多数模组没有），供客户端按哈希做图标缓存 |
 | `releasesPath` | string \| null | per-mod 文件相对路径（`releases/<owner>_<repo>.json`）；`null` 表示尚未成功抓取过（见 `skipped`） |
 | `releaseCount` | number | 该模组 release 条数（不含 draft）；抓取失败时保留旧值 |
 | `latestRelease` | object \| null | `releases` 首条（GitHub API 新→旧）的 `{ tag, name, prerelease, publishedAt }`；无 release 或尚未抓取时为 `null` |
 | `releaseDataUpdatedAt` | string \| null | per-mod 文件最近一次**内容变化**时间；文件内容未变时保持不变（不是每天刷新） |
 
-`description`、`iconHash`、官方列表里的 `releases` 映射等大字段不放进 `index.json`。
+`description`、官方列表里的 `releases` 映射等大字段不放进 `index.json`；`iconHash` 保留（450 条左右
+有值，体积小且可用于缓存）。
 
 ### skipped[]
 
@@ -108,23 +122,143 @@
 
 ### metadataStatus 语义
 
-| 值 | 含义 | 下次更新是否重试 |
+| 值 | 含义 | 何时会重新抓取 |
 | --- | --- | --- |
-| `ok` | 命中了候选文件并解析成功（`version` / `minGameVersion` 可能为 `null`，表示文件里没写）；对字符串内未转义裸换行会先做一次宽松修复再解析 | 否，直接复用 |
-| `missing` | 四个候选路径全部 404 | 否，直接复用 |
-| `unparsed` | 命中文件但解析失败，或请求层重试后仍失败 | 是，作为「可重试」条目重新抓取 |
+| `ok` | 命中了候选文件并解析成功（`version` / `minGameVersion` 可能为 `null`，表示文件里没写）；对字符串内未转义裸换行会先做一次宽松修复再解析 | 不重抓，直接复用 |
+| `missing` | 四个候选路径全部 404 | 不重抓，直接复用 |
+| `unparsed` | 命中文件但解析失败，或请求层重试后仍失败 | 只在该仓库 release 列表变化（第一页 ETag 变化、进入 200 路径）或 `--no-cache` 时重抓；releases 第一页 304 时整份文件复用、不会重试任何元数据 |
 
 ### downloadUrl 优先级
 
-与 Copper Launcher 的模组下载口径一致：
+与 Copper Launcher 模组下载页的选资产口径一致：
 
 1. `hasJava == true`：取该 release 资产中体积最大的 `.jar`；
 2. `hasJava == false`：取体积最大的 `.zip`；
-3. 没有对应后缀的资产：回退 `sourceArchiveUrl`（zip 模组多数没有 release 资产，必须靠源码归档）。
+3. 没有对应后缀的资产：回落 `sourceArchiveUrl`（zip 模组多数没有 release 资产，必须靠源码归档）。
 
-不跨后缀猜测（Java 模组没有 jar 时也给源码归档，交由使用方判断），`assets` 里仍保留全部资产供自行筛选。
+不跨后缀猜测。注意启动器对「Java 模组但没有提供 `.jar` 资产」的情况是禁用下载（不显示下载按钮）；
+本仓库仍给出源码归档地址，使用方需自行判断该 release 是否可安装。`assets` 里保留全部资产供自行筛选。
 
 ### prerelease 语义
 
 `prerelease` 只忠实反映 GitHub release 上的勾选状态，不参与 `latestRelease` 的挑选——
 `latestRelease` 就是 `releases[0]`。使用方若只要正式版，自行过滤 `prerelease === false`。
+
+## mindustry/versions.json
+
+Mindustry 可用版本列表，形状兼容启动器 `remote/mindustry_versions.json`：启动器的
+`MindustryReleaseListSnapshot.parse` 只读 `releases` 数组，`MindustryRelease.fromGithubJson`
+读每条 release 的字段。`latest_be` 与 `etags` 是本仓库额外加的字段（启动器忽略）。
+
+```json
+{
+  "update_time": "2026-11-06T03:00:00Z",
+  "source": "https://api.github.com/repos/Anuken/Mindustry/releases",
+  "releases": [],
+  "latest_be": null,
+  "etags": { "releases": "\"W/...\"", "latestBe": "\"W/...\"" }
+}
+```
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `update_time` | string | 本文件最近一次**内容变化**时间；没变化时不刷新（避免每 30 分钟都产生提交） |
+| `source` | string | 固定为官方正式版 release 接口地址 |
+| `releases` | array | 正式版 release，按 GitHub API 返回顺序（新→旧），已做精简 |
+| `latest_be` | object \| null | `MindustryBuilds` 最新一条 BE release；没有取到过为 `null` |
+| `etags` | object | 仅供增量请求用：`releases`（正式版第一页 ETag）、`latestBe`（BE 的 ETag）；使用方忽略即可 |
+
+### releases[] / latest_be 条目
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `name` | string \| null | GitHub release 名，**原样保留**（官方数据里有尾随空格，启动器解析时自己 trim） |
+| `tag_name` | string | 正式版形如 `v160.7`；BE 是 build 号本身 |
+| `published_at` | string \| null | 发布时间 |
+| `body` | string | 固定空串（列表不展示更新日志） |
+| `reactions` | object | **仅 `releases[]` 有**：`{ "total_count": number }`。启动器用 `reactions == null` 识别 BE |
+| `assets` | array | `{ name, size, download_count, browser_download_url }` 四个字段 |
+
+`latest_be` 没有 `reactions` 键（启动器据此判定 BE）。`name` / `tag_name` / `published_at` 原样保留
+GitHub 的值。
+
+### 更新与增量
+
+- 常规每轮只请求正式版第一页（`per_page=100`，带上次的 ETag）+ BE（`per_page=1`），共 2 次 API。
+- 第一页 304 → 复用整份 `releases`；第一页 200 且里面全是已知 release → 用「第一页 + 本地其余」
+  拼回完整列表；出现未知 release id（或本地还没有列表）→ 才翻后续页重建完整列表（当前约 3 页）。
+- `releases` / `latest_be` 没变时不重写文件；`update_time` 只在内容变化时更新。
+- 不把 304 当免费：每轮固定只发上述 2 次 API，避免匿名/低配额下被打爆。
+
+## mindustry/mod-gate.json
+
+最小模组版本门禁：每个游戏版本要求的最低模组版本（`mod` = 普通/脚本模组，`java` = Java 模组）。
+`rules` 与启动器 `remote/mmgvm.hjson` 同语义，且生成结果与当前 mmgvm 逐项一致。
+
+```json
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-11-06T03:00:00.000Z",
+  "source": {
+    "repo": "Anuken/Mindustry",
+    "baseline": "https://raw.githubusercontent.com/MDTCopper/launcher/main/remote/mmgvm.hjson",
+    "constants": ["minModGameVersion", "minJavaModGameVersion"],
+    "resolvedPaths": ["core/src/mindustry/Vars.java"]
+  },
+  "rules": [{ "min": 97, "max": 105, "mod": 97, "java": 97, "source": "baseline" }],
+  "versions": [{ "tag": "v147", "version": 147, "mod": 136, "java": 147, "source": "game-source" }]
+}
+```
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `formatVersion` | number | 固定 `1` |
+| `generatedAt` | string | 本文件最近一次**内容变化**时间 |
+| `source.repo` | string | 固定 `Anuken/Mindustry` |
+| `source.baseline` | string | 基线 mmgvm 地址（147 之前源码没有常量时用它的 rules） |
+| `source.constants` | string[] | 从源码提取的常量名 |
+| `source.resolvedPaths` | string[] | 实际命中过常量的源码路径，代码位置变化时用它追踪 |
+| `rules` | array | 合并后的门禁区间 |
+| `versions` | array | 逐版本明细（只含 `v<数字>[.<数字>]` 正式版，从 97 开始） |
+
+### rules[] 语义
+
+- `min` 含、`max` 不含；最后一条 `max` 为 `null`（无上限）；连续且 `(mod, java)` 相同的版本已合并，
+  相邻两条的 `mod`/`java` 一定不同。第一条 `min` 固定为 `97`（与 mmgvm 口径一致）。
+- `source`：`game-source`（该区间的版本都从官方源码提取到常量）、`baseline`（都来自 mmgvm 基线）、
+  `mixed`（区间里两种来源都有，正常数据不会出现，仅在基线/源码交替时兜底）。
+
+### versions[] 语义
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `tag` | string | 形如 `v147` / `v154.2` |
+| `version` | number | tag 里的数字，升序且不重复 |
+| `mod` | number | 该版本游戏要求的最低普通模组版本 |
+| `java` | number | 该版本游戏要求的最低 Java 模组版本 |
+| `source` | string | `game-source` / `baseline` |
+
+147 之前的版本源码里没有 `minModGameVersion` / `minJavaModGameVersion`，这些版本的 `mod`/`java`
+直接走 mmgvm 基线查询（`min <= version < max` 命中），**不逐版本尝试源码候选路径**
+（代码里 `GATE_SOURCE_CONSTANT_SINCE = 147`；依据是逐 tag 实测 v105/v136/v146 等老版本均无这两个常量，
+v147 首次出现）。147 起从 `core/src/mindustry/Vars.java` 提取（候选路径还包括
+`core/src/mindustry/core/Vars.java` 等，候选全 404 且上一版本有常量时才用 1 次 tree API 找移动后的
+`Vars.java` / `Version.java`）；`source.resolvedPaths` 记录实际命中的路径。
+
+### 更新与增量
+
+- 上一份 `mod-gate.json` 里 `source=game-source` 的版本不重复抓源码；只有新版本才扫描。
+- `source=baseline` 的老版本也缓存：每轮按最新 mmgvm 规则本地重算（不抓源码），基线变化时只影响这些版本。
+  稳态每轮只有 1 次 raw 请求（拉 mmgvm 基线）+ 0 次 API。
+- `versions` / `rules` / `source` 没变时不重写文件。
+
+## mindustry/heartbeat.json
+
+GitHub 在仓库 60 天没有任何提交时会暂停 `schedule`。版本/门禁数据可能长期无变化，所以
+`update-mindustry.yml` 在没有数据变化、且心跳日期不是今天时会写一次心跳并提交：
+
+```json
+{ "lastCheck": "2026-11-06T03:00:00Z" }
+```
+
+属于维护用文件，使用方不需要读取。有数据变化时心跳随当次数据提交一起刷新。

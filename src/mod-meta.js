@@ -1,13 +1,19 @@
 // 按 tag 读 mod.hjson / mod.json，解析 version 与 minGameVersion
 
 import { parse as parseHjson } from 'hjson';
-import { rawFileUrl } from './releases.js';
+import { rawFileUrlVariants } from './releases.js';
 
 // 候选顺序：root hjson → root json → assets hjson → assets json；
 // hasJava 时 hjson 优先，否则 json 优先（两种都试）
 const CANDIDATES = {
   java: ['mod.hjson', 'mod.json', 'assets/mod.hjson', 'assets/mod.json'],
   other: ['mod.json', 'mod.hjson', 'assets/mod.json', 'assets/mod.hjson'],
+};
+
+// 解析彻底失败时的正则兜底：只捞需要的两个字段（两种扩展名里都可能是 HJSON 语法）
+const FALLBACK_PATTERNS = {
+  version: /(?:^|[\s,{])version\s*:\s*["']?([^"'\n,}]+)/m,
+  minGameVersion: /(?:^|[\s,{])minGameVersion\s*:\s*["']?([^"'\n,}]+)/m,
 };
 
 export function candidateMetadataPaths(hasJava) {
@@ -100,14 +106,26 @@ export function repairQuotedNewlines(text) {
   return output;
 }
 
-export function parseModMetadata(text) {
-  let parsed;
-  try {
-    parsed = parseHjson(text);
-  } catch {
-    // 严格解析失败时先修掉字符串内裸换行再试一次；仍失败就当作解析失败
-    parsed = parseHjson(repairQuotedNewlines(text));
+// 只捞 version / minGameVersion；两个都捞不到返回 null
+export function extractModMetadataFields(text) {
+  const result = {};
+  for (const [field, pattern] of Object.entries(FALLBACK_PATTERNS)) {
+    const match = text.match(pattern);
+    const value = match ? match[1].trim() : '';
+    if (value) {
+      result[field] = value;
+    }
   }
+  if (result.version === undefined && result.minGameVersion === undefined) {
+    return null;
+  }
+  return {
+    modVersion: result.version ?? null,
+    minGameVersion: result.minGameVersion ?? null,
+  };
+}
+
+function fieldsFromParsed(parsed) {
   if (parsed === null || typeof parsed !== 'object' || Array.isArray(parsed)) {
     throw new Error('mod 元数据不是对象');
   }
@@ -115,6 +133,26 @@ export function parseModMetadata(text) {
     modVersion: toText(parsed.version),
     minGameVersion: toText(parsed.minGameVersion),
   };
+}
+
+export function parseModMetadata(text) {
+  let lastError = null;
+  try {
+    return fieldsFromParsed(parseHjson(text));
+  } catch (error) {
+    lastError = error;
+  }
+  try {
+    return fieldsFromParsed(parseHjson(repairQuotedNewlines(text)));
+  } catch (error) {
+    lastError = error;
+  }
+  // 严格解析与宽松修复都失败：正则兜底只取两个关键字段
+  const fallback = extractModMetadataFields(text);
+  if (fallback) {
+    return fallback;
+  }
+  throw lastError ?? new Error('mod 元数据解析失败');
 }
 
 function metadataResult(path, status, parsed = null) {
@@ -128,29 +166,37 @@ function metadataResult(path, status, parsed = null) {
 
 export async function fetchModMetadata(client, { repo, tag, hasJava }) {
   let failedPath = null;
+  let transportFailed = false;
   for (const path of candidateMetadataPaths(hasJava)) {
-    let response;
-    try {
-      response = await client.get(rawFileUrl(repo, tag, path));
-    } catch {
-      // 请求层失败按 unparsed 记，下次更新会重试
-      return metadataResult(failedPath ?? null, 'unparsed');
-    }
-    if (response.status === 404) {
-      continue;
-    }
-    if (response.status !== 200) {
-      return metadataResult(failedPath ?? null, 'unparsed');
-    }
-    try {
-      return metadataResult(path, 'ok', parseModMetadata(response.text));
-    } catch {
-      // 命中的文件解析失败：记下路径继续试其它候选
-      failedPath ??= path;
+    const urls = rawFileUrlVariants(repo, tag, path);
+    for (const [variantIndex, url] of urls.entries()) {
+      let response;
+      try {
+        response = await client.get(url);
+      } catch {
+        // 首选变形都失败才算网络问题；回退变形可能本身不是合法 URL（如原样 tag 带空格）
+        if (variantIndex === 0) {
+          transportFailed = true;
+        }
+        continue;
+      }
+      if (response.status === 404) {
+        continue;
+      }
+      if (response.status !== 200) {
+        return metadataResult(failedPath ?? null, 'unparsed');
+      }
+      try {
+        return metadataResult(path, 'ok', parseModMetadata(response.text));
+      } catch {
+        // 命中的文件解析失败：记下路径继续试其它候选
+        failedPath ??= path;
+        break;
+      }
     }
   }
-  if (failedPath) {
-    return metadataResult(failedPath, 'unparsed');
+  if (failedPath || transportFailed) {
+    return metadataResult(failedPath ?? null, 'unparsed');
   }
   return metadataResult(null, 'missing');
 }

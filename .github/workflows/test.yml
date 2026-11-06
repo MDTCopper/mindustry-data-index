@@ -2,6 +2,13 @@ name: 测试
 
 on:
   push:
+    # 数据/心跳提交只改 index.json、releases/**、mindustry/**，不应触发测试
+    paths:
+      - "src/**"
+      - "test/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/test.yml"
   pull_request:
 
 permissions:

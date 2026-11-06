@@ -1,0 +1,89 @@
+name: 更新 Mindustry 版本与门禁
+
+on:
+  schedule:
+    # 每 30 分钟一次；GitHub 的 schedule 可能延迟几分钟到十几分钟
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # 首次 push / 改脚本时立即生成首份数据；数据与心跳提交不匹配这些路径，不会触发回环
+    paths:
+      - "src/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/update-mindustry.yml"
+
+permissions:
+  contents: write
+
+# 与 update-mods.yml 共用同一个组，避免两个工作流同时 push
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 更新版本列表与最小版本门禁
+        run: node src/main.js --datasets versions,gate --out .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 提交数据变化与每日心跳
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A mindustry 2>/dev/null || true
+          data_changed=0
+          if ! git diff --cached --quiet; then
+            data_changed=1
+          fi
+
+          # 防 GitHub 在 60 天无提交后暂停 schedule：没有数据变化时每天补一次心跳
+          heartbeat=mindustry/heartbeat.json
+          today=$(date -u +%F)
+          last_check=""
+          if [ -f "$heartbeat" ]; then
+            last_check=$(sed -n 's/.*"lastCheck"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$heartbeat" | head -n 1)
+            # 文件损坏 / 解析不到 lastCheck 时用文件 mtime 的日期兜底，避免每 30 分钟提交一次心跳
+            if [ -z "$last_check" ]; then
+              last_check=$(date -u -r "$heartbeat" +%F 2>/dev/null || true)
+            fi
+          fi
+          if [ "$data_changed" = "1" ] || [ "${last_check:0:10}" != "$today" ]; then
+            mkdir -p mindustry
+            now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+            printf '{\n  "lastCheck": "%s"\n}\n' "$now" > "$heartbeat"
+            git add "$heartbeat"
+            echo "心跳已刷新：$now"
+          fi
+
+          if git diff --cached --quiet; then
+            echo "没有数据变化，今天的心跳也已写过，跳过提交"
+            exit 0
+          fi
+
+          if [ "$data_changed" = "1" ]; then
+            git commit -m "[auto-update] mindustry versions/gate"
+          else
+            git commit -m "[auto-update] heartbeat"
+          fi
+          git pull --rebase --autostash
+          git push

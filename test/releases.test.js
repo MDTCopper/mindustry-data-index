@@ -4,6 +4,7 @@ import {
   apiReleasesUrl,
   sourceArchiveUrl,
   rawFileUrl,
+  rawFileUrlVariants,
   pickDownloadUrl,
   normalizeRelease,
   normalizeReleases,
@@ -65,10 +66,67 @@ test('API / 归档 / raw 地址生成', () => {
     rawFileUrl('owner/repo', 'v1.0 beta', 'mod.hjson'),
     'https://raw.githubusercontent.com/owner/repo/v1.0%20beta/mod.hjson',
   );
-  // tag 里的 / 在 raw 地址里要保留，不能编码成 %2F
+  // 优先整个 tag 走 encodeURIComponent（含 / 与 CJK）；特殊 tag 另给原样与 refs/tags 回退
   assert.equal(
     rawFileUrl('owner/repo', 'release/1.0', 'assets/mod.json'),
-    'https://raw.githubusercontent.com/owner/repo/release/1.0/assets/mod.json',
+    'https://raw.githubusercontent.com/owner/repo/release%2F1.0/assets/mod.json',
+  );
+  assert.deepEqual(rawFileUrlVariants('owner/repo', 'v1.2.3', 'mod.hjson'), [
+    'https://raw.githubusercontent.com/owner/repo/v1.2.3/mod.hjson',
+  ]);
+  assert.deepEqual(rawFileUrlVariants('owner/repo', 'release/1.0', 'mod.hjson'), [
+    'https://raw.githubusercontent.com/owner/repo/release%2F1.0/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/release/1.0/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/refs/tags/release%2F1.0/mod.hjson',
+  ]);
+  assert.deepEqual(
+    rawFileUrlVariants('owner/repo', 'v1.0 beta', 'mod.hjson'),
+    [
+      'https://raw.githubusercontent.com/owner/repo/v1.0%20beta/mod.hjson',
+      'https://raw.githubusercontent.com/owner/repo/v1.0 beta/mod.hjson',
+    ],
+  );
+  assert.deepEqual(rawFileUrlVariants('owner/repo', 'v1.0+', 'mod.hjson'), [
+    'https://raw.githubusercontent.com/owner/repo/v1.0%2B/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/v1.0+/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/refs/tags/v1.0%2B/mod.hjson',
+  ]);
+});
+
+test('CJK tag 的 raw / 源码归档地址全部走 URL 编码', () => {
+  assert.equal(
+    rawFileUrl('owner/repo', 'v1.0中文', 'mod.hjson'),
+    'https://raw.githubusercontent.com/owner/repo/v1.0%E4%B8%AD%E6%96%87/mod.hjson',
+  );
+  assert.deepEqual(rawFileUrlVariants('owner/repo', 'v1.0中文', 'mod.hjson'), [
+    'https://raw.githubusercontent.com/owner/repo/v1.0%E4%B8%AD%E6%96%87/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/v1.0中文/mod.hjson',
+    'https://raw.githubusercontent.com/owner/repo/refs/tags/v1.0%E4%B8%AD%E6%96%87/mod.hjson',
+  ]);
+  assert.equal(
+    sourceArchiveUrl('owner/repo', 'v1.0中文'),
+    'https://github.com/owner/repo/archive/refs/tags/v1.0%E4%B8%AD%E6%96%87.zip',
+  );
+});
+
+test('含 / 的 tag：源码归档用 %2F，raw 首选 %2F 形态', () => {
+  assert.equal(
+    sourceArchiveUrl('owner/repo', 'release/1.0'),
+    'https://github.com/owner/repo/archive/refs/tags/release%2F1.0.zip',
+  );
+  assert.equal(
+    rawFileUrl('owner/repo', 'release/1.0', 'mod.hjson'),
+    'https://raw.githubusercontent.com/owner/repo/release%2F1.0/mod.hjson',
+  );
+  // 兜底变体包含原样 tag 与 refs/tags 形态
+  const variants = rawFileUrlVariants('owner/repo', 'release/1.0', 'mod.hjson');
+  assert.ok(
+    variants.includes('https://raw.githubusercontent.com/owner/repo/release/1.0/mod.hjson'),
+  );
+  assert.ok(
+    variants.includes(
+      'https://raw.githubusercontent.com/owner/repo/refs/tags/release%2F1.0/mod.hjson',
+    ),
   );
 });
 

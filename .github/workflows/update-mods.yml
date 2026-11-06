@@ -7,18 +7,19 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    # 首次 push / 改脚本时立即生成首份数据；数据提交不匹配这些路径，不会触发回环
     paths:
       - "src/**"
       - "package.json"
       - "package-lock.json"
-      - ".github/workflows/update.yml"
+      - ".github/workflows/update-mods.yml"
 
 permissions:
   contents: write
 
-# 定时与推送触发的更新不并发，但也不打断正在进行的更新
+# 与 update-mindustry.yml 共用同一个组，避免两个工作流同时 push
 concurrency:
-  group: mods-index-update
+  group: data-update
   cancel-in-progress: false
 
 jobs:
@@ -38,8 +39,8 @@ jobs:
       - name: 安装依赖
         run: npm ci
 
-      - name: 更新索引
-        run: node src/main.js --out .
+      - name: 更新模组索引
+        run: node src/main.js --datasets mods --out .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -52,7 +53,8 @@ jobs:
           git add -A releases 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "没有数据变化，跳过提交"
-          else
-            git commit -m "[auto-update]"
-            git push
+            exit 0
           fi
+          git commit -m "[auto-update] mods"
+          git pull --rebase --autostash
+          git push
