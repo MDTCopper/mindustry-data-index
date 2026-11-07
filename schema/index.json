@@ -149,7 +149,7 @@
             "type": "integer",
             "minimum": 0
           },
-          "heat": {
+          "score": {
             "type": "object",
             "properties": {
               "score": {
@@ -185,14 +185,14 @@
           "ranks": {
             "type": "object",
             "required": [
-              "heat",
+              "score",
               "updated",
               "downloads",
               "stars",
               "newest"
             ],
             "properties": {
-              "heat": {
+              "score": {
                 "type": "integer",
                 "minimum": 1
               },
@@ -263,7 +263,7 @@
           "commitUpdatedAt",
           "totalDownloads",
           "allAssetsDownloads",
-          "heat",
+          "score",
           "ranks"
         ],
         "additionalProperties": true

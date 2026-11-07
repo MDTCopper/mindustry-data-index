@@ -14,7 +14,7 @@ import {
 
 const GENERATED_AT = '2026-11-06T03:00:00.000Z';
 
-function defaultHeat(rank = 1, score = 0.5 / rank) {
+function defaultScore(rank = 1, score = 0.5 / rank) {
   return {
     score,
     rank,
@@ -25,10 +25,10 @@ function defaultHeat(rank = 1, score = 0.5 / rank) {
   };
 }
 
-function ensureHeat(index, startRank = 0) {
+function ensureScore(index, startRank = 0) {
   for (const [position, mod] of (index?.mods ?? []).entries()) {
-    if (!mod.heat) {
-      mod.heat = defaultHeat(startRank + position + 1);
+    if (!mod.score) {
+      mod.score = defaultScore(startRank + position + 1);
     }
   }
   return index;
@@ -138,11 +138,11 @@ function summaryRow(entry) {
     releaseUpdatedAt: entry.releaseUpdatedAt ?? null,
     commitUpdatedAt: entry.commitUpdatedAt ?? null,
     iconUrl: entry.iconUrl,
-    ...(entry.heat
+    ...(entry.score
       ? {
-          heatScore: entry.heat.score,
-          heatRank: entry.heat.rank,
-          recommendVisible: entry.heat.recommendVisible,
+          score: entry.score.score,
+          rank: entry.score.rank,
+          recommendVisible: entry.score.recommendVisible,
         }
       : {}),
     releasesPath: entry.releasesPath,
@@ -150,7 +150,7 @@ function summaryRow(entry) {
 }
 
 async function writeSummaryFiles(dir, index) {
-  ensureHeat(index);
+  ensureScore(index);
   const rows = index.mods.map((entry) => summaryRow(entry));
   const summary = buildSummary({ rows, generatedAt: GENERATED_AT });
   await writeFile(path.join(dir, 'summary.json'), JSON.stringify(summary, null, 2));
@@ -159,14 +159,14 @@ async function writeSummaryFiles(dir, index) {
 
 async function makeFixtureDir({ index, releaseFile } = validFixture()) {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mods-index-validate-'));
-  ensureHeat(index);
+  ensureScore(index);
   const fullIndex = JSON.parse(JSON.stringify(index));
   const visibleIndex = {
     ...fullIndex,
     source: fullIndex.source
-      ? { ...fullIndex.source, modCount: fullIndex.mods.filter((mod) => mod.heat?.recommendVisible === true).length }
+      ? { ...fullIndex.source, modCount: fullIndex.mods.filter((mod) => mod.score?.recommendVisible === true).length }
       : fullIndex.source,
-    mods: fullIndex.mods.filter((mod) => mod.heat?.recommendVisible === true),
+    mods: fullIndex.mods.filter((mod) => mod.score?.recommendVisible === true),
   };
   await mkdir(path.join(dir, 'releases'), { recursive: true });
   await writeFile(path.join(dir, 'index-full.json'), JSON.stringify(fullIndex, null, 2));
@@ -657,17 +657,17 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
     );
     officialCount = Array.isArray(officialIndex.mods) ? officialIndex.mods.length : 0;
   } catch {}
-  ensureHeat(fixture.index, officialCount);
+  ensureScore(fixture.index, officialCount);
   const communityFull = JSON.parse(JSON.stringify(fixture.index));
   const communityVisible = {
     ...communityFull,
     source: communityFull.source
       ? {
           ...communityFull.source,
-          modCount: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true).length,
+          modCount: communityFull.mods.filter((mod) => mod.score?.recommendVisible === true).length,
         }
       : communityFull.source,
-    mods: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true),
+    mods: communityFull.mods.filter((mod) => mod.score?.recommendVisible === true),
   };
   await mkdir(path.join(communityDir, 'releases', 'communitymods'), { recursive: true });
   await writeFile(
@@ -697,9 +697,9 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
     releaseUpdatedAt: fixture.entry.releaseUpdatedAt,
     commitUpdatedAt: fixture.entry.commitUpdatedAt,
     iconUrl: null,
-    heatScore: fixture.index.mods[0].heat.score,
-    heatRank: fixture.index.mods[0].heat.rank,
-    recommendVisible: fixture.index.mods[0].heat.recommendVisible,
+    score: fixture.index.mods[0].score.score,
+    rank: fixture.index.mods[0].score.rank,
+    recommendVisible: fixture.index.mods[0].score.recommendVisible,
     releasesPath: fixture.entry.releasesPath,
   };
   const summary = buildSummary({ rows: [row], generatedAt: GENERATED_AT });
@@ -870,28 +870,28 @@ async function addHeatHistory(dir, { daily = 1 } = {}) {
   );
 }
 
-test('validateDir：index.heat 与历史快照合法时通过', async (t) => {
+test('validateDir：index.score 与历史快照合法时通过', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
   await addHeatHistory(dir);
   const result = await validateDir(dir);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.heatModCount, 1);
-  assert.deepEqual(result.heatHistoryCounts, { daily: 1, weekly: 1, monthly: 1 });
+  assert.equal(result.scoreModCount, 1);
+  assert.deepEqual(result.scoreHistoryCounts, { daily: 1, weekly: 1, monthly: 1 });
 });
 
-test('validateDir：缺少 index.heat 字段会被发现', async (t) => {
+test('validateDir：缺少 index.score 字段会被发现', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
   const indexPath = path.join(dir, 'index.json');
   const fullPath = path.join(dir, 'index-full.json');
   for (const filePath of [indexPath, fullPath]) {
     const index = JSON.parse(await readFile(filePath, 'utf8'));
-    delete index.mods[0].heat;
+    delete index.mods[0].score;
     await writeFile(filePath, JSON.stringify(index, null, 2));
   }
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('.heat 缺失')));
+  assert.ok(result.errors.some((message) => message.includes('.score 缺失')));
 });
 
 test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发现', async (t) => {
@@ -908,22 +908,22 @@ test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发�
   };
   // 社区全量/默认条目 rank=1，与官方 rank=1 重复
   await writeCommunity((mod) => {
-    mod.heat.rank = 1;
+    mod.score.rank = 1;
   });
   const duplicate = await validateDir(dir);
-  assert.ok(duplicate.errors.some((message) => message.includes('全局 heat.rank 重复')));
+  assert.ok(duplicate.errors.some((message) => message.includes('全局 score.rank 重复')));
   // 修正为 rank=2 但分数更高 → 排序不一致
   await writeCommunity((mod) => {
-    mod.heat.rank = 2;
-    mod.heat.score = 0.9;
+    mod.score.rank = 2;
+    mod.score.score = 0.9;
   });
   const summaryPath = path.join(dir, 'community', 'summary.json');
   const summary = JSON.parse(await readFile(summaryPath, 'utf8'));
-  summary.mods[0].heatScore = 0.9;
-  summary.mods[0].heatRank = 2;
+  summary.mods[0].score = 0.9;
+  summary.mods[0].rank = 2;
   await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const wrongOrder = await validateDir(dir);
-  assert.ok(wrongOrder.errors.some((message) => message.includes('heat.rank 与分数排序不一致')));
+  assert.ok(wrongOrder.errors.some((message) => message.includes('score.rank 与分数排序不一致')));
 });
 
 test('validateDir：默认列表不等于全量按 recommendVisible 过滤会被发现', async (t) => {
@@ -946,22 +946,22 @@ test('validateDir：heat 出现第 7 个字段会被发现', async (t) => {
   for (const file of ['index.json', 'index-full.json']) {
     const filePath = path.join(dir, file);
     const index = JSON.parse(await readFile(filePath, 'utf8'));
-    index.mods[0].heat.maintenance = { status: 'active' };
+    index.mods[0].score.maintenance = { status: 'active' };
     await writeFile(filePath, JSON.stringify(index, null, 2));
   }
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('含多余字段 maintenance')));
 });
 
-test('validateDir：summary 热度列与 index.heat 不一致会被发现', async (t) => {
+test('validateDir：summary 热度列与 index.score 不一致会被发现', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
   const summaryPath = path.join(dir, 'summary.json');
   const summary = JSON.parse(await readFile(summaryPath, 'utf8'));
-  summary.mods[0].heatScore = 0.123;
+  summary.mods[0].score = 0.123;
   await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('heatScore 与 index.heat')));
+  assert.ok(result.errors.some((message) => message.includes('score 与 index.score')));
 });
 
 test('validateDir：旧 heat/index.json 只给废弃 warning', async (t) => {

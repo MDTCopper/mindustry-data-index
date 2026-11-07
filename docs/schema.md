@@ -28,7 +28,7 @@
 - **index v3**：每条包含 `repo`、`name*`、`author*`、`descriptionPlain`、`modType`、`version`、
   `minGameVersion`、`gameVersionRanges`、`stars`、`hasIcon`/`iconUrl`/`iconHash`、`releasesPath`、
   `releaseCount`、`tagCount`（非 Java）、`releaseUpdatedAt`、`commitUpdatedAt`、
-  `totalDownloads`/`allAssetsDownloads`、`releaseDataUpdatedAt` 和 `heat`（6 字段）。
+  `totalDownloads`/`allAssetsDownloads`、`releaseDataUpdatedAt` 和 `score`（6 字段）。
   官方 mods.json 只提供 repo 列表，其余字段来自 tag 元数据（mod.hjson 优先、其次 mod.json，宽松解析）。
 - **gameVersionRanges**：实际游戏版本闭区间数组 `[{from,to}]`，`from`/`to` 均为
   `mindustry/versions.json` 的正式版版本号；对 `minGameVersion=m` 的 version，取所有满足

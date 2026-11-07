@@ -16,8 +16,8 @@ export const SUMMARY_COLUMNS = [
   'releaseUpdatedAt',
   'commitUpdatedAt',
   'iconUrl',
-  'heatScore',
-  'heatRank',
+  'score',
+  'rank',
   'recommendVisible',
   'releasesPath',
 ];

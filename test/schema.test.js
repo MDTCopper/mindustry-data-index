@@ -53,7 +53,7 @@ test('schema/: 关键数据文件 required 字段齐全，formatVersion 与当�
 
   const index = JSON.parse(readFileSync(path.join(schemaDir, 'index.json'), 'utf8'));
   const modRequired = index.properties.mods.items.required;
-  for (const field of ['namePlain', 'authorPlain', 'descriptionPlain', 'modType', 'gameVersionRanges', 'releaseUpdatedAt', 'commitUpdatedAt', 'heat']) {
+  for (const field of ['namePlain', 'authorPlain', 'descriptionPlain', 'modType', 'gameVersionRanges', 'releaseUpdatedAt', 'commitUpdatedAt', 'score']) {
     assert.ok(modRequired.includes(field), `index 条目缺少 ${field}`);
   }
   for (const field of ['hasJava', 'hasScripts', 'removedCount', 'compatRanges', 'latestCompatible', 'iosCompatible', 'legacyCompatible']) {
@@ -63,14 +63,14 @@ test('schema/: 关键数据文件 required 字段齐全，formatVersion 与当�
   const community = JSON.parse(readFileSync(path.join(schemaDir, 'community-index.json'), 'utf8'));
   assert.ok(community.properties.mods.items.required.includes('modType'));
   assert.ok(community.properties.mods.items.required.includes('descriptionPlain'));
-  assert.ok(community.properties.mods.items.required.includes('heat'));
+  assert.ok(community.properties.mods.items.required.includes('score'));
 
   const summary = JSON.parse(readFileSync(path.join(schemaDir, 'summary.json'), 'utf8'));
-  for (const field of ['heatScore', 'heatRank', 'recommendVisible']) {
+  for (const field of ['score', 'rank', 'recommendVisible']) {
     assert.ok(summary.properties.mods.items.required.includes(field), `summary 条目缺少 ${field}`);
   }
   assert.ok(!('maintenanceStatus' in summary.properties.mods.items.properties));
-  const heatFields = index.properties.mods.items.properties.heat.required;
+  const heatFields = index.properties.mods.items.properties.score.required;
   assert.deepEqual(
     [...heatFields].sort(),
     ['downloadsScore', 'rank', 'recommendVisible', 'score', 'starsScore', 'updateScore'].sort(),

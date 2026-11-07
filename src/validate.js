@@ -472,9 +472,9 @@ function validateCompatData(file, { tags, errors }) {
 
 // 模组列表里的 heat 对象（热度已合并进 index，不再有独立 heat/index.json）
 export function validateIndexHeat(mod, { where, errors }) {
-  const heat = mod.heat;
+  const heat = mod.score;
   if (!isPlainObject(heat)) {
-    errors.push(`${where}.heat 缺失或不是对象（热度已合并进 index.json）`);
+    errors.push(`${where}.score 缺失或不是对象（热度已合并进 index.json）`);
     return;
   }
   const keys = Object.keys(heat);
@@ -488,27 +488,27 @@ export function validateIndexHeat(mod, { where, errors }) {
   ];
   for (const key of keys) {
     if (!expected.includes(key)) {
-      errors.push(`${where}.heat 含多余字段 ${key}（只允许 6 个精简字段）`);
+      errors.push(`${where}.score 含多余字段 ${key}（只允许 6 个精简字段）`);
     }
   }
   for (const field of ['score', 'downloadsScore', 'starsScore', 'updateScore']) {
     if (!isFiniteNumberOrNull(heat[field])) {
-      errors.push(`${where}.heat.${field} 应为有限数字`);
+      errors.push(`${where}.score.${field} 应为有限数字`);
     }
   }
   if (!Number.isInteger(heat.rank) || heat.rank < 1) {
-    errors.push(`${where}.heat.rank 应为正整数`);
+    errors.push(`${where}.score.rank 应为正整数`);
   }
   if (typeof heat.recommendVisible !== 'boolean') {
-    errors.push(`${where}.heat.recommendVisible 应为布尔值`);
+    errors.push(`${where}.score.recommendVisible 应为布尔值`);
   } else if (
     isFiniteNumberOrNull(heat.score) &&
     heat.recommendVisible !== heat.score >= MIN_SCORE
   ) {
-    errors.push(`${where}.heat.recommendVisible 应为 score >= ${MIN_SCORE}`);
+    errors.push(`${where}.score.recommendVisible 应为 score >= ${MIN_SCORE}`);
   }
   if (expected.some((field) => !(field in heat))) {
-    errors.push(`${where}.heat 缺少 6 个字段之一：${expected.join(', ')}`);
+    errors.push(`${where}.score 缺少 6 个字段之一：${expected.join(', ')}`);
   }
   // 预计算排序名次：客户端按 ranks[key] 直接排序（v3 新字段；旧 fixture 可缺省）
   const ranks = mod.ranks;
@@ -522,8 +522,8 @@ export function validateIndexHeat(mod, { where, errors }) {
         errors.push(`${where}.ranks.${key} 应为正整数`);
       }
     }
-    if (ranks.heat !== heat.rank) {
-      errors.push(`${where}.ranks.heat 应与 heat.rank 一致`);
+    if (ranks.score !== score.rank) {
+      errors.push(`${where}.ranks.score 应与 score.rank 一致`);
     }
     for (const key of Object.keys(ranks)) {
       if (!SORT_KEYS.includes(key)) {
@@ -543,7 +543,7 @@ export function validateDefaultListConsistency(defaultIndex, fullIndex, { label,
     errors.push(`${label} 全量列表缺失或 mods 不是数组`);
     return;
   }
-  const expected = fullIndex.mods.filter((mod) => mod?.heat?.recommendVisible === true);
+  const expected = fullIndex.mods.filter((mod) => mod?.score?.recommendVisible === true);
   const defaultRepos = defaultIndex.mods.map((mod) => mod?.repo);
   const expectedRepos = expected.map((mod) => mod?.repo);
   if (JSON.stringify(defaultRepos) !== JSON.stringify(expectedRepos)) {
@@ -551,13 +551,13 @@ export function validateDefaultListConsistency(defaultIndex, fullIndex, { label,
     return;
   }
   for (const [position, mod] of defaultIndex.mods.entries()) {
-    if (JSON.stringify(mod.heat) !== JSON.stringify(expected[position].heat)) {
+    if (JSON.stringify(mod.score) !== JSON.stringify(expected[position].score)) {
       errors.push(`${label} 默认列表 ${mod.repo} 的 heat 与全量列表不一致`);
     }
   }
   // 全量列表里隐藏项必须 recommendVisible=false，可见项 true（按定义即可，额外校验字段存在）
   for (const mod of fullIndex.mods) {
-    if (typeof mod?.heat?.recommendVisible !== 'boolean') {
+    if (typeof mod?.score?.recommendVisible !== 'boolean') {
       errors.push(`${label} 全量列表 ${mod?.repo} 缺少 heat.recommendVisible`);
     }
   }
@@ -643,8 +643,8 @@ function validateIndexDataV3(index, { errors, warnings, releaseFiles = null, mod
     if (mod.iconHash !== null && typeof mod.iconHash !== 'string') {
       errors.push(`${where}.iconHash 应为字符串或 null`);
     }
-    if (!mod.heat) {
-      errors.push(`${where}.heat 缺失或不是对象（热度已合并进 index.json）`);
+    if (!mod.score) {
+      errors.push(`${where}.score 缺失或不是对象（热度已合并进 index.json）`);
     } else {
       validateIndexHeat(mod, { where, errors });
     }
@@ -653,8 +653,19 @@ function validateIndexDataV3(index, { errors, warnings, releaseFiles = null, mod
     }
   }
   if (releaseFiles) {
+    const referenced = new Set();
+    for (const mod of index.mods ?? []) {
+      if (typeof mod?.releasesPath === 'string') {
+        referenced.add(mod.releasesPath);
+      }
+      for (const page of Array.isArray(mod?.pages) ? mod.pages : []) {
+        if (typeof page?.path === 'string') {
+          referenced.add(page.path);
+        }
+      }
+    }
     for (const relPath of releaseFiles) {
-      if (![...(index.mods ?? [])].some((mod) => mod.releasesPath === relPath)) {
+      if (!referenced.has(relPath)) {
         warnings.push(`${relPath} 没有被 index 引用`);
       }
     }
@@ -1215,11 +1226,11 @@ function validateSummaryDataV3(summary, { index, errors }) {
     if (JSON.stringify(rowRanges) !== JSON.stringify(mod.gameVersionRanges)) {
       errors.push(`${where}.gameVersionRanges 与 index 不一致`);
     }
-    if (mod.heat) {
-      if (row.heatScore !== mod.heat.score) errors.push(`${where}.heatScore 与 index.heat 不一致`);
-      if (row.heatRank !== mod.heat.rank) errors.push(`${where}.heatRank 与 index.heat 不一致`);
-      if (row.recommendVisible !== mod.heat.recommendVisible) {
-        errors.push(`${where}.recommendVisible 与 index.heat 不一致`);
+    if (mod.score) {
+      if (row.score !== mod.score.score) errors.push(`${where}.score 与 index.score 不一致`);
+      if (row.rank !== mod.score.rank) errors.push(`${where}.rank 与 index.score 不一致`);
+      if (row.recommendVisible !== mod.score.recommendVisible) {
+        errors.push(`${where}.recommendVisible 与 index.score 不一致`);
       }
     }
   }
@@ -1358,20 +1369,20 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
     if (row.releasesPath !== (indexEntry.releasesPath ?? null)) {
       errors.push(`${where}.releasesPath 与 index 不一致`);
     }
-    if (!isFiniteNumberOrNull(row.heatScore)) {
-      errors.push(`${where}.heatScore 应为有限数字`);
-    } else if (indexEntry.heat && row.heatScore !== indexEntry.heat.score) {
-      errors.push(`${where}.heatScore 与 index.heat.score 不一致`);
+    if (!isFiniteNumberOrNull(row.score)) {
+      errors.push(`${where}.score 应为有限数字`);
+    } else if (indexEntry.score && row.score !== indexEntry.score.score) {
+      errors.push(`${where}.score 与 index.score.score 不一致`);
     }
-    if (!Number.isInteger(row.heatRank) || row.heatRank < 1) {
-      errors.push(`${where}.heatRank 应为正整数`);
-    } else if (indexEntry.heat && row.heatRank !== indexEntry.heat.rank) {
-      errors.push(`${where}.heatRank 与 index.heat.rank 不一致`);
+    if (!Number.isInteger(row.rank) || row.rank < 1) {
+      errors.push(`${where}.rank 应为正整数`);
+    } else if (indexEntry.score && row.rank !== indexEntry.score.rank) {
+      errors.push(`${where}.rank 与 index.score.rank 不一致`);
     }
     if (typeof row.recommendVisible !== 'boolean') {
       errors.push(`${where}.recommendVisible 应为布尔值`);
-    } else if (indexEntry.heat && row.recommendVisible !== indexEntry.heat.recommendVisible) {
-      errors.push(`${where}.recommendVisible 与 index.heat 不一致`);
+    } else if (indexEntry.score && row.recommendVisible !== indexEntry.score.recommendVisible) {
+      errors.push(`${where}.recommendVisible 与 index.score 不一致`);
     }
   }
   for (const mod of indexMods) {
@@ -1984,8 +1995,8 @@ export async function validateDir(dir) {
     communitySummaryRowCount: 0,
     communityStateModCount: 0,
     changesCount: 0,
-    heatModCount: 0,
-    heatHistoryCounts: { daily: 0, weekly: 0, monthly: 0 },
+    scoreModCount: 0,
+    scoreHistoryCounts: { daily: 0, weekly: 0, monthly: 0 },
     present: [],
   };
 
@@ -2558,34 +2569,34 @@ export async function validateDir(dir) {
     : [];
   const allHeatEntries = [];
   for (const mod of [...officialModsForHeat, ...communityModsForHeat]) {
-    if (isPlainObject(mod) && typeof mod.repo === 'string' && isPlainObject(mod.heat)) {
-      allHeatEntries.push({ repo: mod.repo, heat: mod.heat });
+    if (isPlainObject(mod) && typeof mod.repo === 'string' && isPlainObject(mod.score)) {
+      allHeatEntries.push({ repo: mod.repo, score: mod.score });
     }
   }
-  result.heatModCount = allHeatEntries.length;
+  result.scoreModCount = allHeatEntries.length;
   const seenRanks = new Set();
-  for (const { heat } of allHeatEntries) {
-    if (Number.isInteger(heat.rank)) {
-      if (seenRanks.has(heat.rank)) {
-        errors.push(`${HEAT_INDEX_REL_PATH} 全局 heat.rank 重复：${heat.rank}`);
+  for (const { score } of allHeatEntries) {
+    if (Number.isInteger(score.rank)) {
+      if (seenRanks.has(score.rank)) {
+        errors.push(`${HEAT_INDEX_REL_PATH} 全局 score.rank 重复：${score.rank}`);
       }
-      seenRanks.add(heat.rank);
+      seenRanks.add(score.rank);
     }
   }
   if (allHeatEntries.length > 0) {
     if (seenRanks.size !== allHeatEntries.length) {
-      errors.push('index.json / community/index.json 的全局 heat.rank 不是 1..N 唯一');
+      errors.push('index.json / community/index.json 的全局 score.rank 不是 1..N 唯一');
     }
     const byScore = [...allHeatEntries].sort((left, right) => {
-      if (right.heat.score !== left.heat.score) {
-        return right.heat.score - left.heat.score;
+      if (right.score.score !== left.score.score) {
+        return right.score.score - left.score.score;
       }
       return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
     });
     for (const [position, item] of byScore.entries()) {
-      if (item.heat.rank !== position + 1) {
+      if (item.score.rank !== position + 1) {
         errors.push(
-          `index.json / community/index.json 的 heat.rank 与分数排序不一致：${item.repo} 应为 ${position + 1}`,
+          `index.json / community/index.json 的 score.rank 与分数排序不一致：${item.repo} 应为 ${position + 1}`,
         );
       }
     }
@@ -2602,7 +2613,7 @@ export async function validateDir(dir) {
   }
   for (const kind of ['daily', 'weekly', 'monthly']) {
     const files = heatHistoryFiles[kind];
-    result.heatHistoryCounts[kind] = files.length;
+    result.scoreHistoryCounts[kind] = files.length;
     if (files.length > HISTORY_LIMITS[kind]) {
       errors.push(
         `${HEAT_HISTORY_DIR}/${kind} 超过保留数量（${files.length} > ${HISTORY_LIMITS[kind]}）`,
@@ -2700,9 +2711,9 @@ async function main(argv) {
     console.log(`changes.json：${result.changesCount} 条变更`);
   }
   if (result.present.includes(HEAT_INDEX_REL_PATH)) {
-    const { daily, weekly, monthly } = result.heatHistoryCounts;
+    const { daily, weekly, monthly } = result.scoreHistoryCounts;
     console.log(
-      `heat：${result.heatModCount} 个模组，历史快照 daily ${daily} / weekly ${weekly} / monthly ${monthly}`,
+      `heat：${result.scoreModCount} 个模组，历史快照 daily ${daily} / weekly ${weekly} / monthly ${monthly}`,
     );
   }
   if (result.present.includes(VERSIONS_REL_PATH)) {

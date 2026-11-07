@@ -111,10 +111,10 @@
               "null"
             ]
           },
-          "heatScore": {
+          "score": {
             "type": "number"
           },
-          "heatRank": {
+          "rank": {
             "type": "integer",
             "minimum": 1
           },
@@ -141,8 +141,8 @@
           "commitUpdatedAt",
           "iconUrl",
           "releasesPath",
-          "heatScore",
-          "heatRank",
+          "score",
+          "rank",
           "recommendVisible"
         ],
         "additionalProperties": true

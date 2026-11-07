@@ -22,7 +22,7 @@ export const RECOMMEND_DEFAULTS = { minScore: MIN_SCORE };
 export const RECOMMEND_HIDDEN_REASONS = ['score-below-min'];
 // 预计算排序：客户端拿到 ranks 直接按字段排，不需要自己算/重排
 export const SORT_OPTIONS = [
-  { key: 'heat', label: '热度' },
+  { key: 'score', label: '热度' },
   { key: 'updated', label: '最近更新' },
   { key: 'downloads', label: '下载量' },
   { key: 'stars', label: '星标' },
@@ -170,8 +170,8 @@ export function heatIndexFields(entry) {
 // summary 总表里的 3 个热度列
 export function heatSummaryFields(entry) {
   return {
-    heatScore: entry.score,
-    heatRank: entry.rank,
+    score: entry.score,
+    rank: entry.rank,
     recommendVisible: entry.recommend?.visible === true,
   };
 }
@@ -192,7 +192,7 @@ export function injectHeatIntoIndex(index, heatByRepo) {
       }
       return {
         ...mod,
-        heat: heatIndexFields(heatEntry),
+        score: heatIndexFields(heatEntry),
         ...(heatEntry.ranks ? { ranks: heatEntry.ranks } : {}),
       };
     }),

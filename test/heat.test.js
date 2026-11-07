@@ -288,7 +288,7 @@ test('injectHeatIntoIndex / SummaryRows：热度精简为 6 字段并合并进�
     { formatVersion: 1, mods: [{ repo: 'owner/mod', name: 'Mod' }] },
     heatByRepo,
   );
-  assert.deepEqual(Object.keys(index.mods[0].heat), [
+  assert.deepEqual(Object.keys(index.mods[0].score), [
     'score',
     'rank',
     'downloadsScore',
@@ -296,19 +296,19 @@ test('injectHeatIntoIndex / SummaryRows：热度精简为 6 字段并合并进�
     'updateScore',
     'recommendVisible',
   ]);
-  assert.equal(index.mods[0].heat.rank, 7);
-  assert.equal(index.mods[0].heat.recommendVisible, false);
+  assert.equal(index.mods[0].score.rank, 7);
+  assert.equal(index.mods[0].score.recommendVisible, false);
   const rows = injectHeatIntoSummaryRows(
     [{ repo: 'owner/mod', totalDownloads: 3 }],
     heatByRepo,
   );
   assert.deepEqual(
     {
-      heatScore: rows[0].heatScore,
-      heatRank: rows[0].heatRank,
+      score: rows[0].score,
+      rank: rows[0].rank,
       recommendVisible: rows[0].recommendVisible,
     },
-    { heatScore: 0.42, heatRank: 7, recommendVisible: false },
+    { score: 0.42, rank: 7, recommendVisible: false },
   );
   assert.ok(!('maintenanceStatus' in rows[0]));
   assert.equal(rows[0].totalDownloads, 3);
@@ -379,8 +379,8 @@ test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按�
   assert.equal(projected.rank, 1);
   assert.equal(projected.recommendVisible, true);
   assert.deepEqual(heatSummaryFields(entries[0]), {
-    heatScore: entries[0].score,
-    heatRank: 1,
+    score: entries[0].score,
+    rank: 1,
     recommendVisible: true,
   });
 });

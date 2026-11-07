@@ -53,9 +53,9 @@ state/repo-created.json                 # 仓库 created_at 永久缓存（新 m
 schema/*.json                           # 各数据文件的 JSON Schema（draft 2020-12，见 docs/schema.md）
 ```
 
-热度（`heat` 6 字段 / 只看活跃）已**合并进模组列表**且默认预筛：`index.json`、`community/index.json`
+热度（`score` 6 字段 / 只看活跃）已**合并进模组列表**且默认预筛：`index.json`、`community/index.json`
 只含 `recommendVisible=true` 的默认列表；全量列表在 `index-full.json`、`community/index-full.json`。
-`summary.json/csv` 仍是全量，带 `heatScore`/`heatRank`/`recommendVisible` 列；旧的独立
+`summary.json/csv` 仍是全量，带 `score`/`rank`/`recommendVisible` 列；旧的独立
 `heat/index.json`、`heat/summary.csv` 不再生成（见下文「热度与模组列表」）。
 
 per-mod 文件当前 `formatVersion` 为 **3**（schemaVersion）：v3 改为 `versions[]`/`modType`/`gameVersionRanges`、
@@ -93,7 +93,7 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   `gameVersionRanges`（实际游戏版本闭区间数组，见下）、`stars`、`hasIcon`、`iconUrl`、`iconHash`、
   `releasesPath`、`releaseCount`（有资产的 Release 版本数）、`tagCount`（非 Java 的可见 tag 总数；Java 不写）、
   `releaseUpdatedAt`（最新 Release 时间）、`commitUpdatedAt`（仓库 `pushed_at`，来自 `state/repo-stats.json`）、
-  `totalDownloads`/`allAssetsDownloads`、`releaseDataUpdatedAt`，以及合并进来的 `heat`。
+  `totalDownloads`/`allAssetsDownloads`、`releaseDataUpdatedAt`，以及合并进来的 `score`。
   官方 `mods.json` **只作为 repo 列表**，名称/作者/描述/版本/`minGameVersion`/`main`/`scripts` 等来自各 tag 的
   `mod.hjson`（优先）或 `mod.json` 元数据；不再透传 `iosCompatible`/`legacyCompatible`/`lastUpdated`/
   `removedCount`/`latest*`/`totalSizeBytes` 等官方字段。
@@ -117,7 +117,7 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `summary.json`：`totals`（`mods`/`releases`/`downloads`）+ `mods[]`（`repo`、`name`、`namePlain`、`author`、
   `stars`、`modType`、`releaseCount`、`tagCount`（非 Java）、`totalDownloads`、`allAssetsDownloads`、
   `minGameVersion`、`gameVersionRanges`（JSON 字符串）、`releaseUpdatedAt`、`commitUpdatedAt`、`iconUrl`、
-  `heatScore`、`heatRank`、`recommendVisible`、`releasesPath`），按 `totalDownloads` 降序（并列 `stars` 降序、
+  `score`、`rank`、`recommendVisible`、`releasesPath`），按 `totalDownloads` 降序（并列 `stars` 降序、
   `repo` 升序）。
 - `summary.csv`：与 `summary.json` 同列（不含 `totals`），UTF-8 **带 BOM**、CRLF，逗号/引号/换行按 CSV 转义。
 - `state/repo-stats.json`：`stars`/`archived`/`createdAt`/`pushedAt` 缓存，每周刷新；stars 优先用它，
@@ -212,9 +212,9 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `index.json` / `community/index.json`：**默认列表**，只含 `recommendVisible=true`（`score >= MIN_SCORE`）的模组；
 - `index-full.json` / `community/index-full.json`：全量列表（含隐藏模组），其余字段完全一致。
 
-两条列表的每个条目都带同一个精简 `heat` 对象（只有 6 个字段）：
+两条列表的每个条目都带同一个精简 `score` 对象（只有 6 个字段）：
 `{score, rank, downloadsScore, starsScore, updateScore, recommendVisible}`；`rank` 是官方+社区合并后的
-**全局**名次。`summary.json/csv` 仍是全量，新增 `heatScore`/`heatRank`/`recommendVisible` 列。
+**全局**名次。`summary.json/csv` 仍是全量，新增 `score`/`rank`/`recommendVisible` 列。
 旧路径 `heat/index.json`、`heat/summary.csv` 不再生成（历史快照 `heat/history/` 保留）。
 
 ### 预计算排序（`ranks` + `sortOptions`）
@@ -222,10 +222,10 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 每条模组还带一个 `ranks` 对象，排序名次在仓库里提前算好，客户端直接按字段升序排、不需要自己排序：
 
 ```json
-"ranks": { "heat": 3, "updated": 12, "downloads": 5, "stars": 8, "newest": 120 }
+"ranks": { "score": 3, "updated": 12, "downloads": 5, "stars": 8, "newest": 120 }
 ```
 
-- `heat`：热度分名次（与 `heat.rank` 一致）
+- `score`：热度分名次（与 `score.rank` 一致）
 - `updated`：最近更新时间名次（`releaseUpdatedAt` / `commitUpdatedAt` 取较新者）
 - `downloads`：总下载量名次
 - `stars`：星标数名次
@@ -235,16 +235,16 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 
 ```json
 "sortOptions": [
-  { "key": "heat", "label": "热度" },
+  { "key": "score", "label": "热度" },
   { "key": "updated", "label": "最近更新" },
   { "key": "downloads", "label": "下载量" },
   { "key": "stars", "label": "星标" },
   { "key": "newest", "label": "最新发布" }
 ],
-"defaultSort": "heat"
+"defaultSort": "updated"
 ```
 
-想默认按热度排，把 `src/heat.js` 的 `DEFAULT_SORT` 改成 `'heat'` 即可；想加新排序只加一个 key 和对应名次。
+想改默认排序，改 `src/heat.js` 的 `DEFAULT_SORT`（当前 `updated`，可选 `score`/`downloads`/`stars`/`newest`）即可；想加新排序只加一个 key 和对应名次。
 
 > 权重、窗口、倍率、惩罚等参数全部固定在仓库代码 [src/heat.js](src/heat.js)（README 不重复列常量），
 > 输出里不携带这些中间值。

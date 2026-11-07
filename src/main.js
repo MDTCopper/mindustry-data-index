@@ -2418,7 +2418,7 @@ async function runHeat(options, context) {
       return;
     }
     const fullIndex = injectHeatIntoIndex(source, heatByRepo);
-    const visibleMods = fullIndex.mods.filter((mod) => mod.heat?.recommendVisible === true);
+    const visibleMods = fullIndex.mods.filter((mod) => mod.score?.recommendVisible === true);
     const visibleIndex = {
       ...fullIndex,
       source:
