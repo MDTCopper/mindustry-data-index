@@ -239,7 +239,7 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 "defaultSort": "heat"
 ```
 
-想默认按「最近更新」排，把 `src/heat.js` 的 `DEFAULT_SORT` 改成 `'updated'` 即可；想加新排序只加一个 key 和对应名次。
+想默认按热度排，把 `src/heat.js` 的 `DEFAULT_SORT` 改成 `'heat'` 即可；想加新排序只加一个 key 和对应名次。
 
 > 权重、窗口、倍率、惩罚等参数全部固定在仓库代码 [src/heat.js](src/heat.js)（README 不重复列常量），
 > 输出里不携带这些中间值。

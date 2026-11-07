@@ -28,7 +28,7 @@ export const SORT_OPTIONS = [
   { key: 'stars', label: '星标' },
   { key: 'newest', label: '最新发布' },
 ];
-export const DEFAULT_SORT = 'heat';
+export const DEFAULT_SORT = 'updated';
 export const SORT_KEYS = SORT_OPTIONS.map((option) => option.key);
 export const HEAT_RECOMMEND_REL_PATH = 'heat/recommend.json';
 export const HEAT_RECOMMEND_CSV_REL_PATH = 'heat/recommend.csv';
