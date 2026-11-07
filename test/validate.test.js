@@ -19,6 +19,8 @@ function defaultScore(rank = 1, score = 0.5 / rank) {
     downloadsScore: 0.5,
     starsScore: 0.6,
     updateScore: 0.4,
+    penaltyScore: 0,
+    newModMultiplier: 1,
     recommendVisible: score >= 0,
   };
 }
@@ -29,7 +31,8 @@ function ensureScore(index, startRank = 0) {
       const rank = startRank + position + 1;
       mod.score = defaultScore(rank);
       mod.ranks = {
-        score: rank,
+        heat: rank,
+        recommended: rank,
         updated: rank,
         downloads: rank,
         stars: rank,
@@ -146,7 +149,7 @@ function summaryRow(entry) {
     iconUrl: entry.iconUrl,
     ...(entry.score
       ? {
-          rank: entry.ranks?.score ?? null,
+          rank: entry.ranks?.heat ?? null,
           recommendVisible: entry.score.recommendVisible,
         }
       : {}),
@@ -702,7 +705,7 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
     releaseUpdatedAt: fixture.entry.releaseUpdatedAt,
     commitUpdatedAt: fixture.entry.commitUpdatedAt,
     iconUrl: null,
-    rank: fixture.index.mods[0].ranks?.score ?? null,
+    rank: fixture.index.mods[0].ranks?.heat ?? null,
     recommendVisible: fixture.index.mods[0].score.recommendVisible,
     releasesPath: fixture.entry.releasesPath,
   };
@@ -912,13 +915,13 @@ test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发�
   };
   // 社区全量/默认条目 rank=1，与官方 rank=1 重复
   await writeCommunity((mod) => {
-    mod.ranks.score = 1;
+    mod.ranks.heat = 1;
   });
   const duplicate = await validateDir(dir);
   assert.ok(duplicate.errors.some((message) => message.includes('全局 score.rank 重复')));
   // 修正为 rank=2（总分不再落盘，无法做排序一致性校验）
   await writeCommunity((mod) => {
-    mod.ranks.score = 2;
+    mod.ranks.heat = 2;
   });
   const summaryPath = path.join(dir, 'community', 'summary.json');
   const summary = JSON.parse(await readFile(summaryPath, 'utf8'));

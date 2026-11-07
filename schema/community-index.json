@@ -166,12 +166,20 @@
               },
               "recommendVisible": {
                 "type": "boolean"
+              },
+              "penaltyScore": {
+                "type": "number"
+              },
+              "newModMultiplier": {
+                "type": "number"
               }
             },
             "required": [
               "downloadsScore",
               "starsScore",
               "updateScore",
+              "penaltyScore",
+              "newModMultiplier",
               "recommendVisible"
             ],
             "additionalProperties": false

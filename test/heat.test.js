@@ -292,6 +292,8 @@ test('injectHeatIntoIndex / SummaryRows：热度精简为 6 字段并合并进�
     'downloadsScore',
     'starsScore',
     'updateScore',
+    'penaltyScore',
+    'newModMultiplier',
     'recommendVisible',
   ]);
   assert.equal(index.mods[0].score.recommendVisible, false);
@@ -368,6 +370,8 @@ test('computeHeat：缺失窗口按 0；score 可负可 >1；rank 唯一且按�
     'downloadsScore',
     'starsScore',
     'updateScore',
+    'penaltyScore',
+    'newModMultiplier',
     'recommendVisible',
   ]);
   assert.equal('score' in projected, false);

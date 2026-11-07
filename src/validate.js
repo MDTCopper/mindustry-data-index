@@ -477,13 +477,20 @@ export function validateIndexHeat(mod, { where, errors }) {
     errors.push(`${where}.score 缺失或不是对象`);
     return;
   }
-  const expected = ['downloadsScore', 'starsScore', 'updateScore', 'recommendVisible'];
+  const expected = [
+    'downloadsScore',
+    'starsScore',
+    'updateScore',
+    'penaltyScore',
+    'newModMultiplier',
+    'recommendVisible',
+  ];
   for (const key of Object.keys(score)) {
     if (!expected.includes(key)) {
-      errors.push(`${where}.score 含多余字段 ${key}（只允许 4 个字段）`);
+      errors.push(`${where}.score 含多余字段 ${key}（只允许 6 个字段）`);
     }
   }
-  for (const field of ['downloadsScore', 'starsScore', 'updateScore']) {
+  for (const field of ['downloadsScore', 'starsScore', 'updateScore', 'penaltyScore', 'newModMultiplier']) {
     if (!isFiniteNumberOrNull(score[field])) {
       errors.push(`${where}.score.${field} 应为有限数字`);
     }
@@ -492,7 +499,7 @@ export function validateIndexHeat(mod, { where, errors }) {
     errors.push(`${where}.score.recommendVisible 应为布尔值`);
   }
   if (expected.some((field) => !(field in score))) {
-    errors.push(`${where}.score 缺少 4 个字段之一：${expected.join(', ')}`);
+    errors.push(`${where}.score 缺少 6 个字段之一：${expected.join(', ')}`);
   }
   const ranks = mod.ranks;
   if (ranks !== undefined) {
@@ -1208,8 +1215,8 @@ function validateSummaryDataV3(summary, { index, errors }) {
     }
     if (mod.score) {
       if ('score' in row) errors.push(`${where}.score 已移除（总分由客户端按权重计算）`);
-      if (row.rank !== (mod.ranks?.score ?? null)) {
-        errors.push(`${where}.rank 与 index.ranks.score 不一致`);
+      if (row.rank !== (mod.ranks?.heat ?? null)) {
+        errors.push(`${where}.rank 与 index.ranks.heat 不一致`);
       }
       if (row.recommendVisible !== mod.score.recommendVisible) {
         errors.push(`${where}.recommendVisible 与 index.score 不一致`);
@@ -2552,7 +2559,7 @@ export async function validateDir(dir) {
   const allHeatEntries = [];
   for (const mod of [...officialModsForHeat, ...communityModsForHeat]) {
     if (isPlainObject(mod) && typeof mod.repo === 'string' && isPlainObject(mod.score)) {
-      allHeatEntries.push({ repo: mod.repo, rank: mod.ranks?.score });
+      allHeatEntries.push({ repo: mod.repo, rank: mod.ranks?.heat });
     }
   }
   result.scoreModCount = allHeatEntries.length;

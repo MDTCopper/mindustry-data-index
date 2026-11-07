@@ -2350,7 +2350,7 @@ async function runHeat(options, context) {
     });
   }
 
-  const { entries } = computeHeat(heatInputs);
+  const { entries } = computeHeat(heatInputs, { now: new Date(nowMs) });
   for (const entry of entries) {
     // 只对最终展示分做 4 位小数；占比/柔化/活动原始值保留全精度便于核对（占比和≈1 校验需要）
     entry.downloadsScore = round4(entry.downloadsScore);
@@ -2358,6 +2358,9 @@ async function runHeat(options, context) {
     entry.updateScore = round4(entry.updateScore);
     entry.newModMultiplier = round4(entry.newModMultiplier);
     entry.penalty = round4(entry.penalty);
+    entry.penaltyScore = round4(entry.penaltyScore ?? entry.penalty);
+    entry.randomScore = round4(entry.randomScore);
+    entry.recommendScore = round4(entry.recommendScore);
     entry.score = round4(entry.score);
     entry.effectiveWeights.downloads = round4(entry.effectiveWeights.downloads);
     entry.effectiveWeights.stars = round4(entry.effectiveWeights.stars);
@@ -2373,14 +2376,15 @@ async function runHeat(options, context) {
   });
   entries.forEach((entry, index) => {
     entry.rank = index + 1;
-    entry.ranks = { score: entry.rank };
+    entry.ranks = { heat: entry.rank };
   });
-  // 预计算其他排序：updated（最近更新）/ downloads / stars / newest（发布越新越前），客户端直接按 ranks 排
+  // 预计算其他排序：recommended（默认推荐权重）/ updated / downloads / stars / newest
   const timestampOf = (value) => {
     const parsed = Date.parse(value ?? '');
     return Number.isNaN(parsed) ? 0 : parsed;
   };
   const rankSorts = [
+    ['recommended', (entry) => entry.recommendScore, 'desc'],
     [
       'updated',
       (entry) =>
@@ -2408,6 +2412,16 @@ async function runHeat(options, context) {
       entry.ranks[key] = index + 1;
     });
   }
+  // 列表顺序按默认排序（recommended）写，客户端即使不排序也能直接用；名次仍由 ranks 提供
+  entries.sort((left, right) => {
+    if (right.recommendScore !== left.recommendScore) {
+      return right.recommendScore - left.recommendScore;
+    }
+    if (right.score !== left.score) {
+      return right.score - left.score;
+    }
+    return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
+  });
   // 热度注入：全量列表写 index-full.json，默认列表 index.json 只留 recommendVisible=true
   const heatByRepo = new Map(entries.map((entry) => [entry.repo.toLowerCase(), entry]));
   let heatChanged = false;
@@ -2427,6 +2441,15 @@ async function runHeat(options, context) {
       return;
     }
     const fullIndex = injectHeatIntoIndex(source, heatByRepo);
+    // 列表按默认排序（recommended）写，客户端不排序也能直接用
+    fullIndex.mods.sort((left, right) => {
+      const leftRank = left.ranks?.recommended ?? Number.POSITIVE_INFINITY;
+      const rightRank = right.ranks?.recommended ?? Number.POSITIVE_INFINITY;
+      if (leftRank !== rightRank) {
+        return leftRank - rightRank;
+      }
+      return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
+    });
     const visibleMods = fullIndex.mods.filter((mod) => mod.score?.recommendVisible === true);
     const visibleIndex = {
       ...fullIndex,

@@ -20,17 +20,32 @@ export const MAINTENANCE_STALE_DAYS = 360;
 export const MIN_SCORE = 0;
 export const RECOMMEND_DEFAULTS = { minScore: MIN_SCORE };
 export const RECOMMEND_HIDDEN_REASONS = ['score-below-min'];
-// 预计算排序：客户端拿到 ranks 直接按字段排，不需要自己算/重排
+// 预计算排序：客户端拿到 ranks 直接按字段排，不需要自己算/重排。
+// recommended 是默认排序（综合推荐权重），heat 是原有热度权重预设；
+// updated/downloads/stars/newest 是特定字段的极端/单一权重排序。
 export const SORT_OPTIONS = [
-  { key: 'score', label: '热度' },
+  { key: 'recommended', label: '推荐' },
+  { key: 'heat', label: '热度' },
   { key: 'updated', label: '最近更新' },
   { key: 'downloads', label: '下载量' },
   { key: 'stars', label: '星标' },
   { key: 'newest', label: '最新发布' },
 ];
-export const DEFAULT_SORT = 'updated';
+export const DEFAULT_SORT = 'recommended';
 export const SORT_KEYS = SORT_OPTIONS.map((option) => option.key);
+// 推荐排序的权重预设：组件分 + 时间戳随机数（不同时间段推不同的 mod）+ 新 mod 加成 - 长期不更新扣分
+export const RECOMMEND_WEIGHTS = {
+  downloads: 0.25,
+  stars: 0.3,
+  update: 0.3,
+  random: 0.15,
+  newMod: 0.4,
+  penalty: 0.4,
+};
+// 随机数按 6 小时时间桶固定：同一时间段内排名稳定，跨时间段轮换
+export const RECOMMEND_RANDOM_BUCKET_HOURS = 6;
 export const HEAT_RECOMMEND_REL_PATH = 'heat/recommend.json';
+
 export const HEAT_RECOMMEND_CSV_REL_PATH = 'heat/recommend.csv';
 export const FULL_INDEX_REL_PATH = 'index-full.json';
 export const COMMUNITY_FULL_INDEX_REL_PATH = 'community/index-full.json';
@@ -92,6 +107,21 @@ export function weightedChange(percentiles, weights) {
     sum += weight * (percentiles[window] ?? 0);
   }
   return sum;
+}
+
+// 推荐排序的稳定随机分：按 repo + 时间桶哈希到 0..1。
+// 同一时间桶内稳定（避免每次刷新都抖动），跨桶轮换（不同时间段推不同的 mod）。
+export function recommendRandomScore(repo, now = new Date()) {
+  const bucket = Math.floor(
+    new Date(now).getTime() / (RECOMMEND_RANDOM_BUCKET_HOURS * 3_600_000),
+  );
+  let hash = 2166136261;
+  const input = `${repo ?? ''}#${bucket}`;
+  for (let index = 0; index < input.length; index += 1) {
+    hash ^= input.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0) / 4294967295;
 }
 
 // v2 新 mod 倍率：180 天内 1 + 0.325 * exp(-age/30)，30d≈1.12、60d≈1.04、90d≈1.016，之后 clamp 1
@@ -163,6 +193,8 @@ export function heatIndexFields(entry) {
     downloadsScore: entry.downloadsScore,
     starsScore: entry.starsScore,
     updateScore: entry.updateScore,
+    penaltyScore: entry.penaltyScore ?? entry.penalty,
+    newModMultiplier: entry.newModMultiplier,
     recommendVisible: entry.recommend?.visible === true,
   };
 }
@@ -375,7 +407,7 @@ function windowPercentile(values, rawValues) {
 // v2 归一化 + 组件 + 总分/排名
 // mods: [{repo, namePlain, source, totalDownloads, totalStars, downloadChanges, starChanges,
 //         releaseUpdates(7/30/90/180), commits(7/30/90/180), ageDays, daysSinceRelease, daysSinceCommit}]
-export function computeHeat(mods, { recommendOptions = {} } = {}) {
+export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = {}) {
   const count = mods.length;
   const downloadStock = stockScores(mods.map((mod) => mod.totalDownloads));
   const starStock = stockScores(mods.map((mod) => mod.totalStars));
@@ -445,6 +477,25 @@ export function computeHeat(mods, { recommendOptions = {} } = {}) {
           updateScore * COMPONENT_WEIGHTS.update) *
           multiplier -
         penalty * PENALTY_WEIGHT;
+    // 推荐排序预设：组件分 + 时间戳随机数 + 新 mod 加成 - 长期不更新扣分
+    const randomScore = recommendRandomScore(mod.repo, now);
+    const newModBonus =
+      multiplier > 1 ? (multiplier - 1) / (NEW_MOD_MAX_MULTIPLIER - 1) : 0;
+    const recommendAvailable =
+      RECOMMEND_WEIGHTS.stars + RECOMMEND_WEIGHTS.update + RECOMMEND_WEIGHTS.random;
+    const recommendBase = downloadsMissing
+      ? (starsScore * RECOMMEND_WEIGHTS.stars +
+          updateScore * RECOMMEND_WEIGHTS.update +
+          randomScore * RECOMMEND_WEIGHTS.random) /
+        recommendAvailable
+      : downloadsScore * RECOMMEND_WEIGHTS.downloads +
+        starsScore * RECOMMEND_WEIGHTS.stars +
+        updateScore * RECOMMEND_WEIGHTS.update +
+        randomScore * RECOMMEND_WEIGHTS.random;
+    const recommendScore =
+      recommendBase +
+      newModBonus * RECOMMEND_WEIGHTS.newMod -
+      penalty * RECOMMEND_WEIGHTS.penalty;
     const entry = {
       repo: mod.repo,
       namePlain: mod.namePlain ?? '',
@@ -486,6 +537,9 @@ export function computeHeat(mods, { recommendOptions = {} } = {}) {
       updateScore,
       newModMultiplier: multiplier,
       penalty,
+      penaltyScore: penalty,
+      randomScore,
+      recommendScore,
       maintenance:
         mod.maintenance ?? {
           lastReleaseAt: null,

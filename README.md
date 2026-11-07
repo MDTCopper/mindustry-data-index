@@ -53,7 +53,7 @@ state/repo-created.json                 # 仓库 created_at 永久缓存（新 m
 schema/*.json                           # 各数据文件的 JSON Schema（draft 2020-12，见 docs/schema.md）
 ```
 
-热度（`score` 4 字段 / 只看活跃）已**合并进模组列表**且默认预筛：`index.json`、`community/index.json`
+热度（`score` 6 字段 / 只看活跃）已**合并进模组列表**且默认预筛：`index.json`、`community/index.json`
 只含 `recommendVisible=true` 的默认列表；全量列表在 `index-full.json`、`community/index-full.json`。
 `summary.json/csv` 仍是全量，带 `rank`/`recommendVisible` 列；旧的独立
 `heat/index.json`、`heat/summary.csv` 不再生成（见下文「热度与模组列表」）。
@@ -212,10 +212,11 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 - `index.json` / `community/index.json`：**默认列表**，只含 `recommendVisible=true`（`score >= MIN_SCORE`）的模组；
 - `index-full.json` / `community/index-full.json`：全量列表（含隐藏模组），其余字段完全一致。
 
-两条列表的每个条目都带同一个精简 `score` 对象（只有 4 个字段）：
-`{downloadsScore, starsScore, updateScore, recommendVisible}`。
-**总分不落盘**：客户端用这三个组件分和自己的权重算；仓库默认权重只用于 `recommendVisible` 与
-`ranks.score`（官方+社区合并后的**全局**名次）。`summary.json/csv` 仍是全量，带 `rank`/`recommendVisible` 列。
+两条列表的每个条目都带同一个精简 `score` 对象（6 个字段）：
+`{downloadsScore, starsScore, updateScore, penaltyScore, newModMultiplier, recommendVisible}`。
+**总分不落盘**：客户端用组件分和自己的权重算；`penaltyScore` 是长期不更新扣分（0..1），
+`newModMultiplier` 是新 mod 倍率（1..1.325）。仓库默认权重只用于 `recommendVisible` 与 `ranks.heat`。
+`summary.json/csv` 仍是全量，带 `rank`（热度名次）/`recommendVisible` 列。
 旧路径 `heat/index.json`、`heat/summary.csv` 不再生成（历史快照 `heat/history/` 保留）。
 
 ### 预计算排序（`ranks` + `sortOptions`）
@@ -223,10 +224,13 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 每条模组还带一个 `ranks` 对象，排序名次在仓库里提前算好，客户端直接按字段升序排、不需要自己排序：
 
 ```json
-"ranks": { "score": 3, "updated": 12, "downloads": 5, "stars": 8, "newest": 120 }
+"ranks": { "recommended": 3, "heat": 11, "updated": 12, "downloads": 5, "stars": 8, "newest": 120 }
 ```
 
-- `score`：热度名次（仓库默认权重算出的全局名次；总分本身不落盘）
+- `recommended`：**默认排序**。推荐权重预设：下载量 0.25、星标 0.3、更新 0.3、
+  时间戳随机数 0.15、新 mod 加成 0.4、长期不更新扣分 0.4；随机数按 6 小时时间桶固定，
+  同一时间段内稳定、跨时间段轮换，适合大 mod 玩腻后找新的小 mod。
+- `heat`：原有热度权重预设的名次（总分不落盘）
 - `updated`：最近更新时间名次（`releaseUpdatedAt` / `commitUpdatedAt` 取较新者）
 - `downloads`：总下载量名次
 - `stars`：星标数名次
@@ -236,16 +240,19 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 
 ```json
 "sortOptions": [
-  { "key": "score", "label": "热度" },
+  { "key": "recommended", "label": "推荐" },
+  { "key": "heat", "label": "热度" },
   { "key": "updated", "label": "最近更新" },
   { "key": "downloads", "label": "下载量" },
   { "key": "stars", "label": "星标" },
   { "key": "newest", "label": "最新发布" }
 ],
-"defaultSort": "updated"
+"defaultSort": "recommended"
 ```
 
-想改默认排序，改 `src/heat.js` 的 `DEFAULT_SORT`（当前 `updated`，可选 `score`/`downloads`/`stars`/`newest`）即可；想加新排序只加一个 key 和对应名次。
+`updated` / `downloads` / `stars` / `newest` 是单一字段的极端/特定排序；`heat` 是旧权重预设，
+`recommended` 是默认的综合推荐权重。想改默认排序，改 `src/heat.js` 的 `DEFAULT_SORT` 即可；
+想加新排序只加一个 key 和对应名次。
 
 > 权重、窗口、倍率、惩罚等参数全部固定在仓库代码 [src/heat.js](src/heat.js)（README 不重复列常量），
 > 输出里不携带这些中间值。

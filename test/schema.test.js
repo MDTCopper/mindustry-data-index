@@ -73,7 +73,7 @@ test('schema/: 关键数据文件 required 字段齐全，formatVersion 与当�
   const heatFields = index.properties.mods.items.properties.score.required;
   assert.deepEqual(
     [...heatFields].sort(),
-    ['downloadsScore', 'recommendVisible', 'starsScore', 'updateScore'].sort(),
+    ['downloadsScore', 'penaltyScore', 'newModMultiplier', 'recommendVisible', 'starsScore', 'updateScore'].sort(),
   );
 
   const changes = JSON.parse(readFileSync(path.join(schemaDir, 'changes.json'), 'utf8'));
