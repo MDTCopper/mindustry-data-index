@@ -1,21 +1,34 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-07T05:37:19.173Z",
+  "generatedAt": "2026-11-07T05:56:46.695Z",
   "datasets": {
     "official": {
-      "updatedAt": "2026-11-07T05:28:28.358Z",
+      "updatedAt": "2026-11-07T05:55:54.896Z",
       "modCount": 997,
-      "releaseCount": 3698,
-      "skipped": []
+      "releaseCount": 3561,
+      "skipped": [
+        {
+          "repo": "fhgdhgvhggvfgg/cheetah",
+          "reason": "rate-limit"
+        },
+        {
+          "repo": "fhgdhgvhggvfgg/cheetah_girl",
+          "reason": "rate-limit"
+        },
+        {
+          "repo": "fhgdhgvhggvfgg/cheetah_online",
+          "reason": "rate-limit"
+        }
+      ]
     },
     "community": {
-      "updatedAt": "2026-11-07T05:36:35.382Z",
-      "modCount": 425,
-      "releaseCount": 982,
+      "updatedAt": "2026-11-06T16:47:10.922Z",
+      "modCount": 53,
+      "releaseCount": 569,
       "skipped": []
     },
     "versions": {
-      "updatedAt": "2026-11-07T05:24:55.891Z",
+      "updatedAt": "2026-11-07T05:55:54.002Z",
       "modCount": null,
       "releaseCount": 205,
       "skipped": []
@@ -28,12 +41,12 @@
     }
   },
   "api": {
-    "requests": 4307,
-    "remaining": 662,
+    "requests": 652,
+    "remaining": 0,
     "resetAt": "2026-11-07T06:19:31.000Z"
   },
   "validate": {
-    "errors": 17773,
+    "errors": 17759,
     "warnings": 5,
     "presentFiles": [
       "index.json",
