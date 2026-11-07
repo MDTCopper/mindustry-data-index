@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "unquis/fading-revelations-remake",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "fading-revelations-remake",
+    "author": "[maroon]Developers\n- Java : UnQuis\n- Json/Hjson : Catser\n- Balancing : Catser / .Frankie\n- Bug Fixes : Catser\n\n[maroon]Translators\n- English : Catser\n- German : Catser\n- Spanish : Catser / HairyNugget\n- Ukrainian: Prosta4ok_ua\n- Russian: Timofejamda\n\n[maroon]Contributors\n- Schematics: Dragonboi / Zombee\n- Sprites : Catser / Froomeeth\n- Lore: iori / Catser\n- Cryogenic Gel, Igneous Alloy,\n  Multiblock-Crafter base model:\n  Null (Nullevoy)\n\nAnd more people!\nCheck the Discord!",
+    "description": "\n\nA huge, fun & balanced content extension mod.\nContinuing the legacy of Fading Revelations with new content, fixes, and improvements.\n\nPlease note that the Serpulo research tree has\nbeen moved into it's own tree because it was\ntoo large.\nTo get to the Fading Revelations Serpulo \nresearch tree, please switch to it the same way\nyou would switch between the Erekir and Serpulo\nresearch trees.\nOn that menu, a new button will be available \nthat takes you to the Fading Revelations \nSerpulo research tree. \n\nFeatures\nTwo new planets and many blocks, \nunits, items, liquids, schematics\n& ammo types.\n\n\nLanguages\n- English\n- German\n- Spanish (WIP)\n- Ukrainian (WIP)\n- Russian\n\n\nCheck Discord / GitHub \nfor more information!\n",
+    "version": "2.5.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "fadingrevelations.FadingRevelationsMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.5.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.5.0/FadingRevelations.jar",
       "modVersion": "2.5.0",
       "sizeBytes": 13177687,
-      "downloadCount": 5627,
+      "downloadCount": 5632,
       "releasedAt": "2026-08-16T10:35:57Z"
     },
     {
@@ -33,7 +47,7 @@
       "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.4.0/FadingRevelations.jar",
       "modVersion": "2.4.0-alpha",
       "sizeBytes": 13395262,
-      "downloadCount": 3488,
+      "downloadCount": 3489,
       "releasedAt": "2026-06-14T05:15:47Z"
     },
     {
@@ -52,19 +66,5 @@
       "downloadCount": 2011,
       "releasedAt": "2026-05-21T05:23:14Z"
     }
-  ],
-  "meta": {
-    "name": "fading-revelations-remake",
-    "author": "[maroon]Developers\n- Java : UnQuis\n- Json/Hjson : Catser\n- Balancing : Catser / .Frankie\n- Bug Fixes : Catser\n\n[maroon]Translators\n- English : Catser\n- German : Catser\n- Spanish : Catser / HairyNugget\n- Ukrainian: Prosta4ok_ua\n- Russian: Timofejamda\n\n[maroon]Contributors\n- Schematics: Dragonboi / Zombee\n- Sprites : Catser / Froomeeth\n- Lore: iori / Catser\n- Cryogenic Gel, Igneous Alloy,\n  Multiblock-Crafter base model:\n  Null (Nullevoy)\n\nAnd more people!\nCheck the Discord!",
-    "description": "\n\nA huge, fun & balanced content extension mod.\nContinuing the legacy of Fading Revelations with new content, fixes, and improvements.\n\nPlease note that the Serpulo research tree has\nbeen moved into it's own tree because it was\ntoo large.\nTo get to the Fading Revelations Serpulo \nresearch tree, please switch to it the same way\nyou would switch between the Erekir and Serpulo\nresearch trees.\nOn that menu, a new button will be available \nthat takes you to the Fading Revelations \nSerpulo research tree. \n\nFeatures\nTwo new planets and many blocks, \nunits, items, liquids, schematics\n& ammo types.\n\n\nLanguages\n- English\n- German\n- Spanish (WIP)\n- Ukrainian (WIP)\n- Russian\n\n\nCheck Discord / GitHub \nfor more information!\n",
-    "version": "2.5.0",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "fadingrevelations.FadingRevelationsMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

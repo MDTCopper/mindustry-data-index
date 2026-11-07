@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "momiji142857/ve-addon-schematics",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "ve-addon-schematics",
+    "author": "VE模组作者: 火星人076 & 128_OTEML\n本模组作者: [sky[]]Momiji142857[white[]]\n其他贡献者请见 GitHub 仓库",
+    "description": "[#90DBFF[]]Vanilla Expansion原版扩展[white[]]的蓝图附属模组\nschematics add‑on for the [#90DBFF[]]Vanilla Expansion[white[]] (VE)\n\n[red[]]需先启用 Vanilla Expansion 模组。\nRequires Vanilla Expansion to be enabled.[white[]]\n\n本模组主要收录并优化了来自VE模组交流群的一些蓝图，旨在让玩家能更方便地使用。\nThis pack collects and optimizes community schematics to make them easier for players to import and use.\n\n感谢所有为本合集贡献并参与测试的成员！\nThank you to everyone who contributed and helped test the pack!\n\n[accent[]]最后更新 / Last updated: 2026-09-03[white[]]",
+    "version": "v4.1.7",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "ve-addon-schematics-v4.1.7",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.1.7/ve-addon-schematics-v4.1.7-1.jar",
       "modVersion": "v4.1.7",
       "sizeBytes": 800841,
-      "downloadCount": 2603,
+      "downloadCount": 2611,
       "releasedAt": "2026-09-03T11:26:16Z"
     },
     {
@@ -308,19 +322,5 @@
       "downloadCount": 42,
       "releasedAt": "2026-01-10T07:12:33Z"
     }
-  ],
-  "meta": {
-    "name": "ve-addon-schematics",
-    "author": "VE模组作者: 火星人076 & 128_OTEML\n本模组作者: [sky[]]Momiji142857[white[]]\n其他贡献者请见 GitHub 仓库",
-    "description": "[#90DBFF[]]Vanilla Expansion原版扩展[white[]]的蓝图附属模组\nschematics add‑on for the [#90DBFF[]]Vanilla Expansion[white[]] (VE)\n\n[red[]]需先启用 Vanilla Expansion 模组。\nRequires Vanilla Expansion to be enabled.[white[]]\n\n本模组主要收录并优化了来自VE模组交流群的一些蓝图，旨在让玩家能更方便地使用。\nThis pack collects and optimizes community schematics to make them easier for players to import and use.\n\n感谢所有为本合集贡献并参与测试的成员！\nThank you to everyone who contributed and helped test the pack!\n\n[accent[]]最后更新 / Last updated: 2026-09-03[white[]]",
-    "version": "v4.1.7",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

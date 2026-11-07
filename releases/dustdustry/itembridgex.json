@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "dustdustry/itembridgex",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "item-bridge-x",
+    "author": "minRi2",
+    "description": "This a mod that can show the hidden item of the item bridge.",
+    "version": "2.6.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "ItemBridgeX.ItemBridgeX",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.6.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6.1/ItemBridgeX-v2.6.1.jar",
       "modVersion": "2.6.1",
       "sizeBytes": 53914,
-      "downloadCount": 2243,
+      "downloadCount": 2245,
       "releasedAt": "2026-04-26T05:57:32Z"
     },
     {
@@ -84,19 +98,5 @@
       "downloadCount": 100,
       "releasedAt": "2022-03-26T11:17:26Z"
     }
-  ],
-  "meta": {
-    "name": "item-bridge-x",
-    "author": "minRi2",
-    "description": "This a mod that can show the hidden item of the item bridge.",
-    "version": "2.6.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "ItemBridgeX.ItemBridgeX",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "chrono-heritage/moderndustry",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "chrono-moderndustry",
+    "author": "Chrono",
+    "description": "A mod that add modern items and block inculde industry or nuclear.",
+    "version": "v0.01",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "md.mdLoader",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.02",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.02/chrono-moderndustry-v0.02.jar",
       "modVersion": "v0.01",
       "sizeBytes": 3094098,
-      "downloadCount": 4400,
+      "downloadCount": 4402,
       "releasedAt": "2023-09-19T13:57:44Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 87,
       "releasedAt": "2023-07-13T07:38:22Z"
     }
-  ],
-  "meta": {
-    "name": "chrono-moderndustry",
-    "author": "Chrono",
-    "description": "A mod that add modern items and block inculde industry or nuclear.",
-    "version": "v0.01",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "md.mdLoader",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

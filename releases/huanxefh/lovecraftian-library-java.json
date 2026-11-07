@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "huanxefh/lovecraftian-library-java",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "lovec",
+    "author": "MaboroshiX",
+    "description": "\nA JavaScript-based library for my other mods.\n\nMain features:\n- JS approach to class and interface.\n- Content template for method inheritance and mixing, along with more powerful `extend` methods.\n- Multi-crafters.\n- QOL functionalities like recipe dictionary, health bar and damage splash text.\n",
+    "version": "101.5",
+    "minGameVersion": "160.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": true,
+    "main": "lovec.Lovec",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v101.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.5/mabo-lovecraftian-library-v101.5.jar",
       "modVersion": "101.5",
       "sizeBytes": 2154605,
-      "downloadCount": 680,
+      "downloadCount": 681,
       "releasedAt": "2026-10-25T07:29:10Z"
     },
     {
@@ -100,19 +114,5 @@
       "downloadCount": 714,
       "releasedAt": "2026-02-16T11:05:30Z"
     }
-  ],
-  "meta": {
-    "name": "lovec",
-    "author": "MaboroshiX",
-    "description": "\nA JavaScript-based library for my other mods.\n\nMain features:\n- JS approach to class and interface.\n- Content template for method inheritance and mixing, along with more powerful `extend` methods.\n- Multi-crafters.\n- QOL functionalities like recipe dictionary, health bar and damage splash text.\n",
-    "version": "101.5",
-    "minGameVersion": "160.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": true,
-    "main": "lovec.Lovec",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

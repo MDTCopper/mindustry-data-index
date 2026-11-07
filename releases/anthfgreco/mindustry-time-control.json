@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "anthfgreco/mindustry-time-control",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "time-control",
+    "author": "Anthony; original mod by sk7725",
+    "description": "Full 60 Hz simulation steps for desktop Mindustry 160.1. Single-player only. Shows achieved speed and slows down when CPU-limited.",
+    "version": "1.0.0",
+    "minGameVersion": "160.1",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "timecontrol.TimeControlMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.0",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/anthfgreco/mindustry-time-control/releases/download/v1.0.0/time-control-fixed.jar",
       "modVersion": "1.0.0",
       "sizeBytes": 27679,
-      "downloadCount": 1017,
+      "downloadCount": 1019,
       "releasedAt": "2026-09-11T15:46:23Z"
     }
-  ],
-  "meta": {
-    "name": "time-control",
-    "author": "Anthony; original mod by sk7725",
-    "description": "Full 60 Hz simulation steps for desktop Mindustry 160.1. Single-player only. Shows achieved speed and slows down when CPU-limited.",
-    "version": "1.0.0",
-    "minGameVersion": "160.1",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "timecontrol.TimeControlMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

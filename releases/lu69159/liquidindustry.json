@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "lu69159/liquidindustry",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "液体工艺",
+    "author": "Space",
+    "description": "\n- Added a new cold planet which is scarce in minerals but rich in liquids, and expanded other buildings.\n- New planet's techtree can be researched using Serpulo resources.\n",
+    "version": "0.26",
+    "minGameVersion": "159.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "LI.LIMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.26",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/lu69159/LiquidIndustry/releases/download/0.26/LiquidIndustry0.26.jar",
       "modVersion": "0.26",
       "sizeBytes": 7736727,
-      "downloadCount": 10,
+      "downloadCount": 12,
       "releasedAt": "2026-11-04T00:51:00Z",
       "prerelease": true
     },
@@ -735,19 +749,5 @@
       "releasedAt": "2026-03-02T05:06:21Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "液体工艺",
-    "author": "Space",
-    "description": "\n- Added a new cold planet which is scarce in minerals but rich in liquids, and expanded other buildings.\n- New planet's techtree can be researched using Serpulo resources.\n",
-    "version": "0.26",
-    "minGameVersion": "159.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "LI.LIMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

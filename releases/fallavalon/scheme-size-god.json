@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "fallavalon/scheme-size-god",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "scheme-size-god",
+    "author": "FallAvalon",
+    "description": "All Plus tools, host controls, arena editing, events and Boss-player mode. Vanilla guests supported for tested host actions. Desktop Mindustry 160.7. Testing release; full parity is not yet verified.",
+    "version": "0.5.4",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "org.schemetools.SchemeSizeGodMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.5.4",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/FallAvalon/scheme-size-god/releases/download/v0.5.4/scheme-size-god.jar",
       "modVersion": "0.5.4",
       "sizeBytes": 602477,
-      "downloadCount": 25,
+      "downloadCount": 26,
       "releasedAt": "2026-11-04T21:15:24Z"
     },
     {
@@ -148,19 +162,5 @@
       "downloadCount": 2,
       "releasedAt": "2026-11-04T14:16:44Z"
     }
-  ],
-  "meta": {
-    "name": "scheme-size-god",
-    "author": "FallAvalon",
-    "description": "All Plus tools, host controls, arena editing, events and Boss-player mode. Vanilla guests supported for tested host actions. Desktop Mindustry 160.7. Testing release; full parity is not yet verified.",
-    "version": "0.5.4",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "org.schemetools.SchemeSizeGodMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

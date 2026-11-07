@@ -1,8 +1,8 @@
 {
   "formatVersion": 3,
   "repo": "samielxd/shopsystemmod",
-  "generatedAt": "2026-11-07T10:29:52.073Z",
-  "modType": "java",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
+  "modType": "json",
   "versions": [
     {
       "tag": "v1.3",
@@ -11,10 +11,10 @@
       "gameVersionRanges": [
         {
           "from": "147",
-          "to": "154"
+          "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/samielxd/shopsystemmod/archive/refs/tags/v1.3.zip",
+      "downloadUrl": "https://github.com/SamielXD/ShopSystemMod/releases/download/v1.3/SamielShopSystemModv1.3.zip",
       "modVersion": "1.2",
       "sizeBytes": 194047,
       "downloadCount": 20,
@@ -27,10 +27,10 @@
       "gameVersionRanges": [
         {
           "from": "147",
-          "to": "154"
+          "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/samielxd/shopsystemmod/archive/refs/tags/v1.2.zip",
+      "downloadUrl": "https://github.com/SamielXD/ShopSystemMod/releases/download/v1.2/SamielShopSystemModv1.2.zip",
       "modVersion": "1.1",
       "sizeBytes": 187550,
       "downloadCount": 18,
@@ -43,10 +43,10 @@
       "gameVersionRanges": [
         {
           "from": "153",
-          "to": "154"
+          "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/samielxd/shopsystemmod/archive/refs/tags/v1.1.zip",
+      "downloadUrl": "https://github.com/SamielXD/ShopSystemMod/releases/download/v1.1/SamielShopSystemModv1.1.zip",
       "modVersion": "1.0",
       "sizeBytes": 20282,
       "downloadCount": 9,
@@ -59,28 +59,14 @@
       "gameVersionRanges": [
         {
           "from": "153",
-          "to": "154"
+          "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/samielxd/shopsystemmod/archive/refs/tags/v1.0.zip",
+      "downloadUrl": "https://github.com/SamielXD/ShopSystemMod/releases/download/v1.0/SamielShopSystemMod.zip",
       "modVersion": "1.0",
       "sizeBytes": 17509,
       "downloadCount": 10,
       "releasedAt": "2025-12-07T01:17:52Z"
     }
-  ],
-  "meta": {
-    "name": "shopsystem",
-    "author": "[#00D4FF[]]SamielXD[[]]",
-    "description": "\n[accent[]]ShopSystemMod v1.2 - Your Personal In-Game Economy![[]]\n\n[white[]]Hey there! Ever wanted to buy resources mid-game or reward yourself for surviving tough waves? This mod adds a complete coin-based shop system to Mindustry. Think of it as your personal marketplace that grows with you as you play![[]]\n\n[yellow[]]⚠️ Heads Up: This is an updated release! You might run into some bugs or weird behavior. If something breaks, just let me know. The save system should keep your coins safe though![[]]\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[gold[]]📋 CHANGELOG - What's New in v1.2:[[]]\n\n[lime[]]✨ New Features:[[]]\n  • Custom Sound Effects! Now with satisfying audio feedback\n  • Better UI positioning - Shop button moved to HUD\n  • Improved button click sounds throughout the shop\n  • Enhanced purchase feedback with audio cues\n  • 3 New Pets added to the collection!\n\n[cyan[]]🔊 Sound Effects Added:[[]]\n  • pop.ogg - UI clicks and interactions\n  • switch.ogg - Menu transitions and level ups\n  • coins.ogg - Earning and spending coins\n\n[white[]]🐾 Pet Updates:[[]]\n  • Renamed \"Coin Cat\" to \"Cat\"\n  • Renamed \"Gold Dog\" to \"Dog\"\n  • Renamed \"Diamond Bird\" to \"Bird\"\n  • Renamed \"Mega Dragon\" to \"Dragon\"\n  • Added \"Fox\" - 25 coins/min passive earner\n  • Added \"Wolf\" - 40 coins/min pack hunter\n  • Added \"Loyal Protector\" - 70 coins/min ultimate companion\n\n[white[]]🔧 Improvements:[[]]\n  • Cleaner UI layout and positioning\n  • Better sound feedback for all actions\n  • Smoother menu transitions\n  • More satisfying purchase experience\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[lime[]]💰 What's This All About?[[]]\n\nBasically, you earn coins by playing the game normally - killing enemies, completing waves, that sort of thing. Then you can spend those coins in the shop to buy resources, spawn units, or use special abilities. The more you play, the more stuff unlocks!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[cyan[]]🛒 The Shop Has:[[]]\n\n[white[]]Resources[[]] → Copper, Lead, Coal, Titanium, and Thorium\n[white[]]Units[[]] → Instant Flare, Dagger, and Mace squads when you need backup\n[white[]]Boosts[[]] → Skip annoying waves or heal all your buildings at once\n[white[]]Pets[[]] → Cute little guys that earn coins for you while you play\n[white[]]Auction House[[]] → Bid on exclusive items like Plastanium, Phase Fabric, and Surge Alloy\n[white[]]Favorites[[]] → Star your favorite items for quick access\n\nEach item is locked at first. You'll unlock new stuff as you complete waves and level up your shop. It keeps things interesting!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[gold[]]⭐ VIP System[[]]\n\nThe more you spend, the more VIP EXP you get. Level up your VIP status and you'll earn coins way faster. At max level (VIP 5), you get 6x coins and 25% discount on everything. Pretty solid benefits!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[lime[]]🎮 How Do I Use This Thing?[[]]\n\nSuper simple:\n1. Click the \"SHOP\" button on the right side of your screen\n2. Browse categories and buy whatever you want!\n3. Check out Stats, Rewards, and Redeem Codes\n4. Listen for satisfying sound effects when you interact!\n\nYour coins are shown in the UI along with your VIP level and Shop level.\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[cyan[]]📈 Ways to Earn Coins:[[]]\n\n[white[]]Playing the game:[[]]\n  • Each enemy killed = 1 coin (multiplied by your VIP level)\n  • Each wave completed = 5 coins (also multiplied)\n\n[white[]]Daily stuff:[[]]\n  • Daily Quests → Easy tasks like \"kill 30 enemies\" for 15-25 coins\n  • Daily Work → Pick a job (wave defense, hunting, building) for 30-50 coins\n  • Daily Login → Just log in each day for rewards up to 150 coins!\n\n[white[]]Long-term:[[]]\n  • Achievements → Big milestones that give 50-100 coins\n  • Pets → They earn 2-70 coins per minute automatically\n  • Auction House → Bid smart and win exclusive items!\n\n[white[]]Secret stuff:[[]]\n  • Flash Sales → Random discounts pop up (up to 50% off!)\n  • Redeem Codes → I hid some codes around... find them for free coins!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[yellow[]]🐾 Pet System - All 7 Companions:[[]]\n\nPets are basically passive income generators. Buy one, and it'll earn coins for you every minute - even when you're not doing anything! We've expanded the pet roster and renamed them for simplicity:\n\n  [white[]]Cat[[]] → Your starter pet, earns 2 coins/min (Wave 5 & Shop Lvl 1)\n  [white[]]Dog[[]] → The reliable choice, 4 coins/min (Wave 10 & Shop Lvl 2)\n  [white[]]Bird[[]] → Getting fancy, 8 coins/min (Wave 15 & Shop Lvl 3)\n  [white[]]Dragon[[]] → Strong earner, 15 coins/min (Wave 25 & Shop Lvl 5)\n  [white[]]Fox[[]] → Fast earner, 25 coins/min (Wave 35 & Shop Lvl 7)\n  [white[]]Wolf[[]] → Pack hunter, 40 coins/min (Wave 45 & Shop Lvl 9)\n  [white[]]Loyal Protector[[]] → The ultimate companion, 70 coins/min (Wave 60 & Shop Lvl 12)\n\nThey're expensive but worth it in the long run! At max collection, you'll earn 164 coins per minute passively!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[gold[]]🏛️ Auction House[[]]\n\nThe Auction House offers exclusive high-tier items you can't buy in the regular shop:\n  • Plastanium (50 units)\n  • Phase Fabric (30 units)\n  • Surge Alloy (20 units)\n\nYou can either place bids and wait for the auction to end, or use \"Buy Now\" to get it instantly. Auctions run for 5 minutes and generate automatically!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[white[]]🔒 The Lock System (Important!)[[]]\n\nNot everything is available from the start. Items unlock based on:\n  • How many waves you've completed\n  • Your shop level (which increases as you spend coins)\n\nWhen you see a locked item, it'll show you exactly what you need to unlock it. Like \"🔒 Wave 5 & Shop Lvl 1\". This prevents you from getting overwhelmed at the start and gives you goals to work toward.\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[cyan[]]💡 Some Tips From Testing:[[]]\n\n• Do your daily quests! They're the easiest way to get coins early on\n• Daily work can only be done once per day, so pick wisely\n• Don't forget to claim your daily login reward\n• Save up for pets if you're playing long sessions - they pay for themselves!\n• With all 7 pets, you earn 164 coins per minute passively\n• Some items have cooldowns - the shop will show you when\n• Flash sales happen randomly, so check back often\n• Your progress auto-saves every 60 seconds\n• Star your favorite items for quick access!\n• Check the auction house regularly for exclusive items\n• Use bulk buying for resources to get bonus items!\n• Enjoy the new sound effects - they make shopping way more satisfying!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[red[]]⚠️ Known Issues:[[]]\n\n• Occasionally the work system might not track progress (just cancel and restart)\n• If you spam-click items super fast, weird things can happen\n• The UI might look weird on very small screens\n• Some achievements might not trigger immediately (give it a sec)\n• Sound effects require the sound files in your mod's sounds/ folder\n\nNothing game-breaking, but if you find something broken, hit me up!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[lime[]]📊 Current Content (v1.2):[[]]\n\n5 Resources • 3 Units • 2 Boosts • 7 Pets (3 NEW!) • 3 Auction Items\n3 Daily Quests • 3 Work Activities • 10 Login Rewards • 3 Achievements\n13+ Redeem Codes • Flash Sales System • VIP Levels 1-5\nAuction House • Favorites System • Bulk Buying with Bonuses\nAdvanced Statistics Tracking • 3 Custom Sound Effects\n\n[yellow[]]More stuff coming in future updates! This is just the foundation.[[]]\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[cyan[]]🔊 Sound Files Needed:[[]]\n\nMake sure you have these sound files in your mod's sounds/ folder:\n  • pop.ogg - Button clicks and UI interactions\n  • switch.ogg - Menu switching and special events\n  • coins.ogg - Coin earning and spending sounds\n\nWithout these files, the mod will still work but won't have sound effects!\n\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n\n[white[]]That's about it! The shop should be pretty intuitive once you open it. If you get stuck or confused, everything's labeled and the locked items tell you what you need.[[]]\n\n[gray[]]Have fun, Hope you enjoy my mod! 💰[[]]\n\n[white[]]- SamielXD[[]]\n  ",
-    "version": "1.2",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "scripts/main.js",
-    "java": false,
-    "hasScripts": true,
-    "hasJava": true
-  }
+  ]
 }

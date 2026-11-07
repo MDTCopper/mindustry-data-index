@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "routerxdd/icicle-world",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "icicle-world",
+    "author": "R.O.T.\nSpecial thanks:\nyesC48 for editing english translation\nxhstoyea for chinese translation",
+    "description": "A mod that adds a new planet, where we will play in underground",
+    "version": "0.9.6",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "ice.IcicleMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.9.6-alpha",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.6-alpha/Icicle-World.jar",
       "modVersion": "0.9.6",
       "sizeBytes": 3223127,
-      "downloadCount": 591,
+      "downloadCount": 593,
       "releasedAt": "2026-08-30T11:52:46Z"
     },
     {
@@ -276,19 +290,5 @@
       "downloadCount": 114,
       "releasedAt": "2023-12-25T19:04:24Z"
     }
-  ],
-  "meta": {
-    "name": "icicle-world",
-    "author": "R.O.T.\nSpecial thanks:\nyesC48 for editing english translation\nxhstoyea for chinese translation",
-    "description": "A mod that adds a new planet, where we will play in underground",
-    "version": "0.9.6",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "ice.IcicleMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

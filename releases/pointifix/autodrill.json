@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "pointifix/autodrill",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "auto-drill",
+    "author": "Pointifix",
+    "description": "Adds tools for automatically filling resource patches with drills",
+    "version": "1",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "autodrill.AutoDrill",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.6",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Pointifix/AutoDrill/releases/download/v1.6/AutoDrill.jar",
       "modVersion": "1",
       "sizeBytes": 838673,
-      "downloadCount": 41320,
+      "downloadCount": 41335,
       "releasedAt": "2026-05-30T09:43:24Z"
     },
     {
@@ -132,19 +146,5 @@
       "downloadCount": 1927,
       "releasedAt": "2022-10-07T13:11:01Z"
     }
-  ],
-  "meta": {
-    "name": "auto-drill",
-    "author": "Pointifix",
-    "description": "Adds tools for automatically filling resource patches with drills",
-    "version": "1",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "autodrill.AutoDrill",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

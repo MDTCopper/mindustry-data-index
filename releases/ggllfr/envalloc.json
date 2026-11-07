@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "ggllfr/envalloc",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "env-alloc",
+    "author": "Chime Tian",
+    "description": "Mindustry Java mod library to add new Env flags.",
+    "version": "v0.1",
+    "minGameVersion": "159.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "env.EnvAlloc",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.2",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/GglLfr/EnvAlloc/releases/download/v0.2/EnvAlloc.jar",
       "modVersion": "v0.1",
       "sizeBytes": 20393,
-      "downloadCount": 161,
+      "downloadCount": 162,
       "releasedAt": "2026-08-03T09:24:38Z"
     }
-  ],
-  "meta": {
-    "name": "env-alloc",
-    "author": "Chime Tian",
-    "description": "Mindustry Java mod library to add new Env flags.",
-    "version": "v0.1",
-    "minGameVersion": "159.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "env.EnvAlloc",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

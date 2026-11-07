@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "rostisllave/mindustry3d",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "mindustry-fpv",
+    "author": "RostiSllAVE",
+    "description": "Experimental fan-made 3D/FPV conversion. Tested release target: Windows 64-bit, Mindustry 160.7. One Linux laptop launch reported by owner; broader Linux compatibility is not certified. Android is not supported. F5: view; Tab: Build; F7: camera. Multiplayer requires matching code/resources.",
+    "version": "0.19.0",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "fpv.FpvMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.0.0-alpha.2",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/RostiSllAVE/Mindustry3D/releases/download/v2.0.0-alpha.2/mindustry-fpv-0.19.1.jar",
       "modVersion": "0.19.0",
       "sizeBytes": 12559814,
-      "downloadCount": 1506,
+      "downloadCount": 1520,
       "releasedAt": "2026-10-25T07:12:55Z",
       "prerelease": true
     },
@@ -55,19 +69,5 @@
       "releasedAt": "2026-10-17T19:43:55Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "mindustry-fpv",
-    "author": "RostiSllAVE",
-    "description": "Experimental fan-made 3D/FPV conversion. Tested release target: Windows 64-bit, Mindustry 160.7. One Linux laptop launch reported by owner; broader Linux compatibility is not certified. Android is not supported. F5: view; Tab: Build; F7: camera. Multiplayer requires matching code/resources.",
-    "version": "0.19.0",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "fpv.FpvMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

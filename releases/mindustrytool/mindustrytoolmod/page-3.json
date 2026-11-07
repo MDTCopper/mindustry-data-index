@@ -1,0 +1,3270 @@
+{
+  "formatVersion": 3,
+  "repo": "mindustrytool/mindustrytoolmod",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
+  "modType": "java",
+  "meta": {
+    "name": "mindustry-tool",
+    "author": "[#FFC2D1[]]S[#FFADC2[]]h[#FF97B3[]]a[#FF81A3[]]r[#FF6C94[]]l[#F45885[]]o[#E84375[]]t[#DD2F67[]]t[#D11A58[]]e[[]]",
+    "description": "\n[#FFB7C5[]] [#FFF000[]]Mindustry Tool  [white[]]- The Ultimate In-Game Utility & Community Suite[[]]\n\n[white[]]Mindustry Tool seamlessly connects your game to [#88C6ED[]]mindustry-tool.com[white[]], bringing thousands of community maps & schematics, cloud save synchronization, tactical combat overlays, and intelligent factory automation into one unified mod powered by the [#FFAEC0[]]Solim[white[]] reactive engine.\n\n[accent[]] [#88C6ED[]]Community Hub & Cloud:[[]]\n  [white[]] [#88C6ED[]]Content Browser:[white[]] Access a curated repository of [#394BA0[]]Maps[white[]] and [#D54799[]]Schematics[white[]] directly in-game.\n  [white[]] [#FFB7C5[]]Cloud Save Sync:[white[]] Synchronize campaign saves, sectors, and schematics across devices.\n  [white[]] [#FAA31B[]]Web Tools Suite:[white[]] Integrated access to mlog Logic Editors, Display Generators, Sorter Art, and Wiki guides.\n\n[accent[]] [#FFF000[]]Automation & Factory Utilities:[[]]\n  [white[]] [#FFF000[]]Autoplay AI:[white[]] Smart task management for building support, auto-repairs, and automated mining.\n  [white[]] [#82C341[]]Smart Upgrade:[white[]] Instantly upgrade entire conveyor belts, conduits, and distribution chains with one tap.\n  [white[]] [#FAA31B[]]Smart Drill:[white[]] Optimal drill positioning and resource coverage calculator for maximum yield.\n  [white[]] [#88C6ED[]]Schematic Grid:[white[]] Rapid placement grid and hotkeys for effortless factory layout expansion.\n\n[accent[]] [#EF4444[]]Combat Intel & Tactical HUD:[[]]\n  [white[]] [#EF4444[]]Wave Preview:[white[]] Forecast upcoming enemy waves, unit tiers, flying/ground counters, and boss warnings.\n  [white[]] [#FAA31B[]]Pathfinding Visualizer:[white[]] Real-time terrain overlay predicting enemy navigation paths and choke points.\n  [white[]] [#82C341[]]Team Resource HUD:[white[]] Live core inventory tracking, real-time power grid balance, and consumption rates.\n  [white[]] [#88C6ED[]]Range Display & Health Bars:[white[]] Customizable unit health bars and visual range circles for turrets and units.\n\n[accent[]] [#009F75[]]Multiplayer & Global Chat:[[]]\n  [white[]] [#009F75[]]Player Connect:[white[]] Easily create or join private peer-to-peer rooms with link sharing and ping monitoring.\n  [white[]] [#88C6ED[]]Global Chat & Pretty Chat:[white[]] Connect across servers with stylized avatars, rank badges, and custom emoji picker.\n  [white[]] [#82C341[]]AI Live Translation:[white[]] Instant multilingual chat translation powered by Google Gemini and DeepL.\n\n[accent[]] [#FFAEC0[]]Camera, Audio & Quality of Life:[[]]\n  [white[]] [#FFAEC0[]]Free Camera & Extended Zoom:[white[]] Detached smooth camera pan with unlocked macro and micro zoom ranges.\n  [white[]] [#394BA0[]]Time Control:[white[]] Adjust game simulation speed (slow-motion, fast-forward, tactical pause) for testing.\n  [white[]] [#FFB7C5[]]Music Player & Background Audio:[white[]] In-game audio player with custom tracks and background playback.\n  [white[]] [#82C341[]]Performance Optimizer:[white[]] Toggle specific render passes (particles, lights, units) for huge FPS boosts.\n  [white[]] [#EF4444[]]God Mode Suite:[white[]] Comprehensive sandbox toolkit for map testing and server administration.\n\n[accent[]] [#FFF000[]]Community Credits[[]]:\n[#88C6ED[]] Design-it Community:  \n  [#394BA0[]]  Discord: [white[]]discord.gg/SYVkWPhmXY  \n  [#394BA0[]]  GitHub: [white[]]MindustryDesignIt\n\n[#82C341[]] Mindustry Top Community:  \n  [#88C6ED[]]  Website: [white[]]www.mindustry.top  \n  [#009F75[]]  Email: [white[]]me@wayzer.top\n\n[accent[]] [#FFF000[]]Useful Links[[]]:\n  [#88C6ED[]]  Website: [white[]]mindustry-tool.com[[]]\n  [#394BA0[]]  Discord: [white[]]discord.gg/nQDrEHVkrt[[]]\n  ",
+    "version": "v5.5.26-v8",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mindustrytool.Main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "page": 3,
+  "count": 200,
+  "gameVersionRanges": [
+    {
+      "from": "146",
+      "to": "146"
+    },
+    {
+      "from": "154",
+      "to": "160.7"
+    }
+  ],
+  "versions": [
+    {
+      "tag": "v4.8.6-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.6-v8/MindustryToolMod.jar",
+      "modVersion": "v4.8.6-v8",
+      "sizeBytes": 5539399,
+      "downloadCount": 6,
+      "releasedAt": "2026-01-19T11:00:21Z"
+    },
+    {
+      "tag": "v4.8.6-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.6-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.6-v8",
+      "sizeBytes": 5539399,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-19T10:57:04Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.5-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.5-v8/MindustryToolMod.jar",
+      "modVersion": "v4.8.5-v8",
+      "sizeBytes": 5539044,
+      "downloadCount": 8,
+      "releasedAt": "2026-01-19T10:28:17Z"
+    },
+    {
+      "tag": "v4.8.5-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.5-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.5-v8",
+      "sizeBytes": 5539044,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-19T10:25:37Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.4-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.4-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.4-v8",
+      "sizeBytes": 5538684,
+      "downloadCount": 4,
+      "releasedAt": "2026-01-18T07:20:45Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.4-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.4-v8/MindustryToolMod.jar",
+      "modVersion": "v4.8.4-v8",
+      "sizeBytes": 2444026,
+      "downloadCount": 608,
+      "releasedAt": "2026-01-18T06:58:55Z"
+    },
+    {
+      "tag": "v4.8.3-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.3-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.3-v8",
+      "sizeBytes": 2444026,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-18T06:57:35Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.3-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.3-v8/MindustryToolMod.jar",
+      "modVersion": "v4.8.3-v8",
+      "sizeBytes": 2443889,
+      "downloadCount": 8,
+      "releasedAt": "2026-01-18T06:49:57Z"
+    },
+    {
+      "tag": "v4.8.2-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.2-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.2-v8",
+      "sizeBytes": 2443889,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-18T06:48:47Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.2-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.2-v8/MindustryToolMod.jar",
+      "modVersion": "v4.8.2-v8",
+      "sizeBytes": 2441802,
+      "downloadCount": 281,
+      "releasedAt": "2026-01-17T18:56:00Z"
+    },
+    {
+      "tag": "v4.8.1-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.1-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.1-v8",
+      "sizeBytes": 2438131,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-17T17:42:04Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.0-v8-beta",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.0-v8-beta/MindustryToolMod.jar",
+      "modVersion": "v4.8.0-v8",
+      "sizeBytes": 2433684,
+      "downloadCount": 28,
+      "releasedAt": "2026-01-16T17:23:37Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v4.8.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.8.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.8.0-v8",
+      "sizeBytes": 2433152,
+      "downloadCount": 962,
+      "releasedAt": "2026-01-15T09:19:07Z"
+    },
+    {
+      "tag": "v4.7.2-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.7.2-v8/MindustryToolMod.jar",
+      "modVersion": "v4.7.2-v8",
+      "sizeBytes": 2410926,
+      "downloadCount": 100,
+      "releasedAt": "2026-01-15T05:21:59Z"
+    },
+    {
+      "tag": "v4.7.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.7.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.7.0-v8",
+      "sizeBytes": 2407310,
+      "downloadCount": 205,
+      "releasedAt": "2026-01-14T16:56:21Z"
+    },
+    {
+      "tag": "v4.6.3-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.6.3-v8/MindustryToolMod.jar",
+      "modVersion": "v4.6.3-v8",
+      "sizeBytes": 2398373,
+      "downloadCount": 130,
+      "releasedAt": "2026-01-14T12:57:19Z"
+    },
+    {
+      "tag": "v4.6.2-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.6.2-v8/MindustryToolMod.jar",
+      "modVersion": "v4.6.2-v8",
+      "sizeBytes": 2396891,
+      "downloadCount": 54,
+      "releasedAt": "2026-01-14T11:28:45Z"
+    },
+    {
+      "tag": "v4.6.1-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.6.1-v8/MindustryToolMod.jar",
+      "modVersion": "v4.6.1-v8",
+      "sizeBytes": 2395576,
+      "downloadCount": 18,
+      "releasedAt": "2026-01-14T10:59:55Z"
+    },
+    {
+      "tag": "v4.6.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.6.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.6.0-v8",
+      "sizeBytes": 2391927,
+      "downloadCount": 116,
+      "releasedAt": "2026-01-14T06:33:54Z"
+    },
+    {
+      "tag": "v4.5.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.5.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.5.0-v8",
+      "sizeBytes": 2390014,
+      "downloadCount": 159,
+      "releasedAt": "2026-01-13T20:05:22Z"
+    },
+    {
+      "tag": "v4.3.2-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.3.2-v8/MindustryToolMod.jar",
+      "modVersion": "v4.3.2-v8",
+      "sizeBytes": 2368987,
+      "downloadCount": 111,
+      "releasedAt": "2026-01-13T15:34:20Z"
+    },
+    {
+      "tag": "v4.2.1-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.2.1-v8/MindustryToolMod.jar",
+      "modVersion": "v4.2.1-v8",
+      "sizeBytes": 1826129,
+      "downloadCount": 48,
+      "releasedAt": "2026-01-13T13:52:16Z"
+    },
+    {
+      "tag": "v4.2.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.2.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.2.0-v8",
+      "sizeBytes": 1826005,
+      "downloadCount": 21,
+      "releasedAt": "2026-01-13T13:37:12Z"
+    },
+    {
+      "tag": "v4.1.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.1.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.1.0-v8",
+      "sizeBytes": 1812636,
+      "downloadCount": 73,
+      "releasedAt": "2026-01-13T12:16:33Z"
+    },
+    {
+      "tag": "v4.0.1-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.0.1-v8/MindustryToolMod.jar",
+      "modVersion": "v4.0.1-v8",
+      "sizeBytes": 1804814,
+      "downloadCount": 69,
+      "releasedAt": "2026-01-13T08:20:03Z"
+    },
+    {
+      "tag": "v4.0.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.0.0-v8/MindustryToolMod.jar",
+      "modVersion": "v4.0.0-v8",
+      "sizeBytes": 1804815,
+      "downloadCount": 21,
+      "releasedAt": "2026-01-13T08:00:03Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v3.1.0-beta.402",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.1.0-beta.402/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3472453,
+      "downloadCount": 423,
+      "releasedAt": "2026-01-05T03:43:40Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v3.0.4",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.0.4/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3449223,
+      "downloadCount": 2081,
+      "releasedAt": "2026-01-04T10:31:02Z"
+    },
+    {
+      "tag": "v3.0.3-beta.400",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.0.3-beta.400/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3449231,
+      "downloadCount": 16,
+      "releasedAt": "2026-01-04T10:29:54Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v3.0.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.0.2/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3448328,
+      "downloadCount": 52,
+      "releasedAt": "2026-01-04T09:14:12Z"
+    },
+    {
+      "tag": "v3.0.3-beta.399",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.0.3-beta.399/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3448336,
+      "downloadCount": 40,
+      "releasedAt": "2026-01-04T09:14:09Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v3.0.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.0.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3446636,
+      "downloadCount": 80,
+      "releasedAt": "2026-01-04T07:50:04Z"
+    },
+    {
+      "tag": "v3.0.0-beta.396",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v3.0.0-beta.396/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3446644,
+      "downloadCount": 12,
+      "releasedAt": "2026-01-04T07:49:01Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.31.0-beta.395",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.31.0-beta.395/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3438347,
+      "downloadCount": 128,
+      "releasedAt": "2026-01-03T16:14:09Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.30.3",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.30.3/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3408283,
+      "downloadCount": 516,
+      "releasedAt": "2026-01-03T11:59:02Z"
+    },
+    {
+      "tag": "v2.30.2-beta.393",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.30.2-beta.393/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3408290,
+      "downloadCount": 8,
+      "releasedAt": "2026-01-03T11:56:21Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.30.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.30.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3408050,
+      "downloadCount": 43,
+      "releasedAt": "2026-01-03T11:30:52Z"
+    },
+    {
+      "tag": "v2.30.0-beta.391",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.30.0-beta.391/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3408058,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-03T11:28:00Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.29.0-beta.390",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.29.0-beta.390/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3402810,
+      "downloadCount": 24,
+      "releasedAt": "2026-01-02T18:30:04Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.28.1-beta.389",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.28.1-beta.389/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344127,
+      "downloadCount": 39,
+      "releasedAt": "2026-01-02T09:43:18Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.28.0-beta.388",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.28.0-beta.388/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3343263,
+      "downloadCount": 8,
+      "releasedAt": "2026-01-02T09:32:54Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.27.8-beta.387",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.8-beta.387/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344246,
+      "downloadCount": 4,
+      "releasedAt": "2026-01-02T09:27:14Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.27.8-beta.386",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.8-beta.386/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344260,
+      "downloadCount": 61,
+      "releasedAt": "2026-01-01T17:38:28Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.27.7",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.7/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344253,
+      "downloadCount": 959,
+      "releasedAt": "2026-01-01T17:32:02Z"
+    },
+    {
+      "tag": "v2.27.6",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.6/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344341,
+      "downloadCount": 19,
+      "releasedAt": "2026-01-01T17:14:46Z"
+    },
+    {
+      "tag": "v2.27.5",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.5/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344262,
+      "downloadCount": 14,
+      "releasedAt": "2026-01-01T17:08:07Z"
+    },
+    {
+      "tag": "v2.27.4",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.4/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344262,
+      "downloadCount": 10,
+      "releasedAt": "2026-01-01T17:04:57Z"
+    },
+    {
+      "tag": "v2.27.3",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.3/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344261,
+      "downloadCount": 16,
+      "releasedAt": "2026-01-01T16:48:24Z"
+    },
+    {
+      "tag": "v2.27.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.2/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344262,
+      "downloadCount": 7,
+      "releasedAt": "2026-01-01T16:45:43Z"
+    },
+    {
+      "tag": "v2.27.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344262,
+      "downloadCount": 15,
+      "releasedAt": "2026-01-01T16:37:28Z"
+    },
+    {
+      "tag": "v2.27.0-beta.377",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.27.0-beta.377/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344268,
+      "downloadCount": 4,
+      "releasedAt": "2026-01-01T16:36:14Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.26.2-beta.376",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.26.2-beta.376/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344268,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-01T16:10:54Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.26.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.26.2/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344113,
+      "downloadCount": 38,
+      "releasedAt": "2026-01-01T16:09:01Z"
+    },
+    {
+      "tag": "v2.26.1-beta.373",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.26.1-beta.373/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3344120,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-01T15:55:56Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.26.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.26.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3338017,
+      "downloadCount": 78,
+      "releasedAt": "2026-01-01T15:27:49Z"
+    },
+    {
+      "tag": "v2.26.0-beta.371",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.26.0-beta.371/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3338024,
+      "downloadCount": 22,
+      "releasedAt": "2026-01-01T15:21:15Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.25.0-beta.370",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.25.0-beta.370/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3337526,
+      "downloadCount": 7,
+      "releasedAt": "2026-01-01T15:04:56Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.24.0-beta.369",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.24.0-beta.369/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3336335,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-01T14:52:16Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.23.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.23.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3327665,
+      "downloadCount": 92,
+      "releasedAt": "2026-01-01T14:04:28Z"
+    },
+    {
+      "tag": "v2.23.0-beta.367",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.23.0-beta.367/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3327673,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-01T13:56:37Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.22.3-beta.366",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.22.3-beta.366/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3327475,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-01T11:42:33Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.22.2-beta.365",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.22.2-beta.365/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3327469,
+      "downloadCount": 4,
+      "releasedAt": "2026-01-01T11:29:59Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.21.2-beta.364",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.21.2-beta.364/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3326606,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-01T11:07:51Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.21.2-beta.363",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.21.2-beta.363/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3324768,
+      "downloadCount": 1,
+      "releasedAt": "2026-01-01T11:02:49Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.21.2-beta.362",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.21.2-beta.362/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3317065,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-01T09:13:11Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.21.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.21.2/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3317058,
+      "downloadCount": 211,
+      "releasedAt": "2026-01-01T09:11:44Z"
+    },
+    {
+      "tag": "v2.22.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.22.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3315991,
+      "downloadCount": 916,
+      "releasedAt": "2025-12-30T18:19:28Z"
+    },
+    {
+      "tag": "v2.22.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.22.0/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3304085,
+      "downloadCount": 93,
+      "releasedAt": "2025-12-30T16:41:44Z"
+    },
+    {
+      "tag": "v2.21.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.21.1/MindustryToolMod.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 3297661,
+      "downloadCount": 20,
+      "releasedAt": "2025-12-30T16:32:12Z"
+    },
+    {
+      "tag": "v2.21.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.21.0/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2369393,
+      "downloadCount": 30,
+      "releasedAt": "2025-12-30T16:17:09Z"
+    },
+    {
+      "tag": "v2.20.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.20.1/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2361470,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-30T16:09:30Z"
+    },
+    {
+      "tag": "v2.20.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.20.0/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2360414,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-30T16:03:12Z"
+    },
+    {
+      "tag": "v2.19.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.19.2/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2347277,
+      "downloadCount": 31,
+      "releasedAt": "2025-12-30T15:44:46Z"
+    },
+    {
+      "tag": "v2.19.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.19.1/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2346950,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-30T15:41:33Z"
+    },
+    {
+      "tag": "v2.19.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.19.0/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2346679,
+      "downloadCount": 17,
+      "releasedAt": "2025-12-30T15:38:20Z"
+    },
+    {
+      "tag": "v2.18.5",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.18.5/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2346551,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-30T15:30:31Z"
+    },
+    {
+      "tag": "v2.18.4",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.18.4/MindustryToolModDesktop.jar",
+      "modVersion": "[Auto-Version]",
+      "sizeBytes": 2346551,
+      "downloadCount": 9,
+      "releasedAt": "2025-12-30T15:28:32Z"
+    },
+    {
+      "tag": "v2.18.3",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.18.3/MindustryToolModDesktop.jar",
+      "modVersion": "v2.17.2",
+      "sizeBytes": 2346550,
+      "downloadCount": 20,
+      "releasedAt": "2025-12-30T15:11:25Z"
+    },
+    {
+      "tag": "v2.17.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.17.2/MindustryToolMod.jar",
+      "modVersion": "v2.17.2",
+      "sizeBytes": 3254675,
+      "downloadCount": 521,
+      "releasedAt": "2025-12-29T17:40:40Z"
+    },
+    {
+      "tag": "v2.16.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.16.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.16.0-v8",
+      "sizeBytes": 3206816,
+      "downloadCount": 899,
+      "releasedAt": "2025-12-28T17:48:40Z"
+    },
+    {
+      "tag": "v2.15.4-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.15.4-v8/MindustryToolMod.jar",
+      "modVersion": "v2.15.4-v8",
+      "sizeBytes": 3208271,
+      "downloadCount": 47,
+      "releasedAt": "2025-12-28T17:06:00Z"
+    },
+    {
+      "tag": "v2.15.3-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.15.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.15.3-v8",
+      "sizeBytes": 3207224,
+      "downloadCount": 15,
+      "releasedAt": "2025-12-28T16:58:04Z"
+    },
+    {
+      "tag": "v2.15.2-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.15.2-v8/MindustryToolMod.jar",
+      "modVersion": "v2.15.2-v8",
+      "sizeBytes": 3206563,
+      "downloadCount": 19,
+      "releasedAt": "2025-12-28T16:52:35Z"
+    },
+    {
+      "tag": "v2.15.1-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.15.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.15.1-v8",
+      "sizeBytes": 3206128,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-28T16:48:03Z"
+    },
+    {
+      "tag": "v2.15.0-v1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.15.0-v1/MindustryToolMod.jar",
+      "modVersion": "v2.15.0-v1",
+      "sizeBytes": 3205483,
+      "downloadCount": 23,
+      "releasedAt": "2025-12-28T16:35:05Z"
+    },
+    {
+      "tag": "v2.14.0-v1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.14.0-v1/MindustryToolMod.jar",
+      "modVersion": "v2.14.0-v1",
+      "sizeBytes": 3201810,
+      "downloadCount": 50,
+      "releasedAt": "2025-12-28T15:46:26Z"
+    },
+    {
+      "tag": "v2.13.65-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.65-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.65-v8",
+      "sizeBytes": 3198406,
+      "downloadCount": 281,
+      "releasedAt": "2025-12-28T08:36:03Z"
+    },
+    {
+      "tag": "v2.13.64-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.64-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.64-v8",
+      "sizeBytes": 3198260,
+      "downloadCount": 20,
+      "releasedAt": "2025-12-28T08:21:07Z"
+    },
+    {
+      "tag": "v2.13.63-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.63-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.63-v8",
+      "sizeBytes": 3200189,
+      "downloadCount": 11,
+      "releasedAt": "2025-12-28T08:11:46Z"
+    },
+    {
+      "tag": "v2.13.62-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.62-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.62-v8",
+      "sizeBytes": 3199914,
+      "downloadCount": 25,
+      "releasedAt": "2025-12-28T07:55:30Z"
+    },
+    {
+      "tag": "v2.13.61-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.61-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.61-v8",
+      "sizeBytes": 3200066,
+      "downloadCount": 12,
+      "releasedAt": "2025-12-28T07:48:43Z"
+    },
+    {
+      "tag": "v2.13.60-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.60-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.60-v8",
+      "sizeBytes": 3199751,
+      "downloadCount": 25,
+      "releasedAt": "2025-12-28T07:29:16Z"
+    },
+    {
+      "tag": "v2.13.59-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.59-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.59-v8",
+      "sizeBytes": 3199541,
+      "downloadCount": 84,
+      "releasedAt": "2025-12-28T05:58:27Z"
+    },
+    {
+      "tag": "v2.13.58-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.58-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.58-v8",
+      "sizeBytes": 3199468,
+      "downloadCount": 55,
+      "releasedAt": "2025-12-28T05:09:12Z"
+    },
+    {
+      "tag": "v2.13.57-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.57-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.57-v8",
+      "sizeBytes": 3199296,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-28T04:56:25Z"
+    },
+    {
+      "tag": "v2.13.56-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.56-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.56-v8",
+      "sizeBytes": 3199530,
+      "downloadCount": 21,
+      "releasedAt": "2025-12-28T04:43:03Z"
+    },
+    {
+      "tag": "v2.13.55-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.55-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.55-v8",
+      "sizeBytes": 3199770,
+      "downloadCount": 4,
+      "releasedAt": "2025-12-28T04:40:44Z"
+    },
+    {
+      "tag": "v2.13.54-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.54-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.54-v8",
+      "sizeBytes": 3199598,
+      "downloadCount": 46,
+      "releasedAt": "2025-12-28T03:55:16Z"
+    },
+    {
+      "tag": "v2.13.53-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.53-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.53-v8",
+      "sizeBytes": 3199100,
+      "downloadCount": 23,
+      "releasedAt": "2025-12-28T03:33:48Z"
+    },
+    {
+      "tag": "v2.13.51-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.51-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.51-v8",
+      "sizeBytes": 3198735,
+      "downloadCount": 24,
+      "releasedAt": "2025-12-28T03:05:09Z"
+    },
+    {
+      "tag": "v2.13.508",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.508/MindustryToolMod.jar",
+      "modVersion": "v2.13.508",
+      "sizeBytes": 3198174,
+      "downloadCount": 306,
+      "releasedAt": "2025-12-27T16:48:19Z"
+    },
+    {
+      "tag": "v2.13.49-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.49-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.49-v8",
+      "sizeBytes": 3197803,
+      "downloadCount": 31,
+      "releasedAt": "2025-12-27T16:25:22Z"
+    },
+    {
+      "tag": "v2.13.48-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.48-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.48-v8",
+      "sizeBytes": 3197778,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-27T16:11:07Z"
+    },
+    {
+      "tag": "v2.13.47-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.47-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.47-v8",
+      "sizeBytes": 3197662,
+      "downloadCount": 15,
+      "releasedAt": "2025-12-27T15:56:29Z"
+    },
+    {
+      "tag": "v2.13.46-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.46-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.46-v8",
+      "sizeBytes": 3197543,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-27T15:43:48Z"
+    },
+    {
+      "tag": "v2.13.45-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.45-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.45-v8",
+      "sizeBytes": 3196260,
+      "downloadCount": 213,
+      "releasedAt": "2025-12-27T12:18:09Z"
+    },
+    {
+      "tag": "v2.13.44-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.44-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.44-v8",
+      "sizeBytes": 3195403,
+      "downloadCount": 46,
+      "releasedAt": "2025-12-27T11:43:52Z"
+    },
+    {
+      "tag": "v2.13.43-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.43-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.43-v8",
+      "sizeBytes": 3193684,
+      "downloadCount": 21,
+      "releasedAt": "2025-12-27T11:34:04Z"
+    },
+    {
+      "tag": "v2.13.42-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.42-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.42-v8",
+      "sizeBytes": 3193701,
+      "downloadCount": 21,
+      "releasedAt": "2025-12-27T11:24:36Z"
+    },
+    {
+      "tag": "v2.13.41-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.41-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.41-v8",
+      "sizeBytes": 3192088,
+      "downloadCount": 36,
+      "releasedAt": "2025-12-27T10:51:01Z"
+    },
+    {
+      "tag": "v2.13.40-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.40-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.40-v8",
+      "sizeBytes": 3193028,
+      "downloadCount": 21,
+      "releasedAt": "2025-12-27T10:39:34Z"
+    },
+    {
+      "tag": "v2.13.39-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.39-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.39-v8",
+      "sizeBytes": 3192871,
+      "downloadCount": 13,
+      "releasedAt": "2025-12-27T10:30:33Z"
+    },
+    {
+      "tag": "v2.13.38-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.38-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.38-v8",
+      "sizeBytes": 3191642,
+      "downloadCount": 206,
+      "releasedAt": "2025-12-27T06:14:34Z"
+    },
+    {
+      "tag": "v2.13.37-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.37-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.37-v8",
+      "sizeBytes": 3190196,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-27T06:00:24Z"
+    },
+    {
+      "tag": "v2.13.36-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.36-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.36-v8",
+      "sizeBytes": 3191414,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-27T05:51:10Z"
+    },
+    {
+      "tag": "v2.13.35-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.35-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.35-v8",
+      "sizeBytes": 3188151,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-27T05:38:56Z"
+    },
+    {
+      "tag": "v2.13.34-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.34-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.34-v8",
+      "sizeBytes": 3188425,
+      "downloadCount": 12,
+      "releasedAt": "2025-12-27T05:33:09Z"
+    },
+    {
+      "tag": "v2.13.33-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.33-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.33-v8",
+      "sizeBytes": 3189382,
+      "downloadCount": 19,
+      "releasedAt": "2025-12-27T05:22:00Z"
+    },
+    {
+      "tag": "v2.13.32-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.32-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.32-v8",
+      "sizeBytes": 3188482,
+      "downloadCount": 10,
+      "releasedAt": "2025-12-27T05:14:42Z"
+    },
+    {
+      "tag": "v2.13.30-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.30-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.30-v8",
+      "sizeBytes": 3188633,
+      "downloadCount": 10,
+      "releasedAt": "2025-12-27T05:04:33Z"
+    },
+    {
+      "tag": "v2.13.29-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.29-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.29-v8",
+      "sizeBytes": 3183893,
+      "downloadCount": 57,
+      "releasedAt": "2025-12-27T04:20:04Z"
+    },
+    {
+      "tag": "v2.13.28-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.28-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.28-v8",
+      "sizeBytes": 3183196,
+      "downloadCount": 17,
+      "releasedAt": "2025-12-27T03:56:50Z"
+    },
+    {
+      "tag": "v2.13.27-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.27-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.27-v8",
+      "sizeBytes": 3183192,
+      "downloadCount": 234,
+      "releasedAt": "2025-12-26T19:01:02Z"
+    },
+    {
+      "tag": "v2.13.26-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.26-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.26-v8",
+      "sizeBytes": 3183352,
+      "downloadCount": 15,
+      "releasedAt": "2025-12-26T18:44:33Z"
+    },
+    {
+      "tag": "v2.13.25-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.25-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.25-v8",
+      "sizeBytes": 3183132,
+      "downloadCount": 47,
+      "releasedAt": "2025-12-26T18:00:06Z"
+    },
+    {
+      "tag": "v2.13.24-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.24-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.24-v8",
+      "sizeBytes": 3187316,
+      "downloadCount": 12,
+      "releasedAt": "2025-12-26T17:48:29Z"
+    },
+    {
+      "tag": "v2.13.23-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.23-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.23-v8",
+      "sizeBytes": 3187318,
+      "downloadCount": 34,
+      "releasedAt": "2025-12-26T17:18:56Z"
+    },
+    {
+      "tag": "v2.13.21-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.21-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.21-v8",
+      "sizeBytes": 3187616,
+      "downloadCount": 52,
+      "releasedAt": "2025-12-26T16:37:21Z"
+    },
+    {
+      "tag": "v2.13.20-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.20-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.20-v8",
+      "sizeBytes": 3187047,
+      "downloadCount": 36,
+      "releasedAt": "2025-12-26T16:18:07Z"
+    },
+    {
+      "tag": "v2.13.17-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.17-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.17-v8",
+      "sizeBytes": 3186975,
+      "downloadCount": 17,
+      "releasedAt": "2025-12-26T16:09:11Z"
+    },
+    {
+      "tag": "v2.13.16-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.16-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.16-v8",
+      "sizeBytes": 3185685,
+      "downloadCount": 66,
+      "releasedAt": "2025-12-26T14:50:25Z"
+    },
+    {
+      "tag": "v2.13.15-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.15-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.15-v8",
+      "sizeBytes": 3186106,
+      "downloadCount": 59,
+      "releasedAt": "2025-12-26T13:53:40Z"
+    },
+    {
+      "tag": "v2.13.14-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.14-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.14-v8",
+      "sizeBytes": 3186108,
+      "downloadCount": 33,
+      "releasedAt": "2025-12-26T13:24:11Z"
+    },
+    {
+      "tag": "v2.13.13-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.13-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.13-v8",
+      "sizeBytes": 3186108,
+      "downloadCount": 30,
+      "releasedAt": "2025-12-26T13:00:22Z"
+    },
+    {
+      "tag": "v2.13.12-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.12-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.12-v8",
+      "sizeBytes": 3185904,
+      "downloadCount": 15,
+      "releasedAt": "2025-12-26T12:57:29Z"
+    },
+    {
+      "tag": "v2.13.11-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.11-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.11-v8",
+      "sizeBytes": 3186019,
+      "downloadCount": 70,
+      "releasedAt": "2025-12-26T12:04:04Z"
+    },
+    {
+      "tag": "v2.13.10-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.10-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.10-v8",
+      "sizeBytes": 3186532,
+      "downloadCount": 14,
+      "releasedAt": "2025-12-26T11:55:52Z"
+    },
+    {
+      "tag": "v2.13.9-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.9-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.9-v8",
+      "sizeBytes": 3185380,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-26T11:50:08Z"
+    },
+    {
+      "tag": "v2.13.8-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.8-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.8-v8",
+      "sizeBytes": 3185294,
+      "downloadCount": 10,
+      "releasedAt": "2025-12-26T11:44:37Z"
+    },
+    {
+      "tag": "v2.13.7-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.7-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.7-v8",
+      "sizeBytes": 3184982,
+      "downloadCount": 6,
+      "releasedAt": "2025-12-26T11:40:42Z"
+    },
+    {
+      "tag": "v2.13.6-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.6-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.6-v8",
+      "sizeBytes": 3184516,
+      "downloadCount": 11,
+      "releasedAt": "2025-12-26T11:35:03Z"
+    },
+    {
+      "tag": "v2.13.5-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.5-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.5-v8",
+      "sizeBytes": 3183441,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-26T11:32:14Z"
+    },
+    {
+      "tag": "v2.13.4-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.4-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.4-v8",
+      "sizeBytes": 3184707,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-26T11:10:14Z"
+    },
+    {
+      "tag": "v2.13.3-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.3-v8",
+      "sizeBytes": 3184029,
+      "downloadCount": 143,
+      "releasedAt": "2025-12-26T06:30:49Z"
+    },
+    {
+      "tag": "v2.13.2v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.2v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.2v8",
+      "sizeBytes": 3192568,
+      "downloadCount": 88,
+      "releasedAt": "2025-12-26T03:45:50Z"
+    },
+    {
+      "tag": "v2.13.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.1-v8",
+      "sizeBytes": 3185771,
+      "downloadCount": 31,
+      "releasedAt": "2025-12-26T02:29:56Z"
+    },
+    {
+      "tag": "v2.13.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.13.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.13.0-v8",
+      "sizeBytes": 3185787,
+      "downloadCount": 14,
+      "releasedAt": "2025-12-26T02:14:51Z"
+    },
+    {
+      "tag": "v2.12.13-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.13-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.13-v8",
+      "sizeBytes": 3182757,
+      "downloadCount": 10,
+      "releasedAt": "2025-12-25T16:11:44Z"
+    },
+    {
+      "tag": "v2.12.12-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.12-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.12-v8",
+      "sizeBytes": 3184858,
+      "downloadCount": 6,
+      "releasedAt": "2025-12-25T16:08:36Z"
+    },
+    {
+      "tag": "v2.12.11-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.11-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.11-v8",
+      "sizeBytes": 3182757,
+      "downloadCount": 13,
+      "releasedAt": "2025-12-25T15:51:08Z"
+    },
+    {
+      "tag": "v2.12.10-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.10-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.10-v8",
+      "sizeBytes": 3183974,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-25T15:42:01Z"
+    },
+    {
+      "tag": "v2.12.9-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.9-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.9-v8",
+      "sizeBytes": 3181711,
+      "downloadCount": 41,
+      "releasedAt": "2025-12-25T14:57:11Z"
+    },
+    {
+      "tag": "v2.12.8-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.8-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.8-v8",
+      "sizeBytes": 3181066,
+      "downloadCount": 12,
+      "releasedAt": "2025-12-25T14:41:15Z"
+    },
+    {
+      "tag": "v2.12.7-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.7-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.7-v8",
+      "sizeBytes": 3181125,
+      "downloadCount": 14,
+      "releasedAt": "2025-12-25T14:23:58Z"
+    },
+    {
+      "tag": "v2.12.6-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.6-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.6-v8",
+      "sizeBytes": 3181229,
+      "downloadCount": 13,
+      "releasedAt": "2025-12-25T14:14:11Z"
+    },
+    {
+      "tag": "v2.12.5-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.5-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.5-v8",
+      "sizeBytes": 3181275,
+      "downloadCount": 43,
+      "releasedAt": "2025-12-25T13:12:04Z"
+    },
+    {
+      "tag": "v2.12.4-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.4-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.4-v8",
+      "sizeBytes": 3181098,
+      "downloadCount": 12,
+      "releasedAt": "2025-12-25T13:04:52Z"
+    },
+    {
+      "tag": "v2.12.3-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.3-v8",
+      "sizeBytes": 3180579,
+      "downloadCount": 9,
+      "releasedAt": "2025-12-25T12:56:45Z"
+    },
+    {
+      "tag": "v2.12.2-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.2-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.2-v8",
+      "sizeBytes": 3180580,
+      "downloadCount": 5,
+      "releasedAt": "2025-12-25T12:55:51Z"
+    },
+    {
+      "tag": "v2.12.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.1-v8",
+      "sizeBytes": 3180579,
+      "downloadCount": 2,
+      "releasedAt": "2025-12-25T12:36:16Z"
+    },
+    {
+      "tag": "v2.12.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.12.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.12.0-v8",
+      "sizeBytes": 3180690,
+      "downloadCount": 7,
+      "releasedAt": "2025-12-25T10:22:14Z"
+    },
+    {
+      "tag": "v2.11.11-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.11-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.11-v8",
+      "sizeBytes": 2452442,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-25T09:51:16Z"
+    },
+    {
+      "tag": "v2.11.10-v8-test",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.10-v8-test/MindustryToolMod.jar",
+      "modVersion": "v2.11.10-v8-test",
+      "sizeBytes": 4680744,
+      "downloadCount": 11,
+      "releasedAt": "2025-12-25T09:42:48Z"
+    },
+    {
+      "tag": "v2.11.9-v8-test",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.9-v8-test/MindustryToolMod.jar",
+      "modVersion": "v2.11.9-v8-test",
+      "sizeBytes": 4680744,
+      "downloadCount": 4,
+      "releasedAt": "2025-12-25T09:42:27Z"
+    },
+    {
+      "tag": "v2.11.8-v8-test",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.8-v8-test/MindustryToolMod.jar",
+      "modVersion": "v2.11.8-v8-test",
+      "sizeBytes": 4680491,
+      "downloadCount": 11,
+      "releasedAt": "2025-12-25T09:22:46Z"
+    },
+    {
+      "tag": "v2.11.7-v8-test",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.7-v8-test/MindustryToolMod.jar",
+      "modVersion": "v2.11.7-v8-test",
+      "sizeBytes": 4680058,
+      "downloadCount": 7,
+      "releasedAt": "2025-12-25T09:12:16Z"
+    },
+    {
+      "tag": "v2.11.6-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.6-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.6-v8",
+      "sizeBytes": 4679672,
+      "downloadCount": 30,
+      "releasedAt": "2025-12-25T08:30:39Z"
+    },
+    {
+      "tag": "v2.11.5-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.5-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.5-v8",
+      "sizeBytes": 4679587,
+      "downloadCount": 16,
+      "releasedAt": "2025-12-25T08:12:59Z"
+    },
+    {
+      "tag": "v2.11.4-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.4-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.4-v8",
+      "sizeBytes": 4677105,
+      "downloadCount": 23,
+      "releasedAt": "2025-12-25T07:41:26Z"
+    },
+    {
+      "tag": "v2.11.3-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.3-v8",
+      "sizeBytes": 4676673,
+      "downloadCount": 19,
+      "releasedAt": "2025-12-25T07:17:32Z"
+    },
+    {
+      "tag": "v2.11.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.1-v8",
+      "sizeBytes": 4676008,
+      "downloadCount": 22,
+      "releasedAt": "2025-12-25T06:59:07Z"
+    },
+    {
+      "tag": "v2.11.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.11.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.11.0-v8",
+      "sizeBytes": 4675819,
+      "downloadCount": 14,
+      "releasedAt": "2025-12-25T06:39:36Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.10.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.10.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.10.0-v8",
+      "sizeBytes": 2441965,
+      "downloadCount": 607,
+      "releasedAt": "2025-12-24T02:54:34Z"
+    },
+    {
+      "tag": "v2.9.3-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.9.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.9.3-v8",
+      "sizeBytes": 2442389,
+      "downloadCount": 22,
+      "releasedAt": "2025-12-24T00:35:56Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.9.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.9.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.9.1-v8",
+      "sizeBytes": 2441965,
+      "downloadCount": 52,
+      "releasedAt": "2025-12-24T00:27:50Z"
+    },
+    {
+      "tag": "v2.9.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.9.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.9.0-v8",
+      "sizeBytes": 2443201,
+      "downloadCount": 816,
+      "releasedAt": "2025-12-21T19:14:51Z"
+    },
+    {
+      "tag": "v2.8.8-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.8-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.8-v8",
+      "sizeBytes": 2443201,
+      "downloadCount": 13,
+      "releasedAt": "2025-12-21T19:13:57Z"
+    },
+    {
+      "tag": "v2.8.7-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.7-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.7-v8",
+      "sizeBytes": 2414424,
+      "downloadCount": 99,
+      "releasedAt": "2025-12-21T06:20:18Z"
+    },
+    {
+      "tag": "v2.8.6-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.6-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.6-v8",
+      "sizeBytes": 2414243,
+      "downloadCount": 11,
+      "releasedAt": "2025-12-21T06:06:54Z"
+    },
+    {
+      "tag": "v2.8.5-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.5-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.5-v8",
+      "sizeBytes": 2414227,
+      "downloadCount": 5,
+      "releasedAt": "2025-12-21T05:54:18Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.8.4-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.4-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.4-v8",
+      "sizeBytes": 2413780,
+      "downloadCount": 23,
+      "releasedAt": "2025-12-21T05:36:55Z"
+    },
+    {
+      "tag": "v2.8.3-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.3-v8",
+      "sizeBytes": 2414369,
+      "downloadCount": 15,
+      "releasedAt": "2025-12-21T05:04:06Z"
+    },
+    {
+      "tag": "v2.8.2-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.2-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.2-v8",
+      "sizeBytes": 2412731,
+      "downloadCount": 9,
+      "releasedAt": "2025-12-21T03:53:35Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v2.8.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.1-v8",
+      "sizeBytes": 2412424,
+      "downloadCount": 291,
+      "releasedAt": "2025-12-20T15:58:49Z"
+    },
+    {
+      "tag": "v2.8.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.8.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.8.0-v8",
+      "sizeBytes": 2412503,
+      "downloadCount": 49,
+      "releasedAt": "2025-12-20T15:10:41Z"
+    },
+    {
+      "tag": "v2.7.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.7.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.7.0-v8",
+      "sizeBytes": 2383631,
+      "downloadCount": 169,
+      "releasedAt": "2025-12-20T11:16:04Z"
+    },
+    {
+      "tag": "v2.6.2-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.6.2-v8/MindustryToolMod.jar",
+      "modVersion": "v2.6.2-v8",
+      "sizeBytes": 2378351,
+      "downloadCount": 44,
+      "releasedAt": "2025-12-20T10:16:58Z"
+    },
+    {
+      "tag": "v2.6.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.6.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.6.1-v8",
+      "sizeBytes": 2374211,
+      "downloadCount": 112,
+      "releasedAt": "2025-12-20T07:08:33Z"
+    },
+    {
+      "tag": "v2.6.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.6.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.6.0-v8",
+      "sizeBytes": 2375417,
+      "downloadCount": 34,
+      "releasedAt": "2025-12-20T06:49:31Z"
+    },
+    {
+      "tag": "v2.5.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.5.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.5.0-v8",
+      "sizeBytes": 2352096,
+      "downloadCount": 162,
+      "releasedAt": "2025-12-20T01:19:29Z"
+    },
+    {
+      "tag": "v2.4.1-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.4.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.4.1-v8",
+      "sizeBytes": 2345592,
+      "downloadCount": 173,
+      "releasedAt": "2025-12-19T19:06:55Z"
+    },
+    {
+      "tag": "v2.4.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.4.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.4.0-v8",
+      "sizeBytes": 2345592,
+      "downloadCount": 13,
+      "releasedAt": "2025-12-19T19:00:55Z"
+    },
+    {
+      "tag": "v2.3.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.3.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.3.0-v8",
+      "sizeBytes": 2326885,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-19T18:45:31Z"
+    },
+    {
+      "tag": "v2.1.0-v8",
+      "kind": "release",
+      "minGameVersion": "154.2",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.1.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.1.0-v8",
+      "sizeBytes": 2322767,
+      "downloadCount": 32,
+      "releasedAt": "2025-12-19T14:41:59Z"
+    },
+    {
+      "tag": "v2.0.3-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.0.3-v8/MindustryToolMod.jar",
+      "modVersion": "v2.0.3-v8",
+      "sizeBytes": 2315172,
+      "downloadCount": 132,
+      "releasedAt": "2025-12-19T03:43:56Z"
+    },
+    {
+      "tag": "v2.0.2-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.0.2-v8/MindustryToolMod.jar",
+      "modVersion": "v2.0.2-v8",
+      "sizeBytes": 2315163,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-19T03:07:12Z"
+    },
+    {
+      "tag": "v2.0.1-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.0.1-v8/MindustryToolMod.jar",
+      "modVersion": "v2.0.1-v8",
+      "sizeBytes": 2315121,
+      "downloadCount": 14,
+      "releasedAt": "2025-12-19T02:59:52Z"
+    },
+    {
+      "tag": "v2.0.0-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v2.0.0-v8/MindustryToolMod.jar",
+      "modVersion": "v2.0.0-v8",
+      "sizeBytes": 2314851,
+      "downloadCount": 43,
+      "releasedAt": "2025-12-18T23:04:43Z"
+    },
+    {
+      "tag": "v1.16.17-v8",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v1.16.17-v8/MindustryToolMod.jar",
+      "modVersion": "v1.16.17-v8",
+      "sizeBytes": 2314854,
+      "downloadCount": 38,
+      "releasedAt": "2025-12-18T22:53:29Z"
+    },
+    {
+      "tag": "v1.16.17",
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v1.16.17/MindustryToolMod.jar",
+      "modVersion": "v1.16.17",
+      "sizeBytes": 2244473,
+      "downloadCount": 2114,
+      "releasedAt": "2025-11-24T05:30:32Z"
+    }
+  ]
+}

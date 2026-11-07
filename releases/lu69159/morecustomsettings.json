@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "lu69159/morecustomsettings",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "MCS",
+    "author": "Space",
+    "description": "A mod which allows players to customize campaign difficulty, music and so on.\n一个允许玩家自定义战役难度，音乐等选项的模组。",
+    "version": "1.13",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "MCS.main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.13",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.13/MoreCustomSettings1.13.jar",
       "modVersion": "1.13",
       "sizeBytes": 276060,
-      "downloadCount": 472,
+      "downloadCount": 485,
       "releasedAt": "2026-10-31T04:08:21Z"
     },
     {
@@ -828,19 +842,5 @@
       "releasedAt": "2026-05-23T19:04:53Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "MCS",
-    "author": "Space",
-    "description": "A mod which allows players to customize campaign difficulty, music and so on.\n一个允许玩家自定义战役难度，音乐等选项的模组。",
-    "version": "1.13",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "MCS.main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

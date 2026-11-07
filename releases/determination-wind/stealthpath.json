@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/stealthpath",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "stealth-path",
+    "author": "DeterMination",
+    "description": "Plan safer assault routes by simulating turret/unit threat fields, then draw low-damage or nearest paths with auto-move support. / 基于炮塔与单位威胁场规划低伤或最近路线，支持自动移动与实时路径叠加。",
+    "version": "5.3.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "stealthpath.StealthPathMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v5.3.2",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/StealthPath/releases/download/v5.3.2/stealth-path.jar",
       "modVersion": "5.3.2",
       "sizeBytes": 494150,
-      "downloadCount": 5421,
+      "downloadCount": 5424,
       "releasedAt": "2026-02-20T10:19:54Z"
     }
-  ],
-  "meta": {
-    "name": "stealth-path",
-    "author": "DeterMination",
-    "description": "Plan safer assault routes by simulating turret/unit threat fields, then draw low-damage or nearest paths with auto-move support. / 基于炮塔与单位威胁场规划低伤或最近路线，支持自动移动与实时路径叠加。",
-    "version": "5.3.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "stealthpath.StealthPathMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

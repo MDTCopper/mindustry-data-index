@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "namakayo/kratha",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "kratha",
+    "author": "namaka",
+    "description": "\n[accent[]]A Mindustry Java Mod\n\nCurrent version : 0.3\n",
+    "version": "0.3",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "kratha.KrathaMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.3",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.3/kratha.jar",
       "modVersion": "0.3",
       "sizeBytes": 2842991,
-      "downloadCount": 991,
+      "downloadCount": 992,
       "releasedAt": "2026-08-18T11:44:02Z"
     },
     {
@@ -84,19 +98,5 @@
       "downloadCount": 794,
       "releasedAt": "2026-06-15T12:24:29Z"
     }
-  ],
-  "meta": {
-    "name": "kratha",
-    "author": "namaka",
-    "description": "\n[accent[]]A Mindustry Java Mod\n\nCurrent version : 0.3\n",
-    "version": "0.3",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "kratha.KrathaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

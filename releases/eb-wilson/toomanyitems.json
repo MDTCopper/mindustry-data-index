@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "eb-wilson/toomanyitems",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "tmi",
+    "author": "EBwilson",
+    "description": "\nAn auxiliary mod that provides you with quick retrieval of production and collection guidance information for materials, units, buildings, minerals, etc., so that you are no longer overwhelmed by installing too many mods.\n\n---\n\n一个辅助mod，为您提供快速检索材料，单位，建筑和矿物等的生产与采集引导信息，让您不再因为安装了太多mod而不知所措\n",
+    "version": "3.3",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "tmi.TooManyItems",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "3.3",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/EB-wilson/TooManyItems/releases/download/3.3/TooManyItems-3.3.jar",
       "modVersion": "3.3",
       "sizeBytes": 11356221,
-      "downloadCount": 4736,
+      "downloadCount": 4744,
       "releasedAt": "2026-09-21T17:06:23Z"
     },
     {
@@ -340,19 +354,5 @@
       "downloadCount": 98,
       "releasedAt": "2023-11-11T16:56:57Z"
     }
-  ],
-  "meta": {
-    "name": "tmi",
-    "author": "EBwilson",
-    "description": "\nAn auxiliary mod that provides you with quick retrieval of production and collection guidance information for materials, units, buildings, minerals, etc., so that you are no longer overwhelmed by installing too many mods.\n\n---\n\n一个辅助mod，为您提供快速检索材料，单位，建筑和矿物等的生产与采集引导信息，让您不再因为安装了太多mod而不知所措\n",
-    "version": "3.3",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "tmi.TooManyItems",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

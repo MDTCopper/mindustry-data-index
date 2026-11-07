@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "arktcode/dynamic-shadows",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "dynamic-shadows",
+    "author": "Arksource",
+    "description": "Standalone high-fidelity dynamic shadow system\nThe first Shadow [[]#fed17b]Shaders [[]white]for Mindustry.\n\n[[]crimson]!NOTE: [[]white]These can be quite large [[]gray](not recommended for low-end devices)..",
+    "version": "1.6.2.160.5",
+    "minGameVersion": "160.5",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "dynamicShadows.Main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.6.2.160.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Arktcode/dynamic-shadows/releases/download/1.6.2.160.5/dynamic-shadows-main.jar",
       "modVersion": "1.6.2.160.5",
       "sizeBytes": 177867,
-      "downloadCount": 1109,
+      "downloadCount": 1112,
       "releasedAt": "2026-10-06T04:36:37Z"
     },
     {
@@ -132,19 +146,5 @@
       "downloadCount": 138,
       "releasedAt": "2026-04-24T05:18:46Z"
     }
-  ],
-  "meta": {
-    "name": "dynamic-shadows",
-    "author": "Arksource",
-    "description": "Standalone high-fidelity dynamic shadow system\nThe first Shadow [[]#fed17b]Shaders [[]white]for Mindustry.\n\n[[]crimson]!NOTE: [[]white]These can be quite large [[]gray](not recommended for low-end devices)..",
-    "version": "1.6.2.160.5",
-    "minGameVersion": "160.5",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "dynamicShadows.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "dokmimn/nuclear-power-plant",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "acid-factory",
+    "author": "[#eedd55]do[#ea8d22]km[#e55454]imn[#eedd55]",
+    "description": "This mod adds a [#eedd55]fully functional [#ea8d22]nuclear power plant [#ffffff]capable of triggering a nuclear explosion!",
+    "version": "[#eedd55]BETA-RELEASE-1.2",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "acidfactory.AcidFactoryMod",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.3",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/dokmimn/Nuclear-Power-Plant/releases/download/1.3/Nuclear-Power-PlantDesktop.jar",
       "modVersion": "[#eedd55]BETA-RELEASE-1.2",
       "sizeBytes": 135236,
-      "downloadCount": 54,
+      "downloadCount": 56,
       "releasedAt": "2026-11-05T17:34:27Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 118,
       "releasedAt": "2026-11-01T16:09:01Z"
     }
-  ],
-  "meta": {
-    "name": "acid-factory",
-    "author": "[#eedd55]do[#ea8d22]km[#e55454]imn[#eedd55]",
-    "description": "This mod adds a [#eedd55]fully functional [#ea8d22]nuclear power plant [#ffffff]capable of triggering a nuclear explosion!",
-    "version": "[#eedd55]BETA-RELEASE-1.2",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "acidfactory.AcidFactoryMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

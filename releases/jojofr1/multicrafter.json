@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "jojofr1/multicrafter",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "multicrafter",
+    "author": "Jojo\n[gray[]]Original Author:[[]]\nLiplum\n[gray[]]Icon:[[]]\nPatou",
+    "description": "\nA library for mods that allows you to create factories with [yellow[]]multiple recipes[[]] in a single block.\n\n[lightgray[]]Official port and rewrite of the original library [gray[]]MutliCrafterLib[[]].[[]]\n\n[red[]]⚠[[]] Does [red[]]NOT[[]] add any content on its own, but is [gold[]]required[[]] for mods that want to use the library.\n",
+    "version": "1.5.3",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "dev.jojofr.multicrafter.MultiCrafterMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.5.3",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/JojoFR1/MultiCrafter/releases/download/v1.5.3/MultiCrafter.jar",
       "modVersion": "1.5.3",
       "sizeBytes": 103524,
-      "downloadCount": 919,
+      "downloadCount": 944,
       "releasedAt": "2026-11-01T01:32:11Z"
     },
     {
@@ -228,19 +242,5 @@
       "downloadCount": 219,
       "releasedAt": "2026-05-30T01:46:18Z"
     }
-  ],
-  "meta": {
-    "name": "multicrafter",
-    "author": "Jojo\n[gray[]]Original Author:[[]]\nLiplum\n[gray[]]Icon:[[]]\nPatou",
-    "description": "\nA library for mods that allows you to create factories with [yellow[]]multiple recipes[[]] in a single block.\n\n[lightgray[]]Official port and rewrite of the original library [gray[]]MutliCrafterLib[[]].[[]]\n\n[red[]]⚠[[]] Does [red[]]NOT[[]] add any content on its own, but is [gold[]]required[[]] for mods that want to use the library.\n",
-    "version": "1.5.3",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "dev.jojofr.multicrafter.MultiCrafterMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

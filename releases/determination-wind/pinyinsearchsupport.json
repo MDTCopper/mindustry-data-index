@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/pinyinsearchsupport",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "PinyinSearchSupport-dev",
+    "author": "DeterMination",
+    "description": "Type pinyin in search fields to match Chinese names. / 在搜索框输入拼音匹配中文项。",
+    "version": "2.3.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "pinyinsearchsupport.PinyinSearchSupportMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.3.2",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/PinyinSearchSupport/releases/download/v2.3.2/PinyinSearchSupport.jar",
       "modVersion": "2.3.2",
       "sizeBytes": 928814,
-      "downloadCount": 996,
+      "downloadCount": 997,
       "releasedAt": "2026-08-08T03:41:04Z"
     },
     {
@@ -116,19 +130,5 @@
       "downloadCount": 196,
       "releasedAt": "2026-02-20T10:19:44Z"
     }
-  ],
-  "meta": {
-    "name": "PinyinSearchSupport-dev",
-    "author": "DeterMination",
-    "description": "Type pinyin in search fields to match Chinese names. / 在搜索框输入拼音匹配中文项。",
-    "version": "2.3.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "pinyinsearchsupport.PinyinSearchSupportMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

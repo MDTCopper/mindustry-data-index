@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "momiji142857/momijicrafterlib",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "momiji-lib",
+    "author": "[sky[]]Momiji142857[white[]]",
+    "description": "磨米机库.\n2026-11-02",
+    "version": "1.7.3",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "momijiLib.LibLoad",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.7.3",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.3/MomijiLib-v1.7.3.jar",
       "modVersion": "1.7.3",
       "sizeBytes": 410808,
-      "downloadCount": 5,
+      "downloadCount": 7,
       "releasedAt": "2026-11-02T13:58:27Z"
     },
     {
@@ -116,19 +130,5 @@
       "downloadCount": 14,
       "releasedAt": "2026-06-02T16:10:54Z"
     }
-  ],
-  "meta": {
-    "name": "momiji-lib",
-    "author": "[sky[]]Momiji142857[white[]]",
-    "description": "磨米机库.\n2026-11-02",
-    "version": "1.7.3",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "momijiLib.LibLoad",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

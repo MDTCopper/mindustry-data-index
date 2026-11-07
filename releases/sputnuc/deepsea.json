@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "sputnuc/deepsea",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "deepsea",
+    "author": "Authors: \n [#ffd469[]]Sputnuc[] - main creator[white[]] \n [#ffb969[]]AnDashik - co-creator[white[]] \n [#ff3d61[]]Skifor - SFX designer[white[]]",
+    "description": "The mod is about planet P-I-312 and more. Some fishes and underwater campaign \nSpecial thanks to: \n- [#5865f2[]]@meepoffaith[white[]] for the pseudo-3D drawing code. \n\n[gray[]]Fish: (*=)<[]",
+    "version": "0.2.1",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "ds.DeepSea",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "alpha-0-3_start-of-rework",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-3_start-of-rework/DeepSea.jar",
       "modVersion": "0.2.1",
       "sizeBytes": 12895338,
-      "downloadCount": 1213,
+      "downloadCount": 1219,
       "releasedAt": "2026-09-27T19:08:36Z"
     },
     {
@@ -116,19 +130,5 @@
       "downloadCount": 54,
       "releasedAt": "2026-02-09T10:24:02Z"
     }
-  ],
-  "meta": {
-    "name": "deepsea",
-    "author": "Authors: \n [#ffd469[]]Sputnuc[] - main creator[white[]] \n [#ffb969[]]AnDashik - co-creator[white[]] \n [#ff3d61[]]Skifor - SFX designer[white[]]",
-    "description": "The mod is about planet P-I-312 and more. Some fishes and underwater campaign \nSpecial thanks to: \n- [#5865f2[]]@meepoffaith[white[]] for the pseudo-3D drawing code. \n\n[gray[]]Fish: (*=)<[]",
-    "version": "0.2.1",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "ds.DeepSea",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

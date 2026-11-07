@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "mindustrydesignit/schematic-browser-mod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "schematic-browser",
+    "author": "SByte, Eeve-lyn, zxtej",
+    "description": "A mod for browsing schematic repositories.",
+    "version": "1.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "schembrowser.SchematicBrowser",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "latest",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest/schematic-browser-mod.jar",
       "modVersion": "1.2",
       "sizeBytes": 65184,
-      "downloadCount": 37092,
+      "downloadCount": 37103,
       "releasedAt": "2025-12-18T12:25:31Z"
     },
     {
@@ -52,19 +66,5 @@
       "downloadCount": 1325,
       "releasedAt": "2025-05-02T20:46:37Z"
     }
-  ],
-  "meta": {
-    "name": "schematic-browser",
-    "author": "SByte, Eeve-lyn, zxtej",
-    "description": "A mod for browsing schematic repositories.",
-    "version": "1.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "schembrowser.SchematicBrowser",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

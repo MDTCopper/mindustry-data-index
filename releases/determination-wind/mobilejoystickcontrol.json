@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/mobilejoystickcontrol",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "MobileJoystickControl",
+    "author": "DeterMination",
+    "description": "Minecraft PE style mobile joystick control for player units with movement scaling, boost toggle, and dual/single-stick shooting modes. / 提供类似 Minecraft 手机端的摇杆操控：按幅度移动、Boost 切换、双摇杆或单摇杆开火。",
+    "version": "1.1.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mobilejoystickcontrol.MobileJoystickControlMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/MobileJoystickControl/releases/download/v1.1.0/MobileJoystickControl-v1.1.0.jar",
       "modVersion": "1.1.0",
       "sizeBytes": 43756,
-      "downloadCount": 1367,
+      "downloadCount": 1372,
       "releasedAt": "2026-07-11T12:33:46Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 2029,
       "releasedAt": "2026-04-22T13:10:45Z"
     }
-  ],
-  "meta": {
-    "name": "MobileJoystickControl",
-    "author": "DeterMination",
-    "description": "Minecraft PE style mobile joystick control for player units with movement scaling, boost toggle, and dual/single-stick shooting modes. / 提供类似 Minecraft 手机端的摇杆操控：按幅度移动、Boost 切换、双摇杆或单摇杆开火。",
-    "version": "1.1.0",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mobilejoystickcontrol.MobileJoystickControlMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

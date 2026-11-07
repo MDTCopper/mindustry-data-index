@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "kennyzhang0819/mindustry-survivors",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "mindustry-survivors",
+    "author": "Zerkka",
+    "description": "[accent]Mindustry Survivors[]\n[lightgray]Vampire Survivors in Mindustry[]\n\n\n[#ff9a3c]How to play[]\n\nSurvive [accent]50 waves[] on a random map while enemies chase you from every side.\n\nKill them to pick up [#84f491]gems[] and level up. Each level, pick 1 of 3 random cards:\n[accent]>[] new [accent]turrets[]\n[accent]>[] [accent]upgrades[] for turrets you have\n[accent]>[] [#5c9cff]passives[] that make you faster or tougher\n\nThere is nothing to build. Just move, aim and stay alive.\n\n\n[#ff9a3c]What waits for you[]\n\n[accent]>[] All [accent]28 turrets[] from Serpulo and Erekir, each with 10 levels\n[accent]>[] [scarlet]Bosses[] every 25 waves\n[accent]>[] [#b07ae8]Curses[] past Eradication for a real challenge [lightgray](experimental, not balanced yet)[]\n[accent]>[] [accent]Endless[] mode after wave 50\n\n\n[lightgray]Needs Mindustry v8 (build 160 or newer). Desktop only.[]",
+    "version": "0.1.0",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "mindustrysurvivors.MindustrySurvivorsMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1.0",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/kennyzhang0819/mindustry-survivors/releases/download/v0.1.0/MindustrySurvivors.jar",
       "modVersion": "0.1.0",
       "sizeBytes": 1105771,
-      "downloadCount": 838,
+      "downloadCount": 840,
       "releasedAt": "2026-10-25T17:20:45Z"
     }
-  ],
-  "meta": {
-    "name": "mindustry-survivors",
-    "author": "Zerkka",
-    "description": "[accent]Mindustry Survivors[]\n[lightgray]Vampire Survivors in Mindustry[]\n\n\n[#ff9a3c]How to play[]\n\nSurvive [accent]50 waves[] on a random map while enemies chase you from every side.\n\nKill them to pick up [#84f491]gems[] and level up. Each level, pick 1 of 3 random cards:\n[accent]>[] new [accent]turrets[]\n[accent]>[] [accent]upgrades[] for turrets you have\n[accent]>[] [#5c9cff]passives[] that make you faster or tougher\n\nThere is nothing to build. Just move, aim and stay alive.\n\n\n[#ff9a3c]What waits for you[]\n\n[accent]>[] All [accent]28 turrets[] from Serpulo and Erekir, each with 10 levels\n[accent]>[] [scarlet]Bosses[] every 25 waves\n[accent]>[] [#b07ae8]Curses[] past Eradication for a real challenge [lightgray](experimental, not balanced yet)[]\n[accent]>[] [accent]Endless[] mode after wave 50\n\n\n[lightgray]Needs Mindustry v8 (build 160 or newer). Desktop only.[]",
-    "version": "0.1.0",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "mindustrysurvivors.MindustrySurvivorsMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

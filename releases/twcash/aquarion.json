@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "twcash/aquarion",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "aquarion",
+    "author": "twcash",
+    "description": "A complete rewrite of the campaign. Currently in heavy development.",
+    "version": "4.3.7",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "aquarion.AquaLoader",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "4.3.7",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.3.7/Aquarion.jar",
       "modVersion": "4.3.7",
       "sizeBytes": 57573097,
-      "downloadCount": 2070,
+      "downloadCount": 2089,
       "releasedAt": "2026-10-24T07:04:04Z"
     },
     {
@@ -33,7 +47,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.3.6/Aquarion.jar",
       "modVersion": "4.3.6",
       "sizeBytes": 57134450,
-      "downloadCount": 480,
+      "downloadCount": 482,
       "releasedAt": "2026-10-22T03:01:49Z"
     },
     {
@@ -49,7 +63,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.3.5/Aquarion.jar",
       "modVersion": "4.3.5",
       "sizeBytes": 57136392,
-      "downloadCount": 15,
+      "downloadCount": 16,
       "releasedAt": "2026-10-22T02:49:38Z"
     },
     {
@@ -81,7 +95,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.3.3/Aquarion.jar",
       "modVersion": "4.3.3",
       "sizeBytes": 57136319,
-      "downloadCount": 9,
+      "downloadCount": 10,
       "releasedAt": "2026-10-22T01:31:11Z"
     },
     {
@@ -113,7 +127,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.3.1/Aquarion.jar",
       "modVersion": "4.3.1",
       "sizeBytes": 56471183,
-      "downloadCount": 596,
+      "downloadCount": 597,
       "releasedAt": "2026-10-19T10:57:27Z"
     },
     {
@@ -129,7 +143,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.3.0/Aquarion.jar",
       "modVersion": "4.3.0",
       "sizeBytes": 56392619,
-      "downloadCount": 114,
+      "downloadCount": 115,
       "releasedAt": "2026-10-18T22:44:34Z"
     },
     {
@@ -145,7 +159,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.2.9/Aquarion.jar",
       "modVersion": "4.2.9",
       "sizeBytes": 71175294,
-      "downloadCount": 2421,
+      "downloadCount": 2422,
       "releasedAt": "2026-10-03T20:30:17Z"
     },
     {
@@ -177,7 +191,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.2.7/Aquarion.jar",
       "modVersion": "4.2.7",
       "sizeBytes": 52325706,
-      "downloadCount": 171,
+      "downloadCount": 172,
       "releasedAt": "2026-09-24T16:00:29Z"
     },
     {
@@ -209,7 +223,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.2.5/Aquarion.jar",
       "modVersion": "4.2.4",
       "sizeBytes": 51994093,
-      "downloadCount": 688,
+      "downloadCount": 689,
       "releasedAt": "2026-09-20T00:46:20Z"
     },
     {
@@ -257,7 +271,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.2.0/Aquarion.jar",
       "modVersion": "4.1.0.1",
       "sizeBytes": 50797135,
-      "downloadCount": 502,
+      "downloadCount": 503,
       "releasedAt": "2026-09-11T19:34:26Z"
     },
     {
@@ -481,7 +495,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.6.3/Aquarion.jar",
       "modVersion": "3.0",
       "sizeBytes": 71634110,
-      "downloadCount": 238,
+      "downloadCount": 239,
       "releasedAt": "2025-09-01T04:27:23Z"
     },
     {
@@ -726,19 +740,5 @@
       "releasedAt": "2024-10-20T06:42:28Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "aquarion",
-    "author": "twcash",
-    "description": "A complete rewrite of the campaign. Currently in heavy development.",
-    "version": "4.3.7",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "aquarion.AquaLoader",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

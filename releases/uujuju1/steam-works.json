@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "uujuju1/steam-works",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "sw",
+    "author": "Liz Aurora",
+    "description": "No nowhere has nothing anywhere.",
+    "version": "6.1",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "sw.ModLoader",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "6.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/6.1/SteamWorks.jar",
       "modVersion": "6.1",
       "sizeBytes": 31905883,
-      "downloadCount": 36,
+      "downloadCount": 46,
       "releasedAt": "2026-11-07T03:26:18Z"
     },
     {
@@ -628,19 +642,5 @@
       "downloadCount": 955,
       "releasedAt": "2022-12-31T00:28:23Z"
     }
-  ],
-  "meta": {
-    "name": "sw",
-    "author": "Liz Aurora",
-    "description": "No nowhere has nothing anywhere.",
-    "version": "6.1",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "sw.ModLoader",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

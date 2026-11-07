@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "electricgun/cheat-codes-mod",
-  "generatedAt": "2026-11-07T10:29:52.073Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "js",
+  "meta": {
+    "name": "cheat-codes",
+    "author": "electricgun",
+    "description": "UPDATE: Fixed crashing on v8+\n\nAdds some rather powerful and fun powerups activated by entering the correct strings.\n\nPowerups include:\n[yellow[]]-Time stop\n-God mode\n-Konami code\n-Thanos snap\nand more...\n\n[white[]]Can be used to cheat your way through the game.\n\n[red[]]READ GITHUB REPO FOR CHEAT LIST",
+    "version": "v1.7.3",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v1.7.3",
@@ -130,19 +144,5 @@
       "modVersion": "1.5",
       "releasedAt": "2024-06-16T12:27:02Z"
     }
-  ],
-  "meta": {
-    "name": "cheat-codes",
-    "author": "electricgun",
-    "description": "Reworked for PC to be the same as mobile\nAdds some rather powerful and fun powerups activated by entering the correct strings.\n\nPowerups include:\n[yellow[]]-Time stop\n-God mode\n-Konami code\n-Thanos snap\nand more...\n\n[white[]]Can be used to cheat your way through the game.\n\n[red[]]READ GITHUB REPO FOR CHEAT LIST",
-    "version": "1.72",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "arctichor1zon/techtreeunlockerv8",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "unlock-tech-tree-mod",
+    "author": "ArcticHor1zon",
+    "description": "Instantly unlock all research on the tech-tree for Serpulo and Erekir. Features: per-planet unlock/reset, auto-unlock on campaign load. Used raffel080108's Tech Tree Unlocker",
+    "version": "2.0",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "raffel080108.unlocktechtreemod.UnlockTechTreeMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.0.1",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/ArcticHor1zon/TechTreeUnlockerV8/releases/download/2.0.1/TechTreeUnlockerV8.jar",
       "modVersion": "2.0",
       "sizeBytes": 11091,
-      "downloadCount": 1458,
+      "downloadCount": 1459,
       "releasedAt": "2026-06-16T21:26:39Z"
     }
-  ],
-  "meta": {
-    "name": "unlock-tech-tree-mod",
-    "author": "ArcticHor1zon",
-    "description": "Instantly unlock all research on the tech-tree for Serpulo and Erekir. Features: per-planet unlock/reset, auto-unlock on campaign load. Used raffel080108's Tech Tree Unlocker",
-    "version": "2.0",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "raffel080108.unlocktechtreemod.UnlockTechTreeMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

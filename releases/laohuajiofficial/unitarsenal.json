@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "laohuajiofficial/unitarsenal",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "unit-arsenal",
+    "author": "LaoHuaJi",
+    "description": "A mindustry mod which allow customize player's unit via using existing contents.",
+    "version": "1.03",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "arsenal.ArsenalMain",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.03",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/LaoHuaJiOfficial/UnitArsenal/releases/download/1.03/UnitArsenal-1.03.jar",
       "modVersion": "1.03",
       "sizeBytes": 36674,
-      "downloadCount": 5172,
+      "downloadCount": 5177,
       "releasedAt": "2026-06-01T19:06:36Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 6739,
       "releasedAt": "2025-04-24T12:24:30Z"
     }
-  ],
-  "meta": {
-    "name": "unit-arsenal",
-    "author": "LaoHuaJi",
-    "description": "A mindustry mod which allow customize player's unit via using existing contents.",
-    "version": "1.03",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "arsenal.ArsenalMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

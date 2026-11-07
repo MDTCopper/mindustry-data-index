@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "meepoffaith/testing-utilities-java",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "test-utils",
+    "author": "MEEP of Faith",
+    "description": "Utilities for testing stuff in sandbox. (Load the game with this mod enabled for more info.)",
+    "version": "69.1",
+    "minGameVersion": "158.1",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "testing.TestUtils",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v69.10",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.10/testing-utilities-java.jar",
       "modVersion": "69.1",
       "sizeBytes": 419489,
-      "downloadCount": 9834,
+      "downloadCount": 9837,
       "releasedAt": "2026-05-25T16:07:33Z"
     },
     {
@@ -1092,19 +1106,5 @@
       "downloadCount": 80,
       "releasedAt": "2021-10-20T06:13:40Z"
     }
-  ],
-  "meta": {
-    "name": "test-utils",
-    "author": "MEEP of Faith",
-    "description": "Utilities for testing stuff in sandbox. (Load the game with this mod enabled for more info.)",
-    "version": "69.1",
-    "minGameVersion": "158.1",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "testing.TestUtils",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

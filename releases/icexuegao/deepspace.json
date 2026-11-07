@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "icexuegao/deepspace",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "ice",
+    "author": "Alon",
+    "description": "降临新行星[阿德里],收集遗物获得全局增益,构建矩阵网络重构物流体系,在血肉与钢铁交织的异星上,体验截然不同的工厂与战斗———最后,选择你的道路\n\nLand on the planet Ardery, collect Remains for global bonuses, build Matrix Networks to restructure your logistics, and experience a completely different kind of factory and combat on an alien world where flesh and steel intertwine———In the end, choose your path.",
+    "version": "Alpha-7787",
+    "minGameVersion": "158.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "ice.Ice",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "nightly",
@@ -17,21 +31,8 @@
       "downloadUrl": "https://github.com/Icexuegao/DeepSpace/releases/download/nightly/DeepSpace-Alpha-14274.jar",
       "modVersion": "Alpha-7787",
       "sizeBytes": 67025175,
+      "downloadCount": 17,
       "releasedAt": "2026-07-21T10:11:05Z"
     }
-  ],
-  "meta": {
-    "name": "ice",
-    "author": "Alon",
-    "description": "降临新行星[阿德里],收集遗物获得全局增益,构建矩阵网络重构物流体系,在血肉与钢铁交织的异星上,体验截然不同的工厂与战斗———最后,选择你的道路\n\nLand on the planet Ardery, collect Remains for global bonuses, build Matrix Networks to restructure your logistics, and experience a completely different kind of factory and combat on an alien world where flesh and steel intertwine———In the end, choose your path.",
-    "version": "Alpha-7787",
-    "minGameVersion": "158.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "ice.Ice",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

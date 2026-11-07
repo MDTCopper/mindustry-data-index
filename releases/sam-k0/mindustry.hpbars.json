@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "sam-k0/mindustry.hpbars",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "sam-k0-hp-bars",
+    "author": "sam-k0",
+    "description": "This mod shows hp bars for allied and enemy units at the cursor position.",
+    "version": "26.04.19",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "hpbars.HPBarHook",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "26.04.19",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/sam-k0/Mindustry.HPBars/releases/download/26.04.19/Mindustry.HPBars.jar",
       "modVersion": "26.04.19",
       "sizeBytes": 87774,
-      "downloadCount": 1292,
+      "downloadCount": 1293,
       "releasedAt": "2026-04-19T17:50:06Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 1657,
       "releasedAt": "2024-08-03T11:37:09Z"
     }
-  ],
-  "meta": {
-    "name": "sam-k0-hp-bars",
-    "author": "sam-k0",
-    "description": "This mod shows hp bars for allied and enemy units at the cursor position.",
-    "version": "26.04.19",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "hpbars.HPBarHook",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

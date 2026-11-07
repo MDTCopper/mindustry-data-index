@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "mindustry-antigrief/installer",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "fooInstaller",
+    "author": "foo, buthed010203",
+    "description": "Simple mod to install Foo's client. Foo's client features hundreds of quality of life improvements to the mindustry experience while making as few compromises as possible.",
+    "version": "1.2.5",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": true,
+    "main": "fooInstaller.Main",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "47",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/47/installer.jar",
       "modVersion": "1.2.5",
       "sizeBytes": 36537,
-      "downloadCount": 48944,
+      "downloadCount": 48949,
       "releasedAt": "2026-03-12T20:50:05Z"
     },
     {
@@ -276,19 +290,5 @@
       "downloadCount": 86,
       "releasedAt": "2021-08-21T00:55:46Z"
     }
-  ],
-  "meta": {
-    "name": "fooInstaller",
-    "author": "foo, buthed010203",
-    "description": "Simple mod to install Foo's client. Foo's client features hundreds of quality of life improvements to the mindustry experience while making as few compromises as possible.",
-    "version": "1.2.5",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": true,
-    "main": "fooInstaller.Main",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

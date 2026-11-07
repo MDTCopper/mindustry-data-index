@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "blackdeluxecat/schematicparse",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "SchematicParse",
+    "author": "BlackDeluxeCat",
+    "description": "1.从蓝图详情页直接复制逻辑和信息板。2.蓝图消耗计算套件。\nCopy processor/message in schematic info without placing it. Schematic consumption computing tool. \nGithub: BlackDeluxeCat/SchematicParse",
+    "version": "4.6.0",
+    "minGameVersion": "154.2",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "sp.SchematicParse",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "4.6.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.6.0/SchematicParse.4.6.0-154.2.jar",
       "modVersion": "4.6.0",
       "sizeBytes": 149809,
-      "downloadCount": 8803,
+      "downloadCount": 8804,
       "releasedAt": "2025-12-19T15:56:26Z"
     },
     {
@@ -212,19 +226,5 @@
       "downloadCount": 25,
       "releasedAt": "2022-08-07T13:01:12Z"
     }
-  ],
-  "meta": {
-    "name": "SchematicParse",
-    "author": "BlackDeluxeCat",
-    "description": "1.从蓝图详情页直接复制逻辑和信息板。2.蓝图消耗计算套件。\nCopy processor/message in schematic info without placing it. Schematic consumption computing tool. \nGithub: BlackDeluxeCat/SchematicParse",
-    "version": "4.6.0",
-    "minGameVersion": "154.2",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "sp.SchematicParse",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

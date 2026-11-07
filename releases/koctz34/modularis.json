@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "koctz34/modularis",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "modularis",
+    "author": "Ion - 7274",
+    "description": "Novae technologiae modulares. Build your own machines using blocks and modules, and customize it however you like.",
+    "version": "0.4",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "modularis.MdlMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/koctz34/Modularis/releases/download/0.5/modularis.jar",
       "modVersion": "0.4",
       "sizeBytes": 805431,
-      "downloadCount": 785,
+      "downloadCount": 786,
       "releasedAt": "2026-10-15T13:58:19Z"
     },
     {
@@ -84,19 +98,5 @@
       "downloadCount": 694,
       "releasedAt": "2026-07-15T09:21:50Z"
     }
-  ],
-  "meta": {
-    "name": "modularis",
-    "author": "Ion - 7274",
-    "description": "Novae technologiae modulares. Build your own machines using blocks and modules, and customize it however you like.",
-    "version": "0.4",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "modularis.MdlMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

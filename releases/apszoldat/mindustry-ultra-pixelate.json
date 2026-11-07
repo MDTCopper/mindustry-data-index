@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "apszoldat/mindustry-ultra-pixelate",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "ultra-pixelate",
+    "author": "ApsZoldat",
+    "description": "Mod allowing to modify pixelate filter scale (when you downloaded a bad iron ore mod and don't want your eyes to bleed)",
+    "version": "1.1",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "core.ModMain",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.1/mindustry-ultra-pixelate.jar",
       "modVersion": "1.1",
       "sizeBytes": 10406,
-      "downloadCount": 514,
+      "downloadCount": 515,
       "releasedAt": "2026-07-17T18:42:59Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 1301,
       "releasedAt": "2023-04-23T18:30:03Z"
     }
-  ],
-  "meta": {
-    "name": "ultra-pixelate",
-    "author": "ApsZoldat",
-    "description": "Mod allowing to modify pixelate filter scale (when you downloaded a bad iron ore mod and don't want your eyes to bleed)",
-    "version": "1.1",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "core.ModMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

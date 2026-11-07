@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "capueinedaffe-cmd/float-damage-text",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "damage-numbers",
+    "author": "Rain",
+    "description": "\nFLOATING DAMAGE\nTEXT BROOO!!!!!!\n  ",
+    "version": "1.0.6",
+    "minGameVersion": "160.5",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "damage_numbers.DamageNumbersMod",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/capueinedaffe-cmd/Float-damage-text/releases/download/v1.1.0/Float-damage-text.jar",
       "modVersion": "1.0.6",
       "sizeBytes": 162781,
-      "downloadCount": 180,
+      "downloadCount": 181,
       "releasedAt": "2026-10-28T17:50:23Z"
     },
     {
@@ -52,19 +66,5 @@
       "downloadCount": 21,
       "releasedAt": "2026-10-19T21:01:41Z"
     }
-  ],
-  "meta": {
-    "name": "damage-numbers",
-    "author": "Rain",
-    "description": "\nFLOATING DAMAGE\nTEXT BROOO!!!!!!\n  ",
-    "version": "1.0.6",
-    "minGameVersion": "160.5",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "damage_numbers.DamageNumbersMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

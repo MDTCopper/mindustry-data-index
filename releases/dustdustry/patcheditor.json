@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "dustdustry/patcheditor",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "patch-editor",
+    "author": "minRi2",
+    "description": "Provide an in-game GUI for DataPatcher.",
+    "version": "1.18",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "dustdustry.patcheditor.Main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.18",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.18/PatchEditor-v1.18.jar",
       "modVersion": "1.18",
       "sizeBytes": 492464,
-      "downloadCount": 458,
+      "downloadCount": 462,
       "releasedAt": "2026-10-29T01:42:57Z"
     },
     {
@@ -516,19 +530,5 @@
       "downloadCount": 885,
       "releasedAt": "2024-02-19T07:35:12Z"
     }
-  ],
-  "meta": {
-    "name": "patch-editor",
-    "author": "minRi2",
-    "description": "Provide an in-game GUI for DataPatcher.",
-    "version": "1.18",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "dustdustry.patcheditor.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

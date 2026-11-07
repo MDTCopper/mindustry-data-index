@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "apszoldat/mindustrymappingutilities",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "mapping-utilities",
+    "author": "ApsZoldat",
+    "description": "\n[[]#fed570] The[[]] [[]#feba93]Map[[]] [[]#fea0b6]Edi[[]][[]#ff85d9]tor[[]] [[]#ff6afc]mod [[]]\n\n[[]#fff580] Improves Editor convenience and possibilities[[]]\n\nMaps created with this mod are [[]#89ff7a]fully compatible with vanilla [[]]\n\n\n[[]#fff580] Features:[[]]\n\n[[]#efa8ff]- Revealed Hidden Features  -[[]]\nAbility to draw cliffs, use extra 250 teams, hidden map rules and planet backgrounds\n\n[[]#efa8ff]- Improved Dialogs  -[[]]\nBetter banned content dialogs (that's it rn)\n\n[[]#efa8ff]- Limit Bypasses  -[[]]\nMap sizes from 1 up to 2147483647\n\n\n[[]#ff8e82]⚠ In case of some other mods incompatibilities, feel free to open an issue on GitHub [[]]\n",
+    "version": "1.9",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mu.MapUtilitiesMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.9",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.9/MindustryMappingUtilities.jar",
       "modVersion": "1.9",
       "sizeBytes": 313903,
-      "downloadCount": 5855,
+      "downloadCount": 5859,
       "releasedAt": "2026-06-28T17:20:48Z"
     },
     {
@@ -164,19 +178,5 @@
       "downloadCount": 106,
       "releasedAt": "2023-09-09T14:51:53Z"
     }
-  ],
-  "meta": {
-    "name": "mapping-utilities",
-    "author": "ApsZoldat",
-    "description": "\n[[]#fed570] The[[]] [[]#feba93]Map[[]] [[]#fea0b6]Edi[[]][[]#ff85d9]tor[[]] [[]#ff6afc]mod [[]]\n\n[[]#fff580] Improves Editor convenience and possibilities[[]]\n\nMaps created with this mod are [[]#89ff7a]fully compatible with vanilla [[]]\n\n\n[[]#fff580] Features:[[]]\n\n[[]#efa8ff]- Revealed Hidden Features  -[[]]\nAbility to draw cliffs, use extra 250 teams, hidden map rules and planet backgrounds\n\n[[]#efa8ff]- Improved Dialogs  -[[]]\nBetter banned content dialogs (that's it rn)\n\n[[]#efa8ff]- Limit Bypasses  -[[]]\nMap sizes from 1 up to 2147483647\n\n\n[[]#ff8e82]⚠ In case of some other mods incompatibilities, feel free to open an issue on GitHub [[]]\n",
-    "version": "1.9",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mu.MapUtilitiesMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "darkdustry-coders/mindurkacompat",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "MindurkaCompat",
+    "author": "buj",
+    "description": "Mod that adds extra compatibility with Mindurka",
+    "version": "2",
+    "minGameVersion": "155",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mindurka.Main",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.0-alpha+coreplugin-0.17.2",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.2/MindurkaCompat.jar",
       "modVersion": "2",
       "sizeBytes": 640567,
-      "downloadCount": 324,
+      "downloadCount": 325,
       "releasedAt": "2026-06-04T17:42:27Z"
     },
     {
@@ -350,19 +364,5 @@
       "releasedAt": "2026-01-04T22:10:25Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "MindurkaCompat",
-    "author": "buj",
-    "description": "Mod that adds extra compatibility with Mindurka",
-    "version": "2",
-    "minGameVersion": "155",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mindurka.Main",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

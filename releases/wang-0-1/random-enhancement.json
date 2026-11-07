@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "wang-0-1/random-enhancement",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "raen",
+    "author": "WaNg-0-1",
+    "description": "一个给敌军提供随机强化的Java模组\n A Java mod that gives random buffs to the enemy army",
+    "version": "160.3.5",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "raen.raenMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v160.3.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/WaNg-0-1/Random-Enhancement/releases/download/v160.3.5/Random-Enhancement.jar",
       "modVersion": "160.3.5",
       "sizeBytes": 204816,
-      "downloadCount": 52,
+      "downloadCount": 53,
       "releasedAt": "2026-10-23T11:13:55Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 34,
       "releasedAt": "2026-10-16T13:29:55Z"
     }
-  ],
-  "meta": {
-    "name": "raen",
-    "author": "WaNg-0-1",
-    "description": "一个给敌军提供随机强化的Java模组\n A Java mod that gives random buffs to the enemy army",
-    "version": "160.3.5",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "raen.raenMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

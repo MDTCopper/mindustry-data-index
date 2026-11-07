@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/betterminimap",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "betterminimap",
+    "author": "DeterMination",
+    "description": "Enhanced minimap overlay with directional unit icons, smart unit clustering, and optional building markers with team-aware filters. / 提供带朝向的单位图标、智能单位聚合与可筛选建筑标记的小地图增强层。",
+    "version": "1.1.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "betterminimap.BetterMiniMapMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.2",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.2/betterMiniMap.jar",
       "modVersion": "1.1.2",
       "sizeBytes": 89258,
-      "downloadCount": 6213,
+      "downloadCount": 6216,
       "releasedAt": "2026-02-20T10:19:40Z"
     }
-  ],
-  "meta": {
-    "name": "betterminimap",
-    "author": "DeterMination",
-    "description": "Enhanced minimap overlay with directional unit icons, smart unit clustering, and optional building markers with team-aware filters. / 提供带朝向的单位图标、智能单位聚合与可筛选建筑标记的小地图增强层。",
-    "version": "1.1.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "betterminimap.BetterMiniMapMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

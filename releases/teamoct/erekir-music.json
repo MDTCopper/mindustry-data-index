@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "teamoct/erekir-music",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "erekir-music",
+    "author": "Team Oct",
+    "description": "Adds new music to Erekir.\n\nMusic by Saigo no-nozomi.\nProgrammed by Slotterleet.",
+    "version": "1.4",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "em.ErekirMusicMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.4",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/TeamOct/Erekir-Music/releases/download/1.4/Erekir-Music.jar",
       "modVersion": "1.4",
       "sizeBytes": 37886259,
-      "downloadCount": 328,
+      "downloadCount": 329,
       "releasedAt": "2026-10-27T11:22:29Z"
     },
     {
@@ -228,19 +242,5 @@
       "downloadCount": 20,
       "releasedAt": "2023-06-22T06:12:44Z"
     }
-  ],
-  "meta": {
-    "name": "erekir-music",
-    "author": "Team Oct",
-    "description": "Adds new music to Erekir.\n\nMusic by Saigo no-nozomi.\nProgrammed by Slotterleet.",
-    "version": "1.4",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "em.ErekirMusicMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

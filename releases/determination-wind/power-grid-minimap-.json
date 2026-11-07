@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/power-grid-minimap-",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "powergrid-minimap",
+    "author": "DeterMination",
+    "description": "Color each independent power grid on minimap/full map, show live power balance, detect split outages, and suggest reconnect links. / 在小地图与全图按电网分色显示，实时展示电力盈亏，检测断网并给出快速重连建议。",
+    "version": "1.18.4",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "powergridminimap.PowerGridMinimapMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.18.4",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.4/powergrid-minimap.jar",
       "modVersion": "1.18.4",
       "sizeBytes": 510666,
-      "downloadCount": 111,
+      "downloadCount": 116,
       "releasedAt": "2026-11-06T02:03:36Z"
     },
     {
@@ -148,19 +162,5 @@
       "downloadCount": 713,
       "releasedAt": "2026-02-20T10:19:44Z"
     }
-  ],
-  "meta": {
-    "name": "powergrid-minimap",
-    "author": "DeterMination",
-    "description": "Color each independent power grid on minimap/full map, show live power balance, detect split outages, and suggest reconnect links. / 在小地图与全图按电网分色显示，实时展示电力盈亏，检测断网并给出快速重连建议。",
-    "version": "1.18.4",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "powergridminimap.PowerGridMinimapMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

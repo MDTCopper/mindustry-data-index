@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "stabu-dev/omaloon",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "omaloon",
+    "author": "stabu",
+    "description": "An ambitious campaign expansion featuring a brand new star system.\n\n[[]red]⚠️ Stable Build is Outdated ⚠️[[]]\nThe current stable release doesn't support Mindustry v8. All new features and v8 compatibility are actively being built in [[]accent]Indev[[]] (In-Development) snapshots.\n\n[[]accent]How to play the v8 Indevs:[[]]\nThe default install button ignores pre-releases. To get the latest content:\n[[]gray]1.[[]] Tap [[]accent]View Releases[[]] in this menu.\n[[]gray]2.[[]] Select the newest [[]orange]indev[[]] version.\n[[]gray]3.[[]] Install it manually.",
+    "version": "0.1.2A Indev 9",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "omaloon.OmaloonMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1.2A-indev9",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/stabu-dev/Omaloon/releases/download/v0.1.2A-indev9/Omaloon.jar",
       "modVersion": "0.1.2A Indev 9",
       "sizeBytes": 14235564,
-      "downloadCount": 537,
+      "downloadCount": 540,
       "releasedAt": "2026-10-18T23:09:54Z",
       "prerelease": true
     },
@@ -170,7 +184,7 @@
       "downloadUrl": "https://github.com/stabu-dev/Omaloon/releases/download/v0.1.1Ah/Omaloon.jar",
       "modVersion": "0.1.2A Indev 8",
       "sizeBytes": 41663749,
-      "downloadCount": 56887,
+      "downloadCount": 56892,
       "releasedAt": "2024-11-24T18:23:03Z"
     },
     {
@@ -333,19 +347,5 @@
       "downloadCount": 239,
       "releasedAt": "2022-04-24T12:03:39Z"
     }
-  ],
-  "meta": {
-    "name": "omaloon",
-    "author": "stabu",
-    "description": "An ambitious campaign expansion featuring a brand new star system.\n\n[[]red]⚠️ Stable Build is Outdated ⚠️[[]]\nThe current stable release doesn't support Mindustry v8. All new features and v8 compatibility are actively being built in [[]accent]Indev[[]] (In-Development) snapshots.\n\n[[]accent]How to play the v8 Indevs:[[]]\nThe default install button ignores pre-releases. To get the latest content:\n[[]gray]1.[[]] Tap [[]accent]View Releases[[]] in this menu.\n[[]gray]2.[[]] Select the newest [[]orange]indev[[]] version.\n[[]gray]3.[[]] Install it manually.",
-    "version": "0.1.2A Indev 9",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "omaloon.OmaloonMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

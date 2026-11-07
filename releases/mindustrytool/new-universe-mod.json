@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "mindustrytool/new-universe-mod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "new-universe",
+    "author": "[blue]IambottokVN",
+    "description": "A Mindustry Java mod that adds new units, items, and content to the game.",
+    "version": "[#00ff00]1.9.0",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "org.mindustrytool.NewUniverse.NewUniverseMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.9.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/MindustryTool/New-Universe-Mod/releases/download/v1.9.0/new-universe.jar",
       "modVersion": "[#00ff00]1.9.0",
       "sizeBytes": 1677588,
-      "downloadCount": 330,
+      "downloadCount": 331,
       "releasedAt": "2026-07-04T08:32:13Z"
     },
     {
@@ -179,19 +193,5 @@
       "downloadCount": 6,
       "releasedAt": "2026-07-02T14:42:52Z"
     }
-  ],
-  "meta": {
-    "name": "new-universe",
-    "author": "[blue]IambottokVN",
-    "description": "A Mindustry Java mod that adds new units, items, and content to the game.",
-    "version": "[#00ff00]1.9.0",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "org.mindustrytool.NewUniverse.NewUniverseMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

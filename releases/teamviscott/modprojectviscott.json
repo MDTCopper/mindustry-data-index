@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "teamviscott/modprojectviscott",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "project-viscott",
+    "author": "[yellow]CREDITS[]: \n[yellow]Spriters : Ethanol10, ThomasThings, TB1, FrireDragon, EyeOfDarkness \n----------------------------\nSfx/Music : Vdoble MSG , TempoAlch3mist \n----------------------------\nProgrammers : Siede ,Manuwar ,Otamamori ,Kapzduke, EyeOfDarkness \n----------------------------\nMappers : Nicodium \n----------------------------\n \n Special thanks to MEEPofFaith for creating the pseudo3d system.",
+    "description": "[00ffbf]Project viscott[] is a mindustry mod that adds a \nnew Planet to the campaign, [f8ff78]Vercilus[], and gives the player a new and unique gameplay experience \n\nThis mod is [yellow]still in development[]. \n Expect it to have some[scarlet] slight balancing issues[]",
+    "version": "0.1.9.7",
+    "minGameVersion": "142",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "viscott.ViscottMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1.9.8.2",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.2/ModProjectViscott.jar",
       "modVersion": "0.1.9.7",
       "sizeBytes": 6498544,
-      "downloadCount": 14547,
+      "downloadCount": 14549,
       "releasedAt": "2024-09-08T08:04:25Z"
     },
     {
@@ -1268,19 +1282,5 @@
       "downloadCount": 94,
       "releasedAt": "2022-12-01T17:18:34Z"
     }
-  ],
-  "meta": {
-    "name": "project-viscott",
-    "author": "[yellow]CREDITS[]: \n[yellow]Spriters : Ethanol10, ThomasThings, TB1, FrireDragon, EyeOfDarkness \n----------------------------\nSfx/Music : Vdoble MSG , TempoAlch3mist \n----------------------------\nProgrammers : Siede ,Manuwar ,Otamamori ,Kapzduke, EyeOfDarkness \n----------------------------\nMappers : Nicodium \n----------------------------\n \n Special thanks to MEEPofFaith for creating the pseudo3d system.",
-    "description": "[00ffbf]Project viscott[] is a mindustry mod that adds a \nnew Planet to the campaign, [f8ff78]Vercilus[], and gives the player a new and unique gameplay experience \n\nThis mod is [yellow]still in development[]. \n Expect it to have some[scarlet] slight balancing issues[]",
-    "version": "0.1.9.7",
-    "minGameVersion": "142",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "viscott.ViscottMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

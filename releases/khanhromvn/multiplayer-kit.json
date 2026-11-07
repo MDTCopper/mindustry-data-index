@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "khanhromvn/multiplayer-kit",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "multiplayer-kit",
+    "author": "KhanhRomVN",
+    "description": "Allows players other than the host to pause in multiplayer. Both the host and the person pausing need the mod. Supports Mindustry v154 with enhanced synchronization features.",
+    "version": "154",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "pauseMod.Main",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v154_v1.0.8",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/KhanhRomVN/multiplayer-kit/releases/download/v154_v1.0.8/multiplayer-kit-v154.jar",
       "modVersion": "154",
       "sizeBytes": 14137,
-      "downloadCount": 1099,
+      "downloadCount": 1101,
       "releasedAt": "2026-02-07T12:41:34Z"
     }
-  ],
-  "meta": {
-    "name": "multiplayer-kit",
-    "author": "KhanhRomVN",
-    "description": "Allows players other than the host to pause in multiplayer. Both the host and the person pausing need the mod. Supports Mindustry v154 with enhanced synchronization features.",
-    "version": "154",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "pauseMod.Main",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

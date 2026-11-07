@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "yuria-shikibe/newhorizonmod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "new-horizon",
+    "author": "Yuria & Lao",
+    "description": "Beta Release. Campaign Not Included.\n\nCurrently contains stable content and optional vanilla override. \n\nMod is playable as extension for both Serpulo and Erekir. \n\nCampaign still WIP.",
+    "version": "2.3.0",
+    "minGameVersion": "159.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "newhorizon.NewHorizon",
+    "java": false,
+    "hasScripts": true,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.3.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.3.0/NewHorizonMod.2.3.0.jar",
       "modVersion": "2.3.0",
       "sizeBytes": 9677339,
-      "downloadCount": 18251,
+      "downloadCount": 18311,
       "releasedAt": "2026-10-07T13:14:00Z"
     },
     {
@@ -84,19 +98,5 @@
       "downloadCount": 5900,
       "releasedAt": "2026-06-28T12:15:09Z"
     }
-  ],
-  "meta": {
-    "name": "new-horizon",
-    "author": "Yuria & Lao",
-    "description": "Beta Release. Campaign Not Included.\n\nCurrently contains stable content and optional vanilla override. \n\nMod is playable as extension for both Serpulo and Erekir. \n\nCampaign still WIP.",
-    "version": "2.3.0",
-    "minGameVersion": "159.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "newhorizon.NewHorizon",
-    "java": false,
-    "hasScripts": true,
-    "hasJava": true
-  }
+  ]
 }

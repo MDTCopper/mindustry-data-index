@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "undefined-1026/mindustry_multidimensionalmod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T11:58:12.384Z",
   "modType": "java",
+  "meta": {
+    "name": "mdimension",
+    "author": "Bilibili:arknights player / Github:undefined-1026",
+    "description": "A to be produced mod",
+    "version": "0.2.1",
+    "minGameVersion": "160.3",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "mDimension.MDimensionMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.2.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.1/Multidimensional.v0.2.1.jar",
       "modVersion": "0.2.1",
       "sizeBytes": 2869663,
-      "downloadCount": 751,
+      "downloadCount": 752,
       "releasedAt": "2026-10-02T12:40:03Z"
     },
     {
@@ -68,19 +82,5 @@
       "downloadCount": 52,
       "releasedAt": "2026-07-22T13:28:59Z"
     }
-  ],
-  "meta": {
-    "name": "mdimension",
-    "author": "Bilibili:arknights player / Github:undefined-1026",
-    "description": "A to be produced mod",
-    "version": "0.2.1",
-    "minGameVersion": "160.3",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "mDimension.MDimensionMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
