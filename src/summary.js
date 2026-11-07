@@ -16,7 +16,6 @@ export const SUMMARY_COLUMNS = [
   'releaseUpdatedAt',
   'commitUpdatedAt',
   'iconUrl',
-  'score',
   'rank',
   'recommendVisible',
   'releasesPath',

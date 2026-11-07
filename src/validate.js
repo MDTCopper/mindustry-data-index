@@ -470,47 +470,30 @@ function validateCompatData(file, { tags, errors }) {
   }
 }
 
-// 模组列表里的 heat 对象（热度已合并进 index，不再有独立 heat/index.json）
+// 模组列表里的 score 对象：只含组件分与 recommendVisible；总分与排名由客户端/ranks 提供
 export function validateIndexHeat(mod, { where, errors }) {
-  const heat = mod.score;
-  if (!isPlainObject(heat)) {
-    errors.push(`${where}.score 缺失或不是对象（热度已合并进 index.json）`);
+  const score = mod.score;
+  if (!isPlainObject(score)) {
+    errors.push(`${where}.score 缺失或不是对象`);
     return;
   }
-  const keys = Object.keys(heat);
-  const expected = [
-    'score',
-    'rank',
-    'downloadsScore',
-    'starsScore',
-    'updateScore',
-    'recommendVisible',
-  ];
-  for (const key of keys) {
+  const expected = ['downloadsScore', 'starsScore', 'updateScore', 'recommendVisible'];
+  for (const key of Object.keys(score)) {
     if (!expected.includes(key)) {
-      errors.push(`${where}.score 含多余字段 ${key}（只允许 6 个精简字段）`);
+      errors.push(`${where}.score 含多余字段 ${key}（只允许 4 个字段）`);
     }
   }
-  for (const field of ['score', 'downloadsScore', 'starsScore', 'updateScore']) {
-    if (!isFiniteNumberOrNull(heat[field])) {
+  for (const field of ['downloadsScore', 'starsScore', 'updateScore']) {
+    if (!isFiniteNumberOrNull(score[field])) {
       errors.push(`${where}.score.${field} 应为有限数字`);
     }
   }
-  if (!Number.isInteger(heat.rank) || heat.rank < 1) {
-    errors.push(`${where}.score.rank 应为正整数`);
-  }
-  if (typeof heat.recommendVisible !== 'boolean') {
+  if (typeof score.recommendVisible !== 'boolean') {
     errors.push(`${where}.score.recommendVisible 应为布尔值`);
-  } else if (
-    isFiniteNumberOrNull(heat.score) &&
-    heat.recommendVisible !== heat.score >= MIN_SCORE
-  ) {
-    errors.push(`${where}.score.recommendVisible 应为 score >= ${MIN_SCORE}`);
   }
-  if (expected.some((field) => !(field in heat))) {
-    errors.push(`${where}.score 缺少 6 个字段之一：${expected.join(', ')}`);
+  if (expected.some((field) => !(field in score))) {
+    errors.push(`${where}.score 缺少 4 个字段之一：${expected.join(', ')}`);
   }
-  // 预计算排序名次：客户端按 ranks[key] 直接排序（v3 新字段；旧 fixture 可缺省）
   const ranks = mod.ranks;
   if (ranks !== undefined) {
     if (!isPlainObject(ranks)) {
@@ -521,9 +504,6 @@ export function validateIndexHeat(mod, { where, errors }) {
       if (!Number.isInteger(ranks[key]) || ranks[key] < 1) {
         errors.push(`${where}.ranks.${key} 应为正整数`);
       }
-    }
-    if (ranks.score !== heat.rank) {
-      errors.push(`${where}.ranks.score 应与 score.rank 一致`);
     }
     for (const key of Object.keys(ranks)) {
       if (!SORT_KEYS.includes(key)) {
@@ -1227,8 +1207,10 @@ function validateSummaryDataV3(summary, { index, errors }) {
       errors.push(`${where}.gameVersionRanges 与 index 不一致`);
     }
     if (mod.score) {
-      if (row.score !== mod.score.score) errors.push(`${where}.score 与 index.score 不一致`);
-      if (row.rank !== mod.score.rank) errors.push(`${where}.rank 与 index.score 不一致`);
+      if ('score' in row) errors.push(`${where}.score 已移除（总分由客户端按权重计算）`);
+      if (row.rank !== (mod.ranks?.score ?? null)) {
+        errors.push(`${where}.rank 与 index.ranks.score 不一致`);
+      }
       if (row.recommendVisible !== mod.score.recommendVisible) {
         errors.push(`${where}.recommendVisible 与 index.score 不一致`);
       }
@@ -2570,34 +2552,26 @@ export async function validateDir(dir) {
   const allHeatEntries = [];
   for (const mod of [...officialModsForHeat, ...communityModsForHeat]) {
     if (isPlainObject(mod) && typeof mod.repo === 'string' && isPlainObject(mod.score)) {
-      allHeatEntries.push({ repo: mod.repo, score: mod.score });
+      allHeatEntries.push({ repo: mod.repo, rank: mod.ranks?.score });
     }
   }
   result.scoreModCount = allHeatEntries.length;
   const seenRanks = new Set();
-  for (const { score } of allHeatEntries) {
-    if (Number.isInteger(score.rank)) {
-      if (seenRanks.has(score.rank)) {
-        errors.push(`${HEAT_INDEX_REL_PATH} 全局 score.rank 重复：${score.rank}`);
+  for (const { rank } of allHeatEntries) {
+    if (Number.isInteger(rank)) {
+      if (seenRanks.has(rank)) {
+        errors.push(`${HEAT_INDEX_REL_PATH} 全局 score.rank 重复：${rank}`);
       }
-      seenRanks.add(score.rank);
+      seenRanks.add(rank);
     }
   }
   if (allHeatEntries.length > 0) {
     if (seenRanks.size !== allHeatEntries.length) {
       errors.push('index.json / community/index.json 的全局 score.rank 不是 1..N 唯一');
     }
-    const byScore = [...allHeatEntries].sort((left, right) => {
-      if (right.score.score !== left.score.score) {
-        return right.score.score - left.score.score;
-      }
-      return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
-    });
-    for (const [position, item] of byScore.entries()) {
-      if (item.score.rank !== position + 1) {
-        errors.push(
-          `index.json / community/index.json 的 score.rank 与分数排序不一致：${item.repo} 应为 ${position + 1}`,
-        );
+    for (const rank of seenRanks) {
+      if (rank < 1 || rank > allHeatEntries.length) {
+        errors.push(`index.json / community/index.json 的 score.rank 超出 1..N：${rank}`);
       }
     }
   }

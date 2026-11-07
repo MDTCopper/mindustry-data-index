@@ -155,13 +155,6 @@
           "score": {
             "type": "object",
             "properties": {
-              "score": {
-                "type": "number"
-              },
-              "rank": {
-                "type": "integer",
-                "minimum": 1
-              },
               "downloadsScore": {
                 "type": "number"
               },
@@ -176,8 +169,6 @@
               }
             },
             "required": [
-              "score",
-              "rank",
               "downloadsScore",
               "starsScore",
               "updateScore",

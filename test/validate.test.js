@@ -16,8 +16,6 @@ const GENERATED_AT = '2026-11-06T03:00:00.000Z';
 
 function defaultScore(rank = 1, score = 0.5 / rank) {
   return {
-    score,
-    rank,
     downloadsScore: 0.5,
     starsScore: 0.6,
     updateScore: 0.4,
@@ -28,7 +26,15 @@ function defaultScore(rank = 1, score = 0.5 / rank) {
 function ensureScore(index, startRank = 0) {
   for (const [position, mod] of (index?.mods ?? []).entries()) {
     if (!mod.score) {
-      mod.score = defaultScore(startRank + position + 1);
+      const rank = startRank + position + 1;
+      mod.score = defaultScore(rank);
+      mod.ranks = {
+        score: rank,
+        updated: rank,
+        downloads: rank,
+        stars: rank,
+        newest: rank,
+      };
     }
   }
   return index;
@@ -140,8 +146,7 @@ function summaryRow(entry) {
     iconUrl: entry.iconUrl,
     ...(entry.score
       ? {
-          score: entry.score.score,
-          rank: entry.score.rank,
+          rank: entry.ranks?.score ?? null,
           recommendVisible: entry.score.recommendVisible,
         }
       : {}),
@@ -697,8 +702,7 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
     releaseUpdatedAt: fixture.entry.releaseUpdatedAt,
     commitUpdatedAt: fixture.entry.commitUpdatedAt,
     iconUrl: null,
-    score: fixture.index.mods[0].score.score,
-    rank: fixture.index.mods[0].score.rank,
+    rank: fixture.index.mods[0].ranks?.score ?? null,
     recommendVisible: fixture.index.mods[0].score.recommendVisible,
     releasesPath: fixture.entry.releasesPath,
   };
@@ -908,14 +912,13 @@ test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发�
   };
   // 社区全量/默认条目 rank=1，与官方 rank=1 重复
   await writeCommunity((mod) => {
-    mod.score.rank = 1;
+    mod.ranks.score = 1;
   });
   const duplicate = await validateDir(dir);
   assert.ok(duplicate.errors.some((message) => message.includes('全局 score.rank 重复')));
-  // 修正为 rank=2 但分数更高 → 排序不一致
+  // 修正为 rank=2（总分不再落盘，无法做排序一致性校验）
   await writeCommunity((mod) => {
-    mod.score.rank = 2;
-    mod.score.score = 0.9;
+    mod.ranks.score = 2;
   });
   const summaryPath = path.join(dir, 'community', 'summary.json');
   const summary = JSON.parse(await readFile(summaryPath, 'utf8'));
@@ -923,7 +926,7 @@ test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发�
   summary.mods[0].rank = 2;
   await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const wrongOrder = await validateDir(dir);
-  assert.ok(wrongOrder.errors.some((message) => message.includes('score.rank 与分数排序不一致')));
+  assert.ok(wrongOrder.errors.some((message) => message.includes('已移除')));
 });
 
 test('validateDir：默认列表不等于全量按 recommendVisible 过滤会被发现', async (t) => {
@@ -961,7 +964,7 @@ test('validateDir：summary 热度列与 index.score 不一致会被发现', asy
   summary.mods[0].score = 0.123;
   await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('score 与 index.score')));
+  assert.ok(result.errors.some((message) => message.includes('已移除')));
 });
 
 test('validateDir：旧 heat/index.json 只给废弃 warning', async (t) => {

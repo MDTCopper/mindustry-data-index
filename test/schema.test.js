@@ -66,14 +66,14 @@ test('schema/: 关键数据文件 required 字段齐全，formatVersion 与当�
   assert.ok(community.properties.mods.items.required.includes('score'));
 
   const summary = JSON.parse(readFileSync(path.join(schemaDir, 'summary.json'), 'utf8'));
-  for (const field of ['score', 'rank', 'recommendVisible']) {
+  for (const field of ['rank', 'recommendVisible']) {
     assert.ok(summary.properties.mods.items.required.includes(field), `summary 条目缺少 ${field}`);
   }
   assert.ok(!('maintenanceStatus' in summary.properties.mods.items.properties));
   const heatFields = index.properties.mods.items.properties.score.required;
   assert.deepEqual(
     [...heatFields].sort(),
-    ['downloadsScore', 'rank', 'recommendVisible', 'score', 'starsScore', 'updateScore'].sort(),
+    ['downloadsScore', 'recommendVisible', 'starsScore', 'updateScore'].sort(),
   );
 
   const changes = JSON.parse(readFileSync(path.join(schemaDir, 'changes.json'), 'utf8'));

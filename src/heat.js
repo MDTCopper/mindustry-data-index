@@ -155,11 +155,11 @@ export function recommendationFor(entry, overrides = {}) {
   return { visible: true, reason: null };
 }
 
-// 注入 index 条目的 heat 对象：只保留 6 个字段（权重与参数固定在仓库代码 src/heat.js）
+// 注入 index 条目的 score 对象：只保留组件分与 recommendVisible。
+// 总分不落盘：客户端可用自己的权重从 downloadsScore/starsScore/updateScore 计算；仓库默认权重用于
+// recommendVisible、ranks.score 与 summary 的 rank。
 export function heatIndexFields(entry) {
   return {
-    score: entry.score,
-    rank: entry.rank,
     downloadsScore: entry.downloadsScore,
     starsScore: entry.starsScore,
     updateScore: entry.updateScore,
@@ -167,10 +167,9 @@ export function heatIndexFields(entry) {
   };
 }
 
-// summary 总表里的 3 个热度列
+// summary 总表里的热度列：rank + recommendVisible（分数字段由客户端按自己权重算）
 export function heatSummaryFields(entry) {
   return {
-    score: entry.score,
     rank: entry.rank,
     recommendVisible: entry.recommend?.visible === true,
   };
@@ -206,7 +205,11 @@ export function injectHeatIntoSummaryRows(rows, heatByRepo) {
   }
   return rows.map((row) => {
     const heatEntry = heatByRepo.get(row.repo?.toLowerCase());
-    return heatEntry ? { ...row, ...heatSummaryFields(heatEntry) } : row;
+    if (!heatEntry) {
+      return row;
+    }
+    const { score: _removed, ...rest } = row;
+    return { ...rest, ...heatSummaryFields(heatEntry) };
   });
 }
 

@@ -676,25 +676,25 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 热度不再单独输出 `heat/index.json` / `heat/summary.csv`（旧路径已废弃、不再生成）。
 官方/社区各有两份列表：`index.json` / `community/index.json` 是**默认列表**（只含
 `recommendVisible=true`），`index-full.json` / `community/index-full.json` 是全量列表；
-两份列表条目都带同一个精简 `heat` 对象（恰好 6 个字段）。`summary.json/csv` 仍是全量，
-带 `heatScore`/`heatRank`/`recommendVisible` 列。`heat.rank` 是官方+社区合并后的全局名次。
+两份列表条目都带同一个精简 `score` 对象（恰好 4 个字段）。`summary.json/csv` 仍是全量，
+带 `rank`/`recommendVisible` 列。`ranks.score` 是官方+社区合并后的全局名次；**总分不落盘**，
+客户端用组件分和自己的权重计算。
 
 ```json
-"heat": {
-  "score": 0.3976,
-  "rank": 4,
+"score": {
   "downloadsScore": 0.0354,
   "starsScore": 0.433,
   "updateScore": 0.2206,
   "recommendVisible": true
-}
+},
+"ranks": { "score": 4, "updated": 12, "downloads": 5, "stars": 8, "newest": 120 }
 ```
 
-- 权重/窗口/倍率/惩罚等参数固定在仓库代码 `src/heat.js`；输出不再携带这些中间值。
+- 权重/窗口/倍率/惩罚等参数固定在仓库代码 `src/heat.js`；输出不再携带总分/中间值。
 - `recommendVisible = score >= MIN_SCORE`（`MIN_SCORE` 默认 `0`，常量在 `src/heat.js`），
   不按长期停更过滤；默认列表严格等于全量列表按该字段过滤的结果。
-- validator 会校验：默认列表 == 全量过滤结果、全局 `heat.rank` 1..N 唯一且与分数降序一致、
-  heat 恰好 6 字段、summary 热度列与全量 index 一致；旧 `heat/index.json` 若仍存在只给废弃警告。
+- validator 会校验：默认列表 == 全量过滤结果、全局 `ranks.score` 1..N 唯一、
+  score 恰好 4 字段、summary 热度列与全量 index 一致；旧 `heat/index.json` 若仍存在只给废弃警告。
 
 ### heat/history/{daily,weekly,monthly}/
 
