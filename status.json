@@ -1,12 +1,29 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-07T12:23:26.609Z",
+  "generatedAt": "2026-11-07T12:30:25.035Z",
   "datasets": {
     "official": {
-      "updatedAt": "2026-11-07T12:17:29.451Z",
+      "updatedAt": "2026-11-07T12:29:45.673Z",
       "modCount": 999,
-      "releaseCount": 3697,
-      "skipped": []
+      "releaseCount": 3698,
+      "skipped": [
+        {
+          "repo": "voidthreader/void-extras",
+          "reason": "rate-limit"
+        },
+        {
+          "repo": "vss0520/floralia",
+          "reason": "rate-limit"
+        },
+        {
+          "repo": "wantechfan/mindustry-cursed-sfx",
+          "reason": "rate-limit"
+        },
+        {
+          "repo": "wantechfan/mindustry-ioskatev-language-archive",
+          "reason": "rate-limit"
+        }
+      ]
     },
     "community": {
       "updatedAt": "2026-11-07T12:23:08.767Z",
@@ -28,8 +45,8 @@
     }
   },
   "api": {
-    "requests": 1299,
-    "remaining": 831,
+    "requests": 824,
+    "remaining": 1,
     "resetAt": "2026-11-07T12:58:12.000Z"
   },
   "validate": {
