@@ -1,9 +1,39 @@
 {
   "formatVersion": 3,
   "repo": "wu20100210/minecraft_on_mindustry",
-  "generatedAt": "2026-11-07T10:29:52.073Z",
+  "generatedAt": "2026-11-07T12:52:15.251Z",
   "modType": "java",
+  "meta": {
+    "name": "MC-On-Mindustry",
+    "author": "阿仔",
+    "description": "方块世界：Minecraft 的工具、武器、矿石、树木、生物与红石科技。Erekir 风格峡谷地形、五种生物群系、星球、核心、科技树、仓库、物流系统、兵工厂与雪傀儡/铁傀儡。",
+    "version": "1.6",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "Minecraft_On_Mindustry.Main",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
+    {
+      "tag": "2026-10-26-Build-3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Wu20100210/Minecraft_On_Mindustry/releases/download/2026-10-26-Build-3/Minecraft_On_Mindustry.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 2863741,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-07T12:30:11Z"
+    },
     {
       "tag": "2026-10-26-Build-2",
       "kind": "release",
@@ -17,6 +47,7 @@
       "downloadUrl": "https://github.com/Wu20100210/Minecraft_On_Mindustry/releases/download/2026-10-26-Build-2/Minecraft_On_Mindustry.jar",
       "modVersion": "1",
       "sizeBytes": 2620529,
+      "downloadCount": 6,
       "releasedAt": "2026-11-07T08:57:17Z"
     },
     {
@@ -32,22 +63,8 @@
       "downloadUrl": "https://github.com/Wu20100210/Minecraft_On_Mindustry/releases/download/2026-10-26/MC_On_MindustryDesktop.jar",
       "modVersion": "1",
       "sizeBytes": 1864956,
-      "downloadCount": 1,
+      "downloadCount": 2,
       "releasedAt": "2026-11-07T06:57:10Z"
     }
-  ],
-  "meta": {
-    "name": "example-kotlin-mod",
-    "author": "You",
-    "description": "A Mindustry Kotlin mod template.",
-    "version": "1",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "example.ExampleKotlinMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
