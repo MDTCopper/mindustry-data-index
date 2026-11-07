@@ -6,6 +6,8 @@ import { assertRepo } from './paths.js';
 import { isBlacklisted } from './blacklist.js';
 import { latestCompatibleTag } from './compat.js';
 import { plainFields } from './plain.js';
+import { computeModStats } from './stats.js';
+import { releasesFromVersions, summarizeVersions } from './model-v3.js';
 
 export const COMMUNITY_DIR = 'community';
 export const COMMUNITY_STATE_REL_PATH = 'state/community-refresh.json';
@@ -142,85 +144,72 @@ export function buildCommunityMod({ candidate, metadata, iconUrl }) {
 export function buildCommunityIndexEntry(
   mod,
   file,
-  { relPath, oldEntry = null, stats = null, compat = null, gameVersions = [] } = {},
+  {
+    relPath,
+    oldEntry = null,
+    stats = null,
+    gameVersions = [],
+    modType = null,
+    repoStats = null,
+  } = {},
 ) {
-  const hasFile = Array.isArray(file?.releases);
-  const releases = hasFile ? file.releases : [];
-  const releaseEntries = releases.filter((entry) => entry?.hasRelease !== false);
-  const first =
-    releaseEntries.find((entry) => entry.removed !== true) ??
-    releaseEntries[0] ??
-    null;
-  const releaseCount = hasFile
-    ? releaseEntries.length
-    : (oldEntry?.releaseCount ?? 0);
-  const tagCount = hasFile ? releases.length : (oldEntry?.tagCount ?? releaseCount);
-  const fileCompat = Array.isArray(compat)
-    ? compat
-    : (Array.isArray(file?.compat) ? file.compat : []);
+  const hasFile = Array.isArray(file?.releases) || Array.isArray(file?.versions);
+  const releases = Array.isArray(file?.releases)
+    ? file.releases
+    : Array.isArray(file?.versions)
+      ? releasesFromVersions(file)
+      : [];
   const meta = file?.meta && typeof file.meta === 'object' ? file.meta : null;
-  const hasScripts = meta ? meta.hasScripts === true : mod.hasScripts === true;
-  const hasJava = meta ? meta.hasJava === true : mod.hasJava === true;
-  const plain = plainFields(mod);
-  const computed = stats ?? {
-    totalDownloads: 0,
-    allAssetsDownloads: 0,
-    latestDownloads: 0,
-    latestSizeBytes: null,
-    totalSizeBytes: null,
-  };
-  const latestRelease = first
-    ? {
-        tag: first.tag,
-        name: first.name,
-        prerelease: first.prerelease,
-        publishedAt: first.publishedAt,
-        downloads: computed.latestDownloads,
-        sizeBytes: computed.latestSizeBytes,
-      }
-    : hasFile
-      ? null
-      : (oldEntry?.latestRelease ?? null);
-
-  return {
+  const effectiveModType = modType ?? file?.modType ?? 'json';
+  const versions = Array.isArray(file?.versions) ? file.versions : [];
+  const summary = summarizeVersions(versions);
+  const plain = plainFields({
+    name: meta?.name ?? mod.name,
+    author: meta?.author ?? mod.author,
+    description: meta?.description ?? mod.description,
+  });
+  const latestVersion = versions.find((item) => item.removed !== true) ?? versions[0] ?? null;
+  const latestRelease = releases.find((entry) => entry.removed !== true) ?? releases[0] ?? null;
+  const computed = stats ?? computeModStats(releases, effectiveModType === 'java');
+  const releaseCount = hasFile ? summary.releaseCount : (oldEntry?.releaseCount ?? 0);
+  const tagCount = hasFile ? summary.tagCount : (oldEntry?.tagCount ?? releaseCount);
+  const releaseUpdatedAt =
+    summary.releaseUpdatedAt ??
+    latestRelease?.publishedAt ??
+    oldEntry?.releaseUpdatedAt ??
+    null;
+  const result = {
     repo: mod.repo,
     source: COMMUNITY_SOURCE,
     internalName: null,
-    name: mod.name,
+    name: meta?.name ?? mod.name,
     namePlain: plain.namePlain,
-    author: mod.author,
+    author: meta?.author ?? mod.author,
     authorPlain: plain.authorPlain,
-    description: mod.description ?? '',
+    description: meta?.description ?? mod.description ?? '',
     descriptionPlain: plain.descriptionPlain,
-    version: mod.version,
-    minGameVersion: mod.minGameVersion,
-    lastUpdated: mod.lastUpdated,
-    stars: mod.stars,
+    version: latestVersion?.modVersion ?? meta?.version ?? mod.version ?? null,
+    minGameVersion:
+      latestVersion?.minGameVersion ?? meta?.minGameVersion ?? mod.minGameVersion ?? null,
+    modType: effectiveModType,
+    gameVersionRanges: hasFile ? summary.gameVersionRanges : (oldEntry?.gameVersionRanges ?? []),
+    stars: Number(repoStats?.stars ?? mod.stars) || 0,
     hasIcon: mod.hasIcon,
-    hasScripts,
-    hasJava,
-    iosCompatible: null,
-    legacyCompatible: null,
     iconUrl: mod.iconUrl ?? null,
     iconHash: null,
     releasesPath: hasFile
       ? `${COMMUNITY_DIR}/${relPath}`
       : (oldEntry?.releasesPath ?? (file ? `${COMMUNITY_DIR}/${relPath}` : null)),
     releaseCount,
-    tagCount,
-    removedCount: hasFile
-      ? releases.filter((entry) => entry?.removed === true).length
-      : (oldEntry?.removedCount ?? 0),
+    ...(effectiveModType === 'java' ? {} : { tagCount }),
+    releaseUpdatedAt,
+    commitUpdatedAt: repoStats?.pushedAt ?? oldEntry?.commitUpdatedAt ?? null,
     totalDownloads: computed.totalDownloads,
     allAssetsDownloads: computed.allAssetsDownloads,
-    latestDownloads: computed.latestDownloads,
-    latestSizeBytes: computed.latestSizeBytes,
-    totalSizeBytes: computed.totalSizeBytes,
-    latestRelease,
-    latestCompatible: latestCompatibleTag(fileCompat, gameVersions),
-    compatRanges: fileCompat.length,
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
+    ...(mod.defaultBranch ? { defaultBranch: mod.defaultBranch } : {}),
   };
+  return result;
 }
 
 export async function probeAndFilterCandidates({

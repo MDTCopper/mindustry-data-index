@@ -2,28 +2,47 @@
 
 数据文件分四组：
 
-- 模组索引：仓库根目录的 `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv`、
-  `state/refresh.json`（旧 flat 路径 `releases/<owner>_<repo>.json` 已废弃，运行时自动迁移并删除）；
-- 社区模组：`community/index.json`、`community/releases/<owner>/<repo>.json`、
+- 模组索引：仓库根目录的 `index.json`（默认列表）、`index-full.json`（全量）、
+  `releases/<owner>/<repo>.json`、`summary.json/csv`、`state/refresh.json`、`state/repo-stats.json`；
+- 社区模组：`community/index.json`、`community/index-full.json`、`community/releases/<owner>/<repo>.json`、
   `community/summary.json/csv`、`state/community-refresh.json`、`state/blacklist.json`
   （结构同官方，条目带 `source:"topic"`）；
 - Mindustry 版本列表：`mindustry/versions.json`；
 - 最小版本门禁：`mindustry/mod-gate.json`（普通/脚本模组）与 `mindustry/java-gate.json`（Java 模组）；
-- 另有一个维护用文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
+- 另有维护文件 `mindustry/heartbeat.json`（防 60 天无提交被暂停 schedule）。
 
-外加两个运行状态文件（根目录）：`status.json`（健康状态）、`changes.json`（滚动变更流）；
-以及 `schema/*.json`（本仓数据文件的 JSON Schema draft 2020-12）。
+外加运行状态文件（根目录）：`status.json`（健康状态）、`changes.json`（滚动变更流）；
+以及 `schema/*.json`（JSON Schema draft 2020-12）。
 
-上述数据文件都有 `formatVersion`：index/summary/versions/gate/state/status/changes 当前为 `1`，
-per-mod `releases/*.json` 当前 schemaVersion 为 **`2`**。字段变化时递增并同步修改本文档。
+上述数据文件都有 `formatVersion`：index/summary/versions/gate/state/status/changes 当前为 `1`
+（index 为 `3`），per-mod `releases/*.json` 当前 schemaVersion 为 **`3`**。字段变化时递增并同步修改本文档。
 
-### per-mod schemaVersion 1 → 2
+### 数据模型 v3（当前）
 
-- v1：只有 `{formatVersion:1, repo, generatedAt, releases}`，无 `compat`/`meta`/`commitSha`/删除留档。
-- v2：`formatVersion:2`，新增 `compat`、`meta`，以及条目的 `commitSha`/`archiveByCommitUrl`/`removed`/`removedAt`。
-- 迁移：运行时读到 v1 文件会用已有缓存数据本地重算（不额外发 API）并写回；也可以运行
-  `node src/main.js --migrate --out .` 一次性迁移全部旧文件/index/summary/status/changes。
-  `validate` 对 v1 文件会报错，迁移后应为 0 错 0 警。
+- **per-mod v3**：`{formatVersion:3, repo, generatedAt, modType, versions[], meta?}`；`modType` 为
+  `java`/`js`/`json`。`versions[]` 每条 `{tag, kind:"release"|"tag", modVersion?, minGameVersion,
+  gameVersionRanges, releasedAt?, committedAt?, downloadUrl, sizeBytes?, downloadCount?, prerelease?, removed?, removedAt?}`
+  （null 字段不写）。没有 `minGameVersion` 的条目丢弃；一条版本都不剩的模组从 index 移除并删除文件。
+  版本列表 = 有资产的 Release + 非 Java 的 tag-only（无资产 Release 也按源码归档）；
+  详见下方 `releases[]` 条目。
+- **index v3**：每条包含 `repo`、`name*`、`author*`、`descriptionPlain`、`modType`、`version`、
+  `minGameVersion`、`gameVersionRanges`、`stars`、`hasIcon`/`iconUrl`/`iconHash`、`releasesPath`、
+  `releaseCount`、`tagCount`（非 Java）、`releaseUpdatedAt`、`commitUpdatedAt`、
+  `totalDownloads`/`allAssetsDownloads`、`releaseDataUpdatedAt` 和 `heat`（6 字段）。
+  官方 mods.json 只提供 repo 列表，其余字段来自 tag 元数据（mod.hjson 优先、其次 mod.json，宽松解析）。
+- **gameVersionRanges**：实际游戏版本闭区间数组 `[{from,to}]`，`from`/`to` 均为
+  `mindustry/versions.json` 的正式版版本号；对 `minGameVersion=m` 的 version，取所有满足
+  `g >= m` 且 `gate(g) <= m` 的连续 `g` 段；模组级取所有 version 区间并集（合并重叠/相邻）。
+- **时间**：`releasedAt`=Release publishedAt；`committedAt`=tag commit 时间（拿得到才写）；
+  `releaseUpdatedAt`=最新 Release 时间；`commitUpdatedAt`=仓库 `pushed_at`（`state/repo-stats.json` 每周缓存）。
+- **解析**：root 顺序 `mod.json` → `mod.hjson` → `plugin.json` → `plugin.hjson`（不读 `assets/`）；
+  按 Arc Jval/Hparser 语义（Hjson 超集：注释、根括号可省、无引号、逗号可选、引号内裸换行、重复 key
+  后值生效），BOM 不剥（会导致 name 缺失 → 跳过，与游戏一致）；解析失败/缺 name 跳过。
+  `minGameVersion` 缺失/非法/数组 → 该版本丢弃；比较按 major.minor，门禁取 min 的 major。
+  `modType`：`meta.java`/`main` → java；root `scripts/main.js` → js；否则 json。
+- **迁移**：运行时读到 v1/v2 文件用缓存本地重算 v3 并写回（不额外发 API）；`--migrate` 可一次性迁移。
+  v3 不再有 `compat`/`latestCompatible`/`compatRanges`/`hasJava`/`hasScripts`/`removedCount`/
+  `latest*`/`sizeBytes` 等字段。
 
 约定：
 
@@ -36,7 +55,7 @@ per-mod `releases/*.json` 当前 schemaVersion 为 **`2`**。字段变化时递�
   `#` / `//` 注释、`'''` 多行串）；严格解析失败会做一次「字符串内裸换行」宽松修复，仍失败再用正则
   兜底只取 `version` / `minGameVersion`，值原样保留字符串、不强转数字。
 
-## index.json
+## index.json（历史 v2 说明；当前字段以开头「数据模型 v3」为准）
 
 ```json
 {
@@ -111,7 +130,7 @@ per-mod `releases/*.json` 当前 schemaVersion 为 **`2`**。字段变化时递�
 抓取失败时保留旧 `releases/<owner>/<repo>.json` 与旧 `releaseCount` / `latestRelease`；若从未成功抓取过，
 `releasesPath` 为 `null`、`releaseCount` 为 `0`、`latestRelease` 为 `null`，统计字段为 0 / `null`。
 
-## releases/<owner>/<repo>.json
+## releases/<owner>/<repo>.json（历史 v2 说明；当前 v3 见开头）
 
 **收录全部 git tag**：`/repos/{owner}/{repo}/tags` 分页取全，加上 releases 接口的 Release 数据，按 tag 名合并。
 没有 GitHub Release 的 tag 生成 tag-only 条目（`hasRelease: false`）。**只存数据**：分页 ETag 与抓取时间在

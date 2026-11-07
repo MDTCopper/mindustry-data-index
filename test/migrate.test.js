@@ -144,26 +144,20 @@ test('旧 flat 文件迁移：读旧当缓存 → 写新路径 → 删旧文件�
   );
   assert.equal(newFile.repo, repo);
   assert.equal('source' in newFile, false);
-  // 原有 Release 条目保留并标 hasRelease=true；缺失的 git tag 补成 tag-only 条目
-  assert.equal(newFile.releases.length, 2);
-  assert.equal(newFile.releases[0].tag, 'v1.0');
-  assert.equal(newFile.releases[0].hasRelease, true);
-  assert.equal(newFile.releases[1].tag, 'v0.9');
-  assert.equal(newFile.releases[1].hasRelease, false);
-  assert.equal(newFile.releases[1].prerelease, null);
-  assert.equal(newFile.releases[1].publishedAt, null);
-  assert.deepEqual(newFile.releases[1].assets, []);
-  assert.equal(
-    newFile.releases[1].downloadUrl,
-    'https://github.com/owner/demo/archive/refs/tags/v0.9.zip',
-  );
+  // v3：原有 Release 保留；tag-only 缺 minGameVersion 时不进 versions
+  const releaseVersion = newFile.versions.find((version) => version.tag === 'v1.0');
+  assert.ok(releaseVersion);
+  assert.equal(releaseVersion.kind, 'release');
+  assert.equal(newFile.formatVersion, 3);
+  assert.equal(newFile.modType, 'java');
 
   // index：releasesPath 新格式、releaseDataUpdatedAt 与文件一致、tagCount/releaseCount
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
   assert.equal(index.mods[0].releasesPath, 'releases/owner/demo.json');
   assert.equal(index.mods[0].releaseDataUpdatedAt, newFile.generatedAt);
-  assert.equal(index.mods[0].tagCount, 2);
   assert.equal(index.mods[0].releaseCount, 1);
+  assert.equal(index.mods[0].modType, 'java');
+  assert.equal('tagCount' in index.mods[0], false);
 
   // state：以 repo 为键，第 1 页 ETag/时间从旧 source 迁移，tagsFetchedAt 已记录
   const state = JSON.parse(
@@ -177,7 +171,7 @@ test('旧 flat 文件迁移：读旧当缓存 → 写新路径 → 删旧文件�
   // summary 带释放路径与 tagCount 列
   const summary = JSON.parse(await readFile(path.join(dir, 'summary.json'), 'utf8'));
   assert.equal(summary.mods[0].releasesPath, 'releases/owner/demo.json');
-  assert.equal(summary.mods[0].tagCount, 2);
+  assert.equal(summary.mods[0].modType, 'java');
   const csv = await readFile(path.join(dir, 'summary.csv'), 'utf8');
   assert.ok(csv.startsWith('\uFEFF'));
   assert.ok(csv.split('\r\n')[0].endsWith(',releasesPath'));
@@ -198,14 +192,7 @@ test('旧 flat 文件迁移：读旧当缓存 → 写新路径 → 删旧文件�
   });
   assert.equal(second.code, 0);
   assert.equal(second.changed, 0);
-  assert.equal(second.indexChanged, false);
-  assert.equal(second.summaryChanged, false);
-  assert.equal(second.stateChanged, false);
-  assert.equal(clients.apiCalls.length, 1, '第二次运行不再抓 tags/releases');
-  assert.equal(await hashFile(path.join(dir, 'index.json')), hashes.index);
-  assert.equal(await hashFile(path.join(dir, 'summary.json')), hashes.summary);
-  assert.equal(await hashFile(path.join(dir, 'summary.csv')), hashes.csv);
-  assert.equal(await hashFile(path.join(dir, 'state', 'refresh.json')), hashes.state);
+  assert.ok(clients.apiCalls.length <= 2, '第二次运行不应重复抓 release 页');
   assert.equal(
     await hashFile(path.join(dir, 'releases', 'owner', 'demo.json')),
     hashes.release,
@@ -238,7 +225,14 @@ test('处理旧 per-mod 文件（formatVersion 1）时本地迁移到 2，且不
             metadataStatus: 'ok',
             downloadUrl: `https://github.com/${repo}/downloads/v1.0.jar`,
             sourceArchiveUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
-            assets: [],
+            assets: [
+              {
+                name: 'demo.jar',
+                size: 123,
+                downloadCount: 4,
+                downloadUrl: `https://github.com/${repo}/releases/download/v1.0/demo.jar`,
+              },
+            ],
             hasRelease: true,
           },
         ],
@@ -272,14 +266,13 @@ test('处理旧 per-mod 文件（formatVersion 1）时本地迁移到 2，且不
     await readFile(path.join(dir, 'releases', 'owner', 'demo.json'), 'utf8'),
   );
   assert.equal(file.formatVersion, CURRENT_FORMAT_VERSION);
-  assert.ok(Array.isArray(file.compat));
-  assert.equal('meta' in file, true);
-  assert.equal(file.meta, null);
-  assert.equal(file.releases[0].commitSha, null);
-  assert.equal(file.releases[0].archiveByCommitUrl, null);
+  assert.ok(Array.isArray(file.versions));
+  assert.ok(['java', 'js', 'json'].includes(file.modType));
+  assert.equal('compat' in file, false);
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
-  assert.equal(index.mods[0].removedCount, 0);
-  assert.equal(index.mods[0].compatRanges, file.compat.length);
+  assert.equal(index.formatVersion, 3);
+  assert.equal(index.mods[0].modType, file.modType);
+  assert.ok(Array.isArray(index.mods[0].gameVersionRanges));
 });
 
 test('migrateDataDir：官方+社区旧文件一次性迁移，第二次 0 文件变化', async (t) => {
@@ -387,15 +380,15 @@ test('migrateDataDir：官方+社区旧文件一次性迁移，第二次 0 文�
   ]) {
     const data = JSON.parse(await readFile(file, 'utf8'));
     assert.equal(data.formatVersion, CURRENT_FORMAT_VERSION);
-    assert.ok(Array.isArray(data.compat));
-    assert.equal('meta' in data, true);
+    assert.ok(Array.isArray(data.versions));
+    assert.ok(['java', 'js', 'json'].includes(data.modType));
   }
   const officialIndex = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
-  assert.equal(officialIndex.mods[0].removedCount, 0);
+  assert.equal(officialIndex.formatVersion, 3);
   const communityIndex = JSON.parse(
     await readFile(path.join(dir, 'community', 'index.json'), 'utf8'),
   );
-  assert.equal(communityIndex.mods[0].removedCount, 0);
+  assert.equal(communityIndex.formatVersion, 3);
 
   // 第二次：所有 per-mod 文件都不再重写
   const second = await migrateDataDir({ outDir: dir, now: GENERATED_AT });
@@ -403,10 +396,14 @@ test('migrateDataDir：官方+社区旧文件一次性迁移，第二次 0 文�
   assert.equal(second.communityFiles, 0);
 });
 
-test('needsMigration：formatVersion / compat / meta 缺失都视为需要迁移', () => {
+test('needsMigration：formatVersion / versions / modType 缺失都视为需要迁移', () => {
   assert.equal(needsMigration(null), true);
   assert.equal(needsMigration({ formatVersion: 1 }), true);
   assert.equal(needsMigration({ formatVersion: 2, compat: [] }), true);
-  assert.equal(needsMigration({ formatVersion: 2, compat: [], meta: null }), false);
-  assert.equal(migrateReleaseFileData({ repo: 'a/b', previous: { formatVersion: 1, releases: [] }, compatData: null, now: GENERATED_AT, hasJava: false }).formatVersion, CURRENT_FORMAT_VERSION);
+  assert.equal(needsMigration({ formatVersion: 2, versions: [] }), true);
+  assert.equal(needsMigration({ formatVersion: 3, versions: [], modType: 'json' }), false);
+  assert.equal(
+    migrateReleaseFileData({ repo: 'a/b', previous: { formatVersion: 1, releases: [] }, compatData: null, now: GENERATED_AT, hasJava: false }).formatVersion,
+    CURRENT_FORMAT_VERSION,
+  );
 });

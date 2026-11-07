@@ -132,9 +132,90 @@ export function isLegacyReleasesPath(relPath) {
   return fileName !== '' && fileName !== '.' && fileName !== '..';
 }
 
+function validateV3VersionEntry(entry, { where, errors }) {
+  if (!isPlainObject(entry)) {
+    errors.push(`${where} 不是对象`);
+    return;
+  }
+  for (const field of ['tag', 'kind', 'minGameVersion', 'downloadUrl']) {
+    if (typeof entry[field] !== 'string' || !entry[field]) {
+      errors.push(`${where}.${field} 应为非空字符串`);
+    }
+  }
+  if (!['release', 'tag'].includes(entry.kind)) {
+    errors.push(`${where}.kind 应为 release 或 tag`);
+  }
+  if (!Array.isArray(entry.gameVersionRanges)) {
+    errors.push(`${where}.gameVersionRanges 不是数组`);
+  } else {
+    for (const [index, range] of entry.gameVersionRanges.entries()) {
+      if (
+        !isPlainObject(range) ||
+        typeof range.from !== 'string' ||
+        typeof range.to !== 'string'
+      ) {
+        errors.push(`${where}.gameVersionRanges[${index}] 应为 {from,to} 字符串`);
+      }
+    }
+  }
+  for (const field of ['modVersion', 'releasedAt', 'committedAt']) {
+    if (field in entry && (entry[field] === null || typeof entry[field] !== 'string')) {
+      errors.push(`${where}.${field} 若存在应为字符串（null 不应写出）`);
+    }
+  }
+  for (const field of ['releasedAt', 'committedAt']) {
+    if (field in entry && !isIsoDate(entry[field])) {
+      errors.push(`${where}.${field} 不是 ISO 时间`);
+    }
+  }
+  for (const field of ['sizeBytes', 'downloadCount']) {
+    if (field in entry && (!Number.isInteger(entry[field]) || entry[field] < 0)) {
+      errors.push(`${where}.${field} 应为非负整数`);
+    }
+  }
+  for (const field of ['prerelease', 'removed']) {
+    if (field in entry && typeof entry[field] !== 'boolean') {
+      errors.push(`${where}.${field} 应为布尔值`);
+    }
+  }
+  const allowed = new Set([
+    'tag', 'kind', 'modVersion', 'minGameVersion', 'gameVersionRanges',
+    'releasedAt', 'committedAt', 'downloadUrl', 'sizeBytes', 'downloadCount',
+    'prerelease', 'removed', 'removedAt',
+  ]);
+  for (const key of Object.keys(entry)) {
+    if (!allowed.has(key)) errors.push(`${where}.${key} 不是 v3 字段`);
+  }
+}
+
 export function validateReleaseFileData(file, { expectedRepo = null, errors }) {
   if (!isPlainObject(file)) {
     errors.push('release 文件顶层不是对象');
+    return;
+  }
+  if (file.formatVersion === 3) {
+    if (typeof file.repo !== 'string' || !/^[^/]+\/[^/]+$/.test(file.repo)) {
+      errors.push(`repo 字段非法：${JSON.stringify(file.repo)}`);
+    } else if (expectedRepo !== null && file.repo !== expectedRepo) {
+      errors.push(`repo 与 index 不一致：文件为 ${file.repo}，index 为 ${expectedRepo}`);
+    }
+    if (!isIsoDate(file.generatedAt)) errors.push('generatedAt 缺失或不是 ISO 时间');
+    if (!['java', 'js', 'json'].includes(file.modType)) {
+      errors.push(`modType 应为 java/js/json，实际 ${JSON.stringify(file.modType)}`);
+    }
+    if (!Array.isArray(file.versions)) {
+      errors.push('versions 不是数组');
+      return;
+    }
+    const tags = new Set();
+    for (const [index, entry] of file.versions.entries()) {
+      const where = `versions[${index}]`;
+      validateV3VersionEntry(entry, { where, errors });
+      if (entry?.tag) {
+        if (tags.has(entry.tag)) errors.push(`${where}.tag 重复：${entry.tag}`);
+        tags.add(entry.tag);
+      }
+    }
     return;
   }
   if (file.formatVersion !== 2) {
@@ -444,6 +525,104 @@ export function validateDefaultListConsistency(defaultIndex, fullIndex, { label,
   }
 }
 
+function validateIndexDataV3(index, { errors, warnings, releaseFiles = null, mode = 'official', officialRepos = null }) {
+  const label = mode === 'community' ? 'community/index.json' : 'index.json';
+  if (mode === 'official' && !Number.isInteger(index.source?.modCount)) {
+    errors.push(`${label}.source.modCount 应为整数`);
+  }
+  if (!Array.isArray(index.mods)) {
+    errors.push(`${label}.mods 不是数组`);
+    return;
+  }
+  const removedFields = [
+    'iosCompatible', 'legacyCompatible', 'removedCount', 'latestDownloads',
+    'totalSizeBytes', 'latestRelease', 'latestSizeBytes', 'lastUpdated',
+    'hasJava', 'hasScripts', 'latestCompatible', 'compatRanges',
+  ];
+  const repos = new Set();
+  for (const [position, mod] of index.mods.entries()) {
+    const where = `${label} mods[${position}]`;
+    if (!isPlainObject(mod)) {
+      errors.push(`${where} 不是对象`);
+      continue;
+    }
+    if (typeof mod.repo !== 'string') errors.push(`${where}.repo 缺失`);
+    else if (repos.has(mod.repo.toLowerCase())) errors.push(`${where}.repo 重复`);
+    else if (officialRepos?.has(mod.repo.toLowerCase())) {
+      errors.push(`${where}.repo 与官方列表重复：${mod.repo}`);
+    } else repos.add(mod.repo.toLowerCase());
+    for (const field of removedFields) {
+      if (field in mod) errors.push(`${where}.${field} 是 v2 字段，v3 已删除`);
+    }
+    for (const field of ['name', 'author', 'minGameVersion', 'releasesPath']) {
+      if (typeof mod[field] !== 'string' || !mod[field]) {
+        errors.push(`${where}.${field} 应为非空字符串`);
+      }
+    }
+    if (typeof mod.releasesPath === 'string' && !isValidReleasesPath(mod.releasesPath) && !mod.releasesPath.startsWith('community/')) {
+      errors.push(`${where}.releasesPath 非法`);
+    }
+    for (const field of ['namePlain', 'authorPlain', 'descriptionPlain']) {
+      if (typeof mod[field] !== 'string') errors.push(`${where}.${field} 应为字符串`);
+    }
+    if (!['java', 'js', 'json'].includes(mod.modType)) {
+      errors.push(`${where}.modType 应为 java/js/json`);
+    }
+    if (!Array.isArray(mod.gameVersionRanges)) {
+      errors.push(`${where}.gameVersionRanges 不是数组`);
+    }
+    for (const field of ['releaseUpdatedAt', 'commitUpdatedAt']) {
+      if (field in mod && mod[field] !== null && !isIsoDate(mod[field])) {
+        errors.push(`${where}.${field} 应为 ISO 时间或 null`);
+      }
+    }
+    if (!Number.isInteger(mod.releaseCount) || mod.releaseCount < 0) {
+      errors.push(`${where}.releaseCount 应为非负整数`);
+    }
+    if (mod.modType !== 'java') {
+      if (!Number.isInteger(mod.tagCount) || mod.tagCount < 0) {
+        errors.push(`${where}.tagCount 应为非负整数（非 Java）`);
+      }
+    } else if ('tagCount' in mod) {
+      errors.push(`${where}.tagCount 不应写给 Java 模组`);
+    }
+    for (const field of ['stars', 'totalDownloads', 'allAssetsDownloads']) {
+      if (!Number.isInteger(mod[field]) || mod[field] < 0) {
+        errors.push(`${where}.${field} 应为非负整数`);
+      }
+    }
+    if (mode === 'official') {
+      if (mod.hasIcon === false && mod.iconUrl !== null) {
+        errors.push(`${where}.iconUrl 与 repo/hasIcon 不一致（hasIcon=false 应为 null）`);
+      }
+      if (mod.iconUrl !== null && typeof mod.iconUrl === 'string') {
+        const expected = `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/${mod.repo?.replace('/', '_')}`;
+        if (mod.iconUrl !== expected) {
+          errors.push(`${where}.iconUrl 与 repo/hasIcon 不一致`);
+        }
+      }
+    }
+    if (mod.iconHash !== null && typeof mod.iconHash !== 'string') {
+      errors.push(`${where}.iconHash 应为字符串或 null`);
+    }
+    if (!mod.heat) {
+      errors.push(`${where}.heat 缺失或不是对象（热度已合并进 index.json）`);
+    } else {
+      validateIndexHeat(mod, { where, errors });
+    }
+    if (mode === 'community' && mod.source !== 'topic') {
+      errors.push(`${where}.source 应为 "topic"`);
+    }
+  }
+  if (releaseFiles) {
+    for (const relPath of releaseFiles) {
+      if (![...(index.mods ?? [])].some((mod) => mod.releasesPath === relPath)) {
+        warnings.push(`${relPath} 没有被 index 引用`);
+      }
+    }
+  }
+}
+
 export function validateIndexData(
   index,
   { errors, warnings, releaseFiles = null, mode = 'official', officialRepos = null } = {},
@@ -453,6 +632,13 @@ export function validateIndexData(
   if (!isPlainObject(index)) {
     errors.push(`${label} 顶层不是对象`);
     return { mods: [] };
+  }
+  if (index.formatVersion === 3) {
+    if (mode === 'community' && index.source?.source !== 'topic') {
+      errors.push(`${label}.source.source 应为 "topic"`);
+    }
+    validateIndexDataV3(index, { errors, warnings, releaseFiles, mode, officialRepos });
+    return { mods: index.mods ?? [] };
   }
   if (index.formatVersion !== 1) {
     errors.push(`${label}.formatVersion 应为 1，实际为 ${JSON.stringify(index.formatVersion)}`);
@@ -944,6 +1130,89 @@ function summaryCell(value) {
 }
 
 // summary.json：与 index、各 per-mod 文件的一致性 + 排序/合计
+function validateSummaryDataV3(summary, { index, errors }) {
+  const indexByRepo = new Map(
+    (Array.isArray(index?.mods) ? index.mods : [])
+      .filter((mod) => typeof mod?.repo === 'string')
+      .map((mod) => [mod.repo, mod]),
+  );
+  const seen = new Set();
+  for (const [position, row] of summary.mods.entries()) {
+    const where = `summary.mods[${position}]`;
+    if (!isPlainObject(row)) {
+      errors.push(`${where} 不是对象`);
+      continue;
+    }
+    const repo = row.repo;
+    if (typeof repo !== 'string') {
+      errors.push(`${where}.repo 缺失`);
+      continue;
+    }
+    if (seen.has(repo)) errors.push(`${where}.repo 重复`);
+    seen.add(repo);
+    const mod = indexByRepo.get(repo);
+    if (!mod) {
+      errors.push(`${where}.repo 不在全量 index 里：${repo}`);
+      continue;
+    }
+    for (const field of ['name', 'namePlain', 'author', 'modType', 'minGameVersion', 'releaseUpdatedAt', 'commitUpdatedAt', 'iconUrl', 'releasesPath']) {
+      if (JSON.stringify(row[field] ?? null) !== JSON.stringify(mod[field] ?? null)) {
+        errors.push(`${where}.${field} 与 index 不一致`);
+      }
+    }
+    for (const field of ['stars', 'releaseCount', 'totalDownloads', 'allAssetsDownloads']) {
+      if (row[field] !== mod[field]) errors.push(`${where}.${field} 与 index 不一致`);
+    }
+    if (mod.modType === 'java') {
+      if ('tagCount' in row) errors.push(`${where}.tagCount 不应写给 Java`);
+    } else if (row.tagCount !== mod.tagCount) {
+      errors.push(`${where}.tagCount 与 index 不一致`);
+    }
+    let rowRanges = null;
+    try {
+      rowRanges = typeof row.gameVersionRanges === 'string' ? JSON.parse(row.gameVersionRanges) : row.gameVersionRanges;
+    } catch {
+      errors.push(`${where}.gameVersionRanges 不是合法 JSON`);
+    }
+    if (JSON.stringify(rowRanges) !== JSON.stringify(mod.gameVersionRanges)) {
+      errors.push(`${where}.gameVersionRanges 与 index 不一致`);
+    }
+    if (mod.heat) {
+      if (row.heatScore !== mod.heat.score) errors.push(`${where}.heatScore 与 index.heat 不一致`);
+      if (row.heatRank !== mod.heat.rank) errors.push(`${where}.heatRank 与 index.heat 不一致`);
+      if (row.recommendVisible !== mod.heat.recommendVisible) {
+        errors.push(`${where}.recommendVisible 与 index.heat 不一致`);
+      }
+    }
+  }
+  for (const repo of indexByRepo.keys()) {
+    if (!seen.has(repo)) errors.push(`全量 index 里的 ${repo} 不在 summary 里`);
+  }
+  if (summary.totals) {
+    for (const field of ['mods', 'releases', 'downloads']) {
+      if (!Number.isInteger(summary.totals[field]) || summary.totals[field] < 0) {
+        errors.push(`summary.totals.${field} 应为非负整数`);
+      }
+    }
+    const expectedMods = indexByRepo.size;
+    const expectedReleases = summary.mods.reduce(
+      (sum, row) => sum + (Number(row.releaseCount) || 0),
+      0,
+    );
+    const expectedDownloads = summary.mods.reduce(
+      (sum, row) => sum + (Number(row.totalDownloads) || 0),
+      0,
+    );
+    if (summary.totals.mods !== expectedMods) errors.push('summary.totals.mods 与行数不一致');
+    if (summary.totals.releases !== expectedReleases) {
+      errors.push('summary.totals.releases 与行合计不一致');
+    }
+    if (summary.totals.downloads !== expectedDownloads) {
+      errors.push('summary.totals.downloads 与行合计不一致');
+    }
+  }
+}
+
 export function validateSummaryData(summary, { index, errors, warnings } = {}) {
   if (!isPlainObject(summary)) {
     errors.push('summary.json 顶层不是对象');
@@ -963,6 +1232,10 @@ export function validateSummaryData(summary, { index, errors, warnings } = {}) {
   if (!Array.isArray(summary.mods)) {
     errors.push('summary.mods 不是数组');
     return { rowCount: 0 };
+  }
+  if (summary.mods.some((row) => row && typeof row.modType === 'string')) {
+    validateSummaryDataV3(summary, { index, errors });
+    return { rowCount: summary.mods.length };
   }
 
   const indexMods = Array.isArray(index?.mods) ? index.mods : [];
@@ -1782,6 +2055,7 @@ export async function validateDir(dir) {
         }
         const file = loaded.get(mod.releasesPath);
         if (!file) {
+          errors.push(`${mod.releasesPath} 文件不存在（index 引用了不存在的 per-mod 文件）`);
           continue;
         }
         usedFiles.add(mod.releasesPath);
@@ -1789,6 +2063,17 @@ export async function validateDir(dir) {
         validateReleaseFileData(file, { expectedRepo: mod.repo, errors: fileErrors });
         for (const message of fileErrors) {
           errors.push(`${mod.releasesPath}：${message}`);
+        }
+        if (file.formatVersion === 3) {
+          const versions = Array.isArray(file.versions) ? file.versions : [];
+          const releaseCount = versions.filter((item) => item.kind === 'release').length;
+          if (releaseCount !== mod.releaseCount) {
+            errors.push(`${mod.repo} 的 releaseCount（${mod.releaseCount}）与文件 release 版本数（${releaseCount}）不一致`);
+          }
+          if (mod.modType !== 'java' && versions.length !== mod.tagCount) {
+            errors.push(`${mod.repo} 的 tagCount（${mod.tagCount}）与 versions 数量（${versions.length}）不一致`);
+          }
+          continue;
         }
         if (!Array.isArray(file.releases)) {
           continue;
@@ -1962,6 +2247,7 @@ export async function validateDir(dir) {
         }
         const file = loaded.get(mod.releasesPath);
         if (!file) {
+          errors.push(`${mod.releasesPath} 文件不存在（index 引用了不存在的 per-mod 文件）`);
           continue;
         }
         usedFiles.add(mod.releasesPath);
@@ -1969,6 +2255,17 @@ export async function validateDir(dir) {
         validateReleaseFileData(file, { expectedRepo: mod.repo, errors: fileErrors });
         for (const message of fileErrors) {
           errors.push(`${mod.releasesPath}：${message}`);
+        }
+        if (file.formatVersion === 3) {
+          const versions = Array.isArray(file.versions) ? file.versions : [];
+          const releaseCount = versions.filter((item) => item.kind === 'release').length;
+          if (releaseCount !== mod.releaseCount) {
+            errors.push(`${mod.repo} 的 releaseCount（${mod.releaseCount}）与文件 release 版本数（${releaseCount}）不一致`);
+          }
+          if (mod.modType !== 'java' && versions.length !== mod.tagCount) {
+            errors.push(`${mod.repo} 的 tagCount（${mod.tagCount}）与 versions 数量（${versions.length}）不一致`);
+          }
+          continue;
         }
         if (!Array.isArray(file.releases)) {
           continue;

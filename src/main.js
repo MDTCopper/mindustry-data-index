@@ -23,6 +23,14 @@ import {
 import { fetchAllTagEntries, fetchTagPages } from './tags.js';
 import { buildCompat, gameVersionsFromFile, latestCompatibleTag } from './compat.js';
 import {
+  MODEL_V3_FORMAT_VERSION,
+  buildV3Versions,
+  mergeGameVersionRanges,
+  modTypeOf,
+  releasesFromVersions,
+  summarizeVersions,
+} from './model-v3.js';
+import {
   COMMUNITY_DIR,
   COMMUNITY_SOURCE,
   COMMUNITY_STATE_REL_PATH,
@@ -73,6 +81,7 @@ import {
   heatSummaryRow,
   heatIndexFields,
   heatSummaryFields,
+  recommendationFor,
   injectHeatIntoIndex,
   injectHeatIntoSummaryRows,
   latestReleasePublishedAt,
@@ -360,89 +369,92 @@ export function parseArgs(argv) {
 
 // ---------- mods 数据集 ----------
 
-function buildIndexEntry(
+export function buildIndexEntry(
   mod,
   file,
-  { relPath, oldEntry = null, stats: providedStats = null, compat = null, gameVersions = [] } = {},
+  {
+    relPath,
+    oldEntry = null,
+    stats: providedStats = null,
+    compat = null,
+    gameVersions = [],
+    modType = null,
+    repoStats = null,
+  } = {},
 ) {
-  const hasFile = Array.isArray(file?.releases);
-  const releases = hasFile ? file.releases : [];
-  const releaseEntries = releases.filter(isReleaseEntry);
-  // C8：per-mod 最新 tag 元数据能解析时，校正 hasJava/hasScripts（拿不到保持官方列表原值）
+  const hasFile = Array.isArray(file?.releases) || Array.isArray(file?.versions);
+  const releases = Array.isArray(file?.releases)
+    ? file.releases
+    : Array.isArray(file?.versions)
+      ? releasesFromVersions(file)
+      : [];
   const meta = file?.meta && typeof file.meta === 'object' ? file.meta : null;
-  const hasJava = meta ? meta.hasJava === true : mod.hasJava === true;
-  const hasScripts = meta ? meta.hasScripts === true : mod.hasScripts === true;
-  const stats = providedStats ?? computeModStats(releases, hasJava);
-  const plain = plainFields(mod);
-  // 推荐/最新版本优先取未被作者删除的条目
-  const first = releaseEntries.find((entry) => entry.removed !== true) ?? releaseEntries[0] ?? null;
-  const removedCount = releases.filter((entry) => entry.removed === true).length;
-  const fileCompat = Array.isArray(compat)
-    ? compat
-    : (Array.isArray(file?.compat) ? file.compat : []);
+  const effectiveModType = modType ?? file?.modType ?? 'json';
+  const versions = Array.isArray(file?.versions) ? file.versions : [];
+  const summary = summarizeVersions(versions);
+  const stats = providedStats ?? computeModStats(releases, effectiveModType === 'java');
+  const plain = plainFields({
+    name: meta?.name ?? mod.name,
+    author: meta?.author ?? mod.author,
+    description: meta?.description ?? mod.description,
+  });
+  const latestRelease = releases.find((entry) => entry.removed !== true) ?? releases[0] ?? null;
+  const latestVersion = versions.find((item) => item.removed !== true) ?? versions[0] ?? null;
   const releaseCount = hasFile
-    ? releaseEntries.length
+    ? summary.releaseCount
     : typeof oldEntry?.releaseCount === 'number'
       ? oldEntry.releaseCount
       : 0;
   const tagCount = hasFile
-    ? releases.length
+    ? summary.tagCount
     : typeof oldEntry?.tagCount === 'number'
       ? oldEntry.tagCount
       : releaseCount;
-  const latestRelease = first
-    ? {
-        tag: first.tag,
-        name: first.name,
-        prerelease: first.prerelease,
-        publishedAt: first.publishedAt,
-        downloads: stats.latestDownloads,
-        sizeBytes: stats.latestSizeBytes,
-      }
-    : hasFile
-      ? null
-      : (oldEntry?.latestRelease ?? null);
-  const hasCompat = fileCompat.length > 0 || gameVersions.length > 0;
-  const releaseDataUpdatedAt = file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null;
-
-  return {
+  const releaseUpdatedAt =
+    summary.releaseUpdatedAt ??
+    latestRelease?.publishedAt ??
+    oldEntry?.releaseUpdatedAt ??
+    null;
+  const commitUpdatedAt =
+    repoStats?.pushedAt ?? oldEntry?.commitUpdatedAt ?? null;
+  const minGameVersion =
+    latestVersion?.minGameVersion ??
+    meta?.minGameVersion ??
+    mod.minGameVersion ??
+    oldEntry?.minGameVersion ??
+    null;
+  const gameVersionRanges = hasFile
+    ? summary.gameVersionRanges
+    : (oldEntry?.gameVersionRanges ?? []);
+  const result = {
     repo: mod.repo,
-    internalName: mod.internalName,
-    name: mod.name,
+    internalName: mod.internalName ?? null,
+    name: meta?.name ?? mod.name ?? null,
     namePlain: plain.namePlain,
-    author: mod.author,
+    author: meta?.author ?? mod.author ?? null,
     authorPlain: plain.authorPlain,
     descriptionPlain: plain.descriptionPlain,
-    version: mod.version,
-    minGameVersion: mod.minGameVersion,
-    lastUpdated: mod.lastUpdated,
-    stars: mod.stars,
+    version: latestVersion?.modVersion ?? meta?.version ?? mod.version ?? null,
+    minGameVersion,
+    modType: effectiveModType,
+    gameVersionRanges,
+    stars: Number(repoStats?.stars ?? mod.stars) || 0,
     hasIcon: mod.hasIcon,
-    hasScripts,
-    hasJava,
-    iosCompatible: mod.iosCompatible ?? null,
-    legacyCompatible: mod.legacyCompatible ?? null,
-    // 只记录地址不下载字节；hasIcon === false 才为 null
     iconUrl: modIconUrl(mod.repo, mod.hasIcon),
     iconHash: mod.iconHash ?? null,
     releasesPath: hasFile
       ? relPath
       : (oldEntry?.releasesPath ?? (file ? relPath : null)),
     releaseCount,
-    tagCount,
-    removedCount: hasFile ? removedCount : (oldEntry?.removedCount ?? 0),
+    ...(effectiveModType === 'java' ? {} : { tagCount }),
+    releaseUpdatedAt,
+    commitUpdatedAt,
     totalDownloads: stats.totalDownloads,
     allAssetsDownloads: stats.allAssetsDownloads,
-    latestDownloads: stats.latestDownloads,
-    latestSizeBytes: stats.latestSizeBytes,
-    totalSizeBytes: stats.totalSizeBytes,
-    latestRelease,
-    latestCompatible: hasCompat
-      ? latestCompatibleTag(fileCompat, gameVersions)
-      : (oldEntry?.latestCompatible ?? null),
-    compatRanges: hasCompat ? fileCompat.length : (oldEntry?.compatRanges ?? 0),
-    releaseDataUpdatedAt,
+    releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
   };
+  if (result.internalName === null) delete result.internalName;
+  return result;
 }
 
 function skipReason(error) {
@@ -552,8 +564,17 @@ async function processMod(context) {
       }
     }
   }
+  // 已是 v3 的缓存：补一个内部 releases 视图，继续复用刷新/合并逻辑
+  if (previous?.versions && !Array.isArray(previous.releases)) {
+    Object.defineProperty(previous, 'releases', {
+      value: releasesFromVersions(previous),
+      enumerable: false,
+      configurable: true,
+      writable: true,
+    });
+  }
 
-  // schemaVersion 迁移：旧文件（formatVersion < 2）用已有缓存本地重算新字段并重写，不额外发 API；
+  // schemaVersion 迁移：旧文件（formatVersion < 3）用已有缓存本地重算新字段并重写，不额外发 API；
   // 即使本次刷新不到期 / 配额不足，也先完成迁移，避免新代码读旧结构一直报错。
   if (previous && needsMigration(previous)) {
     const migrated = migrateReleaseFileData({
@@ -563,31 +584,39 @@ async function processMod(context) {
       now,
       hasJava,
     });
-    if (!options.dryRun) {
-      await writeJsonAtomic(resolveReleaseFile(workDir, relPath), migrated);
-      if (legacyToDelete !== null) {
-        await deleteReleaseFile(workDir, legacyToDelete);
+    // v1 用旧缓存直接本地迁移即可；v2→v3 迁移后继续本轮刷新（tags/release 计划照常）
+    if (previous.formatVersion < 2 || previous.formatVersion === undefined) {
+      if (!options.dryRun) {
+        await writeJsonAtomic(resolveReleaseFile(workDir, relPath), migrated);
+        if (legacyToDelete !== null) {
+          await deleteReleaseFile(workDir, legacyToDelete);
+        }
       }
+      const migratedHasJava = migrated.meta ? migrated.meta.hasJava === true : hasJava;
+      log(`[${mod.repo}] formatVersion ${previous.formatVersion ?? 1} → ${CURRENT_FORMAT_VERSION} 本地迁移（0 API）`);
+      return {
+        entry: buildEntry(mod, migrated, {
+          relPath,
+          oldEntry,
+          stats: computeModStats(migrated.releases, migratedHasJava),
+          compat: [],
+          gameVersions: context.compatData?.gameVersions ?? [],
+          modType: migrated.modType,
+          repoStats: context.repoStats ?? null,
+        }),
+        file: migrated,
+        previousFile: previous,
+        state: previousState.mods[mod.repo] ?? null,
+        skipped: null,
+        changed: true,
+        unprocessed: false,
+        changes: [],
+        migrated: true,
+      };
     }
-    const migratedHasJava = migrated.meta ? migrated.meta.hasJava === true : hasJava;
-    log(`[${mod.repo}] formatVersion 1 → ${CURRENT_FORMAT_VERSION} 本地迁移（0 API）`);
-    return {
-      entry: buildEntry(mod, migrated, {
-        relPath,
-        oldEntry,
-        stats: computeModStats(migrated.releases, migratedHasJava),
-        compat: migrated.compat,
-        gameVersions: context.compatData?.gameVersions ?? [],
-      }),
-      file: migrated,
-      previousFile: previous,
-      state: previousState.mods[mod.repo] ?? null,
-      skipped: null,
-      changed: true,
-      unprocessed: false,
-      changes: [],
-      migrated: true,
-    };
+    migrated.source = previous.source ?? null;
+    previous = migrated;
+    log(`[${mod.repo}] formatVersion 2 → ${CURRENT_FORMAT_VERSION} 本地迁移后继续刷新`);
   }
 
   // 刷新缓存从 state/refresh.json 读取；旧 per-mod 文件里的 source 只用于一次性迁移
@@ -769,6 +798,42 @@ async function processMod(context) {
       removedAt: now,
     });
 
+    // v3：缺 minGameVersion 的旧条目先补抓 mod 元数据（raw，不走 API 配额），每轮每 mod 限量
+    const MIN_RECRAWL_PER_RUN = 10;
+    const missingMetaEntries = entries
+      .filter(
+        (entry) =>
+          entry?.tag &&
+          !entry.minGameVersion &&
+          entry.metadataStatus !== 'ok',
+      )
+      .slice(0, MIN_RECRAWL_PER_RUN);
+    let metadataRecrawled = 0;
+    if (missingMetaEntries.length > 0) {
+      await Promise.all(
+        missingMetaEntries.map(async (entry) => {
+          try {
+            const metadata = await rawPool.run(() =>
+              fetchModMetadata(rawClient, {
+                repo: mod.repo,
+                tag: entry.tag,
+                hasJava,
+              }),
+            );
+            if (metadata.metadataStatus === 'ok' && metadata.minGameVersion) {
+              entry.minGameVersion = metadata.minGameVersion;
+              entry.modVersion = metadata.modVersion ?? entry.modVersion;
+              entry.metadataPath = metadata.metadataPath;
+              entry.metadataStatus = 'ok';
+              metadataRecrawled += 1;
+            }
+          } catch {
+            // 单条失败忽略，下次继续
+          }
+        }),
+      );
+    }
+
     // 预计算「游戏版本 → 推荐 tag」兼容区间（官方/社区同构）
     const compatData = context.compatData ?? null;
     const compat = compatData
@@ -801,23 +866,22 @@ async function processMod(context) {
       }
     }
     const effectiveHasJava = fileMeta ? fileMeta.hasJava === true : hasJava;
+    const modelGameVersions = compatData?.gameVersions ?? [];
+    const modType = modTypeOf({ meta: fileMeta, releases: entries });
+    const gateFile = modType === 'java' ? compatData?.javaGate : compatData?.modGate;
 
     const nextFile = buildReleasesFile({
       repo: mod.repo,
       releases: entries,
-      compat,
       meta: fileMeta,
-      // 数据没变但只是迁移路径时沿用旧 generatedAt，避免 index 的 releaseDataUpdatedAt 抖动
-      generatedAt: releaseFileBodyChanged(previous, {
-        formatVersion: CURRENT_FORMAT_VERSION,
-        repo: mod.repo,
-        releases: entries,
-        compat,
-        meta: fileMeta,
-      })
-        ? now
-        : (previous?.generatedAt ?? now),
+      modType,
+      gameVersions: modelGameVersions,
+      gateFile,
+      generatedAt: now,
     });
+    if (!releaseFileBodyChanged(previous, nextFile) && previous?.generatedAt) {
+      nextFile.generatedAt = previous.generatedAt;
+    }
     const changed = releaseFileBodyChanged(previous, nextFile);
     const shouldWrite = changed || legacyToDelete !== null;
     if (shouldWrite && !options.dryRun) {
@@ -904,6 +968,8 @@ async function processMod(context) {
         stats: computeModStats(finalFile?.releases ?? [], effectiveHasJava),
         compat: finalFile?.compat ?? [],
         gameVersions: compatData?.gameVersions ?? [],
+        modType: finalFile?.modType ?? modType,
+        repoStats: context.repoStats ?? null,
       }),
       file: finalFile,
       previousFile: previous,
@@ -928,8 +994,12 @@ async function processMod(context) {
         finalFile = buildReleasesFile({
           repo: mod.repo,
           releases: previous.releases,
-          compat: previous.compat ?? [],
           meta: previous.meta ?? null,
+          modType: previous.modType ?? 'json',
+          gameVersions: context.compatData?.gameVersions ?? [],
+          gateFile: previous.modType === 'java'
+            ? context.compatData?.javaGate
+            : context.compatData?.modGate,
           generatedAt: previous.generatedAt ?? now,
         });
         await writeJsonAtomic(resolveReleaseFile(workDir, relPath), finalFile);
@@ -948,6 +1018,8 @@ async function processMod(context) {
         stats: computeModStats(finalFile?.releases ?? [], catchHasJava),
         compat: finalFile?.compat ?? [],
         gameVersions: context.compatData?.gameVersions ?? [],
+        modType: finalFile?.modType ?? 'json',
+        repoStats: context.repoStats ?? null,
       }),
       file: finalFile,
       previousFile: previous,
@@ -1005,6 +1077,92 @@ async function loadChanges(outDir, log) {
 }
 
 // 兼容区间需要游戏版本列表 + 两份门禁（官方数据目录下）
+async function loadRepoStats(outDir, log) {
+  const relPath = 'state/repo-stats.json';
+  const map = new Map();
+  try {
+    const file = await readJsonIfExists(path.join(outDir, relPath));
+    for (const [repo, stats] of Object.entries(file?.repos ?? {})) {
+      if (stats && typeof stats === 'object') {
+        map.set(repo.toLowerCase(), stats);
+      }
+    }
+  } catch (error) {
+    log(`[警告] ${relPath} 不可用，repo 统计留空：${error.message}`);
+  }
+  return map;
+}
+
+// state/repo-stats.json：每周刷新 stars/archived/created_at/pushed_at；配额不足优雅停止并保留缓存
+async function refreshRepoStats({ outDir, apiClient, repos, log }) {
+  const relPath = 'state/repo-stats.json';
+  const statePath = path.join(outDir, relPath);
+  let previous = null;
+  try {
+    previous = await readJsonIfExists(statePath);
+  } catch {}
+  const reposMap = previous?.repos && typeof previous.repos === 'object' ? { ...previous.repos } : {};
+  const nowMs = Date.now();
+  const weekMs = 7 * 24 * 60 * 60 * 1000;
+  let fetched = 0;
+  let changed = false;
+  const ordered = [...new Set((repos ?? []).filter(Boolean))].sort((left, right) => {
+    const a = Date.parse(reposMap[left]?.fetchedAt ?? '') || 0;
+    const b = Date.parse(reposMap[right]?.fetchedAt ?? '') || 0;
+    return a - b;
+  });
+  for (const repo of ordered) {
+    const old = reposMap[repo];
+    if (old?.fetchedAt && nowMs - Date.parse(old.fetchedAt) < weekMs) {
+      continue;
+    }
+    if (apiClient?.hasLowQuota?.(5)) {
+      log('[repo-stats] API 配额不足，剩下次继续');
+      break;
+    }
+    try {
+      const response = await apiClient.get(`https://api.github.com/repos/${repo}`);
+      if (response.status === 404) {
+        reposMap[repo] = { ...old, fetchedAt: new Date(nowMs).toISOString(), missing: true };
+        changed = true;
+        continue;
+      }
+      if (response.status !== 200) {
+        if (response.status === 403 || response.status === 429) {
+          log('[repo-stats] 限流，剩下次继续');
+          break;
+        }
+        continue;
+      }
+      const data = JSON.parse(response.text);
+      reposMap[repo] = {
+        stars: Number.isInteger(data.stargazers_count) ? data.stargazers_count : 0,
+        archived: data.archived === true,
+        createdAt: typeof data.created_at === 'string' ? data.created_at : null,
+        pushedAt: typeof data.pushed_at === 'string' ? data.pushed_at : null,
+        fetchedAt: new Date(nowMs).toISOString(),
+      };
+      fetched += 1;
+      changed = true;
+    } catch {
+      // 网络失败：下次继续
+    }
+  }
+  if (changed && !apiClient?.dryRun) {
+    await writeJsonAtomic(statePath, {
+      formatVersion: 1,
+      updatedAt: new Date(nowMs).toISOString(),
+      repos: reposMap,
+    });
+  }
+  if (fetched > 0) log(`[repo-stats] 刷新 ${fetched} 个仓库（stars/pushed_at/created_at/archived）`);
+  const map = new Map();
+  for (const [repo, stats] of Object.entries(reposMap)) {
+    if (stats && typeof stats === 'object') map.set(repo.toLowerCase(), stats);
+  }
+  return map;
+}
+
 async function loadCompatData(outDir, log) {
   let versionsFile = null;
   let modGate = null;
@@ -1076,6 +1234,14 @@ export async function runMods(options, context) {
   const stateLoaded = await loadRefreshState(outDir, log);
   const previousState = stateLoaded.state;
   const compatData = await loadCompatData(outDir, log);
+  const repoStats = options.repos.length === 0
+    ? await refreshRepoStats({
+        outDir,
+        apiClient,
+        repos: selected.map((mod) => mod.repo),
+        log,
+      })
+    : await loadRepoStats(outDir, log);
 
   const rawPool = createPool(options.rawThreads);
   const apiPool = createPool(options.threads);
@@ -1104,6 +1270,7 @@ export async function runMods(options, context) {
           previousState,
           abortState,
           compatData,
+          repoStats,
         });
         resultsByRepo.set(mod.repo, result);
         completed += 1;
@@ -1116,6 +1283,27 @@ export async function runMods(options, context) {
 
   // index / summary 仍按官方列表顺序输出
   const results = selected.map((mod) => resultsByRepo.get(mod.repo));
+  // v3：一条版本都不剩的模组从 index 移除并删除 per-mod 文件（缺元数据已在 processMod 先补抓）
+  const droppedResults = results.filter(
+    (result) =>
+      result.entry &&
+      (result.entry.releaseCount ?? 0) === 0 &&
+      (result.entry.tagCount ?? 0) === 0,
+  );
+  const keptResults = results.filter((result) => !droppedResults.includes(result));
+  if (droppedResults.length > 0) {
+    if (!options.dryRun) {
+      for (const result of droppedResults) {
+        const relPath = result.entry?.releasesPath;
+        if (relPath) {
+          try {
+            await unlink(path.join(outDir, relPath));
+          } catch {}
+        }
+      }
+    }
+    log(`[mods] v3 丢弃 ${droppedResults.length} 个没有任何可用版本的模组`);
+  }
   const unprocessed = results.filter((result) => result.unprocessed);
   const rateLimitedCount = results.filter(
     (result) => result.skipped?.reason === 'rate-limit',
@@ -1148,11 +1336,11 @@ export async function runMods(options, context) {
   }
 
   const index = {
-    formatVersion: 1,
+    formatVersion: 3,
     generatedAt: now,
     source: {
       modsUrl: MODS_URL,
-      modCount: selected.length,
+      modCount: keptResults.length,
     },
     mods: results.map((result) => result.entry),
     skipped,
@@ -1169,30 +1357,24 @@ export async function runMods(options, context) {
   }
 
   // 总表：基于合并后的完整 releases 聚合
-  const summaryRows = results.map((result, index) => {
-    const mod = selected[index];
-    const firstRelease = result.file?.releases?.find(isReleaseEntry) ?? null;
-    return {
-      repo: mod.repo,
-      name: mod.name,
-      namePlain: result.entry.namePlain ?? '',
-      author: mod.author,
-      stars: mod.stars,
-      releaseCount: result.entry.releaseCount,
-      tagCount: result.entry.tagCount,
-      totalDownloads: result.entry.totalDownloads,
-      allAssetsDownloads: result.entry.allAssetsDownloads,
-      latestDownloads: result.entry.latestDownloads,
-      latestSizeBytes: result.entry.latestSizeBytes,
-      totalSizeBytes: result.entry.totalSizeBytes,
-      latestTag: firstRelease?.tag ?? null,
-      latestPrerelease: firstRelease ? firstRelease.prerelease : null,
-      latestModVersion: firstRelease?.modVersion ?? null,
-      latestMinGameVersion: firstRelease?.minGameVersion ?? null,
-      iconUrl: modIconUrl(mod.repo, mod.hasIcon),
-      releasesPath: result.entry.releasesPath,
-    };
-  });
+  const summaryRows = keptResults.map((result) => ({
+    repo: result.entry.repo,
+    name: result.entry.name,
+    namePlain: result.entry.namePlain ?? '',
+    author: result.entry.author,
+    stars: result.entry.stars,
+    modType: result.entry.modType,
+    releaseCount: result.entry.releaseCount,
+    ...(result.entry.modType === 'java' ? {} : { tagCount: result.entry.tagCount }),
+    totalDownloads: result.entry.totalDownloads,
+    allAssetsDownloads: result.entry.allAssetsDownloads,
+    minGameVersion: result.entry.minGameVersion,
+    gameVersionRanges: JSON.stringify(result.entry.gameVersionRanges ?? []),
+    releaseUpdatedAt: result.entry.releaseUpdatedAt,
+    commitUpdatedAt: result.entry.commitUpdatedAt,
+    iconUrl: result.entry.iconUrl,
+    releasesPath: result.entry.releasesPath,
+  }));
   const summary = buildSummary({ rows: summaryRows, generatedAt: now });
   const summaryFile = path.join(outDir, 'summary.json');
   const summaryCsvFile = path.join(outDir, 'summary.csv');
@@ -1294,31 +1476,25 @@ function isCommunityLimited(options) {
   );
 }
 
-function communitySummaryRows(results, selectedMods) {
-  return results.map((result, index) => {
-    const mod = selectedMods[index];
-    const firstRelease = result.file?.releases?.find(isReleaseEntry) ?? null;
-    return {
-      repo: mod.repo,
-      name: mod.name,
-      namePlain: result.entry.namePlain ?? '',
-      author: mod.author,
-      stars: mod.stars,
-      releaseCount: result.entry.releaseCount,
-      tagCount: result.entry.tagCount,
-      totalDownloads: result.entry.totalDownloads,
-      allAssetsDownloads: result.entry.allAssetsDownloads,
-      latestDownloads: result.entry.latestDownloads,
-      latestSizeBytes: result.entry.latestSizeBytes,
-      totalSizeBytes: result.entry.totalSizeBytes,
-      latestTag: firstRelease?.tag ?? null,
-      latestPrerelease: firstRelease ? firstRelease.prerelease : null,
-      latestModVersion: firstRelease?.modVersion ?? null,
-      latestMinGameVersion: firstRelease?.minGameVersion ?? null,
-      iconUrl: result.entry.iconUrl,
-      releasesPath: result.entry.releasesPath,
-    };
-  });
+function communitySummaryRows(results) {
+  return results.map((result) => ({
+    repo: result.entry.repo,
+    name: result.entry.name,
+    namePlain: result.entry.namePlain ?? '',
+    author: result.entry.author,
+    stars: result.entry.stars,
+    modType: result.entry.modType,
+    releaseCount: result.entry.releaseCount,
+    ...(result.entry.modType === 'java' ? {} : { tagCount: result.entry.tagCount }),
+    totalDownloads: result.entry.totalDownloads,
+    allAssetsDownloads: result.entry.allAssetsDownloads,
+    minGameVersion: result.entry.minGameVersion,
+    gameVersionRanges: JSON.stringify(result.entry.gameVersionRanges ?? []),
+    releaseUpdatedAt: result.entry.releaseUpdatedAt,
+    commitUpdatedAt: result.entry.commitUpdatedAt,
+    iconUrl: result.entry.iconUrl,
+    releasesPath: result.entry.releasesPath,
+  }));
 }
 
 // 社区模组：topic 搜索发现 → 黑名单/官方去重/收录标准过滤 → 与官方同构的 per-mod 抓取与 2h/周/月刷新
@@ -1412,6 +1588,12 @@ async function runCommunity(options, context) {
   const stateLoaded = await loadRefreshState(outDir, log, COMMUNITY_STATE_REL_PATH);
   const previousState = stateLoaded.state;
   const compatData = await loadCompatData(outDir, log);
+  const repoStats = await refreshRepoStats({
+    outDir,
+    apiClient,
+    repos: selectedMods.map((mod) => mod.repo),
+    log,
+  });
 
   const rawPool = createPool(options.rawThreads);
   const apiPool = createPool(options.threads);
@@ -1443,6 +1625,7 @@ async function runCommunity(options, context) {
           abortState,
           dataset,
           compatData,
+          repoStats,
         });
         resultsByRepo.set(mod.repo, result);
         completed += 1;
@@ -1453,6 +1636,26 @@ async function runCommunity(options, context) {
     ),
   );
   const results = selectedMods.map((mod) => resultsByRepo.get(mod.repo));
+  const droppedResults = results.filter(
+    (result) =>
+      result.entry &&
+      (result.entry.releaseCount ?? 0) === 0 &&
+      (result.entry.tagCount ?? 0) === 0,
+  );
+  const keptResults = results.filter((result) => !droppedResults.includes(result));
+  if (droppedResults.length > 0) {
+    if (!options.dryRun) {
+      for (const result of droppedResults) {
+        const relPath = result.entry?.releasesPath;
+        if (relPath) {
+          try {
+            await unlink(path.join(outDir, relPath));
+          } catch {}
+        }
+      }
+    }
+    log(`[community] v3 丢弃 ${droppedResults.length} 个没有任何可用版本的模组`);
+  }
   const unprocessed = results.filter((result) => result.unprocessed).length;
   const rateLimited = results.filter((result) => result.skipped?.reason === 'rate-limit').length;
   const notProcessed = unprocessed + rateLimited;
@@ -1480,7 +1683,7 @@ async function runCommunity(options, context) {
   }
 
   const index = {
-    formatVersion: 1,
+    formatVersion: 3,
     generatedAt: now,
     source: {
       source: COMMUNITY_SOURCE,
@@ -1500,7 +1703,7 @@ async function runCommunity(options, context) {
     await cleanupMissing(communityDir, selectedMods, log);
   }
 
-  const summaryRows = communitySummaryRows(results, selectedMods);
+  const summaryRows = communitySummaryRows(results);
   const summary = buildSummary({ rows: summaryRows, generatedAt: now });
   const summaryFile = path.join(communityDir, 'summary.json');
   const summaryCsvFile = path.join(communityDir, 'summary.csv');
@@ -1671,6 +1874,9 @@ async function loadHeatToolkit(outDir, log) {
   const readReleases = async (relPath) => {
     try {
       const file = await readJsonIfExists(relPath);
+      if (Array.isArray(file?.versions)) {
+        return releasesFromVersions(file);
+      }
       return Array.isArray(file?.releases) ? file.releases : [];
     } catch {
       return [];
@@ -2049,6 +2255,7 @@ async function runHeat(options, context) {
     entry.effectiveWeights.downloads = round4(entry.effectiveWeights.downloads);
     entry.effectiveWeights.stars = round4(entry.effectiveWeights.stars);
     entry.effectiveWeights.update = round4(entry.effectiveWeights.update);
+    entry.recommend = recommendationFor(entry);
   }
   // 按 4 位小数后的展示分重新排序并编号，保证 rank 与落盘分数严格一致
   entries.sort((left, right) => {
@@ -2113,17 +2320,15 @@ async function runHeat(options, context) {
           namePlain: mod.namePlain ?? '',
           author: mod.author,
           stars: mod.stars,
+          modType: mod.modType,
           releaseCount: mod.releaseCount,
-          tagCount: mod.tagCount,
+          ...(mod.modType === 'java' ? {} : { tagCount: mod.tagCount }),
           totalDownloads: mod.totalDownloads,
           allAssetsDownloads: mod.allAssetsDownloads,
-          latestDownloads: mod.latestDownloads,
-          latestSizeBytes: mod.latestSizeBytes,
-          totalSizeBytes: mod.totalSizeBytes,
-          latestTag: mod.latestRelease?.tag ?? null,
-          latestPrerelease: mod.latestRelease?.prerelease ?? null,
-          latestModVersion: null,
-          latestMinGameVersion: null,
+          minGameVersion: mod.minGameVersion,
+          gameVersionRanges: JSON.stringify(mod.gameVersionRanges ?? []),
+          releaseUpdatedAt: mod.releaseUpdatedAt,
+          commitUpdatedAt: mod.commitUpdatedAt,
           iconUrl: mod.iconUrl,
           releasesPath: mod.releasesPath,
           ...(heatEntry ? heatSummaryFields(heatEntry) : {}),

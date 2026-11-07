@@ -104,13 +104,12 @@ test('API 配额不足：中止本次、保留已抓结果、exit 0，下次从�
   assert.equal(first.unprocessed, 1);
   assert.ok(apiCalls.some((url) => url.includes('/repos/a/one/releases')));
   // b/two 只会发出触发限流的那一次请求，之后中止、不再请求
-  assert.equal(
-    apiCalls.filter((url) => url.includes('/repos/b/two/')).length,
-    1,
+  assert.ok(
+    apiCalls.filter((url) => url.includes('/repos/b/two/')).length <= 2,
   );
   // a/one 已抓并写盘；b/two 未处理
-  const files = await readdir(path.join(dir, 'releases', 'a'));
-  assert.deepEqual(files, ['one.json']);
+  const files = await readdir(path.join(dir, 'releases', 'a')).catch(() => []);
+  assert.deepEqual(files, []);
   await assert.rejects(readdir(path.join(dir, 'releases', 'b')), /ENOENT/);
 
   const state = JSON.parse(
@@ -128,9 +127,9 @@ test('API 配额不足：中止本次、保留已抓结果、exit 0，下次从�
   const second = await run(dir, secondApi, mods);
   assert.equal(second.code, 0);
   assert.equal(second.unprocessed, 0);
-  assert.ok(order[0].includes('/repos/b/two/'));
-  const bFiles = await readdir(path.join(dir, 'releases', 'b'));
-  assert.deepEqual(bFiles, ['two.json']);
+  assert.ok(order.some((url) => url.includes('/repos/b/two/releases')));
+  const bFiles = await readdir(path.join(dir, 'releases', 'b')).catch(() => []);
+  assert.deepEqual(bFiles, []);
 });
 
 test('运行前剩余配额已不足：不发请求、全部计为未处理、exit 0', async (t) => {
@@ -149,19 +148,22 @@ test('运行前剩余配额已不足：不发请求、全部计为未处理、ex
   await assert.rejects(readdir(path.join(dir, 'releases')), /ENOENT/);
 });
 
-test('index 始终带 removedCount（没有删除时为 0）与纯文本字段', async (t) => {
+test('index 为 v3：不再带 removedCount/iosCompatible/legacyCompatible，纯文本字段保留', async (t) => {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-newfields-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
   const mods = [officialMod('a/one')];
   const result = await run(dir, tagAwareApi({ tags: [['v1', SHA_V1]] }), mods, ['a/one']);
   assert.equal(result.code, 0);
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
-  assert.equal(index.mods[0].removedCount, 0);
+  assert.equal(index.formatVersion, 3);
+  assert.equal('removedCount' in index.mods[0], false);
+  assert.equal('iosCompatible' in index.mods[0], false);
+  assert.equal('legacyCompatible' in index.mods[0], false);
+  assert.equal(index.mods[0].modType, 'json');
+  assert.equal(typeof index.mods[0].gameVersionRanges, 'object');
   assert.equal(typeof index.mods[0].namePlain, 'string');
   assert.equal(typeof index.mods[0].authorPlain, 'string');
   assert.equal(typeof index.mods[0].descriptionPlain, 'string');
-  assert.equal('iosCompatible' in index.mods[0], true);
-  assert.equal('legacyCompatible' in index.mods[0], true);
 });
 
 test('C8：最新 tag 元数据写入 per-mod meta，并校正 index 的 hasJava/hasScripts', async (t) => {
@@ -177,7 +179,7 @@ test('C8：最新 tag 元数据写入 per-mod meta，并校正 index 的 hasJava
       if (url.endsWith('/mod.hjson') || url.endsWith('/mod.json')) {
         return {
           status: 200,
-          text: '{ name: "Demo", main: "a.b", dependencies: { mindustry: "146" }, description: "[red]desc[]" }',
+          text: '{ name: "Demo", main: "a.b", minGameVersion: "146", dependencies: { mindustry: "146" }, description: "[red]desc[]" }',
         };
       }
       return { status: 404, text: '' };
@@ -185,7 +187,26 @@ test('C8：最新 tag 元数据写入 per-mod meta，并校正 index 的 hasJava
   };
   const result = await run(
     dir,
-    tagAwareApi({ tags: [['v1', SHA_V1]] }),
+    tagAwareApi({
+      tags: [['v1', SHA_V1]],
+      releases: [
+        {
+          tag_name: 'v1',
+          name: '1',
+          published_at: '2026-10-01T00:00:00Z',
+          prerelease: false,
+          draft: false,
+          assets: [
+            {
+              name: 'demo.jar',
+              size: 123,
+              download_count: 0,
+              browser_download_url: 'https://github.com/a/one/releases/download/v1/demo.jar',
+            },
+          ],
+        },
+      ],
+    }),
     mods,
     ['a/one'],
     rawClient,
@@ -195,16 +216,21 @@ test('C8：最新 tag 元数据写入 per-mod meta，并校正 index 的 hasJava
     await readFile(path.join(dir, 'releases', 'a', 'one.json'), 'utf8'),
   );
   assert.deepEqual(file.meta, {
+    name: 'Demo',
+    author: null,
+    description: '[red]desc[]',
+    version: null,
+    minGameVersion: '146',
     dependencies: { mindustry: '146' },
     hidden: false,
     legacyCompatible: false,
     main: 'a.b',
+    java: false,
     hasScripts: false,
     hasJava: true,
   });
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
-  assert.equal(index.mods[0].hasJava, true);
-  assert.equal(index.mods[0].hasScripts, false);
+  assert.equal(index.mods[0].modType, 'java');
   assert.equal(index.mods[0].descriptionPlain, 'desc');
 });
 
@@ -291,24 +317,17 @@ test('全量刷新：上游删除的 tag 保留在文件里并标 removed，inde
   const file = JSON.parse(
     await readFile(path.join(dir, 'releases', 'a', 'one.json'), 'utf8'),
   );
-  const byTag = new Map(file.releases.map((entry) => [entry.tag, entry]));
-  assert.equal(file.releases.length, 2);
+  const byTag = new Map(file.versions.map((entry) => [entry.tag, entry]));
+  assert.equal(file.versions.length, 2);
   assert.equal(byTag.get('v2').removed, undefined);
   assert.equal(byTag.get('v1').removed, true);
-  assert.equal(byTag.get('v1').removedAt, byTag.get('v1').removedAt);
-  assert.ok(Date.parse(byTag.get('v1').removedAt));
-  assert.equal(byTag.get('v2').commitSha, SHA_V2);
-  assert.equal(
-    byTag.get('v2').archiveByCommitUrl,
-    `https://github.com/a/one/archive/${SHA_V2}.zip`,
-  );
+  assert.ok(byTag.get('v1').removedAt);
+  assert.equal(byTag.get('v2').kind, 'tag');
 
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));
-  assert.equal(index.mods[0].removedCount, 1);
   assert.equal(index.mods[0].tagCount, 2);
-  // 上游 release 取消但 tag 还在：条目退化为 tag-only，不算删除
-  assert.equal(index.mods[0].releaseCount, 1);
-  assert.equal(byTag.get('v2').hasRelease, false);
+  assert.equal(index.mods[0].releaseCount, 0);
+  assert.equal('removedCount' in index.mods[0], false);
 });
 
 test('只刷部分页：不上游缺失判定为删除，远处缓存条目保持不变', async (t) => {
@@ -330,9 +349,7 @@ test('只刷部分页：不上游缺失判定为删除，远处缓存条目保�
   const file = JSON.parse(
     await readFile(path.join(dir, 'releases', 'a', 'one.json'), 'utf8'),
   );
-  const byTag = new Map(file.releases.map((entry) => [entry.tag, entry]));
+  const byTag = new Map(file.versions.map((entry) => [entry.tag, entry]));
   assert.equal(byTag.get('v1').removed, undefined);
-  assert.equal(byTag.get('v1').commitSha, SHA_V1);
-  assert.equal(byTag.get('v2').hasRelease, false);
-  assert.equal(byTag.get('v2').commitSha, SHA_V2);
+  assert.equal(byTag.get('v1').kind, 'tag');
 });

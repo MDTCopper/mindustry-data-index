@@ -1,6 +1,7 @@
 // releases：拉全部分页、规范化单条 release、挑下载链接、与旧数据合并
 
 import { assertRepo } from './paths.js';
+import { buildV3Versions } from './model-v3.js';
 
 export const PER_PAGE = 100;
 const MAX_PAGES = 100;
@@ -405,17 +406,45 @@ export async function mergeReleaseMetadata({
   return { releases: merged, metaFetched, metaReused };
 }
 
-// per-mod 文件当前 schemaVersion：v2 = compat/meta/commitSha/删除留档（v1 由迁移逻辑本地补全）
-export const RELEASES_FORMAT_VERSION = 2;
+// per-mod 文件当前 schemaVersion：v3 = versions/modType/游戏版本区间/时间（v1/v2 由迁移逻辑本地补全）
+export const RELEASES_FORMAT_VERSION = 3;
 
-// per-mod 文件只存数据：ETag/调度时间放到 state/refresh.json，避免每日仅因 ETag 变化重写 991 个文件
-export function buildReleasesFile({ repo, releases, compat = [], meta = null, generatedAt }) {
-  return {
+// 内部兼容：v3 文件仍保留非枚举的 releases 视图，供刷新/合并/变更流继续复用
+function attachInternalReleases(file, releases) {
+  Object.defineProperty(file, 'releases', {
+    value: releases,
+    enumerable: false,
+    configurable: true,
+    writable: true,
+  });
+  return file;
+}
+
+// per-mod 文件只存数据：ETag/调度时间放到 state/refresh.json
+export function buildReleasesFile({
+  repo,
+  releases,
+  meta = null,
+  generatedAt,
+  modType = 'json',
+  gameVersions = [],
+  gateFile = null,
+}) {
+  const versions = buildV3Versions({
+    repo,
+    releases,
+    meta,
+    modType,
+    gameVersions,
+    gateFile,
+  });
+  const file = {
     formatVersion: RELEASES_FORMAT_VERSION,
     repo,
     generatedAt,
-    releases,
-    compat,
-    meta,
+    modType,
+    versions,
+    ...(meta ? { meta } : {}),
   };
+  return attachInternalReleases(file, releases);
 }

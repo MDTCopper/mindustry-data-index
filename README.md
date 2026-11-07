@@ -7,7 +7,7 @@ Mindustry 生态里「可自动化产生」的公共数据索引，由 GitHub Ac
 
 | 数据集 | 产物 | 用途 | 更新频率 |
 | --- | --- | --- | --- |
-| 模组索引（官方） | `index.json`、`releases/<owner>/<repo>.json`、`summary.json/csv` | 官方模组列表里每个模组的全部 git tag、预发布标识、逐 tag 的 `version`/`minGameVersion`、下载链接、下载量/体积 | 最新 100 tag 每 2 小时；第 2 页每周；全量每月 |
+| 模组索引（官方） | `index.json`、`index-full.json`、`releases/<owner>/<repo>.json`、`summary.json/csv` | v3：modType、每个 tag 的 modVersion/minGameVersion、适配游戏版本闭区间、时间、下载地址/下载量、总表 | 最新 100 tag 每 2 小时；第 2 页每周；全量每月 |
 | 模组索引（社区） | `community/index.json`、`community/releases/<owner>/<repo>.json`、`community/summary.json/csv` | GitHub `mindustry-mod` topic 扫描到的、不在官方列表里的社区模组（结构同官方，条目带 `source:"topic"`） | 同官方分档；发现/黑名单每天同步 |
 | 游戏版本列表 | `mindustry/versions.json` | 官方 Mindustry 全部正式版 + 最新 BE，字段与启动器 `remote/mindustry_versions.json` 快照兼容 | 约每 30 分钟一次 |
 | 最小版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 普通/脚本模组与 Java 模组**分开**的最低模组版本门禁，语义来自 mmgvm | 约每 30 分钟一次 |
@@ -58,9 +58,8 @@ schema/*.json                           # 各数据文件的 JSON Schema（draft
 `summary.json/csv` 仍是全量，带 `heatScore`/`heatRank`/`recommendVisible` 列；旧的独立
 `heat/index.json`、`heat/summary.csv` 不再生成（见下文「热度与模组列表」）。
 
-per-mod 文件当前 `formatVersion` 为 **2**（schemaVersion）：v1 缺少 `compat`/`meta`/`commitSha`
-等字段；运行时读到 v1 会用缓存数据本地重算并写回（不额外发 API），也可以先跑一次
-`node src/main.js --migrate --out .` 一次性迁移全部旧文件。
+per-mod 文件当前 `formatVersion` 为 **3**（schemaVersion）：v3 改为 `versions[]`/`modType`/`gameVersionRanges`、
+时间字段与宽松元数据解析；v2/v1 旧文件由运行时本地迁移（`--migrate` 也可一次性迁移）。
 
 per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写保留（如
 `releases/Anuken/ExampleMod.json`、`releases/mindustrytool/mindustrytoolmod.json`）。
@@ -89,49 +88,35 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 
 字段摘要（完整字段表见 [docs/schema.md](docs/schema.md)）：
 
-- `index.json`：官方列表字段（`repo`、`internalName`、`name`、`author`、`version`、`minGameVersion`、
-  `lastUpdated`、`stars`、`hasIcon`、`hasScripts`、`hasJava`，原样保留类型与脏值）加上
-  `iconUrl`、`iconHash`、`releasesPath`、`releaseCount`（有 GitHub Release 的 tag 数）、`tagCount`
-  （全部 git tag 数，含已删除留档）、`removedCount`（作者已删除的 tag 数）、`latestRelease`、
-  `latestCompatible`（当前最新游戏版本下推荐的 tag，没有则为 `null`）、`compatRanges`（兼容区间段数）、
-  `releaseDataUpdatedAt`，
-  以及下载量/体积统计：`totalDownloads`（历史累计，按首选资产）、`allAssetsDownloads`（全部资产）、
-  `latestDownloads`、`latestSizeBytes`、`totalSizeBytes`；`latestRelease` 是「最新的有 Release 且未被删除的条目」，
-  并带 `downloads`/`sizeBytes`。`skipped` 记录本次抓取失败的仓库。`iconUrl` 与启动器
-  `githubModIconBase` 一致（`icons/<owner>_<repo>`，`hasIcon === false` 时为 `null`），
-  `iconHash` 原样保留官方值供客户端做缓存。
-- `releases/<owner>/<repo>.json`：收录该仓库的**全部 git tag**。每条有 `tag`、`name`、`hasRelease`、
-  `prerelease`、`publishedAt`、`htmlUrl`、`modVersion`、`minGameVersion`、`metadataPath`、
-  `metadataStatus`、`downloadUrl`、`sourceArchiveUrl`、`assets`、`commitSha`、`archiveByCommitUrl`，
-  以及删除留档字段 `removed`/`removedAt`（可选，仅被作者删除的条目出现）。
-  - `hasRelease === true`：GitHub Release 条目，`prerelease`/`publishedAt` 来自 Release，资产按 release
-    接口取；`downloadUrl` 用首选资产（`hasJava` 取体积最大的 `.jar`，否则 `.zip`），没有对应资产回落源码归档。
-    启动器对「Java 模组没有 jar」是禁用下载、不给按钮。
-  - `hasRelease === false`：只有 git tag、没有建 Release，此时 `prerelease`/`publishedAt` 为 `null`
-    （无法判定），`assets` 为空，`downloadUrl` 就是源码归档地址，`htmlUrl` 指向 `tree/<tag>`。
-    元数据（`modVersion`/`minGameVersion`）仍按 tag 抓取，抓不到为 `null`。
-  - 排序：有 Release 的条目在前（`publishedAt` 降序、同时间 tag 升序），tag-only 条目在后
-    （tag 名称自然降序，如 `v1.10` 在 `v1.9` 前）。
-  - **首选资产口径**：与 `downloadUrl` 一致；没有对应资产时下载量按 0、体积为 `null`。
-  - **tag 被作者删除**：条目不删，标 `removed: true` + `removedAt`（UTC ISO），`index.json` 的
-    `removedCount` 记录数量，`tagCount` 仍是条目总数。只在「全量 tags / releases 刷新」（每月一次或
-    `--no-cache`）时做缺失判定；只刷第 1/2 页时不能判定远处条目被删，绝不误标。上游重新出现的 tag
-    会清掉 `removed`。每条同时记录 `commitSha`（tags API 的 `commit.sha`）与
-    `archiveByCommitUrl = https://github.com/<repo>/archive/<sha>.zip`：tag 删除后只要 commit 未被
-    GitHub GC，仍可 best-effort 下载源码归档；拿不到 sha 时为 `null`。
-  - **`compat`（游戏版本 → 推荐 tag）**：按发布时间的从新到旧，为每个有 `minGameVersion` 的条目计算
-    `gameVersion ∈ [minGameVersion, maxGameVersion)` 时推荐该 tag；上界取「该模组类型门禁值第一次超过
-    该条目的 `minGameVersion` 的游戏版本」（普通/脚本读 `mod-gate.json`，Java 读 `java-gate.json`），
-    且不盖过更新条目的最小版本；`maxGameVersion: null` 表示无上界。推荐优先 `hasRelease: true`；
-    tag-only 只填补 release 未覆盖的区间（`hasRelease: false`，下载走归档）。没有 release /
-    `minGameVersion` 的模组为 `[]`。相邻区间不重叠，若某个游戏版本没有任何兼容 release，允许出现空档。
-- `summary.json`：`totals`（`mods`/`releases`/`downloads`/`sizeBytes` 全局合计，`releases` 只统计有 Release
-  的条目）+ `mods[]`（`repo`、`name`、`author`、`stars`、`releaseCount`、`tagCount`、5 个统计字段、
-  `latestTag`/`latestPrerelease`/`latestModVersion`/`latestMinGameVersion`、`iconUrl`、`releasesPath`），
-  按 `totalDownloads` 降序（并列按 `stars` 降序、`repo` 升序）；下载量/体积只按 Release 资产算，
-  tag-only 条目不受影响（0/null）；无 Release / 无资产的模组也保留。
-- `summary.csv`：与 `summary.json` 同列（不含 `totals`；`tagCount` 紧跟 `releaseCount`，
-  `releasesPath` 为最后一列），UTF-8 **带 BOM**、CRLF 换行，逗号/引号/换行按 CSV 规则转义，可直接用 Excel 打开。
+- `index.json`：v3 模组列表（`formatVersion: 3`）。字段：`repo`、`name`、`namePlain`、`author`、
+  `authorPlain`、`descriptionPlain`、`modType`（`java`/`js`/`json`）、`version`、`minGameVersion`、
+  `gameVersionRanges`（实际游戏版本闭区间数组，见下）、`stars`、`hasIcon`、`iconUrl`、`iconHash`、
+  `releasesPath`、`releaseCount`（有资产的 Release 版本数）、`tagCount`（非 Java 的可见 tag 总数；Java 不写）、
+  `releaseUpdatedAt`（最新 Release 时间）、`commitUpdatedAt`（仓库 `pushed_at`，来自 `state/repo-stats.json`）、
+  `totalDownloads`/`allAssetsDownloads`、`releaseDataUpdatedAt`，以及合并进来的 `heat`。
+  官方 `mods.json` **只作为 repo 列表**，名称/作者/描述/版本/`minGameVersion`/`main`/`scripts` 等来自各 tag 的
+  `mod.hjson`（优先）或 `mod.json` 元数据；不再透传 `iosCompatible`/`legacyCompatible`/`lastUpdated`/
+  `removedCount`/`latest*`/`totalSizeBytes` 等官方字段。
+- `releases/<owner>/<repo>.json`：v3 per-mod 文件，字段 `formatVersion:3`、`repo`、`generatedAt`、
+  `modType`、`versions[]`（可选 `meta`）。每条 version：
+  `tag`、`kind`（`release`/`tag`）、`modVersion`、`minGameVersion`、`gameVersionRanges`、
+  `releasedAt`（Release 的 publishedAt）、`committedAt`（tag commit 时间，拿得到才写）、`downloadUrl`、
+  `sizeBytes`/`downloadCount`（有资产时）、`prerelease`（仅 true 时）、`removed`/`removedAt`（删除留档）。
+  **null 字段一律不写**；没有 `minGameVersion` 的条目丢弃，若一个模组一条版本都不剩则从 index 移除并删除该文件。
+  版本列表 = 有资产的 Release + 非 Java 的 tag-only（无资产 Release 也按源码归档作为 tag 条目）；Java 的
+  tag-only 不进入版本列表。`downloadUrl` 用首选资产（Java 取体积最大的 `.jar`，否则 `.zip`），否则源码归档。
+- **`gameVersionRanges`**：对每个有 `minGameVersion = m` 的 version，遍历 `mindustry/versions.json` 的正式版
+  游戏版本 `g`，满足 `g >= m` 且对应门禁 `gate(g) <= m` 的连续版本段输出为
+  `[{from:"136",to:"146.5"}]`；`from`/`to` 是实际游戏版本号、闭区间，中间空档用多段表示。
+  模组级 `gameVersionRanges` 是所有 version 区间的并集（合并重叠/相邻），按 `from` 升序。
+- `summary.json`：`totals`（`mods`/`releases`/`downloads`）+ `mods[]`（`repo`、`name`、`namePlain`、`author`、
+  `stars`、`modType`、`releaseCount`、`tagCount`（非 Java）、`totalDownloads`、`allAssetsDownloads`、
+  `minGameVersion`、`gameVersionRanges`（JSON 字符串）、`releaseUpdatedAt`、`commitUpdatedAt`、`iconUrl`、
+  `heatScore`、`heatRank`、`recommendVisible`、`releasesPath`），按 `totalDownloads` 降序（并列 `stars` 降序、
+  `repo` 升序）。
+- `summary.csv`：与 `summary.json` 同列（不含 `totals`），UTF-8 **带 BOM**、CRLF，逗号/引号/换行按 CSV 转义。
+- `state/repo-stats.json`：`stars`/`archived`/`createdAt`/`pushedAt` 缓存，每周刷新；stars 优先用它，
+  拿不到回退官方列表；`pushedAt` 供 `commitUpdatedAt`。配额不足时优雅停止并保留旧缓存。
 - `state/refresh.json`：只给增量调度用（`page1Etag` + `page1FetchedAt`（2h）/ `page2FetchedAt`（7d）/
   `fullFetchedAt`（30d）/ `tagsFetchedAt`），使用方不需要读取；它只在 ETag / 抓取时间变化时更新，每天是一次小 diff。
 - `mindustry/versions.json`：`update_time`、`source`、`releases[]`（`name`/`tag_name`/`published_at`/
@@ -197,12 +182,20 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   的 JSON Schema（draft 2020-12），见 [schema/](schema/)。字段细节见 [docs/schema.md](docs/schema.md)；
   测试会校验 schema 是合法 JSON 且关键 required 字段齐全。
 
-## 元数据补全与纯文本字段
+## 元数据解析与纯文本字段
 
-- 官方 index 条目透传 `iosCompatible`/`legacyCompatible`；per-mod 文件新增 `meta`（取最新 tag 的
-  `mod.json`/`mod.hjson`）：`{dependencies, hidden, legacyCompatible, main, hasScripts, hasJava}`，
-  拿不到元数据时为 `null`。**`hasJava`/`hasScripts` 校正规则**：`meta.main` 存在且没有 `scripts` →
-  `hasJava: true`，有 `scripts` → `hasScripts: true`；拿不到 meta 时保持官方列表原值。
+- **查找顺序按游戏源码**：root 下 `mod.json` → `mod.hjson` → `plugin.json` → `plugin.hjson`，
+  找到即停；**不读 `assets/mod.json`**（游戏不读，官方 bot 会读，因此列表里可能存在游戏装不上的 mod）。
+- **解析器按 Arc `Jval`/Hparser 语义**（Hjson 超集）：注释 `#`/`//`/`/* */`、根大括号可省、
+  无引号 key/字符串、单双引号、`'''` 多行、逗号完全可选、引号内裸换行、重复 key 后值生效；
+  数字按严格 JSON 规则（前导 0 非法），`1.1.7` 这类解析失败按字符串；**BOM 不剥离**（BOM 并进首个 key
+  → name 缺失 → 游戏跳过，我们同样跳过，不主动 strip）。解析失败/缺 `name` 的 mod 跳过，与游戏一致。
+- **modType**：`meta.java == true` 或 `main` 非空 → `java`；root `scripts/main.js` 存在 → `js`；
+  其余 → `json`。官方列表的 `hasJava`/`hasScripts` 是 bot 启发式，不再采用。
+- **minGameVersion**：始终字符串；缺失/非法/数组（游戏不支持数组）视为不可用，该版本丢弃；
+  比较按 `Version.isAtLeast`（major.minor），门禁用 `getMinMajor`（首个 `.` 前数字）。
+- per-mod `meta`（最新 tag）：`{dependencies, hidden, legacyCompatible, main, java, hasScripts, hasJava}`，
+  拿不到元数据时为 `null`。
 - index（官方+社区）每条新增 `namePlain`/`authorPlain`/`descriptionPlain`：去掉 Mindustry 富文本颜色标记
   （`[red]`、`[#00ff00]`、`[]` 等）、换行与多余空白；普通英文方括号（如 `[Mod]`）不会被误删。
   `summary.json/csv` 增加 `namePlain` 列（紧跟 `name`）便于搜索。
@@ -235,10 +228,9 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   **分数不裁剪**，可 >1 或 <0，保留 4 位小数；`rank` 按展示分降序唯一排名（同分 repo 升序）。
 - **新 mod 倍率**：180 天内 `1 + 0.325×exp(-age/30)`（30d≈1.12、60d≈1.04、90d≈1.016，之后 clamp 1）；
   年龄优先取 `created_at`（缓存 `state/repo-created.json`，一次抓取永久复用），拿不到用最早 release 时间。
-- **非 Java 且没有 release 资产下载量**（`hasJava === false && totalDownloads === 0`，即 JSON/JS 走 main
-  分支、没有可统计资产）的模组：下载项视为**缺失**而不是 0 分——移除下载 0.40 权重，剩余
-  `(星标×0.5 + 更新×0.1) / 0.6` 按比例重归一，再乘倍率并扣惩罚。Java 模组不受此规则影响
-  （无下载数据仍按正常权重、下载 0 分）。
+- **非 Java 且没有 release 资产下载量**（`modType !== "java" && totalDownloads === 0`）的模组：
+  下载项视为**缺失**而不是 0 分——移除下载 0.40 权重，剩余 `(星标×0.5 + 更新×0.1) / 0.6` 重归一；
+  heat 的 release 活动按 v3 version 的 `releasedAt` 计算，`totalDownloads` 为 version `downloadCount` 之和。
 - **长期未更新惩罚**：超过 360 天未 release / 无提交各按 `1-exp(-overrun/180)` 饱和，按 `7:3` 合成（0~1），
   总分中再乘 `0.3` 扣减。
 - **只看活跃（`recommendVisible`）**：Copper 启动器的过滤开关，规则只有

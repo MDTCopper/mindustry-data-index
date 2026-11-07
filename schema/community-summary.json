@@ -20,23 +20,22 @@
       "type": "object",
       "properties": {
         "mods": {
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0
         },
         "releases": {
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0
         },
         "downloads": {
-          "type": "integer"
-        },
-        "sizeBytes": {
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0
         }
       },
       "required": [
         "mods",
         "releases",
-        "downloads",
-        "sizeBytes"
+        "downloads"
       ],
       "additionalProperties": true
     },
@@ -62,54 +61,45 @@
             "type": "string"
           },
           "stars": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
+          },
+          "modType": {
+            "enum": [
+              "java",
+              "js",
+              "json"
+            ]
           },
           "releaseCount": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "tagCount": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "totalDownloads": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "allAssetsDownloads": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
-          "latestDownloads": {
-            "type": "integer"
+          "minGameVersion": {
+            "type": "string"
           },
-          "latestSizeBytes": {
-            "type": [
-              "number",
-              "null"
-            ]
+          "gameVersionRanges": {
+            "type": "string"
           },
-          "totalSizeBytes": {
-            "type": [
-              "number",
-              "null"
-            ]
-          },
-          "latestTag": {
+          "releaseUpdatedAt": {
             "type": [
               "string",
               "null"
             ]
           },
-          "latestPrerelease": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "latestModVersion": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "latestMinGameVersion": {
+          "commitUpdatedAt": {
             "type": [
               "string",
               "null"
@@ -121,9 +111,6 @@
               "null"
             ]
           },
-          "releasesPath": {
-            "type": "string"
-          },
           "heatScore": {
             "type": "number"
           },
@@ -133,6 +120,9 @@
           },
           "recommendVisible": {
             "type": "boolean"
+          },
+          "releasesPath": {
+            "type": "string"
           }
         },
         "required": [
@@ -141,17 +131,14 @@
           "namePlain",
           "author",
           "stars",
+          "modType",
           "releaseCount",
-          "tagCount",
           "totalDownloads",
           "allAssetsDownloads",
-          "latestDownloads",
-          "latestSizeBytes",
-          "totalSizeBytes",
-          "latestTag",
-          "latestPrerelease",
-          "latestModVersion",
-          "latestMinGameVersion",
+          "minGameVersion",
+          "gameVersionRanges",
+          "releaseUpdatedAt",
+          "commitUpdatedAt",
           "iconUrl",
           "releasesPath",
           "heatScore",

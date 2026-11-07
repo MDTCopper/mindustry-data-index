@@ -68,7 +68,8 @@ test('parseModMetadataDocument：解析名称/作者/描述/hideBrowser/scripts/
   assert.equal(parsed.hideBrowser, true);
 
   const scripted = parseModMetadataDocument('{ name: "S", scripts: ["a.js"] }');
-  assert.equal(scripted.hasScripts, true);
+  // scripts 元数据字段游戏不认；JS 判定靠 root scripts/ 探测
+  assert.equal(scripted.hasScripts, false);
   assert.equal(scripted.hasJava, false);
   assert.equal(parseModMetadataDocument('not an object'), null);
 });
@@ -139,19 +140,27 @@ test('buildCommunityIndexEntry：releasesPath 带 community/ 前缀、统计口�
     iconUrl: null,
   });
   const file = {
-    formatVersion: 1,
+    formatVersion: 3,
     repo: 'Owner/Repo',
     generatedAt: '2026-11-06T03:00:00.000Z',
-    releases: [
+    modType: 'json',
+    versions: [
       {
         tag: 'v1',
-        name: '1',
-        hasRelease: true,
-        prerelease: false,
-        publishedAt: '2026-10-01T00:00:00Z',
-        assets: [],
+        kind: 'release',
+        modVersion: '1',
+        minGameVersion: '146',
+        gameVersionRanges: [],
+        releasedAt: '2026-10-01T00:00:00Z',
+        downloadUrl: 'https://example.com/v1.zip',
       },
-      { tag: 'v0.9', name: 'v0.9', hasRelease: false, prerelease: null, publishedAt: null, assets: [] },
+      {
+        tag: 'v0.9',
+        kind: 'tag',
+        minGameVersion: '136',
+        gameVersionRanges: [],
+        downloadUrl: 'https://example.com/v0.9.zip',
+      },
     ],
   };
   const entry = buildCommunityIndexEntry(mod, file, {
@@ -162,7 +171,8 @@ test('buildCommunityIndexEntry：releasesPath 带 community/ 前缀、统计口�
   assert.equal(entry.releasesPath, `${COMMUNITY_DIR}/releases/Owner/Repo.json`);
   assert.equal(entry.releaseCount, 1);
   assert.equal(entry.tagCount, 2);
-  assert.equal(entry.latestRelease.tag, 'v1');
+  assert.equal(entry.modType, 'json');
+  assert.equal(entry.releaseUpdatedAt, '2026-10-01T00:00:00Z');
 });
 
 test('detectCommunityIcon：root icon.png 404 后试 assets/icon.png', async () => {

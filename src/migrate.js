@@ -12,6 +12,7 @@ import { RELEASES_FORMAT_VERSION, buildReleasesFile, archiveByCommitUrl, isRelea
 import { buildCompat, gameVersionsFromFile, latestCompatibleTag } from './compat.js';
 import { plainFields } from './plain.js';
 import { buildSummary, summaryBodyChanged, summaryCsv } from './summary.js';
+import { summarizeVersions } from './model-v3.js';
 import { STATUS_REL_PATH, DATASET_KEYS, buildStatus } from './status.js';
 import { CHANGES_REL_PATH, MAX_CHANGES, mergeChanges } from './changes.js';
 import { normalizeRefreshState } from './refresh-state.js';
@@ -27,8 +28,8 @@ export function needsMigration(file) {
   }
   return (
     file.formatVersion !== CURRENT_FORMAT_VERSION ||
-    !Array.isArray(file.compat) ||
-    !Object.prototype.hasOwnProperty.call(file, 'meta')
+    !Array.isArray(file.versions) ||
+    !['java', 'js', 'json'].includes(file.modType)
   );
 }
 
@@ -69,9 +70,11 @@ export function migrateReleaseFileData({ repo, previous, compatData, now, hasJav
   return buildReleasesFile({
     repo,
     releases: entries,
-    compat,
     meta,
     generatedAt: now,
+    modType: effectiveHasJava ? 'java' : 'json',
+    gameVersions: compatData?.gameVersions ?? [],
+    gateFile: effectiveHasJava ? compatData?.javaGate : compatData?.modGate,
   });
 }
 
@@ -85,38 +88,43 @@ function plainForEntry(entry) {
 
 // 把旧 index 条目补到 v2 字段（不改变统计，统计等下一次抓取时校正）
 export function migrateIndexEntry(entry, file, { gameVersions = [], community = false } = {}) {
-  const releases = Array.isArray(file?.releases) ? file.releases : [];
-  const releaseEntries = releases.filter(isReleaseEntry);
-  const first =
-    releaseEntries.find((item) => item.removed !== true) ?? releaseEntries[0] ?? null;
   const meta = file?.meta && typeof file.meta === 'object' ? file.meta : null;
-  const plain = plainForEntry(entry);
-  const compat = Array.isArray(file?.compat) ? file.compat : [];
-  return {
-    ...entry,
-    namePlain: entry.namePlain ?? plain.namePlain,
-    authorPlain: entry.authorPlain ?? plain.authorPlain,
-    descriptionPlain: entry.descriptionPlain ?? plain.descriptionPlain,
-    hasJava: meta ? meta.hasJava === true : entry.hasJava,
-    hasScripts: meta ? meta.hasScripts === true : entry.hasScripts,
-    iosCompatible: entry.iosCompatible ?? null,
-    legacyCompatible: entry.legacyCompatible ?? null,
-    removedCount: releases.filter((item) => item.removed === true).length,
-    compatRanges: compat.length,
-    latestCompatible: latestCompatibleTag(compat, gameVersions),
-    latestRelease: first
-      ? {
-          tag: first.tag,
-          name: first.name,
-          prerelease: first.prerelease,
-          publishedAt: first.publishedAt,
-          downloads: entry.latestRelease?.downloads ?? 0,
-          sizeBytes: entry.latestRelease?.sizeBytes ?? null,
-        }
-      : null,
+  const modType = file?.modType ?? (meta?.hasJava ? 'java' : 'json');
+  const versions = Array.isArray(file?.versions) ? file.versions : [];
+  const summary = summarizeVersions(versions);
+  const plain = plainForEntry(
+    meta
+      ? { name: meta.name ?? entry.name, author: meta.author ?? entry.author, description: meta.description ?? '' }
+      : entry,
+  );
+  const latest = versions.find((version) => version.removed !== true) ?? versions[0] ?? null;
+  const result = {
+    repo: entry.repo,
+    ...(entry.internalName ? { internalName: entry.internalName } : {}),
+    name: meta?.name ?? entry.name,
+    namePlain: plain.namePlain,
+    author: meta?.author ?? entry.author,
+    authorPlain: plain.authorPlain,
+    descriptionPlain: plain.descriptionPlain,
+    version: latest?.modVersion ?? meta?.version ?? entry.version ?? null,
+    minGameVersion: latest?.minGameVersion ?? meta?.minGameVersion ?? entry.minGameVersion ?? null,
+    modType,
+    gameVersionRanges: summary.gameVersionRanges,
+    stars: entry.stars ?? 0,
+    hasIcon: entry.hasIcon,
+    iconUrl: entry.iconUrl ?? null,
+    iconHash: entry.iconHash ?? null,
+    releasesPath: entry.releasesPath,
+    releaseCount: summary.releaseCount,
+    ...(modType === 'java' ? {} : { tagCount: summary.tagCount }),
+    releaseUpdatedAt: summary.releaseUpdatedAt ?? entry.releaseUpdatedAt ?? null,
+    commitUpdatedAt: entry.commitUpdatedAt ?? null,
+    totalDownloads: entry.totalDownloads ?? 0,
+    allAssetsDownloads: entry.allAssetsDownloads ?? 0,
     releaseDataUpdatedAt: file?.generatedAt ?? entry.releaseDataUpdatedAt ?? null,
-    ...(community ? { source: entry.source ?? 'topic' } : {}),
   };
+  if (community) result.source = entry.source ?? 'topic';
+  return result;
 }
 
 async function migrateGroup({
@@ -180,7 +188,7 @@ async function migrateGroup({
     }
     nextEntries.push(nextEntry);
   }
-  const nextIndex = { ...index, mods: nextEntries };
+  const nextIndex = { ...index, formatVersion: 3, mods: nextEntries };
   if (canonicalJson(nextIndex) !== canonicalJson(index)) {
     await writeJsonAtomic(indexPath, nextIndex);
   }
@@ -194,17 +202,15 @@ function summaryRowsFromIndex(index) {
     namePlain: entry.namePlain ?? '',
     author: entry.author,
     stars: entry.stars,
+    modType: entry.modType,
     releaseCount: entry.releaseCount,
-    tagCount: entry.tagCount,
+    ...(entry.modType === 'java' ? {} : { tagCount: entry.tagCount }),
     totalDownloads: entry.totalDownloads,
     allAssetsDownloads: entry.allAssetsDownloads,
-    latestDownloads: entry.latestDownloads,
-    latestSizeBytes: entry.latestSizeBytes,
-    totalSizeBytes: entry.totalSizeBytes,
-    latestTag: entry.latestRelease?.tag ?? null,
-    latestPrerelease: entry.latestRelease?.prerelease ?? null,
-    latestModVersion: null,
-    latestMinGameVersion: null,
+    minGameVersion: entry.minGameVersion,
+    gameVersionRanges: JSON.stringify(entry.gameVersionRanges ?? []),
+    releaseUpdatedAt: entry.releaseUpdatedAt ?? null,
+    commitUpdatedAt: entry.commitUpdatedAt ?? null,
     iconUrl: entry.iconUrl,
     releasesPath: entry.releasesPath,
   }));

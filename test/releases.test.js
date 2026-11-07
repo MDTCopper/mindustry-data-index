@@ -304,29 +304,48 @@ test('mergeReleaseMetadata：旧 ok 复用、新 tag 与未成功旧 tag 才抓�
   assert.equal(v2.metadataPath, 'mod.hjson');
 });
 
-test('buildReleasesFile：formatVersion / repo / generatedAt / releases / compat', () => {
+test('buildReleasesFile：v3 formatVersion / repo / generatedAt / versions / modType', () => {
   const file = buildReleasesFile({
     repo: 'owner/repo',
     releases: [],
     generatedAt: '2026-11-06T03:00:00.000Z',
+    modType: 'json',
   });
   assert.deepEqual(file, {
-    formatVersion: 2,
+    formatVersion: 3,
     repo: 'owner/repo',
     generatedAt: '2026-11-06T03:00:00.000Z',
-    releases: [],
-    compat: [],
-    meta: null,
+    modType: 'json',
+    versions: [],
   });
-  assert.deepEqual(
-    buildReleasesFile({
-      repo: 'owner/repo',
-      releases: [],
-      compat: [{ tag: 'v1' }],
-      generatedAt: '2026-11-06T03:00:00.000Z',
-    }).compat,
-    [{ tag: 'v1' }],
-  );
+  const withVersion = buildReleasesFile({
+    repo: 'owner/repo',
+    releases: [
+      {
+        tag: 'v1',
+        hasRelease: true,
+        publishedAt: '2026-10-01T00:00:00Z',
+        minGameVersion: '146',
+        modVersion: '1.0',
+        assets: [
+          {
+            name: 'mod.jar',
+            size: 10,
+            downloadCount: 2,
+            downloadUrl: 'https://example.com/mod.jar',
+          },
+        ],
+      },
+    ],
+    modType: 'java',
+    gameVersions: [{ tag: 'v146', version: 146 }, { tag: 'v147', version: 147 }],
+    gateFile: null,
+    generatedAt: '2026-11-06T03:00:00.000Z',
+  });
+  assert.equal(withVersion.versions.length, 1);
+  assert.equal(withVersion.versions[0].kind, 'release');
+  assert.equal(withVersion.versions[0].minGameVersion, '146');
+  assert.deepEqual(withVersion.versions[0].gameVersionRanges, [{ from: '146', to: '147' }]);
 });
 
 test('normalizeRelease：有 Release 的条目 hasRelease=true', () => {

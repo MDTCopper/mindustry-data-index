@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/repo-stats.json",
+  "title": "repo-stats",
+  "description": "GitHub 仓库统计缓存（stars/archived/created_at/pushed_at），每周刷新",
+  "type": "object",
+  "properties": {
+    "formatVersion": { "const": 1 },
+    "updatedAt": { "type": "string", "description": "UTC ISO 8601 时间" },
+    "repos": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "stars": { "type": "integer", "minimum": 0 },
+          "archived": { "type": "boolean" },
+          "createdAt": { "type": ["string", "null"] },
+          "pushedAt": { "type": ["string", "null"] },
+          "fetchedAt": { "type": "string" },
+          "missing": { "type": "boolean" }
+        },
+        "required": ["fetchedAt"],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["formatVersion", "updatedAt", "repos"],
+  "additionalProperties": true
+}

@@ -65,7 +65,7 @@ function validFixture(repo = 'owner/demo') {
   };
   return {
     index: {
-      formatVersion: 1,
+      formatVersion: 3,
       generatedAt: GENERATED_AT,
       source: {
         modsUrl: 'https://raw.githubusercontent.com/Anuken/MindustryMods/master/mods.json',
@@ -82,69 +82,61 @@ function validFixture(repo = 'owner/demo') {
           descriptionPlain: '',
           version: '1.0',
           minGameVersion: '146',
-          lastUpdated: '2026-10-01T00:00:00Z',
+          modType: 'java',
+          gameVersionRanges: [{ from: '146', to: '146' }],
           stars: 3,
           hasIcon: true,
-          hasScripts: false,
-          hasJava: true,
-          iosCompatible: false,
-          legacyCompatible: true,
           iconUrl: `https://raw.githubusercontent.com/Anuken/MindustryMods/master/icons/${stem}`,
           iconHash: null,
           releasesPath: releasesRelPath(repo),
           releaseCount: 1,
-          tagCount: 1,
-          removedCount: 0,
+          releaseUpdatedAt: '2026-10-01T12:00:00Z',
+          commitUpdatedAt: null,
           totalDownloads: 4,
           allAssetsDownloads: 4,
-          latestDownloads: 4,
-          latestSizeBytes: 123,
-          totalSizeBytes: 123,
-          latestRelease: {
-            tag: 'v1.0',
-            name: '1.0',
-            prerelease: false,
-            publishedAt: '2026-10-01T12:00:00Z',
-            downloads: 4,
-            sizeBytes: 123,
-          },
-          latestCompatible: null,
-          compatRanges: 0,
           releaseDataUpdatedAt: GENERATED_AT,
         },
       ],
       skipped: [],
     },
     releaseFile: {
-      formatVersion: 2,
+      formatVersion: 3,
       repo,
       generatedAt: GENERATED_AT,
-      releases: [release],
-      compat: [],
-      meta: null,
+      modType: 'java',
+      versions: [
+        {
+          tag: 'v1.0',
+          kind: 'release',
+          modVersion: '1.0',
+          minGameVersion: '146',
+          gameVersionRanges: [{ from: '146', to: '146' }],
+          releasedAt: '2026-10-01T12:00:00Z',
+          downloadUrl: `https://github.com/${repo}/releases/download/v1.0/demo.jar`,
+          sizeBytes: 123,
+          downloadCount: 4,
+        },
+      ],
     },
   };
 }
 
-function summaryRow(entry, releaseFile) {
-  const first = releaseFile.releases.find((release) => release.hasRelease !== false) ?? null;
+function summaryRow(entry) {
   return {
     repo: entry.repo,
     name: entry.name,
     namePlain: entry.namePlain ?? '',
     author: entry.author,
     stars: entry.stars,
+    modType: entry.modType,
     releaseCount: entry.releaseCount,
-    tagCount: entry.tagCount,
+    ...(entry.modType === 'java' ? {} : { tagCount: entry.tagCount }),
     totalDownloads: entry.totalDownloads,
     allAssetsDownloads: entry.allAssetsDownloads,
-    latestDownloads: entry.latestDownloads,
-    latestSizeBytes: entry.latestSizeBytes,
-    totalSizeBytes: entry.totalSizeBytes,
-    latestTag: first?.tag ?? null,
-    latestPrerelease: first ? first.prerelease : null,
-    latestModVersion: first?.modVersion ?? null,
-    latestMinGameVersion: first?.minGameVersion ?? null,
+    minGameVersion: entry.minGameVersion,
+    gameVersionRanges: JSON.stringify(entry.gameVersionRanges ?? []),
+    releaseUpdatedAt: entry.releaseUpdatedAt ?? null,
+    commitUpdatedAt: entry.commitUpdatedAt ?? null,
     iconUrl: entry.iconUrl,
     ...(entry.heat
       ? {
@@ -157,9 +149,9 @@ function summaryRow(entry, releaseFile) {
   };
 }
 
-async function writeSummaryFiles(dir, index, releaseFile) {
+async function writeSummaryFiles(dir, index) {
   ensureHeat(index);
-  const rows = index.mods.map((entry) => summaryRow(entry, releaseFile));
+  const rows = index.mods.map((entry) => summaryRow(entry));
   const summary = buildSummary({ rows, generatedAt: GENERATED_AT });
   await writeFile(path.join(dir, 'summary.json'), JSON.stringify(summary, null, 2));
   await writeFile(path.join(dir, 'summary.csv'), summaryCsv(summary.mods));
@@ -240,16 +232,16 @@ test('缺少 index.json 报错', async (t) => {
 
 test('缺字段能被发现', async (t) => {
   const fixture = validFixture();
-  delete fixture.index.mods[0].internalName;
+  delete fixture.index.mods[0].name;
   const dir = await makeFixtureDir(fixture);
   t.after(() => rm(dir, { recursive: true, force: true }));
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('internalName')));
+  assert.ok(result.errors.some((message) => message.includes('.name')));
 });
 
 test('重复 tag 能被发现', async (t) => {
   const fixture = validFixture();
-  fixture.releaseFile.releases.push({ ...fixture.releaseFile.releases[0] });
+  fixture.releaseFile.versions.push({ ...fixture.releaseFile.versions[0] });
   fixture.index.mods[0].releaseCount = 2;
   const dir = await makeFixtureDir(fixture);
   t.after(() => rm(dir, { recursive: true, force: true }));
@@ -458,7 +450,7 @@ test('hasIcon=false 却给 iconUrl、iconHash 类型不对会被发现', async (
   t.after(() => rm(dir, { recursive: true, force: true }));
   const result = await validateDir(dir);
   assert.ok(result.errors.some((message) => message.includes('iconUrl 与 repo/hasIcon 不一致')));
-  assert.ok(result.errors.some((message) => message.includes('iconHash 应为非空字符串或 null')));
+  assert.ok(result.errors.some((message) => message.includes('iconHash 应为字符串或 null')));
 });
 
 // ---------- releasesPath 路径段校验（新 owner/repo 结构） ----------
@@ -519,17 +511,6 @@ test('旧 flat 文件仍存在时给迁移未完成 warning', async (t) => {
 });
 
 // ---------- 下载量/体积统计与总表 ----------
-
-test('index 统计字段与 per-mod 数据重算不一致会被发现', async (t) => {
-  const fixture = validFixture();
-  fixture.index.mods[0].totalDownloads = 999;
-  const dir = await makeFixtureDir(fixture);
-  t.after(() => rm(dir, { recursive: true, force: true }));
-  const result = await validateDir(dir);
-  assert.ok(
-    result.errors.some((message) => message.includes('totalDownloads 与 per-mod 数据重算不一致')),
-  );
-});
 
 test('缺 summary.json 只给警告（旧数据兼容）', async (t) => {
   const fixture = validFixture();
@@ -607,110 +588,36 @@ function tagOnlyEntry(repo, tag = 'v0.9') {
   };
 }
 
-function withTagOnly(fixture = validFixture()) {
-  fixture.releaseFile.releases.push(tagOnlyEntry(fixture.releaseFile.repo));
-  fixture.index.mods[0].tagCount = 2;
-  return fixture;
-}
-
-test('tag-only 条目（hasRelease=false）校验通过', async (t) => {
-  const dir = await makeFixtureDir(withTagOnly());
-  t.after(() => rm(dir, { recursive: true, force: true }));
-  const result = await validateDir(dir);
-  assert.deepEqual(result.errors, []);
-  assert.deepEqual(result.warnings, []);
-});
-
-test('tag-only 条目字段不合法会被发现', async (t) => {
-  const fixture = withTagOnly();
-  const tagOnly = fixture.releaseFile.releases[1];
-  tagOnly.prerelease = false;
-  tagOnly.publishedAt = '2026-10-01T12:00:00Z';
-  tagOnly.assets = [{ name: 'x.jar', size: 1, downloadCount: 0, downloadUrl: 'https://x' }];
-  tagOnly.downloadUrl = 'https://github.com/owner/demo/releases/download/v0.9/x.jar';
-  const dir = await makeFixtureDir(fixture);
-  t.after(() => rm(dir, { recursive: true, force: true }));
-  const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('prerelease 在 hasRelease=false')));
-  assert.ok(result.errors.some((message) => message.includes('publishedAt 在 hasRelease=false')));
-  assert.ok(result.errors.some((message) => message.includes('assets 在 hasRelease=false')));
-  assert.ok(result.errors.some((message) => message.includes('downloadUrl 在 hasRelease=false')));
-});
-
-test('tagCount / releaseCount 与文件条数不一致会被发现', async (t) => {
-  const fixture = withTagOnly();
-  fixture.index.mods[0].tagCount = 3;
-  fixture.index.mods[0].releaseCount = 2;
-  const dir = await makeFixtureDir(fixture);
-  t.after(() => rm(dir, { recursive: true, force: true }));
-  const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('tagCount（3）')));
-  assert.ok(result.errors.some((message) => message.includes('hasRelease=true 条数')));
-});
-
-// ---------- 社区模组（community/） ----------
-
 function communityFixture({ repo = 'communitymods/demo' } = {}) {
-  const release = {
-    tag: 'v1.0',
-    name: '1.0',
-    hasRelease: true,
-    prerelease: false,
-    publishedAt: '2026-10-01T12:00:00Z',
-    htmlUrl: `https://github.com/${repo}/releases/tag/v1.0`,
-    modVersion: '1.0',
-    minGameVersion: '146',
-    metadataPath: 'mod.hjson',
-    metadataStatus: 'ok',
-    downloadUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
-    sourceArchiveUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
-    assets: [],
-  };
   const entry = {
     repo,
     source: 'topic',
-    internalName: null,
     name: 'Demo',
     namePlain: 'Demo',
     author: 'author',
     authorPlain: 'author',
     version: '1.0',
     minGameVersion: '146',
+    modType: 'json',
+    gameVersionRanges: [{ from: '146', to: '146' }],
     description: 'a community mod',
     descriptionPlain: 'a community mod',
-    lastUpdated: '2026-11-01T00:00:00Z',
     stars: 2,
     hasIcon: false,
-    hasScripts: false,
-    hasJava: false,
-    iosCompatible: null,
-    legacyCompatible: null,
     iconUrl: null,
     iconHash: null,
     releasesPath: `community/releases/${repo}.json`,
-    releaseCount: 1,
+    releaseCount: 0,
     tagCount: 1,
-    removedCount: 0,
+    releaseUpdatedAt: '2026-10-01T12:00:00Z',
+    commitUpdatedAt: null,
     totalDownloads: 0,
     allAssetsDownloads: 0,
-    latestDownloads: 0,
-    latestSizeBytes: null,
-    totalSizeBytes: null,
-    latestRelease: {
-      tag: 'v1.0',
-      name: '1.0',
-      prerelease: false,
-      publishedAt: '2026-10-01T12:00:00Z',
-      downloads: 0,
-      sizeBytes: null,
-    },
-    latestCompatible: null,
-    compatRanges: 0,
     releaseDataUpdatedAt: GENERATED_AT,
   };
   return {
     index: {
-      formatVersion: 1,
+      formatVersion: 3,
       generatedAt: GENERATED_AT,
       source: {
         source: 'topic',
@@ -721,15 +628,23 @@ function communityFixture({ repo = 'communitymods/demo' } = {}) {
       skipped: [],
     },
     releaseFile: {
-      formatVersion: 2,
+      formatVersion: 3,
       repo,
       generatedAt: GENERATED_AT,
-      releases: [release],
-      compat: [],
-      meta: null,
+      modType: 'json',
+      versions: [
+        {
+          tag: 'v1.0',
+          kind: 'tag',
+          modVersion: '1.0',
+          minGameVersion: '146',
+          gameVersionRanges: [{ from: '146', to: '146' }],
+          releasedAt: '2026-10-01T12:00:00Z',
+          downloadUrl: `https://github.com/${repo}/archive/refs/tags/v1.0.zip`,
+        },
+      ],
     },
     entry,
-    release,
   };
 }
 
@@ -747,7 +662,10 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
   const communityVisible = {
     ...communityFull,
     source: communityFull.source
-      ? { ...communityFull.source, modCount: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true).length }
+      ? {
+          ...communityFull.source,
+          modCount: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true).length,
+        }
       : communityFull.source,
     mods: communityFull.mods.filter((mod) => mod.heat?.recommendVisible === true),
   };
@@ -766,19 +684,18 @@ async function addCommunityFixture(dir, fixture = communityFixture()) {
   const row = {
     repo: fixture.entry.repo,
     name: fixture.entry.name,
+    namePlain: fixture.entry.namePlain ?? '',
     author: fixture.entry.author,
     stars: fixture.entry.stars,
+    modType: fixture.entry.modType,
     releaseCount: fixture.entry.releaseCount,
     tagCount: fixture.entry.tagCount,
     totalDownloads: fixture.entry.totalDownloads,
     allAssetsDownloads: fixture.entry.allAssetsDownloads,
-    latestDownloads: fixture.entry.latestDownloads,
-    latestSizeBytes: fixture.entry.latestSizeBytes,
-    totalSizeBytes: fixture.entry.totalSizeBytes,
-    latestTag: fixture.entry.latestRelease.tag,
-    latestPrerelease: fixture.entry.latestRelease.prerelease,
-    latestModVersion: fixture.release.modVersion,
-    latestMinGameVersion: fixture.release.minGameVersion,
+    minGameVersion: fixture.entry.minGameVersion,
+    gameVersionRanges: JSON.stringify(fixture.entry.gameVersionRanges ?? []),
+    releaseUpdatedAt: fixture.entry.releaseUpdatedAt,
+    commitUpdatedAt: fixture.entry.commitUpdatedAt,
     iconUrl: null,
     heatScore: fixture.index.mods[0].heat.score,
     heatRank: fixture.index.mods[0].heat.rank,
@@ -866,95 +783,6 @@ test('release 文件 compat 合法时通过', () => {
   const errors = [];
   validateReleaseFileData(fixture.releaseFile, { errors });
   assert.deepEqual(errors, []);
-});
-
-test('compat：引用不存在的 tag / 已删除条目 / 区间重叠会被发现', () => {
-  const base = (compat) => ({
-    ...validFixture().releaseFile,
-    compat,
-  });
-  let errors = [];
-  validateReleaseFileData(
-    base([
-      { tag: 'v9', modVersion: '9', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
-    ]),
-    { errors },
-  );
-  assert.ok(errors.some((message) => message.includes('tag 不存在于 releases')));
-
-  const removedFile = validFixture().releaseFile;
-  removedFile.releases[0].removed = true;
-  removedFile.releases[0].removedAt = GENERATED_AT;
-  errors = [];
-  validateReleaseFileData(
-    {
-      ...removedFile,
-      compat: [
-        { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
-      ],
-    },
-    { errors },
-  );
-  assert.ok(errors.some((message) => message.includes('已删除留档')));
-
-  const overlapping = [
-    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: 160, hasRelease: true },
-    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '154', maxGameVersion: null, hasRelease: true },
-  ];
-  errors = [];
-  validateReleaseFileData(base(overlapping), { errors });
-  assert.ok(errors.some((message) => message.includes('重叠')));
-});
-
-test('commitSha / archiveByCommitUrl / removedAt 校验', () => {
-  const file = validFixture().releaseFile;
-  file.releases[0].commitSha = SHA;
-  file.releases[0].archiveByCommitUrl = `https://github.com/owner/demo/archive/${SHA}.zip`;
-  let errors = [];
-  validateReleaseFileData(file, { errors });
-  assert.deepEqual(errors, []);
-
-  file.releases[0].archiveByCommitUrl = 'https://github.com/owner/demo/archive/wrong.zip';
-  errors = [];
-  validateReleaseFileData(file, { errors });
-  assert.ok(errors.some((message) => message.includes('archiveByCommitUrl')));
-
-  const removed = validFixture().releaseFile;
-  removed.releases[0].removed = true;
-  errors = [];
-  validateReleaseFileData(removed, { errors });
-  assert.ok(errors.some((message) => message.includes('removedAt')));
-});
-
-test('index removedCount / compatRanges / latestCompatible 字段校验', () => {
-  const fixture = validFixture();
-  ensureHeat(fixture.index);
-  let errors = [];
-  validateIndexData(fixture.index, { errors });
-  assert.deepEqual(errors, []);
-
-  fixture.index.mods[0].removedCount = 5;
-  fixture.index.mods[0].compatRanges = -1;
-  fixture.index.mods[0].latestCompatible = 42;
-  errors = [];
-  validateIndexData(fixture.index, { errors });
-  assert.ok(errors.some((message) => message.includes('removedCount 不能大于')));
-  assert.ok(errors.some((message) => message.includes('compatRanges')));
-  assert.ok(errors.some((message) => message.includes('latestCompatible')));
-});
-
-test('validateDir：compat 与 index 的 compatRanges / removedCount 一致性', async (t) => {
-  const fixture = validFixture();
-  fixture.releaseFile.compat = [
-    { tag: 'v1.0', modVersion: '1.0', minGameVersion: '146', maxGameVersion: null, hasRelease: true },
-  ];
-  fixture.index.mods[0].compatRanges = 1;
-  // 没有游戏版本数据时 latestCompatible 应为 null
-  fixture.index.mods[0].latestCompatible = null;
-  const dir = await makeFixtureDir(fixture);
-  t.after(() => rm(dir, { recursive: true, force: true }));
-  const result = await validateDir(dir);
-  assert.deepEqual(result.errors, []);
 });
 
 test('validateDir：compatRanges 与文件不一致会被发现', async (t) => {
@@ -1056,11 +884,14 @@ test('validateDir：缺少 index.heat 字段会被发现', async (t) => {
   const dir = await makeFixtureDir();
   t.after(() => rm(dir, { recursive: true, force: true }));
   const indexPath = path.join(dir, 'index.json');
-  const index = JSON.parse(await readFile(indexPath, 'utf8'));
-  delete index.mods[0].heat;
-  await writeFile(indexPath, JSON.stringify(index, null, 2));
+  const fullPath = path.join(dir, 'index-full.json');
+  for (const filePath of [indexPath, fullPath]) {
+    const index = JSON.parse(await readFile(filePath, 'utf8'));
+    delete index.mods[0].heat;
+    await writeFile(filePath, JSON.stringify(index, null, 2));
+  }
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('.heat 缺失或不是对象')));
+  assert.ok(result.errors.some((message) => message.includes('.heat 缺失')));
 });
 
 test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发现', async (t) => {
@@ -1130,7 +961,7 @@ test('validateDir：summary 热度列与 index.heat 不一致会被发现', asyn
   summary.mods[0].heatScore = 0.123;
   await writeFile(summaryPath, JSON.stringify(summary, null, 2));
   const result = await validateDir(dir);
-  assert.ok(result.errors.some((message) => message.includes('heatScore 与 index.heat.score 不一致')));
+  assert.ok(result.errors.some((message) => message.includes('heatScore 与 index.heat')));
 });
 
 test('validateDir：旧 heat/index.json 只给废弃 warning', async (t) => {

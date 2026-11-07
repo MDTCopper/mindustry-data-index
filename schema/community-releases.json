@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "formatVersion": {
-      "const": 2
+      "const": 3
     },
     "repo": {
       "type": "string"
@@ -14,143 +14,6 @@
     "generatedAt": {
       "type": "string",
       "description": "UTC ISO 8601 时间"
-    },
-    "releases": {
-      "type": "array",
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/release-entry.json",
-        "title": "release-entry",
-        "description": "per-mod 文件里的一个 tag/Release 条目",
-        "type": "object",
-        "properties": {
-          "tag": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "hasRelease": {
-            "type": "boolean"
-          },
-          "prerelease": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "publishedAt": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "htmlUrl": {
-            "type": "string"
-          },
-          "modVersion": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "minGameVersion": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "metadataPath": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "metadataStatus": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "downloadUrl": {
-            "type": "string"
-          },
-          "sourceArchiveUrl": {
-            "type": "string"
-          },
-          "assets": {
-            "type": "array"
-          },
-          "commitSha": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "archiveByCommitUrl": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "removed": {
-            "type": "boolean"
-          },
-          "removedAt": {
-            "type": "string",
-            "description": "UTC ISO 8601 时间"
-          }
-        },
-        "required": [
-          "tag",
-          "name",
-          "hasRelease",
-          "downloadUrl",
-          "sourceArchiveUrl",
-          "assets"
-        ],
-        "additionalProperties": true
-      }
-    },
-    "compat": {
-      "type": "array",
-      "items": {
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/compat-entry.json",
-        "title": "compat-entry",
-        "description": "游戏版本 → 推荐 tag 区间",
-        "type": "object",
-        "properties": {
-          "tag": {
-            "type": "string"
-          },
-          "modVersion": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "minGameVersion": {
-            "type": "string"
-          },
-          "maxGameVersion": {
-            "type": [
-              "number",
-              "null"
-            ]
-          },
-          "hasRelease": {
-            "type": "boolean"
-          }
-        },
-        "required": [
-          "tag",
-          "minGameVersion",
-          "maxGameVersion",
-          "hasRelease"
-        ],
-        "additionalProperties": true
-      }
     },
     "meta": {
       "oneOf": [
@@ -197,15 +60,97 @@
           "additionalProperties": true
         }
       ]
+    },
+    "modType": {
+      "enum": [
+        "java",
+        "js",
+        "json"
+      ]
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "release",
+              "tag"
+            ]
+          },
+          "modVersion": {
+            "type": "string"
+          },
+          "minGameVersion": {
+            "type": "string"
+          },
+          "gameVersionRanges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "from": {
+                  "type": "string"
+                },
+                "to": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "from",
+                "to"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "releasedAt": {
+            "type": "string"
+          },
+          "committedAt": {
+            "type": "string"
+          },
+          "downloadUrl": {
+            "type": "string"
+          },
+          "sizeBytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "downloadCount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "prerelease": {
+            "type": "boolean"
+          },
+          "removed": {
+            "type": "boolean"
+          },
+          "removedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "tag",
+          "kind",
+          "minGameVersion",
+          "gameVersionRanges",
+          "downloadUrl"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "formatVersion",
     "repo",
     "generatedAt",
-    "releases",
-    "compat",
-    "meta"
+    "modType",
+    "versions"
   ],
   "additionalProperties": true
 }

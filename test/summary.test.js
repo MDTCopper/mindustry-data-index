@@ -50,24 +50,15 @@ test('buildSummary：按 totalDownloads 降序、stars 降序、repo 升序，�
     mods: 3,
     releases: 6,
     downloads: 119,
-    sizeBytes: 600,
   });
   assert.equal(summary.formatVersion, 1);
 });
 
-test('buildSummary：null 体积不计入合计；空列表合计为 0', () => {
-  const summary = buildSummary({
-    rows: [
-      row({ totalSizeBytes: null }),
-      row({ repo: 'owner/two', totalSizeBytes: 50 }),
-    ],
-    generatedAt: '2026-11-06T03:00:00.000Z',
-  });
-  assert.equal(summary.totals.sizeBytes, 50);
+test('buildSummary：空列表合计为 0', () => {
   assert.deepEqual(buildSummary({ rows: [], generatedAt: '2026-11-06T03:00:00.000Z' }), {
     formatVersion: 1,
     generatedAt: '2026-11-06T03:00:00.000Z',
-    totals: { mods: 0, releases: 0, downloads: 0, sizeBytes: 0 },
+    totals: { mods: 0, releases: 0, downloads: 0 },
     mods: [],
   });
 });

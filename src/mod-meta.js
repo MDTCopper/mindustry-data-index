@@ -1,14 +1,11 @@
-// 按 tag 读 mod.hjson / mod.json，解析 version 与 minGameVersion
+// 按游戏源码顺序读 root 的 mod.json/mod.hjson/plugin.*，解析 v3 元数据
+// 解析器按 Arc Jval/Hparser 语义（Hjson 超集），不使用严格 HJSON 库。
 
-import { parse as parseHjson } from 'hjson';
 import { rawFileUrlVariants } from './releases.js';
+import { parseJval } from './jval.js';
 
-// 候选顺序：root hjson → root json → assets hjson → assets json；
-// hasJava 时 hjson 优先，否则 json 优先（两种都试）
-const CANDIDATES = {
-  java: ['mod.hjson', 'mod.json', 'assets/mod.hjson', 'assets/mod.json'],
-  other: ['mod.json', 'mod.hjson', 'assets/mod.json', 'assets/mod.hjson'],
-};
+// 游戏 Mods.metaFiles 顺序；只查 root（不读 assets/）
+const ROOT_METADATA_FILES = ['mod.json', 'mod.hjson', 'plugin.json', 'plugin.hjson'];
 
 // 解析彻底失败时的正则兜底：只捞需要的两个字段（两种扩展名里都可能是 HJSON 语法）
 const FALLBACK_PATTERNS = {
@@ -16,8 +13,8 @@ const FALLBACK_PATTERNS = {
   minGameVersion: /(?:^|[\s,{])minGameVersion\s*:\s*["']?([^"'\n,}]+)/m,
 };
 
-export function candidateMetadataPaths(hasJava) {
-  return [...(hasJava ? CANDIDATES.java : CANDIDATES.other)];
+export function candidateMetadataPaths(_hasJava) {
+  return [...ROOT_METADATA_FILES];
 }
 
 // 数字转字符串（146 → "146"），字符串原样保留（含 "157.1，" 这类脏值），缺失为 null
@@ -136,23 +133,7 @@ function fieldsFromParsed(parsed) {
 }
 
 export function parseModMetadata(text) {
-  let lastError = null;
-  try {
-    return fieldsFromParsed(parseHjson(text));
-  } catch (error) {
-    lastError = error;
-  }
-  try {
-    return fieldsFromParsed(parseHjson(repairQuotedNewlines(text)));
-  } catch (error) {
-    lastError = error;
-  }
-  // 严格解析与宽松修复都失败：正则兜底只取两个关键字段
-  const fallback = extractModMetadataFields(text);
-  if (fallback) {
-    return fallback;
-  }
-  throw lastError ?? new Error('mod 元数据解析失败');
+  return fieldsFromParsed(parseJval(text));
 }
 
 function scriptsOf(value) {
@@ -162,24 +143,24 @@ function scriptsOf(value) {
   return typeof value === 'string' && value.trim().length > 0;
 }
 
-// 社区模组发现需要完整字段：name/author/description/hideBrowser/scripts/main
+// 社区模组发现需要完整字段：name/author/description/hideBrowser/main
 export function parseModMetadataDocument(text) {
   let parsed;
   try {
-    parsed = parseHjson(text);
+    parsed = parseJval(text);
   } catch {
-    try {
-      parsed = parseHjson(repairQuotedNewlines(text));
-    } catch {
-      parsed = null;
-    }
+    return null;
   }
   if (parsed === null || typeof parsed !== 'object' || Array.isArray(parsed)) {
     return null;
   }
-  const hasScripts = scriptsOf(parsed.scripts);
-  const hasMain = typeof parsed.main === 'string' && parsed.main.trim().length > 0;
+  const hasScripts = parsed.scriptsRoot === true;
+  const main = typeof parsed.main === 'string' && parsed.main.trim().length > 0 ? parsed.main.trim() : null;
   const name = typeof parsed.name === 'string' ? parsed.name.trim() : '';
+  // 游戏：缺 name 直接跳过该 mod
+  if (!name) {
+    return null;
+  }
   const author = typeof parsed.author === 'string' ? parsed.author.trim() : '';
   const description = typeof parsed.description === 'string' ? parsed.description : '';
   return {
@@ -187,11 +168,15 @@ export function parseModMetadataDocument(text) {
     author: author || null,
     description,
     modVersion: toText(parsed.version),
+    // 数组/对象等游戏不支持的类型视为缺省（Jval 绑定 String 得 null → "0"）
     minGameVersion: toText(parsed.minGameVersion),
     hideBrowser: parsed.hideBrowser === true,
     hidden: parsed.hidden === true,
     legacyCompatible: parsed.legacyCompatible === true,
-    main: hasMain ? parsed.main.trim() : null,
+    main,
+    java: parsed.java === true,
+    scriptsRoot: hasScripts,
+    java: parsed.java === true,
     dependencies:
       parsed.dependencies !== null &&
       typeof parsed.dependencies === 'object' &&
@@ -199,28 +184,48 @@ export function parseModMetadataDocument(text) {
         ? parsed.dependencies
         : {},
     hasScripts,
-    // 与官方列表口径近似：有 main 且没有 scripts 视为 Java 模组
-    hasJava: hasMain && !hasScripts,
+    hasJava: parsed.java === true || main !== null,
   };
 }
 
-// per-mod 文件里的 meta：只保留最新 tag 元数据里对客户端有用的字段
+// per-mod 文件里的 meta：保留客户端/索引需要的完整字段（v3 从元数据推导 mod 信息）
 export function metaFromDocument(metadata) {
   if (!metadata) {
     return null;
   }
   return {
+    name: metadata.name ?? null,
+    author: metadata.author ?? null,
+    description: metadata.description ?? '',
+    version: metadata.modVersion ?? null,
+    minGameVersion: metadata.minGameVersion ?? null,
     dependencies: metadata.dependencies ?? {},
     hidden: metadata.hidden === true,
     legacyCompatible: metadata.legacyCompatible === true,
     main: typeof metadata.main === 'string' ? metadata.main : null,
+    java: metadata.java === true,
     hasScripts: metadata.hasScripts === true,
     hasJava: metadata.hasJava === true,
   };
 }
 
-// 用默认分支读社区仓库的 mod 元数据（root 或 assets/ 的 mod.json / mod.hjson）
-const COMMUNITY_CANDIDATES = ['mod.json', 'mod.hjson', 'assets/mod.json', 'assets/mod.hjson'];
+async function detectRootScripts(client, repo, ref) {
+  for (const filePath of ['scripts/main.js']) {
+    for (const url of rawFileUrlVariants(repo, ref, filePath)) {
+      try {
+        const response = await client.get(url);
+        if (response.status === 200) return true;
+        if (response.status !== 404) break;
+      } catch {
+        // ignore
+      }
+    }
+  }
+  return false;
+}
+
+// 社区模组发现候选：游戏同款 root 顺序（不读 assets）
+const COMMUNITY_CANDIDATES = [...ROOT_METADATA_FILES];
 
 export async function fetchCommunityModMetadata(client, { repo, ref }) {
   for (const filePath of COMMUNITY_CANDIDATES) {
@@ -239,6 +244,9 @@ export async function fetchCommunityModMetadata(client, { repo, ref }) {
       }
       const metadata = parseModMetadataDocument(response.text);
       if (metadata) {
+        const scripts = await detectRootScripts(client, repo, ref);
+        metadata.hasScripts = scripts;
+        metadata.scriptsRoot = scripts;
         return { found: true, path: filePath, metadata };
       }
     }
@@ -278,7 +286,12 @@ export async function fetchModMetadata(client, { repo, tag, hasJava }) {
         return metadataResult(failedPath ?? null, 'unparsed');
       }
       try {
-        return metadataResult(path, 'ok', parseModMetadata(response.text));
+        const document = parseModMetadataDocument(response.text);
+        if (!document) throw new Error('元数据缺少 name');
+        return metadataResult(path, 'ok', {
+          modVersion: document.modVersion,
+          minGameVersion: document.minGameVersion,
+        });
       } catch {
         // 命中的文件解析失败：记下路径继续试其它候选
         failedPath ??= path;
@@ -316,6 +329,8 @@ export async function fetchModMetadataDocument(client, { repo, tag, hasJava }) {
       }
       const metadata = parseModMetadataDocument(response.text);
       if (metadata) {
+        metadata.hasScripts = await detectRootScripts(client, repo, tag);
+        metadata.scriptsRoot = metadata.hasScripts;
         return {
           found: true,
           path,

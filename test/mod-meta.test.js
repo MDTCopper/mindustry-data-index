@@ -2,197 +2,217 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   candidateMetadataPaths,
-  parseModMetadata,
-  repairQuotedNewlines,
+  extractModMetadataFields,
   fetchModMetadata,
+  metaFromDocument,
+  parseModMetadata,
+  parseModMetadataDocument,
+  repairQuotedNewlines,
 } from '../src/mod-meta.js';
+import { parseJval } from '../src/jval.js';
+import { computeGameVersionRanges, modTypeOf, parseMinVersion } from '../src/model-v3.js';
 
-// 按 URL 尾部匹配候选路径；长路径优先，避免 assets/mod.hjson 被 mod.hjson 抢先匹配
-function fakeRawClient(routes) {
-  const calls = [];
-  const paths = [
-    'assets/mod.hjson',
-    'assets/mod.json',
-    'mod.hjson',
-    'mod.json',
+const repo = 'owner/demo';
+
+test('候选路径：游戏 metaFiles 顺序，只查 root（不读 assets）', () => {
+  const expected = ['mod.json', 'mod.hjson', 'plugin.json', 'plugin.hjson'];
+  assert.deepEqual(candidateMetadataPaths(true), expected);
+  assert.deepEqual(candidateMetadataPaths(false), expected);
+});
+
+test('Jval：mod.json 带注释/无引号 key/尾逗号/无逗号', () => {
+  const parsed = parseJval(`{
+    // line comment
+    name: Demo Mod
+    author: "A"
+    # hash comment
+    version: 1.0
+    minGameVersion: 146
+    list: [1 2 3,]
+    obj: { a: 1, b: "two" }
+  }`);
+  assert.equal(parsed.name, 'Demo Mod');
+  assert.equal(parsed.author, 'A');
+  assert.equal(parsed.version, 1);
+  assert.equal(parsed.minGameVersion, 146);
+  assert.deepEqual(parsed.list, [1, 2, 3]);
+  assert.deepEqual(parsed.obj, { a: 1, b: 'two' });
+});
+
+test('Jval：根大括号可省、单引号、无引号字符串、逗号可选', () => {
+  const parsed = parseJval(`name: 'Demo'
+author: someone
+version: 1.1.7
+minGameVersion: 146`);
+  assert.equal(parsed.name, 'Demo');
+  assert.equal(parsed.author, 'someone');
+  assert.equal(parsed.version, '1.1.7');
+});
+
+test('Jval：引号字符串内允许裸换行、支持转义', () => {
+  const parsed = parseJval(`{ name: "line1\nline2", description: "a\\tb" }`);
+  assert.equal(parsed.name, 'line1\nline2');
+  assert.equal(parsed.description, 'a\tb');
+});
+
+test('Jval：重复 key 后值生效；数字规则', () => {
+  const parsed = parseJval(`name: first
+name: second
+n: 141.1
+bad: 01
+good: 0`);
+  assert.equal(parsed.name, 'second');
+  assert.equal(parsed.n, 141.1);
+  assert.equal(parsed.bad, '01');
+  assert.equal(parsed.good, 0);
+});
+
+test('Jval：BOM 不剥离 → 第一个 key 带 BOM，name 缺失', () => {
+  const parsed = parseJval(`\uFEFFname: Demo\nminGameVersion: 146`);
+  assert.equal(parsed.name, undefined);
+  assert.equal(parsed['\uFEFFname'], 'Demo');
+  assert.equal(parseModMetadataDocument(`\uFEFFname: Demo\nminGameVersion: 146`), null);
+});
+
+test('parseModMetadataDocument：核心字段、null 缺省、main 空串不算 Java', () => {
+  const doc = parseModMetadataDocument(`{
+    name: Demo,
+    author: A,
+    description: desc,
+    version: 141.1,
+    minGameVersion: "157.1，",
+    main: "",
+    java: false,
+    hideBrowser: true,
+    dependencies: { mindustry: "146" }
+  }`);
+  assert.equal(doc.name, 'Demo');
+  assert.equal(doc.author, 'A');
+  assert.equal(doc.description, 'desc');
+  assert.equal(doc.modVersion, '141.1');
+  assert.equal(doc.minGameVersion, '157.1，');
+  assert.equal(doc.main, null);
+  assert.equal(doc.hideBrowser, true);
+  assert.deepEqual(doc.dependencies, { mindustry: '146' });
+  assert.equal(doc.hasJava, false);
+});
+
+test('parseModMetadataDocument：数组 minGameVersion 视为缺省；缺 name 返回 null', () => {
+  const doc = parseModMetadataDocument(`{ name: Demo, minGameVersion: [146, 154] }`);
+  assert.equal(doc.minGameVersion, null);
+  assert.equal(parseModMetadataDocument(`{ minGameVersion: 146 }`), null);
+});
+
+test('parseModMetadata：version/minGameVersion；非法内容抛错；正则兜底仍保留', () => {
+  assert.deepEqual(parseModMetadata(`{ version: 1.0, minGameVersion: 146 }`), {
+    modVersion: '1',
+    minGameVersion: '146',
+  });
+  assert.throws(() => parseModMetadata('{{'));
+  const fallback = extractModMetadataFields('version: 3.2,\nminGameVersion: 146,');
+  assert.deepEqual(fallback, { modVersion: '3.2', minGameVersion: '146' });
+  assert.equal(repairQuotedNewlines('a: "x'), 'a: "x');
+});
+
+test('metaFromDocument：宽松绑定，Java/脚本语义', () => {
+  const doc = parseModMetadataDocument(`{
+    name: Demo, main: a.b, java: true, dependencies: { mindustry: "146" }
+  }`);
+  const meta = metaFromDocument(doc);
+  assert.equal(meta.java, true);
+  assert.equal(meta.hasJava, true);
+  assert.equal(meta.main, 'a.b');
+  assert.equal(metaFromDocument(null), null);
+});
+
+test('modTypeOf：java=meta.java/main，js=root scripts，json=其余', () => {
+  assert.equal(modTypeOf({ meta: { java: true } }), 'java');
+  assert.equal(modTypeOf({ meta: { main: 'a.b' } }), 'java');
+  assert.equal(modTypeOf({ meta: { hasScripts: true } }), 'js');
+  assert.equal(modTypeOf({ meta: {}, releases: [{ assets: [{ name: 'x.jar' }] }] }), 'java');
+  assert.equal(modTypeOf({ meta: {}, releases: [] }), 'json');
+});
+
+test('parseMinVersion / gameVersionRanges：isAtLeast 语义、门禁 major、空 range 丢弃', () => {
+  assert.deepEqual(parseMinVersion('146'), { major: 146, minor: 0 });
+  assert.deepEqual(parseMinVersion('146.5'), { major: 146, minor: 5 });
+  assert.deepEqual(parseMinVersion('157.1，'), { major: 157, minor: 1 });
+  assert.equal(parseMinVersion([146, 154]), null);
+  assert.equal(parseMinVersion(''), null);
+  const versions = [
+    { tag: 'v145', version: 145 },
+    { tag: 'v146', version: 146 },
+    { tag: 'v146.5', version: 146.5 },
+    { tag: 'v147', version: 147 },
   ];
+  assert.deepEqual(
+    computeGameVersionRanges({
+      minGameVersion: '146',
+      gameVersions: versions,
+      gateFile: { versions: [{ version: 147, value: 147 }] },
+    }),
+    [{ from: '146', to: '146.5' }],
+  );
+  assert.deepEqual(
+    computeGameVersionRanges({
+      minGameVersion: '999',
+      gameVersions: versions,
+      gateFile: null,
+    }),
+    [],
+  );
+});
+
+function clientWith(files) {
   return {
-    calls,
     async get(url) {
-      calls.push(url);
-      const matched = paths.find((candidate) => url.endsWith(`/${candidate}`));
-      if (!matched) {
-        return { status: 404, text: '' };
-      }
-      const route = routes[matched];
-      if (route === undefined) {
-        return { status: 404, text: '' };
-      }
-      if (route instanceof Error) {
-        throw route;
-      }
-      if (typeof route === 'string') {
-        return { status: 200, text: route };
-      }
-      return { status: route.status ?? 200, text: route.text ?? '' };
+      const entry = files.find(([suffix]) => url.endsWith(suffix));
+      return entry ? entry[1] : { status: 404, text: '' };
     },
   };
 }
 
-test('候选路径顺序：hasJava 时 hjson 优先，否则 json 优先', () => {
-  assert.deepEqual(candidateMetadataPaths(true), [
-    'mod.hjson',
-    'mod.json',
-    'assets/mod.hjson',
-    'assets/mod.json',
-  ]);
-  assert.deepEqual(candidateMetadataPaths(false), [
-    'mod.json',
-    'mod.hjson',
-    'assets/mod.json',
-    'assets/mod.hjson',
-  ]);
-});
-
-test('解析带注释与无引号 key 的 HJSON', () => {
-  const metadata = parseModMetadata(`{
-    // 模组说明
-    name: Example
-    version: "1.2.3"
-    minGameVersion: 146
-  }`);
-  assert.deepEqual(metadata, { modVersion: '1.2.3', minGameVersion: '146' });
-});
-
-test('minGameVersion 数字转字符串、脏值原样保留、缺失为 null', () => {
-  assert.deepEqual(parseModMetadata('{ minGameVersion: 146 }'), {
-    modVersion: null,
-    minGameVersion: '146',
-  });
-  assert.deepEqual(parseModMetadata('{ minGameVersion: "157.1，" }'), {
-    modVersion: null,
-    minGameVersion: '157.1，',
-  });
-  assert.deepEqual(parseModMetadata('{ version: "2.0" }'), {
-    modVersion: '2.0',
-    minGameVersion: null,
-  });
-});
-
-test('非法内容与根不是对象都解析失败', () => {
-  assert.throws(() => parseModMetadata('{ version: '), /./);
-  assert.throws(() => parseModMetadata('not: [valid'), /不是对象/);
-});
-
-test('字符串内裸换行：严格 HJSON 失败，宽松修复后仍能解析出版本字段', async () => {
-  const { parse: parseHjson } = await import('hjson');
-  const text = `name: example
-description: "第一行
-第二行"
-version: "1.2.3"
-minGameVersion: 146
-`;
-  assert.throws(() => parseHjson(text), /Bad string containing newline/);
-  assert.deepEqual(parseModMetadata(text), {
-    modVersion: '1.2.3',
-    minGameVersion: '146',
-  });
-});
-
-test('宽松修复只动普通引号字符串里的换行', () => {
-  const multiline = "description: '''行1\n行2'''\nversion: 1\n";
-  assert.equal(repairQuotedNewlines(multiline), multiline);
-
-  const comment = '# 注释里的 "引号\nversion: 1\n';
-  assert.equal(repairQuotedNewlines(comment), comment);
-
-  const escaped = 'description: "a\\"b"\nversion: 1\n';
-  assert.equal(repairQuotedNewlines(escaped), escaped);
-});
-
-test('严格解析与宽松修复都失败时用正则兜底捞 version / minGameVersion', () => {
-  assert.deepEqual(parseModMetadata('{{{\nversion: "1.2.3"\nminGameVersion: 146\n}'), {
-    modVersion: '1.2.3',
-    minGameVersion: '146',
-  });
-  assert.deepEqual(parseModMetadata('{{{\nversion: 2.0\n'), {
-    modVersion: '2.0',
-    minGameVersion: null,
-  });
-  assert.deepEqual(parseModMetadata('{{{\nminGameVersion: "157.1，"\n'), {
-    modVersion: null,
-    minGameVersion: '157.1，',
-  });
-});
-
-test('fetchModMetadata：hasJava 命中 assets/mod.json', async () => {
-  const client = fakeRawClient({
-    'assets/mod.json': JSON.stringify({ version: '3.0', minGameVersion: 160 }),
-  });
-  const result = await fetchModMetadata(client, {
-    repo: 'owner/repo',
-    tag: 'v1 beta',
-    hasJava: true,
-  });
+test('fetchModMetadata：先 mod.json，找不到再 mod.hjson/plugin', async () => {
+  const calls = [];
+  const client = {
+    async get(url) {
+      calls.push(url);
+      if (url.endsWith('/mod.json')) return { status: 404, text: '' };
+      if (url.endsWith('/mod.hjson')) {
+        return { status: 200, text: '{ name: Demo, minGameVersion: 146 }' };
+      }
+      return { status: 404, text: '' };
+    },
+  };
+  const result = await fetchModMetadata(client, { repo, tag: 'v1', hasJava: true });
   assert.equal(result.metadataStatus, 'ok');
-  assert.equal(result.metadataPath, 'assets/mod.json');
-  assert.equal(result.modVersion, '3.0');
-  assert.equal(result.minGameVersion, '160');
-  // tag 带空格时先试编码形态、再试原样形态：4 个候选路径里前 3 个各 2 次，第 4 个第 1 次命中
-  assert.equal(client.calls.length, 7);
-  assert.match(client.calls[0], /v1%20beta\/mod\.hjson$/);
-  assert.match(client.calls[1], /v1 beta\/mod\.hjson$/);
-});
-
-test('fetchModMetadata：非 Java 直接命中 mod.json 并立即停止', async () => {
-  const client = fakeRawClient({
-    'mod.json': JSON.stringify({ version: '1.0', minGameVersion: '146' }),
-  });
-  const result = await fetchModMetadata(client, {
-    repo: 'owner/repo',
-    tag: 'v1',
-    hasJava: false,
-  });
-  assert.equal(result.metadataStatus, 'ok');
-  assert.equal(result.metadataPath, 'mod.json');
-  assert.equal(client.calls.length, 1);
-});
-
-test('fetchModMetadata：全部 404 记 missing', async () => {
-  const client = fakeRawClient({});
-  const result = await fetchModMetadata(client, {
-    repo: 'owner/repo',
-    tag: 'v1',
-    hasJava: true,
-  });
-  assert.deepEqual(result, {
-    metadataPath: null,
-    metadataStatus: 'missing',
-    modVersion: null,
-    minGameVersion: null,
-  });
-  assert.equal(client.calls.length, 4);
-});
-
-test('fetchModMetadata：命中的文件解析失败记 unparsed 并保留命中路径', async () => {
-  const client = fakeRawClient({ 'mod.hjson': '{ version: ' });
-  const result = await fetchModMetadata(client, {
-    repo: 'owner/repo',
-    tag: 'v1',
-    hasJava: true,
-  });
-  assert.equal(result.metadataStatus, 'unparsed');
   assert.equal(result.metadataPath, 'mod.hjson');
-  assert.equal(result.modVersion, null);
+  assert.ok(calls[0].endsWith('/mod.json'));
 });
 
-test('fetchModMetadata：请求层失败记 unparsed', async () => {
-  const client = fakeRawClient({ 'mod.hjson': new Error('ECONNRESET') });
-  const result = await fetchModMetadata(client, {
-    repo: 'owner/repo',
-    tag: 'v1',
-    hasJava: true,
-  });
+test('fetchModMetadata：不读 assets/mod.json（游戏装不上）', async () => {
+  const client = {
+    async get(url) {
+      if (url.includes('/assets/')) return { status: 200, text: '{ name: Assets }' };
+      return { status: 404, text: '' };
+    },
+  };
+  const result = await fetchModMetadata(client, { repo, tag: 'v1', hasJava: false });
+  assert.equal(result.metadataStatus, 'missing');
+});
+
+test('fetchModMetadata：解析失败记 unparsed；缺 name 视为不可用', async () => {
+  const client = {
+    async get(url) {
+      if (url.endsWith('/mod.json')) return { status: 200, text: '{{ broken' };
+      return { status: 404, text: '' };
+    },
+  };
+  const result = await fetchModMetadata(client, { repo, tag: 'v1', hasJava: false });
   assert.equal(result.metadataStatus, 'unparsed');
-  assert.equal(result.metadataPath, null);
+  const noName = await fetchModMetadata(
+    clientWith([['/mod.json', { status: 200, text: '{ minGameVersion: 146 }' }]]),
+    { repo, tag: 'v1', hasJava: false },
+  );
+  assert.equal(noName.metadataStatus, 'unparsed');
 });

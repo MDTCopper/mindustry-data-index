@@ -10,10 +10,10 @@ const schemaDir = path.join(repoRoot, 'schema');
 const EXPECTED_REQUIRED = {
   'index.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
   'index-full.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
-  'releases.json': ['formatVersion', 'repo', 'generatedAt', 'releases', 'compat', 'meta'],
+  'releases.json': ['formatVersion', 'repo', 'generatedAt', 'modType', 'versions'],
   'community-index.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
   'community-index-full.json': ['formatVersion', 'generatedAt', 'source', 'mods', 'skipped'],
-  'community-releases.json': ['formatVersion', 'repo', 'generatedAt', 'releases', 'compat', 'meta'],
+  'community-releases.json': ['formatVersion', 'repo', 'generatedAt', 'modType', 'versions'],
   'summary.json': ['formatVersion', 'generatedAt', 'totals', 'mods'],
   'community-summary.json': ['formatVersion', 'generatedAt', 'totals', 'mods'],
   'versions.json': ['update_time', 'source', 'releases', 'latest_be'],
@@ -26,6 +26,7 @@ const EXPECTED_REQUIRED = {
   'heat-history.json': ['formatVersion', 'generatedAt', 'mods'],
   'heat-commit-state.json': ['formatVersion', 'fetchedAt', 'complete', 'stats'],
   'repo-created.json': ['formatVersion', 'updatedAt', 'repos'],
+  'repo-stats.json': ['formatVersion', 'updatedAt', 'repos'],
 };
 
 test('schema/: 全部是合法 JSON 且使用 draft 2020-12', () => {
@@ -46,18 +47,21 @@ test('schema/: 关键数据文件 required 字段齐全，formatVersion 与当�
     }
   }
   const releases = JSON.parse(readFileSync(path.join(schemaDir, 'releases.json'), 'utf8'));
-  assert.equal(releases.properties.formatVersion.const, 2);
-  assert.ok(releases.required.includes('meta'));
-  assert.ok(releases.required.includes('compat'));
+  assert.equal(releases.properties.formatVersion.const, 3);
+  assert.ok(releases.required.includes('versions'));
+  assert.ok(releases.required.includes('modType'));
 
   const index = JSON.parse(readFileSync(path.join(schemaDir, 'index.json'), 'utf8'));
   const modRequired = index.properties.mods.items.required;
-  for (const field of ['namePlain', 'authorPlain', 'descriptionPlain', 'removedCount', 'compatRanges', 'latestCompatible', 'iosCompatible', 'legacyCompatible', 'heat']) {
+  for (const field of ['namePlain', 'authorPlain', 'descriptionPlain', 'modType', 'gameVersionRanges', 'releaseUpdatedAt', 'commitUpdatedAt', 'heat']) {
     assert.ok(modRequired.includes(field), `index 条目缺少 ${field}`);
+  }
+  for (const field of ['hasJava', 'hasScripts', 'removedCount', 'compatRanges', 'latestCompatible', 'iosCompatible', 'legacyCompatible']) {
+    assert.ok(!modRequired.includes(field), `index 条目不应再有 ${field}`);
   }
 
   const community = JSON.parse(readFileSync(path.join(schemaDir, 'community-index.json'), 'utf8'));
-  assert.ok(community.properties.mods.items.required.includes('source'));
+  assert.ok(community.properties.mods.items.required.includes('modType'));
   assert.ok(community.properties.mods.items.required.includes('descriptionPlain'));
   assert.ok(community.properties.mods.items.required.includes('heat'));
 

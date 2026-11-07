@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "formatVersion": {
-      "const": 1
+      "const": 3
     },
     "generatedAt": {
       "type": "string",
@@ -47,12 +47,6 @@
           "repo": {
             "type": "string"
           },
-          "internalName": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
           "name": {
             "type": "string"
           },
@@ -74,34 +68,10 @@
           "minGameVersion": {
             "type": "string"
           },
-          "lastUpdated": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
           "stars": {
             "type": "integer"
           },
           "hasIcon": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "hasScripts": {
-            "type": "boolean"
-          },
-          "hasJava": {
-            "type": "boolean"
-          },
-          "iosCompatible": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "legacyCompatible": {
             "type": [
               "boolean",
               "null"
@@ -128,89 +98,10 @@
           "releaseCount": {
             "type": "integer"
           },
-          "tagCount": {
-            "type": "integer"
-          },
-          "removedCount": {
-            "type": "integer"
-          },
           "totalDownloads": {
             "type": "integer"
           },
           "allAssetsDownloads": {
-            "type": "integer"
-          },
-          "latestDownloads": {
-            "type": "integer"
-          },
-          "latestSizeBytes": {
-            "type": [
-              "number",
-              "null"
-            ]
-          },
-          "totalSizeBytes": {
-            "type": [
-              "number",
-              "null"
-            ]
-          },
-          "latestRelease": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$schema": "https://json-schema.org/draft/2020-12/schema",
-                "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/latest-release.json",
-                "title": "latest-release",
-                "description": "最新未删除 Release 摘要",
-                "type": "object",
-                "properties": {
-                  "tag": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  },
-                  "prerelease": {
-                    "type": "boolean"
-                  },
-                  "publishedAt": {
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  },
-                  "downloads": {
-                    "type": "integer"
-                  },
-                  "sizeBytes": {
-                    "type": [
-                      "number",
-                      "null"
-                    ]
-                  }
-                },
-                "required": [
-                  "tag",
-                  "name",
-                  "prerelease",
-                  "publishedAt",
-                  "downloads",
-                  "sizeBytes"
-                ],
-                "additionalProperties": true
-              }
-            ]
-          },
-          "latestCompatible": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "compatRanges": {
             "type": "integer"
           },
           "releaseDataUpdatedAt": {
@@ -219,15 +110,50 @@
               "null"
             ]
           },
-          "source": {
-            "const": "topic"
+          "modType": {
+            "enum": [
+              "java",
+              "js",
+              "json"
+            ]
           },
-          "description": {
-            "type": "string"
+          "gameVersionRanges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "from": {
+                  "type": "string"
+                },
+                "to": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "from",
+                "to"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "releaseUpdatedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "commitUpdatedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tagCount": {
+            "type": "integer",
+            "minimum": 0
           },
           "heat": {
             "type": "object",
-            "description": "精简热度（官方+社区全局排名）",
             "properties": {
               "score": {
                 "type": "number"
@@ -262,38 +188,20 @@
         },
         "required": [
           "repo",
-          "internalName",
           "name",
           "namePlain",
           "author",
           "authorPlain",
           "descriptionPlain",
-          "version",
-          "minGameVersion",
-          "lastUpdated",
+          "modType",
+          "gameVersionRanges",
           "stars",
-          "hasIcon",
-          "hasScripts",
-          "hasJava",
-          "iosCompatible",
-          "legacyCompatible",
-          "iconUrl",
-          "iconHash",
           "releasesPath",
           "releaseCount",
-          "tagCount",
-          "removedCount",
+          "releaseUpdatedAt",
+          "commitUpdatedAt",
           "totalDownloads",
           "allAssetsDownloads",
-          "latestDownloads",
-          "latestSizeBytes",
-          "totalSizeBytes",
-          "latestRelease",
-          "latestCompatible",
-          "compatRanges",
-          "releaseDataUpdatedAt",
-          "source",
-          "description",
           "heat"
         ],
         "additionalProperties": true
@@ -330,5 +238,6 @@
     "mods",
     "skipped"
   ],
-  "additionalProperties": true
+  "additionalProperties": true,
+  "formatVersion": 3
 }
