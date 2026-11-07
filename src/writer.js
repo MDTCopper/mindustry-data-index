@@ -50,24 +50,43 @@ export async function ensureReleasesDir(outDir) {
 }
 
 // per-mod 文件只存数据：source 是旧格式字段（读取时忽略），比较时也不看；
-// generatedAt 变化不算内容变化，只有 releases / compat 真的变了才重写
+// generatedAt 变化不算内容变化，只有 releases/versions/modType 真的变了才重写。
+// 比较前把 null 可选字段规范化掉，避免「往返后多出 null」被误判为变化。
+function stripNullDeep(value) {
+  if (Array.isArray(value)) {
+    return value.map(stripNullDeep);
+  }
+  if (value && typeof value === 'object') {
+    const result = {};
+    for (const [key, item] of Object.entries(value)) {
+      if (item === null || item === undefined) {
+        continue;
+      }
+      result[key] = stripNullDeep(item);
+    }
+    return result;
+  }
+  return value;
+}
+
+function canonicalReleaseFile(file) {
+  return JSON.stringify(
+    stripNullDeep({
+      formatVersion: file.formatVersion,
+      repo: file.repo,
+      modType: file.modType ?? null,
+      versions: Array.isArray(file.versions) ? file.versions : null,
+      releases: Array.isArray(file.releases) ? file.releases : null,
+      meta: file.meta ?? null,
+    }),
+  );
+}
+
 export function releaseFileBodyChanged(previous, next) {
   if (!previous) {
     return true;
   }
-  if (previous.formatVersion !== next.formatVersion) {
-    return true;
-  }
-  if (previous.repo !== next.repo) {
-    return true;
-  }
-  if (JSON.stringify(previous.releases) !== JSON.stringify(next.releases)) {
-    return true;
-  }
-  if (JSON.stringify(previous.compat ?? []) !== JSON.stringify(next.compat ?? [])) {
-    return true;
-  }
-  return JSON.stringify(previous.meta ?? null) !== JSON.stringify(next.meta ?? null);
+  return canonicalReleaseFile(previous) !== canonicalReleaseFile(next);
 }
 
 // index.json 同理：generatedAt 每次都变，比较其余数据主体，没变化就不写

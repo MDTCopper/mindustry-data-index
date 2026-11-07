@@ -100,7 +100,14 @@ function readQuotelessValue(text, state, stopAtSpace = false) {
     const char = text[state.index];
     if (char === ',' || char === ']' || char === '}' || char === '\n' || char === '\r') break;
     if (stopAtSpace && isSpace(char)) break;
-    if (char === '#' || (char === '/' && (text[state.index + 1] === '/' || text[state.index + 1] === '*'))) {
+    // 只有注释出现在 token 起始或空白之后才算注释；URL/作者名里的 #、// 要保留完整
+    const previous = state.index === start ? null : text[state.index - 1];
+    const atTokenBoundary = previous === null || isSpace(previous);
+    if (
+      atTokenBoundary &&
+      (char === '#' ||
+        (char === '/' && (text[state.index + 1] === '/' || text[state.index + 1] === '*')))
+    ) {
       break;
     }
     state.index += 1;

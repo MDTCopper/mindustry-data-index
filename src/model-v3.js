@@ -202,7 +202,12 @@ export function buildV3Versions({
       const bv = Number.isNaN(bTime) ? -Infinity : bTime;
       if (av !== bv) return bv - av;
     }
-    return String(a.tag) < String(b.tag) ? -1 : 1;
+    // 都没有 releasedAt：按自然版本号降序（v2.0 应排在 v1.0 前），避免字典序把最新版排到后面
+    const byNatural = String(a.tag).localeCompare(String(b.tag), 'en', {
+      numeric: true,
+      sensitivity: 'base',
+    });
+    return byNatural !== 0 ? -byNatural : String(a.tag) < String(b.tag) ? -1 : 1;
   });
   return versions;
 }

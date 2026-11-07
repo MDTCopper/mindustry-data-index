@@ -389,14 +389,14 @@ export function buildIndexEntry(
       ? releasesFromVersions(file)
       : [];
   const meta = file?.meta && typeof file.meta === 'object' ? file.meta : null;
-  const effectiveModType = modType ?? file?.modType ?? 'json';
+  const effectiveModType = modType ?? file?.modType ?? oldEntry?.modType ?? 'json';
   const versions = Array.isArray(file?.versions) ? file.versions : [];
   const summary = summarizeVersions(versions);
   const stats = providedStats ?? computeModStats(releases, effectiveModType === 'java');
   const plain = plainFields({
-    name: meta?.name ?? mod.name,
-    author: meta?.author ?? mod.author,
-    description: meta?.description ?? mod.description,
+    name: meta?.name ?? oldEntry?.name ?? mod.name,
+    author: meta?.author ?? oldEntry?.author ?? mod.author,
+    description: meta?.description ?? oldEntry?.descriptionPlain ?? mod.description,
   });
   const latestRelease = releases.find((entry) => entry.removed !== true) ?? releases[0] ?? null;
   const latestVersion = versions.find((item) => item.removed !== true) ?? versions[0] ?? null;
@@ -420,8 +420,8 @@ export function buildIndexEntry(
   const minGameVersion =
     latestVersion?.minGameVersion ??
     meta?.minGameVersion ??
-    mod.minGameVersion ??
     oldEntry?.minGameVersion ??
+    mod.minGameVersion ??
     null;
   const gameVersionRanges = hasFile
     ? summary.gameVersionRanges
@@ -434,7 +434,7 @@ export function buildIndexEntry(
     author: meta?.author ?? mod.author ?? null,
     authorPlain: plain.authorPlain,
     descriptionPlain: plain.descriptionPlain,
-    version: latestVersion?.modVersion ?? meta?.version ?? mod.version ?? null,
+    version: latestVersion?.modVersion ?? meta?.version ?? oldEntry?.version ?? mod.version ?? null,
     minGameVersion,
     modType: effectiveModType,
     gameVersionRanges,
@@ -501,14 +501,22 @@ export function sortModsForRefresh(mods, previousState) {
   });
 }
 
-function unprocessedModResult({ mod, previous, modState, relPath, oldEntry, reason, buildEntry = buildIndexEntry }) {
+function unprocessedModResult({ mod, previous, modState, relPath, oldEntry, reason, buildEntry = buildIndexEntry, repoStats = null }) {
+  const oldStats =
+    oldEntry && typeof oldEntry.totalDownloads === 'number'
+      ? {
+          totalDownloads: oldEntry.totalDownloads ?? 0,
+          allAssetsDownloads: oldEntry.allAssetsDownloads ?? 0,
+        }
+      : null;
   return {
-    entry: buildEntry(mod, previous, { relPath, oldEntry }),
+    entry: buildEntry(mod, previous, { relPath, oldEntry, repoStats, ...(oldStats ? { stats: oldStats } : {}) }),
     file: previous,
     state: modState ?? null,
     skipped: null,
     changed: false,
     unprocessed: true,
+    hasOldEntry: Boolean(oldEntry),
     reason,
   };
 }
@@ -543,7 +551,12 @@ async function processMod(context) {
   if (options.cache) {
     try {
       const newFile = await readJsonIfExists(resolveReleaseFile(workDir, relPath));
-      if (newFile && newFile.repo === mod.repo && Array.isArray(newFile.releases)) {
+      // v3 文件落盘只有 versions[]（releases 是内存视图），两种形状都要能读回缓存
+      if (
+        newFile &&
+        newFile.repo === mod.repo &&
+        (Array.isArray(newFile.releases) || Array.isArray(newFile.versions))
+      ) {
         previous = newFile;
       }
     } catch (error) {
@@ -555,7 +568,11 @@ async function processMod(context) {
         const legacyFile = await readJsonIfExists(
           resolveReleaseFileForDelete(workDir, legacyRelPath),
         );
-        if (legacyFile && legacyFile.repo === mod.repo && Array.isArray(legacyFile.releases)) {
+        if (
+          legacyFile &&
+          legacyFile.repo === mod.repo &&
+          (Array.isArray(legacyFile.releases) || Array.isArray(legacyFile.versions))
+        ) {
           previous = legacyFile;
           legacyToDelete = legacyRelPath;
         }
@@ -602,7 +619,7 @@ async function processMod(context) {
           compat: [],
           gameVersions: context.compatData?.gameVersions ?? [],
           modType: migrated.modType,
-          repoStats: context.repoStats ?? null,
+          repoStats: context.repoStats?.get(mod.repo.toLowerCase()) ?? null,
         }),
         file: migrated,
         previousFile: previous,
@@ -653,6 +670,7 @@ async function processMod(context) {
       oldEntry,
       reason: 'quota',
       buildEntry,
+      repoStats: context.repoStats?.get(mod.repo.toLowerCase()) ?? null,
     });
   }
 
@@ -972,11 +990,18 @@ async function processMod(context) {
       entry: buildEntry(mod, finalFile, {
         relPath,
         oldEntry,
-        stats: computeModStats(finalFile?.releases ?? [], effectiveHasJava),
+        // 缓存命中且文件未变时复用旧统计，避免从合成 releases 重算导致下载量漂移
+        stats:
+          !changed && oldEntry && typeof oldEntry.totalDownloads === 'number'
+            ? {
+                totalDownloads: oldEntry.totalDownloads ?? 0,
+                allAssetsDownloads: oldEntry.allAssetsDownloads ?? 0,
+              }
+            : computeModStats(finalFile?.releases ?? [], effectiveHasJava),
         compat: finalFile?.compat ?? [],
         gameVersions: compatData?.gameVersions ?? [],
         modType: finalFile?.modType ?? modType,
-        repoStats: context.repoStats ?? null,
+        repoStats: context.repoStats?.get(mod.repo.toLowerCase()) ?? null,
       }),
       file: finalFile,
       previousFile: previous,
@@ -1022,11 +1047,17 @@ async function processMod(context) {
       entry: buildEntry(mod, finalFile, {
         relPath,
         oldEntry,
-        stats: computeModStats(finalFile?.releases ?? [], catchHasJava),
+        stats:
+          oldEntry && typeof oldEntry.totalDownloads === 'number'
+            ? {
+                totalDownloads: oldEntry.totalDownloads ?? 0,
+                allAssetsDownloads: oldEntry.allAssetsDownloads ?? 0,
+              }
+            : computeModStats(finalFile?.releases ?? [], catchHasJava),
         compat: finalFile?.compat ?? [],
         gameVersions: context.compatData?.gameVersions ?? [],
-        modType: finalFile?.modType ?? 'json',
-        repoStats: context.repoStats ?? null,
+        modType: finalFile?.modType ?? oldEntry?.modType ?? 'json',
+        repoStats: context.repoStats?.get(mod.repo.toLowerCase()) ?? null,
       }),
       file: finalFile,
       previousFile: previous,
@@ -1034,12 +1065,18 @@ async function processMod(context) {
       skipped: { repo: mod.repo, reason: skipReason(error) },
       changed: false,
       unprocessed: false,
+      hasOldEntry: Boolean(oldEntry),
     };
   }
 }
 
 async function readOldIndex(outDir, log) {
   try {
+    // 全量列表包含隐藏模组；优先读它，避免未处理/过滤条目被当首次出现
+    const full = await readJsonIfExists(path.join(outDir, FULL_INDEX_REL_PATH)).catch(() => null);
+    if (full && Array.isArray(full.mods)) {
+      return full;
+    }
     return await readJsonIfExists(path.join(outDir, INDEX_FILE));
   } catch (error) {
     log(`[警告] 旧 index.json 不可用，按首次运行处理：${error.message}`);
@@ -1296,7 +1333,9 @@ export async function runMods(options, context) {
     (result) =>
       result.entry &&
       (result.entry.releaseCount ?? 0) === 0 &&
-      (result.entry.tagCount ?? 0) === 0,
+      (result.entry.tagCount ?? 0) === 0 &&
+      // 未处理/抓取失败但已有旧条目的模组保留（否则低配额会误删），全新且无数据的才丢弃
+      !((result.unprocessed === true || result.skipped) && result.hasOldEntry === true),
   );
   const keptResults = results.filter((result) => !droppedResults.includes(result));
   if (droppedResults.length > 0) {
@@ -1657,7 +1696,9 @@ async function runCommunity(options, context) {
     (result) =>
       result.entry &&
       (result.entry.releaseCount ?? 0) === 0 &&
-      (result.entry.tagCount ?? 0) === 0,
+      (result.entry.tagCount ?? 0) === 0 &&
+      // 未处理/抓取失败但已有旧条目的模组保留（否则低配额会误删），全新且无数据的才丢弃
+      !((result.unprocessed === true || result.skipped) && result.hasOldEntry === true),
   );
   const keptResults = results.filter((result) => !droppedResults.includes(result));
   if (droppedResults.length > 0) {

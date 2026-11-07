@@ -258,6 +258,19 @@ async function migrateSummary({ outDir, index, relDir, now, log }) {
 
 // 一次性把整个数据目录迁到 v2（官方 + 社区 + index/summary/status/changes），0 API
 export async function migrateDataDir({ outDir, log = () => {}, now = new Date().toISOString() }) {
+  // v3 已是当前结构：整体 no-op。避免每轮 workflow 的 --migrate 把 heat/ranks/full/summary 重写坏。
+  const [mainIndex, fullIndex] = await Promise.all([
+    readJsonIfExists(path.join(outDir, 'index.json')).catch(() => null),
+    readJsonIfExists(path.join(outDir, 'index-full.json')).catch(() => null),
+  ]);
+  if (
+    mainIndex?.formatVersion === 3 &&
+    (!fullIndex || fullIndex.formatVersion === 3)
+  ) {
+    log('[migrate] 数据已是 v3，跳过迁移');
+    return { officialFiles: 0, communityFiles: 0, entries: 0, skipped: true };
+  }
+
   let versionsFile = null;
   let modGate = null;
   let javaGate = null;

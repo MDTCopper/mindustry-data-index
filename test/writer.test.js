@@ -67,6 +67,37 @@ test('releaseFileBodyChanged：忽略 generatedAt / 旧 source，只有 releases
   assert.equal(releaseFileBodyChanged(null, previous), true);
 });
 
+test('releaseFileBodyChanged：v3 比较 versions/modType，并忽略 null 可选字段差异', () => {
+  const base = {
+    formatVersion: 3,
+    repo: 'owner/demo',
+    modType: 'java',
+    versions: [
+      {
+        tag: 'v1',
+        kind: 'release',
+        minGameVersion: '146',
+        gameVersionRanges: [{ from: '146', to: '160.7' }],
+      },
+    ],
+  };
+  const same = { ...base, versions: [{ ...base.versions[0], downloadCount: null }] };
+  assert.equal(releaseFileBodyChanged(base, same), false);
+  assert.equal(
+    releaseFileBodyChanged(base, {
+      ...base,
+      versions: [
+        {
+          ...base.versions[0],
+          gameVersionRanges: [{ from: '146', to: '147' }],
+        },
+      ],
+    }),
+    true,
+  );
+  assert.equal(releaseFileBodyChanged(base, { ...base, modType: 'js' }), true);
+});
+
 test('listReleaseFiles：递归枚举 releases/**/*.json（含旧 flat），返回 posix 路径', async (t) => {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-writer-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
