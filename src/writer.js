@@ -14,6 +14,7 @@ import {
   pageFileBody,
   splitVersionsIntoPages,
 } from './release-pages.js';
+import { mergeGameVersionRanges } from './model-v3.js';
 
 export const INDEX_FILE = 'index.json';
 export const RELEASES_DIR = 'releases';
@@ -193,7 +194,18 @@ export async function readReleasePages(outDir, repo) {
         ...single,
         pages: Array.isArray(single.pages)
           ? single.pages
-          : [{ page: 1, count: single.versions.length, gameVersionRanges: [], path: releasesRelPath(repo) }],
+          : [
+              {
+                page: 1,
+                count: single.versions.length,
+                gameVersionRanges: mergeGameVersionRanges(
+                  single.versions.flatMap((version) =>
+                    Array.isArray(version?.gameVersionRanges) ? version.gameVersionRanges : [],
+                  ),
+                ),
+                path: releasesRelPath(repo),
+              },
+            ],
       };
     }
     return null;

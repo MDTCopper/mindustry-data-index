@@ -447,6 +447,15 @@ export function buildIndexEntry(
               },
             ]
           : [];
+  // 单页文件可能没有 page.gameVersionRanges（旧数据/未处理缓存），用模组级区间补全
+  const normalizedPages = pages.map((page) =>
+    page.page === 1 &&
+    (!Array.isArray(page.gameVersionRanges) || page.gameVersionRanges.length === 0) &&
+    Array.isArray(summary.gameVersionRanges) &&
+    summary.gameVersionRanges.length > 0
+      ? { ...page, gameVersionRanges: summary.gameVersionRanges }
+      : page,
+  );
   const result = {
     repo: mod.repo,
     internalName: mod.internalName ?? null,
@@ -463,8 +472,8 @@ export function buildIndexEntry(
     hasIcon: mod.hasIcon,
     iconUrl: modIconUrl(mod.repo, mod.hasIcon),
     iconHash: mod.iconHash ?? null,
-    releasesPath: pages[0]?.path ?? (hasFile ? relPath : (oldEntry?.releasesPath ?? (file ? relPath : null))),
-    ...(pages.length > 0 ? { pages } : {}),
+    releasesPath: normalizedPages[0]?.path ?? (hasFile ? relPath : (oldEntry?.releasesPath ?? (file ? relPath : null))),
+    ...(normalizedPages.length > 0 ? { pages: normalizedPages } : {}),
     releaseCount,
     ...(effectiveModType === 'java' ? {} : { tagCount }),
     releaseUpdatedAt,
