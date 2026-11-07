@@ -918,7 +918,7 @@ test('validateDir：全局 heat.rank 重复或与分数排序不一致会被发�
     mod.ranks.heat = 1;
   });
   const duplicate = await validateDir(dir);
-  assert.ok(duplicate.errors.some((message) => message.includes('全局 score.rank 重复')));
+  assert.ok(duplicate.errors.some((message) => message.includes('全局 ranks.heat 重复')));
   // 修正为 rank=2（总分不再落盘，无法做排序一致性校验）
   await writeCommunity((mod) => {
     mod.ranks.heat = 2;

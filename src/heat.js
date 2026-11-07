@@ -187,7 +187,7 @@ export function recommendationFor(entry, overrides = {}) {
 
 // 注入 index 条目的 score 对象：只保留组件分与 recommendVisible。
 // 总分不落盘：客户端可用自己的权重从 downloadsScore/starsScore/updateScore 计算；仓库默认权重用于
-// recommendVisible、ranks.score 与 summary 的 rank。
+// recommendVisible、ranks.heat 与 summary 的 rank。
 export function heatIndexFields(entry) {
   return {
     downloadsScore: entry.downloadsScore,

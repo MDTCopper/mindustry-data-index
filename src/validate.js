@@ -2567,18 +2567,18 @@ export async function validateDir(dir) {
   for (const { rank } of allHeatEntries) {
     if (Number.isInteger(rank)) {
       if (seenRanks.has(rank)) {
-        errors.push(`${HEAT_INDEX_REL_PATH} 全局 score.rank 重复：${rank}`);
+        errors.push(`${HEAT_INDEX_REL_PATH} 全局 ranks.heat 重复：${rank}`);
       }
       seenRanks.add(rank);
     }
   }
   if (allHeatEntries.length > 0) {
     if (seenRanks.size !== allHeatEntries.length) {
-      errors.push('index.json / community/index.json 的全局 score.rank 不是 1..N 唯一');
+      errors.push('index.json / community/index.json 的全局 ranks.heat 不是 1..N 唯一');
     }
     for (const rank of seenRanks) {
       if (rank < 1 || rank > allHeatEntries.length) {
-        errors.push(`index.json / community/index.json 的 score.rank 超出 1..N：${rank}`);
+        errors.push(`index.json / community/index.json 的 ranks.heat 超出 1..N：${rank}`);
       }
     }
   }

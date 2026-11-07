@@ -132,7 +132,6 @@ import {
   readReleasePages,
   writeReleasePages,
   deleteReleaseData,
-  pagesForFile,
   needsPageSplit,
   INDEX_FILE,
 } from './writer.js';
