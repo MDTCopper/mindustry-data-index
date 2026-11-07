@@ -38,7 +38,7 @@ export const RECOMMEND_WEIGHTS = {
   downloads: 0.25,
   stars: 0.3,
   update: 0.3,
-  random: 0.15,
+  random: 0.3,
   newMod: 0.325,
   penalty: 0.4,
 };
