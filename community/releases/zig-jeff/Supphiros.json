@@ -1,74 +1,62 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zig-jeff/Supphiros",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.78",
-      "name": "v0.78",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-18T23:49:48Z",
-      "htmlUrl": "https://github.com/zig-jeff/Supphiros/releases/tag/v0.78",
-      "modVersion": "0.78",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/zig-jeff/Supphiros/archive/refs/tags/v0.78.zip",
-      "sourceArchiveUrl": "https://github.com/zig-jeff/Supphiros/archive/refs/tags/v0.78.zip",
-      "assets": [],
-      "commitSha": "43151b35d637d0332dfeefa4de93cbc64eff60d6",
-      "archiveByCommitUrl": "https://github.com/zig-jeff/Supphiros/archive/43151b35d637d0332dfeefa4de93cbc64eff60d6.zip"
+      "modVersion": "0.78",
+      "releasedAt": "2023-04-18T23:49:48Z"
     },
     {
       "tag": "v0.77",
-      "name": "v0.77",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-18T01:19:10Z",
-      "htmlUrl": "https://github.com/zig-jeff/Supphiros/releases/tag/v0.77",
-      "modVersion": "0.77",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/zig-jeff/Supphiros/archive/refs/tags/v0.77.zip",
-      "sourceArchiveUrl": "https://github.com/zig-jeff/Supphiros/archive/refs/tags/v0.77.zip",
-      "assets": [],
-      "commitSha": "019cf20c87a8c69ec761aee9604ac94fe52d98f6",
-      "archiveByCommitUrl": "https://github.com/zig-jeff/Supphiros/archive/019cf20c87a8c69ec761aee9604ac94fe52d98f6.zip"
+      "modVersion": "0.77",
+      "releasedAt": "2023-04-18T01:19:10Z"
     },
     {
       "tag": "0.77",
-      "name": "0.77",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zig-jeff/Supphiros/tree/0.77",
-      "modVersion": "0.77",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/zig-jeff/Supphiros/archive/refs/tags/0.77.zip",
-      "sourceArchiveUrl": "https://github.com/zig-jeff/Supphiros/archive/refs/tags/0.77.zip",
-      "assets": [],
-      "commitSha": "019cf20c87a8c69ec761aee9604ac94fe52d98f6",
-      "archiveByCommitUrl": "https://github.com/zig-jeff/Supphiros/archive/019cf20c87a8c69ec761aee9604ac94fe52d98f6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.78",
-      "modVersion": "0.78",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.77"
     }
   ],
   "meta": {
+    "name": "Supphiros",
+    "author": "zig-jeff",
+    "description": "\nIt's Cheat MOD for V7. Works on Erekir as well.\n\ncheat blocks from super-cheat by Evo04Taser.\nsome turret and Units from Sapphirium by Snake.\nsome blocks and Units from many other MODs.\nedit Code, draw sprites and add ideas by zig-jeff.\n",
+    "version": "0.78",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

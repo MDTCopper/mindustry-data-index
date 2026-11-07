@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Low-Life-Modders/Isen",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1",
-      "name": "[BETA] Isen",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-02-07T21:20:52Z",
-      "htmlUrl": "https://github.com/Low-Life-Modders/Isen/releases/tag/v0.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Low-Life-Modders/Isen/releases/download/v0.1/IsenDesktop.3.jar",
-      "sourceArchiveUrl": "https://github.com/Low-Life-Modders/Isen/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "IsenDesktop.3.jar",
-          "size": 101868,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/Low-Life-Modders/Isen/releases/download/v0.1/IsenDesktop.3.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "428030f05a78178890f38171f0f9b469f3489f1f",
-      "archiveByCommitUrl": "https://github.com/Low-Life-Modders/Isen/archive/428030f05a78178890f38171f0f9b469f3489f1f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1",
+      "downloadUrl": "https://github.com/Low-Life-Modders/Isen/releases/download/v0.1/IsenDesktop.3.jar",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 101868,
+      "downloadCount": 38,
+      "releasedAt": "2024-02-07T21:20:52Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "isen",
+    "author": "[red]CamoGekko [white]and [blue]LiterallyJustMindustryModder",
+    "description": "A mod aiming to add a more grind-y experience to the game",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "src.isen.IsenJavaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

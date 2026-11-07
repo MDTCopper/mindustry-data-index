@@ -1,119 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "koctz34/browser-windows",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.2",
-      "name": "1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-29T19:53:42Z",
-      "htmlUrl": "https://github.com/koctz34/browser-windows/releases/tag/1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.2/browsermod.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/browser-windows/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "browsermod.jar",
-          "size": 300165184,
-          "downloadCount": 935,
-          "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.2/browsermod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ca8781e74352721a51fee0cb92c0b5849180eb32",
-      "archiveByCommitUrl": "https://github.com/koctz34/browser-windows/archive/ca8781e74352721a51fee0cb92c0b5849180eb32.zip"
+      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.2/browsermod.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 300165184,
+      "downloadCount": 936,
+      "releasedAt": "2026-05-29T19:53:42Z"
     },
     {
       "tag": "1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-05T22:00:06Z",
-      "htmlUrl": "https://github.com/koctz34/browser-windows/releases/tag/1.1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.1/browsermod.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/browser-windows/archive/refs/tags/1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "browsermod.jar",
-          "size": 300154003,
-          "downloadCount": 602,
-          "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.1/browsermod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "884d9c7cb1461bb0c4d43cfbac4e14c9aea56314",
-      "archiveByCommitUrl": "https://github.com/koctz34/browser-windows/archive/884d9c7cb1461bb0c4d43cfbac4e14c9aea56314.zip"
+      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.1/browsermod.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 300154003,
+      "downloadCount": 602,
+      "releasedAt": "2026-03-05T22:00:06Z"
     },
     {
       "tag": "1.0Fix",
-      "name": "1.0 Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-01T19:16:38Z",
-      "htmlUrl": "https://github.com/koctz34/browser-windows/releases/tag/1.0Fix",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.0Fix/browsermod.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/browser-windows/archive/refs/tags/1.0Fix.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "browsermod.jar",
-          "size": 299961944,
-          "downloadCount": 137,
-          "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.0Fix/browsermod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "218683c85a2d772b4b1ca24bce3d9aaea01d71fc",
-      "archiveByCommitUrl": "https://github.com/koctz34/browser-windows/archive/218683c85a2d772b4b1ca24bce3d9aaea01d71fc.zip"
+      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.0Fix/browsermod.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 299961944,
+      "downloadCount": 137,
+      "releasedAt": "2026-03-01T19:16:38Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-01T08:00:37Z",
-      "htmlUrl": "https://github.com/koctz34/browser-windows/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.0/browsermod.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/browser-windows/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "browsermod.jar",
-          "size": 299961150,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.0/browsermod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fc8d7ded1981c46621f21e1d0e474971ece5cd05",
-      "archiveByCommitUrl": "https://github.com/koctz34/browser-windows/archive/fc8d7ded1981c46621f21e1d0e474971ece5cd05.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.2",
-      "modVersion": "1.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.0/browsermod.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 299961150,
+      "downloadCount": 69,
+      "releasedAt": "2026-03-01T08:00:37Z"
     }
   ],
   "meta": {
+    "name": "browser-windows",
+    "author": "Ion - 7274",
+    "description": "\n  A mod that allows you to create browser windows directly in the game.\nYou can interact with them, they process clicks, and you can watch videos, read articles, or just play games.\n[red[]]Warning! Be prepared for the fact that some sites may not be supported, and some games may not work due to capture features.\n[scarlet[]]Although the mod supports Android devices, there is no guarantee that they will work stably. A different API is used to support Android, as they do not support JCEF.\n[stat[]]The mod can support servers, but a plugin is required for this. Request it from Ion - 7274 (Discord: koctz34). (I will probably release the plugin file along with updates soon).\n[scarlet[]]This mod does not working on Linux and MacOS.[[]]\n  ",
+    "version": "1.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "browser.BrowserMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

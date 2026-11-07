@@ -1,109 +1,90 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bloodmoddingocean-coder/visual_plus",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry-mod-v8",
-      "name": "mindustry-mod-v8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-19T21:14:55Z",
-      "htmlUrl": "https://github.com/bloodmoddingocean-coder/Visual_Plus/releases/tag/mindustry-mod-v8",
-      "modVersion": "1.60.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/mindustry-mod-v8.zip",
-      "sourceArchiveUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/mindustry-mod-v8.zip",
-      "assets": [],
-      "commitSha": "1dbda94e741ccca15c2ccb522b1a992cc94143bc",
-      "archiveByCommitUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/1dbda94e741ccca15c2ccb522b1a992cc94143bc.zip"
+      "modVersion": "1.60.2",
+      "releasedAt": "2026-05-19T21:14:55Z"
     },
     {
       "tag": "mindustry_visual_mod",
-      "name": "Build 60.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-18T06:16:18Z",
-      "htmlUrl": "https://github.com/bloodmoddingocean-coder/Visual_Plus/releases/tag/mindustry_visual_mod",
-      "modVersion": "1.60.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/mindustry_visual_mod.zip",
-      "sourceArchiveUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/mindustry_visual_mod.zip",
-      "assets": [],
-      "commitSha": "1dbda94e741ccca15c2ccb522b1a992cc94143bc",
-      "archiveByCommitUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/1dbda94e741ccca15c2ccb522b1a992cc94143bc.zip"
+      "modVersion": "1.60.2",
+      "releasedAt": "2026-05-18T06:16:18Z"
     },
     {
       "tag": "mindustry_mod",
-      "name": "Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-17T12:14:32Z",
-      "htmlUrl": "https://github.com/bloodmoddingocean-coder/Visual_Plus/releases/tag/mindustry_mod",
-      "modVersion": "1.60.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/mindustry_mod.zip",
-      "sourceArchiveUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/mindustry_mod.zip",
-      "assets": [],
-      "commitSha": "9bc44b706e0f812e27906482ae1ebdf7c9aa9ce0",
-      "archiveByCommitUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/9bc44b706e0f812e27906482ae1ebdf7c9aa9ce0.zip"
-    },
-    {
-      "tag": "Mindustry_mod",
-      "name": "Mindustry_mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/tree/Mindustry_mod",
       "modVersion": "1.60.2",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/Mindustry_mod.zip",
-      "sourceArchiveUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/Mindustry_mod.zip",
-      "assets": [],
-      "commitSha": "93ce5bb8487c75e89b732986ff9d48cd64dd2321",
-      "archiveByCommitUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/93ce5bb8487c75e89b732986ff9d48cd64dd2321.zip"
+      "releasedAt": "2026-05-17T12:14:32Z"
     },
     {
       "tag": "Mindustry",
-      "name": "Mindustry",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/tree/Mindustry",
-      "modVersion": "1.60.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/Mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/Mindustry.zip",
-      "assets": [],
-      "commitSha": "93ce5bb8487c75e89b732986ff9d48cd64dd2321",
-      "archiveByCommitUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/93ce5bb8487c75e89b732986ff9d48cd64dd2321.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "1.60.2"
+    },
     {
-      "tag": "mindustry-mod-v8",
-      "modVersion": "1.60.2",
+      "tag": "Mindustry_mod",
+      "kind": "tag",
       "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/bloodmoddingocean-coder/visual_plus/archive/refs/tags/Mindustry_mod.zip",
+      "modVersion": "1.60.2"
     }
   ],
   "meta": {
+    "name": "vplus",
+    "author": "Bloody-Ocean",
+    "description": "Ru: Данная модификация изменяет внешний вид Серпуло. Респрайт некоторой части Эрекира.\r\n\r\nEng: This modification changes the appearance of the Serpulo. Resprite of some part of the Erekir.\r\n\r\nThx to retodera, Sputnuc and mellory for the help with the scripts.",
+    "version": "1.60.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

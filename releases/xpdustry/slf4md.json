@@ -1,325 +1,213 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "xpdustry/slf4md",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.3.0",
-      "name": "v1.3.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-22T19:13:09Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.3.0",
-      "modVersion": "1.3.0",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.3.0/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 132085,
-          "downloadCount": 981,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.3.0/slf4md.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0590b9ade3cb96c0e50365e822c0f6975c74406e",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/0590b9ade3cb96c0e50365e822c0f6975c74406e.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.3.0/slf4md.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 132085,
+      "downloadCount": 983,
+      "releasedAt": "2026-05-22T19:13:09Z"
     },
     {
       "tag": "v1.2.1",
-      "name": "v1.2.1 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-14T23:39:24Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.2.1",
-      "modVersion": "1.2.1",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.2.1/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 127821,
-          "downloadCount": 189,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.2.1/slf4md.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e84b24dfcbd8c1ab63c6ee61bbeb509c34e2b20f",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/e84b24dfcbd8c1ab63c6ee61bbeb509c34e2b20f.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.2.1/slf4md.jar",
+      "modVersion": "1.2.1",
+      "sizeBytes": 127821,
+      "downloadCount": 189,
+      "releasedAt": "2026-04-14T23:39:24Z"
     },
     {
       "tag": "v1.2.0",
-      "name": "v1.2.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-16T17:36:48Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.2.0",
-      "modVersion": "1.2.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.2.0/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 127635,
-          "downloadCount": 438,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.2.0/slf4md.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ff3466358778768d86a98a27ae2dc80db842780f",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/ff3466358778768d86a98a27ae2dc80db842780f.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.2.0/slf4md.jar",
+      "modVersion": "1.2.0",
+      "sizeBytes": 127635,
+      "downloadCount": 438,
+      "releasedAt": "2026-01-16T17:36:48Z"
     },
     {
       "tag": "v1.1.3",
-      "name": "v1.1.3 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-26T11:51:05Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.1.3",
-      "modVersion": "1.1.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.3/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 118902,
-          "downloadCount": 300,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.3/slf4md.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "7759b6120f06344052d1809e3238d05c6ae27b1c",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/7759b6120f06344052d1809e3238d05c6ae27b1c.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.3/slf4md.jar",
+      "modVersion": "1.1.3",
+      "sizeBytes": 118902,
+      "downloadCount": 300,
+      "releasedAt": "2025-09-26T11:51:05Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "v1.1.2 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-26T11:22:52Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.1.2",
-      "modVersion": "1.1.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.2/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 118587,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.2/slf4md.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "e59c831004a6fadf41dee52601fb0dd470f64aab",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/e59c831004a6fadf41dee52601fb0dd470f64aab.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.2/slf4md.jar",
+      "modVersion": "1.1.2",
+      "sizeBytes": 118587,
+      "downloadCount": 6,
+      "releasedAt": "2025-09-26T11:22:52Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-21T00:57:19Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.1/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 118708,
-          "downloadCount": 185,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.1/slf4md.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "87e8c07ba2e2579d035e8decd71e2a761d1915a6",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/87e8c07ba2e2579d035e8decd71e2a761d1915a6.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.1/slf4md.jar",
+      "modVersion": "1.1.1",
+      "sizeBytes": 118708,
+      "downloadCount": 185,
+      "releasedAt": "2025-07-21T00:57:19Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-21T00:52:24Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.0/slf4md.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "slf4md.jar",
-          "size": 118709,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.0/slf4md.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "4e6c02ea675a2d5a033aa6d97010be169bbf3499",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/4e6c02ea675a2d5a033aa6d97010be169bbf3499.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.1.0/slf4md.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 118709,
+      "downloadCount": 6,
+      "releasedAt": "2025-07-21T00:52:24Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "v1.0.4 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-24T12:57:53Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.0.4",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.4/slf4md-simple.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
         {
-          "name": "slf4md-simple.jar",
-          "size": 83448,
-          "downloadCount": 17,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.4/slf4md-simple.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ba2a82c053952acb657ff3b7bc6d3612b923e77d",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/ba2a82c053952acb657ff3b7bc6d3612b923e77d.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.4/slf4md-simple.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 83448,
+      "downloadCount": 17,
+      "releasedAt": "2025-06-24T12:57:53Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "v1.0.3 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-24T12:47:54Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.0.3",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.3/slf4md-simple.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
         {
-          "name": "slf4md-simple.jar",
-          "size": 83595,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.3/slf4md-simple.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "8676c296899666bf2520feebd84b678803002a3f",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/8676c296899666bf2520feebd84b678803002a3f.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.3/slf4md-simple.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 83595,
+      "downloadCount": 5,
+      "releasedAt": "2025-06-24T12:47:54Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "v1.0.2 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-23T20:31:33Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.0.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.2/slf4md-simple.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
         {
-          "name": "slf4md-simple.jar",
-          "size": 83598,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.2/slf4md-simple.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "11927d0fd9fa37e4d08175a32934d289a83f3109",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/11927d0fd9fa37e4d08175a32934d289a83f3109.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.2/slf4md-simple.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 83598,
+      "downloadCount": 10,
+      "releasedAt": "2025-06-23T20:31:33Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-30T21:05:23Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.0.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.1/slf4md-simple.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
         {
-          "name": "slf4md-simple.jar",
-          "size": 83190,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.1/slf4md-simple.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "80eb677326d52952a007da9fc7daaed5bab8e4d7",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/80eb677326d52952a007da9fc7daaed5bab8e4d7.zip"
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.1/slf4md-simple.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 83190,
+      "downloadCount": 25,
+      "releasedAt": "2024-09-30T21:05:23Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-11T01:47:21Z",
-      "htmlUrl": "https://github.com/xpdustry/slf4md/releases/tag/v1.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.0/slf4md-simple.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/slf4md/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
         {
-          "name": "slf4md-simple.jar",
-          "size": 82081,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.0/slf4md-simple.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "8473a7978be7d727a658fa2f8e5b1b9c08eb4c9c",
-      "archiveByCommitUrl": "https://github.com/xpdustry/slf4md/archive/8473a7978be7d727a658fa2f8e5b1b9c08eb4c9c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.3",
-      "modVersion": "1.1.3",
-      "minGameVersion": "149",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.2.0",
-      "modVersion": "1.2.0",
-      "minGameVersion": "154",
-      "maxGameVersion": 157,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.3.0",
+      "downloadUrl": "https://github.com/xpdustry/slf4md/releases/download/v1.0.0/slf4md-simple.jar",
       "modVersion": "1.3.0",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 82081,
+      "downloadCount": 21,
+      "releasedAt": "2024-06-11T01:47:21Z"
     }
   ],
   "meta": {
+    "name": "slf4md",
+    "author": "xpdustry",
+    "description": "A basic SLF4J implementation for Mindustry.",
+    "version": "1.3.0",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "com.xpdustry.slf4md.MindustryLoggerMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

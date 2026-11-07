@@ -1,541 +1,357 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "agzam4/mindustry-mod-v8",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v160.7.b",
-      "name": "v160.7.b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-27T22:12:38Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v160.7.b",
-      "modVersion": "160.7.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.7.b/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v160.7.b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 654978,
-          "downloadCount": 355,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.7.b/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0170c4c1d2689d34914fc9411ad3593aecd42a05",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/0170c4c1d2689d34914fc9411ad3593aecd42a05.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.7.b/Mindustry-mod-v8.jar",
+      "modVersion": "160.7.a",
+      "sizeBytes": 654978,
+      "downloadCount": 357,
+      "releasedAt": "2026-10-27T22:12:38Z"
     },
     {
       "tag": "v160.7.a",
-      "name": "v160.7.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-24T22:32:19Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v160.7.a",
-      "modVersion": "160.7.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.7.a/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v160.7.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 649780,
-          "downloadCount": 178,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.7.a/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "37ba67a5142986e48e194187672e9973fe0e4dab",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/37ba67a5142986e48e194187672e9973fe0e4dab.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.7.a/Mindustry-mod-v8.jar",
+      "modVersion": "160.7.a",
+      "sizeBytes": 649780,
+      "downloadCount": 178,
+      "releasedAt": "2026-10-24T22:32:19Z"
     },
     {
       "tag": "v160.6.a",
-      "name": "v160.6.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-11T18:41:03Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v160.6.a",
-      "modVersion": "160.6.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.6.a/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v160.6.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 649210,
-          "downloadCount": 523,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.6.a/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d137ce277c1e52ea205889031320d322f9e81138",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/d137ce277c1e52ea205889031320d322f9e81138.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.6.a/Mindustry-mod-v8.jar",
+      "modVersion": "160.6.a",
+      "sizeBytes": 649210,
+      "downloadCount": 523,
+      "releasedAt": "2026-10-11T18:41:03Z"
     },
     {
       "tag": "v160.5.a",
-      "name": "v160.5.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-06T14:54:46Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v160.5.a",
-      "modVersion": "160.5.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.5.a/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v160.5.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 649114,
-          "downloadCount": 313,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.5.a/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "926199454b73304292b5e4b74a70ca3b24add964",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/926199454b73304292b5e4b74a70ca3b24add964.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v160.5.a/Mindustry-mod-v8.jar",
+      "modVersion": "160.5.a",
+      "sizeBytes": 649114,
+      "downloadCount": 313,
+      "releasedAt": "2026-10-06T14:54:46Z"
     },
     {
       "tag": "v159.7.d",
-      "name": "v159.7.d",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-09T13:38:14Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v159.7.d",
-      "modVersion": "159.7.c",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.d/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v159.7.d.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 635981,
-          "downloadCount": 815,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.d/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bcfb998c40c05cec3f2cf9c7ac3f26c4800af18a",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/bcfb998c40c05cec3f2cf9c7ac3f26c4800af18a.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.d/Mindustry-mod-v8.jar",
+      "modVersion": "159.7.c",
+      "sizeBytes": 635981,
+      "downloadCount": 815,
+      "releasedAt": "2026-09-09T13:38:14Z"
     },
     {
       "tag": "v159.7.c",
-      "name": "v159.7.c",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-28T19:07:21Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v159.7.c",
-      "modVersion": "159.7.b",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.c/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v159.7.c.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 622652,
-          "downloadCount": 456,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.c/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "295712a1618799f75f24dd52dd7482525cc29334",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/295712a1618799f75f24dd52dd7482525cc29334.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.c/Mindustry-mod-v8.jar",
+      "modVersion": "159.7.b",
+      "sizeBytes": 622652,
+      "downloadCount": 456,
+      "releasedAt": "2026-08-28T19:07:21Z"
     },
     {
       "tag": "v159.7.b",
-      "name": "v159.7.b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-26T20:54:37Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v159.7.b",
-      "modVersion": "159.7.b",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.b/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v159.7.b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 624328,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.b/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5f9457ec1b3b8494ba853cb31065240a9db63801",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/5f9457ec1b3b8494ba853cb31065240a9db63801.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.b/Mindustry-mod-v8.jar",
+      "modVersion": "159.7.b",
+      "sizeBytes": 624328,
+      "downloadCount": 13,
+      "releasedAt": "2026-08-26T20:54:37Z"
     },
     {
       "tag": "v159.7.a",
-      "name": "v159.7.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-22T21:41:42Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v159.7.a",
-      "modVersion": "159.7.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.a/Mindustry-mod-v8.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v159.7.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-mod-v8.jar",
-          "size": 581180,
-          "downloadCount": 372,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.a/Mindustry-mod-v8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "efe1b74a94f49287ba7f87c3e91160efb0367ed3",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/efe1b74a94f49287ba7f87c3e91160efb0367ed3.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v159.7.a/Mindustry-mod-v8.jar",
+      "modVersion": "159.7.a",
+      "sizeBytes": 581180,
+      "downloadCount": 372,
+      "releasedAt": "2026-08-22T21:41:42Z"
     },
     {
       "tag": "v155.4.a",
-      "name": "v155.4.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-22T09:23:33Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v155.4.a",
-      "modVersion": "154.3.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v155.4.a/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v155.4.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 565286,
-          "downloadCount": 3684,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v155.4.a/AgzamMod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "685af0a6e719ee499e3904f83e103ef8159e2ff2",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/685af0a6e719ee499e3904f83e103ef8159e2ff2.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v155.4.a/AgzamMod.jar",
+      "modVersion": "154.3.a",
+      "sizeBytes": 565286,
+      "downloadCount": 3684,
+      "releasedAt": "2026-02-22T09:23:33Z"
     },
     {
       "tag": "v154.3.a",
-      "name": "v154.3.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-01T17:06:55Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v154.3.a",
-      "modVersion": "154.3.a",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v154.3.a/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v154.3.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 565640,
-          "downloadCount": 529,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v154.3.a/AgzamMod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2c570cb2800a53fbe5276ab88ec351b3dd92c6e6",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/2c570cb2800a53fbe5276ab88ec351b3dd92c6e6.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v154.3.a/AgzamMod.jar",
+      "modVersion": "154.3.a",
+      "sizeBytes": 565640,
+      "downloadCount": 529,
+      "releasedAt": "2026-02-01T17:06:55Z"
     },
     {
       "tag": "v154.2.a",
-      "name": "v154.2.a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-18T19:24:53Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v154.2.a",
-      "modVersion": "151.1.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v154.2.a/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v154.2.a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 532788,
-          "downloadCount": 1104,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v154.2.a/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "1cd383095fd7d6c575720a817a7bc786ce44f874",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/1cd383095fd7d6c575720a817a7bc786ce44f874.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v154.2.a/AgzamMod.jar",
+      "modVersion": "151.1.0",
+      "sizeBytes": 532788,
+      "downloadCount": 1104,
+      "releasedAt": "2025-12-18T19:24:53Z"
     },
     {
       "tag": "v151.1.0",
-      "name": "v151.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-27T19:03:15Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v151.1.0",
-      "modVersion": "151.1.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v151.1.0/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v151.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 532789,
-          "downloadCount": 1330,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v151.1.0/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "dbf65db13fa3e888ffd1f057fbcda482be28213f",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/dbf65db13fa3e888ffd1f057fbcda482be28213f.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v151.1.0/AgzamMod.jar",
+      "modVersion": "151.1.0",
+      "sizeBytes": 532789,
+      "downloadCount": 1330,
+      "releasedAt": "2025-08-27T19:03:15Z"
     },
     {
       "tag": "v150.1.1",
-      "name": "v150.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-09T21:11:39Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v150.1.1",
-      "modVersion": "150.1.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v150.1.1/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v150.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 529172,
-          "downloadCount": 359,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v150.1.1/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "940b3e5d4a986e774d812853aca13c346b816bce",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/940b3e5d4a986e774d812853aca13c346b816bce.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v150.1.1/AgzamMod.jar",
+      "modVersion": "150.1.1",
+      "sizeBytes": 529172,
+      "downloadCount": 359,
+      "releasedAt": "2025-08-09T21:11:39Z"
     },
     {
       "tag": "v150.1.0",
-      "name": "v150.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-27T09:40:12Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v150.1.0",
-      "modVersion": "150.1.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v150.1.0/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v150.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 426134,
-          "downloadCount": 333,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v150.1.0/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "42193ae5d8252ddeffdb7ca32bf19d7f7efbb024",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/42193ae5d8252ddeffdb7ca32bf19d7f7efbb024.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v150.1.0/AgzamMod.jar",
+      "modVersion": "150.1.0",
+      "sizeBytes": 426134,
+      "downloadCount": 333,
+      "releasedAt": "2025-07-27T09:40:12Z"
     },
     {
       "tag": "150.0.0",
-      "name": "v150.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-24T10:18:34Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/150.0.0",
-      "modVersion": "150.0.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/150.0.0/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/150.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 421340,
-          "downloadCount": 123,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/150.0.0/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "31773a24be6827d5350c9bb29c4b314294e19d54",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/31773a24be6827d5350c9bb29c4b314294e19d54.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/150.0.0/AgzamMod.jar",
+      "modVersion": "150.0.0",
+      "sizeBytes": 421340,
+      "downloadCount": 123,
+      "releasedAt": "2025-07-24T10:18:34Z"
     },
     {
       "tag": "149.0.4",
-      "name": "v149.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-23T11:17:43Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/149.0.4",
-      "modVersion": "149.0.4",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/149.0.4/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/149.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 429071,
-          "downloadCount": 73,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/149.0.4/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "88cda782fe05e636cc6e59965d03afe3248f74bd",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/88cda782fe05e636cc6e59965d03afe3248f74bd.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/149.0.4/AgzamMod.jar",
+      "modVersion": "149.0.4",
+      "sizeBytes": 429071,
+      "downloadCount": 74,
+      "releasedAt": "2025-07-23T11:17:43Z"
     },
     {
       "tag": "v149.0.3",
-      "name": "v149.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-18T21:41:26Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v149.0.3",
-      "modVersion": "149.0.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.3/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v149.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 345950,
-          "downloadCount": 192,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.3/AgzamMod.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "810d3a7f92db5a9cf541f80a1e75d23bcce7b0b8",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/810d3a7f92db5a9cf541f80a1e75d23bcce7b0b8.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.3/AgzamMod.jar",
+      "modVersion": "149.0.3",
+      "sizeBytes": 345950,
+      "downloadCount": 192,
+      "releasedAt": "2025-07-18T21:41:26Z"
     },
     {
       "tag": "v149.0.2",
-      "name": "v149.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-15T23:01:31Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v149.0.2",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.2/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v149.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 296882,
-          "downloadCount": 263,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.2/AgzamMod.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "0816f5d66683fda48edad3b3f016aab071edf6b2",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/0816f5d66683fda48edad3b3f016aab071edf6b2.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.2/AgzamMod.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 296882,
+      "downloadCount": 263,
+      "releasedAt": "2025-06-15T23:01:31Z"
     },
     {
       "tag": "v149.0.1",
-      "name": "v149.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-15T20:11:49Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v149.0.1",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.1/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v149.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 299643,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.1/AgzamMod.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "0816f5d66683fda48edad3b3f016aab071edf6b2",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/0816f5d66683fda48edad3b3f016aab071edf6b2.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.1/AgzamMod.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 299643,
+      "downloadCount": 30,
+      "releasedAt": "2025-06-15T20:11:49Z"
     },
     {
       "tag": "v149.0.0",
-      "name": "v149.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-01T18:41:56Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/v149.0.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.0/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/v149.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 287705,
-          "downloadCount": 223,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.0/AgzamMod.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "4d90db8442c0f38b3779e3c4987e15a14ed732d5",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/4d90db8442c0f38b3779e3c4987e15a14ed732d5.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/v149.0.0/AgzamMod.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 287705,
+      "downloadCount": 223,
+      "releasedAt": "2025-05-01T18:41:56Z"
     },
     {
       "tag": "2.1.0",
-      "name": "v2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-14T16:37:28Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/tag/2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/2.1.0/AgzamMod.jar",
-      "sourceArchiveUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/refs/tags/2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AgzamMod.jar",
-          "size": 289508,
-          "downloadCount": 176,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/2.1.0/AgzamMod.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "988073fc7c2716d0e1dd8b09fe7c1b2aa3f854d6",
-      "archiveByCommitUrl": "https://github.com/agzam4/mindustry-mod-v8/archive/988073fc7c2716d0e1dd8b09fe7c1b2aa3f854d6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v149.0.2",
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-mod-v8/releases/download/2.1.0/AgzamMod.jar",
       "modVersion": "2.1.0",
-      "minGameVersion": "147",
-      "maxGameVersion": 149,
-      "hasRelease": true
-    },
-    {
-      "tag": "v154.2.a",
-      "modVersion": "151.1.0",
-      "minGameVersion": "149",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v160.7.b",
-      "modVersion": "160.7.a",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 289508,
+      "downloadCount": 176,
+      "releasedAt": "2025-04-14T16:37:28Z"
     }
   ],
   "meta": {
+    "name": "agzam4mod",
+    "author": "Agzam4",
+    "description": "Additional functionality",
+    "version": "160.7.a",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "agzam4.AgzamMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

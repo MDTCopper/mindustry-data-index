@@ -1,115 +1,77 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ballgamer56/vanillaextended",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.83",
-      "name": "1.83 v7 update and bug fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-09T01:57:15Z",
-      "htmlUrl": "https://github.com/ballgamer56/VanillaExtended/releases/tag/1.83",
-      "modVersion": "1.83",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.83.zip",
-      "sourceArchiveUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.83.zip",
-      "assets": [],
-      "commitSha": "20bf2f9fa76ca2ee8bd96142125049fc59591120",
-      "archiveByCommitUrl": "https://github.com/ballgamer56/vanillaextended/archive/20bf2f9fa76ca2ee8bd96142125049fc59591120.zip"
+      "modVersion": "1.83",
+      "releasedAt": "2025-10-09T01:57:15Z"
     },
     {
       "tag": "1.81",
-      "name": "1.81 Barracks update!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-18T08:57:22Z",
-      "htmlUrl": "https://github.com/ballgamer56/VanillaExtended/releases/tag/1.81",
-      "modVersion": "1.81",
+      "kind": "tag",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.81.zip",
-      "sourceArchiveUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.81.zip",
-      "assets": [],
-      "commitSha": "0fe4294ab6f9bb9d78ba8c6dc57ffb22cb607b0d",
-      "archiveByCommitUrl": "https://github.com/ballgamer56/vanillaextended/archive/0fe4294ab6f9bb9d78ba8c6dc57ffb22cb607b0d.zip"
+      "modVersion": "1.81",
+      "releasedAt": "2021-10-18T08:57:22Z"
     },
     {
       "tag": "1.8",
-      "name": "1.8 Hydro Carbon update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-18T08:23:13Z",
-      "htmlUrl": "https://github.com/ballgamer56/VanillaExtended/releases/tag/1.8",
-      "modVersion": "1.8",
+      "kind": "tag",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.8.zip",
-      "sourceArchiveUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.8.zip",
-      "assets": [],
-      "commitSha": "aa1ef67bad16dd81f14177f2eecc547ce5be8745",
-      "archiveByCommitUrl": "https://github.com/ballgamer56/vanillaextended/archive/aa1ef67bad16dd81f14177f2eecc547ce5be8745.zip"
+      "modVersion": "1.8",
+      "releasedAt": "2021-10-18T08:23:13Z"
     },
     {
       "tag": "1.7",
-      "name": "1.7 Oil and Armory Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-11T06:00:06Z",
-      "htmlUrl": "https://github.com/ballgamer56/VanillaExtended/releases/tag/1.7",
-      "modVersion": "1.7",
+      "kind": "tag",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.7.zip",
-      "sourceArchiveUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/1.7.zip",
-      "assets": [],
-      "commitSha": "a51376fc73ee8ea30cb2a92358d0151506954005",
-      "archiveByCommitUrl": "https://github.com/ballgamer56/vanillaextended/archive/a51376fc73ee8ea30cb2a92358d0151506954005.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "1.4 Official \"release\"!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-03-12T14:02:50Z",
-      "htmlUrl": "https://github.com/ballgamer56/VanillaExtended/releases/tag/mindustry-mod",
-      "modVersion": "1.4",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/ballgamer56/vanillaextended/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "9f1b098fdf71ba589d1e5f44a4b832710859de11",
-      "archiveByCommitUrl": "https://github.com/ballgamer56/vanillaextended/archive/9f1b098fdf71ba589d1e5f44a4b832710859de11.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.81",
-      "modVersion": "1.81",
-      "minGameVersion": "105",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.83",
-      "modVersion": "1.83",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.7",
+      "releasedAt": "2021-01-11T06:00:06Z"
     }
   ],
   "meta": {
+    "name": "[#25f12f]Vanilla Extended[]",
+    "author": "Tom Petrou",
+    "description": "Mod that added [orange]things[] that should be in the original game and some are just added for convenience sake\n\n[cyan]French translation by Noxenemerus Lunacor[]",
+    "version": "1.83",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

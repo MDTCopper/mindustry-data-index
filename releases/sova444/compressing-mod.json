@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sova444/compressing-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-05T19:10:37Z",
-      "htmlUrl": "https://github.com/sova444/compressing-mod/releases/tag/mindustry-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/sova444/compressing-mod/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/sova444/compressing-mod/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "dff49c4e3aab0538d91bd15e2484df9ad1661103",
-      "archiveByCommitUrl": "https://github.com/sova444/compressing-mod/archive/dff49c4e3aab0538d91bd15e2484df9ad1661103.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-08-05T19:10:37Z"
     }
   ],
   "meta": {
+    "name": "compression",
+    "author": "sovakovrik",
+    "description": "",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

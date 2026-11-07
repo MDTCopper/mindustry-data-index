@@ -1,143 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nitison/image.msch",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.1",
-      "name": "v2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-09T12:36:48Z",
-      "htmlUrl": "https://github.com/NiTiSon/Image.Msch/releases/tag/v2.1",
-      "modVersion": "v2.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2.1/Image.Msch.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/image.msch/archive/refs/tags/v2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Image.Msch.jar",
-          "size": 42251,
-          "downloadCount": 332,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2.1/Image.Msch.jar"
-        },
-        {
-          "name": "Image.MschDesktop.jar",
-          "size": 26896,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2.1/Image.MschDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "77485e0c625b5351c922c82ce1949408552a6fd3",
-      "archiveByCommitUrl": "https://github.com/nitison/image.msch/archive/77485e0c625b5351c922c82ce1949408552a6fd3.zip"
+      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2.1/Image.Msch.jar",
+      "modVersion": "v2.1",
+      "sizeBytes": 69147,
+      "downloadCount": 332,
+      "releasedAt": "2026-08-09T12:36:48Z"
     },
     {
       "tag": "v2",
-      "name": "v2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T01:38:27Z",
-      "htmlUrl": "https://github.com/NiTiSon/Image.Msch/releases/tag/v2",
-      "modVersion": "v2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2/Image.Msch.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/image.msch/archive/refs/tags/v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Image.Msch.jar",
-          "size": 36928,
-          "downloadCount": 50,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2/Image.Msch.jar"
-        },
-        {
-          "name": "Image.MschDesktop.jar",
-          "size": 23678,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2/Image.MschDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "91694b65abdbce31b4bd2bea64df9484a0858f0f",
-      "archiveByCommitUrl": "https://github.com/nitison/image.msch/archive/91694b65abdbce31b4bd2bea64df9484a0858f0f.zip"
+      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v2/Image.Msch.jar",
+      "modVersion": "v2",
+      "sizeBytes": 60606,
+      "downloadCount": 50,
+      "releasedAt": "2026-08-08T01:38:27Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-07T22:54:01Z",
-      "htmlUrl": "https://github.com/NiTiSon/Image.Msch/releases/tag/v1.1",
-      "modVersion": "v1.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1.1/Image.Msch.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/image.msch/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Image.Msch.jar",
-          "size": 26161,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1.1/Image.Msch.jar"
-        },
-        {
-          "name": "Image.MschDesktop.jar",
-          "size": 16947,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1.1/Image.MschDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "50a648b659590be1ae99e72050b3e4b0baf29ea5",
-      "archiveByCommitUrl": "https://github.com/nitison/image.msch/archive/50a648b659590be1ae99e72050b3e4b0baf29ea5.zip"
+      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1.1/Image.Msch.jar",
+      "modVersion": "v1.1",
+      "sizeBytes": 43108,
+      "downloadCount": 7,
+      "releasedAt": "2026-08-07T22:54:01Z"
     },
     {
       "tag": "v1",
-      "name": "v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-07T03:11:26Z",
-      "htmlUrl": "https://github.com/NiTiSon/Image.Msch/releases/tag/v1",
-      "modVersion": "v1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1/Image.Msch.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/image.msch/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Image.Msch.jar",
-          "size": 27986,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1/Image.Msch.jar"
-        },
-        {
-          "name": "Image.MschDesktop.jar",
-          "size": 19176,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1/Image.MschDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "377e65a0e2b5c73bb97ba5097520d52e44e45c18",
-      "archiveByCommitUrl": "https://github.com/nitison/image.msch/archive/377e65a0e2b5c73bb97ba5097520d52e44e45c18.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.1",
-      "modVersion": "v2.1",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/NiTiSon/Image.Msch/releases/download/v1/Image.Msch.jar",
+      "modVersion": "v1",
+      "sizeBytes": 47162,
+      "downloadCount": 36,
+      "releasedAt": "2026-08-07T03:11:26Z"
     }
   ],
   "meta": {
+    "name": "image-msch",
+    "author": "NiTiSon",
+    "description": "\n[white[]] This mod adds ability to share schematics via png images.[[]]\n\n[accent[]] [#FFF000[]]Features:[[]]\n[white[]] Export schematic-images and share them with your friends (or enemy).[[]]\n[white[]] Dropdown images to import schematics.[[]]\n\n How does it works?\n[white[]] The game stores schematics either as msch files or base64 encoded strings.\nThis mod stores schematic data inside png itself.\nBy that you can both share and show your schematics at the same time.[[]]\n  ",
+    "version": "v2.1",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "nitis.imageMsch.ImageMschMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,497 +1,312 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "eb-wilson/helium",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "beta-1.7",
-      "name": "Helium-beta-1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-26T20:26:49Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.7",
-      "modVersion": "beta-1.7",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.7/Helium.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium.jar",
-          "size": 13582474,
-          "downloadCount": 2799,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.7/Helium.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cdb3a9f29b97e3c56d01259dcf48037e9744b15e",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/cdb3a9f29b97e3c56d01259dcf48037e9744b15e.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.7/Helium.jar",
+      "modVersion": "beta-1.7",
+      "sizeBytes": 13582474,
+      "downloadCount": 2821,
+      "releasedAt": "2026-09-26T20:26:49Z"
     },
     {
       "tag": "beta-1.6",
-      "name": "Helium-beta-1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-05T04:45:17Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.6",
-      "modVersion": "beta-1.6",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.6/Helium.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium.jar",
-          "size": 11277307,
-          "downloadCount": 10536,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.6/Helium.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7b41d59f4f9d6ca1a4c648b2f3241412aff2159c",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/7b41d59f4f9d6ca1a4c648b2f3241412aff2159c.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.6/Helium.jar",
+      "modVersion": "beta-1.6",
+      "sizeBytes": 11277307,
+      "downloadCount": 10536,
+      "releasedAt": "2026-05-05T04:45:17Z"
     },
     {
       "tag": "beta-1.5",
-      "name": "Helium-beta-1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-28T16:49:01Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.5",
-      "modVersion": "beta-1.5",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.5/Helium-beta-1.5.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.5.jar",
-          "size": 11137256,
-          "downloadCount": 3494,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.5/Helium-beta-1.5.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b87d4bca5731525960cfca218d63c2e44bb7c10a",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/b87d4bca5731525960cfca218d63c2e44bb7c10a.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.5/Helium-beta-1.5.jar",
+      "modVersion": "beta-1.5",
+      "sizeBytes": 11137256,
+      "downloadCount": 3494,
+      "releasedAt": "2026-03-28T16:49:01Z"
     },
     {
       "tag": "beta-1.4b",
-      "name": "Helium-beta-1.4b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-30T03:22:11Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.4b",
-      "modVersion": "beta-1.4b",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.4b/Helium-beta-1.4b.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.4b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.4b.jar",
-          "size": 6393014,
-          "downloadCount": 3920,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.4b/Helium-beta-1.4b.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9afb4d014d68de1f8ad3ff57922fdc7f7fc94d3f",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/9afb4d014d68de1f8ad3ff57922fdc7f7fc94d3f.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.4b/Helium-beta-1.4b.jar",
+      "modVersion": "beta-1.4b",
+      "sizeBytes": 6393014,
+      "downloadCount": 3920,
+      "releasedAt": "2025-12-30T03:22:11Z"
     },
     {
       "tag": "beta-1.4",
-      "name": "Helium-beta-1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-27T16:20:25Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.4",
-      "modVersion": "beta-1.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.4/Helium-beta-1.4.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.4.jar",
-          "size": 6384510,
-          "downloadCount": 330,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.4/Helium-beta-1.4.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7faa72ced647b0356d9b41383a058db2d4fc56f2",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/7faa72ced647b0356d9b41383a058db2d4fc56f2.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.4/Helium-beta-1.4.jar",
+      "modVersion": "beta-1.4",
+      "sizeBytes": 6384510,
+      "downloadCount": 330,
+      "releasedAt": "2025-12-27T16:20:25Z"
     },
     {
       "tag": "beta-1.3",
-      "name": "Helium-beta-1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-26T12:26:08Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.3",
-      "modVersion": "beta-1.3",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.3/Helium-beta-1.3.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.3.jar",
-          "size": 6363556,
-          "downloadCount": 2719,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.3/Helium-beta-1.3.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "0a486493681b02cae7ed8c1c125d2e4bc74e113f",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/0a486493681b02cae7ed8c1c125d2e4bc74e113f.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.3/Helium-beta-1.3.jar",
+      "modVersion": "beta-1.3",
+      "sizeBytes": 6363556,
+      "downloadCount": 2719,
+      "releasedAt": "2025-09-26T12:26:08Z"
     },
     {
       "tag": "beta-1.2",
-      "name": "Helium-beta-1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-17T15:22:23Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.2",
-      "modVersion": "beta-1.2",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.2/Helium-beta-1.2.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.2.jar",
-          "size": 6353562,
-          "downloadCount": 380,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.2/Helium-beta-1.2.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "e907b01831e6e46932fc20a29723bdcb7921c7bf",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/e907b01831e6e46932fc20a29723bdcb7921c7bf.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.2/Helium-beta-1.2.jar",
+      "modVersion": "beta-1.2",
+      "sizeBytes": 6353562,
+      "downloadCount": 380,
+      "releasedAt": "2025-09-17T15:22:23Z"
     },
     {
       "tag": "beta-1.1a",
-      "name": "Helium-beta-1.1a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-11T15:35:03Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.1a",
-      "modVersion": "beta-1.1a",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.1a/Helium-1.1a.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.1a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-1.1a.jar",
-          "size": 6353359,
-          "downloadCount": 1095,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.1a/Helium-1.1a.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "0483b9d3afb7f23822af92b9e76a2712c7b338d0",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/0483b9d3afb7f23822af92b9e76a2712c7b338d0.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.1a/Helium-1.1a.jar",
+      "modVersion": "beta-1.1a",
+      "sizeBytes": 6353359,
+      "downloadCount": 1095,
+      "releasedAt": "2025-08-11T15:35:03Z"
     },
     {
       "tag": "beta-1.1",
-      "name": "Helium-beta-1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-20T14:05:47Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.1",
-      "modVersion": "beta-1.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.1/Helium-beta-1.1.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.1.jar",
-          "size": 6348038,
-          "downloadCount": 908,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.1/Helium-beta-1.1.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "ad448f544c7e93b0712fa34d70f0c2f512f93a01",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/ad448f544c7e93b0712fa34d70f0c2f512f93a01.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.1/Helium-beta-1.1.jar",
+      "modVersion": "beta-1.1",
+      "sizeBytes": 6348038,
+      "downloadCount": 911,
+      "releasedAt": "2025-07-20T14:05:47Z"
     },
     {
       "tag": "beta-1.0",
-      "name": "Helium-beta-1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-07T11:58:17Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-1.0",
-      "modVersion": "beta-1.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.0/Helium-beta-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-1.0.jar",
-          "size": 6290730,
-          "downloadCount": 512,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.0/Helium-beta-1.0.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "1a00fa20a87260895b56f3b99d630a9c120bef76",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/1a00fa20a87260895b56f3b99d630a9c120bef76.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-1.0/Helium-beta-1.0.jar",
+      "modVersion": "beta-1.0",
+      "sizeBytes": 6290730,
+      "downloadCount": 512,
+      "releasedAt": "2025-07-07T11:58:17Z"
     },
     {
       "tag": "beta-0.8",
-      "name": "Helium-beta-0.8",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-06-16T16:41:49Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.8",
-      "modVersion": "beta-0.8",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.8/Helium-beta-0.8.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-0.8.jar",
-          "size": 6259891,
-          "downloadCount": 98,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.8/Helium-beta-0.8.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "456624b0d1c2ae2c63bdbec1705b635bcdb30f2c",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/456624b0d1c2ae2c63bdbec1705b635bcdb30f2c.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.8/Helium-beta-0.8.jar",
+      "modVersion": "beta-0.8",
+      "sizeBytes": 6259891,
+      "downloadCount": 98,
+      "releasedAt": "2025-06-16T16:41:49Z",
+      "prerelease": true
     },
     {
       "tag": "beta-0.6",
-      "name": "Helium-beta-0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-02T14:55:56Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.6",
-      "modVersion": "beta-0.6",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.6/Helium.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium.jar",
-          "size": 3763843,
-          "downloadCount": 1907,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.6/Helium.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "cd5b20ee0ff4f49e78efe8f5abdcdec5148f88cc",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/cd5b20ee0ff4f49e78efe8f5abdcdec5148f88cc.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.6/Helium.jar",
+      "modVersion": "beta-0.6",
+      "sizeBytes": 3763843,
+      "downloadCount": 1907,
+      "releasedAt": "2025-05-02T14:55:56Z"
     },
     {
       "tag": "beta-0.5b",
-      "name": "Helium-beta-0.5b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-01T15:07:11Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.5b",
-      "modVersion": "beta-0.5b",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.5b/Helium.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.5b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium.jar",
-          "size": 3763626,
-          "downloadCount": 81,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.5b/Helium.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "9aa025fd5238ae6fca3783d6d2de872f96022901",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/9aa025fd5238ae6fca3783d6d2de872f96022901.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.5b/Helium.jar",
+      "modVersion": "beta-0.5b",
+      "sizeBytes": 3763626,
+      "downloadCount": 81,
+      "releasedAt": "2025-05-01T15:07:11Z"
     },
     {
       "tag": "beta-0.5",
-      "name": "Helium-beta-0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-01T08:34:37Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.5",
-      "modVersion": "beta-0.5",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.5/Helium.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium.jar",
-          "size": 3758861,
-          "downloadCount": 115,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.5/Helium.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "dcb6cd21a4e4b38bc63c7d304ed39ec52ae99cfd",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/dcb6cd21a4e4b38bc63c7d304ed39ec52ae99cfd.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.5/Helium.jar",
+      "modVersion": "beta-0.5",
+      "sizeBytes": 3758861,
+      "downloadCount": 115,
+      "releasedAt": "2025-05-01T08:34:37Z"
     },
     {
       "tag": "beta-0.4",
-      "name": "Helium-beta-0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-29T16:03:04Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.4",
-      "modVersion": "beta-0.4",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.4/Helium.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium.jar",
-          "size": 3730590,
-          "downloadCount": 173,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.4/Helium.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "bac3c5c9cf33362c9535fe394719e09f6274c887",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/bac3c5c9cf33362c9535fe394719e09f6274c887.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.4/Helium.jar",
+      "modVersion": "beta-0.4",
+      "sizeBytes": 3730590,
+      "downloadCount": 173,
+      "releasedAt": "2025-04-29T16:03:04Z"
     },
     {
       "tag": "beta-0.3",
-      "name": "Helium-beta-0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-24T12:43:23Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.3",
-      "modVersion": "beta-0.3",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.3/Helium-beta-0.3a.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-0.3a.jar",
-          "size": 2982893,
-          "downloadCount": 324,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.3/Helium-beta-0.3a.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "621635ec36b6e69c78b7656f66b00a73d2e06f4f",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/621635ec36b6e69c78b7656f66b00a73d2e06f4f.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.3/Helium-beta-0.3a.jar",
+      "modVersion": "beta-0.3",
+      "sizeBytes": 2982893,
+      "downloadCount": 325,
+      "releasedAt": "2025-04-24T12:43:23Z"
     },
     {
       "tag": "beta-0.2",
-      "name": "Helium-beta-0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-16T17:34:16Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/beta-0.2",
-      "modVersion": "beta-0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.2/Helium-beta-0.2.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/beta-0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-0.2.jar",
-          "size": 6691345,
-          "downloadCount": 102,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.2/Helium-beta-0.2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7350115842265477d2cc7753d315f2ae0f3a916e",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/7350115842265477d2cc7753d315f2ae0f3a916e.zip"
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/beta-0.2/Helium-beta-0.2.jar",
+      "modVersion": "beta-0.2",
+      "sizeBytes": 6691345,
+      "downloadCount": 103,
+      "releasedAt": "2025-04-16T17:34:16Z",
+      "prerelease": true
     },
     {
       "tag": "Helium-beta-0.1",
-      "name": "Helium-beta-0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-16T16:44:52Z",
-      "htmlUrl": "https://github.com/EB-wilson/Helium/releases/tag/Helium-beta-0.1",
-      "modVersion": "beta-0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/Helium-beta-0.1/Helium-beta-0.1.jar",
-      "sourceArchiveUrl": "https://github.com/eb-wilson/helium/archive/refs/tags/Helium-beta-0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Helium-beta-0.1.jar",
-          "size": 6691380,
-          "downloadCount": 140,
-          "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/Helium-beta-0.1/Helium-beta-0.1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "84b2047571a570d77dddd11e09d4c9e8ede67813",
-      "archiveByCommitUrl": "https://github.com/eb-wilson/helium/archive/84b2047571a570d77dddd11e09d4c9e8ede67813.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "beta-0.2",
-      "modVersion": "beta-0.2",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "beta-0.6",
-      "modVersion": "beta-0.6",
-      "minGameVersion": "147",
-      "maxGameVersion": 149,
-      "hasRelease": true
-    },
-    {
-      "tag": "beta-1.1",
-      "modVersion": "beta-1.1",
-      "minGameVersion": "149",
-      "maxGameVersion": 150,
-      "hasRelease": true
-    },
-    {
-      "tag": "beta-1.3",
-      "modVersion": "beta-1.3",
-      "minGameVersion": "150",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "beta-1.4b",
-      "modVersion": "beta-1.4b",
-      "minGameVersion": "154",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "beta-1.6",
-      "modVersion": "beta-1.6",
-      "minGameVersion": "156",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "beta-1.7",
-      "modVersion": "beta-1.7",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/EB-wilson/Helium/releases/download/Helium-beta-0.1/Helium-beta-0.1.jar",
+      "modVersion": "beta-0.1",
+      "sizeBytes": 6691380,
+      "downloadCount": 141,
+      "releasedAt": "2025-04-16T16:44:52Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "he",
+    "author": "EBwilson",
+    "description": "\nA mod provide optimized ui and more utilities.\nMajor features:\n- ***In-Game Entity Information Components***: Provides various UI elements for game entities including units and blocks\n  - ***Health & Status Indicators***: Displays real-time status (health, shields) above units and entities. When shield stacks exceed max health, multi-layer shields with stack counters are shown.\n  - ***Attack Range Indicators***: Units and turrets now visualize their attack ranges as translucent areas. Processed boundaries emphasize combined team range contours to prevent visual clutter, with subtle pulsating animations and chromatic borders.\n  - ***Functional Block Effect Range Indicators***: Devices like Mend Projectors, Overdrive Projectors, and unit repair stations display effect ranges with distinctive colors.\n- ***Enhanced Block Placement Panel***: A refined block selection panel integrating a quick item bar and standardized tool buttons.\n- ***The better Mod Manager and Mod Browser***: Reworked the Mods Manager and Mods Browser, now they looks more aesthetically pleasing and functional\n",
+    "version": "beta-1.7",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "helium.Helium",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

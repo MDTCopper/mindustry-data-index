@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "eight-squared/pretty-fire",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.1",
-      "name": "1.1 for v8 beta (build149)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-14T13:38:32Z",
-      "htmlUrl": "https://github.com/Eight-Squared/pretty-fire/releases/tag/1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Eight-Squared/pretty-fire/releases/download/1.1/pretty-fire-149.zip",
-      "sourceArchiveUrl": "https://github.com/eight-squared/pretty-fire/archive/refs/tags/1.1.zip",
-      "assets": [
-        {
-          "name": "pretty-fire-149.zip",
-          "size": 253289,
-          "downloadCount": 37,
-          "downloadUrl": "https://github.com/Eight-Squared/pretty-fire/releases/download/1.1/pretty-fire-149.zip"
-        }
-      ],
-      "commitSha": "e179ac5a26171068fec9de4b40bb4fd2562883b9",
-      "archiveByCommitUrl": "https://github.com/eight-squared/pretty-fire/archive/e179ac5a26171068fec9de4b40bb4fd2562883b9.zip"
+      "modVersion": "1",
+      "sizeBytes": 253289,
+      "downloadCount": 37,
+      "releasedAt": "2025-05-14T13:38:32Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0 for v7 (build146)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-14T13:25:35Z",
-      "htmlUrl": "https://github.com/Eight-Squared/pretty-fire/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Eight-Squared/pretty-fire/releases/download/1.0/pretty-fire-7-146-.zip",
-      "sourceArchiveUrl": "https://github.com/eight-squared/pretty-fire/archive/refs/tags/1.0.zip",
-      "assets": [
-        {
-          "name": "pretty-fire-7-146-.zip",
-          "size": 253474,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/Eight-Squared/pretty-fire/releases/download/1.0/pretty-fire-7-146-.zip"
-        }
-      ],
-      "commitSha": "706d5ca51e3ea20437a597a771758595e4dd9b3a",
-      "archiveByCommitUrl": "https://github.com/eight-squared/pretty-fire/archive/706d5ca51e3ea20437a597a771758595e4dd9b3a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": 149,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.1",
-      "modVersion": "1",
-      "minGameVersion": "149",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 253474,
+      "downloadCount": 10,
+      "releasedAt": "2025-05-14T13:25:35Z"
     }
   ],
   "meta": {
+    "name": "pretty-fire",
+    "author": "Eight Squared",
+    "description": "Retextures the fire animation. Go to releases for different versons.",
+    "version": "1",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

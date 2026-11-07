@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "leyn-pl/notitansmoke",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-13T11:45:54Z",
-      "htmlUrl": "https://github.com/Leyn-pl/NoTitanSmoke/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/leyn-pl/notitansmoke/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/leyn-pl/notitansmoke/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "449cc24d924bb8bd70427eb40b7bfe3ab7ab9999",
-      "archiveByCommitUrl": "https://github.com/leyn-pl/notitansmoke/archive/449cc24d924bb8bd70427eb40b7bfe3ab7ab9999.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1.0",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-12-13T11:45:54Z"
     }
   ],
   "meta": {
+    "name": "notitansmoke",
+    "author": "LEYN1092",
+    "description": "Removes Titan's smoke, leaving only clean explosion effect.",
+    "version": "1.0",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

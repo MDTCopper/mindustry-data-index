@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "m1cxzfw3q/logicextend",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.0.3",
-      "name": "0.0.3 Alpha-V8+",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-09T14:57:47Z",
-      "htmlUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/tag/0.0.3",
-      "modVersion": "0.0.3",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.3/LogicExtend.jar",
-      "sourceArchiveUrl": "https://github.com/m1cxzfw3q/logicextend/archive/refs/tags/0.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicExtend.jar",
-          "size": 57554,
-          "downloadCount": 3587,
-          "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.3/LogicExtend.jar"
+          "from": "151.1",
+          "to": "154"
         }
       ],
-      "commitSha": "56b7417ee226583503c3ffaaddd4981d95da2ece",
-      "archiveByCommitUrl": "https://github.com/m1cxzfw3q/logicextend/archive/56b7417ee226583503c3ffaaddd4981d95da2ece.zip"
+      "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.3/LogicExtend.jar",
+      "modVersion": "0.0.3",
+      "sizeBytes": 57554,
+      "downloadCount": 3588,
+      "releasedAt": "2025-11-09T14:57:47Z"
     },
     {
       "tag": "0.0.2",
-      "name": "0.0.2 Alpha-V8+",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-02T07:06:10Z",
-      "htmlUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/tag/0.0.2",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.2/LogicExtend.jar",
-      "sourceArchiveUrl": "https://github.com/m1cxzfw3q/logicextend/archive/refs/tags/0.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicExtend.jar",
-          "size": 48489,
-          "downloadCount": 151,
-          "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.2/LogicExtend.jar"
+          "from": "151.1",
+          "to": "154"
         }
       ],
-      "commitSha": "7f4c3086f1203e5f5fdee9005a85eafade07cf81",
-      "archiveByCommitUrl": "https://github.com/m1cxzfw3q/logicextend/archive/7f4c3086f1203e5f5fdee9005a85eafade07cf81.zip"
+      "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.2/LogicExtend.jar",
+      "modVersion": "0.0.1",
+      "sizeBytes": 48489,
+      "downloadCount": 151,
+      "releasedAt": "2025-11-02T07:06:10Z"
     },
     {
       "tag": "0.0.1",
-      "name": "0.0.1 Alpha-V8+",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-01T09:26:00Z",
-      "htmlUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/tag/0.0.1",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.1/LogicExtend.jar",
-      "sourceArchiveUrl": "https://github.com/m1cxzfw3q/logicextend/archive/refs/tags/0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicExtend.jar",
-          "size": 9796,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.1/LogicExtend.jar"
+          "from": "151.1",
+          "to": "154"
         }
       ],
-      "commitSha": "9d7adc86f3b85a0ba9589c022a4d2f794701e7e8",
-      "archiveByCommitUrl": "https://github.com/m1cxzfw3q/logicextend/archive/9d7adc86f3b85a0ba9589c022a4d2f794701e7e8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.3",
-      "modVersion": "0.0.3",
-      "minGameVersion": "151.1",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/m1cxzfw3q/LogicExtend/releases/download/0.0.1/LogicExtend.jar",
+      "modVersion": "0.0.1",
+      "sizeBytes": 9796,
+      "downloadCount": 25,
+      "releasedAt": "2025-11-01T09:26:00Z"
     }
   ],
   "meta": {
+    "name": "logic-extend",
+    "author": "[[]sky]114514[[]white]",
+    "description": "A mod that extends logical statements\n 一个扩展了逻辑语句的模组",
+    "version": "0.0.3",
+    "minGameVersion": "151.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "logicExtend.LEMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

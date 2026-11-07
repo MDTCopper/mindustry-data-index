@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "siliconmod/silicon",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "va0.13.0.0",
-      "name": "Silicon a0.13.0.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-01T16:24:14Z",
-      "htmlUrl": "https://github.com/SiliconMod/Silicon/releases/tag/va0.13.0.0",
-      "modVersion": "a0.13.0.0",
+      "kind": "release",
       "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SiliconMod/Silicon/releases/download/va0.13.0.0/Silicon-a0.13.0.0-v160.5.jar",
-      "sourceArchiveUrl": "https://github.com/siliconmod/silicon/archive/refs/tags/va0.13.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Silicon-a0.13.0.0-v160.5.jar",
-          "size": 866406,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/SiliconMod/Silicon/releases/download/va0.13.0.0/Silicon-a0.13.0.0-v160.5.jar"
+          "from": "155.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0bc9a51d90600e98040ff227f973a42497a3c2b2",
-      "archiveByCommitUrl": "https://github.com/siliconmod/silicon/archive/0bc9a51d90600e98040ff227f973a42497a3c2b2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "va0.13.0.0",
+      "downloadUrl": "https://github.com/SiliconMod/Silicon/releases/download/va0.13.0.0/Silicon-a0.13.0.0-v160.5.jar",
       "modVersion": "a0.13.0.0",
-      "minGameVersion": "155.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 866406,
+      "downloadCount": 69,
+      "releasedAt": "2026-10-01T16:24:14Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "silicon",
+    "author": "Xiaobei",
+    "description": "一个个人用的 Mindustry 模组，提供实用方块与便捷功能：\n\n· 物流：物品传输中枢（零缓冲跨网络自动调度）、万向交叉器（全局优先级 + 按方向覆盖）、两用交叉器、两用仓储\n· 电力：电力保护器、利滚利发电机、发电泵\n· 生产：矿物转换器\n· 信号系统：信号源 / 信号中继器（15 格对数衰减信号 0~99，H 键查看覆盖，需要供电）\n· 卫星系统：卫星发射中枢 + 卫星控制台，发射实体卫星入轨——轨道决定覆盖与燃油，信号可被干扰器压制，卫星随存档持久化（第一阶段）\n· 便捷功能：方块搜索、多人暂停、自动更新",
+    "version": "a0.13.0.0",
+    "minGameVersion": "155.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "silicon.Silicon",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

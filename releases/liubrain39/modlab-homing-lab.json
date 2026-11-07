@@ -1,54 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "liubrain39/modlab-homing-lab",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v0.1.0",
-      "name": "ModLab Homing Lab 0.1.0 [v160.7]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-10T02:15:39Z",
-      "htmlUrl": "https://github.com/liubrain39/modlab-homing-lab/releases/tag/v0.1.0",
-      "modVersion": "0.1.0",
+      "kind": "release",
       "minGameVersion": "160.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/liubrain39/modlab-homing-lab/releases/download/v0.1.0/modlab-homing-lab-0.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/liubrain39/modlab-homing-lab/archive/refs/tags/v0.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-verification.json",
-          "size": 2643,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/liubrain39/modlab-homing-lab/releases/download/v0.1.0/mindustry-verification.json"
-        },
-        {
-          "name": "modlab-homing-lab-0.1.0.zip",
-          "size": 8283,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/liubrain39/modlab-homing-lab/releases/download/v0.1.0/modlab-homing-lab-0.1.0.zip"
+          "from": "160.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "37bdf86dcb8b88081544c3b04bf6368efb3faaca",
-      "archiveByCommitUrl": "https://github.com/liubrain39/modlab-homing-lab/archive/37bdf86dcb8b88081544c3b04bf6368efb3faaca.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.0",
+      "downloadUrl": "https://github.com/liubrain39/modlab-homing-lab/releases/download/v0.1.0/modlab-homing-lab-0.1.0.zip",
       "modVersion": "0.1.0",
-      "minGameVersion": "160.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 10926,
+      "downloadCount": 5,
+      "releasedAt": "2026-10-10T02:15:39Z"
     }
   ],
   "meta": {
+    "name": "modlab-homing",
+    "author": "ModLab",
+    "description": "A free single-player homing-missile workshop. Two copper turrets, one repeatable moving-target lab. Open ModLab Homing Lab from the main menu, or press F8. Built with Codex and the Universal Modder workflow.",
+    "version": "0.1.0",
+    "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

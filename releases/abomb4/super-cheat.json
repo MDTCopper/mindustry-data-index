@@ -1,237 +1,150 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "abomb4/super-cheat",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v4.1.0",
-      "name": "v4.1.0: Smart Filler",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-13T12:08:06Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v4.1.0",
-      "modVersion": "4.1.0",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.1.0/super-cheat-v4.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v4.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v4.1.0.zip",
-          "size": 971848,
-          "downloadCount": 1034,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.1.0/super-cheat-v4.1.0.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bbf3d4051b71c62351312bae5f8c8bf9637b7cdd",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/bbf3d4051b71c62351312bae5f8c8bf9637b7cdd.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.1.0/super-cheat-v4.1.0.zip",
+      "modVersion": "4.1.0",
+      "sizeBytes": 971848,
+      "downloadCount": 1036,
+      "releasedAt": "2026-06-13T12:08:06Z"
     },
     {
       "tag": "v4.0.1",
-      "name": "v4.0.1 Tech Tree, v158",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-11T15:50:21Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v4.0.1",
-      "modVersion": "4.0.1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.0.1/super-cheat-v4.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v4.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v4.0.1.zip",
-          "size": 1011927,
-          "downloadCount": 64,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.0.1/super-cheat-v4.0.1.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "69a92432fe4bd9149caf6ca76b7aa19a2b71515c",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/69a92432fe4bd9149caf6ca76b7aa19a2b71515c.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.0.1/super-cheat-v4.0.1.zip",
+      "modVersion": "4.0.1",
+      "sizeBytes": 1011927,
+      "downloadCount": 64,
+      "releasedAt": "2026-06-11T15:50:21Z"
     },
     {
       "tag": "v4.0.0",
-      "name": "v4.0.0: V8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-01T15:16:44Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v4.0.0",
-      "modVersion": "4.0.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.0.0/super-cheat-v4.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v4.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v4.0.0.zip",
-          "size": 997100,
-          "downloadCount": 2209,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.0.0/super-cheat-v4.0.0.zip"
+          "from": "149",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6175e8f7c29d9682623274ce318649ffd9d4bea6",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/6175e8f7c29d9682623274ce318649ffd9d4bea6.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v4.0.0/super-cheat-v4.0.0.zip",
+      "modVersion": "4.0.0",
+      "sizeBytes": 997100,
+      "downloadCount": 2209,
+      "releasedAt": "2025-05-01T15:16:44Z"
     },
     {
       "tag": "v3.1.1",
-      "name": "v3.1.1: Fixed Adjustable overdrive projector #16",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-08T15:04:45Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v3.1.1",
-      "modVersion": "3.1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.1.1/super-cheat-v3.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v3.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v3.1.1.zip",
-          "size": 981238,
-          "downloadCount": 2627,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.1.1/super-cheat-v3.1.1.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bc3fe85dc710ed78e9588fb7e092297683abbccc",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/bc3fe85dc710ed78e9588fb7e092297683abbccc.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.1.1/super-cheat-v3.1.1.zip",
+      "modVersion": "3.1.1",
+      "sizeBytes": 981238,
+      "downloadCount": 2627,
+      "releasedAt": "2023-08-08T15:04:45Z"
     },
     {
       "tag": "v3.1.0",
-      "name": "v3.1.0: Two turrets",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-06T05:52:38Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v3.1.0",
-      "modVersion": "3.1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.1.0/super-cheat-v3.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v3.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v3.1.0.zip",
-          "size": 981274,
-          "downloadCount": 1099,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.1.0/super-cheat-v3.1.0.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7df7107f373a697028d61875ba69b301844725f4",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/7df7107f373a697028d61875ba69b301844725f4.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.1.0/super-cheat-v3.1.0.zip",
+      "modVersion": "3.1.0",
+      "sizeBytes": 981274,
+      "downloadCount": 1099,
+      "releasedAt": "2022-10-06T05:52:38Z"
     },
     {
       "tag": "v3.0.0",
-      "name": "v3.0.0: Update to V7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-17T13:49:13Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v3.0.0",
-      "modVersion": "3.0.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.0.0/super-cheat-v3.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v3.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v3.0.0.zip",
-          "size": 961929,
-          "downloadCount": 238,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.0.0/super-cheat-v3.0.0.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c06b772db5738308c5135a69936e81421d6ada25",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/c06b772db5738308c5135a69936e81421d6ada25.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v3.0.0/super-cheat-v3.0.0.zip",
+      "modVersion": "3.0.0",
+      "sizeBytes": 961929,
+      "downloadCount": 238,
+      "releasedAt": "2022-09-17T13:49:13Z"
     },
     {
       "tag": "v2.8.4",
-      "name": "v2.8.4: Add buildTime to all blocks to hopefully prevent crashing",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-11T01:17:47Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v2.8.4",
-      "modVersion": "2.8.4",
+      "kind": "release",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v2.8.4/super-cheat-v2.8.4.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v2.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v2.8.4.zip",
-          "size": 957126,
-          "downloadCount": 972,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v2.8.4/super-cheat-v2.8.4.zip"
+          "from": "122",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b3c4e97ce266043df210c322945e2f8eff0543dc",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/b3c4e97ce266043df210c322945e2f8eff0543dc.zip"
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v2.8.4/super-cheat-v2.8.4.zip",
+      "modVersion": "2.8.4",
+      "sizeBytes": 957126,
+      "downloadCount": 972,
+      "releasedAt": "2022-02-11T01:17:47Z"
     },
     {
       "tag": "v2.8.2",
-      "name": "v2.8.2: Optimize Chrono Unloader and Pusher",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-06-27T14:45:59Z",
-      "htmlUrl": "https://github.com/abomb4/super-cheat/releases/tag/v2.8.2",
-      "modVersion": "2.8.2",
+      "kind": "release",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v2.8.2/super-cheat-v2.8.2.zip",
-      "sourceArchiveUrl": "https://github.com/abomb4/super-cheat/archive/refs/tags/v2.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "super-cheat-v2.8.2.zip",
-          "size": 940930,
-          "downloadCount": 480,
-          "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v2.8.2/super-cheat-v2.8.2.zip"
+          "from": "122",
+          "to": "135.2"
         }
       ],
-      "commitSha": "d734f5a127047cc004a52a1de8677a93aeacdadb",
-      "archiveByCommitUrl": "https://github.com/abomb4/super-cheat/archive/d734f5a127047cc004a52a1de8677a93aeacdadb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.8.4",
-      "modVersion": "2.8.4",
-      "minGameVersion": "122",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.1.1",
-      "modVersion": "3.1.1",
-      "minGameVersion": "136",
-      "maxGameVersion": 149,
-      "hasRelease": true
-    },
-    {
-      "tag": "v4.0.0",
-      "modVersion": "4.0.0",
-      "minGameVersion": "149",
-      "maxGameVersion": 158,
-      "hasRelease": true
-    },
-    {
-      "tag": "v4.1.0",
-      "modVersion": "4.1.0",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/abomb4/super-cheat/releases/download/v2.8.2/super-cheat-v2.8.2.zip",
+      "modVersion": "2.8.2",
+      "sizeBytes": 940930,
+      "downloadCount": 480,
+      "releasedAt": "2021-06-27T14:45:59Z"
     }
   ],
   "meta": {
+    "name": "Invincible Cheat Mod v8",
+    "author": "滞人",
+    "description": "\nThis is a [red]cheat[] mod, abuse will reduce your game experience, be careful for using this.\nGitHub: https://github.com/abomb4/super-cheat\nemail:  abomb4@163.com\nWellcome to feedback!\n如果 Android 玩家发现物品描述都是英文，去游戏设置 -> 语言 -> 切换成任意其他语言（如繁体中文）-> 重启 -> 切回简体中文即可。\n\nFeatures:\n- Adjustable Overdrive Projector (speedup, or slow down)\n- Team Changer\n- DPS Tester Unit and Walls\n- Invincible Core and Invincible build plane\n- Cheat Items (power source, liquid source, item source with 36x faster)\n- Invincible Wall, Invincible Force Projector\n- Several strange projectors\n- Chronosphere Unloader and Pusher\n- Unit Factory that can build unit for enemys\n\n这是个[red]作弊[] mod，会降低游戏体验，请谨慎使用。\n主要特性：\n- 可调整的超速投影（更快，也可以更慢）\n- 队伍更换器\n- DPS 测试单位与测试墙\n- 无敌核心，无敌建造机\n- 作弊物品（电源、水源、物品源超快版）\n- 无敌围墙，无敌力场\n- 一大堆神奇力场\n- 时空提取器、时空推送器\n- 单位工厂（可以给敌人出兵）\n\nЭто [red]читерный[] мод, злоупотребление испортит интерес к игре, острожней с этим.\nВозможности:\n- Настраиваемый сверхприводный проектор (ускорение или замедление)\n- Блоки, меняющие команду, за которую играют те или иные единицы (или вы сами)\n- Измеритель урона в секунду\n- Непобедимое ядро и его строительная боевая единица\n- Cheat Items (power source, liquid source, item source with 36x faster)\n- Неразрушаемые стены, силовой проектор с бесконечной прочностью\n- Несколько полезных проекторов\n- Дистанционный загрузчик и разгрузчик\n- Универсальный завод боевых единиц, также может производить их для врагов\n",
+    "version": "4.1.0",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

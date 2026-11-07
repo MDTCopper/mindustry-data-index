@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "charhon/casino-mod-v2",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.0.0",
-      "name": "Casino Mod V2.0.0 (big update)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-06T12:43:30Z",
-      "htmlUrl": "https://github.com/Charhon/Casino-mod-v2/releases/tag/v2.0.0",
-      "modVersion": "Beta Version",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Charhon/Casino-mod-v2/releases/download/v2.0.0/Casino.mod.zip",
-      "sourceArchiveUrl": "https://github.com/charhon/casino-mod-v2/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Casino.mod.zip",
-          "size": 29051,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Charhon/Casino-mod-v2/releases/download/v2.0.0/Casino.mod.zip"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "caaf8a24499796b043bc426db1c131cf2df2f951",
-      "archiveByCommitUrl": "https://github.com/charhon/casino-mod-v2/archive/caaf8a24499796b043bc426db1c131cf2df2f951.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.0.0",
+      "downloadUrl": "https://github.com/Charhon/Casino-mod-v2/releases/download/v2.0.0/Casino.mod.zip",
       "modVersion": "Beta Version",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 29051,
+      "downloadCount": 4,
+      "releasedAt": "2026-10-06T12:43:30Z"
     }
   ],
   "meta": {
+    "name": "casino-mod",
+    "author": "Charhon",
+    "description": "RU:Добавляет блок Казино: ставь одни предметы на другие, шанс зависит от ценности предметов EN:This mod add block-Casino",
+    "version": "Beta Version",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

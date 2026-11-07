@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "notquite-mytempo/implosion",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "release",
-      "name": "Release implosion",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-08T09:33:34Z",
-      "htmlUrl": "https://github.com/notquite-mytempo/implosion/releases/tag/release",
-      "modVersion": "0.0280",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/notquite-mytempo/implosion/releases/download/release/implosion.jar",
-      "sourceArchiveUrl": "https://github.com/notquite-mytempo/implosion/archive/refs/tags/release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "implosion.jar",
-          "size": 391327,
-          "downloadCount": 4160,
-          "downloadUrl": "https://github.com/notquite-mytempo/implosion/releases/download/release/implosion.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "89f9a60507fd99b96dcd80ad18dcdc4f40a797a0",
-      "archiveByCommitUrl": "https://github.com/notquite-mytempo/implosion/archive/89f9a60507fd99b96dcd80ad18dcdc4f40a797a0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release",
+      "downloadUrl": "https://github.com/notquite-mytempo/implosion/releases/download/release/implosion.jar",
       "modVersion": "0.0280",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 391327,
+      "downloadCount": 4160,
+      "releasedAt": "2024-06-08T09:33:34Z"
     }
   ],
   "meta": {
+    "name": "implosion",
+    "author": "[sky]Norax[white] + [orange] mimikyu + baronch",
+    "description": "A mindustry mod that adds a brand new planet: Europa, one of the seven moons of Jupiter, also with a brand new tech tree.",
+    "version": "0.0280",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "implosion.implosion",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

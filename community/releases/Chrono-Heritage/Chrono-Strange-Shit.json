@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Chrono-Heritage/Chrono-Strange-Shit",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Stange-shit",
-      "name": "No content version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-18T13:57:45Z",
-      "htmlUrl": "https://github.com/Chrono-Heritage/Chrono-Strange-Shit/releases/tag/Stange-shit",
-      "modVersion": "v.0.1",
+      "kind": "tag",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Chrono-Heritage/Chrono-Strange-Shit/archive/refs/tags/Stange-shit.zip",
-      "sourceArchiveUrl": "https://github.com/Chrono-Heritage/Chrono-Strange-Shit/archive/refs/tags/Stange-shit.zip",
-      "assets": [],
-      "commitSha": "c2e0bfcc6555925c07cb1fd4f1fb01ac9ac0a784",
-      "archiveByCommitUrl": "https://github.com/Chrono-Heritage/Chrono-Strange-Shit/archive/c2e0bfcc6555925c07cb1fd4f1fb01ac9ac0a784.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Stange-shit",
       "modVersion": "v.0.1",
-      "minGameVersion": "140.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-03-18T13:57:45Z"
     }
   ],
   "meta": {
+    "name": "chrono-strange-shit",
+    "author": "Chrono",
+    "description": "A mindustry mod with my strange thinkings in it.",
+    "version": "v.0.1",
+    "minGameVersion": "140.4",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

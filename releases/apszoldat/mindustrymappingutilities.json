@@ -1,277 +1,181 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "apszoldat/mindustrymappingutilities",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.9",
-      "name": "v1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-28T17:20:48Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.9",
-      "modVersion": "1.9",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.9/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 313903,
-          "downloadCount": 5840,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.9/MindustryMappingUtilities.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "db65beed046aff92be0e0e877938f07d67338ae1",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/db65beed046aff92be0e0e877938f07d67338ae1.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.9/MindustryMappingUtilities.jar",
+      "modVersion": "1.9",
+      "sizeBytes": 313903,
+      "downloadCount": 5846,
+      "releasedAt": "2026-06-28T17:20:48Z"
     },
     {
       "tag": "v1.8",
-      "name": "v1.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-13T16:23:03Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.8",
-      "modVersion": "1.8",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.8/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 184817,
-          "downloadCount": 19993,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.8/MindustryMappingUtilities.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "3660433ff803c1d81b74204fce80368d82ff06ee",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/3660433ff803c1d81b74204fce80368d82ff06ee.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.8/MindustryMappingUtilities.jar",
+      "modVersion": "1.8",
+      "sizeBytes": 184817,
+      "downloadCount": 19993,
+      "releasedAt": "2025-04-13T16:23:03Z"
     },
     {
       "tag": "v1.7",
-      "name": "v1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-08T20:58:10Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.7",
-      "modVersion": "1.7",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.7/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 215924,
-          "downloadCount": 23981,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.7/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "ad5a299332b92d2134e90e5404d8ef171819a525",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/ad5a299332b92d2134e90e5404d8ef171819a525.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.7/MindustryMappingUtilities.jar",
+      "modVersion": "1.7",
+      "sizeBytes": 215924,
+      "downloadCount": 23981,
+      "releasedAt": "2024-05-08T20:58:10Z"
     },
     {
       "tag": "v1.6",
-      "name": "v1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-20T20:03:15Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.6/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 205845,
-          "downloadCount": 1819,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.6/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "e82fe78aab8ea81ab41fec44f7c1e204ca68c739",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/e82fe78aab8ea81ab41fec44f7c1e204ca68c739.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.6/MindustryMappingUtilities.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 205845,
+      "downloadCount": 1819,
+      "releasedAt": "2024-04-20T20:03:15Z"
     },
     {
       "tag": "v1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-13T17:36:10Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.5",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.5/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 206948,
-          "downloadCount": 698,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.5/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "4b88e001daf5e367494edcded8cc1f1d627d557a",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/4b88e001daf5e367494edcded8cc1f1d627d557a.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.5/MindustryMappingUtilities.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 206948,
+      "downloadCount": 698,
+      "releasedAt": "2024-04-13T17:36:10Z"
     },
     {
       "tag": "v1.4",
-      "name": "v1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-13T11:08:50Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.4/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 188457,
-          "downloadCount": 167,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.4/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "b2d5263ec8006817fa86b167e894575344bb3f57",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/b2d5263ec8006817fa86b167e894575344bb3f57.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.4/MindustryMappingUtilities.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 188457,
+      "downloadCount": 167,
+      "releasedAt": "2024-04-13T11:08:50Z"
     },
     {
       "tag": "v1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-16T20:41:58Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.3",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.3/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 198002,
-          "downloadCount": 6318,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.3/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "02a44ec1fe8236f389494e29ec570f1a3dae5995",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/02a44ec1fe8236f389494e29ec570f1a3dae5995.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.3/MindustryMappingUtilities.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 198002,
+      "downloadCount": 6318,
+      "releasedAt": "2023-09-16T20:41:58Z"
     },
     {
       "tag": "v1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-09T20:08:08Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.2/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 191749,
-          "downloadCount": 454,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.2/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "4aefed61800296a5f8e41ee9fd20d0141191e8d3",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/4aefed61800296a5f8e41ee9fd20d0141191e8d3.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.2/MindustryMappingUtilities.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 191749,
+      "downloadCount": 454,
+      "releasedAt": "2023-09-09T20:08:08Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-09T19:38:09Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.1/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 191913,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.1/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "d5fdd248029419948430838f51f612fe97c728b8",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/d5fdd248029419948430838f51f612fe97c728b8.zip"
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.1/MindustryMappingUtilities.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 191913,
+      "downloadCount": 38,
+      "releasedAt": "2023-09-09T19:38:09Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-09T14:51:53Z",
-      "htmlUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.0/MindustryMappingUtilities.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMappingUtilities.jar",
-          "size": 78059,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.0/MindustryMappingUtilities.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "78a94e035e4d76d04588f871ec2b0010a9b67302",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustrymappingutilities/archive/78a94e035e4d76d04588f871ec2b0010a9b67302.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.7",
-      "modVersion": "1.7",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.8",
-      "modVersion": "1.8",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.9",
-      "modVersion": "1.9",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/ApsZoldat/MindustryMappingUtilities/releases/download/v1.0/MindustryMappingUtilities.jar",
+      "modVersion": "1",
+      "sizeBytes": 78059,
+      "downloadCount": 106,
+      "releasedAt": "2023-09-09T14:51:53Z"
     }
   ],
   "meta": {
+    "name": "mapping-utilities",
+    "author": "ApsZoldat",
+    "description": "\n[[]#fed570] The[[]] [[]#feba93]Map[[]] [[]#fea0b6]Edi[[]][[]#ff85d9]tor[[]] [[]#ff6afc]mod [[]]\n\n[[]#fff580] Improves Editor convenience and possibilities[[]]\n\nMaps created with this mod are [[]#89ff7a]fully compatible with vanilla [[]]\n\n\n[[]#fff580] Features:[[]]\n\n[[]#efa8ff]- Revealed Hidden Features  -[[]]\nAbility to draw cliffs, use extra 250 teams, hidden map rules and planet backgrounds\n\n[[]#efa8ff]- Improved Dialogs  -[[]]\nBetter banned content dialogs (that's it rn)\n\n[[]#efa8ff]- Limit Bypasses  -[[]]\nMap sizes from 1 up to 2147483647\n\n\n[[]#ff8e82]⚠ In case of some other mods incompatibilities, feel free to open an issue on GitHub [[]]\n",
+    "version": "1.9",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "mu.MapUtilitiesMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

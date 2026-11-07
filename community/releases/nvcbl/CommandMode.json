@@ -1,48 +1,24 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nvcbl/CommandMode",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-15T12:10:14Z",
-      "htmlUrl": "https://github.com/nvcbl/CommandMode/releases/tag/v1.0",
-      "modVersion": "v1.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nvcbl/CommandMode/releases/download/v1.0/CommandMode.jar",
-      "sourceArchiveUrl": "https://github.com/nvcbl/CommandMode/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CommandMode.jar",
-          "size": 24753,
-          "downloadCount": 1740,
-          "downloadUrl": "https://github.com/nvcbl/CommandMode/releases/download/v1.0/CommandMode.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "47c102a39ae059ed54334fb0a1819a56aac3fb34",
-      "archiveByCommitUrl": "https://github.com/nvcbl/CommandMode/archive/47c102a39ae059ed54334fb0a1819a56aac3fb34.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/nvcbl/CommandMode/releases/download/v1.0/CommandMode.jar",
       "modVersion": "v1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 24753,
+      "downloadCount": 1740,
+      "releasedAt": "2024-01-15T12:10:14Z"
     }
-  ],
-  "meta": {
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "cmode.CommandMain",
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

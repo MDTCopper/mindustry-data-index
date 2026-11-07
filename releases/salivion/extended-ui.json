@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "salivion/extended-ui",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Beta",
-      "name": "1.0.0 beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-22T15:54:36Z",
-      "htmlUrl": "https://github.com/Salivion/Extended-UI/releases/tag/Beta",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Salivion/Extended-UI/releases/download/Beta/ExtendedUI%2B.zip",
-      "sourceArchiveUrl": "https://github.com/salivion/extended-ui/archive/refs/tags/Beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ExtendedUI+.zip",
-          "size": 1239290,
-          "downloadCount": 199,
-          "downloadUrl": "https://github.com/Salivion/Extended-UI/releases/download/Beta/ExtendedUI%2B.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "54ad91ff662638d2f05915e9f2a878498d9a3ece",
-      "archiveByCommitUrl": "https://github.com/salivion/extended-ui/archive/54ad91ff662638d2f05915e9f2a878498d9a3ece.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Beta",
+      "downloadUrl": "https://github.com/salivion/extended-ui/archive/refs/tags/Beta.zip",
       "modVersion": "1.0.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1239290,
+      "downloadCount": 199,
+      "releasedAt": "2026-03-22T15:54:36Z"
     }
   ],
   "meta": {
+    "name": "extended-ui",
+    "author": "Simuss",
+    "description": "Extends your UI with useful features.",
+    "version": "1.0.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "scripts/main",
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": true
   }
 }

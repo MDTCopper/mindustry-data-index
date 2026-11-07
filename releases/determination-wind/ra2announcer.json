@@ -1,174 +1,117 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/ra2announcer",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2.2",
-      "name": "RA2 Announcer v1.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T12:00:34Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/tag/v1.2.2",
-      "modVersion": "1.2.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.2/Ra2Announcer-v1.2.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/ra2announcer/archive/refs/tags/v1.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ra2Announcer-v1.2.2.jar",
-          "size": 6073554,
-          "downloadCount": 224,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.2/Ra2Announcer-v1.2.2.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d43b911dc724c30e2409ba85be2e6806cac16913",
-      "archiveByCommitUrl": "https://github.com/determination-wind/ra2announcer/archive/d43b911dc724c30e2409ba85be2e6806cac16913.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.2/Ra2Announcer-v1.2.2.jar",
+      "modVersion": "1.2.2",
+      "sizeBytes": 6073554,
+      "downloadCount": 226,
+      "releasedAt": "2026-10-04T12:00:34Z"
     },
     {
       "tag": "v1.2.1",
-      "name": "RA2 Announcer v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T13:42:12Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/tag/v1.2.1",
-      "modVersion": "1.2.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.1/Ra2Announcer-v1.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/ra2announcer/archive/refs/tags/v1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ra2Announcer-v1.2.1.jar",
-          "size": 6069991,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.1/Ra2Announcer-v1.2.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e740f4164121a863f02734704c364d8eed38ca25",
-      "archiveByCommitUrl": "https://github.com/determination-wind/ra2announcer/archive/e740f4164121a863f02734704c364d8eed38ca25.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.1/Ra2Announcer-v1.2.1.jar",
+      "modVersion": "1.2.1",
+      "sizeBytes": 6069991,
+      "downloadCount": 27,
+      "releasedAt": "2026-10-03T13:42:12Z"
     },
     {
       "tag": "v1.2.0",
-      "name": "RA2 Announcer v1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T12:21:52Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/tag/v1.2.0",
-      "modVersion": "1.2.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.0/Ra2Announcer-v1.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/ra2announcer/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ra2Announcer-v1.2.0.jar",
-          "size": 5493843,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.0/Ra2Announcer-v1.2.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c0a3c249747b5d56200f5489e61b67312aa417d5",
-      "archiveByCommitUrl": "https://github.com/determination-wind/ra2announcer/archive/c0a3c249747b5d56200f5489e61b67312aa417d5.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.2.0/Ra2Announcer-v1.2.0.jar",
+      "modVersion": "1.2.0",
+      "sizeBytes": 5493843,
+      "downloadCount": 8,
+      "releasedAt": "2026-10-03T12:21:52Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "RA2 Announcer v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-01T15:12:01Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.1.0/Ra2Announcer-v1.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/ra2announcer/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ra2Announcer-v1.1.0.jar",
-          "size": 5473422,
-          "downloadCount": 41,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.1.0/Ra2Announcer-v1.1.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a2c0d9e8f9b15bdc34561abae4a27f2d756f60d3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/ra2announcer/archive/a2c0d9e8f9b15bdc34561abae4a27f2d756f60d3.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.1.0/Ra2Announcer-v1.1.0.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 5473422,
+      "downloadCount": 41,
+      "releasedAt": "2026-10-01T15:12:01Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T09:22:15Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.0.1/Ra2Announcer-v1.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/ra2announcer/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ra2Announcer-v1.0.1.jar",
-          "size": 262583,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.0.1/Ra2Announcer-v1.0.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b7102a09ffbc796ec0a7f65a2c87083e1f728563",
-      "archiveByCommitUrl": "https://github.com/determination-wind/ra2announcer/archive/b7102a09ffbc796ec0a7f65a2c87083e1f728563.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.0.1/Ra2Announcer-v1.0.1.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 262583,
+      "downloadCount": 69,
+      "releasedAt": "2026-08-17T09:22:15Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "RA2 Announcer v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-10T14:35:14Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.0.0/Ra2Announcer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/ra2announcer/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ra2Announcer.jar",
-          "size": 262557,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.0.0/Ra2Announcer.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2270dc81e52b7afd3775ea60319e14b2ca19b7ab",
-      "archiveByCommitUrl": "https://github.com/determination-wind/ra2announcer/archive/2270dc81e52b7afd3775ea60319e14b2ca19b7ab.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.1",
-      "modVersion": "1.0.1",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.2.2",
-      "modVersion": "1.2.2",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/DeterMination-Wind/Ra2Announcer/releases/download/v1.0.0/Ra2Announcer.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 262557,
+      "downloadCount": 54,
+      "releasedAt": "2026-08-10T14:35:14Z"
     }
   ],
   "meta": {
+    "name": "ra2-announcer",
+    "author": "DeterMination-Wind",
+    "description": "Red Alert 2 battlefield announcer with the original Sophia (Zofia) voice: waves, base alerts, rally and core-threat detection, manual control marking, unit/building loss reports with callout names, production and high-value target alerts, plus a right-side event feed. 红警2索菲亚语音战场播报:波次/基地警报、敌方集结与核心威胁、单控标点、带具体类别的损失与生产播报、右侧事件卡片。",
+    "version": "1.2.2",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "ra2.Ra2Announcer",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

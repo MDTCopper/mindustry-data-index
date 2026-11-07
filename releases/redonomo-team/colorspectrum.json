@@ -1,112 +1,83 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "redonomo-team/colorspectrum",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.12a",
-      "name": "Alpha release 0.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-26T15:13:09Z",
-      "htmlUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/tag/0.12a",
-      "modVersion": "0.12a",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/0.12a/Redonomo.zip",
-      "sourceArchiveUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/0.12a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Redonomo.zip",
-          "size": 1404374,
-          "downloadCount": 57,
-          "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/0.12a/Redonomo.zip"
+          "from": "145",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e950d7603e9b67aad2b34b7151a57fce694edcfb",
-      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/e950d7603e9b67aad2b34b7151a57fce694edcfb.zip"
+      "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/0.12a/Redonomo.zip",
+      "modVersion": "0.12a",
+      "sizeBytes": 1404374,
+      "downloadCount": 57,
+      "releasedAt": "2023-11-26T15:13:09Z"
     },
     {
       "tag": "pre-release-3",
-      "name": "Pre release 3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-19T13:16:09Z",
-      "htmlUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/tag/pre-release-3",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/pre-release-3/Redonomo-main.zip",
-      "sourceArchiveUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/pre-release-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Redonomo-main.zip",
-          "size": 211063,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/pre-release-3/Redonomo-main.zip"
+          "from": "140",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8d2840482cc7e42c1dfa7e27f3f6f831d480f250",
-      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/8d2840482cc7e42c1dfa7e27f3f6f831d480f250.zip"
+      "downloadUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/download/pre-release-3/Redonomo-main.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 211063,
+      "downloadCount": 19,
+      "releasedAt": "2023-08-19T13:16:09Z"
     },
     {
       "tag": "pre-release-1",
-      "name": "pre release 2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-08-08T10:12:54Z",
-      "htmlUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/tag/pre-release-1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/pre-release-1.zip",
-      "sourceArchiveUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/pre-release-1.zip",
-      "assets": [],
-      "commitSha": "2aec63a1a5e883f6cb0e7d60fc3922a7d9263951",
-      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/2aec63a1a5e883f6cb0e7d60fc3922a7d9263951.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2023-08-08T10:12:54Z",
+      "prerelease": true
     },
     {
       "tag": "1.0",
-      "name": "pre-release 1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-08-07T16:54:10Z",
-      "htmlUrl": "https://github.com/Redonomo-team/ColorSpectrum/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/redonomo-team/colorspectrum/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "6a6fb0eb82b2f6799e6b89ffa497a8f08212ff3e",
-      "archiveByCommitUrl": "https://github.com/redonomo-team/colorspectrum/archive/6a6fb0eb82b2f6799e6b89ffa497a8f08212ff3e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "pre-release-3",
       "modVersion": "1.0",
-      "minGameVersion": "140",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.12a",
-      "modVersion": "0.12a",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-08-07T16:54:10Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "colorspec",
+    "author": "redonomo Team",
+    "description": "The mod of fight 4 colors",
+    "version": "0.12a",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

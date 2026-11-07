@@ -1,47 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "hortiSquash/hortiblocks",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "newthings",
-      "name": "hortiblocks v0.epsilon.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-24T18:36:12Z",
-      "htmlUrl": "https://github.com/hortiSquash/hortiblocks/releases/tag/newthings",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/hortiSquash/hortiblocks/releases/download/newthings/hortiblocks.zip",
-      "sourceArchiveUrl": "https://github.com/hortiSquash/hortiblocks/archive/refs/tags/newthings.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hortiblocks.zip",
-          "size": 4432108,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/hortiSquash/hortiblocks/releases/download/newthings/hortiblocks.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "7f255c7a1ba8c581a67f4a148a6d43eac23f835f",
-      "archiveByCommitUrl": "https://github.com/hortiSquash/hortiblocks/archive/7f255c7a1ba8c581a67f4a148a6d43eac23f835f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "newthings",
+      "downloadUrl": "https://github.com/hortiSquash/hortiblocks/releases/download/newthings/hortiblocks.zip",
       "modVersion": "1.1",
-      "minGameVersion": "135",
-      "maxGameVersion": 136,
-      "hasRelease": true
+      "sizeBytes": 4432108,
+      "releasedAt": "2022-03-24T18:36:12Z"
     }
   ],
   "meta": {
+    "name": "horti blocks",
+    "author": "hortiSquash",
+    "description": "Collection of joke blocks",
+    "version": "1.1",
+    "minGameVersion": "135",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

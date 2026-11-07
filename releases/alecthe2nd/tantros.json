@@ -1,181 +1,101 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "alecthe2nd/tantros",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.2.1",
-      "name": "Tantros 1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-17T05:20:42Z",
-      "htmlUrl": "https://github.com/alecthe2nd/tantros/releases/tag/1.2.1",
-      "modVersion": "1.2.1",
+      "kind": "release",
       "minGameVersion": "160.4",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/1.2.1/Tantros.jar",
-      "sourceArchiveUrl": "https://github.com/alecthe2nd/tantros/archive/refs/tags/1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tantros.jar",
-          "size": 1805637,
-          "downloadCount": 998,
-          "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/1.2.1/Tantros.jar"
+          "from": "160.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1d733334685ae6cb95e57e135c00c9081049d7b0",
-      "archiveByCommitUrl": "https://github.com/alecthe2nd/tantros/archive/1d733334685ae6cb95e57e135c00c9081049d7b0.zip"
+      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/1.2.1/Tantros.jar",
+      "modVersion": "1.2.1",
+      "sizeBytes": 1805637,
+      "downloadCount": 1001,
+      "releasedAt": "2026-09-17T05:20:42Z"
     },
     {
       "tag": "v1.2.0",
-      "name": "Tantros 1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-17T03:01:43Z",
-      "htmlUrl": "https://github.com/alecthe2nd/tantros/releases/tag/v1.2.0",
-      "modVersion": "1.2.0",
+      "kind": "release",
       "minGameVersion": "160.4",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.2.0/Tantros.jar",
-      "sourceArchiveUrl": "https://github.com/alecthe2nd/tantros/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tantros.jar",
-          "size": 1805501,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.2.0/Tantros.jar"
+          "from": "160.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6c4b7bd3e7b2257e241260df0f0dc965adbe1d2d",
-      "archiveByCommitUrl": "https://github.com/alecthe2nd/tantros/archive/6c4b7bd3e7b2257e241260df0f0dc965adbe1d2d.zip"
+      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.2.0/Tantros.jar",
+      "modVersion": "1.2.0",
+      "sizeBytes": 1805501,
+      "downloadCount": 23,
+      "releasedAt": "2026-09-17T03:01:43Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "Tantros 1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-14T02:50:28Z",
-      "htmlUrl": "https://github.com/alecthe2nd/tantros/releases/tag/v1.1.1",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.1.1/Tantros.jar",
-      "sourceArchiveUrl": "https://github.com/alecthe2nd/tantros/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tantros.jar",
-          "size": 1687216,
-          "downloadCount": 3479,
-          "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.1.1/Tantros.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3aa8929ea79811545046d8fc0df75d8265843d86",
-      "archiveByCommitUrl": "https://github.com/alecthe2nd/tantros/archive/3aa8929ea79811545046d8fc0df75d8265843d86.zip"
+      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.1.1/Tantros.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 1687216,
+      "downloadCount": 3479,
+      "releasedAt": "2026-07-14T02:50:28Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "Tantros 1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-13T05:42:19Z",
-      "htmlUrl": "https://github.com/alecthe2nd/tantros/releases/tag/v1.1.0",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.1.0/Tantros.jar",
-      "sourceArchiveUrl": "https://github.com/alecthe2nd/tantros/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tantros.jar",
-          "size": 1686794,
-          "downloadCount": 100,
-          "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.1.0/Tantros.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c13054051988033710b57cd3e61b8eba08b6dc24",
-      "archiveByCommitUrl": "https://github.com/alecthe2nd/tantros/archive/c13054051988033710b57cd3e61b8eba08b6dc24.zip"
+      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v1.1.0/Tantros.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 1686794,
+      "downloadCount": 100,
+      "releasedAt": "2026-07-13T05:42:19Z"
     },
     {
       "tag": "1.0.2",
-      "name": "Tantros 1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-12T03:13:48Z",
-      "htmlUrl": "https://github.com/alecthe2nd/tantros/releases/tag/1.0.2",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.3",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/1.0.2/Tantros.jar",
-      "sourceArchiveUrl": "https://github.com/alecthe2nd/tantros/archive/refs/tags/1.0.2.zip",
-      "assets": [
-        {
-          "name": "Tantros.jar",
-          "size": 1661079,
-          "downloadCount": 107,
-          "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/1.0.2/Tantros.jar"
-        }
-      ],
-      "commitSha": "01738b1832dda569c4e8ba100bc80a9f9ca5f07f",
-      "archiveByCommitUrl": "https://github.com/alecthe2nd/tantros/archive/01738b1832dda569c4e8ba100bc80a9f9ca5f07f.zip"
-    },
-    {
-      "tag": "v0.1.0",
-      "name": "Tantros 1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-25T02:43:10Z",
-      "htmlUrl": "https://github.com/alecthe2nd/tantros/releases/tag/v0.1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v0.1.0/Tantros.jar",
-      "sourceArchiveUrl": "https://github.com/alecthe2nd/tantros/archive/refs/tags/v0.1.0.zip",
-      "assets": [
-        {
-          "name": "Tantros.jar",
-          "size": 1615053,
-          "downloadCount": 691,
-          "downloadUrl": "https://github.com/alecthe2nd/tantros/releases/download/v0.1.0/Tantros.jar"
-        }
-      ],
-      "commitSha": "82546d09b66d39b114f1bb1d9bb59a3706703269",
-      "archiveByCommitUrl": "https://github.com/alecthe2nd/tantros/archive/82546d09b66d39b114f1bb1d9bb59a3706703269.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "158.1",
-      "maxGameVersion": 159.3,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.1",
-      "modVersion": "1.1.0",
-      "minGameVersion": "159.3",
-      "maxGameVersion": 160.4,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.2.1",
-      "modVersion": "1.2.1",
-      "minGameVersion": "160.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0.2",
+      "sizeBytes": 1661079,
+      "downloadCount": 107,
+      "releasedAt": "2026-07-12T03:13:48Z"
     }
   ],
   "meta": {
+    "name": "tantros",
+    "author": "Alecthe2nd, bob26786",
+    "description": "Breathes life into Tantros, the planet Anuke has ceased working on. This mod is meant to faithfully recreate what Tantros could have been, had work not ceased.",
+    "version": "1.2.1",
+    "minGameVersion": "160.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "tantros.Tantros",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

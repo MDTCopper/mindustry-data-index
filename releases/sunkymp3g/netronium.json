@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sunkymp3g/netronium",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.1.0",
-      "name": "0.1.0-alpha.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-06T18:32:35Z",
-      "htmlUrl": "https://github.com/SunkyMP3G/Netronium/releases/tag/0.1.0",
-      "modVersion": "0.1.0",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SunkyMP3G/Netronium/releases/download/0.1.0/NetroniumTFS.jar",
-      "sourceArchiveUrl": "https://github.com/sunkymp3g/netronium/archive/refs/tags/0.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NetroniumTFS.jar",
-          "size": 4655641,
-          "downloadCount": 75,
-          "downloadUrl": "https://github.com/SunkyMP3G/Netronium/releases/download/0.1.0/NetroniumTFS.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "51f20267661f36f95c42015ef0fd5bb439686171",
-      "archiveByCommitUrl": "https://github.com/sunkymp3g/netronium/archive/51f20267661f36f95c42015ef0fd5bb439686171.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1.0",
+      "downloadUrl": "https://github.com/SunkyMP3G/Netronium/releases/download/0.1.0/NetroniumTFS.jar",
       "modVersion": "0.1.0",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 4655641,
+      "downloadCount": 75,
+      "releasedAt": "2026-10-06T18:32:35Z"
     }
   ],
   "meta": {
+    "name": "netro",
+    "author": "[orange[]]Sunky.MP3G",
+    "description": "\nTODO\n",
+    "version": "0.1.0",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "netro.NetroniumTFSMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

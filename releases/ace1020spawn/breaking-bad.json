@@ -1,41 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ace1020spawn/breaking-bad",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/ace1020spawn/breaking-bad/tree/mindustry-mod",
-      "modVersion": "something",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ace1020spawn/breaking-bad/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/ace1020spawn/breaking-bad/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "cea9ebd31f3ccf0f5d79cba3f1776cb06fa42efe",
-      "archiveByCommitUrl": "https://github.com/ace1020spawn/breaking-bad/archive/cea9ebd31f3ccf0f5d79cba3f1776cb06fa42efe.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
-      "modVersion": "something",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "something"
     }
   ],
   "meta": {
+    "name": "randommod",
+    "author": "jesse",
+    "description": "cooking meth with walter.",
+    "version": "something",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

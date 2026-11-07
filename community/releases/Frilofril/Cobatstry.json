@@ -1,448 +1,371 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Frilofril/Cobatstry",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V0.9.0.1",
-      "name": "V0.9.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-22T17:10:28Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.9.0.1",
-      "modVersion": "V0.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.9.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.9.0.1.zip",
-      "assets": [],
-      "commitSha": "ebe92e80e5d77c9af4c7feac14f0ba270ed44fa0",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/ebe92e80e5d77c9af4c7feac14f0ba270ed44fa0.zip"
+      "modVersion": "V0.9",
+      "releasedAt": "2025-06-22T17:10:28Z"
     },
     {
       "tag": "V0.9",
-      "name": "V0.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-07T11:47:59Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.9",
-      "modVersion": "V0.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.9.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.9.zip",
-      "assets": [],
-      "commitSha": "0eb2c0f4e8e003fb8bf949ade660d9864a07f2c6",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/0eb2c0f4e8e003fb8bf949ade660d9864a07f2c6.zip"
+      "modVersion": "V0.9",
+      "releasedAt": "2025-06-07T11:47:59Z"
     },
     {
       "tag": "V0.8.4.2",
-      "name": "V0.8.4.2 fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-31T09:07:40Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.4.2",
-      "modVersion": "V0.8.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.4.2.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.4.2.zip",
-      "assets": [],
-      "commitSha": "ef1789624645e7d81e25d8fa919d922fb4dd813f",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/ef1789624645e7d81e25d8fa919d922fb4dd813f.zip"
+      "modVersion": "V0.8.4",
+      "releasedAt": "2025-05-31T09:07:40Z"
     },
     {
       "tag": "V0.8.4.1",
-      "name": "V0.8.4.1 fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-25T18:29:36Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.4.1",
-      "modVersion": "V0.8.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.4.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.4.1.zip",
-      "assets": [],
-      "commitSha": "eb7c2249bbbe2066a6a4e08874d2972bfefadd33",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/eb7c2249bbbe2066a6a4e08874d2972bfefadd33.zip"
+      "modVersion": "V0.8.4",
+      "releasedAt": "2025-04-25T18:29:36Z"
     },
     {
       "tag": "V0.8.4",
-      "name": "V0.8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-23T09:09:21Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.4",
-      "modVersion": "V0.8.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.4.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.4.zip",
-      "assets": [],
-      "commitSha": "573f73ab05325ba6171ad983325efd82758cda23",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/573f73ab05325ba6171ad983325efd82758cda23.zip"
+      "modVersion": "V0.8.4",
+      "releasedAt": "2025-04-23T09:09:21Z"
     },
     {
       "tag": "V0.8.3.1",
-      "name": "V0.8.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-01T16:20:18Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.3.1",
-      "modVersion": "V0.8.3",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.3.1.zip",
-      "assets": [],
-      "commitSha": "99e19fecfbe88f973121b11bdee1dbd8f1061b5e",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/99e19fecfbe88f973121b11bdee1dbd8f1061b5e.zip"
+      "modVersion": "V0.8.3",
+      "releasedAt": "2025-04-01T16:20:18Z"
     },
     {
       "tag": "V0.8.3",
-      "name": "V0.8.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-29T08:16:10Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.3",
-      "modVersion": "V0.8.3",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.3.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.3.zip",
-      "assets": [],
-      "commitSha": "2cc67ea4113966986afa9e96bb59b67c131bffd0",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/2cc67ea4113966986afa9e96bb59b67c131bffd0.zip"
+      "modVersion": "V0.8.3",
+      "releasedAt": "2025-03-29T08:16:10Z"
     },
     {
       "tag": "V0.8.2",
-      "name": "V0.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-19T20:42:15Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.2",
-      "modVersion": "V0.8.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.2.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.2.zip",
-      "assets": [],
-      "commitSha": "d4c7cb457eb12b9fb56397ff4b0fc7128571178c",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/d4c7cb457eb12b9fb56397ff4b0fc7128571178c.zip"
+      "modVersion": "V0.8.2",
+      "releasedAt": "2025-03-19T20:42:15Z"
     },
     {
       "tag": "V0.8.1",
-      "name": "V0.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-15T13:05:47Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.1",
-      "modVersion": "V0.8.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.1.zip",
-      "assets": [],
-      "commitSha": "abdc14ef528bbacb0b2a1c6d0cbc0f84c8aab9d1",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/abdc14ef528bbacb0b2a1c6d0cbc0f84c8aab9d1.zip"
+      "modVersion": "V0.8.1",
+      "releasedAt": "2025-03-15T13:05:47Z"
     },
     {
       "tag": "V0.8.0.1",
-      "name": "V0.8 fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-06T18:43:48Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8.0.1",
-      "modVersion": "V0.8",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.0.1.zip",
-      "assets": [],
-      "commitSha": "f8b58d4c72feab314acb64afa6c57feb43ea17b9",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/f8b58d4c72feab314acb64afa6c57feb43ea17b9.zip"
+      "modVersion": "V0.8",
+      "releasedAt": "2025-03-06T18:43:48Z"
     },
     {
       "tag": "V0.8",
-      "name": "V0.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-05T20:51:33Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.8",
-      "modVersion": "V0.8",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.8.zip",
-      "assets": [],
-      "commitSha": "44b7344c1f6cf687f70432295e3899c2f8cc00e2",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/44b7344c1f6cf687f70432295e3899c2f8cc00e2.zip"
+      "modVersion": "V0.8",
+      "releasedAt": "2025-03-05T20:51:33Z"
     },
     {
       "tag": "V0.7.1",
-      "name": "V0.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-26T19:36:51Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.7.1",
-      "modVersion": "V0.7.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.7.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.7.1.zip",
-      "assets": [],
-      "commitSha": "38be22538f58bb8f69eea8aefe91034f6904fce2",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/38be22538f58bb8f69eea8aefe91034f6904fce2.zip"
+      "modVersion": "V0.7.1",
+      "releasedAt": "2025-02-26T19:36:51Z"
     },
     {
       "tag": "V0.7",
-      "name": "V0.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-22T18:43:23Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.7",
-      "modVersion": "V0.7",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.7.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.7.zip",
-      "assets": [],
-      "commitSha": "fd821eb0a3fe89bb92ed3a467cbbe3f66b8969fc",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/fd821eb0a3fe89bb92ed3a467cbbe3f66b8969fc.zip"
+      "modVersion": "V0.7",
+      "releasedAt": "2025-02-22T18:43:23Z"
     },
     {
       "tag": "V0.6.1",
-      "name": "V0.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-16T18:02:33Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.6.1",
-      "modVersion": "V0.6.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.6.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.6.1.zip",
-      "assets": [],
-      "commitSha": "f4427c5bb9957e5753340874707395a7462396c9",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/f4427c5bb9957e5753340874707395a7462396c9.zip"
+      "modVersion": "V0.6.1",
+      "releasedAt": "2025-02-16T18:02:33Z"
     },
     {
       "tag": "V0.6",
-      "name": "V0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-15T15:45:54Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.6",
-      "modVersion": "V0.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.6.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.6.zip",
-      "assets": [],
-      "commitSha": "4b42edac9bdc192193e8aae8c555e5cb2025f6a2",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/4b42edac9bdc192193e8aae8c555e5cb2025f6a2.zip"
+      "modVersion": "V0.6",
+      "releasedAt": "2025-02-15T15:45:54Z"
     },
     {
       "tag": "V0.5.0.1",
-      "name": "V0.5.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-09T17:43:31Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.5.0.1",
-      "modVersion": "V0.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.5.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.5.0.1.zip",
-      "assets": [],
-      "commitSha": "0de55f3ff98e8808e3b1c1f881e50db70498f80f",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/0de55f3ff98e8808e3b1c1f881e50db70498f80f.zip"
+      "modVersion": "V0.5",
+      "releasedAt": "2025-02-09T17:43:31Z"
     },
     {
       "tag": "V0.5",
-      "name": "V0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-09T13:32:52Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.5",
-      "modVersion": "V0.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.5.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.5.zip",
-      "assets": [],
-      "commitSha": "18236d678a40ceca77098ae04170bbede3682828",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/18236d678a40ceca77098ae04170bbede3682828.zip"
+      "modVersion": "V0.5",
+      "releasedAt": "2025-02-09T13:32:52Z"
     },
     {
       "tag": "V0.4.3.1",
-      "name": "V0.4.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-07T18:16:26Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.4.3.1",
-      "modVersion": "V0.4.3",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.3.1.zip",
-      "assets": [],
-      "commitSha": "8ccf576d40a00ce2088e53d68f413bc44a9f9683",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/8ccf576d40a00ce2088e53d68f413bc44a9f9683.zip"
+      "modVersion": "V0.4.3",
+      "releasedAt": "2025-02-07T18:16:26Z"
     },
     {
       "tag": "V0.4.2",
-      "name": "V0.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-05T19:27:34Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.4.2",
-      "modVersion": "V0.4.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.2.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.2.zip",
-      "assets": [],
-      "commitSha": "20fa619355b5d843bfa170904c444475d17053ee",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/20fa619355b5d843bfa170904c444475d17053ee.zip"
+      "modVersion": "V0.4.2",
+      "releasedAt": "2025-02-05T19:27:34Z"
     },
     {
       "tag": "V0.4.1",
-      "name": "V0.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-04T20:31:06Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.4.1",
-      "modVersion": "V0.4.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.1.zip",
-      "assets": [],
-      "commitSha": "06682a25d6dea5e8b06df04add9ae61f169e05b1",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/06682a25d6dea5e8b06df04add9ae61f169e05b1.zip"
+      "modVersion": "V0.4.1",
+      "releasedAt": "2025-02-04T20:31:06Z"
     },
     {
       "tag": "V0.4",
-      "name": "V0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-02T17:13:56Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.4",
-      "modVersion": "V0.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.4.zip",
-      "assets": [],
-      "commitSha": "8676003ad0dbb739ae83c30e81973a5812514e91",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/8676003ad0dbb739ae83c30e81973a5812514e91.zip"
+      "modVersion": "V0.4",
+      "releasedAt": "2025-02-02T17:13:56Z"
     },
     {
       "tag": "V0.3.1",
-      "name": "V0.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-27T17:57:43Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.3.1",
-      "modVersion": "V0.3.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.3.1.zip",
-      "assets": [],
-      "commitSha": "a504b995cc95097a27320aa70c983b8212e0fbc8",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/a504b995cc95097a27320aa70c983b8212e0fbc8.zip"
+      "modVersion": "V0.3.1",
+      "releasedAt": "2025-01-27T17:57:43Z"
     },
     {
       "tag": "V0.3",
-      "name": "V0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-26T14:23:08Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.3",
-      "modVersion": "V0.3",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.3.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.3.zip",
-      "assets": [],
-      "commitSha": "5c34a1b496e67ee39a0f2f57b31bbfe5d7e3e122",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/5c34a1b496e67ee39a0f2f57b31bbfe5d7e3e122.zip"
+      "modVersion": "V0.3",
+      "releasedAt": "2025-01-26T14:23:08Z"
     },
     {
       "tag": "V0.2.1",
-      "name": "V0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-25T13:44:46Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.2.1",
-      "modVersion": "V0.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.2.1.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.2.1.zip",
-      "assets": [],
-      "commitSha": "efae6bc89f3d814d708bf36648278dbbe3af82c2",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/efae6bc89f3d814d708bf36648278dbbe3af82c2.zip"
+      "modVersion": "V0.2",
+      "releasedAt": "2025-01-25T13:44:46Z"
     },
     {
       "tag": "V0.2",
-      "name": "V0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-24T19:12:15Z",
-      "htmlUrl": "https://github.com/Frilofril/Cobatstry/releases/tag/V0.2",
-      "modVersion": "V0.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.2.zip",
-      "sourceArchiveUrl": "https://github.com/Frilofril/Cobatstry/archive/refs/tags/V0.2.zip",
-      "assets": [],
-      "commitSha": "b41312cfbfe2542ee6205716e63405b63a9fc3a1",
-      "archiveByCommitUrl": "https://github.com/Frilofril/Cobatstry/archive/b41312cfbfe2542ee6205716e63405b63a9fc3a1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.9.0.1",
-      "modVersion": "V0.9",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "V0.2",
+      "releasedAt": "2025-01-24T19:12:15Z"
     }
   ],
   "meta": {
+    "name": "cobatstry",
+    "author": "Frilofril",
+    "description": "A new independent company on the planet - Fralion, a cold hell that complements the game with new resources, enemies, buildings and not-so-great mechanics that you will definitely like.\r\n---\r\nAvailable languages:\r\n--English\r\n--Українська\r\n--Русский\r\n--Deutsch \r\n--Polski\r\n---\r\nYou can express your impressions and follow the mod on the author's YouTube channel.\r\n",
+    "version": "V0.9",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

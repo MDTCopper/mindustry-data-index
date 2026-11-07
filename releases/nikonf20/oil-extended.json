@@ -1,40 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nikonf20/oil-extended",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Small-Update",
-      "name": "Update 0.2 Beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-06-09T17:46:26Z",
-      "htmlUrl": "https://github.com/nikonf20/Oil-Extended/releases/tag/Small-Update",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nikonf20/oil-extended/archive/refs/tags/Small-Update.zip",
-      "sourceArchiveUrl": "https://github.com/nikonf20/oil-extended/archive/refs/tags/Small-Update.zip",
-      "assets": [],
-      "commitSha": "f5b02a90d7591d73163e3d2ef95ee7824a80dd6d",
-      "archiveByCommitUrl": "https://github.com/nikonf20/oil-extended/archive/f5b02a90d7591d73163e3d2ef95ee7824a80dd6d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Small-Update",
       "modVersion": "0.2",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-06-09T17:46:26Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "OE",
+    "author": "Atomic",
+    "description": "Added new blocks & units that can interact with Oil and improve player quality of life",
+    "version": "0.2",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,74 +1,61 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "craftgenix1/purpleeye",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "test-release1",
-      "name": "Pre-content 1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-12T00:26:39Z",
-      "htmlUrl": "https://github.com/Craftgenix1/PurpleEye/releases/tag/test-release1",
-      "modVersion": "Pre-content",
+      "kind": "tag",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release1.zip",
-      "sourceArchiveUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release1.zip",
-      "assets": [],
-      "commitSha": "b4c49aa3586be5fee2cefb84ddcbd90fd05b6e3f",
-      "archiveByCommitUrl": "https://github.com/craftgenix1/purpleeye/archive/b4c49aa3586be5fee2cefb84ddcbd90fd05b6e3f.zip"
-    },
-    {
-      "tag": "test-release",
-      "name": "test-release",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/craftgenix1/purpleeye/tree/test-release",
       "modVersion": "Pre-content",
-      "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release.zip",
-      "sourceArchiveUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release.zip",
-      "assets": [],
-      "commitSha": "bff1328a054147e64edfc6ff0578b137fc544af2",
-      "archiveByCommitUrl": "https://github.com/craftgenix1/purpleeye/archive/bff1328a054147e64edfc6ff0578b137fc544af2.zip"
+      "releasedAt": "2025-06-12T00:26:39Z"
     },
     {
       "tag": "fix",
-      "name": "fix",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/craftgenix1/purpleeye/tree/fix",
-      "modVersion": "Pre-content",
+      "kind": "tag",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/fix.zip",
-      "sourceArchiveUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/fix.zip",
-      "assets": [],
-      "commitSha": "0cf6f4bd0c94e468bfc215a3958e79a741daf216",
-      "archiveByCommitUrl": "https://github.com/craftgenix1/purpleeye/archive/0cf6f4bd0c94e468bfc215a3958e79a741daf216.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "Pre-content"
+    },
     {
-      "tag": "test-release1",
-      "modVersion": "Pre-content",
+      "tag": "test-release",
+      "kind": "tag",
       "minGameVersion": "149",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/craftgenix1/purpleeye/archive/refs/tags/test-release.zip",
+      "modVersion": "Pre-content"
     }
   ],
   "meta": {
+    "name": "purpleeye",
+    "author": "Craftgenix",
+    "description": "WIP mindustry mod - Empty",
+    "version": "Pre-content",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

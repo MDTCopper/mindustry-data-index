@@ -1,252 +1,133 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "aevorlum/liminal-protocol",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "V.test.0.0.38.4",
-      "name": "Liminal-Protocol-V.test.0.0.38.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-16T09:55:07Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.38.4",
-      "modVersion": "V.test.0.0.38.3-1-26.07.10",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.4/Liminal-Protocol-V.test.0.0.38.4.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.38.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Liminal-Protocol-V.test.0.0.38.4.jar",
-          "size": 25862473,
-          "downloadCount": 2831,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.4/Liminal-Protocol-V.test.0.0.38.4.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6287714eb40bf48d3eef9e74ff671b4887b4162f",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/6287714eb40bf48d3eef9e74ff671b4887b4162f.zip"
+      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.4/Liminal-Protocol-V.test.0.0.38.4.jar",
+      "modVersion": "V.test.0.0.38.3-1-26.07.10",
+      "sizeBytes": 25862473,
+      "downloadCount": 2833,
+      "releasedAt": "2026-07-16T09:55:07Z"
     },
     {
       "tag": "V.test.0.0.38.3",
-      "name": "Liminal-Protocol-V.test.0.0.38.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-09T09:30:44Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.38.3",
-      "modVersion": "V.test.0.0.38.326.07.09",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.3/Liminal-Protocol-V.test.0.0.38.3.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.38.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Liminal-Protocol-V.test.0.0.38.3.jar",
-          "size": 16289754,
-          "downloadCount": 640,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.3/Liminal-Protocol-V.test.0.0.38.3.jar"
-        },
-        {
-          "name": "Liminal-ProtocolDesktop.jar",
-          "size": 16021582,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.3/Liminal-ProtocolDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "434507f1c18e59c372a9777e754c13c6f94307fa",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/434507f1c18e59c372a9777e754c13c6f94307fa.zip"
+      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.3/Liminal-Protocol-V.test.0.0.38.3.jar",
+      "modVersion": "V.test.0.0.38.326.07.09",
+      "sizeBytes": 32311336,
+      "downloadCount": 645,
+      "releasedAt": "2026-07-09T09:30:44Z"
     },
     {
       "tag": "V.test.0.0.38.2-1",
-      "name": "Liminal-Protocol-V.test.0.0.38.2-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-17T10:49:56Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.38.2-1",
-      "modVersion": "V.test.0.0.38.2-126.06.17",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2-1/Liminal-Protocol-V.test.0.0.38.2-1.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.38.2-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Liminal-Protocol-V.test.0.0.38.2-1.jar",
-          "size": 14349790,
-          "downloadCount": 1185,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2-1/Liminal-Protocol-V.test.0.0.38.2-1.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "609e5484960ea39c0fb9163cbdf4894579eddaa6",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/609e5484960ea39c0fb9163cbdf4894579eddaa6.zip"
+      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2-1/Liminal-Protocol-V.test.0.0.38.2-1.jar",
+      "modVersion": "V.test.0.0.38.2-126.06.17",
+      "sizeBytes": 14349790,
+      "downloadCount": 1185,
+      "releasedAt": "2026-06-17T10:49:56Z"
     },
     {
       "tag": "V.test.0.0.38.2",
-      "name": "Liminal-Protocol-V.test.0.0.38.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-17T08:45:55Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.38.2",
-      "modVersion": "V.test.0.0.38.126.06.17",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2/Liminal-Protocol-V.test.0.0.38.2.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.38.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Liminal-Protocol-V.test.0.0.38.2.jar",
-          "size": 14350711,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2/Liminal-Protocol-V.test.0.0.38.2.jar"
-        },
-        {
-          "name": "Liminal-ProtocolDesktop.jar",
-          "size": 14146362,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2/Liminal-ProtocolDesktop.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "330a940bf6e0f4c06993081b48ea469c4ecc5dc2",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/330a940bf6e0f4c06993081b48ea469c4ecc5dc2.zip"
+      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.2/Liminal-Protocol-V.test.0.0.38.2.jar",
+      "modVersion": "V.test.0.0.38.126.06.17",
+      "sizeBytes": 28497073,
+      "downloadCount": 28,
+      "releasedAt": "2026-06-17T08:45:55Z"
     },
     {
       "tag": "V.test.0.0.38.1",
-      "name": "Liminal-Protocol-V.test.0.0.38.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-16T16:16:57Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.38.1",
-      "modVersion": "V.test.0.0.38.126.06.17",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.1/Liminal-Protocol-V.test.0.0.38.1.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.38.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Liminal-Protocol-V.test.0.0.38.1.jar",
-          "size": 14341912,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.1/Liminal-Protocol-V.test.0.0.38.1.jar"
-        },
-        {
-          "name": "Liminal-ProtocolDesktop.jar",
-          "size": 14140950,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.1/Liminal-ProtocolDesktop.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "33a339bf300e46f49a70479ec501893d61d67f6a",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/33a339bf300e46f49a70479ec501893d61d67f6a.zip"
+      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.1/Liminal-Protocol-V.test.0.0.38.1.jar",
+      "modVersion": "V.test.0.0.38.126.06.17",
+      "sizeBytes": 28482862,
+      "downloadCount": 46,
+      "releasedAt": "2026-06-16T16:16:57Z"
     },
     {
       "tag": "V.test.0.0.38.0",
-      "name": "Liminal-Protoco-V.test.0.0.38.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-08T04:30:52Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.38.0",
-      "modVersion": "V.test.0.0.38.026.06.07",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.0/Liminal-Protocol-V.test.0.0.38.0.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.38.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Liminal-Protocol-V.test.0.0.38.0.jar",
-          "size": 14332271,
-          "downloadCount": 565,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.0/Liminal-Protocol-V.test.0.0.38.0.jar"
-        },
-        {
-          "name": "Liminal-ProtocolDesktop.jar",
-          "size": 14239801,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.0/Liminal-ProtocolDesktop.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cee3ec6aada10e8e959911f9d7b8b34ee761be39",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/cee3ec6aada10e8e959911f9d7b8b34ee761be39.zip"
+      "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.38.0/Liminal-Protocol-V.test.0.0.38.0.jar",
+      "modVersion": "V.test.0.0.38.026.06.07",
+      "sizeBytes": 28572072,
+      "downloadCount": 567,
+      "releasedAt": "2026-06-08T04:30:52Z"
     },
     {
       "tag": "V.test.0.0.37.9",
-      "name": "Liminal-Protocol-V.test.0.0.37.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-30T06:27:14Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/V.test.0.0.37.9",
-      "modVersion": "V.test.0.0.37.926.05.29",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.37.9/Liminal-Protocol-V.test.0.0.37.9.jar",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/V.test.0.0.37.9.zip",
-      "assets": [
-        {
-          "name": "Liminal-Protocol-V.test.0.0.37.9.jar",
-          "size": 14083827,
-          "downloadCount": 741,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.37.9/Liminal-Protocol-V.test.0.0.37.9.jar"
-        },
-        {
-          "name": "Liminal-ProtocolDesktop-V.test.0.0.37.9.jar",
-          "size": 14080110,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/V.test.0.0.37.9/Liminal-ProtocolDesktop-V.test.0.0.37.9.jar"
-        }
-      ],
-      "commitSha": "cbc9f96f2f54ccbe19da243961cdeff9e4c579bf",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/cbc9f96f2f54ccbe19da243961cdeff9e4c579bf.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "Liminal Protocol-V.test.0.0.37.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-28T11:14:13Z",
-      "htmlUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/tag/mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/aevorlum/liminal-protocol/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
-        {
-          "name": "Liminal.Protocol-V.test.0.0.37.8.zip",
-          "size": 14079425,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/AEvoRlum/Liminal-Protocol/releases/download/mindustry-mod/Liminal.Protocol-V.test.0.0.37.8.zip"
-        }
-      ],
-      "commitSha": "cda0fbd0b36535bf910a87ba65c25832ce085b4d",
-      "archiveByCommitUrl": "https://github.com/aevorlum/liminal-protocol/archive/cda0fbd0b36535bf910a87ba65c25832ce085b4d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V.test.0.0.38.2-1",
-      "modVersion": "V.test.0.0.38.2-126.06.17",
-      "minGameVersion": "157",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "V.test.0.0.38.4",
-      "modVersion": "V.test.0.0.38.3-1-26.07.10",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "V.test.0.0.37.926.05.29",
+      "sizeBytes": 28163937,
+      "downloadCount": 747,
+      "releasedAt": "2026-05-30T06:27:14Z"
     }
   ],
   "meta": {
+    "name": "lp",
+    "author": "[red[]]AEvoRIum",
+    "description": "\n[red[]]俺寻思之力\n",
+    "version": "V.test.0.0.38.3-1-26.07.10",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "LP.LPMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,860 +1,533 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dustdustry/patcheditor",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.18",
-      "name": "v1.18",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-29T01:42:57Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.18",
-      "modVersion": "1.18",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.18/PatchEditor-v1.18.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.18.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.18.jar",
-          "size": 492464,
-          "downloadCount": 443,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.18/PatchEditor-v1.18.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6f3f86785f7fbbf8282f79436717fb0f9124beed",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/6f3f86785f7fbbf8282f79436717fb0f9124beed.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.18/PatchEditor-v1.18.jar",
+      "modVersion": "1.18",
+      "sizeBytes": 492464,
+      "downloadCount": 451,
+      "releasedAt": "2026-10-29T01:42:57Z"
     },
     {
       "tag": "v1.17",
-      "name": "v1.17",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T10:48:08Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.17",
-      "modVersion": "1.17",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.17/PatchEditor-v1.17.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.17.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.17.jar",
-          "size": 486810,
-          "downloadCount": 468,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.17/PatchEditor-v1.17.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1320e1ca9cc190e4f429fff71dd1d2a7ded36b1b",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/1320e1ca9cc190e4f429fff71dd1d2a7ded36b1b.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.17/PatchEditor-v1.17.jar",
+      "modVersion": "1.17",
+      "sizeBytes": 486810,
+      "downloadCount": 468,
+      "releasedAt": "2026-10-18T10:48:08Z"
     },
     {
       "tag": "v1.16",
-      "name": "v1.16",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-07T01:54:01Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.16",
-      "modVersion": "1.16",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.16/PatchEditor-v1.16.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.16.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.16.jar",
-          "size": 467455,
-          "downloadCount": 562,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.16/PatchEditor-v1.16.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6d670be467d59aea1758f07e98f25d511b33b6d2",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/6d670be467d59aea1758f07e98f25d511b33b6d2.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.16/PatchEditor-v1.16.jar",
+      "modVersion": "1.16",
+      "sizeBytes": 467455,
+      "downloadCount": 562,
+      "releasedAt": "2026-10-07T01:54:01Z"
     },
     {
       "tag": "v1.15",
-      "name": "v1.15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-25T02:08:56Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.15",
-      "modVersion": "1.15",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.15/PatchEditor-v1.15.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.15.jar",
-          "size": 452824,
-          "downloadCount": 618,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.15/PatchEditor-v1.15.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e2df518732e9347ff1e2ac047a63291ac67567ab",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/e2df518732e9347ff1e2ac047a63291ac67567ab.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.15/PatchEditor-v1.15.jar",
+      "modVersion": "1.15",
+      "sizeBytes": 452824,
+      "downloadCount": 618,
+      "releasedAt": "2026-09-25T02:08:56Z"
     },
     {
       "tag": "v1.14.0",
-      "name": "v1.14.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-24T11:58:41Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.14.0",
-      "modVersion": "1.14.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.14.0/PatchEditor-v1.14.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.14.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.14.0.jar",
-          "size": 447842,
-          "downloadCount": 1231,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.14.0/PatchEditor-v1.14.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5177544b15401f79fed91e4c7418743d73dab588",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/5177544b15401f79fed91e4c7418743d73dab588.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.14.0/PatchEditor-v1.14.0.jar",
+      "modVersion": "1.14.0",
+      "sizeBytes": 447842,
+      "downloadCount": 1231,
+      "releasedAt": "2026-08-24T11:58:41Z"
     },
     {
       "tag": "v1.13.1",
-      "name": "v1.13.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-06T03:19:50Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.13.1",
-      "modVersion": "1.13.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.13.1/PatchEditor-v1.13.1.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.13.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.13.1.jar",
-          "size": 410969,
-          "downloadCount": 964,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.13.1/PatchEditor-v1.13.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "553ec16b2d8fe43ef787bbb94e449aa04c6c65b8",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/553ec16b2d8fe43ef787bbb94e449aa04c6c65b8.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.13.1/PatchEditor-v1.13.1.jar",
+      "modVersion": "1.13.1",
+      "sizeBytes": 410969,
+      "downloadCount": 964,
+      "releasedAt": "2026-08-06T03:19:50Z"
     },
     {
       "tag": "v1.12.2",
-      "name": "v1.12.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-24T13:52:23Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.12.2",
-      "modVersion": "1.12.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.2/PatchEditor-v1.12.2.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.12.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.12.2.jar",
-          "size": 392059,
-          "downloadCount": 818,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.2/PatchEditor-v1.12.2.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "753178f49c678b111d72122bcda62beae0158035",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/753178f49c678b111d72122bcda62beae0158035.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.2/PatchEditor-v1.12.2.jar",
+      "modVersion": "1.12.2",
+      "sizeBytes": 392059,
+      "downloadCount": 818,
+      "releasedAt": "2026-07-24T13:52:23Z"
     },
     {
       "tag": "v1.12.1",
-      "name": "v1.12.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-17T01:22:28Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.12.1",
-      "modVersion": "1.12.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.1/PatchEditor-v1.12.1.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.12.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.12.1.jar",
-          "size": 390612,
-          "downloadCount": 532,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.1/PatchEditor-v1.12.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2919a2a7b5ce991cec6eb860738664373aa79163",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/2919a2a7b5ce991cec6eb860738664373aa79163.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.1/PatchEditor-v1.12.1.jar",
+      "modVersion": "1.12.1",
+      "sizeBytes": 390612,
+      "downloadCount": 532,
+      "releasedAt": "2026-07-17T01:22:28Z"
     },
     {
       "tag": "v1.12.0",
-      "name": "v1.12.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-15T10:17:54Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.12.0",
-      "modVersion": "1.12.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.0/PatchEditor-v1.12.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.12.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.12.0.jar",
-          "size": 388087,
-          "downloadCount": 224,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.0/PatchEditor-v1.12.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ea842cc163a39e6d61284c6a343847494921a944",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/ea842cc163a39e6d61284c6a343847494921a944.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.12.0/PatchEditor-v1.12.0.jar",
+      "modVersion": "1.12.0",
+      "sizeBytes": 388087,
+      "downloadCount": 224,
+      "releasedAt": "2026-07-15T10:17:54Z"
     },
     {
       "tag": "v1.11.0",
-      "name": "v1.11.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T06:03:44Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.11.0",
-      "modVersion": "1.11.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.11.0/PatchEditor-v1.11.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.11.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.11.0.jar",
-          "size": 333701,
-          "downloadCount": 901,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.11.0/PatchEditor-v1.11.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a2564c7f0faf16ef0c46c5c31575e0c94a8dff2d",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/a2564c7f0faf16ef0c46c5c31575e0c94a8dff2d.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.11.0/PatchEditor-v1.11.0.jar",
+      "modVersion": "1.11.0",
+      "sizeBytes": 333701,
+      "downloadCount": 901,
+      "releasedAt": "2026-07-07T06:03:44Z"
     },
     {
       "tag": "v1.10.1",
-      "name": "v1.10.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-30T15:23:29Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.10.1",
-      "modVersion": "1.10.1",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.10.1/PatchEditor-v1.10.1.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.10.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.10.1.jar",
-          "size": 333979,
-          "downloadCount": 634,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.10.1/PatchEditor-v1.10.1.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "470462568df955b96e9d952bb52cc3a77d8342fa",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/470462568df955b96e9d952bb52cc3a77d8342fa.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.10.1/PatchEditor-v1.10.1.jar",
+      "modVersion": "1.10.1",
+      "sizeBytes": 333979,
+      "downloadCount": 634,
+      "releasedAt": "2026-06-30T15:23:29Z"
     },
     {
       "tag": "v1.10.0",
-      "name": "v1.10.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-16T05:31:35Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.10.0",
-      "modVersion": "1.10.0",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.10.0/PatchEditor-v1.10.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.10.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.10.0.jar",
-          "size": 332403,
-          "downloadCount": 1260,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.10.0/PatchEditor-v1.10.0.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1c603d3af77b019f920f0bc990c2ca6d0e155bf7",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/1c603d3af77b019f920f0bc990c2ca6d0e155bf7.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.10.0/PatchEditor-v1.10.0.jar",
+      "modVersion": "1.10.0",
+      "sizeBytes": 332403,
+      "downloadCount": 1260,
+      "releasedAt": "2026-06-16T05:31:35Z"
     },
     {
       "tag": "v1.9.5",
-      "name": "v1.9.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-03T01:41:35Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.9.5",
-      "modVersion": "1.9.5",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.5/PatchEditor-v1.9.5.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.9.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.9.5.jar",
-          "size": 360615,
-          "downloadCount": 3176,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.5/PatchEditor-v1.9.5.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fd7f35668f77311247b2dc84995769717256ab1b",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/fd7f35668f77311247b2dc84995769717256ab1b.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.5/PatchEditor-v1.9.5.jar",
+      "modVersion": "1.9.5",
+      "sizeBytes": 360615,
+      "downloadCount": 3176,
+      "releasedAt": "2026-05-03T01:41:35Z"
     },
     {
       "tag": "v1.9.4",
-      "name": "v1.9.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-26T02:13:23Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.9.4",
-      "modVersion": "1.9.4",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.4/PatchEditor-v1.9.4.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.9.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.9.4.jar",
-          "size": 359628,
-          "downloadCount": 615,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.4/PatchEditor-v1.9.4.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "edc15931229ffdf7d3ff1b0cdabe5ed48682868e",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/edc15931229ffdf7d3ff1b0cdabe5ed48682868e.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.4/PatchEditor-v1.9.4.jar",
+      "modVersion": "1.9.4",
+      "sizeBytes": 359628,
+      "downloadCount": 615,
+      "releasedAt": "2026-04-26T02:13:23Z"
     },
     {
       "tag": "v1.9.3",
-      "name": "v1.9.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-25T04:43:37Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.9.3",
-      "modVersion": "1.9.3",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.3/PatchEditor-v1.9.3.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.9.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.9.3.jar",
-          "size": 358424,
-          "downloadCount": 153,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.3/PatchEditor-v1.9.3.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d8089358ac863a10469f0160c53a5a932bd30600",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/d8089358ac863a10469f0160c53a5a932bd30600.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.3/PatchEditor-v1.9.3.jar",
+      "modVersion": "1.9.3",
+      "sizeBytes": 358424,
+      "downloadCount": 154,
+      "releasedAt": "2026-04-25T04:43:37Z"
     },
     {
       "tag": "v1.9.2",
-      "name": "v1.9.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-23T14:38:13Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.9.2",
-      "modVersion": "1.9.2",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.2/PatchEditor-v1.9.2.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.9.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.9.2.jar",
-          "size": 358397,
-          "downloadCount": 137,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.2/PatchEditor-v1.9.2.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8eb7621a98bf8a733aa331f292b09b249ec51103",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/8eb7621a98bf8a733aa331f292b09b249ec51103.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.2/PatchEditor-v1.9.2.jar",
+      "modVersion": "1.9.2",
+      "sizeBytes": 358397,
+      "downloadCount": 137,
+      "releasedAt": "2026-04-23T14:38:13Z"
     },
     {
       "tag": "v1.9.1",
-      "name": "v1.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-20T15:42:49Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.9.1",
-      "modVersion": "1.9.1",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.1/PatchEditor-v1.9.1.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.9.1.jar",
-          "size": 357934,
-          "downloadCount": 203,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.1/PatchEditor-v1.9.1.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b2d84480c39bbee7dc2e925751ff8d979fdaa101",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/b2d84480c39bbee7dc2e925751ff8d979fdaa101.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.1/PatchEditor-v1.9.1.jar",
+      "modVersion": "1.9.1",
+      "sizeBytes": 357934,
+      "downloadCount": 203,
+      "releasedAt": "2026-04-20T15:42:49Z"
     },
     {
       "tag": "v1.9.0",
-      "name": "v1.9.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-16T12:25:17Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.9.0",
-      "modVersion": "1.9.0",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.0/PatchEditor-v1.9.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.9.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.9.0.jar",
-          "size": 357428,
-          "downloadCount": 344,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.0/PatchEditor-v1.9.0.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b54496cde50e0202e3918d0ebde424fc31f57bb3",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/b54496cde50e0202e3918d0ebde424fc31f57bb3.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.9.0/PatchEditor-v1.9.0.jar",
+      "modVersion": "1.9.0",
+      "sizeBytes": 357428,
+      "downloadCount": 344,
+      "releasedAt": "2026-04-16T12:25:17Z"
     },
     {
       "tag": "v1.8.2",
-      "name": "v1.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-28T02:48:04Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.8.2",
-      "modVersion": "1.8.2",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.2/PatchEditor-v1.8.2.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.8.2.jar",
-          "size": 253530,
-          "downloadCount": 1226,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.2/PatchEditor-v1.8.2.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "36eb10ee4c9173a678146fb4362148c76c739c6b",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/36eb10ee4c9173a678146fb4362148c76c739c6b.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.2/PatchEditor-v1.8.2.jar",
+      "modVersion": "1.8.2",
+      "sizeBytes": 253530,
+      "downloadCount": 1226,
+      "releasedAt": "2026-03-28T02:48:04Z"
     },
     {
       "tag": "v1.8.1",
-      "name": "v1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-26T04:45:45Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.8.1",
-      "modVersion": "1.8.1",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.1/PatchEditor-v1.8.1.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor-v1.8.1.jar",
-          "size": 249270,
-          "downloadCount": 141,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.1/PatchEditor-v1.8.1.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ea7aa5ede32875ecf5d1890588641dbf6c5054ea",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/ea7aa5ede32875ecf5d1890588641dbf6c5054ea.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.1/PatchEditor-v1.8.1.jar",
+      "modVersion": "1.8.1",
+      "sizeBytes": 249270,
+      "downloadCount": 141,
+      "releasedAt": "2026-03-26T04:45:45Z"
     },
     {
       "tag": "v1.8.0",
-      "name": "v1.8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-23T11:05:53Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.8.0",
-      "modVersion": "1.8.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.0/PatchEditor.v1.8.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.v1.8.0.jar",
-          "size": 249610,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.0/PatchEditor.v1.8.0.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ca081ce5f194f80fc0c0d02a219994b29f8d3b9d",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/ca081ce5f194f80fc0c0d02a219994b29f8d3b9d.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.8.0/PatchEditor.v1.8.0.jar",
+      "modVersion": "1.8.0",
+      "sizeBytes": 249610,
+      "downloadCount": 53,
+      "releasedAt": "2026-03-23T11:05:53Z"
     },
     {
       "tag": "v1.7.9",
-      "name": "v1.7.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-24T07:50:44Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.7.9",
-      "modVersion": "1.7.9",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.9/PatchEditor.v1.7.9.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.v1.7.9.jar",
-          "size": 231584,
-          "downloadCount": 492,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.9/PatchEditor.v1.7.9.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "83b2fbb870c8c2564b10af1b597045386fecbac9",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/83b2fbb870c8c2564b10af1b597045386fecbac9.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.9/PatchEditor.v1.7.9.jar",
+      "modVersion": "1.7.9",
+      "sizeBytes": 231584,
+      "downloadCount": 492,
+      "releasedAt": "2026-02-24T07:50:44Z"
     },
     {
       "tag": "v1.7.7",
-      "name": "v1.7.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-06T13:19:40Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.7.7",
-      "modVersion": "1.7.7",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.7/PatchEditor.v1.7.7.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.v1.7.7.jar",
-          "size": 200568,
-          "downloadCount": 682,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.7/PatchEditor.v1.7.7.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2f94c9a9bc6f646fc2be8cfd9573f21c7bf3801b",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/2f94c9a9bc6f646fc2be8cfd9573f21c7bf3801b.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.7/PatchEditor.v1.7.7.jar",
+      "modVersion": "1.7.7",
+      "sizeBytes": 200568,
+      "downloadCount": 682,
+      "releasedAt": "2026-02-06T13:19:40Z"
     },
     {
       "tag": "v1.7.6",
-      "name": "v1.7.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-04T12:23:08Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.7.6",
-      "modVersion": "1.7.6",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.6/PatchEditor.v1.7.6.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.v1.7.6.jar",
-          "size": 200460,
-          "downloadCount": 32,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.6/PatchEditor.v1.7.6.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cfc494adf3fc411e979d93fadc89d4e273cd92a7",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/cfc494adf3fc411e979d93fadc89d4e273cd92a7.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.6/PatchEditor.v1.7.6.jar",
+      "modVersion": "1.7.6",
+      "sizeBytes": 200460,
+      "downloadCount": 32,
+      "releasedAt": "2026-02-04T12:23:08Z"
     },
     {
       "tag": "v1.7.2",
-      "name": "v1.7.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-19T11:19:52Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.7.2",
-      "modVersion": "1.7.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.2/PatchEditor.v1.7.2.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.v1.7.2.jar",
-          "size": 181942,
-          "downloadCount": 520,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.2/PatchEditor.v1.7.2.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2411e9636c5c04e6817fce3a6ce0eeea501618c9",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/2411e9636c5c04e6817fce3a6ce0eeea501618c9.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.2/PatchEditor.v1.7.2.jar",
+      "modVersion": "1.7.2",
+      "sizeBytes": 181942,
+      "downloadCount": 520,
+      "releasedAt": "2026-01-19T11:19:52Z"
     },
     {
       "tag": "v1.7.1",
-      "name": "v1.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-18T10:02:18Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.7.1",
-      "modVersion": "1.7.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.1/PatchEditor.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.jar",
-          "size": 178057,
-          "downloadCount": 78,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.1/PatchEditor.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "94bd5132475866935fde743f1fc384e437e08d8c",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/94bd5132475866935fde743f1fc384e437e08d8c.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.1/PatchEditor.jar",
+      "modVersion": "1.7.1",
+      "sizeBytes": 178057,
+      "downloadCount": 78,
+      "releasedAt": "2026-01-18T10:02:18Z"
     },
     {
       "tag": "v1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-18T08:26:17Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.0/PatchEditor.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.jar",
-          "size": 177003,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.0/PatchEditor.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "207696730e79f7074edbe0e320231d4b4c042c1a",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/207696730e79f7074edbe0e320231d4b4c042c1a.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.7.0/PatchEditor.jar",
+      "modVersion": "1.7.0",
+      "sizeBytes": 177003,
+      "downloadCount": 11,
+      "releasedAt": "2026-01-18T08:26:17Z"
     },
     {
       "tag": "v1.6.1",
-      "name": "v1.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-21T10:44:51Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.6.1",
-      "modVersion": "1.6.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.6.1/PatchEditor.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.jar",
-          "size": 139756,
-          "downloadCount": 504,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.6.1/PatchEditor.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f80daebc5df9dd5ac35ac0b221681ed174b5e818",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/f80daebc5df9dd5ac35ac0b221681ed174b5e818.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.6.1/PatchEditor.jar",
+      "modVersion": "1.6.1",
+      "sizeBytes": 139756,
+      "downloadCount": 504,
+      "releasedAt": "2025-12-21T10:44:51Z"
     },
     {
       "tag": "v1.6",
-      "name": "v1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-21T09:34:17Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.6/PatchEditor.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchEditor.jar",
-          "size": 139723,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.6/PatchEditor.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "96ea0d9f9402844db940a255626798ed5ba28832",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/96ea0d9f9402844db940a255626798ed5ba28832.zip"
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.6/PatchEditor.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 139723,
+      "downloadCount": 15,
+      "releasedAt": "2025-12-21T09:34:17Z"
     },
     {
       "tag": "v1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-21T05:42:49Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.5/PatchEditor.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.5.zip",
-      "assets": [
-        {
-          "name": "PatchEditor.jar",
-          "size": 139868,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.5/PatchEditor.jar"
-        }
-      ],
-      "commitSha": "437052af05415f706105722981093919c7d2daca",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/437052af05415f706105722981093919c7d2daca.zip"
+      "modVersion": "1.5",
+      "sizeBytes": 139868,
+      "downloadCount": 18,
+      "releasedAt": "2025-12-21T05:42:49Z"
     },
     {
       "tag": "v1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-16T04:10:01Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "154"
+        }
+      ],
       "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.2/ContentsEditor-.v1.2.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.2.zip",
-      "assets": [
-        {
-          "name": "ContentsEditor-.v1.2.jar",
-          "size": 153802,
-          "downloadCount": 464,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.2/ContentsEditor-.v1.2.jar"
-        }
-      ],
-      "commitSha": "81b75580e9fed3c532d699e7e11470ee5aac4e10",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/81b75580e9fed3c532d699e7e11470ee5aac4e10.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-19T07:35:12Z",
-      "htmlUrl": "https://github.com/Dustdustry/PatchEditor/releases/tag/v1.0",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.0/ContentsEditor.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "ContentsEditor.jar",
-          "size": 145698,
-          "downloadCount": 885,
-          "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.0/ContentsEditor.jar"
-        }
-      ],
-      "commitSha": "48a40baa5c122cc2909b4a0cd42ea6b84e623b39",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/48a40baa5c122cc2909b4a0cd42ea6b84e623b39.zip"
-    },
-    {
-      "tag": "v1.7.8",
-      "name": "v1.7.8",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/dustdustry/patcheditor/tree/v1.7.8",
-      "modVersion": "1.7.8",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.8.zip",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.8.zip",
-      "assets": [],
-      "commitSha": "dc1725b0c5a652b0042191a22b4ec051a2ee2af0",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/dc1725b0c5a652b0042191a22b4ec051a2ee2af0.zip"
-    },
-    {
-      "tag": "v1.7.5",
-      "name": "v1.7.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/dustdustry/patcheditor/tree/v1.7.5",
-      "modVersion": "1.7.5",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.5.zip",
-      "sourceArchiveUrl": "https://github.com/dustdustry/patcheditor/archive/refs/tags/v1.7.5.zip",
-      "assets": [],
-      "commitSha": "434007fc570fd448b591de558b80b3bc34cbcb1a",
-      "archiveByCommitUrl": "https://github.com/dustdustry/patcheditor/archive/434007fc570fd448b591de558b80b3bc34cbcb1a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.2",
       "modVersion": "1.2",
-      "minGameVersion": "149",
-      "maxGameVersion": 154,
-      "hasRelease": true
+      "sizeBytes": 153802,
+      "downloadCount": 464,
+      "releasedAt": "2025-07-16T04:10:01Z"
     },
     {
-      "tag": "v1.8.0",
-      "modVersion": "1.8.0",
-      "minGameVersion": "154",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.10.1",
-      "modVersion": "1.10.1",
-      "minGameVersion": "156",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.14.0",
-      "modVersion": "1.14.0",
-      "minGameVersion": "159",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.18",
-      "modVersion": "1.18",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "tag": "v1.0",
+      "kind": "release",
+      "minGameVersion": "145",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.0/ContentsEditor.jar",
+      "modVersion": "1",
+      "sizeBytes": 145698,
+      "downloadCount": 885,
+      "releasedAt": "2024-02-19T07:35:12Z"
     }
   ],
   "meta": {
+    "name": "patch-editor",
+    "author": "minRi2",
+    "description": "Provide an in-game GUI for DataPatcher.",
+    "version": "1.18",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "dustdustry.patcheditor.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

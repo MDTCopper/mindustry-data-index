@@ -1,74 +1,62 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nikitapos/neo-dustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.3.1",
-      "name": "Alpha v0.3.1 (Mindustry v7)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-11T15:01:54Z",
-      "htmlUrl": "https://github.com/NikitaPos/neo-dustry/releases/tag/v0.3.1",
-      "modVersion": "v0.3.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nikitapos/neo-dustry/archive/refs/tags/v0.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/nikitapos/neo-dustry/archive/refs/tags/v0.3.1.zip",
-      "assets": [],
-      "commitSha": "05e47a61a0ec5af29bd1e91bc3f4e50f88c8e6af",
-      "archiveByCommitUrl": "https://github.com/nikitapos/neo-dustry/archive/05e47a61a0ec5af29bd1e91bc3f4e50f88c8e6af.zip"
+      "modVersion": "v0.3.1",
+      "releasedAt": "2024-06-11T15:01:54Z"
     },
     {
       "tag": "v0.3",
-      "name": "Alpha v0.3 (Mindustry v7)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-11T11:35:22Z",
-      "htmlUrl": "https://github.com/NikitaPos/neo-dustry/releases/tag/v0.3",
-      "modVersion": "0.3",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nikitapos/neo-dustry/archive/refs/tags/v0.3.zip",
-      "sourceArchiveUrl": "https://github.com/nikitapos/neo-dustry/archive/refs/tags/v0.3.zip",
-      "assets": [],
-      "commitSha": "d925185e041b16cbdda2355c92717573bdbab2c1",
-      "archiveByCommitUrl": "https://github.com/nikitapos/neo-dustry/archive/d925185e041b16cbdda2355c92717573bdbab2c1.zip"
+      "modVersion": "0.3",
+      "releasedAt": "2024-06-11T11:35:22Z"
     },
     {
       "tag": "v0.3.2",
-      "name": "v0.3.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/nikitapos/neo-dustry/tree/v0.3.2",
-      "modVersion": "v1.3.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nikitapos/neo-dustry/archive/refs/tags/v0.3.2.zip",
-      "sourceArchiveUrl": "https://github.com/nikitapos/neo-dustry/archive/refs/tags/v0.3.2.zip",
-      "assets": [],
-      "commitSha": "261acfbd3534a58fb2726cf1f97d07d2cfe6875d",
-      "archiveByCommitUrl": "https://github.com/nikitapos/neo-dustry/archive/261acfbd3534a58fb2726cf1f97d07d2cfe6875d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.3.1",
-      "modVersion": "v0.3.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "v1.3.1"
     }
   ],
   "meta": {
+    "name": "neo-dustry",
+    "author": "NikitaPos",
+    "description": "\nMindustry mod that adds some things.\n",
+    "version": "v0.3.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

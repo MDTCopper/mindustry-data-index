@@ -1,386 +1,271 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "koctz34/minduntm",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "3.4",
-      "name": "3.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-05T12:41:30Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/3.4",
-      "modVersion": "3.4",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.4.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.4.zip",
-      "assets": [],
-      "commitSha": "73d0ae3bdd864d175e01641ffb5d50b64f8b38b1",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/73d0ae3bdd864d175e01641ffb5d50b64f8b38b1.zip"
+      "modVersion": "3.4",
+      "releasedAt": "2026-04-05T12:41:30Z"
     },
     {
       "tag": "3.3",
-      "name": "3.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-01T10:33:24Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/3.3",
-      "modVersion": "3.3",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.3.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.3.zip",
-      "assets": [],
-      "commitSha": "c28b82250c01446a958e85a71e0ff760a623d39f",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/c28b82250c01446a958e85a71e0ff760a623d39f.zip"
+      "modVersion": "3.3",
+      "releasedAt": "2026-03-01T10:33:24Z"
     },
     {
       "tag": "3.2",
-      "name": "3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-25T14:13:35Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/3.2",
-      "modVersion": "3.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.2.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.2.zip",
-      "assets": [],
-      "commitSha": "ba95f1d8e11ff666001fc4aeeedf17af9dfc3be7",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/ba95f1d8e11ff666001fc4aeeedf17af9dfc3be7.zip"
+      "modVersion": "3.2",
+      "releasedAt": "2025-12-25T14:13:35Z"
     },
     {
       "tag": "3.1",
-      "name": "3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-28T13:34:37Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/3.1",
-      "modVersion": "3.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/3.1/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 48960781,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/3.1/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5e4b43d11be2bb3da5094d4142e3acaa5c596f14",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/5e4b43d11be2bb3da5094d4142e3acaa5c596f14.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/3.1/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "3.1",
+      "sizeBytes": 48960781,
+      "downloadCount": 44,
+      "releasedAt": "2025-07-28T13:34:37Z"
     },
     {
       "tag": "3.0",
-      "name": "3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-28T14:08:41Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/3.0",
-      "modVersion": "3.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/3.0/minduntm.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minduntm.zip",
-          "size": 48146415,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/3.0/minduntm.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "af707613392f4fd8187d865a35ae22b8c1d3e5d8",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/af707613392f4fd8187d865a35ae22b8c1d3e5d8.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/3.0/minduntm.zip",
+      "modVersion": "3.0",
+      "sizeBytes": 48146415,
+      "downloadCount": 45,
+      "releasedAt": "2025-03-28T14:08:41Z"
     },
     {
       "tag": "2.9",
-      "name": "2.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-13T11:50:19Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.9",
-      "modVersion": "2.9",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.9/minduntm.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minduntm.zip",
-          "size": 46815697,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.9/minduntm.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "538bd4fffc9ed47ff1306c36292979c45d4ae821",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/538bd4fffc9ed47ff1306c36292979c45d4ae821.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.9/minduntm.zip",
+      "modVersion": "2.9",
+      "sizeBytes": 46815697,
+      "downloadCount": 12,
+      "releasedAt": "2025-03-13T11:50:19Z"
     },
     {
       "tag": "2.8",
-      "name": "2.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-05T10:11:16Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.8",
-      "modVersion": "2.8",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.8/minduntm.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minduntm.zip",
-          "size": 176214388,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.8/minduntm.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f0df64edae979217e345d25457226277e911aea6",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/f0df64edae979217e345d25457226277e911aea6.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.8/minduntm.zip",
+      "modVersion": "2.8",
+      "sizeBytes": 176214388,
+      "downloadCount": 18,
+      "releasedAt": "2025-01-05T10:11:16Z"
     },
     {
       "tag": "2.7",
-      "name": "2.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-05T12:10:26Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.7",
-      "modVersion": "2.7",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.7/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 41480377,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.7/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "44afb0c054022ebdc22262fe0cc16a49856c0c44",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/44afb0c054022ebdc22262fe0cc16a49856c0c44.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.7/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.7",
+      "sizeBytes": 41480377,
+      "downloadCount": 13,
+      "releasedAt": "2024-11-05T12:10:26Z"
     },
     {
       "tag": "2.6",
-      "name": "2.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-23T17:05:25Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.6",
-      "modVersion": "2.6",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.6/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 43503538,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.6/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1ac4d1f09e6368e54f86b0164fcdde00d3bd214d",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/1ac4d1f09e6368e54f86b0164fcdde00d3bd214d.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.6/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.6",
+      "sizeBytes": 43503538,
+      "downloadCount": 13,
+      "releasedAt": "2024-10-23T17:05:25Z"
     },
     {
       "tag": "2.5",
-      "name": "2.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-16T08:47:31Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.5",
-      "modVersion": "2.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.5/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 43634455,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.5/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e5f526d2bac9765f375cb47b419c9c6d58901118",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/e5f526d2bac9765f375cb47b419c9c6d58901118.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.5/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.5",
+      "sizeBytes": 43634455,
+      "downloadCount": 8,
+      "releasedAt": "2024-10-16T08:47:31Z"
     },
     {
       "tag": "2.4",
-      "name": "2.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-01T12:54:52Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.4",
-      "modVersion": "2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.4/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 41738969,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.4/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "60782224de3716f1dfdb25b94bfaa8c390935975",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/60782224de3716f1dfdb25b94bfaa8c390935975.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.4/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.4",
+      "sizeBytes": 41738969,
+      "downloadCount": 8,
+      "releasedAt": "2024-10-01T12:54:52Z"
     },
     {
       "tag": "2.3",
-      "name": "2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-30T11:46:50Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.3",
-      "modVersion": "2.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.3/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 31929329,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.3/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fe6e4d8fd353284fe999ff81389c1decd4f09f34",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/fe6e4d8fd353284fe999ff81389c1decd4f09f34.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.3/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.3",
+      "sizeBytes": 31929329,
+      "downloadCount": 3,
+      "releasedAt": "2024-09-30T11:46:50Z"
     },
     {
       "tag": "2.2",
-      "name": "2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-30T06:55:05Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.2",
-      "modVersion": "2.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.2/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 23896263,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.2/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "51bde90d24f8b31a360adca39f23fd4e107451cc",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/51bde90d24f8b31a360adca39f23fd4e107451cc.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.2/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.2",
+      "sizeBytes": 23896263,
+      "downloadCount": 5,
+      "releasedAt": "2024-09-30T06:55:05Z"
     },
     {
       "tag": "2.1",
-      "name": "2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-08T15:25:23Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.1",
-      "modVersion": "2.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.1/koctz34-minduntm.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm.zip",
-          "size": 9831762,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.1/koctz34-minduntm.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ef0ef1da45b208d3c6dbf73e7ade3279bc149e3e",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/ef0ef1da45b208d3c6dbf73e7ade3279bc149e3e.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.1/koctz34-minduntm.zip",
+      "modVersion": "2.1",
+      "sizeBytes": 9831762,
+      "downloadCount": 4,
+      "releasedAt": "2024-09-08T15:25:23Z"
     },
     {
       "tag": "2.0fix",
-      "name": "2.0 Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-26T14:01:07Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.0fix",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.0fix/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.0fix.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 9772642,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.0fix/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "519d9e0e10bb4d3d2d5cdfd773e9e7aa7ae7c491",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/519d9e0e10bb4d3d2d5cdfd773e9e7aa7ae7c491.zip"
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.0fix/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.0",
+      "sizeBytes": 9772642,
+      "downloadCount": 4,
+      "releasedAt": "2024-08-26T14:01:07Z"
     },
     {
       "tag": "2.0",
-      "name": "2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-26T10:48:37Z",
-      "htmlUrl": "https://github.com/koctz34/minduntm/releases/tag/2.0",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.0/koctz34-minduntm-1ddb0d9.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/minduntm/archive/refs/tags/2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "koctz34-minduntm-1ddb0d9.zip",
-          "size": 9772642,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.0/koctz34-minduntm-1ddb0d9.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c8e996983815270de42618d54094e49888c5a972",
-      "archiveByCommitUrl": "https://github.com/koctz34/minduntm/archive/c8e996983815270de42618d54094e49888c5a972.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "3.4",
-      "modVersion": "3.4",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/koctz34/minduntm/releases/download/2.0/koctz34-minduntm-1ddb0d9.zip",
+      "modVersion": "2.0",
+      "sizeBytes": 9772642,
+      "downloadCount": 3,
+      "releasedAt": "2024-08-26T10:48:37Z"
     }
   ],
   "meta": {
+    "name": "ntm",
+    "author": "Ion - 7274",
+    "description": "\nHbm's NTM (by Bobcat) in mindustry!\nMinecraft, Satisfactory, Rust, Day R and other...\n\nOnly decorative blocks.\n\nDisable linear filtering in settings!\n",
+    "version": "3.4",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

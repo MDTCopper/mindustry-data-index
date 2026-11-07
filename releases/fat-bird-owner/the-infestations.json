@@ -1,102 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "fat-bird-owner/the-infestations",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V2.25",
-      "name": "Final Release (2.25)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-23T11:57:08Z",
-      "htmlUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/tag/V2.25",
-      "modVersion": "\n[lightgrey[]]v2-Infestation\n[grey[]]- Act 2.25\n- 6 Sectors\n- C2236\n",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V2.25/The-Infestations-main.zip",
-      "sourceArchiveUrl": "https://github.com/fat-bird-owner/the-infestations/archive/refs/tags/V2.25.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "The-Infestations-main.zip",
-          "size": 4532993,
-          "downloadCount": 107,
-          "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V2.25/The-Infestations-main.zip"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9ad1b311c24ec6d249419fe49c7fc2bb277e7ce3",
-      "archiveByCommitUrl": "https://github.com/fat-bird-owner/the-infestations/archive/9ad1b311c24ec6d249419fe49c7fc2bb277e7ce3.zip"
+      "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V2.25/The-Infestations-main.zip",
+      "modVersion": "[lightgrey[]]v2-Infestation\n[grey[]]- Act 2.25\n- 6 Sectors\n- C2236",
+      "sizeBytes": 4532993,
+      "downloadCount": 107,
+      "releasedAt": "2026-01-23T11:57:08Z"
     },
     {
       "tag": "V2",
-      "name": "ACT 1 update (v2)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-04T14:17:18Z",
-      "htmlUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/tag/V2",
-      "modVersion": "v2-Infestation",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154.3",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V2/The-Infestations-main.zip",
-      "sourceArchiveUrl": "https://github.com/fat-bird-owner/the-infestations/archive/refs/tags/V2.zip",
-      "assets": [
-        {
-          "name": "The-Infestations-main.zip",
-          "size": 4300773,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V2/The-Infestations-main.zip"
-        }
-      ],
-      "commitSha": "e982fe6e4fd1c15191c4811f7803cfec9e1de4b0",
-      "archiveByCommitUrl": "https://github.com/fat-bird-owner/the-infestations/archive/e982fe6e4fd1c15191c4811f7803cfec9e1de4b0.zip"
+      "modVersion": "v2-Infestation",
+      "sizeBytes": 4300773,
+      "downloadCount": 24,
+      "releasedAt": "2026-01-04T14:17:18Z"
     },
     {
       "tag": "V1.5",
-      "name": "The Seige Update v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-13T13:52:41Z",
-      "htmlUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/tag/V1.5",
-      "modVersion": "V1.5-TheEntry",
+      "kind": "release",
       "minGameVersion": "153",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "153",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V1.5/The-Infestations-v1.5.zip",
-      "sourceArchiveUrl": "https://github.com/fat-bird-owner/the-infestations/archive/refs/tags/V1.5.zip",
-      "assets": [
-        {
-          "name": "The-Infestations-v1.5.zip",
-          "size": 3842389,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/Fat-Bird-Owner/The-Infestations/releases/download/V1.5/The-Infestations-v1.5.zip"
-        }
-      ],
-      "commitSha": "d5109f6ea7d955b62ca32674f3b1415a70805e3f",
-      "archiveByCommitUrl": "https://github.com/fat-bird-owner/the-infestations/archive/d5109f6ea7d955b62ca32674f3b1415a70805e3f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.5",
       "modVersion": "V1.5-TheEntry",
-      "minGameVersion": "153",
-      "maxGameVersion": 154.3,
-      "hasRelease": true
-    },
-    {
-      "tag": "V2.25",
-      "modVersion": "\n[lightgrey[]]v2-Infestation\n[grey[]]- Act 2.25\n- 6 Sectors\n- C2236\n",
-      "minGameVersion": "154.3",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 3842389,
+      "downloadCount": 14,
+      "releasedAt": "2025-12-13T13:52:41Z"
     }
   ],
   "meta": {
+    "name": "Infestation",
+    "author": "Fat Bird's Owner - [accent[]]Main Developer[[]]\nLJ - [accent[]]A number of sprites and Mod icon[[]]",
+    "description": "\n\n[lightgrey[]]\nA mod inspired by neoplasm and the creeper world series.\n[accent[]]\nfeaturing 30+ buildings with two unfinished planets.\nThere is 1 finished act within this mod.\n\n[salmon[]]- Turn on lighting, weather and turn off linear filtering for the best experience.\n\n[accent[]]\nOptionally give a star to show your support.\n\n[lightgrey[]]Thanks for playing.\n:)\n",
+    "version": "\n[lightgrey[]]v2-Infestation\n[grey[]]- Act 2.25\n- 6 Sectors\n- C2236\n",
+    "minGameVersion": "154.3",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

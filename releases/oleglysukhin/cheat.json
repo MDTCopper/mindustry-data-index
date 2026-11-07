@@ -1,355 +1,152 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "oleglysukhin/cheat",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2.7",
-      "name": "CheatMod 2.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-27T10:41:04Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.7",
-      "modVersion": "2.7",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.7.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.7.zip",
-      "assets": [],
-      "commitSha": "bd9263cc05a6d75682271e8fdea03301bd8974ad",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/bd9263cc05a6d75682271e8fdea03301bd8974ad.zip"
+      "modVersion": "2.7",
+      "releasedAt": "2023-02-27T10:41:04Z"
     },
     {
       "tag": "2.6",
-      "name": "CheatMod 2.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-16T05:55:02Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.6",
-      "modVersion": "2.6",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.6.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.6.zip",
-      "assets": [],
-      "commitSha": "68c7ad5184befaf8dd3a79d3592231d250fa94d7",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/68c7ad5184befaf8dd3a79d3592231d250fa94d7.zip"
+      "modVersion": "2.6",
+      "releasedAt": "2023-02-16T05:55:02Z"
     },
     {
       "tag": "2.5",
-      "name": "CheatMod 2.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-03T03:00:40Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.5",
-      "modVersion": "2.5",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/Cheat/releases/download/2.5/Cheat.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Cheat.zip",
-          "size": 973283,
-          "downloadCount": 491,
-          "downloadUrl": "https://github.com/oleglysukhin/Cheat/releases/download/2.5/Cheat.zip"
+          "from": "140",
+          "to": "160.7"
         }
       ],
-      "commitSha": "271e63c630a30f2d6088f002e54d22feba896e67",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/271e63c630a30f2d6088f002e54d22feba896e67.zip"
+      "downloadUrl": "https://github.com/oleglysukhin/Cheat/releases/download/2.5/Cheat.zip",
+      "modVersion": "2.5",
+      "sizeBytes": 973283,
+      "downloadCount": 491,
+      "releasedAt": "2023-01-03T03:00:40Z"
     },
     {
       "tag": "2.4",
-      "name": "CheatMod 2.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-29T07:00:21Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.4",
-      "modVersion": "2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/Cheat/releases/download/2.4/Cheat.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Cheat.zip",
-          "size": 996999,
-          "downloadCount": 1418,
-          "downloadUrl": "https://github.com/oleglysukhin/Cheat/releases/download/2.4/Cheat.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fe8fcab14d2ece5ef05eb2ebe03541e82e594a02",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/fe8fcab14d2ece5ef05eb2ebe03541e82e594a02.zip"
+      "downloadUrl": "https://github.com/oleglysukhin/Cheat/releases/download/2.4/Cheat.zip",
+      "modVersion": "2.4",
+      "sizeBytes": 996999,
+      "downloadCount": 1418,
+      "releasedAt": "2022-07-29T07:00:21Z"
     },
     {
       "tag": "2.2",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-06T15:08:34Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.2",
-      "modVersion": "2.2",
+      "kind": "tag",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "122",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.2.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.2.zip",
-      "assets": [],
-      "commitSha": "f95f81b9792a96dc6b5f68f566e4ad9e91db798c",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/f95f81b9792a96dc6b5f68f566e4ad9e91db798c.zip"
+      "modVersion": "2.2",
+      "releasedAt": "2021-02-06T15:08:34Z"
     },
     {
       "tag": "2.1",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-19T12:17:33Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.1",
-      "modVersion": "2.1",
+      "kind": "tag",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "122",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.1.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.1.zip",
-      "assets": [],
-      "commitSha": "181084a4b2c0fe9750e44dc5f638cf5195e35b67",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/181084a4b2c0fe9750e44dc5f638cf5195e35b67.zip"
+      "modVersion": "2.1",
+      "releasedAt": "2021-01-19T12:17:33Z"
     },
     {
       "tag": "2.0.2",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-13T16:38:29Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.0.2",
-      "modVersion": "2.0.2",
+      "kind": "tag",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "122",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.0.2.zip",
-      "assets": [],
-      "commitSha": "97ba6b8252277db15d671e89436df528450fab7a",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/97ba6b8252277db15d671e89436df528450fab7a.zip"
+      "modVersion": "2.0.2",
+      "releasedAt": "2021-01-13T16:38:29Z"
     },
     {
       "tag": "2.0.1",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-10T01:04:52Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/2.0.1",
-      "modVersion": "2.0.1",
+      "kind": "tag",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "122",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/2.0.1.zip",
-      "assets": [],
-      "commitSha": "fb47d6af60a2b019b287584d9f250318f0539415",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/fb47d6af60a2b019b287584d9f250318f0539415.zip"
+      "modVersion": "2.0.1",
+      "releasedAt": "2021-01-10T01:04:52Z"
     },
     {
       "tag": "1.8",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-10-12T01:48:01Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.8",
-      "modVersion": "1.8",
+      "kind": "tag",
       "minGameVersion": "105",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.8.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.8.zip",
-      "assets": [],
-      "commitSha": "3e8d81545ef3e2530570104bd21886a63f5c4283",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/3e8d81545ef3e2530570104bd21886a63f5c4283.zip"
-    },
-    {
-      "tag": "1.7fix+",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-18T14:05:44Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.7fix%2B",
-      "modVersion": "1.7",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.7fix%2B.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.7fix%2B.zip",
-      "assets": [],
-      "commitSha": "fccee8a0a2ea4c40b395045e82f1fe563c366dfc",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/fccee8a0a2ea4c40b395045e82f1fe563c366dfc.zip"
-    },
-    {
-      "tag": "1.7fix",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-18T13:11:54Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.7fix",
-      "modVersion": "1.6",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.7fix.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.7fix.zip",
-      "assets": [],
-      "commitSha": "ca3828289eb5e064cd629dc9213d10dd28e98eda",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/ca3828289eb5e064cd629dc9213d10dd28e98eda.zip"
-    },
-    {
-      "tag": "1.7",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-18T11:44:13Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.7",
-      "modVersion": "1.6",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.7.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.7.zip",
-      "assets": [],
-      "commitSha": "507506e014f97a2e9d3e64f1a1a5c89cea67569d",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/507506e014f97a2e9d3e64f1a1a5c89cea67569d.zip"
-    },
-    {
-      "tag": "1.6",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-17T17:34:47Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.6",
-      "modVersion": "1.6",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.6.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.6.zip",
-      "assets": [],
-      "commitSha": "c64d01855579f28c35deff636eba37108d5c1470",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/c64d01855579f28c35deff636eba37108d5c1470.zip"
-    },
-    {
-      "tag": "1.5",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-16T11:14:57Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.5",
-      "modVersion": "1.4",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.5.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.5.zip",
-      "assets": [],
-      "commitSha": "b3fc06f9cdf23ad91d9c47ea9c36fb8f3e651d34",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/b3fc06f9cdf23ad91d9c47ea9c36fb8f3e651d34.zip"
-    },
-    {
-      "tag": "1.4",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-15T19:52:34Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.4",
-      "modVersion": "1.4",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.4.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.4.zip",
-      "assets": [],
-      "commitSha": "6f9c41abac65fb056b06d4a2abb2b6dbfd394bc9",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/6f9c41abac65fb056b06d4a2abb2b6dbfd394bc9.zip"
-    },
-    {
-      "tag": "1.1",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-14T13:18:49Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1.1",
-      "modVersion": "1.1",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.1.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1.1.zip",
-      "assets": [],
-      "commitSha": "2e858ca0d5286ba68c41eabac7feb20dc9b52ebc",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/2e858ca0d5286ba68c41eabac7feb20dc9b52ebc.zip"
-    },
-    {
-      "tag": "1beta",
-      "name": "Cheat",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-08-13T17:16:36Z",
-      "htmlUrl": "https://github.com/oleglysukhin/Cheat/releases/tag/1beta",
-      "modVersion": "1beta",
-      "minGameVersion": null,
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1beta.zip",
-      "sourceArchiveUrl": "https://github.com/oleglysukhin/cheat/archive/refs/tags/1beta.zip",
-      "assets": [],
-      "commitSha": "1a00d596e7dcb9444e47b9ebbd3bb3a5277b6c63",
-      "archiveByCommitUrl": "https://github.com/oleglysukhin/cheat/archive/1a00d596e7dcb9444e47b9ebbd3bb3a5277b6c63.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.8",
       "modVersion": "1.8",
-      "minGameVersion": "105",
-      "maxGameVersion": 122,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.2",
-      "modVersion": "2.2",
-      "minGameVersion": "122",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.4",
-      "modVersion": "2.4",
-      "minGameVersion": "136",
-      "maxGameVersion": 140,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.6",
-      "modVersion": "2.6",
-      "minGameVersion": "140",
-      "maxGameVersion": 142,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.7",
-      "modVersion": "2.7",
-      "minGameVersion": "142",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2020-10-12T01:48:01Z"
     }
   ],
   "meta": {
+    "name": "cheat",
+    "author": "paulieg626",
+    "description": "Добавляет разные штуки для читов\nhttps://vk.com/mindustry_cheat",
+    "version": "2.7",
+    "minGameVersion": "142",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

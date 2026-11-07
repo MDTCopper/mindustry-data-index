@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "acookieg/carbon-vanilla",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mods",
-      "name": "mindustry-mods",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/acookieg/carbon-vanilla/tree/mindustry-mods",
-      "modVersion": "3",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/acookieg/carbon-vanilla/archive/refs/tags/mindustry-mods.zip",
-      "sourceArchiveUrl": "https://github.com/acookieg/carbon-vanilla/archive/refs/tags/mindustry-mods.zip",
-      "assets": [],
-      "commitSha": "869ec8b7da349af2bc0af2f0ec89a380a25ab3ba",
-      "archiveByCommitUrl": "https://github.com/acookieg/carbon-vanilla/archive/869ec8b7da349af2bc0af2f0ec89a380a25ab3ba.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mods",
-      "modVersion": "3",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "3"
     }
   ],
   "meta": {
+    "name": "Carbon Vanilla",
+    "author": "AcookieG",
+    "description": "\nAdds multiple new factories, turrets and items to enhance vanilla content and add more things post-late game.\nIMPORTANT: Credit for sprites cuz stealing bad: \n- Eschatologue/Unlimited-Armament-Works\n- AureusStratus/ExoGenesis \n- Eschatologue/Heavy-Armaments-Industries\n- uujuju1/project-oblivion\nas well as reskins of vanilla sprites\nI'm really sorry for stealing sprites I just can't good results otherwise, and the mod was originally just a personnal project for late-game.\n",
+    "version": "3",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

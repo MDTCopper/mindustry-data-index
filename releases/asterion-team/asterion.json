@@ -1,120 +1,80 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "asterion-team/asterion",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "Alpha-0-1_Rework",
-      "name": "Asterion Rework - Alpha 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-03T17:30:32Z",
-      "htmlUrl": "https://github.com/Asterion-Team/Asterion/releases/tag/Alpha-0-1_Rework",
-      "modVersion": "Alpha 0.1.3",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Asterion-Team/Asterion/releases/download/Alpha-0-1_Rework/Asterion.zip",
-      "sourceArchiveUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/Alpha-0-1_Rework.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Asterion.zip",
-          "size": 47490851,
-          "downloadCount": 78,
-          "downloadUrl": "https://github.com/Asterion-Team/Asterion/releases/download/Alpha-0-1_Rework/Asterion.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a7374c3ea99e5c99edb322c25142099d142914fc",
-      "archiveByCommitUrl": "https://github.com/asterion-team/asterion/archive/a7374c3ea99e5c99edb322c25142099d142914fc.zip"
+      "downloadUrl": "https://github.com/Asterion-Team/Asterion/releases/download/Alpha-0-1_Rework/Asterion.zip",
+      "modVersion": "Alpha 0.1.3",
+      "sizeBytes": 47490851,
+      "downloadCount": 79,
+      "releasedAt": "2026-06-03T17:30:32Z"
     },
     {
       "tag": "vIDK",
-      "name": "Old asterion",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-05T18:45:57Z",
-      "htmlUrl": "https://github.com/Asterion-Team/Asterion/releases/tag/vIDK",
-      "modVersion": "pre 0.96.5",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Asterion-Team/Asterion/releases/download/vIDK/Asterion-main.zip",
-      "sourceArchiveUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/vIDK.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Asterion-main.zip",
-          "size": 26304767,
-          "downloadCount": 36,
-          "downloadUrl": "https://github.com/Asterion-Team/Asterion/releases/download/vIDK/Asterion-main.zip"
+          "from": "147",
+          "to": "160.7"
         }
       ],
-      "commitSha": "044e452db1f30aa868f2161591ad2f4e3cd62cd7",
-      "archiveByCommitUrl": "https://github.com/asterion-team/asterion/archive/044e452db1f30aa868f2161591ad2f4e3cd62cd7.zip"
-    },
-    {
-      "tag": "v0.6fix",
-      "name": "v0.6fix",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/asterion-team/asterion/tree/v0.6fix",
-      "modVersion": "0.6",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/v0.6fix.zip",
-      "sourceArchiveUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/v0.6fix.zip",
-      "assets": [],
-      "commitSha": "09314949c4cce04c117161b38f2808b84cbf7db1",
-      "archiveByCommitUrl": "https://github.com/asterion-team/asterion/archive/09314949c4cce04c117161b38f2808b84cbf7db1.zip"
+      "downloadUrl": "https://github.com/Asterion-Team/Asterion/releases/download/vIDK/Asterion-main.zip",
+      "modVersion": "pre 0.96.5",
+      "sizeBytes": 26304767,
+      "downloadCount": 36,
+      "releasedAt": "2025-12-05T18:45:57Z"
     },
     {
       "tag": "v0.6",
-      "name": "v0.6",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/asterion-team/asterion/tree/v0.6",
-      "modVersion": "0.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/v0.6.zip",
-      "sourceArchiveUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/v0.6.zip",
-      "assets": [],
-      "commitSha": "6d627799bbce1425cc3d314e55bf7f03418624fc",
-      "archiveByCommitUrl": "https://github.com/asterion-team/asterion/archive/6d627799bbce1425cc3d314e55bf7f03418624fc.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "0.6"
+    },
     {
       "tag": "v0.6fix",
-      "modVersion": "0.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": false
-    },
-    {
-      "tag": "vIDK",
-      "modVersion": "pre 0.96.5",
-      "minGameVersion": "147",
-      "maxGameVersion": 155,
-      "hasRelease": true
-    },
-    {
-      "tag": "Alpha-0-1_Rework",
-      "modVersion": "Alpha 0.1.3",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/asterion-team/asterion/archive/refs/tags/v0.6fix.zip",
+      "modVersion": "0.6"
     }
   ],
   "meta": {
+    "name": "as",
+    "author": "[white] [purple]|Asterion [yellow]Team|[white] ",
+    "description": "\nNeeds the Hjson++ library\n\nMOD IN THE ALPHA!\nThis is collaboration mod.\n\n[white][purple]Asterion [yellow]Team[white][]\n\n[#92d3ff[]]Sputnuc [white[]]— [accent[]]creator.\n[#ffa0a0[]]Bloody Ocean [white[]]— [accent[]]spriter.\n[#d13050[]]AnDashik [white[]]— [accent[]]coder, spriter, mapper.\n[#a3e7b8[]]Ace [white[]]— [accent[]]composer.\n[#5245c9[]]R.O.T [white[]]— [accent[]]coder, spriter.\n[#e2478f[]]Sundered [white[]]— [accent[]]some sprites.\n[#dbddca[]]Los Sasikos [white[]]— [accent[]]help with balance & sprites.\n",
+    "version": "Alpha 0.1.3",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

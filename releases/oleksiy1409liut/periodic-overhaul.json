@@ -1,57 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "oleksiy1409liut/periodic-overhaul",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.12",
-      "name": "0.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-31T20:29:17Z",
-      "htmlUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/releases/tag/0.12",
-      "modVersion": "0.11",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/refs/tags/0.12.zip",
-      "sourceArchiveUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/refs/tags/0.12.zip",
-      "assets": [],
-      "commitSha": "b62dca62a441b63256db3496191559ce30079017",
-      "archiveByCommitUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/b62dca62a441b63256db3496191559ce30079017.zip"
+      "modVersion": "0.11",
+      "releasedAt": "2026-08-31T20:29:17Z"
     },
     {
       "tag": "0.11",
-      "name": "0.11",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-27T22:26:25Z",
-      "htmlUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/releases/tag/0.11",
-      "modVersion": "0.11",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/refs/tags/0.11.zip",
-      "sourceArchiveUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/refs/tags/0.11.zip",
-      "assets": [],
-      "commitSha": "ac5ec40b3dd0d1816d0349018da4f3a808a60984",
-      "archiveByCommitUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/ac5ec40b3dd0d1816d0349018da4f3a808a60984.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.12",
       "modVersion": "0.11",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-08-27T22:26:25Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "periodic",
+    "author": "oleksiy",
+    "description": " \ninspired by the periodic madness factorio mod\nDOESNT WORK WITH VANILLA MAPS\n",
+    "version": "0.11",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

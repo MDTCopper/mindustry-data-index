@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "t555-837/nh-newhorizon-texture-pack",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "2.2.1",
-      "name": "T555-NewHorizon-Texture",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-13T10:01:57Z",
-      "htmlUrl": "https://github.com/T555-837/NH-NewHorizon-Texture-Pack/releases/tag/2.2.1",
-      "modVersion": "v1.2",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/T555-837/NH-NewHorizon-Texture-Pack/releases/download/2.2.1/T555-NewHorizon-Texture.zip",
-      "sourceArchiveUrl": "https://github.com/t555-837/nh-newhorizon-texture-pack/archive/refs/tags/2.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "T555-NewHorizon-Texture.zip",
-          "size": 2091599,
-          "downloadCount": 95,
-          "downloadUrl": "https://github.com/T555-837/NH-NewHorizon-Texture-Pack/releases/download/2.2.1/T555-NewHorizon-Texture.zip"
+          "from": "144",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eaec896648f17f0a14453eb3ba5916dbb1ec036c",
-      "archiveByCommitUrl": "https://github.com/t555-837/nh-newhorizon-texture-pack/archive/eaec896648f17f0a14453eb3ba5916dbb1ec036c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.2.1",
+      "downloadUrl": "https://github.com/T555-837/NH-NewHorizon-Texture-Pack/releases/download/2.2.1/T555-NewHorizon-Texture.zip",
       "modVersion": "v1.2",
-      "minGameVersion": "144",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2091599,
+      "downloadCount": 96,
+      "releasedAt": "2026-09-13T10:01:57Z"
     }
   ],
   "meta": {
+    "name": "NH NewHorizon Texture Pack",
+    "author": "T555",
+    "description": "меняет текстуры мода Newhorizon .",
+    "version": "v1.2",
+    "minGameVersion": "144",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,167 +1,105 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dimon112/sand-storm-mindustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.3.3-alpha",
-      "name": "0.3.3-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-15T15:57:02Z",
-      "htmlUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/tag/0.3.3-alpha",
-      "modVersion": "0.32-alpha",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.3-alpha/sand-storm-mindustry-main.zip",
-      "sourceArchiveUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/refs/tags/0.3.3-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sand-storm-mindustry-main.zip",
-          "size": 646622,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.3-alpha/sand-storm-mindustry-main.zip"
+          "from": "144",
+          "to": "160.7"
         }
       ],
-      "commitSha": "426f65700be9585ad836fffb76613d55e162a3ed",
-      "archiveByCommitUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/426f65700be9585ad836fffb76613d55e162a3ed.zip"
+      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.3-alpha/sand-storm-mindustry-main.zip",
+      "modVersion": "0.32-alpha",
+      "sizeBytes": 646622,
+      "downloadCount": 26,
+      "releasedAt": "2025-12-15T15:57:02Z",
+      "prerelease": true
     },
     {
       "tag": "0.3.2-alpha",
-      "name": "0.3.2-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-09T23:17:25Z",
-      "htmlUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/tag/0.3.2-alpha",
-      "modVersion": "0.32-alpha",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.2-alpha/sand-storm-mindustry-main.zip",
-      "sourceArchiveUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/refs/tags/0.3.2-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sand-storm-mindustry-main.zip",
-          "size": 639709,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.2-alpha/sand-storm-mindustry-main.zip"
+          "from": "144",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a9a5a84996b0127b52fb8c326a159feb89a38a12",
-      "archiveByCommitUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/a9a5a84996b0127b52fb8c326a159feb89a38a12.zip"
+      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.2-alpha/sand-storm-mindustry-main.zip",
+      "modVersion": "0.32-alpha",
+      "sizeBytes": 639709,
+      "downloadCount": 2,
+      "releasedAt": "2025-12-09T23:17:25Z",
+      "prerelease": true
     },
     {
       "tag": "0.3.1",
-      "name": "0.3.1-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-07T18:56:55Z",
-      "htmlUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/tag/0.3.1",
-      "modVersion": "1.27",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.1/sand-storm-mindustry-main.zip",
-      "sourceArchiveUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/refs/tags/0.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sand-storm-mindustry-main.zip",
-          "size": 620850,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.1/sand-storm-mindustry-main.zip"
+          "from": "144",
+          "to": "160.7"
         }
       ],
-      "commitSha": "db9df557530f49418ff5b57f6c3678b48bc8ac40",
-      "archiveByCommitUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/db9df557530f49418ff5b57f6c3678b48bc8ac40.zip"
+      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3.1/sand-storm-mindustry-main.zip",
+      "modVersion": "1.27",
+      "sizeBytes": 620850,
+      "downloadCount": 2,
+      "releasedAt": "2025-12-07T18:56:55Z",
+      "prerelease": true
     },
     {
       "tag": "0.3",
-      "name": "0.3-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-06T20:57:10Z",
-      "htmlUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/tag/0.3",
-      "modVersion": "1.27",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3/sand-storm-mindustry-main.zip",
-      "sourceArchiveUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/refs/tags/0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sand-storm-mindustry-main.zip",
-          "size": 620832,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3/sand-storm-mindustry-main.zip"
+          "from": "144",
+          "to": "160.7"
         }
       ],
-      "commitSha": "16efe8f64d48e7e18b952294e53647d94f8d7ad7",
-      "archiveByCommitUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/16efe8f64d48e7e18b952294e53647d94f8d7ad7.zip"
+      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.3/sand-storm-mindustry-main.zip",
+      "modVersion": "1.27",
+      "sizeBytes": 620832,
+      "releasedAt": "2025-12-06T20:57:10Z",
+      "prerelease": true
     },
     {
       "tag": "0.2",
-      "name": "0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-09-15T16:52:34Z",
-      "htmlUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/tag/0.2",
-      "modVersion": "1.21",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "144",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.2/sandstorm.zip",
-      "sourceArchiveUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/refs/tags/0.2.zip",
-      "assets": [
-        {
-          "name": "sandstorm.zip",
-          "size": 570282,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/0.2/sandstorm.zip"
-        }
-      ],
-      "commitSha": "f5c85a064cd40f3130290b1ec1b14fd0b9e2854e",
-      "archiveByCommitUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/f5c85a064cd40f3130290b1ec1b14fd0b9e2854e.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-01-25T09:43:30Z",
-      "htmlUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/tag/mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/mindustry-mod/sandstorm.zip",
-      "sourceArchiveUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
-        {
-          "name": "sandstorm.zip",
-          "size": 561789,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/dimon112/sand-storm-mindustry/releases/download/mindustry-mod/sandstorm.zip"
-        }
-      ],
-      "commitSha": "74042d7987860ac7c7dffb0abe2f3355a915c1a4",
-      "archiveByCommitUrl": "https://github.com/dimon112/sand-storm-mindustry/archive/74042d7987860ac7c7dffb0abe2f3355a915c1a4.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.3.3-alpha",
-      "modVersion": "0.32-alpha",
-      "minGameVersion": "144",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.21",
+      "sizeBytes": 570282,
+      "downloadCount": 7,
+      "releasedAt": "2024-09-15T16:52:34Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "sand stormV2",
+    "author": "dimon",
+    "description": "this mod adds new planet with blocks, items, units and will continue to be updated, which i hope is actually true \n[accent[]]special thanks to: Blehhhh cat[[]]",
+    "version": "0.32-alpha",
+    "minGameVersion": "144",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lukanin122/schemedirection",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "Scheme-Direction [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-24T07:17:27Z",
-      "htmlUrl": "https://github.com/lukanin122/SchemeDirection/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/lukanin122/schemedirection/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/lukanin122/schemedirection/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "c620bc7697cb0250e05bffecc30f811211d538a8",
-      "archiveByCommitUrl": "https://github.com/lukanin122/schemedirection/archive/c620bc7697cb0250e05bffecc30f811211d538a8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
       "modVersion": "1.0.0",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-10-24T07:17:27Z"
     }
   ],
   "meta": {
+    "name": "scheme-direction",
+    "author": "[#666999[]]Name[#CC0000[]]less[#FFFF00[]]Ways",
+    "description": "\nQoL mod: Displays a directional arrow during schematic rotation. Direction can be changed in settings. For desktop PCs only.\nОтображает стрелку направления при вращении схемы. Направление изменяемо в настройках. Только для настольных ПК. \n",
+    "version": "1.0.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

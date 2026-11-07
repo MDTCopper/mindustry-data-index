@@ -1,109 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "uujuju1/Monolith",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.3",
-      "name": "Starting over(kinda)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-30T16:33:01Z",
-      "htmlUrl": "https://github.com/uujuju1/Monolith/releases/tag/0.3",
-      "modVersion": "v0.3",
+      "kind": "release",
       "minGameVersion": "139",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "139",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.3/Monolith.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/Monolith/archive/refs/tags/0.3.zip",
-      "assets": [
-        {
-          "name": "Monolith.jar",
-          "size": 4196175,
-          "downloadCount": 3617,
-          "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.3/Monolith.jar"
-        }
-      ],
-      "commitSha": "c360712d24cfd56b615d4aa9ecae6c6ada7a2581",
-      "archiveByCommitUrl": "https://github.com/uujuju1/Monolith/archive/c360712d24cfd56b615d4aa9ecae6c6ada7a2581.zip"
-    },
-    {
-      "tag": "0.2",
-      "name": "multi crafter",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-29T15:27:19Z",
-      "htmlUrl": "https://github.com/uujuju1/Monolith/releases/tag/0.2",
-      "modVersion": "v0.2",
-      "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.2/Monolith.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/Monolith/archive/refs/tags/0.2.zip",
-      "assets": [
-        {
-          "name": "Monolith.jar",
-          "size": 3582721,
-          "downloadCount": 1121,
-          "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.2/Monolith.jar"
-        }
-      ],
-      "commitSha": "84d3093fb7c3efc9dee621887eafd05c70d63f41",
-      "archiveByCommitUrl": "https://github.com/uujuju1/Monolith/archive/84d3093fb7c3efc9dee621887eafd05c70d63f41.zip"
-    },
-    {
-      "tag": "0.1",
-      "name": "First release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-13T18:09:21Z",
-      "htmlUrl": "https://github.com/uujuju1/Monolith/releases/tag/0.1",
-      "modVersion": "Ancient",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.1/Monolith.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/Monolith/archive/refs/tags/0.1.zip",
-      "assets": [
-        {
-          "name": "Monolith.jar",
-          "size": 3466594,
-          "downloadCount": 480,
-          "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.1/Monolith.jar"
-        }
-      ],
-      "commitSha": "8f15dad1ac3289883f02ee46424fef77b9ea536a",
-      "archiveByCommitUrl": "https://github.com/uujuju1/Monolith/archive/8f15dad1ac3289883f02ee46424fef77b9ea536a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1",
-      "modVersion": "Ancient",
-      "minGameVersion": "136",
-      "maxGameVersion": 138,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.2",
-      "modVersion": "v0.2",
-      "minGameVersion": "138",
-      "maxGameVersion": 139,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.3",
       "modVersion": "v0.3",
-      "minGameVersion": "139",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 4196175,
+      "downloadCount": 3617,
+      "releasedAt": "2022-10-30T16:33:01Z"
+    },
+    {
+      "tag": "0.2",
+      "kind": "release",
+      "minGameVersion": "138",
+      "gameVersionRanges": [
+        {
+          "from": "138",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.2/Monolith.jar",
+      "modVersion": "v0.2",
+      "sizeBytes": 3582721,
+      "downloadCount": 1121,
+      "releasedAt": "2022-09-29T15:27:19Z"
+    },
+    {
+      "tag": "0.1",
+      "kind": "release",
+      "minGameVersion": "136",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/uujuju1/Monolith/releases/download/0.1/Monolith.jar",
+      "modVersion": "Ancient",
+      "sizeBytes": 3466594,
+      "downloadCount": 480,
+      "releasedAt": "2022-09-13T18:09:21Z"
     }
   ],
   "meta": {
+    "name": "flow",
+    "author": "Uujuju",
+    "description": "Stuff.",
+    "version": "v0.3",
+    "minGameVersion": "139",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "flow.Flow",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

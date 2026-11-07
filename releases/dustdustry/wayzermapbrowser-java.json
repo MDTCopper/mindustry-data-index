@@ -1,184 +1,101 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dustdustry/wayzermapbrowser-java",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.5.6",
-      "name": "v1.5.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-25T09:05:46Z",
-      "htmlUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/tag/v1.5.6",
-      "modVersion": "1.5.6",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.6/WayzerMapBrowser-Java.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WayzerMapBrowser-Java.jar",
-          "size": 110185,
-          "downloadCount": 121,
-          "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.6/WayzerMapBrowser-Java.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a845602d68577950c2797a686b37695785727b8c",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/a845602d68577950c2797a686b37695785727b8c.zip"
+      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.6/WayzerMapBrowser-Java.jar",
+      "modVersion": "1.5.6",
+      "sizeBytes": 110185,
+      "downloadCount": 125,
+      "releasedAt": "2026-10-25T09:05:46Z"
     },
     {
       "tag": "v1.5.5",
-      "name": "v1.5.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-26T11:00:10Z",
-      "htmlUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/tag/v1.5.5",
-      "modVersion": "1.5.5",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.5/WayzerMapBrowser-Java-v1.5.5.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WayzerMapBrowser-Java-v1.5.5.jar",
-          "size": 107442,
-          "downloadCount": 512,
-          "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.5/WayzerMapBrowser-Java-v1.5.5.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7e861463f463ade6dfedbd8ba54d5287d221e2d1",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/7e861463f463ade6dfedbd8ba54d5287d221e2d1.zip"
+      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.5/WayzerMapBrowser-Java-v1.5.5.jar",
+      "modVersion": "1.5.5",
+      "sizeBytes": 107442,
+      "downloadCount": 512,
+      "releasedAt": "2026-08-26T11:00:10Z"
     },
     {
       "tag": "v1.5.4",
-      "name": "v1.5.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-25T05:30:14Z",
-      "htmlUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/tag/v1.5.4",
-      "modVersion": "1.5.4",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.4/WayzerMapBrowser-Java.v1.5.4.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WayzerMapBrowser-Java.v1.5.4.jar",
-          "size": 107633,
-          "downloadCount": 61,
-          "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.4/WayzerMapBrowser-Java.v1.5.4.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "66f472a8fe4d59326020c0b4c0f1b1ffc986df6a",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/66f472a8fe4d59326020c0b4c0f1b1ffc986df6a.zip"
+      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.4/WayzerMapBrowser-Java.v1.5.4.jar",
+      "modVersion": "1.5.4",
+      "sizeBytes": 107633,
+      "downloadCount": 61,
+      "releasedAt": "2026-03-25T05:30:14Z"
     },
     {
       "tag": "v1.5.3",
-      "name": "v1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-21T14:54:22Z",
-      "htmlUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/tag/v1.5.3",
-      "modVersion": "1.5.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.3/WayzerMapBrowser-Java.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WayzerMapBrowser-Java.jar",
-          "size": 107246,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.3/WayzerMapBrowser-Java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6122be92759fdb0e70fbb2fadfc46c887d4c718a",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/6122be92759fdb0e70fbb2fadfc46c887d4c718a.zip"
+      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.3/WayzerMapBrowser-Java.jar",
+      "modVersion": "1.5.3",
+      "sizeBytes": 107246,
+      "downloadCount": 14,
+      "releasedAt": "2026-02-21T14:54:22Z"
     },
     {
       "tag": "v1.5.2",
-      "name": "v1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-26T04:37:44Z",
-      "htmlUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/tag/v1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.2/WayzerMapBrowser-Java.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WayzerMapBrowser-Java.jar",
-          "size": 107192,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.2/WayzerMapBrowser-Java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fcd497acc06f43660dfb99a7989a0f7b299284cb",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/fcd497acc06f43660dfb99a7989a0f7b299284cb.zip"
-    },
-    {
-      "tag": "v1.5.1",
-      "name": "v1.5.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/dustdustry/wayzermapbrowser-java/tree/v1.5.1",
-      "modVersion": "1.5.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.1.zip",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.1.zip",
-      "assets": [],
-      "commitSha": "dddf0e8cf2f76e8a3f4782aed5f31f3c49c3dabf",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/dddf0e8cf2f76e8a3f4782aed5f31f3c49c3dabf.zip"
-    },
-    {
-      "tag": "v1.5.0",
-      "name": "v1.5.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/dustdustry/wayzermapbrowser-java/tree/v1.5.0",
-      "modVersion": "1.5.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.0.zip",
-      "sourceArchiveUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/refs/tags/v1.5.0.zip",
-      "assets": [],
-      "commitSha": "169fa9328f4903979b0d22ba27501681a54b7987",
-      "archiveByCommitUrl": "https://github.com/dustdustry/wayzermapbrowser-java/archive/169fa9328f4903979b0d22ba27501681a54b7987.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.5.3",
-      "modVersion": "1.5.3",
-      "minGameVersion": "154",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.6",
-      "modVersion": "1.5.6",
-      "minGameVersion": "156",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Dustdustry/WayzerMapBrowser-Java/releases/download/v1.5.2/WayzerMapBrowser-Java.jar",
+      "modVersion": "1.5.2",
+      "sizeBytes": 107192,
+      "downloadCount": 12,
+      "releasedAt": "2025-12-26T04:37:44Z"
     }
   ],
   "meta": {
+    "name": "wayzer-maps",
+    "author": "miner(minRi2)",
+    "description": "A Mindustry Java mod template.",
+    "version": "1.5.6",
+    "minGameVersion": "156",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "mapbrowser.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

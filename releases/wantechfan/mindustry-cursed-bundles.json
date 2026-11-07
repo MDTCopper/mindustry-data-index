@@ -1,398 +1,330 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wantechfan/mindustry-cursed-bundles",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "1.15",
-      "name": "1.15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T19:02:32Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.15",
-      "modVersion": "1.13",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.15.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.15.zip",
-      "assets": [],
-      "commitSha": "6257dccd96d351ce803ae9d4b4d0a48064d63653",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/6257dccd96d351ce803ae9d4b4d0a48064d63653.zip"
+      "modVersion": "1.13",
+      "releasedAt": "2026-07-07T19:02:32Z"
     },
     {
       "tag": "11.14",
-      "name": "1.14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-16T07:47:29Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/11.14",
-      "modVersion": "1.13",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/11.14.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/11.14.zip",
-      "assets": [],
-      "commitSha": "fc3f0cd182d5d7d575fe02113bf3abc8d5784f94",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/fc3f0cd182d5d7d575fe02113bf3abc8d5784f94.zip"
+      "modVersion": "1.13",
+      "releasedAt": "2026-06-16T07:47:29Z"
     },
     {
       "tag": "1.13",
-      "name": "1.13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-29T16:50:08Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.13",
-      "modVersion": "1.13",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.13.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.13.zip",
-      "assets": [],
-      "commitSha": "f9a0a6a2be2d9ccff3b2a4332dd87b056f0ecf5a",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/f9a0a6a2be2d9ccff3b2a4332dd87b056f0ecf5a.zip"
+      "modVersion": "1.13",
+      "releasedAt": "2026-05-29T16:50:08Z"
     },
     {
       "tag": "1.12.1",
-      "name": "1.12.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-08T13:00:51Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.12.1",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.12.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.12.1.zip",
-      "assets": [],
-      "commitSha": "09c6e9f39dac58e31ccecdbe8b8e3808c30597c5",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/09c6e9f39dac58e31ccecdbe8b8e3808c30597c5.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2025-12-08T13:00:51Z"
     },
     {
       "tag": "1.12",
-      "name": "1.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-28T08:04:09Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.12",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.12.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.12.zip",
-      "assets": [],
-      "commitSha": "26c8a76e545bc0803f029d1e328c0b14f19b5489",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/26c8a76e545bc0803f029d1e328c0b14f19b5489.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2025-11-28T08:04:09Z"
     },
     {
       "tag": "1.11",
-      "name": "1.11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-16T12:17:55Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.11",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.11.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.11.zip",
-      "assets": [],
-      "commitSha": "7cab6d4606f5a8539a21e4d867a7a2d42fa32ce8",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/7cab6d4606f5a8539a21e4d867a7a2d42fa32ce8.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2025-11-16T12:17:55Z"
     },
     {
       "tag": "1.10.1",
-      "name": "1.10.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-13T14:23:28Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.10.1",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.10.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.10.1.zip",
-      "assets": [],
-      "commitSha": "647f6414f1bc192caf276bac71ae8e257003fd6b",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/647f6414f1bc192caf276bac71ae8e257003fd6b.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2025-11-13T14:23:28Z"
     },
     {
       "tag": "1.10",
-      "name": "1.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-05T15:59:11Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.10",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.10.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.10.zip",
-      "assets": [],
-      "commitSha": "265352fde4934d73c77c11a59206e1a6af3fd15c",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/265352fde4934d73c77c11a59206e1a6af3fd15c.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2025-11-05T15:59:11Z"
     },
     {
       "tag": "1.9",
-      "name": "1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-03T16:23:22Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.9",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.9.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.9.zip",
-      "assets": [],
-      "commitSha": "64167183f58c2f9d179a6753d8d5789f728bab86",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/64167183f58c2f9d179a6753d8d5789f728bab86.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2025-11-03T16:23:22Z"
     },
     {
       "tag": "1.8.1",
-      "name": "1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-01T15:49:47Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.8.1",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.8.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.8.1.zip",
-      "assets": [],
-      "commitSha": "ccc433be4147c8cd6a5f398e20b32f4fc70ea92a",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/ccc433be4147c8cd6a5f398e20b32f4fc70ea92a.zip"
+      "modVersion": "1.6",
+      "releasedAt": "2025-11-01T15:49:47Z"
     },
     {
       "tag": "1.8",
-      "name": "1.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-29T17:36:10Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.8",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.8.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.8.zip",
-      "assets": [],
-      "commitSha": "2b7b90c94d25f353cf10af21a11726947714e2a7",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/2b7b90c94d25f353cf10af21a11726947714e2a7.zip"
+      "modVersion": "1.6",
+      "releasedAt": "2025-10-29T17:36:10Z"
     },
     {
       "tag": "1.7",
-      "name": "1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-27T15:32:38Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.7",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.7.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.7.zip",
-      "assets": [],
-      "commitSha": "19669df67f455b9e219d956d2c3b77e081092b10",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/19669df67f455b9e219d956d2c3b77e081092b10.zip"
+      "modVersion": "1.6",
+      "releasedAt": "2025-10-27T15:32:38Z"
     },
     {
       "tag": "1.6",
-      "name": "1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-21T15:57:57Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.6",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.6.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.6.zip",
-      "assets": [],
-      "commitSha": "3f780678c4c3ed6137e7dda7d5bc8cd15aaf0e5c",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/3f780678c4c3ed6137e7dda7d5bc8cd15aaf0e5c.zip"
+      "modVersion": "1.6",
+      "releasedAt": "2025-10-21T15:57:57Z"
     },
     {
       "tag": "1.5.2",
-      "name": "1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-18T15:22:06Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.5.2.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.5.2.zip",
-      "assets": [],
-      "commitSha": "11a4a7749e5852b64d6b50439b003d0764831fba",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/11a4a7749e5852b64d6b50439b003d0764831fba.zip"
+      "modVersion": "1.5.2",
+      "releasedAt": "2025-10-18T15:22:06Z"
     },
     {
       "tag": "1.5.1",
-      "name": "1.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-16T08:57:07Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.5.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.5.1.zip",
-      "assets": [],
-      "commitSha": "a6d1d66c3ca33cdb0084735373526721e9912a50",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/a6d1d66c3ca33cdb0084735373526721e9912a50.zip"
+      "modVersion": "1.5.1",
+      "releasedAt": "2025-10-16T08:57:07Z"
     },
     {
       "tag": "1.5",
-      "name": "1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-15T15:49:22Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.5",
-      "modVersion": "1.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.5.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.5.zip",
-      "assets": [],
-      "commitSha": "102c375849d9d68cd5fc26d5577cf08b25769843",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/102c375849d9d68cd5fc26d5577cf08b25769843.zip"
+      "modVersion": "1.4",
+      "releasedAt": "2025-10-15T15:49:22Z"
     },
     {
       "tag": "1.4.1",
-      "name": "1.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-13T07:55:04Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.4.1",
-      "modVersion": "1.4",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.4.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.4.1.zip",
-      "assets": [],
-      "commitSha": "0083f83022030bd04bb72dfed72f4ae97b418d5f",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/0083f83022030bd04bb72dfed72f4ae97b418d5f.zip"
+      "modVersion": "1.4",
+      "releasedAt": "2025-10-13T07:55:04Z"
     },
     {
       "tag": "1.4",
-      "name": "1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-10T16:14:32Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.4",
-      "modVersion": "1.4",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.4.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.4.zip",
-      "assets": [],
-      "commitSha": "554cb44e0d45fc3d761322c32a55693682d104df",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/554cb44e0d45fc3d761322c32a55693682d104df.zip"
+      "modVersion": "1.4",
+      "releasedAt": "2025-10-10T16:14:32Z"
     },
     {
       "tag": "1.3.1",
-      "name": "1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-08T17:10:19Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.3.1",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.3.1.zip",
-      "assets": [],
-      "commitSha": "d7a897a063a8a120da077196746daae792ff2f82",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/d7a897a063a8a120da077196746daae792ff2f82.zip"
+      "modVersion": "1.3",
+      "releasedAt": "2025-10-08T17:10:19Z"
     },
     {
       "tag": "1.3",
-      "name": "1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-06T17:31:39Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/1.3",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.3.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/1.3.zip",
-      "assets": [],
-      "commitSha": "90dfa0479fb4b1e38823c178f60600e01caf7f1c",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/90dfa0479fb4b1e38823c178f60600e01caf7f1c.zip"
+      "modVersion": "1.3",
+      "releasedAt": "2025-10-06T17:31:39Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-05T14:05:44Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/mindustry-mod",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "baf4650883f9d3584c8a9a455c20ef34557e7031",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/baf4650883f9d3584c8a9a455c20ef34557e7031.zip"
+      "modVersion": "1.1",
+      "releasedAt": "2025-10-05T14:05:44Z"
     },
     {
       "tag": "Update",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-05T03:16:45Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-cursed-bundles/releases/tag/Update",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/Update.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/refs/tags/Update.zip",
-      "assets": [],
-      "commitSha": "0a83930aa9a79910e76f58b0b08a82a687c93abe",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-cursed-bundles/archive/0a83930aa9a79910e76f58b0b08a82a687c93abe.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.15",
-      "modVersion": "1.13",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1",
+      "releasedAt": "2025-10-05T03:16:45Z"
     }
   ],
   "meta": {
+    "name": "cursed-bundles",
+    "author": "WantechFan",
+    "description": "Changes every text ingame with cursed ones. Hand made by me. Please leave a star in my repository (by clicking the repo button) if you like the mod.\n\nThis mod also modifies ID bundle. If you want to make a cursed bundles on your language, [accent[]]click repo and start a pull request\n\nNote: If you're using iPhone or smth like that, download the mod from https://github.com/Wantechfan/mindustry-cursed-bundles/tree/usable-for-apple as the main mod uses scripts to modify other mod's texts.[[]].",
+    "version": "1.13",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

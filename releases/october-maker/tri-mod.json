@@ -1,180 +1,121 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "october-maker/tri-mod",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v5",
-      "name": "Triangle-mod-v0.2.2.5",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-31T10:34:12Z",
-      "htmlUrl": "https://github.com/October-maker/Tri-mod/releases/tag/v5",
-      "modVersion": "0.2.2.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v5/Triangle-mod-v0.2.2.5.jar",
-      "sourceArchiveUrl": "https://github.com/october-maker/tri-mod/archive/refs/tags/v5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Triangle-mod-v0.2.2.5.jar",
-          "size": 2314627,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v5/Triangle-mod-v0.2.2.5.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5adb76ea599018c1c9d694668a15d9f3be80f5f9",
-      "archiveByCommitUrl": "https://github.com/october-maker/tri-mod/archive/5adb76ea599018c1c9d694668a15d9f3be80f5f9.zip"
+      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v5/Triangle-mod-v0.2.2.5.jar",
+      "modVersion": "0.2.2.5",
+      "sizeBytes": 2314627,
+      "downloadCount": 7,
+      "releasedAt": "2026-10-31T10:34:12Z",
+      "prerelease": true
     },
     {
       "tag": "v4",
-      "name": "Triangle-mod-v0.2.2.4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-25T08:12:16Z",
-      "htmlUrl": "https://github.com/October-maker/Tri-mod/releases/tag/v4",
-      "modVersion": "0.2.2.4",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v4/Triangle-mod-v0.2.2.4.jar",
-      "sourceArchiveUrl": "https://github.com/october-maker/tri-mod/archive/refs/tags/v4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Triangle-mod-v0.2.2.4.jar",
-          "size": 2249274,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v4/Triangle-mod-v0.2.2.4.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6eb45b91b9d16b8d5c59fea0c60b53264a760aec",
-      "archiveByCommitUrl": "https://github.com/october-maker/tri-mod/archive/6eb45b91b9d16b8d5c59fea0c60b53264a760aec.zip"
+      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v4/Triangle-mod-v0.2.2.4.jar",
+      "modVersion": "0.2.2.4",
+      "sizeBytes": 2249274,
+      "downloadCount": 2,
+      "releasedAt": "2026-10-25T08:12:16Z",
+      "prerelease": true
     },
     {
       "tag": "v3",
-      "name": "Triangle-mod-v0.2.2.3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-18T04:47:12Z",
-      "htmlUrl": "https://github.com/October-maker/Tri-mod/releases/tag/v3",
-      "modVersion": "0.2.2.3",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v3/Triangle-mod-v0.2.2.3.jar",
-      "sourceArchiveUrl": "https://github.com/october-maker/tri-mod/archive/refs/tags/v3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Triangle-mod-v0.2.2.3.jar",
-          "size": 2112354,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v3/Triangle-mod-v0.2.2.3.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c0f2bbcb975f4b246aa5dbf959661c5e2be7ae4f",
-      "archiveByCommitUrl": "https://github.com/october-maker/tri-mod/archive/c0f2bbcb975f4b246aa5dbf959661c5e2be7ae4f.zip"
+      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v3/Triangle-mod-v0.2.2.3.jar",
+      "modVersion": "0.2.2.3",
+      "sizeBytes": 2112354,
+      "downloadCount": 10,
+      "releasedAt": "2026-10-18T04:47:12Z",
+      "prerelease": true
     },
     {
       "tag": "v2",
-      "name": "Triangle-mod-v0.2.2.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-05T15:52:17Z",
-      "htmlUrl": "https://github.com/October-maker/Tri-mod/releases/tag/v2",
-      "modVersion": "0.2.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v2/Triangle-mod-v0.2.2.2.jar",
-      "sourceArchiveUrl": "https://github.com/october-maker/tri-mod/archive/refs/tags/v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Triangle-mod-v0.2.2.2.jar",
-          "size": 2044034,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v2/Triangle-mod-v0.2.2.2.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eb1261438be42932be0cedfd492f9f8981c0659a",
-      "archiveByCommitUrl": "https://github.com/october-maker/tri-mod/archive/eb1261438be42932be0cedfd492f9f8981c0659a.zip"
+      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v2/Triangle-mod-v0.2.2.2.jar",
+      "modVersion": "0.2.3",
+      "sizeBytes": 2044034,
+      "downloadCount": 10,
+      "releasedAt": "2026-10-05T15:52:17Z",
+      "prerelease": true
     },
     {
       "tag": "v1",
-      "name": "Triangle -mod v0.2.2.1 update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-25T14:54:46Z",
-      "htmlUrl": "https://github.com/October-maker/Tri-mod/releases/tag/v1",
-      "modVersion": "0.2.2.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v1/Triangle-mod-v0.2.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/october-maker/tri-mod/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Triangle-mod-v.0.2.2.jar",
-          "size": 1992055,
-          "downloadCount": 329,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v1/Triangle-mod-v.0.2.2.jar"
-        },
-        {
-          "name": "Triangle-mod-v0.2.2.1.jar",
-          "size": 1999445,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v1/Triangle-mod-v0.2.2.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7e57e8a8a027ad82ff8d347a4900e0b0c325fd7b",
-      "archiveByCommitUrl": "https://github.com/october-maker/tri-mod/archive/7e57e8a8a027ad82ff8d347a4900e0b0c325fd7b.zip"
+      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/v1/Triangle-mod-v0.2.2.1.jar",
+      "modVersion": "0.2.2.1",
+      "sizeBytes": 3991500,
+      "downloadCount": 335,
+      "releasedAt": "2026-08-25T14:54:46Z"
     },
     {
       "tag": "Tri",
-      "name": "Triangle-mod v0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-27T01:45:09Z",
-      "htmlUrl": "https://github.com/October-maker/Tri-mod/releases/tag/Tri",
-      "modVersion": "0.2.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/Tri/Triangle-mod-v0.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/october-maker/tri-mod/archive/refs/tags/Tri.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Triangle-mod-v0.2.1.jar",
-          "size": 1604575,
-          "downloadCount": 334,
-          "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/Tri/Triangle-mod-v0.2.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8adb7c5df9df549ac6c77c4204d25afbd986ded9",
-      "archiveByCommitUrl": "https://github.com/october-maker/tri-mod/archive/8adb7c5df9df549ac6c77c4204d25afbd986ded9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2",
-      "modVersion": "0.2.3",
-      "minGameVersion": "154",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "v5",
-      "modVersion": "0.2.2.5",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/October-maker/Tri-mod/releases/download/Tri/Triangle-mod-v0.2.1.jar",
+      "modVersion": "0.2.1",
+      "sizeBytes": 1604575,
+      "downloadCount": 334,
+      "releasedAt": "2026-02-27T01:45:09Z"
     }
   ],
   "meta": {
+    "name": "triangle",
+    "author": "October",
+    "description": "三角模组 \n Triangle-mod \n \n 当前版本：v0.2.2.5 \n version: v0.2.2.5 \n\n\n 模组交流群：469358412 \n 模组的开发、讨论与反馈集中在交流群。模组没有开放专属的群，现有的群不限制交流内容。 \n 反馈问题前，请检查模组版本、游戏版本、内容描述等信息",
+    "version": "0.2.2.5",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "triangle.triangle",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

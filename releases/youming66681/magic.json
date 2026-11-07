@@ -1,101 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "youming66681/magic",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "magic0.21",
-      "name": "magic0.21",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-13T09:11:22Z",
-      "htmlUrl": "https://github.com/youming66681/magic/releases/tag/magic0.21",
-      "modVersion": "0.21",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.21/magic.jar",
-      "sourceArchiveUrl": "https://github.com/youming66681/magic/archive/refs/tags/magic0.21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "magic.jar",
-          "size": 8319492,
-          "downloadCount": 919,
-          "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.21/magic.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "baa9bc07f64c8e658b90a2ae04e8cd48c272da4f",
-      "archiveByCommitUrl": "https://github.com/youming66681/magic/archive/baa9bc07f64c8e658b90a2ae04e8cd48c272da4f.zip"
+      "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.21/magic.jar",
+      "modVersion": "0.21",
+      "sizeBytes": 8319492,
+      "downloadCount": 925,
+      "releasedAt": "2026-09-13T09:11:22Z"
     },
     {
       "tag": "magic0.2",
-      "name": "magic0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-03T13:50:11Z",
-      "htmlUrl": "https://github.com/youming66681/magic/releases/tag/magic0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.2/magic.jar",
-      "sourceArchiveUrl": "https://github.com/youming66681/magic/archive/refs/tags/magic0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "0.2.docx",
-          "size": 11062,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.2/0.2.docx"
-        },
-        {
-          "name": "magic.jar",
-          "size": 8101809,
-          "downloadCount": 454,
-          "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.2/magic.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8b7bcf30044d8bc7fd36575f905b35245a50faf5",
-      "archiveByCommitUrl": "https://github.com/youming66681/magic/archive/8b7bcf30044d8bc7fd36575f905b35245a50faf5.zip"
+      "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic0.2/magic.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 8112871,
+      "downloadCount": 454,
+      "releasedAt": "2026-09-03T13:50:11Z"
     },
     {
       "tag": "magic",
-      "name": "magic0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T11:10:14Z",
-      "htmlUrl": "https://github.com/youming66681/magic/releases/tag/magic",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic/magic.jar",
-      "sourceArchiveUrl": "https://github.com/youming66681/magic/archive/refs/tags/magic.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "magic.jar",
-          "size": 7186373,
-          "downloadCount": 481,
-          "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic/magic.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "722073646caf5283b975f599942601e87ecc2627",
-      "archiveByCommitUrl": "https://github.com/youming66681/magic/archive/722073646caf5283b975f599942601e87ecc2627.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "magic0.21",
-      "modVersion": "0.21",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/youming66681/magic/releases/download/magic/magic.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 7186373,
+      "downloadCount": 481,
+      "releasedAt": "2026-08-17T11:10:14Z"
     }
   ],
   "meta": {
+    "name": "magic",
+    "author": "幻境模组制作团队",
+    "description": "幻境永无止境\n模组交流群：470748556\n密码：2023730\n服务器:103.40.14.91:42275\n备用:114.66.28.186:45689",
+    "version": "0.21",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "magical.magic",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

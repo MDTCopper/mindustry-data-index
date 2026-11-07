@@ -1,77 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lys121005/terraria_for_mindustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.0.0.0.0.1.(beta0.0.1)",
-      "name": "v0.0.0.0.1.(beta0.0.1)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-19T01:06:21Z",
-      "htmlUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/tag/v0.0.0.0.0.1.(beta0.0.1)",
-      "modVersion": "0.0.0.0.1",
+      "kind": "release",
       "minGameVersion": "157.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.0.1.%28beta0.0.1%29/Terraria_for_Mindustry.jar",
-      "sourceArchiveUrl": "https://github.com/lys121005/terraria_for_mindustry/archive/refs/tags/v0.0.0.0.0.1.(beta0.0.1).zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Terraria_for_Mindustry.jar",
-          "size": 1895724,
-          "downloadCount": 154,
-          "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.0.1.%28beta0.0.1%29/Terraria_for_Mindustry.jar"
+          "from": "157.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fc1da310c8288efe613a21eb33a252a0eefbb7b1",
-      "archiveByCommitUrl": "https://github.com/lys121005/terraria_for_mindustry/archive/fc1da310c8288efe613a21eb33a252a0eefbb7b1.zip"
+      "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.0.1.%28beta0.0.1%29/Terraria_for_Mindustry.jar",
+      "modVersion": "0.0.0.0.1",
+      "sizeBytes": 1895724,
+      "downloadCount": 154,
+      "releasedAt": "2026-07-19T01:06:21Z"
     },
     {
       "tag": "v0.0.0.0.1",
-      "name": "v0.0.0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-13T08:37:19Z",
-      "htmlUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/tag/v0.0.0.0.1",
-      "modVersion": "0.0.0.0.1",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.1/default.jar",
-      "sourceArchiveUrl": "https://github.com/lys121005/terraria_for_mindustry/archive/refs/tags/v0.0.0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "default.jar",
-          "size": 1895724,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.1/default.jar"
-        },
-        {
-          "name": "Terraria_for_Mindustry.jar",
-          "size": 1732064,
-          "downloadCount": 111,
-          "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.1/Terraria_for_Mindustry.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b9f081d44f800dfb88331e6d7dd292ace56c3913",
-      "archiveByCommitUrl": "https://github.com/lys121005/terraria_for_mindustry/archive/b9f081d44f800dfb88331e6d7dd292ace56c3913.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.0.0.0.0.1.(beta0.0.1)",
+      "downloadUrl": "https://github.com/lys121005/Terraria_for_Mindustry/releases/download/v0.0.0.0.1/default.jar",
       "modVersion": "0.0.0.0.1",
-      "minGameVersion": "157.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 3627788,
+      "downloadCount": 114,
+      "releasedAt": "2026-07-13T08:37:19Z"
     }
   ],
   "meta": {
+    "name": "TerrariaforMindustry",
+    "author": "万象终极无尽星空(B站)",
+    "description": "",
+    "version": "0.0.0.0.1",
+    "minGameVersion": "157.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "MultiCraft.MultiCrafterMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

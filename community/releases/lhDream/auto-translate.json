@@ -1,102 +1,72 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lhDream/auto-translate",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "V0.1.0-alpha",
-      "name": "V0.1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-21T17:41:09Z",
-      "htmlUrl": "https://github.com/lhDream/auto-translate/releases/tag/V0.1.0-alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.1.0-alpha/auto-translate.jar",
-      "sourceArchiveUrl": "https://github.com/lhDream/auto-translate/archive/refs/tags/V0.1.0-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "auto-translate.jar",
-          "size": 2871065,
-          "downloadCount": 105,
-          "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.1.0-alpha/auto-translate.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "b511bb5d3ea62c880c2d1e348bdc4a2cc165e077",
-      "archiveByCommitUrl": "https://github.com/lhDream/auto-translate/archive/b511bb5d3ea62c880c2d1e348bdc4a2cc165e077.zip"
+      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.1.0-alpha/auto-translate.jar",
+      "modVersion": "1",
+      "sizeBytes": 2871065,
+      "downloadCount": 105,
+      "releasedAt": "2025-08-21T17:41:09Z",
+      "prerelease": true
     },
     {
       "tag": "V0.0.2-alpha",
-      "name": "V0.0.2-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-18T13:30:04Z",
-      "htmlUrl": "https://github.com/lhDream/auto-translate/releases/tag/V0.0.2-alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.2-alpha/auto-translate.jar",
-      "sourceArchiveUrl": "https://github.com/lhDream/auto-translate/archive/refs/tags/V0.0.2-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "auto-translate.jar",
-          "size": 2839623,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.2-alpha/auto-translate.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "00c0247424ed6318d4981c0267dcefc4f55eaf61",
-      "archiveByCommitUrl": "https://github.com/lhDream/auto-translate/archive/00c0247424ed6318d4981c0267dcefc4f55eaf61.zip"
+      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.2-alpha/auto-translate.jar",
+      "modVersion": "1",
+      "sizeBytes": 2839623,
+      "downloadCount": 25,
+      "releasedAt": "2025-08-18T13:30:04Z",
+      "prerelease": true
     },
     {
       "tag": "V0.0.1-alpha",
-      "name": "V0.0.1-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-16T21:51:52Z",
-      "htmlUrl": "https://github.com/lhDream/auto-translate/releases/tag/V0.0.1-alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.1-alpha/auto-translate.jar",
-      "sourceArchiveUrl": "https://github.com/lhDream/auto-translate/archive/refs/tags/V0.0.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "auto-translate.jar",
-          "size": 2834239,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.1-alpha/auto-translate.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "00c0247424ed6318d4981c0267dcefc4f55eaf61",
-      "archiveByCommitUrl": "https://github.com/lhDream/auto-translate/archive/00c0247424ed6318d4981c0267dcefc4f55eaf61.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.0.2-alpha",
+      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.1-alpha/auto-translate.jar",
       "modVersion": "1",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "V0.1.0-alpha",
-      "modVersion": "1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 2834239,
+      "downloadCount": 11,
+      "releasedAt": "2025-08-16T21:51:52Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "auto-translate",
+    "author": "lhDream",
+    "description": "A Mindustry auto translate mod.",
+    "version": "1",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "io.github.lhdream.AutoTranslate",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

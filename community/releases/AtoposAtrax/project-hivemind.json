@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "AtoposAtrax/project-hivemind",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "hivemind",
-      "name": "test",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-20T03:30:20Z",
-      "htmlUrl": "https://github.com/AtoposAtrax/project-hivemind/releases/tag/hivemind",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/AtoposAtrax/project-hivemind/releases/download/hivemind/project-hivemind.jar",
-      "sourceArchiveUrl": "https://github.com/AtoposAtrax/project-hivemind/archive/refs/tags/hivemind.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "project-hivemind.jar",
-          "size": 46568,
-          "downloadCount": 292,
-          "downloadUrl": "https://github.com/AtoposAtrax/project-hivemind/releases/download/hivemind/project-hivemind.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "457bb8776527de39ad8731be83616dff4787dee5",
-      "archiveByCommitUrl": "https://github.com/AtoposAtrax/project-hivemind/archive/457bb8776527de39ad8731be83616dff4787dee5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "hivemind",
+      "downloadUrl": "https://github.com/AtoposAtrax/project-hivemind/releases/download/hivemind/project-hivemind.jar",
       "modVersion": "1.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 46568,
+      "downloadCount": 292,
+      "releasedAt": "2024-10-20T03:30:20Z"
     }
   ],
   "meta": {
+    "name": "hivemind",
+    "author": "FallingDice",
+    "description": "my first java mod-test ver",
+    "version": "1.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "hivemind.HiveMind",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

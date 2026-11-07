@@ -1,119 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nvcbl/CustomVersionText",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-22T08:02:53Z",
-      "htmlUrl": "https://github.com/nvcbl/CustomVersionText/releases/tag/v1.3",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.3/CustomVersionText.jar",
-      "sourceArchiveUrl": "https://github.com/nvcbl/CustomVersionText/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CustomVersionText.jar",
-          "size": 42502,
-          "downloadCount": 442,
-          "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.3/CustomVersionText.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "27475a28ac6642e79ddb6e47fd02d36dad6f018c",
-      "archiveByCommitUrl": "https://github.com/nvcbl/CustomVersionText/archive/27475a28ac6642e79ddb6e47fd02d36dad6f018c.zip"
+      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.3/CustomVersionText.jar",
+      "modVersion": "1",
+      "sizeBytes": 42502,
+      "downloadCount": 442,
+      "releasedAt": "2023-12-22T08:02:53Z"
     },
     {
       "tag": "v1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-16T08:50:25Z",
-      "htmlUrl": "https://github.com/nvcbl/CustomVersionText/releases/tag/v1.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.2/CustomVersionText.jar",
-      "sourceArchiveUrl": "https://github.com/nvcbl/CustomVersionText/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CustomVersionText.jar",
-          "size": 39954,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.2/CustomVersionText.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "5577725151efe5b5cb5752df29c411e4c41a0353",
-      "archiveByCommitUrl": "https://github.com/nvcbl/CustomVersionText/archive/5577725151efe5b5cb5752df29c411e4c41a0353.zip"
+      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.2/CustomVersionText.jar",
+      "modVersion": "1",
+      "sizeBytes": 39954,
+      "downloadCount": 43,
+      "releasedAt": "2023-12-16T08:50:25Z"
     },
     {
       "tag": "v1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-16T07:47:31Z",
-      "htmlUrl": "https://github.com/nvcbl/CustomVersionText/releases/tag/v1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.1/CustomVersionText.jar",
-      "sourceArchiveUrl": "https://github.com/nvcbl/CustomVersionText/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CustomVersionText.jar",
-          "size": 39957,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.1/CustomVersionText.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "b5008b21c8c3a06fd1a94448710343af8ca766ed",
-      "archiveByCommitUrl": "https://github.com/nvcbl/CustomVersionText/archive/b5008b21c8c3a06fd1a94448710343af8ca766ed.zip"
+      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.1/CustomVersionText.jar",
+      "modVersion": "1",
+      "sizeBytes": 39957,
+      "downloadCount": 9,
+      "releasedAt": "2023-12-16T07:47:31Z"
     },
     {
       "tag": "v1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-09T11:49:07Z",
-      "htmlUrl": "https://github.com/nvcbl/CustomVersionText/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.0/CustomVersionText.jar",
-      "sourceArchiveUrl": "https://github.com/nvcbl/CustomVersionText/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CustomVersionText.jar",
-          "size": 27131,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.0/CustomVersionText.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "2ed34500ea3257c8c54cda3ae3f8238fd57595bf",
-      "archiveByCommitUrl": "https://github.com/nvcbl/CustomVersionText/archive/2ed34500ea3257c8c54cda3ae3f8238fd57595bf.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.3",
+      "downloadUrl": "https://github.com/nvcbl/CustomVersionText/releases/download/v1.0/CustomVersionText.jar",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 27131,
+      "downloadCount": 55,
+      "releasedAt": "2023-12-09T11:49:07Z"
     }
   ],
   "meta": {
+    "name": "cvt",
+    "author": "nvcbl",
+    "description": "Changes the version text under the logo in the main menu to the text in Settings > Game > Version Text.\n\nMenu may become out of date or come from the future. this is because the code for the menu is pulled straight from the github code.",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "cvt.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

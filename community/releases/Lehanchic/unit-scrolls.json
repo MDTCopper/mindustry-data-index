@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Lehanchic/unit-scrolls",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "alfa-0.0.1",
-      "name": "alfa-v0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-15T15:08:22Z",
-      "htmlUrl": "https://github.com/Lehanchic/unit-scrolls/releases/tag/alfa-0.0.1",
-      "modVersion": "alfa 0.01",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Lehanchic/unit-scrolls/archive/refs/tags/alfa-0.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/Lehanchic/unit-scrolls/archive/refs/tags/alfa-0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "unit-scrolls.jar",
-          "size": 64509,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/Lehanchic/unit-scrolls/releases/download/alfa-0.0.1/unit-scrolls.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9ab6370609ea5be5c8f92db055e5339a51ae6c91",
-      "archiveByCommitUrl": "https://github.com/Lehanchic/unit-scrolls/archive/9ab6370609ea5be5c8f92db055e5339a51ae6c91.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alfa-0.0.1",
+      "downloadUrl": "https://github.com/Lehanchic/unit-scrolls/releases/download/alfa-0.0.1/unit-scrolls.jar",
       "modVersion": "alfa 0.01",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 64509,
+      "downloadCount": 25,
+      "releasedAt": "2023-04-15T15:08:22Z"
     }
   ],
   "meta": {
+    "name": "свитки-юнитов",
+    "author": "Lehanchic 25",
+    "description": "С помощью этого мода можно сделать компактное создание юнитов с помощью свитков (пока что всё криво, скоро будет перевод на английский)",
+    "version": "alfa 0.01",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

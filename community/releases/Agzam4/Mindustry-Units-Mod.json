@@ -1,102 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Agzam4/Mindustry-Units-Mod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2",
-      "name": "UnitsMod v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-12T14:21:36Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/tag/v1.2",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.2/UnitsMod.jar",
-      "sourceArchiveUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UnitsMod.jar",
-          "size": 21791,
-          "downloadCount": 2723,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.2/UnitsMod.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "b443cd38cc7f4cd783814a9de8286dc9191d02a2",
-      "archiveByCommitUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/archive/b443cd38cc7f4cd783814a9de8286dc9191d02a2.zip"
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.2/UnitsMod.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 21791,
+      "downloadCount": 2723,
+      "releasedAt": "2023-03-12T14:21:36Z"
     },
     {
       "tag": "v1.1",
-      "name": "UnitsMod v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-12T08:30:03Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.1/UnitsMod.jar",
-      "sourceArchiveUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/archive/refs/tags/v1.1.zip",
-      "assets": [
-        {
-          "name": "UnitsMod.jar",
-          "size": 19914,
-          "downloadCount": 71,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.1/UnitsMod.jar"
-        }
-      ],
-      "commitSha": "c69eb3c7a4ec425c3bda96034a82e3da8c800246",
-      "archiveByCommitUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/archive/c69eb3c7a4ec425c3bda96034a82e3da8c800246.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "UnitsMod v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-10T12:41:16Z",
-      "htmlUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/tag/v1.0",
-      "modVersion": "1",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.0/UnitsMod.jar",
-      "sourceArchiveUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "UnitsMod.jar",
-          "size": 11557,
-          "downloadCount": 117,
-          "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.0/UnitsMod.jar"
-        }
-      ],
-      "commitSha": "f3ce5ca310e29b7da28aad93049eb599e5d6d0e0",
-      "archiveByCommitUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/archive/f3ce5ca310e29b7da28aad93049eb599e5d6d0e0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1",
-      "minGameVersion": "136",
-      "maxGameVersion": 142,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.2",
       "modVersion": "1.1",
-      "minGameVersion": "142",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 19914,
+      "downloadCount": 71,
+      "releasedAt": "2023-03-12T08:30:03Z"
+    },
+    {
+      "tag": "v1.0",
+      "kind": "release",
+      "minGameVersion": "136",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/Agzam4/Mindustry-Units-Mod/releases/download/v1.0/UnitsMod.jar",
+      "modVersion": "1",
+      "sizeBytes": 11557,
+      "downloadCount": 117,
+      "releasedAt": "2023-03-10T12:41:16Z"
     }
   ],
   "meta": {
+    "name": "agzam4mod-units",
+    "author": "Agzam4",
+    "description": "Hide units hotkey & button",
+    "version": "1.1",
+    "minGameVersion": "142",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "agzam4.UnitsMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

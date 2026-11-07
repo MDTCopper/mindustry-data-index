@@ -1,842 +1,550 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "i-hope1/mod-tools",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.7.0",
-      "name": "1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-24T09:34:59Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "release",
       "minGameVersion": "159.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.7.0/mod-tools.1.7.0.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.7.0.jar",
-          "size": 7592202,
-          "downloadCount": 396,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.7.0/mod-tools.1.7.0.jar"
+          "from": "159.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "44e1bbe1f2371ec29ac9083565acf9203023576e",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/44e1bbe1f2371ec29ac9083565acf9203023576e.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.7.0/mod-tools.1.7.0.jar",
+      "modVersion": "1.7.0",
+      "sizeBytes": 7592202,
+      "downloadCount": 398,
+      "releasedAt": "2026-10-24T09:34:59Z"
     },
     {
       "tag": "1.6.0",
-      "name": "1.6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-11T05:13:32Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.6.0",
-      "modVersion": "1.6.0",
+      "kind": "release",
       "minGameVersion": "159.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.6.0/mod-tools.1.6.0.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.6.0.jar",
-          "size": 5880200,
-          "downloadCount": 4781,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.6.0/mod-tools.1.6.0.jar"
+          "from": "159.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cbe88b98f84dcbfcd3c7354188976421448df647",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/cbe88b98f84dcbfcd3c7354188976421448df647.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.6.0/mod-tools.1.6.0.jar",
+      "modVersion": "1.6.0",
+      "sizeBytes": 5880200,
+      "downloadCount": 4781,
+      "releasedAt": "2026-07-11T05:13:32Z"
     },
     {
       "tag": "1.5.9",
-      "name": "1.5.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-11T11:47:01Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.9",
-      "modVersion": "1.5.9",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.9/mod-tools.1.5.9.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.9.jar",
-          "size": 5833998,
-          "downloadCount": 1618,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.9/mod-tools.1.5.9.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4dbe9156c27dc7cbca3fb95e9d9783c4cf13e8db",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/4dbe9156c27dc7cbca3fb95e9d9783c4cf13e8db.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.9/mod-tools.1.5.9.jar",
+      "modVersion": "1.5.9",
+      "sizeBytes": 5833998,
+      "downloadCount": 1618,
+      "releasedAt": "2026-06-11T11:47:01Z"
     },
     {
       "tag": "1.5.8",
-      "name": "1.5.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-21T11:48:52Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.8",
-      "modVersion": "1.5.8",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.8/mod-tools.1.5.8.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.8.jar",
-          "size": 3016158,
-          "downloadCount": 3988,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.8/mod-tools.1.5.8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "700a7441c6cd26addc262a5e5a84a18d9a1eddfb",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/700a7441c6cd26addc262a5e5a84a18d9a1eddfb.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.8/mod-tools.1.5.8.jar",
+      "modVersion": "1.5.8",
+      "sizeBytes": 3016158,
+      "downloadCount": 3988,
+      "releasedAt": "2026-02-21T11:48:52Z"
     },
     {
       "tag": "1.5.7",
-      "name": "1.5.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-10T14:16:15Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.7",
-      "modVersion": "1.5.7",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.7/mod-tools.1.5.7.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.7.jar",
-          "size": 2606205,
-          "downloadCount": 1187,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.7/mod-tools.1.5.7.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f29801b4cf4f9139d6c6033ff14bb13538b985f7",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/f29801b4cf4f9139d6c6033ff14bb13538b985f7.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.7/mod-tools.1.5.7.jar",
+      "modVersion": "1.5.7",
+      "sizeBytes": 2606205,
+      "downloadCount": 1187,
+      "releasedAt": "2026-02-10T14:16:15Z"
     },
     {
       "tag": "1.5.6",
-      "name": "1.5.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-18T05:42:52Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.6",
-      "modVersion": "1.5.6",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.6/mod-tools.1.5.6.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.6.jar",
-          "size": 2570866,
-          "downloadCount": 1314,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.6/mod-tools.1.5.6.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0de8a0313cbad2df8c695ecd18e38cd7287f6216",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/0de8a0313cbad2df8c695ecd18e38cd7287f6216.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.6/mod-tools.1.5.6.jar",
+      "modVersion": "1.5.6",
+      "sizeBytes": 2570866,
+      "downloadCount": 1314,
+      "releasedAt": "2026-01-18T05:42:52Z"
     },
     {
       "tag": "1.5.5",
-      "name": "1.5.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-01T05:51:41Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.5",
-      "modVersion": "1.5.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.5/mod-tools.1.5.5.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.5.jar",
-          "size": 2307008,
-          "downloadCount": 9951,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.5/mod-tools.1.5.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9ac1c591602614fbd3e3b6d739301cb44ac78493",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/9ac1c591602614fbd3e3b6d739301cb44ac78493.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.5/mod-tools.1.5.5.jar",
+      "modVersion": "1.5.5",
+      "sizeBytes": 2307008,
+      "downloadCount": 9951,
+      "releasedAt": "2025-01-01T05:51:41Z"
     },
     {
       "tag": "1.5.4",
-      "name": "1.5.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-22T05:33:16Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.4",
-      "modVersion": "1.5.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.4/mod-tools.1.5.4.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.4.jar",
-          "size": 2302201,
-          "downloadCount": 704,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.4/mod-tools.1.5.4.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "1bc485de2f7b175f368e1871727eb8ef143dddd0",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/1bc485de2f7b175f368e1871727eb8ef143dddd0.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.4/mod-tools.1.5.4.jar",
+      "modVersion": "1.5.4",
+      "sizeBytes": 2302201,
+      "downloadCount": 704,
+      "releasedAt": "2024-12-22T05:33:16Z"
     },
     {
       "tag": "1.5.3",
-      "name": "1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-07T14:58:26Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.3",
-      "modVersion": "1.5.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.3/mod-tools.1.5.3.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.3.jar",
-          "size": 2300980,
-          "downloadCount": 415,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.3/mod-tools.1.5.3.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ca5466ff853287cb0ab16a821ddef23b28f3fc18",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/ca5466ff853287cb0ab16a821ddef23b28f3fc18.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.3/mod-tools.1.5.3.jar",
+      "modVersion": "1.5.3",
+      "sizeBytes": 2300980,
+      "downloadCount": 416,
+      "releasedAt": "2024-12-07T14:58:26Z"
     },
     {
       "tag": "1.5.2",
-      "name": "1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-02T08:15:07Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.2/mod-tools.1.5.2.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.2.jar",
-          "size": 2282988,
-          "downloadCount": 1916,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.2/mod-tools.1.5.2.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "18a8d96aad4fe3f61c3da3a260885f1742fbcd12",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/18a8d96aad4fe3f61c3da3a260885f1742fbcd12.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.2/mod-tools.1.5.2.jar",
+      "modVersion": "1.5.2",
+      "sizeBytes": 2282988,
+      "downloadCount": 1916,
+      "releasedAt": "2024-10-02T08:15:07Z"
     },
     {
       "tag": "1.5.1",
-      "name": "1.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-24T14:53:18Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.1/mod-tools.1.5.1.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.1.jar",
-          "size": 2287148,
-          "downloadCount": 1769,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.1/mod-tools.1.5.1.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "5ab67520e90a0217ded516705a9a5022a4ad9851",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/5ab67520e90a0217ded516705a9a5022a4ad9851.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5.1/mod-tools.1.5.1.jar",
+      "modVersion": "1.5.1",
+      "sizeBytes": 2287148,
+      "downloadCount": 1769,
+      "releasedAt": "2024-08-24T14:53:18Z"
     },
     {
       "tag": "1.5",
-      "name": "1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-19T15:22:16Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5/mod-tools.1.5.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.5.jar",
-          "size": 2266134,
-          "downloadCount": 343,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5/mod-tools.1.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "933a7fad3b79baccc4523f1fd9c6cb10d00e224e",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/933a7fad3b79baccc4523f1fd9c6cb10d00e224e.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.5/mod-tools.1.5.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 2266134,
+      "downloadCount": 343,
+      "releasedAt": "2024-08-19T15:22:16Z"
     },
     {
       "tag": "1.4.6.7",
-      "name": "1.4.6.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-25T15:14:54Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.7",
-      "modVersion": "1.4.6.6",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.7/mod-tools.1.4.6.7.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.7.jar",
-          "size": 2088140,
-          "downloadCount": 1901,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.7/mod-tools.1.4.6.7.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "a84f8fd8e737c058f3d1ad40d642f6cd875496ec",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/a84f8fd8e737c058f3d1ad40d642f6cd875496ec.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.7/mod-tools.1.4.6.7.jar",
+      "modVersion": "1.4.6.6",
+      "sizeBytes": 2088140,
+      "downloadCount": 1901,
+      "releasedAt": "2024-07-25T15:14:54Z"
     },
     {
       "tag": "1.4.6.6",
-      "name": "1.4.6.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-25T10:41:04Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.6",
-      "modVersion": "1.4.6.6",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.6.zip",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.6.zip",
-          "size": 2097278,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.6/mod-tools.1.4.6.6.zip"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "77e1984d1792e75e7635ae69b219eda7d27b4cc5",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/77e1984d1792e75e7635ae69b219eda7d27b4cc5.zip"
+      "downloadUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.6.zip",
+      "modVersion": "1.4.6.6",
+      "sizeBytes": 2097278,
+      "downloadCount": 9,
+      "releasedAt": "2024-07-25T10:41:04Z"
     },
     {
       "tag": "1.4.6.5",
-      "name": "1.4.6.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-23T15:14:05Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.5",
-      "modVersion": "1.4.6.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.5/mod-tools.1.4.6.5.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.5.jar",
-          "size": 2092034,
-          "downloadCount": 208,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.5/mod-tools.1.4.6.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ee705d648ce92b8a963c4eafe9ffb9f167aab19d",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/ee705d648ce92b8a963c4eafe9ffb9f167aab19d.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.5/mod-tools.1.4.6.5.jar",
+      "modVersion": "1.4.6.5",
+      "sizeBytes": 2092034,
+      "downloadCount": 208,
+      "releasedAt": "2024-07-23T15:14:05Z"
     },
     {
       "tag": "1.4.6.4",
-      "name": "1.4.6.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-20T14:18:29Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.4",
-      "modVersion": "1.4.6.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.4/mod-tools.1.4.6.4.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.4.jar",
-          "size": 2061070,
-          "downloadCount": 205,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.4/mod-tools.1.4.6.4.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "8e61cb0536ceb27cd4bac01e58ab8ed682f3d815",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/8e61cb0536ceb27cd4bac01e58ab8ed682f3d815.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.4/mod-tools.1.4.6.4.jar",
+      "modVersion": "1.4.6.4",
+      "sizeBytes": 2061070,
+      "downloadCount": 205,
+      "releasedAt": "2024-07-20T14:18:29Z"
     },
     {
       "tag": "1.4.6.3",
-      "name": "1.4.6.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-17T12:07:34Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.3",
-      "modVersion": "1.4.6.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.3/mod-tools.1.4.6.3.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.3.jar",
-          "size": 2032464,
-          "downloadCount": 227,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.3/mod-tools.1.4.6.3.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "fed435aec93e901dc64be67bc8dc4457d91c9321",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/fed435aec93e901dc64be67bc8dc4457d91c9321.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.3/mod-tools.1.4.6.3.jar",
+      "modVersion": "1.4.6.3",
+      "sizeBytes": 2032464,
+      "downloadCount": 227,
+      "releasedAt": "2024-07-17T12:07:34Z"
     },
     {
       "tag": "1.4.6.2",
-      "name": "1.4.6.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-16T10:52:56Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.2",
-      "modVersion": "1.4.6.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.2/mod-tools.1.4.6.2.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.2.jar",
-          "size": 2024227,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.2/mod-tools.1.4.6.2.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d4a9c10d22601953f0a9de9f5c82f0ed4e7e247c",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/d4a9c10d22601953f0a9de9f5c82f0ed4e7e247c.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.2/mod-tools.1.4.6.2.jar",
+      "modVersion": "1.4.6.2",
+      "sizeBytes": 2024227,
+      "downloadCount": 106,
+      "releasedAt": "2024-07-16T10:52:56Z"
     },
     {
       "tag": "1.4.6.1",
-      "name": "1.4.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-08T05:42:06Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.6.1",
-      "modVersion": "1.4.6.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.1/mod-tools.1.4.6.1.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.6.1.jar",
-          "size": 1961639,
-          "downloadCount": 1547,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.1/mod-tools.1.4.6.1.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "55c1739265fced1ce8389a598ad3bfac4e036c76",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/55c1739265fced1ce8389a598ad3bfac4e036c76.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.6.1/mod-tools.1.4.6.1.jar",
+      "modVersion": "1.4.6.1",
+      "sizeBytes": 1961639,
+      "downloadCount": 1547,
+      "releasedAt": "2024-06-08T05:42:06Z"
     },
     {
       "tag": "1.4.5.5",
-      "name": "1.4.5.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-11T12:40:24Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.5.5",
-      "modVersion": "1.4.5.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.5/mod-tools.1.4.5.5.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.5.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.5.5.jar",
-          "size": 1953372,
-          "downloadCount": 847,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.5/mod-tools.1.4.5.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "000762ee79caabeb1d3a63b888344a904a71be49",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/000762ee79caabeb1d3a63b888344a904a71be49.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.5/mod-tools.1.4.5.5.jar",
+      "modVersion": "1.4.5.2",
+      "sizeBytes": 1953372,
+      "downloadCount": 847,
+      "releasedAt": "2024-05-11T12:40:24Z"
     },
     {
       "tag": "1.4.5.4",
-      "name": "1.4.5.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-11T11:13:35Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.5.4",
-      "modVersion": "1.4.5.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.4/mod-tools.1.4.5.4.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.5.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.5.4.jar",
-          "size": 1953312,
-          "downloadCount": 32,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.4/mod-tools.1.4.5.4.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "85e050bc7de5f529b9788af2facb158b2e40f81a",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/85e050bc7de5f529b9788af2facb158b2e40f81a.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.4/mod-tools.1.4.5.4.jar",
+      "modVersion": "1.4.5.2",
+      "sizeBytes": 1953312,
+      "downloadCount": 32,
+      "releasedAt": "2024-05-11T11:13:35Z"
     },
     {
       "tag": "1.4.5.3",
-      "name": "1.4.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-23T15:53:36Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.5.3",
-      "modVersion": "1.4.5.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.3/mod-tools.1.4.5.3.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.5.3.jar",
-          "size": 1891275,
-          "downloadCount": 1621,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.3/mod-tools.1.4.5.3.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "800da23000ec8ee96f2f5d026323e06a0586e7fb",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/800da23000ec8ee96f2f5d026323e06a0586e7fb.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.3/mod-tools.1.4.5.3.jar",
+      "modVersion": "1.4.5.3",
+      "sizeBytes": 1891275,
+      "downloadCount": 1621,
+      "releasedAt": "2024-03-23T15:53:36Z"
     },
     {
       "tag": "1.4.5.2",
-      "name": "1.4.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-10T03:15:29Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.5.2",
-      "modVersion": "1.4.5.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.2/mod-tools.1.4.5.2.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.5.2.jar",
-          "size": 1887732,
-          "downloadCount": 510,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.2/mod-tools.1.4.5.2.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e02e44ef524419b784d952634d3efaeac7529ada",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/e02e44ef524419b784d952634d3efaeac7529ada.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.2/mod-tools.1.4.5.2.jar",
+      "modVersion": "1.4.5.2",
+      "sizeBytes": 1887732,
+      "downloadCount": 510,
+      "releasedAt": "2024-03-10T03:15:29Z"
     },
     {
       "tag": "1.4.5.1",
-      "name": "1.4.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-19T02:51:45Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.5.1",
-      "modVersion": "1.4.5.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.1/mod-tools.1.4.5.1.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.5.1.jar",
-          "size": 1886479,
-          "downloadCount": 940,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.1/mod-tools.1.4.5.1.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "1b5506b94ed05fe284356b7f4d655eb65aefc530",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/1b5506b94ed05fe284356b7f4d655eb65aefc530.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5.1/mod-tools.1.4.5.1.jar",
+      "modVersion": "1.4.5.1",
+      "sizeBytes": 1886479,
+      "downloadCount": 940,
+      "releasedAt": "2024-02-19T02:51:45Z"
     },
     {
       "tag": "1.4.5",
-      "name": "1.4.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-14T15:37:23Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.5",
-      "modVersion": "1.4.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5/mod-tools.1.4.5.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.5.jar",
-          "size": 1854496,
-          "downloadCount": 387,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5/mod-tools.1.4.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "17d90d41ef4cc8e073a55f7f9cf4b92b2f772bb5",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/17d90d41ef4cc8e073a55f7f9cf4b92b2f772bb5.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.5/mod-tools.1.4.5.jar",
+      "modVersion": "1.4.5",
+      "sizeBytes": 1854496,
+      "downloadCount": 387,
+      "releasedAt": "2024-02-14T15:37:23Z"
     },
     {
       "tag": "1.4.4",
-      "name": "1.4.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-04T12:10:30Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.4",
-      "modVersion": "1.4.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.4/mod-tools.1.4.4.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools.1.4.4.jar",
-          "size": 1836693,
-          "downloadCount": 666,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.4/mod-tools.1.4.4.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ea2bff46acb776535864948947fd27136554d497",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/ea2bff46acb776535864948947fd27136554d497.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.4/mod-tools.1.4.4.jar",
+      "modVersion": "1.4.4",
+      "sizeBytes": 1836693,
+      "downloadCount": 666,
+      "releasedAt": "2024-02-04T12:10:30Z"
     },
     {
       "tag": "1.4.3",
-      "name": "1.4.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-04T10:09:41Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4.3",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.3/mod-tools136-1.4.3.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools136-1.4.3.jar",
-          "size": 1924456,
-          "downloadCount": 8108,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.3/mod-tools136-1.4.3.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "c2ed27a200d05633a1f7542731ebbb9d7d93bbd6",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/c2ed27a200d05633a1f7542731ebbb9d7d93bbd6.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4.3/mod-tools136-1.4.3.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 1924456,
+      "downloadCount": 8108,
+      "releasedAt": "2023-02-04T10:09:41Z"
     },
     {
       "tag": "1.4",
-      "name": "1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-03T07:52:51Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4/mod-tools136-1.4.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mod-tools136-1.4.jar",
-          "size": 11462339,
-          "downloadCount": 2037,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4/mod-tools136-1.4.jar"
-        },
-        {
-          "name": "mod-tools136-1.4.no.font.jar",
-          "size": 2456635,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4/mod-tools136-1.4.no.font.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "39f8b12cd43a4306a0733d1694867d477fce99ca",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/39f8b12cd43a4306a0733d1694867d477fce99ca.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.4/mod-tools136-1.4.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 13918974,
+      "downloadCount": 2056,
+      "releasedAt": "2022-10-03T07:52:51Z"
     },
     {
       "tag": "1.2.3",
-      "name": "1.2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-14T01:02:42Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.2.3",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2.3/136.mod-tools.v1.2.3.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "136.mod-tools.v1.2.3.jar",
-          "size": 2100120,
-          "downloadCount": 1630,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2.3/136.mod-tools.v1.2.3.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d99f133ae39874c2d8b4dad111a1a241ed96a9f0",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/d99f133ae39874c2d8b4dad111a1a241ed96a9f0.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2.3/136.mod-tools.v1.2.3.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 2100120,
+      "downloadCount": 1630,
+      "releasedAt": "2022-07-14T01:02:42Z"
     },
     {
       "tag": "1.2.1",
-      "name": "1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-07T09:20:03Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.2.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2.1/136.mod-tools.v1.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "136.mod-tools.v1.2.1.jar",
-          "size": 2055019,
-          "downloadCount": 121,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2.1/136.mod-tools.v1.2.1.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "82533044ab7af5c724eb82220e69996ffbb3953d",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/82533044ab7af5c724eb82220e69996ffbb3953d.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2.1/136.mod-tools.v1.2.1.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 2055019,
+      "downloadCount": 121,
+      "releasedAt": "2022-07-07T09:20:03Z"
     },
     {
       "tag": "1.2",
-      "name": "1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-06T09:43:23Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.2",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2/136.mod-tools.v1.2.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "136.mod-tools.v1.2.jar",
-          "size": 2050575,
-          "downloadCount": 70,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2/136.mod-tools.v1.2.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e02aca4c568532b5e7249fd2465f49c4b58b2da6",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/e02aca4c568532b5e7249fd2465f49c4b58b2da6.zip"
+      "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.2/136.mod-tools.v1.2.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 2050575,
+      "downloadCount": 70,
+      "releasedAt": "2022-07-06T09:43:23Z"
     },
     {
       "tag": "1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-28T07:38:06Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.1/136%2B.mod-tools.v1.1.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.1.zip",
-      "assets": [
-        {
-          "name": "136+.mod-tools.v1.1.jar",
-          "size": 2026726,
-          "downloadCount": 94,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.1/136%2B.mod-tools.v1.1.jar"
-        }
-      ],
-      "commitSha": "7a36ec9b5e000d3c0e2317a1e7a5bc6abb9e5e7f",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/7a36ec9b5e000d3c0e2317a1e7a5bc6abb9e5e7f.zip"
+      "modVersion": "1.1",
+      "sizeBytes": 2026726,
+      "downloadCount": 94,
+      "releasedAt": "2022-05-28T07:38:06Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-04-04T08:53:14Z",
-      "htmlUrl": "https://github.com/I-hope1/mod-tools/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "129",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.0/mod-tools.jar",
-      "sourceArchiveUrl": "https://github.com/i-hope1/mod-tools/archive/refs/tags/1.0.zip",
-      "assets": [
-        {
-          "name": "mod-tools.jar",
-          "size": 2015552,
-          "downloadCount": 79,
-          "downloadUrl": "https://github.com/I-hope1/mod-tools/releases/download/1.0/mod-tools.jar"
-        }
-      ],
-      "commitSha": "513f910f3c407e58c5898e0e1fe0dc3986be3525",
-      "archiveByCommitUrl": "https://github.com/i-hope1/mod-tools/archive/513f910f3c407e58c5898e0e1fe0dc3986be3525.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1.0",
-      "minGameVersion": "129",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.5.5",
-      "modVersion": "1.5.5",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.5.9",
-      "modVersion": "1.5.9",
-      "minGameVersion": "154",
-      "maxGameVersion": 159.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.7.0",
-      "modVersion": "1.7.0",
-      "minGameVersion": "159.2",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2015552,
+      "downloadCount": 79,
+      "releasedAt": "2022-04-04T08:53:14Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "mod-tools",
+    "author": "I hope...",
+    "description": "\nA mod provides various tools for modding.\n\n-----------------\nVersion 1.7.0\n\n## Highlight\n\n## New\n1. Deadlock detection watchdog: divergence heuristics for platform and virtual threads, JSON thread dumps, and a directed-graph cycle analysis that names the lock ring. Runs separately from the 5 ms CPU sampler so it cannot skew it.\n2. Review element editor: edit Element fields live to see the effect, no recompile needed.\n3. Layout check: LayoutIssues collects layout problems and LayoutReportWindow renders the report; cells also get a details window.\n4. Tester completion rewritten: member completion, array and object destructuring bindings, arrow parameter types from generic arguments; covered by JUnit 5.\n5. JS syntax highlighting for the Rhino editor, resolving members and generic types for accurate colouring.\n6. Zero-allocation float formatting: Schubfach shortest round-trip conversion, DoubleConversion and FastFormat, replacing Double.toString in Vec2/Vec3/Rect/Color formatting.\n\n## Hot swap\n7. Hot swap runs on a self-contained Remold agent, attached before settings load; a -javaagent setup that lacks plugin-arc now degrades with one warning instead of failing.\n8. UI hot swap: Table creator and Cell property chains are tracked, so a redefined builder rebuilds only the affected cells.\n9. Lambda and anonymous class alignment: LambdaAligner, AnonClassAligner and content-hash fingerprints keep anonymous classes paired across redefinition.\n10. Redefinition is gated on instance field-layout compatibility, and slot numbers held by pending aligned classes are not reused.\n11. The hotswap_plus switch is split into init_fix and force_static_lambda.\n\n## Performance\n12. ValueLabel, FieldValueLabel and InlineLabel format without boxing; PairProv shares one buffer and compares content before rebuilding.\n13. Flame graph: canvas clipping and culling, zero-allocation map lookups, spatial depth bucketing.\n14. Fewer per-frame allocations in LimitTable, SearchedLabel and completion prefix matching.\n15. Selection panel: dynamic region scanning is throttled to every 10 frames instead of running on a background executor; unit and bullet sets are cached between scans; tile and building icons are cached per block size.\n\n## Fixes\n\t- Completion popup not showing, and candidates beyond the first page being unreachable.\n\t- Completion popup covering the line being typed on.\n\t- changedFx flash overflowing the scroll pane viewport.\n\t- Viewers: Mat and Affine2 support, opening brace alignment in pretty print, and label markup state preserved across appends.\n\t- Android: HiddenApi trimmed in favour of the bundled bypass.\n\n## Dependencies\n\t- ASM 9.11 (security advisories), Remold 0.1.2.\n\n-----------------\nWIKI: https://i-hope1.github.io/mod-tools\n",
+    "version": "1.7.0",
+    "minGameVersion": "159.2",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "modtools.ModTools",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

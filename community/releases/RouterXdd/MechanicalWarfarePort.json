@@ -1,102 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "RouterXdd/MechanicalWarfarePort",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.5a",
-      "name": "1.5 Version 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-23T18:39:33Z",
-      "htmlUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/tag/1.5a",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.5a/MechanicalWarfare-Revisited.jar",
-      "sourceArchiveUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/archive/refs/tags/1.5a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MechanicalWarfare-Revisited.jar",
-          "size": 1007028,
-          "downloadCount": 498,
-          "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.5a/MechanicalWarfare-Revisited.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "fadcf24ca9fd1866fbc58028cd96cdd701faff39",
-      "archiveByCommitUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/archive/fadcf24ca9fd1866fbc58028cd96cdd701faff39.zip"
+      "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.5a/MechanicalWarfare-Revisited.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 1007028,
+      "downloadCount": 498,
+      "releasedAt": "2024-05-23T18:39:33Z"
     },
     {
       "tag": "1.5",
-      "name": "1.5 Version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-06T19:46:02Z",
-      "htmlUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/tag/1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.5/MechanicalWarfare-Revisited.jar",
-      "sourceArchiveUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/archive/refs/tags/1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MechanicalWarfare-Revisited.jar",
-          "size": 817405,
-          "downloadCount": 912,
-          "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.5/MechanicalWarfare-Revisited.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "08623d2e295d6bd3c4f7e57fe708c31b6a03d500",
-      "archiveByCommitUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/archive/08623d2e295d6bd3c4f7e57fe708c31b6a03d500.zip"
+      "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.5/MechanicalWarfare-Revisited.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 817405,
+      "downloadCount": 912,
+      "releasedAt": "2023-11-06T19:46:02Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0 Version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-04T09:06:44Z",
-      "htmlUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.0/MechanicalWarfare-Revisited.jar",
-      "sourceArchiveUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MechanicalWarfare-Revisited.jar",
-          "size": 679029,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.0/MechanicalWarfare-Revisited.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "f908fba0914ee71fafa81c0a0f8774f3a4bc86dc",
-      "archiveByCommitUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/archive/f908fba0914ee71fafa81c0a0f8774f3a4bc86dc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.5",
-      "modVersion": "1.5",
-      "minGameVersion": "145",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.5a",
-      "modVersion": "1.5",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/RouterXdd/MechanicalWarfarePort/releases/download/1.0/MechanicalWarfare-Revisited.jar",
+      "modVersion": "1",
+      "sizeBytes": 679029,
+      "downloadCount": 9,
+      "releasedAt": "2023-11-04T09:06:44Z"
     }
   ],
   "meta": {
+    "name": "mechanical-warfare-revisit",
+    "author": "Port creator: RouterXdd/R.O.T. \nOG creators: JerichoFletcher and GlennFolker",
+    "description": "Unofficial port of mod Mechanical Warfare",
+    "version": "1.5",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "mvr.MVRMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

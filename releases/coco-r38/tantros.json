@@ -1,58 +1,52 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "coco-r38/tantros",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v.0.2.0",
-      "name": "Release v.0.0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-09-24T14:17:55Z",
-      "htmlUrl": "https://github.com/CoCo-R38/Tantros/releases/tag/v.0.2.0",
-      "modVersion": "0.2.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/coco-r38/tantros/archive/refs/tags/v.0.2.0.zip",
-      "sourceArchiveUrl": "https://github.com/coco-r38/tantros/archive/refs/tags/v.0.2.0.zip",
-      "assets": [],
-      "commitSha": "dd5d3d579fae811ad2bcb446aa87feaa7f36743a",
-      "archiveByCommitUrl": "https://github.com/coco-r38/tantros/archive/dd5d3d579fae811ad2bcb446aa87feaa7f36743a.zip"
+      "modVersion": "0.2.0",
+      "releasedAt": "2023-09-24T14:17:55Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.0",
-      "name": "Release v0.0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-08-23T20:34:31Z",
-      "htmlUrl": "https://github.com/CoCo-R38/Tantros/releases/tag/v0.1.0",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/coco-r38/tantros/archive/refs/tags/v0.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/coco-r38/tantros/archive/refs/tags/v0.1.0.zip",
-      "assets": [],
-      "commitSha": "0d3256fde8b06376d17dc16953856bab5aceab5b",
-      "archiveByCommitUrl": "https://github.com/coco-r38/tantros/archive/0d3256fde8b06376d17dc16953856bab5aceab5b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v.0.2.0",
-      "modVersion": "0.2.0",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0.0",
+      "releasedAt": "2023-08-23T20:34:31Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "tt-mcp",
+    "author": "Yoru Kitsune\nCollaborators: XtarsAgency",
+    "description": "A mod that adds the Tantros planet with custom map(s), blocks, items and (units). (VERY EARLY-ACCESS!!!)",
+    "version": "0.2.0",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

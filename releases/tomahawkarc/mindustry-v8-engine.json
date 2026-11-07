@@ -1,177 +1,140 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "tomahawkarc/mindustry-v8-engine",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.9.1",
-      "name": "Mod Engine v1.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-14T20:43:19Z",
-      "htmlUrl": "https://github.com/Tomahawkarc/Mindustry-V8-Engine/releases/tag/v1.9.1",
-      "modVersion": "1.9.1",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.9.1.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.9.1.zip",
-      "assets": [],
-      "commitSha": "905e54da8fd296ec70045d227a63d54e90450a23",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/905e54da8fd296ec70045d227a63d54e90450a23.zip"
-    },
-    {
-      "tag": "v1.9.0",
-      "name": "v1.9.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.9.0",
-      "modVersion": "1.9.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.9.0.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.9.0.zip",
-      "assets": [],
-      "commitSha": "b5b5f1365754b8a7b865f327b6218cbd18de3e50",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/b5b5f1365754b8a7b865f327b6218cbd18de3e50.zip"
-    },
-    {
-      "tag": "v1.8.0",
-      "name": "v1.8.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.8.0",
-      "modVersion": "1.7.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.8.0.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.8.0.zip",
-      "assets": [],
-      "commitSha": "a22e612d8531aa051ed76e2701ff46cf6a7702d3",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/a22e612d8531aa051ed76e2701ff46cf6a7702d3.zip"
-    },
-    {
-      "tag": "v1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.7.0",
-      "modVersion": "1.6.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.7.0.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.7.0.zip",
-      "assets": [],
-      "commitSha": "b29ba1ae55c66df2af4d7f436941358000fb90ca",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/b29ba1ae55c66df2af4d7f436941358000fb90ca.zip"
-    },
-    {
-      "tag": "v1.6.5",
-      "name": "v1.6.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.6.5",
-      "modVersion": "1.6.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.6.5.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.6.5.zip",
-      "assets": [],
-      "commitSha": "ed6f5a540949efdac8dd2ba24410e759e3c440ca",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/ed6f5a540949efdac8dd2ba24410e759e3c440ca.zip"
-    },
-    {
-      "tag": "v1.6.0",
-      "name": "v1.6.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.6.0",
-      "modVersion": "1.6.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.6.0.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.6.0.zip",
-      "assets": [],
-      "commitSha": "98889c45b0715ff8295fe9edbe0390d55675b597",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/98889c45b0715ff8295fe9edbe0390d55675b597.zip"
-    },
-    {
-      "tag": "v1.5.3",
-      "name": "v1.5.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.5.3",
-      "modVersion": "1.5.2",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.5.3.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.5.3.zip",
-      "assets": [],
-      "commitSha": "8a1cbab6bb12cd14ed3708f92c3df244ed981607",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/8a1cbab6bb12cd14ed3708f92c3df244ed981607.zip"
-    },
-    {
-      "tag": "v1.5.2",
-      "name": "v1.5.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.5.2",
-      "modVersion": "1.5.2",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.5.2.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.5.2.zip",
-      "assets": [],
-      "commitSha": "b2a3486cc3621d2974f7614d57c7e7d2e0170ed5",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/b2a3486cc3621d2974f7614d57c7e7d2e0170ed5.zip"
+      "modVersion": "1.9.1",
+      "releasedAt": "2026-07-14T20:43:19Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/tree/v1.0.0",
-      "modVersion": "1.1.0",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "0fbc89a05acdd7010e1e06d7a20104e1a1052cca",
-      "archiveByCommitUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/0fbc89a05acdd7010e1e06d7a20104e1a1052cca.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "1.1.0"
+    },
     {
-      "tag": "v1.9.1",
-      "modVersion": "1.9.1",
+      "tag": "v1.5.2",
+      "kind": "tag",
       "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.5.2.zip",
+      "modVersion": "1.5.2"
+    },
+    {
+      "tag": "v1.5.3",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.5.3.zip",
+      "modVersion": "1.5.2"
+    },
+    {
+      "tag": "v1.6.0",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.6.0.zip",
+      "modVersion": "1.6.0"
+    },
+    {
+      "tag": "v1.6.5",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.6.5.zip",
+      "modVersion": "1.6.0"
+    },
+    {
+      "tag": "v1.7.0",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.7.0.zip",
+      "modVersion": "1.6.0"
+    },
+    {
+      "tag": "v1.8.0",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.8.0.zip",
+      "modVersion": "1.7.0"
+    },
+    {
+      "tag": "v1.9.0",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/tomahawkarc/mindustry-v8-engine/archive/refs/tags/v1.9.0.zip",
+      "modVersion": "1.9.0"
     }
   ],
   "meta": {
+    "name": "mod-engine",
+    "author": "[#10e5e5[]]Tomahawk[]",
+    "description": "[#ffd28a[]]NEXUS_OS // MOD ENGINE[]\n[#aab0b4[]]Rhino/JS control engine for Mindustry V8.[]\n\n[#10e5e5[]]CORE SYSTEMS[]\n[white[]]>[] [#ffd28a[]]World & Waves[]  [#aab0b4[]]simulation, weather and wave control[]\n[white[]]>[] [#ffd28a[]]Items & Units[]  [#aab0b4[]]batch core injection and unit deployment[]\n[white[]]>[] [#ffd28a[]]Weapons[]  [#aab0b4[]]stable unit fire-rate and turret tuning[]\n[white[]]>[] [#ffd28a[]]Mining[]  [#aab0b4[]]multi-ore fleet assignments[]\n[white[]]>[] [#ffd28a[]]Inspector[]  [#aab0b4[]]live deployments and mod-unit filtering[]\n[white[]]>[] [#ffd28a[]]Builds & Radius[]  [#aab0b4[]]factory filling and team-colored overlays[]\n[white[]]>[] [#ffd28a[]]Hotkeys & Console[]  [#aab0b4[]]persistent binds and Rhino shell[]\n\n[#10e5e5[]]QUICK ACCESS[]\n[#aab0b4[]]HUD tools hide on the full map and stack below compatible third-party panels.[]\n\n[#69e89b[]]TIP[] [#aab0b4[]]Set Inspector PAGE SIZE to 20-40 on weaker devices.[]\n[#646b76[]]JS-only mod. No Java classpath required.[]",
+    "version": "1.9.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

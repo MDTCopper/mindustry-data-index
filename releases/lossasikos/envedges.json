@@ -1,48 +1,24 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lossasikos/envedges",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V1.0.0",
-      "name": "V1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-10T16:09:51Z",
-      "htmlUrl": "https://github.com/LosSasikos/EnvEdges/releases/tag/V1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/LosSasikos/EnvEdges/releases/download/V1.0.0/EnvEdges-V1.zip",
-      "sourceArchiveUrl": "https://github.com/lossasikos/envedges/archive/refs/tags/V1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "EnvEdges-V1.zip",
-          "size": 14106,
-          "downloadCount": 149,
-          "downloadUrl": "https://github.com/LosSasikos/EnvEdges/releases/download/V1.0.0/EnvEdges-V1.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "42aeac055484c080b07d3e7321876c2f441f5579",
-      "archiveByCommitUrl": "https://github.com/lossasikos/envedges/archive/42aeac055484c080b07d3e7321876c2f441f5579.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.0.0",
+      "downloadUrl": "https://github.com/LosSasikos/EnvEdges/releases/download/V1.0.0/EnvEdges-V1.zip",
       "modVersion": "1.0.0",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 14106,
+      "downloadCount": 149,
+      "releasedAt": "2024-11-10T16:09:51Z"
     }
-  ],
-  "meta": {
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

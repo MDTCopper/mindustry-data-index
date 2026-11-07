@@ -1,89 +1,70 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "kiwi-ustal/ntm-ru",
-  "generatedAt": "2026-11-06T13:57:05.916Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "3.1",
-      "name": "3.1v 1.2v",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-28T14:49:13Z",
-      "htmlUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/tag/3.1",
-      "modVersion": "2.8 1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/3.1/ntmru.zip",
-      "sourceArchiveUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/refs/tags/3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ntmru.zip",
-          "size": 5778,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/3.1/ntmru.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ac084a5d48d2e68554fbba6b253e8aa4eb1e614",
-      "archiveByCommitUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/8ac084a5d48d2e68554fbba6b253e8aa4eb1e614.zip"
+      "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/3.1/ntmru.zip",
+      "modVersion": "2.8 1.1",
+      "sizeBytes": 5778,
+      "downloadCount": 45,
+      "releasedAt": "2025-07-28T14:49:13Z"
     },
     {
       "tag": "2.8-1.1",
-      "name": "2.8v 1.1v",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-11T19:10:52Z",
-      "htmlUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/tag/2.8-1.1",
-      "modVersion": "2.8 1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8-1.1/ntmru.zip",
-      "sourceArchiveUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/refs/tags/2.8-1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ntmru.zip",
-          "size": 5364,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8-1.1/ntmru.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7f34df982f8a653770a5693534806b15bd019f50",
-      "archiveByCommitUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/7f34df982f8a653770a5693534806b15bd019f50.zip"
+      "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8-1.1/ntmru.zip",
+      "modVersion": "2.8 1.0",
+      "sizeBytes": 5364,
+      "downloadCount": 14,
+      "releasedAt": "2025-01-11T19:10:52Z"
     },
     {
       "tag": "2.8",
-      "name": "2.8v 1.0v",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-11T16:02:20Z",
-      "htmlUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/tag/2.8",
-      "modVersion": "2.8 1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8/ntmru.zip",
-      "sourceArchiveUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/refs/tags/2.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ntmru.zip",
-          "size": 4810,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8/ntmru.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "dc10e903df0e81def5032ca6415594feac678ead",
-      "archiveByCommitUrl": "https://github.com/kiwi-ustal/ntm-ru/archive/dc10e903df0e81def5032ca6415594feac678ead.zip"
+      "downloadUrl": "https://github.com/Kiwi-UsTal/NTM-ru/releases/download/2.8/ntmru.zip",
+      "modVersion": "2.8 1.0",
+      "sizeBytes": 4810,
+      "downloadCount": 5,
+      "releasedAt": "2025-01-11T16:02:20Z"
     }
   ],
-  "compat": [
-    {
-      "tag": "3.1",
-      "modVersion": "2.8 1.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
-    }
-  ],
-  "meta": null
+  "meta": {
+    "name": "ntm-ru",
+    "author": "*Киви*",
+    "description": "\nПеревод мода Ntm\n\nБлагодарности:\nhacker_pentagon (Китайский Котик)\nKoctz34 (Ion - 7274, автор Оригинала)\n",
+    "version": "2.8 1.1",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": false,
+    "hasJava": false
+  }
 }

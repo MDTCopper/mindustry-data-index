@@ -1,34 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "new-guys5634/lava-rebirth",
-  "generatedAt": "2026-11-06T13:57:05.916Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "vB.0.5",
-      "name": "Beta 0.5",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-01T08:02:38Z",
-      "htmlUrl": "https://github.com/New-guys5634/lava-rebirth/releases/tag/vB.0.5",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/new-guys5634/lava-rebirth/archive/refs/tags/vB.0.5.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/lava-rebirth/archive/refs/tags/vB.0.5.zip",
-      "assets": [],
-      "commitSha": "e2c52ec5a6e4282ea0e0368b2633e65edb460086",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/lava-rebirth/archive/e2c52ec5a6e4282ea0e0368b2633e65edb460086.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "vB.0.5",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-04-01T08:02:38Z",
+      "prerelease": true
     }
   ],
-  "meta": null
+  "meta": {
+    "name": "b",
+    "author": "beee",
+    "description": " \nIN EARLY DEV\nA mod inspired by Greek tech with all of its annoying grinding [red]Elements[white]\na planet called lava zrogro arises and this will pinpoint where all the lore has started and will it end?\n\nPROPER: this mod will not be easy and you have to use more brain power than serpulo, anything can go wrong leading to your death, retake the lost and crux nations and find more about the destroyed planet, also links with antopia in many ways such as sulfur, beware the sectors will be changing often.\n\nMISSION: on zrogro your previous captures and defeats if the lost empire had been shattered, the crux empire had taken back everything, the Vengeance empire had informed you that the crux empire had some how cooked zrogro and moved the planet barely but enough for water to exist underground, your mission is to establish the vengeance empire on this planet, establish hard to work and pollute this planet to the grave, destroy and take back this planet! good luck captain.\n\nThe first edition to the 4 planets lore on the crux\n\nbeware this requires mult craft lib and this will be updated like very regularly \n\nA mod I absolutely suggest playing(Ceruisaim)\n\nenjoy, drink cola, eat raw coal, have fun\n",
+    "version": "1.0",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": false,
+    "hasJava": false
+  }
 }

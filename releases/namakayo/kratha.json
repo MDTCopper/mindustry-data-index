@@ -1,150 +1,101 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "namakayo/kratha",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.3",
-      "name": "0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-18T11:44:02Z",
-      "htmlUrl": "https://github.com/namakayo/kratha/releases/tag/0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.3/kratha.jar",
-      "sourceArchiveUrl": "https://github.com/namakayo/kratha/archive/refs/tags/0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "kratha.jar",
-          "size": 2842991,
-          "downloadCount": 988,
-          "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.3/kratha.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "79fc9a4f7839ac2cfa0e2df09a4be3a13ddb7937",
-      "archiveByCommitUrl": "https://github.com/namakayo/kratha/archive/79fc9a4f7839ac2cfa0e2df09a4be3a13ddb7937.zip"
+      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.3/kratha.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 2842991,
+      "downloadCount": 990,
+      "releasedAt": "2026-08-18T11:44:02Z"
     },
     {
       "tag": "0.21",
-      "name": "0.21",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T06:37:03Z",
-      "htmlUrl": "https://github.com/namakayo/kratha/releases/tag/0.21",
-      "modVersion": "0.21",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.21/kratha.jar",
-      "sourceArchiveUrl": "https://github.com/namakayo/kratha/archive/refs/tags/0.21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "kratha.jar",
-          "size": 2549491,
-          "downloadCount": 2558,
-          "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.21/kratha.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f1f9f494372983265ced81e2228ea48e32c3311d",
-      "archiveByCommitUrl": "https://github.com/namakayo/kratha/archive/f1f9f494372983265ced81e2228ea48e32c3311d.zip"
+      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.21/kratha.jar",
+      "modVersion": "0.21",
+      "sizeBytes": 2549491,
+      "downloadCount": 2558,
+      "releasedAt": "2026-07-07T06:37:03Z"
     },
     {
       "tag": "0.2",
-      "name": "0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-06T10:05:02Z",
-      "htmlUrl": "https://github.com/namakayo/kratha/releases/tag/0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.2/kratha.jar",
-      "sourceArchiveUrl": "https://github.com/namakayo/kratha/archive/refs/tags/0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "kratha.jar",
-          "size": 2542420,
-          "downloadCount": 172,
-          "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.2/kratha.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9d564dedbbc640a217b511b989cb227c55a8f273",
-      "archiveByCommitUrl": "https://github.com/namakayo/kratha/archive/9d564dedbbc640a217b511b989cb227c55a8f273.zip"
+      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.2/kratha.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 2542420,
+      "downloadCount": 172,
+      "releasedAt": "2026-07-06T10:05:02Z"
     },
     {
       "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-23T05:10:47Z",
-      "htmlUrl": "https://github.com/namakayo/kratha/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.1/kratha.jar",
-      "sourceArchiveUrl": "https://github.com/namakayo/kratha/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "kratha.jar",
-          "size": 1305380,
-          "downloadCount": 1086,
-          "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.1/kratha.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6f60498d55474889a330c01111ea5bc46056225e",
-      "archiveByCommitUrl": "https://github.com/namakayo/kratha/archive/6f60498d55474889a330c01111ea5bc46056225e.zip"
+      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0.1/kratha.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1305380,
+      "downloadCount": 1086,
+      "releasedAt": "2026-06-23T05:10:47Z"
     },
     {
       "tag": "0",
-      "name": "0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-15T12:24:29Z",
-      "htmlUrl": "https://github.com/namakayo/kratha/releases/tag/0",
-      "modVersion": "0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0/kratha.jar",
-      "sourceArchiveUrl": "https://github.com/namakayo/kratha/archive/refs/tags/0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "kratha.jar",
-          "size": 1032922,
-          "downloadCount": 794,
-          "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0/kratha.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ff8051a7e802db881fdcd9bc5285fb43b107d8f7",
-      "archiveByCommitUrl": "https://github.com/namakayo/kratha/archive/ff8051a7e802db881fdcd9bc5285fb43b107d8f7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.2",
-      "modVersion": "0.2",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.3",
-      "modVersion": "0.3",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/namakayo/kratha/releases/download/0/kratha.jar",
+      "modVersion": "0",
+      "sizeBytes": 1032922,
+      "downloadCount": 794,
+      "releasedAt": "2026-06-15T12:24:29Z"
     }
   ],
   "meta": {
+    "name": "kratha",
+    "author": "namaka",
+    "description": "\n[accent[]]A Mindustry Java Mod\n\nCurrent version : 0.3\n",
+    "version": "0.3",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "kratha.KrathaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

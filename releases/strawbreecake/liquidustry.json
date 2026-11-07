@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "strawbreecake/liquidustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "DesktopRelease-v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T03:43:14Z",
-      "htmlUrl": "https://github.com/StrawbreeCake/LiquiDustry/releases/tag/v1.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/StrawbreeCake/LiquiDustry/releases/download/v1.0/LiquiDustryDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/strawbreecake/liquidustry/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LiquiDustryDesktop.jar",
-          "size": 74726,
-          "downloadCount": 194,
-          "downloadUrl": "https://github.com/StrawbreeCake/LiquiDustry/releases/download/v1.0/LiquiDustryDesktop.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e5cc64cf413836b7ca851e9afa4f908edc1a8d7a",
-      "archiveByCommitUrl": "https://github.com/strawbreecake/liquidustry/archive/e5cc64cf413836b7ca851e9afa4f908edc1a8d7a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/StrawbreeCake/LiquiDustry/releases/download/v1.0/LiquiDustryDesktop.jar",
       "modVersion": "1.0.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 74726,
+      "downloadCount": 194,
+      "releasedAt": "2026-05-25T03:43:14Z"
     }
   ],
   "meta": {
+    "name": "liquidustry",
+    "author": "StrawbreeCake",
+    "description": "Transport liquids with drones!",
+    "version": "1.0.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "liquidustry.LiquiDustryMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

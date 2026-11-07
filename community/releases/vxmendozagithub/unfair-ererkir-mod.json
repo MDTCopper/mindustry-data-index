@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "vxmendozagithub/unfair-ererkir-mod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "v1.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-03T11:43:01Z",
-      "htmlUrl": "https://github.com/vxmendozagithub/unfair-ererkir-mod/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/vxmendozagithub/unfair-ererkir-mod/releases/download/v1.0/vxmendozagithubunfair-erekir-mod.zip",
-      "sourceArchiveUrl": "https://github.com/vxmendozagithub/unfair-ererkir-mod/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "vxmendozagithubunfair-erekir-mod.zip",
-          "size": 793,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/vxmendozagithub/unfair-ererkir-mod/releases/download/v1.0/vxmendozagithubunfair-erekir-mod.zip"
+          "from": "140.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1925edb4e40afbb9ff1d3f96fb6cdcd640c8e2cd",
-      "archiveByCommitUrl": "https://github.com/vxmendozagithub/unfair-ererkir-mod/archive/1925edb4e40afbb9ff1d3f96fb6cdcd640c8e2cd.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/vxmendozagithub/unfair-ererkir-mod/releases/download/v1.0/vxmendozagithubunfair-erekir-mod.zip",
       "modVersion": "1.0",
-      "minGameVersion": "140.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 793,
+      "downloadCount": 31,
+      "releasedAt": "2022-12-03T11:43:01Z"
     }
   ],
   "meta": {
+    "name": "unfair-erekir-mod",
+    "author": "vxmendozagithub",
+    "description": "A .js based erekir mod mostly made to speed up the game",
+    "version": "1.0",
+    "minGameVersion": "140.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

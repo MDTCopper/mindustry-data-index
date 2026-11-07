@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "VDGaster/Upgraded-Blocks",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-13T10:19:34Z",
-      "htmlUrl": "https://github.com/VDGaster/Upgraded-Blocks/releases/tag/v1.1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/VDGaster/Upgraded-Blocks/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/VDGaster/Upgraded-Blocks/archive/refs/tags/v1.1.0.zip",
-      "assets": [],
-      "commitSha": "1d57fd880f8efb21e30c77cb8cf1d90450fa17d1",
-      "archiveByCommitUrl": "https://github.com/VDGaster/Upgraded-Blocks/archive/1d57fd880f8efb21e30c77cb8cf1d90450fa17d1.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2024-05-13T10:19:34Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "Upgraded Blocks v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-09T22:09:15Z",
-      "htmlUrl": "https://github.com/VDGaster/Upgraded-Blocks/releases/tag/v1.0.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/VDGaster/Upgraded-Blocks/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/VDGaster/Upgraded-Blocks/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "66fd957d759834548def333a850dd58aaa6782c6",
-      "archiveByCommitUrl": "https://github.com/VDGaster/Upgraded-Blocks/archive/66fd957d759834548def333a850dd58aaa6782c6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.0",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-05-09T22:09:15Z"
     }
   ],
   "meta": {
+    "name": "upd-blocks",
+    "author": "VDGaster",
+    "description": "This Mindustry mod will add alternate blocks which will be better then their analogues, but also will be cost more resources to build. Most of additional blocks will be batteries, containers, etc. But it will not be any turrets or something like this",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

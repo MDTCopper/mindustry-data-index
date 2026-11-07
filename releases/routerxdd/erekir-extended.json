@@ -1,154 +1,113 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "routerxdd/erekir-extended",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "release0.3",
-      "name": "Version 0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-16T14:28:33Z",
-      "htmlUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/tag/release0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/release0.3/Erekir-Extended.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/release0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Erekir-Extended.zip",
-          "size": 988100,
-          "downloadCount": 76,
-          "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/release0.3/Erekir-Extended.zip"
+          "from": "140",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1f65cf9ecee6d6861253016dcb4c6d6c7cb682ae",
-      "archiveByCommitUrl": "https://github.com/routerxdd/erekir-extended/archive/1f65cf9ecee6d6861253016dcb4c6d6c7cb682ae.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/release0.3/Erekir-Extended.zip",
+      "modVersion": "0.3",
+      "sizeBytes": 988100,
+      "downloadCount": 76,
+      "releasedAt": "2026-07-16T14:28:33Z"
     },
     {
       "tag": "demo-0.3",
-      "name": "Demo 0.3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-20T07:32:55Z",
-      "htmlUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/tag/demo-0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/demo-0.3/Erekir-Extended.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/demo-0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Erekir-Extended.zip",
-          "size": 2436652,
-          "downloadCount": 125,
-          "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/demo-0.3/Erekir-Extended.zip"
+          "from": "140",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5f323eb85209f9b7f9bfbdb0b2483d8719e9b7e3",
-      "archiveByCommitUrl": "https://github.com/routerxdd/erekir-extended/archive/5f323eb85209f9b7f9bfbdb0b2483d8719e9b7e3.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/demo-0.3/Erekir-Extended.zip",
+      "modVersion": "0.3",
+      "sizeBytes": 2436652,
+      "downloadCount": 125,
+      "releasedAt": "2022-11-20T07:32:55Z",
+      "prerelease": true
     },
     {
       "tag": "relese0.2.1",
-      "name": "0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-15T16:14:11Z",
-      "htmlUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/tag/relese0.2.1",
-      "modVersion": "0.2.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/relese0.2.1/Erekir-Extended.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Erekir-Extended.zip",
-          "size": 1383489,
-          "downloadCount": 533,
-          "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/relese0.2.1/Erekir-Extended.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "844a0b5caea94001964bf632d2ca3ed22d1bb2c6",
-      "archiveByCommitUrl": "https://github.com/routerxdd/erekir-extended/archive/844a0b5caea94001964bf632d2ca3ed22d1bb2c6.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/download/relese0.2.1/Erekir-Extended.zip",
+      "modVersion": "0.2.1",
+      "sizeBytes": 1383489,
+      "downloadCount": 533,
+      "releasedAt": "2022-06-15T16:14:11Z"
     },
     {
       "tag": "relese0.21",
-      "name": "Fix 0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-28T05:03:19Z",
-      "htmlUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/tag/relese0.21",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.21.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.21.zip",
-      "assets": [],
-      "commitSha": "d912c6f2fe14f123c2ac25aad919361674d5d31f",
-      "archiveByCommitUrl": "https://github.com/routerxdd/erekir-extended/archive/d912c6f2fe14f123c2ac25aad919361674d5d31f.zip"
+      "modVersion": "0.2",
+      "releasedAt": "2022-05-28T05:03:19Z"
     },
     {
       "tag": "relese0.2",
-      "name": "Release 0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-27T17:22:26Z",
-      "htmlUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/tag/relese0.2",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.2.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.2.zip",
-      "assets": [],
-      "commitSha": "41664689acd0d4d1618bf360adff672437fee0e8",
-      "archiveByCommitUrl": "https://github.com/routerxdd/erekir-extended/archive/41664689acd0d4d1618bf360adff672437fee0e8.zip"
+      "modVersion": "0.2",
+      "releasedAt": "2022-05-27T17:22:26Z"
     },
     {
       "tag": "relese0.1",
-      "name": "Release 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-11T15:15:10Z",
-      "htmlUrl": "https://github.com/RouterXdd/Erekir-Extended/releases/tag/relese0.1",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.1.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/erekir-extended/archive/refs/tags/relese0.1.zip",
-      "assets": [],
-      "commitSha": "a31d69b8bde62322a01344b599cfd9d15a203326",
-      "archiveByCommitUrl": "https://github.com/routerxdd/erekir-extended/archive/a31d69b8bde62322a01344b599cfd9d15a203326.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "relese0.2.1",
-      "modVersion": "0.2.1",
-      "minGameVersion": "136",
-      "maxGameVersion": 140,
-      "hasRelease": true
-    },
-    {
-      "tag": "release0.3",
-      "modVersion": "0.3",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.1",
+      "releasedAt": "2022-05-11T15:15:10Z"
     }
   ],
   "meta": {
+    "name": "erek",
+    "author": "RouterXdd (R.O.T)",
+    "description": "Add the new sectors and content on Erekir",
+    "version": "0.3",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

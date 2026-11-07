@@ -1,102 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "SeuEarth/Factroundustry",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v2.0.0",
-      "name": "v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-30T17:21:26Z",
-      "htmlUrl": "https://github.com/SeuEarth/Factroundustry/releases/tag/v2.0.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "139",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v2.0.0/SpaceEarthEXFactroundustry.zip",
-      "sourceArchiveUrl": "https://github.com/SeuEarth/Factroundustry/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SpaceEarthEXFactroundustry.zip",
-          "size": 55885784,
-          "downloadCount": 319,
-          "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v2.0.0/SpaceEarthEXFactroundustry.zip"
+          "from": "139",
+          "to": "160.7"
         }
       ],
-      "commitSha": "156dff3b5abc82ac4c6b7baf4ae1b29883d2ad54",
-      "archiveByCommitUrl": "https://github.com/SeuEarth/Factroundustry/archive/156dff3b5abc82ac4c6b7baf4ae1b29883d2ad54.zip"
+      "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v2.0.0/SpaceEarthEXFactroundustry.zip",
+      "modVersion": "1",
+      "sizeBytes": 55885784,
+      "downloadCount": 319,
+      "releasedAt": "2022-11-30T17:21:26Z"
     },
     {
       "tag": "v.1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-17T18:26:43Z",
-      "htmlUrl": "https://github.com/SeuEarth/Factroundustry/releases/tag/v.1.1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v.1.1.0/SpaceEarthEXFactroundustry.zip",
-      "sourceArchiveUrl": "https://github.com/SeuEarth/Factroundustry/archive/refs/tags/v.1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SpaceEarthEXFactroundustry.zip",
-          "size": 55445595,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v.1.1.0/SpaceEarthEXFactroundustry.zip"
+          "from": "137",
+          "to": "160.7"
         }
       ],
-      "commitSha": "682aaea8df532edb0148d66dd22446cc98a5bfe9",
-      "archiveByCommitUrl": "https://github.com/SeuEarth/Factroundustry/archive/682aaea8df532edb0148d66dd22446cc98a5bfe9.zip"
+      "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v.1.1.0/SpaceEarthEXFactroundustry.zip",
+      "modVersion": "1",
+      "sizeBytes": 55445595,
+      "downloadCount": 21,
+      "releasedAt": "2022-10-17T18:26:43Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-12T03:47:20Z",
-      "htmlUrl": "https://github.com/SeuEarth/Factroundustry/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v1.0.0/SpaceEarthEXFactroundustry.zip",
-      "sourceArchiveUrl": "https://github.com/SeuEarth/Factroundustry/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SpaceEarthEXFactroundustry.zip",
-          "size": 55497980,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v1.0.0/SpaceEarthEXFactroundustry.zip"
+          "from": "137",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d40b1014379f6199e5217d3200c85da7a4f5d4c9",
-      "archiveByCommitUrl": "https://github.com/SeuEarth/Factroundustry/archive/d40b1014379f6199e5217d3200c85da7a4f5d4c9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v.1.1.0",
+      "downloadUrl": "https://github.com/SeuEarth/Factroundustry/releases/download/v1.0.0/SpaceEarthEXFactroundustry.zip",
       "modVersion": "1",
-      "minGameVersion": "137",
-      "maxGameVersion": 139,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0.0",
-      "modVersion": "1",
-      "minGameVersion": "139",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 55497980,
+      "downloadCount": 69,
+      "releasedAt": "2022-08-12T03:47:20Z"
     }
   ],
   "meta": {
+    "name": "factroundustry",
+    "author": "SpaceEarthEX",
+    "description": "A Soundpack that changes all sounds and musics from Factorio.\n\nIf you use it with Xeloboyo/Factoriodustry, you can feel more factroio-like.\n(Mod is forted to 137 build.)",
+    "version": "1",
+    "minGameVersion": "139",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

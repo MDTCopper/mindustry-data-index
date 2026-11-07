@@ -1,48 +1,39 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "contrlaltdelete/bisodium",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Bisodium - 0.1.0(build 1)",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-05-20T11:58:14Z",
-      "htmlUrl": "https://github.com/ContrlAltDelete/bisodium/releases/tag/mindustry-mod",
-      "modVersion": "Build 1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ContrlAltDelete/bisodium/releases/download/mindustry-mod/bisodium-V1-build1.zip",
-      "sourceArchiveUrl": "https://github.com/contrlaltdelete/bisodium/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bisodium-V1-build1.zip",
-          "size": 46726,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/ContrlAltDelete/bisodium/releases/download/mindustry-mod/bisodium-V1-build1.zip"
+          "from": "149",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e95ab0b5997a27d9a2cf883a8e6baa75fe614c62",
-      "archiveByCommitUrl": "https://github.com/contrlaltdelete/bisodium/archive/e95ab0b5997a27d9a2cf883a8e6baa75fe614c62.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
+      "downloadUrl": "https://github.com/ContrlAltDelete/bisodium/releases/download/mindustry-mod/bisodium-V1-build1.zip",
       "modVersion": "Build 1",
-      "minGameVersion": "149",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 46726,
+      "downloadCount": 13,
+      "releasedAt": "2025-05-20T11:58:14Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "bisodium",
+    "author": "ContrlAltDelete",
+    "description": "This mod is very explosive.",
+    "version": "Build 1",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

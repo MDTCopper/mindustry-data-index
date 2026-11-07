@@ -1,71 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ggllfr/envalloc",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.2",
-      "name": "v0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-03T09:24:38Z",
-      "htmlUrl": "https://github.com/GglLfr/EnvAlloc/releases/tag/v0.2",
-      "modVersion": "v0.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/GglLfr/EnvAlloc/releases/download/v0.2/EnvAlloc.jar",
-      "sourceArchiveUrl": "https://github.com/ggllfr/envalloc/archive/refs/tags/v0.2.zip",
-      "assets": [
-        {
-          "name": "EnvAlloc.jar",
-          "size": 20393,
-          "downloadCount": 159,
-          "downloadUrl": "https://github.com/GglLfr/EnvAlloc/releases/download/v0.2/EnvAlloc.jar"
-        }
-      ],
-      "commitSha": "d87670e772662a2424813f8a9ba48f0a29a823c1",
-      "archiveByCommitUrl": "https://github.com/ggllfr/envalloc/archive/d87670e772662a2424813f8a9ba48f0a29a823c1.zip"
-    },
-    {
-      "tag": "v0.1",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-03T08:57:30Z",
-      "htmlUrl": "https://github.com/GglLfr/EnvAlloc/releases/tag/v0.1",
       "modVersion": "v0.1",
-      "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/GglLfr/EnvAlloc/releases/download/v0.1/EnvAlloc.jar",
-      "sourceArchiveUrl": "https://github.com/ggllfr/envalloc/archive/refs/tags/v0.1.zip",
-      "assets": [
-        {
-          "name": "EnvAlloc.jar",
-          "size": 19947,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/GglLfr/EnvAlloc/releases/download/v0.1/EnvAlloc.jar"
-        }
-      ],
-      "commitSha": "e19ab24f7c31c5ac95eebd95cfc79e8c83301e22",
-      "archiveByCommitUrl": "https://github.com/ggllfr/envalloc/archive/e19ab24f7c31c5ac95eebd95cfc79e8c83301e22.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2",
-      "modVersion": "v0.1",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 20393,
+      "downloadCount": 161,
+      "releasedAt": "2026-08-03T09:24:38Z"
     }
   ],
   "meta": {
+    "name": "env-alloc",
+    "author": "Chime Tian",
+    "description": "Mindustry Java mod library to add new Env flags.",
+    "version": "v0.1",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "env.EnvAlloc",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

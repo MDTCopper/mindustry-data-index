@@ -1,72 +1,54 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "haznobrain/erekir-liquefied",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "release",
-      "name": "Erekir Liquefied release 0.2.5 Coldfix and a bunch of changes.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-07T11:07:52Z",
-      "htmlUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/tag/release",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/download/release/Erekir-liquefied-main.zip",
-      "sourceArchiveUrl": "https://github.com/haznobrain/erekir-liquefied/archive/refs/tags/release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Erekir-liquefied-main.zip",
-          "size": 18698361,
-          "downloadCount": 602,
-          "downloadUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/download/release/Erekir-liquefied-main.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9fc0d5e0dfb06427298543f276d95e6892482a64",
-      "archiveByCommitUrl": "https://github.com/haznobrain/erekir-liquefied/archive/9fc0d5e0dfb06427298543f276d95e6892482a64.zip"
+      "downloadUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/download/release/Erekir-liquefied-main.zip",
+      "modVersion": "0.2",
+      "sizeBytes": 18698361,
+      "downloadCount": 604,
+      "releasedAt": "2024-10-07T11:07:52Z"
     },
     {
       "tag": "Release",
-      "name": "Erekir Liquefied release v0.2!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-25T19:50:48Z",
-      "htmlUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/tag/Release",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/download/Release/Erekir-liquefied-main.zip",
-      "sourceArchiveUrl": "https://github.com/haznobrain/erekir-liquefied/archive/refs/tags/Release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Erekir-liquefied-main.zip",
-          "size": 18604722,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/download/Release/Erekir-liquefied-main.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "57bab7cd124ac15c28410c4d87cf64830c7fbd57",
-      "archiveByCommitUrl": "https://github.com/haznobrain/erekir-liquefied/archive/57bab7cd124ac15c28410c4d87cf64830c7fbd57.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release",
-      "modVersion": "0.2",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Haznobrain/Erekir-liquefied/releases/download/Release/Erekir-liquefied-main.zip",
+      "modVersion": "1",
+      "sizeBytes": 18604722,
+      "downloadCount": 31,
+      "releasedAt": "2024-09-25T19:50:48Z"
     }
   ],
   "meta": {
+    "name": "erekirliquefied",
+    "author": "Haznobrain",
+    "description": "A mod that was originally meant to add liquid related stuff to erekir but i ended up having too many ideas.\n  helpers: GameStuffOfficial, @mr_shapka228, @smolkeys_\n  special thanks to u/WishboneOk8660 on reddit, who made amazing fanart of the mod and the og idea for the support boat line.",
+    "version": "0.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

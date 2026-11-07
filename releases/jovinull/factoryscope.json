@@ -1,426 +1,278 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "jovinull/factoryscope",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.3.0",
-      "name": "FactoryScope 1.3.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-19T14:33:49Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v1.3.0",
-      "modVersion": "1.3.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.3.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v1.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 642665,
-          "downloadCount": 354,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.3.0/FactoryScope.jar"
-        },
-        {
-          "name": "FactoryScope.jar.sha256",
-          "size": 84,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.3.0/FactoryScope.jar.sha256"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "aa23f576de40ce22fa1fa0dc4c0201e63139cf74",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/aa23f576de40ce22fa1fa0dc4c0201e63139cf74.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.3.0/FactoryScope.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 642749,
+      "downloadCount": 357,
+      "releasedAt": "2026-10-19T14:33:49Z"
     },
     {
       "tag": "v1.2.1",
-      "name": "FactoryScope 1.2.1 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T12:48:38Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v1.2.1",
-      "modVersion": "1.2.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.1/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 615109,
-          "downloadCount": 62,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.1/FactoryScope.jar"
-        },
-        {
-          "name": "FactoryScope.jar.sha256",
-          "size": 83,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.1/FactoryScope.jar.sha256"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "12a056114d0d290702cd5fbacf3a53e19e513d68",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/12a056114d0d290702cd5fbacf3a53e19e513d68.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.1/FactoryScope.jar",
+      "modVersion": "1.2.1",
+      "sizeBytes": 615192,
+      "downloadCount": 63,
+      "releasedAt": "2026-10-18T12:48:38Z"
     },
     {
       "tag": "v1.2.0",
-      "name": "FactoryScope 1.2.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T02:45:14Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v1.2.0",
-      "modVersion": "1.2.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 613513,
-          "downloadCount": 71,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8003ae4c8ab457a4f9df61a078e72dd360351ee3",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/8003ae4c8ab457a4f9df61a078e72dd360351ee3.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.2.0/FactoryScope.jar",
+      "modVersion": "1.2.0",
+      "sizeBytes": 613513,
+      "downloadCount": 71,
+      "releasedAt": "2026-10-18T02:45:14Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "FactoryScope 1.1.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-05T21:36:58Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.1.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 514206,
-          "downloadCount": 262,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.1.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fdcac483b8b13c8c6660a4ad05801d297737b09b",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/fdcac483b8b13c8c6660a4ad05801d297737b09b.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.1.0/FactoryScope.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 514206,
+      "downloadCount": 262,
+      "releasedAt": "2026-10-05T21:36:58Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "FactoryScope 1.0.1 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T21:06:11Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.0.1/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 484002,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.0.1/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8d3743d8c0482c3efd160f868f9b3c1d70cdc811",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/8d3743d8c0482c3efd160f868f9b3c1d70cdc811.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.0.1/FactoryScope.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 484002,
+      "downloadCount": 15,
+      "releasedAt": "2026-10-04T21:06:11Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "FactoryScope 1.0.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T11:16:22Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.0.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 420047,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.0.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9ef02e23550b68b91ac75e59c17c0bd9dba2cfb7",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/9ef02e23550b68b91ac75e59c17c0bd9dba2cfb7.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.0.0/FactoryScope.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 420047,
+      "downloadCount": 9,
+      "releasedAt": "2026-10-04T11:16:22Z"
     },
     {
       "tag": "v0.7.0",
-      "name": "FactoryScope 0.7.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T23:51:28Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.7.0",
-      "modVersion": "0.7.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.7.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 420047,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.7.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5ca71ea8870ac09bf3fbec66542325e96c88148c",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/5ca71ea8870ac09bf3fbec66542325e96c88148c.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.7.0/FactoryScope.jar",
+      "modVersion": "0.7.0",
+      "sizeBytes": 420047,
+      "downloadCount": 21,
+      "releasedAt": "2026-10-03T23:51:28Z"
     },
     {
       "tag": "v0.6.0",
-      "name": "FactoryScope 0.6.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T15:35:37Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.6.0",
-      "modVersion": "0.6.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.6.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 419259,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.6.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "615946b0b248699860cc33ee63bfd017c6e53d66",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/615946b0b248699860cc33ee63bfd017c6e53d66.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.6.0/FactoryScope.jar",
+      "modVersion": "0.6.0",
+      "sizeBytes": 419259,
+      "downloadCount": 4,
+      "releasedAt": "2026-10-03T15:35:37Z"
     },
     {
       "tag": "v0.5.0",
-      "name": "FactoryScope 0.5.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T23:15:31Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.5.0",
-      "modVersion": "0.5.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.5.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 320103,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.5.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d282001359d93ad31e1dbaec161a89d10d4fb4a8",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/d282001359d93ad31e1dbaec161a89d10d4fb4a8.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.5.0/FactoryScope.jar",
+      "modVersion": "0.5.0",
+      "sizeBytes": 320103,
+      "downloadCount": 12,
+      "releasedAt": "2026-10-02T23:15:31Z"
     },
     {
       "tag": "v0.4.1",
-      "name": "FactoryScope 0.4.1 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T15:55:32Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.4.1",
-      "modVersion": "0.4.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.4.1/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 258950,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.4.1/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bb557ce9621fb3f52cb667d62856382319925405",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/bb557ce9621fb3f52cb667d62856382319925405.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.4.1/FactoryScope.jar",
+      "modVersion": "0.4.1",
+      "sizeBytes": 258950,
+      "downloadCount": 11,
+      "releasedAt": "2026-10-02T15:55:32Z"
     },
     {
       "tag": "v0.4.0",
-      "name": "FactoryScope 0.4.0 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T15:19:48Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.4.0",
-      "modVersion": "0.4.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.4.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 258504,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.4.0/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b89186b5cb05cc271d35cf995210dd44454ec1cb",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/b89186b5cb05cc271d35cf995210dd44454ec1cb.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.4.0/FactoryScope.jar",
+      "modVersion": "0.4.0",
+      "sizeBytes": 258504,
+      "downloadCount": 1,
+      "releasedAt": "2026-10-02T15:19:48Z"
     },
     {
       "tag": "v0.3.1",
-      "name": "FactoryScope 0.3.1 [v160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T01:08:37Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.3.1",
-      "modVersion": "0.3.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.3.1/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 197620,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.3.1/FactoryScope.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b6440c6f7477d3f6427b267b31ebe79ab51de663",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/b6440c6f7477d3f6427b267b31ebe79ab51de663.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.3.1/FactoryScope.jar",
+      "modVersion": "0.3.1",
+      "sizeBytes": 197620,
+      "downloadCount": 15,
+      "releasedAt": "2026-10-02T01:08:37Z"
     },
     {
       "tag": "v0.3.0",
-      "name": "FactoryScope 0.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-02T01:17:56Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.3.0",
-      "modVersion": "0.3.0",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.3.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 197306,
-          "downloadCount": 81,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.3.0/FactoryScope.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bb67826b9e743555311a6c4717febc9cfce5846f",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/bb67826b9e743555311a6c4717febc9cfce5846f.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.3.0/FactoryScope.jar",
+      "modVersion": "0.3.0",
+      "sizeBytes": 197306,
+      "downloadCount": 81,
+      "releasedAt": "2026-09-02T01:17:56Z"
     },
     {
       "tag": "v0.2.1",
-      "name": "FactoryScope 0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-30T14:54:06Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.2.1",
-      "modVersion": "0.2.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.2.1/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 146579,
-          "downloadCount": 35,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.2.1/FactoryScope.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9444ff3b5bf14bbb5effbc948d36a2bc396acdde",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/9444ff3b5bf14bbb5effbc948d36a2bc396acdde.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.2.1/FactoryScope.jar",
+      "modVersion": "0.2.1",
+      "sizeBytes": 146579,
+      "downloadCount": 35,
+      "releasedAt": "2026-08-30T14:54:06Z"
     },
     {
       "tag": "v0.2.0",
-      "name": "FactoryScope 0.2.0 — Area Diagnostics",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-28T02:57:11Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.2.0",
-      "modVersion": "0.2.0",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.2.0/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 146576,
-          "downloadCount": 39,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.2.0/FactoryScope.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "39dc6b8951aca66391a85348fb253124bde38b2f",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/39dc6b8951aca66391a85348fb253124bde38b2f.zip"
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.2.0/FactoryScope.jar",
+      "modVersion": "0.2.0",
+      "sizeBytes": 146576,
+      "downloadCount": 39,
+      "releasedAt": "2026-08-28T02:57:11Z"
     },
     {
       "tag": "v0.1.1",
-      "name": "FactoryScope 0.1.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-27T03:29:19Z",
-      "htmlUrl": "https://github.com/Jovinull/FactoryScope/releases/tag/v0.1.1",
-      "modVersion": "0.1.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.1.1/FactoryScope.jar",
-      "sourceArchiveUrl": "https://github.com/jovinull/factoryscope/archive/refs/tags/v0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FactoryScope.jar",
-          "size": 84721,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.1.1/FactoryScope.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5da404a7c0cb9c88c352ab4743b9705b3776f765",
-      "archiveByCommitUrl": "https://github.com/jovinull/factoryscope/archive/5da404a7c0cb9c88c352ab4743b9705b3776f765.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.3.0",
-      "modVersion": "0.3.0",
-      "minGameVersion": "159.7",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.3.0",
-      "modVersion": "1.3.0",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v0.1.1/FactoryScope.jar",
+      "modVersion": "0.1.1",
+      "sizeBytes": 84721,
+      "downloadCount": 7,
+      "releasedAt": "2026-08-27T03:29:19Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "factory-scope",
+    "author": "Jovinull",
+    "description": "Read-only Mindustry factory diagnostics: building state, area reports, supported item/payload/liquid routes, and power-grid evidence.",
+    "version": "1.3.0",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "factoryscope.FactoryScope",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

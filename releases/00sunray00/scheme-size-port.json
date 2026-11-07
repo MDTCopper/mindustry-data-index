@@ -1,620 +1,374 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "00sunray00/scheme-size-port",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v3.0.0",
-      "name": "Scheme Size Port 3.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-29T09:49:27Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v3.0.0",
-      "modVersion": "2.3.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v3.0.0/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v3.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 479615,
-          "downloadCount": 4938,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v3.0.0/scheme-size-port.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1ffbe33c8cff044081ea2fa18bd0b3f7e6a7ea26",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/1ffbe33c8cff044081ea2fa18bd0b3f7e6a7ea26.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v3.0.0/scheme-size-port.jar",
+      "modVersion": "2.3.0",
+      "sizeBytes": 479615,
+      "downloadCount": 4973,
+      "releasedAt": "2026-10-29T09:49:27Z"
     },
     {
       "tag": "V2.2.5",
-      "name": "Scheme Size Port 2.2.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T20:16:11Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/V2.2.5",
-      "modVersion": "2.2.5",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/V2.2.5/Scheme-size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/V2.2.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-size.jar",
-          "size": 806910,
-          "downloadCount": 6051,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/V2.2.5/Scheme-size.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bf261c5ceba1da10bd29d24e13d813dd27cec010",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/bf261c5ceba1da10bd29d24e13d813dd27cec010.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/V2.2.5/Scheme-size.jar",
+      "modVersion": "2.2.5",
+      "sizeBytes": 806910,
+      "downloadCount": 6052,
+      "releasedAt": "2026-10-18T20:16:11Z"
     },
     {
       "tag": "v2.2.0",
-      "name": "Scheme Size Port 2.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-14T16:20:37Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.2.0",
-      "modVersion": "2.2.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.2.0/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 724001,
-          "downloadCount": 23422,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.2.0/scheme-size-port.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2cbe7587433e3863368ef311a4c0520af0cf0ba6",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/2cbe7587433e3863368ef311a4c0520af0cf0ba6.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.2.0/scheme-size-port.jar",
+      "modVersion": "2.2.0",
+      "sizeBytes": 724001,
+      "downloadCount": 23422,
+      "releasedAt": "2026-08-14T16:20:37Z"
     },
     {
       "tag": "v2.1.4",
-      "name": "Scheme Size Port 2.1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T11:06:48Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.1.4",
-      "modVersion": "2.1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.4/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 719022,
-          "downloadCount": 20322,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.4/scheme-size-port.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8c6b3daedf03061c36f3525b08b45b10f9bdaa15",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/8c6b3daedf03061c36f3525b08b45b10f9bdaa15.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.4/scheme-size-port.jar",
+      "modVersion": "2.1.4",
+      "sizeBytes": 719022,
+      "downloadCount": 20322,
+      "releasedAt": "2026-07-07T11:06:48Z"
     },
     {
       "tag": "v2.1.3",
-      "name": "Scheme Size Port 2.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-25T19:47:06Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.1.3",
-      "modVersion": "2.1.3",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.3/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 718785,
-          "downloadCount": 8655,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.3/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a39912b64bb5e1b013df54ada8679daf0912d02a",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/a39912b64bb5e1b013df54ada8679daf0912d02a.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.3/scheme-size-port.jar",
+      "modVersion": "2.1.3",
+      "sizeBytes": 718785,
+      "downloadCount": 8655,
+      "releasedAt": "2026-06-25T19:47:06Z"
     },
     {
       "tag": "v2.1.2",
-      "name": "Scheme Size Port 2.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-24T21:01:30Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.1.2",
-      "modVersion": "2.1.2",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.2/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 709233,
-          "downloadCount": 19330,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.2/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "406d487d8c01c5c9432d6f78f76b74e7633ff248",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/406d487d8c01c5c9432d6f78f76b74e7633ff248.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.2/scheme-size-port.jar",
+      "modVersion": "2.1.2",
+      "sizeBytes": 709233,
+      "downloadCount": 19330,
+      "releasedAt": "2026-05-24T21:01:30Z"
     },
     {
       "tag": "v2.1.1",
-      "name": "Scheme Size Port 2.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-23T16:57:39Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.1.1",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.1/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 703393,
-          "downloadCount": 1960,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.1/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "90e8c47b5dfe8d67e673f96e5c2bf940791012b7",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/90e8c47b5dfe8d67e673f96e5c2bf940791012b7.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.1/scheme-size-port.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 703393,
+      "downloadCount": 1960,
+      "releasedAt": "2026-05-23T16:57:39Z"
     },
     {
       "tag": "v2.1.0",
-      "name": "Scheme Size Port 2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-20T20:21:30Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.0/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 718501,
-          "downloadCount": 3246,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.0/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "88e60a4aff3adb446f36fa4d9604e0657a6e9eef",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/88e60a4aff3adb446f36fa4d9604e0657a6e9eef.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.1.0/scheme-size-port.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 718501,
+      "downloadCount": 3246,
+      "releasedAt": "2026-05-20T20:21:30Z"
     },
     {
       "tag": "v2.0.6",
-      "name": "Scheme Size Port 2.0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-19T17:59:36Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.6",
-      "modVersion": "2.0.6",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.6/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 713095,
-          "downloadCount": 1682,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.6/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "abbc50463d9027c937d9ddbd2c98fe60a9c2ff80",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/abbc50463d9027c937d9ddbd2c98fe60a9c2ff80.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.6/scheme-size-port.jar",
+      "modVersion": "2.0.6",
+      "sizeBytes": 713095,
+      "downloadCount": 1682,
+      "releasedAt": "2026-05-19T17:59:36Z"
     },
     {
       "tag": "v2.0.5",
-      "name": "Scheme Size Port 2.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-18T19:02:10Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.5",
-      "modVersion": "2.0.5",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.5/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 703521,
-          "downloadCount": 1573,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.5/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "637ee059428ebd3e3b489ab37e6b71f13ab6d19c",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/637ee059428ebd3e3b489ab37e6b71f13ab6d19c.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.5/scheme-size-port.jar",
+      "modVersion": "2.0.5",
+      "sizeBytes": 703521,
+      "downloadCount": 1573,
+      "releasedAt": "2026-05-18T19:02:10Z"
     },
     {
       "tag": "v2.0.4",
-      "name": "Scheme Size Port 2.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-17T11:39:24Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.4",
-      "modVersion": "2.0.4",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.4/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 673255,
-          "downloadCount": 2108,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.4/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ed94f3cc35b039ab880328cebd580e2eb78cd271",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/ed94f3cc35b039ab880328cebd580e2eb78cd271.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.4/scheme-size-port.jar",
+      "modVersion": "2.0.4",
+      "sizeBytes": 673255,
+      "downloadCount": 2109,
+      "releasedAt": "2026-05-17T11:39:24Z"
     },
     {
       "tag": "v2.0.3",
-      "name": "Scheme Size Port 2.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-16T20:51:35Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.3",
-      "modVersion": "2.0.3",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.3/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 673309,
-          "downloadCount": 1033,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.3/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "043aef38fd3fc011655fdbc3e6a910e10ee24024",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/043aef38fd3fc011655fdbc3e6a910e10ee24024.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.3/scheme-size-port.jar",
+      "modVersion": "2.0.3",
+      "sizeBytes": 673309,
+      "downloadCount": 1033,
+      "releasedAt": "2026-05-16T20:51:35Z"
     },
     {
       "tag": "v2.0.2",
-      "name": "Scheme Size Port 2.0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-16T20:50:06Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.2",
-      "modVersion": "2.0.1",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.2/scheme-size-port.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port.jar",
-          "size": 673308,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.2/scheme-size-port.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "871c464cf697ec018e1765dce6456afb77dabc08",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/871c464cf697ec018e1765dce6456afb77dabc08.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.2/scheme-size-port.jar",
+      "modVersion": "2.0.1",
+      "sizeBytes": 673308,
+      "downloadCount": 14,
+      "releasedAt": "2026-05-16T20:50:06Z",
+      "prerelease": true
     },
     {
       "tag": "v2.0.1",
-      "name": "Scheme Size Port 2.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-04T14:40:02Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.1",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.1/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 398251,
-          "downloadCount": 18400,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.1/Scheme-Size.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2c375be01c569daccd1defd4f86e8404a9346129",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/2c375be01c569daccd1defd4f86e8404a9346129.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.1/Scheme-Size.jar",
+      "modVersion": "2.0.0",
+      "sizeBytes": 398251,
+      "downloadCount": 18400,
+      "releasedAt": "2026-04-04T14:40:02Z"
     },
     {
       "tag": "v2.0.0",
-      "name": "Scheme Size Port 2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-31T10:08:54Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.0/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 393627,
-          "downloadCount": 1830,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.0/Scheme-Size.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bfc60d40020347990ae7b1180ef323f4854e6d81",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/bfc60d40020347990ae7b1180ef323f4854e6d81.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v2.0.0/Scheme-Size.jar",
+      "modVersion": "2.0.0",
+      "sizeBytes": 393627,
+      "downloadCount": 1830,
+      "releasedAt": "2026-03-31T10:08:54Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "Scheme Size Port 1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-27T14:46:25Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.1.0/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 393171,
-          "downloadCount": 2026,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.1.0/Scheme-Size.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3bef2797c1815e0bf2ceaff91825a9a4708e7b46",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/3bef2797c1815e0bf2ceaff91825a9a4708e7b46.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.1.0/Scheme-Size.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 393171,
+      "downloadCount": 2026,
+      "releasedAt": "2026-03-27T14:46:25Z"
     },
     {
       "tag": "v1.0.5",
-      "name": "Scheme Size Port 1.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-18T09:40:39Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.0.5",
-      "modVersion": "1.0.5,",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.5/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 394546,
-          "downloadCount": 6952,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.5/Scheme-Size.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ef9d791944755f3117686aede351b6ec383d0c8e",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/ef9d791944755f3117686aede351b6ec383d0c8e.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.5/Scheme-Size.jar",
+      "modVersion": "1.0.5",
+      "sizeBytes": 394546,
+      "downloadCount": 6953,
+      "releasedAt": "2026-02-18T09:40:39Z"
     },
     {
       "tag": "v1.0.4.1",
-      "name": "Scheme-Size-Port 1.0.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-19T16:25:12Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.0.4.1",
-      "modVersion": "1.0.4.1,",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.4.1/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.0.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 393324,
-          "downloadCount": 14342,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.4.1/Scheme-Size.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "28548ac75e9a45e192fa6c5f7688507cdc4c2248",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/28548ac75e9a45e192fa6c5f7688507cdc4c2248.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.4.1/Scheme-Size.jar",
+      "modVersion": "1.0.4.1",
+      "sizeBytes": 393324,
+      "downloadCount": 14342,
+      "releasedAt": "2025-12-19T16:25:12Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "Scheme-Size-Port 1.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-14T20:02:00Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.0.4",
-      "modVersion": "1.0.4,",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.4/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 393261,
-          "downloadCount": 987,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.4/Scheme-Size.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "5672865ee3d66fed5994451fb6a0cc6be94c7c54",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/5672865ee3d66fed5994451fb6a0cc6be94c7c54.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.4/Scheme-Size.jar",
+      "modVersion": "1.0.4",
+      "sizeBytes": 393261,
+      "downloadCount": 987,
+      "releasedAt": "2025-12-14T20:02:00Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "scheme-size-port 1.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-03T12:28:23Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.0.3",
-      "modVersion": "1.0.3,",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.3/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 393872,
-          "downloadCount": 1655,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.3/Scheme-Size.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "0b94f61a99b490264ef1a17662d4544b38dd032a",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/0b94f61a99b490264ef1a17662d4544b38dd032a.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.3/Scheme-Size.jar",
+      "modVersion": "1.0.3",
+      "sizeBytes": 393872,
+      "downloadCount": 1655,
+      "releasedAt": "2025-12-03T12:28:23Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "scheme-size-port 1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-27T09:47:47Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.0.1",
-      "modVersion": "1.0.1,",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.1/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 321657,
-          "downloadCount": 11174,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.1/Scheme-Size.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "35ec4f1b682857ee2f6cf6d90831088e93a79ad2",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/35ec4f1b682857ee2f6cf6d90831088e93a79ad2.zip"
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.1/Scheme-Size.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 321657,
+      "downloadCount": 11174,
+      "releasedAt": "2025-07-27T09:47:47Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "scheme-size-port 1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-25T10:22:03Z",
-      "htmlUrl": "https://github.com/00SunRay00/scheme-size-port/releases/tag/v1.0.0",
-      "modVersion": "1.0.0,",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.0/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 322120,
-          "downloadCount": 781,
-          "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.0/Scheme-Size.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "6a4e2441077198100fc3e0c4a04e88d7b52ee672",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/6a4e2441077198100fc3e0c4a04e88d7b52ee672.zip"
-    },
-    {
-      "tag": "latest",
-      "name": "latest",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/00sunray00/scheme-size-port/tree/latest",
-      "modVersion": "1.0.0,",
-      "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/latest.zip",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/latest.zip",
-      "assets": [],
-      "commitSha": "6a4e2441077198100fc3e0c4a04e88d7b52ee672",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/6a4e2441077198100fc3e0c4a04e88d7b52ee672.zip"
-    },
-    {
-      "tag": "1.0.0",
-      "name": "1.0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/00sunray00/scheme-size-port/tree/1.0.0",
-      "modVersion": "1.0.0,",
-      "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/00sunray00/scheme-size-port/archive/refs/tags/1.0.0.zip",
-      "assets": [],
-      "commitSha": "6a4e2441077198100fc3e0c4a04e88d7b52ee672",
-      "archiveByCommitUrl": "https://github.com/00sunray00/scheme-size-port/archive/6a4e2441077198100fc3e0c4a04e88d7b52ee672.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.4",
-      "modVersion": "1.0.4,",
-      "minGameVersion": "150",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.5",
-      "modVersion": "1.0.5,",
-      "minGameVersion": "154",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0.1",
-      "modVersion": "2.0.0",
-      "minGameVersion": "156",
-      "maxGameVersion": 157,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.1.3",
-      "modVersion": "2.1.3",
-      "minGameVersion": "157",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "V2.2.5",
-      "modVersion": "2.2.5",
-      "minGameVersion": "159",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.0.0",
-      "modVersion": "2.3.0",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/00SunRay00/scheme-size-port/releases/download/v1.0.0/Scheme-Size.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 322120,
+      "downloadCount": 781,
+      "releasedAt": "2025-07-25T10:22:03Z"
     }
   ],
   "meta": {
+    "name": "scheme-size",
+    "author": "[#0096FF]xzxADIxzx\nPort: 00SunRay00 & RE2b2m22",
+    "description": "\nA mod that increases the schematic size limit to 512 blocks! Adds admins, renderer and building tools. Has an updater, keybinds and AI support.\n[red]This mod is not the original port of Scheme Size — it is a custom port. The developer of the original mod is not involved in this in any way.\n[red]!!!ATTENTION: VERSIONS BELOW v159 ARE NOT SUPPORTED!!!\n[red]Vanilla Only![orange]\n\n   - Release!\n   - Settings\n   - Java 8\n   - Controls\n   - Updater\n   - Mobile Support\n   - Admins Tools\n\n   - Building Tools\n   - AI Power\n   - Renderer Tools\n   - Deep Cleaning\n   - Schematic Shortcuts\n   - Cursed Schematics\n   - Advanced Dev Console\n   - Rule setter\n",
+    "version": "2.3.0",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "scheme.Main",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "koctz34/Factor",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.0.3Alpha",
-      "name": "0.0.3 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-20T13:27:53Z",
-      "htmlUrl": "https://github.com/koctz34/Factor/releases/tag/0.0.3Alpha",
-      "modVersion": "0.0.3Alpha",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.3Alpha/factor0.0.3Alpha.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/Factor/archive/refs/tags/0.0.3Alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "factor0.0.3Alpha.jar",
-          "size": 1904678,
-          "downloadCount": 8380,
-          "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.3Alpha/factor0.0.3Alpha.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "04d8805e31a8ced25e4d4d20eed2b78c164b78bb",
-      "archiveByCommitUrl": "https://github.com/koctz34/Factor/archive/04d8805e31a8ced25e4d4d20eed2b78c164b78bb.zip"
+      "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.3Alpha/factor0.0.3Alpha.jar",
+      "modVersion": "0.0.3Alpha",
+      "sizeBytes": 1904678,
+      "downloadCount": 8380,
+      "releasedAt": "2023-10-20T13:27:53Z"
     },
     {
       "tag": "0.0.2Alpha",
-      "name": "0.0.2 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-16T12:00:51Z",
-      "htmlUrl": "https://github.com/koctz34/Factor/releases/tag/0.0.2Alpha",
-      "modVersion": "0.0.2Alpha",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.2Alpha/Factor002alpha.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/Factor/archive/refs/tags/0.0.2Alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Factor002alpha.jar",
-          "size": 1834907,
-          "downloadCount": 1078,
-          "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.2Alpha/Factor002alpha.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "a26ebb3ce63fe4d3903ec039af3fde73ac0a8c5a",
-      "archiveByCommitUrl": "https://github.com/koctz34/Factor/archive/a26ebb3ce63fe4d3903ec039af3fde73ac0a8c5a.zip"
+      "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.2Alpha/Factor002alpha.jar",
+      "modVersion": "0.0.2Alpha",
+      "sizeBytes": 1834907,
+      "downloadCount": 1078,
+      "releasedAt": "2023-09-16T12:00:51Z"
     },
     {
       "tag": "0.0.1alpha",
-      "name": "0.0.1 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-14T19:29:25Z",
-      "htmlUrl": "https://github.com/koctz34/Factor/releases/tag/0.0.1alpha",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.1alpha/factorAlpha001.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/Factor/archive/refs/tags/0.0.1alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "factorAlpha001.jar",
-          "size": 1325422,
-          "downloadCount": 145,
-          "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.1alpha/factorAlpha001.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7380ba7ec594844e308d9b72b0121a658427891f",
-      "archiveByCommitUrl": "https://github.com/koctz34/Factor/archive/7380ba7ec594844e308d9b72b0121a658427891f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.3Alpha",
+      "downloadUrl": "https://github.com/koctz34/Factor/releases/download/0.0.1alpha/factorAlpha001.jar",
       "modVersion": "0.0.3Alpha",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 1325422,
+      "downloadCount": 145,
+      "releasedAt": "2023-09-14T19:29:25Z"
     }
   ],
   "meta": {
+    "name": "factor",
+    "author": "MISTICA",
+    "description": "\nTHE MAIN PLANET Nauvis IS STILL UNDER DEVELOPMENT, IT IS EXTREMELY NOT RECOMMENDED TO PLAY ON IT.\n\nFactorio in mindustry!\n\nIn this mod, almost all the content from the Factorio game will be transferred. You have to build a big factory... and launch a rocket! The mod is not in very active development, support is needed for the development of the mod.\n\nFor an atmospheric game, it is recommended to download factroundustry. Good luck with building the factory!\n",
+    "version": "0.0.3Alpha",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "MultiCrafterAdapter",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

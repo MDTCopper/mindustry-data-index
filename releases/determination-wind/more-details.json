@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/more-details",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "build",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-18T08:57:33Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/More-details/releases/tag/build",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "151",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/More-details/releases/download/build/More-details-V1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/more-details/archive/refs/tags/build.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "More-details-V1.1.0.zip",
-          "size": 67311,
-          "downloadCount": 1846,
-          "downloadUrl": "https://github.com/DeterMination-Wind/More-details/releases/download/build/More-details-V1.1.0.zip"
+          "from": "151",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d7084b276af5940af01b749717df1e6c394d859d",
-      "archiveByCommitUrl": "https://github.com/determination-wind/more-details/archive/d7084b276af5940af01b749717df1e6c394d859d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "build",
+      "downloadUrl": "https://github.com/DeterMination-Wind/More-details/releases/download/build/More-details-V1.1.0.zip",
       "modVersion": "1.0",
-      "minGameVersion": "151",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 67311,
+      "downloadCount": 1846,
+      "releasedAt": "2025-10-18T08:57:33Z"
     }
   ],
   "meta": {
+    "name": "[More-details]更多描述",
+    "author": "Determination",
+    "description": "模仿了学术端cyan字的效果，增加了几乎所有物品的下方灰字补充说明",
+    "version": "1.0",
+    "minGameVersion": "151",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

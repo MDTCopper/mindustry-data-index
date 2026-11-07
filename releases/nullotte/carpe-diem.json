@@ -1,418 +1,261 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nullotte/carpe-diem",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "build-15",
-      "name": "Beta Build 15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-24T10:59:43Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-15",
-      "modVersion": "(Beta) Build 15",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-15/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 36232835,
-          "downloadCount": 1852,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-15/carpe-diem.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "37cf10a3be16ee9f9a3065758bf600538409b2f0",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/37cf10a3be16ee9f9a3065758bf600538409b2f0.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-15/carpe-diem.jar",
+      "modVersion": "(Beta) Build 15",
+      "sizeBytes": 36232835,
+      "downloadCount": 1854,
+      "releasedAt": "2026-09-24T10:59:43Z"
     },
     {
       "tag": "build-14",
-      "name": "Beta Build 14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-13T09:04:22Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-14",
-      "modVersion": "(Beta) Build 14",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-14/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-14.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 36232681,
-          "downloadCount": 1875,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-14/carpe-diem.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4a2e7c7c188f958a0e3eae23d550423f6532e93a",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/4a2e7c7c188f958a0e3eae23d550423f6532e93a.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-14/carpe-diem.jar",
+      "modVersion": "(Beta) Build 14",
+      "sizeBytes": 36232681,
+      "downloadCount": 1875,
+      "releasedAt": "2026-08-13T09:04:22Z"
     },
     {
       "tag": "build-13",
-      "name": "Beta Build 13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-25T12:25:11Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-13",
-      "modVersion": "(Beta) Build 13",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-13/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 36232586,
-          "downloadCount": 1061,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-13/carpe-diem.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0647a074e7c7540f57d4d5ce4709a16134494361",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/0647a074e7c7540f57d4d5ce4709a16134494361.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-13/carpe-diem.jar",
+      "modVersion": "(Beta) Build 13",
+      "sizeBytes": 36232586,
+      "downloadCount": 1061,
+      "releasedAt": "2026-07-25T12:25:11Z"
     },
     {
       "tag": "build-12",
-      "name": "Beta Build 12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-25T11:13:56Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-12",
-      "modVersion": "(Beta) Build 12",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-12/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 36232615,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-12/carpe-diem.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "87744c805c6e0a7e7d0e4320a3fc95feb1cc4d77",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/87744c805c6e0a7e7d0e4320a3fc95feb1cc4d77.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-12/carpe-diem.jar",
+      "modVersion": "(Beta) Build 12",
+      "sizeBytes": 36232615,
+      "downloadCount": 24,
+      "releasedAt": "2026-07-25T11:13:56Z"
     },
     {
       "tag": "build-11",
-      "name": "Beta Build 11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-06T06:55:42Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-11",
-      "modVersion": "(Beta) Build 11",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-11/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35803191,
-          "downloadCount": 2798,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-11/carpe-diem.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d778e820f253561fdcc2d292260eee93a224bb82",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/d778e820f253561fdcc2d292260eee93a224bb82.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-11/carpe-diem.jar",
+      "modVersion": "(Beta) Build 11",
+      "sizeBytes": 35803191,
+      "downloadCount": 2798,
+      "releasedAt": "2026-06-06T06:55:42Z"
     },
     {
       "tag": "build-10",
-      "name": "Beta Build 10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-02T10:04:19Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-10",
-      "modVersion": "(Beta) Build 10",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-10/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35756307,
-          "downloadCount": 285,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-10/carpe-diem.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ec23a4ce2fc2b48303d9a8e02eeb04ef8b920b3c",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/ec23a4ce2fc2b48303d9a8e02eeb04ef8b920b3c.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-10/carpe-diem.jar",
+      "modVersion": "(Beta) Build 10",
+      "sizeBytes": 35756307,
+      "downloadCount": 286,
+      "releasedAt": "2026-06-02T10:04:19Z"
     },
     {
       "tag": "build-9",
-      "name": "Beta Build 9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-15T18:10:22Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-9",
-      "modVersion": "(Beta) Build 9",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-9/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35742386,
-          "downloadCount": 2223,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-9/carpe-diem.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "39436e17a44fe9d0a7ddbc81be8dc6876a5e3ae4",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/39436e17a44fe9d0a7ddbc81be8dc6876a5e3ae4.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-9/carpe-diem.jar",
+      "modVersion": "(Beta) Build 9",
+      "sizeBytes": 35742386,
+      "downloadCount": 2224,
+      "releasedAt": "2026-04-15T18:10:22Z"
     },
     {
       "tag": "build-8",
-      "name": "Beta Build 8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-08T05:15:47Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-8",
-      "modVersion": "(Beta) Build 8",
+      "kind": "release",
       "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-8/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35340650,
-          "downloadCount": 1373,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-8/carpe-diem.jar"
+          "from": "155.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "07e1b2b00098c37188807ee4dc33a8618aa48319",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/07e1b2b00098c37188807ee4dc33a8618aa48319.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-8/carpe-diem.jar",
+      "modVersion": "(Beta) Build 8",
+      "sizeBytes": 35340650,
+      "downloadCount": 1374,
+      "releasedAt": "2026-03-08T05:15:47Z"
     },
     {
       "tag": "build-7",
-      "name": "Beta Build 7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-06T02:10:40Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-7",
-      "modVersion": "Beta (Build 7)",
+      "kind": "release",
       "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-7/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35304320,
-          "downloadCount": 148,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-7/carpe-diem.jar"
+          "from": "155.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "85d648623abcb61e988c10cd5e1180b69f175414",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/85d648623abcb61e988c10cd5e1180b69f175414.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-7/carpe-diem.jar",
+      "modVersion": "Beta (Build 7)",
+      "sizeBytes": 35304320,
+      "downloadCount": 148,
+      "releasedAt": "2026-03-06T02:10:40Z"
     },
     {
       "tag": "build-6",
-      "name": "Beta Build 6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-05T00:19:57Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-6",
-      "modVersion": "Beta (Build 6)",
+      "kind": "release",
       "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-6/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35304276,
-          "downloadCount": 83,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-6/carpe-diem.jar"
+          "from": "155.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b93e9bfb08bb62254e5439bc15cde43dc9707de7",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/b93e9bfb08bb62254e5439bc15cde43dc9707de7.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-6/carpe-diem.jar",
+      "modVersion": "Beta (Build 6)",
+      "sizeBytes": 35304276,
+      "downloadCount": 83,
+      "releasedAt": "2026-03-05T00:19:57Z"
     },
     {
       "tag": "build-5",
-      "name": "Alpha Build 5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-28T01:58:46Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-5",
-      "modVersion": "Alpha (Build 5)",
+      "kind": "release",
       "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-5/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35370160,
-          "downloadCount": 431,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-5/carpe-diem.jar"
+          "from": "155.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "215c538fc98fb4f69f8ac44b30a51367544e6ed6",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/215c538fc98fb4f69f8ac44b30a51367544e6ed6.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-5/carpe-diem.jar",
+      "modVersion": "Alpha (Build 5)",
+      "sizeBytes": 35370160,
+      "downloadCount": 431,
+      "releasedAt": "2026-02-28T01:58:46Z"
     },
     {
       "tag": "build-4",
-      "name": "Alpha Build 4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-21T22:38:16Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-4",
-      "modVersion": "Alpha (Build 4)",
+      "kind": "release",
       "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-4/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 35196368,
-          "downloadCount": 875,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-4/carpe-diem.jar"
+          "from": "155.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d9f555f79ff8409ba3dab2d7304b1c00c7e03b79",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/d9f555f79ff8409ba3dab2d7304b1c00c7e03b79.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-4/carpe-diem.jar",
+      "modVersion": "Alpha (Build 4)",
+      "sizeBytes": 35196368,
+      "downloadCount": 876,
+      "releasedAt": "2026-02-21T22:38:16Z"
     },
     {
       "tag": "build-3",
-      "name": "Alpha Build 3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-29T16:53:41Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-3",
-      "modVersion": "alpha (build 3)",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-3/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 34822148,
-          "downloadCount": 4131,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-3/carpe-diem.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "de4a33a98df198869ba8a63bcc47db7741b1dd91",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/de4a33a98df198869ba8a63bcc47db7741b1dd91.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-3/carpe-diem.jar",
+      "modVersion": "alpha (build 3)",
+      "sizeBytes": 34822148,
+      "downloadCount": 4132,
+      "releasedAt": "2025-06-29T16:53:41Z"
     },
     {
       "tag": "build-2",
-      "name": "Alpha Build 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-02T06:32:14Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-2",
-      "modVersion": "alpha (build 2)",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-2/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 17179095,
-          "downloadCount": 1832,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-2/carpe-diem.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "20f4789ae98bfa35ec9746832d27229aceda2b71",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/20f4789ae98bfa35ec9746832d27229aceda2b71.zip"
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-2/carpe-diem.jar",
+      "modVersion": "alpha (build 2)",
+      "sizeBytes": 17179095,
+      "downloadCount": 1832,
+      "releasedAt": "2025-05-02T06:32:14Z"
     },
     {
       "tag": "build-1",
-      "name": "Alpha Build 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-26T12:26:27Z",
-      "htmlUrl": "https://github.com/nullotte/Carpe-Diem/releases/tag/build-1",
-      "modVersion": "alpha (build 1)",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-1/carpe-diem.jar",
-      "sourceArchiveUrl": "https://github.com/nullotte/carpe-diem/archive/refs/tags/build-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "carpe-diem.jar",
-          "size": 17130242,
-          "downloadCount": 722,
-          "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-1/carpe-diem.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "88368caf36d14a16f4133fffc745bad461d616ee",
-      "archiveByCommitUrl": "https://github.com/nullotte/carpe-diem/archive/88368caf36d14a16f4133fffc745bad461d616ee.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "build-3",
-      "modVersion": "alpha (build 3)",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "build-8",
-      "modVersion": "(Beta) Build 8",
-      "minGameVersion": "155.3",
-      "maxGameVersion": 157,
-      "hasRelease": true
-    },
-    {
-      "tag": "build-9",
-      "modVersion": "(Beta) Build 9",
-      "minGameVersion": "157",
-      "maxGameVersion": 158,
-      "hasRelease": true
-    },
-    {
-      "tag": "build-11",
-      "modVersion": "(Beta) Build 11",
-      "minGameVersion": "158",
-      "maxGameVersion": 159.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "build-14",
-      "modVersion": "(Beta) Build 14",
-      "minGameVersion": "159.7",
-      "maxGameVersion": 160.5,
-      "hasRelease": true
-    },
-    {
-      "tag": "build-15",
-      "modVersion": "(Beta) Build 15",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/nullotte/Carpe-Diem/releases/download/build-1/carpe-diem.jar",
+      "modVersion": "alpha (build 1)",
+      "sizeBytes": 17130242,
+      "downloadCount": 722,
+      "releasedAt": "2025-04-26T12:26:27Z"
     }
   ],
   "meta": {
+    "name": "carpe-diem",
+    "author": "Nullotte",
+    "description": "\nA peaceful campaign mod which focuses on factory building.\n\nBuild production lines, decode archives, and launch landing pods across the sectors of Asphodel, a cold planet ravaged by the forces of war. Salvage what remains of the Coalition, and restore their industry to its former glory.\n\nThis mod is mostly complete in terms of implemented content, but its campaign is still unfinished. Either way, I hope you'll enjoy what the mod has to offer.\n",
+    "version": "(Beta) Build 15",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "carpediem.CarpeDiem",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

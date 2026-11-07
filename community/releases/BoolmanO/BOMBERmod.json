@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BoolmanO/BOMBERmod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-10T16:17:00Z",
-      "htmlUrl": "https://github.com/BoolmanO/BOMBERmod/releases/tag/v1.0",
-      "modVersion": "1b",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v1.0/BomberMod-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/BoolmanO/BOMBERmod/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BomberMod-1.0.jar",
-          "size": 40378,
-          "downloadCount": 4516,
-          "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v1.0/BomberMod-1.0.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "b72703a69383b13b2cea981cece48c002f724a97",
-      "archiveByCommitUrl": "https://github.com/BoolmanO/BOMBERmod/archive/b72703a69383b13b2cea981cece48c002f724a97.zip"
+      "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v1.0/BomberMod-1.0.jar",
+      "modVersion": "1b",
+      "sizeBytes": 40378,
+      "downloadCount": 4516,
+      "releasedAt": "2022-07-10T16:17:00Z"
     },
     {
       "tag": "v1b",
-      "name": "v1b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-08T09:15:55Z",
-      "htmlUrl": "https://github.com/BoolmanO/BOMBERmod/releases/tag/v1b",
-      "modVersion": "1b",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v1b/BomberModDescktop-1b.jar",
-      "sourceArchiveUrl": "https://github.com/BoolmanO/BOMBERmod/archive/refs/tags/v1b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BomberModDescktop-1b.jar",
-          "size": 20211,
-          "downloadCount": 57,
-          "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v1b/BomberModDescktop-1b.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ac67040f6a4734a2eb674197eca593beb61cf01b",
-      "archiveByCommitUrl": "https://github.com/BoolmanO/BOMBERmod/archive/ac67040f6a4734a2eb674197eca593beb61cf01b.zip"
+      "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v1b/BomberModDescktop-1b.jar",
+      "modVersion": "1b",
+      "sizeBytes": 20211,
+      "downloadCount": 57,
+      "releasedAt": "2022-07-08T09:15:55Z"
     },
     {
       "tag": "v0.1",
-      "name": "Title))",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-05T09:34:11Z",
-      "htmlUrl": "https://github.com/BoolmanO/BOMBERmod/releases/tag/v0.1",
-      "modVersion": "0.1a",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v0.1/BomberMod-0.1a.jar",
-      "sourceArchiveUrl": "https://github.com/BoolmanO/BOMBERmod/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BomberMod-0.1a.jar",
-          "size": 13671,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v0.1/BomberMod-0.1a.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "493e33b3af6470aeb13de567d57eca41279956ce",
-      "archiveByCommitUrl": "https://github.com/BoolmanO/BOMBERmod/archive/493e33b3af6470aeb13de567d57eca41279956ce.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1b",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/BoolmanO/BOMBERmod/releases/download/v0.1/BomberMod-0.1a.jar",
+      "modVersion": "0.1a",
+      "sizeBytes": 13671,
+      "downloadCount": 40,
+      "releasedAt": "2022-07-05T09:34:11Z"
     }
   ],
   "meta": {
+    "name": "BomberMod",
+    "author": "main developer: [white]ne[blue]kit[red]508",
+    "description": "Mod adds bomber unit tree.",
+    "version": "1b",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "core.Mod",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

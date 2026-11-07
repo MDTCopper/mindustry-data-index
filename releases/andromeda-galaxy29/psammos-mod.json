@@ -1,428 +1,277 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "andromeda-galaxy29/psammos-mod",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v5.0.4",
-      "name": "Psammos Mod v5.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-19T15:32:34Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v5.0.4",
-      "modVersion": "5.0.4",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v5.0.4/Psammos-Mod-v5.0.4.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v5.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v5.0.4.jar",
-          "size": 2477703,
-          "downloadCount": 4855,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v5.0.4/Psammos-Mod-v5.0.4.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c181b742eaca5334bea2cefecb38af41a138c592",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/c181b742eaca5334bea2cefecb38af41a138c592.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v5.0.4/Psammos-Mod-v5.0.4.jar",
+      "modVersion": "5.0.4",
+      "sizeBytes": 2477703,
+      "downloadCount": 4861,
+      "releasedAt": "2026-08-19T15:32:34Z"
     },
     {
       "tag": "v1.5.3",
-      "name": "Psammos Mod v1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-08T17:38:17Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.5.3",
-      "modVersion": "1.5.3",
+      "kind": "release",
       "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.3/Psammos-Mod-v1.5.3.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.5.3.jar",
-          "size": 2460526,
-          "downloadCount": 3141,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.3/Psammos-Mod-v1.5.3.jar"
+          "from": "155.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "242d59afd1a6e952c838fb02d9c61114bdc5d60b",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/242d59afd1a6e952c838fb02d9c61114bdc5d60b.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.3/Psammos-Mod-v1.5.3.jar",
+      "modVersion": "1.5.3",
+      "sizeBytes": 2460526,
+      "downloadCount": 3141,
+      "releasedAt": "2026-07-08T17:38:17Z"
     },
     {
       "tag": "v1.5.2",
-      "name": "Psammos Mod v1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-08T17:04:03Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "release",
       "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.2/Psammos-Mod-v1.5.2.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.5.2.jar",
-          "size": 2460590,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.2/Psammos-Mod-v1.5.2.jar"
+          "from": "155.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a15e1519e08b6e7006349cf882881d42cf9410dd",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/a15e1519e08b6e7006349cf882881d42cf9410dd.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.2/Psammos-Mod-v1.5.2.jar",
+      "modVersion": "1.5.2",
+      "sizeBytes": 2460590,
+      "downloadCount": 22,
+      "releasedAt": "2026-07-08T17:04:03Z"
     },
     {
       "tag": "v1.5.1",
-      "name": "Psammos Mod v1.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T22:53:03Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.1/Psammos-Mod-v1.5.1.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.5.1.jar",
-          "size": 2460737,
-          "downloadCount": 267,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.1/Psammos-Mod-v1.5.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4f054ff8bca16245a418f50ba3d59fe4190ce18c",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/4f054ff8bca16245a418f50ba3d59fe4190ce18c.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5.1/Psammos-Mod-v1.5.1.jar",
+      "modVersion": "1.5.1",
+      "sizeBytes": 2460737,
+      "downloadCount": 267,
+      "releasedAt": "2026-07-07T22:53:03Z"
     },
     {
       "tag": "v1.5",
-      "name": "Psammos Mod v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-06T20:55:00Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.5",
-      "modVersion": "1.4.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5/Psammos-Mod-v1.5.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.5.jar",
-          "size": 2460793,
-          "downloadCount": 70,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5/Psammos-Mod-v1.5.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "eafb297bb9a115385ed1051307d625e49b48f961",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/eafb297bb9a115385ed1051307d625e49b48f961.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.5/Psammos-Mod-v1.5.jar",
+      "modVersion": "1.4.1",
+      "sizeBytes": 2460793,
+      "downloadCount": 70,
+      "releasedAt": "2026-07-06T20:55:00Z"
     },
     {
       "tag": "v1.4.1",
-      "name": "Psammos Mod v1.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-14T13:49:35Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.4.1",
-      "modVersion": "1.4.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.4.1/Psammos-Mod-v1.4.1.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.4.1.jar",
-          "size": 1887481,
-          "downloadCount": 7403,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.4.1/Psammos-Mod-v1.4.1.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "c65826397c6acd180500d13f2080dd62e9d840ec",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/c65826397c6acd180500d13f2080dd62e9d840ec.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.4.1/Psammos-Mod-v1.4.1.jar",
+      "modVersion": "1.4.1",
+      "sizeBytes": 1887481,
+      "downloadCount": 7403,
+      "releasedAt": "2025-06-14T13:49:35Z"
     },
     {
       "tag": "v1.4",
-      "name": "Psammos Mod v1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-13T22:26:59Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.4/Psammos-Mod-v1.4.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.4.jar",
-          "size": 1887481,
-          "downloadCount": 215,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.4/Psammos-Mod-v1.4.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "619b94ebfd8a5ebe90c3094b9be2e0ad9f3bc0c9",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/619b94ebfd8a5ebe90c3094b9be2e0ad9f3bc0c9.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.4/Psammos-Mod-v1.4.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 1887481,
+      "downloadCount": 215,
+      "releasedAt": "2025-06-13T22:26:59Z"
     },
     {
       "tag": "v1.3",
-      "name": "Psammos Mod v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-02T18:29:23Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.3",
-      "modVersion": "1.3",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.3/Psammos-Mod-v1.3.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.3.jar",
-          "size": 1715204,
-          "downloadCount": 6860,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.3/Psammos-Mod-v1.3.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "c2c4f3184608815f104c0bf3100cc8026f748160",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/c2c4f3184608815f104c0bf3100cc8026f748160.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.3/Psammos-Mod-v1.3.jar",
+      "modVersion": "1.3",
+      "sizeBytes": 1715204,
+      "downloadCount": 6860,
+      "releasedAt": "2024-11-02T18:29:23Z"
     },
     {
       "tag": "v1.2.2",
-      "name": "Psammos Mod v1.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-15T20:16:07Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.2.2",
-      "modVersion": "1.2.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2.2/Psammos-Mod-v1.2.2.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.2.2.jar",
-          "size": 1332654,
-          "downloadCount": 6727,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2.2/Psammos-Mod-v1.2.2.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "ba4392921a71ed2a81002d51c7c289eb4d4ba9fa",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/ba4392921a71ed2a81002d51c7c289eb4d4ba9fa.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2.2/Psammos-Mod-v1.2.2.jar",
+      "modVersion": "1.2.2",
+      "sizeBytes": 1332654,
+      "downloadCount": 6728,
+      "releasedAt": "2024-06-15T20:16:07Z"
     },
     {
       "tag": "v1.2.1",
-      "name": "Psammos Mod v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-14T21:42:30Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.2.1",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2.1/Psammos-Mod-v1.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.2.1.jar",
-          "size": 1326451,
-          "downloadCount": 165,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2.1/Psammos-Mod-v1.2.1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "61186545d077c4242f1a0aba000d665e50b6cc10",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/61186545d077c4242f1a0aba000d665e50b6cc10.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2.1/Psammos-Mod-v1.2.1.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 1326451,
+      "downloadCount": 165,
+      "releasedAt": "2024-06-14T21:42:30Z"
     },
     {
       "tag": "v1.2",
-      "name": "Psammos Mod v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-14T16:03:12Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2/Psammos-Mod-v1.2.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.2.jar",
-          "size": 1325215,
-          "downloadCount": 102,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2/Psammos-Mod-v1.2.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "70e37932e3638475e23c8b26ea20d8398b5e8eb9",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/70e37932e3638475e23c8b26ea20d8398b5e8eb9.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.2/Psammos-Mod-v1.2.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 1325215,
+      "downloadCount": 102,
+      "releasedAt": "2024-06-14T16:03:12Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "Psammos Mod v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-15T15:53:41Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.1.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1.2/Psammos-Mod-v1.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.1.2.jar",
-          "size": 823495,
-          "downloadCount": 4958,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1.2/Psammos-Mod-v1.1.2.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "4b4de6592e23e0b539de0fcfcaf57d145e95583d",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/4b4de6592e23e0b539de0fcfcaf57d145e95583d.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1.2/Psammos-Mod-v1.1.2.jar",
+      "modVersion": "1",
+      "sizeBytes": 823495,
+      "downloadCount": 4958,
+      "releasedAt": "2024-04-15T15:53:41Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "Psammos Mod v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-13T11:29:07Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1.1/Psammos-Mod-v1.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.1.1.jar",
-          "size": 803113,
-          "downloadCount": 105,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1.1/Psammos-Mod-v1.1.1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "35de687eedbe246c3deaa966e79da26e84536b94",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/35de687eedbe246c3deaa966e79da26e84536b94.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1.1/Psammos-Mod-v1.1.1.jar",
+      "modVersion": "1",
+      "sizeBytes": 803113,
+      "downloadCount": 105,
+      "releasedAt": "2024-04-13T11:29:07Z"
     },
     {
       "tag": "v1.1",
-      "name": "Psammos Mod v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-12T14:46:12Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1/Psammos-Mod-v1.1.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.1.jar",
-          "size": 803087,
-          "downloadCount": 118,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1/Psammos-Mod-v1.1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "bbd67f67da8b9ccc619ea4c9a2c2790c6b54947b",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/bbd67f67da8b9ccc619ea4c9a2c2790c6b54947b.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.1/Psammos-Mod-v1.1.jar",
+      "modVersion": "1",
+      "sizeBytes": 803087,
+      "downloadCount": 118,
+      "releasedAt": "2024-04-12T14:46:12Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "Psammos Mod v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-10T20:12:09Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.0.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.0.1/Psammos-Mod-v1.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.0.1.jar",
-          "size": 579945,
-          "downloadCount": 133,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.0.1/Psammos-Mod-v1.0.1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "3233e85004c8f26bd3739538c57c8308615b9797",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/3233e85004c8f26bd3739538c57c8308615b9797.zip"
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.0.1/Psammos-Mod-v1.0.1.jar",
+      "modVersion": "1",
+      "sizeBytes": 579945,
+      "downloadCount": 133,
+      "releasedAt": "2024-04-10T20:12:09Z"
     },
     {
       "tag": "v1.0",
-      "name": "Psammos Mod v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-26T15:41:35Z",
-      "htmlUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.0/Psammos-Mod-v1.0.jar",
-      "sourceArchiveUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Psammos-Mod-v1.0.jar",
-          "size": 579874,
-          "downloadCount": 827,
-          "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.0/Psammos-Mod-v1.0.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "2ee27133ec52a6c08ec71b1dff6e106e237067ed",
-      "archiveByCommitUrl": "https://github.com/andromeda-galaxy29/psammos-mod/archive/2ee27133ec52a6c08ec71b1dff6e106e237067ed.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.3",
-      "modVersion": "1.3",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5",
-      "modVersion": "1.4.1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.3",
-      "modVersion": "1.5.3",
-      "minGameVersion": "155.4",
-      "maxGameVersion": 159.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "v5.0.4",
-      "modVersion": "5.0.4",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Andromeda-Galaxy29/Psammos-Mod/releases/download/v1.0/Psammos-Mod-v1.0.jar",
+      "modVersion": "1",
+      "sizeBytes": 579874,
+      "downloadCount": 827,
+      "releasedAt": "2024-03-26T15:41:35Z"
     }
   ],
   "meta": {
+    "name": "psammos",
+    "author": "AndromedaGalaxy29",
+    "description": "Adds a new desert planet. Almost all life which once populated this planet was wiped out by a cataclysmic event known as the Incineration. Survive in these harsh conditions and conquer [accent[]]Psammos[white[]]\r\n\r\nJoin our discord server: [#5865f2[]]https://discord.gg/eBzANBKCBA[[]]\r\n\r\nIf you like the mod, consider giving it a star on GitHub. Thank you\r\n\r\n[#f1c40f[]]Team members:[[]]\r\n- [#6e7f96[]] Andromeda-Galaxy29[[]]\r\n- [#6e7f96[]] iRatzeyMezeri[[]]\r\n\r\n[#31fea7[]]Contributors:[[]]\r\n- [#5865f2[]] thisiscrimsoncheck[[]] - several maps, suggestions and other contributions\r\n- [#5865f2[]] tinport[[]] - various suggestions and maps\r\n- [#5865f2[]] mrmaplethewolf[[]] - maps\r\n- [#5865f2[]] cirrusisakey[[]] - help with sfx\r\n- [#6e7f96[]] xhstoyea[[]] - Chinese translations\r\n\r\n[#9b59b6[]]Other thanks:[[]]\r\n- [#5865f2[]] chozochorizo[[]] for help with balancing the mod\r\n- [#6e7f96[]] ThomasThings[[]] and [#6e7f96[]] Twcash[[]] for the main menu title font\r\n\r\n[#abe2ca[]]Suggestors:[[]]\r\n- [#5865f2[]] nekoarkbruhagain_07111[[]]\r\n- [#5865f2[]] allayscrafter[[]]",
+    "version": "5.0.4",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "psammos.PsammosMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,158 +1,102 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "yuria-shikibe/newhorizonmod",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.3.0",
-      "name": "2.3.0 Release (v160)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-07T13:14:00Z",
-      "htmlUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/tag/v2.3.0",
-      "modVersion": "2.3.0",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.3.0/NewHorizonMod.2.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/refs/tags/v2.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NewHorizonMod.2.3.0.jar",
-          "size": 9677339,
-          "downloadCount": 18028,
-          "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.3.0/NewHorizonMod.2.3.0.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d8fd65c0c03e22abc8684404f787fc6382bf28f5",
-      "archiveByCommitUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/d8fd65c0c03e22abc8684404f787fc6382bf28f5.zip"
+      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.3.0/NewHorizonMod.2.3.0.jar",
+      "modVersion": "2.3.0",
+      "sizeBytes": 9677339,
+      "downloadCount": 18141,
+      "releasedAt": "2026-10-07T13:14:00Z"
     },
     {
       "tag": "v2.2.1",
-      "name": "2.2.1 Release (v159.7)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-31T14:10:35Z",
-      "htmlUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/tag/v2.2.1",
-      "modVersion": "2.2.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.2.1/NewHorizonMod.2.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/refs/tags/v2.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NewHorizonMod.2.2.1.jar",
-          "size": 11513541,
-          "downloadCount": 55988,
-          "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.2.1/NewHorizonMod.2.2.1.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "128d5a447642b526cca7422f4be0935b84ac63b5",
-      "archiveByCommitUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/128d5a447642b526cca7422f4be0935b84ac63b5.zip"
+      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.2.1/NewHorizonMod.2.2.1.jar",
+      "modVersion": "2.2.1",
+      "sizeBytes": 11513541,
+      "downloadCount": 55990,
+      "releasedAt": "2026-07-31T14:10:35Z"
     },
     {
       "tag": "v2.1.2",
-      "name": "2.1.2 Release (v159)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T07:39:38Z",
-      "htmlUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/tag/v2.1.2",
-      "modVersion": "2.1.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.2/NewHorizonMod.2.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/refs/tags/v2.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NewHorizonMod.2.1.2.jar",
-          "size": 11046424,
-          "downloadCount": 20585,
-          "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.2/NewHorizonMod.2.1.2.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "678f18040082b5db60dea280199ecac07d64338e",
-      "archiveByCommitUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/678f18040082b5db60dea280199ecac07d64338e.zip"
+      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.2/NewHorizonMod.2.1.2.jar",
+      "modVersion": "2.1.2",
+      "sizeBytes": 11046424,
+      "downloadCount": 20586,
+      "releasedAt": "2026-07-07T07:39:38Z"
     },
     {
       "tag": "v2.1.1",
-      "name": "2.1.1 Release (v158)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-05T05:43:14Z",
-      "htmlUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/tag/v2.1.1",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.1/NewHorizonMod.2.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/refs/tags/v2.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NewHorizonMod.2.1.1.jar",
-          "size": 10995827,
-          "downloadCount": 2502,
-          "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.1/NewHorizonMod.2.1.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "795c0ecafafa86179146f7bed288c45493604b99",
-      "archiveByCommitUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/795c0ecafafa86179146f7bed288c45493604b99.zip"
+      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.1/NewHorizonMod.2.1.1.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 10995827,
+      "downloadCount": 2502,
+      "releasedAt": "2026-07-05T05:43:14Z"
     },
     {
       "tag": "v2.1.0",
-      "name": "2.1.0 Release (v158)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-28T12:15:09Z",
-      "htmlUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/tag/v2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.0/NewHorizonMod2.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/refs/tags/v2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NewHorizonMod2.1.0.jar",
-          "size": 10886541,
-          "downloadCount": 5898,
-          "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.0/NewHorizonMod2.1.0.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ce020097f3af73f898c828fba965e55c52048509",
-      "archiveByCommitUrl": "https://github.com/yuria-shikibe/newhorizonmod/archive/ce020097f3af73f898c828fba965e55c52048509.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.1.1",
-      "modVersion": "2.1.1",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.1.2",
-      "modVersion": "2.1.2",
-      "minGameVersion": "159",
-      "maxGameVersion": 159.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.3.0",
-      "modVersion": "2.3.0",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Yuria-Shikibe/NewHorizonMod/releases/download/v2.1.0/NewHorizonMod2.1.0.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 10886541,
+      "downloadCount": 5900,
+      "releasedAt": "2026-06-28T12:15:09Z"
     }
   ],
   "meta": {
+    "name": "new-horizon",
+    "author": "Yuria & Lao",
+    "description": "Beta Release. Campaign Not Included.\n\nCurrently contains stable content and optional vanilla override. \n\nMod is playable as extension for both Serpulo and Erekir. \n\nCampaign still WIP.",
+    "version": "2.3.0",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "newhorizon.NewHorizon",
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": true
   }
 }

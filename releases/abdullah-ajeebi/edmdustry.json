@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "abdullah-ajeebi/edmdustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "EDMdustry v1.0 [160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-24T18:53:39Z",
-      "htmlUrl": "https://github.com/Abdullah-Ajeebi/EDMdustry/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "150.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Abdullah-Ajeebi/EDMdustry/releases/download/v1.0/EDMdustry.zip",
-      "sourceArchiveUrl": "https://github.com/abdullah-ajeebi/edmdustry/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "EDMdustry.zip",
-          "size": 137457822,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Abdullah-Ajeebi/EDMdustry/releases/download/v1.0/EDMdustry.zip"
+          "from": "150.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2c7c618a3e6b2cee760f9c52686b6943d4734d11",
-      "archiveByCommitUrl": "https://github.com/abdullah-ajeebi/edmdustry/archive/2c7c618a3e6b2cee760f9c52686b6943d4734d11.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/Abdullah-Ajeebi/EDMdustry/releases/download/v1.0/EDMdustry.zip",
       "modVersion": "1.0",
-      "minGameVersion": "150.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 137457822,
+      "downloadCount": 6,
+      "releasedAt": "2026-09-24T18:53:39Z"
     }
   ],
   "meta": {
+    "name": "edmdustry",
+    "author": "john sound",
+    "description": "EDM 🔥🔥🔥🔥",
+    "version": "1.0",
+    "minGameVersion": "150.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

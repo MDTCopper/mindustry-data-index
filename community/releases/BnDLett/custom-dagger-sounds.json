@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BnDLett/custom-dagger-sounds",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-12T03:20:28Z",
-      "htmlUrl": "https://github.com/BnDLett/custom-dagger-sounds/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BnDLett/custom-dagger-sounds/releases/download/1.0/dagger-custom-assets.main.sounds.jar",
-      "sourceArchiveUrl": "https://github.com/BnDLett/custom-dagger-sounds/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dagger-custom-assets.main.sounds.jar",
-          "size": 22737,
-          "downloadCount": 368,
-          "downloadUrl": "https://github.com/BnDLett/custom-dagger-sounds/releases/download/1.0/dagger-custom-assets.main.sounds.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "787644063362e833b3a6918135e8d3dd53edffa5",
-      "archiveByCommitUrl": "https://github.com/BnDLett/custom-dagger-sounds/archive/787644063362e833b3a6918135e8d3dd53edffa5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
+      "downloadUrl": "https://github.com/BnDLett/custom-dagger-sounds/releases/download/1.0/dagger-custom-assets.main.sounds.jar",
       "modVersion": "1",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 22737,
+      "downloadCount": 368,
+      "releasedAt": "2023-09-12T03:20:28Z"
     }
   ],
   "meta": {
+    "name": "Lorem Ipsum",
+    "author": "BnDLett",
+    "description": "Lorem ipsum",
+    "version": "1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "progressed.world.Main",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

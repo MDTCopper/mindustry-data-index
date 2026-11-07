@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "vsdragon1239/mindustry-starlinelab-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.2.3",
-      "name": "0.2.3 Tecnologia",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-09T18:13:28Z",
-      "htmlUrl": "https://github.com/VSDragon1239/Mindustry-StarlineLab-Mod/releases/tag/0.2.3",
-      "modVersion": "0.2.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VSDragon1239/Mindustry-StarlineLab-Mod/releases/download/0.2.3/StarlineLabMod.jar",
-      "sourceArchiveUrl": "https://github.com/vsdragon1239/mindustry-starlinelab-mod/archive/refs/tags/0.2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarlineLabMod.jar",
-          "size": 1428941,
-          "downloadCount": 239,
-          "downloadUrl": "https://github.com/VSDragon1239/Mindustry-StarlineLab-Mod/releases/download/0.2.3/StarlineLabMod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1e4b37892cdb175968ca461282d803a92ce1ffca",
-      "archiveByCommitUrl": "https://github.com/vsdragon1239/mindustry-starlinelab-mod/archive/1e4b37892cdb175968ca461282d803a92ce1ffca.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.2.3",
+      "downloadUrl": "https://github.com/VSDragon1239/Mindustry-StarlineLab-Mod/releases/download/0.2.3/StarlineLabMod.jar",
       "modVersion": "0.2.3",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1428941,
+      "downloadCount": 239,
+      "releasedAt": "2026-01-09T18:13:28Z"
     }
   ],
   "meta": {
+    "name": "starline-lab",
+    "author": "VSDragon1239",
+    "description": "Новая планета Ноктис: ночной пепел, два базовых рудных ресурса и стартовая ветка развития. '\n' Интересно, полный перевод мода new-horizon будет?",
+    "version": "0.2.3",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "starlinelab.StarlineLabMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

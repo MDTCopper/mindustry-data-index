@@ -1,57 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "atoposatrax/mechanical-factions",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.6.7",
-      "name": "JunkTech Industry v0.6.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-05T06:27:55Z",
-      "htmlUrl": "https://github.com/AtoposAtrax/mechanical-factions/releases/tag/v0.6.7",
-      "modVersion": "[cyan]0.6.7",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/atoposatrax/mechanical-factions/archive/refs/tags/v0.6.7.zip",
-      "sourceArchiveUrl": "https://github.com/atoposatrax/mechanical-factions/archive/refs/tags/v0.6.7.zip",
-      "assets": [],
-      "commitSha": "a57195697fc3b885c0591cc03fc83ed5f87565e6",
-      "archiveByCommitUrl": "https://github.com/atoposatrax/mechanical-factions/archive/a57195697fc3b885c0591cc03fc83ed5f87565e6.zip"
+      "modVersion": "[cyan]0.6.7",
+      "releasedAt": "2026-06-05T06:27:55Z"
     },
     {
       "tag": "v0.6",
-      "name": "JunkTech Industry v0.6",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-10T12:29:32Z",
-      "htmlUrl": "https://github.com/AtoposAtrax/mechanical-factions/releases/tag/v0.6",
-      "modVersion": "[cyan]0.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/atoposatrax/mechanical-factions/archive/refs/tags/v0.6.zip",
-      "sourceArchiveUrl": "https://github.com/atoposatrax/mechanical-factions/archive/refs/tags/v0.6.zip",
-      "assets": [],
-      "commitSha": "bcd1f16a107f543aca58fed59263d37f08edb0a7",
-      "archiveByCommitUrl": "https://github.com/atoposatrax/mechanical-factions/archive/bcd1f16a107f543aca58fed59263d37f08edb0a7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.6.7",
-      "modVersion": "[cyan]0.6.7",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "[cyan]0.6",
+      "releasedAt": "2026-05-10T12:29:32Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "mechanical-factions",
+    "author": "FallingDice",
+    "description": "[cyan]Unleash the power of salvaged technology![]\n JunkTech Industry adds a complete mechanical faction with 10+ new units and specialized turrets.\n Build, recycle, and conquer with the ultimate scrap-metal army.",
+    "version": "[cyan]0.6.7",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

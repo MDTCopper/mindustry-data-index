@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "xenonixq/erekirlogic",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.2",
-      "name": "1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-15T21:38:47Z",
-      "htmlUrl": "https://github.com/Xenonixq/ErekirLogic/releases/tag/1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.2/ErekirLogic.zip",
-      "sourceArchiveUrl": "https://github.com/xenonixq/erekirlogic/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ErekirLogic.zip",
-          "size": 34753,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.2/ErekirLogic.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0db6427a214f4f9e5e5f4c3a0d14abdde9b1ea95",
-      "archiveByCommitUrl": "https://github.com/xenonixq/erekirlogic/archive/0db6427a214f4f9e5e5f4c3a0d14abdde9b1ea95.zip"
+      "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.2/ErekirLogic.zip",
+      "modVersion": "1.2",
+      "sizeBytes": 34753,
+      "downloadCount": 7,
+      "releasedAt": "2026-07-15T21:38:47Z"
     },
     {
       "tag": "1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-14T13:51:57Z",
-      "htmlUrl": "https://github.com/Xenonixq/ErekirLogic/releases/tag/1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.1/ErekirLogic.zip",
-      "sourceArchiveUrl": "https://github.com/xenonixq/erekirlogic/archive/refs/tags/1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ErekirLogic.zip",
-          "size": 107620,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.1/ErekirLogic.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3a5da32f39a544cc5f031bb79f6e79395560d997",
-      "archiveByCommitUrl": "https://github.com/xenonixq/erekirlogic/archive/3a5da32f39a544cc5f031bb79f6e79395560d997.zip"
+      "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.1/ErekirLogic.zip",
+      "modVersion": "1.1",
+      "sizeBytes": 107620,
+      "downloadCount": 3,
+      "releasedAt": "2026-07-14T13:51:57Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-28T21:19:36Z",
-      "htmlUrl": "https://github.com/Xenonixq/ErekirLogic/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.0/ErekirLogic.zip",
-      "sourceArchiveUrl": "https://github.com/xenonixq/erekirlogic/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ErekirLogic.zip",
-          "size": 101771,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.0/ErekirLogic.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fea1fd6c4098efa04eeab5476a1d7af2b7abc7aa",
-      "archiveByCommitUrl": "https://github.com/xenonixq/erekirlogic/archive/fea1fd6c4098efa04eeab5476a1d7af2b7abc7aa.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.2",
-      "modVersion": "1.2",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Xenonixq/ErekirLogic/releases/download/1.0/ErekirLogic.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 101771,
+      "downloadCount": 2,
+      "releasedAt": "2026-06-28T21:19:36Z"
     }
   ],
   "meta": {
+    "name": "erekirlogic",
+    "author": "Xenonix",
+    "description": "[RU]Данный мод добавляет логические блоки в Erekir.\n[ENG]This mod adds logic blocks to Erekir.",
+    "version": "1.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

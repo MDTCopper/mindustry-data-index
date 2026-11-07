@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "stabu-dev/thats-fire",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "That's Fire: 1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-03T21:25:06Z",
-      "htmlUrl": "https://github.com/stabu-dev/Thats-Fire/releases/tag/v1.0.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "150.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/stabu-dev/Thats-Fire/releases/download/v1.0.0/Thats-Fire.zip",
-      "sourceArchiveUrl": "https://github.com/stabu-dev/thats-fire/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Thats-Fire.zip",
-          "size": 110318,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/stabu-dev/Thats-Fire/releases/download/v1.0.0/Thats-Fire.zip"
+          "from": "150.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d8c6627308985526a0d08bbb15a77bfb039acd3e",
-      "archiveByCommitUrl": "https://github.com/stabu-dev/thats-fire/archive/d8c6627308985526a0d08bbb15a77bfb039acd3e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
+      "downloadUrl": "https://github.com/stabu-dev/Thats-Fire/releases/download/v1.0.0/Thats-Fire.zip",
       "modVersion": "1.0",
-      "minGameVersion": "150.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 110318,
+      "downloadCount": 54,
+      "releasedAt": "2025-08-03T21:25:06Z"
     }
   ],
   "meta": {
+    "name": "that'sfire",
+    "author": "stabu_",
+    "description": "Makes fire pretty \n[[]gray](and blocky)[]",
+    "version": "1.0",
+    "minGameVersion": "150.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

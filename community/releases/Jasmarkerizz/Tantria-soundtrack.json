@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Jasmarkerizz/Tantria-soundtrack",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "Published mod",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-18T16:18:41Z",
-      "htmlUrl": "https://github.com/Jasmarkerizz/Tantria-soundtrack/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "143.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Jasmarkerizz/Tantria-soundtrack/releases/download/v1.0.0/Tantrian-music.2.zip",
-      "sourceArchiveUrl": "https://github.com/Jasmarkerizz/Tantria-soundtrack/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tantrian-music.2.zip",
-          "size": 8408277,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Jasmarkerizz/Tantria-soundtrack/releases/download/v1.0.0/Tantrian-music.2.zip"
+          "from": "143.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "44538f67a1ed5840090bf3c66e5ee7e6c98227fb",
-      "archiveByCommitUrl": "https://github.com/Jasmarkerizz/Tantria-soundtrack/archive/44538f67a1ed5840090bf3c66e5ee7e6c98227fb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
+      "downloadUrl": "https://github.com/Jasmarkerizz/Tantria-soundtrack/releases/download/v1.0.0/Tantrian-music.2.zip",
       "modVersion": "1",
-      "minGameVersion": "143.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 8408277,
+      "downloadCount": 24,
+      "releasedAt": "2023-09-18T16:18:41Z"
     }
   ],
   "meta": {
+    "name": "tantros soundtrack",
+    "author": "Jasmarkerizz (Jasmarkelina)",
+    "description": "An optional mod for Tantria. Replaces some soundtracks. Music made by Jasmarkelina",
+    "version": "1",
+    "minGameVersion": "143.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

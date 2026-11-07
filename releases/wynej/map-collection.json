@@ -1,119 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wynej/map-collection",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "b0.4",
-      "name": "b0.4 - 50 map milestone",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-01T13:00:15Z",
-      "htmlUrl": "https://github.com/wynej/Map-Collection/releases/tag/b0.4",
-      "modVersion": "b0.4",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.4/map-collection-b0.4.zip",
-      "sourceArchiveUrl": "https://github.com/wynej/map-collection/archive/refs/tags/b0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "map-collection-b0.4.zip",
-          "size": 2491406,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.4/map-collection-b0.4.zip"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "de3f92ffd63dd9b14a126ae4c56c0cda295a1f6c",
-      "archiveByCommitUrl": "https://github.com/wynej/map-collection/archive/de3f92ffd63dd9b14a126ae4c56c0cda295a1f6c.zip"
+      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.4/map-collection-b0.4.zip",
+      "modVersion": "b0.4",
+      "sizeBytes": 2491406,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-01T13:00:15Z"
     },
     {
       "tag": "b0.3",
-      "name": "b0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-05T07:26:27Z",
-      "htmlUrl": "https://github.com/wynej/Map-Collection/releases/tag/b0.3",
-      "modVersion": "b0.3",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.3/map-collection-b0.3.zip",
-      "sourceArchiveUrl": "https://github.com/wynej/map-collection/archive/refs/tags/b0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "map-collection-b0.3.zip",
-          "size": 2451658,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.3/map-collection-b0.3.zip"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "33589c8ff0b2292bfa8c9d95b79fcfcb1d5728f7",
-      "archiveByCommitUrl": "https://github.com/wynej/map-collection/archive/33589c8ff0b2292bfa8c9d95b79fcfcb1d5728f7.zip"
+      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.3/map-collection-b0.3.zip",
+      "modVersion": "b0.3",
+      "sizeBytes": 2451658,
+      "downloadCount": 7,
+      "releasedAt": "2026-10-05T07:26:27Z"
     },
     {
       "tag": "b0.2",
-      "name": "b0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-03T11:39:57Z",
-      "htmlUrl": "https://github.com/wynej/Map-Collection/releases/tag/b0.2",
-      "modVersion": "b0.2",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.2/map-collection-b0.2.zip",
-      "sourceArchiveUrl": "https://github.com/wynej/map-collection/archive/refs/tags/b0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "map-collection-b0.2.zip",
-          "size": 2283519,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.2/map-collection-b0.2.zip"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4ca56c4b6ae78c40164fbb19c634382f3be9b1ec",
-      "archiveByCommitUrl": "https://github.com/wynej/map-collection/archive/4ca56c4b6ae78c40164fbb19c634382f3be9b1ec.zip"
+      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.2/map-collection-b0.2.zip",
+      "modVersion": "b0.2",
+      "sizeBytes": 2283519,
+      "downloadCount": 12,
+      "releasedAt": "2026-08-03T11:39:57Z"
     },
     {
       "tag": "b0.1",
-      "name": "b0.1 - First release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-01T12:36:43Z",
-      "htmlUrl": "https://github.com/wynej/Map-Collection/releases/tag/b0.1",
-      "modVersion": "b0.1",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.1/map-collection-b0.1.zip",
-      "sourceArchiveUrl": "https://github.com/wynej/map-collection/archive/refs/tags/b0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "map-collection-b0.1.zip",
-          "size": 2117637,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.1/map-collection-b0.1.zip"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fd72dc35f4fa02ad6afa446765d92f3971831fa3",
-      "archiveByCommitUrl": "https://github.com/wynej/map-collection/archive/fd72dc35f4fa02ad6afa446765d92f3971831fa3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "b0.4",
-      "modVersion": "b0.4",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.1/map-collection-b0.1.zip",
+      "modVersion": "b0.1",
+      "sizeBytes": 2117637,
+      "downloadCount": 10,
+      "releasedAt": "2026-07-01T12:36:43Z"
     }
   ],
   "meta": {
+    "name": "map-collection",
+    "author": "Wine",
+    "description": "A simple json mod that aims to be a curated repository for Mindustry maps. Currently, the mod has [stat[]]50 maps[[]]. Maps are fully vanilla compatible.\n\n[stat[]]I asked permission from each map creator before including them in the mod, see github README for full list of credits.\n\n[grey[]]b0.4 Changelog:\n Added 'Tar Maar' & 'Twin Oxbow' by uio",
+    "version": "b0.4",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

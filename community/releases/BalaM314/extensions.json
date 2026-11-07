@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BalaM314/extensions",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "alpha-1.0",
-      "name": "Alpha 1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-02-07T03:52:07Z",
-      "htmlUrl": "https://github.com/BalaM314/extensions/releases/tag/alpha-1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BalaM314/extensions/releases/download/alpha-1.0/extensionsDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/BalaM314/extensions/archive/refs/tags/alpha-1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "extensionsDesktop.jar",
-          "size": 135524,
-          "downloadCount": 245,
-          "downloadUrl": "https://github.com/BalaM314/extensions/releases/download/alpha-1.0/extensionsDesktop.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "079e542be3362eb04a346c311dadafac5a46a15e",
-      "archiveByCommitUrl": "https://github.com/BalaM314/extensions/archive/079e542be3362eb04a346c311dadafac5a46a15e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alpha-1.0",
+      "downloadUrl": "https://github.com/BalaM314/extensions/releases/download/alpha-1.0/extensionsDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "140.4",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 135524,
+      "downloadCount": 245,
+      "releasedAt": "2023-02-07T03:52:07Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "extensions",
+    "author": "BalaM314",
+    "description": "Extends everything and improves the endgame by adding an extra tier of stuff.",
+    "version": "1",
+    "minGameVersion": "140.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "balam314.extensions.Extensions",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

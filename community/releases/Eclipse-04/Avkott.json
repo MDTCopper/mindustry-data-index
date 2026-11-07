@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Eclipse-04/Avkott",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.1.1",
-      "name": "Avkott 0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-20T05:06:13Z",
-      "htmlUrl": "https://github.com/Eclipse-04/Avkott/releases/tag/0.1.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1.1/Avkott-inside-a-jar.jar",
-      "sourceArchiveUrl": "https://github.com/Eclipse-04/Avkott/archive/refs/tags/0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Avkott-inside-a-jar.jar",
-          "size": 2693606,
-          "downloadCount": 26299,
-          "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1.1/Avkott-inside-a-jar.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "64faaf0cef99a40f01da512d8f87332d6f79a3ad",
-      "archiveByCommitUrl": "https://github.com/Eclipse-04/Avkott/archive/64faaf0cef99a40f01da512d8f87332d6f79a3ad.zip"
+      "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1.1/Avkott-inside-a-jar.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 2693606,
+      "downloadCount": 26299,
+      "releasedAt": "2022-07-20T05:06:13Z"
     },
     {
       "tag": "0.1",
-      "name": "Avkott itself! - First Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-06T13:41:26Z",
-      "htmlUrl": "https://github.com/Eclipse-04/Avkott/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1/Avkott.jar",
-      "sourceArchiveUrl": "https://github.com/Eclipse-04/Avkott/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Avkott.jar",
-          "size": 2450630,
-          "downloadCount": 332,
-          "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1/Avkott.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "19913b08ff2bb36b9e27f4e517121ff25d07fae6",
-      "archiveByCommitUrl": "https://github.com/Eclipse-04/Avkott/archive/19913b08ff2bb36b9e27f4e517121ff25d07fae6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1.1",
+      "downloadUrl": "https://github.com/Eclipse-04/Avkott/releases/download/0.1/Avkott.jar",
       "modVersion": "0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 2450630,
+      "downloadCount": 332,
+      "releasedAt": "2022-07-06T13:41:26Z"
     }
   ],
   "meta": {
+    "name": "avkott",
+    "author": "[sky]Eclipse & [green]Liplum",
+    "description": "Mindustry Erekir mod moment",
+    "version": "0.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "avkott.Avkott",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

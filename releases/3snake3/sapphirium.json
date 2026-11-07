@@ -1,397 +1,273 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "3snake3/sapphirium",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v17.2",
-      "name": "Beta 17.2 version",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-28T02:52:12Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v17.2",
-      "modVersion": "17.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.2/sapphirium.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v17.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sapphirium.zip",
-          "size": 5131607,
-          "downloadCount": 402,
-          "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.2/sapphirium.zip"
+          "from": "147",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f2cb2c55ead676187c944c5e29b3d4bb4b8f5504",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/f2cb2c55ead676187c944c5e29b3d4bb4b8f5504.zip"
+      "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.2/sapphirium.zip",
+      "modVersion": "17.0",
+      "sizeBytes": 5131607,
+      "downloadCount": 402,
+      "releasedAt": "2025-04-28T02:52:12Z",
+      "prerelease": true
     },
     {
       "tag": "v17.1",
-      "name": "Beta 17.1 release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-20T12:07:40Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v17.1",
-      "modVersion": "17.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.1/sapphirium.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v17.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sapphirium.zip",
-          "size": 3999927,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.1/sapphirium.zip"
+          "from": "147",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0d91bff38926dc9934460f6fa87f47f5a7c01010",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/0d91bff38926dc9934460f6fa87f47f5a7c01010.zip"
+      "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.1/sapphirium.zip",
+      "modVersion": "17.0",
+      "sizeBytes": 3999927,
+      "downloadCount": 47,
+      "releasedAt": "2025-04-20T12:07:40Z",
+      "prerelease": true
     },
     {
       "tag": "v17.0",
-      "name": "Huge Erekir Update",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-17T05:09:29Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v17.0",
-      "modVersion": "17.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.0/sapphirium.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v17.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sapphirium.zip",
-          "size": 3996067,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.0/sapphirium.zip"
+          "from": "147",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c1cd529d56c495ae7801d8c50a05ca665683c685",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/c1cd529d56c495ae7801d8c50a05ca665683c685.zip"
+      "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v17.0/sapphirium.zip",
+      "modVersion": "17.0",
+      "sizeBytes": 3996067,
+      "downloadCount": 46,
+      "releasedAt": "2025-04-17T05:09:29Z",
+      "prerelease": true
     },
     {
       "tag": "v16.1",
-      "name": "Addition to the v16 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-09T10:46:39Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v16.1",
-      "modVersion": "16.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v16.1.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v16.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sapphirium.jar",
-          "size": 2864473,
-          "downloadCount": 5805,
-          "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v16.1/sapphirium.jar"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "12ea88a71ef0ea263d61845c1e70ead955602074",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/12ea88a71ef0ea263d61845c1e70ead955602074.zip"
+      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v16.1.zip",
+      "modVersion": "16.0",
+      "sizeBytes": 2864473,
+      "downloadCount": 5806,
+      "releasedAt": "2023-06-09T10:46:39Z"
     },
     {
       "tag": "v16.0",
-      "name": "Global Update #16.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-01T07:18:58Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v16.0",
-      "modVersion": "16.0 beta",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v16.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v16.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sapphirium.jar",
-          "size": 2573589,
-          "downloadCount": 678,
-          "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v16.0/sapphirium.jar"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b7512053134d16d08f63b707a9fd92058b9a4537",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/b7512053134d16d08f63b707a9fd92058b9a4537.zip"
+      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v16.0.zip",
+      "modVersion": "16.0 beta",
+      "sizeBytes": 2573589,
+      "downloadCount": 678,
+      "releasedAt": "2023-04-01T07:18:58Z"
     },
     {
       "tag": "v15.0",
-      "name": "Update to v15.0 Erekir Edition",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-29T05:41:12Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v15.0",
-      "modVersion": "15.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v15.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v15.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "sapphirium.jar",
-          "size": 1201605,
-          "downloadCount": 19968,
-          "downloadUrl": "https://github.com/3Snake3/Sapphirium/releases/download/v15.0/sapphirium.jar"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "84f3a1fee1b48d7df67a24c5b91b7d7c5e5dcd43",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/84f3a1fee1b48d7df67a24c5b91b7d7c5e5dcd43.zip"
+      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v15.0.zip",
+      "modVersion": "15.0",
+      "sizeBytes": 1201605,
+      "downloadCount": 19968,
+      "releasedAt": "2022-07-29T05:41:12Z"
     },
     {
       "tag": "v14.0",
-      "name": "Update #14.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-16T01:02:52Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v14.0",
-      "modVersion": "14.1",
+      "kind": "tag",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "135",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v14.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v14.0.zip",
-      "assets": [],
-      "commitSha": "187422afff2ea60f8c29a304a686de3ff2034511",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/187422afff2ea60f8c29a304a686de3ff2034511.zip"
+      "modVersion": "14.1",
+      "releasedAt": "2022-05-16T01:02:52Z"
     },
     {
       "tag": "v13.0",
-      "name": "Update #13.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-16T00:06:25Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v13.0",
-      "modVersion": "13.0",
+      "kind": "tag",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "135",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v13.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v13.0.zip",
-      "assets": [],
-      "commitSha": "d605cc1263a3b15a0e51f4d5789be6e03e3d0bbf",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/d605cc1263a3b15a0e51f4d5789be6e03e3d0bbf.zip"
+      "modVersion": "13.0",
+      "releasedAt": "2022-03-16T00:06:25Z"
     },
     {
       "tag": "v12.0",
-      "name": "Update #12.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-09T09:09:11Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v12.0",
-      "modVersion": "12.0",
+      "kind": "tag",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "135",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v12.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v12.0.zip",
-      "assets": [],
-      "commitSha": "957f778515a36b9d52d7e3b3e6b9740cfd0174d0",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/957f778515a36b9d52d7e3b3e6b9740cfd0174d0.zip"
+      "modVersion": "12.0",
+      "releasedAt": "2022-01-09T09:09:11Z"
     },
     {
       "tag": "v11.0",
-      "name": "Update #11.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-04T02:11:11Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v11.0",
-      "modVersion": "11.0",
+      "kind": "tag",
       "minGameVersion": "134",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "134",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v11.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v11.0.zip",
-      "assets": [],
-      "commitSha": "77da7b9e375b5ed065a74861365cff23aff4d977",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/77da7b9e375b5ed065a74861365cff23aff4d977.zip"
+      "modVersion": "11.0",
+      "releasedAt": "2021-11-04T02:11:11Z"
     },
     {
       "tag": "v10.0",
-      "name": "Update #10.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-03T03:28:31Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v10.0",
-      "modVersion": "9.0",
+      "kind": "tag",
       "minGameVersion": "127",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "127",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v10.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v10.0.zip",
-      "assets": [],
-      "commitSha": "8fc0d7d58c2143bf50023b0a274dc9eb6ebe641d",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/8fc0d7d58c2143bf50023b0a274dc9eb6ebe641d.zip"
+      "modVersion": "9.0",
+      "releasedAt": "2021-10-03T03:28:31Z"
     },
     {
       "tag": "v9.0",
-      "name": "Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-26T03:42:56Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v9.0",
-      "modVersion": "9.0",
+      "kind": "tag",
       "minGameVersion": "127",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "127",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v9.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v9.0.zip",
-      "assets": [],
-      "commitSha": "ee986f2011c12b883b2895b51540dc2ede33b2c3",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/ee986f2011c12b883b2895b51540dc2ede33b2c3.zip"
+      "modVersion": "9.0",
+      "releasedAt": "2021-08-26T03:42:56Z"
     },
     {
       "tag": "V8.0",
-      "name": "Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-02T14:01:46Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/V8.0",
-      "modVersion": "8.0",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/V8.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/V8.0.zip",
-      "assets": [],
-      "commitSha": "2633b99e741d39218701a520ac9191f499259110",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/2633b99e741d39218701a520ac9191f499259110.zip"
+      "modVersion": "8.0",
+      "releasedAt": "2021-07-02T14:01:46Z"
     },
     {
       "tag": "v7.0",
-      "name": "Update, units deletion",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-05-30T13:14:06Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/v7.0",
-      "modVersion": "7.0",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v7.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/v7.0.zip",
-      "assets": [],
-      "commitSha": "99f8ca7b5a221bac824299002db2b2c84caebec0",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/99f8ca7b5a221bac824299002db2b2c84caebec0.zip"
+      "modVersion": "7.0",
+      "releasedAt": "2021-05-30T13:14:06Z"
     },
     {
       "tag": "6.0",
-      "name": "Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-05-07T00:50:48Z",
-      "htmlUrl": "https://github.com/3Snake3/Sapphirium/releases/tag/6.0",
-      "modVersion": "6.0",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/6.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/6.0.zip",
-      "assets": [],
-      "commitSha": "ea4d65f2e574d4bcc08c45f0c518c6a9f10edcd2",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/ea4d65f2e574d4bcc08c45f0c518c6a9f10edcd2.zip"
+      "modVersion": "6.0",
+      "releasedAt": "2021-05-07T00:50:48Z"
+    },
+    {
+      "tag": "5.1",
+      "kind": "tag",
+      "minGameVersion": "122",
+      "gameVersionRanges": [
+        {
+          "from": "122",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/5.1.zip",
+      "modVersion": "5.1"
     },
     {
       "tag": "V16.0",
-      "name": "V16.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/3snake3/sapphirium/tree/V16.0",
-      "modVersion": "16.0 beta",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/V16.0.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/V16.0.zip",
-      "assets": [],
-      "commitSha": "b7512053134d16d08f63b707a9fd92058b9a4537",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/b7512053134d16d08f63b707a9fd92058b9a4537.zip"
-    },
-    {
-      "tag": "5.1",
-      "name": "5.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/3snake3/sapphirium/tree/5.1",
-      "modVersion": "5.1",
-      "minGameVersion": "122",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/5.1.zip",
-      "sourceArchiveUrl": "https://github.com/3snake3/sapphirium/archive/refs/tags/5.1.zip",
-      "assets": [],
-      "commitSha": "b76b0839e72f311871c0cd1f99bef5b79f58bd54",
-      "archiveByCommitUrl": "https://github.com/3snake3/sapphirium/archive/b76b0839e72f311871c0cd1f99bef5b79f58bd54.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "5.1",
-      "modVersion": "5.1",
-      "minGameVersion": "122",
-      "maxGameVersion": 126.2,
-      "hasRelease": false
-    },
-    {
-      "tag": "V8.0",
-      "modVersion": "8.0",
-      "minGameVersion": "126.2",
-      "maxGameVersion": 127,
-      "hasRelease": true
-    },
-    {
-      "tag": "v10.0",
-      "modVersion": "9.0",
-      "minGameVersion": "127",
-      "maxGameVersion": 134,
-      "hasRelease": true
-    },
-    {
-      "tag": "v11.0",
-      "modVersion": "11.0",
-      "minGameVersion": "134",
-      "maxGameVersion": 135,
-      "hasRelease": true
-    },
-    {
-      "tag": "v14.0",
-      "modVersion": "14.1",
-      "minGameVersion": "135",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v16.1",
-      "modVersion": "16.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v17.2",
-      "modVersion": "17.0",
-      "minGameVersion": "147",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "16.0 beta"
     }
   ],
   "meta": {
+    "name": "sapphirium",
+    "author": "Snake",
+    "description": "\nAh the Sapphirium, sounds good right? \nLet us introduce the list of content it includes: A hell amount of fraction turrets, brand new fraction units and in the end new interesting materials and mechanics. \n\nContentmaker & Helpers List: \nKostolom - Balancer, Mapper, Json coder, Effect designer, Multi-tool functionally. Discord profile kostolom#9777 \nLaim - Spriter, map maker. Discord profile LaIm-Ik.json#5237\nLiplum - Multicrafter's library author. Discord profile Liplum#2623 \nFr4ncuzS4n - JS helper. Discord profile ADG021222#7589 \nFox1va - A small helper. Discord profile Fox1va_#3532 \nVervalamis - Spriter. Discord profile Saigo no-nozomi#1206 \n\nThanks everyone for support.\n",
+    "version": "17.0",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

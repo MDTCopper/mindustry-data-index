@@ -1,98 +1,81 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "quatrefall/slag-plus",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Alpha4",
-      "name": "Pre-Alpha 1.3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-28T03:48:22Z",
-      "htmlUrl": "https://github.com/quatrefall/slag-plus/releases/tag/Alpha4",
-      "modVersion": "1.2 Alpha",
+      "kind": "tag",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha4.zip",
-      "sourceArchiveUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha4.zip",
-      "assets": [],
-      "commitSha": "d4f73bf30e1394fc8d0ed7171b90ad31f5ab89cc",
-      "archiveByCommitUrl": "https://github.com/quatrefall/slag-plus/archive/d4f73bf30e1394fc8d0ed7171b90ad31f5ab89cc.zip"
+      "modVersion": "1.2 Alpha",
+      "releasedAt": "2022-11-28T03:48:22Z",
+      "prerelease": true
     },
     {
       "tag": "Alpha3atu1",
-      "name": "Alpha 1.2 Updating Sprites! Wide use!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-24T14:23:11Z",
-      "htmlUrl": "https://github.com/quatrefall/slag-plus/releases/tag/Alpha3atu1",
-      "modVersion": "1.2 Alpha",
+      "kind": "tag",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha3atu1.zip",
-      "sourceArchiveUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha3atu1.zip",
-      "assets": [],
-      "commitSha": "ef37804ceac7656addde158f0cae2f0f74ebc44d",
-      "archiveByCommitUrl": "https://github.com/quatrefall/slag-plus/archive/ef37804ceac7656addde158f0cae2f0f74ebc44d.zip"
+      "modVersion": "1.2 Alpha",
+      "releasedAt": "2022-11-24T14:23:11Z"
     },
     {
       "tag": "Alpha2",
-      "name": "Alpha 1.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-24T11:37:16Z",
-      "htmlUrl": "https://github.com/quatrefall/slag-plus/releases/tag/Alpha2",
-      "modVersion": "1.0 Alpha",
+      "kind": "tag",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha2.zip",
-      "sourceArchiveUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha2.zip",
-      "assets": [],
-      "commitSha": "506645f7c65a0e3b10f91b645194cf09f2166f70",
-      "archiveByCommitUrl": "https://github.com/quatrefall/slag-plus/archive/506645f7c65a0e3b10f91b645194cf09f2166f70.zip"
+      "modVersion": "1.0 Alpha",
+      "releasedAt": "2022-11-24T11:37:16Z",
+      "prerelease": true
     },
     {
       "tag": "Alpha",
-      "name": "Alpha 1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-24T07:19:26Z",
-      "htmlUrl": "https://github.com/quatrefall/slag-plus/releases/tag/Alpha",
-      "modVersion": "1.0 Alpha",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/quatrefall/slag-plus/releases/download/Alpha/Slagplusmod.zip",
-      "sourceArchiveUrl": "https://github.com/quatrefall/slag-plus/archive/refs/tags/Alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Slagplusmod.zip",
-          "size": 9885,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/quatrefall/slag-plus/releases/download/Alpha/Slagplusmod.zip"
+          "from": "140.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c4a81f49850a104a7851c2b7ea7e3c0b34b2d3f2",
-      "archiveByCommitUrl": "https://github.com/quatrefall/slag-plus/archive/c4a81f49850a104a7851c2b7ea7e3c0b34b2d3f2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Alpha4",
-      "modVersion": "1.2 Alpha",
-      "minGameVersion": "140.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/quatrefall/slag-plus/releases/download/Alpha/Slagplusmod.zip",
+      "modVersion": "1.0 Alpha",
+      "sizeBytes": 9885,
+      "releasedAt": "2022-11-24T07:19:26Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "liquidsplus",
+    "author": "UltimaChaoZ",
+    "description": "Gives more opportunity to use liquids!",
+    "version": "1.2 Alpha",
+    "minGameVersion": "140.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

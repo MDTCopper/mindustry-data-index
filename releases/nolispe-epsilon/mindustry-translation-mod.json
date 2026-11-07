@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nolispe-epsilon/mindustry-translation-mod",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-26T18:34:58Z",
-      "htmlUrl": "https://github.com/Nolispe-epsiloN/Mindustry-Translation-Mod/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Nolispe-epsiloN/Mindustry-Translation-Mod/releases/download/v0.1/autotranslateDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/nolispe-epsilon/mindustry-translation-mod/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "autotranslateDesktop.jar",
-          "size": 142003,
-          "downloadCount": 270,
-          "downloadUrl": "https://github.com/Nolispe-epsiloN/Mindustry-Translation-Mod/releases/download/v0.1/autotranslateDesktop.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "60a6803e68e60a605f7f86905a05293df76be248",
-      "archiveByCommitUrl": "https://github.com/nolispe-epsilon/mindustry-translation-mod/archive/60a6803e68e60a605f7f86905a05293df76be248.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1",
+      "downloadUrl": "https://github.com/Nolispe-epsiloN/Mindustry-Translation-Mod/releases/download/v0.1/autotranslateDesktop.jar",
       "modVersion": "0.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 142003,
+      "downloadCount": 270,
+      "releasedAt": "2026-08-26T18:34:58Z"
     }
   ],
   "meta": {
+    "name": "autotranslate",
+    "author": "Nolispe-epsiloN",
+    "description": "Automatically translates multiplayer chat using a local model. Incoming messages are detected and translated into your language; outgoing messages are translated into a language you pick before being sent. Fully local - nothing leaves your machine.",
+    "version": "0.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "autotranslate.AutoTranslateMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

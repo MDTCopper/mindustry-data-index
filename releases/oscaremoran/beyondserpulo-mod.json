@@ -1,155 +1,101 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "oscaremoran/beyondserpulo-mod",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.6",
-      "name": "v1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-21T18:51:34Z",
-      "htmlUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/tag/v1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.6/BeyondSerpulo-Mod.jar",
-      "sourceArchiveUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BeyondSerpulo-Mod.jar",
-          "size": 1060699,
-          "downloadCount": 3273,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.6/BeyondSerpulo-Mod.jar"
-        },
-        {
-          "name": "Xorinal-Mod.zip",
-          "size": 3368273,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.6/Xorinal-Mod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "845ac76cb0215ee478a27a66304ec59a947ca7e5",
-      "archiveByCommitUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/845ac76cb0215ee478a27a66304ec59a947ca7e5.zip"
+      "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.6/BeyondSerpulo-Mod.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 4428972,
+      "downloadCount": 3319,
+      "releasedAt": "2026-05-21T18:51:34Z"
     },
     {
       "tag": "v1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-28T20:16:30Z",
-      "htmlUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/tag/v1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.5/Xorinal-Mod.jar",
-      "sourceArchiveUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xorinal-Mod.jar",
-          "size": 910295,
-          "downloadCount": 1856,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.5/Xorinal-Mod.jar"
-        },
-        {
-          "name": "Xorinal-Mod.zip",
-          "size": 1625307,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.5/Xorinal-Mod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "51c082d2b36cedad1558f0e563170339d9a4359f",
-      "archiveByCommitUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/51c082d2b36cedad1558f0e563170339d9a4359f.zip"
+      "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v1.5/Xorinal-Mod.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 2535602,
+      "downloadCount": 1862,
+      "releasedAt": "2026-04-28T20:16:30Z"
     },
     {
       "tag": "v0.1.2",
-      "name": "v0.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-19T18:47:38Z",
-      "htmlUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/tag/v0.1.2",
-      "modVersion": "0.1.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xorinal-Mod.zip",
-          "size": 162564,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v0.1.2/Xorinal-Mod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "93880453938fd3de61ec8e2f83ec2445c79e6b93",
-      "archiveByCommitUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/93880453938fd3de61ec8e2f83ec2445c79e6b93.zip"
+      "downloadUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.2.zip",
+      "modVersion": "0.1.2",
+      "sizeBytes": 162564,
+      "downloadCount": 10,
+      "releasedAt": "2026-04-19T18:47:38Z"
     },
     {
       "tag": "v0.1.1",
-      "name": "v0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-19T18:45:12Z",
-      "htmlUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/tag/v0.1.1",
-      "modVersion": "0.1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xorinal-Mod.zip",
-          "size": 162519,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v0.1.1/Xorinal-Mod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c55d16ff6bab85a9641aea326dfecc6f48e557a4",
-      "archiveByCommitUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/c55d16ff6bab85a9641aea326dfecc6f48e557a4.zip"
+      "downloadUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.1.zip",
+      "modVersion": "0.1.1",
+      "sizeBytes": 162519,
+      "downloadCount": 3,
+      "releasedAt": "2026-04-19T18:45:12Z"
     },
     {
       "tag": "v0.1.0",
-      "name": "v0.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-19T18:32:06Z",
-      "htmlUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/tag/v0.1.0",
-      "modVersion": "0.1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xorinal-Mod.zip",
-          "size": 162511,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/oscaremoran/BeyondSerpulo-Mod/releases/download/v0.1.0/Xorinal-Mod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8865e4c5c178597266a2885a49ef611856c70fea",
-      "archiveByCommitUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/8865e4c5c178597266a2885a49ef611856c70fea.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.6",
-      "modVersion": "1.6",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/oscaremoran/beyondserpulo-mod/archive/refs/tags/v0.1.0.zip",
+      "modVersion": "0.1.0",
+      "sizeBytes": 162511,
+      "downloadCount": 4,
+      "releasedAt": "2026-04-19T18:32:06Z"
     }
   ],
   "meta": {
+    "name": "xorinal",
+    "author": "Oscar Moran",
+    "description": "\nBeyond Serpulo expands the Mindustry universe with new planets — Xorinal (organic spore world), Tetra (frost moon), and Vantres (blackened volcanic moon of Erekir). Currently v1.6. Firmly Beta. Try it and if you like it please star on github! Contact me at oscaremoran20@gmail.com. \nUPDATES:\nLICHEN UPDATE (v1.2)\nFLAMEWAR UPDATE (v1.3)\nTETRA UPDATE (v1.4)\nQOL UPDATE (v1.5)\nPILOTS UPDATE (v1.6) \n\nPlease star if you like the mod! Our goal right now is 10 stars. If we get there, I'll add more campaign features!\n",
+    "version": "1.6",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "beyondserpulo.BeyondSerpuloMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

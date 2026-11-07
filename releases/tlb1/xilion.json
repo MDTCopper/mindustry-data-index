@@ -1,294 +1,201 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "tlb1/xilion",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.31.1",
-      "name": "Pre-alpha build 31 Hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-07T20:49:00Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.31.1",
-      "modVersion": "pre-alpha build 31 hotfix",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31.1/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.31.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 2038543,
-          "downloadCount": 2128,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31.1/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1753d75c7e8e81a23ac30406a611ba97580b2c8f",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/1753d75c7e8e81a23ac30406a611ba97580b2c8f.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31.1/Xilion.jar",
+      "modVersion": "pre-alpha build 31 hotfix",
+      "sizeBytes": 2038543,
+      "downloadCount": 2128,
+      "releasedAt": "2026-02-07T20:49:00Z"
     },
     {
       "tag": "v0.1.31",
-      "name": "Pre-alpha build 31",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-05T21:18:49Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.31",
-      "modVersion": "pre-alpha build 30",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.31.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1960082,
-          "downloadCount": 263,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bea3663f7c5bfc39a18240e26d73442782244755",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/bea3663f7c5bfc39a18240e26d73442782244755.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31/Xilion.jar",
+      "modVersion": "pre-alpha build 30",
+      "sizeBytes": 1960082,
+      "downloadCount": 263,
+      "releasedAt": "2026-02-05T21:18:49Z"
     },
     {
       "tag": "v0.1.30",
-      "name": "Pre-alpha build 30",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-02T16:58:39Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.30",
-      "modVersion": "pre-alpha build 30",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.30/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.30.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1847861,
-          "downloadCount": 339,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.30/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "68a40b9bc29a6e449b270654286a1e5e9348cbe1",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/68a40b9bc29a6e449b270654286a1e5e9348cbe1.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.30/Xilion.jar",
+      "modVersion": "pre-alpha build 30",
+      "sizeBytes": 1847861,
+      "downloadCount": 339,
+      "releasedAt": "2026-02-02T16:58:39Z"
     },
     {
       "tag": "v0.1.29",
-      "name": "Pre-alpha build 29",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-01T23:00:01Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.29",
-      "modVersion": "pre-alpha build 29",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.29/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.29.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1835872,
-          "downloadCount": 84,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.29/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2182d80730034391bbf10bd3c4f0032c5e7a5089",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/2182d80730034391bbf10bd3c4f0032c5e7a5089.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.29/Xilion.jar",
+      "modVersion": "pre-alpha build 29",
+      "sizeBytes": 1835872,
+      "downloadCount": 84,
+      "releasedAt": "2026-02-01T23:00:01Z"
     },
     {
       "tag": "v0.1.28",
-      "name": "Pre-alpha build 28",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-30T18:27:43Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.28",
-      "modVersion": "pre-alpha build 25",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.28/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.28.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1759869,
-          "downloadCount": 230,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.28/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "42b33ba6ca141438f0b98368c34cea40b6d8a0e4",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/42b33ba6ca141438f0b98368c34cea40b6d8a0e4.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.28/Xilion.jar",
+      "modVersion": "pre-alpha build 25",
+      "sizeBytes": 1759869,
+      "downloadCount": 230,
+      "releasedAt": "2026-01-30T18:27:43Z"
     },
     {
       "tag": "v0.1.27",
-      "name": "Pre-alpha build 27",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-30T00:06:38Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.27",
-      "modVersion": "pre-alpha build 25",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.27/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.27.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1731364,
-          "downloadCount": 143,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.27/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b97aac53d16e62922a4695ea7eb0b6055b61f326",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/b97aac53d16e62922a4695ea7eb0b6055b61f326.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.27/Xilion.jar",
+      "modVersion": "pre-alpha build 25",
+      "sizeBytes": 1731364,
+      "downloadCount": 143,
+      "releasedAt": "2026-01-30T00:06:38Z"
     },
     {
       "tag": "v0.1.26",
-      "name": "Pre-alpha build 26",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-29T16:53:39Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.26",
-      "modVersion": "pre-alpha build 25",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.26/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.26.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1656342,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.26/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c74111281b84981dd30ef7517adc78889a59a6af",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/c74111281b84981dd30ef7517adc78889a59a6af.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.26/Xilion.jar",
+      "modVersion": "pre-alpha build 25",
+      "sizeBytes": 1656342,
+      "downloadCount": 53,
+      "releasedAt": "2026-01-29T16:53:39Z"
     },
     {
       "tag": "v0.1.25",
-      "name": "Pre-alpha build 25",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-28T21:10:15Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.25",
-      "modVersion": "pre-alpha build 25",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.25/Xilion.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.25.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion.jar",
-          "size": 1623612,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.25/Xilion.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "38c5de0e182d4678954820a962afdf0df8c133bb",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/38c5de0e182d4678954820a962afdf0df8c133bb.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.25/Xilion.jar",
+      "modVersion": "pre-alpha build 25",
+      "sizeBytes": 1623612,
+      "downloadCount": 21,
+      "releasedAt": "2026-01-28T21:10:15Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.23",
-      "name": "Pre-alpha build 23",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-02-04T23:46:36Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.23",
-      "modVersion": "pre-alpha build 24",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.23/Xilion-0.1.23test-v145.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.23.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion-0.1.23test-v145.jar",
-          "size": 1717831,
-          "downloadCount": 250,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.23/Xilion-0.1.23test-v145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "1b4453a9f24b53247d520639d39f11e716a07030",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/1b4453a9f24b53247d520639d39f11e716a07030.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.23/Xilion-0.1.23test-v145.jar",
+      "modVersion": "pre-alpha build 24",
+      "sizeBytes": 1717831,
+      "downloadCount": 250,
+      "releasedAt": "2024-02-04T23:46:36Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.22",
-      "name": "Pre-alpha build 22",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-10-28T23:17:53Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.22",
-      "modVersion": "pre-alpha build 22",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.22/Xilion-0.1.22test-v145.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.22.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion-0.1.22test-v145.jar",
-          "size": 1259345,
-          "downloadCount": 216,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.22/Xilion-0.1.22test-v145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "1d6e528727b735299dcabfd39af0846db09dc157",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/1d6e528727b735299dcabfd39af0846db09dc157.zip"
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.22/Xilion-0.1.22test-v145.jar",
+      "modVersion": "pre-alpha build 22",
+      "sizeBytes": 1259345,
+      "downloadCount": 216,
+      "releasedAt": "2023-10-28T23:17:53Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.21",
-      "name": "Pre-alpha build 21",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-08-18T20:04:07Z",
-      "htmlUrl": "https://github.com/TLB1/Xilion/releases/tag/v0.1.21",
-      "modVersion": "pre-alpha build 21",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.21/Xilion-0.1.21test-v145.jar",
-      "sourceArchiveUrl": "https://github.com/tlb1/xilion/archive/refs/tags/v0.1.21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Xilion-0.1.21test-v145.jar",
-          "size": 813062,
-          "downloadCount": 210,
-          "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.21/Xilion-0.1.21test-v145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "eeaabb19836e347037886283ad9825d006566f53",
-      "archiveByCommitUrl": "https://github.com/tlb1/xilion/archive/eeaabb19836e347037886283ad9825d006566f53.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.23",
-      "modVersion": "pre-alpha build 24",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.1.31.1",
-      "modVersion": "pre-alpha build 31 hotfix",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.21/Xilion-0.1.21test-v145.jar",
+      "modVersion": "pre-alpha build 21",
+      "sizeBytes": 813062,
+      "downloadCount": 210,
+      "releasedAt": "2023-08-18T20:04:07Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "xilion",
+    "author": "TLB1",
+    "description": "A Java Mindustry mod that adds a new campaign on the planet Xilion. Currently still in pre-alpha",
+    "version": "pre-alpha build 31 hotfix",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "xilion.XilionJavaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

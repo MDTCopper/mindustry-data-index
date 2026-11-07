@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "welloty/chichti",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.6",
-      "name": "beta 1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-12T05:38:19Z",
-      "htmlUrl": "https://github.com/Welloty/chichti/releases/tag/v1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Welloty/chichti/releases/download/v1.6/chichtiv1.6.zip",
-      "sourceArchiveUrl": "https://github.com/welloty/chichti/archive/refs/tags/v1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "chichtiv1.6.zip",
-          "size": 735981,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Welloty/chichti/releases/download/v1.6/chichtiv1.6.zip"
+          "from": "140",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6be0e94f4433addfa7f7e535605d6b4b7781ab0a",
-      "archiveByCommitUrl": "https://github.com/welloty/chichti/archive/6be0e94f4433addfa7f7e535605d6b4b7781ab0a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.6",
+      "downloadUrl": "https://github.com/Welloty/chichti/releases/download/v1.6/chichtiv1.6.zip",
       "modVersion": "1.6",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 735981,
+      "downloadCount": 3,
+      "releasedAt": "2026-10-12T05:38:19Z"
     }
   ],
   "meta": {
+    "name": "chichts-menu",
+    "author": "codex, gpt 6 luna medium",
+    "description": "Рофло мод-меню: настраиваемый спавн Т5, очистка своих юнитов, эффекты и шуточные события.",
+    "version": "1.6",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

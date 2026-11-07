@@ -1,1268 +1,845 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lu69159/morecustomsettings",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.13",
-      "name": "1.13 - In-Game Music Import Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-31T04:08:21Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.13",
-      "modVersion": "1.13",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.13/MoreCustomSettings1.13.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.13.jar",
-          "size": 276060,
-          "downloadCount": 454,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.13/MoreCustomSettings1.13.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "93b14b92b66b7bf6763bcc9b4e3d45a5ea9904db",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/93b14b92b66b7bf6763bcc9b4e3d45a5ea9904db.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.13/MoreCustomSettings1.13.jar",
+      "modVersion": "1.13",
+      "sizeBytes": 276060,
+      "downloadCount": 465,
+      "releasedAt": "2026-10-31T04:08:21Z"
     },
     {
       "tag": "1.12.6",
-      "name": "1.12.6 - Fixed Minor MusicBar Problem",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-29T06:17:35Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12.6",
-      "modVersion": "1.12.6",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.6/MoreCustomSettings1.12.6.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.6.jar",
-          "size": 276190,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.6/MoreCustomSettings1.12.6.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "df8f8474cde3634e8340010b6f1a3f6c84a9f5ba",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/df8f8474cde3634e8340010b6f1a3f6c84a9f5ba.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.6/MoreCustomSettings1.12.6.jar",
+      "modVersion": "1.12.6",
+      "sizeBytes": 276190,
+      "downloadCount": 22,
+      "releasedAt": "2026-10-29T06:17:35Z",
+      "prerelease": true
     },
     {
       "tag": "1.12.5",
-      "name": "[Test]1.12.5 - Single Request Mode for Music Search",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-24T10:06:11Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12.5",
-      "modVersion": "1.12.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.5/MoreCustomSettings1.12.5.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.5.jar",
-          "size": 275857,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.5/MoreCustomSettings1.12.5.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8b73a82405eee8199f46aa552806ce01b3640ca3",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/8b73a82405eee8199f46aa552806ce01b3640ca3.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.5/MoreCustomSettings1.12.5.jar",
+      "modVersion": "1.12.5",
+      "sizeBytes": 275857,
+      "downloadCount": 34,
+      "releasedAt": "2026-10-24T10:06:11Z",
+      "prerelease": true
     },
     {
       "tag": "1.12.4",
-      "name": "1.12.4 - Fixed Music Search UI Issues",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-24T02:18:43Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12.4",
-      "modVersion": "1.12.4",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.4/MoreCustomSettings1.12.4.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.4.jar",
-          "size": 270221,
-          "downloadCount": 872,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.4/MoreCustomSettings1.12.4.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "71f52c7718dde967f2f288efa2c067a4ba36db5d",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/71f52c7718dde967f2f288efa2c067a4ba36db5d.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.4/MoreCustomSettings1.12.4.jar",
+      "modVersion": "1.12.4",
+      "sizeBytes": 270221,
+      "downloadCount": 872,
+      "releasedAt": "2026-10-24T02:18:43Z"
     },
     {
       "tag": "1.12.3",
-      "name": "1.12.3 - Custom Music Provider Optimization",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-23T07:17:39Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12.3",
-      "modVersion": "1.12.3",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.3/MoreCustomSettings1.12.3.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.3.jar",
-          "size": 270094,
-          "downloadCount": 108,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.3/MoreCustomSettings1.12.3.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c19fd306cacee56b9ad0ee22548e412ecd93b09c",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/c19fd306cacee56b9ad0ee22548e412ecd93b09c.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.3/MoreCustomSettings1.12.3.jar",
+      "modVersion": "1.12.3",
+      "sizeBytes": 270094,
+      "downloadCount": 108,
+      "releasedAt": "2026-10-23T07:17:39Z"
     },
     {
       "tag": "1.12.2",
-      "name": "[Test]1.12.2 - Custom Music Provider Optimization",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-23T01:32:24Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12.2",
-      "modVersion": "1.12.2",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.2/MoreCustomSettings1.12.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.2.jar",
-          "size": 268021,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.2/MoreCustomSettings1.12.2.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5139eac384a74aa508bbe7cd3530a86301faa20d",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/5139eac384a74aa508bbe7cd3530a86301faa20d.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.2/MoreCustomSettings1.12.2.jar",
+      "modVersion": "1.12.2",
+      "sizeBytes": 268021,
+      "downloadCount": 6,
+      "releasedAt": "2026-10-23T01:32:24Z",
+      "prerelease": true
     },
     {
       "tag": "1.12.1",
-      "name": "[Test]1.12.1 - Custom Music Provider",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-22T09:06:04Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12.1",
-      "modVersion": "1.12.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.1/MoreCustomSettings1.12.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.1.jar",
-          "size": 265963,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.1/MoreCustomSettings1.12.1.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "317439f2af3af25409c69c64cc4a1202f4574afd",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/317439f2af3af25409c69c64cc4a1202f4574afd.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12.1/MoreCustomSettings1.12.1.jar",
+      "modVersion": "1.12.1",
+      "sizeBytes": 265963,
+      "downloadCount": 14,
+      "releasedAt": "2026-10-22T09:06:04Z",
+      "prerelease": true
     },
     {
       "tag": "1.12",
-      "name": "1.12 - Fixed known issues",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-21T14:29:39Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.12",
-      "modVersion": "1.12",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12/MoreCustomSettings1.12.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.12.jar",
-          "size": 258323,
-          "downloadCount": 275,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12/MoreCustomSettings1.12.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ca559f338c8bc05922fc8e7c95cac77e37ec9f96",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/ca559f338c8bc05922fc8e7c95cac77e37ec9f96.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.12/MoreCustomSettings1.12.jar",
+      "modVersion": "1.12",
+      "sizeBytes": 258323,
+      "downloadCount": 275,
+      "releasedAt": "2026-10-21T14:29:39Z"
     },
     {
       "tag": "1.11.1",
-      "name": "1.11.1 - Music Provider Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T15:08:39Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.11.1",
-      "modVersion": "1.11.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.11.1/MoreCustomSettings1.11.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.11.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.11.1.jar",
-          "size": 258144,
-          "downloadCount": 306,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.11.1/MoreCustomSettings1.11.1.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d05be770327727f9e76f73a22741434b6a6d9ea8",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/d05be770327727f9e76f73a22741434b6a6d9ea8.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.11.1/MoreCustomSettings1.11.1.jar",
+      "modVersion": "1.11.1",
+      "sizeBytes": 258144,
+      "downloadCount": 306,
+      "releasedAt": "2026-10-18T15:08:39Z"
     },
     {
       "tag": "1.11",
-      "name": "1.11 - Optimization of music search",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-17T10:11:57Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.11",
-      "modVersion": "1.11",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.11/MoreCustomSettings1.11.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.11.jar",
-          "size": 255824,
-          "downloadCount": 174,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.11/MoreCustomSettings1.11.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c9bbbe2ea28f0b2fea8ff5e6b05107f98c2f0583",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/c9bbbe2ea28f0b2fea8ff5e6b05107f98c2f0583.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.11/MoreCustomSettings1.11.jar",
+      "modVersion": "1.11",
+      "sizeBytes": 255824,
+      "downloadCount": 174,
+      "releasedAt": "2026-10-17T10:11:57Z"
     },
     {
       "tag": "1.10",
-      "name": "1.10 - Map Music Volume Rules",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-16T09:14:30Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.10",
-      "modVersion": "1.10.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.10/MoreCustomSettings1.10.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.10.jar",
-          "size": 251863,
-          "downloadCount": 128,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.10/MoreCustomSettings1.10.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2c92f929d08d10de5e7a526fa3757d47ca6b7e01",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/2c92f929d08d10de5e7a526fa3757d47ca6b7e01.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.10/MoreCustomSettings1.10.jar",
+      "modVersion": "1.10.0",
+      "sizeBytes": 251863,
+      "downloadCount": 128,
+      "releasedAt": "2026-10-16T09:14:30Z"
     },
     {
       "tag": "1.9.8.2",
-      "name": "[Test]1.9.8.2 - Disable Logic Music Control",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-14T04:55:31Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.8.2",
-      "modVersion": "1.9.8.2",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8.2/MoreCustomSettings1.9.8.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.8.2.jar",
-          "size": 243080,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8.2/MoreCustomSettings1.9.8.2.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8b4053cea8b7ba4c6e541c369f19d2e78a858412",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/8b4053cea8b7ba4c6e541c369f19d2e78a858412.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8.2/MoreCustomSettings1.9.8.2.jar",
+      "modVersion": "1.9.8.2",
+      "sizeBytes": 243080,
+      "downloadCount": 15,
+      "releasedAt": "2026-10-14T04:55:31Z",
+      "prerelease": true
     },
     {
       "tag": "1.9.8.1",
-      "name": "[Test]1.9.8.1 - Music Player Memory Leak Fix",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-13T07:44:53Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.8.1",
-      "modVersion": "1.9.8.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8.1/MoreCustomSettings1.9.8.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.8.1.jar",
-          "size": 241046,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8.1/MoreCustomSettings1.9.8.1.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2256196fa1c509501683ae9bacb3786508ffaebe",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/2256196fa1c509501683ae9bacb3786508ffaebe.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8.1/MoreCustomSettings1.9.8.1.jar",
+      "modVersion": "1.9.8.1",
+      "sizeBytes": 241046,
+      "downloadCount": 10,
+      "releasedAt": "2026-10-13T07:44:53Z",
+      "prerelease": true
     },
     {
       "tag": "1.9.8",
-      "name": "1.9.8 - Music&Input experience improvements",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-05T12:55:22Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.8",
-      "modVersion": "1.9.8",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8/MoreCustomSettings1.9.8.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.8.jar",
-          "size": 240929,
-          "downloadCount": 1099,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8/MoreCustomSettings1.9.8.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2700037eb8449d046c62e80cb895756e009b5bb7",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/2700037eb8449d046c62e80cb895756e009b5bb7.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.8/MoreCustomSettings1.9.8.jar",
+      "modVersion": "1.9.8",
+      "sizeBytes": 240929,
+      "downloadCount": 1099,
+      "releasedAt": "2026-10-05T12:55:22Z"
     },
     {
       "tag": "1.9.7",
-      "name": "1.9.7 - Optimization of online music preview",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T05:38:02Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.7",
-      "modVersion": "1.9.7",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.7/MoreCustomSettings1.9.7.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.7.jar",
-          "size": 239722,
-          "downloadCount": 387,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.7/MoreCustomSettings1.9.7.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "be5fd43bf4baf2a316c7b0a1e78727776793cdee",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/be5fd43bf4baf2a316c7b0a1e78727776793cdee.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.7/MoreCustomSettings1.9.7.jar",
+      "modVersion": "1.9.7",
+      "sizeBytes": 239722,
+      "downloadCount": 387,
+      "releasedAt": "2026-10-02T05:38:02Z"
     },
     {
       "tag": "1.9.6",
-      "name": "More Custom Settings 1.9.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-30T10:53:12Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.6",
-      "modVersion": "1.9.6",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.6/MoreCustomSettings1.9.6.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.6.jar",
-          "size": 237272,
-          "downloadCount": 222,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.6/MoreCustomSettings1.9.6.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5a94637d68e1934daa1babe5347192155b944c0a",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/5a94637d68e1934daa1babe5347192155b944c0a.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.6/MoreCustomSettings1.9.6.jar",
+      "modVersion": "1.9.6",
+      "sizeBytes": 237272,
+      "downloadCount": 222,
+      "releasedAt": "2026-09-30T10:53:12Z"
     },
     {
       "tag": "1.9.5.1",
-      "name": "More Custom Settings 1.9.5.1 (fixed fatal bug)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-29T09:32:54Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.5.1",
-      "modVersion": "1.9.5.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.5.1/MoreCustomSettings1.9.5.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.5.1.jar",
-          "size": 235631,
-          "downloadCount": 164,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.5.1/MoreCustomSettings1.9.5.1.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b60d95e00b59249eea01a2fd41deb200c7db87c8",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/b60d95e00b59249eea01a2fd41deb200c7db87c8.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.5.1/MoreCustomSettings1.9.5.1.jar",
+      "modVersion": "1.9.5.1",
+      "sizeBytes": 235631,
+      "downloadCount": 164,
+      "releasedAt": "2026-09-29T09:32:54Z"
     },
     {
       "tag": "1.9.5",
-      "name": "More Custom Settings 1.9.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-29T04:52:32Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.5",
-      "modVersion": "1.9.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.5/MoreCustomSettings1.9.5.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.5.jar",
-          "size": 235840,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.5/MoreCustomSettings1.9.5.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0b12cc5e8b949e85560e0dbb52e6870e7ecec731",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/0b12cc5e8b949e85560e0dbb52e6870e7ecec731.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.5/MoreCustomSettings1.9.5.jar",
+      "modVersion": "1.9.5",
+      "sizeBytes": 235840,
+      "downloadCount": 46,
+      "releasedAt": "2026-09-29T04:52:32Z"
     },
     {
       "tag": "1.9.4",
-      "name": "More Custom Settings 1.9.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-27T14:58:30Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.4",
-      "modVersion": "1.9.4",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.4/MoreCustomSettings1.9.4.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.4.jar",
-          "size": 227832,
-          "downloadCount": 178,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.4/MoreCustomSettings1.9.4.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5e2e86cad9284b5efbc1a64f340696f896ecd752",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/5e2e86cad9284b5efbc1a64f340696f896ecd752.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.4/MoreCustomSettings1.9.4.jar",
+      "modVersion": "1.9.4",
+      "sizeBytes": 227832,
+      "downloadCount": 178,
+      "releasedAt": "2026-09-27T14:58:30Z"
     },
     {
       "tag": "1.9.3",
-      "name": "More Custom Settings 1.9.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-26T09:13:45Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.3",
-      "modVersion": "1.9.3",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.3/MoreCustomSettings1.9.3.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.3.jar",
-          "size": 225998,
-          "downloadCount": 201,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.3/MoreCustomSettings1.9.3.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e41ec62e758c4b22b5e2f7ed10bf44343bf62a0b",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/e41ec62e758c4b22b5e2f7ed10bf44343bf62a0b.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.3/MoreCustomSettings1.9.3.jar",
+      "modVersion": "1.9.3",
+      "sizeBytes": 225998,
+      "downloadCount": 201,
+      "releasedAt": "2026-09-26T09:13:45Z"
     },
     {
       "tag": "1.9.2",
-      "name": "More Custom Settings 1.9.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-25T09:53:31Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.2",
-      "modVersion": "1.9.2",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.2/MoreCustomSettings1.9.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.2.jar",
-          "size": 221680,
-          "downloadCount": 143,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.2/MoreCustomSettings1.9.2.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c8f4861e6b8431f119d1fe9f1141d5ec4738616d",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/c8f4861e6b8431f119d1fe9f1141d5ec4738616d.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.2/MoreCustomSettings1.9.2.jar",
+      "modVersion": "1.9.2",
+      "sizeBytes": 221680,
+      "downloadCount": 143,
+      "releasedAt": "2026-09-25T09:53:31Z"
     },
     {
       "tag": "1.9.1",
-      "name": "More Custom Settings 1.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-23T13:36:37Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9.1",
-      "modVersion": "1.9.1",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.1/MoreCustomSettings1.9.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.1.jar",
-          "size": 213375,
-          "downloadCount": 207,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.1/MoreCustomSettings1.9.1.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "da1656746611d7b28ef65fb0761b092700e71955",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/da1656746611d7b28ef65fb0761b092700e71955.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9.1/MoreCustomSettings1.9.1.jar",
+      "modVersion": "1.9.1",
+      "sizeBytes": 213375,
+      "downloadCount": 207,
+      "releasedAt": "2026-09-23T13:36:37Z"
     },
     {
       "tag": "1.9",
-      "name": "More Custom Settings 1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-20T14:45:15Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.9",
-      "modVersion": "1.9",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9/MoreCustomSettings1.9.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.9.jar",
-          "size": 210487,
-          "downloadCount": 286,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9/MoreCustomSettings1.9.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "16cde4aa2164ca8014085c9922c144b2b8e120af",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/16cde4aa2164ca8014085c9922c144b2b8e120af.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.9/MoreCustomSettings1.9.jar",
+      "modVersion": "1.9",
+      "sizeBytes": 210487,
+      "downloadCount": 286,
+      "releasedAt": "2026-09-20T14:45:15Z"
     },
     {
       "tag": "1.8.7",
-      "name": "More Custom Settings 1.8.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-19T12:07:45Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.7",
-      "modVersion": "1.8.7",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.7/MoreCustomSettings1.8.7.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.7.jar",
-          "size": 200680,
-          "downloadCount": 186,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.7/MoreCustomSettings1.8.7.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f9b0a91c10cba3d9d94f37d5ba18f05cab163594",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/f9b0a91c10cba3d9d94f37d5ba18f05cab163594.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.7/MoreCustomSettings1.8.7.jar",
+      "modVersion": "1.8.7",
+      "sizeBytes": 200680,
+      "downloadCount": 186,
+      "releasedAt": "2026-09-19T12:07:45Z"
     },
     {
       "tag": "1.8.6",
-      "name": "More Custom Settings 1.8.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-13T08:34:06Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.6",
-      "modVersion": "1.8.6",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.6/MoreCustomSettings1.8.6.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.6.jar",
-          "size": 198744,
-          "downloadCount": 572,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.6/MoreCustomSettings1.8.6.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e4f8fc5fccd727ece1c37e731465cf973c861bf2",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/e4f8fc5fccd727ece1c37e731465cf973c861bf2.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.6/MoreCustomSettings1.8.6.jar",
+      "modVersion": "1.8.6",
+      "sizeBytes": 198744,
+      "downloadCount": 572,
+      "releasedAt": "2026-09-13T08:34:06Z"
     },
     {
       "tag": "1.8.5",
-      "name": "More Custom Settings 1.8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-12T05:04:23Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.5",
-      "modVersion": "1.8.5",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.5/MoreCustomSettings1.8.5.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.5.jar",
-          "size": 198059,
-          "downloadCount": 205,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.5/MoreCustomSettings1.8.5.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d30da35b22afa31cb3c3e16533c86c6b7f183108",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/d30da35b22afa31cb3c3e16533c86c6b7f183108.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.5/MoreCustomSettings1.8.5.jar",
+      "modVersion": "1.8.5",
+      "sizeBytes": 198059,
+      "downloadCount": 205,
+      "releasedAt": "2026-09-12T05:04:23Z"
     },
     {
       "tag": "1.8.4",
-      "name": "More Custom Settings 1.8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-09T13:50:03Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.4",
-      "modVersion": "1.8.4",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.4/MoreCustomSettings1.8.4.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.4.jar",
-          "size": 198082,
-          "downloadCount": 264,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.4/MoreCustomSettings1.8.4.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "af79e4a4086c187343d94ad6f25cd49054d3ceee",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/af79e4a4086c187343d94ad6f25cd49054d3ceee.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.4/MoreCustomSettings1.8.4.jar",
+      "modVersion": "1.8.4",
+      "sizeBytes": 198082,
+      "downloadCount": 264,
+      "releasedAt": "2026-09-09T13:50:03Z"
     },
     {
       "tag": "1.8.3",
-      "name": "More Custom Settings 1.8.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-08T04:47:56Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.3",
-      "modVersion": "1.8.3",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.3/MoreCustomSettings1.8.3.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.3.jar",
-          "size": 197957,
-          "downloadCount": 138,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.3/MoreCustomSettings1.8.3.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "afbebf26b3105bb05b14981a96a5bcace9c967f2",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/afbebf26b3105bb05b14981a96a5bcace9c967f2.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.3/MoreCustomSettings1.8.3.jar",
+      "modVersion": "1.8.3",
+      "sizeBytes": 197957,
+      "downloadCount": 138,
+      "releasedAt": "2026-09-08T04:47:56Z"
     },
     {
       "tag": "1.8.2",
-      "name": "More Custom Settings 1.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-05T04:57:16Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.2",
-      "modVersion": "1.8.2",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.2/MoreCustomSettings1.8.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.2.jar",
-          "size": 196707,
-          "downloadCount": 264,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.2/MoreCustomSettings1.8.2.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e3ac65e39c1c857021cbf57319535125adcfdab1",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/e3ac65e39c1c857021cbf57319535125adcfdab1.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.2/MoreCustomSettings1.8.2.jar",
+      "modVersion": "1.8.2",
+      "sizeBytes": 196707,
+      "downloadCount": 264,
+      "releasedAt": "2026-09-05T04:57:16Z"
     },
     {
       "tag": "1.8.1",
-      "name": "More Custom Settings 1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-04T08:56:03Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8.1",
-      "modVersion": "1.8.1",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.1/MoreCustomSettings1.8.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.1.jar",
-          "size": 195941,
-          "downloadCount": 125,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.1/MoreCustomSettings1.8.1.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1997373efd3dc8a2bb8859e3a7173de9abce7086",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/1997373efd3dc8a2bb8859e3a7173de9abce7086.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8.1/MoreCustomSettings1.8.1.jar",
+      "modVersion": "1.8.1",
+      "sizeBytes": 195941,
+      "downloadCount": 125,
+      "releasedAt": "2026-09-04T08:56:03Z"
     },
     {
       "tag": "1.8",
-      "name": "More Custom Settings 1.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-03T18:58:08Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.8",
-      "modVersion": "1.8",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8/MoreCustomSettings1.8.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.8.jar",
-          "size": 193622,
-          "downloadCount": 72,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8/MoreCustomSettings1.8.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8a6823054d03506428d2d2a8da3874ce507f86ab",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/8a6823054d03506428d2d2a8da3874ce507f86ab.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.8/MoreCustomSettings1.8.jar",
+      "modVersion": "1.8",
+      "sizeBytes": 193622,
+      "downloadCount": 72,
+      "releasedAt": "2026-09-03T18:58:08Z"
     },
     {
       "tag": "1.7",
-      "name": "More Custom Settings 1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-29T07:32:53Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.7",
-      "modVersion": "1.7",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.7/MoreCustomSettings1.7.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.7.jar",
-          "size": 143917,
-          "downloadCount": 749,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.7/MoreCustomSettings1.7.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "637345aa5de522460db1e72c350f1c023f725345",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/637345aa5de522460db1e72c350f1c023f725345.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.7/MoreCustomSettings1.7.jar",
+      "modVersion": "1.7",
+      "sizeBytes": 143917,
+      "downloadCount": 749,
+      "releasedAt": "2026-08-29T07:32:53Z"
     },
     {
       "tag": "1.6",
-      "name": "More Custom Settings 1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-27T05:26:09Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.6/MoreCustomSettings1.6.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.6.jar",
-          "size": 131259,
-          "downloadCount": 412,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.6/MoreCustomSettings1.6.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1b824adb4300701d04504ae518b1b29fafbba960",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/1b824adb4300701d04504ae518b1b29fafbba960.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.6/MoreCustomSettings1.6.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 131259,
+      "downloadCount": 412,
+      "releasedAt": "2026-08-27T05:26:09Z"
     },
     {
       "tag": "1.5.8",
-      "name": "More Custom Settings 1.5.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-22T07:08:32Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.8",
-      "modVersion": "1.5.8",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.8/MoreCustomSettings1.5.8.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.8.jar",
-          "size": 129840,
-          "downloadCount": 541,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.8/MoreCustomSettings1.5.8.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5810948f75737315395ec775d207e86d6cbb8e14",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/5810948f75737315395ec775d207e86d6cbb8e14.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.8/MoreCustomSettings1.5.8.jar",
+      "modVersion": "1.5.8",
+      "sizeBytes": 129840,
+      "downloadCount": 541,
+      "releasedAt": "2026-08-22T07:08:32Z"
     },
     {
       "tag": "1.5.7",
-      "name": "More Custom Settings 1.5.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-22T02:06:21Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.7",
-      "modVersion": "1.5.7",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.7/MoreCustomSettings1.5.7.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.7.jar",
-          "size": 128124,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.7/MoreCustomSettings1.5.7.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0dbb5e90957e319218fb249a625d1d7808960943",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/0dbb5e90957e319218fb249a625d1d7808960943.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.7/MoreCustomSettings1.5.7.jar",
+      "modVersion": "1.5.7",
+      "sizeBytes": 128124,
+      "downloadCount": 46,
+      "releasedAt": "2026-08-22T02:06:21Z"
     },
     {
       "tag": "1.5.6",
-      "name": "More Custom Settings 1.5.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-13T05:28:44Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.6",
-      "modVersion": "1.5.6",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.6/MoreCustomSettings1.5.6.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.6.jar",
-          "size": 128208,
-          "downloadCount": 1521,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.6/MoreCustomSettings1.5.6.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c84643bec82960fc4859e2f06869b36409e074ac",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/c84643bec82960fc4859e2f06869b36409e074ac.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.6/MoreCustomSettings1.5.6.jar",
+      "modVersion": "1.5.6",
+      "sizeBytes": 128208,
+      "downloadCount": 1521,
+      "releasedAt": "2026-07-13T05:28:44Z"
     },
     {
       "tag": "1.5.5",
-      "name": "More Custom Settings 1.5.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T18:21:46Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.5",
-      "modVersion": "1.5.5",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.5/MoreCustomSettings1.5.5.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.5.jar",
-          "size": 128338,
-          "downloadCount": 315,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.5/MoreCustomSettings1.5.5.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1934963173c19e0ad82363819c109d5fb652afce",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/1934963173c19e0ad82363819c109d5fb652afce.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.5/MoreCustomSettings1.5.5.jar",
+      "modVersion": "1.5.5",
+      "sizeBytes": 128338,
+      "downloadCount": 315,
+      "releasedAt": "2026-07-07T18:21:46Z"
     },
     {
       "tag": "1.5.4",
-      "name": "More Custom Settings 1.5.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-05T12:10:36Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.4",
-      "modVersion": "1.5.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.4/MoreCustomSettings1.5.4.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.4.jar",
-          "size": 122960,
-          "downloadCount": 215,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.4/MoreCustomSettings1.5.4.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1d7d60c0f49c2b3067e75a24b4b13a4e6ba05493",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/1d7d60c0f49c2b3067e75a24b4b13a4e6ba05493.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.4/MoreCustomSettings1.5.4.jar",
+      "modVersion": "1.5.4",
+      "sizeBytes": 122960,
+      "downloadCount": 215,
+      "releasedAt": "2026-07-05T12:10:36Z"
     },
     {
       "tag": "1.5.3",
-      "name": "More Custom Settings 1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-17T08:46:09Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.3",
-      "modVersion": "1.5.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.3/MoreCustomSettings1.5.3.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.3.jar",
-          "size": 122455,
-          "downloadCount": 861,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.3/MoreCustomSettings1.5.3.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b9e05e5c49de70a81ce220258a5315fc9c3741bf",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/b9e05e5c49de70a81ce220258a5315fc9c3741bf.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.3/MoreCustomSettings1.5.3.jar",
+      "modVersion": "1.5.3",
+      "sizeBytes": 122455,
+      "downloadCount": 861,
+      "releasedAt": "2026-06-17T08:46:09Z"
     },
     {
       "tag": "1.5.2",
-      "name": "More Custom Settings 1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-12T16:48:37Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.2/MoreCustomSettings1.5.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.2.jar",
-          "size": 117196,
-          "downloadCount": 332,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.2/MoreCustomSettings1.5.2.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1a622db0450cccc72c064847d1e95585777cbf79",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/1a622db0450cccc72c064847d1e95585777cbf79.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.2/MoreCustomSettings1.5.2.jar",
+      "modVersion": "1.5.2",
+      "sizeBytes": 117196,
+      "downloadCount": 332,
+      "releasedAt": "2026-06-12T16:48:37Z"
     },
     {
       "tag": "1.5.1",
-      "name": "More Custom Settings 1.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-12T04:58:59Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.1/MoreCustomSettings1.5.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.1.jar",
-          "size": 116452,
-          "downloadCount": 73,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.1/MoreCustomSettings1.5.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fdfcb0d512708681b1fcdce46e6df69c7dd82812",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/fdfcb0d512708681b1fcdce46e6df69c7dd82812.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5.1/MoreCustomSettings1.5.1.jar",
+      "modVersion": "1.5.1",
+      "sizeBytes": 116452,
+      "downloadCount": 73,
+      "releasedAt": "2026-06-12T04:58:59Z"
     },
     {
       "tag": "1.5",
-      "name": "More Custom Settings 1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-11T09:28:24Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5/MoreCustomSettings1.5.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.5.jar",
-          "size": 114376,
-          "downloadCount": 93,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5/MoreCustomSettings1.5.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "abf89bfcead2789385fab88d8a7725b477033444",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/abf89bfcead2789385fab88d8a7725b477033444.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.5/MoreCustomSettings1.5.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 114376,
+      "downloadCount": 93,
+      "releasedAt": "2026-06-11T09:28:24Z"
     },
     {
       "tag": "1.4.3",
-      "name": "More Custom Settings 1.4.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-07T14:51:53Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.4.3",
-      "modVersion": "1.4.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.3/MoreCustomSettings1.4.3.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.4.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.4.3.jar",
-          "size": 79125,
-          "downloadCount": 309,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.3/MoreCustomSettings1.4.3.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "87353b9b4bf4c2cbb95e927bfcd3e5097338cf1f",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/87353b9b4bf4c2cbb95e927bfcd3e5097338cf1f.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.3/MoreCustomSettings1.4.3.jar",
+      "modVersion": "1.4.3",
+      "sizeBytes": 79125,
+      "downloadCount": 310,
+      "releasedAt": "2026-06-07T14:51:53Z"
     },
     {
       "tag": "1.4.2",
-      "name": "More Custom Settings 1.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-31T16:05:58Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.4.2",
-      "modVersion": "1.4.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.2/MoreCustomSettings1.4.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.4.2.jar",
-          "size": 77853,
-          "downloadCount": 608,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.2/MoreCustomSettings1.4.2.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9b072397881088d666ff67791edab0d7e2ec18e1",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/9b072397881088d666ff67791edab0d7e2ec18e1.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.2/MoreCustomSettings1.4.2.jar",
+      "modVersion": "1.4.2",
+      "sizeBytes": 77853,
+      "downloadCount": 608,
+      "releasedAt": "2026-05-31T16:05:58Z"
     },
     {
       "tag": "1.4.1",
-      "name": "More Custom Settings 1.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-28T17:38:44Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.4.1",
-      "modVersion": "1.4.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.1/MoreCustomSettings1.4.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.4.1.jar",
-          "size": 76546,
-          "downloadCount": 98,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.1/MoreCustomSettings1.4.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4bc7b3645d40a00dc0c18a1c3d39f5ad3ca6ba7f",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/4bc7b3645d40a00dc0c18a1c3d39f5ad3ca6ba7f.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4.1/MoreCustomSettings1.4.1.jar",
+      "modVersion": "1.4.1",
+      "sizeBytes": 76546,
+      "downloadCount": 98,
+      "releasedAt": "2026-05-28T17:38:44Z"
     },
     {
       "tag": "1.4",
-      "name": "More Custom Settings 1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-27T17:05:53Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4/MoreCustomSettings1.4.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.4.jar",
-          "size": 69903,
-          "downloadCount": 50,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4/MoreCustomSettings1.4.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f45d53dd67c6508f202b1bc42bacb97d179476a1",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/f45d53dd67c6508f202b1bc42bacb97d179476a1.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.4/MoreCustomSettings1.4.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 69903,
+      "downloadCount": 50,
+      "releasedAt": "2026-05-27T17:05:53Z"
     },
     {
       "tag": "1.3.1",
-      "name": "More Custom Settings 1.3.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-26T13:57:38Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.3.1",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.3.1/MoreCustomSettings1.3.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.3.1.jar",
-          "size": 58813,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.3.1/MoreCustomSettings1.3.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "48ebb7a534289794f97a040b447685b20f826980",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/48ebb7a534289794f97a040b447685b20f826980.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.3.1/MoreCustomSettings1.3.1.jar",
+      "modVersion": "1.3.1",
+      "sizeBytes": 58813,
+      "downloadCount": 4,
+      "releasedAt": "2026-05-26T13:57:38Z",
+      "prerelease": true
     },
     {
       "tag": "1.3",
-      "name": "More Custom Settings 1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-26T09:55:24Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.3",
-      "modVersion": "1.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.3/MoreCustomSettings1.3.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.3.jar",
-          "size": 58594,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.3/MoreCustomSettings1.3.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5953e92a3e14789a7d497dc84eb5158fb26e4053",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/5953e92a3e14789a7d497dc84eb5158fb26e4053.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.3/MoreCustomSettings1.3.jar",
+      "modVersion": "1.3",
+      "sizeBytes": 58594,
+      "downloadCount": 43,
+      "releasedAt": "2026-05-26T09:55:24Z"
     },
     {
       "tag": "1.2",
-      "name": "More Custom Settings 1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T04:30:00Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.2/MoreCustomSettings1.2.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.2.jar",
-          "size": 47153,
-          "downloadCount": 35,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.2/MoreCustomSettings1.2.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "693b75673371244613374953ed450e6c25ef3d2d",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/693b75673371244613374953ed450e6c25ef3d2d.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.2/MoreCustomSettings1.2.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 47153,
+      "downloadCount": 35,
+      "releasedAt": "2026-05-25T04:30:00Z"
     },
     {
       "tag": "1.1",
-      "name": "More Custom Settings 1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-24T11:21:13Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.1/MoreCustomSettings1.1.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.1.jar",
-          "size": 29620,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.1/MoreCustomSettings1.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "92809872afdb9b80bbe8ebaa03a020cb35c337bb",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/92809872afdb9b80bbe8ebaa03a020cb35c337bb.zip"
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.1/MoreCustomSettings1.1.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 29620,
+      "downloadCount": 31,
+      "releasedAt": "2026-05-24T11:21:13Z"
     },
     {
       "tag": "1.0",
-      "name": "More Custom Settings 1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-23T19:04:53Z",
-      "htmlUrl": "https://github.com/lu69159/MoreCustomSettings/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.0/MoreCustomSettings1.0.jar",
-      "sourceArchiveUrl": "https://github.com/lu69159/morecustomsettings/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreCustomSettings1.0.jar",
-          "size": 29564,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.0/MoreCustomSettings1.0.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ca9376468b9c7741c8df949c2eb81c9ccf8cb27",
-      "archiveByCommitUrl": "https://github.com/lu69159/morecustomsettings/archive/8ca9376468b9c7741c8df949c2eb81c9ccf8cb27.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.5.4",
-      "modVersion": "1.5.4",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.5.8",
-      "modVersion": "1.5.8",
-      "minGameVersion": "159",
-      "maxGameVersion": 159.5,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.9.2",
-      "modVersion": "1.9.2",
-      "minGameVersion": "159.5",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.13",
-      "modVersion": "1.13",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/lu69159/MoreCustomSettings/releases/download/1.0/MoreCustomSettings1.0.jar",
+      "modVersion": "1",
+      "sizeBytes": 29564,
+      "downloadCount": 23,
+      "releasedAt": "2026-05-23T19:04:53Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "MCS",
+    "author": "Space",
+    "description": "A mod which allows players to customize campaign difficulty, music and so on.\n一个允许玩家自定义战役难度，音乐等选项的模组。",
+    "version": "1.13",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "MCS.main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

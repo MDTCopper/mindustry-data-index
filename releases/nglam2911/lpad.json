@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nglam2911/lpad",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.0.2",
-      "name": "LPad 0.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-24T07:58:25Z",
-      "htmlUrl": "https://github.com/NgLam2911/LPad/releases/tag/0.0.2",
-      "modVersion": "0.0.2",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.2/LPad-0.0.2.jar",
-      "sourceArchiveUrl": "https://github.com/nglam2911/lpad/archive/refs/tags/0.0.2.zip",
-      "assets": [
-        {
-          "name": "LPad-0.0.2.jar",
-          "size": 7479,
-          "downloadCount": 222,
-          "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.2/LPad-0.0.2.jar"
-        }
-      ],
-      "commitSha": "5e4571dbb5d0128970646848d501a3684c84df08",
-      "archiveByCommitUrl": "https://github.com/nglam2911/lpad/archive/5e4571dbb5d0128970646848d501a3684c84df08.zip"
-    },
-    {
-      "tag": "0.0.1",
-      "name": "LPad 0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-25T04:21:38Z",
-      "htmlUrl": "https://github.com/NgLam2911/LPad/releases/tag/0.0.1",
-      "modVersion": "0.0.1",
-      "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.1/LPad-0.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/nglam2911/lpad/archive/refs/tags/0.0.1.zip",
-      "assets": [
-        {
-          "name": "LPad-0.0.1.jar",
-          "size": 7144,
-          "downloadCount": 89,
-          "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.1/LPad-0.0.1.jar"
-        }
-      ],
-      "commitSha": "226aad283efc9ec929d0ac34651e4517d70a7b71",
-      "archiveByCommitUrl": "https://github.com/nglam2911/lpad/archive/226aad283efc9ec929d0ac34651e4517d70a7b71.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.1",
-      "modVersion": "0.0.1",
-      "minGameVersion": "157",
-      "maxGameVersion": 158,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.0.2",
       "modVersion": "0.0.2",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 7479,
+      "downloadCount": 222,
+      "releasedAt": "2026-05-24T07:58:25Z"
+    },
+    {
+      "tag": "0.0.1",
+      "kind": "release",
+      "minGameVersion": "157",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.1/LPad-0.0.1.jar",
+      "modVersion": "0.0.1",
+      "sizeBytes": 7144,
+      "downloadCount": 89,
+      "releasedAt": "2026-04-25T04:21:38Z"
     }
   ],
   "meta": {
+    "name": "LPad",
+    "author": "NgLam2911",
+    "description": "Utility mod for Mindustry Landing Pad",
+    "version": "0.0.2",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "nglam2911.lpad.LPad",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

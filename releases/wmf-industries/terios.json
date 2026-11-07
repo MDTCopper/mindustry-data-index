@@ -1,113 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wmf-industries/terios",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "Terios v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-02T13:01:46Z",
-      "htmlUrl": "https://github.com/WMF-Industries/Terios/releases/tag/v1.1",
-      "modVersion": "v1.1",
+      "kind": "tag",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "f05e7baeabbba50c27f07763ec95bb249ed043a5",
-      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/f05e7baeabbba50c27f07763ec95bb249ed043a5.zip"
-    },
-    {
-      "tag": "v1",
-      "name": "Terios v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-01T21:19:33Z",
-      "htmlUrl": "https://github.com/WMF-Industries/Terios/releases/tag/v1",
-      "modVersion": "v1",
-      "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.zip",
-      "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.zip",
-      "assets": [],
-      "commitSha": "b927eac111863951258dd52a7349f96b9e3f05c7",
-      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/b927eac111863951258dd52a7349f96b9e3f05c7.zip"
-    },
-    {
-      "tag": "B1",
-      "name": "Beta v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-20T12:14:42Z",
-      "htmlUrl": "https://github.com/WMF-Industries/Terios/releases/tag/B1",
-      "modVersion": "Beta",
-      "minGameVersion": "127",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/WMF-Industries/Terios/releases/download/B1/TeriosBeta1.zip",
-      "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/B1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "TeriosBeta1.zip",
-          "size": 639400,
-          "downloadCount": 32,
-          "downloadUrl": "https://github.com/WMF-Industries/Terios/releases/download/B1/TeriosBeta1.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7785945708d6e943bc31798e9d12b9f44f307e12",
-      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/7785945708d6e943bc31798e9d12b9f44f307e12.zip"
+      "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/v1.1.zip",
+      "modVersion": "v1.1",
+      "releasedAt": "2026-06-02T13:01:46Z"
     },
     {
       "tag": "A1",
-      "name": "Alpha v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-29T13:33:19Z",
-      "htmlUrl": "https://github.com/WMF-Industries/Terios/releases/tag/A1",
-      "modVersion": "Alpha",
+      "kind": "tag",
       "minGameVersion": "127",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "127",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/A1.zip",
-      "sourceArchiveUrl": "https://github.com/wmf-industries/terios/archive/refs/tags/A1.zip",
-      "assets": [],
-      "commitSha": "6ba43fe2a52c71743136fc5f00fcb3957f0a8157",
-      "archiveByCommitUrl": "https://github.com/wmf-industries/terios/archive/6ba43fe2a52c71743136fc5f00fcb3957f0a8157.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "B1",
-      "modVersion": "Beta",
-      "minGameVersion": "127",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1",
-      "modVersion": "v1",
-      "minGameVersion": "137",
-      "maxGameVersion": 158,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1",
-      "modVersion": "v1.1",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "Alpha",
+      "releasedAt": "2022-05-29T13:33:19Z"
     }
   ],
   "meta": {
+    "name": "[#cd5640]T[#c86344]e[#c36f48]r[#be7c4b]i[#ba894f]o[#b59653]s",
+    "author": "[green]W[orange]M[brown]F [stat]Industries",
+    "description": "Similar to NeonNights",
+    "version": "v1.1",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

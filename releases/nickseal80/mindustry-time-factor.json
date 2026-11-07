@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nickseal80/mindustry-time-factor",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "Mindustry time factor mod",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-24T22:11:10Z",
-      "htmlUrl": "https://github.com/nickseal80/Mindustry-Time-Factor/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nickseal80/mindustry-time-factor/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/nickseal80/mindustry-time-factor/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "a5ea085a79cccf988d3432936be5d144ec66b192",
-      "archiveByCommitUrl": "https://github.com/nickseal80/mindustry-time-factor/archive/a5ea085a79cccf988d3432936be5d144ec66b192.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
       "modVersion": "1.0",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-02-24T22:11:10Z"
     }
   ],
   "meta": {
+    "name": "timefactor",
+    "author": "Seal",
+    "description": "Time factor of Mindustry",
+    "version": "1.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

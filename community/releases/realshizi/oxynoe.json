@@ -1,257 +1,132 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "realshizi/oxynoe",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "gamma",
-      "name": "gamma",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-23T02:13:22Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/gamma",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/gamma/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/gamma.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "oxynoe.zip",
-          "size": 59486,
-          "downloadCount": 97,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/gamma/oxynoe.zip"
+          "from": "130.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "aadfb7857d594508bebbbf4bd45baf2418a30f10",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/aadfb7857d594508bebbbf4bd45baf2418a30f10.zip"
+      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/gamma/oxynoe.zip",
+      "modVersion": "1",
+      "sizeBytes": 59486,
+      "downloadCount": 97,
+      "releasedAt": "2022-02-23T02:13:22Z"
     },
     {
       "tag": "js",
-      "name": "js magic",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-15T00:38:34Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/js",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "130.1",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/js.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/js.zip",
-      "assets": [],
-      "commitSha": "0f404b4530a3d7a9f0925c9f30534dc0c55dee9e",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/0f404b4530a3d7a9f0925c9f30534dc0c55dee9e.zip"
+      "modVersion": "1",
+      "releasedAt": "2021-10-15T00:38:34Z"
     },
     {
       "tag": "crawler",
-      "name": "femboy crawler",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-11T15:06:57Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/crawler",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/crawler/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/crawler.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "oxynoe.zip",
-          "size": 56670,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/crawler/oxynoe.zip"
+          "from": "130.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "5e3f813e3dc6a048118dd98323176d0fe96395d1",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/5e3f813e3dc6a048118dd98323176d0fe96395d1.zip"
+      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/crawler/oxynoe.zip",
+      "modVersion": "1",
+      "sizeBytes": 56670,
+      "downloadCount": 23,
+      "releasedAt": "2021-10-11T15:06:57Z"
     },
     {
       "tag": "quasar",
-      "name": "quasar",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-10T19:22:03Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/quasar",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/quasar/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/quasar.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "oxynoe.zip",
-          "size": 55791,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/quasar/oxynoe.zip"
+          "from": "130.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b3274edc7fc6f22576dc5fd9aa42c93a192a0a78",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/b3274edc7fc6f22576dc5fd9aa42c93a192a0a78.zip"
+      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/quasar/oxynoe.zip",
+      "modVersion": "1",
+      "sizeBytes": 55791,
+      "downloadCount": 15,
+      "releasedAt": "2021-10-10T19:22:03Z"
     },
     {
       "tag": "mono",
-      "name": "atrax thigh highs uwu",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-29T23:59:51Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/mono",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/mono/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/mono.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "oxynoe.zip",
-          "size": 53296,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/mono/oxynoe.zip"
+          "from": "130.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "3a1f6ba96547706b355e340d81554a1309347268",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/3a1f6ba96547706b355e340d81554a1309347268.zip"
+      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/mono/oxynoe.zip",
+      "modVersion": "1",
+      "sizeBytes": 53296,
+      "downloadCount": 16,
+      "releasedAt": "2021-09-29T23:59:51Z"
     },
     {
       "tag": "arkyid",
-      "name": "arkyid",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-16T16:35:59Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/arkyid",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/arkyid/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/arkyid.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "oxynoe.zip",
-          "size": 49067,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/arkyid/oxynoe.zip"
+          "from": "130.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "46205bf212efcd3d6012056261b1ea4d31e50855",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/46205bf212efcd3d6012056261b1ea4d31e50855.zip"
+      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/arkyid/oxynoe.zip",
+      "modVersion": "1",
+      "sizeBytes": 49067,
+      "downloadCount": 14,
+      "releasedAt": "2021-09-16T16:35:59Z"
     },
     {
       "tag": "vela",
-      "name": "vela",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-03T14:28:27Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/vela",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "130.1",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/vela/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/vela.zip",
-      "assets": [
-        {
-          "name": "oxynoe.zip",
-          "size": 28278,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/vela/oxynoe.zip"
-        }
-      ],
-      "commitSha": "7ca297a3d28ea9221f93d36b2f41a1b2cbffb294",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/7ca297a3d28ea9221f93d36b2f41a1b2cbffb294.zip"
-    },
-    {
-      "tag": "spiroct",
-      "name": "spiroct",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-02T14:09:14Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/spiroct",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/spiroct/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/spiroct.zip",
-      "assets": [
-        {
-          "name": "oxynoe.zip",
-          "size": 14823,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/spiroct/oxynoe.zip"
-        }
-      ],
-      "commitSha": "b9e58e2de9625768db4ab7b69d94afb6ff070142",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/b9e58e2de9625768db4ab7b69d94afb6ff070142.zip"
-    },
-    {
-      "tag": "betterrelease",
-      "name": "better release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-01T20:07:00Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/betterrelease",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/betterrelease/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/betterrelease.zip",
-      "assets": [
-        {
-          "name": "oxynoe.zip",
-          "size": 18484,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/betterrelease/oxynoe.zip"
-        }
-      ],
-      "commitSha": "ecc55f1f07e3846d8031af3b2f8b0549225f04f2",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/ecc55f1f07e3846d8031af3b2f8b0549225f04f2.zip"
-    },
-    {
-      "tag": "release",
-      "name": "release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-01T19:52:57Z",
-      "htmlUrl": "https://github.com/realshizi/oxynoe/releases/tag/release",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/release/oxynoe.zip",
-      "sourceArchiveUrl": "https://github.com/realshizi/oxynoe/archive/refs/tags/release.zip",
-      "assets": [
-        {
-          "name": "oxynoe.zip",
-          "size": 8788,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/realshizi/oxynoe/releases/download/release/oxynoe.zip"
-        }
-      ],
-      "commitSha": "38c6174aaea193eac37d9a8d10e6037ffacf055e",
-      "archiveByCommitUrl": "https://github.com/realshizi/oxynoe/archive/38c6174aaea193eac37d9a8d10e6037ffacf055e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "gamma",
       "modVersion": "1",
-      "minGameVersion": "130.1",
-      "maxGameVersion": 136,
-      "hasRelease": true
+      "sizeBytes": 28278,
+      "downloadCount": 13,
+      "releasedAt": "2021-09-03T14:28:27Z"
     }
   ],
   "meta": {
+    "name": "oxynoe",
+    "author": "oxynoe",
+    "description": "oxynoe :>",
+    "version": "1",
+    "minGameVersion": "130.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

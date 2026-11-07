@@ -1,455 +1,293 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mindustry-antigrief/installer",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "47",
-      "name": "47",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-12T20:50:05Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/47",
-      "modVersion": "1.2.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/47/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/47.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 36537,
-          "downloadCount": 48929,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/47/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d29e81549a2ec6439c326e259e86f9a2a81915c0",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/d29e81549a2ec6439c326e259e86f9a2a81915c0.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/47/installer.jar",
+      "modVersion": "1.2.5",
+      "sizeBytes": 36537,
+      "downloadCount": 48937,
+      "releasedAt": "2026-03-12T20:50:05Z"
     },
     {
       "tag": "34",
-      "name": "34",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-08T23:31:31Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/34",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/34/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/34.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 37074,
-          "downloadCount": 292650,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/34/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "66e7544ecfc8c9233f6ce8e0d1b81c7bb21a8ff3",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/66e7544ecfc8c9233f6ce8e0d1b81c7bb21a8ff3.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/34/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 37074,
+      "downloadCount": 292650,
+      "releasedAt": "2022-11-08T23:31:31Z"
     },
     {
       "tag": "33",
-      "name": "33",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-08T22:55:03Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/33",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/33/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/33.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 37054,
-          "downloadCount": 97,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/33/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "49ee0502c4dbdca0db191cada0d84b96a8805673",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/49ee0502c4dbdca0db191cada0d84b96a8805673.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/33/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 37054,
+      "downloadCount": 97,
+      "releasedAt": "2022-11-08T22:55:03Z"
     },
     {
       "tag": "32",
-      "name": "32",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-01T12:36:55Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/32",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/32/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/32.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 36923,
-          "downloadCount": 481,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/32/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "49d70fe18948500c59228c4828da31e2f502c9df",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/49d70fe18948500c59228c4828da31e2f502c9df.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/32/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 36923,
+      "downloadCount": 481,
+      "releasedAt": "2022-11-01T12:36:55Z"
     },
     {
       "tag": "31",
-      "name": "31",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-01T04:28:04Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/31",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/31/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/31.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 36364,
-          "downloadCount": 81,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/31/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "db94711ecee247eda5cdc1d0356c1753dac4f27b",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/db94711ecee247eda5cdc1d0356c1753dac4f27b.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/31/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 36364,
+      "downloadCount": 81,
+      "releasedAt": "2022-11-01T04:28:04Z"
     },
     {
       "tag": "30",
-      "name": "30",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-01T02:31:09Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/30",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/30/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/30.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34515,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/30/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "32dcf4654efc5d252cddb3de7b68e9002a8cb075",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/32dcf4654efc5d252cddb3de7b68e9002a8cb075.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/30/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 34515,
+      "downloadCount": 34,
+      "releasedAt": "2022-11-01T02:31:09Z"
     },
     {
       "tag": "27",
-      "name": "27",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-19T17:52:54Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/27",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/27/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/27.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34482,
-          "downloadCount": 4489,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/27/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "8f7f70e23270df1d01e8a3340a36b3e69f4c58d7",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/8f7f70e23270df1d01e8a3340a36b3e69f4c58d7.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/27/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 34482,
+      "downloadCount": 4489,
+      "releasedAt": "2022-07-19T17:52:54Z"
     },
     {
       "tag": "24",
-      "name": "24",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-17T14:06:55Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/24",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/24/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/24.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34482,
-          "downloadCount": 237,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/24/installer.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9e4941cbf44787064dc1d6a2791c33663db0a42c",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/9e4941cbf44787064dc1d6a2791c33663db0a42c.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/24/installer.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 34482,
+      "downloadCount": 237,
+      "releasedAt": "2022-07-17T14:06:55Z"
     },
     {
       "tag": "23",
-      "name": "23",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-04T04:23:03Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/23",
-      "modVersion": "1.2.3",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/23/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/23.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34466,
-          "downloadCount": 3862,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/23/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b80defd78f480e2f31d2909edb51dc200c782b79",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/b80defd78f480e2f31d2909edb51dc200c782b79.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/23/installer.jar",
+      "modVersion": "1.2.3",
+      "sizeBytes": 34466,
+      "downloadCount": 3862,
+      "releasedAt": "2021-10-04T04:23:03Z"
     },
     {
       "tag": "21",
-      "name": "21",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-27T14:07:09Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/21",
-      "modVersion": "1.2.2",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/21/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34320,
-          "downloadCount": 87,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/21/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b478a0ffc338aed332264cee1e5081a933ecc1f9",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/b478a0ffc338aed332264cee1e5081a933ecc1f9.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/21/installer.jar",
+      "modVersion": "1.2.2",
+      "sizeBytes": 34320,
+      "downloadCount": 87,
+      "releasedAt": "2021-09-27T14:07:09Z"
     },
     {
       "tag": "20",
-      "name": "20",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-27T14:06:42Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/20",
-      "modVersion": "1.2.1",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/20/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/20.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34320,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/20/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "8947bd78124e4dc40946a6ba44d6eebd3207e459",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/8947bd78124e4dc40946a6ba44d6eebd3207e459.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/20/installer.jar",
+      "modVersion": "1.2.1",
+      "sizeBytes": 34320,
+      "downloadCount": 18,
+      "releasedAt": "2021-09-27T14:06:42Z"
     },
     {
       "tag": "19",
-      "name": "19",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-24T01:57:06Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/19",
-      "modVersion": "1.2.1",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/19/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/19.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34238,
-          "downloadCount": 48,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/19/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "e9b67c5c8a2efd2a8a988c3525ed15dfd10542e0",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/e9b67c5c8a2efd2a8a988c3525ed15dfd10542e0.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/19/installer.jar",
+      "modVersion": "1.2.1",
+      "sizeBytes": 34238,
+      "downloadCount": 48,
+      "releasedAt": "2021-09-24T01:57:06Z"
     },
     {
       "tag": "18",
-      "name": "18",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-21T21:58:26Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/18",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/18/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/18.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34163,
-          "downloadCount": 33,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/18/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "4176a25ebc59c8b996d3a76061c8005e4f6f5a69",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/4176a25ebc59c8b996d3a76061c8005e4f6f5a69.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/18/installer.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 34163,
+      "downloadCount": 33,
+      "releasedAt": "2021-09-21T21:58:26Z"
     },
     {
       "tag": "17",
-      "name": "17",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-22T19:04:42Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/17",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/17/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/17.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 34012,
-          "downloadCount": 275,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/17/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "19286e7c9d765c4d37fe3ecce7ef6e079de3a766",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/19286e7c9d765c4d37fe3ecce7ef6e079de3a766.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/17/installer.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 34012,
+      "downloadCount": 275,
+      "releasedAt": "2021-08-22T19:04:42Z"
     },
     {
       "tag": "16",
-      "name": "16",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-22T13:47:10Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/16",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/16/installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/16.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "installer.jar",
-          "size": 33947,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/16/installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "eedda27994026caca49f87c64ceaf6b8b3c2486a",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/eedda27994026caca49f87c64ceaf6b8b3c2486a.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/16/installer.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 33947,
+      "downloadCount": 16,
+      "releasedAt": "2021-08-22T13:47:10Z"
     },
     {
       "tag": "15",
-      "name": "15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-21T19:48:09Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/15",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/15/client-installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "client-installer.jar",
-          "size": 32916,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/15/client-installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9ffc90bcf75b21dd2f5e9bffa1e699439e02637a",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/9ffc90bcf75b21dd2f5e9bffa1e699439e02637a.zip"
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/15/client-installer.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 32916,
+      "downloadCount": 26,
+      "releasedAt": "2021-08-21T19:48:09Z"
     },
     {
       "tag": "14",
-      "name": "14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-21T00:55:46Z",
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/releases/tag/14",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "128",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/14/client-installer.jar",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/14.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "client-installer.jar",
-          "size": 32906,
-          "downloadCount": 86,
-          "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/14/client-installer.jar"
+          "from": "128",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9e21c8534e10559bd61fff6a2f98ca3fd36064aa",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/9e21c8534e10559bd61fff6a2f98ca3fd36064aa.zip"
-    },
-    {
-      "tag": "46",
-      "name": "46",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/mindustry-antigrief/installer/tree/46",
-      "modVersion": "1.2.5",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/46.zip",
-      "sourceArchiveUrl": "https://github.com/mindustry-antigrief/installer/archive/refs/tags/46.zip",
-      "assets": [],
-      "commitSha": "454b642346e23163aa2ddde2423fd8184b760cfb",
-      "archiveByCommitUrl": "https://github.com/mindustry-antigrief/installer/archive/454b642346e23163aa2ddde2423fd8184b760cfb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "23",
-      "modVersion": "1.2.3",
-      "minGameVersion": "128",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "47",
-      "modVersion": "1.2.5",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/mindustry-antigrief/installer/releases/download/14/client-installer.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 32906,
+      "downloadCount": 86,
+      "releasedAt": "2021-08-21T00:55:46Z"
     }
   ],
   "meta": {
+    "name": "fooInstaller",
+    "author": "foo, buthed010203",
+    "description": "Simple mod to install Foo's client. Foo's client features hundreds of quality of life improvements to the mindustry experience while making as few compromises as possible.",
+    "version": "1.2.5",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": true,
     "main": "fooInstaller.Main",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

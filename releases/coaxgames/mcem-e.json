@@ -1,119 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "coaxgames/mcem-e",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "3.1",
-      "name": "V3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-14T04:52:43Z",
-      "htmlUrl": "https://github.com/Coaxgames/MCEM-E/releases/tag/3.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/3.1.zip",
-      "sourceArchiveUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MCEM-E.jar",
-          "size": 1784,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/3.1/MCEM-E.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "1482ed13777bea03a2594ebedc7b2e8c538ab1d4",
-      "archiveByCommitUrl": "https://github.com/coaxgames/mcem-e/archive/1482ed13777bea03a2594ebedc7b2e8c538ab1d4.zip"
+      "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/3.1/MCEM-E.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 1784,
+      "downloadCount": 26,
+      "releasedAt": "2025-03-14T04:52:43Z"
     },
     {
       "tag": "3",
-      "name": "V3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-09T03:48:15Z",
-      "htmlUrl": "https://github.com/Coaxgames/MCEM-E/releases/tag/3",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/3.zip",
-      "sourceArchiveUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MCEM-E.jar",
-          "size": 7408,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/3/MCEM-E.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "59b7f202c83e077fa8a4ac01995c9b0146b2b0d0",
-      "archiveByCommitUrl": "https://github.com/coaxgames/mcem-e/archive/59b7f202c83e077fa8a4ac01995c9b0146b2b0d0.zip"
+      "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/3/MCEM-E.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 7408,
+      "downloadCount": 31,
+      "releasedAt": "2025-03-09T03:48:15Z"
     },
     {
       "tag": "2",
-      "name": "V2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-08T05:54:56Z",
-      "htmlUrl": "https://github.com/Coaxgames/MCEM-E/releases/tag/2",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/2.zip",
-      "sourceArchiveUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MCEM-E.jar",
-          "size": 99215,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/2/MCEM-E.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "96211ebd64d4c35878b235a949536dd19dea4ea6",
-      "archiveByCommitUrl": "https://github.com/coaxgames/mcem-e/archive/96211ebd64d4c35878b235a949536dd19dea4ea6.zip"
+      "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/2/MCEM-E.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 99215,
+      "downloadCount": 19,
+      "releasedAt": "2025-03-08T05:54:56Z"
     },
     {
       "tag": "1",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-08T05:51:12Z",
-      "htmlUrl": "https://github.com/Coaxgames/MCEM-E/releases/tag/1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/1.zip",
-      "sourceArchiveUrl": "https://github.com/coaxgames/mcem-e/archive/refs/tags/1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MCEM-E.jar",
-          "size": 99215,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/1/MCEM-E.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "96211ebd64d4c35878b235a949536dd19dea4ea6",
-      "archiveByCommitUrl": "https://github.com/coaxgames/mcem-e/archive/96211ebd64d4c35878b235a949536dd19dea4ea6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "3.1",
+      "downloadUrl": "https://github.com/Coaxgames/MCEM-E/releases/download/1/MCEM-E.jar",
       "modVersion": "1.1",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 99215,
+      "downloadCount": 4,
+      "releasedAt": "2025-03-08T05:51:12Z"
     }
   ],
   "meta": {
+    "name": "MCEM Extension",
+    "author": "Xaon4207",
+    "description": "Details coming soon, Currently adding the content with new sprites and Base Content for expansion",
+    "version": "1.1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

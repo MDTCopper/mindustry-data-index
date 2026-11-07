@@ -1,596 +1,389 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "slava0135/revision",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "14.1",
-      "name": "reVision 14.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-17T18:35:45Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/14.1",
-      "modVersion": "14.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/14.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/14.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2547589,
-          "downloadCount": 23214,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/14.1/reVision.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f283d59c0ce07b48d457074819e5d3e09a157e7a",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/f283d59c0ce07b48d457074819e5d3e09a157e7a.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/14.1/reVision.jar",
+      "modVersion": "14.1",
+      "sizeBytes": 2547589,
+      "downloadCount": 23222,
+      "releasedAt": "2025-12-17T18:35:45Z"
     },
     {
       "tag": "14.0",
-      "name": "reVision 14.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-18T12:02:15Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/14.0",
-      "modVersion": "14.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/14.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/14.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2547401,
-          "downloadCount": 15011,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/14.0/reVision.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "4241cb379dac165d3decb4acba1c39c7bb4c6d3a",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/4241cb379dac165d3decb4acba1c39c7bb4c6d3a.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/14.0/reVision.jar",
+      "modVersion": "14.0",
+      "sizeBytes": 2547401,
+      "downloadCount": 15011,
+      "releasedAt": "2025-04-18T12:02:15Z"
     },
     {
       "tag": "13.3",
-      "name": "reVision 13.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-07T13:43:43Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/13.3",
-      "modVersion": "13.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.3/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/13.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2526386,
-          "downloadCount": 94152,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.3/reVision.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "a702ad01d9526104e7b3bffaa53fe6ee570ad385",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/a702ad01d9526104e7b3bffaa53fe6ee570ad385.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.3/reVision.jar",
+      "modVersion": "13.3",
+      "sizeBytes": 2526386,
+      "downloadCount": 94152,
+      "releasedAt": "2023-01-07T13:43:43Z"
     },
     {
       "tag": "13.2",
-      "name": "reVision 13.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-28T15:43:20Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/13.2",
-      "modVersion": "13.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.2/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/13.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2526415,
-          "downloadCount": 8931,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.2/reVision.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "23f936bb538f6727e539da8bbb460aeb97041dec",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/23f936bb538f6727e539da8bbb460aeb97041dec.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.2/reVision.jar",
+      "modVersion": "13.2",
+      "sizeBytes": 2526415,
+      "downloadCount": 8931,
+      "releasedAt": "2022-11-28T15:43:20Z"
     },
     {
       "tag": "13.1",
-      "name": "reVision 13.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-01T16:21:02Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/13.1",
-      "modVersion": "13.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/13.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2525458,
-          "downloadCount": 6565,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.1/reVision.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e0d31c1178f3939765c34fe5cc02a6e0978ec4f5",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/e0d31c1178f3939765c34fe5cc02a6e0978ec4f5.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/13.1/reVision.jar",
+      "modVersion": "13.1",
+      "sizeBytes": 2525458,
+      "downloadCount": 6565,
+      "releasedAt": "2022-11-01T16:21:02Z"
     },
     {
       "tag": "12.5",
-      "name": "reVision 12.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-27T09:56:11Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/12.5",
-      "modVersion": "12.5",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.5/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/12.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2480759,
-          "downloadCount": 50940,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.5/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "90be087546d58ebc7c1e59bd0ba8dafe5a9ede65",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/90be087546d58ebc7c1e59bd0ba8dafe5a9ede65.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.5/reVision.jar",
+      "modVersion": "12.5",
+      "sizeBytes": 2480759,
+      "downloadCount": 50940,
+      "releasedAt": "2022-01-27T09:56:11Z"
     },
     {
       "tag": "12.4",
-      "name": "reVision 12.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-01T17:54:01Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/12.4",
-      "modVersion": "12.4",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.4/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/12.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2480659,
-          "downloadCount": 10998,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.4/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "69fa3ae8e0e9cdb1cb8b15f701ff7c916219eba0",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/69fa3ae8e0e9cdb1cb8b15f701ff7c916219eba0.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.4/reVision.jar",
+      "modVersion": "12.4",
+      "sizeBytes": 2480659,
+      "downloadCount": 10998,
+      "releasedAt": "2021-12-01T17:54:01Z"
     },
     {
       "tag": "12.3",
-      "name": "reVision 12.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-19T13:49:14Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/12.3",
-      "modVersion": "12.3",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.3/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/12.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2480661,
-          "downloadCount": 18569,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.3/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "082582b365b3b8c514cfb605dd940f6821caab5c",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/082582b365b3b8c514cfb605dd940f6821caab5c.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.3/reVision.jar",
+      "modVersion": "12.3",
+      "sizeBytes": 2480661,
+      "downloadCount": 18569,
+      "releasedAt": "2021-08-19T13:49:14Z"
     },
     {
       "tag": "12.2",
-      "name": "reVision 12.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-29T14:05:56Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/12.2",
-      "modVersion": "12.2",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.2/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/12.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2479732,
-          "downloadCount": 2840,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.2/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "19498abf1f40addca1d7d24b5c42612bb6055c53",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/19498abf1f40addca1d7d24b5c42612bb6055c53.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.2/reVision.jar",
+      "modVersion": "12.2",
+      "sizeBytes": 2479732,
+      "downloadCount": 2840,
+      "releasedAt": "2021-07-29T14:05:56Z"
     },
     {
       "tag": "12.1",
-      "name": "reVision 12.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-03T16:42:05Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/12.1",
-      "modVersion": "12.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/12.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2477248,
-          "downloadCount": 3302,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "1afcfbe7cbdd9e1d1b104cc90525f107dc3917dc",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/1afcfbe7cbdd9e1d1b104cc90525f107dc3917dc.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.1/reVision.jar",
+      "modVersion": "12.1",
+      "sizeBytes": 2477248,
+      "downloadCount": 3302,
+      "releasedAt": "2021-07-03T16:42:05Z"
     },
     {
       "tag": "12.0",
-      "name": "reVision 12.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-03T13:05:37Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/12.0",
-      "modVersion": "12.0",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/12.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2477145,
-          "downloadCount": 83,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.0/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "ed1fa24419552ac3f53060fef1076b491112dcfd",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/ed1fa24419552ac3f53060fef1076b491112dcfd.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/12.0/reVision.jar",
+      "modVersion": "12.0",
+      "sizeBytes": 2477145,
+      "downloadCount": 83,
+      "releasedAt": "2021-07-03T13:05:37Z"
     },
     {
       "tag": "11.1.1",
-      "name": "reVision 11.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-05-23T07:53:18Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/11.1.1",
-      "modVersion": "11.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.1.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/11.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2465993,
-          "downloadCount": 4628,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.1.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "12651eb0cd7636619d70af0606ce647651b15b34",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/12651eb0cd7636619d70af0606ce647651b15b34.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.1.1/reVision.jar",
+      "modVersion": "11.1",
+      "sizeBytes": 2465993,
+      "downloadCount": 4628,
+      "releasedAt": "2021-05-23T07:53:18Z"
     },
     {
       "tag": "11.1",
-      "name": "reVision 11.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-05-19T14:47:29Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/11.1",
-      "modVersion": "11.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/11.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2464944,
-          "downloadCount": 484,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "fe60b20989a9cb7b8a03a157f20c5d8e2aac7832",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/fe60b20989a9cb7b8a03a157f20c5d8e2aac7832.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.1/reVision.jar",
+      "modVersion": "11.1",
+      "sizeBytes": 2464944,
+      "downloadCount": 484,
+      "releasedAt": "2021-05-19T14:47:29Z"
     },
     {
       "tag": "11.0",
-      "name": "reVision 11.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-05-19T14:28:03Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/11.0",
-      "modVersion": "11",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/11.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2464683,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.0/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "57bca78c4a12f9b9b91f561cbabfdff004754a22",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/57bca78c4a12f9b9b91f561cbabfdff004754a22.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/11.0/reVision.jar",
+      "modVersion": "11",
+      "sizeBytes": 2464683,
+      "downloadCount": 31,
+      "releasedAt": "2021-05-19T14:28:03Z"
     },
     {
       "tag": "10.1",
-      "name": "reVision 10.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-04-12T21:28:57Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/10.1",
-      "modVersion": "10.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/10.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/10.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2436679,
-          "downloadCount": 4687,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/10.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "f2ce8d70995f1f972b8178c5e04f7b4cff8af2da",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/f2ce8d70995f1f972b8178c5e04f7b4cff8af2da.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/10.1/reVision.jar",
+      "modVersion": "10.1",
+      "sizeBytes": 2436679,
+      "downloadCount": 4687,
+      "releasedAt": "2021-04-12T21:28:57Z"
     },
     {
       "tag": "10.0",
-      "name": "reVision 10.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-04-12T21:23:47Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/10.0",
-      "modVersion": "10.0",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/10.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/10.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2436692,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/10.0/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "637229e16a0c3915f2731b950dc5a7e1d6417e50",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/637229e16a0c3915f2731b950dc5a7e1d6417e50.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/10.0/reVision.jar",
+      "modVersion": "10.0",
+      "sizeBytes": 2436692,
+      "downloadCount": 46,
+      "releasedAt": "2021-04-12T21:23:47Z"
     },
     {
       "tag": "9.1",
-      "name": "reVision 9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-19T08:15:28Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/9.1",
-      "modVersion": "9.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/9.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2402786,
-          "downloadCount": 8660,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/9.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "628eae866f80a7f1d125c6296c83d3583276af2e",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/628eae866f80a7f1d125c6296c83d3583276af2e.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/9.1/reVision.jar",
+      "modVersion": "9.1",
+      "sizeBytes": 2402786,
+      "downloadCount": 8660,
+      "releasedAt": "2021-02-19T08:15:28Z"
     },
     {
       "tag": "9.0",
-      "name": "reVision 9.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-18T17:47:05Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/9.0",
-      "modVersion": "9.0",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/9.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/9.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2402582,
-          "downloadCount": 156,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/9.0/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "5203ddb91cd9a63f334a85dfa6ff25386e71536b",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/5203ddb91cd9a63f334a85dfa6ff25386e71536b.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/9.0/reVision.jar",
+      "modVersion": "9.0",
+      "sizeBytes": 2402582,
+      "downloadCount": 156,
+      "releasedAt": "2021-02-18T17:47:05Z"
     },
     {
       "tag": "8.2",
-      "name": "reVision 8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-11T07:17:03Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/8.2",
-      "modVersion": "8.2",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.2/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2392040,
-          "downloadCount": 1384,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.2/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "c1880446443e255af21e2a234378b61db16291e8",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/c1880446443e255af21e2a234378b61db16291e8.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.2/reVision.jar",
+      "modVersion": "8.2",
+      "sizeBytes": 2392040,
+      "downloadCount": 1384,
+      "releasedAt": "2021-02-11T07:17:03Z"
     },
     {
       "tag": "8.1",
-      "name": "reVision 8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-10T12:29:07Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/8.1",
-      "modVersion": "8.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2391942,
-          "downloadCount": 201,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "6cb1e06fb1a92807a3f27e1ab4fa562764681dc6",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/6cb1e06fb1a92807a3f27e1ab4fa562764681dc6.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.1/reVision.jar",
+      "modVersion": "8.1",
+      "sizeBytes": 2391942,
+      "downloadCount": 201,
+      "releasedAt": "2021-02-10T12:29:07Z"
     },
     {
       "tag": "8.0",
-      "name": "reVision 8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-09T08:49:14Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/8.0",
-      "modVersion": "8.0",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2391167,
-          "downloadCount": 288,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.0/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "23a738d1ac67efd8c5d8ae05c3f836b7d30535dd",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/23a738d1ac67efd8c5d8ae05c3f836b7d30535dd.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/8.0/reVision.jar",
+      "modVersion": "8.0",
+      "sizeBytes": 2391167,
+      "downloadCount": 288,
+      "releasedAt": "2021-02-09T08:49:14Z"
     },
     {
       "tag": "7.1",
-      "name": "reVision 7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-08T20:53:20Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/7.1",
-      "modVersion": "7.1",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/7.1/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2379896,
-          "downloadCount": 139,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/7.1/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "68901151ab4ad5e61cf272b02a54f4777f18a913",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/68901151ab4ad5e61cf272b02a54f4777f18a913.zip"
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/7.1/reVision.jar",
+      "modVersion": "7.1",
+      "sizeBytes": 2379896,
+      "downloadCount": 139,
+      "releasedAt": "2021-02-08T20:53:20Z"
     },
     {
       "tag": "7.0",
-      "name": "reVision 7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-08T20:35:14Z",
-      "htmlUrl": "https://github.com/Slava0135/reVision/releases/tag/7.0",
-      "modVersion": "7.0",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/7.0/reVision.jar",
-      "sourceArchiveUrl": "https://github.com/slava0135/revision/archive/refs/tags/7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "reVision.jar",
-          "size": 2373057,
-          "downloadCount": 79,
-          "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/7.0/reVision.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "348ed73f06625e2300274049c1761cf7e9816e95",
-      "archiveByCommitUrl": "https://github.com/slava0135/revision/archive/348ed73f06625e2300274049c1761cf7e9816e95.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "12.5",
-      "modVersion": "12.5",
-      "minGameVersion": "120",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "13.3",
-      "modVersion": "13.3",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "14.0",
-      "modVersion": "14.0",
-      "minGameVersion": "147",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "14.1",
-      "modVersion": "14.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Slava0135/reVision/releases/download/7.0/reVision.jar",
+      "modVersion": "7.0",
+      "sizeBytes": 2373057,
+      "downloadCount": 79,
+      "releasedAt": "2021-02-08T20:35:14Z"
     }
   ],
   "meta": {
+    "name": "revision",
+    "author": "Slava0135",
+    "description": "Install for fresh and revised mindustry experience",
+    "version": "14.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "revision.ReVision",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

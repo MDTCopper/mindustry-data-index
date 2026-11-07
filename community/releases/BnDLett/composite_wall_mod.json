@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BnDLett/composite_wall_mod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.1",
-      "name": "v0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-25T02:25:46Z",
-      "htmlUrl": "https://github.com/BnDLett/composite_wall_mod/releases/tag/v0.1.1",
-      "modVersion": "0.1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BnDLett/composite_wall_mod/releases/download/v0.1.1/Desktop.jar",
-      "sourceArchiveUrl": "https://github.com/BnDLett/composite_wall_mod/archive/refs/tags/v0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Desktop.jar",
-          "size": 10985,
-          "downloadCount": 605,
-          "downloadUrl": "https://github.com/BnDLett/composite_wall_mod/releases/download/v0.1.1/Desktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "3d4e000e1f8d8a0352c1ed13da73415bfb52cbc4",
-      "archiveByCommitUrl": "https://github.com/BnDLett/composite_wall_mod/archive/3d4e000e1f8d8a0352c1ed13da73415bfb52cbc4.zip"
+      "downloadUrl": "https://github.com/BnDLett/composite_wall_mod/releases/download/v0.1.1/Desktop.jar",
+      "modVersion": "0.1.1",
+      "sizeBytes": 10985,
+      "downloadCount": 605,
+      "releasedAt": "2024-07-25T02:25:46Z"
     },
     {
       "tag": "v0.1.0",
-      "name": "v0.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-24T18:12:24Z",
-      "htmlUrl": "https://github.com/BnDLett/composite_wall_mod/releases/tag/v0.1.0",
-      "modVersion": "0.1.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BnDLett/composite_wall_mod/releases/download/v0.1.0/Desktop.jar",
-      "sourceArchiveUrl": "https://github.com/BnDLett/composite_wall_mod/archive/refs/tags/v0.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Desktop.jar",
-          "size": 10991,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/BnDLett/composite_wall_mod/releases/download/v0.1.0/Desktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "322732a8d0a2ba403a9d958e073b2728ea4049ec",
-      "archiveByCommitUrl": "https://github.com/BnDLett/composite_wall_mod/archive/322732a8d0a2ba403a9d958e073b2728ea4049ec.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.1",
-      "modVersion": "0.1.1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/BnDLett/composite_wall_mod/releases/download/v0.1.0/Desktop.jar",
+      "modVersion": "0.1.0",
+      "sizeBytes": 10991,
+      "downloadCount": 11,
+      "releasedAt": "2024-07-24T18:12:24Z"
     }
   ],
   "meta": {
+    "name": "lfm",
+    "author": "BnDLett",
+    "description": "A Mindustry mod developed by BnDLett",
+    "version": "0.1.1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "Mod.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

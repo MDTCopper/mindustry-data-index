@@ -1,191 +1,120 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "EmanuelG-Gaming/erekir-expansion",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.75",
-      "name": "version 0.75 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-08-15T05:01:55Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.75",
-      "modVersion": "0.75 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.75/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.75.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "erekir-expansion.jar",
-          "size": 458697,
-          "downloadCount": 3255,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.75/erekir-expansion.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "14699cb6472f119555b85236678dcc9c6b38d225",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/14699cb6472f119555b85236678dcc9c6b38d225.zip"
+      "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.75/erekir-expansion.jar",
+      "modVersion": "0.75 Pre-Alpha",
+      "sizeBytes": 458697,
+      "downloadCount": 3255,
+      "releasedAt": "2022-08-15T05:01:55Z",
+      "prerelease": true
     },
     {
       "tag": "0.70",
-      "name": "version 0.70 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-07-30T05:50:28Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.70",
-      "modVersion": "0.70 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.70/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.70.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "erekir-expansion.jar",
-          "size": 409329,
-          "downloadCount": 1066,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.70/erekir-expansion.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "46e998573b98249f1f38cd23cfbe3f43aa0b35da",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/46e998573b98249f1f38cd23cfbe3f43aa0b35da.zip"
+      "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.70/erekir-expansion.jar",
+      "modVersion": "0.70 Pre-Alpha",
+      "sizeBytes": 409329,
+      "downloadCount": 1066,
+      "releasedAt": "2022-07-30T05:50:28Z",
+      "prerelease": true
     },
     {
       "tag": "0.65",
-      "name": "version 0.65 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-07-07T07:09:48Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.65",
-      "modVersion": "0.65 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "22610",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.65/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.65.zip",
-      "assets": [
-        {
-          "name": "erekir-expansion.jar",
-          "size": 259448,
-          "downloadCount": 663,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.65/erekir-expansion.jar"
-        }
-      ],
-      "commitSha": "0422b8f9633c8c95712c092fb53f2fa73b3b89bd",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/0422b8f9633c8c95712c092fb53f2fa73b3b89bd.zip"
+      "modVersion": "0.65 Pre-Alpha",
+      "sizeBytes": 259448,
+      "downloadCount": 663,
+      "releasedAt": "2022-07-07T07:09:48Z",
+      "prerelease": true
     },
     {
       "tag": "0.60",
-      "name": "version 0.60 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-06-24T18:50:52Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.60",
-      "modVersion": "0.60 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "22610",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.60/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.60.zip",
-      "assets": [
-        {
-          "name": "erekir-expansion.jar",
-          "size": 205130,
-          "downloadCount": 323,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.60/erekir-expansion.jar"
-        }
-      ],
-      "commitSha": "1a9047e6cd1fe5340cd74b021a91ede7b3188a9e",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/1a9047e6cd1fe5340cd74b021a91ede7b3188a9e.zip"
+      "modVersion": "0.60 Pre-Alpha",
+      "sizeBytes": 205130,
+      "downloadCount": 323,
+      "releasedAt": "2022-06-24T18:50:52Z",
+      "prerelease": true
     },
     {
       "tag": "0.45",
-      "name": "version 0.45 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-06-15T14:33:59Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.45",
-      "modVersion": "0.45 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "22610",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.45/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.45.zip",
-      "assets": [
-        {
-          "name": "erekir-expansion.jar",
-          "size": 169478,
-          "downloadCount": 132,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.45/erekir-expansion.jar"
-        }
-      ],
-      "commitSha": "41d2072277c7930a67d50e2172788a774a159cb7",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/41d2072277c7930a67d50e2172788a774a159cb7.zip"
+      "modVersion": "0.45 Pre-Alpha",
+      "sizeBytes": 169478,
+      "downloadCount": 132,
+      "releasedAt": "2022-06-15T14:33:59Z",
+      "prerelease": true
     },
     {
       "tag": "0.40",
-      "name": "version 0.40 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-06-08T16:12:11Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.40",
-      "modVersion": "0.40 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "22610",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.40/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.40.zip",
-      "assets": [
-        {
-          "name": "erekir-expansion.jar",
-          "size": 156694,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.40/erekir-expansion.jar"
-        }
-      ],
-      "commitSha": "a75603b75df2cb0b506aaea4e6446f01ef4d8d35",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/a75603b75df2cb0b506aaea4e6446f01ef4d8d35.zip"
+      "modVersion": "0.40 Pre-Alpha",
+      "sizeBytes": 156694,
+      "downloadCount": 106,
+      "releasedAt": "2022-06-08T16:12:11Z",
+      "prerelease": true
     },
     {
       "tag": "0.35",
-      "name": "version 0.35 pre-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-06-04T04:56:51Z",
-      "htmlUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/tag/0.35",
-      "modVersion": "0.35 Pre-Alpha",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.35/erekir-expansion.jar",
-      "sourceArchiveUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/refs/tags/0.35.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "erekir-expansion.jar",
-          "size": 131768,
-          "downloadCount": 181,
-          "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.35/erekir-expansion.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "b9aecb16bcf7527f1ec361e2609c571e8039514b",
-      "archiveByCommitUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/archive/b9aecb16bcf7527f1ec361e2609c571e8039514b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.75",
-      "modVersion": "0.75 Pre-Alpha",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/EmanuelG-Gaming/erekir-expansion/releases/download/0.35/erekir-expansion.jar",
+      "modVersion": "0.35 Pre-Alpha",
+      "sizeBytes": 131768,
+      "downloadCount": 181,
+      "releasedAt": "2022-06-04T04:56:51Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "erekir-expansion",
+    "author": "Emanuel G",
+    "description": "A Mindustry mod aimed to add content to the newly-added planet.",
+    "version": "0.75 Pre-Alpha",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "erekir.ErekirExpansion",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

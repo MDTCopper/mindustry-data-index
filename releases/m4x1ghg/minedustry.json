@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "m4x1ghg/minedustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/m4x1ghg/minedustry/tree/mindustry-mod",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/m4x1ghg/minedustry/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/m4x1ghg/minedustry/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "a15626c47c2c7fc3ea62845af9ed63ccab9300a7",
-      "archiveByCommitUrl": "https://github.com/m4x1ghg/minedustry/archive/a15626c47c2c7fc3ea62845af9ed63ccab9300a7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
-      "modVersion": "0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "0.1"
     }
   ],
   "meta": {
+    "name": "minedustry",
+    "author": "MaxiGHG",
+    "description": "This Mod adds a few things from Minecraft.",
+    "version": "0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

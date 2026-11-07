@@ -1,119 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "unquis/fading-revelations-remake",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.5.0",
-      "name": "v2.5.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-16T10:35:57Z",
-      "htmlUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/tag/v2.5.0",
-      "modVersion": "2.5.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.5.0/FadingRevelations.jar",
-      "sourceArchiveUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/v2.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FadingRevelations.jar",
-          "size": 13177687,
-          "downloadCount": 5611,
-          "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.5.0/FadingRevelations.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4893763a81a253a4a57d08cc31fc45c1fb2c3ba1",
-      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/4893763a81a253a4a57d08cc31fc45c1fb2c3ba1.zip"
+      "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.5.0/FadingRevelations.jar",
+      "modVersion": "2.5.0",
+      "sizeBytes": 13177687,
+      "downloadCount": 5618,
+      "releasedAt": "2026-08-16T10:35:57Z"
     },
     {
       "tag": "v2.4.0",
-      "name": "v2.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-14T05:15:47Z",
-      "htmlUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/tag/v2.4.0",
-      "modVersion": "2.4.0-alpha",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.4.0/FadingRevelations.jar",
-      "sourceArchiveUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/v2.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FadingRevelations.jar",
-          "size": 13395262,
-          "downloadCount": 3487,
-          "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.4.0/FadingRevelations.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1bad04adbc977d73268491f8c76c7dcbe36d94ae",
-      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/1bad04adbc977d73268491f8c76c7dcbe36d94ae.zip"
+      "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.4.0/FadingRevelations.jar",
+      "modVersion": "2.4.0-alpha",
+      "sizeBytes": 13395262,
+      "downloadCount": 3487,
+      "releasedAt": "2026-06-14T05:15:47Z"
     },
     {
       "tag": "v2.3.1-alpha",
-      "name": "v2.3.1-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-21T05:23:14Z",
-      "htmlUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/tag/v2.3.1-alpha",
-      "modVersion": "2.3.1-alpha",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.3.1-alpha/FadingRevelations.jar",
-      "sourceArchiveUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/v2.3.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FadingRevelations.jar",
-          "size": 12512389,
-          "downloadCount": 2010,
-          "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.3.1-alpha/FadingRevelations.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a04bdda0facee86efb25718536af83f2ae7d315e",
-      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/a04bdda0facee86efb25718536af83f2ae7d315e.zip"
-    },
-    {
-      "tag": "patch",
-      "name": "patch",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/unquis/fading-revelations-remake/tree/patch",
-      "modVersion": "2.3.1",
-      "minGameVersion": "144.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/patch.zip",
-      "sourceArchiveUrl": "https://github.com/unquis/fading-revelations-remake/archive/refs/tags/patch.zip",
-      "assets": [],
-      "commitSha": "829aaa0e63a4d93398adcd5ebfd329b5e912e856",
-      "archiveByCommitUrl": "https://github.com/unquis/fading-revelations-remake/archive/829aaa0e63a4d93398adcd5ebfd329b5e912e856.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "patch",
-      "modVersion": "2.3.1",
-      "minGameVersion": "144.3",
-      "maxGameVersion": 147,
-      "hasRelease": false
-    },
-    {
-      "tag": "v2.5.0",
-      "modVersion": "2.5.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/UnQuis/Fading-Revelations-Remake/releases/download/v2.3.1-alpha/FadingRevelations.jar",
+      "modVersion": "2.3.1-alpha",
+      "sizeBytes": 12512389,
+      "downloadCount": 2010,
+      "releasedAt": "2026-05-21T05:23:14Z"
     }
   ],
   "meta": {
+    "name": "fading-revelations-remake",
+    "author": "[maroon]Developers\n- Java : UnQuis\n- Json/Hjson : Catser\n- Balancing : Catser / .Frankie\n- Bug Fixes : Catser\n\n[maroon]Translators\n- English : Catser\n- German : Catser\n- Spanish : Catser / HairyNugget\n- Ukrainian: Prosta4ok_ua\n- Russian: Timofejamda\n\n[maroon]Contributors\n- Schematics: Dragonboi / Zombee\n- Sprites : Catser / Froomeeth\n- Lore: iori / Catser\n- Cryogenic Gel, Igneous Alloy,\n  Multiblock-Crafter base model:\n  Null (Nullevoy)\n\nAnd more people!\nCheck the Discord!",
+    "description": "\n\nA huge, fun & balanced content extension mod.\nContinuing the legacy of Fading Revelations with new content, fixes, and improvements.\n\nPlease note that the Serpulo research tree has\nbeen moved into it's own tree because it was\ntoo large.\nTo get to the Fading Revelations Serpulo \nresearch tree, please switch to it the same way\nyou would switch between the Erekir and Serpulo\nresearch trees.\nOn that menu, a new button will be available \nthat takes you to the Fading Revelations \nSerpulo research tree. \n\nFeatures\nTwo new planets and many blocks, \nunits, items, liquids, schematics\n& ammo types.\n\n\nLanguages\n- English\n- German\n- Spanish (WIP)\n- Ukrainian (WIP)\n- Russian\n\n\nCheck Discord / GitHub \nfor more information!\n",
+    "version": "2.5.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "fadingrevelations.FadingRevelationsMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

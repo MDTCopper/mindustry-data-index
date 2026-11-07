@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Krita-Burstflakes/infinite-logics",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "V4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-18T12:47:03Z",
-      "htmlUrl": "https://github.com/Krita-Burstflakes/infinite-logics/releases/tag/mindustry-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Krita-Burstflakes/infinite-logics/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/Krita-Burstflakes/infinite-logics/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "1e325bd70d35e43d92643e8c2f311b46b606e39c",
-      "archiveByCommitUrl": "https://github.com/Krita-Burstflakes/infinite-logics/archive/1e325bd70d35e43d92643e8c2f311b46b606e39c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-06-18T12:47:03Z"
     }
   ],
   "meta": {
+    "name": "infinite-logics",
+    "author": "Krita",
+    "description": "adding best processors in sandbox",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

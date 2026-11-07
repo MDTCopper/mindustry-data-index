@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Pobeda1111/Mod_war",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Mindystru",
-      "name": "Start",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-11T06:05:56Z",
-      "htmlUrl": "https://github.com/Pobeda1111/Mod_war/releases/tag/Mindystru",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Pobeda1111/Mod_war/releases/download/Mindystru/AI.zip",
-      "sourceArchiveUrl": "https://github.com/Pobeda1111/Mod_war/archive/refs/tags/Mindystru.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AI.zip",
-          "size": 608154,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/Pobeda1111/Mod_war/releases/download/Mindystru/AI.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f37ac22c5b586ee3281566b70159aaccebf2505e",
-      "archiveByCommitUrl": "https://github.com/Pobeda1111/Mod_war/archive/f37ac22c5b586ee3281566b70159aaccebf2505e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Mindystru",
+      "downloadUrl": "https://github.com/Pobeda1111/Mod_war/releases/download/Mindystru/AI.zip",
       "modVersion": "1.1",
-      "minGameVersion": "145.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 608154,
+      "downloadCount": 22,
+      "releasedAt": "2024-08-11T06:05:56Z"
     }
   ],
   "meta": {
+    "name": "mod_batles",
+    "author": "Pobeda1111",
+    "description": "Big battles is world",
+    "version": "1.1",
+    "minGameVersion": "145.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "krucaaaa/moreerekir",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "tag",
-      "name": "More Erekir v1.02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-01T20:46:37Z",
-      "htmlUrl": "https://github.com/krucaaaa/MoreErekir/releases/tag/tag",
-      "modVersion": "1.02",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/krucaaaa/MoreErekir/releases/download/tag/moreerekir.zip",
-      "sourceArchiveUrl": "https://github.com/krucaaaa/moreerekir/archive/refs/tags/tag.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "moreerekir.zip",
-          "size": 925671,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/krucaaaa/MoreErekir/releases/download/tag/moreerekir.zip"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ce8fe3ab34f9681272fa25c649d467882cf80105",
-      "archiveByCommitUrl": "https://github.com/krucaaaa/moreerekir/archive/ce8fe3ab34f9681272fa25c649d467882cf80105.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "tag",
+      "downloadUrl": "https://github.com/krucaaaa/MoreErekir/releases/download/tag/moreerekir.zip",
       "modVersion": "1.02",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 925671,
+      "downloadCount": 30,
+      "releasedAt": "2026-09-01T20:46:37Z"
     }
   ],
   "meta": {
+    "name": "mod-for-elder",
+    "author": "[#005050]kru[#007070]caa[#009090]aa[white] and [lime] [#6A00FF]Эл[#AA00FF]де[#FF00CC]р",
+    "description": "[#005050]kru[#007070]caa[#009090]aa[white] - mod\n[lime] [#6A00FF]El[#AA00FF]de[#FF00CC]r[white] - maps.\n \n \n \n \nA simple mod, that adds 12 new sectors to Erekir",
+    "version": "1.02",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

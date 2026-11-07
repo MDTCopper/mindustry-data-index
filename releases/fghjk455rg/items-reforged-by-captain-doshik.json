@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "fghjk455rg/items-reforged-by-captain-doshik",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "release",
-      "name": "IR_V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-23T18:31:31Z",
-      "htmlUrl": "https://github.com/fghjk455rg/Items-Reforged-by-Captain-Doshik/releases/tag/release",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/fghjk455rg/Items-Reforged-by-Captain-Doshik/releases/download/release/kap-dosh-ir.zip",
-      "sourceArchiveUrl": "https://github.com/fghjk455rg/items-reforged-by-captain-doshik/archive/refs/tags/release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "kap-dosh-ir.zip",
-          "size": 90650,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/fghjk455rg/Items-Reforged-by-Captain-Doshik/releases/download/release/kap-dosh-ir.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4b1de76bab7c1c84ab97bc5632e986b9b85ab8ba",
-      "archiveByCommitUrl": "https://github.com/fghjk455rg/items-reforged-by-captain-doshik/archive/4b1de76bab7c1c84ab97bc5632e986b9b85ab8ba.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release",
+      "downloadUrl": "https://github.com/fghjk455rg/Items-Reforged-by-Captain-Doshik/releases/download/release/kap-dosh-ir.zip",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 90650,
+      "downloadCount": 44,
+      "releasedAt": "2024-08-23T18:31:31Z"
     }
   ],
   "meta": {
+    "name": "ir",
+    "author": "Captain Doshik",
+    "description": "This mod replaces vanilla sprites with modified versions.",
+    "version": "1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

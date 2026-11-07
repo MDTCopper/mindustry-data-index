@@ -1,74 +1,66 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Stieno3000/Polgranium-Works",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Snapshot2",
-      "name": "Snapshot 23w24b",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-06-18T17:34:17Z",
-      "htmlUrl": "https://github.com/Stieno3000/Polgranium-Works/releases/tag/Snapshot2",
-      "modVersion": "0.17 Beta",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/refs/tags/Snapshot2.zip",
-      "sourceArchiveUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/refs/tags/Snapshot2.zip",
-      "assets": [],
-      "commitSha": "25977da94924198539ed96ef1208396a36d937d4",
-      "archiveByCommitUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/25977da94924198539ed96ef1208396a36d937d4.zip"
+      "modVersion": "0.17 Beta",
+      "releasedAt": "2023-06-18T17:34:17Z",
+      "prerelease": true
     },
     {
       "tag": "Snapshot",
-      "name": "Snapshot 23w24a",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-06-13T17:31:52Z",
-      "htmlUrl": "https://github.com/Stieno3000/Polgranium-Works/releases/tag/Snapshot",
-      "modVersion": "0.17 Beta",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/refs/tags/Snapshot.zip",
-      "sourceArchiveUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/refs/tags/Snapshot.zip",
-      "assets": [],
-      "commitSha": "77e720f7878e99c2f15696e2b523148e5a69e94f",
-      "archiveByCommitUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/77e720f7878e99c2f15696e2b523148e5a69e94f.zip"
+      "modVersion": "0.17 Beta",
+      "releasedAt": "2023-06-13T17:31:52Z",
+      "prerelease": true
     },
     {
       "tag": "Update",
-      "name": "V.0.17 Beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-06-11T15:21:38Z",
-      "htmlUrl": "https://github.com/Stieno3000/Polgranium-Works/releases/tag/Update",
-      "modVersion": "0.17 Beta",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/refs/tags/Update.zip",
-      "sourceArchiveUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/refs/tags/Update.zip",
-      "assets": [],
-      "commitSha": "1ee1e04f8cff31997def9aab023be7844c59e2ef",
-      "archiveByCommitUrl": "https://github.com/Stieno3000/Polgranium-Works/archive/1ee1e04f8cff31997def9aab023be7844c59e2ef.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Snapshot2",
       "modVersion": "0.17 Beta",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-06-11T15:21:38Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "[red]polgranium works",
+    "author": "[gold] Stieno3000",
+    "description": "[blue]new campaign and more",
+    "version": "0.17 Beta",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

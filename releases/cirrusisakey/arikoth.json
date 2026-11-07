@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cirrusisakey/arikoth",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.0.1",
-      "name": "0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-30T15:47:50Z",
-      "htmlUrl": "https://github.com/CirrusIsAkey/Arikoth/releases/tag/0.0.1",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/CirrusIsAkey/Arikoth/releases/download/0.0.1/ArikothDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/cirrusisakey/arikoth/archive/refs/tags/0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ArikothDesktop.jar",
-          "size": 13775368,
-          "downloadCount": 2230,
-          "downloadUrl": "https://github.com/CirrusIsAkey/Arikoth/releases/download/0.0.1/ArikothDesktop.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "295c2daef67594cb8acc0c8ec578de47e24fb24b",
-      "archiveByCommitUrl": "https://github.com/cirrusisakey/arikoth/archive/295c2daef67594cb8acc0c8ec578de47e24fb24b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.1",
+      "downloadUrl": "https://github.com/CirrusIsAkey/Arikoth/releases/download/0.0.1/ArikothDesktop.jar",
       "modVersion": "0.0.1",
-      "minGameVersion": "150",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 13775368,
+      "downloadCount": 2231,
+      "releasedAt": "2025-08-30T15:47:50Z"
     }
   ],
   "meta": {
+    "name": "arikoth",
+    "author": "Hyperium",
+    "description": "Arikoth mod, wip.",
+    "version": "0.0.1",
+    "minGameVersion": "150",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "arikoth.Arikoth",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

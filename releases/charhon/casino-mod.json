@@ -1,82 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "charhon/casino-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Casino Mod v1.0.0 | Mindustry mod",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T11:26:35Z",
-      "htmlUrl": "https://github.com/Charhon/Casino-mod/releases/tag/mindustry-mod",
-      "modVersion": "Beta Version",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Charhon/Casino-mod/releases/download/mindustry-mod/Casino.mod.zip",
-      "sourceArchiveUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Casino.mod.zip",
-          "size": 9269,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Charhon/Casino-mod/releases/download/mindustry-mod/Casino.mod.zip"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "742dd13b4c304caca760d8f9f69b962f771c8c4b",
-      "archiveByCommitUrl": "https://github.com/charhon/casino-mod/archive/742dd13b4c304caca760d8f9f69b962f771c8c4b.zip"
-    },
-    {
-      "tag": "Version_1.0.0",
-      "name": "Version_1.0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/charhon/casino-mod/tree/Version_1.0.0",
+      "downloadUrl": "https://github.com/Charhon/Casino-mod/releases/download/mindustry-mod/Casino.mod.zip",
       "modVersion": "Beta Version",
-      "minGameVersion": "160.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/Version_1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/Version_1.0.0.zip",
-      "assets": [],
-      "commitSha": "742dd13b4c304caca760d8f9f69b962f771c8c4b",
-      "archiveByCommitUrl": "https://github.com/charhon/casino-mod/archive/742dd13b4c304caca760d8f9f69b962f771c8c4b.zip"
+      "sizeBytes": 9269,
+      "downloadCount": 4,
+      "releasedAt": "2026-10-04T11:26:35Z"
     },
     {
       "tag": "Mindustry-mod",
-      "name": "Mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/charhon/casino-mod/tree/Mindustry-mod",
-      "modVersion": "Beta Version",
+      "kind": "tag",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160.5",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/Mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/Mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "742dd13b4c304caca760d8f9f69b962f771c8c4b",
-      "archiveByCommitUrl": "https://github.com/charhon/casino-mod/archive/742dd13b4c304caca760d8f9f69b962f771c8c4b.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "Beta Version"
+    },
     {
-      "tag": "mindustry-mod",
-      "modVersion": "Beta Version",
+      "tag": "Version_1.0.0",
+      "kind": "tag",
       "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "160.5",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/Version_1.0.0.zip",
+      "modVersion": "Beta Version"
     }
   ],
   "meta": {
+    "name": "casino-mod",
+    "author": "Charhon",
+    "description": "RU:Добавляет блок Казино: ставь одни предметы на другие, шанс зависит от ценности предметов EN:This mod add block-Casino",
+    "version": "Beta Version",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

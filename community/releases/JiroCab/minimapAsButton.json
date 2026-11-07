@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "JiroCab/minimapAsButton",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-15T06:25:43Z",
-      "htmlUrl": "https://github.com/JiroCab/minimapAsButton/releases/tag/1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/1.2/minimapAsButton-1.2.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/minimapAsButton/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minimapAsButton-1.2.jar",
-          "size": 421087,
-          "downloadCount": 3418,
-          "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/1.2/minimapAsButton-1.2.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "f34cdbafb6ab385c3ff14705ef3fdce79241fbeb",
-      "archiveByCommitUrl": "https://github.com/JiroCab/minimapAsButton/archive/f34cdbafb6ab385c3ff14705ef3fdce79241fbeb.zip"
+      "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/1.2/minimapAsButton-1.2.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 421087,
+      "downloadCount": 3418,
+      "releasedAt": "2025-04-15T06:25:43Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-01T14:03:55Z",
-      "htmlUrl": "https://github.com/JiroCab/minimapAsButton/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/v1.1/minimapAsButton1.1.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/minimapAsButton/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minimapAsButton1.1.jar",
-          "size": 418509,
-          "downloadCount": 374,
-          "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/v1.1/minimapAsButton1.1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "7239871e84ccff93c2d8c9cbed277e17e9486ee5",
-      "archiveByCommitUrl": "https://github.com/JiroCab/minimapAsButton/archive/7239871e84ccff93c2d8c9cbed277e17e9486ee5.zip"
+      "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/v1.1/minimapAsButton1.1.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 418509,
+      "downloadCount": 374,
+      "releasedAt": "2025-04-01T14:03:55Z"
     },
     {
       "tag": "v1",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-29T14:31:37Z",
-      "htmlUrl": "https://github.com/JiroCab/minimapAsButton/releases/tag/v1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/v1/minimapAsButton.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/minimapAsButton/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minimapAsButton.jar",
-          "size": 413509,
-          "downloadCount": 2590,
-          "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/v1/minimapAsButton.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "8a4cf7080a88be54c31fff35add982cae89f3f96",
-      "archiveByCommitUrl": "https://github.com/JiroCab/minimapAsButton/archive/8a4cf7080a88be54c31fff35add982cae89f3f96.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.2",
-      "modVersion": "1.2",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/JiroCab/minimapAsButton/releases/download/v1/minimapAsButton.jar",
+      "modVersion": "1",
+      "sizeBytes": 413509,
+      "downloadCount": 2590,
+      "releasedAt": "2024-01-29T14:31:37Z"
     }
   ],
   "meta": {
+    "name": "minimapbutton",
+    "author": "RushieWashie",
+    "description": "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Selecting Units/Factories across the screen/map!\n\nAll this can be turned off/on in settings!",
+    "version": "1.2",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "minimapbutton.MMBMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,65 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "krita-burstflakes/mindustry-strike",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2.0_version",
-      "name": "2.0 version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-12T12:30:42Z",
-      "htmlUrl": "https://github.com/Krita-Burstflakes/Mindustry-Strike/releases/tag/2.0_version",
-      "modVersion": "2.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/2.0_version.zip",
-      "sourceArchiveUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/2.0_version.zip",
-      "assets": [],
-      "commitSha": "e2c0e1e373b7735280a669e1f4b17e19b2c154f0",
-      "archiveByCommitUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/e2c0e1e373b7735280a669e1f4b17e19b2c154f0.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "1.0 version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-17T10:26:06Z",
-      "htmlUrl": "https://github.com/Krita-Burstflakes/Mindustry-Strike/releases/tag/mindustry-mod",
-      "modVersion": "1.0",
-      "minGameVersion": "141.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "eb7ccec5c39abc4870d05297db24f8f936667027",
-      "archiveByCommitUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/eb7ccec5c39abc4870d05297db24f8f936667027.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
-      "modVersion": "1.0",
-      "minGameVersion": "141.3",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.0_version",
       "modVersion": "2.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-01-12T12:30:42Z"
+    },
+    {
+      "tag": "mindustry-mod",
+      "kind": "tag",
+      "minGameVersion": "141.3",
+      "gameVersionRanges": [
+        {
+          "from": "141.3",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/krita-burstflakes/mindustry-strike/archive/refs/tags/mindustry-mod.zip",
+      "modVersion": "1.0",
+      "releasedAt": "2023-06-17T10:26:06Z"
     }
   ],
   "meta": {
+    "name": "ms",
+    "author": "Krita",
+    "description": "Modification based on MSGO",
+    "version": "2.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

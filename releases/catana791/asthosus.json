@@ -1,438 +1,362 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "catana791/asthosus",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.7.5",
-      "name": "v1.7.5 - Mindustry v160+ stable",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-14T14:19:11Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.5",
-      "modVersion": "1.7.5",
+      "kind": "tag",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.5.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.5.zip",
-      "assets": [],
-      "commitSha": "bd4bf33f9a9d8b3f674e7aa35a371e6203fb5275",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/bd4bf33f9a9d8b3f674e7aa35a371e6203fb5275.zip"
+      "modVersion": "1.7.5",
+      "releasedAt": "2026-09-14T14:19:11Z"
     },
     {
       "tag": "1.7.4",
-      "name": "1.7.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T12:41:21Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.4",
-      "modVersion": "1.7.4",
+      "kind": "tag",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.4.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.4.zip",
-      "assets": [],
-      "commitSha": "9f3d96b181866f66491608753900ed97c9eeb350",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/9f3d96b181866f66491608753900ed97c9eeb350.zip"
+      "modVersion": "1.7.4",
+      "releasedAt": "2026-07-27T12:41:21Z"
     },
     {
       "tag": "1.7.3-beta-3",
-      "name": "1.7.3-beta 2 - Asthosus 1.7.3 Pre-Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-19T16:19:38Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.3-beta-3",
-      "modVersion": "1.7.3",
+      "kind": "tag",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.3-beta-3.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.3-beta-3.zip",
-      "assets": [],
-      "commitSha": "8731395a24920ac2d4a919d88b9862badc3d52ed",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/8731395a24920ac2d4a919d88b9862badc3d52ed.zip"
+      "modVersion": "1.7.3",
+      "releasedAt": "2026-05-19T16:19:38Z",
+      "prerelease": true
     },
     {
       "tag": "1.7.3-beta-2",
-      "name": "1.7.3-beta 2 - Asthosus 1.7.3 Pre-Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-11T16:29:18Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.3-beta-2",
-      "modVersion": "1.7.3",
+      "kind": "tag",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.3-beta-2.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.3-beta-2.zip",
-      "assets": [],
-      "commitSha": "ec77361c644ed6f441dad6af0ee86217c0a74090",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/ec77361c644ed6f441dad6af0ee86217c0a74090.zip"
+      "modVersion": "1.7.3",
+      "releasedAt": "2026-05-11T16:29:18Z",
+      "prerelease": true
     },
     {
       "tag": "1.7.3-beta",
-      "name": "1.7.3-beta - Asthosus 1.7.3 Pre-Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-06T13:58:39Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.3-beta",
-      "modVersion": "1.7.3",
+      "kind": "tag",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.3-beta.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.3-beta.zip",
-      "assets": [],
-      "commitSha": "65b2e0ae5b2a30ad5f82da5f75cb99b792a76340",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/65b2e0ae5b2a30ad5f82da5f75cb99b792a76340.zip"
+      "modVersion": "1.7.3",
+      "releasedAt": "2026-04-06T13:58:39Z",
+      "prerelease": true
     },
     {
       "tag": "1.7.2s",
-      "name": "v1.7.2s - Last Stable v7 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-05T14:21:27Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.2s",
-      "modVersion": "1.7.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.2s.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.2s.zip",
-      "assets": [],
-      "commitSha": "b07d87cdc31fefb9d3d169a8d805b486c8aff674",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/b07d87cdc31fefb9d3d169a8d805b486c8aff674.zip"
+      "modVersion": "1.7.2",
+      "releasedAt": "2026-04-05T14:21:27Z"
     },
     {
       "tag": "1.7.2",
-      "name": "v1.7.2 - Shaft Rework & Smaller Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-25T18:17:07Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.2",
-      "modVersion": "1.7.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.2.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.2.zip",
-      "assets": [],
-      "commitSha": "137c60da72b087b244211756ae1327b8e7648c0b",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/137c60da72b087b244211756ae1327b8e7648c0b.zip"
+      "modVersion": "1.7.2",
+      "releasedAt": "2026-01-25T18:17:07Z"
     },
     {
       "tag": "1.7.1",
-      "name": "v1.7.1 - v8 Fix and Barite Elder Changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-21T18:45:05Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.1",
-      "modVersion": "1.7.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.1.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.1.zip",
-      "assets": [],
-      "commitSha": "8e2eb7affc3eeedf70edd2632634b2d4c0eddb1a",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/8e2eb7affc3eeedf70edd2632634b2d4c0eddb1a.zip"
+      "modVersion": "1.7.1",
+      "releasedAt": "2025-08-21T18:45:05Z"
     },
     {
       "tag": "1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-08T19:30:19Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.0.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.7.0.zip",
-      "assets": [],
-      "commitSha": "552b43cd1b9591cca131995fafc00698212879d7",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/552b43cd1b9591cca131995fafc00698212879d7.zip"
+      "modVersion": "1.7.0",
+      "releasedAt": "2025-08-08T19:30:19Z"
     },
     {
       "tag": "1.6.8",
-      "name": "v1.6.8 - Hover units fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-31T12:22:39Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.8",
-      "modVersion": "1.6.8",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.8.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.8.zip",
-      "assets": [],
-      "commitSha": "6153dd66fe1ad5d32b34f846529105d397ed732f",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/6153dd66fe1ad5d32b34f846529105d397ed732f.zip"
+      "modVersion": "1.6.8",
+      "releasedAt": "2025-05-31T12:22:39Z"
     },
     {
       "tag": "1.6.7",
-      "name": "v1.6.7 - Map fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-26T17:46:24Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.7",
-      "modVersion": "1.6.7",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.7.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.7.zip",
-      "assets": [],
-      "commitSha": "859113497711ec7b1557d3e48f1352181d0aa8b5",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/859113497711ec7b1557d3e48f1352181d0aa8b5.zip"
+      "modVersion": "1.6.7",
+      "releasedAt": "2025-05-26T17:46:24Z"
     },
     {
       "tag": "1.6.6",
-      "name": "v1.6.6 - Minor Map Changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-18T17:20:41Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.6",
-      "modVersion": "1.6.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.6.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.6.zip",
-      "assets": [],
-      "commitSha": "338a3939e2a05be80a6ed6b8cc13b6eddddd35f0",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/338a3939e2a05be80a6ed6b8cc13b6eddddd35f0.zip"
+      "modVersion": "1.6.6",
+      "releasedAt": "2025-05-18T17:20:41Z"
     },
     {
       "tag": "1.6.5",
-      "name": "v1.6.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-18T09:29:56Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.5",
-      "modVersion": "1.6.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.5.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.5.zip",
-      "assets": [],
-      "commitSha": "98a93289c91d8deee3e1137e98dfe87515388e79",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/98a93289c91d8deee3e1137e98dfe87515388e79.zip"
+      "modVersion": "1.6.5",
+      "releasedAt": "2025-05-18T09:29:56Z"
     },
     {
       "tag": "1.6.3",
-      "name": "v1.6.3 - Simplified Chinese translations",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-30T16:25:05Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.3",
-      "modVersion": "1.6.3",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.3.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.3.zip",
-      "assets": [],
-      "commitSha": "0b4214eedc2cf08ae335c3cd6a99cb5b5d3cc35a",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/0b4214eedc2cf08ae335c3cd6a99cb5b5d3cc35a.zip"
+      "modVersion": "1.6.3",
+      "releasedAt": "2025-04-30T16:25:05Z"
     },
     {
       "tag": "1.6.2",
-      "name": "v1.6.2 - Item and Liquid lore tablets.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-19T18:25:40Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.2",
-      "modVersion": "1.6.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.2.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.2.zip",
-      "assets": [],
-      "commitSha": "5b2f8352d5bd545db20b897523aa2b808d7123a1",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/5b2f8352d5bd545db20b897523aa2b808d7123a1.zip"
+      "modVersion": "1.6.2",
+      "releasedAt": "2025-04-19T18:25:40Z"
     },
     {
       "tag": "1.6.1",
-      "name": "v1.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-05T13:34:15Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.1",
-      "modVersion": "1.6.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.1.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.1.zip",
-      "assets": [],
-      "commitSha": "a60b61a1782bb10d471dcb1dc09ce9d00baffe36",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/a60b61a1782bb10d471dcb1dc09ce9d00baffe36.zip"
+      "modVersion": "1.6.1",
+      "releasedAt": "2025-04-05T13:34:15Z"
     },
     {
       "tag": "1.6.0",
-      "name": "v1.6.0 - Fully Mapped",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-16T16:17:21Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.6.0",
-      "modVersion": "1.6.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.0.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.6.0.zip",
-      "assets": [],
-      "commitSha": "3bca7e72a01c904861ed75f7996171bee7900418",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/3bca7e72a01c904861ed75f7996171bee7900418.zip"
+      "modVersion": "1.6.0",
+      "releasedAt": "2025-03-16T16:17:21Z"
     },
     {
       "tag": "1.5.6",
-      "name": "v1.5.6 - Collection of minor changes",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-03-02T14:26:25Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.5.6",
-      "modVersion": "1.5.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.5.6.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.5.6.zip",
-      "assets": [],
-      "commitSha": "3293043bfdb188301d5698d5723e89628d7dda3e",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/3293043bfdb188301d5698d5723e89628d7dda3e.zip"
+      "modVersion": "1.5.6",
+      "releasedAt": "2025-03-02T14:26:25Z",
+      "prerelease": true
     },
     {
       "tag": "1.5.2",
-      "name": "v1.5.2 - Integrated Music",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-03T11:44:26Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.5.2.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.5.2.zip",
-      "assets": [],
-      "commitSha": "c07f7b91b8cba0a170d8964b05207638ca7ac2e7",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/c07f7b91b8cba0a170d8964b05207638ca7ac2e7.zip"
+      "modVersion": "1.5.2",
+      "releasedAt": "2024-11-03T11:44:26Z"
     },
     {
       "tag": "1.5.1",
-      "name": "v1.5.1 - Minor pre-release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-09-18T12:30:21Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.5.1.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.5.1.zip",
-      "assets": [],
-      "commitSha": "91aba4730005fbe7484aa11279f0ffd7cf872fb6",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/91aba4730005fbe7484aa11279f0ffd7cf872fb6.zip"
+      "modVersion": "1.5.1",
+      "releasedAt": "2024-09-18T12:30:21Z",
+      "prerelease": true
     },
     {
       "tag": "1.4",
-      "name": "v1.4 - LORE + Sprite&Balancing changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-05T12:34:24Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.4",
-      "modVersion": "1.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.4.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.4.zip",
-      "assets": [],
-      "commitSha": "c1a7cc3bf561384421abcc2c2b3647b1893a3067",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/c1a7cc3bf561384421abcc2c2b3647b1893a3067.zip"
+      "modVersion": "1.4",
+      "releasedAt": "2024-06-05T12:34:24Z"
     },
     {
       "tag": "1.3",
-      "name": "v1.3 - More maps, difficulty changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-12T10:41:25Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.3",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.3.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.3.zip",
-      "assets": [],
-      "commitSha": "5e98281198b40bc8a4bf68bd63c0220308eeed1b",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/5e98281198b40bc8a4bf68bd63c0220308eeed1b.zip"
+      "modVersion": "1.3",
+      "releasedAt": "2024-05-12T10:41:25Z"
     },
     {
       "tag": "1.1",
-      "name": "v1.1 - Nicer Biomes, small but important additions.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-09T15:55:11Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.1",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.1.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.1.zip",
-      "assets": [],
-      "commitSha": "9a66091ed44bffaa7c8af741f716633cf85eb779",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/9a66091ed44bffaa7c8af741f716633cf85eb779.zip"
+      "modVersion": "1.1",
+      "releasedAt": "2024-03-09T15:55:11Z"
     },
     {
       "tag": "1.0",
-      "name": "Version 1.0 - The first release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-25T16:25:28Z",
-      "htmlUrl": "https://github.com/Catana791/Asthosus/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/asthosus/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "f50f6a0d836ba084f4a5a9008dd9bf74cf5a6923",
-      "archiveByCommitUrl": "https://github.com/catana791/asthosus/archive/f50f6a0d836ba084f4a5a9008dd9bf74cf5a6923.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.7.2s",
-      "modVersion": "1.7.2",
-      "minGameVersion": "146",
-      "maxGameVersion": 156.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.7.5",
-      "modVersion": "1.7.5",
-      "minGameVersion": "156.2",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0",
+      "releasedAt": "2024-02-25T16:25:28Z"
     }
   ],
   "meta": {
+    "name": "asthosus",
+    "author": "Catser",
+    "description": " \nA mod that adds a new planet, Asthosus, into the game.\n  \nAsthosus is a deserted planet. A wasteland filled with danger.\nIt has a fully playable campaign with 11 campaign and 21 optional maps. \n\nAside from these 32 maps, Asthosus contains over 180 pieces of unique content,\nincluding blocks, liquids, items, units and status effects.\nThis number is not counting any internal units or environment blocks/tiles.\n\nI aimed to re-use nearly no vanilla content and instead fill the mod \nwith new and (hopefully) exciting things.\n\nThe mod comes with it's own custom music, made by ThePythonGuy3!\n\nIf you find any issues or want to tell me anything else,\nfeel free to join the Asthosus Discord server. \nThe same thing goes for when you need help with this mod.\n\nAsthosus is available in the following languages:\n- English\n- German\n- Indonesian\n- Russian\n- Ukrainian\n- Traditional Chinese\n- Simplified Chinese\n\nEnjoy!\n",
+    "version": "1.7.5",
+    "minGameVersion": "156.2",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

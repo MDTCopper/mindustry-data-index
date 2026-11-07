@@ -1,81 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nichozolubigan/fill-a-barrel",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "New-update",
-      "name": "v1.09",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-12T14:19:54Z",
-      "htmlUrl": "https://github.com/NiChoZoLubigan/Fill-a-barrel/releases/tag/New-update",
-      "modVersion": "1.09",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/New-update.zip",
-      "sourceArchiveUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/New-update.zip",
-      "assets": [],
-      "commitSha": "7c4b034baf1224100bef5e1149a6faa757d510d7",
-      "archiveByCommitUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/7c4b034baf1224100bef5e1149a6faa757d510d7.zip"
+      "modVersion": "1.09",
+      "releasedAt": "2026-01-12T14:19:54Z"
     },
     {
       "tag": "Prototype",
-      "name": "Prototype Release 1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-11-29T11:22:21Z",
-      "htmlUrl": "https://github.com/NiChoZoLubigan/Fill-a-barrel/releases/tag/Prototype",
-      "modVersion": "1.0 PR1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Prototype.zip",
-      "sourceArchiveUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Prototype.zip",
-      "assets": [],
-      "commitSha": "1dfa12400b593d3a5c2d406f806e0d66280b119b",
-      "archiveByCommitUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/1dfa12400b593d3a5c2d406f806e0d66280b119b.zip"
+      "modVersion": "1.0 PR1",
+      "releasedAt": "2025-11-29T11:22:21Z",
+      "prerelease": true
     },
     {
       "tag": "Main-Release",
-      "name": "v1.0 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-01T02:12:39Z",
-      "htmlUrl": "https://github.com/NiChoZoLubigan/Fill-a-barrel/releases/tag/Main-Release",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Main-Release.zip",
-      "sourceArchiveUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/refs/tags/Main-Release.zip",
-      "assets": [],
-      "commitSha": "fb59fbfde97e52a39614585db86d22fed9d7c9e3",
-      "archiveByCommitUrl": "https://github.com/nichozolubigan/fill-a-barrel/archive/fb59fbfde97e52a39614585db86d22fed9d7c9e3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Prototype",
-      "modVersion": "1.0 PR1",
-      "minGameVersion": "136",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "New-update",
-      "modVersion": "1.09",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0",
+      "releasedAt": "2025-11-01T02:12:39Z"
     }
   ],
   "meta": {
+    "name": "fb",
+    "author": "[#8b008b[]]NiChoZoLubigan[[]]",
+    "description": "\nFills and create barrels for transport. Serpulo only.\n",
+    "version": "1.09",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

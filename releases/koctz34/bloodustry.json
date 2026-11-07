@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "koctz34/bloodustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-22T18:12:03Z",
-      "htmlUrl": "https://github.com/koctz34/BLOODUSTRY/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/koctz34/bloodustry/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/bloodustry/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "3e9fb1b14cb6d289f726e7bc3368ef4791c450b3",
-      "archiveByCommitUrl": "https://github.com/koctz34/bloodustry/archive/3e9fb1b14cb6d289f726e7bc3368ef4791c450b3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-07-22T18:12:03Z"
     }
   ],
   "meta": {
+    "name": "blooddustry",
+    "author": "Ion - 7274 (koctz34)",
+    "description": "When a unit dies, blood remains. Blood repairs units if they step on it.",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bob900-cod/STIdustrys",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry",
-      "name": "first verions of my mindustry mod",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-06T16:03:32Z",
-      "htmlUrl": "https://github.com/bob900-cod/STIdustrys/releases/tag/mindustry",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bob900-cod/STIdustrys/archive/refs/tags/mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/bob900-cod/STIdustrys/archive/refs/tags/mindustry.zip",
-      "assets": [],
-      "commitSha": "e424cc3e464d13fb467089141304d6cd956519a2",
-      "archiveByCommitUrl": "https://github.com/bob900-cod/STIdustrys/archive/e424cc3e464d13fb467089141304d6cd956519a2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry",
       "modVersion": "0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-03-06T16:03:32Z"
     }
   ],
   "meta": {
+    "name": "Stidustrys",
+    "author": "Bim",
+    "description": "Mod for Mindustrys",
+    "version": "0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

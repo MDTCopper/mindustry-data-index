@@ -1,215 +1,149 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wdfeer/ferrum",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-11T16:37:25Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v1.0.1/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2599937,
-          "downloadCount": 343,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v1.0.1/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "468bcd2b4f180e827fb66a31bff1973ff36ebf59",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/468bcd2b4f180e827fb66a31bff1973ff36ebf59.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v1.0.1/Ferrum.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 2599937,
+      "downloadCount": 343,
+      "releasedAt": "2024-12-11T16:37:25Z"
     },
     {
       "tag": "v0.10.0",
-      "name": "v0.10.0 Krupp & Houf",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-03T08:03:25Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.10.0",
-      "modVersion": "0.10.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.10.0/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.10.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2588596,
-          "downloadCount": 110,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.10.0/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4ac1609966a76140ca2bd01a9b2d37eb52bbc7fc",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/4ac1609966a76140ca2bd01a9b2d37eb52bbc7fc.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.10.0/Ferrum.jar",
+      "modVersion": "0.10.0",
+      "sizeBytes": 2588596,
+      "downloadCount": 110,
+      "releasedAt": "2024-12-03T08:03:25Z"
     },
     {
       "tag": "v0.8.0",
-      "name": "v0.8.0 Steel",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-23T12:01:09Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.8.0",
-      "modVersion": "0.8.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.8.0/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2567286,
-          "downloadCount": 115,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.8.0/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "b6fbf4ae2109a40a839f846e0c12bec00c082183",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/b6fbf4ae2109a40a839f846e0c12bec00c082183.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.8.0/Ferrum.jar",
+      "modVersion": "0.8.0",
+      "sizeBytes": 2567286,
+      "downloadCount": 115,
+      "releasedAt": "2024-11-23T12:01:09Z"
     },
     {
       "tag": "v0.7.1",
-      "name": "v0.7.1 Gustav Hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-21T17:27:16Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.7.1",
-      "modVersion": "0.7.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.7.1/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2548036,
-          "downloadCount": 33,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.7.1/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "5a0b483899a8ed811a32b47c15289edce046a63a",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/5a0b483899a8ed811a32b47c15289edce046a63a.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.7.1/Ferrum.jar",
+      "modVersion": "0.7.1",
+      "sizeBytes": 2548036,
+      "downloadCount": 33,
+      "releasedAt": "2024-11-21T17:27:16Z"
     },
     {
       "tag": "v0.7.0",
-      "name": "v0.7.0 Gustav",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-11-21T16:56:54Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.7.0",
-      "modVersion": "0.7.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.7.0/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2546570,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.7.0/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "004effde478a60afd3e6162c29843c7c291679aa",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/004effde478a60afd3e6162c29843c7c291679aa.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.7.0/Ferrum.jar",
+      "modVersion": "0.7.0",
+      "sizeBytes": 2546570,
+      "downloadCount": 5,
+      "releasedAt": "2024-11-21T16:56:54Z",
+      "prerelease": true
     },
     {
       "tag": "v0.6.2",
-      "name": "v0.6.2 - Ironworks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-16T15:44:43Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.6.2",
-      "modVersion": "0.6.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.6.2/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.6.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2529847,
-          "downloadCount": 90,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.6.2/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "9fbe5a857fbc276146a9a063d6d97fbec2a9d91d",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/9fbe5a857fbc276146a9a063d6d97fbec2a9d91d.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.6.2/Ferrum.jar",
+      "modVersion": "0.6.2",
+      "sizeBytes": 2529847,
+      "downloadCount": 90,
+      "releasedAt": "2024-11-16T15:44:43Z"
     },
     {
       "tag": "v0.5",
-      "name": "v0.5 - Pyrite",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-14T15:57:21Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.5",
-      "modVersion": "0.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.5/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2487320,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.5/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "b54c2c73d7bb15d490964083d25b93ff3bdf63c2",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/b54c2c73d7bb15d490964083d25b93ff3bdf63c2.zip"
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.5/Ferrum.jar",
+      "modVersion": "0.5",
+      "sizeBytes": 2487320,
+      "downloadCount": 4,
+      "releasedAt": "2024-11-14T15:57:21Z"
     },
     {
       "tag": "v0.4",
-      "name": "v0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-14T07:13:25Z",
-      "htmlUrl": "https://github.com/wdfeer/Ferrum/releases/tag/v0.4",
-      "modVersion": "0.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.4/Ferrum.jar",
-      "sourceArchiveUrl": "https://github.com/wdfeer/ferrum/archive/refs/tags/v0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ferrum.jar",
-          "size": 2480232,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.4/Ferrum.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "cd22946ba50c015f8831b935cd33931f4c2270ff",
-      "archiveByCommitUrl": "https://github.com/wdfeer/ferrum/archive/cd22946ba50c015f8831b935cd33931f4c2270ff.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.1",
-      "modVersion": "1.0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/wdfeer/Ferrum/releases/download/v0.4/Ferrum.jar",
+      "modVersion": "0.4",
+      "sizeBytes": 2480232,
+      "releasedAt": "2024-11-14T07:13:25Z"
     }
   ],
   "meta": {
+    "name": "ferrum",
+    "author": "wdfeer",
+    "description": "Semi-realistic iron-based mod. Modifies serpulo progression and vanilla balance.",
+    "version": "1.0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ferrum.Ferrum",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

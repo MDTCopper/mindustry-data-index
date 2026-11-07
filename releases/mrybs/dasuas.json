@@ -1,143 +1,105 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mrybs/dasuas",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Release-1.0",
-      "name": "Release 1.0 Kapira",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-26T15:16:56Z",
-      "htmlUrl": "https://github.com/mrybs/dasuas/releases/tag/Release-1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Release-1.0/dasuas.zip",
-      "sourceArchiveUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Release-1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dasuas.zip",
-          "size": 9157987,
-          "downloadCount": 61,
-          "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Release-1.0/dasuas.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "3e10b16c0412a6ac302f66c6e3436e4423775950",
-      "archiveByCommitUrl": "https://github.com/mrybs/dasuas/archive/3e10b16c0412a6ac302f66c6e3436e4423775950.zip"
+      "downloadUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Release-1.0.zip",
+      "modVersion": "1",
+      "sizeBytes": 9157987,
+      "downloadCount": 61,
+      "releasedAt": "2022-11-26T15:16:56Z"
     },
     {
       "tag": "Beta-0.4",
-      "name": "Beta 0.4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-26T14:56:03Z",
-      "htmlUrl": "https://github.com/mrybs/dasuas/releases/tag/Beta-0.4",
-      "modVersion": "0.4",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta-0.4/dasuas.zip",
-      "sourceArchiveUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta-0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dasuas.zip",
-          "size": 9153047,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta-0.4/dasuas.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "69a8651d889c41bc9c6b365880f9b6cfa0315bd9",
-      "archiveByCommitUrl": "https://github.com/mrybs/dasuas/archive/69a8651d889c41bc9c6b365880f9b6cfa0315bd9.zip"
+      "downloadUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta-0.4.zip",
+      "modVersion": "0.4",
+      "sizeBytes": 9153047,
+      "downloadCount": 10,
+      "releasedAt": "2022-11-26T14:56:03Z",
+      "prerelease": true
     },
     {
       "tag": "Beta-0.3.2",
-      "name": "Beta-0.3.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-23T22:36:59Z",
-      "htmlUrl": "https://github.com/mrybs/dasuas/releases/tag/Beta-0.3.2",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta-0.3.2.zip",
-      "sourceArchiveUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta-0.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dasuas.jar",
-          "size": 490212,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta-0.3.2/dasuas.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "9faf4bec9d9ad08d15d340b0c9ca5fd543f7b9b4",
-      "archiveByCommitUrl": "https://github.com/mrybs/dasuas/archive/9faf4bec9d9ad08d15d340b0c9ca5fd543f7b9b4.zip"
+      "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta-0.3.2/dasuas.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 490212,
+      "downloadCount": 9,
+      "releasedAt": "2022-11-23T22:36:59Z",
+      "prerelease": true
     },
     {
       "tag": "Beta-0.3.1",
-      "name": "Beta 0.3.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-23T22:27:53Z",
-      "htmlUrl": "https://github.com/mrybs/dasuas/releases/tag/Beta-0.3.1",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta-0.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta-0.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dasuas.jar",
-          "size": 490219,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta-0.3.1/dasuas.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "40b93e02a008d94e023096c9bc051c069a51635a",
-      "archiveByCommitUrl": "https://github.com/mrybs/dasuas/archive/40b93e02a008d94e023096c9bc051c069a51635a.zip"
+      "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta-0.3.1/dasuas.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 490219,
+      "downloadCount": 10,
+      "releasedAt": "2022-11-23T22:27:53Z",
+      "prerelease": true
     },
     {
       "tag": "Beta",
-      "name": "Beta 0.3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-17T18:05:09Z",
-      "htmlUrl": "https://github.com/mrybs/dasuas/releases/tag/Beta",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta.zip",
-      "sourceArchiveUrl": "https://github.com/mrybs/dasuas/archive/refs/tags/Beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dasuas.jar",
-          "size": 477043,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta/dasuas.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "aff527106a5a6f45e163ad467e2747f1d524ffc5",
-      "archiveByCommitUrl": "https://github.com/mrybs/dasuas/archive/aff527106a5a6f45e163ad467e2747f1d524ffc5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Release-1.0",
-      "modVersion": "1",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/mrybs/dasuas/releases/download/Beta/dasuas.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 477043,
+      "downloadCount": 13,
+      "releasedAt": "2022-11-17T18:05:09Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "dasuas",
+    "author": "mrybs - maintainer, teamlead, coder and pixelartist\n001kpp - pixelartist and sound director\nLpSts325 - pixelartist\nproneslow - pixelartist",
+    "description": "Dausas Project mod",
+    "version": "1",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

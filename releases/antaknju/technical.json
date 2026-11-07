@@ -1,102 +1,70 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "antaknju/technical",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.6.1-alpha+066",
-      "name": "v1.6.1-alpha+066",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-31T17:52:27Z",
-      "htmlUrl": "https://github.com/antaknju/technical/releases/tag/v1.6.1-alpha%2B066",
-      "modVersion": "1.6.1-alpha+066",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/antaknju/technical/releases/download/v1.6.1-alpha%2B066/technical.jar",
-      "sourceArchiveUrl": "https://github.com/antaknju/technical/archive/refs/tags/v1.6.1-alpha%2B066.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technical.jar",
-          "size": 58439594,
-          "downloadCount": 770,
-          "downloadUrl": "https://github.com/antaknju/technical/releases/download/v1.6.1-alpha%2B066/technical.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "65daaa2eeaa72ddecfa3019c45dd3933ada0f6f7",
-      "archiveByCommitUrl": "https://github.com/antaknju/technical/archive/65daaa2eeaa72ddecfa3019c45dd3933ada0f6f7.zip"
+      "downloadUrl": "https://github.com/antaknju/technical/releases/download/v1.6.1-alpha%2B066/technical.jar",
+      "modVersion": "1.6.1-alpha+066",
+      "sizeBytes": 58439594,
+      "downloadCount": 770,
+      "releasedAt": "2026-08-31T17:52:27Z"
     },
     {
       "tag": "1.5.1-alpha+569",
-      "name": "1.5.1-alpha+569",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-16T18:51:36Z",
-      "htmlUrl": "https://github.com/antaknju/technical/releases/tag/1.5.1-alpha%2B569",
-      "modVersion": "1.5.1-alpha+569",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/antaknju/technical/releases/download/1.5.1-alpha%2B569/technical.jar",
-      "sourceArchiveUrl": "https://github.com/antaknju/technical/archive/refs/tags/1.5.1-alpha%2B569.zip",
-      "assets": [
-        {
-          "name": "technical.jar",
-          "size": 49626696,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/antaknju/technical/releases/download/1.5.1-alpha%2B569/technical.jar"
-        }
-      ],
-      "commitSha": "fa01dd0e6abf921cc7a9b335033b6f174fd4f85c",
-      "archiveByCommitUrl": "https://github.com/antaknju/technical/archive/fa01dd0e6abf921cc7a9b335033b6f174fd4f85c.zip"
+      "modVersion": "1.5.1-alpha+569",
+      "sizeBytes": 49626696,
+      "downloadCount": 6,
+      "releasedAt": "2026-04-16T18:51:36Z"
     },
     {
       "tag": "v1.0.0-alpha+013",
-      "name": "v1.0.0-alpha+013 - First Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-28T19:44:51Z",
-      "htmlUrl": "https://github.com/antaknju/technical/releases/tag/v1.0.0-alpha%2B013",
-      "modVersion": "1.0.0-alpha+013",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/antaknju/technical/releases/download/v1.0.0-alpha%2B013/technical.jar",
-      "sourceArchiveUrl": "https://github.com/antaknju/technical/archive/refs/tags/v1.0.0-alpha%2B013.zip",
-      "assets": [
-        {
-          "name": "technical.jar",
-          "size": 19966109,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/antaknju/technical/releases/download/v1.0.0-alpha%2B013/technical.jar"
-        }
-      ],
-      "commitSha": "92cd974a0c0b898ce27b6332c56a6bd9e2cc35fd",
-      "archiveByCommitUrl": "https://github.com/antaknju/technical/archive/92cd974a0c0b898ce27b6332c56a6bd9e2cc35fd.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0-alpha+013",
       "modVersion": "1.0.0-alpha+013",
-      "minGameVersion": "154",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.6.1-alpha+066",
-      "modVersion": "1.6.1-alpha+066",
-      "minGameVersion": "156",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 19966109,
+      "downloadCount": 5,
+      "releasedAt": "2026-03-28T19:44:51Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "technical",
+    "author": "AnTakNju",
+    "description": "Complete overhaul of the standard Mindustry experience.\n\nMy primary goal was to add content that differs significantly from the base game, by providing a fresh experience while still retaining the core \"Mindustry\" feel.",
+    "version": "1.6.1-alpha+066",
+    "minGameVersion": "156",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "technical.Technical",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

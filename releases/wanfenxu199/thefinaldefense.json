@@ -1,65 +1,51 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wanfenxu199/thefinaldefense",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "v1.1市场加入",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-05T08:37:01Z",
-      "htmlUrl": "https://github.com/wanfenxu199/TheFinalDefense/releases/tag/v1.1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "157.1，",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wanfenxu199/TheFinalDefense/releases/download/v1.1/my-mod.zip",
-      "sourceArchiveUrl": "https://github.com/wanfenxu199/thefinaldefense/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "my-mod.zip",
-          "size": 1154223,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/wanfenxu199/TheFinalDefense/releases/download/v1.1/my-mod.zip"
+          "from": "157.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "18c5873eeb9f1058d2315f316d598eac2bd08066",
-      "archiveByCommitUrl": "https://github.com/wanfenxu199/thefinaldefense/archive/18c5873eeb9f1058d2315f316d598eac2bd08066.zip"
+      "downloadUrl": "https://github.com/wanfenxu199/TheFinalDefense/releases/download/v1.1/my-mod.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 1154223,
+      "downloadCount": 4,
+      "releasedAt": "2026-09-05T08:37:01Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/wanfenxu199/thefinaldefense/tree/v1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "157.1，",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wanfenxu199/thefinaldefense/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/wanfenxu199/thefinaldefense/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "3ff9129fbbd4c8666d2d9a69119b65de875d7d84",
-      "archiveByCommitUrl": "https://github.com/wanfenxu199/thefinaldefense/archive/3ff9129fbbd4c8666d2d9a69119b65de875d7d84.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1",
-      "modVersion": "1.0",
-      "minGameVersion": "157.1，",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0"
     }
   ],
   "meta": {
+    "name": "终焉防线",
+    "author": "晚风叙遥",
+    "description": "一个自动生成的模组，感谢deepseek",
+    "version": "1.0",
+    "minGameVersion": "157.1，",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

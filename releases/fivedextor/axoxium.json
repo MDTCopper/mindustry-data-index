@@ -1,91 +1,76 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "fivedextor/axoxium",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "axoxium-V0.5F",
-      "name": "Axoxium V0.5F Bug fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-27T23:25:39Z",
-      "htmlUrl": "https://github.com/FiveDextor/Axoxium/releases/tag/axoxium-V0.5F",
-      "modVersion": "0.3.1",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/axoxium-V0.5F.zip",
-      "sourceArchiveUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/axoxium-V0.5F.zip",
-      "assets": [],
-      "commitSha": "3d0ece356ffaae5d4c7001168bad38a87591004d",
-      "archiveByCommitUrl": "https://github.com/fivedextor/axoxium/archive/3d0ece356ffaae5d4c7001168bad38a87591004d.zip"
+      "modVersion": "0.3.1",
+      "releasedAt": "2025-01-27T23:25:39Z"
     },
     {
       "tag": "axoxium-v0.5",
-      "name": "Axoxium V0.5 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-27T10:30:49Z",
-      "htmlUrl": "https://github.com/FiveDextor/Axoxium/releases/tag/axoxium-v0.5",
-      "modVersion": "0.3.1",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/axoxium-v0.5.zip",
-      "sourceArchiveUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/axoxium-v0.5.zip",
-      "assets": [],
-      "commitSha": "00ef02f4e0ff958e1d74a64adcae60862060bbf3",
-      "archiveByCommitUrl": "https://github.com/fivedextor/axoxium/archive/00ef02f4e0ff958e1d74a64adcae60862060bbf3.zip"
+      "modVersion": "0.3.1",
+      "releasedAt": "2025-01-27T10:30:49Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "Axoxium 3rd Map alpha.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-29T03:05:23Z",
-      "htmlUrl": "https://github.com/FiveDextor/Axoxium/releases/tag/mindustry-mod",
-      "modVersion": "0.3.1",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "261f2fcc51873c4eff08ade7ae7f0fa5b61dd70a",
-      "archiveByCommitUrl": "https://github.com/fivedextor/axoxium/archive/261f2fcc51873c4eff08ade7ae7f0fa5b61dd70a.zip"
+      "modVersion": "0.3.1",
+      "releasedAt": "2024-12-29T03:05:23Z"
     },
     {
       "tag": "axoxium-0.5A",
-      "name": "axoxium-0.5A",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/fivedextor/axoxium/tree/axoxium-0.5A",
-      "modVersion": "0.3.1",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/axoxium-0.5A.zip",
-      "sourceArchiveUrl": "https://github.com/fivedextor/axoxium/archive/refs/tags/axoxium-0.5A.zip",
-      "assets": [],
-      "commitSha": "b4f45526240675cafa547a3bb74493a2ac86e210",
-      "archiveByCommitUrl": "https://github.com/fivedextor/axoxium/archive/b4f45526240675cafa547a3bb74493a2ac86e210.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "axoxium-V0.5F",
-      "modVersion": "0.3.1",
-      "minGameVersion": "142",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.3.1"
     }
   ],
   "meta": {
+    "name": "axoxium",
+    "author": "[blue]555okboi",
+    "description": "\nA [green]toxic planet []mod that give big exploration to player.\n[red]Don't recommend to play with other mod especially planet mod.\n",
+    "version": "0.3.1",
+    "minGameVersion": "142",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

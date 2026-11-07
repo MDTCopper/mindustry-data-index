@@ -1,143 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mindustrydesignit/schematic-browser-mod",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "latest",
-      "name": "Latest Build (Mindustry v8)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-18T12:25:31Z",
-      "htmlUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/tag/latest",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest/schematic-browser-mod.jar",
-      "sourceArchiveUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/latest.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "schematic-browser-mod.jar",
-          "size": 65184,
-          "downloadCount": 37065,
-          "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest/schematic-browser-mod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "18a05ae22da44ac25305919eb6d225399059eb5b",
-      "archiveByCommitUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/18a05ae22da44ac25305919eb6d225399059eb5b.zip"
+      "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest/schematic-browser-mod.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 65184,
+      "downloadCount": 37079,
+      "releasedAt": "2025-12-18T12:25:31Z"
     },
     {
       "tag": "v1.2",
-      "name": "v1.2 (Mindustry v8)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-18T12:25:27Z",
-      "htmlUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/tag/v1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/v1.2/schematic-browser-mod.jar",
-      "sourceArchiveUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/v1.2.zip",
-      "assets": [
-        {
-          "name": "schematic-browser-mod.jar",
-          "size": 65184,
-          "downloadCount": 757,
-          "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/v1.2/schematic-browser-mod.jar"
-        }
-      ],
-      "commitSha": "18a05ae22da44ac25305919eb6d225399059eb5b",
-      "archiveByCommitUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/18a05ae22da44ac25305919eb6d225399059eb5b.zip"
-    },
-    {
-      "tag": "latest-v7",
-      "name": "Latest Build (Mindustry v7)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-02T20:46:37Z",
-      "htmlUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/tag/latest-v7",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest-v7/schematic-browser-mod.jar",
-      "sourceArchiveUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/latest-v7.zip",
-      "assets": [
-        {
-          "name": "schematic-browser-mod.jar",
-          "size": 53196,
-          "downloadCount": 1325,
-          "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest-v7/schematic-browser-mod.jar"
-        }
-      ],
-      "commitSha": "2975cd3f70ad30853103e72f12a7bee6edbe43c0",
-      "archiveByCommitUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/2975cd3f70ad30853103e72f12a7bee6edbe43c0.zip"
-    },
-    {
-      "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/tree/v1.1",
-      "modVersion": "1.1",
-      "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "984eee561fa8dca39ca8b5493b7dd037de417600",
-      "archiveByCommitUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/984eee561fa8dca39ca8b5493b7dd037de417600.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/tree/v1.0",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "c21d23763ba4b79bb0d4b6602d2ae913152473a6",
-      "archiveByCommitUrl": "https://github.com/mindustrydesignit/schematic-browser-mod/archive/c21d23763ba4b79bb0d4b6602d2ae913152473a6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "latest-v7",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1",
-      "modVersion": "1.1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154,
-      "hasRelease": false
-    },
-    {
-      "tag": "latest",
       "modVersion": "1.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 65184,
+      "downloadCount": 760,
+      "releasedAt": "2025-12-18T12:25:27Z"
+    },
+    {
+      "tag": "latest-v7",
+      "kind": "release",
+      "minGameVersion": "145",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryDesignIt/schematic-browser-mod/releases/download/latest-v7/schematic-browser-mod.jar",
+      "modVersion": "1",
+      "sizeBytes": 53196,
+      "downloadCount": 1325,
+      "releasedAt": "2025-05-02T20:46:37Z"
     }
   ],
   "meta": {
+    "name": "schematic-browser",
+    "author": "SByte, Eeve-lyn, zxtej",
+    "description": "A mod for browsing schematic repositories.",
+    "version": "1.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "schembrowser.SchematicBrowser",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

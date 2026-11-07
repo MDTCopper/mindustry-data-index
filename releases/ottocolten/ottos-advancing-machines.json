@@ -1,74 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ottocolten/ottos-advancing-machines",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.1.4alpha",
-      "name": "Forgery",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-14T02:15:37Z",
-      "htmlUrl": "https://github.com/ottocolten/ottos-Advancing-Machines/releases/tag/v0.1.4alpha",
-      "modVersion": "0.0.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/refs/tags/v0.1.4alpha.zip",
-      "sourceArchiveUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/refs/tags/v0.1.4alpha.zip",
-      "assets": [],
-      "commitSha": "18f18dfa1ef18c1015bbe03a4c4367e1dc8dbbb2",
-      "archiveByCommitUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/18f18dfa1ef18c1015bbe03a4c4367e1dc8dbbb2.zip"
+      "modVersion": "0.0.2",
+      "releasedAt": "2025-09-14T02:15:37Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.3alpha",
-      "name": "The Start of the new units :3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-05T23:48:16Z",
-      "htmlUrl": "https://github.com/ottocolten/ottos-Advancing-Machines/releases/tag/v0.1.3alpha",
-      "modVersion": "0.0.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/refs/tags/v0.1.3alpha.zip",
-      "sourceArchiveUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/refs/tags/v0.1.3alpha.zip",
-      "assets": [],
-      "commitSha": "517c33f8e3920b5a11be7fd90be4d3579da8e463",
-      "archiveByCommitUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/517c33f8e3920b5a11be7fd90be4d3579da8e463.zip"
+      "modVersion": "0.0.2",
+      "releasedAt": "2025-09-05T23:48:16Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.4",
-      "name": "v0.1.4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/ottocolten/ottos-advancing-machines/tree/v0.1.4",
-      "modVersion": "0.0.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/refs/tags/v0.1.4.zip",
-      "sourceArchiveUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/refs/tags/v0.1.4.zip",
-      "assets": [],
-      "commitSha": "bfe174b635b9a0b5298b3f5dcfb34deae72bf5d1",
-      "archiveByCommitUrl": "https://github.com/ottocolten/ottos-advancing-machines/archive/bfe174b635b9a0b5298b3f5dcfb34deae72bf5d1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.4alpha",
-      "modVersion": "0.0.2",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.0.2"
     }
   ],
   "meta": {
+    "name": "advancing-machines",
+    "author": "ottocolten",
+    "description": "Are the current high-tier Erekir machines boring? Update taking too long to release? Well dont worry, as this mods [will add] tons of stronger and higher-tier units, turrets, factories, etc! (My First Real Mod!)/n By the way, this mod is my gonna be my big main mod, with the most stuff gonna be in it then any other mod ill make./n Therefore, expect this mod to take MAAANNNNYY months :3",
+    "version": "0.0.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

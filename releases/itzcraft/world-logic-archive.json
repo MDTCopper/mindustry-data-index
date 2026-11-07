@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "itzcraft/world-logic-archive",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V0.5",
-      "name": "V0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-30T05:46:55Z",
-      "htmlUrl": "https://github.com/ItzCraft/world-logic-archive/releases/tag/V0.5",
-      "modVersion": "0.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/itzcraft/world-logic-archive/archive/refs/tags/V0.5.zip",
-      "sourceArchiveUrl": "https://github.com/itzcraft/world-logic-archive/archive/refs/tags/V0.5.zip",
-      "assets": [],
-      "commitSha": "acd15f4532c8be364ae46d4fb8468155429199ed",
-      "archiveByCommitUrl": "https://github.com/itzcraft/world-logic-archive/archive/acd15f4532c8be364ae46d4fb8468155429199ed.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.5",
       "modVersion": "0.5",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-08-30T05:46:55Z"
     }
   ],
   "meta": {
+    "name": "wla",
+    "author": "ItzCraft",
+    "description": "\nA mod that adds a 1 map with a lot world processors what you can use in your mods/maps.\n\nSuggest me your wproc ideas what you want to see here. But remember, all wprocs used in this map, could be copyed by anyone.\n",
+    "version": "0.5",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

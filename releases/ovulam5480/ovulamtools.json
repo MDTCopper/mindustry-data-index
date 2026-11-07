@@ -1,617 +1,373 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ovulam5480/ovulamtools",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.10.0",
-      "name": "0.10.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-20T15:57:19Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.10.0",
-      "modVersion": "0.10.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.10.0/OvulamTools-0.10.0.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.10.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.10.0.jar",
-          "size": 265230,
-          "downloadCount": 1205,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.10.0/OvulamTools-0.10.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e39d9dddf057683e1243e4a9a7c3e3ebedd0ae2e",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/e39d9dddf057683e1243e4a9a7c3e3ebedd0ae2e.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.10.0/OvulamTools-0.10.0.jar",
+      "modVersion": "0.10.0",
+      "sizeBytes": 265230,
+      "downloadCount": 1206,
+      "releasedAt": "2026-07-20T15:57:19Z"
     },
     {
       "tag": "0.9.8",
-      "name": "0.9.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-22T02:52:47Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.8",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.8/OvulamTools-0.9.8.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.8.jar",
-          "size": 267058,
-          "downloadCount": 2199,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.8/OvulamTools-0.9.8.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2850cb70671b138327fe38d1145047aea0a82765",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/2850cb70671b138327fe38d1145047aea0a82765.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.8/OvulamTools-0.9.8.jar",
+      "modVersion": "0.10.0",
+      "sizeBytes": 267058,
+      "downloadCount": 2199,
+      "releasedAt": "2025-12-22T02:52:47Z"
     },
     {
       "tag": "0.9.7",
-      "name": "0.9.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-27T02:35:25Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.7",
-      "modVersion": "0.9.7",
+      "kind": "release",
       "minGameVersion": "151",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.7/OvulamTools-0.9.7.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.7.jar",
-          "size": 267056,
-          "downloadCount": 464,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.7/OvulamTools-0.9.7.jar"
+          "from": "151",
+          "to": "154"
         }
       ],
-      "commitSha": "9fa4519d640dfc84e70e036a2f3c6e44884ec751",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/9fa4519d640dfc84e70e036a2f3c6e44884ec751.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.7/OvulamTools-0.9.7.jar",
+      "modVersion": "0.9.7",
+      "sizeBytes": 267056,
+      "downloadCount": 464,
+      "releasedAt": "2025-08-27T02:35:25Z"
     },
     {
       "tag": "0.9.6",
-      "name": "0.9.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-16T15:34:32Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.6",
-      "modVersion": "0.9.6",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.6/OvulamTools-0.9.6.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.6.jar",
-          "size": 267066,
-          "downloadCount": 17,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.6/OvulamTools-0.9.6.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "1eb7c76f7a00ae2b4b7c85a931b50e4f2d219531",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/1eb7c76f7a00ae2b4b7c85a931b50e4f2d219531.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.6/OvulamTools-0.9.6.jar",
+      "modVersion": "0.9.6",
+      "sizeBytes": 267066,
+      "downloadCount": 17,
+      "releasedAt": "2025-08-16T15:34:32Z"
     },
     {
       "tag": "0.9.5",
-      "name": "0.9.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-08T02:48:13Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.5",
-      "modVersion": "0.9.5",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.5/OvulamTools-0.9.5.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.5.jar",
-          "size": 266988,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.5/OvulamTools-0.9.5.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "d69d088565979b58fb35e44d300e65b3fec1d0e2",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/d69d088565979b58fb35e44d300e65b3fec1d0e2.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.5/OvulamTools-0.9.5.jar",
+      "modVersion": "0.9.5",
+      "sizeBytes": 266988,
+      "downloadCount": 12,
+      "releasedAt": "2025-08-08T02:48:13Z"
     },
     {
       "tag": "0.9.4",
-      "name": "0.9.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-08T02:21:30Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.4",
-      "modVersion": "0.9.4",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.4/OvulamTools-0.9.4.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.4.jar",
-          "size": 266727,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.4/OvulamTools-0.9.4.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "0917b1c0589db14091306ef8d22e7e8c1124c5c1",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/0917b1c0589db14091306ef8d22e7e8c1124c5c1.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.4/OvulamTools-0.9.4.jar",
+      "modVersion": "0.9.4",
+      "sizeBytes": 266727,
+      "downloadCount": 9,
+      "releasedAt": "2025-08-08T02:21:30Z"
     },
     {
       "tag": "0.9.3",
-      "name": "0.9.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-06T00:41:32Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.3",
-      "modVersion": "0.9.3",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.3/OvulamTools-0.9.3.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.3.jar",
-          "size": 266737,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.3/OvulamTools-0.9.3.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "7cf3570b30a31d789fa0c14af470eb20f9b58943",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/7cf3570b30a31d789fa0c14af470eb20f9b58943.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.3/OvulamTools-0.9.3.jar",
+      "modVersion": "0.9.3",
+      "sizeBytes": 266737,
+      "downloadCount": 8,
+      "releasedAt": "2025-08-06T00:41:32Z"
     },
     {
       "tag": "0.9.2",
-      "name": "0.9.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-02T14:51:12Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.2",
-      "modVersion": "0.9.2",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.2/OvulamTools-0.9.2.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools-0.9.2.jar",
-          "size": 264941,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.2/OvulamTools-0.9.2.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "964116479c357657da7ec3f7324f64363d06cce9",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/964116479c357657da7ec3f7324f64363d06cce9.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.2/OvulamTools-0.9.2.jar",
+      "modVersion": "0.9.2",
+      "sizeBytes": 264941,
+      "downloadCount": 7,
+      "releasedAt": "2025-08-02T14:51:12Z"
     },
     {
       "tag": "0.9.1",
-      "name": "0.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-02T12:20:53Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9.1",
-      "modVersion": "0.9.1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.1/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 264873,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.1/OvulamTools.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "1f63924ea34439ba4e56339bc9a543a1b7d0afc1",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/1f63924ea34439ba4e56339bc9a543a1b7d0afc1.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9.1/OvulamTools.jar",
+      "modVersion": "0.9.1",
+      "sizeBytes": 264873,
+      "downloadCount": 3,
+      "releasedAt": "2025-08-02T12:20:53Z"
     },
     {
       "tag": "0.9",
-      "name": "0.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-02T02:35:09Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.9",
-      "modVersion": "0.9.0",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 264811,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9/OvulamTools.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "73b50fca1605d87e1deab44ab0edca172e5baf64",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/73b50fca1605d87e1deab44ab0edca172e5baf64.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.9/OvulamTools.jar",
+      "modVersion": "0.9.0",
+      "sizeBytes": 264811,
+      "downloadCount": 5,
+      "releasedAt": "2025-08-02T02:35:09Z"
     },
     {
       "tag": "0.8.5",
-      "name": "0.8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-18T02:29:23Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.8.5",
-      "modVersion": "0.8.5",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.5/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.8.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 251330,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.5/OvulamTools.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "55d2f5100d7d06fcc473fa4c2a12a275be97d7ed",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/55d2f5100d7d06fcc473fa4c2a12a275be97d7ed.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.5/OvulamTools.jar",
+      "modVersion": "0.8.5",
+      "sizeBytes": 251330,
+      "downloadCount": 18,
+      "releasedAt": "2025-07-18T02:29:23Z"
     },
     {
       "tag": "0.8.4",
-      "name": "0.8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-03T15:20:18Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.8.4",
-      "modVersion": "0.8.4",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.4/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 235255,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.4/OvulamTools.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "4adcd270786551085702d126a0c270888b842f17",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/4adcd270786551085702d126a0c270888b842f17.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.4/OvulamTools.jar",
+      "modVersion": "0.8.4",
+      "sizeBytes": 235255,
+      "downloadCount": 10,
+      "releasedAt": "2025-07-03T15:20:18Z"
     },
     {
       "tag": "0.8.2",
-      "name": "0.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-17T14:42:56Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.8.2",
-      "modVersion": "0.8.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.2/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 230451,
-          "downloadCount": 49,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.2/OvulamTools.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "ed448c4619ac2d084e6a686155247b04fbc510f8",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/ed448c4619ac2d084e6a686155247b04fbc510f8.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.2/OvulamTools.jar",
+      "modVersion": "0.8.1",
+      "sizeBytes": 230451,
+      "downloadCount": 49,
+      "releasedAt": "2025-04-17T14:42:56Z"
     },
     {
       "tag": "0.8.1",
-      "name": "0.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-17T00:09:38Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.8.1",
-      "modVersion": "0.8.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.1/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 230467,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.1/OvulamTools.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "c3491c418ac88b1cce1c21cd90bd4ccd5bd76247",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/c3491c418ac88b1cce1c21cd90bd4ccd5bd76247.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8.1/OvulamTools.jar",
+      "modVersion": "0.8.1",
+      "sizeBytes": 230467,
+      "downloadCount": 3,
+      "releasedAt": "2025-04-17T00:09:38Z"
     },
     {
       "tag": "0.8",
-      "name": "0.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-16T11:09:42Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.8",
-      "modVersion": "0.8.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 230515,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8/OvulamTools.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "0518651a85506741fab5ff8ff85175ec09750729",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/0518651a85506741fab5ff8ff85175ec09750729.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.8/OvulamTools.jar",
+      "modVersion": "0.8.0",
+      "sizeBytes": 230515,
+      "downloadCount": 11,
+      "releasedAt": "2025-04-16T11:09:42Z"
     },
     {
       "tag": "0.7.5",
-      "name": "0.7.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-31T14:43:37Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.7.5",
-      "modVersion": "0.7.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.5/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.7.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 244884,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.5/OvulamTools.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "050aa7ae9369b3206babb0aa984ca6c9451fa21b",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/050aa7ae9369b3206babb0aa984ca6c9451fa21b.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.5/OvulamTools.jar",
+      "modVersion": "0.7.5",
+      "sizeBytes": 244884,
+      "downloadCount": 23,
+      "releasedAt": "2025-03-31T14:43:37Z"
     },
     {
       "tag": "0.7.4",
-      "name": "0.7.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-15T07:21:10Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.7.4",
-      "modVersion": "0.7.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.4/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 244311,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.4/OvulamTools.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "cc8ebb75077f1abd9c78f2ad804cb1cfd96a4801",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/cc8ebb75077f1abd9c78f2ad804cb1cfd96a4801.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.4/OvulamTools.jar",
+      "modVersion": "0.7.4",
+      "sizeBytes": 244311,
+      "downloadCount": 12,
+      "releasedAt": "2025-03-15T07:21:10Z"
     },
     {
       "tag": "0.7.3",
-      "name": "0.7.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-15T03:04:23Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.7.3",
-      "modVersion": "0.7.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.3/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 243051,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.3/OvulamTools.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "383fcc78031b6c8d9f2ed3db0fdb537fb8889d8a",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/383fcc78031b6c8d9f2ed3db0fdb537fb8889d8a.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.3/OvulamTools.jar",
+      "modVersion": "0.7.3",
+      "sizeBytes": 243051,
+      "downloadCount": 7,
+      "releasedAt": "2025-03-15T03:04:23Z"
     },
     {
       "tag": "0.7.2",
-      "name": "0.7.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-13T01:59:01Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.7.2",
-      "modVersion": "0.7.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.2/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 241442,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.2/OvulamTools.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ae623ba68bd959beaa99c77425676ae579bcb32a",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/ae623ba68bd959beaa99c77425676ae579bcb32a.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.2/OvulamTools.jar",
+      "modVersion": "0.7.2",
+      "sizeBytes": 241442,
+      "downloadCount": 2,
+      "releasedAt": "2025-03-13T01:59:01Z"
     },
     {
       "tag": "0.7.1",
-      "name": "0.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-13T01:17:55Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.7.1",
-      "modVersion": "0.7.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.1/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 239703,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.1/OvulamTools.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "3534f23463ca654a9d1ddfe2a90bc93a32d0d5c9",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/3534f23463ca654a9d1ddfe2a90bc93a32d0d5c9.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7.1/OvulamTools.jar",
+      "modVersion": "0.7.1",
+      "sizeBytes": 239703,
+      "downloadCount": 3,
+      "releasedAt": "2025-03-13T01:17:55Z"
     },
     {
       "tag": "0.7",
-      "name": "0.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-12T11:59:10Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.7",
-      "modVersion": "0.6.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OvulamTools.jar",
-          "size": 239703,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7/OvulamTools.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "9a06ffdd8be386b026fa5ade13a20954c2bfcabe",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/9a06ffdd8be386b026fa5ade13a20954c2bfcabe.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.7/OvulamTools.jar",
+      "modVersion": "0.6.4",
+      "sizeBytes": 239703,
+      "downloadCount": 8,
+      "releasedAt": "2025-03-12T11:59:10Z"
     },
     {
       "tag": "0.6.4",
-      "name": "0.6.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-04T10:00:15Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.6.4",
-      "modVersion": "0.6.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.6.4/OvulamTools.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.6.4.zip",
-      "assets": [
-        {
-          "name": "OvulamTools.jar",
-          "size": 235097,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.6.4/OvulamTools.jar"
-        }
-      ],
-      "commitSha": "b9b2ad58248dd8a03f61c636dd2d18b1e165283d",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/b9b2ad58248dd8a03f61c636dd2d18b1e165283d.zip"
-    },
-    {
-      "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-17T07:38:50Z",
-      "htmlUrl": "https://github.com/Ovulam5480/OvulamTools/releases/tag/0.1",
-      "modVersion": "v1.0",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.1/ModTemplate.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/ovulamtools/archive/refs/tags/0.1.zip",
-      "assets": [
-        {
-          "name": "ModTemplate.jar",
-          "size": 20056,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.1/ModTemplate.jar"
-        }
-      ],
-      "commitSha": "6bbbd6729913a19b401a33eefd45b004c5c8f976",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/ovulamtools/archive/6bbbd6729913a19b401a33eefd45b004c5c8f976.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.7.5",
-      "modVersion": "0.7.5",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.8.2",
-      "modVersion": "0.8.1",
-      "minGameVersion": "147",
-      "maxGameVersion": 149,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.8.5",
-      "modVersion": "0.8.5",
-      "minGameVersion": "149",
-      "maxGameVersion": 150,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.6",
-      "modVersion": "0.9.6",
-      "minGameVersion": "150",
-      "maxGameVersion": 151,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.7",
-      "modVersion": "0.9.7",
-      "minGameVersion": "151",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.8",
-      "modVersion": null,
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.10.0",
-      "modVersion": "0.10.0",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.6.4",
+      "sizeBytes": 235097,
+      "downloadCount": 7,
+      "releasedAt": "2025-03-04T10:00:15Z"
     }
   ],
   "meta": {
+    "name": "OvulamTools",
+    "author": "Ovulam5480",
+    "description": "用于显示子弹溅射范围或者单位坠落伤害半径的辅助模组(起码以前是)",
+    "version": "0.10.0",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "Tools.OvulamTools",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

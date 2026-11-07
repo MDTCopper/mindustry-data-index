@@ -1,136 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "shenqixingqioule/dawn",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "alpha-0-2-2",
-      "name": "破晓alpha-0-2-2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-17T04:23:09Z",
-      "htmlUrl": "https://github.com/shenqixingqioule/DAWN/releases/tag/alpha-0-2-2",
-      "modVersion": "alpha-0-2-2",
+      "kind": "release",
       "minGameVersion": "160.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-2/default.jar",
-      "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-2-2.zip",
-      "assets": [
-        {
-          "name": "default.jar",
-          "size": 675805,
-          "downloadCount": 374,
-          "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-2/default.jar"
-        }
-      ],
-      "commitSha": "f17dc34022738b25048c22724075aafecf2f6f2f",
-      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/f17dc34022738b25048c22724075aafecf2f6f2f.zip"
-    },
-    {
-      "tag": "alpha-0-2-1",
-      "name": "破晓alpha-0-2-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-01T05:34:39Z",
-      "htmlUrl": "https://github.com/shenqixingqioule/DAWN/releases/tag/alpha-0-2-1",
-      "modVersion": "alpha-0-2",
-      "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-1/default.jar",
-      "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-2-1.zip",
-      "assets": [
-        {
-          "name": "default.jar",
-          "size": 640987,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-1/default.jar"
-        }
-      ],
-      "commitSha": "7934e72b5644b210be36bef0d85f1e7a6fe245ae",
-      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/7934e72b5644b210be36bef0d85f1e7a6fe245ae.zip"
-    },
-    {
-      "tag": "alpha-0-2",
-      "name": "破晓alpha-0-2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-14T14:12:19Z",
-      "htmlUrl": "https://github.com/shenqixingqioule/DAWN/releases/tag/alpha-0-2",
-      "modVersion": "alpha-0-2",
-      "minGameVersion": "157.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-2.zip",
-      "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-2.zip",
-      "assets": [],
-      "commitSha": "cf14ec237a15c8cfb8b3ca26abc282dc37bbe9a2",
-      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/cf14ec237a15c8cfb8b3ca26abc282dc37bbe9a2.zip"
-    },
-    {
-      "tag": "alpha-0-1-1",
-      "name": "破晓alpha-0-1-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-09T16:41:46Z",
-      "htmlUrl": "https://github.com/shenqixingqioule/DAWN/releases/tag/alpha-0-1-1",
-      "modVersion": "alpha-0-1",
-      "minGameVersion": "157.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1-1.zip",
-      "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1-1.zip",
-      "assets": [],
-      "commitSha": "7e53f67860ad67be4d93873b62579e5e03c56a1c",
-      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/7e53f67860ad67be4d93873b62579e5e03c56a1c.zip"
-    },
-    {
-      "tag": "alpha-0-1",
-      "name": "破晓alpha-0-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-09T16:27:37Z",
-      "htmlUrl": "https://github.com/shenqixingqioule/DAWN/releases/tag/alpha-0-1",
-      "modVersion": "alpha-0-1",
-      "minGameVersion": "157.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1.zip",
-      "sourceArchiveUrl": "https://github.com/shenqixingqioule/dawn/archive/refs/tags/alpha-0-1.zip",
-      "assets": [],
-      "commitSha": "25ded4af8842df7cc8e9d8cfbf02ad33eadb6b5d",
-      "archiveByCommitUrl": "https://github.com/shenqixingqioule/dawn/archive/25ded4af8842df7cc8e9d8cfbf02ad33eadb6b5d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alpha-0-2",
-      "modVersion": "alpha-0-2",
-      "minGameVersion": "157.3",
-      "maxGameVersion": 160.5,
-      "hasRelease": true
-    },
-    {
-      "tag": "alpha-0-2-1",
-      "modVersion": "alpha-0-2",
-      "minGameVersion": "160.5",
-      "maxGameVersion": 160.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "alpha-0-2-2",
       "modVersion": "alpha-0-2-2",
-      "minGameVersion": "160.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 675805,
+      "downloadCount": 377,
+      "releasedAt": "2026-10-17T04:23:09Z"
+    },
+    {
+      "tag": "alpha-0-2-1",
+      "kind": "release",
+      "minGameVersion": "160.5",
+      "gameVersionRanges": [
+        {
+          "from": "160.5",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/shenqixingqioule/DAWN/releases/download/alpha-0-2-1/default.jar",
+      "modVersion": "alpha-0-2",
+      "sizeBytes": 640987,
+      "downloadCount": 10,
+      "releasedAt": "2026-10-01T05:34:39Z"
     }
   ],
   "meta": {
+    "name": "破晓",
+    "author": "神奇星球了",
+    "description": "\n\n[gray[]]支持语言\n\n - [red[]]简体中文\n\n[gray[]] - [red[]]English\n\n\n[white[]]致谢\n某个t3小飞机 - 核心蓝图\n白义F-061 - 战役地图 & 部分简介\n\n为了您游玩此MOD拥有更佳的体验，请使用原版Mindustry游玩(不包含MdtX、学术等辅助版本)\n\n\n[red[]]请在游玩此MOD前开启双击采矿！\n\n[red[]]Please enable Double-Tap to Mine before playing this MOD!\n\n\n[gray[]]GitHub开源链接: https://github.com/shenqixingqioule/DAWN",
+    "version": "alpha-0-2-2",
+    "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ai.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

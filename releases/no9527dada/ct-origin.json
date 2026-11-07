@@ -1,2236 +1,1045 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "no9527dada/ct-origin",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "5.30",
-      "name": "5.30",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T01:26:47Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.30",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.30.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.30.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.30.jar",
-          "size": 39199826,
-          "downloadCount": 1030,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.30/CT2-5.30.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.30/CT2-5.30.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 39199826,
+      "downloadCount": 1030,
+      "releasedAt": "2026-07-27T01:26:47Z"
     },
     {
       "tag": "5.28",
-      "name": "5.28",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-07T09:17:56Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.28",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.28.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.28.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.28.jar",
-          "size": 39198195,
-          "downloadCount": 222,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.28/CT2-5.28.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.28/CT2-5.28.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 39198195,
+      "downloadCount": 222,
+      "releasedAt": "2026-07-07T09:17:56Z"
     },
     {
       "tag": "5.25",
-      "name": "5.25",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-03T09:06:58Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.25",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.25.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.25.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.25.jar",
-          "size": 39160009,
-          "downloadCount": 420,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.25/CT2-5.25.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.25/CT2-5.25.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 39160009,
+      "downloadCount": 420,
+      "releasedAt": "2026-06-03T09:06:58Z"
     },
     {
       "tag": "5.24",
-      "name": "5.24",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T02:28:21Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.24",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.24.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.24.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.24.jar",
-          "size": 39151946,
-          "downloadCount": 124,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.24/CT2-5.24.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.24/CT2-5.24.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 39151946,
+      "downloadCount": 124,
+      "releasedAt": "2026-05-25T02:28:21Z"
     },
     {
       "tag": "5.23",
-      "name": "5.23",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-23T03:57:22Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.23",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.23.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.23.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.23.jar",
-          "size": 39155565,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.23/CT2-5.23.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.23/CT2-5.23.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 39155565,
+      "downloadCount": 38,
+      "releasedAt": "2026-05-23T03:57:22Z"
     },
     {
       "tag": "5.21",
-      "name": "5.21",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-07T13:09:45Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.21",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.21.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.21.jar",
-          "size": 37112679,
-          "downloadCount": 557,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.21/CT2-5.21.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.21/CT2-5.21.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 37112679,
+      "downloadCount": 557,
+      "releasedAt": "2026-04-07T13:09:45Z"
     },
     {
       "tag": "5.19",
-      "name": "5.19",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-04T12:51:50Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.19",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.19.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.19.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.19.jar",
-          "size": 37052994,
-          "downloadCount": 205,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.19/CT2-5.19.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.19/CT2-5.19.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 37052994,
+      "downloadCount": 205,
+      "releasedAt": "2026-03-04T12:51:50Z"
     },
     {
       "tag": "5.17",
-      "name": "5.17",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-09T12:06:16Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.17",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.17.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.17.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.17.jar",
-          "size": 37051475,
-          "downloadCount": 299,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.17/CT2-5.17.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.17/CT2-5.17.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 37051475,
+      "downloadCount": 299,
+      "releasedAt": "2026-02-09T12:06:16Z"
     },
     {
       "tag": "5.16",
-      "name": "5.16",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-23T04:16:14Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.16",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.16.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.16.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.16.jar",
-          "size": 36947856,
-          "downloadCount": 280,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.16/CT2-5.16.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.16/CT2-5.16.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 36947856,
+      "downloadCount": 282,
+      "releasedAt": "2026-01-23T04:16:14Z"
     },
     {
       "tag": "5.15",
-      "name": "5.15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-17T14:19:17Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.15",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.15.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.15.jar",
-          "size": 36930926,
-          "downloadCount": 85,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.15/CT2-5.15.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.15/CT2-5.15.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 36930926,
+      "downloadCount": 85,
+      "releasedAt": "2026-01-17T14:19:17Z"
     },
     {
       "tag": "5.14",
-      "name": "5.14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-12T12:36:45Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.14",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.14.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.14.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.14.jar",
-          "size": 36841188,
-          "downloadCount": 77,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.14/CT2-5.14.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.14/CT2-5.14.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 36841188,
+      "downloadCount": 77,
+      "releasedAt": "2026-01-12T12:36:45Z"
     },
     {
       "tag": "5.13",
-      "name": "5.13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-04T12:16:57Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.13",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.13.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.13.jar",
-          "size": 36850323,
-          "downloadCount": 104,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.13/CT2-5.13.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.13/CT2-5.13.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 36850323,
+      "downloadCount": 104,
+      "releasedAt": "2026-01-04T12:16:57Z"
     },
     {
       "tag": "5.10",
-      "name": "5.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-26T04:42:38Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.10",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.10.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.10.jar",
-          "size": 36141610,
-          "downloadCount": 153,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.10/CT2-5.10.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.10/CT2-5.10.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 36141610,
+      "downloadCount": 153,
+      "releasedAt": "2025-12-26T04:42:38Z"
     },
     {
       "tag": "5.09",
-      "name": "5.09",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-21T03:18:42Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.09",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.09.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.09.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.09.jar",
-          "size": 35888129,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.09/CT2-5.09.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.09/CT2-5.09.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 35888129,
+      "downloadCount": 53,
+      "releasedAt": "2025-12-21T03:18:42Z"
     },
     {
       "tag": "5.07",
-      "name": "5.07",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-06T12:33:18Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.07",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.07.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.07.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.07.jar",
-          "size": 35496945,
-          "downloadCount": 139,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.07/CT2-5.07.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.07/CT2-5.07.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 35496945,
+      "downloadCount": 139,
+      "releasedAt": "2025-12-06T12:33:18Z"
     },
     {
       "tag": "5.05",
-      "name": "5.05",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-29T01:41:42Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.05",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.05.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.05.jar",
-          "size": 35462127,
-          "downloadCount": 128,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.05/CT2-5.05.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.05/CT2-5.05.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 35462127,
+      "downloadCount": 128,
+      "releasedAt": "2025-11-29T01:41:42Z"
     },
     {
       "tag": "5.04",
-      "name": "5.04",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-19T16:18:06Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.04",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.04.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.04.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.04.jar",
-          "size": 35403723,
-          "downloadCount": 124,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.04/CT2-5.04.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.04/CT2-5.04.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 35403723,
+      "downloadCount": 124,
+      "releasedAt": "2025-11-19T16:18:06Z"
     },
     {
       "tag": "5.02",
-      "name": "5.02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-16T07:34:30Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.02",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.02.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.02.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.02.jar",
-          "size": 35401192,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.02/CT2-5.02.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.02/CT2-5.02.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 35401192,
+      "downloadCount": 45,
+      "releasedAt": "2025-11-16T07:34:30Z"
     },
     {
       "tag": "5.01",
-      "name": "5.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-08T14:20:05Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/5.01",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.01.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-5.01.jar",
-          "size": 34437568,
-          "downloadCount": 136,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.01/CT2-5.01.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/5.01/CT2-5.01.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 34437568,
+      "downloadCount": 136,
+      "releasedAt": "2025-11-08T14:20:05Z"
     },
     {
       "tag": "4.13",
-      "name": "4.13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-29T02:41:24Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/4.13",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.13.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-4.13.jar",
-          "size": 33704385,
-          "downloadCount": 141,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.13/CT2-4.13.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.13/CT2-4.13.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 33704385,
+      "downloadCount": 141,
+      "releasedAt": "2025-10-29T02:41:24Z"
     },
     {
       "tag": "4.12",
-      "name": "4.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-01T23:44:36Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/4.12",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.12.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-4.12.jar",
-          "size": 32973407,
-          "downloadCount": 333,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.12/CT2-4.12.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.12/CT2-4.12.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 32973407,
+      "downloadCount": 333,
+      "releasedAt": "2025-10-01T23:44:36Z"
     },
     {
       "tag": "4.10",
-      "name": "4.11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-15T03:44:42Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/4.10",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.10.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-4.11.jar",
-          "size": 32781487,
-          "downloadCount": 526,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.10/CT2-4.11.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.10/CT2-4.11.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 32781487,
+      "downloadCount": 526,
+      "releasedAt": "2025-08-15T03:44:42Z"
     },
     {
       "tag": "4.09",
-      "name": "4.09",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-06T08:02:34Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/4.09",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.09.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.09.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-4.09.jar",
-          "size": 29467342,
-          "downloadCount": 603,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.09/CT2-4.09.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.09/CT2-4.09.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 29467342,
+      "downloadCount": 603,
+      "releasedAt": "2025-07-06T08:02:34Z"
     },
     {
       "tag": "4.05",
-      "name": "4.05",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-18T22:28:36Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/4.05",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.05.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-4.05.jar",
-          "size": 29435375,
-          "downloadCount": 274,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.05/CT2-4.05.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.05/CT2-4.05.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 29435375,
+      "downloadCount": 274,
+      "releasedAt": "2025-06-18T22:28:36Z"
     },
     {
       "tag": "4.04",
-      "name": "4.04",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-10T12:56:21Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/4.04",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.04.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.04.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-4.04.jar",
-          "size": 29425836,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.04/CT2-4.04.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/4.04/CT2-4.04.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 29425836,
+      "downloadCount": 43,
+      "releasedAt": "2025-06-10T12:56:21Z"
     },
     {
       "tag": "3.09",
-      "name": "3.09",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-15T02:26:56Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/3.09",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.09.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.09.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-3.09.jar",
-          "size": 29065371,
-          "downloadCount": 891,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.09/CT2-3.09.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.09/CT2-3.09.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 29065371,
+      "downloadCount": 891,
+      "releasedAt": "2025-03-15T02:26:56Z"
     },
     {
       "tag": "3.06",
-      "name": "3.07",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-13T11:29:56Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/3.06",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.06.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.06.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-3.07.jar",
-          "size": 29064651,
-          "downloadCount": 1429,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.06/CT2-3.07.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.06/CT2-3.07.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 29064651,
+      "downloadCount": 1429,
+      "releasedAt": "2024-10-13T11:29:56Z"
     },
     {
       "tag": "3.03",
-      "name": "3.03",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-09T02:17:54Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/3.03",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.03.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.03.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-3.03.jar",
-          "size": 29039279,
-          "downloadCount": 1176,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.03/CT2-3.03.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.03/CT2-3.03.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 29039279,
+      "downloadCount": 1176,
+      "releasedAt": "2024-08-09T02:17:54Z"
     },
     {
       "tag": "3.02",
-      "name": "3.02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-28T14:06:55Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/3.02",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.02.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.02.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-3.02jar.jar",
-          "size": 28976336,
-          "downloadCount": 334,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.02/CT2-3.02jar.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.02/CT2-3.02jar.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 28976336,
+      "downloadCount": 334,
+      "releasedAt": "2024-07-28T14:06:55Z"
     },
     {
       "tag": "3.01",
-      "name": "3.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-26T13:25:02Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/3.01",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.01.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-3.01.jar",
-          "size": 28880028,
-          "downloadCount": 125,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.01/CT2-3.01.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/3.01/CT2-3.01.jar",
+      "modVersion": "2.70.1",
+      "sizeBytes": 28880028,
+      "downloadCount": 125,
+      "releasedAt": "2024-07-26T13:25:02Z"
     },
     {
       "tag": "2.70.5",
-      "name": "2.70.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-23T03:45:15Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.70.5",
-      "modVersion": "2.70.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.5.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2-2.70.5.jar",
-          "size": 30643925,
-          "downloadCount": 338,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.70.5/CT2-2.70.5.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "360cc937de42ae22b66f7b294b47e9bf341bb03e",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/360cc937de42ae22b66f7b294b47e9bf341bb03e.zip"
-    },
-    {
-      "tag": "2.70.3",
-      "name": "2.70.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-12T04:37:49Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.70.3",
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.70.5/CT2-2.70.5.jar",
       "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.3.zip",
-      "assets": [
-        {
-          "name": "CT2-2.70.3.jar",
-          "size": 30891691,
-          "downloadCount": 2369,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.70.3/CT2-2.70.3.jar"
-        }
-      ],
-      "commitSha": "97b372f52c940bf7d9194ae215d4f22130fdd929",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/97b372f52c940bf7d9194ae215d4f22130fdd929.zip"
+      "sizeBytes": 30643925,
+      "downloadCount": 338,
+      "releasedAt": "2024-06-23T03:45:15Z"
     },
     {
       "tag": "2.69.1",
-      "name": "2.69.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-17T03:52:59Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.69.1",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.69.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.69.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT-2.69.1.jar",
-          "size": 30805180,
-          "downloadCount": 556,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.69.1/CT-2.69.1.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.69.1/CT-2.69.1.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 30805180,
+      "downloadCount": 556,
+      "releasedAt": "2023-10-17T03:52:59Z"
     },
     {
       "tag": "2.68",
-      "name": "2.68",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-10T08:57:24Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.68",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.68.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.68.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT-2.68.jar",
-          "size": 30697350,
-          "downloadCount": 133,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.68/CT-2.68.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.68/CT-2.68.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 30697350,
+      "downloadCount": 133,
+      "releasedAt": "2023-10-10T08:57:24Z"
     },
     {
       "tag": "2.67.4",
-      "name": "2.67.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-06T11:41:06Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.67.4",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.4.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT-2.67.4.jar",
-          "size": 30690196,
-          "downloadCount": 507,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.67.4/CT-2.67.4.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.67.4/CT-2.67.4.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 30690196,
+      "downloadCount": 507,
+      "releasedAt": "2023-09-06T11:41:06Z"
     },
     {
       "tag": "2.66",
-      "name": "2.66",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-21T05:39:19Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.66",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.66.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.66.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT-2.66.jar",
-          "size": 30629429,
-          "downloadCount": 281,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.66/CT-2.66.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.66/CT-2.66.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 30629429,
+      "downloadCount": 281,
+      "releasedAt": "2023-08-21T05:39:19Z"
     },
     {
       "tag": "2.65.1",
-      "name": "2.65.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-08T05:16:45Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.65.1",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.65.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.65.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT.2.65.1.jar",
-          "size": 30405643,
-          "downloadCount": 577,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.65.1/CT.2.65.1.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.65.1/CT.2.65.1.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 30405643,
+      "downloadCount": 577,
+      "releasedAt": "2023-07-08T05:16:45Z"
     },
     {
       "tag": "2.64.7",
-      "name": "2.64.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-30T12:18:26Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.64.7",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.64.7/CT.2.64.7.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT.2.64.7.zip",
-          "size": 30165975,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.64.7/CT.2.64.7.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.7.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 30165975,
+      "downloadCount": 12,
+      "releasedAt": "2023-04-30T12:18:26Z"
     },
     {
       "tag": "2.63",
-      "name": "2.63",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-24T10:34:33Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.63",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.63.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.63.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CT2.jar",
-          "size": 29801722,
-          "downloadCount": 49,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.63/CT2.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.63/CT2.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 29801722,
+      "downloadCount": 49,
+      "releasedAt": "2023-04-24T10:34:33Z"
     },
     {
       "tag": "2.62.6",
-      "name": "2.62.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-02T12:04:03Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.62.6",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.62.6.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.62.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "2.62.6.jar",
-          "size": 29800383,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.62.6/2.62.6.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.62.6/2.62.6.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 29800383,
+      "downloadCount": 4,
+      "releasedAt": "2023-03-02T12:04:03Z"
     },
     {
       "tag": "2.61",
-      "name": "2.61.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-07T09:31:43Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.61",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.61.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.61.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "v2.61.5.jar",
-          "size": 29486773,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.61/v2.61.5.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.61/v2.61.5.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 29486773,
+      "downloadCount": 12,
+      "releasedAt": "2023-02-07T09:31:43Z"
     },
     {
       "tag": "2.60",
-      "name": "2.60.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-27T05:24:09Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.60",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.60.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.60.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.60.4.jar",
-          "size": 29443918,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.60/V2.60.4.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.60/V2.60.4.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 29443918,
+      "downloadCount": 1,
+      "releasedAt": "2023-01-27T05:24:09Z"
     },
     {
       "tag": "2.59",
-      "name": "2.59.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-05T11:00:09Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.59",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.59.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.59.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.59.4.jar",
-          "size": 18757206,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.59/V2.59.4.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.59/V2.59.4.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 18757206,
+      "downloadCount": 26,
+      "releasedAt": "2023-01-05T11:00:09Z"
     },
     {
       "tag": "2.58",
-      "name": "2.58.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-27T13:01:30Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.58",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.58.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.58.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.58.4.jar",
-          "size": 18673971,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.58/V2.58.4.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.58/V2.58.4.jar",
+      "modVersion": "1.092",
+      "sizeBytes": 18673971,
+      "downloadCount": 2,
+      "releasedAt": "2022-12-27T13:01:30Z"
     },
     {
       "tag": "2.57",
-      "name": "2.57",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-23T13:17:36Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.57",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.57/V2.57.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.57.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.57.zip",
-          "size": 18791816,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.57/V2.57.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.57.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18791816,
+      "downloadCount": 25,
+      "releasedAt": "2022-12-23T13:17:36Z"
     },
     {
       "tag": "2.56",
-      "name": "2.56",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-21T10:35:04Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.56",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.56/V2.56.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.56.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.56.zip",
-          "size": 18788709,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.56/V2.56.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.56.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18788709,
+      "downloadCount": 5,
+      "releasedAt": "2022-12-21T10:35:04Z"
     },
     {
       "tag": "2.54",
-      "name": "2.54.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-10T13:11:45Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.54",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.54/V2.54.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.54.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.54.3.zip",
-          "size": 18768930,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.54/V2.54.3.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.54.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18768930,
+      "downloadCount": 4,
+      "releasedAt": "2022-12-10T13:11:45Z"
     },
     {
       "tag": "2.52",
-      "name": "2.52.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-27T13:27:08Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.52",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.52/2.-2.52.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.52.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "2.-2.52.3.zip",
-          "size": 18663306,
-          "downloadCount": 50,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.52/2.-2.52.3.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.52.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18663306,
+      "downloadCount": 50,
+      "releasedAt": "2022-11-27T13:27:08Z"
     },
     {
       "tag": "2.51",
-      "name": "2.51.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-19T03:05:08Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.51",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.51/V2.51.5.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.51.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.51.5.zip",
-          "size": 18412236,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.51/V2.51.5.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.51.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18412236,
+      "downloadCount": 4,
+      "releasedAt": "2022-11-19T03:05:08Z"
     },
     {
       "tag": "2.49",
-      "name": "2.49",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-15T12:00:32Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.49",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.49/V2.49.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.49.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.49.zip",
-          "size": 18376578,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.49/V2.49.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.49.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18376578,
+      "downloadCount": 5,
+      "releasedAt": "2022-11-15T12:00:32Z"
     },
     {
       "tag": "2.48.3",
-      "name": "2.48.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-14T09:14:15Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.48.3",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.48.3/V2.48.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.48.3.zip",
-          "size": 18269598,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.48.3/V2.48.3.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.3.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18269598,
+      "downloadCount": 12,
+      "releasedAt": "2022-11-14T09:14:15Z"
     },
     {
       "tag": "2.48.2",
-      "name": "2.48.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-13T08:43:27Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.48.2",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.48.2/V2.48.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.48.2.zip",
-          "size": 18267344,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.48.2/V2.48.2.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.2.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18267344,
+      "downloadCount": 8,
+      "releasedAt": "2022-11-13T08:43:27Z"
     },
     {
       "tag": "2.48",
-      "name": "2.48",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-11T07:25:26Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.48",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.48/V2.48.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.48.zip",
-          "size": 18267134,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.48/V2.48.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18267134,
+      "downloadCount": 12,
+      "releasedAt": "2022-11-11T07:25:26Z"
     },
     {
       "tag": "2.47",
-      "name": "2.47",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-07T04:39:42Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.47",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.47/V2.47.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.47.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.47.zip",
-          "size": 18179802,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.47/V2.47.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.47.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18179802,
+      "downloadCount": 11,
+      "releasedAt": "2022-11-07T04:39:42Z"
     },
     {
       "tag": "2.46",
-      "name": "2.46",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-04T13:01:50Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.46",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.46/V2.46.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.46.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.46.zip",
-          "size": 18151178,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.46/V2.46.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.46.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18151178,
+      "downloadCount": 10,
+      "releasedAt": "2022-11-04T13:01:50Z"
     },
     {
       "tag": "2.45.2",
-      "name": "2.45.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-28T12:14:49Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.45.2",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.45.2/V2.45.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.45.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.45.2.zip",
-          "size": 18139128,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.45.2/V2.45.2.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.45",
-      "name": "2.45",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-26T14:44:51Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.45",
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.45.2.zip",
       "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.45.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.45.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "sizeBytes": 18139128,
+      "downloadCount": 3,
+      "releasedAt": "2022-10-28T12:14:49Z"
     },
     {
       "tag": "2.44.2",
-      "name": "2.44.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-24T11:50:52Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.44.2",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.44.2/V2.44.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.44.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.44.2.zip",
-          "size": 18298533,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.44.2/V2.44.2.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.44.2.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 18298533,
+      "downloadCount": 8,
+      "releasedAt": "2022-10-24T11:50:52Z"
     },
     {
       "tag": "2.44",
-      "name": "2.44",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-22T04:45:25Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.44",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.44/V2.44.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.44.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.44.zip",
-          "size": 17942198,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.44/V2.44.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.44.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17942198,
+      "downloadCount": 9,
+      "releasedAt": "2022-10-22T04:45:25Z"
     },
     {
       "tag": "2.43.2",
-      "name": "2.43.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-21T06:44:38Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.43.2",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.43.2/V2.43.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.43.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.43.2.zip",
-          "size": 17926026,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.43.2/V2.43.2.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.43.2.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17926026,
+      "downloadCount": 1,
+      "releasedAt": "2022-10-21T06:44:38Z"
     },
     {
       "tag": "2.43",
-      "name": "2.43",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-18T02:25:19Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.43",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.43/V2.43.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.43.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.43.zip",
-          "size": 17922469,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.43/V2.43.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.43.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17922469,
+      "downloadCount": 10,
+      "releasedAt": "2022-10-18T02:25:19Z"
     },
     {
       "tag": "2.42.3",
-      "name": "2.42.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-15T23:31:54Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.42.3",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.42.3/V2.42.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.42.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.42.3.zip",
-          "size": 17915981,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.42.3/V2.42.3.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.42.3.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17915981,
+      "downloadCount": 13,
+      "releasedAt": "2022-10-15T23:31:54Z"
     },
     {
       "tag": "2.42",
-      "name": "2.42",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-13T04:28:18Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.42",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.42/V2.42.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.42.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.42.zip",
-          "size": 17912644,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.42/V2.42.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": null,
-      "archiveByCommitUrl": null
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.42.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17912644,
+      "downloadCount": 11,
+      "releasedAt": "2022-10-13T04:28:18Z"
     },
     {
       "tag": "2.41",
-      "name": "2.41",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-08T13:16:43Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.41",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.41/V2.41.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.41.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.41.zip",
-          "size": 17897237,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.41/V2.41.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": null,
-      "archiveByCommitUrl": null
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.41.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17897237,
+      "downloadCount": 10,
+      "releasedAt": "2022-10-08T13:16:43Z"
     },
     {
       "tag": "2.40.1",
-      "name": "2.40.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-07T02:56:44Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/2.40.1",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.40.1/V2.40.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.40.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.40.1.zip",
-          "size": 17753856,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/2.40.1/V2.40.1.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": null,
-      "archiveByCommitUrl": null
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.40.1.zip",
+      "modVersion": "1.092",
+      "sizeBytes": 17753856,
+      "downloadCount": 14,
+      "releasedAt": "2022-10-07T02:56:44Z"
     },
     {
       "tag": "NO9527",
-      "name": "创世神2起源独立版",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-01T03:51:47Z",
-      "htmlUrl": "https://github.com/no9527dada/CT-origin/releases/tag/NO9527",
-      "modVersion": "1.092",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/NO9527/V2.39.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/NO9527.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V2.39.2.zip",
-          "size": 17812581,
-          "downloadCount": 1015,
-          "downloadUrl": "https://github.com/no9527dada/CT-origin/releases/download/NO9527/V2.39.2.zip"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "130b4961937383076e92a45d91dc59540cb21db1",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/130b4961937383076e92a45d91dc59540cb21db1.zip"
-    },
-    {
-      "tag": "1111",
-      "name": "1111",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/1111",
+      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/NO9527.zip",
       "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/1111.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/1111.zip",
-      "assets": [],
-      "commitSha": "130b4961937383076e92a45d91dc59540cb21db1",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/130b4961937383076e92a45d91dc59540cb21db1.zip"
-    },
-    {
-      "tag": "5.12",
-      "name": "5.12",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/5.12",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.12.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.12.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "5.11",
-      "name": "5.11",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/5.11",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.11.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.11.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "5.06",
-      "name": "5.06",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/5.06",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.06.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.06.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "5.00",
-      "name": "5.00",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/5.00",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.00.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/5.00.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "4.08",
-      "name": "4.08",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/4.08",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.08.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.08.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "4.07",
-      "name": "4.07",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/4.07",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.07.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.07.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "4.06",
-      "name": "4.06",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/4.06",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.06.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.06.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "4.03",
-      "name": "4.03",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/4.03",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.03.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.03.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "4.02",
-      "name": "4.02",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/4.02",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.02.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.02.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "4.01",
-      "name": "4.01",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/4.01",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.01.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/4.01.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "3.08",
-      "name": "3.08",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/3.08",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.08.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.08.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "3.05",
-      "name": "3.05",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/3.05",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.05.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/3.05.zip",
-      "assets": [],
-      "commitSha": "55b1ccc103dae3c471fc225fd4d3d3433016b57a",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/55b1ccc103dae3c471fc225fd4d3d3433016b57a.zip"
-    },
-    {
-      "tag": "2.70.4",
-      "name": "2.70.4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.70.4",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.4.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.4.zip",
-      "assets": [],
-      "commitSha": "360cc937de42ae22b66f7b294b47e9bf341bb03e",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/360cc937de42ae22b66f7b294b47e9bf341bb03e.zip"
-    },
-    {
-      "tag": "2.70.2",
-      "name": "2.70.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.70.2",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.2.zip",
-      "assets": [],
-      "commitSha": "97b372f52c940bf7d9194ae215d4f22130fdd929",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/97b372f52c940bf7d9194ae215d4f22130fdd929.zip"
-    },
-    {
-      "tag": "2.70.1",
-      "name": "2.70.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.70.1",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.1.zip",
-      "assets": [],
-      "commitSha": "97b372f52c940bf7d9194ae215d4f22130fdd929",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/97b372f52c940bf7d9194ae215d4f22130fdd929.zip"
-    },
-    {
-      "tag": "2.70",
-      "name": "2.70",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.70",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.70.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.69",
-      "name": "2.69",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.69",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.69.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.69.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.67.3",
-      "name": "2.67.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.67.3",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.3.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.67.2",
-      "name": "2.67.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.67.2",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.2.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.67.1",
-      "name": "2.67.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.67.1",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.1.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.67",
-      "name": "2.67",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.67",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.67.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.65",
-      "name": "2.65",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.65",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.65.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.65.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64.6",
-      "name": "2.64.6",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64.6",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.6.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.6.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64.5",
-      "name": "2.64.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64.5",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.5.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.5.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64.4",
-      "name": "2.64.4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64.4",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.4.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.4.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64.3",
-      "name": "2.64.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64.3",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.3.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.3.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64.2",
-      "name": "2.64.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64.2",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.2.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64.1",
-      "name": "2.64.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64.1",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.1.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.64",
-      "name": "2.64",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.64",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.64.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.62.5",
-      "name": "2.62.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.62.5",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.62.5.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.62.5.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.62",
-      "name": "2.62",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.62",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.62.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.62.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.55",
-      "name": "2.55",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.55",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.55.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.55.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.51.2",
-      "name": "2.51.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.51.2",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.51.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.51.2.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.49.2",
-      "name": "2.49.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.49.2",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.49.2.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.49.2.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.48.1",
-      "name": "2.48.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.48.1",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.48.1.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    },
-    {
-      "tag": "2.45.1",
-      "name": "2.45.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/ct-origin/tree/2.45.1",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.45.1.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/ct-origin/archive/refs/tags/2.45.1.zip",
-      "assets": [],
-      "commitSha": "9a3015a1616b4b18eefbf008b08e9c5a2634cc61",
-      "archiveByCommitUrl": "https://github.com/no9527dada/ct-origin/archive/9a3015a1616b4b18eefbf008b08e9c5a2634cc61.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.69.1",
-      "modVersion": "1.092",
-      "minGameVersion": "135",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "5.30",
-      "modVersion": "2.70.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 17812581,
+      "downloadCount": 1015,
+      "releasedAt": "2022-10-01T03:51:47Z"
     }
   ],
   "meta": {
+    "name": "creators",
+    "author": "[pink]编[cyan]号[red]95[violet]27",
+    "description": "\n\n  本模组的战役较难，不适合初次接触此游戏的玩家\n  模组难点体现在：\n波次时间短\n地形复杂\n敌人强大\n建议多多发展后勤资源\n使用发射台来提供源源不断的资源\n-\nThe campaign of this mod is very difficult and not suitable for players who are new to this game\nIt is recommended to have an understanding of the game after clearing the original version before playing this mod\nThe difficulty of the module is reflected in:\nWaves are very short\nComplex terrain\nthe enemy is strong\nIt is recommended to develop more logistical resources\nUse launch pads to provide a steady stream of resources\n------------------创世神起源\n",
+    "version": "2.70.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "creators.Creators",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,89 +1,68 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "falkowitz/medieval-mindustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "RELEASE i got bored making this mod so i made it public in mod browser",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-04T21:55:19Z",
-      "htmlUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/tag/1.0",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/falkowitz/medieval-mindustry/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/falkowitz/medieval-mindustry/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "1cb149e138d1afa232ddaf6c6d87e6a3c316dd07",
-      "archiveByCommitUrl": "https://github.com/falkowitz/medieval-mindustry/archive/1cb149e138d1afa232ddaf6c6d87e6a3c316dd07.zip"
+      "modVersion": "0.1",
+      "releasedAt": "2024-08-04T21:55:19Z"
     },
     {
       "tag": "0.2",
-      "name": "0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-09T19:10:54Z",
-      "htmlUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/tag/0.2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/download/0.2/Medieval-Mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/falkowitz/medieval-mindustry/archive/refs/tags/0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Medieval-Mindustry.zip",
-          "size": 33020703,
-          "downloadCount": 36,
-          "downloadUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/download/0.2/Medieval-Mindustry.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8d579a372d169c8da8515e21cbd730813326b25f",
-      "archiveByCommitUrl": "https://github.com/falkowitz/medieval-mindustry/archive/8d579a372d169c8da8515e21cbd730813326b25f.zip"
+      "downloadUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/download/0.2/Medieval-Mindustry.zip",
+      "modVersion": "0.1",
+      "sizeBytes": 33020703,
+      "downloadCount": 36,
+      "releasedAt": "2023-08-09T19:10:54Z"
     },
     {
       "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-29T08:07:31Z",
-      "htmlUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/download/0.1/Medieval-Mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/falkowitz/medieval-mindustry/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Medieval-Mindustry.zip",
-          "size": 32251241,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/download/0.1/Medieval-Mindustry.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "879ee4872db9c401d3c2391e934c3089ce11a411",
-      "archiveByCommitUrl": "https://github.com/falkowitz/medieval-mindustry/archive/879ee4872db9c401d3c2391e934c3089ce11a411.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
+      "downloadUrl": "https://github.com/Falkowitz/Medieval-Mindustry/releases/download/0.1/Medieval-Mindustry.zip",
       "modVersion": "0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 32251241,
+      "downloadCount": 12,
+      "releasedAt": "2023-07-29T08:07:31Z"
     }
   ],
   "meta": {
+    "name": "mm",
+    "author": "Fitz",
+    "description": "Total conversion PVP mod set in fantasy medieval times",
+    "version": "0.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

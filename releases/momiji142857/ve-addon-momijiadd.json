@@ -1,294 +1,197 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "momiji142857/ve-addon-momijiadd",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.3.2",
-      "name": "v1.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T11:08:23Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v1.3.2",
-      "modVersion": "1.3.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3.2/ve-addon-MomijiAdd-v1.3.2.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v1.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v1.3.2.jar",
-          "size": 306917,
-          "downloadCount": 369,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3.2/ve-addon-MomijiAdd-v1.3.2.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d55f8b6ca1b7b99477952c7cf169e5f6cfd93437",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/d55f8b6ca1b7b99477952c7cf169e5f6cfd93437.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3.2/ve-addon-MomijiAdd-v1.3.2.jar",
+      "modVersion": "1.3.2",
+      "sizeBytes": 306917,
+      "downloadCount": 381,
+      "releasedAt": "2026-10-18T11:08:23Z"
     },
     {
       "tag": "v1.3.1",
-      "name": "v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-16T19:11:08Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v1.3.1",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3.1/ve-addon-MomijiAdd-v1.3.1.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v1.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v1.3.1.jar",
-          "size": 306457,
-          "downloadCount": 109,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3.1/ve-addon-MomijiAdd-v1.3.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "37e20d40fd8a1199fb81c2ad3483d89222f9cc3d",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/37e20d40fd8a1199fb81c2ad3483d89222f9cc3d.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3.1/ve-addon-MomijiAdd-v1.3.1.jar",
+      "modVersion": "1.3.1",
+      "sizeBytes": 306457,
+      "downloadCount": 109,
+      "releasedAt": "2026-10-16T19:11:08Z"
     },
     {
       "tag": "v1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-01T23:44:13Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v1.3",
-      "modVersion": "1.3",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3/VE.Momiji.v1.3.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VE.Momiji.v1.3.jar",
-          "size": 282145,
-          "downloadCount": 358,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3/VE.Momiji.v1.3.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "972ddd75758dcaed6790f98fb4e9ed881b4d5cbe",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/972ddd75758dcaed6790f98fb4e9ed881b4d5cbe.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.3/VE.Momiji.v1.3.jar",
+      "modVersion": "1.3",
+      "sizeBytes": 282145,
+      "downloadCount": 358,
+      "releasedAt": "2026-10-01T23:44:13Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T12:40:47Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.1/ve-addon-MomijiAdd-v1.1.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v1.1.jar",
-          "size": 167426,
-          "downloadCount": 909,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.1/ve-addon-MomijiAdd-v1.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5b9d9c7f4cc279f3b9ea4d07ce5fa30fb5d0c951",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/5b9d9c7f4cc279f3b9ea4d07ce5fa30fb5d0c951.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.1/ve-addon-MomijiAdd-v1.1.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 167426,
+      "downloadCount": 909,
+      "releasedAt": "2026-08-08T12:40:47Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-02T16:19:19Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.0/ve-addon-MomijiAdd-v1.0.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v1.0.jar",
-          "size": 163355,
-          "downloadCount": 340,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.0/ve-addon-MomijiAdd-v1.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "44b9594a9d07ff8d7e76e6a9ed62464848e1ea2c",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/44b9594a9d07ff8d7e76e6a9ed62464848e1ea2c.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v1.0/ve-addon-MomijiAdd-v1.0.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 163355,
+      "downloadCount": 340,
+      "releasedAt": "2026-08-02T16:19:19Z"
     },
     {
       "tag": "v0.5",
-      "name": "v0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-01T16:07:37Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v0.5",
-      "modVersion": "0.5",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.5/ve-addon-MomijiAdd-v0.5.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v0.5.jar",
-          "size": 158015,
-          "downloadCount": 112,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.5/ve-addon-MomijiAdd-v0.5.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e009d93b29f69d7e52d928e426b6206d503f6172",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/e009d93b29f69d7e52d928e426b6206d503f6172.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.5/ve-addon-MomijiAdd-v0.5.jar",
+      "modVersion": "0.5",
+      "sizeBytes": 158015,
+      "downloadCount": 112,
+      "releasedAt": "2026-08-01T16:07:37Z"
     },
     {
       "tag": "v0.41",
-      "name": "v0.41",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-31T15:30:02Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v0.41",
-      "modVersion": "0.41",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.41/ve-addon-MomijiAdd-v0.41.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v0.41.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v0.41.jar",
-          "size": 148785,
-          "downloadCount": 117,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.41/ve-addon-MomijiAdd-v0.41.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "180c84d53622a30bbc17c941d6358cc01a78f13b",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/180c84d53622a30bbc17c941d6358cc01a78f13b.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.41/ve-addon-MomijiAdd-v0.41.jar",
+      "modVersion": "0.41",
+      "sizeBytes": 148785,
+      "downloadCount": 117,
+      "releasedAt": "2026-07-31T15:30:02Z"
     },
     {
       "tag": "v0.4",
-      "name": "v0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T14:54:22Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v0.4",
-      "modVersion": "0.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.4/ve-addon-MomijiAdd-v0.4.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v0.4.jar",
-          "size": 148754,
-          "downloadCount": 196,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.4/ve-addon-MomijiAdd-v0.4.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0c68f6c6462785790bff37d71bfb3dc27762a866",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/0c68f6c6462785790bff37d71bfb3dc27762a866.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.4/ve-addon-MomijiAdd-v0.4.jar",
+      "modVersion": "0.4",
+      "sizeBytes": 148754,
+      "downloadCount": 196,
+      "releasedAt": "2026-07-27T14:54:22Z"
     },
     {
       "tag": "v0.3",
-      "name": "v0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-22T03:29:10Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.3/ve-addon-MomijiAdd-v0.3.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ve-addon-MomijiAdd-v0.3.jar",
-          "size": 135850,
-          "downloadCount": 39,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.3/ve-addon-MomijiAdd-v0.3.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d0c3e6c6f7adb89a51a285c9b173dacd8a913a76",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/d0c3e6c6f7adb89a51a285c9b173dacd8a913a76.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.3/ve-addon-MomijiAdd-v0.3.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 135850,
+      "downloadCount": 39,
+      "releasedAt": "2026-07-22T03:29:10Z"
     },
     {
       "tag": "v0.2",
-      "name": "v0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-29T13:48:58Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.2/Ve.Addon.-.Momiji.Add.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ve.Addon.-.Momiji.Add.jar",
-          "size": 94041,
-          "downloadCount": 144,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.2/Ve.Addon.-.Momiji.Add.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c37cac12c36788a3978749fdbc810df86731866a",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/c37cac12c36788a3978749fdbc810df86731866a.zip"
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.2/Ve.Addon.-.Momiji.Add.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 94041,
+      "downloadCount": 144,
+      "releasedAt": "2026-06-29T13:48:58Z"
     },
     {
       "tag": "v0.1",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-26T18:18:34Z",
-      "htmlUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.1/VE.Addon.-.Momiji.Add.jar",
-      "sourceArchiveUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VE.Addon.-.Momiji.Add.jar",
-          "size": 83244,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.1/VE.Addon.-.Momiji.Add.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5b925ad6e280d2bdca1e05ff80658a5b0064d248",
-      "archiveByCommitUrl": "https://github.com/momiji142857/ve-addon-momijiadd/archive/5b925ad6e280d2bdca1e05ff80658a5b0064d248.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2",
-      "modVersion": "0.2",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.3.2",
-      "modVersion": "1.3.2",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-MomijiAdd/releases/download/v0.1/VE.Addon.-.Momiji.Add.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 83244,
+      "downloadCount": 43,
+      "releasedAt": "2026-06-26T18:18:34Z"
     }
   ],
   "meta": {
+    "name": "ve-addon-momiji",
+    "author": "[sky[]]Momiji142857[white[]]",
+    "description": "[#90DBFF[]]Vanilla Expansion (VE) 原版扩展[white[]]的个人向内容扩展附属\nA personal content add-on for [#90DBFF[]]Vanilla Expansion[white[]] (VE)\n\n[red[]]本模组以 VE 为软依赖，主要内容仅在同时启用 VE 时可用。\n首次启用本模组时，可能会提示缺少前置模组，此时可以忽略，退出并重启游戏即可。\nThis mod treats VE as a soft dependency; its main content is only available when VE is also enabled.\nWhen you first enable this mod, it may warn about missing prerequisites. You can ignore the warning and restart the game.[white[]]\n\n本模组在 VE 本体基础上添加了一些实用内容，可能会降低游戏难度或影响平衡；建议在熟悉 VE 本体后再使用。\nThis mod adds some practical content on top of VE. It may reduce difficulty or affect balance, so it is recommended for players already familiar with VE.\n\n[accent[]]最后更新 / Last updated: 2026-10-18[white[]]",
+    "version": "1.3.2",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "momijiadd.ModLoad",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

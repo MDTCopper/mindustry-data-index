@@ -1,95 +1,68 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "akilis81x/fenadi",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.03",
-      "name": "1no",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-05T20:35:51Z",
-      "htmlUrl": "https://github.com/Akilis81x/Fenadi/releases/tag/v0.03",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.03/akilis81xfenadi.zip",
-      "sourceArchiveUrl": "https://github.com/akilis81x/fenadi/archive/refs/tags/v0.03.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "akilis81xfenadi.zip",
-          "size": 2111987,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.03/akilis81xfenadi.zip"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "56b9d703ed303cb5fda9ab682a4bcc4e81fb97fe",
-      "archiveByCommitUrl": "https://github.com/akilis81x/fenadi/archive/56b9d703ed303cb5fda9ab682a4bcc4e81fb97fe.zip"
+      "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.03/akilis81xfenadi.zip",
+      "modVersion": "0.1",
+      "sizeBytes": 2111987,
+      "downloadCount": 2,
+      "releasedAt": "2026-09-05T20:35:51Z"
     },
     {
       "tag": "v0.02",
-      "name": "1no",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-01T13:50:47Z",
-      "htmlUrl": "https://github.com/Akilis81x/Fenadi/releases/tag/v0.02",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.02/akilis81xfenadi1.zip",
-      "sourceArchiveUrl": "https://github.com/akilis81x/fenadi/archive/refs/tags/v0.02.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "akilis81xfenadi1.zip",
-          "size": 2065375,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.02/akilis81xfenadi1.zip"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "da252c1a52363b88736e7f18163bda3fbf70f356",
-      "archiveByCommitUrl": "https://github.com/akilis81x/fenadi/archive/da252c1a52363b88736e7f18163bda3fbf70f356.zip"
+      "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.02/akilis81xfenadi1.zip",
+      "modVersion": "0.1",
+      "sizeBytes": 2065375,
+      "releasedAt": "2026-09-01T13:50:47Z"
     },
     {
       "tag": "v0.01",
-      "name": "1no",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-01T13:35:13Z",
-      "htmlUrl": "https://github.com/Akilis81x/Fenadi/releases/tag/v0.01",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.01/akilis81xfenadi1.zip",
-      "sourceArchiveUrl": "https://github.com/akilis81x/fenadi/archive/refs/tags/v0.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "akilis81xfenadi1.zip",
-          "size": 2065375,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.01/akilis81xfenadi1.zip"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5c9b3b5b471083327f24d0335f85056066629e46",
-      "archiveByCommitUrl": "https://github.com/akilis81x/fenadi/archive/5c9b3b5b471083327f24d0335f85056066629e46.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.03",
+      "downloadUrl": "https://github.com/Akilis81x/Fenadi/releases/download/v0.01/akilis81xfenadi1.zip",
       "modVersion": "0.1",
-      "minGameVersion": "154.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2065375,
+      "downloadCount": 1,
+      "releasedAt": "2026-09-01T13:35:13Z"
     }
   ],
   "meta": {
+    "name": "Fenadi",
+    "author": "Akilis81",
+    "description": "\n [blue]English:\n\n  Explores the materialistic chaos that once plagued the surface of Fenadi. (In progress, everything is temporary).\n\n  A new planet that brings with it exclusively *156 blocks, 23 sectors with a difficulty that increases as you advance in the hostile world and as a personal addiction the story of the tragedy that happened to the celestial body Fenadi and how it came to such a state today.\n\n[red]Español:\n\nExplora el caos materialista que una vez asoló la superficie de Fenadi. (En desarrollo, todo es temporal).\n\nUn nuevo planeta que trae consigo exclusivamente *156 bloques, *23 sectores con una dificultad que aumenta a medida que avanzas en el mundo hostil y como adicción personal la historia de la tragedia que le ocurrió al cuerpo celeste Fenadi y cómo llegó a tal estado hoy.\n\nmy Discord: akilidez_81x\n  ",
+    "version": "0.1",
+    "minGameVersion": "154.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

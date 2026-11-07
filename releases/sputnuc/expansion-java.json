@@ -1,318 +1,213 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sputnuc/expansion-java",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.1.4.8-pre-beta",
-      "name": "0.1.4 2th Pre-Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-01T09:13:22Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.4.8-pre-beta",
-      "modVersion": "0.1.4.8",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.8-pre-beta/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.4.8-pre-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 636050,
-          "downloadCount": 608,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.8-pre-beta/Expansion-Java.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "391a7d5c8be202524caf9a107512438452bfade0",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/391a7d5c8be202524caf9a107512438452bfade0.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.8-pre-beta/Expansion-Java.jar",
+      "modVersion": "0.1.4.8",
+      "sizeBytes": 636050,
+      "downloadCount": 609,
+      "releasedAt": "2026-03-01T09:13:22Z"
     },
     {
       "tag": "0.1.4.4-alpha",
-      "name": "0.1.4 Pre-Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-15T18:30:52Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.4.4-alpha",
-      "modVersion": "0.1.4.4",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.4-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.4.4-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 630717,
-          "downloadCount": 210,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.4-alpha/Expansion-Java.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7175063cee485c04221e48ff98545481425238d4",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/7175063cee485c04221e48ff98545481425238d4.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.4-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.4.4",
+      "sizeBytes": 630717,
+      "downloadCount": 210,
+      "releasedAt": "2026-02-15T18:30:52Z"
     },
     {
       "tag": "0.1.4.3-alpha",
-      "name": "Small update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-15T14:14:15Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.4.3-alpha",
-      "modVersion": "0.1.4.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.3-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.4.3-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 612331,
-          "downloadCount": 209,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.3-alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "077985f0c3cd196988b8e0aa260854bc281790ba",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/077985f0c3cd196988b8e0aa260854bc281790ba.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.3-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.4.3",
+      "sizeBytes": 612331,
+      "downloadCount": 209,
+      "releasedAt": "2025-11-15T14:14:15Z"
     },
     {
       "tag": "0.1.4.2-alpha",
-      "name": "MiniUpdate",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-18T13:34:23Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.4.2-alpha",
-      "modVersion": "0.1.4.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.2-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.4.2-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 602564,
-          "downloadCount": 176,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.2-alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "da0cdcfcdaa0c7622f41d81f5a761dcfadee224c",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/da0cdcfcdaa0c7622f41d81f5a761dcfadee224c.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.2-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.4.2",
+      "sizeBytes": 602564,
+      "downloadCount": 176,
+      "releasedAt": "2025-10-18T13:34:23Z"
     },
     {
       "tag": "0.1.4.1-alpha",
-      "name": "Mini update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-13T12:58:19Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.4.1-alpha",
-      "modVersion": "0.1.4.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.1-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.4.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 602582,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.1-alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "2e21217ec31acb50955722a678347af36a649272",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/2e21217ec31acb50955722a678347af36a649272.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.1-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.4.1",
+      "sizeBytes": 602582,
+      "downloadCount": 69,
+      "releasedAt": "2025-10-13T12:58:19Z"
     },
     {
       "tag": "0.1.4-alpha",
-      "name": "0.1.4 alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-06T18:09:01Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.4-alpha",
-      "modVersion": "0.1.4",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.4-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 602180,
-          "downloadCount": 92,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4-alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "3e779eacfb481e416b7119fa730a5f01e9d0d5e5",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/3e779eacfb481e416b7119fa730a5f01e9d0d5e5.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.4",
+      "sizeBytes": 602180,
+      "downloadCount": 92,
+      "releasedAt": "2025-10-06T18:09:01Z"
     },
     {
       "tag": "0.1.3.5-alpha",
-      "name": "0.1.3.5 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-26T15:51:08Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.3.5-alpha",
-      "modVersion": "0.1.3.5",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.3.5-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.3.5-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 532615,
-          "downloadCount": 140,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.3.5-alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "4ef02d7d626527ae0a6d0c112cd113dbf56045e5",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/4ef02d7d626527ae0a6d0c112cd113dbf56045e5.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.3.5-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.3.5",
+      "sizeBytes": 532615,
+      "downloadCount": 140,
+      "releasedAt": "2025-09-26T15:51:08Z"
     },
     {
       "tag": "0.1.3-alpha",
-      "name": "0.1.3 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-25T16:06:53Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.3-alpha",
-      "modVersion": "0.1.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.3-alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.3-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 524626,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.3-alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "29f24ced333e73ddb2ebd8e10b4801627005c52c",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/29f24ced333e73ddb2ebd8e10b4801627005c52c.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.3-alpha/Expansion-Java.jar",
+      "modVersion": "0.1.3",
+      "sizeBytes": 524626,
+      "downloadCount": 23,
+      "releasedAt": "2025-09-25T16:06:53Z"
     },
     {
       "tag": "0.1.2",
-      "name": "0.1.2 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-17T15:07:19Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/0.1.2",
-      "modVersion": "0.1.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.2/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/0.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 473732,
-          "downloadCount": 113,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.2/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "ee5fa091a2771063ac5393a6452bb06c7c49132f",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/ee5fa091a2771063ac5393a6452bb06c7c49132f.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.2/Expansion-Java.jar",
+      "modVersion": "0.1.2",
+      "sizeBytes": 473732,
+      "downloadCount": 113,
+      "releasedAt": "2025-09-17T15:07:19Z"
     },
     {
       "tag": "alpha.0.1.Fix",
-      "name": "alpha 0.1 fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-10T03:51:42Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/alpha.0.1.Fix",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha.0.1.Fix/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/alpha.0.1.Fix.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 470912,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha.0.1.Fix/Expansion-Java.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "a1c8a9b3647f98d9576558f6f53ff74571214440",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/a1c8a9b3647f98d9576558f6f53ff74571214440.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha.0.1.Fix/Expansion-Java.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 470912,
+      "downloadCount": 47,
+      "releasedAt": "2025-09-10T03:51:42Z"
     },
     {
       "tag": "alpha0.1",
-      "name": "alpha 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-09T18:27:33Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/alpha0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha0.1/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/alpha0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 431114,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha0.1/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "0e8aee1ec424a9128c1239bef9f27571bbc60c70",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/0e8aee1ec424a9128c1239bef9f27571bbc60c70.zip"
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha0.1/Expansion-Java.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 431114,
+      "downloadCount": 11,
+      "releasedAt": "2025-09-09T18:27:33Z"
     },
     {
       "tag": "alpha",
-      "name": "alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-12T21:30:30Z",
-      "htmlUrl": "https://github.com/Sputnuc/Expansion-Java/releases/tag/alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha/Expansion-Java.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/expansion-java/archive/refs/tags/alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Expansion-Java.jar",
-          "size": 338598,
-          "downloadCount": 61,
-          "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha/Expansion-Java.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "4b8fbea140ce100560c6ede1d74cce6551f978e5",
-      "archiveByCommitUrl": "https://github.com/sputnuc/expansion-java/archive/4b8fbea140ce100560c6ede1d74cce6551f978e5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1.4.3-alpha",
-      "modVersion": "0.1.4.3",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.1.4.8-pre-beta",
-      "modVersion": "0.1.4.8",
-      "minGameVersion": "154.3",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/alpha/Expansion-Java.jar",
+      "modVersion": "1",
+      "sizeBytes": 338598,
+      "downloadCount": 61,
+      "releasedAt": "2025-07-12T21:30:30Z"
     }
   ],
   "meta": {
+    "name": "expansion",
+    "author": "Sputnuc",
+    "description": "Recreation of my first mod",
+    "version": "0.1.4.8",
+    "minGameVersion": "154.3",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "expansion.ExpansionMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

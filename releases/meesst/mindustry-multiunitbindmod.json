@@ -1,201 +1,102 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meesst/mindustry-multiunitbindmod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0.5",
-      "name": "添加蓝图资源文件",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-10T13:53:03Z",
-      "htmlUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/tag/v1.0.5",
-      "modVersion": "1.0.3",
+      "kind": "release",
       "minGameVersion": "154.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.5/Mindustry-MultiUnitBindMod.jar",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/v1.0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-MultiUnitBindMod.jar",
-          "size": 144492,
-          "downloadCount": 822,
-          "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.5/Mindustry-MultiUnitBindMod.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "96057094422b24722cf687985cfcb5437c78003b",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/96057094422b24722cf687985cfcb5437c78003b.zip"
+      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.5/Mindustry-MultiUnitBindMod.jar",
+      "modVersion": "1.0.3",
+      "sizeBytes": 144492,
+      "downloadCount": 822,
+      "releasedAt": "2026-07-10T13:53:03Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "修复变量表异常",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-02T15:23:06Z",
-      "htmlUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/tag/v1.0.4",
-      "modVersion": "1.0.3",
+      "kind": "release",
       "minGameVersion": "154.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.4/Mindustry-MultiUnitBindMod.jar",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-MultiUnitBindMod.jar",
-          "size": 120673,
-          "downloadCount": 647,
-          "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.4/Mindustry-MultiUnitBindMod.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fa8d16fd9c494369a5f0960506443926b75ff7dc",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/fa8d16fd9c494369a5f0960506443926b75ff7dc.zip"
+      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.4/Mindustry-MultiUnitBindMod.jar",
+      "modVersion": "1.0.3",
+      "sizeBytes": 120673,
+      "downloadCount": 647,
+      "releasedAt": "2026-03-02T15:23:06Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "修复ui错误",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-21T13:43:22Z",
-      "htmlUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/tag/v1.0.3",
-      "modVersion": "1.0.3",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.3/Mindustry-MultiUnitBindMod.jar",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-MultiUnitBindMod.jar",
-          "size": 114257,
-          "downloadCount": 286,
-          "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.3/Mindustry-MultiUnitBindMod.jar"
+          "from": "151.1",
+          "to": "154"
         }
       ],
-      "commitSha": "6266039cfaabb51316aa82cdb0b0d4562ad770e4",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/6266039cfaabb51316aa82cdb0b0d4562ad770e4.zip"
+      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.3/Mindustry-MultiUnitBindMod.jar",
+      "modVersion": "1.0.3",
+      "sizeBytes": 114257,
+      "downloadCount": 286,
+      "releasedAt": "2025-12-21T13:43:22Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "修复",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-20T11:00:02Z",
-      "htmlUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/tag/v1.0.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.2/Mindustry-MultiUnitBindMod.jar",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-MultiUnitBindMod.jar",
-          "size": 114226,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.2/Mindustry-MultiUnitBindMod.jar"
+          "from": "151.1",
+          "to": "154"
         }
       ],
-      "commitSha": "f8de01931ad2a6875d456b8d1957a4102f1badb9",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/f8de01931ad2a6875d456b8d1957a4102f1badb9.zip"
+      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.2/Mindustry-MultiUnitBindMod.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 114226,
+      "downloadCount": 6,
+      "releasedAt": "2025-12-20T11:00:02Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "LogicExtendMod v1.0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-18T12:18:04Z",
-      "htmlUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/tag/v1.0.1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.1/Mindustry-MultiUnitBindMod.jar",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustry-MultiUnitBindMod.jar",
-          "size": 113299,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.1/Mindustry-MultiUnitBindMod.jar"
+          "from": "151.1",
+          "to": "154"
         }
       ],
-      "commitSha": "bc92870b65e8a667f2695d4007bc69d195f0b0d9",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/bc92870b65e8a667f2695d4007bc69d195f0b0d9.zip"
-    },
-    {
-      "tag": "mindustry-v8-mod",
-      "name": "mindustry-v8-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meesst/mindustry-multiunitbindmod/tree/mindustry-v8-mod",
+      "downloadUrl": "https://github.com/meesst/Mindustry-MultiUnitBindMod/releases/download/v1.0.1/Mindustry-MultiUnitBindMod.jar",
       "modVersion": "1.0.0",
-      "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/mindustry-v8-mod.zip",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/mindustry-v8-mod.zip",
-      "assets": [],
-      "commitSha": "f7c429389ae9f0ce05bebbecd642608709b902e8",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/f7c429389ae9f0ce05bebbecd642608709b902e8.zip"
-    },
-    {
-      "tag": "mindustry-mod-v8",
-      "name": "mindustry-mod-v8",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meesst/mindustry-multiunitbindmod/tree/mindustry-mod-v8",
-      "modVersion": "1.0.0",
-      "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/mindustry-mod-v8.zip",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/mindustry-mod-v8.zip",
-      "assets": [],
-      "commitSha": "f7c429389ae9f0ce05bebbecd642608709b902e8",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/f7c429389ae9f0ce05bebbecd642608709b902e8.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meesst/mindustry-multiunitbindmod/tree/mindustry-mod",
-      "modVersion": "1.0.0",
-      "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "f7c429389ae9f0ce05bebbecd642608709b902e8",
-      "archiveByCommitUrl": "https://github.com/meesst/mindustry-multiunitbindmod/archive/f7c429389ae9f0ce05bebbecd642608709b902e8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.3",
-      "modVersion": "1.0.3",
-      "minGameVersion": "151.1",
-      "maxGameVersion": 154.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.5",
-      "modVersion": "1.0.3",
-      "minGameVersion": "154.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 113299,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-18T12:18:04Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "logic-extend-mod",
+    "author": "meesst",
+    "description": "A mod that adds more logic instructions.\n一个添加了更多逻辑指令的模组",
+    "version": "1.0.3",
+    "minGameVersion": "154.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "logicExtend.LEMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,231 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/color-the-duct",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2.2",
-      "name": "v1.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-20T10:19:31Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/tag/v1.2.2",
-      "modVersion": "1.2.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.2/color-the-ducts.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.2.2.zip",
-      "assets": [
-        {
-          "name": "color-the-ducts.jar",
-          "size": 15248,
-          "downloadCount": 1932,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.2/color-the-ducts.jar"
-        },
-        {
-          "name": "color-the-ducts.zip",
-          "size": 15248,
-          "downloadCount": 1713,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.2/color-the-ducts.zip"
-        }
-      ],
-      "commitSha": "6b9a9294508e80c1518b6b0cd8ba089c7701a04b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/6b9a9294508e80c1518b6b0cd8ba089c7701a04b.zip"
-    },
-    {
-      "tag": "v1.2.1",
-      "name": "v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-11T03:14:56Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/tag/v1.2.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.1/color-the-ducts.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.2.1.zip",
-      "assets": [
-        {
-          "name": "color-the-ducts-android.jar",
-          "size": 8933,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.1/color-the-ducts-android.jar"
-        },
-        {
-          "name": "color-the-ducts.jar",
-          "size": 9362,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.1/color-the-ducts.jar"
-        },
-        {
-          "name": "color-the-ducts.zip",
-          "size": 9123,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.1/color-the-ducts.zip"
-        }
-      ],
-      "commitSha": "a21c14c842746591b492688af27befb3c741a239",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/a21c14c842746591b492688af27befb3c741a239.zip"
-    },
-    {
-      "tag": "v1.2.0",
-      "name": "v1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-08T04:15:00Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/tag/v1.2.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.0/color-the-ducts.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.2.0.zip",
-      "assets": [
-        {
-          "name": "color-the-ducts-android.jar",
-          "size": 8672,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.0/color-the-ducts-android.jar"
-        },
-        {
-          "name": "color-the-ducts.jar",
-          "size": 9077,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.0/color-the-ducts.jar"
-        },
-        {
-          "name": "color-the-ducts.zip",
-          "size": 8838,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.2.0/color-the-ducts.zip"
-        }
-      ],
-      "commitSha": "c7e73fd5b8cd8f11dd5fe0bd6b3cdd9ad84808a8",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/c7e73fd5b8cd8f11dd5fe0bd6b3cdd9ad84808a8.zip"
-    },
-    {
-      "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-08T03:12:27Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/tag/v1.1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.1.0/color-the-ducts-android.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.1.0.zip",
-      "assets": [
-        {
-          "name": "color-the-ducts-android.jar",
-          "size": 7025,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.1.0/color-the-ducts-android.jar"
-        },
-        {
-          "name": "color-the-ducts.jar",
-          "size": 6817,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.1.0/color-the-ducts.jar"
-        },
-        {
-          "name": "color-the-ducts.zip",
-          "size": 6578,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.1.0/color-the-ducts.zip"
-        }
-      ],
-      "commitSha": "a2ace81fec4534681674c203110e5e97f1fb7d70",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/a2ace81fec4534681674c203110e5e97f1fb7d70.zip"
-    },
-    {
-      "tag": "v1.0.2",
-      "name": "v1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-07T17:12:06Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/tag/v1.0.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.0.2/color-the-ducts-android.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.0.2.zip",
-      "assets": [
-        {
-          "name": "color-the-ducts-android.jar",
-          "size": 6083,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.0.2/color-the-ducts-android.jar"
-        },
-        {
-          "name": "color-the-ducts.jar",
-          "size": 5899,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.0.2/color-the-ducts.jar"
-        },
-        {
-          "name": "color-the-ducts.zip",
-          "size": 5660,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Color-the-duct/releases/download/v1.0.2/color-the-ducts.zip"
-        }
-      ],
-      "commitSha": "15053959b06bfeee23234041f252f0b7843da994",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/15053959b06bfeee23234041f252f0b7843da994.zip"
-    },
-    {
-      "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/determination-wind/color-the-duct/tree/v1.0.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.0.1.zip",
-      "assets": [],
-      "commitSha": "bf272a8277e084b2a8c095f07fab71cf129facf8",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/bf272a8277e084b2a8c095f07fab71cf129facf8.zip"
-    },
-    {
-      "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/determination-wind/color-the-duct/tree/v1.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/color-the-duct/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "7b622327d8a22bc495afcc3c835b8f2ec0693956",
-      "archiveByCommitUrl": "https://github.com/determination-wind/color-the-duct/archive/7b622327d8a22bc495afcc3c835b8f2ec0693956.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.2.2",
       "modVersion": "1.2.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 30496,
+      "downloadCount": 3646,
+      "releasedAt": "2026-02-20T10:19:31Z"
     }
   ],
   "meta": {
+    "name": "color-the-ducts",
+    "author": "DeterMination",
+    "description": "纯客户端导管染色模组：为地图上液体导管在中心绘制液体颜色方块，便于快速识别运输中的液体。\\nClient-side liquid duct coloring: draws a centered liquid-colored square on each liquid duct to show what it currently transports.",
+    "version": "1.2.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "colortheducts.ColorTheDuctsMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

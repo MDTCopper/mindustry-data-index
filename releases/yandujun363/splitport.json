@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "yandujun363/splitport",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.3.0",
-      "name": "v2.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-16T10:17:51Z",
-      "htmlUrl": "https://github.com/yandujun363/splitport/releases/tag/v2.3.0",
-      "modVersion": "2.3.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/yandujun363/splitport/releases/download/v2.3.0/splitport.zip",
-      "sourceArchiveUrl": "https://github.com/yandujun363/splitport/archive/refs/tags/v2.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "splitport.zip",
-          "size": 42390,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/yandujun363/splitport/releases/download/v2.3.0/splitport.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "62ecbd5c87bac1b0777aaf00d6d88e9d5f2a867f",
-      "archiveByCommitUrl": "https://github.com/yandujun363/splitport/archive/62ecbd5c87bac1b0777aaf00d6d88e9d5f2a867f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.3.0",
+      "downloadUrl": "https://github.com/yandujun363/splitport/releases/download/v2.3.0/splitport.zip",
       "modVersion": "2.3.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 42390,
+      "downloadCount": 3,
+      "releasedAt": "2026-10-16T10:17:51Z"
     }
   ],
   "meta": {
+    "name": "splitport",
+    "author": "yandujun363",
+    "description": "Client-side only: reads the separate TCP and UDP ports from the _mindustry._tcp and _mindustry._udp SRV records, so you can join servers whose NAT exposes a different external port for each protocol. Falls back to the vanilla single-port logic whenever no SRV record answers, adds no content, and is hidden from the multiplayer mod handshake so servers without it never kick you.",
+    "version": "2.3.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

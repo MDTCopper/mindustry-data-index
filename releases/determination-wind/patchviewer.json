@@ -1,496 +1,261 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/patchviewer",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.4.1",
-      "name": "PatchViewer v2.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-28T15:56:13Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.4.1",
-      "modVersion": "2.4.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.1/PatchViewer-v2.4.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.4.1.jar",
-          "size": 131894,
-          "downloadCount": 257,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.1/PatchViewer-v2.4.1.jar"
-        },
-        {
-          "name": "PatchViewer-v2.4.1.zip",
-          "size": 131894,
-          "downloadCount": 73,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.1/PatchViewer-v2.4.1.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0702429a205991d6bfb2fac11f96d3b8ff0e46a3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/0702429a205991d6bfb2fac11f96d3b8ff0e46a3.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.1/PatchViewer-v2.4.1.jar",
+      "modVersion": "2.4.1",
+      "sizeBytes": 263788,
+      "downloadCount": 330,
+      "releasedAt": "2026-08-28T15:56:13Z"
     },
     {
       "tag": "v2.4.0",
-      "name": "v2.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-27T03:11:45Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.4.0",
-      "modVersion": "2.4.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.0/PatchViewer-v2.4.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.4.0.jar",
-          "size": 131796,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.0/PatchViewer-v2.4.0.jar"
-        },
-        {
-          "name": "PatchViewer-v2.4.0.zip",
-          "size": 131796,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.0/PatchViewer-v2.4.0.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c70a95eb25f2ba0df11368d53b1afeee0e13338b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/c70a95eb25f2ba0df11368d53b1afeee0e13338b.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.0/PatchViewer-v2.4.0.jar",
+      "modVersion": "2.4.0",
+      "sizeBytes": 263592,
+      "downloadCount": 54,
+      "releasedAt": "2026-08-27T03:11:45Z"
     },
     {
       "tag": "v2.3.2",
-      "name": "v2.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T10:17:40Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.3.2",
-      "modVersion": "2.3.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.2/PatchViewer-v2.3.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.3.2.jar",
-          "size": 130841,
-          "downloadCount": 182,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.2/PatchViewer-v2.3.2.jar"
-        },
-        {
-          "name": "PatchViewer-v2.3.2.zip",
-          "size": 130841,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.2/PatchViewer-v2.3.2.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e938104ec7134e24f02d3fa18362fc873201d33d",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/e938104ec7134e24f02d3fa18362fc873201d33d.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.2/PatchViewer-v2.3.2.jar",
+      "modVersion": "2.3.2",
+      "sizeBytes": 261682,
+      "downloadCount": 186,
+      "releasedAt": "2026-08-08T10:17:40Z"
     },
     {
       "tag": "v2.3.1",
-      "name": "v2.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T03:51:18Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.3.1",
-      "modVersion": "2.3.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.1/PatchViewer-v2.3.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.3.1.jar",
-          "size": 130465,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.1/PatchViewer-v2.3.1.jar"
-        },
-        {
-          "name": "PatchViewer-v2.3.1.zip",
-          "size": 130465,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.1/PatchViewer-v2.3.1.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9662a6ae82b2f156b63082bfb0a7603e3c25058c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/9662a6ae82b2f156b63082bfb0a7603e3c25058c.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.1/PatchViewer-v2.3.1.jar",
+      "modVersion": "2.3.1",
+      "sizeBytes": 260930,
+      "downloadCount": 13,
+      "releasedAt": "2026-08-08T03:51:18Z"
     },
     {
       "tag": "v2.3.0",
-      "name": "v2.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-26T17:24:43Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.3.0",
-      "modVersion": "2.3.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.0/PatchViewer-v2.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.3.0.jar",
-          "size": 130186,
-          "downloadCount": 124,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.0/PatchViewer-v2.3.0.jar"
-        },
-        {
-          "name": "PatchViewer-v2.3.0.zip",
-          "size": 130186,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.0/PatchViewer-v2.3.0.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "326c767656457b4b9016eec5af83ffd04021ea2b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/326c767656457b4b9016eec5af83ffd04021ea2b.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.3.0/PatchViewer-v2.3.0.jar",
+      "modVersion": "2.3.0",
+      "sizeBytes": 260372,
+      "downloadCount": 125,
+      "releasedAt": "2026-07-26T17:24:43Z"
     },
     {
       "tag": "v2.2.2",
-      "name": "PatchViewer v2.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-20T12:16:52Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.2.2",
-      "modVersion": "2.2.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.2/PatchViewer-v2.2.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.2.2.jar",
-          "size": 125475,
-          "downloadCount": 74,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.2/PatchViewer-v2.2.2.jar"
-        },
-        {
-          "name": "PatchViewer-v2.2.2.zip",
-          "size": 125475,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.2/PatchViewer-v2.2.2.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eae2660581c88838f26166879e063851aa5bdd27",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/eae2660581c88838f26166879e063851aa5bdd27.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.2/PatchViewer-v2.2.2.jar",
+      "modVersion": "2.2.2",
+      "sizeBytes": 250950,
+      "downloadCount": 78,
+      "releasedAt": "2026-07-20T12:16:52Z"
     },
     {
       "tag": "v2.2.1",
-      "name": "v2.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-14T03:55:13Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.2.1",
-      "modVersion": "2.2.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.1/PatchViewer-v2.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.2.1.jar",
-          "size": 114232,
-          "downloadCount": 72,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.1/PatchViewer-v2.2.1.jar"
-        },
-        {
-          "name": "PatchViewer-v2.2.1.zip",
-          "size": 114232,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.1/PatchViewer-v2.2.1.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "34ce8ab067b94ff2eeaad2f131f229dac4d34885",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/34ce8ab067b94ff2eeaad2f131f229dac4d34885.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.1/PatchViewer-v2.2.1.jar",
+      "modVersion": "2.2.1",
+      "sizeBytes": 228464,
+      "downloadCount": 77,
+      "releasedAt": "2026-07-14T03:55:13Z"
     },
     {
       "tag": "v2.2.0",
-      "name": "v2.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-08T12:14:33Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.2.0",
-      "modVersion": "2.2.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.0/PatchViewer-v2.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.2.0.jar",
-          "size": 114275,
-          "downloadCount": 112,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.0/PatchViewer-v2.2.0.jar"
-        },
-        {
-          "name": "PatchViewer-v2.2.0.zip",
-          "size": 114275,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.0/PatchViewer-v2.2.0.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c4a1d7a7314f4ab1bc7e3f3317d083fd801c9c37",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/c4a1d7a7314f4ab1bc7e3f3317d083fd801c9c37.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.2.0/PatchViewer-v2.2.0.jar",
+      "modVersion": "2.2.0",
+      "sizeBytes": 228550,
+      "downloadCount": 133,
+      "releasedAt": "2026-07-08T12:14:33Z"
     },
     {
       "tag": "v2.1.0",
-      "name": "v2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-22T15:44:03Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.1.0/PatchViewer-v2.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-v2.1.0.jar",
-          "size": 113589,
-          "downloadCount": 227,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.1.0/PatchViewer-v2.1.0.jar"
-        },
-        {
-          "name": "PatchViewer-v2.1.0.zip",
-          "size": 113589,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.1.0/PatchViewer-v2.1.0.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a31c2a20b3bd8814bd6474e8518efc569c3c4fbc",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/a31c2a20b3bd8814bd6474e8518efc569c3c4fbc.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.1.0/PatchViewer-v2.1.0.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 227178,
+      "downloadCount": 232,
+      "releasedAt": "2026-06-22T15:44:03Z"
     },
     {
       "tag": "v2.0.1",
-      "name": "v2.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-19T09:22:04Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.0.1",
-      "modVersion": "2.0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.1/PatchViewer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer.jar",
-          "size": 107809,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.1/PatchViewer.jar"
-        },
-        {
-          "name": "PatchViewer.zip",
-          "size": 107809,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.1/PatchViewer.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "93abacfbdc100cd732d24953e26a85c4d0c7c2e2",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/93abacfbdc100cd732d24953e26a85c4d0c7c2e2.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.1/PatchViewer.jar",
+      "modVersion": "2.0.1",
+      "sizeBytes": 215618,
+      "downloadCount": 51,
+      "releasedAt": "2026-06-19T09:22:04Z"
     },
     {
       "tag": "v2.0.0",
-      "name": "v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-16T05:36:35Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.0/PatchViewer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer.jar",
-          "size": 107583,
-          "downloadCount": 48,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.0/PatchViewer.jar"
-        },
-        {
-          "name": "PatchViewer.zip",
-          "size": 107583,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.0/PatchViewer.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "391c19100ddbc56f0a135e59e99681f1927a993e",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/391c19100ddbc56f0a135e59e99681f1927a993e.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.0.0/PatchViewer.jar",
+      "modVersion": "2.0.0",
+      "sizeBytes": 215166,
+      "downloadCount": 49,
+      "releasedAt": "2026-06-16T05:36:35Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-14T05:20:22Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.1/PatchViewer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer-1.1.1.jar",
-          "size": 31368,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.1/PatchViewer-1.1.1.jar"
-        },
-        {
-          "name": "PatchViewer.jar",
-          "size": 60480,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.1/PatchViewer.jar"
-        },
-        {
-          "name": "PatchViewer.zip",
-          "size": 60480,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.1/PatchViewer.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bebc88fde7cab3b2eecd3ada8958c65a63c3f91c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/bebc88fde7cab3b2eecd3ada8958c65a63c3f91c.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.1/PatchViewer.jar",
+      "modVersion": "1.1.1",
+      "sizeBytes": 152328,
+      "downloadCount": 28,
+      "releasedAt": "2026-06-14T05:20:22Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-17T13:37:28Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.0/PatchViewer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer.jar",
-          "size": 60390,
-          "downloadCount": 1985,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.0/PatchViewer.jar"
-        },
-        {
-          "name": "PatchViewer.zip",
-          "size": 60390,
-          "downloadCount": 1714,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.0/PatchViewer.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "65dd2cc09b3824357573347a8040e5e718479063",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/65dd2cc09b3824357573347a8040e5e718479063.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.1.0/PatchViewer.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 120780,
+      "downloadCount": 3699,
+      "releasedAt": "2026-04-17T13:37:28Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-05T18:06:40Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.1/PatchViewer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer.jar",
-          "size": 60239,
-          "downloadCount": 96,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.1/PatchViewer.jar"
-        },
-        {
-          "name": "PatchViewer.zip",
-          "size": 60239,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.1/PatchViewer.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e33b8f9ecf164b35786bb7e1526864933291eade",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/e33b8f9ecf164b35786bb7e1526864933291eade.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.1/PatchViewer.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 120478,
+      "downloadCount": 103,
+      "releasedAt": "2026-04-05T18:06:40Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-05T17:38:39Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.0/PatchViewer.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PatchViewer.jar",
-          "size": 57453,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.0/PatchViewer.jar"
-        },
-        {
-          "name": "PatchViewer.zip",
-          "size": 57453,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.0/PatchViewer.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bf79854923ecfa1219b2a695f9f8f980693a1cf4",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/bf79854923ecfa1219b2a695f9f8f980693a1cf4.zip"
-    },
-    {
-      "tag": "pv2-fix-cp2-crash-20260504-1",
-      "name": "pv2-fix-cp2-crash-20260504-1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/determination-wind/patchviewer/tree/pv2-fix-cp2-crash-20260504-1",
-      "modVersion": "1",
-      "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/pv2-fix-cp2-crash-20260504-1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/patchviewer/archive/refs/tags/pv2-fix-cp2-crash-20260504-1.zip",
-      "assets": [],
-      "commitSha": "e94595626918654f3345aa89de44db0ccf3201a5",
-      "archiveByCommitUrl": "https://github.com/determination-wind/patchviewer/archive/e94595626918654f3345aa89de44db0ccf3201a5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.4.1",
-      "modVersion": "2.4.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v1.0.0/PatchViewer.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 114906,
+      "downloadCount": 4,
+      "releasedAt": "2026-04-05T17:38:39Z"
     }
   ],
   "meta": {
+    "name": "patchviewer",
+    "author": "DeterMination",
+    "description": "Native database and quick before/after diff viewer for Mindustry datapatches. / 保持原版数据库显示的数据补丁与快捷差异查看器。",
+    "version": "2.4.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "patchviewer.PatchViewerMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

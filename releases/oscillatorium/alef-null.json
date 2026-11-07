@@ -1,314 +1,219 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "oscillatorium/alef-null",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.03",
-      "name": "Alef-Null v1.03: mathematical language & disintegrator",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-14T12:51:26Z",
-      "htmlUrl": "https://github.com/oscillatorium/Alef-Null/releases/tag/v1.03",
-      "modVersion": "1.03",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.03/Alef-Null.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.03.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Alef-Null.zip",
-          "size": 60524,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.03/Alef-Null.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "751b178823c024bf25a85ff3383f65741680214a",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/751b178823c024bf25a85ff3383f65741680214a.zip"
+      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.03/Alef-Null.zip",
+      "modVersion": "1.03",
+      "sizeBytes": 60524,
+      "downloadCount": 22,
+      "releasedAt": "2026-06-14T12:51:26Z"
     },
     {
       "tag": "v1.02",
-      "name": "Alef-Null v1.02: normal sector & units",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-12T16:39:18Z",
-      "htmlUrl": "https://github.com/oscillatorium/Alef-Null/releases/tag/v1.02",
-      "modVersion": "1.02",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.02/Alef-Null.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.02.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Alef-Null.zip",
-          "size": 57652,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.02/Alef-Null.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0364d4bc6854abe23954046bfb4c581b597ec9f3",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/0364d4bc6854abe23954046bfb4c581b597ec9f3.zip"
+      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.02/Alef-Null.zip",
+      "modVersion": "1.02",
+      "sizeBytes": 57652,
+      "downloadCount": 2,
+      "releasedAt": "2026-06-12T16:39:18Z"
     },
     {
       "tag": "v1.01",
-      "name": "Alef-Null v1.01: resprite & limit shield",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-09T15:33:48Z",
-      "htmlUrl": "https://github.com/oscillatorium/Alef-Null/releases/tag/v1.01",
-      "modVersion": "1.01",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.01/Alef-Null.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Alef-Null.zip",
-          "size": 46864,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.01/Alef-Null.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6093c5b64c33870152c4a0d97cf4d6614ab69532",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/6093c5b64c33870152c4a0d97cf4d6614ab69532.zip"
+      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.01/Alef-Null.zip",
+      "modVersion": "1.01",
+      "sizeBytes": 46864,
+      "downloadCount": 2,
+      "releasedAt": "2026-06-09T15:33:48Z"
     },
     {
       "tag": "v1.00",
-      "name": "Alef-Null v1.00: +planet",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-07T16:05:55Z",
-      "htmlUrl": "https://github.com/oscillatorium/Alef-Null/releases/tag/v1.00",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.00/Alef-Null.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Alef-Null.zip",
-          "size": 38113,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.00/Alef-Null.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "632118dcee4df6fcf57031460c245da9107004c4",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/632118dcee4df6fcf57031460c245da9107004c4.zip"
+      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v1.00/Alef-Null.zip",
+      "modVersion": "1",
+      "sizeBytes": 38113,
+      "downloadCount": 3,
+      "releasedAt": "2026-06-07T16:05:55Z"
     },
     {
       "tag": "v0.11",
-      "name": "Alef-Null v0.11:  almost nothing",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-04T20:22:42Z",
-      "htmlUrl": "https://github.com/oscillatorium/Alef-Null/releases/tag/v0.11",
-      "modVersion": "0.11",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v0.11/Alef-Null.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Alef-Null.zip",
-          "size": 35094,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v0.11/Alef-Null.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1a94bf9fcbd785c11a76758ccd4d51b25ad77e6c",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/1a94bf9fcbd785c11a76758ccd4d51b25ad77e6c.zip"
-    },
-    {
-      "tag": "v1.04",
-      "name": "v1.04",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v1.04",
-      "modVersion": "1.04",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
-      "assets": [],
-      "commitSha": "d292d3c28335779e0781a8b2cf428788626cc9a9",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/d292d3c28335779e0781a8b2cf428788626cc9a9.zip"
-    },
-    {
-      "tag": "v0.12",
-      "name": "v0.12",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.12",
+      "downloadUrl": "https://github.com/oscillatorium/Alef-Null/releases/download/v0.11/Alef-Null.zip",
       "modVersion": "0.11",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.12.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.12.zip",
-      "assets": [],
-      "commitSha": "3e49bd43c1e07513479bdac78438311722d253d8",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/3e49bd43c1e07513479bdac78438311722d253d8.zip"
-    },
-    {
-      "tag": "v0.09",
-      "name": "v0.09",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.09",
-      "modVersion": "0.09",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.09.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.09.zip",
-      "assets": [],
-      "commitSha": "b50f8b807b6df88d3d20b2aef0f970e1d9a69fac",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/b50f8b807b6df88d3d20b2aef0f970e1d9a69fac.zip"
-    },
-    {
-      "tag": "v0.08",
-      "name": "v0.08",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.08",
-      "modVersion": "0.07",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.08.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.08.zip",
-      "assets": [],
-      "commitSha": "48090b56240e87111b778cd5443e40161dd661d4",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/48090b56240e87111b778cd5443e40161dd661d4.zip"
-    },
-    {
-      "tag": "v0.07",
-      "name": "v0.07",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.07",
-      "modVersion": "0.07",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.07.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.07.zip",
-      "assets": [],
-      "commitSha": "22d396d86a77ccc04e10b98ad1dca1910fc8a0ad",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/22d396d86a77ccc04e10b98ad1dca1910fc8a0ad.zip"
-    },
-    {
-      "tag": "v0.06",
-      "name": "v0.06",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.06",
-      "modVersion": "0.06",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.06.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.06.zip",
-      "assets": [],
-      "commitSha": "9cba399827685f9f8914a644b620b41b9bcf8af7",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/9cba399827685f9f8914a644b620b41b9bcf8af7.zip"
-    },
-    {
-      "tag": "v0.05",
-      "name": "v0.05",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.05",
-      "modVersion": "0.05",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.05.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.05.zip",
-      "assets": [],
-      "commitSha": "13f0913c5ef59891b95012ee5827203dec3ec82f",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/13f0913c5ef59891b95012ee5827203dec3ec82f.zip"
-    },
-    {
-      "tag": "v0.04",
-      "name": "v0.04",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.04",
-      "modVersion": "0.04",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.04.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.04.zip",
-      "assets": [],
-      "commitSha": "a43a6a10f67ede4b897206407097b339d0a6560c",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/a43a6a10f67ede4b897206407097b339d0a6560c.zip"
-    },
-    {
-      "tag": "v0.03",
-      "name": "v0.03",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.03",
-      "modVersion": "0.01",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.03.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.03.zip",
-      "assets": [],
-      "commitSha": "96bee151dfde375a790bf981db065d67b584c399",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/96bee151dfde375a790bf981db065d67b584c399.zip"
+      "sizeBytes": 35094,
+      "downloadCount": 1,
+      "releasedAt": "2026-06-04T20:22:42Z"
     },
     {
       "tag": "v0.02",
-      "name": "v0.02",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/oscillatorium/alef-null/tree/v0.02",
-      "modVersion": "0.01",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.02.zip",
-      "sourceArchiveUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.02.zip",
-      "assets": [],
-      "commitSha": "600c5ebe496559bc9c593b62a4d37ad70f02beed",
-      "archiveByCommitUrl": "https://github.com/oscillatorium/alef-null/archive/600c5ebe496559bc9c593b62a4d37ad70f02beed.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "0.01"
+    },
     {
-      "tag": "v1.03",
-      "modVersion": "1.03",
+      "tag": "v0.03",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.03.zip",
+      "modVersion": "0.01"
+    },
+    {
+      "tag": "v0.04",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.04.zip",
+      "modVersion": "0.04"
+    },
+    {
+      "tag": "v0.05",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.05.zip",
+      "modVersion": "0.05"
+    },
+    {
+      "tag": "v0.06",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.06.zip",
+      "modVersion": "0.06"
+    },
+    {
+      "tag": "v0.07",
+      "kind": "tag",
       "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.07.zip",
+      "modVersion": "0.07"
+    },
+    {
+      "tag": "v0.08",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.08.zip",
+      "modVersion": "0.07"
+    },
+    {
+      "tag": "v0.12",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v0.12.zip",
+      "modVersion": "0.11"
+    },
+    {
+      "tag": "v1.04",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oscillatorium/alef-null/archive/refs/tags/v1.04.zip",
+      "modVersion": "1.04"
     }
   ],
   "meta": {
+    "name": "Alef-Null",
+    "author": "[[]#ff6600]К[[]][[]#e65a00]с[[]][[]#cc4e00]е[[]][[]#b34200]л[[]][[]#993600]и[[]][[]#802a00]р[[]][[]#661e00]и[[]][[]#4d1200]т[[]]",
+    "description": "Ru\nЭтот мод должен добавлять планету с математикой в качестве блоков, но пока только 1 сектор\n[accent[]]Крутые вывы: chmonya (java script)[[]]\n\nEn\nThis mod is supposed to add a planet with mathematics as blocks, but so far only 1 sector\n[accent[]]Cool thanks: chmonya (java script)[[]]",
+    "version": "1.03",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

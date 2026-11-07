@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zielonytrojkat/frozen-farlands",
-  "generatedAt": "2026-11-06T14:52:40.602Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.3",
-      "name": "v1.3 - Frozen Farlands",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-16T09:53:38Z",
-      "htmlUrl": "https://github.com/ZielonyTrojkat/Frozen-Farlands/releases/tag/v1.3",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "143.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "143.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/zielonytrojkat/frozen-farlands/archive/refs/tags/v1.3.zip",
-      "sourceArchiveUrl": "https://github.com/zielonytrojkat/frozen-farlands/archive/refs/tags/v1.3.zip",
-      "assets": [],
-      "commitSha": "f70e639d6a812048aa1dfc03684e75d0d37911cf",
-      "archiveByCommitUrl": "https://github.com/zielonytrojkat/frozen-farlands/archive/f70e639d6a812048aa1dfc03684e75d0d37911cf.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.3",
       "modVersion": "1.3",
-      "minGameVersion": "143.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-06-16T09:53:38Z"
     }
   ],
   "meta": {
+    "name": "moon mod",
+    "author": "[#3bdbff[]]CY4N[white[]] & [#11d41e[]]Zielony Trójkąt[white[]]",
+    "description": "[yellow[]]Before you'll play this mod, let me tell you that [red[]]skill and patience are highly required.\n[yellow[]]You need to learn from your mistakes and lost battles in order to complete some sectors.[white[]]\nWelcome to the Frozen farlands,\nhere, where there is no such thing called heat, Serpulo's Moon Awaits you!\nZilo, a place colonized by Bushark the fraction from Tantros,\nEven if that's only a moon there are many new things, new resources, blocks, units, turrets, just everything.\nThere is one more place we would like you to visit... Gheţar\nA Lonely Asteroid orbiting behind Zilo,\nMaybe it's a small place but it doesn't means it is going to be easy in there, but surely you'd be having fun...\n\nThis mod contains custom soundtracks, please do not steal them... instead get a better vibe while playing\nAnd Thanks to [#8c0303[]]Świrek[white[]] for helping us with code.\nWe hope you'll enjoy our mod\nThis Isn't our last creation, we have a huge plans upcoming, if you are interested in our plans, concepts and updates join our discord server\nOur contributtors: [#36a855[]]RouterXdd[white[]], [#327db3[]]Silin Veredno[white[]] and [#dba642[]]Catana8735[white[]]\nlink: [[]blue]https://discord.gg/TQTW3mfYyf[[]white]\nWe also have it on a disboard.",
+    "version": "1.3",
+    "minGameVersion": "143.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

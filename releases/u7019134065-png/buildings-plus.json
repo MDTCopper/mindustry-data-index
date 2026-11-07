@@ -1,108 +1,77 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "u7019134065-png/buildings-plus",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v8.5.1",
-      "name": "Buildings Plus+ 8.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-12T22:01:48Z",
-      "htmlUrl": "https://github.com/u7019134065-png/Buildings-plus/releases/tag/v8.5.1",
-      "modVersion": "8.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/v8.5.1.zip",
-      "sourceArchiveUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/v8.5.1.zip",
-      "assets": [],
-      "commitSha": "3e955c15c5d4a639ef0ccb5d930179f38088cd47",
-      "archiveByCommitUrl": "https://github.com/u7019134065-png/buildings-plus/archive/3e955c15c5d4a639ef0ccb5d930179f38088cd47.zip"
+      "modVersion": "8.6",
+      "releasedAt": "2026-01-12T22:01:48Z"
     },
     {
       "tag": "v8.4.1",
-      "name": "v8.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-04T08:06:43Z",
-      "htmlUrl": "https://github.com/u7019134065-png/Buildings-plus/releases/tag/v8.4.1",
-      "modVersion": "8.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/v8.4.1.zip",
-      "sourceArchiveUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/v8.4.1.zip",
-      "assets": [],
-      "commitSha": "9cbc5e6a358e13fef9ba0a4cee7c59ab24eb4ef5",
-      "archiveByCommitUrl": "https://github.com/u7019134065-png/buildings-plus/archive/9cbc5e6a358e13fef9ba0a4cee7c59ab24eb4ef5.zip"
+      "modVersion": "8.5",
+      "releasedAt": "2025-12-04T08:06:43Z"
     },
     {
       "tag": "mindustry-mod-v8.4",
-      "name": "BuildingsPlus 8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-03T13:14:30Z",
-      "htmlUrl": "https://github.com/u7019134065-png/Buildings-plus/releases/tag/mindustry-mod-v8.4",
-      "modVersion": "8.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/mindustry-mod-v8.4.zip",
-      "sourceArchiveUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/mindustry-mod-v8.4.zip",
-      "assets": [],
-      "commitSha": "f2191f4ff152004b2ff3bf16c58a0ecd55f7da69",
-      "archiveByCommitUrl": "https://github.com/u7019134065-png/buildings-plus/archive/f2191f4ff152004b2ff3bf16c58a0ecd55f7da69.zip"
+      "modVersion": "8.5",
+      "releasedAt": "2025-12-03T13:14:30Z"
     },
     {
       "tag": "mindustry-mod-1.7",
-      "name": "BuildingsPlus",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-15T16:57:20Z",
-      "htmlUrl": "https://github.com/u7019134065-png/Buildings-plus/releases/tag/mindustry-mod-1.7",
-      "modVersion": "1.7",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/mindustry-mod-1.7.zip",
-      "sourceArchiveUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/mindustry-mod-1.7.zip",
-      "assets": [],
-      "commitSha": "4105a0a5ebad65f5486f92594572285e34dcf57d",
-      "archiveByCommitUrl": "https://github.com/u7019134065-png/buildings-plus/archive/4105a0a5ebad65f5486f92594572285e34dcf57d.zip"
-    },
-    {
-      "tag": "mindustry-mod-v1.0",
-      "name": "Buildings Plus+",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-15T11:34:05Z",
-      "htmlUrl": "https://github.com/u7019134065-png/Buildings-plus/releases/tag/mindustry-mod-v1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/mindustry-mod-v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/u7019134065-png/buildings-plus/archive/refs/tags/mindustry-mod-v1.0.zip",
-      "assets": [],
-      "commitSha": "e8d52b1a17eab9838814169859d1761f77001d29",
-      "archiveByCommitUrl": "https://github.com/u7019134065-png/buildings-plus/archive/e8d52b1a17eab9838814169859d1761f77001d29.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v8.5.1",
-      "modVersion": "8.6",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.7",
+      "releasedAt": "2025-11-15T16:57:20Z"
     }
   ],
   "meta": {
+    "name": "buildings plus",
+    "author": "[purple]ЕЕ[green]ее[orange]1406",
+    "description": "\n[blue]Мод добавляет множество нового контента\n[green]множество буров по типу Гранитного\n[yellow]новые турели!\n[red]в игре есть баги сообщите о них мне в ЛС ТГК\n\n[orange] Приватное сообщение [blue] @MrHumanU\n[blue]Telegram TGH → t.me/LogicDustryJS \n[red]Youtube YTC → youtube.com/@LogicDustryJS\n[lime]15/11/25 22:29 → Обновление 1.9\n\n\n[Orange]Полностью совместим с Mindustry v146-153. ",
+    "version": "8.6",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

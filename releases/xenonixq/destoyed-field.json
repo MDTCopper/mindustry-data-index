@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "xenonixq/destoyed-field",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-21T19:37:23Z",
-      "htmlUrl": "https://github.com/Xenonixq/Destoyed-Field/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Xenonixq/Destoyed-Field/releases/download/1.0/Destroyed.Field.zip",
-      "sourceArchiveUrl": "https://github.com/xenonixq/destoyed-field/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Destroyed.Field.zip",
-          "size": 73426,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Xenonixq/Destoyed-Field/releases/download/1.0/Destroyed.Field.zip"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6e59a32bc3ba30f270406080cf81345abd927db7",
-      "archiveByCommitUrl": "https://github.com/xenonixq/destoyed-field/archive/6e59a32bc3ba30f270406080cf81345abd927db7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
+      "downloadUrl": "https://github.com/Xenonixq/Destoyed-Field/releases/download/1.0/Destroyed.Field.zip",
       "modVersion": "1.0",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 73426,
+      "downloadCount": 8,
+      "releasedAt": "2026-09-21T19:37:23Z"
     }
   ],
   "meta": {
+    "name": "destroyend-field-map",
+    "author": "Xenonix",
+    "description": "Adds funny map.",
+    "version": "1.0",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

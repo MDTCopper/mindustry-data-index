@@ -1,133 +1,78 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "penguip/a-mindustry-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "V.0.7",
-      "name": "V.0.7(more modern version of the mod:)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-25T15:11:24Z",
-      "htmlUrl": "https://github.com/penguip/a-mindustry-mod/releases/tag/V.0.7",
-      "modVersion": "0.7",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/V.0.7.zip",
-      "sourceArchiveUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/V.0.7.zip",
-      "assets": [],
-      "commitSha": "d9683ed55940eb91f50dba9bbfa1416e2af79b09",
-      "archiveByCommitUrl": "https://github.com/penguip/a-mindustry-mod/archive/d9683ed55940eb91f50dba9bbfa1416e2af79b09.zip"
-    },
-    {
-      "tag": "aa",
-      "name": "v.0.5 so long gay alpha (not the ship, he's ok.)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-20T00:54:49Z",
-      "htmlUrl": "https://github.com/penguip/a-mindustry-mod/releases/tag/aa",
-      "modVersion": null,
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/aa.zip",
-      "sourceArchiveUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/aa.zip",
-      "assets": [],
-      "commitSha": "9a10f2b12295f84518b725dae9592dd5de2785f7",
-      "archiveByCommitUrl": "https://github.com/penguip/a-mindustry-mod/archive/9a10f2b12295f84518b725dae9592dd5de2785f7.zip"
+      "modVersion": "0.7",
+      "releasedAt": "2026-10-25T15:11:24Z"
     },
     {
       "tag": "d",
-      "name": "v.0.4: mmm...radiation",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-22T04:15:04Z",
-      "htmlUrl": "https://github.com/penguip/a-mindustry-mod/releases/tag/d",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/d.zip",
-      "sourceArchiveUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/d.zip",
-      "assets": [],
-      "commitSha": "8d838d1825210273fbef2c3b90aa55374281666b",
-      "archiveByCommitUrl": "https://github.com/penguip/a-mindustry-mod/archive/8d838d1825210273fbef2c3b90aa55374281666b.zip"
+      "modVersion": "0.7",
+      "releasedAt": "2023-12-22T04:15:04Z"
     },
     {
       "tag": "c",
-      "name": "buncha spaghetti to make v.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-24T20:44:17Z",
-      "htmlUrl": "https://github.com/penguip/a-mindustry-mod/releases/tag/c",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/c.zip",
-      "sourceArchiveUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/c.zip",
-      "assets": [],
-      "commitSha": "5cca7efa018b337b52b47fc2b6115ceeea12f69e",
-      "archiveByCommitUrl": "https://github.com/penguip/a-mindustry-mod/archive/5cca7efa018b337b52b47fc2b6115ceeea12f69e.zip"
+      "modVersion": "0.7",
+      "releasedAt": "2023-04-24T20:44:17Z"
     },
     {
       "tag": "b",
-      "name": "v.0.2 Introduction to Anolead",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-07T01:06:57Z",
-      "htmlUrl": "https://github.com/penguip/a-mindustry-mod/releases/tag/b",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/b.zip",
-      "sourceArchiveUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/b.zip",
-      "assets": [],
-      "commitSha": "994b85e0ef627f25dda971ae01d89b642a6bbd34",
-      "archiveByCommitUrl": "https://github.com/penguip/a-mindustry-mod/archive/994b85e0ef627f25dda971ae01d89b642a6bbd34.zip"
-    },
-    {
-      "tag": "a",
-      "name": "First official release v.0.1 VERY alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-06T12:23:48Z",
-      "htmlUrl": "https://github.com/penguip/a-mindustry-mod/releases/tag/a",
-      "modVersion": null,
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/a.zip",
-      "sourceArchiveUrl": "https://github.com/penguip/a-mindustry-mod/archive/refs/tags/a.zip",
-      "assets": [],
-      "commitSha": "56fb5d6ec661a58a0afb5b02df82c84673331136",
-      "archiveByCommitUrl": "https://github.com/penguip/a-mindustry-mod/archive/56fb5d6ec661a58a0afb5b02df82c84673331136.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "aa",
-      "modVersion": null,
-      "minGameVersion": "136",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "V.0.7",
       "modVersion": "0.7",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-04-07T01:06:57Z"
     }
   ],
   "meta": {
+    "name": "beepdustry",
+    "author": "DNAlly/penguip\nSound wave sprite from Asthosus\nRho shoot SFX from Napelus\nMelee tree shoot SFX from Exoprosopa",
+    "description": "Very DaF! based mod. Don't ask what that is.\nIn terms of content, the mod adds a new planet, Keisuris.\nA madman's creation, born of the fusion of many worlds.\nThe mod aims to strive for a unique experience compared to other mods.\nIt is in heavy beta as of current, and starring is greatly appreciated.\nThe core content has been finished. More will be added later, but now, the next step is the campaign.",
+    "version": "0.7",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

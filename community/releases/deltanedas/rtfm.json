@@ -1,41 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "deltanedas/rtfm",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2.14.10",
-      "name": "2.14.10",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/deltanedas/rtfm/tree/2.14.10",
-      "modVersion": "2.14.10",
+      "kind": "tag",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/deltanedas/rtfm/archive/refs/tags/2.14.10.zip",
-      "sourceArchiveUrl": "https://github.com/deltanedas/rtfm/archive/refs/tags/2.14.10.zip",
-      "assets": [],
-      "commitSha": "2b96009b4489898d65a86dfb8dfcf08998099e69",
-      "archiveByCommitUrl": "https://github.com/deltanedas/rtfm/archive/2b96009b4489898d65a86dfb8dfcf08998099e69.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.14.10",
-      "modVersion": "2.14.10",
-      "minGameVersion": "105",
-      "maxGameVersion": 136,
-      "hasRelease": false
+      "modVersion": "2.14.10"
     }
   ],
   "meta": {
+    "name": "rtfm",
+    "author": "DeltaNedas",
+    "description": "Mod that adds a manual page library. RTFM in the About menu.\nComes with documentation of vanilla'a [purple]Logic[] system.\n[stat]Optionally requires [#00aaff]DeltaNedas/ui-lib[] for extra buttons.\n[#00aa00]pt_BR translations by King-BR[]",
+    "version": "2.14.10",
+    "minGameVersion": "105",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

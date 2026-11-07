@@ -1,74 +1,60 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "w-a-a-a-a/extra-technologies",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
-      "tag": "v0.0.3",
-      "name": "v0.0.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/w-a-a-a-a/extra-technologies/tree/v0.0.3",
-      "modVersion": "0.0.3",
+      "tag": "v0.0.1",
+      "kind": "tag",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.3.zip",
-      "sourceArchiveUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.3.zip",
-      "assets": [],
-      "commitSha": "6284af1dd043b89950f13e65d158451e58edcb80",
-      "archiveByCommitUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/6284af1dd043b89950f13e65d158451e58edcb80.zip"
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.1.zip",
+      "modVersion": "0.0.1"
     },
     {
       "tag": "v0.0.2",
-      "name": "v0.0.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/w-a-a-a-a/extra-technologies/tree/v0.0.2",
-      "modVersion": "0.0.2",
+      "kind": "tag",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.2.zip",
-      "assets": [],
-      "commitSha": "b4196f79b0b691cad86fd7156408f47aadff4e6d",
-      "archiveByCommitUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/b4196f79b0b691cad86fd7156408f47aadff4e6d.zip"
+      "modVersion": "0.0.2"
     },
     {
-      "tag": "v0.0.1",
-      "name": "v0.0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/w-a-a-a-a/extra-technologies/tree/v0.0.1",
-      "modVersion": "0.0.1",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.1.zip",
-      "assets": [],
-      "commitSha": "1c92038905cd7058a015d0df24afeab7e3ae9b77",
-      "archiveByCommitUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/1c92038905cd7058a015d0df24afeab7e3ae9b77.zip"
-    }
-  ],
-  "compat": [
-    {
       "tag": "v0.0.3",
-      "modVersion": "0.0.3",
+      "kind": "tag",
       "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/w-a-a-a-a/extra-technologies/archive/refs/tags/v0.0.3.zip",
+      "modVersion": "0.0.3"
     }
   ],
   "meta": {
+    "name": "extra-technologies",
+    "author": "[purple[]]waaaa",
+    "description": "adds a lot, oh no, a little bit of content to Serpulo: new turrets, factories, reactors... [#303030[]]give it a star on github pls",
+    "version": "0.0.3",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

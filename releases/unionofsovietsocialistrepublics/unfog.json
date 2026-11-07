@@ -1,103 +1,70 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "unionofsovietsocialistrepublics/unfog",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "V2",
-      "name": "v2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-23T13:47:12Z",
-      "htmlUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/tag/V2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V2/Unfog.zip",
-      "sourceArchiveUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/refs/tags/V2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unfog.zip",
-          "size": 13316,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V2/Unfog.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "77d8d633efe6542d7129dc4f6fea7b3ec60fb00a",
-      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/77d8d633efe6542d7129dc4f6fea7b3ec60fb00a.zip"
+      "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V2/Unfog.zip",
+      "modVersion": "0.2",
+      "sizeBytes": 13316,
+      "downloadCount": 16,
+      "releasedAt": "2026-02-23T13:47:12Z"
     },
     {
       "tag": "V1.5",
-      "name": "V1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-23T13:46:11Z",
-      "htmlUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/tag/V1.5",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1.5/Unfog.zip",
-      "sourceArchiveUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/refs/tags/V1.5.zip",
-      "assets": [
-        {
-          "name": "Unfog.zip",
-          "size": 13317,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1.5/Unfog.zip"
-        }
-      ],
-      "commitSha": "77d8d633efe6542d7129dc4f6fea7b3ec60fb00a",
-      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/77d8d633efe6542d7129dc4f6fea7b3ec60fb00a.zip"
-    },
-    {
-      "tag": "V1",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-15T15:16:10Z",
-      "htmlUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/tag/V1",
-      "modVersion": "0.1",
-      "minGameVersion": "144.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1/Unfog.zip",
-      "sourceArchiveUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/refs/tags/V1.zip",
-      "assets": [
-        {
-          "name": "Unfog.zip",
-          "size": 13325,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1/Unfog.zip"
-        }
-      ],
-      "commitSha": "b33eabb56ad853edca6bed1c1e99091b73500ed2",
-      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/unfog/archive/b33eabb56ad853edca6bed1c1e99091b73500ed2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1",
-      "modVersion": "0.1",
-      "minGameVersion": "144.3",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "V2",
       "modVersion": "0.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 13317,
+      "downloadCount": 1,
+      "releasedAt": "2026-02-23T13:46:11Z"
+    },
+    {
+      "tag": "V1",
+      "kind": "release",
+      "minGameVersion": "144.3",
+      "gameVersionRanges": [
+        {
+          "from": "144.3",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Unfog/releases/download/V1/Unfog.zip",
+      "modVersion": "0.1",
+      "sizeBytes": 13325,
+      "downloadCount": 11,
+      "releasedAt": "2024-02-15T15:16:10Z"
     }
   ],
   "meta": {
+    "name": "unfog",
+    "author": "Water molecules",
+    "description": "Unfog your fog of war, might be a little bit unfair.\nYes, This works on multiplayer.",
+    "version": "0.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

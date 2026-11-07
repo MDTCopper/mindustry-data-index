@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "some-t3a/doorlogic",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "Door Logic v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-17T02:29:42Z",
-      "htmlUrl": "https://github.com/soMe-t3A/DoorLogic/releases/tag/v1.0.0",
-      "modVersion": "v1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/soMe-t3A/DoorLogic/releases/download/v1.0.0/doorlogic-v1.zip",
-      "sourceArchiveUrl": "https://github.com/some-t3a/doorlogic/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "doorlogic-v1.zip",
-          "size": 37048,
-          "downloadCount": 58,
-          "downloadUrl": "https://github.com/soMe-t3A/DoorLogic/releases/download/v1.0.0/doorlogic-v1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e4ca9410bceb2005bd270001fa95691f61a2f841",
-      "archiveByCommitUrl": "https://github.com/some-t3a/doorlogic/archive/e4ca9410bceb2005bd270001fa95691f61a2f841.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
+      "downloadUrl": "https://github.com/soMe-t3A/DoorLogic/releases/download/v1.0.0/doorlogic-v1.zip",
       "modVersion": "v1.0.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 37048,
+      "downloadCount": 58,
+      "releasedAt": "2024-11-17T02:29:42Z"
     }
   ],
   "meta": {
+    "name": "door-logic",
+    "author": "soMe–t3A",
+    "description": "\n\nThis is a very small mod that simply replaces some existing content in the game.\n\n--- -- -- - - -\n\nThis mod includes:\n-- Door: custom sprites, sound.\n-- Logic: custom sprites.\n\n--- -- -- - - -\n\nIt was created, at least, to slightly refresh the experience of constructing logic circuits from logic elements, in which a binary signal is transmitted through doors.\n\n",
+    "version": "v1.0.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

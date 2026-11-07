@@ -1,74 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Pirojok3000/MIndustry-classic-music",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-17T15:05:44Z",
-      "htmlUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/releases/tag/v1.5",
-      "modVersion": "V1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/refs/tags/v1.5.zip",
-      "sourceArchiveUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/refs/tags/v1.5.zip",
-      "assets": [],
-      "commitSha": "e8fa6c0f3124a427b56ee1e50bd6f42d9e250e73",
-      "archiveByCommitUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/e8fa6c0f3124a427b56ee1e50bd6f42d9e250e73.zip"
+      "modVersion": "V1",
+      "releasedAt": "2023-10-17T15:05:44Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-06T11:27:41Z",
-      "htmlUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/releases/tag/v1.0",
-      "modVersion": "V1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "270aadb36bacf86c52b6dc2910b5272ba5977afa",
-      "archiveByCommitUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/270aadb36bacf86c52b6dc2910b5272ba5977afa.zip"
-    },
-    {
-      "tag": "mindustry-mods",
-      "name": "mindustry-mods",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/tree/mindustry-mods",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/refs/tags/mindustry-mods.zip",
-      "sourceArchiveUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/refs/tags/mindustry-mods.zip",
-      "assets": [],
-      "commitSha": "5d611e06a45c3ac4d87d521fa577594205708f85",
-      "archiveByCommitUrl": "https://github.com/Pirojok3000/MIndustry-classic-music/archive/5d611e06a45c3ac4d87d521fa577594205708f85.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.5",
       "modVersion": "V1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-10-06T11:27:41Z"
     }
   ],
   "meta": {
+    "name": "Mindustry classic music with new tracks from v6",
+    "author": "Pirojok3000",
+    "description": "Play mindustry with this awesome chiptune music! Tracks created by Roccow. I took some of Roccow's tracks that weren't in the classic version to replace the new ones added in the V6. HOWEVER, the author of the tracks boss1, boss2 and game6 is unknown.",
+    "version": "V1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

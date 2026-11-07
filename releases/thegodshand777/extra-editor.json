@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "thegodshand777/extra-editor",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1",
-      "name": "Finally out!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T14:18:26Z",
-      "htmlUrl": "https://github.com/TheGodsHand777/Extra-Editor/releases/tag/v1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TheGodsHand777/Extra-Editor/releases/download/v1/ExtraEditor.jar",
-      "sourceArchiveUrl": "https://github.com/thegodshand777/extra-editor/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ExtraEditor.jar",
-          "size": 89115,
-          "downloadCount": 1620,
-          "downloadUrl": "https://github.com/TheGodsHand777/Extra-Editor/releases/download/v1/ExtraEditor.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "52aa75f7b959b5f2c83489c319e16ff218cbca07",
-      "archiveByCommitUrl": "https://github.com/thegodshand777/extra-editor/archive/52aa75f7b959b5f2c83489c319e16ff218cbca07.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1",
+      "downloadUrl": "https://github.com/TheGodsHand777/Extra-Editor/releases/download/v1/ExtraEditor.jar",
       "modVersion": "1.0",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 89115,
+      "downloadCount": 1623,
+      "releasedAt": "2026-05-25T14:18:26Z"
     }
   ],
   "meta": {
+    "name": "extra-editor",
+    "author": "KlasterX",
+    "description": "Adds extra utilities to map editor.",
+    "version": "1.0",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "extraeditor.ExtraEditorMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

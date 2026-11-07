@@ -1,92 +1,78 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mohamedgonem/ore-gens",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.0.0",
-      "name": "Ore Generators 2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-20T09:29:46Z",
-      "htmlUrl": "https://github.com/MohamedGonem/ore-gens/releases/tag/v2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v2.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v2.0.0.zip",
-      "assets": [],
-      "commitSha": "dd87bbe54def2ba8433df9932b26fe7ca5a08cbe",
-      "archiveByCommitUrl": "https://github.com/mohamedgonem/ore-gens/archive/dd87bbe54def2ba8433df9932b26fe7ca5a08cbe.zip"
+      "modVersion": "2.0.0",
+      "releasedAt": "2026-08-20T09:29:46Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-18T06:43:24Z",
-      "htmlUrl": "https://github.com/MohamedGonem/ore-gens/releases/tag/v1.1.1",
-      "modVersion": "1.1.0",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v1.1.1.zip",
-      "assets": [],
-      "commitSha": "e7e9ef353f032d1ca9a7bf1039c62519d14e783f",
-      "archiveByCommitUrl": "https://github.com/mohamedgonem/ore-gens/archive/e7e9ef353f032d1ca9a7bf1039c62519d14e783f.zip"
+      "modVersion": "1.1.0",
+      "releasedAt": "2026-08-18T06:43:24Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0 - Research Milestones",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T06:42:46Z",
-      "htmlUrl": "https://github.com/MohamedGonem/ore-gens/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v1.1.0.zip",
-      "assets": [],
-      "commitSha": "0e506ba2cd5771dec321e5f1299e2fef905481f7",
-      "archiveByCommitUrl": "https://github.com/mohamedgonem/ore-gens/archive/0e506ba2cd5771dec321e5f1299e2fef905481f7.zip"
+      "modVersion": "1.1.0",
+      "releasedAt": "2026-08-17T06:42:46Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T06:10:48Z",
-      "htmlUrl": "https://github.com/MohamedGonem/ore-gens/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/mohamedgonem/ore-gens/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "a3f6992b63f93f513c4b149bf48baed3c6eddf53",
-      "archiveByCommitUrl": "https://github.com/mohamedgonem/ore-gens/archive/a3f6992b63f93f513c4b149bf48baed3c6eddf53.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.0.0",
-      "modVersion": "2.0.0",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0.0",
+      "releasedAt": "2026-08-17T06:10:48Z"
     }
   ],
   "meta": {
+    "name": "ore-gens",
+    "author": "MohamedGonem",
+    "description": "\nBlocks that extract and synthesize ore from airborne trace elements,\ndissolved ion suspensions and cryogenic precipitation - plus a fully\nself-contained liquid economy.\n\nFive tiers per ore:\n- Small Powered (2x2): fast, needs power, moderate cost.\n- Small Unpowered (2x2): slow, no power, expensive to build.\n- Liquid-fed (3x3): fast, needs water (ozone on Erekir), no power.\n- Cryofluid-fed (3x3): fastest, needs power + cryofluid.\n- Magma-fed (4x4): ultimate output, needs slag (gallium on Erekir) + cryofluid + power.\n\nOres: copper, lead, coal, titanium, scrap, thorium, sand (Serpulo),\nberyllium, tungsten (Erekir).\n\nSelf-contained liquids: water/ozone, cryofluid and slag/gallium generators\nproduce every liquid the tiers consume, each progressively more expensive.\n\nMulti-ore synthesizers (4x4) batch-produce basic ores with fixed ratios;\nrefined and advanced versions add titanium and thorium.\n\nEvery tier is gated behind a 3-step research quest (15 milestones per ore).\nUpgrades run to ten levels each - Speed I-X, Capacity I-X, Output I-X,\nEfficiency I-X - with escalating, huge research costs.\nAnimated: powered, liquid, cryo and magma tiers glow and spin while running.\n",
+    "version": "2.0.0",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

@@ -1,1956 +1,1285 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "teamviscott/modprojectviscott",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.9.8.2",
-      "name": "v0.1.9.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-08T08:04:25Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.8.2",
-      "modVersion": "0.1.9.7",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.2/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 6498544,
-          "downloadCount": 14543,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.2/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "54efdb36b9f93f286e2c0f5c1709527805b169f7",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/54efdb36b9f93f286e2c0f5c1709527805b169f7.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.2/ModProjectViscott.jar",
+      "modVersion": "0.1.9.7",
+      "sizeBytes": 6498544,
+      "downloadCount": 14544,
+      "releasedAt": "2024-09-08T08:04:25Z"
     },
     {
       "tag": "v0.1.9.8.1",
-      "name": "v0.1.9.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-29T12:45:35Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.8.1",
-      "modVersion": "0.1.9.7",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.1/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 6406617,
-          "downloadCount": 1640,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.1/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "047c736ccea9e8abe562785ebd26c872f1353f81",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/047c736ccea9e8abe562785ebd26c872f1353f81.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8.1/ModProjectViscott.jar",
+      "modVersion": "0.1.9.7",
+      "sizeBytes": 6406617,
+      "downloadCount": 1640,
+      "releasedAt": "2024-07-29T12:45:35Z"
     },
     {
       "tag": "v0.1.9.8",
-      "name": "v0.1.9.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-01T15:34:39Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.8",
-      "modVersion": "0.1.9.7",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 6193067,
-          "downloadCount": 2785,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "d67042d3a50d3b09bda8311401b635bce24bcd41",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/d67042d3a50d3b09bda8311401b635bce24bcd41.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.8/ModProjectViscott.jar",
+      "modVersion": "0.1.9.7",
+      "sizeBytes": 6193067,
+      "downloadCount": 2785,
+      "releasedAt": "2024-06-01T15:34:39Z"
     },
     {
       "tag": "v0.1.9.7",
-      "name": "v0.1.9.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-06T21:17:48Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.7",
-      "modVersion": "0.1.9.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.7/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 6171540,
-          "downloadCount": 2689,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.7/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "1bbfc5ca268e4a66ebe0c811e9304bf3cf84c550",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/1bbfc5ca268e4a66ebe0c811e9304bf3cf84c550.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.7/ModProjectViscott.jar",
+      "modVersion": "0.1.9.6",
+      "sizeBytes": 6171540,
+      "downloadCount": 2689,
+      "releasedAt": "2024-04-06T21:17:48Z"
     },
     {
       "tag": "v0.1.9.6",
-      "name": "V0.1.9.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-06T16:08:36Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.6",
-      "modVersion": "0.1.9.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.6/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 6038786,
-          "downloadCount": 108,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.6/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "68998511a6c5127c1f050cb2439987685e9fe78d",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/68998511a6c5127c1f050cb2439987685e9fe78d.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.6/ModProjectViscott.jar",
+      "modVersion": "0.1.9.6",
+      "sizeBytes": 6038786,
+      "downloadCount": 108,
+      "releasedAt": "2024-04-06T16:08:36Z"
     },
     {
       "tag": "v0.1.9.5",
-      "name": "v0.1.9.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-10T20:56:25Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.5",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.5/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5924587,
-          "downloadCount": 1083,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.5/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "977e2603429fb80dabb30346089c7cab9a4140ec",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/977e2603429fb80dabb30346089c7cab9a4140ec.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.5/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5924587,
+      "downloadCount": 1083,
+      "releasedAt": "2024-03-10T20:56:25Z"
     },
     {
       "tag": "v0.1.9.4",
-      "name": "v0.1.9.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-28T02:46:31Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.4",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.4/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5882349,
-          "downloadCount": 2048,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.4/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "2c6116e6495f5867e16cbe1d37ad367a3d02b0b0",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/2c6116e6495f5867e16cbe1d37ad367a3d02b0b0.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.4/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5882349,
+      "downloadCount": 2048,
+      "releasedAt": "2024-01-28T02:46:31Z"
     },
     {
       "tag": "v0.1.9.3",
-      "name": "v0.1.9.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-26T10:05:39Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.3",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.3/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5882208,
-          "downloadCount": 202,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.3/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "8d492667c14821953a5b7d940bbd5e5bd95468d2",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/8d492667c14821953a5b7d940bbd5e5bd95468d2.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.3/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5882208,
+      "downloadCount": 202,
+      "releasedAt": "2024-01-26T10:05:39Z"
     },
     {
       "tag": "v0.1.9.2",
-      "name": "v0.1.9.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-23T14:49:32Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.2",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.2/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5866875,
-          "downloadCount": 244,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.2/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "0d5f11c7e21632743f6b79e48b46b5dddb47c596",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/0d5f11c7e21632743f6b79e48b46b5dddb47c596.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.2/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5866875,
+      "downloadCount": 244,
+      "releasedAt": "2024-01-23T14:49:32Z"
     },
     {
       "tag": "v0.1.9.1",
-      "name": "v0.1.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-16T14:15:29Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9.1",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.1/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5764943,
-          "downloadCount": 2075,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.1/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "670df0c7645cf39cece78e8f8304fb45dee33da0",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/670df0c7645cf39cece78e8f8304fb45dee33da0.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9.1/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5764943,
+      "downloadCount": 2075,
+      "releasedAt": "2023-12-16T14:15:29Z"
     },
     {
       "tag": "v0.1.9",
-      "name": "v0.1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-14T16:20:14Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.9",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5681075,
-          "downloadCount": 2565,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "a7ada39006df140e01dd9d36576cc3c6d60d0714",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/a7ada39006df140e01dd9d36576cc3c6d60d0714.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.9/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 5681075,
+      "downloadCount": 2565,
+      "releasedAt": "2023-10-14T16:20:14Z"
     },
     {
       "tag": "v0.1.8.9",
-      "name": "v0.1.8.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-29T20:43:13Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.9",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.9/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5537677,
-          "downloadCount": 3327,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.9/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "71f72bc45f1bae5dca33c8e327f729d2e263f795",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/71f72bc45f1bae5dca33c8e327f729d2e263f795.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.9/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5537677,
+      "downloadCount": 3327,
+      "releasedAt": "2023-08-29T20:43:13Z"
     },
     {
       "tag": "v0.1.8.8",
-      "name": "V 1.8.8 Foo Client Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-05T00:50:04Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.8",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.8/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5118399,
-          "downloadCount": 61,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.8/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "7e2b60efea15b19322cd7280bca49c3d740e5c19",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/7e2b60efea15b19322cd7280bca49c3d740e5c19.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.8/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5118399,
+      "downloadCount": 61,
+      "releasedAt": "2023-08-05T00:50:04Z"
     },
     {
       "tag": "v0.1.8.7",
-      "name": "V 0.1.8.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-04T22:15:39Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.7",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.7/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5121483,
-          "downloadCount": 2004,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.7/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "57f1c981e5277235953d0e9a4e0491aa8dffcc0f",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/57f1c981e5277235953d0e9a4e0491aa8dffcc0f.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.7/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5121483,
+      "downloadCount": 2004,
+      "releasedAt": "2023-08-04T22:15:39Z"
     },
     {
       "tag": "v0.1.8.6",
-      "name": "Ver O.1.8.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-24T13:22:43Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.6",
-      "modVersion": "0.1.8.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.6/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5106257,
-          "downloadCount": 1017,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.6/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "49325d354c98487ea2abcc27aabfb090c67e8a2f",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/49325d354c98487ea2abcc27aabfb090c67e8a2f.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.6/ModProjectViscott.jar",
+      "modVersion": "0.1.8.6",
+      "sizeBytes": 5106257,
+      "downloadCount": 1017,
+      "releasedAt": "2023-07-24T13:22:43Z"
     },
     {
       "tag": "v0.1.8.5",
-      "name": "v0.1.8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-21T13:19:52Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.5",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.5/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 5067301,
-          "downloadCount": 128,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.5/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "7e62d74ca1debb596667ab39fa47769c01fb8210",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/7e62d74ca1debb596667ab39fa47769c01fb8210.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.5/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 5067301,
+      "downloadCount": 128,
+      "releasedAt": "2023-07-21T13:19:52Z"
     },
     {
       "tag": "v0.1.8.4",
-      "name": "v0.1.8.4 stable version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-19T00:04:00Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.4",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.4/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4855635,
-          "downloadCount": 362,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.4/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "5d2328866f36f510d71c0665b243bd1d2bfd3fb4",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/5d2328866f36f510d71c0665b243bd1d2bfd3fb4.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.4/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4855635,
+      "downloadCount": 362,
+      "releasedAt": "2023-07-19T00:04:00Z"
     },
     {
       "tag": "v0.1.8.3",
-      "name": "v0.1.8.3 unstable version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-18T12:58:02Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.3",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.3/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4570003,
-          "downloadCount": 111,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.3/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "54d21162b8b713f836ddc4d019a96ae4b30e0a25",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/54d21162b8b713f836ddc4d019a96ae4b30e0a25.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.3/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4570003,
+      "downloadCount": 111,
+      "releasedAt": "2023-07-18T12:58:02Z"
     },
     {
       "tag": "v0.1.8.2",
-      "name": "v0.1.8.2 unstable still",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-17T18:47:41Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4500033,
-          "downloadCount": 144,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.2/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "2da846d6448535041efc9c411afa292a3518e5b8",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/2da846d6448535041efc9c411afa292a3518e5b8.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4500033,
+      "downloadCount": 144,
+      "releasedAt": "2023-07-17T18:47:41Z"
     },
     {
       "tag": "v0.1.8.1",
-      "name": "v0.1.8.1 unstable version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-12T23:03:44Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4511416,
-          "downloadCount": 812,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.1/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "a7ada39006df140e01dd9d36576cc3c6d60d0714",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/a7ada39006df140e01dd9d36576cc3c6d60d0714.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4511416,
+      "downloadCount": 812,
+      "releasedAt": "2023-07-12T23:03:44Z"
     },
     {
       "tag": "v0.1.8",
-      "name": "v0.1.8 Stack fix.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-10T20:18:34Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.8",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4671513,
-          "downloadCount": 436,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "a723552846eca5d609c89161f26d849ba22c6829",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/a723552846eca5d609c89161f26d849ba22c6829.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.8/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4671513,
+      "downloadCount": 436,
+      "releasedAt": "2023-07-10T20:18:34Z"
     },
     {
       "tag": "v0.1.7omamori",
-      "name": "Omamori 0.1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-10T10:58:49Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.7omamori",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.7omamori/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.7omamori.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4641887,
-          "downloadCount": 103,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.7omamori/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "5c57c3a376063826631bffc876cdc7e85022dc0a",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/5c57c3a376063826631bffc876cdc7e85022dc0a.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.7omamori/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4641887,
+      "downloadCount": 103,
+      "releasedAt": "2023-07-10T10:58:49Z"
     },
     {
       "tag": "v0.1.6pvp",
-      "name": "PvP Release 0.1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-08T12:57:38Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.6pvp",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.6pvp/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.6pvp.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4581193,
-          "downloadCount": 313,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.6pvp/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "d6cbf1e21bea8f0c0d5c23f8171191bd0bacd12c",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/d6cbf1e21bea8f0c0d5c23f8171191bd0bacd12c.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.6pvp/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4581193,
+      "downloadCount": 313,
+      "releasedAt": "2023-07-08T12:57:38Z"
     },
     {
       "tag": "v0.1.5frogr",
-      "name": "the Frog Update V0.1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-07T16:45:42Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.5frogr",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.5frogr/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.5frogr.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4557994,
-          "downloadCount": 128,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.5frogr/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "ae3349e92836f235213ad6e3d233c1efad49921b",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/ae3349e92836f235213ad6e3d233c1efad49921b.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.5frogr/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4557994,
+      "downloadCount": 128,
+      "releasedAt": "2023-07-07T16:45:42Z"
     },
     {
       "tag": "ethaUpdateV0.1.3",
-      "name": "Ethanol Requested Update v0.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-05T17:07:52Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/ethaUpdateV0.1.3",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/ethaUpdateV0.1.3/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/ethaUpdateV0.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4518697,
-          "downloadCount": 277,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/ethaUpdateV0.1.3/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "27fdc17e355ef2dbe89f1c141759a737c2bc69a7",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/27fdc17e355ef2dbe89f1c141759a737c2bc69a7.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/ethaUpdateV0.1.3/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4518697,
+      "downloadCount": 277,
+      "releasedAt": "2023-07-05T17:07:52Z"
     },
     {
       "tag": "HOVER-BOIS",
-      "name": "Milli, Centi, Deci Units",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-05T13:04:23Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/HOVER-BOIS",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/HOVER-BOIS/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/HOVER-BOIS.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4514800,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/HOVER-BOIS/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "9b32545104ad3729c708ae6ad363f90da254c17d",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/9b32545104ad3729c708ae6ad363f90da254c17d.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/HOVER-BOIS/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4514800,
+      "downloadCount": 45,
+      "releasedAt": "2023-07-05T13:04:23Z"
     },
     {
       "tag": "voidlinked",
-      "name": "Void linked",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-02T11:16:27Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/voidlinked",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/voidlinked/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/voidlinked.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4486141,
-          "downloadCount": 489,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/voidlinked/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "7ebc6c1e417ee25d536fca1a2bc9110c1d14201f",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/7ebc6c1e417ee25d536fca1a2bc9110c1d14201f.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/voidlinked/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4486141,
+      "downloadCount": 489,
+      "releasedAt": "2023-07-02T11:16:27Z"
     },
     {
       "tag": "v0.1.2",
-      "name": "v0.1.2 [Turret Balance patch]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-01T16:25:04Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.2/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4482414,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.2/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "3a76e11b213f00f5a32a0ddf0164eacd2bf1633c",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/3a76e11b213f00f5a32a0ddf0164eacd2bf1633c.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.2/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4482414,
+      "downloadCount": 24,
+      "releasedAt": "2023-07-01T16:25:04Z"
     },
     {
       "tag": "v0.1.1",
-      "name": "L real. v0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-23T18:14:09Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.1/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4485480,
-          "downloadCount": 210,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.1/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "33d53b530bb99b9c5f70454994aae6921f5547b9",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/33d53b530bb99b9c5f70454994aae6921f5547b9.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1.1/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4485480,
+      "downloadCount": 210,
+      "releasedAt": "2023-06-23T18:14:09Z"
     },
     {
       "tag": "v0.1",
-      "name": "androidVer v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-23T09:42:08Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 4399209,
-          "downloadCount": 87,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1/ModProjectViscott.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "42158370e8d4488d67c34e2e5cc55a80a1f41adf",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/42158370e8d4488d67c34e2e5cc55a80a1f41adf.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.1/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4399209,
+      "downloadCount": 87,
+      "releasedAt": "2023-06-23T09:42:08Z"
     },
     {
       "tag": "qf2",
-      "name": "fix2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-22T15:43:45Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/qf2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/qf2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/qf2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4091526,
-          "downloadCount": 104,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/qf2/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "b0c1b61a99c0c4ce85ceac6c0ed8124dfb56298b",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b0c1b61a99c0c4ce85ceac6c0ed8124dfb56298b.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/qf2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4091526,
+      "downloadCount": 104,
+      "releasedAt": "2023-06-22T15:43:45Z"
     },
     {
       "tag": "qf",
-      "name": "quickfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-20T17:23:53Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/qf",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/qf/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/qf.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4070310,
-          "downloadCount": 233,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/qf/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "77716b379b33b0f77b3233224335ea6ceec9d6a3",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/77716b379b33b0f77b3233224335ea6ceec9d6a3.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/qf/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4070310,
+      "downloadCount": 233,
+      "releasedAt": "2023-06-20T17:23:53Z"
     },
     {
       "tag": "4pixels",
-      "name": "the Vdoble Incident",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-20T16:22:13Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/4pixels",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/4pixels/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/4pixels.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4070245,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/4pixels/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "9b44c95058df67bdb7587b4d82ec7b37cd532182",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/9b44c95058df67bdb7587b4d82ec7b37cd532182.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/4pixels/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4070245,
+      "downloadCount": 14,
+      "releasedAt": "2023-06-20T16:22:13Z"
     },
     {
       "tag": "brr",
-      "name": "brre",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-18T11:56:52Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/brr",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/brr/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/brr.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4054908,
-          "downloadCount": 237,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/brr/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "9b44c95058df67bdb7587b4d82ec7b37cd532182",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/9b44c95058df67bdb7587b4d82ec7b37cd532182.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/brr/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4054908,
+      "downloadCount": 237,
+      "releasedAt": "2023-06-18T11:56:52Z"
     },
     {
       "tag": "v0.0.5.1",
-      "name": "forgor",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-17T15:32:52Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.5.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.5.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4045958,
-          "downloadCount": 128,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.5.1/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "9b44c95058df67bdb7587b4d82ec7b37cd532182",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/9b44c95058df67bdb7587b4d82ec7b37cd532182.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.5.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4045958,
+      "downloadCount": 128,
+      "releasedAt": "2023-06-17T15:32:52Z"
     },
     {
       "tag": "xeal0.1",
-      "name": "Xeal 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-12T18:32:01Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/xeal0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/xeal0.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/xeal0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 4045928,
-          "downloadCount": 347,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/xeal0.1/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "ce08731a3969a3ab31c2fa32e9e0b66525714307",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/ce08731a3969a3ab31c2fa32e9e0b66525714307.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/xeal0.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 4045928,
+      "downloadCount": 347,
+      "releasedAt": "2023-06-12T18:32:01Z"
     },
     {
       "tag": "n5",
-      "name": "n5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-11T11:53:45Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/n5",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n5/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/n5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 3983988,
-          "downloadCount": 171,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n5/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "f3231855ab50012555d38c4c42bceea9adda34ef",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/f3231855ab50012555d38c4c42bceea9adda34ef.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n5/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 3983988,
+      "downloadCount": 171,
+      "releasedAt": "2023-06-11T11:53:45Z"
     },
     {
       "tag": "n4",
-      "name": "n4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-02T22:21:21Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/n4",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n4/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/n4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 3956595,
-          "downloadCount": 828,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n4/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "252daa34d87f334e82df003bdfdd012147c7785b",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/252daa34d87f334e82df003bdfdd012147c7785b.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n4/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 3956595,
+      "downloadCount": 828,
+      "releasedAt": "2023-06-02T22:21:21Z"
     },
     {
       "tag": "v0.0.5",
-      "name": "v0.0.5 [Lot of Fixes]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-22T19:01:10Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.5",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.5/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 3908003,
-          "downloadCount": 1228,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.5/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "f8214d2c9a0c7bf4d3b77016dec8e5f53821c36d",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/f8214d2c9a0c7bf4d3b77016dec8e5f53821c36d.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.5/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 3908003,
+      "downloadCount": 1228,
+      "releasedAt": "2023-05-22T19:01:10Z"
     },
     {
       "tag": "n3",
-      "name": "n3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-21T11:15:13Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/n3",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n3/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/n3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32918275,
-          "downloadCount": 226,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n3/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "fe1621c76219301c94837f600a8cc3bab08c355d",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/fe1621c76219301c94837f600a8cc3bab08c355d.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n3/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32918275,
+      "downloadCount": 226,
+      "releasedAt": "2023-05-21T11:15:13Z"
     },
     {
       "tag": "n2",
-      "name": "n2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-20T22:03:02Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/n2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/n2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32858419,
-          "downloadCount": 116,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n2/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "eaa32ac807971f2645ea0565db4a3432b927bcf8",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/eaa32ac807971f2645ea0565db4a3432b927bcf8.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32858419,
+      "downloadCount": 116,
+      "releasedAt": "2023-05-20T22:03:02Z"
     },
     {
       "tag": "n",
-      "name": "n",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-20T21:12:10Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/n",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/n.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32858588,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "4bb238fc4af5ecd8e8df5b3292c1f2e481b5efa9",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/4bb238fc4af5ecd8e8df5b3292c1f2e481b5efa9.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/n/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32858588,
+      "downloadCount": 16,
+      "releasedAt": "2023-05-20T21:12:10Z"
     },
     {
       "tag": "v0.0.4.1",
-      "name": "Naval Path up 2 T2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-19T18:33:50Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.4.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.4.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32854855,
-          "downloadCount": 151,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.4.1/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "cbffd9584e557cbd14fe9a6864c990a605671f2d",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/cbffd9584e557cbd14fe9a6864c990a605671f2d.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.4.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32854855,
+      "downloadCount": 151,
+      "releasedAt": "2023-05-19T18:33:50Z"
     },
     {
       "tag": "bossVerIGuess",
-      "name": "Bosses i guess",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-06T15:13:22Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/bossVerIGuess",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/bossVerIGuess/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/bossVerIGuess.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32846848,
-          "downloadCount": 807,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/bossVerIGuess/ModProjectViscottDesktop.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "a2eaa2cfaa07822e75297e29d3eb5045caf5e6ca",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/a2eaa2cfaa07822e75297e29d3eb5045caf5e6ca.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/bossVerIGuess/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32846848,
+      "downloadCount": 807,
+      "releasedAt": "2023-05-06T15:13:22Z"
     },
     {
       "tag": "v0.0.4",
-      "name": "v0.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-16T10:31:00Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.4",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "143.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.4/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32781687,
-          "downloadCount": 1231,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.4/ModProjectViscottDesktop.jar"
+          "from": "143.1",
+          "to": "146"
         }
       ],
-      "commitSha": "41c4b81dd62110a3f5a2bfe99361865c97f6a11c",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/41c4b81dd62110a3f5a2bfe99361865c97f6a11c.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.4/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32781687,
+      "downloadCount": 1231,
+      "releasedAt": "2023-04-16T10:31:00Z"
     },
     {
       "tag": "RandomRelease3",
-      "name": "oneSongTooBig:/",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-14T15:34:22Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/RandomRelease3",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "143.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease3/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/RandomRelease3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32765527,
-          "downloadCount": 161,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease3/ModProjectViscottDesktop.jar"
+          "from": "143.1",
+          "to": "146"
         }
       ],
-      "commitSha": "41c4b81dd62110a3f5a2bfe99361865c97f6a11c",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/41c4b81dd62110a3f5a2bfe99361865c97f6a11c.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease3/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32765527,
+      "downloadCount": 161,
+      "releasedAt": "2023-04-14T15:34:22Z"
     },
     {
       "tag": "PlayinWithVdoble",
-      "name": "lemmePlayWithVDoble",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-07T16:27:38Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/PlayinWithVdoble",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "143",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/PlayinWithVdoble/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/PlayinWithVdoble.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 32726797,
-          "downloadCount": 524,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/PlayinWithVdoble/ModProjectViscottDesktop.jar"
+          "from": "143",
+          "to": "146"
         }
       ],
-      "commitSha": "1eda70d701b2007deca76f284c2aab4ea0e60155",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/1eda70d701b2007deca76f284c2aab4ea0e60155.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/PlayinWithVdoble/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 32726797,
+      "downloadCount": 524,
+      "releasedAt": "2023-04-07T16:27:38Z"
     },
     {
       "tag": "v0.0.3",
-      "name": "v0.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-05T23:36:02Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.3",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "143",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.3/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1315487,
-          "downloadCount": 175,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.3/ModProjectViscottDesktop.jar"
+          "from": "143",
+          "to": "146"
         }
       ],
-      "commitSha": "a7bbc2ba7598adefc91574402bd4749966e9e9b1",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/a7bbc2ba7598adefc91574402bd4749966e9e9b1.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.3/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1315487,
+      "downloadCount": 175,
+      "releasedAt": "2023-04-05T23:36:02Z"
     },
     {
       "tag": "v0.0.2",
-      "name": "V0.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-03T20:02:50Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "143",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1300547,
-          "downloadCount": 233,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.2/ModProjectViscottDesktop.jar"
+          "from": "143",
+          "to": "146"
         }
       ],
-      "commitSha": "e52c37312e62833d8b40e0cf27a0614b24dc3d41",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/e52c37312e62833d8b40e0cf27a0614b24dc3d41.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1300547,
+      "downloadCount": 233,
+      "releasedAt": "2023-04-03T20:02:50Z"
     },
     {
       "tag": "v0.0.1",
-      "name": "V0.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-25T13:48:47Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/v0.0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1224347,
-          "downloadCount": 830,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.1/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "0dd199e981bb389dc5aedea2bc3d789758f8434b",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/0dd199e981bb389dc5aedea2bc3d789758f8434b.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/v0.0.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1224347,
+      "downloadCount": 830,
+      "releasedAt": "2023-03-25T13:48:47Z"
     },
     {
       "tag": "V0.0.2.2",
-      "name": "testingStuffagain",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-10T09:00:47Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/V0.0.2.2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2.2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/V0.0.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1151557,
-          "downloadCount": 1222,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2.2/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "136948794762c88ae8844fe896561dbc9fafa527",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/136948794762c88ae8844fe896561dbc9fafa527.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2.2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1151557,
+      "downloadCount": 1222,
+      "releasedAt": "2023-03-10T09:00:47Z"
     },
     {
       "tag": "noc",
-      "name": "dontQuestionMyReleases",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-10T08:59:36Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/noc",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/noc/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/noc.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1151557,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/noc/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "136948794762c88ae8844fe896561dbc9fafa527",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/136948794762c88ae8844fe896561dbc9fafa527.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/noc/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1151557,
+      "downloadCount": 69,
+      "releasedAt": "2023-03-10T08:59:36Z"
     },
     {
       "tag": "V0.0.2.1",
-      "name": "anotherTestRelease",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-10T08:37:16Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/V0.0.2.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/V0.0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1151557,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2.1/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "b0863a7fdaae62ed2cb8ab9a67c412b506f23186",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b0863a7fdaae62ed2cb8ab9a67c412b506f23186.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1151557,
+      "downloadCount": 23,
+      "releasedAt": "2023-03-10T08:37:16Z"
     },
     {
       "tag": "V0.0.2",
-      "name": "TestRelease",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-10T08:29:35Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/V0.0.2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/V0.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1151557,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "b0863a7fdaae62ed2cb8ab9a67c412b506f23186",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b0863a7fdaae62ed2cb8ab9a67c412b506f23186.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1151557,
+      "downloadCount": 21,
+      "releasedAt": "2023-03-10T08:29:35Z"
     },
     {
       "tag": "u2df",
-      "name": "Up2DateFixed",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-07T09:23:45Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/u2df",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/u2df/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/u2df.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1145381,
-          "downloadCount": 304,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/u2df/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "9ed95dd8efa4d79d317dd54fa4e0f73f1dbf5fb5",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/9ed95dd8efa4d79d317dd54fa4e0f73f1dbf5fb5.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/u2df/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1145381,
+      "downloadCount": 304,
+      "releasedAt": "2023-03-07T09:23:45Z"
     },
     {
       "tag": "u2d",
-      "name": "Up2Date",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-07T09:19:27Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/u2d",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/u2d/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/u2d.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1144404,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/u2d/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "9ed95dd8efa4d79d317dd54fa4e0f73f1dbf5fb5",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/9ed95dd8efa4d79d317dd54fa4e0f73f1dbf5fb5.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/u2d/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1144404,
+      "downloadCount": 27,
+      "releasedAt": "2023-03-07T09:19:27Z"
     },
     {
       "tag": "radiator",
-      "name": "Radiator",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-25T09:57:48Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/radiator",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/radiator/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/radiator.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 1009621,
-          "downloadCount": 1042,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/radiator/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "3084dfdba32f4ef18d5156754708f375f6e0fb77",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/3084dfdba32f4ef18d5156754708f375f6e0fb77.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/radiator/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1009621,
+      "downloadCount": 1042,
+      "releasedAt": "2023-02-25T09:57:48Z"
     },
     {
       "tag": "logicEthan",
-      "name": "O BOI LOGIC",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-23T21:23:44Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/logicEthan",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/logicEthan/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/logicEthan.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 999131,
-          "downloadCount": 255,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/logicEthan/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "3bb48dc16a70a815c47e7b7761a229baa8acc254",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/3bb48dc16a70a815c47e7b7761a229baa8acc254.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/logicEthan/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 999131,
+      "downloadCount": 255,
+      "releasedAt": "2023-02-23T21:23:44Z"
     },
     {
       "tag": "temp9",
-      "name": "Release 4 Ethanol",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-13T19:05:15Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp9",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp9/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 850788,
-          "downloadCount": 1224,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp9/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "d99087707c1d95d38591df05399a471974015e06",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/d99087707c1d95d38591df05399a471974015e06.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp9/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 850788,
+      "downloadCount": 1224,
+      "releasedAt": "2023-02-13T19:05:15Z"
     },
     {
       "tag": "temp8",
-      "name": "B-turrets and marksman rework",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-12T16:24:59Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp8",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp8/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 848289,
-          "downloadCount": 217,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp8/ModProjectViscott.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "b063e443635504a5739d9918f04a99dc4b6e1bbc",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b063e443635504a5739d9918f04a99dc4b6e1bbc.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp8/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 848289,
+      "downloadCount": 217,
+      "releasedAt": "2023-02-12T16:24:59Z"
     },
     {
       "tag": "sus",
-      "name": "Bulk factory",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-09T18:25:16Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/sus",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/sus/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/sus.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 588596,
-          "downloadCount": 566,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/sus/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "a03c21c743f46b9a62c56aaf6ab4ad002a2215bd",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/a03c21c743f46b9a62c56aaf6ab4ad002a2215bd.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/sus/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 588596,
+      "downloadCount": 566,
+      "releasedAt": "2023-02-09T18:25:16Z"
     },
     {
       "tag": "RandomRelease2",
-      "name": "random release 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-08T12:49:24Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/RandomRelease2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/RandomRelease2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 561848,
-          "downloadCount": 234,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease2/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "1f76a29b4e33018739881d7352c7c1d80ad90577",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/1f76a29b4e33018739881d7352c7c1d80ad90577.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 561848,
+      "downloadCount": 234,
+      "releasedAt": "2023-02-08T12:49:24Z"
     },
     {
       "tag": "RandomRelease1",
-      "name": "random release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-08T12:35:19Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/RandomRelease1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/RandomRelease1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 561864,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease1/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "8cb7726607ec1d1ba0a7e2b94dbb93a41dc1a719",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/8cb7726607ec1d1ba0a7e2b94dbb93a41dc1a719.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/RandomRelease1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 561864,
+      "downloadCount": 25,
+      "releasedAt": "2023-02-08T12:35:19Z"
     },
     {
       "tag": "aaaa",
-      "name": "apk test",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-04T18:26:20Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/aaaa",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/aaaa/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/aaaa.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.apk",
-          "size": 519767,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/aaaa/ModProjectViscottDesktop.apk"
-        },
-        {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 519767,
-          "downloadCount": 500,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/aaaa/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "d8ed03519933b1ac79d73ce0d9248bbc1f95aff0",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/d8ed03519933b1ac79d73ce0d9248bbc1f95aff0.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/aaaa/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 1039534,
+      "downloadCount": 509,
+      "releasedAt": "2023-02-04T18:26:20Z"
     },
     {
       "tag": "e",
-      "name": "e",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-04T18:18:44Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/e",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/e/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/e.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 519767,
-          "downloadCount": 51,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/e/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "d8ed03519933b1ac79d73ce0d9248bbc1f95aff0",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/d8ed03519933b1ac79d73ce0d9248bbc1f95aff0.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/e/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 519767,
+      "downloadCount": 51,
+      "releasedAt": "2023-02-04T18:18:44Z"
     },
     {
       "tag": "V0.0.1",
-      "name": "basic human life changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-03T18:02:56Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/V0.0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/V0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 497423,
-          "downloadCount": 207,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.1/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "793199f198252f2c18a69549b92d85bedc67ec4d",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/793199f198252f2c18a69549b92d85bedc67ec4d.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/V0.0.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 497423,
+      "downloadCount": 207,
+      "releasedAt": "2023-02-03T18:02:56Z"
     },
     {
       "tag": "temp7",
-      "name": "ULTIMATE TURRET",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-02T12:17:04Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp7",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp7/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 452175,
-          "downloadCount": 307,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp7/ModProjectViscott.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "88030bfcad0d668d199a2e89efbc7ff1d86c102e",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/88030bfcad0d668d199a2e89efbc7ff1d86c102e.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp7/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 452175,
+      "downloadCount": 307,
+      "releasedAt": "2023-02-02T12:17:04Z"
     },
     {
       "tag": "temp6",
-      "name": "Reaping",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-24T19:37:41Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp6",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp6/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 399842,
-          "downloadCount": 899,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp6/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "96e4ae19a0d00561fc3230aa5e8bd092eaac2bb7",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/96e4ae19a0d00561fc3230aa5e8bd092eaac2bb7.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp6/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 399842,
+      "downloadCount": 899,
+      "releasedAt": "2023-01-24T19:37:41Z"
     },
     {
       "tag": "Turret5",
-      "name": "Marksman",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-22T17:39:10Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/Turret5",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret5/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/Turret5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 342692,
-          "downloadCount": 371,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret5/ModProjectViscott.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "ad539fa9cf61bb5c077a57c27957f7de5fe2a431",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/ad539fa9cf61bb5c077a57c27957f7de5fe2a431.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret5/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 342692,
+      "downloadCount": 371,
+      "releasedAt": "2023-01-22T17:39:10Z"
     },
     {
       "tag": "Turret4",
-      "name": "Cycle turrets",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-22T08:45:06Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/Turret4",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret4/ModProjectViscott.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/Turret4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscott.jar",
-          "size": 337778,
-          "downloadCount": 158,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret4/ModProjectViscott.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "b06b6855d87092b48766b0a99e61861e5660d319",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b06b6855d87092b48766b0a99e61861e5660d319.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret4/ModProjectViscott.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 337778,
+      "downloadCount": 158,
+      "releasedAt": "2023-01-22T08:45:06Z"
     },
     {
       "tag": "temp5",
-      "name": "icon",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-21T16:42:35Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp5",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp5/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 289824,
-          "downloadCount": 65,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp5/ModProjectViscottDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "d2376f71eca7b38b1ba0b349404345061122508a",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/d2376f71eca7b38b1ba0b349404345061122508a.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp5/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 289824,
+      "downloadCount": 65,
+      "releasedAt": "2023-01-21T16:42:35Z"
     },
     {
       "tag": "temp4",
-      "name": "core unit go brrr",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-21T15:45:13Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp4",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp4/Mod.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mod.jar",
-          "size": 298682,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp4/Mod.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "b04b0f3e2b00f0999b6acb7af27414cb284299de",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b04b0f3e2b00f0999b6acb7af27414cb284299de.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp4/Mod.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 298682,
+      "downloadCount": 22,
+      "releasedAt": "2023-01-21T15:45:13Z"
     },
     {
       "tag": "Turret3",
-      "name": "razor",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-24T19:44:23Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/Turret3",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret3/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/Turret3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 232793,
-          "downloadCount": 237,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret3/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "c9f39841314ca02d470a2424a6b8fea6c6146bc9",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/c9f39841314ca02d470a2424a6b8fea6c6146bc9.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret3/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 232793,
+      "downloadCount": 237,
+      "releasedAt": "2022-12-24T19:44:23Z"
     },
     {
       "tag": "Turret2",
-      "name": "another new Turret",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-23T22:04:53Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/Turret2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/Turret2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 219526,
-          "downloadCount": 37,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret2/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "64eff04adf1d0d414592c92181a5aa0c909ae86c",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/64eff04adf1d0d414592c92181a5aa0c909ae86c.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 219526,
+      "downloadCount": 37,
+      "releasedAt": "2022-12-23T22:04:53Z"
     },
     {
       "tag": "Turret1",
-      "name": "New Turret",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-21T14:53:35Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/Turret1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/Turret1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 197366,
-          "downloadCount": 82,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret1/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "7bd316f0c2b6be65f35e32d1f965db0e656ec4d1",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/7bd316f0c2b6be65f35e32d1f965db0e656ec4d1.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Turret1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 197366,
+      "downloadCount": 82,
+      "releasedAt": "2022-12-21T14:53:35Z"
     },
     {
       "tag": "Conveyor",
-      "name": "Conveyor",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-21T10:35:11Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/Conveyor",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Conveyor/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/Conveyor.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 180073,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Conveyor/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "66c0d01053c6892f58ff1d3b54124c24e2389ebf",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/66c0d01053c6892f58ff1d3b54124c24e2389ebf.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/Conveyor/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 180073,
+      "downloadCount": 23,
+      "releasedAt": "2022-12-21T10:35:11Z"
     },
     {
       "tag": "0.0.1",
-      "name": "Turret Release 0.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-17T14:50:55Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/0.0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/0.0.1/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 138895,
-          "downloadCount": 75,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/0.0.1/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "b3fb154944e48ece0b6519d47bb098efd1da51b2",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/b3fb154944e48ece0b6519d47bb098efd1da51b2.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/0.0.1/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 138895,
+      "downloadCount": 75,
+      "releasedAt": "2022-12-17T14:50:55Z"
     },
     {
       "tag": "temp2",
-      "name": "TempRelease 0.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-06T16:05:29Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp2/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 101034,
-          "downloadCount": 128,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp2/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "42720b01639de9483bb62e63da33b2ca7732357e",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/42720b01639de9483bb62e63da33b2ca7732357e.zip"
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp2/ModProjectViscottDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 101034,
+      "downloadCount": 128,
+      "releasedAt": "2022-12-06T16:05:29Z"
     },
     {
       "tag": "temp",
-      "name": "TempRelease 0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-01T17:18:34Z",
-      "htmlUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/tag/temp",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp/ModProjectViscottDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/temp.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModProjectViscottDesktop.jar",
-          "size": 54619,
-          "downloadCount": 94,
-          "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp/ModProjectViscottDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "7f115e00c402f816bc3e7cb853913ac374977b1c",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/7f115e00c402f816bc3e7cb853913ac374977b1c.zip"
-    },
-    {
-      "tag": "v1.9",
-      "name": "v1.9",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/teamviscott/modprojectviscott/tree/v1.9",
-      "modVersion": "0.1.8.6",
-      "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v1.9.zip",
-      "sourceArchiveUrl": "https://github.com/teamviscott/modprojectviscott/archive/refs/tags/v1.9.zip",
-      "assets": [],
-      "commitSha": "ccdeb0f164d40a663ba07043a2646e5bc372d97b",
-      "archiveByCommitUrl": "https://github.com/teamviscott/modprojectviscott/archive/ccdeb0f164d40a663ba07043a2646e5bc372d97b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "temp4",
+      "downloadUrl": "https://github.com/TeamViscott/ModProjectViscott/releases/download/temp/ModProjectViscottDesktop.jar",
       "modVersion": "0.1",
-      "minGameVersion": "140",
-      "maxGameVersion": 141,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.0.1",
-      "modVersion": "0.1",
-      "minGameVersion": "141",
-      "maxGameVersion": 142,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.1.9.8.2",
-      "modVersion": "0.1.9.7",
-      "minGameVersion": "142",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 54619,
+      "downloadCount": 94,
+      "releasedAt": "2022-12-01T17:18:34Z"
     }
   ],
   "meta": {
+    "name": "project-viscott",
+    "author": "[yellow]CREDITS[]: \n[yellow]Spriters : Ethanol10, ThomasThings, TB1, FrireDragon, EyeOfDarkness \n----------------------------\nSfx/Music : Vdoble MSG , TempoAlch3mist \n----------------------------\nProgrammers : Siede ,Manuwar ,Otamamori ,Kapzduke, EyeOfDarkness \n----------------------------\nMappers : Nicodium \n----------------------------\n \n Special thanks to MEEPofFaith for creating the pseudo3d system.",
+    "description": "[00ffbf]Project viscott[] is a mindustry mod that adds a \nnew Planet to the campaign, [f8ff78]Vercilus[], and gives the player a new and unique gameplay experience \n\nThis mod is [yellow]still in development[]. \n Expect it to have some[scarlet] slight balancing issues[]",
+    "version": "0.1.9.7",
+    "minGameVersion": "142",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "viscott.ViscottMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

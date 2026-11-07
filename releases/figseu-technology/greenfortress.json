@@ -1,231 +1,174 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "figseu-technology/greenfortress",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V8.0.1",
-      "name": "Green Fortress - Music Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-20T17:01:47Z",
-      "htmlUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/tag/V8.0.1",
-      "modVersion": "8.0.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V8.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V8.0.1.zip",
-      "assets": [],
-      "commitSha": "473d326b8e463dd9bd39a528cd7188999400728e",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/473d326b8e463dd9bd39a528cd7188999400728e.zip"
+      "modVersion": "8.0.1",
+      "releasedAt": "2026-09-20T17:01:47Z"
     },
     {
       "tag": "V8.0.0",
-      "name": "Green Fortress - New Planet Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-24T06:23:18Z",
-      "htmlUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/tag/V8.0.0",
-      "modVersion": "8.0.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V8.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V8.0.0.zip",
-      "assets": [],
-      "commitSha": "7f45be9c806055f53560590f08fca4b0c6436f42",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/7f45be9c806055f53560590f08fca4b0c6436f42.zip"
+      "modVersion": "8.0.0",
+      "releasedAt": "2025-09-24T06:23:18Z"
     },
     {
       "tag": "V5.0.2BE",
-      "name": "Green Fortress　for Mindustry V7 (Ver2.1)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-24T03:38:01Z",
-      "htmlUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/tag/V5.0.2BE",
-      "modVersion": "[#009F61]4.1.0[]",
+      "kind": "release",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/download/V5.0.2BE/GreenFortress.Ver5.0.2BE.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V5.0.2BE.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GreenFortress.Ver5.0.2BE.zip",
-          "size": 37630439,
-          "downloadCount": 97,
-          "downloadUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/download/V5.0.2BE/GreenFortress.Ver5.0.2BE.zip"
+          "from": "126",
+          "to": "135.2"
         }
       ],
-      "commitSha": "e796a67d15c797f222dbec740459fe0472c1c769",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/e796a67d15c797f222dbec740459fe0472c1c769.zip"
+      "downloadUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/download/V5.0.2BE/GreenFortress.Ver5.0.2BE.zip",
+      "modVersion": "[#009F61]4.1.0[]",
+      "sizeBytes": 37630439,
+      "downloadCount": 97,
+      "releasedAt": "2022-11-24T03:38:01Z"
     },
     {
       "tag": "V4.1.0",
-      "name": "Green Fortress　Ver 4.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-16T13:34:25Z",
-      "htmlUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/tag/V4.1.0",
-      "modVersion": "[#009F61]4.1.0[]",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.1.0.zip",
-      "assets": [],
-      "commitSha": "3451f8fffb487455f104ad3b75114f0c54642479",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/3451f8fffb487455f104ad3b75114f0c54642479.zip"
+      "modVersion": "[#009F61]4.1.0[]",
+      "releasedAt": "2022-11-16T13:34:25Z"
     },
     {
       "tag": "V5.0.1BE",
-      "name": "Green Fortress　for Mindustry V7 (Ver2.0)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-16T13:29:45Z",
-      "htmlUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/tag/V5.0.1BE",
-      "modVersion": "[#009F61]4.0.5[]",
+      "kind": "release",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/download/V5.0.1BE/GreenFortress.V7.Ver2.0.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V5.0.1BE.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GreenFortress.V7.Ver2.0.zip",
-          "size": 35606358,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/download/V5.0.1BE/GreenFortress.V7.Ver2.0.zip"
+          "from": "126",
+          "to": "135.2"
         }
       ],
-      "commitSha": "8f15b7334242ef5453c1123590339b1470733139",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/8f15b7334242ef5453c1123590339b1470733139.zip"
+      "downloadUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/download/V5.0.1BE/GreenFortress.V7.Ver2.0.zip",
+      "modVersion": "[#009F61]4.0.5[]",
+      "sizeBytes": 35606358,
+      "downloadCount": 20,
+      "releasedAt": "2022-11-16T13:29:45Z"
     },
     {
       "tag": "V4.0.5",
-      "name": "Green Fortress　Ver 4.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-16T05:38:35Z",
-      "htmlUrl": "https://github.com/Figseu-Technology/GreenFortress/releases/tag/V4.0.5",
-      "modVersion": "[#009F61]4.0.5[]",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.5.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.5.zip",
-      "assets": [],
-      "commitSha": "8f15b7334242ef5453c1123590339b1470733139",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/8f15b7334242ef5453c1123590339b1470733139.zip"
-    },
-    {
-      "tag": "V5.0.0BE",
-      "name": "V5.0.0BE",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/figseu-technology/greenfortress/tree/V5.0.0BE",
-      "modVersion": "[#009F61]4.0.3[]",
-      "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V5.0.0BE.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V5.0.0BE.zip",
-      "assets": [],
-      "commitSha": "6b4370d795edd22d28b37c1847f2728f295acf3a",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/6b4370d795edd22d28b37c1847f2728f295acf3a.zip"
-    },
-    {
-      "tag": "V4.0.3",
-      "name": "V4.0.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/figseu-technology/greenfortress/tree/V4.0.3",
-      "modVersion": "[#009F61]4.0.3[]",
-      "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.3.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.3.zip",
-      "assets": [],
-      "commitSha": "6b4370d795edd22d28b37c1847f2728f295acf3a",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/6b4370d795edd22d28b37c1847f2728f295acf3a.zip"
-    },
-    {
-      "tag": "V4.0.1.1",
-      "name": "V4.0.1.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/figseu-technology/greenfortress/tree/V4.0.1.1",
-      "modVersion": "[#009F61]4.0.2[]",
-      "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.1.1.zip",
-      "assets": [],
-      "commitSha": "f7d881750bade8816685a66329f3e23a4cdf1c0b",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/f7d881750bade8816685a66329f3e23a4cdf1c0b.zip"
-    },
-    {
-      "tag": "V4.0.1",
-      "name": "V4.0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/figseu-technology/greenfortress/tree/V4.0.1",
-      "modVersion": "[#009F61]4.0.0[]",
-      "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.1.zip",
-      "assets": [],
-      "commitSha": "e8ee0d7cffbc658ff545a6650049aaa02d399114",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/e8ee0d7cffbc658ff545a6650049aaa02d399114.zip"
+      "modVersion": "[#009F61]4.0.5[]",
+      "releasedAt": "2022-11-16T05:38:35Z"
     },
     {
       "tag": "V4.0.0",
-      "name": "V4.0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/figseu-technology/greenfortress/tree/V4.0.0",
-      "modVersion": "[#009F61]4.0.0[]",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.0.zip",
-      "assets": [],
-      "commitSha": "8932a7166acbda1e5dc7f0916c2746d8bda26dfc",
-      "archiveByCommitUrl": "https://github.com/figseu-technology/greenfortress/archive/8932a7166acbda1e5dc7f0916c2746d8bda26dfc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V5.0.2BE",
-      "modVersion": "[#009F61]4.1.0[]",
-      "minGameVersion": "126",
-      "maxGameVersion": 136,
-      "hasRelease": true
+      "modVersion": "[#009F61]4.0.0[]"
     },
     {
-      "tag": "V8.0.1",
-      "modVersion": "8.0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "tag": "V4.0.1",
+      "kind": "tag",
+      "minGameVersion": "126",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.1.zip",
+      "modVersion": "[#009F61]4.0.0[]"
+    },
+    {
+      "tag": "V4.0.1.1",
+      "kind": "tag",
+      "minGameVersion": "126",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.1.1.zip",
+      "modVersion": "[#009F61]4.0.2[]"
+    },
+    {
+      "tag": "V4.0.3",
+      "kind": "tag",
+      "minGameVersion": "126",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V4.0.3.zip",
+      "modVersion": "[#009F61]4.0.3[]"
+    },
+    {
+      "tag": "V5.0.0BE",
+      "kind": "tag",
+      "minGameVersion": "126",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/figseu-technology/greenfortress/archive/refs/tags/V5.0.0BE.zip",
+      "modVersion": "[#009F61]4.0.3[]"
     }
   ],
   "meta": {
+    "name": "Green Fortress",
+    "author": "Figseu Technology",
+    "description": "世界は新たに創造され、我々は文明を再構築する",
+    "version": "8.0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

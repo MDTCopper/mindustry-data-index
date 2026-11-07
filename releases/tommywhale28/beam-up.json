@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "tommywhale28/beam-up",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-21T23:31:01Z",
-      "htmlUrl": "https://github.com/TommyWhale28/Beam-Up/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.1/Beam-UpDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/tommywhale28/beam-up/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Beam-UpDesktop.jar",
-          "size": 72377,
-          "downloadCount": 48,
-          "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.1/Beam-UpDesktop.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c33562d0d207b5e46cbc7192a3034b02da53c542",
-      "archiveByCommitUrl": "https://github.com/tommywhale28/beam-up/archive/c33562d0d207b5e46cbc7192a3034b02da53c542.zip"
+      "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.1/Beam-UpDesktop.jar",
+      "modVersion": "1.1.1",
+      "sizeBytes": 72377,
+      "downloadCount": 48,
+      "releasedAt": "2026-10-21T23:31:01Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-21T23:12:11Z",
-      "htmlUrl": "https://github.com/TommyWhale28/Beam-Up/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.0/Beam-UpDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/tommywhale28/beam-up/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Beam-UpDesktop.jar",
-          "size": 58638,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.0/Beam-UpDesktop.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e13b021cf72b10d5966f2da4f559ee97ec1deeff",
-      "archiveByCommitUrl": "https://github.com/tommywhale28/beam-up/archive/e13b021cf72b10d5966f2da4f559ee97ec1deeff.zip"
+      "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.0/Beam-UpDesktop.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 58638,
+      "downloadCount": 2,
+      "releasedAt": "2026-10-21T23:12:11Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "Beam-Up v1.0.0 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T03:35:53Z",
-      "htmlUrl": "https://github.com/TommyWhale28/Beam-Up/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.0.0/Beam-UpDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/tommywhale28/beam-up/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Beam-UpDesktop.jar",
-          "size": 46909,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.0.0/Beam-UpDesktop.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9274aa3ca61754f6d8bebfeaf229f1c09c3d59e8",
-      "archiveByCommitUrl": "https://github.com/tommywhale28/beam-up/archive/9274aa3ca61754f6d8bebfeaf229f1c09c3d59e8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.1",
-      "modVersion": "1.1.1",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.0.0/Beam-UpDesktop.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 46909,
+      "downloadCount": 45,
+      "releasedAt": "2026-10-03T03:35:53Z"
     }
   ],
   "meta": {
+    "name": "beam-up",
+    "author": "TommyWhale28",
+    "description": "A Mindustry mod that adds nodes to transport items using laser links. Desktop Only Java Mod. For 160.5",
+    "version": "1.1.1",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "beamup.BeamUp",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

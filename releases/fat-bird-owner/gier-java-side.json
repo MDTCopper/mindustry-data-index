@@ -1,77 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "fat-bird-owner/gier-java-side",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "V1.5",
-      "name": "Gier: Java side - V1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-01T14:49:21Z",
-      "htmlUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/tag/V1.5",
-      "modVersion": "v1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/V1.5/GierJava.jar",
-      "sourceArchiveUrl": "https://github.com/fat-bird-owner/gier-java-side/archive/refs/tags/V1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GierJava.jar",
-          "size": 650555,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/V1.5/GierJava.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b2bd41826f62995ce9cd22987d809753dab094da",
-      "archiveByCommitUrl": "https://github.com/fat-bird-owner/gier-java-side/archive/b2bd41826f62995ce9cd22987d809753dab094da.zip"
+      "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/V1.5/GierJava.jar",
+      "modVersion": "v1",
+      "sizeBytes": 650555,
+      "downloadCount": 11,
+      "releasedAt": "2026-11-01T14:49:21Z"
     },
     {
       "tag": "current-build",
-      "name": "current-build",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-24T14:02:46Z",
-      "htmlUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/tag/current-build",
-      "modVersion": "v1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/current-build/GierJava.jar",
-      "sourceArchiveUrl": "https://github.com/fat-bird-owner/gier-java-side/archive/refs/tags/current-build.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GierJava.jar",
-          "size": 898694,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/current-build/GierJava.jar"
-        },
-        {
-          "name": "GierJavaDesktop.jar",
-          "size": 743271,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/current-build/GierJavaDesktop.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d68102846e423d0e141ef49b687a76bea21674f6",
-      "archiveByCommitUrl": "https://github.com/fat-bird-owner/gier-java-side/archive/d68102846e423d0e141ef49b687a76bea21674f6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.5",
+      "downloadUrl": "https://github.com/Fat-Bird-Owner/Gier-java-side/releases/download/current-build/GierJava.jar",
       "modVersion": "v1",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1651878,
+      "downloadCount": 3,
+      "releasedAt": "2026-10-24T14:02:46Z"
     }
   ],
   "meta": {
+    "name": "gier-java",
+    "author": "Fat Bird's Owner. [accent[]]Contributors:[[]] lu69159 [lightgrey[]](Space)[[]]",
+    "description": "Java import of gier: revitalized. Plays different",
+    "version": "v1",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "GierJava.GierJava",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

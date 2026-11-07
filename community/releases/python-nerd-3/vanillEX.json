@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "python-nerd-3/vanillEX",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v0.2",
-      "name": "0.2 Alpha Build",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-21T11:22:57Z",
-      "htmlUrl": "https://github.com/python-nerd-3/vanillEX/releases/tag/v0.2",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "136.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/python-nerd-3/vanillEX/archive/refs/tags/v0.2.zip",
-      "sourceArchiveUrl": "https://github.com/python-nerd-3/vanillEX/archive/refs/tags/v0.2.zip",
-      "assets": [],
-      "commitSha": "aa7454d7df35e46289c031506fea38f74bbff50f",
-      "archiveByCommitUrl": "https://github.com/python-nerd-3/vanillEX/archive/aa7454d7df35e46289c031506fea38f74bbff50f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2",
       "modVersion": "0.2",
-      "minGameVersion": "136.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-09-21T11:22:57Z"
     }
   ],
   "meta": {
+    "name": "vanillEX",
+    "author": "sc3d (IGN Random Memer)",
+    "description": "[In very early development] A Mindustry mod that adds new features to the game that blend in with the original.",
+    "version": "0.2",
+    "minGameVersion": "136.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

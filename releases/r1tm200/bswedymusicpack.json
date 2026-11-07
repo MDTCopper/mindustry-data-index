@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "r1tm200/bswedymusicpack",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "Mindystry-mod",
-      "name": "BsweedyMusicPack 2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-29T07:07:26Z",
-      "htmlUrl": "https://github.com/R1tM200/BswedyMusicPack/releases/tag/Mindystry-mod",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/R1tM200/BswedyMusicPack/releases/download/Mindystry-mod/mindustry-bsweedy-musics-2.0.zip",
-      "sourceArchiveUrl": "https://github.com/r1tm200/bswedymusicpack/archive/refs/tags/Mindystry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-bsweedy-musics-2.0.zip",
-          "size": 32702020,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/R1tM200/BswedyMusicPack/releases/download/Mindystry-mod/mindustry-bsweedy-musics-2.0.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ad765f2358aca64208c79f199361a72dfe1bd79e",
-      "archiveByCommitUrl": "https://github.com/r1tm200/bswedymusicpack/archive/ad765f2358aca64208c79f199361a72dfe1bd79e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Mindystry-mod",
+      "downloadUrl": "https://github.com/R1tM200/BswedyMusicPack/releases/download/Mindystry-mod/mindustry-bsweedy-musics-2.0.zip",
       "modVersion": "2.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 32702020,
+      "downloadCount": 5,
+      "releasedAt": "2026-10-29T07:07:26Z"
     }
   ],
   "meta": {
+    "name": "BsweedyMusicPack",
+    "author": "тг: @ggvpaaall",
+    "description": "Сборник песен бисвиди\n\nЧто в обновлении:\n\n По просьбе пользователя мода: добавлены новые песни для меню, выбора сектора, посадки и редактора.\n\nПесни теперь выбираются случайно при перезаходе в меню/выбор сектора.",
+    "version": "2.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

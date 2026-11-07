@@ -1,164 +1,101 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dustdustry/itembridgex",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.6.1",
-      "name": "v2.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-26T05:57:32Z",
-      "htmlUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/tag/v2.6.1",
-      "modVersion": "2.6.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6.1/ItemBridgeX-v2.6.1.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/itembridgex/archive/refs/tags/v2.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ItemBridgeX-v2.6.1.jar",
-          "size": 53914,
-          "downloadCount": 2242,
-          "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6.1/ItemBridgeX-v2.6.1.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f99b80fbe930bea7b2bdd7f788e84b306649a97a",
-      "archiveByCommitUrl": "https://github.com/dustdustry/itembridgex/archive/f99b80fbe930bea7b2bdd7f788e84b306649a97a.zip"
+      "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6.1/ItemBridgeX-v2.6.1.jar",
+      "modVersion": "2.6.1",
+      "sizeBytes": 53914,
+      "downloadCount": 2242,
+      "releasedAt": "2026-04-26T05:57:32Z"
     },
     {
       "tag": "v2.6",
-      "name": "v2.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-16T03:57:20Z",
-      "htmlUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/tag/v2.6",
-      "modVersion": "2.6",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6/ItemBridgeX-.v2.6.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/itembridgex/archive/refs/tags/v2.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ItemBridgeX-.v2.6.jar",
-          "size": 53902,
-          "downloadCount": 2147,
-          "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6/ItemBridgeX-.v2.6.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "926e90606653460ed730c75a3950e89b59b6303f",
-      "archiveByCommitUrl": "https://github.com/dustdustry/itembridgex/archive/926e90606653460ed730c75a3950e89b59b6303f.zip"
+      "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.6/ItemBridgeX-.v2.6.jar",
+      "modVersion": "2.6",
+      "sizeBytes": 53902,
+      "downloadCount": 2147,
+      "releasedAt": "2025-07-16T03:57:20Z"
     },
     {
       "tag": "v2.5.0",
-      "name": "v2.5.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-15T12:39:11Z",
-      "htmlUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/tag/v2.5.0",
-      "modVersion": "2.5.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.5.0/ItemBridgeX-v2.5.0.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/itembridgex/archive/refs/tags/v2.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ItemBridgeX-v2.5.0.jar",
-          "size": 53926,
-          "downloadCount": 6997,
-          "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.5.0/ItemBridgeX-v2.5.0.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "8785326541d450ebc9cc192236bb1ffac086584e",
-      "archiveByCommitUrl": "https://github.com/dustdustry/itembridgex/archive/8785326541d450ebc9cc192236bb1ffac086584e.zip"
+      "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.5.0/ItemBridgeX-v2.5.0.jar",
+      "modVersion": "2.5.0",
+      "sizeBytes": 53926,
+      "downloadCount": 6997,
+      "releasedAt": "2024-07-15T12:39:11Z"
     },
     {
       "tag": "v2.0",
-      "name": "v2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-10T05:11:27Z",
-      "htmlUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/tag/v2.0",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.0/ItemBridgeX.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/itembridgex/archive/refs/tags/v2.0.zip",
-      "assets": [
-        {
-          "name": "ItemBridgeX.jar",
-          "size": 52566,
-          "downloadCount": 12243,
-          "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v2.0/ItemBridgeX.jar"
-        }
-      ],
-      "commitSha": "ddccbb462620deecb3a8402402d867eca192c5a6",
-      "archiveByCommitUrl": "https://github.com/dustdustry/itembridgex/archive/ddccbb462620deecb3a8402402d867eca192c5a6.zip"
+      "modVersion": "2",
+      "sizeBytes": 52566,
+      "downloadCount": 12243,
+      "releasedAt": "2022-05-10T05:11:27Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-26T11:17:26Z",
-      "htmlUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "129",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v1.0/ItemBridgeX.jar",
-      "sourceArchiveUrl": "https://github.com/dustdustry/itembridgex/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "ItemBridgeX.jar",
-          "size": 51531,
-          "downloadCount": 100,
-          "downloadUrl": "https://github.com/Dustdustry/ItemBridgeX/releases/download/v1.0/ItemBridgeX.jar"
-        }
-      ],
-      "commitSha": "a311d56f4dc9a5bb2665691ab9fee9cffb90ec66",
-      "archiveByCommitUrl": "https://github.com/dustdustry/itembridgex/archive/a311d56f4dc9a5bb2665691ab9fee9cffb90ec66.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
       "modVersion": "1",
-      "minGameVersion": "129",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.5.0",
-      "modVersion": "2.5.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.6",
-      "modVersion": "2.6",
-      "minGameVersion": "149",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.6.1",
-      "modVersion": "2.6.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 51531,
+      "downloadCount": 100,
+      "releasedAt": "2022-03-26T11:17:26Z"
     }
   ],
   "meta": {
+    "name": "item-bridge-x",
+    "author": "minRi2",
+    "description": "This a mod that can show the hidden item of the item bridge.",
+    "version": "2.6.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "ItemBridgeX.ItemBridgeX",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

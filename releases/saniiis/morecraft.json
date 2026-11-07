@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "saniiis/morecraft",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.9a",
-      "name": "MoreCraft 1.9a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-05T05:49:21Z",
-      "htmlUrl": "https://github.com/Saniiis/MoreCraft/releases/tag/1.9a",
-      "modVersion": "1.9a",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/saniiis/morecraft/archive/refs/tags/1.9a.zip",
-      "sourceArchiveUrl": "https://github.com/saniiis/morecraft/archive/refs/tags/1.9a.zip",
-      "assets": [],
-      "commitSha": "16aed54955742534e565959b8afdc947cb2ec040",
-      "archiveByCommitUrl": "https://github.com/saniiis/morecraft/archive/16aed54955742534e565959b8afdc947cb2ec040.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.9a",
       "modVersion": "1.9a",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-04-05T05:49:21Z"
     }
   ],
   "meta": {
+    "name": "morecraft",
+    "author": "saniiis",
+    "description": "[yellow]this mod adds a lot [purple]of new blocks and items",
+    "version": "1.9a",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

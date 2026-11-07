@@ -1,459 +1,293 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "routerxdd/icicle-world",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.9.6-alpha",
-      "name": "Alpha 0.9.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-30T11:52:46Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9.6-alpha",
-      "modVersion": "0.9.6",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.6-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9.6-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 3223127,
-          "downloadCount": 585,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.6-alpha/Icicle-World.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "32a3685ae107833a3403dff23170dc032bdfd45d",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/32a3685ae107833a3403dff23170dc032bdfd45d.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.6-alpha/Icicle-World.jar",
+      "modVersion": "0.9.6",
+      "sizeBytes": 3223127,
+      "downloadCount": 589,
+      "releasedAt": "2026-08-30T11:52:46Z"
     },
     {
       "tag": "0.9.5-alpha",
-      "name": "Alpha 0.9.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-12T19:47:35Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9.5-alpha",
-      "modVersion": "9.5",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.5-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9.5-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 3204824,
-          "downloadCount": 1421,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.5-alpha/Icicle-World.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bbca5bfe3881db90c53176caef52aad7f40e534a",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/bbca5bfe3881db90c53176caef52aad7f40e534a.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.5-alpha/Icicle-World.jar",
+      "modVersion": "9.5",
+      "sizeBytes": 3204824,
+      "downloadCount": 1421,
+      "releasedAt": "2026-03-12T19:47:35Z"
     },
     {
       "tag": "0.9.4-alpha",
-      "name": "Alpha 0.9.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-13T05:42:17Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9.4-alpha",
-      "modVersion": "alpha 0.9.4",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.4-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9.4-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1711937,
-          "downloadCount": 3032,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.4-alpha/Icicle-World.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "1c8dd48db4ddc75e568caedad2a4ee42bf6164c2",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/1c8dd48db4ddc75e568caedad2a4ee42bf6164c2.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.4-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.9.4",
+      "sizeBytes": 1711937,
+      "downloadCount": 3032,
+      "releasedAt": "2025-04-13T05:42:17Z"
     },
     {
       "tag": "0.9.3-alpha",
-      "name": "Alpha 0.9.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-23T11:18:10Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9.3-alpha",
-      "modVersion": "alpha 0.9.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.3-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9.3-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1692287,
-          "downloadCount": 1240,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.3-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "3c89cfc0c52309fd0ba5cedbbf7f017ebb5d4774",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/3c89cfc0c52309fd0ba5cedbbf7f017ebb5d4774.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.3-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.9.3",
+      "sizeBytes": 1692287,
+      "downloadCount": 1240,
+      "releasedAt": "2025-02-23T11:18:10Z"
     },
     {
       "tag": "0.9.2-alpha",
-      "name": "Alpha 0.9.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-17T21:18:21Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9.2-alpha",
-      "modVersion": "alpha 0.9.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.2-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9.2-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1664738,
-          "downloadCount": 325,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.2-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4e7aab39c4c27c58b7d0614850af06c12b1ce79e",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/4e7aab39c4c27c58b7d0614850af06c12b1ce79e.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.2-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.9.2",
+      "sizeBytes": 1664738,
+      "downloadCount": 325,
+      "releasedAt": "2025-02-17T21:18:21Z"
     },
     {
       "tag": "0.9.1-alpha",
-      "name": "Alpha 0.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-26T09:52:58Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9.1-alpha",
-      "modVersion": "alpha 0.9.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.1-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1661234,
-          "downloadCount": 717,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.1-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "bc9ab871b5a8d0ab1661a7a0a14d0c45f116c56c",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/bc9ab871b5a8d0ab1661a7a0a14d0c45f116c56c.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9.1-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.9.1",
+      "sizeBytes": 1661234,
+      "downloadCount": 717,
+      "releasedAt": "2025-01-26T09:52:58Z"
     },
     {
       "tag": "0.9-alpha",
-      "name": "Alpha 0.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-12T10:28:19Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.9-alpha",
-      "modVersion": "alpha 0.9",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.9-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1654616,
-          "downloadCount": 360,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "37285c6db489242fc09c5ef45943b4033ce684d0",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/37285c6db489242fc09c5ef45943b4033ce684d0.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.9-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.9",
+      "sizeBytes": 1654616,
+      "downloadCount": 360,
+      "releasedAt": "2025-01-12T10:28:19Z"
     },
     {
       "tag": "0.8-alpha",
-      "name": "Alpha 0.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-07T11:05:35Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.8-alpha",
-      "modVersion": "alpha 0.8",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.8-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.8-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1535939,
-          "downloadCount": 4399,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.8-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "d2e30624483ef25f161c04f238f1937a2cf724a0",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/d2e30624483ef25f161c04f238f1937a2cf724a0.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.8-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.8",
+      "sizeBytes": 1535939,
+      "downloadCount": 4399,
+      "releasedAt": "2024-07-07T11:05:35Z"
     },
     {
       "tag": "0.7.5-alpha",
-      "name": "Unexpected Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-13T21:57:12Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.7.5-alpha",
-      "modVersion": "alpha 0.75",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.7.5-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.7.5-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1510013,
-          "downloadCount": 1001,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.7.5-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "036551ce0d2050f4d57fa235f70aea8fc63a49ba",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/036551ce0d2050f4d57fa235f70aea8fc63a49ba.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.7.5-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.75",
+      "sizeBytes": 1510013,
+      "downloadCount": 1002,
+      "releasedAt": "2024-06-13T21:57:12Z"
     },
     {
       "tag": "0.6.55-alpha",
-      "name": "Alpha 0.6.55",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-02T13:45:23Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.6.55-alpha",
-      "modVersion": "alpha 0.6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6.55-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.6.55-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1438896,
-          "downloadCount": 658,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6.55-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "da710bd67d04457e2a76a109c973c97890372bcc",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/da710bd67d04457e2a76a109c973c97890372bcc.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6.55-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.6",
+      "sizeBytes": 1438896,
+      "downloadCount": 658,
+      "releasedAt": "2024-05-02T13:45:23Z"
     },
     {
       "tag": "0.6.5-alpha",
-      "name": "Alpha 0.6.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-27T15:39:46Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.6.5-alpha",
-      "modVersion": "alpha 0.6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6.5-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.6.5-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1329594,
-          "downloadCount": 146,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6.5-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "fa4c62d65b07451327b324540004a1b4061564a1",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/fa4c62d65b07451327b324540004a1b4061564a1.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6.5-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.6",
+      "sizeBytes": 1329594,
+      "downloadCount": 146,
+      "releasedAt": "2024-04-27T15:39:46Z"
     },
     {
       "tag": "0.6-alpha",
-      "name": "Alpha 0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-24T13:08:44Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.6-alpha",
-      "modVersion": "alpha 0.6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.6-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 1320963,
-          "downloadCount": 102,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "2a8e9d554966d9d5a2d28cc59ded789a53e971cc",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/2a8e9d554966d9d5a2d28cc59ded789a53e971cc.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.6-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.6",
+      "sizeBytes": 1320963,
+      "downloadCount": 102,
+      "releasedAt": "2024-04-24T13:08:44Z"
     },
     {
       "tag": "0.5-alpha",
-      "name": "Alpha 0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-01T18:47:36Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.5-alpha",
-      "modVersion": "alpha 0.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.5-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.5-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 939251,
-          "downloadCount": 483,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.5-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "73b50a73c934757ca9b4ef3e4ede75dc620ffba3",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/73b50a73c934757ca9b4ef3e4ede75dc620ffba3.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.5-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.5",
+      "sizeBytes": 939251,
+      "downloadCount": 483,
+      "releasedAt": "2024-02-01T18:47:36Z"
     },
     {
       "tag": "0.4-alpha",
-      "name": "Alpha 0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-15T15:12:42Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.4-alpha",
-      "modVersion": "alpha 0.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.4-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.4-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 739352,
-          "downloadCount": 334,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.4-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f61e7898b9d7adfbfd25dd9014cf7041c39abbef",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/f61e7898b9d7adfbfd25dd9014cf7041c39abbef.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.4-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.4",
+      "sizeBytes": 739352,
+      "downloadCount": 334,
+      "releasedAt": "2024-01-15T15:12:42Z"
     },
     {
       "tag": "0.3-alpha",
-      "name": "Alpha 0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-03T14:10:47Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.3-alpha",
-      "modVersion": "alpha 0.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.3-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.3-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Icicle-World.jar",
-          "size": 529373,
-          "downloadCount": 234,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.3-alpha/Icicle-World.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c111c7a2b66a3246ce71d99bf8389265785ff651",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/c111c7a2b66a3246ce71d99bf8389265785ff651.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.3-alpha/Icicle-World.jar",
+      "modVersion": "alpha 0.3",
+      "sizeBytes": 529373,
+      "downloadCount": 234,
+      "releasedAt": "2024-01-03T14:10:47Z"
     },
     {
       "tag": "0.2-alpha",
-      "name": "Alpha 0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-01T13:19:46Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.2-alpha",
-      "modVersion": "alpha 0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.2-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.2-alpha.zip",
-      "assets": [
-        {
-          "name": "Icicle-World.jar",
-          "size": 487246,
-          "downloadCount": 76,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.2-alpha/Icicle-World.jar"
-        }
-      ],
-      "commitSha": "4f2d4cc0b5abd101a9862831b070bf8da434187c",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/4f2d4cc0b5abd101a9862831b070bf8da434187c.zip"
+      "modVersion": "alpha 0.2",
+      "sizeBytes": 487246,
+      "downloadCount": 76,
+      "releasedAt": "2024-01-01T13:19:46Z"
     },
     {
       "tag": "0.1-alpha",
-      "name": "Alpha 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-25T19:04:24Z",
-      "htmlUrl": "https://github.com/RouterXdd/Icicle-World/releases/tag/0.1-alpha",
-      "modVersion": "alpha 0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.1-alpha/Icicle-World.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/icicle-world/archive/refs/tags/0.1-alpha.zip",
-      "assets": [
-        {
-          "name": "Icicle-World.jar",
-          "size": 327416,
-          "downloadCount": 114,
-          "downloadUrl": "https://github.com/RouterXdd/Icicle-World/releases/download/0.1-alpha/Icicle-World.jar"
-        }
-      ],
-      "commitSha": "80061a37b3566d2ee7e93a676b7815dc28f044d2",
-      "archiveByCommitUrl": "https://github.com/routerxdd/icicle-world/archive/80061a37b3566d2ee7e93a676b7815dc28f044d2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1-alpha",
       "modVersion": "alpha 0.1",
-      "minGameVersion": "145",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.3-alpha",
-      "modVersion": "alpha 0.9.3",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.4-alpha",
-      "modVersion": "alpha 0.9.4",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.5-alpha",
-      "modVersion": "9.5",
-      "minGameVersion": "155",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.9.6-alpha",
-      "modVersion": "0.9.6",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 327416,
+      "downloadCount": 114,
+      "releasedAt": "2023-12-25T19:04:24Z"
     }
   ],
   "meta": {
+    "name": "icicle-world",
+    "author": "R.O.T.\nSpecial thanks:\nyesC48 for editing english translation\nxhstoyea for chinese translation",
+    "description": "A mod that adds a new planet, where we will play in underground",
+    "version": "0.9.6",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ice.IcicleMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

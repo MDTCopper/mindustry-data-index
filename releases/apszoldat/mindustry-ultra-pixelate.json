@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "apszoldat/mindustry-ultra-pixelate",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-17T18:42:59Z",
-      "htmlUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.1/mindustry-ultra-pixelate.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustry-ultra-pixelate/archive/refs/tags/v1.1.zip",
-      "assets": [
-        {
-          "name": "mindustry-ultra-pixelate.jar",
-          "size": 10406,
-          "downloadCount": 514,
-          "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.1/mindustry-ultra-pixelate.jar"
-        }
-      ],
-      "commitSha": "738c31b04cf6775a795e4cadf240a102837a73fc",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustry-ultra-pixelate/archive/738c31b04cf6775a795e4cadf240a102837a73fc.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-23T18:30:03Z",
-      "htmlUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/tag/v1.0",
-      "modVersion": "1",
-      "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.0/mindustry-ultra-pixelate.jar",
-      "sourceArchiveUrl": "https://github.com/apszoldat/mindustry-ultra-pixelate/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "mindustry-ultra-pixelate.jar",
-          "size": 10472,
-          "downloadCount": 1301,
-          "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.0/mindustry-ultra-pixelate.jar"
-        }
-      ],
-      "commitSha": "d7090ee1036afe8fbab636f1ceac9c06876e218f",
-      "archiveByCommitUrl": "https://github.com/apszoldat/mindustry-ultra-pixelate/archive/d7090ee1036afe8fbab636f1ceac9c06876e218f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1",
       "modVersion": "1.1",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 10406,
+      "downloadCount": 514,
+      "releasedAt": "2026-07-17T18:42:59Z"
+    },
+    {
+      "tag": "v1.0",
+      "kind": "release",
+      "minGameVersion": "140",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/ApsZoldat/mindustry-ultra-pixelate/releases/download/v1.0/mindustry-ultra-pixelate.jar",
+      "modVersion": "1",
+      "sizeBytes": 10472,
+      "downloadCount": 1301,
+      "releasedAt": "2023-04-23T18:30:03Z"
     }
   ],
   "meta": {
+    "name": "ultra-pixelate",
+    "author": "ApsZoldat",
+    "description": "Mod allowing to modify pixelate filter scale (when you downloaded a bad iron ore mod and don't want your eyes to bleed)",
+    "version": "1.1",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "core.ModMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

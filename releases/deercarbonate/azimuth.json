@@ -1,82 +1,63 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "deercarbonate/azimuth",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "0.5",
-      "name": "0.51 update: 30.000 changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-13T06:22:49Z",
-      "htmlUrl": "https://github.com/DeerCarbonate/Azimuth/releases/tag/0.5",
-      "modVersion": "0.51",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/0.5.zip",
-      "sourceArchiveUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/0.5.zip",
-      "assets": [],
-      "commitSha": "6dffa873beb7d67c3ce545297c24ea8849913640",
-      "archiveByCommitUrl": "https://github.com/deercarbonate/azimuth/archive/6dffa873beb7d67c3ce545297c24ea8849913640.zip"
+      "modVersion": "0.51",
+      "releasedAt": "2026-10-13T06:22:49Z"
     },
     {
       "tag": "Minor_update",
-      "name": "0.33 update: Bugfixes, Logic and Bundles",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-28T11:11:45Z",
-      "htmlUrl": "https://github.com/DeerCarbonate/Azimuth/releases/tag/Minor_update",
-      "modVersion": "0.32",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Minor_update.zip",
-      "sourceArchiveUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Minor_update.zip",
-      "assets": [],
-      "commitSha": "e82dca9d1dcd442134e3708ceef78934e2cd109b",
-      "archiveByCommitUrl": "https://github.com/deercarbonate/azimuth/archive/e82dca9d1dcd442134e3708ceef78934e2cd109b.zip"
+      "modVersion": "0.32",
+      "releasedAt": "2026-01-28T11:11:45Z"
     },
     {
       "tag": "Bugfixes",
-      "name": "Bugfixes",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/deercarbonate/azimuth/tree/Bugfixes",
-      "modVersion": "0.31",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Bugfixes.zip",
-      "sourceArchiveUrl": "https://github.com/deercarbonate/azimuth/archive/refs/tags/Bugfixes.zip",
-      "assets": [],
-      "commitSha": "855c43408e5064324725b8f618221f645adb5243",
-      "archiveByCommitUrl": "https://github.com/deercarbonate/azimuth/archive/855c43408e5064324725b8f618221f645adb5243.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Minor_update",
-      "modVersion": "0.32",
-      "minGameVersion": "154",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.5",
-      "modVersion": "0.51",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.31"
     }
   ],
   "meta": {
+    "name": "azimut",
+    "author": "DeerCarbonate",
+    "description": "\n[[]#d3f2f4]Hybrid[[]] mod primarily built around a gradually branching campaign that expands in multiple directions.\n\nThe mod adds a new planet, [[]#f7e9af]Gelion[[]], featuring its own campaign, star system, research tree, and gameplay mechanics.\nThe planet offers over 90 blocks to research, 12 units [[]#ffd37f]each with their own unique abilities[[]], 13 campaign sectors, more than [[]#ffd37f]6 new mechanics[[]], and plenty of room for map creation.\n\nOn top of that, the campaign also stands out with absolutely [[]#e65c5c]BRUTAL[[]] visual effects. Every texture was made with care and dedication.\n\n[[]#e65c5c]THIS MOD IS STILL IN DEVELOPMENT![[]]\n[[]#ffd37f]The current completion percentage is approximately 64%, with plenty of room to grow![[]]\n\nHelp me develop the mod! Join the [[]#768bff]Azimuth Discord server[[]] using the [[]#ffd37f]link in the README file on the mod's official GitHub page.[[]]\n\n///////////////////////////////\n\nLand on a [[]#c9c1eb]sub-cryonic[[]] terra slowly heating up beneath its [[]#e99696]unstable star[[]]. The celestial body is suffering from [[]#ffbe93]global warming[[]] — glaciers are melting, atmospheric pressure is rising, and temperatures continue to climb.\n[[]#e99696]Exterminate the enemy faction[[]]. Turn the planet into a temporary source of raw materials. [[]#d1e3ff]Witness a world that will soon become[[]] [[]#506381]ash[[]].\n\nIf you enjoyed the mod, please consider giving it a star!\n[[]#c9c1eb]Thank you for playing.[[]]\n\n///////////////////////////////\n\nDevelopers:\nCode: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]\nSprites: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]\nMaps: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]\nLocalization: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]\n\nSpecial Thanks:\nMusic: [[]purple]ACE[[]] — \"the last fight\", \"in orbit\", \"create\", \"smth far away\"; [[]#ffe1a4]garretski[[]] — The main Azimuth soundtrack.\nMaps: [[]#ce7e5c]Kivet/БОБ[[]] — \"Cold Harbor\"; [[]#fce4e0]Fate of Adrastus[[]] — \"Tight Caverns\"; [[]#84f491]Alpotat[[]] — assistance with the map \"Arrival\".\nCode: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]\n",
+    "version": "0.51",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

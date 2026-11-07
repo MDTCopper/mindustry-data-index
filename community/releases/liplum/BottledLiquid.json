@@ -1,109 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "liplum/BottledLiquid",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "AUTOR",
-      "name": "Auto-release on 2022-08-08",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-08T15:08:00Z",
-      "htmlUrl": "https://github.com/liplum/BottledLiquid/releases/tag/AUTOR",
-      "modVersion": "3.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/AUTOR/bottled-liquid-3.0.jar",
-      "sourceArchiveUrl": "https://github.com/liplum/BottledLiquid/archive/refs/tags/AUTOR.zip",
-      "assets": [
-        {
-          "name": "bottled-liquid-3.0.jar",
-          "size": 33864,
-          "downloadCount": 4379,
-          "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/AUTOR/bottled-liquid-3.0.jar"
-        }
-      ],
-      "commitSha": "798f3ffbd1f77af0627c0541f1b2ab5725815613",
-      "archiveByCommitUrl": "https://github.com/liplum/BottledLiquid/archive/798f3ffbd1f77af0627c0541f1b2ab5725815613.zip"
-    },
-    {
-      "tag": "v2.0",
-      "name": "v2.0 on Mindustry v135",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-02T10:05:55Z",
-      "htmlUrl": "https://github.com/liplum/BottledLiquid/releases/tag/v2.0",
-      "modVersion": "2",
-      "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v2.0/bottled-liquid-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/liplum/BottledLiquid/archive/refs/tags/v2.0.zip",
-      "assets": [
-        {
-          "name": "bottled-liquid-1.0.jar",
-          "size": 34081,
-          "downloadCount": 102,
-          "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v2.0/bottled-liquid-1.0.jar"
-        }
-      ],
-      "commitSha": "9c41912304a914beb37af1b87b1dad244ce7200a",
-      "archiveByCommitUrl": "https://github.com/liplum/BottledLiquid/archive/9c41912304a914beb37af1b87b1dad244ce7200a.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "Last V1.0 on Mindustry v126",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-19T14:22:13Z",
-      "htmlUrl": "https://github.com/liplum/BottledLiquid/releases/tag/v1.0",
-      "modVersion": "1",
-      "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v1.0/BottledLiquid.jar",
-      "sourceArchiveUrl": "https://github.com/liplum/BottledLiquid/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "BottledLiquid.jar",
-          "size": 33671,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v1.0/BottledLiquid.jar"
-        }
-      ],
-      "commitSha": "6f3b95c89920b512bf9220519c152471bdbc813e",
-      "archiveByCommitUrl": "https://github.com/liplum/BottledLiquid/archive/6f3b95c89920b512bf9220519c152471bdbc813e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1",
-      "minGameVersion": "126",
-      "maxGameVersion": 135,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0",
-      "modVersion": "2",
-      "minGameVersion": "135",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "AUTOR",
       "modVersion": "3.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 33864,
+      "downloadCount": 4379,
+      "releasedAt": "2022-08-08T15:08:00Z"
+    },
+    {
+      "tag": "v2.0",
+      "kind": "release",
+      "minGameVersion": "135",
+      "gameVersionRanges": [
+        {
+          "from": "135",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v2.0/bottled-liquid-1.0.jar",
+      "modVersion": "2",
+      "sizeBytes": 34081,
+      "downloadCount": 102,
+      "releasedAt": "2022-07-02T10:05:55Z"
+    },
+    {
+      "tag": "v1.0",
+      "kind": "release",
+      "minGameVersion": "126",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/liplum/BottledLiquid/releases/download/v1.0/BottledLiquid.jar",
+      "modVersion": "1",
+      "sizeBytes": 33671,
+      "downloadCount": 55,
+      "releasedAt": "2022-06-19T14:22:13Z"
     }
   ],
   "meta": {
+    "name": "bottled-liquid",
+    "author": "[#42a5f5[]]Liplum[[]]",
+    "description": "\nSelling drinks in Mindustry! CHEERS!\nProgrammer: [#42a5f5[]]Liplum[[]]\nPainter: TheTenthBot#9749 on Discord\n",
+    "version": "3.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "net.liplum.bl.BottledLiquidMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

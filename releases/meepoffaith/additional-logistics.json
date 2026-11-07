@@ -1,315 +1,197 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meepoffaith/additional-logistics",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v8.3",
-      "name": "Update v159",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-08T19:04:45Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v8.3",
-      "modVersion": "v8.3",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.3/additional-logistics.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v8.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "additional-logistics.jar",
-          "size": 230653,
-          "downloadCount": 3727,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.3/additional-logistics.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2d01a0a5741b012bbca63c9c7bf6621ab5d49630",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/2d01a0a5741b012bbca63c9c7bf6621ab5d49630.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.3/additional-logistics.jar",
+      "modVersion": "v8.3",
+      "sizeBytes": 230653,
+      "downloadCount": 3728,
+      "releasedAt": "2026-07-08T19:04:45Z"
     },
     {
       "tag": "v8.2",
-      "name": "Update to v154",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-25T14:10:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v8.2",
-      "modVersion": "v8.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.2/additional-logistics.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "additional-logistics.jar",
-          "size": 226069,
-          "downloadCount": 4615,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.2/additional-logistics.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1e358f8eff99a7f4fa0d2c99a91377cd5b33a52d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/1e358f8eff99a7f4fa0d2c99a91377cd5b33a52d.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.2/additional-logistics.jar",
+      "modVersion": "v8.2",
+      "sizeBytes": 226069,
+      "downloadCount": 4615,
+      "releasedAt": "2026-01-25T14:10:09Z"
     },
     {
       "tag": "v8.1",
-      "name": "Update to v147.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-15T00:34:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v8.1",
-      "modVersion": "v8.1",
+      "kind": "release",
       "minGameVersion": "147.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.1/additional-logistics.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "additional-logistics.jar",
-          "size": 229141,
-          "downloadCount": 5461,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.1/additional-logistics.jar"
+          "from": "147.1",
+          "to": "154"
         }
       ],
-      "commitSha": "109024afc87d8e232ea7dc8039b411fbea84f8ab",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/109024afc87d8e232ea7dc8039b411fbea84f8ab.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8.1/additional-logistics.jar",
+      "modVersion": "v8.1",
+      "sizeBytes": 229141,
+      "downloadCount": 5461,
+      "releasedAt": "2025-04-15T00:34:57Z"
     },
     {
       "tag": "v8",
-      "name": "Payload Rail Graphics Tweaks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-01T09:52:32Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v8",
-      "modVersion": "v8",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 229141,
-          "downloadCount": 6017,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8/tranqol.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "655b9d98600be8e4cd28274de72b37cc8ded753e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/655b9d98600be8e4cd28274de72b37cc8ded753e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v8/tranqol.jar",
+      "modVersion": "v8",
+      "sizeBytes": 229141,
+      "downloadCount": 6017,
+      "releasedAt": "2024-11-01T09:52:32Z"
     },
     {
       "tag": "v7",
-      "name": "Yoink Hydroconveyor",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-29T07:16:51Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v7",
-      "modVersion": "v7",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v7/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 227438,
-          "downloadCount": 459,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v7/tranqol.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "5b53b864f57ae419a8ecfb9fdc03d3c37e5d1b6e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/5b53b864f57ae419a8ecfb9fdc03d3c37e5d1b6e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v7/tranqol.jar",
+      "modVersion": "v7",
+      "sizeBytes": 227438,
+      "downloadCount": 459,
+      "releasedAt": "2024-10-29T07:16:51Z"
     },
     {
       "tag": "v6",
-      "name": "Major Content Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-28T08:25:37Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v6",
-      "modVersion": "v6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v6/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 205881,
-          "downloadCount": 242,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v6/tranqol.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f16adf070ba3e56c66aab1ca83afdaafd4c981a7",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/f16adf070ba3e56c66aab1ca83afdaafd4c981a7.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v6/tranqol.jar",
+      "modVersion": "v6",
+      "sizeBytes": 205881,
+      "downloadCount": 242,
+      "releasedAt": "2024-10-28T08:25:37Z"
     },
     {
       "tag": "v5",
-      "name": "Small Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-14T02:27:29Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v5",
-      "modVersion": "v5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v5/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 94753,
-          "downloadCount": 778,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v5/tranqol.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "e883b8716bf11186761f6d6806be0c4c100c186b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/e883b8716bf11186761f6d6806be0c4c100c186b.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v5/tranqol.jar",
+      "modVersion": "v5",
+      "sizeBytes": 94753,
+      "downloadCount": 778,
+      "releasedAt": "2024-06-14T02:27:29Z"
     },
     {
       "tag": "v4",
-      "name": "Don't put payload routers after payload junctions",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-28T06:05:56Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v4",
-      "modVersion": "v4",
+      "kind": "release",
       "minGameVersion": "140.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v4/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 91925,
-          "downloadCount": 922,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v4/tranqol.jar"
+          "from": "140.1",
+          "to": "146"
         }
       ],
-      "commitSha": "850d5529f0163975b44954fb2b07643584c3b257",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/850d5529f0163975b44954fb2b07643584c3b257.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v4/tranqol.jar",
+      "modVersion": "v4",
+      "sizeBytes": 91925,
+      "downloadCount": 922,
+      "releasedAt": "2023-03-28T06:05:56Z"
     },
     {
       "tag": "v3",
-      "name": "I am stupid",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-28T05:53:52Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v3",
-      "modVersion": "v3",
+      "kind": "release",
       "minGameVersion": "140.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v3/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 92249,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v3/tranqol.jar"
+          "from": "140.1",
+          "to": "146"
         }
       ],
-      "commitSha": "8b00ba308aa6a0b4b3736f9a2053c400e1774666",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/8b00ba308aa6a0b4b3736f9a2053c400e1774666.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v3/tranqol.jar",
+      "modVersion": "v3",
+      "sizeBytes": 92249,
+      "downloadCount": 19,
+      "releasedAt": "2023-03-28T05:53:52Z"
     },
     {
       "tag": "v2",
-      "name": "The Junction Update™ (Cursed Madness)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-15T02:32:06Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v2",
-      "modVersion": "v2",
+      "kind": "release",
       "minGameVersion": "140.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v2/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 88178,
-          "downloadCount": 104,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v2/tranqol.jar"
+          "from": "140.1",
+          "to": "146"
         }
       ],
-      "commitSha": "ee008f60376178838fce5f789d8f25e1426f51d5",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/ee008f60376178838fce5f789d8f25e1426f51d5.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v2/tranqol.jar",
+      "modVersion": "v2",
+      "sizeBytes": 88178,
+      "downloadCount": 104,
+      "releasedAt": "2023-03-15T02:32:06Z"
     },
     {
       "tag": "v1",
-      "name": "Initial Release (Allow for downloading from the mod browser)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-28T07:02:49Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/tag/v1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v1/tranqol.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/additional-logistics/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tranqol.jar",
-          "size": 96733,
-          "downloadCount": 343,
-          "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v1/tranqol.jar"
+          "from": "140.1",
+          "to": "146"
         }
       ],
-      "commitSha": "409a9fd903445196bec66e2b8b3633e3c2cd1421",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/additional-logistics/archive/409a9fd903445196bec66e2b8b3633e3c2cd1421.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v4",
-      "modVersion": "v4",
-      "minGameVersion": "140.1",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v8",
-      "modVersion": "v8",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v8.1",
-      "modVersion": "v8.1",
-      "minGameVersion": "147.1",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v8.2",
-      "modVersion": "v8.2",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v8.3",
-      "modVersion": "v8.3",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/MEEPofFaith/additional-logistics/releases/download/v1/tranqol.jar",
+      "modVersion": "1",
+      "sizeBytes": 96733,
+      "downloadCount": 343,
+      "releasedAt": "2023-01-28T07:02:49Z"
     }
   ],
   "meta": {
+    "name": "tranqol",
+    "author": "MEEPofFaith",
+    "description": "A quality of life mod that adds useful blocks for transportation and logistics.",
+    "version": "v8.3",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "tranqol.Tranqol",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

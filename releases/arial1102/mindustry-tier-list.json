@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "arial1102/mindustry-tier-list",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-30T01:06:36Z",
-      "htmlUrl": "https://github.com/Arial1102/Mindustry-Tier-List/releases/tag/mindustry-mod",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/arial1102/mindustry-tier-list/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/arial1102/mindustry-tier-list/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "cbc5f058b932de4b525f477657156f28c4a6a9be",
-      "archiveByCommitUrl": "https://github.com/arial1102/mindustry-tier-list/archive/cbc5f058b932de4b525f477657156f28c4a6a9be.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-07-30T01:06:36Z"
     }
   ],
   "meta": {
+    "name": "tier-language",
+    "author": "tandzs1tg",
+    "description": "\na mod that add tier list as localization\nEnglish only\n\n",
+    "version": null,
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

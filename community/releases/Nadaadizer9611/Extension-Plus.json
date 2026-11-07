@@ -1,95 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Nadaadizer9611/Extension-Plus",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.0.2",
-      "name": "Extension Plus 1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-23T23:24:59Z",
-      "htmlUrl": "https://github.com/Nadaadizer9611/Extension-Plus/releases/tag/1.0.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "extension-plus.zip",
-          "size": 259017,
-          "downloadCount": 68,
-          "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/releases/download/1.0.2/extension-plus.zip"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "f17eb394bdf7389ada650b1d5b484098a7441f7a",
-      "archiveByCommitUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/f17eb394bdf7389ada650b1d5b484098a7441f7a.zip"
+      "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.2.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 259017,
+      "downloadCount": 68,
+      "releasedAt": "2022-10-23T23:24:59Z"
     },
     {
       "tag": "1.0.1",
-      "name": "Extension Plus 1.0.1  (it's still incomplete)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-20T05:29:56Z",
-      "htmlUrl": "https://github.com/Nadaadizer9611/Extension-Plus/releases/tag/1.0.1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.1.zip",
-      "assets": [
-        {
-          "name": "extension-plus.zip",
-          "size": 205886,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/releases/download/1.0.1/extension-plus.zip"
-        }
-      ],
-      "commitSha": "7289992a7940ca5959efccef528d5fcea1f43589",
-      "archiveByCommitUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/7289992a7940ca5959efccef528d5fcea1f43589.zip"
-    },
-    {
-      "tag": "1.0.0",
-      "name": "Extension Plus 1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-10T01:30:25Z",
-      "htmlUrl": "https://github.com/Nadaadizer9611/Extension-Plus/releases/tag/1.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/refs/tags/1.0.0.zip",
-      "assets": [
-        {
-          "name": "extension-plus.zip",
-          "size": 174300,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/Nadaadizer9611/Extension-Plus/releases/download/1.0.0/extension-plus.zip"
-        }
-      ],
-      "commitSha": "62de946b1babde21a4d875b68b19611c4e0ea2d8",
-      "archiveByCommitUrl": "https://github.com/Nadaadizer9611/Extension-Plus/archive/62de946b1babde21a4d875b68b19611c4e0ea2d8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0.2",
       "modVersion": "1.0.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 205886,
+      "downloadCount": 5,
+      "releasedAt": "2022-10-20T05:29:56Z"
     }
   ],
   "meta": {
+    "name": "ex-pl",
+    "author": "Nadaadizer9611",
+    "description": "a vanilla extension bringing new itmes, blocks, factories and etc",
+    "version": "1.0.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "Nadaadizer9611/Extension-Plus",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,771 +1,424 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sporrus/randomMindustry",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.8.4",
-      "name": "v1.8.4 - Horrible...",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-04T01:56:11Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.8.4",
-      "modVersion": "1.8.4",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.4/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 292275,
-          "downloadCount": 2180,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.4/randomMindustry.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "3c3a0db7c95e6b564cc71c87c6037321f5e3d67f",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/3c3a0db7c95e6b564cc71c87c6037321f5e3d67f.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.4/randomMindustry.jar",
+      "modVersion": "1.8.4",
+      "sizeBytes": 292275,
+      "downloadCount": 2180,
+      "releasedAt": "2025-05-04T01:56:11Z"
     },
     {
       "tag": "v1.8.3",
-      "name": "v1.8.3 - b149 port",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-03T10:08:20Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.8.3",
-      "modVersion": "1.8.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.3/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.8.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 293514,
-          "downloadCount": 107,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.3/randomMindustry.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "c9addc6609a5fd4546f227fb83487f210cc19aa1",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/c9addc6609a5fd4546f227fb83487f210cc19aa1.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.3/randomMindustry.jar",
+      "modVersion": "1.8.3",
+      "sizeBytes": 293514,
+      "downloadCount": 107,
+      "releasedAt": "2025-05-03T10:08:20Z"
     },
     {
       "tag": "v2.0.2-alpha",
-      "name": "v2.0.2-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-05-27T14:55:51Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v2.0.2-alpha",
-      "modVersion": "2.0.2-alpha",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.2-alpha/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v2.0.2-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 398987,
-          "downloadCount": 174,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.2-alpha/randomMindustry.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "87dd8e0e1d82f1d126081338f2590f5bb0a28afa",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/87dd8e0e1d82f1d126081338f2590f5bb0a28afa.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.2-alpha/randomMindustry.jar",
+      "modVersion": "2.0.2-alpha",
+      "sizeBytes": 398987,
+      "downloadCount": 174,
+      "releasedAt": "2024-05-27T14:55:51Z",
+      "prerelease": true
     },
     {
       "tag": "v2.0.1-alpha",
-      "name": "v2.0.1-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-05-10T05:40:18Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v2.0.1-alpha",
-      "modVersion": "2.0.1-alpha",
+      "kind": "release",
       "minGameVersion": "141.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.1-alpha/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v2.0.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 386875,
-          "downloadCount": 173,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.1-alpha/randomMindustry.jar"
+          "from": "141.3",
+          "to": "146"
         }
       ],
-      "commitSha": "5a590db341d79e9db32e7e256345bd9777894a50",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/5a590db341d79e9db32e7e256345bd9777894a50.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.1-alpha/randomMindustry.jar",
+      "modVersion": "2.0.1-alpha",
+      "sizeBytes": 386875,
+      "downloadCount": 173,
+      "releasedAt": "2023-05-10T05:40:18Z",
+      "prerelease": true
     },
     {
       "tag": "v2.0.0-alpha",
-      "name": "v2.0.0-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-02-19T08:37:54Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v2.0.0-alpha",
-      "modVersion": "1.8.2",
+      "kind": "release",
       "minGameVersion": "139",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.0-alpha/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v2.0.0-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 381317,
-          "downloadCount": 114,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.0-alpha/randomMindustry.jar"
+          "from": "139",
+          "to": "146"
         }
       ],
-      "commitSha": "40e306977e1d4f65ec67d63a1edbcf2bcdf0bd51",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/40e306977e1d4f65ec67d63a1edbcf2bcdf0bd51.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v2.0.0-alpha/randomMindustry.jar",
+      "modVersion": "1.8.2",
+      "sizeBytes": 381317,
+      "downloadCount": 114,
+      "releasedAt": "2023-02-19T08:37:54Z",
+      "prerelease": true
     },
     {
       "tag": "v1.8.2",
-      "name": "v1.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-08T12:24:38Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.8.2",
-      "modVersion": "1.8.2",
+      "kind": "release",
       "minGameVersion": "139",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.2/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 299549,
-          "downloadCount": 24696,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.2/randomMindustry.jar"
+          "from": "139",
+          "to": "146"
         }
       ],
-      "commitSha": "4755dace0b733513cd6559ea68c943aa370f2e56",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/4755dace0b733513cd6559ea68c943aa370f2e56.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.2/randomMindustry.jar",
+      "modVersion": "1.8.2",
+      "sizeBytes": 299549,
+      "downloadCount": 24696,
+      "releasedAt": "2022-10-08T12:24:38Z"
     },
     {
       "tag": "v1.8.1",
-      "name": "v1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-08T11:58:46Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.8.1",
-      "modVersion": "1.8.1",
+      "kind": "release",
       "minGameVersion": "139",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.1/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 298961,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.1/randomMindustry.jar"
+          "from": "139",
+          "to": "146"
         }
       ],
-      "commitSha": "c638d50ee4c9ba8c9fd521b9fd3be59e76e846c5",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/c638d50ee4c9ba8c9fd521b9fd3be59e76e846c5.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.1/randomMindustry.jar",
+      "modVersion": "1.8.1",
+      "sizeBytes": 298961,
+      "downloadCount": 38,
+      "releasedAt": "2022-10-08T11:58:46Z"
     },
     {
       "tag": "v1.8.0",
-      "name": "v1.8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-20T14:16:01Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.8.0",
-      "modVersion": "1.8.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 292779,
-          "downloadCount": 1272,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.0/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "2afb7db3086483dcee39bdab45c64c11bb9b4669",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/2afb7db3086483dcee39bdab45c64c11bb9b4669.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.8.0/randomMindustry.jar",
+      "modVersion": "1.8.0",
+      "sizeBytes": 292779,
+      "downloadCount": 1272,
+      "releasedAt": "2022-08-20T14:16:01Z"
     },
     {
       "tag": "v1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-20T17:25:30Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.7.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 347807,
-          "downloadCount": 1392,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.7.0/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "775151b230707622e82a84ad5f5bb21ed4f9a437",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/775151b230707622e82a84ad5f5bb21ed4f9a437.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.7.0/randomMindustry.jar",
+      "modVersion": "1.7.0",
+      "sizeBytes": 347807,
+      "downloadCount": 1392,
+      "releasedAt": "2022-07-20T17:25:30Z"
     },
     {
       "tag": "v1.6.0",
-      "name": "v1.6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-19T03:09:37Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.6.0",
-      "modVersion": "v1.6.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.6.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 334424,
-          "downloadCount": 156,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.6.0/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e1fdb249edee6eeae1e4c3f2875894a450616f46",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/e1fdb249edee6eeae1e4c3f2875894a450616f46.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.6.0/randomMindustry.jar",
+      "modVersion": "v1.6.0",
+      "sizeBytes": 334424,
+      "downloadCount": 156,
+      "releasedAt": "2022-07-19T03:09:37Z"
     },
     {
       "tag": "v1.5.1",
-      "name": "v1.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-18T09:47:20Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.5.1",
-      "modVersion": "v1.5.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.5.1/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 330705,
-          "downloadCount": 56,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.5.1/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e62260c0657fa79ee1970512f6989cf98465ce89",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/e62260c0657fa79ee1970512f6989cf98465ce89.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.5.1/randomMindustry.jar",
+      "modVersion": "v1.5.1",
+      "sizeBytes": 330705,
+      "downloadCount": 56,
+      "releasedAt": "2022-07-18T09:47:20Z"
     },
     {
       "tag": "v1.5.0",
-      "name": "v1.5.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-15T22:49:54Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.5.0",
-      "modVersion": "v1.5.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.5.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 327938,
-          "downloadCount": 135,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.5.0/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "b5530521aeca618a2044624ce711dcff32353410",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/b5530521aeca618a2044624ce711dcff32353410.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.5.0/randomMindustry.jar",
+      "modVersion": "v1.5.0",
+      "sizeBytes": 327938,
+      "downloadCount": 135,
+      "releasedAt": "2022-07-15T22:49:54Z"
     },
     {
       "tag": "v1.4.5",
-      "name": "v1.4.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-15T11:53:37Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.4.5",
-      "modVersion": "v1.4.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.5/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.4.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 324829,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.5/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9cef989e63fe9ea63e5ac9d05998c0e5b97554cb",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/9cef989e63fe9ea63e5ac9d05998c0e5b97554cb.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.5/randomMindustry.jar",
+      "modVersion": "v1.4.5",
+      "sizeBytes": 324829,
+      "downloadCount": 40,
+      "releasedAt": "2022-07-15T11:53:37Z"
     },
     {
       "tag": "v1.4.4",
-      "name": "v1.4.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-15T07:23:18Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.4.4",
-      "modVersion": "v1.4.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.4/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 323644,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.4/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "89a4bd034f33da6e398f9f461d8d763c88e8f8d1",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/89a4bd034f33da6e398f9f461d8d763c88e8f8d1.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.4/randomMindustry.jar",
+      "modVersion": "v1.4.4",
+      "sizeBytes": 323644,
+      "downloadCount": 26,
+      "releasedAt": "2022-07-15T07:23:18Z"
     },
     {
       "tag": "v1.4.3",
-      "name": "v1.4.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-15T07:10:17Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.4.3",
-      "modVersion": "v1.4.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.3/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.4.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 323658,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.3/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "33eb1ec04039e13ac30eb34dd647811ef5de597b",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/33eb1ec04039e13ac30eb34dd647811ef5de597b.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.3/randomMindustry.jar",
+      "modVersion": "v1.4.3",
+      "sizeBytes": 323658,
+      "downloadCount": 20,
+      "releasedAt": "2022-07-15T07:10:17Z"
     },
     {
       "tag": "v1.4.2",
-      "name": "v1.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-15T07:00:21Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.4.2",
-      "modVersion": "v1.4.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.2/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 323620,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.2/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "85d36e8e1a10472d8c0ce11412084a2421b836ac",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/85d36e8e1a10472d8c0ce11412084a2421b836ac.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.2/randomMindustry.jar",
+      "modVersion": "v1.4.1",
+      "sizeBytes": 323620,
+      "downloadCount": 15,
+      "releasedAt": "2022-07-15T07:00:21Z"
     },
     {
       "tag": "v1.4.1",
-      "name": "v1.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-13T06:03:22Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.4.1",
-      "modVersion": "v1.4.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.1/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 323538,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.1/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9feab6284ca87469b838a787b051c86e9473ce53",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/9feab6284ca87469b838a787b051c86e9473ce53.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.1/randomMindustry.jar",
+      "modVersion": "v1.4.1",
+      "sizeBytes": 323538,
+      "downloadCount": 55,
+      "releasedAt": "2022-07-13T06:03:22Z"
     },
     {
       "tag": "v1.4.0",
-      "name": "v1.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-12T16:56:32Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.4.0",
-      "modVersion": "v1.4.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 323465,
-          "downloadCount": 33,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.0/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "3b0a17a50f0b173ff8cf56319b28ffd7d972f483",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/3b0a17a50f0b173ff8cf56319b28ffd7d972f483.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.4.0/randomMindustry.jar",
+      "modVersion": "v1.4.0",
+      "sizeBytes": 323465,
+      "downloadCount": 33,
+      "releasedAt": "2022-07-12T16:56:32Z"
     },
     {
       "tag": "v1.3.1",
-      "name": "v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-11T10:57:56Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.3.1",
-      "modVersion": "v1.3.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.3.1/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 317099,
-          "downloadCount": 81,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.3.1/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "a5eddac209a1b3e95e6e0b0378ce7cfa037ca7f9",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/a5eddac209a1b3e95e6e0b0378ce7cfa037ca7f9.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.3.1/randomMindustry.jar",
+      "modVersion": "v1.3.1",
+      "sizeBytes": 317099,
+      "downloadCount": 81,
+      "releasedAt": "2022-07-11T10:57:56Z"
     },
     {
       "tag": "v1.3.0",
-      "name": "v1.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-11T10:09:54Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.3.0",
-      "modVersion": "v1.3.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.3.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.3.0.zip",
-      "assets": [
-        {
-          "name": "randomMindustry.jar",
-          "size": 317098,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.3.0/randomMindustry.jar"
-        }
-      ],
-      "commitSha": "9d398270a337bc179050ac0766db89482bbb796d",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/9d398270a337bc179050ac0766db89482bbb796d.zip"
-    },
-    {
-      "tag": "v1.2.3",
-      "name": "v1.2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-06T09:50:59Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.2.3",
-      "modVersion": "v1.2.3",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.3/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.2.3.zip",
-      "assets": [
-        {
-          "name": "randomMindustry.jar",
-          "size": 307427,
-          "downloadCount": 163,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.3/randomMindustry.jar"
-        }
-      ],
-      "commitSha": "74d094c1ade954564684e0a4c20698ac0b596682",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/74d094c1ade954564684e0a4c20698ac0b596682.zip"
-    },
-    {
-      "tag": "v1.2.2",
-      "name": "v1.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-06T09:45:03Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.2.2",
-      "modVersion": "v1.2.2",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.2/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.2.2.zip",
-      "assets": [
-        {
-          "name": "randomMindustry.jar",
-          "size": 307426,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.2/randomMindustry.jar"
-        }
-      ],
-      "commitSha": "4e0e2225ddc9713b99b231a890c980797117ebda",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/4e0e2225ddc9713b99b231a890c980797117ebda.zip"
-    },
-    {
-      "tag": "v1.2.1",
-      "name": "v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-05T14:34:50Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.2.1",
-      "modVersion": "v1.2.1",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.1/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.2.1.zip",
-      "assets": [
-        {
-          "name": "randomMindustry.jar",
-          "size": 306867,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.1/randomMindustry.jar"
-        }
-      ],
-      "commitSha": "e9beced49f3b0fbace7d5c86e28fb3f36e77b042",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/e9beced49f3b0fbace7d5c86e28fb3f36e77b042.zip"
-    },
-    {
-      "tag": "v1.2.0",
-      "name": "v1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-05T13:48:34Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.2.0",
-      "modVersion": "v1.2.0",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.2.0.zip",
-      "assets": [
-        {
-          "name": "randomMindustry.jar",
-          "size": 306863,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.2.0/randomMindustry.jar"
-        }
-      ],
-      "commitSha": "d433cc8ad57f3c7feaacbeda30f961dd3f5a7de9",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/d433cc8ad57f3c7feaacbeda30f961dd3f5a7de9.zip"
-    },
-    {
-      "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-03T20:26:56Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.1.0",
-      "modVersion": "v1.1.0",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.1.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.1.0.zip",
-      "assets": [
-        {
-          "name": "randomMindustry.jar",
-          "size": 306327,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.1.0/randomMindustry.jar"
-        }
-      ],
-      "commitSha": "0e205db82e1f06a088900c0237b4f7603acb24bc",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/0e205db82e1f06a088900c0237b4f7603acb24bc.zip"
+      "modVersion": "v1.3.0",
+      "sizeBytes": 317098,
+      "downloadCount": 25,
+      "releasedAt": "2022-07-11T10:09:54Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "v1.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-01T14:39:40Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.0.4",
-      "modVersion": "v1.0.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.4/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 303589,
-          "downloadCount": 67,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.4/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "25e154adeef2ca6d1671ac52c90c5be4fc24f4bb",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/25e154adeef2ca6d1671ac52c90c5be4fc24f4bb.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.4/randomMindustry.jar",
+      "modVersion": "v1.0.4",
+      "sizeBytes": 303589,
+      "downloadCount": 67,
+      "releasedAt": "2022-07-01T14:39:40Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "v1.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-01T12:21:47Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.0.3",
-      "modVersion": "v1.0.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.3/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 303199,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.3/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "bdbe8efb7b06d20169c6cd46124cb9ee18a264c4",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/bdbe8efb7b06d20169c6cd46124cb9ee18a264c4.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.3/randomMindustry.jar",
+      "modVersion": "v1.0.3",
+      "sizeBytes": 303199,
+      "downloadCount": 23,
+      "releasedAt": "2022-07-01T12:21:47Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "v1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-01T09:20:50Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.0.2",
-      "modVersion": "v1.0.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.2/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 302451,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.2/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e8987dc3754c719236182675a500ed44ae39c23e",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/e8987dc3754c719236182675a500ed44ae39c23e.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.2/randomMindustry.jar",
+      "modVersion": "v1.0.2",
+      "sizeBytes": 302451,
+      "downloadCount": 30,
+      "releasedAt": "2022-07-01T09:20:50Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-01T07:31:05Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.0.1",
-      "modVersion": "v1.0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.1/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 298314,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.1/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e6dd95ee49084250e5473e3a0015ca9befc45734",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/e6dd95ee49084250e5473e3a0015ca9befc45734.zip"
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.1/randomMindustry.jar",
+      "modVersion": "v1.0.1",
+      "sizeBytes": 298314,
+      "downloadCount": 18,
+      "releasedAt": "2022-07-01T07:31:05Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-29T10:41:12Z",
-      "htmlUrl": "https://github.com/sporrus/randomMindustry/releases/tag/v1.0.0",
-      "modVersion": "v1.0.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.0/randomMindustry.jar",
-      "sourceArchiveUrl": "https://github.com/sporrus/randomMindustry/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "randomMindustry.jar",
-          "size": 281894,
-          "downloadCount": 114,
-          "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.0/randomMindustry.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "dd2f0988fd0cc718f0071cbcd83bcaf4352566b8",
-      "archiveByCommitUrl": "https://github.com/sporrus/randomMindustry/archive/dd2f0988fd0cc718f0071cbcd83bcaf4352566b8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.8.0",
-      "modVersion": "1.8.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 139,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0.0-alpha",
-      "modVersion": "1.8.2",
-      "minGameVersion": "139",
-      "maxGameVersion": 141.3,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0.1-alpha",
-      "modVersion": "2.0.1-alpha",
-      "minGameVersion": "141.3",
-      "maxGameVersion": 145.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0.2-alpha",
-      "modVersion": "2.0.2-alpha",
-      "minGameVersion": "145.1",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.8.4",
-      "modVersion": "1.8.4",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/sporrus/randomMindustry/releases/download/v1.0.0/randomMindustry.jar",
+      "modVersion": "v1.0.0",
+      "sizeBytes": 281894,
+      "downloadCount": 114,
+      "releasedAt": "2022-06-29T10:41:12Z"
     }
   ],
   "meta": {
+    "name": "random-mindustry",
+    "author": "sporrus",
+    "description": "Randomizes almost everything!\nJoin our discord! https://discord.gg/ztC6WJUxZK\n\nEPILEPSY WARNING",
+    "version": "1.8.4",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "randomMindustry.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,244 +1,73 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "valtsu41/bundle-chaos",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
-      "tag": "v3",
-      "name": "v3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/v3",
-      "modVersion": "3",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/v3.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/v3.zip",
-      "assets": [],
-      "commitSha": "71fa9633e6a4c533f41605e4d94ad0c075b49ec9",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/71fa9633e6a4c533f41605e4d94ad0c075b49ec9.zip"
-    },
-    {
-      "tag": "v2",
-      "name": "v2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/v2",
-      "modVersion": "1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/v2.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/v2.zip",
-      "assets": [],
-      "commitSha": "f6ef422d8f8e6885e97bcd7e9e4680c25e8cbaa9",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/f6ef422d8f8e6885e97bcd7e9e4680c25e8cbaa9.zip"
-    },
-    {
-      "tag": "v1",
-      "name": "v1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/v1",
-      "modVersion": "1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/v1.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/v1.zip",
-      "assets": [],
-      "commitSha": "16ac66f383afab9aebd8b62096825b0afcd76d99",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/16ac66f383afab9aebd8b62096825b0afcd76d99.zip"
-    },
-    {
-      "tag": "4.2",
-      "name": "4.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/4.2",
-      "modVersion": "4.2",
+      "tag": "3.6",
+      "kind": "tag",
       "minGameVersion": "107",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.2.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.2.zip",
-      "assets": [],
-      "commitSha": "80d9deef323904ed989a4902c7309a4857ffc1e8",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/80d9deef323904ed989a4902c7309a4857ffc1e8.zip"
-    },
-    {
-      "tag": "4.1",
-      "name": "4.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/4.1",
-      "modVersion": "4.1",
-      "minGameVersion": "107",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.1.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.1.zip",
-      "assets": [],
-      "commitSha": "bfe3d107bd5b2ae1d09df02d69216f8756dd556e",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/bfe3d107bd5b2ae1d09df02d69216f8756dd556e.zip"
+      "gameVersionRanges": [
+        {
+          "from": "107",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.6.zip",
+      "modVersion": "3.6"
     },
     {
       "tag": "3.7",
-      "name": "3.7",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.7",
-      "modVersion": "3.7",
+      "kind": "tag",
       "minGameVersion": "107",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "107",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.7.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.7.zip",
-      "assets": [],
-      "commitSha": "25fdfa5423844b671e2113752d794033a87562a3",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/25fdfa5423844b671e2113752d794033a87562a3.zip"
+      "modVersion": "3.7"
     },
     {
-      "tag": "3.6",
-      "name": "3.6",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.6",
-      "modVersion": "3.6",
+      "tag": "4.1",
+      "kind": "tag",
       "minGameVersion": "107",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.6.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.6.zip",
-      "assets": [],
-      "commitSha": "9c7dbf6bf8e428efca820096effc39f4b4b3ced1",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/9c7dbf6bf8e428efca820096effc39f4b4b3ced1.zip"
+      "gameVersionRanges": [
+        {
+          "from": "107",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.1.zip",
+      "modVersion": "4.1"
     },
-    {
-      "tag": "3.5",
-      "name": "3.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.5",
-      "modVersion": "3.5",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.5.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.5.zip",
-      "assets": [],
-      "commitSha": "ba965ae0651372a7c142682077105c215f686832",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/ba965ae0651372a7c142682077105c215f686832.zip"
-    },
-    {
-      "tag": "3.4",
-      "name": "3.4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.4",
-      "modVersion": "3.4",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.4.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.4.zip",
-      "assets": [],
-      "commitSha": "2f1ab7a46626843cccfdc2de8970e38e2fff70db",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/2f1ab7a46626843cccfdc2de8970e38e2fff70db.zip"
-    },
-    {
-      "tag": "3.3",
-      "name": "3.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.3",
-      "modVersion": "3.3",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.3.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.3.zip",
-      "assets": [],
-      "commitSha": "ebd9c0de6a84ddfb6f3f233a330f5d60366efc9f",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/ebd9c0de6a84ddfb6f3f233a330f5d60366efc9f.zip"
-    },
-    {
-      "tag": "3.2",
-      "name": "3.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.2",
-      "modVersion": "3.2",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.2.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.2.zip",
-      "assets": [],
-      "commitSha": "d72e849e421a166b6afb6a5c42f4f0666153d572",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/d72e849e421a166b6afb6a5c42f4f0666153d572.zip"
-    },
-    {
-      "tag": "3.1",
-      "name": "3.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/3.1",
-      "modVersion": "3.1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.1.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.1.zip",
-      "assets": [],
-      "commitSha": "72327b3f017a9a43b1872c27d207f2c0ca5b5a0f",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/72327b3f017a9a43b1872c27d207f2c0ca5b5a0f.zip"
-    },
-    {
-      "tag": "2.1",
-      "name": "2.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/valtsu41/bundle-chaos/tree/2.1",
-      "modVersion": "2.1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/2.1.zip",
-      "sourceArchiveUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/2.1.zip",
-      "assets": [],
-      "commitSha": "00e138a27af580a88197296e1a9f19784d855883",
-      "archiveByCommitUrl": "https://github.com/valtsu41/bundle-chaos/archive/00e138a27af580a88197296e1a9f19784d855883.zip"
-    }
-  ],
-  "compat": [
     {
       "tag": "4.2",
-      "modVersion": "4.2",
+      "kind": "tag",
       "minGameVersion": "107",
-      "maxGameVersion": 136,
-      "hasRelease": false
+      "gameVersionRanges": [
+        {
+          "from": "107",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.2.zip",
+      "modVersion": "4.2"
     }
   ],
   "meta": {
+    "name": "Bundle chaos",
+    "author": "valtsu41",
+    "description": "This mod replaces all texts in the game with random ones.",
+    "version": "3",
+    "minGameVersion": null,
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

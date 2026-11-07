@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "appleee406/tonvara",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.0",
-      "name": "v0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-16T10:18:52Z",
-      "htmlUrl": "https://github.com/Appleee406/Tonvara/releases/tag/v0.0",
-      "modVersion": "0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Appleee406/Tonvara/releases/download/v0.0/Tonvara.jar",
-      "sourceArchiveUrl": "https://github.com/appleee406/tonvara/archive/refs/tags/v0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tonvara.jar",
-          "size": 749525,
-          "downloadCount": 492,
-          "downloadUrl": "https://github.com/Appleee406/Tonvara/releases/download/v0.0/Tonvara.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "fef316b67abd744039838266ce1375f5e2aa6e14",
-      "archiveByCommitUrl": "https://github.com/appleee406/tonvara/archive/fef316b67abd744039838266ce1375f5e2aa6e14.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.0",
+      "downloadUrl": "https://github.com/Appleee406/Tonvara/releases/download/v0.0/Tonvara.jar",
       "modVersion": "0",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 749525,
+      "downloadCount": 492,
+      "releasedAt": "2025-06-16T10:18:52Z"
     }
   ],
   "meta": {
+    "name": "tonv",
+    "author": "[scarlet[]]appleee",
+    "description": "New planet",
+    "version": "0",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "Tonvara.Tonvara",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

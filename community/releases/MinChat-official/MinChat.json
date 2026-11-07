@@ -1,479 +1,325 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "MinChat-official/MinChat",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.7.5",
-      "name": "v0.7.5 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-04T12:31:21Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.7.5",
-      "modVersion": "v0.7.5-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.5/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.7.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11962234,
-          "downloadCount": 918,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.5/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "4e89add61a48b5ee216e47f31c1c9891ae7da5a1",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/4e89add61a48b5ee216e47f31c1c9891ae7da5a1.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.5/minchat-client-any-platform.jar",
+      "modVersion": "v0.7.5-beta",
+      "sizeBytes": 11962234,
+      "downloadCount": 918,
+      "releasedAt": "2023-11-04T12:31:21Z"
     },
     {
       "tag": "v0.7.4",
-      "name": "v0.7.4 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-04T12:14:58Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.7.4",
-      "modVersion": "v0.7.4-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.4/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11961475,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.4/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "0e938b9c2794249c08603685afec4db9106ce76f",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/0e938b9c2794249c08603685afec4db9106ce76f.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.4/minchat-client-any-platform.jar",
+      "modVersion": "v0.7.4-beta",
+      "sizeBytes": 11961475,
+      "downloadCount": 3,
+      "releasedAt": "2023-11-04T12:14:58Z"
     },
     {
       "tag": "v0.7.3",
-      "name": "v0.7.3 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-04T12:07:59Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.7.3",
-      "modVersion": "v0.7.2-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.3/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11961015,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.3/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "001f0faaf52e287d002c97316f345824388ab018",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/001f0faaf52e287d002c97316f345824388ab018.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.3/minchat-client-any-platform.jar",
+      "modVersion": "v0.7.2-beta",
+      "sizeBytes": 11961015,
+      "downloadCount": 9,
+      "releasedAt": "2023-11-04T12:07:59Z"
     },
     {
       "tag": "v0.7.2",
-      "name": "v0.7.2 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-01T21:34:47Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.7.2",
-      "modVersion": "v0.7.1-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.2/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11864483,
-          "downloadCount": 51,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.2/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "7302dc5993c76f7a8f221426d267a6ad2286e8c1",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/7302dc5993c76f7a8f221426d267a6ad2286e8c1.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.2/minchat-client-any-platform.jar",
+      "modVersion": "v0.7.1-beta",
+      "sizeBytes": 11864483,
+      "downloadCount": 51,
+      "releasedAt": "2023-11-01T21:34:47Z"
     },
     {
       "tag": "v0.7.1",
-      "name": "v0.7.1 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-28T12:04:09Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.7.1",
-      "modVersion": "v0.7.0-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.1/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11810018,
-          "downloadCount": 71,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.1/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "dce8d081897d698a07a8e7bef06c008bf07b8407",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/dce8d081897d698a07a8e7bef06c008bf07b8407.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.1/minchat-client-any-platform.jar",
+      "modVersion": "v0.7.0-beta",
+      "sizeBytes": 11810018,
+      "downloadCount": 71,
+      "releasedAt": "2023-10-28T12:04:09Z"
     },
     {
       "tag": "v0.7.0",
-      "name": "v0.7.0 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-22T16:31:46Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.7.0",
-      "modVersion": "v0.7.0-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.0/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11470320,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.0/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "51baabe16e66d53c58217d30b74da84289202670",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/51baabe16e66d53c58217d30b74da84289202670.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.7.0/minchat-client-any-platform.jar",
+      "modVersion": "v0.7.0-beta",
+      "sizeBytes": 11470320,
+      "downloadCount": 106,
+      "releasedAt": "2023-10-22T16:31:46Z"
     },
     {
       "tag": "v0.6.3",
-      "name": "v0.6.3 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-07T13:25:05Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.6.3",
-      "modVersion": "v0.6.2-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.3/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.6.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11254513,
-          "downloadCount": 267,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.3/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "bc62c6afc3378a8a0af04fb49f9815595716ee7e",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/bc62c6afc3378a8a0af04fb49f9815595716ee7e.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.3/minchat-client-any-platform.jar",
+      "modVersion": "v0.6.2-beta",
+      "sizeBytes": 11254513,
+      "downloadCount": 267,
+      "releasedAt": "2023-10-07T13:25:05Z"
     },
     {
       "tag": "v0.6.2",
-      "name": "v0.6.2 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-05T17:33:06Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.6.2",
-      "modVersion": "v0.6.2-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.2/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.6.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11249846,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.2/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "bc62c6afc3378a8a0af04fb49f9815595716ee7e",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/bc62c6afc3378a8a0af04fb49f9815595716ee7e.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.2/minchat-client-any-platform.jar",
+      "modVersion": "v0.6.2-beta",
+      "sizeBytes": 11249846,
+      "downloadCount": 44,
+      "releasedAt": "2023-10-05T17:33:06Z"
     },
     {
       "tag": "v0.6.1",
-      "name": "v0.6.1 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-01T18:20:29Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.6.1",
-      "modVersion": "v0.6.0-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.1/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11247791,
-          "downloadCount": 100,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.1/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "1a8ca26ed7076d55b7ed799ebad1206b7d1f79e3",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/1a8ca26ed7076d55b7ed799ebad1206b7d1f79e3.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.1/minchat-client-any-platform.jar",
+      "modVersion": "v0.6.0-beta",
+      "sizeBytes": 11247791,
+      "downloadCount": 100,
+      "releasedAt": "2023-10-01T18:20:29Z"
     },
     {
       "tag": "v0.6.0",
-      "name": "v0.6.0 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-01T17:25:32Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.6.0",
-      "modVersion": "v0.5.0-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.0/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11239675,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.0/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "19f50ef4437344ae80b2a99d10c89847bf99b1f5",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/19f50ef4437344ae80b2a99d10c89847bf99b1f5.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.6.0/minchat-client-any-platform.jar",
+      "modVersion": "v0.5.0-beta",
+      "sizeBytes": 11239675,
+      "downloadCount": 8,
+      "releasedAt": "2023-10-01T17:25:32Z"
     },
     {
       "tag": "v0.5.0",
-      "name": "v0.5.0 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-21T16:57:15Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.5.0",
-      "modVersion": "v0.4.2-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.5.0/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11111005,
-          "downloadCount": 109,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.5.0/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "b9e3b3ac483032b89519929cb15a5ded0a2ec155",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/b9e3b3ac483032b89519929cb15a5ded0a2ec155.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.5.0/minchat-client-any-platform.jar",
+      "modVersion": "v0.4.2-beta",
+      "sizeBytes": 11111005,
+      "downloadCount": 109,
+      "releasedAt": "2023-09-21T16:57:15Z"
     },
     {
       "tag": "v0.4.2",
-      "name": "v0.4.2 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-19T14:31:20Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.4.2",
-      "modVersion": "v0.4.1-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.2/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 11030956,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.2/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "2a7d11ad6988eae62c1c638ded8c72853431c579",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/2a7d11ad6988eae62c1c638ded8c72853431c579.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.2/minchat-client-any-platform.jar",
+      "modVersion": "v0.4.1-beta",
+      "sizeBytes": 11030956,
+      "downloadCount": 46,
+      "releasedAt": "2023-09-19T14:31:20Z"
     },
     {
       "tag": "v0.4.1",
-      "name": "v0.4.1 [beta]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-16T20:13:38Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.4.1",
-      "modVersion": "v0.4.1-beta",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.1/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 10971798,
-          "downloadCount": 66,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.1/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "d508078ed363236f7ab1e3b3aa0a3e6fd30bb72c",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/d508078ed363236f7ab1e3b3aa0a3e6fd30bb72c.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.1/minchat-client-any-platform.jar",
+      "modVersion": "v0.4.1-beta",
+      "sizeBytes": 10971798,
+      "downloadCount": 66,
+      "releasedAt": "2023-09-16T20:13:38Z"
     },
     {
       "tag": "v0.4.0",
-      "name": "v0.4.0 [alpha]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-11T20:15:23Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.4.0",
-      "modVersion": "v0.4.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.0/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 10899542,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.0/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "7711981095222bca8fa79f8897fb557b3cfae23e",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/7711981095222bca8fa79f8897fb557b3cfae23e.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.4.0/minchat-client-any-platform.jar",
+      "modVersion": "v0.4.0",
+      "sizeBytes": 10899542,
+      "downloadCount": 54,
+      "releasedAt": "2023-09-11T20:15:23Z"
     },
     {
       "tag": "v0.3.5",
-      "name": "v0.3.5 [alpha]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-17T13:16:10Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.3.5",
-      "modVersion": "v0.3.5",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.5/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.3.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 10746655,
-          "downloadCount": 205,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.5/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "ac0b3791cc601456ee292c3a88c190f132955fcc",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/ac0b3791cc601456ee292c3a88c190f132955fcc.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.5/minchat-client-any-platform.jar",
+      "modVersion": "v0.3.5",
+      "sizeBytes": 10746655,
+      "downloadCount": 205,
+      "releasedAt": "2023-07-17T13:16:10Z"
     },
     {
       "tag": "v0.3.4",
-      "name": "v0.3.4 [alpha]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-16T16:02:46Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.3.4",
-      "modVersion": "v0.3.4",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.4/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.3.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 10745276,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.4/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "083d8bbd95c6c466dd53c8089611c183c485ad97",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/083d8bbd95c6c466dd53c8089611c183c485ad97.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.4/minchat-client-any-platform.jar",
+      "modVersion": "v0.3.4",
+      "sizeBytes": 10745276,
+      "downloadCount": 12,
+      "releasedAt": "2023-07-16T16:02:46Z"
     },
     {
       "tag": "v0.3.3",
-      "name": "v0.3.3 [alpha]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-11T13:31:14Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.3.3",
-      "modVersion": "v0.2.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.3/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.3.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 10697457,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.3/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "31fe24bcd295cdb171ef640a80118f5086176cfc",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/31fe24bcd295cdb171ef640a80118f5086176cfc.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.3/minchat-client-any-platform.jar",
+      "modVersion": "v0.2.0",
+      "sizeBytes": 10697457,
+      "downloadCount": 13,
+      "releasedAt": "2023-04-11T13:31:14Z"
     },
     {
       "tag": "v0.3.2",
-      "name": "v0.3.2 [alpha]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-05T21:49:33Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.3.2",
-      "modVersion": "v0.2.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.2/minchat-client-any-platform.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client-any-platform.jar",
-          "size": 10615565,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.2/minchat-client-any-platform.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "34ee297ffcf12820814946814f1718dc723ea568",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/34ee297ffcf12820814946814f1718dc723ea568.zip"
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.2/minchat-client-any-platform.jar",
+      "modVersion": "v0.2.0",
+      "sizeBytes": 10615565,
+      "downloadCount": 6,
+      "releasedAt": "2023-04-05T21:49:33Z"
     },
     {
       "tag": "v0.3.1",
-      "name": "v0.3.1 [alpha]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-05T19:39:55Z",
-      "htmlUrl": "https://github.com/MinChat-official/MinChat/releases/tag/v0.3.1",
-      "modVersion": "v0.2.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.1/minchat-client.jar",
-      "sourceArchiveUrl": "https://github.com/MinChat-official/MinChat/archive/refs/tags/v0.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "minchat-client.jar",
-          "size": 10610134,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.1/minchat-client.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "f8d4f3cbd04fd968c655f39aeff2d3e692bed8c5",
-      "archiveByCommitUrl": "https://github.com/MinChat-official/MinChat/archive/f8d4f3cbd04fd968c655f39aeff2d3e692bed8c5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.7.5",
-      "modVersion": "v0.7.5-beta",
-      "minGameVersion": "137",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/MinChat-official/MinChat/releases/download/v0.3.1/minchat-client.jar",
+      "modVersion": "v0.2.0",
+      "sizeBytes": 10610134,
+      "downloadCount": 15,
+      "releasedAt": "2023-04-05T19:39:55Z"
     }
   ],
   "meta": {
+    "name": "minchat",
+    "author": "Mnemotechnician",
+    "description": "\nThe first mod adding a global mindustry chat.\n\nTHIS MOD IS CURRENTLY IN THE BETA-STAGE! YOU CAN USE IT BUT EXPECT VARIOUS BUGS AND RAPID CHANGES!\nYou can see the roadmap in the \"TODO.md\" file on github!\n\nAccessing the chat ui:\nOn desktop, press the ` key on your keyboard, or use the gui buttons.\nOn mobile, press the \"Minchat\" button either in the main menu or in-game to do the same.\n\nThere are various tutorials that will guide you through the user interface of this mod.\n",
+    "version": "v0.7.5-beta",
+    "minGameVersion": "137",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "io.minchat.client.MinchatMod",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

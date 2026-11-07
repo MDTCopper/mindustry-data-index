@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "chinhonnang0000/ereki_clones",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry-v7-mod",
-      "name": "build 0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-01T15:25:16Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/ereki_clones/releases/tag/mindustry-v7-mod",
-      "modVersion": "build 0",
+      "kind": "tag",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/chinhonnang0000/ereki_clones/archive/refs/tags/mindustry-v7-mod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/ereki_clones/archive/refs/tags/mindustry-v7-mod.zip",
-      "assets": [],
-      "commitSha": "307b5955e7bc2240fcdd5b6195bbf9cebe5795f5",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/ereki_clones/archive/307b5955e7bc2240fcdd5b6195bbf9cebe5795f5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-v7-mod",
       "modVersion": "build 0",
-      "minGameVersion": "141",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-06-01T15:25:16Z"
     }
   ],
   "meta": {
+    "name": "ereki_clones",
+    "author": "chin hon nang",
+    "description": "erekir clones. No techs provided but you are free to use techs from other mods and original content",
+    "version": "build 0",
+    "minGameVersion": "141",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "afflictnya/drawforeshadowsmod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "t",
-      "name": "h",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-21T17:58:43Z",
-      "htmlUrl": "https://github.com/afflictnya/DrawForeshadowsMod/releases/tag/t",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/afflictnya/DrawForeshadowsMod/releases/download/t/afflictDrawForeshadowsMod.zip",
-      "sourceArchiveUrl": "https://github.com/afflictnya/drawforeshadowsmod/archive/refs/tags/t.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "afflictDrawForeshadowsMod.zip",
-          "size": 88223,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/afflictnya/DrawForeshadowsMod/releases/download/t/afflictDrawForeshadowsMod.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "93a44c8ad5e4c68beb5d93637b136a2ba0cf3b11",
-      "archiveByCommitUrl": "https://github.com/afflictnya/drawforeshadowsmod/archive/93a44c8ad5e4c68beb5d93637b136a2ba0cf3b11.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "t",
+      "downloadUrl": "https://github.com/afflictnya/DrawForeshadowsMod/releases/download/t/afflictDrawForeshadowsMod.zip",
       "modVersion": "1.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 88223,
+      "downloadCount": 25,
+      "releasedAt": "2025-03-21T17:58:43Z"
     }
   ],
   "meta": {
+    "name": "drawforeshadows",
+    "author": "affl1ct",
+    "description": "Draws foreshadows shoot range",
+    "version": "1.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

@@ -1,75 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "grapeleaf/masatomo",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "0.2.1a",
-      "name": "Masatomo 0.2.1a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-10T14:51:55Z",
-      "htmlUrl": "https://github.com/grapeleaf/Masatomo/releases/tag/0.2.1a",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grapeleaf/masatomo/archive/refs/tags/0.2.1a.zip",
-      "sourceArchiveUrl": "https://github.com/grapeleaf/masatomo/archive/refs/tags/0.2.1a.zip",
-      "assets": [],
-      "commitSha": "07b84a64ef742f4161348f8c837b50b934360073",
-      "archiveByCommitUrl": "https://github.com/grapeleaf/masatomo/archive/07b84a64ef742f4161348f8c837b50b934360073.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2026-09-10T14:51:55Z"
     },
     {
       "tag": "0.2.0a",
-      "name": "Masatomo 0.2.0a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-10T14:11:16Z",
-      "htmlUrl": "https://github.com/grapeleaf/Masatomo/releases/tag/0.2.0a",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grapeleaf/masatomo/archive/refs/tags/0.2.0a.zip",
-      "sourceArchiveUrl": "https://github.com/grapeleaf/masatomo/archive/refs/tags/0.2.0a.zip",
-      "assets": [],
-      "commitSha": "3193ea7884e8174701ce9053da9a347f91e1d6fb",
-      "archiveByCommitUrl": "https://github.com/grapeleaf/masatomo/archive/3193ea7884e8174701ce9053da9a347f91e1d6fb.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2026-09-10T14:11:16Z"
     },
     {
       "tag": "0.1.0a",
-      "name": "Initial release 0.1.0a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-07T12:22:37Z",
-      "htmlUrl": "https://github.com/grapeleaf/Masatomo/releases/tag/0.1.0a",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grapeleaf/masatomo/archive/refs/tags/0.1.0a.zip",
-      "sourceArchiveUrl": "https://github.com/grapeleaf/masatomo/archive/refs/tags/0.1.0a.zip",
-      "assets": [],
-      "commitSha": "87c2c23156672d123c48d7a3b6ad90ee39623956",
-      "archiveByCommitUrl": "https://github.com/grapeleaf/masatomo/archive/87c2c23156672d123c48d7a3b6ad90ee39623956.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.2.1a",
       "modVersion": "1.0",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-09-07T12:22:37Z"
     }
   ],
   "meta": {
+    "name": "masatomo",
+    "author": "GrapeLeaf",
+    "description": "\nAdds a new planet, Masatomo with a semi-Erekir like campaign.\n",
+    "version": "1.0",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

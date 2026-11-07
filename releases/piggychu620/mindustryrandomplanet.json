@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "piggychu620/mindustryrandomplanet",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Random Planet v0.4.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-08T21:14:02Z",
-      "htmlUrl": "https://github.com/PiggyChu620/MindustryRandomPlanet/releases/tag/mindustry-mod",
-      "modVersion": "0.2.4",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PiggyChu620/MindustryRandomPlanet/releases/download/mindustry-mod/MindustryRandomPlanet.jar",
-      "sourceArchiveUrl": "https://github.com/piggychu620/mindustryrandomplanet/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryRandomPlanet.jar",
-          "size": 782839,
-          "downloadCount": 5636,
-          "downloadUrl": "https://github.com/PiggyChu620/MindustryRandomPlanet/releases/download/mindustry-mod/MindustryRandomPlanet.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "748b9f25a8305f5a2e0732294dc11b1d6e1fabbb",
-      "archiveByCommitUrl": "https://github.com/piggychu620/mindustryrandomplanet/archive/748b9f25a8305f5a2e0732294dc11b1d6e1fabbb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
+      "downloadUrl": "https://github.com/PiggyChu620/MindustryRandomPlanet/releases/download/mindustry-mod/MindustryRandomPlanet.jar",
       "modVersion": "0.2.4",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 782839,
+      "downloadCount": 5636,
+      "releasedAt": "2023-04-08T21:14:02Z"
     }
   ],
   "meta": {
+    "name": "ec620",
+    "author": "PiggyChu620",
+    "description": "Randomly generate a planet and its sectors.\nIt's a mixtech mod, I myself don't like the idea of \"Oh, you can only use these things here, and you can only use those things there, bruh, bruh, bruh!\", so I make one myself, if you don't like mixtech and think it's \"unbalanced\" and \"boring\", then please go away, much appreciated!",
+    "version": "0.2.4",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ec620.EC620JavaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

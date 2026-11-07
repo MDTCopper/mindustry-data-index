@@ -1,65 +1,48 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cersat/minachievements",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
-    {
-      "tag": "v2.0",
-      "name": "v2.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/cersat/minachievements/tree/v2.0",
-      "modVersion": "2.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/cersat/minachievements/archive/refs/tags/v2.0.zip",
-      "sourceArchiveUrl": "https://github.com/cersat/minachievements/archive/refs/tags/v2.0.zip",
-      "assets": [],
-      "commitSha": "220655932702eded63b65ac6d0ce098d1be5f633",
-      "archiveByCommitUrl": "https://github.com/cersat/minachievements/archive/220655932702eded63b65ac6d0ce098d1be5f633.zip"
-    },
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/cersat/minachievements/tree/v1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/cersat/minachievements/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/cersat/minachievements/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "a02d4b146d28975df1dfeda836d5892cf9e32b67",
-      "archiveByCommitUrl": "https://github.com/cersat/minachievements/archive/a02d4b146d28975df1dfeda836d5892cf9e32b67.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": 154,
-      "hasRelease": false
+      "modVersion": "1.0"
     },
     {
       "tag": "v2.0",
-      "modVersion": "2.0",
+      "kind": "tag",
       "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/cersat/minachievements/archive/refs/tags/v2.0.zip",
+      "modVersion": "2.0"
     }
   ],
   "meta": {
+    "name": "achievements",
+    "author": "ser-b",
+    "description": "Adds a comprehensive achievement system with 82 achievements across 7 categories: Story, Combat, Building, Production, Mods, Easter Eggs, and Random.",
+    "version": "2.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

@@ -1,65 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sk7725/timecontrol",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v7",
-      "name": "TimeControl Erekir",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-23T08:14:51Z",
-      "htmlUrl": "https://github.com/sk7725/TimeControl/releases/tag/v7",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v7.zip",
-      "sourceArchiveUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v7.zip",
-      "assets": [],
-      "commitSha": "cd7733a2ffe0f66df9551215e182554cd3c4aff5",
-      "archiveByCommitUrl": "https://github.com/sk7725/timecontrol/archive/cd7733a2ffe0f66df9551215e182554cd3c4aff5.zip"
+      "modVersion": "0.2",
+      "releasedAt": "2022-06-23T08:14:51Z"
     },
     {
       "tag": "v6",
-      "name": "TimeControl Classic",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-23T08:13:16Z",
-      "htmlUrl": "https://github.com/sk7725/TimeControl/releases/tag/v6",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "108",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "108",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v6.zip",
-      "sourceArchiveUrl": "https://github.com/sk7725/timecontrol/archive/refs/tags/v6.zip",
-      "assets": [],
-      "commitSha": "a25863701a8620a6c876de0fa1acb085989997b1",
-      "archiveByCommitUrl": "https://github.com/sk7725/timecontrol/archive/a25863701a8620a6c876de0fa1acb085989997b1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v6",
       "modVersion": "0.2",
-      "minGameVersion": "108",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v7",
-      "modVersion": "0.2",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2022-06-23T08:13:16Z"
     }
   ],
   "meta": {
+    "name": "time-control",
+    "author": "[royal]sk7725[]",
+    "description": "Speeds up or slows down Mindustry.\n[accent]Press & hold 'x1' to fold the buttons.[]\nSome buttons can be pressed twice.\n\n[scarlet]Disclaimer: not intended for multiplayer use![]",
+    "version": "0.2",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

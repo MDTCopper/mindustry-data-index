@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "atomicpickleofworld/inferno-advanced",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "beta",
-      "name": "first rel",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T06:08:35Z",
-      "htmlUrl": "https://github.com/Atomicpickleofworld/Inferno-Advanced/releases/tag/beta",
-      "modVersion": "alpha build 2.5",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Atomicpickleofworld/Inferno-Advanced/releases/download/beta/InfernoAdvanced.jar",
-      "sourceArchiveUrl": "https://github.com/atomicpickleofworld/inferno-advanced/archive/refs/tags/beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "InfernoAdvanced.jar",
-          "size": 1230079,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Atomicpickleofworld/Inferno-Advanced/releases/download/beta/InfernoAdvanced.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7debcc5b528d0e14a61f2f4563ead1694eb20f62",
-      "archiveByCommitUrl": "https://github.com/atomicpickleofworld/inferno-advanced/archive/7debcc5b528d0e14a61f2f4563ead1694eb20f62.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "beta",
+      "downloadUrl": "https://github.com/Atomicpickleofworld/Inferno-Advanced/releases/download/beta/InfernoAdvanced.jar",
       "modVersion": "alpha build 2.5",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1230079,
+      "downloadCount": 8,
+      "releasedAt": "2026-04-26T06:08:35Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "inferno-advanced",
+    "author": "[#FF5733]AtomicPickle",
+    "description": "A Mindustry Java mod.",
+    "version": "alpha build 2.5",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "infernoadvanced.InfernoAdvancedMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

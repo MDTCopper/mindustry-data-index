@@ -1,390 +1,261 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "slashkig/astranium-mod",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.4.0",
-      "name": "Alpha Version 0.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-09T02:17:25Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.4.0",
-      "modVersion": "0.4.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.4.0/AzirisProject-0.4.0.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.4.0.jar",
-          "size": 2932266,
-          "downloadCount": 1176,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.4.0/AzirisProject-0.4.0.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3bace83a62958b7e8e58ee871da72691a7082a92",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/3bace83a62958b7e8e58ee871da72691a7082a92.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.4.0/AzirisProject-0.4.0.jar",
+      "modVersion": "0.4.0",
+      "sizeBytes": 2932266,
+      "downloadCount": 1177,
+      "releasedAt": "2026-10-09T02:17:25Z"
     },
     {
       "tag": "v0.3.6",
-      "name": "Alpha Version 0.3.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-11T15:29:59Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.6",
-      "modVersion": "0.3.6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.6/AzirisProject-0.3.6.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.6.jar",
-          "size": 1864496,
-          "downloadCount": 3294,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.6/AzirisProject-0.3.6.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "886c8e050fc39762aae2746cd8323712baafb792",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/886c8e050fc39762aae2746cd8323712baafb792.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.6/AzirisProject-0.3.6.jar",
+      "modVersion": "0.3.6",
+      "sizeBytes": 1864496,
+      "downloadCount": 3294,
+      "releasedAt": "2026-08-11T15:29:59Z"
     },
     {
       "tag": "v0.3.5",
-      "name": "Alpha Version 0.3.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-22T05:15:48Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.5",
-      "modVersion": "0.3.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.5/AzirisProject-0.3.5.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.5.jar",
-          "size": 1590577,
-          "downloadCount": 720,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.5/AzirisProject-0.3.5.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ad64ae486aad5b9079452dddc492a8a8c2bc7613",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/ad64ae486aad5b9079452dddc492a8a8c2bc7613.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.5/AzirisProject-0.3.5.jar",
+      "modVersion": "0.3.4",
+      "sizeBytes": 1590577,
+      "downloadCount": 720,
+      "releasedAt": "2026-01-22T05:15:48Z"
     },
     {
       "tag": "v0.3.4",
-      "name": "Alpha Version 0.3.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-29T15:39:02Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.4",
-      "modVersion": "0.3.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.4/AzirisProject-0.3.4.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.4.jar",
-          "size": 1501086,
-          "downloadCount": 1720,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.4/AzirisProject-0.3.4.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "e37161842335a0292d6333f2cb62579879ab802b",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/e37161842335a0292d6333f2cb62579879ab802b.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.4/AzirisProject-0.3.4.jar",
+      "modVersion": "0.3.4",
+      "sizeBytes": 1501086,
+      "downloadCount": 1720,
+      "releasedAt": "2025-07-29T15:39:02Z"
     },
     {
       "tag": "v0.3.3",
-      "name": "Alpha Version 0.3.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-15T08:15:43Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.3",
-      "modVersion": "0.3.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.3/AzirisProject-0.3.3.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.3.jar",
-          "size": 1237673,
-          "downloadCount": 4435,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.3/AzirisProject-0.3.3.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "862e76ed1d04abd03dc5277cbf1a679e432ffcfd",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/862e76ed1d04abd03dc5277cbf1a679e432ffcfd.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.3/AzirisProject-0.3.3.jar",
+      "modVersion": "0.3.2",
+      "sizeBytes": 1237673,
+      "downloadCount": 4435,
+      "releasedAt": "2024-11-15T08:15:43Z"
     },
     {
       "tag": "v0.3.2",
-      "name": "Alpha Version 0.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-31T08:32:36Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.2",
-      "modVersion": "0.3.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.2/AzirisProject-0.3.2.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.2.jar",
-          "size": 1144343,
-          "downloadCount": 981,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.2/AzirisProject-0.3.2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "cb965eaee07482b90c608291cff7ca19763a738e",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/cb965eaee07482b90c608291cff7ca19763a738e.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.2/AzirisProject-0.3.2.jar",
+      "modVersion": "0.3.2",
+      "sizeBytes": 1144343,
+      "downloadCount": 981,
+      "releasedAt": "2024-10-31T08:32:36Z"
     },
     {
       "tag": "v0.3.1",
-      "name": "Alpha Version 0.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-20T06:53:50Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.1",
-      "modVersion": "0.3.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.1/AzirisProject-0.3.1.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.1.jar",
-          "size": 980059,
-          "downloadCount": 756,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.1/AzirisProject-0.3.1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6928f452942848f807e465bbdc9e63e1fd3671dd",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/6928f452942848f807e465bbdc9e63e1fd3671dd.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.1/AzirisProject-0.3.1.jar",
+      "modVersion": "0.3.1",
+      "sizeBytes": 980059,
+      "downloadCount": 756,
+      "releasedAt": "2024-10-20T06:53:50Z"
     },
     {
       "tag": "v0.3.0",
-      "name": "Alpha Version 0.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-08T17:33:03Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.3.0",
-      "modVersion": "0.3.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.0/AzirisProject-0.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AzirisProject-0.3.0.jar",
-          "size": 913805,
-          "downloadCount": 1026,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.0/AzirisProject-0.3.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6bb548e94a9ca3aa3dfc28dad6399dee7f9cb5bb",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/6bb548e94a9ca3aa3dfc28dad6399dee7f9cb5bb.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.3.0/AzirisProject-0.3.0.jar",
+      "modVersion": "0.3.0",
+      "sizeBytes": 913805,
+      "downloadCount": 1026,
+      "releasedAt": "2024-10-08T17:33:03Z"
     },
     {
       "tag": "v0.2.7",
-      "name": "Alpha Version 0.2.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-25T08:28:13Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.7",
-      "modVersion": "0.2.7",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.7/AstraniumMod-0.2.7.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.7.jar",
-          "size": 605776,
-          "downloadCount": 85,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.7/AstraniumMod-0.2.7.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f8fb7266790dee751ec05fcd786d6e38f4b74e4e",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/f8fb7266790dee751ec05fcd786d6e38f4b74e4e.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.7/AstraniumMod-0.2.7.jar",
+      "modVersion": "0.2.7",
+      "sizeBytes": 605776,
+      "downloadCount": 86,
+      "releasedAt": "2024-09-25T08:28:13Z"
     },
     {
       "tag": "v0.2.6",
-      "name": "Alpha Version 0.2.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-19T04:14:50Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.6",
-      "modVersion": "0.2.6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.6/AstraniumMod-0.2.6.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.6.jar",
-          "size": 484134,
-          "downloadCount": 41,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.6/AstraniumMod-0.2.6.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6ccdeda2bb16aea62c3ff8fcd63d156c7255e732",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/6ccdeda2bb16aea62c3ff8fcd63d156c7255e732.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.6/AstraniumMod-0.2.6.jar",
+      "modVersion": "0.2.6",
+      "sizeBytes": 484134,
+      "downloadCount": 41,
+      "releasedAt": "2024-09-19T04:14:50Z"
     },
     {
       "tag": "v0.2.5",
-      "name": "Alpha Version 0.2.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-13T23:03:33Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.5",
-      "modVersion": "0.2.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.5/AstraniumMod-0.2.5.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.5.jar",
-          "size": 410076,
-          "downloadCount": 56,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.5/AstraniumMod-0.2.5.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "be6e169e9cb34015f325cc2bacc484fd7e8cfdb8",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/be6e169e9cb34015f325cc2bacc484fd7e8cfdb8.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.5/AstraniumMod-0.2.5.jar",
+      "modVersion": "0.2.5",
+      "sizeBytes": 410076,
+      "downloadCount": 56,
+      "releasedAt": "2024-09-13T23:03:33Z"
     },
     {
       "tag": "v0.2.4",
-      "name": "Alpha Version 0.2.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-06T21:54:06Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.4",
-      "modVersion": "0.2.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.4/AstraniumMod-0.2.4.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.4.jar",
-          "size": 353520,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.4/AstraniumMod-0.2.4.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "681d4f939b553d6a5035bf90e20855dd3078d351",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/681d4f939b553d6a5035bf90e20855dd3078d351.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.4/AstraniumMod-0.2.4.jar",
+      "modVersion": "0.2.4",
+      "sizeBytes": 353520,
+      "downloadCount": 40,
+      "releasedAt": "2024-09-06T21:54:06Z"
     },
     {
       "tag": "v0.2.3",
-      "name": "Alpha Version 0.2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-02T14:41:36Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.3",
-      "modVersion": "0.2.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.3/AstraniumMod-0.2.3.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.3.jar",
-          "size": 272641,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.3/AstraniumMod-0.2.3.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c60b4db2b7f9b38eec5da02454e7258d9a820670",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/c60b4db2b7f9b38eec5da02454e7258d9a820670.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.3/AstraniumMod-0.2.3.jar",
+      "modVersion": "0.2.3",
+      "sizeBytes": 272641,
+      "downloadCount": 16,
+      "releasedAt": "2024-09-02T14:41:36Z"
     },
     {
       "tag": "v0.2.2",
-      "name": "Alpha Version 0.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-02T14:40:02Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.2",
-      "modVersion": "0.2.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.2/AstraniumMod-0.2.2.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.2.jar",
-          "size": 250803,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.2/AstraniumMod-0.2.2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c60b4db2b7f9b38eec5da02454e7258d9a820670",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/c60b4db2b7f9b38eec5da02454e7258d9a820670.zip"
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.2/AstraniumMod-0.2.2.jar",
+      "modVersion": "0.2.3",
+      "sizeBytes": 250803,
+      "downloadCount": 11,
+      "releasedAt": "2024-09-02T14:40:02Z"
     },
     {
       "tag": "v0.2.1",
-      "name": "Alpha Version 0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-02T14:38:14Z",
-      "htmlUrl": "https://github.com/slashkig/Astranium-Mod/releases/tag/v0.2.1",
-      "modVersion": "0.2.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.1/AstraniumMod-0.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/slashkig/astranium-mod/archive/refs/tags/v0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstraniumMod-0.2.1.jar",
-          "size": 211997,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.1/AstraniumMod-0.2.1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c60b4db2b7f9b38eec5da02454e7258d9a820670",
-      "archiveByCommitUrl": "https://github.com/slashkig/astranium-mod/archive/c60b4db2b7f9b38eec5da02454e7258d9a820670.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.3.6",
-      "modVersion": "0.3.6",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.4.0",
-      "modVersion": "0.4.0",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/slashkig/Astranium-Mod/releases/download/v0.2.1/AstraniumMod-0.2.1.jar",
+      "modVersion": "0.2.3",
+      "sizeBytes": 211997,
+      "downloadCount": 43,
+      "releasedAt": "2024-09-02T14:38:14Z"
     }
   ],
   "meta": {
+    "name": "astramod",
+    "author": "Slashkig, IAmRustee, VoidThreader",
+    "description": "\n[[]#ff0000]Aziris[[]] is a planet of breathtaking beauty and immense value, coveted by many factions for the rare and powerful [[]#bf2851]Erythronite Crystals[[]].\nFor centuries, Aziris has remained in the hands of the [[]blue]Sentinels[[]]. Now it is up to you to conquer this planet and seize its resources for yourself.\n\n-------\n\nThis is a WIP mod that adds a new planet, Aziris, with plenty of new content to explore.\nThere isn't a campaign yet, but all mod content can be checked out in sandbox, and you can join the discord for custom maps (and more!):\n\n[[]purple] https://discord.gg/2qc4WaCreP [[]]\n\nCurrently unavailable for mobile platforms, sorry :/\n",
+    "version": "0.4.0",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "astramod.AstraniumMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "konkitoman/SpeedCtlMan",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "V0.2",
-      "name": "SpeedCtlMan V0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-21T12:49:34Z",
-      "htmlUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/tag/V0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "137",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.2/SpeedCtlMan.jar",
-      "sourceArchiveUrl": "https://github.com/konkitoman/SpeedCtlMan/archive/refs/tags/V0.2.zip",
-      "assets": [
-        {
-          "name": "SpeedCtlMan.jar",
-          "size": 16161,
-          "downloadCount": 9237,
-          "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.2/SpeedCtlMan.jar"
-        }
-      ],
-      "commitSha": "cf735115819cb8ddf840086e47fd4335bc82473b",
-      "archiveByCommitUrl": "https://github.com/konkitoman/SpeedCtlMan/archive/cf735115819cb8ddf840086e47fd4335bc82473b.zip"
-    },
-    {
-      "tag": "V0.1",
-      "name": "Release 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-14T09:01:52Z",
-      "htmlUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/tag/V0.1",
-      "modVersion": "0.1",
-      "minGameVersion": "136",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.1/SpeedCtlMan.jar",
-      "sourceArchiveUrl": "https://github.com/konkitoman/SpeedCtlMan/archive/refs/tags/V0.1.zip",
-      "assets": [
-        {
-          "name": "SpeedCtlMan.jar",
-          "size": 25832,
-          "downloadCount": 223,
-          "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.1/SpeedCtlMan.jar"
-        }
-      ],
-      "commitSha": "8d9c2c6c0880ae90ece8a00db0e8351d4be1d0bb",
-      "archiveByCommitUrl": "https://github.com/konkitoman/SpeedCtlMan/archive/8d9c2c6c0880ae90ece8a00db0e8351d4be1d0bb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.1",
-      "modVersion": "0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": 137,
-      "hasRelease": true
-    },
-    {
-      "tag": "V0.2",
       "modVersion": "0.2",
-      "minGameVersion": "137",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 16161,
+      "downloadCount": 9237,
+      "releasedAt": "2022-08-21T12:49:34Z"
+    },
+    {
+      "tag": "V0.1",
+      "kind": "release",
+      "minGameVersion": "136",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.1/SpeedCtlMan.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 25832,
+      "downloadCount": 223,
+      "releasedAt": "2022-08-14T09:01:52Z"
     }
   ],
   "meta": {
+    "name": "speed-ctl-man",
+    "author": "konkitoman",
+    "description": "\nDesktop only!\n\nDefault: set speed.\nLCtrl: multiply speed.\nLAlt: add speed.\nLShift + LCtrl: divide speed.\nLShift + LAlt: subtract speed.\n\nAll player will have the same speed!\nA player need to be admin to control the speed!\n",
+    "version": "0.2",
+    "minGameVersion": "137",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "SpeedCtlMan.SpeedControl",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

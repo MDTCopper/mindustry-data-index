@@ -1,72 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "loshpedina234-arch/visualoverhaul",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "Updatekekeksk",
-      "name": "Visual Overhaul 3.8.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-06T15:19:39Z",
-      "htmlUrl": "https://github.com/loshpedina234-arch/VisualOverhaul/releases/tag/Updatekekeksk",
-      "modVersion": "3.8.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/loshpedina234-arch/VisualOverhaul/releases/download/Updatekekeksk/VisualOverhaul_v3_8_3.zip",
-      "sourceArchiveUrl": "https://github.com/loshpedina234-arch/visualoverhaul/archive/refs/tags/Updatekekeksk.zip",
-      "assets": [
-        {
-          "name": "VisualOverhaul_v3_8_3.zip",
-          "size": 4075049,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/loshpedina234-arch/VisualOverhaul/releases/download/Updatekekeksk/VisualOverhaul_v3_8_3.zip"
-        }
-      ],
-      "commitSha": "bdbde69a14f55b377035014441c44ac9917686f4",
-      "archiveByCommitUrl": "https://github.com/loshpedina234-arch/visualoverhaul/archive/bdbde69a14f55b377035014441c44ac9917686f4.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "Visual Overhaul",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-06T09:20:18Z",
-      "htmlUrl": "https://github.com/loshpedina234-arch/VisualOverhaul/releases/tag/mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/loshpedina234-arch/VisualOverhaul/releases/download/mindustry-mod/VisualOverhaul_v3_8_1_fix2.zip",
-      "sourceArchiveUrl": "https://github.com/loshpedina234-arch/visualoverhaul/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
-        {
-          "name": "VisualOverhaul_v3_8_1_fix2.zip",
-          "size": 4073831,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/loshpedina234-arch/VisualOverhaul/releases/download/mindustry-mod/VisualOverhaul_v3_8_1_fix2.zip"
-        }
-      ],
-      "commitSha": "b66dcc9749147548bf86f31cd9fc8e3b946e5fef",
-      "archiveByCommitUrl": "https://github.com/loshpedina234-arch/visualoverhaul/archive/b66dcc9749147548bf86f31cd9fc8e3b946e5fef.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Updatekekeksk",
       "modVersion": "3.8.3",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 4075049,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-06T15:19:39Z"
     }
   ],
   "meta": {
+    "name": "visual-overhaul",
+    "author": "huskosbs",
+    "description": "Красивые эффекты: новый вид пуль и снарядов, новый луч Испепелителя, всплески жидкостей, строительство/удаление, динамический свет, красивые планеты и космос, новые звуки, анимированное меню, текстуры жидкостей, силовые купола, красивая погода, следы юнитов, полоски здоровья и цифры урона, импульсы по линиям передач и искры на поворотах конвейеров, переключатель качества и совершенно новый интерфейс «Призма» (скошенные панели, плавные анимации окон и кнопок) с 7 темами.",
+    "version": "3.8.3",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

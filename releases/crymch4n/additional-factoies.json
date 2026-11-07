@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "crymch4n/additional-factoies",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-11T01:24:51Z",
-      "htmlUrl": "https://github.com/crymch4n/Additional-Factoies/releases/tag/mindustry-mod",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "160.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/crymch4n/Additional-Factoies/releases/download/mindustry-mod/Additional.Factories.zip",
-      "sourceArchiveUrl": "https://github.com/crymch4n/additional-factoies/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Additional.Factories.zip",
-          "size": 32289,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/crymch4n/Additional-Factoies/releases/download/mindustry-mod/Additional.Factories.zip"
+          "from": "160.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1852755368702d175e86d4941abff7bd095d833c",
-      "archiveByCommitUrl": "https://github.com/crymch4n/additional-factoies/archive/1852755368702d175e86d4941abff7bd095d833c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
+      "downloadUrl": "https://github.com/crymch4n/Additional-Factoies/releases/download/mindustry-mod/Additional.Factories.zip",
       "modVersion": "1.0",
-      "minGameVersion": "160.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 32289,
+      "downloadCount": 1,
+      "releasedAt": "2026-10-11T01:24:51Z"
     }
   ],
   "meta": {
+    "name": "Alternate Factory Blocks",
+    "author": "Crim-Chan",
+    "description": "Adds a few extra factories with alternate recipies.",
+    "version": "1.0",
+    "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,126 +1,86 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sh1penfire/meld",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "aspectless-meld",
-      "name": "Aspectless Meld",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-06T02:52:19Z",
-      "htmlUrl": "https://github.com/Sh1penfire/Meld/releases/tag/aspectless-meld",
-      "modVersion": "hjson gamma",
+      "kind": "release",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/aspectless-meld/aspectless-meld.zip",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld/archive/refs/tags/aspectless-meld.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "aspectless-meld.zip",
-          "size": 6365506,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/aspectless-meld/aspectless-meld.zip"
+          "from": "151.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a88ba539b501ed9cc6f92302dae7e80aa4187287",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/a88ba539b501ed9cc6f92302dae7e80aa4187287.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/aspectless-meld/aspectless-meld.zip",
+      "modVersion": "hjson gamma",
+      "sizeBytes": 6365506,
+      "downloadCount": 34,
+      "releasedAt": "2026-03-06T02:52:19Z",
+      "prerelease": true
     },
     {
       "tag": "meld-v146",
-      "name": "Meld for Mindustry v146",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-26T18:20:17Z",
-      "htmlUrl": "https://github.com/Sh1penfire/Meld/releases/tag/meld-v146",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/meld-v146/Meld-v146.zip",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld/archive/refs/tags/meld-v146.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Meld-v146.zip",
-          "size": 5593694,
-          "downloadCount": 399,
-          "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/meld-v146/Meld-v146.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e760ef08d8a3a58df6b1e8d75ba9e230618be5ad",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/e760ef08d8a3a58df6b1e8d75ba9e230618be5ad.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/meld-v146/Meld-v146.zip",
+      "modVersion": "hjson gamma",
+      "sizeBytes": 5593694,
+      "downloadCount": 399,
+      "releasedAt": "2025-04-26T18:20:17Z"
     },
     {
       "tag": "gameplay-test2",
-      "name": "Gameplay Test 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-20T05:15:48Z",
-      "htmlUrl": "https://github.com/Sh1penfire/Meld/releases/tag/gameplay-test2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test2/meld-gameplay-test2.zip",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld/archive/refs/tags/gameplay-test2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-gameplay-test2.zip",
-          "size": 3272331,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test2/meld-gameplay-test2.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d321f4cdb7525b8b732ec9d7f22123a9d9ece607",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/d321f4cdb7525b8b732ec9d7f22123a9d9ece607.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test2/meld-gameplay-test2.zip",
+      "modVersion": "1",
+      "sizeBytes": 3272331,
+      "downloadCount": 34,
+      "releasedAt": "2024-09-20T05:15:48Z"
     },
     {
       "tag": "gameplay-test",
-      "name": "Gameplay Test",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-30T06:58:08Z",
-      "htmlUrl": "https://github.com/Sh1penfire/Meld/releases/tag/gameplay-test",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test/meld-gameplay-test.zip",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld/archive/refs/tags/gameplay-test.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-gameplay-test.zip",
-          "size": 569083,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test/meld-gameplay-test.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "53ba9090429435ccda48e431c9cf4b9e6442c2c0",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld/archive/53ba9090429435ccda48e431c9cf4b9e6442c2c0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "meld-v146",
-      "modVersion": null,
-      "minGameVersion": "146",
-      "maxGameVersion": 151.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "aspectless-meld",
-      "modVersion": "hjson gamma",
-      "minGameVersion": "151.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/gameplay-test/meld-gameplay-test.zip",
+      "modVersion": "1",
+      "sizeBytes": 569083,
+      "downloadCount": 23,
+      "releasedAt": "2024-07-30T06:58:08Z"
     }
   ],
   "meta": {
+    "name": "meld",
+    "author": "Sh1penfire",
+    "description": "\n[accent[]]An experimental RTS mod. Features a rich environment and a unique cast of enemies to fight.[[]]\n\nTrudge through Ikaru, home to [[]#ea9ad6]Meld[[]]. Salvage the remains of previous incursions. Fend off the wildlife.\n\nPlay as a field commander. Rally tierless specialists to push back the flood of constructs.\n\n[[]red]DEFEND, TAKE GROUND, HARVEST, REPEAT[[]]\n\n[accent[]]Campaign is a demo for what's to come. Refer to the custom game maps once you've finished.[]\n\nThis type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D\n\nAlternatively, join the Meld discord server!\nhttps://discord.gg/eNynvuJXud[[]]\n\nTranslated to Russian by: [#006400]Dovintc[]\nCompletion: [red]~6%[]\n\n",
+    "version": "hjson gamma",
+    "minGameVersion": "151.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

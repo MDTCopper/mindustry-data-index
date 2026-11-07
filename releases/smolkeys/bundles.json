@@ -1,625 +1,509 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "smolkeys/bundles",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v14",
-      "name": "v14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-18T14:38:16Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v14",
-      "modVersion": "14",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v14.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v14.zip",
-      "assets": [],
-      "commitSha": "8705322e75f1a99561b03fc3460ba3b2f06e1a24",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/8705322e75f1a99561b03fc3460ba3b2f06e1a24.zip"
+      "modVersion": "14",
+      "releasedAt": "2021-10-18T14:38:16Z"
     },
     {
       "tag": "v13.2",
-      "name": "v13.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-04T02:40:59Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v13.2",
-      "modVersion": "13.2",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v13.2.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v13.2.zip",
-      "assets": [],
-      "commitSha": "b938f22dd33819b9b890c240869a833998b81c83",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/b938f22dd33819b9b890c240869a833998b81c83.zip"
+      "modVersion": "13.2",
+      "releasedAt": "2021-09-04T02:40:59Z"
     },
     {
       "tag": "v13.1",
-      "name": "v13.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-27T02:59:18Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v13.1",
-      "modVersion": "13.1",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v13.1.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v13.1.zip",
-      "assets": [],
-      "commitSha": "8653b084182e62b5fb8864b7364d26ce0fb680d3",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/8653b084182e62b5fb8864b7364d26ce0fb680d3.zip"
+      "modVersion": "13.1",
+      "releasedAt": "2021-07-27T02:59:18Z"
     },
     {
       "tag": "v13",
-      "name": "v13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-04T05:41:57Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v13",
-      "modVersion": "13",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v13.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v13.zip",
-      "assets": [],
-      "commitSha": "0080a1a2416ec238252e96bc67b574dc0259821c",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/0080a1a2416ec238252e96bc67b574dc0259821c.zip"
+      "modVersion": "13",
+      "releasedAt": "2021-07-04T05:41:57Z"
     },
     {
       "tag": "v12",
-      "name": "v12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-02T15:14:56Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v12",
-      "modVersion": "12",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v12.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v12.zip",
-      "assets": [],
-      "commitSha": "e3a3c03992900acbbdcc32daa437999d6f1e3f26",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/e3a3c03992900acbbdcc32daa437999d6f1e3f26.zip"
+      "modVersion": "12",
+      "releasedAt": "2021-07-02T15:14:56Z"
     },
     {
       "tag": "v11",
-      "name": "v11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-01T08:30:43Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v11",
-      "modVersion": "11",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v11.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v11.zip",
-      "assets": [],
-      "commitSha": "944e36dc3c13b5d45dc86ce1d30142fc5a750542",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/944e36dc3c13b5d45dc86ce1d30142fc5a750542.zip"
+      "modVersion": "11",
+      "releasedAt": "2021-07-01T08:30:43Z"
     },
     {
       "tag": "v10.5",
-      "name": "v10.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-01T08:16:51Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v10.5",
-      "modVersion": "10.5",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v10.5.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v10.5.zip",
-      "assets": [],
-      "commitSha": "59d5178d73ecff1e906261759f8b44d828548c0f",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/59d5178d73ecff1e906261759f8b44d828548c0f.zip"
+      "modVersion": "10.5",
+      "releasedAt": "2021-07-01T08:16:51Z"
     },
     {
       "tag": "v10",
-      "name": "v10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-01T04:21:30Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v10",
-      "modVersion": "9 Pre-release 1",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v10.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v10.zip",
-      "assets": [],
-      "commitSha": "b061be780c6a8acf2fcbf9bbee3b2a3eec25094e",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/b061be780c6a8acf2fcbf9bbee3b2a3eec25094e.zip"
+      "modVersion": "9 Pre-release 1",
+      "releasedAt": "2021-07-01T04:21:30Z"
     },
     {
       "tag": "v9-pre1",
-      "name": "v9 Pre-release 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-06-25T06:27:53Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v9-pre1",
-      "modVersion": "8",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v9-pre1.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v9-pre1.zip",
-      "assets": [],
-      "commitSha": "e1629db1121f674d6010216b47e9a48f7a2a47f4",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/e1629db1121f674d6010216b47e9a48f7a2a47f4.zip"
+      "modVersion": "8",
+      "releasedAt": "2021-06-25T06:27:53Z"
     },
     {
       "tag": "v7-pre13",
-      "name": "v7 Pre-release 13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-28T06:25:48Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre13",
-      "modVersion": "7-pre12",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre13.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre13.zip",
-      "assets": [],
-      "commitSha": "617d8993edc6e3f60b57308356083a7a57287075",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/617d8993edc6e3f60b57308356083a7a57287075.zip"
+      "modVersion": "7-pre12",
+      "releasedAt": "2021-02-28T06:25:48Z"
     },
     {
       "tag": "v7-pre12",
-      "name": "v7 Pre-release 12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-27T06:25:09Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre12",
-      "modVersion": "7-pre12",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre12.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre12.zip",
-      "assets": [],
-      "commitSha": "b818323b53fd8eb1166a0516ed482e872cc27ec7",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/b818323b53fd8eb1166a0516ed482e872cc27ec7.zip"
+      "modVersion": "7-pre12",
+      "releasedAt": "2021-02-27T06:25:09Z"
     },
     {
       "tag": "v7-pre11",
-      "name": "v7 Pre-release 11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-27T00:59:00Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre11",
-      "modVersion": "7-pre10",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre11.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre11.zip",
-      "assets": [],
-      "commitSha": "68026382827ee7531ae74905bbaa4a10609e96f7",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/68026382827ee7531ae74905bbaa4a10609e96f7.zip"
+      "modVersion": "7-pre10",
+      "releasedAt": "2021-02-27T00:59:00Z"
     },
     {
       "tag": "v7-pre10",
-      "name": "v7 Pre-release 10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-22T15:34:38Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre10",
-      "modVersion": "7-pre10/nBraincell Killer",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre10.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre10.zip",
-      "assets": [],
-      "commitSha": "d7f1a6c7d3a9ade3fdcfdca36ec0c6089a7f573a",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/d7f1a6c7d3a9ade3fdcfdca36ec0c6089a7f573a.zip"
+      "modVersion": "7-pre10/nBraincell Killer",
+      "releasedAt": "2021-01-22T15:34:38Z"
     },
     {
       "tag": "v7-pre9",
-      "name": "v7 Pre-release 9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-20T15:16:08Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre9",
-      "modVersion": "7-pre9",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre9.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre9.zip",
-      "assets": [],
-      "commitSha": "55fbbdbd23245f3e08f25e1bcdcb366e07284bd8",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/55fbbdbd23245f3e08f25e1bcdcb366e07284bd8.zip"
+      "modVersion": "7-pre9",
+      "releasedAt": "2021-01-20T15:16:08Z"
     },
     {
       "tag": "v7-pre8.9",
-      "name": "v7 Pre-release 8.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-20T10:30:39Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.9",
-      "modVersion": "7-pre8.9",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.9.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.9.zip",
-      "assets": [],
-      "commitSha": "6d43057f7eef0672d6156ce31c4deb4c04afc142",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/6d43057f7eef0672d6156ce31c4deb4c04afc142.zip"
+      "modVersion": "7-pre8.9",
+      "releasedAt": "2021-01-20T10:30:39Z"
     },
     {
       "tag": "v7-pre8.8",
-      "name": "v7 Pre-release 8.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-19T16:05:25Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.8",
-      "modVersion": "7-pre8.8",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.8.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.8.zip",
-      "assets": [],
-      "commitSha": "f69f3af6882df51978372b8d44989e27a73bc338",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/f69f3af6882df51978372b8d44989e27a73bc338.zip"
+      "modVersion": "7-pre8.8",
+      "releasedAt": "2021-01-19T16:05:25Z"
     },
     {
       "tag": "v7-pre8.7",
-      "name": "v7 Pre-release 8.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-19T07:04:20Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.7",
-      "modVersion": "7-pre8.7",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.7.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.7.zip",
-      "assets": [],
-      "commitSha": "83edf1c7f2c0c7391f9a22b620fd63116740ba06",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/83edf1c7f2c0c7391f9a22b620fd63116740ba06.zip"
+      "modVersion": "7-pre8.7",
+      "releasedAt": "2021-01-19T07:04:20Z"
     },
     {
       "tag": "v7-pre8.6",
-      "name": "v7 Pre-release 8.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-19T05:31:59Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.6",
-      "modVersion": "7-pre8.6",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.6.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.6.zip",
-      "assets": [],
-      "commitSha": "5646b79485869f576f22c74843accb69b55d1f64",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/5646b79485869f576f22c74843accb69b55d1f64.zip"
+      "modVersion": "7-pre8.6",
+      "releasedAt": "2021-01-19T05:31:59Z"
     },
     {
       "tag": "v7-pre8.5",
-      "name": "v7 Pre-release 8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-19T05:21:10Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.5",
-      "modVersion": "7-pre8.5",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.5.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.5.zip",
-      "assets": [],
-      "commitSha": "575e3aea5be766f964c57f0fc4d8bb5ecef76e66",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/575e3aea5be766f964c57f0fc4d8bb5ecef76e66.zip"
+      "modVersion": "7-pre8.5",
+      "releasedAt": "2021-01-19T05:21:10Z"
     },
     {
       "tag": "v7-pre8.4",
-      "name": "v7 Pre-release 8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-19T03:07:49Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.4",
-      "modVersion": "7-pre8.4",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.4.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.4.zip",
-      "assets": [],
-      "commitSha": "7d10dfd16d21711fdbb465c4694b4a0b93ed3840",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/7d10dfd16d21711fdbb465c4694b4a0b93ed3840.zip"
+      "modVersion": "7-pre8.4",
+      "releasedAt": "2021-01-19T03:07:49Z"
     },
     {
       "tag": "v7-pre8.3",
-      "name": "v7 Pre-release 8.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-18T09:08:15Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.3",
-      "modVersion": "7-pre8.3",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.3.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.3.zip",
-      "assets": [],
-      "commitSha": "6d08a454e2f9b264794d146d921a6843d3a1e137",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/6d08a454e2f9b264794d146d921a6843d3a1e137.zip"
+      "modVersion": "7-pre8.3",
+      "releasedAt": "2021-01-18T09:08:15Z"
     },
     {
       "tag": "v7-pre8.2",
-      "name": "v7 Pre-release 8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-17T15:37:49Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.2",
-      "modVersion": "7-pre8.2",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.2.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.2.zip",
-      "assets": [],
-      "commitSha": "4cdfb7ec8f941ec3da5a0962ffc65aae501f4e8b",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/4cdfb7ec8f941ec3da5a0962ffc65aae501f4e8b.zip"
+      "modVersion": "7-pre8.2",
+      "releasedAt": "2021-01-17T15:37:49Z"
     },
     {
       "tag": "v7-pre8.1",
-      "name": "v7 Pre-release 8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-17T10:41:04Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8.1",
-      "modVersion": "7-pre8.1",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.1.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.1.zip",
-      "assets": [],
-      "commitSha": "80b1b7f6e70fed24984300d652a8a3ecd2f71eb9",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/80b1b7f6e70fed24984300d652a8a3ecd2f71eb9.zip"
+      "modVersion": "7-pre8.1",
+      "releasedAt": "2021-01-17T10:41:04Z"
     },
     {
       "tag": "v7-pre8",
-      "name": "v7 Pre-release 8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-17T08:50:45Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre8",
-      "modVersion": "7-pre8",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre8.zip",
-      "assets": [],
-      "commitSha": "119e9a8597947ea03eef034889c311abd272a49a",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/119e9a8597947ea03eef034889c311abd272a49a.zip"
+      "modVersion": "7-pre8",
+      "releasedAt": "2021-01-17T08:50:45Z"
     },
     {
       "tag": "v7-pre7",
-      "name": "v7 Pre-release 7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-14T04:40:29Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre7",
-      "modVersion": "7-pre7",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre7.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre7.zip",
-      "assets": [],
-      "commitSha": "523535d80e0dd2567a247b5e41c2b7cec13b0eba",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/523535d80e0dd2567a247b5e41c2b7cec13b0eba.zip"
+      "modVersion": "7-pre7",
+      "releasedAt": "2021-01-14T04:40:29Z"
     },
     {
       "tag": "v7-pre6",
-      "name": "v7 Pre-release 6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-13T10:14:32Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre6",
-      "modVersion": "7-pre6",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre6.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre6.zip",
-      "assets": [],
-      "commitSha": "d77cc1bed1d93c1d620a42f53df88b2988016703",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/d77cc1bed1d93c1d620a42f53df88b2988016703.zip"
+      "modVersion": "7-pre6",
+      "releasedAt": "2021-01-13T10:14:32Z"
     },
     {
       "tag": "v7-pre5.1",
-      "name": "v7 Pre-release 5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-13T08:00:25Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre5.1",
-      "modVersion": "7-pre5.1",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre5.1.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre5.1.zip",
-      "assets": [],
-      "commitSha": "735dfc91e58671f93030c304243a30b576cd2c8f",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/735dfc91e58671f93030c304243a30b576cd2c8f.zip"
+      "modVersion": "7-pre5.1",
+      "releasedAt": "2021-01-13T08:00:25Z"
     },
     {
       "tag": "v7-pre5",
-      "name": "v7 Pre-release 5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-13T06:41:02Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre5",
-      "modVersion": "7-pre4",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre5.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre5.zip",
-      "assets": [],
-      "commitSha": "c51ca972af9540c9ef10e0d26d27e3a6c94ffbd6",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/c51ca972af9540c9ef10e0d26d27e3a6c94ffbd6.zip"
+      "modVersion": "7-pre4",
+      "releasedAt": "2021-01-13T06:41:02Z"
     },
     {
       "tag": "v7-pre4",
-      "name": "v7 Pre-release 4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-12T09:44:28Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre4",
-      "modVersion": "7-pre4",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre4.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre4.zip",
-      "assets": [],
-      "commitSha": "f73d4ad60a553d1540543d8e243ba45c4e189003",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/f73d4ad60a553d1540543d8e243ba45c4e189003.zip"
+      "modVersion": "7-pre4",
+      "releasedAt": "2021-01-12T09:44:28Z"
     },
     {
       "tag": "v7-pre3",
-      "name": "v7 Pre-release 3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-11T01:32:33Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre3",
-      "modVersion": "7-pre2",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre3.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre3.zip",
-      "assets": [],
-      "commitSha": "a4e6f47be840785fb9d99187afaec32c4ff3de39",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/a4e6f47be840785fb9d99187afaec32c4ff3de39.zip"
+      "modVersion": "7-pre2",
+      "releasedAt": "2021-01-11T01:32:33Z"
     },
     {
       "tag": "v7-pre2",
-      "name": "v7 Pre-release 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-10T16:36:03Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre2",
-      "modVersion": "7 prerelease-1",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre2.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre2.zip",
-      "assets": [],
-      "commitSha": "51c8e21226d8a4db512f3a8265dc6d50f683e767",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/51c8e21226d8a4db512f3a8265dc6d50f683e767.zip"
+      "modVersion": "7 prerelease-1",
+      "releasedAt": "2021-01-10T16:36:03Z"
     },
     {
       "tag": "v7-pre1",
-      "name": "v7 Pre-release 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-09T03:42:00Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v7-pre1",
-      "modVersion": "7 prerelease-1",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre1.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre1.zip",
-      "assets": [],
-      "commitSha": "51c8e21226d8a4db512f3a8265dc6d50f683e767",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/51c8e21226d8a4db512f3a8265dc6d50f683e767.zip"
+      "modVersion": "7 prerelease-1",
+      "releasedAt": "2021-01-09T03:42:00Z"
     },
     {
       "tag": "v6.900",
-      "name": "v6.900",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-08T07:56:58Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/bundles/releases/tag/v6.900",
-      "modVersion": "6.900",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v6.900.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v6.900.zip",
-      "assets": [],
-      "commitSha": "8ff372fe6ce71935da9d5e2eabdb066cd5549672",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/8ff372fe6ce71935da9d5e2eabdb066cd5549672.zip"
-    },
-    {
-      "tag": "v7-pre14",
-      "name": "v7-pre14",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/smolkeys/bundles/tree/v7-pre14",
-      "modVersion": "7-pre14",
-      "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre14.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre14.zip",
-      "assets": [],
-      "commitSha": "b7a995962ec809495a613e7c3ecddf1f2495877e",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/b7a995962ec809495a613e7c3ecddf1f2495877e.zip"
+      "modVersion": "6.900",
+      "releasedAt": "2021-01-08T07:56:58Z"
     },
     {
       "tag": "v7",
-      "name": "v7",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/smolkeys/bundles/tree/v7",
-      "modVersion": "7 prerelease-1",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7.zip",
-      "sourceArchiveUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7.zip",
-      "assets": [],
-      "commitSha": "467a4523f6a16c2236f5f0933d62a1d3552fda88",
-      "archiveByCommitUrl": "https://github.com/smolkeys/bundles/archive/467a4523f6a16c2236f5f0933d62a1d3552fda88.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v7-pre13",
-      "modVersion": "7-pre12",
-      "minGameVersion": "121",
-      "maxGameVersion": 126,
-      "hasRelease": true
+      "modVersion": "7 prerelease-1"
     },
     {
-      "tag": "v14",
-      "modVersion": "14",
-      "minGameVersion": "126",
-      "maxGameVersion": 136,
-      "hasRelease": true
+      "tag": "v7-pre14",
+      "kind": "tag",
+      "minGameVersion": "121",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/smolkeys/bundles/archive/refs/tags/v7-pre14.zip",
+      "modVersion": "7-pre14"
     }
   ],
   "meta": {
+    "name": "bundles",
+    "author": "SMOLKEYS",
+    "description": "hehe angish go nrrrt",
+    "version": "14",
+    "minGameVersion": "126",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

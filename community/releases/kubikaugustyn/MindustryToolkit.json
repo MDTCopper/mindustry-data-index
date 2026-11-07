@@ -1,194 +1,120 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "kubikaugustyn/MindustryToolkit",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2",
-      "name": "Relase v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-25T08:44:28Z",
-      "htmlUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/tag/v1.2",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1.2/MindustryToolkit_v1.2.jar",
-      "sourceArchiveUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkit_v1.2.jar",
-          "size": 152865,
-          "downloadCount": 2524,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1.2/MindustryToolkit_v1.2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "993b43f2bed3eab15f33f069739aa38a1def6cae",
-      "archiveByCommitUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/993b43f2bed3eab15f33f069739aa38a1def6cae.zip"
+      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1.2/MindustryToolkit_v1.2.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 152865,
+      "downloadCount": 2524,
+      "releasedAt": "2024-02-25T08:44:28Z"
     },
     {
       "tag": "v1.1",
-      "name": "Relase v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-06T11:59:04Z",
-      "htmlUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/tag/v1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1.1/MindustryToolkit_v1.1.jar",
-      "sourceArchiveUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkit_v1.1.jar",
-          "size": 148050,
-          "downloadCount": 1335,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1.1/MindustryToolkit_v1.1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "07d21f33f0ca15bf0c118ed0ffaa21466ab57002",
-      "archiveByCommitUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/07d21f33f0ca15bf0c118ed0ffaa21466ab57002.zip"
+      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1.1/MindustryToolkit_v1.1.jar",
+      "modVersion": "1",
+      "sizeBytes": 148050,
+      "downloadCount": 1335,
+      "releasedAt": "2023-07-06T11:59:04Z"
     },
     {
       "tag": "v1",
-      "name": "Relase v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-06T11:21:20Z",
-      "htmlUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/tag/v1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1/MindustryToolkit_v1.jar",
-      "sourceArchiveUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkit_v1.jar",
-          "size": 147926,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1/MindustryToolkit_v1.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "07d21f33f0ca15bf0c118ed0ffaa21466ab57002",
-      "archiveByCommitUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/07d21f33f0ca15bf0c118ed0ffaa21466ab57002.zip"
+      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v1/MindustryToolkit_v1.jar",
+      "modVersion": "1",
+      "sizeBytes": 147926,
+      "downloadCount": 12,
+      "releasedAt": "2023-07-06T11:21:20Z"
     },
     {
       "tag": "v0.3.0-alpha",
-      "name": "Relase v0.3.0-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-06-21T17:25:55Z",
-      "htmlUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/tag/v0.3.0-alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.3.0-alpha/MindustryToolkit_Desktop_v0.3.0-alpha.jar",
-      "sourceArchiveUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/refs/tags/v0.3.0-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkit_Android_v0.3.0-alpha.jar",
-          "size": 35823,
-          "downloadCount": 35,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.3.0-alpha/MindustryToolkit_Android_v0.3.0-alpha.jar"
-        },
-        {
-          "name": "MindustryToolkit_Desktop_v0.3.0-alpha.jar",
-          "size": 109505,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.3.0-alpha/MindustryToolkit_Desktop_v0.3.0-alpha.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "eda3573f319e0c1b37967a4fd0a796d4f41e497f",
-      "archiveByCommitUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/eda3573f319e0c1b37967a4fd0a796d4f41e497f.zip"
+      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.3.0-alpha/MindustryToolkit_Desktop_v0.3.0-alpha.jar",
+      "modVersion": "1",
+      "sizeBytes": 145328,
+      "downloadCount": 43,
+      "releasedAt": "2023-06-21T17:25:55Z",
+      "prerelease": true
     },
     {
       "tag": "v0.2.0-alpha",
-      "name": "Relase v0.2.0-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-05-21T17:53:25Z",
-      "htmlUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/tag/v0.2.0-alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.2.0-alpha/MindustryToolkit_v0.2.0-alpha.jar",
-      "sourceArchiveUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/refs/tags/v0.2.0-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkit_v0.2.0-alpha.jar",
-          "size": 92454,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.2.0-alpha/MindustryToolkit_v0.2.0-alpha.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "095d79849139138f596a576d24cd84fef4b93d98",
-      "archiveByCommitUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/095d79849139138f596a576d24cd84fef4b93d98.zip"
+      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.2.0-alpha/MindustryToolkit_v0.2.0-alpha.jar",
+      "modVersion": "1",
+      "sizeBytes": 92454,
+      "downloadCount": 21,
+      "releasedAt": "2023-05-21T17:53:25Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.0-alpha",
-      "name": "Relase v0.1.0-alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-05-19T19:39:08Z",
-      "htmlUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/tag/v0.1.0-alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.1.0-alpha/MindustryToolkit_v0.1.0-alpha.jar",
-      "sourceArchiveUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/refs/tags/v0.1.0-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkit_v0.1.0-alpha.jar",
-          "size": 90307,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.1.0-alpha/MindustryToolkit_v0.1.0-alpha.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "60c5cfc322cf16dadb0b02cdc086fc997eb542d9",
-      "archiveByCommitUrl": "https://github.com/kubikaugustyn/MindustryToolkit/archive/60c5cfc322cf16dadb0b02cdc086fc997eb542d9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2.0-alpha",
+      "downloadUrl": "https://github.com/kubikaugustyn/MindustryToolkit/releases/download/v0.1.0-alpha/MindustryToolkit_v0.1.0-alpha.jar",
       "modVersion": "1",
-      "minGameVersion": "140",
-      "maxGameVersion": 144,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.3.0-alpha",
-      "modVersion": "1",
-      "minGameVersion": "144",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.2",
-      "modVersion": "1.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 90307,
+      "downloadCount": 16,
+      "releasedAt": "2023-05-19T19:39:08Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "mindustry-toolkit-kubikaugustyn",
+    "author": "Jakub Augustýn",
+    "description": "A Mindustry toolkit mod by GitHub - kubikaugustyn / Discord - HackerKuba2009#9722",
+    "version": "1.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "MindustryToolkit.MindustryToolkitInit",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

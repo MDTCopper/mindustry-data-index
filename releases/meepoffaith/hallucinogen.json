@@ -1,277 +1,181 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meepoffaith/hallucinogen",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v10",
-      "name": "Update to v158.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T16:17:04Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v10",
-      "modVersion": "10",
+      "kind": "release",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v10/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 44022,
-          "downloadCount": 1079,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v10/hallucinogen.jar"
+          "from": "158.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6a087715f9d33baf1c702d44e9352785f1c014ca",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/6a087715f9d33baf1c702d44e9352785f1c014ca.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v10/hallucinogen.jar",
+      "modVersion": "10",
+      "sizeBytes": 44022,
+      "downloadCount": 1079,
+      "releasedAt": "2026-05-25T16:17:04Z"
     },
     {
       "tag": "v9",
-      "name": "b147 + Stuff I forgot to release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-06T11:03:10Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v9",
-      "modVersion": "9",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v9/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 44020,
-          "downloadCount": 1129,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v9/hallucinogen.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "c17a277c8b08c2ad959c3b49bb0f1f79a472bc11",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/c17a277c8b08c2ad959c3b49bb0f1f79a472bc11.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v9/hallucinogen.jar",
+      "modVersion": "9",
+      "sizeBytes": 44020,
+      "downloadCount": 1129,
+      "releasedAt": "2025-05-06T11:03:10Z"
     },
     {
       "tag": "v8",
-      "name": "Crash Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-18T23:14:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v8",
-      "modVersion": "8",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v8/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 38777,
-          "downloadCount": 2748,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v8/hallucinogen.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4ef774ae9a83c4a369da62e8c4f68591baa1da07",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/4ef774ae9a83c4a369da62e8c4f68591baa1da07.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v8/hallucinogen.jar",
+      "modVersion": "8",
+      "sizeBytes": 38777,
+      "downloadCount": 2748,
+      "releasedAt": "2024-07-18T23:14:57Z"
     },
     {
       "tag": "v7",
-      "name": "Menu Renderer Adjustments",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-29T00:06:22Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v7",
-      "modVersion": "7",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v7/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 38788,
-          "downloadCount": 1648,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v7/hallucinogen.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "a98d3db4eeb0b8815801597e1b198acbe825780d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/a98d3db4eeb0b8815801597e1b198acbe825780d.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v7/hallucinogen.jar",
+      "modVersion": "7",
+      "sizeBytes": 38788,
+      "downloadCount": 1648,
+      "releasedAt": "2024-03-29T00:06:22Z"
     },
     {
       "tag": "v6",
-      "name": "Optimization",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-03T21:24:38Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v6",
-      "modVersion": "6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v6/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 37890,
-          "downloadCount": 437,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v6/hallucinogen.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "b66c07ebb9eb10cdae4901c1d49a76680ad1b6e3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/b66c07ebb9eb10cdae4901c1d49a76680ad1b6e3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v6/hallucinogen.jar",
+      "modVersion": "6",
+      "sizeBytes": 37890,
+      "downloadCount": 437,
+      "releasedAt": "2024-03-03T21:24:38Z"
     },
     {
       "tag": "v5",
-      "name": "Oh god it's broken into the menu background",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-02T02:24:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v5",
-      "modVersion": "5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v5/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 38836,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v5/hallucinogen.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "5d74ea67ca9e7af84c90609ce961a93c55f97b7e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/5d74ea67ca9e7af84c90609ce961a93c55f97b7e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v5/hallucinogen.jar",
+      "modVersion": "5",
+      "sizeBytes": 38836,
+      "downloadCount": 106,
+      "releasedAt": "2024-03-02T02:24:57Z"
     },
     {
       "tag": "v4",
-      "name": "Color Inversion",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-27T02:02:29Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v4",
-      "modVersion": "4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v4/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 31214,
-          "downloadCount": 163,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v4/hallucinogen.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4b12f7ff3538a7f472aee8b2d5d24bef5cf100fd",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/4b12f7ff3538a7f472aee8b2d5d24bef5cf100fd.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v4/hallucinogen.jar",
+      "modVersion": "4",
+      "sizeBytes": 31214,
+      "downloadCount": 163,
+      "releasedAt": "2024-02-27T02:02:29Z"
     },
     {
       "tag": "v3",
-      "name": "Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-13T01:39:18Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v3",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v3/hallucinogen.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hallucinogen.jar",
-          "size": 28784,
-          "downloadCount": 458,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v3/hallucinogen.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "90317004ac41ba0b5576949c38d541e7b0691436",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/90317004ac41ba0b5576949c38d541e7b0691436.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v3/hallucinogen.jar",
+      "modVersion": "3",
+      "sizeBytes": 28784,
+      "downloadCount": 458,
+      "releasedAt": "2024-02-13T01:39:18Z"
     },
     {
       "tag": "v2",
-      "name": "Pitch Fluctuation Setting Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-09T02:07:45Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v2",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v2/drunkustry.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "drunkustry.jar",
-          "size": 28591,
-          "downloadCount": 268,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v2/drunkustry.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "a5e3c918747f8b113f2304539688154d511c4aaf",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/a5e3c918747f8b113f2304539688154d511c4aaf.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v2/drunkustry.jar",
+      "modVersion": "2",
+      "sizeBytes": 28591,
+      "downloadCount": 268,
+      "releasedAt": "2024-02-09T02:07:45Z"
     },
     {
       "tag": "v1",
-      "name": "Initial Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-08T19:43:44Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/tag/v1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v1/drunkustry.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/hallucinogen/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "drunkustry.jar",
-          "size": 27913,
-          "downloadCount": 63,
-          "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v1/drunkustry.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "221a6c9ebada0122a62e2782e90d7cfc08f76af3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/hallucinogen/archive/221a6c9ebada0122a62e2782e90d7cfc08f76af3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v8",
-      "modVersion": "8",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v9",
-      "modVersion": "9",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v10",
-      "modVersion": "10",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/MEEPofFaith/hallucinogen/releases/download/v1/drunkustry.jar",
+      "modVersion": "1",
+      "sizeBytes": 27913,
+      "downloadCount": 63,
+      "releasedAt": "2024-02-08T19:43:44Z"
     }
   ],
   "meta": {
+    "name": "hallucinogen",
+    "author": "MEEPofFaith",
+    "description": "The best sensory overload you can get, at least legally.",
+    "version": "10",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "drunkustry.Drunkdustry",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

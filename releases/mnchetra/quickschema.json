@@ -1,88 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mnchetra/quickschema",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2",
-      "name": "QuickSchema v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-29T05:27:48Z",
-      "htmlUrl": "https://github.com/mnchetra/QuickSchema/releases/tag/v1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.2/QuickSchema.jar",
-      "sourceArchiveUrl": "https://github.com/mnchetra/quickschema/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "QuickSchema.jar",
-          "size": 110116,
-          "downloadCount": 704,
-          "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.2/QuickSchema.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ffb1c487b56c8c94f5220c52c55e7a9e11ca814b",
-      "archiveByCommitUrl": "https://github.com/mnchetra/quickschema/archive/ffb1c487b56c8c94f5220c52c55e7a9e11ca814b.zip"
+      "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.2/QuickSchema.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 110116,
+      "downloadCount": 704,
+      "releasedAt": "2026-07-29T05:27:48Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-28T03:55:07Z",
-      "htmlUrl": "https://github.com/mnchetra/QuickSchema/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.1/QuickSchema.jar",
-      "sourceArchiveUrl": "https://github.com/mnchetra/quickschema/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "QuickSchema.jar",
-          "size": 105943,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.1/QuickSchema.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f7bbae56ebff209f2bffc60ebfa9a9fd9799ccef",
-      "archiveByCommitUrl": "https://github.com/mnchetra/quickschema/archive/f7bbae56ebff209f2bffc60ebfa9a9fd9799ccef.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/mnchetra/quickschema/tree/mindustry-mod",
-      "modVersion": "1.0",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mnchetra/quickschema/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/mnchetra/quickschema/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "261679cc7ca0c5f74f9773b435ce3b57b97144cc",
-      "archiveByCommitUrl": "https://github.com/mnchetra/quickschema/archive/261679cc7ca0c5f74f9773b435ce3b57b97144cc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.2",
-      "modVersion": "1.2",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.1/QuickSchema.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 105943,
+      "downloadCount": 18,
+      "releasedAt": "2026-07-28T03:55:07Z"
     }
   ],
   "meta": {
+    "name": "quick-schema",
+    "author": "Seven",
+    "description": "Quick Access Favorites Bar for Mindustry Schematics! Works seamlessly on both PC and Mobile. If there an issue leave it on github.",
+    "version": "1.2",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "quickschema.QuickSchemaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

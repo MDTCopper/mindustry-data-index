@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Dustdustry/JunctionAssistant",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-02T11:37:25Z",
-      "htmlUrl": "https://github.com/Dustdustry/JunctionAssistant/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Dustdustry/JunctionAssistant/releases/download/v1.0/JunctionAssistant-v1.0.jar",
-      "sourceArchiveUrl": "https://github.com/Dustdustry/JunctionAssistant/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "JunctionAssistant-v1.0.jar",
-          "size": 8970,
-          "downloadCount": 382,
-          "downloadUrl": "https://github.com/Dustdustry/JunctionAssistant/releases/download/v1.0/JunctionAssistant-v1.0.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "08430e3a521dee381e49c29d3a392dba6be961d6",
-      "archiveByCommitUrl": "https://github.com/Dustdustry/JunctionAssistant/archive/08430e3a521dee381e49c29d3a392dba6be961d6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/Dustdustry/JunctionAssistant/releases/download/v1.0/JunctionAssistant-v1.0.jar",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 8970,
+      "downloadCount": 382,
+      "releasedAt": "2024-10-02T11:37:25Z"
     }
   ],
   "meta": {
+    "name": "junction-assistant",
+    "author": "minRi2",
+    "description": "允许连接器寻路 [accent][2][]在传送带和连接器间替换成廉价的光传器件，可节省资源",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "assistant.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

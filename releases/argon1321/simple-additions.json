@@ -1,98 +1,77 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "argon1321/simple-additions",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "release3",
-      "name": "v0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-19T17:58:46Z",
-      "htmlUrl": "https://github.com/argon1321/simple-additions/releases/tag/release3",
-      "modVersion": "0.4",
+      "kind": "tag",
       "minGameVersion": "153",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "153",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release3.zip",
-      "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release3.zip",
-      "assets": [],
-      "commitSha": "705cdc457f1273a84fdd03fed34bb5789041ab48",
-      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/705cdc457f1273a84fdd03fed34bb5789041ab48.zip"
+      "modVersion": "0.4",
+      "releasedAt": "2026-03-19T17:58:46Z"
     },
     {
       "tag": "release4",
-      "name": "v0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-14T15:13:00Z",
-      "htmlUrl": "https://github.com/argon1321/simple-additions/releases/tag/release4",
-      "modVersion": "0.3",
+      "kind": "tag",
       "minGameVersion": "153",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "153",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release4.zip",
-      "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release4.zip",
-      "assets": [],
-      "commitSha": "8f2493d62b50a956c960d06f991efa0373b04221",
-      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/8f2493d62b50a956c960d06f991efa0373b04221.zip"
+      "modVersion": "0.3",
+      "releasedAt": "2025-12-14T15:13:00Z"
     },
     {
       "tag": "release2",
-      "name": "v0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-01T12:19:22Z",
-      "htmlUrl": "https://github.com/argon1321/simple-additions/releases/tag/release2",
-      "modVersion": "0.3",
+      "kind": "tag",
       "minGameVersion": "153",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "153",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release2.zip",
-      "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release2.zip",
-      "assets": [],
-      "commitSha": "ec6c3ade75ff368b51773a403f6465797c58182f",
-      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/ec6c3ade75ff368b51773a403f6465797c58182f.zip"
+      "modVersion": "0.3",
+      "releasedAt": "2025-12-01T12:19:22Z"
     },
     {
       "tag": "release",
-      "name": "v0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-16T18:24:25Z",
-      "htmlUrl": "https://github.com/argon1321/simple-additions/releases/tag/release",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "150.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "150.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release.zip",
-      "sourceArchiveUrl": "https://github.com/argon1321/simple-additions/archive/refs/tags/release.zip",
-      "assets": [],
-      "commitSha": "cbf6c1619d471c104a4b9f808275921a916abec4",
-      "archiveByCommitUrl": "https://github.com/argon1321/simple-additions/archive/cbf6c1619d471c104a4b9f808275921a916abec4.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release",
       "modVersion": "0.2",
-      "minGameVersion": "150.1",
-      "maxGameVersion": 153,
-      "hasRelease": true
-    },
-    {
-      "tag": "release3",
-      "modVersion": "0.4",
-      "minGameVersion": "153",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-08-16T18:24:25Z"
     }
   ],
   "meta": {
+    "name": "simple-additions",
+    "author": "argon1321",
+    "description": "A mod adding extra useful stuff, from solving siligone to even more useless stuff, yes, it's that simple. And dumb.",
+    "version": "0.4",
+    "minGameVersion": "153",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

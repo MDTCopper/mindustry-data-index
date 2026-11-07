@@ -1,112 +1,84 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ssaagamemer/Earape-Mod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.0.1-AlphaTest-b1",
-      "name": "0.0.1-AlphaTest-b1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-07-19T04:15:40Z",
-      "htmlUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/tag/0.0.1-AlphaTest-b1",
-      "modVersion": "0.1-AlphaTest-b1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/0.0.1-AlphaTest-b1/Earape-Mod-main.zip",
-      "sourceArchiveUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/refs/tags/0.0.1-AlphaTest-b1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Earape-Mod-main.zip",
-          "size": 51302140,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/0.0.1-AlphaTest-b1/Earape-Mod-main.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8197276b8e326a245e0584356fb7dedfa3505447",
-      "archiveByCommitUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/8197276b8e326a245e0584356fb7dedfa3505447.zip"
+      "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/0.0.1-AlphaTest-b1/Earape-Mod-main.zip",
+      "modVersion": "0.1-AlphaTest-b1",
+      "sizeBytes": 51302140,
+      "downloadCount": 19,
+      "releasedAt": "2023-07-19T04:15:40Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1-alpha",
-      "name": "v0.0.1-alpha-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-03T02:10:10Z",
-      "htmlUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/tag/v0.1-alpha",
-      "modVersion": "0.1alphatest-1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/v0.1-alpha/Earape-Mod-main.3.zip",
-      "sourceArchiveUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/refs/tags/v0.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Earape-Mod-main.3.zip",
-          "size": 277904,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/v0.1-alpha/Earape-Mod-main.3.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ca1e33b67d0b2dd34a31a92425ba07feebaec202",
-      "archiveByCommitUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/ca1e33b67d0b2dd34a31a92425ba07feebaec202.zip"
+      "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/v0.1-alpha/Earape-Mod-main.3.zip",
+      "modVersion": "0.1alphatest-1",
+      "sizeBytes": 277904,
+      "downloadCount": 14,
+      "releasedAt": "2023-01-03T02:10:10Z"
     },
     {
       "tag": "v.0.0.1-alpha-test-1",
-      "name": "0.1alphatest-2a",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-01-03T01:28:29Z",
-      "htmlUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/tag/v.0.0.1-alpha-test-1",
-      "modVersion": "0.1alphatest-1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/v.0.0.1-alpha-test-1/Earape-Mod-main.1.zip",
-      "sourceArchiveUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/refs/tags/v.0.0.1-alpha-test-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Earape-Mod-main.1.zip",
-          "size": 105742,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/v.0.0.1-alpha-test-1/Earape-Mod-main.1.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8186ae9c0663cd4cfe8fa6d903ce65801388e09f",
-      "archiveByCommitUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/8186ae9c0663cd4cfe8fa6d903ce65801388e09f.zip"
+      "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/releases/download/v.0.0.1-alpha-test-1/Earape-Mod-main.1.zip",
+      "modVersion": "0.1alphatest-1",
+      "sizeBytes": 105742,
+      "downloadCount": 1,
+      "releasedAt": "2023-01-03T01:28:29Z",
+      "prerelease": true
     },
     {
       "tag": "AlphaTest",
-      "name": "AlphaTest",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/ssaagamemer/Earape-Mod/tree/AlphaTest",
-      "modVersion": "0.1alphatest-1",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/refs/tags/AlphaTest.zip",
-      "sourceArchiveUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/refs/tags/AlphaTest.zip",
-      "assets": [],
-      "commitSha": "8f3c5fe38c7f4d3d0aa3a6db7a2d6e646975f0e6",
-      "archiveByCommitUrl": "https://github.com/ssaagamemer/Earape-Mod/archive/8f3c5fe38c7f4d3d0aa3a6db7a2d6e646975f0e6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.1-AlphaTest-b1",
-      "modVersion": "0.1-AlphaTest-b1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.1alphatest-1"
     }
   ],
   "meta": {
+    "name": "Earape Mindustry",
+    "author": "ssaagamemer",
+    "description": "This Mod Chaning Sound To Earape State \n(Use As Warning This Will Be deteriorated you speaker)\n This Is A Alpha State If Crash Happened \n Please Open Issue In Github \n\n [red[]]Disclamer \n This Mod Not Support Backport Or New Songs From Mods [white[]] \n\n\n Update Logs: \n Added New Sounds \n Music Earape Is On The Way",
+    "version": "0.1-AlphaTest-b1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

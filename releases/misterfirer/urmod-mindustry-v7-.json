@@ -1,215 +1,134 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "misterfirer/urmod-mindustry-v7-",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.1-beta-3.5.5",
-      "name": "UrMod Beta 3.5.5 Sector and Unit update!",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-06-02T15:55:41Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.1-beta-3.5.5",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.1-beta-3.5.5/UrMod-mindustry-v7--main.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.1-beta-3.5.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UrMod-mindustry-v7--main.zip",
-          "size": 372327,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.1-beta-3.5.5/UrMod-mindustry-v7--main.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4763e9cf49f03ad1a3b41a0aaa6f956e2cd04ebb",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/4763e9cf49f03ad1a3b41a0aaa6f956e2cd04ebb.zip"
+      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.1-beta-3.5.5/UrMod-mindustry-v7--main.zip",
+      "sizeBytes": 372327,
+      "downloadCount": 22,
+      "releasedAt": "2025-06-02T15:55:41Z",
+      "prerelease": true
     },
     {
       "tag": "v1.1-beta-3.5.2",
-      "name": "UrMod Beta 3.5.2 Sector and Unit update!",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-09-30T17:57:22Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.1-beta-3.5.2",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.1-beta-3.5.2/misterfirer-UrMod-mindustry-v7-3.5.2-Beta.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.1-beta-3.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "misterfirer-UrMod-mindustry-v7-3.5.2-Beta.zip",
-          "size": 396261,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.1-beta-3.5.2/misterfirer-UrMod-mindustry-v7-3.5.2-Beta.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "655ce681f392521e27ef3418e7691c12cf239243",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/655ce681f392521e27ef3418e7691c12cf239243.zip"
+      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.1-beta-3.5.2/misterfirer-UrMod-mindustry-v7-3.5.2-Beta.zip",
+      "sizeBytes": 396261,
+      "downloadCount": 15,
+      "releasedAt": "2024-09-30T17:57:22Z",
+      "prerelease": true
     },
     {
       "tag": "v1.0-beta.4.2",
-      "name": "UrMod Beta 3.5.1 Sector and Unit update!",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-04-15T14:57:42Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.0-beta.4.2",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.4.2/UrMod-mindustry-v7.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.0-beta.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UrMod-mindustry-v7.zip",
-          "size": 310370,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.4.2/UrMod-mindustry-v7.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a220045f6a75125d495d0969ed48c9944c0c6787",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/a220045f6a75125d495d0969ed48c9944c0c6787.zip"
+      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.4.2/UrMod-mindustry-v7.zip",
+      "sizeBytes": 310370,
+      "downloadCount": 15,
+      "releasedAt": "2024-04-15T14:57:42Z",
+      "prerelease": true
     },
     {
       "tag": "1.0-beta.4.1",
-      "name": "UrMod Beta 3.5 Sector and Unit update!",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-12-27T15:35:41Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/1.0-beta.4.1",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/1.0-beta.4.1/UrMod.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/1.0-beta.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UrMod.zip",
-          "size": 294202,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/1.0-beta.4.1/UrMod.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f626665612c5588fa7275cd8bcd41997dd1ab9ec",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/f626665612c5588fa7275cd8bcd41997dd1ab9ec.zip"
+      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/1.0-beta.4.1/UrMod.zip",
+      "sizeBytes": 294202,
+      "downloadCount": 22,
+      "releasedAt": "2023-12-27T15:35:41Z",
+      "prerelease": true
     },
     {
       "tag": "v1.0-beta.4",
-      "name": "UrMod Beta 3.0 Sector and Unit update!",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-11-24T18:05:26Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.0-beta.4",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.4/UrMod.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.0-beta.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UrMod.zip",
-          "size": 26880210,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.4/UrMod.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e9465bc93b86453b685c79024b3a4ebfd7818638",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/e9465bc93b86453b685c79024b3a4ebfd7818638.zip"
+      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.4/UrMod.zip",
+      "sizeBytes": 26880210,
+      "downloadCount": 13,
+      "releasedAt": "2023-11-24T18:05:26Z",
+      "prerelease": true
     },
     {
       "tag": "v1.0-beta.3",
-      "name": "UrMod Beta 2.0 Music update!",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-11-10T14:12:26Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.0-beta.3",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.3/UrMod.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.0-beta.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UrMod.zip",
-          "size": 31390931,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.3/UrMod.zip"
+          "from": "145.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "89ca2a885425f005967e6801e2e135d615df4fe4",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/89ca2a885425f005967e6801e2e135d615df4fe4.zip"
+      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.3/UrMod.zip",
+      "sizeBytes": 31390931,
+      "downloadCount": 7,
+      "releasedAt": "2023-11-10T14:12:26Z",
+      "prerelease": true
     },
     {
       "tag": "v1.0-beta.2",
-      "name": "UrMod Beta 1.0 Fixed",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-10-29T10:57:10Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.0-beta.2",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.2/UrMod.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.0-beta.2.zip",
-      "assets": [
-        {
-          "name": "UrMod.zip",
-          "size": 255697,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.2/UrMod.zip"
-        }
-      ],
-      "commitSha": "e307bf353b10a67c58005b131a99ebd6521168ac",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/e307bf353b10a67c58005b131a99ebd6521168ac.zip"
-    },
-    {
-      "tag": "v1.0-beta.1",
-      "name": "UrMod Beta 1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-10-29T05:47:22Z",
-      "htmlUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/tag/v1.0-beta.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.1/UrMod.zip",
-      "sourceArchiveUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/refs/tags/v1.0-beta.1.zip",
-      "assets": [
-        {
-          "name": "UrMod.zip",
-          "size": 268966,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/misterfirer/UrMod-mindustry-v7-/releases/download/v1.0-beta.1/UrMod.zip"
-        }
-      ],
-      "commitSha": "3bcecad6f1b379d3e9fba6c54a2ef373ce6d6263",
-      "archiveByCommitUrl": "https://github.com/misterfirer/urmod-mindustry-v7-/archive/3bcecad6f1b379d3e9fba6c54a2ef373ce6d6263.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1-beta-3.5.5",
-      "modVersion": null,
-      "minGameVersion": "145.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0",
+      "sizeBytes": 255697,
+      "downloadCount": 13,
+      "releasedAt": "2023-10-29T10:57:10Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "UrMod",
+    "author": "SausageCheck1 & Denis[red]R[green]G[blue]B",
+    "description": "\nThis mod adds tons of items and a new planet!!!\nThe planet contains a poisonous atmosphere, but at the same time it has precious green material. The planet also contains the poisonous substance Puplenite.\nMod version beta 1.2\n",
+    "version": null,
+    "minGameVersion": "145.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

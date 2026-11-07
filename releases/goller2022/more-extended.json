@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "goller2022/more-extended",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0.1-alpha.2",
-      "name": "v1.0.1-alpha.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/goller2022/more-extended/tree/v1.0.1-alpha.2",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "158",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/goller2022/more-extended/archive/refs/tags/v1.0.1-alpha.2.zip",
-      "sourceArchiveUrl": "https://github.com/goller2022/more-extended/archive/refs/tags/v1.0.1-alpha.2.zip",
-      "assets": [],
-      "commitSha": "e478679811197d19a7d642702c211303e7187019",
-      "archiveByCommitUrl": "https://github.com/goller2022/more-extended/archive/e478679811197d19a7d642702c211303e7187019.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.1-alpha.2",
-      "modVersion": "1.0",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "1.0"
     }
   ],
   "meta": {
+    "name": "more-extended",
+    "author": "throw_new_error",
+    "description": "给Mindustry添加了更多内容. \nAdds more content to Mindustry.",
+    "version": "1.0",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": true,
     "hasJava": false
   }

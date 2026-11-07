@@ -1,132 +1,96 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "alexbruh7/vanilla-expansion",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "public-alpha-7",
-      "name": "Public Alpha 7",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-16T22:17:33Z",
-      "htmlUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/tag/public-alpha-7",
-      "modVersion": "[red]0.7",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-7.zip",
-      "sourceArchiveUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-7.zip",
-      "assets": [],
-      "commitSha": "85b9b7ec933d25e304c0eb3c88008f4e5d364151",
-      "archiveByCommitUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/85b9b7ec933d25e304c0eb3c88008f4e5d364151.zip"
+      "modVersion": "[red]0.7",
+      "releasedAt": "2026-08-16T22:17:33Z",
+      "prerelease": true
     },
     {
       "tag": "public-alpha-6",
-      "name": "Public Alpha 6: visual test",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-24T18:19:21Z",
-      "htmlUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/tag/public-alpha-6",
-      "modVersion": "[red]0.6",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-6.zip",
-      "sourceArchiveUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-6.zip",
-      "assets": [],
-      "commitSha": "6afe214763892577204c3c4c22560ed0d3c7920e",
-      "archiveByCommitUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/6afe214763892577204c3c4c22560ed0d3c7920e.zip"
+      "modVersion": "[red]0.6",
+      "releasedAt": "2026-05-24T18:19:21Z",
+      "prerelease": true
     },
     {
       "tag": "public-alpha-4",
-      "name": "Public Alpha 4: new content",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-05T22:30:01Z",
-      "htmlUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/tag/public-alpha-4",
-      "modVersion": "[red]0.4",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-4.zip",
-      "sourceArchiveUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-4.zip",
-      "assets": [],
-      "commitSha": "32652048f1fdb38012515a07e866e15957319bb3",
-      "archiveByCommitUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/32652048f1fdb38012515a07e866e15957319bb3.zip"
+      "modVersion": "[red]0.4",
+      "releasedAt": "2026-05-05T22:30:01Z",
+      "prerelease": true
     },
     {
       "tag": "public-alpha-2.1",
-      "name": "Public Alpha 2.1: small fix again",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-18T17:45:02Z",
-      "htmlUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/tag/public-alpha-2.1",
-      "modVersion": "[red]0.4",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-2.1.zip",
-      "sourceArchiveUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-2.1.zip",
-      "assets": [],
-      "commitSha": "65ef19fc9593203d3b392f9aa05a348f45efc1c5",
-      "archiveByCommitUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/65ef19fc9593203d3b392f9aa05a348f45efc1c5.zip"
+      "modVersion": "[red]0.4",
+      "releasedAt": "2026-04-18T17:45:02Z",
+      "prerelease": true
     },
     {
       "tag": "public-alpha-2",
-      "name": "Public Alpha 2: small fix",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-18T17:37:07Z",
-      "htmlUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/tag/public-alpha-2",
-      "modVersion": "[red]0.4",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-2.zip",
-      "sourceArchiveUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-2.zip",
-      "assets": [],
-      "commitSha": "b7e7f9b8270bafca7b925bd869168c43a8b9b69c",
-      "archiveByCommitUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/b7e7f9b8270bafca7b925bd869168c43a8b9b69c.zip"
-    },
-    {
-      "tag": "public-alpha",
-      "name": "Public Alpha 1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-11T19:36:20Z",
-      "htmlUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/tag/public-alpha",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/download/public-alpha/AlexBruhVanillaExpansionPUBLICTEST.zip",
-      "sourceArchiveUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AlexBruhVanillaExpansionPUBLICTEST.zip",
-          "size": 784469,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/AlexBruh7/Vanilla-Expansion/releases/download/public-alpha/AlexBruhVanillaExpansionPUBLICTEST.zip"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8f749e68ac0f065cb22b1bada9b38ea7260ce188",
-      "archiveByCommitUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/8f749e68ac0f065cb22b1bada9b38ea7260ce188.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "public-alpha-7",
-      "modVersion": "[red]0.7",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/alexbruh7/vanilla-expansion/archive/refs/tags/public-alpha-2.zip",
+      "modVersion": "[red]0.4",
+      "releasedAt": "2026-04-18T17:37:07Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "vanilla-expansion",
+    "author": "[red]AlexBruh",
+    "description": "Adds new content to vanilla still in very early development, also scaping malis.",
+    "version": "[red]0.7",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

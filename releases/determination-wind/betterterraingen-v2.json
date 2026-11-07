@@ -1,142 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/betterterraingen-v2",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1.3",
-      "name": "v1.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T10:44:58Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/tag/v1.1.3",
-      "modVersion": "1.1.3",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.3/BetterTerrainGen-V2-1.1.3.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BetterTerrainGen-V2-1.1.3.jar",
-          "size": 46661,
-          "downloadCount": 625,
-          "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.3/BetterTerrainGen-V2-1.1.3.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9dc45f0cfdb61df9bc47050e8030d2d401a0e00e",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/9dc45f0cfdb61df9bc47050e8030d2d401a0e00e.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.3/BetterTerrainGen-V2-1.1.3.jar",
+      "modVersion": "1.1.3",
+      "sizeBytes": 46661,
+      "downloadCount": 634,
+      "releasedAt": "2026-08-08T10:44:58Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "BetterTerrainGen-V2 v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T04:04:24Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/tag/v1.1.2",
-      "modVersion": "1.1.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.2/BetterTerrainGen-V2-1.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BetterTerrainGen-V2-1.1.2.jar",
-          "size": 28838,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.2/BetterTerrainGen-V2-1.1.2.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c2249da189a4abccce1b73299fa2925a229c1720",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/c2249da189a4abccce1b73299fa2925a229c1720.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.2/BetterTerrainGen-V2-1.1.2.jar",
+      "modVersion": "1.1.2",
+      "sizeBytes": 28838,
+      "downloadCount": 25,
+      "releasedAt": "2026-08-08T04:04:24Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "BetterTerrainGen-V2 v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-12T05:34:04Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.1/BetterTerrainGen-V2-1.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BetterTerrainGen-V2-1.1.1.jar",
-          "size": 46418,
-          "downloadCount": 257,
-          "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.1/BetterTerrainGen-V2-1.1.1.jar"
-        },
-        {
-          "name": "BetterTerrainGen-V2-1.1.1.zip",
-          "size": 46486,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.1/BetterTerrainGen-V2-1.1.1.zip"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2e3b21cba2855a0811f4ee96eae2df46df9afa5d",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/2e3b21cba2855a0811f4ee96eae2df46df9afa5d.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.1.1/BetterTerrainGen-V2-1.1.1.jar",
+      "modVersion": "1.1.1",
+      "sizeBytes": 92904,
+      "downloadCount": 264,
+      "releasedAt": "2026-07-12T05:34:04Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "BetterTerrainGen-V2 v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-11T13:14:47Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.0.0/BetterTerrainGen-V2-1.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "BetterTerrainGen-V2-1.0.0.jar",
-          "size": 43085,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.0.0/BetterTerrainGen-V2-1.0.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6563d0f6ad51d3a9a6d80e72076fef5aa6d195dd",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/6563d0f6ad51d3a9a6d80e72076fef5aa6d195dd.zip"
-    },
-    {
-      "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/determination-wind/betterterraingen-v2/tree/v1.1.0",
+      "downloadUrl": "https://github.com/DeterMination-Wind/BetterTerrainGen-V2/releases/download/v1.0.0/BetterTerrainGen-V2-1.0.0.jar",
       "modVersion": "1.0.0",
-      "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/refs/tags/v1.1.0.zip",
-      "assets": [],
-      "commitSha": "23744954038f6425c9704908aa4f5507bdf33db3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterterraingen-v2/archive/23744954038f6425c9704908aa4f5507bdf33db3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.3",
-      "modVersion": "1.1.3",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 43085,
+      "downloadCount": 27,
+      "releasedAt": "2026-07-11T13:14:47Z"
     }
   ],
   "meta": {
+    "name": "BetterTerrainGen-V2",
+    "author": "DeterMination-Wind",
+    "description": "Adds a Natural Water filter to the map editor terrain generator. / 在地图编辑器地形生成器中添加自然水体滤镜。",
+    "version": "1.1.3",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "betterterraingen.v2.BetterTerrainGenV2Mod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

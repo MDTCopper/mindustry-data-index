@@ -1,137 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ramazanduruev/darklife.",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
-    {
-      "tag": "darklife0.9",
-      "name": "DarkLife0.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-06T20:16:53Z",
-      "htmlUrl": "https://github.com/ramazanduruev/DARKLIFE./releases/tag/darklife0.9",
-      "modVersion": "0.9.1",
-      "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/darklife0.9.zip",
-      "sourceArchiveUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/darklife0.9.zip",
-      "assets": [],
-      "commitSha": "5ce2d5b216995f99563c2df5b50e9ec5db246d5a",
-      "archiveByCommitUrl": "https://github.com/ramazanduruev/darklife./archive/5ce2d5b216995f99563c2df5b50e9ec5db246d5a.zip"
-    },
-    {
-      "tag": "m",
-      "name": "DarkLife0.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-21T18:58:38Z",
-      "htmlUrl": "https://github.com/ramazanduruev/DARKLIFE./releases/tag/m",
-      "modVersion": "0.3",
-      "minGameVersion": "157.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/m.zip",
-      "sourceArchiveUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/m.zip",
-      "assets": [],
-      "commitSha": "574bc2f9e4b57df77674968658ec859ae0d0bfb2",
-      "archiveByCommitUrl": "https://github.com/ramazanduruev/darklife./archive/574bc2f9e4b57df77674968658ec859ae0d0bfb2.zip"
-    },
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "ew",
-      "name": "darklife0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-14T12:56:16Z",
-      "htmlUrl": "https://github.com/ramazanduruev/DARKLIFE./releases/tag/ew",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "157.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/ew.zip",
-      "sourceArchiveUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/ew.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "icon.png",
-          "size": 2893,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/ramazanduruev/DARKLIFE./releases/download/ew/icon.png"
+          "from": "157.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "36d5eb0932683d9177ddd6a49ec2cff744968a5b",
-      "archiveByCommitUrl": "https://github.com/ramazanduruev/darklife./archive/36d5eb0932683d9177ddd6a49ec2cff744968a5b.zip"
-    },
-    {
-      "tag": "mindustrymod",
-      "name": "darklife0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-20T06:58:42Z",
-      "htmlUrl": "https://github.com/ramazanduruev/DARKLIFE./releases/tag/mindustrymod",
-      "modVersion": "0.2",
-      "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/mindustrymod.zip",
-      "sourceArchiveUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/mindustrymod.zip",
-      "assets": [],
-      "commitSha": "ae3bf74a6edd1503e5e9196c686c6ec106a773e9",
-      "archiveByCommitUrl": "https://github.com/ramazanduruev/darklife./archive/ae3bf74a6edd1503e5e9196c686c6ec106a773e9.zip"
-    },
-    {
-      "tag": "mindustry",
-      "name": "mindustry",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-01T05:51:15Z",
-      "htmlUrl": "https://github.com/ramazanduruev/DARKLIFE./releases/tag/mindustry",
-      "modVersion": "0.1",
-      "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/mindustry.zip",
-      "assets": [],
-      "commitSha": "08927026b2f19276e00cdef76dd7001f683cd68e",
-      "archiveByCommitUrl": "https://github.com/ramazanduruev/darklife./archive/08927026b2f19276e00cdef76dd7001f683cd68e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry",
-      "modVersion": "0.1",
-      "minGameVersion": "155.4",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "mindustrymod",
-      "modVersion": "0.2",
-      "minGameVersion": "156",
-      "maxGameVersion": 157.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "m",
+      "downloadUrl": "https://github.com/ramazanduruev/darklife./archive/refs/tags/ew.zip",
       "modVersion": "0.3",
-      "minGameVersion": "157.2",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "darklife0.9",
-      "modVersion": "0.9.1",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2893,
+      "downloadCount": 5,
+      "releasedAt": "2026-05-14T12:56:16Z"
     }
   ],
   "meta": {
+    "name": "mo",
+    "author": "Votak",
+    "description": "\nThis mod add new planet and also adds new evolution and infection mechanics \n\nDeveloper: Votak (abzobua)\nHelper: Tekta_Ru\n\nlanguage\nEnglish\nРусский\n",
+    "version": "0.9.1",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "main.js",
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": true
   }
 }

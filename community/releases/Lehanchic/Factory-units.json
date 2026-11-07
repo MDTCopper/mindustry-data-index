@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Lehanchic/Factory-units",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v.1",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-18T22:18:52Z",
-      "htmlUrl": "https://github.com/Lehanchic/Factory-units/releases/tag/v.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Lehanchic/Factory-units/archive/refs/tags/v.1.zip",
-      "sourceArchiveUrl": "https://github.com/Lehanchic/Factory-units/archive/refs/tags/v.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Factory.units.jar",
-          "size": 507010,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/Lehanchic/Factory-units/releases/download/v.1/Factory.units.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "69e3d54e2a200da821faca1ec0ad2ddc2d5319d8",
-      "archiveByCommitUrl": "https://github.com/Lehanchic/Factory-units/archive/69e3d54e2a200da821faca1ec0ad2ddc2d5319d8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v.1",
+      "downloadUrl": "https://github.com/Lehanchic/Factory-units/releases/download/v.1/Factory.units.jar",
       "modVersion": "1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 507010,
+      "downloadCount": 54,
+      "releasedAt": "2023-03-18T22:18:52Z"
     }
   ],
   "meta": {
+    "name": "Factory units",
+    "author": "Lehanchic25",
+    "description": "In this mod units will look like factory",
+    "version": "1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Turnixque/HCheat",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.3",
-      "name": "v0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-01T21:27:58Z",
-      "htmlUrl": "https://github.com/Turnixque/HCheat/releases/tag/v0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.3/HCheat.jar",
-      "sourceArchiveUrl": "https://github.com/Turnixque/HCheat/archive/refs/tags/v0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "HCheat.jar",
-          "size": 2501279,
-          "downloadCount": 2723,
-          "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.3/HCheat.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "4427590fa38efb92105c896dadfcb6a9b73615b8",
-      "archiveByCommitUrl": "https://github.com/Turnixque/HCheat/archive/4427590fa38efb92105c896dadfcb6a9b73615b8.zip"
+      "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.3/HCheat.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 2501279,
+      "downloadCount": 2723,
+      "releasedAt": "2025-06-01T21:27:58Z"
     },
     {
       "tag": "v0.2",
-      "name": "v0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-30T05:35:48Z",
-      "htmlUrl": "https://github.com/Turnixque/HCheat/releases/tag/v0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.2/HCheat.jar",
-      "sourceArchiveUrl": "https://github.com/Turnixque/HCheat/archive/refs/tags/v0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "HCheat.jar",
-          "size": 2490939,
-          "downloadCount": 218,
-          "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.2/HCheat.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "e7ca0d145480d54a9a6ebf3f986e41a17b0ee5e7",
-      "archiveByCommitUrl": "https://github.com/Turnixque/HCheat/archive/e7ca0d145480d54a9a6ebf3f986e41a17b0ee5e7.zip"
+      "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.2/HCheat.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 2490939,
+      "downloadCount": 218,
+      "releasedAt": "2025-05-30T05:35:48Z"
     },
     {
       "tag": "v0.1",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-28T19:59:01Z",
-      "htmlUrl": "https://github.com/Turnixque/HCheat/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.1/HCheat.jar",
-      "sourceArchiveUrl": "https://github.com/Turnixque/HCheat/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "HCheat.jar",
-          "size": 2460361,
-          "downloadCount": 116,
-          "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.1/HCheat.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "e90c8d26ac4e97e39a3673f9d9510ce953ef38d3",
-      "archiveByCommitUrl": "https://github.com/Turnixque/HCheat/archive/e90c8d26ac4e97e39a3673f9d9510ce953ef38d3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.3",
-      "modVersion": "0.3",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Turnixque/HCheat/releases/download/v0.1/HCheat.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 2460361,
+      "downloadCount": 116,
+      "releasedAt": "2025-05-28T19:59:01Z"
     }
   ],
   "meta": {
+    "name": "hcheat",
+    "author": "Arsen1yGD",
+    "description": "H.\nЭтот мод - [red]чит[]. Он может испортить интерес в игре.\nЧто он добавляет:\n- Быстрые, мощные и неразрушаемые источники.\n- Очень ёмкая батарейка.\n- ОП силовой узел\n- Быстрый (стаковый-)конвеер.\n- ОП Турель\n- ОП Стены\n- Быстри регенератор\n- Шустри ускоритель\n\nThis mod is [red]cheat[]. It can reduce interest in game.\nWhat it adds:\n- Fast, powerful and unbreakable sources.\n- Super duper mega battery.\n- OP power node.\n- Fast (stack-)conveyor\n- OP Turret\n- OP Walls\n- Fast regenerator\n- Fast overdrive projector\n\n",
+    "version": "0.3",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "hcheat.H",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

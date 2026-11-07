@@ -1,126 +1,86 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "spore-biometh-team/sandmod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "V1.0.2.1",
-      "name": "V1.0.2.1 - Update to v8 latest",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-15T05:56:22Z",
-      "htmlUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/tag/V1.0.2.1",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2.1/SandMod.jar",
-      "sourceArchiveUrl": "https://github.com/spore-biometh-team/sandmod/archive/refs/tags/V1.0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SandMod.jar",
-          "size": 343679,
-          "downloadCount": 896,
-          "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2.1/SandMod.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c576339c64115e925bf8f30e8cebc22af5906023",
-      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/c576339c64115e925bf8f30e8cebc22af5906023.zip"
+      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2.1/SandMod.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 343679,
+      "downloadCount": 897,
+      "releasedAt": "2026-07-15T05:56:22Z"
     },
     {
       "tag": "V1.0.2",
-      "name": "V1.0.2 - MV and changes for primtive and LV age",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-08-29T15:00:10Z",
-      "htmlUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/tag/V1.0.2",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2/Gregtech.jar.jar",
-      "sourceArchiveUrl": "https://github.com/spore-biometh-team/sandmod/archive/refs/tags/V1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Gregtech.jar.jar",
-          "size": 338482,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2/Gregtech.jar.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "2be00e901a1f39c3a5e87a4d04b766c5797dcc81",
-      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/2be00e901a1f39c3a5e87a4d04b766c5797dcc81.zip"
+      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2/Gregtech.jar.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 338482,
+      "downloadCount": 106,
+      "releasedAt": "2024-08-29T15:00:10Z",
+      "prerelease": true
     },
     {
       "tag": "V1.0.1",
-      "name": "V1.0.1 - Steam age and low voltage age",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-26T15:43:56Z",
-      "htmlUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/tag/V1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.1/Gregtech.jar",
-      "sourceArchiveUrl": "https://github.com/spore-biometh-team/sandmod/archive/refs/tags/V1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Gregtech.jar",
-          "size": 277300,
-          "downloadCount": 4478,
-          "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.1/Gregtech.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "0cab4eb38eee6d17988843e515ced1a02a1f84f4",
-      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/0cab4eb38eee6d17988843e515ced1a02a1f84f4.zip"
+      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.1/Gregtech.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 277300,
+      "downloadCount": 4478,
+      "releasedAt": "2024-07-26T15:43:56Z"
     },
     {
       "tag": "V1.0",
-      "name": "V1.0 - Steam ages",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-20T14:23:31Z",
-      "htmlUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/tag/V1.0",
-      "modVersion": "1.00",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0/Gregtech.jar",
-      "sourceArchiveUrl": "https://github.com/spore-biometh-team/sandmod/archive/refs/tags/V1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Gregtech.jar",
-          "size": 203387,
-          "downloadCount": 400,
-          "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0/Gregtech.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "01e6ff1a7fb300c84a42b7e286fefb516b09d424",
-      "archiveByCommitUrl": "https://github.com/spore-biometh-team/sandmod/archive/01e6ff1a7fb300c84a42b7e286fefb516b09d424.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.0.2",
-      "modVersion": "1.0.2",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "V1.0.2.1",
-      "modVersion": "1.0.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0/Gregtech.jar",
+      "modVersion": "1.00",
+      "sizeBytes": 203387,
+      "downloadCount": 400,
+      "releasedAt": "2024-07-20T14:23:31Z"
     }
   ],
   "meta": {
+    "name": "sand",
+    "author": "Watermocules",
+    "description": "Based on the hit minecraft mod \"Gregtech\", this mod attempt to add some realism into the game as well as making the game more grindy \n Currently work in progress, some item may be uncraftable and some block doesnt have sprite.",
+    "version": "1.0.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "greg.greg",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

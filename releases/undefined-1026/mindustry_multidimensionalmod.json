@@ -1,126 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "undefined-1026/mindustry_multidimensionalmod",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.2.1",
-      "name": "MultiDimensional v0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T12:40:03Z",
-      "htmlUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/tag/v0.2.1",
-      "modVersion": "0.2.1",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.1/Multidimensional.v0.2.1.jar",
-      "sourceArchiveUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/refs/tags/v0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Multidimensional.v0.2.1.jar",
-          "size": 2869663,
-          "downloadCount": 747,
-          "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.1/Multidimensional.v0.2.1.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a6ff4dd957c809ed89e25fe11d60243b58c84ac3",
-      "archiveByCommitUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/a6ff4dd957c809ed89e25fe11d60243b58c84ac3.zip"
+      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.1/Multidimensional.v0.2.1.jar",
+      "modVersion": "0.2.1",
+      "sizeBytes": 2869663,
+      "downloadCount": 749,
+      "releasedAt": "2026-10-02T12:40:03Z"
     },
     {
       "tag": "v0.2.0",
-      "name": "MultiDimensional v0.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-30T14:05:25Z",
-      "htmlUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/tag/v0.2.0",
-      "modVersion": "0.1.3",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.0/Multidimensional.v0.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/refs/tags/v0.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Multidimensional.v0.2.0.jar",
-          "size": 2818907,
-          "downloadCount": 114,
-          "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.0/Multidimensional.v0.2.0.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ccc7f9254ad4cd17798ec0de9b9bccf3bc52c144",
-      "archiveByCommitUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/ccc7f9254ad4cd17798ec0de9b9bccf3bc52c144.zip"
+      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.2.0/Multidimensional.v0.2.0.jar",
+      "modVersion": "0.1.3",
+      "sizeBytes": 2818907,
+      "downloadCount": 114,
+      "releasedAt": "2026-09-30T14:05:25Z"
     },
     {
       "tag": "v0.1.3",
-      "name": "MultiDimensional v0.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T12:54:07Z",
-      "htmlUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/tag/v0.1.3",
-      "modVersion": "0.1.3",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.1.3/Multidimensional-v0.1.3.jar",
-      "sourceArchiveUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/refs/tags/v0.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Multidimensional-v0.1.3.jar",
-          "size": 2440854,
-          "downloadCount": 1079,
-          "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.1.3/Multidimensional-v0.1.3.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5a75fff00374abd867ae1f577910115fe1da0b22",
-      "archiveByCommitUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/5a75fff00374abd867ae1f577910115fe1da0b22.zip"
+      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.1.3/Multidimensional-v0.1.3.jar",
+      "modVersion": "0.1.3",
+      "sizeBytes": 2440854,
+      "downloadCount": 1079,
+      "releasedAt": "2026-08-17T12:54:07Z"
     },
     {
       "tag": "v0.1.2",
-      "name": "MultiDimensional v0.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-22T13:28:59Z",
-      "htmlUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/tag/v0.1.2",
-      "modVersion": "0.1.2",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.1.2/Multidimensional-v0.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/refs/tags/v0.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Multidimensional-v0.1.2.jar",
-          "size": 2388711,
-          "downloadCount": 52,
-          "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.1.2/Multidimensional-v0.1.2.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "34004f8bad893e518c95ee4e76c96a1837fd9ad8",
-      "archiveByCommitUrl": "https://github.com/undefined-1026/mindustry_multidimensionalmod/archive/34004f8bad893e518c95ee4e76c96a1837fd9ad8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.3",
-      "modVersion": "0.1.3",
-      "minGameVersion": "159",
-      "maxGameVersion": 160.3,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.2.1",
-      "modVersion": "0.2.1",
-      "minGameVersion": "160.3",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/undefined-1026/Mindustry_MultiDimensionalMod/releases/download/v0.1.2/Multidimensional-v0.1.2.jar",
+      "modVersion": "0.1.2",
+      "sizeBytes": 2388711,
+      "downloadCount": 52,
+      "releasedAt": "2026-07-22T13:28:59Z"
     }
   ],
   "meta": {
+    "name": "mdimension",
+    "author": "Bilibili:arknights player / Github:undefined-1026",
+    "description": "A to be produced mod",
+    "version": "0.2.1",
+    "minGameVersion": "160.3",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "mDimension.MDimensionMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "YmStrip/Mindustry-Stallar",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Release",
-      "name": "Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-08T10:24:05Z",
-      "htmlUrl": "https://github.com/YmStrip/Mindustry-Stallar/releases/tag/Release",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/YmStrip/Mindustry-Stallar/releases/download/Release/Stallar.jar",
-      "sourceArchiveUrl": "https://github.com/YmStrip/Mindustry-Stallar/archive/refs/tags/Release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Stallar.jar",
-          "size": 2440841,
-          "downloadCount": 159,
-          "downloadUrl": "https://github.com/YmStrip/Mindustry-Stallar/releases/download/Release/Stallar.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "677c3aa9916cc25830559f774ffbe920e7c2c85b",
-      "archiveByCommitUrl": "https://github.com/YmStrip/Mindustry-Stallar/archive/677c3aa9916cc25830559f774ffbe920e7c2c85b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Release",
+      "downloadUrl": "https://github.com/YmStrip/Mindustry-Stallar/releases/download/Release/Stallar.jar",
       "modVersion": "1",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 2440841,
+      "downloadCount": 159,
+      "releasedAt": "2025-08-08T10:24:05Z"
     }
   ],
   "meta": {
+    "name": "st",
+    "author": "Encog",
+    "description": "\n\n[red] in dev...\n[cyan] What these?\n- lots of factories\n- lots of turrets\n- quantum transport system\n- ...\n",
+    "version": "1",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "st.index",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

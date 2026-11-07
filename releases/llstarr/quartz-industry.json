@@ -1,71 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "llstarr/quartz-industry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "quartzindustry1.1",
-      "name": "quartz-industry v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-21T19:03:30Z",
-      "htmlUrl": "https://github.com/llstarr/quartz-industry/releases/tag/quartzindustry1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/llstarr/quartz-industry/releases/download/quartzindustry1.1/QuartzIndustry.zip",
-      "sourceArchiveUrl": "https://github.com/llstarr/quartz-industry/archive/refs/tags/quartzindustry1.1.zip",
-      "assets": [
-        {
-          "name": "QuartzIndustry.zip",
-          "size": 62587,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/llstarr/quartz-industry/releases/download/quartzindustry1.1/QuartzIndustry.zip"
-        }
-      ],
-      "commitSha": "b13b610001e9ba4ef5a8741af8f9afec452d8673",
-      "archiveByCommitUrl": "https://github.com/llstarr/quartz-industry/archive/b13b610001e9ba4ef5a8741af8f9afec452d8673.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "quartz-industry v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-21T13:31:28Z",
-      "htmlUrl": "https://github.com/llstarr/quartz-industry/releases/tag/mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/llstarr/quartz-industry/releases/download/mindustry-mod/quartz-industry.zip",
-      "sourceArchiveUrl": "https://github.com/llstarr/quartz-industry/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
-        {
-          "name": "quartz-industry.zip",
-          "size": 43110,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/llstarr/quartz-industry/releases/download/mindustry-mod/quartz-industry.zip"
-        }
-      ],
-      "commitSha": "f25c5cb557ac10742508059bea11b87ef292a6f7",
-      "archiveByCommitUrl": "https://github.com/llstarr/quartz-industry/archive/f25c5cb557ac10742508059bea11b87ef292a6f7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "quartzindustry1.1",
       "modVersion": "1.1",
-      "minGameVersion": "149",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 62587,
+      "downloadCount": 1,
+      "releasedAt": "2026-07-21T19:03:30Z"
     }
   ],
   "meta": {
+    "name": "quartz-industry",
+    "author": "llstar",
+    "description": "\n增加了全新的内容：石英及其制品！！！\nAdded entirely new content: quartz and its products!!! \nДобавлен совершенно новый контент: кварц и изделия из него!!!\n更新日志：\n增加了英语English、俄语Русский的翻译\n",
+    "version": "1.1",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

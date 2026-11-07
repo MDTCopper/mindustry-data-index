@@ -1,402 +1,317 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "rednzba990/warboundindustriesmod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.1a",
-      "name": "V2.1-GlobalRelease, Nothing change. Just adding Spanish language.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-19T03:52:59Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2.1a",
-      "modVersion": "2.1-global-release,",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2.1a.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2.1a.zip",
-      "assets": [],
-      "commitSha": "573aed14704e2e82565841f6b73a62be41298fe6",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/573aed14704e2e82565841f6b73a62be41298fe6.zip"
+      "modVersion": "2.1-global-release",
+      "releasedAt": "2026-07-19T03:52:59Z"
     },
     {
       "tag": "v2.1",
-      "name": "V2.1-GlobalRelease, Restoring hydroelectric functionality realistically",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-17T12:54:12Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2.1",
-      "modVersion": "2.1-global-release,",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2.1.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2.1.zip",
-      "assets": [],
-      "commitSha": "2a561b5869322608c36749a36d933db3524bfc4c",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/2a561b5869322608c36749a36d933db3524bfc4c.zip"
+      "modVersion": "2.1-global-release",
+      "releasedAt": "2026-07-17T12:54:12Z"
     },
     {
       "tag": "v2g",
-      "name": "V2-GlobalBetaTest, Fix liquid drone delivery acceptLiquid",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-17T00:06:10Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2g",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2g.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2g.zip",
-      "assets": [],
-      "commitSha": "47edf2fdf27e20c9ef5e37e620df0257da61df4a",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/47edf2fdf27e20c9ef5e37e620df0257da61df4a.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-17T00:06:10Z"
     },
     {
       "tag": "v2f",
-      "name": "V2-GlobalBetaTest, Fix liquid drone delivery not work on Campaign.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-16T16:20:40Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2f",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2f.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2f.zip",
-      "assets": [],
-      "commitSha": "b85def7cfa521dcb4786e6e8f4b7e7ded4354c83",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/b85def7cfa521dcb4786e6e8f4b7e7ded4354c83.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-16T16:20:40Z"
     },
     {
       "tag": "v2e",
-      "name": "V2-GlobalBetaTest, Fix hydroelectric stop generating after 2 minutes.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-16T11:31:06Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2e",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2e.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2e.zip",
-      "assets": [],
-      "commitSha": "0a6b71edacc3d48fae3d078c190922447bb270c0",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/0a6b71edacc3d48fae3d078c190922447bb270c0.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-16T11:31:06Z"
     },
     {
       "tag": "v2d",
-      "name": "V2-GlobalBetaTest, Fix the Liquid Delivery. Why? Because im stupid.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-15T15:54:00Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2d",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2d.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2d.zip",
-      "assets": [],
-      "commitSha": "f1bff8d648bc5ac7b2d78bc0cb86e020566d5452",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/f1bff8d648bc5ac7b2d78bc0cb86e020566d5452.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-15T15:54:00Z"
     },
     {
       "tag": "v2c",
-      "name": "V2-GlobalBetaTest, Final fix. Fix the Vanilla Configuration",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-04T03:37:00Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2c",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2c.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2c.zip",
-      "assets": [],
-      "commitSha": "927fa43bbeac609c7a9daf01ec08fc36390c2808",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/927fa43bbeac609c7a9daf01ec08fc36390c2808.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-04T03:37:00Z"
     },
     {
       "tag": "v2b",
-      "name": "V2-GlobalBetaTest, Fixed minerial tech tree",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-03T10:44:03Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2b",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2b.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2b.zip",
-      "assets": [],
-      "commitSha": "9cb1d332066d649048dbb553a7c2e6bd87384c8d",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/9cb1d332066d649048dbb553a7c2e6bd87384c8d.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-03T10:44:03Z"
     },
     {
       "tag": "v2a",
-      "name": "V2-GlobalBetaTest, Fix the Item filter js",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-02T23:58:02Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2a",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2a.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2a.zip",
-      "assets": [],
-      "commitSha": "6730f8d1807348f7a242d8f1d1d26f64067db6ac",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/6730f8d1807348f7a242d8f1d1d26f64067db6ac.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-02T23:58:02Z"
     },
     {
       "tag": "v2",
-      "name": "V2-GlobalBetaTest, Adding moar stuff via Js",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-01T05:34:46Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v2",
-      "modVersion": "2-global-betaTest,",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v2.zip",
-      "assets": [],
-      "commitSha": "d4883e67f39471fb7cca46b3308c6fbdace3d1d6",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/d4883e67f39471fb7cca46b3308c6fbdace3d1d6.zip"
+      "modVersion": "2-global-betaTest",
+      "releasedAt": "2026-07-01T05:34:46Z"
     },
     {
       "tag": "v1.93b",
-      "name": "V1.93-new, Fix bug bug bug!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-09T01:48:09Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v1.93b",
-      "modVersion": "1.93",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.93b.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.93b.zip",
-      "assets": [],
-      "commitSha": "ee8fddbc3e268f2e3f2947aac5794883b13bc228",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/ee8fddbc3e268f2e3f2947aac5794883b13bc228.zip"
+      "modVersion": "1.93",
+      "releasedAt": "2026-04-09T01:48:09Z"
     },
     {
       "tag": "v.1.92",
-      "name": "V1.92, Fix bullet sprite, balancing, and Resprite part 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-09T01:39:42Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v.1.92",
-      "modVersion": "1.92",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.92.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.92.zip",
-      "assets": [],
-      "commitSha": "a6c5caf185a85dfe11e177775fc0e4836cbfd175",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/a6c5caf185a85dfe11e177775fc0e4836cbfd175.zip"
+      "modVersion": "1.92",
+      "releasedAt": "2026-04-09T01:39:42Z"
     },
     {
       "tag": "v.1.91",
-      "name": "V1.91, Raptor bug - 2 raptors in Research",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-08T02:01:37Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v.1.91",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.91.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.91.zip",
-      "assets": [],
-      "commitSha": "f5f0b23db852cbadf490d05a9b4dfe3fa766690d",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/f5f0b23db852cbadf490d05a9b4dfe3fa766690d.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2026-03-08T02:01:37Z"
     },
     {
       "tag": "v1.9",
-      "name": "v1.9, Random and Resprite update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-07T17:14:57Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v1.9",
-      "modVersion": "1.9",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.9.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.9.zip",
-      "assets": [],
-      "commitSha": "b16f86767a2645ea4d0e0bda175862795c996936",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/b16f86767a2645ea4d0e0bda175862795c996936.zip"
+      "modVersion": "1.9",
+      "releasedAt": "2026-03-07T17:14:57Z"
     },
     {
       "tag": "v.1.83",
-      "name": "V1.83, Tiny fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-19T11:19:58Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v.1.83",
-      "modVersion": "1.8",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.83.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.83.zip",
-      "assets": [],
-      "commitSha": "d7ea8f06a13e4cc82e38299dac457c8749f2ab5c",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/d7ea8f06a13e4cc82e38299dac457c8749f2ab5c.zip"
+      "modVersion": "1.8",
+      "releasedAt": "2026-01-19T11:19:58Z"
     },
     {
       "tag": "V1.71",
-      "name": "V1.71, Fix bug and adding little detail",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-06T01:44:16Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/V1.71",
-      "modVersion": "1.71",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/download/V1.71/RednzBA990MoreVanillaModV1.71.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/V1.71.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "RednzBA990MoreVanillaModV1.71.zip",
-          "size": 256325,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/download/V1.71/RednzBA990MoreVanillaModV1.71.zip"
+          "from": "147",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c0b3be15ad5fe994d411e305e2980ea3b9d9a63c",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/c0b3be15ad5fe994d411e305e2980ea3b9d9a63c.zip"
+      "downloadUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/download/V1.71/RednzBA990MoreVanillaModV1.71.zip",
+      "modVersion": "1.71",
+      "sizeBytes": 256325,
+      "downloadCount": 21,
+      "releasedAt": "2026-01-06T01:44:16Z"
     },
     {
       "tag": "v1.7",
-      "name": "V1.7, Fixed Browser Bug",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-05T03:32:05Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v1.7",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/download/v1.7/MoreVanillaMod-v1.7_tankAndHeliUpdate.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MoreVanillaMod-v1.7_tankAndHeliUpdate.zip",
-          "size": 257060,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/download/v1.7/MoreVanillaMod-v1.7_tankAndHeliUpdate.zip"
+          "from": "147",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ffdfc1e539cb07f17f2e19a49e9be7ae0020363",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/8ffdfc1e539cb07f17f2e19a49e9be7ae0020363.zip"
+      "downloadUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/download/v1.7/MoreVanillaMod-v1.7_tankAndHeliUpdate.zip",
+      "modVersion": "1.6",
+      "sizeBytes": 257060,
+      "downloadCount": 4,
+      "releasedAt": "2026-01-05T03:32:05Z"
     },
     {
       "tag": "v1.6",
-      "name": "V1.6 First Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-01T05:23:02Z",
-      "htmlUrl": "https://github.com/RednzBA990/WarboundIndustriesMod/releases/tag/v1.6",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.6.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.6.zip",
-      "assets": [],
-      "commitSha": "b21beea2d585065c982e49023c8268cab0951736",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/b21beea2d585065c982e49023c8268cab0951736.zip"
-    },
-    {
-      "tag": "v.1.82",
-      "name": "v.1.82",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/rednzba990/warboundindustriesmod/tree/v.1.82",
-      "modVersion": "1.8",
-      "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.82.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.82.zip",
-      "assets": [],
-      "commitSha": "d7ea8f06a13e4cc82e38299dac457c8749f2ab5c",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/d7ea8f06a13e4cc82e38299dac457c8749f2ab5c.zip"
-    },
-    {
-      "tag": "v1.93",
-      "name": "v1.93",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/rednzba990/warboundindustriesmod/tree/v1.93",
-      "modVersion": "1.92",
-      "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.93.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.93.zip",
-      "assets": [],
-      "commitSha": "6102a54535a9a5929ac9b8a66467a6a27a85dcc0",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/6102a54535a9a5929ac9b8a66467a6a27a85dcc0.zip"
+      "modVersion": "1.6",
+      "releasedAt": "2026-01-01T05:23:02Z"
     },
     {
       "tag": "mindustryMod",
-      "name": "mindustryMod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/rednzba990/warboundindustriesmod/tree/mindustryMod",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/mindustryMod.zip",
-      "sourceArchiveUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/mindustryMod.zip",
-      "assets": [],
-      "commitSha": "650aa7e32b2db74290cb08b007b227ff8a425c0d",
-      "archiveByCommitUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/650aa7e32b2db74290cb08b007b227ff8a425c0d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2c",
-      "modVersion": "2-global-betaTest,",
-      "minGameVersion": "147",
-      "maxGameVersion": 159,
-      "hasRelease": true
+      "modVersion": "1.6"
     },
     {
-      "tag": "v2.1a",
-      "modVersion": "2.1-global-release,",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "tag": "v.1.82",
+      "kind": "tag",
+      "minGameVersion": "147",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v.1.82.zip",
+      "modVersion": "1.8"
+    },
+    {
+      "tag": "v1.93",
+      "kind": "tag",
+      "minGameVersion": "147",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/rednzba990/warboundindustriesmod/archive/refs/tags/v1.93.zip",
+      "modVersion": "1.92"
     }
   ],
   "meta": {
+    "name": "wi",
+    "author": "[ Main Developer ]\nRenn [ DC: @red.id9990 ] = Main mod creator\n\n[ Bundle ]\nBlazingGear [ DC: @justtbg_ ] = Russian translator\nDaniZZQ [ DC: @danizzq ] = Spanish translator\n\n[ Content Idea - Balancer ]\nSlyly [ DC: @tnmspiroctsub ] = Content balancer\n( Retired )",
+    "description": "\nAdding new Assault unit, Support unit, and Industries!\nTHIS MOD IS SERPULO ONLY\n\nTHIS JAVASCRIPT MOD, SO NOT SUPPORT IOSSS\n\nThis mod supports English, Bahasa Indonesia, and Russian.\n\n[#FFB600[]]BUILD[#AEAEAE[]] - [#FF4C00[]]EXTRACT[#AEAEAE[]] - [#FF00F6[]]CONQUER[#AEAEAE[]].\n\nSupport me by starring my Mod Repo!!\nTHIS MOD IS STILL DEVELOPMENT\n\nDM me or Chat me in Mindustry Official Server if you find bug!\nAll name and content in this Mod its just Fiction.\n  ",
+    "version": "2.1-global-release",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

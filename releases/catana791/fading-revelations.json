@@ -1,545 +1,435 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "catana791/fading-revelations",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.3-Choppers_and_Tanks",
-      "name": "v2.3  - Choppers and Tanks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-17T18:53:11Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v2.3-Choppers_and_Tanks",
-      "modVersion": "2.3",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v2.3-Choppers_and_Tanks.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v2.3-Choppers_and_Tanks.zip",
-      "assets": [],
-      "commitSha": "a811a95afdd778c395161820b4cc36d76b8c58dd",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/a811a95afdd778c395161820b4cc36d76b8c58dd.zip"
+      "modVersion": "2.3",
+      "releasedAt": "2023-04-17T18:53:11Z"
     },
     {
       "tag": "v2.2",
-      "name": "v2.2 - The unit update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-26T19:03:22Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v2.2",
-      "modVersion": "2.2",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v2.2.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v2.2.zip",
-      "assets": [],
-      "commitSha": "69405ce9cb318f585f1e76e7f2b008e04b3e46db",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/69405ce9cb318f585f1e76e7f2b008e04b3e46db.zip"
+      "modVersion": "2.2",
+      "releasedAt": "2023-03-26T19:03:22Z"
     },
     {
       "tag": "v2.0",
-      "name": "v2.0 - The Erekir Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-05T11:58:52Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v2.0",
-      "modVersion": "2.0 - The Erekir Update(1)",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v2.0.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v2.0.zip",
-      "assets": [],
-      "commitSha": "24f2227f47cddc47ae15312936831e0e9e2be683",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/24f2227f47cddc47ae15312936831e0e9e2be683.zip"
+      "modVersion": "2.0 - The Erekir Update(1)",
+      "releasedAt": "2022-11-05T11:58:52Z"
     },
     {
       "tag": "Snpsht1-v1.20",
-      "name": "Snapshot 1 - v1.20 - The Erekir Update",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-09-12T20:46:41Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/Snpsht1-v1.20",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/Snpsht1-v1.20.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/Snpsht1-v1.20.zip",
-      "assets": [],
-      "commitSha": "364bf942666f92724aa873690c48e305001642ad",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/364bf942666f92724aa873690c48e305001642ad.zip"
+      "modVersion": "1.1",
+      "releasedAt": "2022-09-12T20:46:41Z",
+      "prerelease": true
     },
     {
       "tag": "v1.10_CU",
-      "name": "v1.10 - The Cleanupdate",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-29T17:12:01Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.10_CU",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.10_CU.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.10_CU.zip",
-      "assets": [],
-      "commitSha": "8fee628fcd98c3f6021d46c34143022635bd2998",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/8fee628fcd98c3f6021d46c34143022635bd2998.zip"
+      "modVersion": "1.1",
+      "releasedAt": "2022-07-29T17:12:01Z"
     },
     {
       "tag": "hotfixV.1.09",
-      "name": "TF1, LR1, BF1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-07-19T20:33:33Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/hotfixV.1.09",
-      "modVersion": "1.09",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/hotfixV.1.09.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/hotfixV.1.09.zip",
-      "assets": [],
-      "commitSha": "71b5fdd29fd6ac4d1da6cb48734559a44f564ca7",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/71b5fdd29fd6ac4d1da6cb48734559a44f564ca7.zip"
+      "modVersion": "1.09",
+      "releasedAt": "2022-07-19T20:33:33Z",
+      "prerelease": true
     },
     {
       "tag": "cmprss2.0",
-      "name": "Compress 2.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-10-06T09:53:38Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/cmprss2.0",
-      "modVersion": "1.09",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/cmprss2.0.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/cmprss2.0.zip",
-      "assets": [],
-      "commitSha": "3c35f84d58932de03b8158dcf6d3aabd2213957d",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/3c35f84d58932de03b8158dcf6d3aabd2213957d.zip"
+      "modVersion": "1.09",
+      "releasedAt": "2021-10-06T09:53:38Z",
+      "prerelease": true
     },
     {
       "tag": "v1.09",
-      "name": "Version 1.09 - The hour of despair!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-08T17:12:17Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.09",
-      "modVersion": "1.09",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.09.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.09.zip",
-      "assets": [],
-      "commitSha": "d4edb6fc00038e3a33db456b4dabdf184e4fce9e",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/d4edb6fc00038e3a33db456b4dabdf184e4fce9e.zip"
+      "modVersion": "1.09",
+      "releasedAt": "2021-08-08T17:12:17Z"
     },
     {
       "tag": "cmprss1.0",
-      "name": "Compress 1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-08-02T16:45:31Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/cmprss1.0",
-      "modVersion": "1.08",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/cmprss1.0.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/cmprss1.0.zip",
-      "assets": [],
-      "commitSha": "51367ca209b36a89d4204f695e058d64bab0615d",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/51367ca209b36a89d4204f695e058d64bab0615d.zip"
+      "modVersion": "1.08",
+      "releasedAt": "2021-08-02T16:45:31Z",
+      "prerelease": true
     },
     {
       "tag": "v1.08",
-      "name": "Version 1.08, The lone outpost update!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-07-16T17:30:18Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.08",
-      "modVersion": "1.08",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.08.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.08.zip",
-      "assets": [],
-      "commitSha": "7e7f1f8a4d075c97a25c63ae227c7c35aa95be71",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/7e7f1f8a4d075c97a25c63ae227c7c35aa95be71.zip"
+      "modVersion": "1.08",
+      "releasedAt": "2021-07-16T17:30:18Z"
     },
     {
       "tag": "bndls_de21w25",
-      "name": "Bundles DE",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-06-23T18:18:12Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/bndls_de21w25",
-      "modVersion": "1.07",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_de21w25.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_de21w25.zip",
-      "assets": [],
-      "commitSha": "c36f983af04c57ceece1d62e578ae4ade3dae46b",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/c36f983af04c57ceece1d62e578ae4ade3dae46b.zip"
+      "modVersion": "1.07",
+      "releasedAt": "2021-06-23T18:18:12Z"
     },
     {
       "tag": "Snpsht_21w18a",
-      "name": "Snapshot21w18a",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-04-30T12:52:05Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/Snpsht_21w18a",
-      "modVersion": "1.07",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/Snpsht_21w18a.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/Snpsht_21w18a.zip",
-      "assets": [],
-      "commitSha": "eb0249fef0a700c1a83836a0195fbcbf624875bb",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/eb0249fef0a700c1a83836a0195fbcbf624875bb.zip"
+      "modVersion": "1.07",
+      "releasedAt": "2021-04-30T12:52:05Z"
     },
     {
       "tag": "v1.07",
-      "name": "Update 1.07 - Mission HIVE!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-04-19T17:17:59Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.07",
-      "modVersion": "1.07",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.07.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.07.zip",
-      "assets": [],
-      "commitSha": "cbd5d114a2b8b13da1d6948b393b92cd04e64eb9",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/cbd5d114a2b8b13da1d6948b393b92cd04e64eb9.zip"
+      "modVersion": "1.07",
+      "releasedAt": "2021-04-19T17:17:59Z"
     },
     {
       "tag": "v1.06",
-      "name": "Release v1.06 - Mission Strahl!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-03-20T12:52:56Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.06",
-      "modVersion": "1.06",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.06.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.06.zip",
-      "assets": [],
-      "commitSha": "cbd2c19484dc889570a69b2eb413d88f55065de5",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/cbd2c19484dc889570a69b2eb413d88f55065de5.zip"
+      "modVersion": "1.06",
+      "releasedAt": "2021-03-20T12:52:56Z"
     },
     {
       "tag": "snpsht_21w11a",
-      "name": "Snapshot 21w11a",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-03-16T17:07:00Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/snpsht_21w11a",
-      "modVersion": "1.05",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/snpsht_21w11a.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/snpsht_21w11a.zip",
-      "assets": [],
-      "commitSha": "a01d3cef281c64d05c4af6d925b67d24e5bdbed4",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/a01d3cef281c64d05c4af6d925b67d24e5bdbed4.zip"
+      "modVersion": "1.05",
+      "releasedAt": "2021-03-16T17:07:00Z",
+      "prerelease": true
     },
     {
       "tag": "bndls_es_21w11a",
-      "name": "Bundles ES",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-03-15T14:35:39Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/bndls_es_21w11a",
-      "modVersion": "1.05",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_es_21w11a.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_es_21w11a.zip",
-      "assets": [],
-      "commitSha": "005c48ec881b20c421a7ae8cab3980c9ea3aada3",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/005c48ec881b20c421a7ae8cab3980c9ea3aada3.zip"
+      "modVersion": "1.05",
+      "releasedAt": "2021-03-15T14:35:39Z"
     },
     {
       "tag": "v1.05",
-      "name": "v1.05",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-03-13T10:56:37Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.05",
-      "modVersion": "1.05",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.05.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.05.zip",
-      "assets": [],
-      "commitSha": "410abd1860e01d8ae257d2fb65743c0f2cb47295",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/410abd1860e01d8ae257d2fb65743c0f2cb47295.zip"
+      "modVersion": "1.05",
+      "releasedAt": "2021-03-13T10:56:37Z"
     },
     {
       "tag": "bndls_de_21w10b",
-      "name": "Bundles DE, Iteration II",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-03-12T19:14:03Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/bndls_de_21w10b",
-      "modVersion": "1.04",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_de_21w10b.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_de_21w10b.zip",
-      "assets": [],
-      "commitSha": "48bcc737cd35647063bb58663407678b2f346640",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/48bcc737cd35647063bb58663407678b2f346640.zip"
+      "modVersion": "1.04",
+      "releasedAt": "2021-03-12T19:14:03Z"
     },
     {
       "tag": "bndls_de_21w10a",
-      "name": "Bundles DE",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-03-12T18:48:59Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/bndls_de_21w10a",
-      "modVersion": "1.04",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_de_21w10a.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/bndls_de_21w10a.zip",
-      "assets": [],
-      "commitSha": "6e9137914e30099e00b77bf714af3a5d69141bf5",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/6e9137914e30099e00b77bf714af3a5d69141bf5.zip"
+      "modVersion": "1.04",
+      "releasedAt": "2021-03-12T18:48:59Z",
+      "prerelease": true
     },
     {
       "tag": "snpsht_21w09a",
-      "name": "Snapshot 21w09a",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-03-07T13:54:16Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/snpsht_21w09a",
-      "modVersion": "1.04",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/snpsht_21w09a.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/snpsht_21w09a.zip",
-      "assets": [],
-      "commitSha": "825d01f1cd67638c28f2b841edd74ea2a27615d2",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/825d01f1cd67638c28f2b841edd74ea2a27615d2.zip"
+      "modVersion": "1.04",
+      "releasedAt": "2021-03-07T13:54:16Z",
+      "prerelease": true
     },
     {
       "tag": "v1.04",
-      "name": "The nano infection update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-27T13:58:23Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.04",
-      "modVersion": "1.04",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.04.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.04.zip",
-      "assets": [],
-      "commitSha": "8f7be31c14a225b7c8718306291d049b2e5151c4",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/8f7be31c14a225b7c8718306291d049b2e5151c4.zip"
+      "modVersion": "1.04",
+      "releasedAt": "2021-02-27T13:58:23Z"
     },
     {
       "tag": "v.1.03",
-      "name": "The Drill and Laser update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-26T15:39:06Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v.1.03",
-      "modVersion": "1.03",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v.1.03.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v.1.03.zip",
-      "assets": [],
-      "commitSha": "87e8405639100b21ffabab306c377c30cd2a3d74",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/87e8405639100b21ffabab306c377c30cd2a3d74.zip"
+      "modVersion": "1.03",
+      "releasedAt": "2021-02-26T15:39:06Z"
     },
     {
       "tag": "v1.02(2)",
-      "name": "The Living Steel Update - bug fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-14T11:12:01Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.02(2)",
-      "modVersion": "1.02",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.02(2).zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.02(2).zip",
-      "assets": [],
-      "commitSha": "4902fe717e2348bc8048a709f89634f8676022fc",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/4902fe717e2348bc8048a709f89634f8676022fc.zip"
+      "modVersion": "1.02",
+      "releasedAt": "2021-02-14T11:12:01Z"
     },
     {
       "tag": "v1.02",
-      "name": "The Living Steel Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-14T10:45:16Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.02",
-      "modVersion": "1.02",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.02.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.02.zip",
-      "assets": [],
-      "commitSha": "bfd36ec80407413cbec77fa1b7b74af127bb9db4",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/bfd36ec80407413cbec77fa1b7b74af127bb9db4.zip"
+      "modVersion": "1.02",
+      "releasedAt": "2021-02-14T10:45:16Z"
     },
     {
       "tag": "V1.02",
-      "name": "Non-bugged Living Steel Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-02-14T09:55:58Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/V1.02",
-      "modVersion": "1.01",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/V1.02.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/V1.02.zip",
-      "assets": [],
-      "commitSha": "41997c13fe23da3d92f63ff309bc27bce8cd2545",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/41997c13fe23da3d92f63ff309bc27bce8cd2545.zip"
+      "modVersion": "1.01",
+      "releasedAt": "2021-02-14T09:55:58Z"
     },
     {
       "tag": "v1.01",
-      "name": "The living steel update - pre-Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-02-12T12:40:46Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/v1.01",
-      "modVersion": "1.01",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.01.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.01.zip",
-      "assets": [],
-      "commitSha": "d612967d574b54b4bff71e3873c25b88401976e6",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/d612967d574b54b4bff71e3873c25b88401976e6.zip"
+      "modVersion": "1.01",
+      "releasedAt": "2021-02-12T12:40:46Z",
+      "prerelease": true
     },
     {
       "tag": "0.11",
-      "name": "mindustry-extended-0.11",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2021-02-08T12:10:52Z",
-      "htmlUrl": "https://github.com/Catana791/Fading-Revelations/releases/tag/0.11",
-      "modVersion": "0.11",
+      "kind": "tag",
       "minGameVersion": "121",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "121",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/0.11.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/0.11.zip",
-      "assets": [],
-      "commitSha": "b7b2310e1e04832ac941f326e0b45b9fc1d89ea1",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/b7b2310e1e04832ac941f326e0b45b9fc1d89ea1.zip"
-    },
-    {
-      "tag": "v1.10",
-      "name": "v1.10",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/catana791/fading-revelations/tree/v1.10",
-      "modVersion": "1.1",
-      "minGameVersion": "126.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.10.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.10.zip",
-      "assets": [],
-      "commitSha": "aeaa2c7424b8b858cd63fa9f35227b0e35d59b70",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/aeaa2c7424b8b858cd63fa9f35227b0e35d59b70.zip"
+      "modVersion": "0.11",
+      "releasedAt": "2021-02-08T12:10:52Z",
+      "prerelease": true
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/catana791/fading-revelations/tree/v1.1",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "433907b2e718e06a84c98f63455e607559ced266",
-      "archiveByCommitUrl": "https://github.com/catana791/fading-revelations/archive/433907b2e718e06a84c98f63455e607559ced266.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "cmprss1.0",
-      "modVersion": "1.08",
-      "minGameVersion": "121",
-      "maxGameVersion": 126,
-      "hasRelease": true
+      "modVersion": "1.1"
     },
     {
-      "tag": "cmprss2.0",
-      "modVersion": "1.09",
-      "minGameVersion": "126",
-      "maxGameVersion": 126.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.10_CU",
-      "modVersion": "1.1",
+      "tag": "v1.10",
+      "kind": "tag",
       "minGameVersion": "126.2",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0",
-      "modVersion": "2.0 - The Erekir Update(1)",
-      "minGameVersion": "136",
-      "maxGameVersion": 140,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.3-Choppers_and_Tanks",
-      "modVersion": "2.3",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "126.2",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/catana791/fading-revelations/archive/refs/tags/v1.10.zip",
+      "modVersion": "1.1"
     }
   ],
   "meta": {
+    "name": "me",
+    "author": "[maroon]Developers\n- Json/Hjson : Fresh791\n- Balancing : Fresh791 / .Frankie\n- Bug Fixes : Fresh791\n\n[maroon]Translators\n- English : Fresh791\n- German : Fresh791\n- Spanish : Fresh791 / HairyNugget\n- Ukrainian: Prosta4ok_ua\n- Russian: Timofejamda\n\n[maroon]Contributors\n- Schematics: Dragonboi / Zombee\n- Sprites : Fresh791 / Froomeeth\n- Lore: iori / Fresh791\n- Cryogenic Gel, Igneous Alloy,\n  Multiblock-Crafter base model:\n  Null (Nullevoy)\n\nAnd more people!\nCheck the Discord!",
+    "description": "\n\nA huge, fun & balanced content extension.\n\nPlease note that the Serpulo research tree has\nbeen moved into it's own tree because it was\ntoo large.\nTo get to the Fading Revelations Serpulo \nresearch tree, please switch to it the same way\nyou would switch between the Erekir and Serpulo\nresearch trees.\nOn that menu, a new button will be available \nthat takes you to the Fading Revelations \nSerpulo research tree. \n\nFeatures\nTwo new planets and many blocks, \nunits, items, liquids, schematics\n& ammo types.\n\n\nLanguages\n- English\n- German\n- Spanish (WIP)\n- Ukrainian (WIP)\n- Russian\n\n\nCheck Discord / GitHub \nfor more information!\n",
+    "version": "2.3",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

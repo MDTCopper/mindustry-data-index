@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nvcbl/ReignWorld",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1",
-      "name": "v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-29T10:21:53Z",
-      "htmlUrl": "https://github.com/nvcbl/ReignWorld/releases/tag/v1",
-      "modVersion": "v1.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nvcbl/ReignWorld/releases/download/v1/ReignWorld.jar",
-      "sourceArchiveUrl": "https://github.com/nvcbl/ReignWorld/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ReignWorld.jar",
-          "size": 23866,
-          "downloadCount": 427,
-          "downloadUrl": "https://github.com/nvcbl/ReignWorld/releases/download/v1/ReignWorld.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f9e88ead19c65bc6d875ebb9552f6435115fdf04",
-      "archiveByCommitUrl": "https://github.com/nvcbl/ReignWorld/archive/f9e88ead19c65bc6d875ebb9552f6435115fdf04.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1",
+      "downloadUrl": "https://github.com/nvcbl/ReignWorld/releases/download/v1/ReignWorld.jar",
       "modVersion": "v1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 23866,
+      "downloadCount": 427,
+      "releasedAt": "2024-03-29T10:21:53Z"
     }
   ],
   "meta": {
+    "name": "reign-world",
+    "author": "nvcbl",
+    "description": "Replaces all wave spawns with one of four T5s (primarily reigns). Yes that means you'll face a reign at wave 1 in ground zero.",
+    "version": "v1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "reign.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

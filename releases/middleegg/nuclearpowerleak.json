@@ -1,64 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "middleegg/nuclearpowerleak",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "First",
-      "name": "V1.0.1 This's just a start(JSONMod)",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-05T08:26:29Z",
-      "htmlUrl": "https://github.com/middleegg/NuclearPowerLeak/releases/tag/First",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/First.zip",
-      "sourceArchiveUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/First.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NuclearPowerLeak1.0.1.zip",
-          "size": 5042595,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/middleegg/NuclearPowerLeak/releases/download/First/NuclearPowerLeak1.0.1.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d8eafb1520d6843aaf25e62702351d43942fa3d0",
-      "archiveByCommitUrl": "https://github.com/middleegg/nuclearpowerleak/archive/d8eafb1520d6843aaf25e62702351d43942fa3d0.zip"
-    },
-    {
-      "tag": "JsonMod",
-      "name": "JsonMod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/middleegg/nuclearpowerleak/tree/JsonMod",
-      "modVersion": "0.1",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/JsonMod.zip",
-      "sourceArchiveUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/JsonMod.zip",
-      "assets": [],
-      "commitSha": "0f7ed9b597c64ab2341a420074329ac24d36486d",
-      "archiveByCommitUrl": "https://github.com/middleegg/nuclearpowerleak/archive/0f7ed9b597c64ab2341a420074329ac24d36486d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "First",
+      "downloadUrl": "https://github.com/middleegg/nuclearpowerleak/archive/refs/tags/First.zip",
       "modVersion": "1.0.1",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 5042595,
+      "downloadCount": 16,
+      "releasedAt": "2026-08-05T08:26:29Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "nu",
+    "author": "Zero(middle_egg),闰闰小师妹,涅翎，祈汐",
+    "description": "a mod for mindustry,it includes java and hjson",
+    "version": "1.0.1",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "Npl.nu",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "jennii94900-tech/mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "2.2",
-      "name": "2.2 (Beta157)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-02T16:29:37Z",
-      "htmlUrl": "https://github.com/jennii94900-tech/Mod/releases/tag/2.2",
-      "modVersion": "2.2",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/jennii94900-tech/mod/archive/refs/tags/2.2.zip",
-      "sourceArchiveUrl": "https://github.com/jennii94900-tech/mod/archive/refs/tags/2.2.zip",
-      "assets": [],
-      "commitSha": "3fa13316ef3c9cbf590fb26d725610284e071120",
-      "archiveByCommitUrl": "https://github.com/jennii94900-tech/mod/archive/3fa13316ef3c9cbf590fb26d725610284e071120.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.2",
       "modVersion": "2.2",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-05-02T16:29:37Z"
     }
   ],
   "meta": {
+    "name": "ochpoch-mob",
+    "author": "Hello,Andrei",
+    "description": "Frozen planet expansion. Includes custom technology tree, industrial systems, and combat units designed for extreme cold environments.",
+    "version": "2.2",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

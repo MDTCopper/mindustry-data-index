@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "miyuyuuki/arsenal-expansion-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-12T07:11:12Z",
-      "htmlUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/releases/tag/v1.1",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "7908a64fdaddae9bd6643874f7744cbdb2e628f0",
-      "archiveByCommitUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/archive/7908a64fdaddae9bd6643874f7744cbdb2e628f0.zip"
+      "modVersion": "1",
+      "releasedAt": "2026-02-12T07:11:12Z"
     },
     {
       "tag": "v1.0-release",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-10T06:59:23Z",
-      "htmlUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/releases/tag/v1.0-release",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/archive/refs/tags/v1.0-release.zip",
-      "sourceArchiveUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/archive/refs/tags/v1.0-release.zip",
-      "assets": [],
-      "commitSha": "3a1e3759cbe34bb34166ac97e87dfa8b79055c0a",
-      "archiveByCommitUrl": "https://github.com/miyuyuuki/arsenal-expansion-mod/archive/3a1e3759cbe34bb34166ac97e87dfa8b79055c0a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-02-10T06:59:23Z"
     }
   ],
   "meta": {
+    "name": "arsenal-expansion-mod",
+    "author": "Miyuyuuki",
+    "description": "Made by a novice mod developer. Adds more content to the player's arsenal. Five types of tanks await your command:\n                - [#FFA665[]]Assault[[]]\n                - [#84F491[]]Support[[]]\n                - [#BF92F9[]]Specialist[[]]\n                - [#FF1414[]]Flame[[]]\n                - [#FFEE00[]]Shock[[]]\n\n                Heavily inspired by:\n                - Eschatologue's 'Unlimited Armament Works'\n                - nyuB's (뉴B) 'DuoMod'\n                - DedShotGames' 'WOTanks'\n                - Anuke's Erekir Tanks\n\n                SFX credits to the following games:\n                - Terraria\n                - Terraria: Calamity Mod\n                - Plants vs. Zombies\n                ",
+    "version": "1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

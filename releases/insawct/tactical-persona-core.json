@@ -1,48 +1,39 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "insawct/tactical-persona-core",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v0.1",
-      "name": "TPC v0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-20T14:42:28Z",
-      "htmlUrl": "https://github.com/insawct/tactical-persona-core/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/insawct/tactical-persona-core/releases/download/v0.1/tpc-v0.1.zip",
-      "sourceArchiveUrl": "https://github.com/insawct/tactical-persona-core/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "tpc-v0.1.zip",
-          "size": 100720,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/insawct/tactical-persona-core/releases/download/v0.1/tpc-v0.1.zip"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e76032eb759ffa478f54b2314d4fd11111e55ba2",
-      "archiveByCommitUrl": "https://github.com/insawct/tactical-persona-core/archive/e76032eb759ffa478f54b2314d4fd11111e55ba2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1",
+      "downloadUrl": "https://github.com/insawct/tactical-persona-core/releases/download/v0.1/tpc-v0.1.zip",
       "modVersion": "0.1",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 100720,
+      "downloadCount": 1,
+      "releasedAt": "2026-07-20T14:42:28Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "tpc",
+    "author": "Insawct",
+    "description": "Imprint your units with a specialized combat doctrines known as TPC. Theyre automatically added to units for now. Under development.",
+    "version": "0.1",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

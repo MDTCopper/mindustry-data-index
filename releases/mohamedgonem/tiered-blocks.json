@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mohamedgonem/tiered-blocks",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-15T09:07:37Z",
-      "htmlUrl": "https://github.com/MohamedGonem/tiered-blocks/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohamedgonem/tiered-blocks/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/mohamedgonem/tiered-blocks/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "1fffca6b5c1a3dafa395f0347f9db4ec944bcdb3",
-      "archiveByCommitUrl": "https://github.com/mohamedgonem/tiered-blocks/archive/1fffca6b5c1a3dafa395f0347f9db4ec944bcdb3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
       "modVersion": "1",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-09-15T09:07:37Z"
     }
   ],
   "meta": {
+    "name": "mindustry-extended",
+    "author": "Mohamed Gonem",
+    "description": "Adds Tier II and Tier III variants of all core vanilla blocks with scaled stats and costs.",
+    "version": "1",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "MEEPofFaith/wind3",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "wind3",
-      "name": "wind3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-01T07:30:26Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/wind3/releases/tag/wind3",
-      "modVersion": "Wind3",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/wind3/releases/download/wind3/wind3.jar",
-      "sourceArchiveUrl": "https://github.com/MEEPofFaith/wind3/archive/refs/tags/wind3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "wind3.jar",
-          "size": 60522,
-          "downloadCount": 1549,
-          "downloadUrl": "https://github.com/MEEPofFaith/wind3/releases/download/wind3/wind3.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "a47870142acc1726afeb57eb50dc7047d638da46",
-      "archiveByCommitUrl": "https://github.com/MEEPofFaith/wind3/archive/a47870142acc1726afeb57eb50dc7047d638da46.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "wind3",
+      "downloadUrl": "https://github.com/MEEPofFaith/wind3/releases/download/wind3/wind3.jar",
       "modVersion": "Wind3",
-      "minGameVersion": "141",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 60522,
+      "downloadCount": 1549,
+      "releasedAt": "2023-02-01T07:30:26Z"
     }
   ],
   "meta": {
+    "name": "omega-wind3",
+    "author": "MEEP (real)",
+    "description": "",
+    "version": "Wind3",
+    "minGameVersion": "141",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "wind3.Wind3",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

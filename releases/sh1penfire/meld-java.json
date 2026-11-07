@@ -1,318 +1,217 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sh1penfire/meld-java",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "gameplay-test-6",
-      "name": "Gameplay test 6: <SEN=O--,,==,,ED>",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-29T10:32:05Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-6",
-      "modVersion": "gameplay test 5.1",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-6/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1861304,
-          "downloadCount": 1780,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-6/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "09f52c70bd8807ec46856244bba34cabab760916",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/09f52c70bd8807ec46856244bba34cabab760916.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-6/meld-java.jar",
+      "modVersion": "gameplay test 5.1",
+      "sizeBytes": 1861304,
+      "downloadCount": 1784,
+      "releasedAt": "2026-04-29T10:32:05Z"
     },
     {
       "tag": "gameplay-test-5",
-      "name": "Gameplay Test 5: Sand n Sunder",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-28T16:50:05Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-5",
-      "modVersion": "gameplay test 5",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-5/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1848280,
-          "downloadCount": 89,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-5/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "00838bddc1119b90c59cb5339d7b8ab42e5310f1",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/00838bddc1119b90c59cb5339d7b8ab42e5310f1.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-5/meld-java.jar",
+      "modVersion": "gameplay test 5",
+      "sizeBytes": 1848280,
+      "downloadCount": 89,
+      "releasedAt": "2026-04-28T16:50:05Z"
     },
     {
       "tag": "gameplay-test-4",
-      "name": "Gameplay test 4: COLOURED LIGHTING IS REAL AND CAN HURT YOU",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-26T07:58:28Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-4",
-      "modVersion": "gameplay test v3",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-4/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1674141,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-4/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bdf70f281b540a0f4cb2a409172fb2ed0fbdca25",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/bdf70f281b540a0f4cb2a409172fb2ed0fbdca25.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-4/meld-java.jar",
+      "modVersion": "gameplay test v3",
+      "sizeBytes": 1674141,
+      "downloadCount": 34,
+      "releasedAt": "2026-04-26T07:58:28Z"
     },
     {
       "tag": "gameplay-test-3",
-      "name": "Gameplay Test 3: Bulbhead driftin, external core incinerator",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-19T15:09:06Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-3",
-      "modVersion": "gameplay test v3",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-3/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1349195,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-3/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "81db20eca47f482b370abecb49eada128f6ca1d5",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/81db20eca47f482b370abecb49eada128f6ca1d5.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-3/meld-java.jar",
+      "modVersion": "gameplay test v3",
+      "sizeBytes": 1349195,
+      "downloadCount": 15,
+      "releasedAt": "2026-04-19T15:09:06Z"
     },
     {
       "tag": "gameplay-experimental-4",
-      "name": "Gameplay Experimental 4: (Less) infinite Aspect from one Aether",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-15T13:34:24Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-experimental-4",
-      "modVersion": "gameplay expirimental v4",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-4/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-experimental-4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1215656,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-4/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ca9fa2b0ce15e906cf63a8973c7549deb57a94c",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/8ca9fa2b0ce15e906cf63a8973c7549deb57a94c.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-4/meld-java.jar",
+      "modVersion": "gameplay expirimental v4",
+      "sizeBytes": 1215656,
+      "downloadCount": 5,
+      "releasedAt": "2026-04-15T13:34:24Z",
+      "prerelease": true
     },
     {
       "tag": "gameplay-experimental-3",
-      "name": "Gameplay Experimental 3: WHAT DO YOU MEAN BULBHEAD CAN BOOST???",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-14T14:57:47Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-experimental-3",
-      "modVersion": "gameplay expirimental v4",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-3/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-experimental-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1206234,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-3/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ca9fa2b0ce15e906cf63a8973c7549deb57a94c",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/8ca9fa2b0ce15e906cf63a8973c7549deb57a94c.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-3/meld-java.jar",
+      "modVersion": "gameplay expirimental v4",
+      "sizeBytes": 1206234,
+      "downloadCount": 5,
+      "releasedAt": "2026-04-14T14:57:47Z",
+      "prerelease": true
     },
     {
       "tag": "gameplay-test-2.1",
-      "name": "Gameplay Test 2.1: Core Linking, Vivisection",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-06T03:55:13Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-2.1",
-      "modVersion": "gameplay expirimental v1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-2.1/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 1094554,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-2.1/meld-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a47a61954da1732f7bf46db1bf784a77e231255c",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/a47a61954da1732f7bf46db1bf784a77e231255c.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-2.1/meld-java.jar",
+      "modVersion": "gameplay expirimental v1",
+      "sizeBytes": 1094554,
+      "downloadCount": 13,
+      "releasedAt": "2026-04-06T03:55:13Z"
     },
     {
       "tag": "gameplay-test-2",
-      "name": "Gameplay Test 2: The aspecti age",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-04T02:32:26Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-2",
-      "modVersion": "gameplay test 1.01",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-2/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 978935,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-2/meld-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "20168047283c20cd1e09a772ec3068d5edfb34c1",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/20168047283c20cd1e09a772ec3068d5edfb34c1.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-2/meld-java.jar",
+      "modVersion": "gameplay test 1.01",
+      "sizeBytes": 978935,
+      "downloadCount": 10,
+      "releasedAt": "2026-04-04T02:32:26Z"
     },
     {
       "tag": "gameplay-experimental-2",
-      "name": "Gameplay Experimental 2: The liquid junction update",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-02T13:26:50Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-experimental-2",
-      "modVersion": "gameplay expirimental v4",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-2/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-experimental-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 944956,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-2/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ca9fa2b0ce15e906cf63a8973c7549deb57a94c",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/8ca9fa2b0ce15e906cf63a8973c7549deb57a94c.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-2/meld-java.jar",
+      "modVersion": "gameplay expirimental v4",
+      "sizeBytes": 944956,
+      "downloadCount": 8,
+      "releasedAt": "2026-04-02T13:26:50Z",
+      "prerelease": true
     },
     {
       "tag": "gameplay-experimental-1",
-      "name": "Gameplay Experimental 1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-31T10:29:50Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-experimental-1",
-      "modVersion": "gameplay expirimental v4",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-1/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-experimental-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 875011,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-1/meld-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ca9fa2b0ce15e906cf63a8973c7549deb57a94c",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/8ca9fa2b0ce15e906cf63a8973c7549deb57a94c.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-experimental-1/meld-java.jar",
+      "modVersion": "gameplay expirimental v4",
+      "sizeBytes": 875011,
+      "downloadCount": 6,
+      "releasedAt": "2026-03-31T10:29:50Z",
+      "prerelease": true
     },
     {
       "tag": "gameplay-test-1.01",
-      "name": "Gameplay Test 1.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-27T10:02:17Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-1.01",
-      "modVersion": "gameplay test 1.01",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-1.01/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-1.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 709966,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-1.01/meld-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bce52dc326f26f88efb04602b6773d4629300a46",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/bce52dc326f26f88efb04602b6773d4629300a46.zip"
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-1.01/meld-java.jar",
+      "modVersion": "gameplay test 1.01",
+      "sizeBytes": 709966,
+      "downloadCount": 12,
+      "releasedAt": "2026-03-27T10:02:17Z"
     },
     {
       "tag": "gameplay-test-1",
-      "name": "Gameplay Test 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-27T07:28:59Z",
-      "htmlUrl": "https://github.com/Sh1penfire/meld-java/releases/tag/gameplay-test-1",
-      "modVersion": "gameplay test 1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-1/meld-java.jar",
-      "sourceArchiveUrl": "https://github.com/sh1penfire/meld-java/archive/refs/tags/gameplay-test-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "meld-java.jar",
-          "size": 709970,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-1/meld-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "434784ca78c5465df6d80515a79704d60f445ccf",
-      "archiveByCommitUrl": "https://github.com/sh1penfire/meld-java/archive/434784ca78c5465df6d80515a79704d60f445ccf.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "gameplay-test-2.1",
-      "modVersion": "gameplay expirimental v1",
-      "minGameVersion": "154",
-      "maxGameVersion": 157,
-      "hasRelease": true
-    },
-    {
-      "tag": "gameplay-test-6",
-      "modVersion": "gameplay test 5.1",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Sh1penfire/meld-java/releases/download/gameplay-test-1/meld-java.jar",
+      "modVersion": "gameplay test 1",
+      "sizeBytes": 709970,
+      "downloadCount": 9,
+      "releasedAt": "2026-03-27T07:28:59Z"
     }
   ],
   "meta": {
+    "name": "meld2",
+    "author": "Sh1p",
+    "description": "[[]gray]Under scattered gloomy sunlight in the shimmering seas, within the shifting sanctuary, Strata awoke.\n\nNo mouth to scream with, no skin to feel with, yet one sense remained.\n\nA great longing of meaning.\n\n[[]accent]Only has custom game content! (play the info map to understand)[[]]",
+    "version": "gameplay test 5.1",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "meld.Meld",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dokmimn/mega-router",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.1",
-      "name": "Final Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-19T16:09:38Z",
-      "htmlUrl": "https://github.com/dokmimn/MEGA-Router/releases/tag/1.1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dokmimn/mega-router/archive/refs/tags/1.1.zip",
-      "sourceArchiveUrl": "https://github.com/dokmimn/mega-router/archive/refs/tags/1.1.zip",
-      "assets": [],
-      "commitSha": "fd932d29abde9c4ab7be48d036f29329b2d03317",
-      "archiveByCommitUrl": "https://github.com/dokmimn/mega-router/archive/fd932d29abde9c4ab7be48d036f29329b2d03317.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.1",
       "modVersion": "1.0",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-10-19T16:09:38Z"
     }
   ],
   "meta": {
+    "name": "MEGA Router",
+    "author": "[yellow]do[orange]km[red]imn",
+    "description": "This mod adds a MEGA router that is 3x3 blocks in size. While its functionality remains the same as a standard router, it can be quite useful in-game. This is my first mod, please download it and add it to your favorites! ",
+    "version": "1.0",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

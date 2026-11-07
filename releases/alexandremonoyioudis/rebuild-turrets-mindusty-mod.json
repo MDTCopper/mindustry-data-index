@@ -1,57 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "alexandremonoyioudis/rebuild-turrets-mindusty-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V1.01",
-      "name": "Bug Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-21T17:37:45Z",
-      "htmlUrl": "https://github.com/AlexandreMonoyioudis/Rebuild-Turrets-Mindusty-Mod/releases/tag/V1.01",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alexandremonoyioudis/rebuild-turrets-mindusty-mod/archive/refs/tags/V1.01.zip",
-      "sourceArchiveUrl": "https://github.com/alexandremonoyioudis/rebuild-turrets-mindusty-mod/archive/refs/tags/V1.01.zip",
-      "assets": [],
-      "commitSha": "1e99aef063bf859ab73b56b14b74984dcbefbaca",
-      "archiveByCommitUrl": "https://github.com/alexandremonoyioudis/rebuild-turrets-mindusty-mod/archive/1e99aef063bf859ab73b56b14b74984dcbefbaca.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2026-10-21T17:37:45Z"
     },
     {
       "tag": "V1",
-      "name": "Initial release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-21T17:25:24Z",
-      "htmlUrl": "https://github.com/AlexandreMonoyioudis/Rebuild-Turrets-Mindusty-Mod/releases/tag/V1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/alexandremonoyioudis/rebuild-turrets-mindusty-mod/archive/refs/tags/V1.zip",
-      "sourceArchiveUrl": "https://github.com/alexandremonoyioudis/rebuild-turrets-mindusty-mod/archive/refs/tags/V1.zip",
-      "assets": [],
-      "commitSha": "e97b355cdcba867f3ffd27509b789bcac528cd4f",
-      "archiveByCommitUrl": "https://github.com/alexandremonoyioudis/rebuild-turrets-mindusty-mod/archive/e97b355cdcba867f3ffd27509b789bcac528cd4f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.01",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-10-21T17:25:24Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "Rebuild-Turrets",
+    "author": "AlexandreMonoyioudis",
+    "description": "These new Turrets help rebuild destroyed bases and helps the player build faster. \n+ rebuild Turret \n + macro rebuild Turret",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

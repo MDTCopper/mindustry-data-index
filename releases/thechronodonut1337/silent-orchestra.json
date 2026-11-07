@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "thechronodonut1337/silent-orchestra",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "vT.01.31",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-05T05:48:35Z",
-      "htmlUrl": "https://github.com/theChronodonut1337/silent-orchestra/releases/tag/mindustry-mod",
-      "modVersion": "T.01.31",
+      "kind": "tag",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/thechronodonut1337/silent-orchestra/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/thechronodonut1337/silent-orchestra/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "1408a49786ac03254d876c1b2d9b18d1d48f6afc",
-      "archiveByCommitUrl": "https://github.com/thechronodonut1337/silent-orchestra/archive/1408a49786ac03254d876c1b2d9b18d1d48f6afc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "T.01.31",
-      "minGameVersion": "141",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-02-05T05:48:35Z"
     }
   ],
   "meta": {
+    "name": "silent-orchestra",
+    "author": "[gold]Aurora[]",
+    "description": "Have you ever wondered what it would be like if Mindustry sounded like an open-world RPG? Well, now you can, with these collection of music and SFX replacements from FFXIV, Library of Ruina, Arknights, Terraria, and more.",
+    "version": "T.01.31",
+    "minGameVersion": "141",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

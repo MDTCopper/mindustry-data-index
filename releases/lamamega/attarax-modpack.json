@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lamamega/attarax-modpack",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-06T17:50:41Z",
-      "htmlUrl": "https://github.com/LamaMega/AttaraX-ModPack/releases/tag/mindustry-mod",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/lamamega/attarax-modpack/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/lamamega/attarax-modpack/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "7128197963cf6237200e4b87f53cc1a5edd77674",
-      "archiveByCommitUrl": "https://github.com/lamamega/attarax-modpack/archive/7128197963cf6237200e4b87f53cc1a5edd77674.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1.0",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-04-06T17:50:41Z"
     }
   ],
   "meta": {
+    "name": "AttaraX Mod-Pack",
+    "author": "AttaraX",
+    "description": "Mindustry? Yes, but more!",
+    "version": "1.0",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

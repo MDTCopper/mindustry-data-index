@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "p101q/snowdustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.0",
-      "name": "Snowdustry v2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-11T17:39:55Z",
-      "htmlUrl": "https://github.com/p101q/Snowdustry/releases/tag/v2.0",
-      "modVersion": "2.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/p101q/snowdustry/archive/refs/tags/v2.0.zip",
-      "sourceArchiveUrl": "https://github.com/p101q/snowdustry/archive/refs/tags/v2.0.zip",
-      "assets": [],
-      "commitSha": "23eaf9a1d4ff2c2157d4523bf93673a44fcf94c0",
-      "archiveByCommitUrl": "https://github.com/p101q/snowdustry/archive/23eaf9a1d4ff2c2157d4523bf93673a44fcf94c0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.0",
       "modVersion": "2.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-11-11T17:39:55Z"
     }
   ],
   "meta": {
+    "name": "snow",
+    "author": "Mindustry [RU] inc.",
+    "description": "A fun mod for a fun New Year's event",
+    "version": "2.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

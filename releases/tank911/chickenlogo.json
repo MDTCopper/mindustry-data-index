@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "tank911/chickenlogo",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.01",
-      "name": "1.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-07T08:22:58Z",
-      "htmlUrl": "https://github.com/Tank911/chickenlogo/releases/tag/1.01",
-      "modVersion": "1.01",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tank911/chickenlogo/archive/refs/tags/1.01.zip",
-      "sourceArchiveUrl": "https://github.com/tank911/chickenlogo/archive/refs/tags/1.01.zip",
-      "assets": [],
-      "commitSha": "b2a3970e26d444f125efd7103460b61514ef5127",
-      "archiveByCommitUrl": "https://github.com/tank911/chickenlogo/archive/b2a3970e26d444f125efd7103460b61514ef5127.zip"
+      "modVersion": "1.01",
+      "releasedAt": "2026-10-07T08:22:58Z"
     },
     {
       "tag": "Release",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-07T08:20:46Z",
-      "htmlUrl": "https://github.com/Tank911/chickenlogo/releases/tag/Release",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tank911/chickenlogo/archive/refs/tags/Release.zip",
-      "sourceArchiveUrl": "https://github.com/tank911/chickenlogo/archive/refs/tags/Release.zip",
-      "assets": [],
-      "commitSha": "13da00d0e505de12e2dd660e27285488c9ff64a0",
-      "archiveByCommitUrl": "https://github.com/tank911/chickenlogo/archive/13da00d0e505de12e2dd660e27285488c9ff64a0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.01",
-      "modVersion": "1.01",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0",
+      "releasedAt": "2026-10-07T08:20:46Z"
     }
   ],
   "meta": {
+    "name": "chickenlogo",
+    "author": "Tank 911",
+    "description": "Replaced logo with chicken\nToo much!",
+    "version": "1.01",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,153 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "FlinTyX/Animalia",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0.3",
-      "name": "v1.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-03T14:54:28Z",
-      "htmlUrl": "https://github.com/FlinTyX/Animalia/releases/tag/v1.0.3",
-      "modVersion": "java 1.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0.3/Animalia.jar",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Animalia.jar",
-          "size": 725905,
-          "downloadCount": 8715,
-          "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0.3/Animalia.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "d8954fa60913eb3c7f03dd6cd772142211a20faa",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/Animalia/archive/d8954fa60913eb3c7f03dd6cd772142211a20faa.zip"
+      "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0.3/Animalia.jar",
+      "modVersion": "java 1.0",
+      "sizeBytes": 725905,
+      "downloadCount": 8715,
+      "releasedAt": "2025-02-03T14:54:28Z"
     },
     {
       "tag": "v1.0.2-java",
-      "name": "v1.0.2-java",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-18T01:20:38Z",
-      "htmlUrl": "https://github.com/FlinTyX/Animalia/releases/tag/v1.0.2-java",
-      "modVersion": "java 1.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0.2-java/Animalia.jar",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v1.0.2-java.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Animalia.jar",
-          "size": 717101,
-          "downloadCount": 31299,
-          "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0.2-java/Animalia.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "7ced29514252edb387ea2a282fb3913794e29021",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/Animalia/archive/7ced29514252edb387ea2a282fb3913794e29021.zip"
+      "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0.2-java/Animalia.jar",
+      "modVersion": "java 1.0",
+      "sizeBytes": 717101,
+      "downloadCount": 31299,
+      "releasedAt": "2023-02-18T01:20:38Z"
     },
     {
       "tag": "v1.0-java",
-      "name": "v1.0 java",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T14:44:24Z",
-      "htmlUrl": "https://github.com/FlinTyX/Animalia/releases/tag/v1.0-java",
-      "modVersion": "java 1.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0-java/AnimaliaDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v1.0-java.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AnimaliaDesktop.jar",
-          "size": 661157,
-          "downloadCount": 2283,
-          "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0-java/AnimaliaDesktop.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "0e16218eb45443de7a90a4582494e83255ef18d6",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/Animalia/archive/0e16218eb45443de7a90a4582494e83255ef18d6.zip"
-    },
-    {
-      "tag": "v0.1.2(JsV6)",
-      "name": "Latest V6 Release - Pre Java Port",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-29T16:04:13Z",
-      "htmlUrl": "https://github.com/FlinTyX/Animalia/releases/tag/v0.1.2(JsV6)",
-      "modVersion": "0.1.2",
-      "minGameVersion": "130",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v0.1.2(JsV6).zip",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v0.1.2(JsV6).zip",
-      "assets": [],
-      "commitSha": "81cca4a9f8408c8d1ded57131e9cd7808f207565",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/Animalia/archive/81cca4a9f8408c8d1ded57131e9cd7808f207565.zip"
-    },
-    {
-      "tag": "v0.1.2",
-      "name": "Build v0.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-04-03T01:36:58Z",
-      "htmlUrl": "https://github.com/FlinTyX/Animalia/releases/tag/v0.1.2",
-      "modVersion": "0.1.2",
-      "minGameVersion": "130",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v0.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v0.1.2.zip",
-      "assets": [],
-      "commitSha": "8b78f36781f735fac5cded97ded7ac3bcb7ebe9b",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/Animalia/archive/8b78f36781f735fac5cded97ded7ac3bcb7ebe9b.zip"
-    },
-    {
-      "tag": "v0.1",
-      "name": "Build v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-29T02:59:13Z",
-      "htmlUrl": "https://github.com/FlinTyX/Animalia/releases/tag/v0.1",
-      "modVersion": "0.1",
-      "minGameVersion": "130",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v0.1.zip",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/Animalia/archive/refs/tags/v0.1.zip",
-      "assets": [],
-      "commitSha": "51d48a5003b6af2e2eecab18f8c30c6259131f84",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/Animalia/archive/51d48a5003b6af2e2eecab18f8c30c6259131f84.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.2(JsV6)",
-      "modVersion": "0.1.2",
-      "minGameVersion": "130",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.3",
+      "downloadUrl": "https://github.com/FlinTyX/Animalia/releases/download/v1.0-java/AnimaliaDesktop.jar",
       "modVersion": "java 1.0",
-      "minGameVersion": "141",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 661157,
+      "downloadCount": 2283,
+      "releasedAt": "2023-02-11T14:44:24Z"
     }
   ],
   "meta": {
+    "name": "animalia",
+    "author": "Flin",
+    "description": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
+    "version": "java 1.0",
+    "minGameVersion": "141",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "animalia.Animalia",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "992040/mindustry_skyblock_tweaks",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Skyblock tweaks 1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-21T09:59:58Z",
-      "htmlUrl": "https://github.com/992040/mindustry_skyblock_tweaks/releases/tag/mindustry-mod",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/992040/mindustry_skyblock_tweaks/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/992040/mindustry_skyblock_tweaks/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "12de4fa1f01699ebb8e228dec85ffb4843a2c34f",
-      "archiveByCommitUrl": "https://github.com/992040/mindustry_skyblock_tweaks/archive/12de4fa1f01699ebb8e228dec85ffb4843a2c34f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1.0",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-07-21T09:59:58Z"
     }
   ],
   "meta": {
+    "name": "Skyblock tweaks",
+    "author": "[#ff]99[#1f1ff8ff]20[#00ff]40[white]",
+    "description": "You're now always can build core shard and you can plan building water pumps on deep water for skyblock servers",
+    "version": "1.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

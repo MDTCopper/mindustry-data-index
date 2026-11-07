@@ -1,91 +1,77 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "silinveredno/newhorizonmod-schematics",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "2.1.0",
-      "name": "2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-04T19:42:04Z",
-      "htmlUrl": "https://github.com/SilinVeredno/NewHorizonMod-Schematics/releases/tag/2.1.0",
-      "modVersion": "0.5.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/2.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/2.1.0.zip",
-      "assets": [],
-      "commitSha": "b35387037188a700fdb5aa668779f1b60e591714",
-      "archiveByCommitUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/b35387037188a700fdb5aa668779f1b60e591714.zip"
+      "modVersion": "0.5.1",
+      "releasedAt": "2026-07-04T19:42:04Z"
     },
     {
       "tag": "0.6",
-      "name": "0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-13T16:25:42Z",
-      "htmlUrl": "https://github.com/SilinVeredno/NewHorizonMod-Schematics/releases/tag/0.6",
-      "modVersion": "0.5.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/0.6.zip",
-      "sourceArchiveUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/0.6.zip",
-      "assets": [],
-      "commitSha": "abd4d8928e0dd345249b60a954c5566516a398c8",
-      "archiveByCommitUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/abd4d8928e0dd345249b60a954c5566516a398c8.zip"
+      "modVersion": "0.5.1",
+      "releasedAt": "2025-03-13T16:25:42Z"
     },
     {
       "tag": "0.5.3",
-      "name": "0.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-30T11:55:26Z",
-      "htmlUrl": "https://github.com/SilinVeredno/NewHorizonMod-Schematics/releases/tag/0.5.3",
-      "modVersion": "0.5.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/0.5.3.zip",
-      "sourceArchiveUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/0.5.3.zip",
-      "assets": [],
-      "commitSha": "4acc13bb45987892d8b4167dbb49e9092b7b810b",
-      "archiveByCommitUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/4acc13bb45987892d8b4167dbb49e9092b7b810b.zip"
+      "modVersion": "0.5.1",
+      "releasedAt": "2024-09-30T11:55:26Z"
     },
     {
       "tag": "0.5.1",
-      "name": "0.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-10T16:38:49Z",
-      "htmlUrl": "https://github.com/SilinVeredno/NewHorizonMod-Schematics/releases/tag/0.5.1",
-      "modVersion": "0.5.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/0.5.1.zip",
-      "sourceArchiveUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/refs/tags/0.5.1.zip",
-      "assets": [],
-      "commitSha": "3646ffa546947b203aecd089e8798a7821a288fb",
-      "archiveByCommitUrl": "https://github.com/silinveredno/newhorizonmod-schematics/archive/3646ffa546947b203aecd089e8798a7821a288fb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.1.0",
       "modVersion": "0.5.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-08-10T16:38:49Z"
     }
   ],
   "meta": {
+    "name": "nh-scheme-pack",
+    "author": "[blue]Silin Veredno",
+    "description": "\n[sky]RU[white]\nМод добавляет Схемы для модификации New Horizon. Тег: +\n\n[blue]ENG[white]\nThe mod adds Schematics for the New Horizon modification. Tag: +\nMy Discord: silinveredno_edmstep\n",
+    "version": "0.5.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

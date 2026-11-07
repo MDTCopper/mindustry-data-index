@@ -1,79 +1,54 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "megalp/factory",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2.5.1",
-      "name": "2.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-08T14:30:02Z",
-      "htmlUrl": "https://github.com/MegaLP/factory/releases/tag/2.5.1",
-      "modVersion": "2.5.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/MegaLP/factory/releases/download/2.5.1/Factory.zip",
-      "sourceArchiveUrl": "https://github.com/megalp/factory/archive/refs/tags/2.5.1.zip",
-      "assets": [
-        {
-          "name": "Factory.zip",
-          "size": 5092001,
-          "downloadCount": 41,
-          "downloadUrl": "https://github.com/MegaLP/factory/releases/download/2.5.1/Factory.zip"
-        }
-      ],
-      "commitSha": "7f25c36df5a1ebac288ee729169704b13b53010e",
-      "archiveByCommitUrl": "https://github.com/megalp/factory/archive/7f25c36df5a1ebac288ee729169704b13b53010e.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "Factory 2.5.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-12T14:05:40Z",
-      "htmlUrl": "https://github.com/MegaLP/factory/releases/tag/mindustry-mod",
-      "modVersion": "2.0.11",
-      "minGameVersion": "138.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MegaLP/factory/releases/download/mindustry-mod/Factory.zip",
-      "sourceArchiveUrl": "https://github.com/megalp/factory/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
-        {
-          "name": "Factory.zip",
-          "size": 5072629,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/MegaLP/factory/releases/download/mindustry-mod/Factory.zip"
-        }
-      ],
-      "commitSha": "536d32cf87b53119b747a4b7098cb7c3c2f5bf22",
-      "archiveByCommitUrl": "https://github.com/megalp/factory/archive/536d32cf87b53119b747a4b7098cb7c3c2f5bf22.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
-      "modVersion": "2.0.11",
-      "minGameVersion": "138.1",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.5.1",
       "modVersion": "2.5.1",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 5092001,
+      "downloadCount": 41,
+      "releasedAt": "2024-10-08T14:30:02Z"
+    },
+    {
+      "tag": "mindustry-mod",
+      "kind": "release",
+      "minGameVersion": "138.1",
+      "gameVersionRanges": [
+        {
+          "from": "139",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MegaLP/factory/releases/download/mindustry-mod/Factory.zip",
+      "modVersion": "2.0.11",
+      "sizeBytes": 5072629,
+      "downloadCount": 3,
+      "releasedAt": "2022-10-12T14:05:40Z"
     }
   ],
   "meta": {
+    "name": "factory",
+    "author": "Mega_LP",
+    "description": "Updated (06.10.2024)\n\n-Tiger MG shooting improved\n-Now able to create different Tank variants (Beta) 🠖 Not multiplayer testet\n\nSome major bug fixes\n\n\nLatest content addition: \n🠖Tactical nuker\n🠖P-1000-Ratte tank\n🠖Tiger tank\n🠖A new Planet\n🠖Darkshade and Galaxy material\n\n\nContent: \n🠖3 Maps\n🠖more materials\n🠖new units/enemys\n🠖8 new Mech pads\n🠖Material teleporters\n🠖New blocks and walls\n\nAnd we keep updating it! This mod is a good content addition to the game, but it's also a challange! So its time to get a Pro and master this mod. Of course we would like to hear your feedback!!\n\n Thanks to Eni_YT for helping with sprites, giving me ideas and updating this section.",
+    "version": "2.5.1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

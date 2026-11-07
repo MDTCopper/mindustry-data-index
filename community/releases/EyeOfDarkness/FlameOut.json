@@ -1,383 +1,261 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "EyeOfDarkness/FlameOut",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1.3",
-      "name": "v1.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-29T00:19:27Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.1.3",
-      "modVersion": "v1.1.3",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.3/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 6654380,
-          "downloadCount": 42721,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.3/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "c153c4e75410c981a773fd10266f0a320a0b61c5",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/c153c4e75410c981a773fd10266f0a320a0b61c5.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.3/FlameOutDesktop.jar",
+      "modVersion": "v1.1.3",
+      "sizeBytes": 6654380,
+      "downloadCount": 42721,
+      "releasedAt": "2024-06-29T00:19:27Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-11T16:39:00Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.1.2",
-      "modVersion": "v1.1.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.2/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 6649729,
-          "downloadCount": 13105,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.2/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "063c742d647a6c97ef1ae4229212a1d084cf4b57",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/063c742d647a6c97ef1ae4229212a1d084cf4b57.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.2/FlameOutDesktop.jar",
+      "modVersion": "v1.1.2",
+      "sizeBytes": 6649729,
+      "downloadCount": 13105,
+      "releasedAt": "2024-02-11T16:39:00Z"
     },
     {
       "tag": "v1.1.1.2",
-      "name": "v1.1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-21T17:16:22Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.1.1.2",
-      "modVersion": "v1.1.1.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1.2/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 6648383,
-          "downloadCount": 2733,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1.2/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "8a70c388305584d62f7d2d078a8c728ab56ca2a6",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/8a70c388305584d62f7d2d078a8c728ab56ca2a6.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1.2/FlameOutDesktop.jar",
+      "modVersion": "v1.1.1.2",
+      "sizeBytes": 6648383,
+      "downloadCount": 2733,
+      "releasedAt": "2024-01-21T17:16:22Z"
     },
     {
       "tag": "v1.1.1.1",
-      "name": "v1.1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-16T04:13:35Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.1.1.1",
-      "modVersion": "v1.1.1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1.1/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 6647923,
-          "downloadCount": 1481,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1.1/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "7da232fb93eaae49a0839f3bd6ecac4e946008ce",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/7da232fb93eaae49a0839f3bd6ecac4e946008ce.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1.1/FlameOutDesktop.jar",
+      "modVersion": "v1.1.1.1",
+      "sizeBytes": 6647923,
+      "downloadCount": 1481,
+      "releasedAt": "2024-01-16T04:13:35Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-11T14:38:07Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.1.1",
-      "modVersion": "v1.1.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 6647888,
-          "downloadCount": 900,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "e0d7c6a8c72ea802163784cf9e2a2289e287647b",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/e0d7c6a8c72ea802163784cf9e2a2289e287647b.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.1/FlameOutDesktop.jar",
+      "modVersion": "v1.1.1",
+      "sizeBytes": 6647888,
+      "downloadCount": 900,
+      "releasedAt": "2024-01-11T14:38:07Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-11T12:36:51Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.1.0",
-      "modVersion": "v1.1.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.0/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 6647801,
-          "downloadCount": 491,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.0/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "978003c71c2bcda73005f21c39f1de8ff9b0c7c6",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/978003c71c2bcda73005f21c39f1de8ff9b0c7c6.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.1.0/FlameOutDesktop.jar",
+      "modVersion": "v1.1.0",
+      "sizeBytes": 6647801,
+      "downloadCount": 491,
+      "releasedAt": "2024-01-11T12:36:51Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-01T05:55:09Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v1.0.0",
-      "modVersion": "v1.0.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.0.0/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 5306141,
-          "downloadCount": 1607,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.0.0/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "e962b43fcd9a8e5ec8318e2ccb8889b89a64f52a",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/e962b43fcd9a8e5ec8318e2ccb8889b89a64f52a.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v1.0.0/FlameOutDesktop.jar",
+      "modVersion": "v1.0.0",
+      "sizeBytes": 5306141,
+      "downloadCount": 1607,
+      "releasedAt": "2023-12-01T05:55:09Z"
     },
     {
       "tag": "v0.0.8",
-      "name": "0.0.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-23T13:00:05Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.8",
-      "modVersion": "v0.0.7",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.8/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1711730,
-          "downloadCount": 1020,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.8/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "adf93fcde6d3081f5a8129ca024c9994d8602e1d",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/adf93fcde6d3081f5a8129ca024c9994d8602e1d.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.8/FlameOutDesktop.jar",
+      "modVersion": "v0.0.7",
+      "sizeBytes": 1711730,
+      "downloadCount": 1020,
+      "releasedAt": "2023-10-23T13:00:05Z"
     },
     {
       "tag": "v0.0.7",
-      "name": "0.0.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-22T14:56:50Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.7",
-      "modVersion": "v0.0.7",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.7/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1711630,
-          "downloadCount": 293,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.7/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "adf93fcde6d3081f5a8129ca024c9994d8602e1d",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/adf93fcde6d3081f5a8129ca024c9994d8602e1d.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.7/FlameOutDesktop.jar",
+      "modVersion": "v0.0.7",
+      "sizeBytes": 1711630,
+      "downloadCount": 293,
+      "releasedAt": "2023-10-22T14:56:50Z"
     },
     {
       "tag": "v0.0.6",
-      "name": "0.0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-19T07:15:58Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.6",
-      "modVersion": "v0.0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.6/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1711324,
-          "downloadCount": 471,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.6/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "cf3397f87506fd20f939805977815577cba65e16",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/cf3397f87506fd20f939805977815577cba65e16.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.6/FlameOutDesktop.jar",
+      "modVersion": "v0.0.1",
+      "sizeBytes": 1711324,
+      "downloadCount": 471,
+      "releasedAt": "2023-10-19T07:15:58Z"
     },
     {
       "tag": "v0.0.5",
-      "name": "0.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-19T06:02:10Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.5",
-      "modVersion": "v0.0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.5/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1711102,
-          "downloadCount": 251,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.5/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "75ae8b645c015fb385971d42a10f9a04339fd663",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/75ae8b645c015fb385971d42a10f9a04339fd663.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.5/FlameOutDesktop.jar",
+      "modVersion": "v0.0.1",
+      "sizeBytes": 1711102,
+      "downloadCount": 251,
+      "releasedAt": "2023-10-19T06:02:10Z"
     },
     {
       "tag": "v0.0.4",
-      "name": "Theres no escape.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-18T15:30:42Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.4",
-      "modVersion": "v0.0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.4/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1704973,
-          "downloadCount": 682,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.4/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "a1d0b17d60f874bb98af30eebddbb0fe8baf908a",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/a1d0b17d60f874bb98af30eebddbb0fe8baf908a.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.4/FlameOutDesktop.jar",
+      "modVersion": "v0.0.1",
+      "sizeBytes": 1704973,
+      "downloadCount": 682,
+      "releasedAt": "2023-10-18T15:30:42Z"
     },
     {
       "tag": "v0.0.3",
-      "name": "0.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-18T13:11:39Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.3",
-      "modVersion": "v0.0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.3/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1704500,
-          "downloadCount": 248,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.3/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "903899c2d5e631460ece65c9e70f44cb483c8c5a",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/903899c2d5e631460ece65c9e70f44cb483c8c5a.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.3/FlameOutDesktop.jar",
+      "modVersion": "v0.0.1",
+      "sizeBytes": 1704500,
+      "downloadCount": 248,
+      "releasedAt": "2023-10-18T13:11:39Z"
     },
     {
       "tag": "v0.0.2",
-      "name": "0.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-18T10:22:12Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v0.0.2",
-      "modVersion": "v0.0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.2/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v0.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1704022,
-          "downloadCount": 346,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.2/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "1c70f9a595b4de569e9df81ccbce6121f22718c0",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/1c70f9a595b4de569e9df81ccbce6121f22718c0.zip"
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v0.0.2/FlameOutDesktop.jar",
+      "modVersion": "v0.0.1",
+      "sizeBytes": 1704022,
+      "downloadCount": 346,
+      "releasedAt": "2023-10-18T10:22:12Z"
     },
     {
       "tag": "v",
-      "name": "0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-18T09:12:45Z",
-      "htmlUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/tag/v",
-      "modVersion": "v0.0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v/FlameOutDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/refs/tags/v.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FlameOutDesktop.jar",
-          "size": 1703880,
-          "downloadCount": 1392,
-          "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v/FlameOutDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "ef5d3fb495b09a6bcb71b1636778cf99074148c3",
-      "archiveByCommitUrl": "https://github.com/EyeOfDarkness/FlameOut/archive/ef5d3fb495b09a6bcb71b1636778cf99074148c3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.3",
-      "modVersion": "v1.1.3",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/EyeOfDarkness/FlameOut/releases/download/v/FlameOutDesktop.jar",
+      "modVersion": "v0.0.1",
+      "sizeBytes": 1703880,
+      "downloadCount": 1392,
+      "releasedAt": "2023-10-18T09:12:45Z"
     }
   ],
   "meta": {
+    "name": "flameout",
+    "author": "EoD",
+    "description": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw.\n\nNot intended for multiplayer, low-end devices, or saving.",
+    "version": "v1.1.3",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "flame.FlameOut",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

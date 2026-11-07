@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "6-BennyLi-9/original-beta-version",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "beta",
-      "name": "V0.1.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-06-08T07:49:25Z",
-      "htmlUrl": "https://github.com/6-BennyLi-9/original-beta-version/releases/tag/beta",
-      "modVersion": "0.1.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/6-BennyLi-9/original-beta-version/releases/download/beta/originalBetaVersionDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/6-BennyLi-9/original-beta-version/archive/refs/tags/beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "originalBetaVersionDesktop.jar",
-          "size": 134491,
-          "downloadCount": 66,
-          "downloadUrl": "https://github.com/6-BennyLi-9/original-beta-version/releases/download/beta/originalBetaVersionDesktop.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "17e11398cd21578bbddaa6ba5d9fa6daaecc5de4",
-      "archiveByCommitUrl": "https://github.com/6-BennyLi-9/original-beta-version/archive/17e11398cd21578bbddaa6ba5d9fa6daaecc5de4.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "beta",
+      "downloadUrl": "https://github.com/6-BennyLi-9/original-beta-version/releases/download/beta/originalBetaVersionDesktop.jar",
       "modVersion": "0.1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 134491,
+      "downloadCount": 66,
+      "releasedAt": "2024-06-08T07:49:25Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "original-beta-version",
+    "author": "Benny_Li",
+    "description": "加入了许多有趣的东西\nv0.1.0 bulit",
+    "version": "0.1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "obv.obvJavaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

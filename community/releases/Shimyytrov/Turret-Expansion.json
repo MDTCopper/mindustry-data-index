@@ -1,120 +1,83 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Shimyytrov/Turret-Expansion",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v0.0.3",
-      "name": "Turret Expansion v0.0.3 - Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-25T07:09:27Z",
-      "htmlUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/tag/v0.0.3",
-      "modVersion": "0.0.3 Alpha",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.3/turret-expansion-0.0.3Beta.zip",
-      "sourceArchiveUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/refs/tags/v0.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "turret-expansion-0.0.3Beta.zip",
-          "size": 20752431,
-          "downloadCount": 126,
-          "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.3/turret-expansion-0.0.3Beta.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fc81b51bcbb8f47f4c85c2be8a8ae7de8ce42401",
-      "archiveByCommitUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/fc81b51bcbb8f47f4c85c2be8a8ae7de8ce42401.zip"
+      "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.3/turret-expansion-0.0.3Beta.zip",
+      "modVersion": "0.0.3 Alpha",
+      "sizeBytes": 20752431,
+      "downloadCount": 126,
+      "releasedAt": "2022-12-25T07:09:27Z"
     },
     {
       "tag": "v0.0.2",
-      "name": "Turret Expansion v0.0.2 - Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-19T05:29:52Z",
-      "htmlUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/tag/v0.0.2",
-      "modVersion": "0.0.2 Beta",
+      "kind": "release",
       "minGameVersion": "126",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.2/turret-expansion-0.0.2Beta.zip",
-      "sourceArchiveUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/refs/tags/v0.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "turret-expansion-0.0.2Beta.zip",
-          "size": 1020559,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.2/turret-expansion-0.0.2Beta.zip"
+          "from": "126",
+          "to": "135.2"
         }
       ],
-      "commitSha": "ad63f941274d5691e75a924b2ebd7299092bb6b1",
-      "archiveByCommitUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/ad63f941274d5691e75a924b2ebd7299092bb6b1.zip"
+      "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.2/turret-expansion-0.0.2Beta.zip",
+      "modVersion": "0.0.2 Beta",
+      "sizeBytes": 1020559,
+      "downloadCount": 26,
+      "releasedAt": "2022-05-19T05:29:52Z"
     },
     {
       "tag": "v0.0.1",
-      "name": "Turret Expansion v0.0.1 - Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-15T07:43:57Z",
-      "htmlUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/tag/v0.0.1",
-      "modVersion": "0.0.2 Beta",
+      "kind": "release",
       "minGameVersion": "126",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.1/turret-expansion-0.0.1Beta.zip",
-      "sourceArchiveUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/refs/tags/v0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "turret-expansion-0.0.1Beta.zip",
-          "size": 348770,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.1/turret-expansion-0.0.1Beta.zip"
+          "from": "126",
+          "to": "135.2"
         }
       ],
-      "commitSha": "ad63f941274d5691e75a924b2ebd7299092bb6b1",
-      "archiveByCommitUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/ad63f941274d5691e75a924b2ebd7299092bb6b1.zip"
+      "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/releases/download/v0.0.1/turret-expansion-0.0.1Beta.zip",
+      "modVersion": "0.0.2 Beta",
+      "sizeBytes": 348770,
+      "downloadCount": 5,
+      "releasedAt": "2022-05-15T07:43:57Z"
     },
     {
       "tag": "v0.0",
-      "name": "v0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Shimyytrov/Turret-Expansion/tree/v0.0",
-      "modVersion": "0.0.1 Beta",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/refs/tags/v0.0.zip",
-      "sourceArchiveUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/refs/tags/v0.0.zip",
-      "assets": [],
-      "commitSha": "d1d6198acc68b91b117a962ebb05f98950122d06",
-      "archiveByCommitUrl": "https://github.com/Shimyytrov/Turret-Expansion/archive/d1d6198acc68b91b117a962ebb05f98950122d06.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.0.2",
-      "modVersion": "0.0.2 Beta",
-      "minGameVersion": "126",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.0.3",
-      "modVersion": "0.0.3 Alpha",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.0.1 Beta"
     }
   ],
   "meta": {
+    "name": "turret-expansion",
+    "author": "Shimyytrov Modding Team",
+    "description": "A mod adds more turrets.",
+    "version": "0.0.3 Alpha",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

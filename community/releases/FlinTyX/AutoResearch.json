@@ -1,82 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "FlinTyX/AutoResearch",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-02T18:55:58Z",
-      "htmlUrl": "https://github.com/FlinTyX/AutoResearch/releases/tag/v1.2",
-      "modVersion": "Algorithm 1.2",
+      "kind": "tag",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.2.zip",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.2.zip",
-      "assets": [],
-      "commitSha": "f6bb2341566f483c88455f29dfd3010c843fad28",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/AutoResearch/archive/f6bb2341566f483c88455f29dfd3010c843fad28.zip"
+      "modVersion": "Algorithm 1.2",
+      "releasedAt": "2023-02-02T18:55:58Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-15T03:31:41Z",
-      "htmlUrl": "https://github.com/FlinTyX/AutoResearch/releases/tag/v1.0",
-      "modVersion": "Algorithm 1.1",
+      "kind": "tag",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "790ed6bb983c549002f78eeb7de95cd35b0ba4c4",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/AutoResearch/archive/790ed6bb983c549002f78eeb7de95cd35b0ba4c4.zip"
+      "modVersion": "Algorithm 1.1",
+      "releasedAt": "2023-01-15T03:31:41Z"
     },
     {
       "tag": "v0.1-beta",
-      "name": "v0.1-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-04-18T01:18:20Z",
-      "htmlUrl": "https://github.com/FlinTyX/AutoResearch/releases/tag/v0.1-beta",
-      "modVersion": "0.1 Algorithm",
+      "kind": "tag",
       "minGameVersion": "130",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "130",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v0.1-beta.zip",
-      "sourceArchiveUrl": "https://github.com/FlinTyX/AutoResearch/archive/refs/tags/v0.1-beta.zip",
-      "assets": [],
-      "commitSha": "f41d63c9e4082c8a6cd0ff7d82446aa193118d35",
-      "archiveByCommitUrl": "https://github.com/FlinTyX/AutoResearch/archive/f41d63c9e4082c8a6cd0ff7d82446aa193118d35.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1-beta",
       "modVersion": "0.1 Algorithm",
-      "minGameVersion": "130",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.2",
-      "modVersion": "Algorithm 1.2",
-      "minGameVersion": "141",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2022-04-18T01:18:20Z"
     }
   ],
   "meta": {
+    "name": "auto-research",
+    "author": "Flin",
+    "description": "A simple mod that researches content automatically.\n\nAlgorithm description:\nLooks up for avaliable tech nodes with all the objectives completed, then sorts them by real cost.\n\nFirst of all it unlocks content like maps and items (with no costs), then it researches the cheapest node with the avaliable items in the planet.\n\nYou can disable the auto-research in Settings/Game/Auto Research",
+    "version": "Algorithm 1.2",
+    "minGameVersion": "141",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

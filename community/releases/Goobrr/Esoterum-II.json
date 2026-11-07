@@ -1,352 +1,213 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Goobrr/Esoterum-II",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.0.1",
-      "name": "v2.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-23T07:17:27Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/2.0.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0.1/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/2.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 526108,
-          "downloadCount": 400,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0.1/Esoterum-II.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "e1fe99ff4dd5093b3805afa8449964be916cded4",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/e1fe99ff4dd5093b3805afa8449964be916cded4.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0.1/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 526108,
+      "downloadCount": 400,
+      "releasedAt": "2025-06-23T07:17:27Z"
     },
     {
       "tag": "2.0",
-      "name": "v2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-21T12:43:46Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/2.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 526149,
-          "downloadCount": 256,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "276300705fc3fb67eae171e7318a1ad20098e40e",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/276300705fc3fb67eae171e7318a1ad20098e40e.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 526149,
+      "downloadCount": 256,
+      "releasedAt": "2025-03-21T12:43:46Z"
     },
     {
       "tag": "1.3.2",
-      "name": "v1.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-26T21:44:50Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.3.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3.2/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 375470,
-          "downloadCount": 423,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3.2/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "cc4e5b6d8a65d5ae5d8cea2a0eb390b764c1c239",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/cc4e5b6d8a65d5ae5d8cea2a0eb390b764c1c239.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3.2/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 375470,
+      "downloadCount": 423,
+      "releasedAt": "2025-02-26T21:44:50Z"
     },
     {
       "tag": "1.3.1",
-      "name": "v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-26T21:18:46Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.3.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3.1/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 375615,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3.1/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1829ec5dae3791980e22c5dd97dfc2fb1a2eafd5",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/1829ec5dae3791980e22c5dd97dfc2fb1a2eafd5.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3.1/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 375615,
+      "downloadCount": 6,
+      "releasedAt": "2025-02-26T21:18:46Z"
     },
     {
       "tag": "1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-23T16:37:30Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.3",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 409339,
-          "downloadCount": 137,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f86f6bace125d26854dcbe5d7c118da3136be0f1",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/f86f6bace125d26854dcbe5d7c118da3136be0f1.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.3/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 409339,
+      "downloadCount": 137,
+      "releasedAt": "2025-02-23T16:37:30Z"
     },
     {
       "tag": "1.2.2",
-      "name": "v1.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-22T01:02:30Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.2.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2.2/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 517193,
-          "downloadCount": 145,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2.2/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "92b797de3f8a8cd6debe99391477d4af67854148",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/92b797de3f8a8cd6debe99391477d4af67854148.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2.2/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 517193,
+      "downloadCount": 145,
+      "releasedAt": "2025-02-22T01:02:30Z"
     },
     {
       "tag": "1.2.1",
-      "name": "v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-22T00:31:47Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.2.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2.1/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 516311,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2.1/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "fde1ff0e3956fa6fcd144fe9e607f126ff7b7c1d",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/fde1ff0e3956fa6fcd144fe9e607f126ff7b7c1d.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2.1/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 516311,
+      "downloadCount": 11,
+      "releasedAt": "2025-02-22T00:31:47Z"
     },
     {
       "tag": "1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-22T00:18:12Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 516556,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "360b663f7fc427fb5098ba2c85f6509cca589a61",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/360b663f7fc427fb5098ba2c85f6509cca589a61.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.2/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 516556,
+      "downloadCount": 7,
+      "releasedAt": "2025-02-22T00:18:12Z"
     },
     {
       "tag": "1.1.2",
-      "name": "v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-21T23:05:21Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.1.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1.2/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 509604,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1.2/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7f5693e0bc426dcd96492127a955b5cc9c5f4a2d",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/7f5693e0bc426dcd96492127a955b5cc9c5f4a2d.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1.2/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 509604,
+      "downloadCount": 12,
+      "releasedAt": "2025-02-21T23:05:21Z"
     },
     {
       "tag": "1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-21T21:22:46Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1.1/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 509410,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1.1/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7c95b94718d735f4a27ba444f669d667ecd18e84",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/7c95b94718d735f4a27ba444f669d667ecd18e84.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1.1/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 509410,
+      "downloadCount": 9,
+      "releasedAt": "2025-02-21T21:22:46Z"
     },
     {
       "tag": "1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-21T20:53:25Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 509252,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "72c8412471f2e149659eaa40278702241df95e7b",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/72c8412471f2e149659eaa40278702241df95e7b.zip"
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.1/Esoterum-II.jar",
+      "modVersion": "1",
+      "sizeBytes": 509252,
+      "downloadCount": 5,
+      "releasedAt": "2025-02-21T20:53:25Z"
     },
     {
       "tag": "1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-21T20:40:43Z",
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.0/Esoterum-II.jar",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Esoterum-II.jar",
-          "size": 506999,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.0/Esoterum-II.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "0b9d70580de5c67b74b020fc3a65197c97e5e83e",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/0b9d70580de5c67b74b020fc3a65197c97e5e83e.zip"
-    },
-    {
-      "tag": "test2",
-      "name": "test2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/tree/test2",
+      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/1.0/Esoterum-II.jar",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/test2.zip",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/test2.zip",
-      "assets": [],
-      "commitSha": "47f313958b68db7c4d0d832dc878bf703749b9b8",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/47f313958b68db7c4d0d832dc878bf703749b9b8.zip"
-    },
-    {
-      "tag": "test1",
-      "name": "test1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Goobrr/Esoterum-II/tree/test1",
-      "modVersion": "1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/test1.zip",
-      "sourceArchiveUrl": "https://github.com/Goobrr/Esoterum-II/archive/refs/tags/test1.zip",
-      "assets": [],
-      "commitSha": "ee5f7412ffe44141e723b13f1596402a0459f929",
-      "archiveByCommitUrl": "https://github.com/Goobrr/Esoterum-II/archive/ee5f7412ffe44141e723b13f1596402a0459f929.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.0",
-      "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.0.1",
-      "modVersion": "1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 506999,
+      "downloadCount": 8,
+      "releasedAt": "2025-02-21T20:40:43Z"
     }
   ],
   "meta": {
+    "name": "eso",
+    "author": "@Goob_rr",
+    "description": "A mod that adds logic components to the game, such as logic gates, wires and more.",
+    "version": "1",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "esoterum.Esoterum",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

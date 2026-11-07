@@ -1,79 +1,54 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "rqddqwq/darksteel",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.11",
-      "name": "v0.11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-30T04:45:40Z",
-      "htmlUrl": "https://github.com/rqddqwq/darksteel/releases/tag/0.11",
-      "modVersion": "0.09",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/0.11/darksteel.jar",
-      "sourceArchiveUrl": "https://github.com/rqddqwq/darksteel/archive/refs/tags/0.11.zip",
-      "assets": [
-        {
-          "name": "darksteel.jar",
-          "size": 848677,
-          "downloadCount": 207,
-          "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/0.11/darksteel.jar"
-        }
-      ],
-      "commitSha": "f5ac5cd652e4ac6e7eb107b873a7cb7f32a6a755",
-      "archiveByCommitUrl": "https://github.com/rqddqwq/darksteel/archive/f5ac5cd652e4ac6e7eb107b873a7cb7f32a6a755.zip"
-    },
-    {
-      "tag": "darksteel",
-      "name": "darksteel",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-05T08:54:06Z",
-      "htmlUrl": "https://github.com/rqddqwq/darksteel/releases/tag/darksteel",
-      "modVersion": "0.07",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/darksteel/default.jar",
-      "sourceArchiveUrl": "https://github.com/rqddqwq/darksteel/archive/refs/tags/darksteel.zip",
-      "assets": [
-        {
-          "name": "default.jar",
-          "size": 802207,
-          "downloadCount": 210,
-          "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/darksteel/default.jar"
-        }
-      ],
-      "commitSha": "83d1e1408dd37be11827272733e4cb0e6c49ccfe",
-      "archiveByCommitUrl": "https://github.com/rqddqwq/darksteel/archive/83d1e1408dd37be11827272733e4cb0e6c49ccfe.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "darksteel",
-      "modVersion": "0.07",
-      "minGameVersion": "154",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.11",
       "modVersion": "0.09",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 848677,
+      "downloadCount": 208,
+      "releasedAt": "2026-09-30T04:45:40Z"
+    },
+    {
+      "tag": "darksteel",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/rqddqwq/darksteel/releases/download/darksteel/default.jar",
+      "modVersion": "0.07",
+      "sizeBytes": 802207,
+      "downloadCount": 210,
+      "releasedAt": "2026-09-05T08:54:06Z"
     }
   ],
   "meta": {
+    "name": "玄钢重工",
+    "author": "容器",
+    "description": "未知",
+    "version": "0.09",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "MultiCraft.MultiCrafterMod",
-    "hasScripts": false,
+    "java": true,
+    "hasScripts": true,
     "hasJava": true
   }
 }

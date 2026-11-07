@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "florfir/md-proxy",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v3",
-      "name": "v3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-16T14:06:41Z",
-      "htmlUrl": "https://github.com/florfir/md-proxy/releases/tag/v3",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v3/md-proxy.jar",
-      "sourceArchiveUrl": "https://github.com/florfir/md-proxy/archive/refs/tags/v3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "md-proxy.jar",
-          "size": 2702087,
-          "downloadCount": 75,
-          "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v3/md-proxy.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "94886e76b2b51cd54c3b233ff810cc71fb52d43d",
-      "archiveByCommitUrl": "https://github.com/florfir/md-proxy/archive/94886e76b2b51cd54c3b233ff810cc71fb52d43d.zip"
+      "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v3/md-proxy.jar",
+      "modVersion": "1",
+      "sizeBytes": 2702087,
+      "downloadCount": 75,
+      "releasedAt": "2026-09-16T14:06:41Z"
     },
     {
       "tag": "v2",
-      "name": "v2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-07T07:20:47Z",
-      "htmlUrl": "https://github.com/florfir/md-proxy/releases/tag/v2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v2/md-proxyDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/florfir/md-proxy/archive/refs/tags/v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "md-proxyDesktop.jar",
-          "size": 1895968,
-          "downloadCount": 101,
-          "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v2/md-proxyDesktop.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "58f0c98f07110b8c3a7d90f94f1a2499f116439f",
-      "archiveByCommitUrl": "https://github.com/florfir/md-proxy/archive/58f0c98f07110b8c3a7d90f94f1a2499f116439f.zip"
+      "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v2/md-proxyDesktop.jar",
+      "modVersion": "1",
+      "sizeBytes": 1895968,
+      "downloadCount": 101,
+      "releasedAt": "2026-08-07T07:20:47Z"
     },
     {
       "tag": "v1",
-      "name": "v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-26T09:22:38Z",
-      "htmlUrl": "https://github.com/florfir/md-proxy/releases/tag/v1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v1/md-proxyDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/florfir/md-proxy/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "md-proxyDesktop.jar",
-          "size": 1894389,
-          "downloadCount": 51,
-          "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v1/md-proxyDesktop.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ee6b73ec3573595aa152af4b680fdcc98ca79d0c",
-      "archiveByCommitUrl": "https://github.com/florfir/md-proxy/archive/ee6b73ec3573595aa152af4b680fdcc98ca79d0c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v3",
+      "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v1/md-proxyDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1894389,
+      "downloadCount": 51,
+      "releasedAt": "2026-07-26T09:22:38Z"
     }
   ],
   "meta": {
+    "name": "md-proxy",
+    "author": "kuko",
+    "description": "idk.",
+    "version": "1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "kuko.ProxyMod",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

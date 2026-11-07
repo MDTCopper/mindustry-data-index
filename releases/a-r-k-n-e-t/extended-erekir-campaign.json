@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "a-r-k-n-e-t/extended-erekir-campaign",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "Extended Erekir Campaign: 1.1.1 (beta)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-15T15:28:11Z",
-      "htmlUrl": "https://github.com/A-R-K-N-E-T/Extended-Erekir-Campaign/releases/tag/1.0",
-      "modVersion": "[red]1.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/A-R-K-N-E-T/Extended-Erekir-Campaign/releases/download/1.0/Extended_Erekir_Campaign_1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/a-r-k-n-e-t/extended-erekir-campaign/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Extended_Erekir_Campaign_1.1.1.zip",
-          "size": 585891,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/A-R-K-N-E-T/Extended-Erekir-Campaign/releases/download/1.0/Extended_Erekir_Campaign_1.1.1.zip"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "43b5fcbd2e3a711baa854f84e4e37bb9698c9ad1",
-      "archiveByCommitUrl": "https://github.com/a-r-k-n-e-t/extended-erekir-campaign/archive/43b5fcbd2e3a711baa854f84e4e37bb9698c9ad1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
+      "downloadUrl": "https://github.com/A-R-K-N-E-T/Extended-Erekir-Campaign/releases/download/1.0/Extended_Erekir_Campaign_1.1.1.zip",
       "modVersion": "[red]1.0",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 585891,
+      "downloadCount": 38,
+      "releasedAt": "2026-07-15T15:28:11Z"
     }
   ],
   "meta": {
+    "name": "eec",
+    "author": "[#019BF0]ARK[white][#2FDBFF]NET, [#2E8E05]iq[lime]tik[green]123[white]",
+    "description": "Значительно расширяет кампанию Эрекира. Мод добавляет исключительно новые сектора в кампанию.",
+    "version": "[red]1.0",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

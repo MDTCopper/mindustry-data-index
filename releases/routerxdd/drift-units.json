@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "routerxdd/drift-units",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "drift2",
-      "name": "Drift ver 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-29T06:05:29Z",
-      "htmlUrl": "https://github.com/RouterXdd/Drift-units/releases/tag/drift2",
-      "modVersion": "lol",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift2/Drift-units.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/drift-units/archive/refs/tags/drift2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Drift-units.zip",
-          "size": 230244,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift2/Drift-units.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c5580b110aefdc66c161f492317daf06afdba2d2",
-      "archiveByCommitUrl": "https://github.com/routerxdd/drift-units/archive/c5580b110aefdc66c161f492317daf06afdba2d2.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift2/Drift-units.zip",
+      "modVersion": "lol",
+      "sizeBytes": 230244,
+      "downloadCount": 47,
+      "releasedAt": "2023-04-29T06:05:29Z"
     },
     {
       "tag": "drift1",
-      "name": "Drift ver 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-18T08:13:57Z",
-      "htmlUrl": "https://github.com/RouterXdd/Drift-units/releases/tag/drift1",
-      "modVersion": "lol",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift1/Drift-units.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/drift-units/archive/refs/tags/drift1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Drift-units.zip",
-          "size": 113759,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift1/Drift-units.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ee8a33ca7de88c9ec5ebcf09a2d604b5b72d9611",
-      "archiveByCommitUrl": "https://github.com/routerxdd/drift-units/archive/ee8a33ca7de88c9ec5ebcf09a2d604b5b72d9611.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "drift2",
+      "downloadUrl": "https://github.com/RouterXdd/Drift-units/releases/download/drift1/Drift-units.zip",
       "modVersion": "lol",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 113759,
+      "downloadCount": 10,
+      "releasedAt": "2022-07-18T08:13:57Z"
     }
   ],
   "meta": {
+    "name": "drift",
+    "author": "Router Xdd",
+    "description": "TIME TO DRIFT",
+    "version": "lol",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

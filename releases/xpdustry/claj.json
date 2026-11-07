@@ -1,607 +1,328 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "xpdustry/claj",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.4.5",
-      "name": "Bugs Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-05T16:42:05Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4.5",
-      "modVersion": "2.4.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.5/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 353164,
-          "downloadCount": 370,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.5/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1537124,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.5/claj-server.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b81a0d04d28b0fc6f2eea62239912b0b046d895a",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/b81a0d04d28b0fc6f2eea62239912b0b046d895a.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.5/claj-server.jar",
+      "modVersion": "2.4.5",
+      "sizeBytes": 1890288,
+      "downloadCount": 412,
+      "releasedAt": "2026-11-05T16:42:05Z"
     },
     {
       "tag": "2.4.4",
-      "name": "Bug Report System",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-16T16:16:24Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4.4",
-      "modVersion": "2.4.4",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.4/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 350636,
-          "downloadCount": 8163,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.4/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1523372,
-          "downloadCount": 76,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.4/claj-server.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a3d51e469be5fdc023d3ae54c38302a9ab41b773",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/a3d51e469be5fdc023d3ae54c38302a9ab41b773.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.4/claj-server.jar",
+      "modVersion": "2.4.4",
+      "sizeBytes": 1874008,
+      "downloadCount": 8240,
+      "releasedAt": "2026-09-16T16:16:24Z"
     },
     {
       "tag": "2.4.3",
-      "name": "Fixed server bugs",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-18T19:19:52Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4.3",
-      "modVersion": "2.4.3",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.3/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 336438,
-          "downloadCount": 6310,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.3/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1520194,
-          "downloadCount": 39,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.3/claj-server.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9149482d044a8511bdaf2d9b5124d00ed7c7c430",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/9149482d044a8511bdaf2d9b5124d00ed7c7c430.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.3/claj-server.jar",
+      "modVersion": "2.4.3",
+      "sizeBytes": 1856632,
+      "downloadCount": 6349,
+      "releasedAt": "2026-08-18T19:19:52Z"
     },
     {
       "tag": "2.4.2",
-      "name": "Dropped v7 support, fixed bugs",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-19T18:37:51Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4.2",
-      "modVersion": "2.4.2",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.2/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 335798,
-          "downloadCount": 7013,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.2/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1519943,
-          "downloadCount": 57,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.2/claj-server.jar"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6f6dd52e1d28449dd31c64470b4fa9d581312839",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/6f6dd52e1d28449dd31c64470b4fa9d581312839.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.2/claj-server.jar",
+      "modVersion": "2.4.2",
+      "sizeBytes": 1855741,
+      "downloadCount": 7070,
+      "releasedAt": "2026-07-19T18:37:51Z"
     },
     {
       "tag": "2.4.1-v8",
-      "name": "CLaJ for Mindustry v8",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-17T21:09:59Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4.1-v8",
-      "modVersion": "2.4.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1-v8/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.1-v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 347601,
-          "downloadCount": 666,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1-v8/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1519070,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1-v8/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4d446bd814b0f8ee362ef28c6674293ad40fe992",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/4d446bd814b0f8ee362ef28c6674293ad40fe992.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1-v8/claj-server.jar",
+      "modVersion": "2.4.1",
+      "sizeBytes": 1866671,
+      "downloadCount": 686,
+      "releasedAt": "2026-07-17T21:09:59Z",
+      "prerelease": true
     },
     {
       "tag": "2.4.1",
-      "name": "Mindustry compatibility and lot of optimizations",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-17T21:04:37Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4.1",
-      "modVersion": "2.4.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 347601,
-          "downloadCount": 1208,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1519070,
-          "downloadCount": 35,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4d446bd814b0f8ee362ef28c6674293ad40fe992",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/4d446bd814b0f8ee362ef28c6674293ad40fe992.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4.1/claj-server.jar",
+      "modVersion": "2.4.1",
+      "sizeBytes": 1866671,
+      "downloadCount": 1243,
+      "releasedAt": "2026-07-17T21:04:37Z"
     },
     {
       "tag": "2.4",
-      "name": "MOD RENEW!!!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-03T19:38:39Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.4",
-      "modVersion": "2.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 318127,
-          "downloadCount": 17217,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1498944,
-          "downloadCount": 181,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "189abaa995179329610e3c934e0254c6fe35d5ec",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/189abaa995179329610e3c934e0254c6fe35d5ec.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.4/claj-server.jar",
+      "modVersion": "2.4",
+      "sizeBytes": 1817071,
+      "downloadCount": 17398,
+      "releasedAt": "2026-05-03T19:38:39Z"
     },
     {
       "tag": "2.3.3-v8",
-      "name": "CLaJ for Mindustry v8",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-05-16T07:26:42Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.3.3-v8",
-      "modVersion": "2.3.3",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3-v8/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.3.3-v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 79378,
-          "downloadCount": 8879,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3-v8/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1330689,
-          "downloadCount": 230,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3-v8/claj-server.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "80ecf74ac1c72561be08c64a6c6d4d79b5c32c2f",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/80ecf74ac1c72561be08c64a6c6d4d79b5c32c2f.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3-v8/claj-server.jar",
+      "modVersion": "2.3.3",
+      "sizeBytes": 1410067,
+      "downloadCount": 9109,
+      "releasedAt": "2025-05-16T07:26:42Z",
+      "prerelease": true
     },
     {
       "tag": "2.3.3",
-      "name": "added translations for Chinese, Vietnamese, Ukrainian, German and Polish",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-16T07:23:19Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.3.3",
-      "modVersion": "2.3.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.3.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 79378,
-          "downloadCount": 37838,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1330689,
-          "downloadCount": 320,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "0a74e30c3923060f1eef22c87d842b79e0d978b9",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/0a74e30c3923060f1eef22c87d842b79e0d978b9.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.3/claj-server.jar",
+      "modVersion": "2.3.3",
+      "sizeBytes": 1410067,
+      "downloadCount": 38158,
+      "releasedAt": "2025-05-16T07:23:19Z"
     },
     {
       "tag": "2.3.2-v8",
-      "name": "CLaJ for Mindustry v8",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-05-01T15:46:31Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.3.2-v8",
-      "modVersion": "2.3.2",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2-v8/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.3.2-v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 75639,
-          "downloadCount": 1133,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2-v8/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1330681,
-          "downloadCount": 107,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2-v8/claj-server.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "c6c85662be72df2a00d8aa09f243558744340075",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/c6c85662be72df2a00d8aa09f243558744340075.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2-v8/claj-server.jar",
+      "modVersion": "2.3.2",
+      "sizeBytes": 1406320,
+      "downloadCount": 1242,
+      "releasedAt": "2025-05-01T15:46:31Z",
+      "prerelease": true
     },
     {
       "tag": "2.3.2",
-      "name": "fixed bugs, added Indonesian and Russian translations.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-01T15:27:14Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.3.2",
-      "modVersion": "2.3.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 75601,
-          "downloadCount": 1558,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1330681,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ef3fb9816f47aa2b825a55ab223c87bed0173bc9",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/ef3fb9816f47aa2b825a55ab223c87bed0173bc9.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.2/claj-server.jar",
+      "modVersion": "2.3.2",
+      "sizeBytes": 1406282,
+      "downloadCount": 1592,
+      "releasedAt": "2025-05-01T15:27:14Z"
     },
     {
       "tag": "2.3.1",
-      "name": "Fixed bugs, LTS release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-17T20:25:10Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.3.1",
-      "modVersion": "2.3.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.1/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 73085,
-          "downloadCount": 935,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.1/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1330004,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.1/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7450ab6985936291e579007702a1079f8c0ab34a",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/7450ab6985936291e579007702a1079f8c0ab34a.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3.1/claj-server.jar",
+      "modVersion": "2.3.1",
+      "sizeBytes": 1403089,
+      "downloadCount": 960,
+      "releasedAt": "2025-04-17T20:25:10Z"
     },
     {
       "tag": "2.3",
-      "name": "Fixed bugs",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-15T07:46:15Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.3",
-      "modVersion": "2.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 73085,
-          "downloadCount": 209,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1329655,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "21cabb94e5f424175f9430323cb1849e430724cc",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/21cabb94e5f424175f9430323cb1849e430724cc.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.3/claj-server.jar",
+      "modVersion": "2.3",
+      "sizeBytes": 1402740,
+      "downloadCount": 214,
+      "releasedAt": "2025-04-15T07:46:15Z"
     },
     {
       "tag": "2.2",
-      "name": "Added versionning, and fixed bugs",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-08T15:09:44Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.2",
-      "modVersion": "2.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.2/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 72900,
-          "downloadCount": 290,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.2/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1329451,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.2/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "04f8d4b8bcc42c28a2234b9936b20cd2e708cd37",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/04f8d4b8bcc42c28a2234b9936b20cd2e708cd37.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.2/claj-server.jar",
+      "modVersion": "2.2",
+      "sizeBytes": 1402351,
+      "downloadCount": 297,
+      "releasedAt": "2025-04-08T15:09:44Z"
     },
     {
       "tag": "2.1.1",
-      "name": "Renamed the projet to 'claj' instead of 'claj-v2'",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-02T15:56:42Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.1.1",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1.1/claj-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-client.jar",
-          "size": 71959,
-          "downloadCount": 299,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1.1/claj-client.jar"
-        },
-        {
-          "name": "claj-server.jar",
-          "size": 1330563,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1.1/claj-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "926f8cb0830d8dccac5be42441e5f6880fd27082",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/926f8cb0830d8dccac5be42441e5f6880fd27082.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1.1/claj-server.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 1402522,
+      "downloadCount": 303,
+      "releasedAt": "2025-04-02T15:56:42Z"
     },
     {
       "tag": "2.1",
-      "name": "Some changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-29T10:46:26Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.1",
-      "modVersion": "2.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1/claj-v2-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-v2-client.jar",
-          "size": 71971,
-          "downloadCount": 202,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1/claj-v2-client.jar"
-        },
-        {
-          "name": "claj-v2-server.jar",
-          "size": 1330584,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1/claj-v2-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7b81957420606e20c692fd6ad1c13f2cbacc444f",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/7b81957420606e20c692fd6ad1c13f2cbacc444f.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.1/claj-v2-server.jar",
+      "modVersion": "2.1",
+      "sizeBytes": 1402555,
+      "downloadCount": 210,
+      "releasedAt": "2025-03-29T10:46:26Z"
     },
     {
       "tag": "2.0.2",
-      "name": "Fixed ui and bugs",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-28T20:51:03Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.0.2",
-      "modVersion": "2.0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.2/claj-v2-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-v2-client.jar",
-          "size": 66495,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.2/claj-v2-client.jar"
-        },
-        {
-          "name": "claj-v2-server.jar",
-          "size": 1330587,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.2/claj-v2-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "328f7160e28317d4b640dda7e7fa340db02b5561",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/328f7160e28317d4b640dda7e7fa340db02b5561.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.2/claj-v2-server.jar",
+      "modVersion": "2.0.2",
+      "sizeBytes": 1397082,
+      "downloadCount": 54,
+      "releasedAt": "2025-03-28T20:51:03Z"
     },
     {
       "tag": "2.0.1",
-      "name": "Little update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-28T17:27:46Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.0.1",
-      "modVersion": "2.0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.1/claj-v2-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-v2-client.jar",
-          "size": 66218,
-          "downloadCount": 118,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.1/claj-v2-client.jar"
-        },
-        {
-          "name": "claj-v2-server.jar",
-          "size": 1330496,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.1/claj-v2-server.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c754deedb515136ff538f9a4d9e8a83f5b6ed48d",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/c754deedb515136ff538f9a4d9e8a83f5b6ed48d.zip"
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0.1/claj-v2-server.jar",
+      "modVersion": "2.0.1",
+      "sizeBytes": 1396714,
+      "downloadCount": 124,
+      "releasedAt": "2025-03-28T17:27:46Z"
     },
     {
       "tag": "2.0",
-      "name": "The new CLaJ protocol is here!!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-28T16:21:58Z",
-      "htmlUrl": "https://github.com/xpdustry/claj/releases/tag/2.0",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0/claj-v2-server.jar",
-      "sourceArchiveUrl": "https://github.com/xpdustry/claj/archive/refs/tags/2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "claj-v2-server.jar",
-          "size": 1330496,
-          "downloadCount": 198,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0/claj-v2-server.jar"
-        },
-        {
-          "name": "claj-v2.jar",
-          "size": 65899,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0/claj-v2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4c2feb421c06398251ffec6537e73f346c1c7cf1",
-      "archiveByCommitUrl": "https://github.com/xpdustry/claj/archive/4c2feb421c06398251ffec6537e73f346c1c7cf1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.4.1-v8",
-      "modVersion": "2.4.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.4.4",
-      "modVersion": "2.4.4",
-      "minGameVersion": "159.5",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.4.5",
-      "modVersion": "2.4.5",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/xpdustry/claj/releases/download/2.0/claj-v2-server.jar",
+      "modVersion": "2.0",
+      "sizeBytes": 1396395,
+      "downloadCount": 205,
+      "releasedAt": "2025-03-28T16:21:58Z"
     }
   ],
   "meta": {
+    "name": "claj",
+    "author": "ZetaMap, xzxADIxzx",
+    "description": "\nReworked CLaJ protocol of the xzxADIxzx's Scheme Size mod.\n\nCLaJ (Copy Link and Join) allows you to play with your friends, just by creating a room, copying the link, and sending it to your friends.\n",
+    "version": "2.4.5",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "com.xpdustry.claj.client.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

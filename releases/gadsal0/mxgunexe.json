@@ -1,41 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "gadsal0/mxgunexe",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "idk",
-      "name": "idk",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/gadsal0/mxgunexe/tree/idk",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/gadsal0/mxgunexe/archive/refs/tags/idk.zip",
-      "sourceArchiveUrl": "https://github.com/gadsal0/mxgunexe/archive/refs/tags/idk.zip",
-      "assets": [],
-      "commitSha": "2c094fe8e5722012aae3ef67d4c5bf634ab1d25d",
-      "archiveByCommitUrl": "https://github.com/gadsal0/mxgunexe/archive/2c094fe8e5722012aae3ef67d4c5bf634ab1d25d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "idk",
-      "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "1.0"
     }
   ],
   "meta": {
+    "name": "mxegun",
+    "author": "gadsal0",
+    "description": "Nothing to see here",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

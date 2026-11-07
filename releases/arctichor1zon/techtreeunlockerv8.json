@@ -1,64 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "arctichor1zon/techtreeunlockerv8",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.0.1",
-      "name": "2.0.1-PORT",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-16T21:26:39Z",
-      "htmlUrl": "https://github.com/ArcticHor1zon/TechTreeUnlockerV8/releases/tag/2.0.1",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ArcticHor1zon/TechTreeUnlockerV8/releases/download/2.0.1/TechTreeUnlockerV8.jar",
-      "sourceArchiveUrl": "https://github.com/arctichor1zon/techtreeunlockerv8/archive/refs/tags/2.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "TechTreeUnlockerV8.jar",
-          "size": 11091,
-          "downloadCount": 1454,
-          "downloadUrl": "https://github.com/ArcticHor1zon/TechTreeUnlockerV8/releases/download/2.0.1/TechTreeUnlockerV8.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f3cc3dcd63eb99cc78100a396556887e7e087d39",
-      "archiveByCommitUrl": "https://github.com/arctichor1zon/techtreeunlockerv8/archive/f3cc3dcd63eb99cc78100a396556887e7e087d39.zip"
-    },
-    {
-      "tag": "2.0",
-      "name": "2.0-PORT",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-16T21:24:24Z",
-      "htmlUrl": "https://github.com/ArcticHor1zon/TechTreeUnlockerV8/releases/tag/2.0",
+      "downloadUrl": "https://github.com/ArcticHor1zon/TechTreeUnlockerV8/releases/download/2.0.1/TechTreeUnlockerV8.jar",
       "modVersion": "2.0",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/arctichor1zon/techtreeunlockerv8/archive/refs/tags/2.0.zip",
-      "sourceArchiveUrl": "https://github.com/arctichor1zon/techtreeunlockerv8/archive/refs/tags/2.0.zip",
-      "assets": [],
-      "commitSha": "34e9f78719abfff9c389eb6dd4cac2910dfec55c",
-      "archiveByCommitUrl": "https://github.com/arctichor1zon/techtreeunlockerv8/archive/34e9f78719abfff9c389eb6dd4cac2910dfec55c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.0.1",
-      "modVersion": "2.0",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 11091,
+      "downloadCount": 1455,
+      "releasedAt": "2026-06-16T21:26:39Z"
     }
   ],
   "meta": {
+    "name": "unlock-tech-tree-mod",
+    "author": "ArcticHor1zon",
+    "description": "Instantly unlock all research on the tech-tree for Serpulo and Erekir. Features: per-planet unlock/reset, auto-unlock on campaign load. Used raffel080108's Tech Tree Unlocker",
+    "version": "2.0",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "raffel080108.unlocktechtreemod.UnlockTechTreeMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

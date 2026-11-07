@@ -1,102 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/tripwire",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1.1",
-      "name": "Tripwire v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T03:48:57Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tripwire-1.1.1.zip",
-          "size": 63112,
-          "downloadCount": 52,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/download/v1.1.1/Tripwire-1.1.1.zip"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8dce7c12be03ebcbf06f2d4c37e801f87f43b78c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/tripwire/archive/8dce7c12be03ebcbf06f2d4c37e801f87f43b78c.zip"
+      "downloadUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.1.1.zip",
+      "modVersion": "1.1.1",
+      "sizeBytes": 63112,
+      "downloadCount": 52,
+      "releasedAt": "2026-08-08T03:48:57Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "Tripwire v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-28T10:04:49Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tripwire-1.1.0.zip",
-          "size": 56622,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/download/v1.1.0/Tripwire-1.1.0.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e07d54f197263ca65805ba6948c2c94a97f066ba",
-      "archiveByCommitUrl": "https://github.com/determination-wind/tripwire/archive/e07d54f197263ca65805ba6948c2c94a97f066ba.zip"
+      "downloadUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.1.0.zip",
+      "modVersion": "1.1.0",
+      "sizeBytes": 56622,
+      "downloadCount": 14,
+      "releasedAt": "2026-06-28T10:04:49Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "Tripwire v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-28T14:56:57Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tripwire-1.0.0.zip",
-          "size": 34600,
-          "downloadCount": 1721,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Tripwire/releases/download/v1.0.0/Tripwire-1.0.0.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cacbff564b6ea9618bd3acdb1f925af7d260795b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/tripwire/archive/cacbff564b6ea9618bd3acdb1f925af7d260795b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.0",
-      "modVersion": "1.1.0",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.1",
-      "modVersion": "1.1.1",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/determination-wind/tripwire/archive/refs/tags/v1.0.0.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 34600,
+      "downloadCount": 1721,
+      "releasedAt": "2026-05-28T14:56:57Z"
     }
   ],
   "meta": {
+    "name": "Tripwire-dev",
+    "author": "DeterMination",
+    "description": "Tripwire geofence alerts for Mindustry. Mindustry 地理围栏报警模组。",
+    "version": "1.1.1",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "tripwire.TripwireMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

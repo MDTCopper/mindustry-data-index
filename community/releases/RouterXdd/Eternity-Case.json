@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "RouterXdd/Eternity-Case",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "Some changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-10T13:02:38Z",
-      "htmlUrl": "https://github.com/RouterXdd/Eternity-Case/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Eternity-Case/releases/download/v1.1/Eternity-Case.jar",
-      "sourceArchiveUrl": "https://github.com/RouterXdd/Eternity-Case/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Eternity-Case.jar",
-          "size": 1129265,
-          "downloadCount": 1608,
-          "downloadUrl": "https://github.com/RouterXdd/Eternity-Case/releases/download/v1.1/Eternity-Case.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "60d2a5a75538763dd057a548d6cba11ad07b3fb0",
-      "archiveByCommitUrl": "https://github.com/RouterXdd/Eternity-Case/archive/60d2a5a75538763dd057a548d6cba11ad07b3fb0.zip"
+      "downloadUrl": "https://github.com/RouterXdd/Eternity-Case/releases/download/v1.1/Eternity-Case.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 1129265,
+      "downloadCount": 1608,
+      "releasedAt": "2024-11-10T13:02:38Z"
     },
     {
       "tag": "v1",
-      "name": "Bruh bruh",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-06T13:26:18Z",
-      "htmlUrl": "https://github.com/RouterXdd/Eternity-Case/releases/tag/v1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Eternity-Case/releases/download/v1/Eternity-Case.jar",
-      "sourceArchiveUrl": "https://github.com/RouterXdd/Eternity-Case/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Eternity-Case.jar",
-          "size": 815577,
-          "downloadCount": 639,
-          "downloadUrl": "https://github.com/RouterXdd/Eternity-Case/releases/download/v1/Eternity-Case.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "09f2da7573091321c3dbde3413ab36ee928339cb",
-      "archiveByCommitUrl": "https://github.com/RouterXdd/Eternity-Case/archive/09f2da7573091321c3dbde3413ab36ee928339cb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1",
-      "modVersion": "1.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/RouterXdd/Eternity-Case/releases/download/v1/Eternity-Case.jar",
+      "modVersion": "1",
+      "sizeBytes": 815577,
+      "downloadCount": 639,
+      "releasedAt": "2024-09-06T13:26:18Z"
     }
   ],
   "meta": {
+    "name": "eternity-case",
+    "author": "R.O.T.",
+    "description": "Just mod with random shit",
+    "version": "1.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "eternity.EternityMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,95 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zxsrxt-kebab-case/mindustry-noweather",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.13.0",
-      "name": "v0.13.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-10T20:19:48Z",
-      "htmlUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/tag/v0.13.0",
-      "modVersion": "0.13.0",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.13.0/no-weather-mod-0.13.0.jar",
-      "sourceArchiveUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/archive/refs/tags/v0.13.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "no-weather-mod-0.13.0.jar",
-          "size": 42868,
-          "downloadCount": 244,
-          "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.13.0/no-weather-mod-0.13.0.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fc46c34d3aeb59cf7b1c376dcf307879ac7dbe79",
-      "archiveByCommitUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/archive/fc46c34d3aeb59cf7b1c376dcf307879ac7dbe79.zip"
+      "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.13.0/no-weather-mod-0.13.0.jar",
+      "modVersion": "0.13.0",
+      "sizeBytes": 42868,
+      "downloadCount": 244,
+      "releasedAt": "2026-06-10T20:19:48Z"
     },
     {
       "tag": "v0.12.2",
-      "name": "v0.12.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-10T19:20:07Z",
-      "htmlUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/tag/v0.12.2",
-      "modVersion": "0.12.2",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.12.2/no-weather-mod-0.12.2.jar",
-      "sourceArchiveUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/archive/refs/tags/v0.12.2.zip",
-      "assets": [
-        {
-          "name": "no-weather-mod-0.12.2.jar",
-          "size": 42511,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.12.2/no-weather-mod-0.12.2.jar"
-        }
-      ],
-      "commitSha": "03511a3d086c67cd617465de70c73f9f5d2f08ec",
-      "archiveByCommitUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/archive/03511a3d086c67cd617465de70c73f9f5d2f08ec.zip"
-    },
-    {
-      "tag": "v0.12.1",
-      "name": "release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-10T19:08:26Z",
-      "htmlUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/tag/v0.12.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.12.1/no-weather-mod-0.12.1.jar",
-      "sourceArchiveUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/archive/refs/tags/v0.12.1.zip",
-      "assets": [
-        {
-          "name": "no-weather-mod-0.12.1.jar",
-          "size": 42486,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.12.1/no-weather-mod-0.12.1.jar"
-        }
-      ],
-      "commitSha": "72573e6501ec7f786a301492385bb1d0f64acbfb",
-      "archiveByCommitUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/archive/72573e6501ec7f786a301492385bb1d0f64acbfb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.13.0",
-      "modVersion": "0.13.0",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.12.2",
+      "sizeBytes": 42511,
+      "downloadCount": 6,
+      "releasedAt": "2026-06-10T19:20:07Z"
     }
   ],
   "meta": {
+    "name": "no-weather",
+    "author": "zxsrxt-kebab-case",
+    "description": "Quality-of-life pack: hide weather/fog/darkness, turret ranges, health bars, damage numbers, wave preview, power panel, ammo DPS stats, and a one-click miner that lays drills, bridges and water extractors. All client-side, safe on multiplayer servers.",
+    "version": "0.13.0",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "noweather.NoWeatherMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

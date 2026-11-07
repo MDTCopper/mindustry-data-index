@@ -1,1009 +1,581 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "hao-1337/mindustry-better-vanilla",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.12.1",
-      "name": "v1.12.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-12T22:11:18Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.12.1",
-      "modVersion": "1.10.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.1/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.12.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 774213,
-          "downloadCount": 5056,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.1/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v147-mindustry-better-vanilla.jar",
-          "size": 773774,
-          "downloadCount": 29,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.1/v147-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ac3fd43677f254ee3ee06662472fa5857292c87a",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/ac3fd43677f254ee3ee06662472fa5857292c87a.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.1/mindustry-better-vanilla.jar",
+      "modVersion": "1.10.2",
+      "sizeBytes": 1547987,
+      "downloadCount": 5096,
+      "releasedAt": "2026-08-12T22:11:18Z"
     },
     {
       "tag": "v1.12.0",
-      "name": "v1.12.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-12T14:29:48Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.12.0",
-      "modVersion": "1.10.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.12.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 764337,
-          "downloadCount": 163,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.0/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v147-mindustry-better-vanilla.jar",
-          "size": 763915,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.0/v147-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "166f4ba45c188f926abd0dcc1cdff1e79dbadd32",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/166f4ba45c188f926abd0dcc1cdff1e79dbadd32.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.12.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.10.2",
+      "sizeBytes": 1528252,
+      "downloadCount": 165,
+      "releasedAt": "2026-08-12T14:29:48Z"
     },
     {
       "tag": "v1.11.0",
-      "name": "v1.11.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T14:24:15Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.11.0",
-      "modVersion": "1.10.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.11.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.11.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 727382,
-          "downloadCount": 1159,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.11.0/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v147-mindustry-better-vanilla.jar",
-          "size": 727078,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.11.0/v147-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0a89430e10da987ba4fa4c845b985f24230c88ef",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/0a89430e10da987ba4fa4c845b985f24230c88ef.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.11.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.10.2",
+      "sizeBytes": 1454460,
+      "downloadCount": 1167,
+      "releasedAt": "2026-08-05T14:24:15Z"
     },
     {
       "tag": "v1.10.2",
-      "name": "v1.10.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-13T10:05:28Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.10.2",
-      "modVersion": "1.10.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.10.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 720444,
-          "downloadCount": 2278,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.2/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v147-mindustry-better-vanilla.jar",
-          "size": 717052,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.2/v147-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7d2bfa6d0df97fc6b9cd7515ed3dc72050dcd1c8",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/7d2bfa6d0df97fc6b9cd7515ed3dc72050dcd1c8.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.10.2",
+      "sizeBytes": 1437496,
+      "downloadCount": 2302,
+      "releasedAt": "2026-07-13T10:05:28Z"
     },
     {
       "tag": "v1.10.1",
-      "name": "v1.10.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-04T06:02:12Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.10.1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.1/v147-mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.10.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 716915,
-          "downloadCount": 3865,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.1/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v147-mindustry-better-vanilla.jar",
-          "size": 717038,
-          "downloadCount": 93,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.1/v147-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "92bf4abeb0b233e520569ef7b9f2029292d2ebc7",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/92bf4abeb0b233e520569ef7b9f2029292d2ebc7.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.1/v147-mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1433953,
+      "downloadCount": 3958,
+      "releasedAt": "2026-06-04T06:02:12Z"
     },
     {
       "tag": "v1.10.0",
-      "name": "v1.10.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-19T16:24:34Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.10.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.10.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 723498,
-          "downloadCount": 3791,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.0/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 723498,
-          "downloadCount": 380,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.0/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "30fa1c1b02931a9180bbfaa8f9b3462324404428",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/30fa1c1b02931a9180bbfaa8f9b3462324404428.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.10.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1446996,
+      "downloadCount": 4171,
+      "releasedAt": "2026-04-19T16:24:34Z"
     },
     {
       "tag": "v1.9.3",
-      "name": "v1.9.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-16T07:49:11Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.9.3",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.3/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.9.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 680819,
-          "downloadCount": 741,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.3/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 680819,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.3/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "85ae48da9924defc6860e1537d9081ea0a9b34c8",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/85ae48da9924defc6860e1537d9081ea0a9b34c8.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.3/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1361638,
+      "downloadCount": 748,
+      "releasedAt": "2026-04-16T07:49:11Z"
     },
     {
       "tag": "v1.9.2",
-      "name": "v1.9.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-12T06:08:08Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.9.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.9.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 675531,
-          "downloadCount": 761,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.2/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 674767,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.2/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "77ec2b4606a6cf78e84304027262cc757dfd0533",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/77ec2b4606a6cf78e84304027262cc757dfd0533.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1350298,
+      "downloadCount": 767,
+      "releasedAt": "2026-04-12T06:08:08Z"
     },
     {
       "tag": "v1.9.1",
-      "name": "v1.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-11T01:49:37Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.9.1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.1/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 675504,
-          "downloadCount": 332,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.1/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 674742,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.1/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8e09e3de81a4b654bb93a11bd95cc84775f8d711",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/8e09e3de81a4b654bb93a11bd95cc84775f8d711.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.1/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1350246,
+      "downloadCount": 337,
+      "releasedAt": "2026-04-11T01:49:37Z"
     },
     {
       "tag": "v1.9.0",
-      "name": "v1.9.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-29T10:27:12Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.9.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.9.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 673980,
-          "downloadCount": 1425,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.0/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 673193,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.0/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c3fab8310d0858ae5500e916f04f5613a7b6a54b",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/c3fab8310d0858ae5500e916f04f5613a7b6a54b.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.9.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1347173,
+      "downloadCount": 1433,
+      "releasedAt": "2026-03-29T10:27:12Z"
     },
     {
       "tag": "v1.8.77",
-      "name": "v1.8.77",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-13T09:01:15Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.77",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.77/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.77.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 674705,
-          "downloadCount": 494,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.77/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 673875,
-          "downloadCount": 32,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.77/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ae9da4c19b6db4d8cfa456a66ba82ef1f98c2c13",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/ae9da4c19b6db4d8cfa456a66ba82ef1f98c2c13.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.77/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1348580,
+      "downloadCount": 528,
+      "releasedAt": "2026-03-13T09:01:15Z"
     },
     {
       "tag": "v1.8.72",
-      "name": "v1.8.72",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-11T21:15:22Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.72",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.72/steam-mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.72.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 672077,
-          "downloadCount": 196,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.72/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 672083,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.72/steam-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f100acaa2e30b5ce31c0b45d5dc39059409df1a5",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/f100acaa2e30b5ce31c0b45d5dc39059409df1a5.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.72/steam-mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1344160,
+      "downloadCount": 202,
+      "releasedAt": "2026-03-11T21:15:22Z"
     },
     {
       "tag": "v1.8.6",
-      "name": "v1.8.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-08T12:12:16Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.6",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.6/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 663645,
-          "downloadCount": 227,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.6/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 662930,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.6/steam-mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v154-mindustry-better-vanilla.jar",
-          "size": 663527,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.6/v154-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f170b087f25e893ba9326480ef027d65d0491a68",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/f170b087f25e893ba9326480ef027d65d0491a68.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.6/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1990102,
+      "downloadCount": 240,
+      "releasedAt": "2026-03-08T12:12:16Z"
     },
     {
       "tag": "v1.8.5",
-      "name": "v1.8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-06T19:46:41Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.5",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.5/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 619155,
-          "downloadCount": 114,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.5/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 619126,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.5/steam-mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v154-mindustry-better-vanilla.jar",
-          "size": 619125,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.5/v154-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b1380a7c9630263d72e1ee6c5b3762331f36fd0f",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/b1380a7c9630263d72e1ee6c5b3762331f36fd0f.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.5/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1857406,
+      "downloadCount": 116,
+      "releasedAt": "2026-03-06T19:46:41Z"
     },
     {
       "tag": "v1.8.4",
-      "name": "v1.8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-22T19:37:12Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.4",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.4/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 619155,
-          "downloadCount": 1204,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.4/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 619126,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.4/steam-mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v154-mindustry-better-vanilla.jar",
-          "size": 619125,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.4/v154-mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "14d289cd652294f82eeb1a6a27af00a3c2730891",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/14d289cd652294f82eeb1a6a27af00a3c2730891.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.4/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1857406,
+      "downloadCount": 1223,
+      "releasedAt": "2026-02-22T19:37:12Z"
     },
     {
       "tag": "v1.8.2",
-      "name": "v1.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-22T08:09:43Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 587256,
-          "downloadCount": 221,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.2/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 587227,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.2/steam-mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v154mindustry-better-vanilla.jar",
-          "size": 587226,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.2/v154mindustry-better-vanilla.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a9c1953bf675d4cd36f73f93cd66ea9dbb8ccb2c",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/a9c1953bf675d4cd36f73f93cd66ea9dbb8ccb2c.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 1761709,
+      "downloadCount": 233,
+      "releasedAt": "2026-02-22T08:09:43Z"
     },
     {
       "tag": "v1.8.1",
-      "name": "v1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-03T04:29:07Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.1",
-      "modVersion": "1.8.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.1/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 484141,
-          "downloadCount": 3296,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.1/mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "steam-mindustry-better-vanilla.jar",
-          "size": 484112,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.1/steam-mindustry-better-vanilla.jar"
-        },
-        {
-          "name": "v152-mindustry-better-vanilla.jar",
-          "size": 484111,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.1/v152-mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "856de701571c602dacd6ea86d08c278ec901921d",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/856de701571c602dacd6ea86d08c278ec901921d.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.1/mindustry-better-vanilla.jar",
+      "modVersion": "1.8.1",
+      "sizeBytes": 1452364,
+      "downloadCount": 3319,
+      "releasedAt": "2025-11-03T04:29:07Z"
     },
     {
       "tag": "v1.8.0",
-      "name": "v1.8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-27T11:35:52Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.8.0",
-      "modVersion": "1.8.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 481657,
-          "downloadCount": 568,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.0/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "71969831308d7668b4dea2016d1487e2dfee5ba8",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/71969831308d7668b4dea2016d1487e2dfee5ba8.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.8.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.8.0",
+      "sizeBytes": 481657,
+      "downloadCount": 568,
+      "releasedAt": "2025-10-27T11:35:52Z"
     },
     {
       "tag": "v1.7.5",
-      "name": "v1.7.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-13T06:02:57Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.7.5",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.5/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.7.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 446918,
-          "downloadCount": 8285,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.5/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "b3c0dbe2b3f24d098957742ad8eb9ed8f94c5b4d",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/b3c0dbe2b3f24d098957742ad8eb9ed8f94c5b4d.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.5/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 446918,
+      "downloadCount": 8285,
+      "releasedAt": "2025-02-13T06:02:57Z"
     },
     {
       "tag": "v1.7.4",
-      "name": "v1.7.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-18T15:10:48Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.7.4",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.4/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 446360,
-          "downloadCount": 6193,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.4/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "89ae525ac8103ad476b000ed09261254ff17d96a",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/89ae525ac8103ad476b000ed09261254ff17d96a.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.4/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 446360,
+      "downloadCount": 6193,
+      "releasedAt": "2024-11-18T15:10:48Z"
     },
     {
       "tag": "v1.7.3",
-      "name": "v1.7.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-06T13:30:19Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.7.3",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.3/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 439929,
-          "downloadCount": 3290,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.3/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "fd83414a67936fd1521683e11266aed5f6615237",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/fd83414a67936fd1521683e11266aed5f6615237.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.3/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 439929,
+      "downloadCount": 3290,
+      "releasedAt": "2024-10-06T13:30:19Z"
     },
     {
       "tag": "v1.7.2",
-      "name": "v1.7.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-10T09:57:50Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.7.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 420152,
-          "downloadCount": 3052,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.2/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f8c7767a4b49bbed7659aabc28f1a67d533b4cb5",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/f8c7767a4b49bbed7659aabc28f1a67d533b4cb5.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 420152,
+      "downloadCount": 3052,
+      "releasedAt": "2024-09-10T09:57:50Z"
     },
     {
       "tag": "v1.7.1",
-      "name": "v1.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-05T10:05:16Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.7.1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.1/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 377485,
-          "downloadCount": 3540,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.1/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4f627c83040642aa59a985698ca0370ff05c36c2",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/4f627c83040642aa59a985698ca0370ff05c36c2.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.1/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 377485,
+      "downloadCount": 3540,
+      "releasedAt": "2024-08-05T10:05:16Z"
     },
     {
       "tag": "v1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-03T12:12:46Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.7.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 364931,
-          "downloadCount": 505,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.0/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "68b5a1ad170ccedb8e1225d26bc894f3c0764a02",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/68b5a1ad170ccedb8e1225d26bc894f3c0764a02.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.7.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 364931,
+      "downloadCount": 505,
+      "releasedAt": "2024-08-03T12:12:46Z"
     },
     {
       "tag": "v1.5.8",
-      "name": "v1.5.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-01T15:11:08Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.5.8",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.8/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.5.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 354239,
-          "downloadCount": 322,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.8/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "dda2dd37527ca55275ba813d46693b17b0edcf8d",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/dda2dd37527ca55275ba813d46693b17b0edcf8d.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.8/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 354239,
+      "downloadCount": 322,
+      "releasedAt": "2024-08-01T15:11:08Z"
     },
     {
       "tag": "v1.5.7",
-      "name": "v1.5.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-09T13:39:11Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.5.7",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.7/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.5.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 352947,
-          "downloadCount": 2157,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.7/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "37fb7abc98edaf704a30550ab210b44d45856686",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/37fb7abc98edaf704a30550ab210b44d45856686.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.7/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 352947,
+      "downloadCount": 2157,
+      "releasedAt": "2024-07-09T13:39:11Z"
     },
     {
       "tag": "v1.5.3",
-      "name": "v1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-09T11:46:01Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.5.3",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.3/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 352931,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.3/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "5493b2fd99f059aab037028bb5bf889e3531be9e",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/5493b2fd99f059aab037028bb5bf889e3531be9e.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.3/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 352931,
+      "downloadCount": 53,
+      "releasedAt": "2024-07-09T11:46:01Z"
     },
     {
       "tag": "v1.5.2",
-      "name": "v1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-09T07:48:40Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.5.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 352927,
-          "downloadCount": 95,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.2/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4c08c804bcf09c76cf80434b0f3aa7f881928031",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/4c08c804bcf09c76cf80434b0f3aa7f881928031.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.5.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 352927,
+      "downloadCount": 95,
+      "releasedAt": "2024-07-09T07:48:40Z"
     },
     {
       "tag": "v1.4.2",
-      "name": "v1.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-07T09:54:41Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.4.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.4.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 281011,
-          "downloadCount": 451,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.4.2/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "662c2a500ef1b5b4f433f4807fd8c5e1579a1ddc",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/662c2a500ef1b5b4f433f4807fd8c5e1579a1ddc.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.4.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 281011,
+      "downloadCount": 451,
+      "releasedAt": "2024-07-07T09:54:41Z"
     },
     {
       "tag": "v1.3.2",
-      "name": "v1.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-04T06:00:25Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.3.2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.3.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 130492,
-          "downloadCount": 576,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.3.2/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "e53bef77a8414d7d8c4ee0cf9524733b9283fdc6",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/e53bef77a8414d7d8c4ee0cf9524733b9283fdc6.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.3.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 130492,
+      "downloadCount": 576,
+      "releasedAt": "2024-07-04T06:00:25Z"
     },
     {
       "tag": "v1.2.2",
-      "name": "v1.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-14T07:54:53Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.2.2",
-      "modVersion": "1.2.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.2/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 135877,
-          "downloadCount": 5174,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.2/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "423cec16fe1fb8eb621339bc5e3c8af0d1ceb880",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/423cec16fe1fb8eb621339bc5e3c8af0d1ceb880.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.2/mindustry-better-vanilla.jar",
+      "modVersion": "1.2.2",
+      "sizeBytes": 135877,
+      "downloadCount": 5174,
+      "releasedAt": "2024-05-14T07:54:53Z"
     },
     {
       "tag": "v1.2.1",
-      "name": "v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-14T05:38:35Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.2.1",
-      "modVersion": "1.2.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.1/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 131306,
-          "downloadCount": 83,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.1/mindustry-better-vanilla.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c39f046d6cdc1a76d8632b9c37fa212742ddc331",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/c39f046d6cdc1a76d8632b9c37fa212742ddc331.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.1/mindustry-better-vanilla.jar",
+      "modVersion": "1.2.0",
+      "sizeBytes": 131306,
+      "downloadCount": 83,
+      "releasedAt": "2024-05-14T05:38:35Z"
     },
     {
       "tag": "v1.2.0",
-      "name": "v1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-13T10:14:23Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.2.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.0/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 131373,
-          "downloadCount": 365,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.0/mindustry-better-vanilla.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9df97b6dea0c81c8ec1024830f5cdd1d8647d9ff",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/9df97b6dea0c81c8ec1024830f5cdd1d8647d9ff.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.2.0/mindustry-better-vanilla.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 131373,
+      "downloadCount": 365,
+      "releasedAt": "2024-05-13T10:14:23Z"
     },
     {
       "tag": "v1.1.0-beta",
-      "name": "Release v1.1.0-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-12T14:54:32Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.1.0-beta",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.1.0-beta/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.1.0-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 161096,
-          "downloadCount": 151,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.1.0-beta/mindustry-better-vanilla.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "65fb3cd545bb9e625370cc5965e8eabf4fe99309",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/65fb3cd545bb9e625370cc5965e8eabf4fe99309.zip"
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.1.0-beta/mindustry-better-vanilla.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 161096,
+      "downloadCount": 151,
+      "releasedAt": "2024-05-12T14:54:32Z"
     },
     {
       "tag": "v1.0.5-beta",
-      "name": "Release v1.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-12T13:01:20Z",
-      "htmlUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/tag/v1.0.5-beta",
-      "modVersion": "1.0.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.0.5-beta/mindustry-better-vanilla.jar",
-      "sourceArchiveUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/refs/tags/v1.0.5-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-better-vanilla.jar",
-          "size": 127575,
-          "downloadCount": 88,
-          "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.0.5-beta/mindustry-better-vanilla.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "cf443fa5bb30d24b89b8654a98ca3d996bd42ffc",
-      "archiveByCommitUrl": "https://github.com/hao-1337/mindustry-better-vanilla/archive/cf443fa5bb30d24b89b8654a98ca3d996bd42ffc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.2.0",
-      "modVersion": "1.1.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.8.1",
-      "modVersion": "1.8.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.12.1",
-      "modVersion": "1.10.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Hao-1337/mindustry-better-vanilla/releases/download/v1.0.5-beta/mindustry-better-vanilla.jar",
+      "modVersion": "1.0.5",
+      "sizeBytes": 127575,
+      "downloadCount": 88,
+      "releasedAt": "2024-05-12T13:01:20Z"
     }
   ],
   "meta": {
+    "name": "hao1337-mod",
+    "author": "[royal]Hao1337[]",
+    "description": "\nAdd wonderful contents for vanilla experience. For more info, please visit github page of this mod!\n\n[red]DUE TO GAME VERSION MISMATCH, This version is using for v157![]\n[accent]You can get a older (v147 version) of this mod from github release.[]\n",
+    "version": "1.10.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "hao1337.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

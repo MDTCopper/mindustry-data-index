@@ -1,91 +1,77 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Bloody-Ocean/bloodyVisual",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-up-mod",
-      "name": "visual release v 1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-26T20:40:50Z",
-      "htmlUrl": "https://github.com/Bloody-Ocean/bloodyVisual/releases/tag/mindustry-up-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-up-mod.zip",
-      "sourceArchiveUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-up-mod.zip",
-      "assets": [],
-      "commitSha": "9ea4899868ae332b77637eded413ebdba524c360",
-      "archiveByCommitUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/9ea4899868ae332b77637eded413ebdba524c360.zip"
+      "modVersion": "1",
+      "releasedAt": "2024-08-26T20:40:50Z"
     },
     {
       "tag": "mindustry-units-mod",
-      "name": "Visual release v 1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-23T20:24:51Z",
-      "htmlUrl": "https://github.com/Bloody-Ocean/bloodyVisual/releases/tag/mindustry-units-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-units-mod.zip",
-      "sourceArchiveUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-units-mod.zip",
-      "assets": [],
-      "commitSha": "520c9c523cd50d59bdacbf18b4ab6a2cc494a288",
-      "archiveByCommitUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/520c9c523cd50d59bdacbf18b4ab6a2cc494a288.zip"
+      "modVersion": "1",
+      "releasedAt": "2024-08-23T20:24:51Z"
     },
     {
       "tag": "mindustry-visual-mod",
-      "name": "visual release v 1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-23T19:43:29Z",
-      "htmlUrl": "https://github.com/Bloody-Ocean/bloodyVisual/releases/tag/mindustry-visual-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-visual-mod.zip",
-      "sourceArchiveUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-visual-mod.zip",
-      "assets": [],
-      "commitSha": "242156a404b943b4994b5dcb4ec8de09bd2496c1",
-      "archiveByCommitUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/242156a404b943b4994b5dcb4ec8de09bd2496c1.zip"
+      "modVersion": "1",
+      "releasedAt": "2024-08-23T19:43:29Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "virtual release v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-23T18:48:18Z",
-      "htmlUrl": "https://github.com/Bloody-Ocean/bloodyVisual/releases/tag/mindustry-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "84c2fa5eb4b7fa27760b0d34b67aa02deb56b0aa",
-      "archiveByCommitUrl": "https://github.com/Bloody-Ocean/bloodyVisual/archive/84c2fa5eb4b7fa27760b0d34b67aa02deb56b0aa.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-up-mod",
       "modVersion": "1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-08-23T18:48:18Z"
     }
   ],
   "meta": {
+    "name": "vu",
+    "author": "Bloody-Ocean (Mesyachnuy/Месячный)",
+    "description": "Ru: Данная модификация изменяет внешний вид юнитов. Респрайты только Серпуловских юнитов.\r\n\r\nEng: This modification changes the appearance of the units. Resprites of only Serpulo units.",
+    "version": "1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

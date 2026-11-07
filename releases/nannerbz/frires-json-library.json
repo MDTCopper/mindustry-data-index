@@ -1,143 +1,102 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nannerbz/frires-json-library",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2-attribute-crafter",
-      "name": "WallAttributeCrafter",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-16T12:40:08Z",
-      "htmlUrl": "https://github.com/nannerbz/frires-json-library/releases/tag/v1.2-attribute-crafter",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-attribute-crafter/frires-json-library.jar",
-      "sourceArchiveUrl": "https://github.com/nannerbz/frires-json-library/archive/refs/tags/v1.2-attribute-crafter.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "frires-json-library.jar",
-          "size": 147384,
-          "downloadCount": 525,
-          "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-attribute-crafter/frires-json-library.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "abe6723b3111e65faeeaf8a5075ba7d2eb01116e",
-      "archiveByCommitUrl": "https://github.com/nannerbz/frires-json-library/archive/abe6723b3111e65faeeaf8a5075ba7d2eb01116e.zip"
+      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-attribute-crafter/frires-json-library.jar",
+      "modVersion": "1",
+      "sizeBytes": 147384,
+      "downloadCount": 525,
+      "releasedAt": "2025-09-16T12:40:08Z"
     },
     {
       "tag": "v1.2-part-core-beta",
-      "name": "PartCore i assume",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-29T19:25:45Z",
-      "htmlUrl": "https://github.com/nannerbz/frires-json-library/releases/tag/v1.2-part-core-beta",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-part-core-beta/frires-json-library.jar",
-      "sourceArchiveUrl": "https://github.com/nannerbz/frires-json-library/archive/refs/tags/v1.2-part-core-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "frires-json-library.jar",
-          "size": 125869,
-          "downloadCount": 156,
-          "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-part-core-beta/frires-json-library.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "fe3d29ce9d299c68a35b001439813066202882cd",
-      "archiveByCommitUrl": "https://github.com/nannerbz/frires-json-library/archive/fe3d29ce9d299c68a35b001439813066202882cd.zip"
+      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-part-core-beta/frires-json-library.jar",
+      "modVersion": "1",
+      "sizeBytes": 125869,
+      "downloadCount": 156,
+      "releasedAt": "2025-08-29T19:25:45Z"
     },
     {
       "tag": "v1.2-payload-crafter",
-      "name": "PayloadCrafter I guess",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-24T10:30:16Z",
-      "htmlUrl": "https://github.com/nannerbz/frires-json-library/releases/tag/v1.2-payload-crafter",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-payload-crafter/frires-json-library.jar",
-      "sourceArchiveUrl": "https://github.com/nannerbz/frires-json-library/archive/refs/tags/v1.2-payload-crafter.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "frires-json-library.jar",
-          "size": 102582,
-          "downloadCount": 828,
-          "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-payload-crafter/frires-json-library.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "88bd8a60f0c46bff5ccdec6479dad56a7a5264ff",
-      "archiveByCommitUrl": "https://github.com/nannerbz/frires-json-library/archive/88bd8a60f0c46bff5ccdec6479dad56a7a5264ff.zip"
+      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-payload-crafter/frires-json-library.jar",
+      "modVersion": "1",
+      "sizeBytes": 102582,
+      "downloadCount": 828,
+      "releasedAt": "2024-08-24T10:30:16Z"
     },
     {
       "tag": "v1.2-pre-android",
-      "name": "Android Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-25T11:15:08Z",
-      "htmlUrl": "https://github.com/nannerbz/frires-json-library/releases/tag/v1.2-pre-android",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-pre-android/frires-json-library.jar",
-      "sourceArchiveUrl": "https://github.com/nannerbz/frires-json-library/archive/refs/tags/v1.2-pre-android.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "frires-json-library.jar",
-          "size": 78785,
-          "downloadCount": 440,
-          "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-pre-android/frires-json-library.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "a03c1678a619b6b1a5eccb68b476c9b7f5ada747",
-      "archiveByCommitUrl": "https://github.com/nannerbz/frires-json-library/archive/a03c1678a619b6b1a5eccb68b476c9b7f5ada747.zip"
+      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-pre-android/frires-json-library.jar",
+      "modVersion": "1",
+      "sizeBytes": 78785,
+      "downloadCount": 440,
+      "releasedAt": "2024-07-25T11:15:08Z"
     },
     {
       "tag": "v1.2-pre",
-      "name": "v1.2-pre",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-07-23T16:07:10Z",
-      "htmlUrl": "https://github.com/nannerbz/frires-json-library/releases/tag/v1.2-pre",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-pre/FriresJsonLibDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/nannerbz/frires-json-library/archive/refs/tags/v1.2-pre.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FriresJsonLibDesktop.jar",
-          "size": 68873,
-          "downloadCount": 29,
-          "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-pre/FriresJsonLibDesktop.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "2b5ac41800287d3778f4239d97a33c81dcb4ef17",
-      "archiveByCommitUrl": "https://github.com/nannerbz/frires-json-library/archive/2b5ac41800287d3778f4239d97a33c81dcb4ef17.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.2-attribute-crafter",
+      "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-pre/FriresJsonLibDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 68873,
+      "downloadCount": 29,
+      "releasedAt": "2024-07-23T16:07:10Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "frires-json-lib",
+    "author": "Nannerbz / FrireDragon",
+    "description": "A java mod Designed to be used by Json mods to add more depth to the game, adding new types of various things to make Json modding more diverse. \n\nCurrently in the early stages of development, not much added but more will be soon.",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "example.FriresJsonLib",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

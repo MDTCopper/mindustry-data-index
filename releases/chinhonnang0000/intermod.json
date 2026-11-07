@@ -1,209 +1,130 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "chinhonnang0000/intermod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2025_06_22",
-      "name": "progress_2025_06_22",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-22T15:20:34Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2025_06_22",
-      "modVersion": "build 0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2025_06_22.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2025_06_22.zip",
-      "assets": [],
-      "commitSha": "61897f83dff3846d22035ffaac57469e94bbcbdd",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/61897f83dff3846d22035ffaac57469e94bbcbdd.zip"
+      "modVersion": "build 0",
+      "releasedAt": "2025-06-22T15:20:34Z"
     },
     {
       "tag": "2023_12_05",
-      "name": "progress_2023_12_05",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-05T10:07:40Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2023_12_05",
-      "modVersion": "build 0",
+      "kind": "tag",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_12_05.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_12_05.zip",
-      "assets": [],
-      "commitSha": "24f13f8df187d1ee5014ef90c0d051eb8dccda97",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/24f13f8df187d1ee5014ef90c0d051eb8dccda97.zip"
+      "modVersion": "build 0",
+      "releasedAt": "2023-12-05T10:07:40Z"
     },
     {
       "tag": "2023_10_29",
-      "name": "progress_2023_10_29",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-29T13:09:51Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2023_10_29",
-      "modVersion": "build 0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_29/intermod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_10_29.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "intermod.zip",
-          "size": 9368356,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_29/intermod.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5484e65b2f951e34e38fca86532b7d5b937c6e9b",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/5484e65b2f951e34e38fca86532b7d5b937c6e9b.zip"
+      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_29/intermod.zip",
+      "modVersion": "build 0",
+      "sizeBytes": 9368356,
+      "downloadCount": 10,
+      "releasedAt": "2023-10-29T13:09:51Z"
     },
     {
       "tag": "2023_10_13",
-      "name": "progress_2023_10_13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-13T00:18:39Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2023_10_13",
-      "modVersion": "build 0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_13/intermod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_10_13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "intermod.zip",
-          "size": 9341659,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_13/intermod.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8acf461ebb826000a309715c8d4fb1401086147c",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/8acf461ebb826000a309715c8d4fb1401086147c.zip"
+      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_13/intermod.zip",
+      "modVersion": "build 0",
+      "sizeBytes": 9341659,
+      "downloadCount": 10,
+      "releasedAt": "2023-10-13T00:18:39Z"
     },
     {
       "tag": "2023_10_08",
-      "name": "progress_2023_10_08",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-08T08:10:17Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2023_10_08",
-      "modVersion": "build 0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_08/intermod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_10_08.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "intermod.zip",
-          "size": 9186881,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_08/intermod.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1448a9de7d7dd900cfd9d2a811ec844a968d1b53",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/1448a9de7d7dd900cfd9d2a811ec844a968d1b53.zip"
+      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_08/intermod.zip",
+      "modVersion": "build 0",
+      "sizeBytes": 9186881,
+      "downloadCount": 3,
+      "releasedAt": "2023-10-08T08:10:17Z"
     },
     {
       "tag": "2023_10_06",
-      "name": "progress_2023_10_06",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-06T03:00:54Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2023_10_06",
-      "modVersion": "build 0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_06/intermod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_10_06.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "intermod.zip",
-          "size": 8855999,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_06/intermod.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "869c6a4facf1af7d89a771a62dbc79ca6d553dfa",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/869c6a4facf1af7d89a771a62dbc79ca6d553dfa.zip"
+      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_10_06/intermod.zip",
+      "modVersion": "build 0",
+      "sizeBytes": 8855999,
+      "downloadCount": 4,
+      "releasedAt": "2023-10-06T03:00:54Z"
     },
     {
       "tag": "2023_09_23",
-      "name": "progress_2023_9_23",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-23T03:47:53Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/2023_09_23",
-      "modVersion": "build 0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_09_23/intermod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/2023_09_23.zip",
-      "assets": [
-        {
-          "name": "intermod.zip",
-          "size": 3139273,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/2023_09_23/intermod.zip"
-        }
-      ],
-      "commitSha": "28889a831efebb3e65e6c0e3e9d84320906220bb",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/28889a831efebb3e65e6c0e3e9d84320906220bb.zip"
-    },
-    {
-      "tag": "mindustry-v7-mod",
-      "name": "progress_2023_9_22",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-22T07:53:40Z",
-      "htmlUrl": "https://github.com/chinhonnang0000/intermod/releases/tag/mindustry-v7-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/mindustry-v7-mod/intermod.zip",
-      "sourceArchiveUrl": "https://github.com/chinhonnang0000/intermod/archive/refs/tags/mindustry-v7-mod.zip",
-      "assets": [
-        {
-          "name": "intermod.zip",
-          "size": 3132840,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/chinhonnang0000/intermod/releases/download/mindustry-v7-mod/intermod.zip"
-        }
-      ],
-      "commitSha": "b05428de23166c254d4b62d0f4abfab71df6d4c6",
-      "archiveByCommitUrl": "https://github.com/chinhonnang0000/intermod/archive/b05428de23166c254d4b62d0f4abfab71df6d4c6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2023_12_05",
       "modVersion": "build 0",
-      "minGameVersion": "141",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "2025_06_22",
-      "modVersion": "build 0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 3139273,
+      "downloadCount": 5,
+      "releasedAt": "2023-09-23T03:47:53Z"
     }
   ],
   "meta": {
+    "name": "intermod",
+    "author": "chinhonnang0000",
+    "description": "JSON-javaScript compliation of several mods that are unplayable. \n\nThe contents as they were, no balancing adjustments, no respriting unless prompted. All sprites belong to respective owners",
+    "version": "build 0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

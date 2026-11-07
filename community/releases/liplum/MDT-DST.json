@@ -1,47 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "liplum/MDT-DST",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "AUTOR",
-      "name": "Auto-release on 2022-07-02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-02T07:34:25Z",
-      "htmlUrl": "https://github.com/liplum/MDT-DST/releases/tag/AUTOR",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/liplum/MDT-DST/releases/download/AUTOR/dst-1.1.jar",
-      "sourceArchiveUrl": "https://github.com/liplum/MDT-DST/archive/refs/tags/AUTOR.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "dst-1.1.jar",
-          "size": 2602883,
-          "downloadCount": 10991,
-          "downloadUrl": "https://github.com/liplum/MDT-DST/releases/download/AUTOR/dst-1.1.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "699311c1539dd513e2cfdbb6322344906d2ce390",
-      "archiveByCommitUrl": "https://github.com/liplum/MDT-DST/archive/699311c1539dd513e2cfdbb6322344906d2ce390.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "AUTOR",
-      "modVersion": null,
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/liplum/MDT-DST/releases/download/AUTOR/dst-1.1.jar",
+      "sizeBytes": 2602883,
+      "downloadCount": 10991,
+      "releasedAt": "2022-07-02T07:34:25Z"
     }
   ],
   "meta": {
+    "name": "dst",
+    "author": "[#891213[]]Liplum[[]]",
+    "description": "Don't starve is available in Mindustry now!",
+    "version": null,
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "net.liplum.DstMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,57 +1,51 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "oleksiy1409liut/auvathiaworlds",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.1.3",
-      "name": "0.1.3 alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-05-12T15:31:24Z",
-      "htmlUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/releases/tag/0.1.3",
-      "modVersion": "alpha v0.1.5",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/archive/refs/tags/0.1.3.zip",
-      "sourceArchiveUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/archive/refs/tags/0.1.3.zip",
-      "assets": [],
-      "commitSha": "80b9a76d74ed6c847a9824c6d431b3cbc1a85ac3",
-      "archiveByCommitUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/archive/80b9a76d74ed6c847a9824c6d431b3cbc1a85ac3.zip"
+      "modVersion": "alpha v0.1.5",
+      "releasedAt": "2025-05-12T15:31:24Z",
+      "prerelease": true
     },
     {
       "tag": "0.1.2",
-      "name": "0.1.2, the unstable beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-12T13:00:40Z",
-      "htmlUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/releases/tag/0.1.2",
-      "modVersion": "alpha v0.1.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/archive/refs/tags/0.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/archive/refs/tags/0.1.2.zip",
-      "assets": [],
-      "commitSha": "c78f219638b799ff42de60685e4096c3bf5048dc",
-      "archiveByCommitUrl": "https://github.com/oleksiy1409liut/auvathiaworlds/archive/c78f219638b799ff42de60685e4096c3bf5048dc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1.3",
-      "modVersion": "alpha v0.1.5",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "alpha v0.1.2",
+      "releasedAt": "2025-04-12T13:00:40Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "auvathiaworlds",
+    "author": "Auvathia team (Me,Angy Cat and some people from mindustry server)",
+    "description": " \nthe auvathia worlds project will focus on adding a new planet(maybe) cluster of planets that can connect with each other (first planets name is auvathia)\n  Enjoy!\n   also is the place of containment of some of my ideas like a gregtech-styled mod, so stuff inside the mod can clash\n",
+    "version": "alpha v0.1.5",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

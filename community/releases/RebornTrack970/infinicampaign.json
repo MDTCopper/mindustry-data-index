@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "RebornTrack970/infinicampaign",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "b136",
-      "name": "b136",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-24T07:55:53Z",
-      "htmlUrl": "https://github.com/RebornTrack970/infinicampaign/releases/tag/b136",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RebornTrack970/infinicampaign/releases/download/b136/infinicampaign-main.zip",
-      "sourceArchiveUrl": "https://github.com/RebornTrack970/infinicampaign/archive/refs/tags/b136.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "infinicampaign-main.zip",
-          "size": 13861,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/RebornTrack970/infinicampaign/releases/download/b136/infinicampaign-main.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a5b1fda58ff3214fb460f1d8dff7b5d59a38ae60",
-      "archiveByCommitUrl": "https://github.com/RebornTrack970/infinicampaign/archive/a5b1fda58ff3214fb460f1d8dff7b5d59a38ae60.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "b136",
+      "downloadUrl": "https://github.com/RebornTrack970/infinicampaign/releases/download/b136/infinicampaign-main.zip",
       "modVersion": "1.0",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 13861,
+      "downloadCount": 30,
+      "releasedAt": "2022-07-24T07:55:53Z"
     }
   ],
   "meta": {
+    "name": "inficamp",
+    "author": "[yellow]RT[cyan]Omega",
+    "description": "A mod that makes the game V5 ish by making you unable to capture.",
+    "version": "1.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

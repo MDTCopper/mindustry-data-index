@@ -1,301 +1,197 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "c9cps/cdxlib",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "18",
-      "name": "18",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-30T18:26:48Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/18",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/18/CDXLIB.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/18.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CDXLIB.jar",
-          "size": 25308,
-          "downloadCount": 28,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/18/CDXLIB.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8d42e384e1920cdf175d58a10d30011a74ef9c72",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/8d42e384e1920cdf175d58a10d30011a74ef9c72.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/18/CDXLIB.jar",
+      "modVersion": "1",
+      "sizeBytes": 25308,
+      "downloadCount": 28,
+      "releasedAt": "2026-08-30T18:26:48Z"
     },
     {
       "tag": "13",
-      "name": "13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-10T18:49:07Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/13",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/13/CDXLIB.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CDXLIB.jar",
-          "size": 31339,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/13/CDXLIB.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5ec2d148eb0a31646b7f74e1d4b0cf457996ffeb",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/5ec2d148eb0a31646b7f74e1d4b0cf457996ffeb.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/13/CDXLIB.jar",
+      "modVersion": "1",
+      "sizeBytes": 31339,
+      "downloadCount": 27,
+      "releasedAt": "2026-07-10T18:49:07Z"
     },
     {
       "tag": "12",
-      "name": "12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-10T12:38:26Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/12",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/12/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 31344,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/12/C9_library.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "74592e8a9b7b54bf487e5bce962c0b5e4e69cb73",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/74592e8a9b7b54bf487e5bce962c0b5e4e69cb73.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/12/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 31344,
+      "downloadCount": 3,
+      "releasedAt": "2026-07-10T12:38:26Z"
     },
     {
       "tag": "11",
-      "name": "11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-25T15:15:26Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/11",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/11/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 28951,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/11/C9_library.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e5419fb1ac2168955d83d82a9a259498d07d687f",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/e5419fb1ac2168955d83d82a9a259498d07d687f.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/11/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 28951,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-25T15:15:26Z"
     },
     {
       "tag": "10",
-      "name": "10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-25T14:09:47Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/10",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/10/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 28074,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/10/C9_library.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b33de1b18d40394248ccb4aa39a96158082aa698",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/b33de1b18d40394248ccb4aa39a96158082aa698.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/10/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 28074,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-25T14:09:47Z"
     },
     {
       "tag": "9",
-      "name": "9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-29T07:46:48Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/9",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/9/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 24420,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/9/C9_library.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "3d206a6bf43859c264bcf7ff0ccb76879a608ce2",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/3d206a6bf43859c264bcf7ff0ccb76879a608ce2.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/9/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 24420,
+      "downloadCount": 8,
+      "releasedAt": "2025-12-29T07:46:48Z"
     },
     {
       "tag": "8",
-      "name": "8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-29T07:44:44Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/8",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/8/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 24393,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/8/C9_library.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "b357395849877f95f5ef2adbe773de80bc0e1c24",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/b357395849877f95f5ef2adbe773de80bc0e1c24.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/8/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 24393,
+      "downloadCount": 1,
+      "releasedAt": "2025-12-29T07:44:44Z"
     },
     {
       "tag": "7",
-      "name": "7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-22T18:19:27Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/7",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/7/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 24375,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/7/C9_library.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "1f51639f070878dd7d1c190402ec89f77737ff97",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/1f51639f070878dd7d1c190402ec89f77737ff97.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/7/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 24375,
+      "downloadCount": 1,
+      "releasedAt": "2025-12-22T18:19:27Z"
     },
     {
       "tag": "6",
-      "name": "6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-19T15:14:05Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/6",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/6/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 20271,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/6/C9_library.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "f8d51bc2efe22768791935a8447ce97826ff187d",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/f8d51bc2efe22768791935a8447ce97826ff187d.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/6/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 20271,
+      "downloadCount": 1,
+      "releasedAt": "2025-12-19T15:14:05Z"
     },
     {
       "tag": "5",
-      "name": "5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-13T05:19:59Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/5",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/5/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 7436,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/5/C9_library.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "67e9764cdfc0b729a4284169136944ed2cc35f4b",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/67e9764cdfc0b729a4284169136944ed2cc35f4b.zip"
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/5/C9_library.jar",
+      "modVersion": "1",
+      "sizeBytes": 7436,
+      "downloadCount": 3,
+      "releasedAt": "2025-12-13T05:19:59Z"
     },
     {
       "tag": "4",
-      "name": "4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-10T17:30:21Z",
-      "htmlUrl": "https://github.com/C9Cps/CDXLIB/releases/tag/4",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/4/C9_library.jar",
-      "sourceArchiveUrl": "https://github.com/c9cps/cdxlib/archive/refs/tags/4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C9_library.jar",
-          "size": 8627,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/4/C9_library.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "0e0f578bfd663f0534f91b18d577e0fc48a9dc30",
-      "archiveByCommitUrl": "https://github.com/c9cps/cdxlib/archive/0e0f578bfd663f0534f91b18d577e0fc48a9dc30.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "9",
+      "downloadUrl": "https://github.com/C9Cps/CDXLIB/releases/download/4/C9_library.jar",
       "modVersion": "1",
-      "minGameVersion": "150",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "13",
-      "modVersion": "1",
-      "minGameVersion": "154",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "18",
-      "modVersion": "1",
-      "minGameVersion": "156",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 8627,
+      "downloadCount": 3,
+      "releasedAt": "2025-12-10T17:30:21Z"
     }
   ],
   "meta": {
+    "name": "library",
+    "author": "Codex_IX",
+    "description": "A small library for json-mods.",
+    "version": "1",
+    "minGameVersion": "156",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "library.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

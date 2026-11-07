@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "pizzb/show-hidden-content",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "Show Hidden Content (v146 - v155.4)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-22T14:40:25Z",
-      "htmlUrl": "https://github.com/pizzb/show-hidden-content/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/pizzb/show-hidden-content/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/pizzb/show-hidden-content/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "e7c2e9b8818576ccc295d24f2975dfb4132073d3",
-      "archiveByCommitUrl": "https://github.com/pizzb/show-hidden-content/archive/e7c2e9b8818576ccc295d24f2975dfb4132073d3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
       "modVersion": "1.0.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-02-22T14:40:25Z"
     }
   ],
   "meta": {
+    "name": "show-hidden-content",
+    "author": "pizzb",
+    "description": "Unlock and show hidden and unused game content. Especially items, blocks, fluids, effects, units, and planets.\n\nThe campaign save will not be affected in any way.",
+    "version": "1.0.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

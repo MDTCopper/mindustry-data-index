@@ -1,566 +1,150 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "thepi14/tekton",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.4.43",
-      "name": "0.4.43 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-28T15:18:23Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.43",
-      "modVersion": "v0.4.43",
+      "kind": "release",
       "minGameVersion": "160.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.43/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.43.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 13887244,
-          "downloadCount": 981,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.43/Tekton.jar"
+          "from": "160.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "412de2a1b7a34b88d2db2d498119921a64624b12",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/412de2a1b7a34b88d2db2d498119921a64624b12.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.43/Tekton.jar",
+      "modVersion": "v0.4.43",
+      "sizeBytes": 13887244,
+      "downloadCount": 986,
+      "releasedAt": "2026-09-28T15:18:23Z"
     },
     {
       "tag": "v0.4.42",
-      "name": "0.4.42 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-15T02:37:30Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.42",
-      "modVersion": "v0.4.42",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.42/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.42.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 13887529,
-          "downloadCount": 510,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.42/Tekton.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "25b59f3a29beb5eb43b57611de1b969f28efaf07",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/25b59f3a29beb5eb43b57611de1b969f28efaf07.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.42/Tekton.jar",
+      "modVersion": "v0.4.42",
+      "sizeBytes": 13887529,
+      "downloadCount": 510,
+      "releasedAt": "2026-09-15T02:37:30Z"
     },
     {
       "tag": "v0.4.40",
-      "name": "0.4.40 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-14T16:16:31Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.40",
-      "modVersion": "v0.4.40",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.40/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.40.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 13879470,
-          "downloadCount": 29,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.40/Tekton.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4e08acd44adcee275fe23dc2a41f441819e1f57b",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/4e08acd44adcee275fe23dc2a41f441819e1f57b.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.40/Tekton.jar",
+      "modVersion": "v0.4.40",
+      "sizeBytes": 13879470,
+      "downloadCount": 29,
+      "releasedAt": "2026-09-14T16:16:31Z"
     },
     {
       "tag": "v0.4.37",
-      "name": "0.4.37 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-03T13:31:05Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.37",
-      "modVersion": "v0.4.37",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.37/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.37.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 13880702,
-          "downloadCount": 464,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.37/Tekton.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "00ff351febf2cd4bfd141288de79d7e2bab271cc",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/00ff351febf2cd4bfd141288de79d7e2bab271cc.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.37/Tekton.jar",
+      "modVersion": "v0.4.37",
+      "sizeBytes": 13880702,
+      "downloadCount": 464,
+      "releasedAt": "2026-09-03T13:31:05Z"
     },
     {
       "tag": "v0.4.36",
-      "name": "0.4.36 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-16T02:49:06Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.36",
-      "modVersion": "v0.4.8",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.36/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.36.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 13880283,
-          "downloadCount": 665,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.36/Tekton.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "85cd11ec0fb121a428a2be1c4a188b24a40b146e",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/85cd11ec0fb121a428a2be1c4a188b24a40b146e.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.36/Tekton.jar",
+      "modVersion": "v0.4.8",
+      "sizeBytes": 13880283,
+      "downloadCount": 665,
+      "releasedAt": "2026-08-16T02:49:06Z"
     },
     {
       "tag": "0.4.8",
-      "name": "0.4.8 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-30T19:23:06Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/0.4.8",
-      "modVersion": "v0.4.8",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/0.4.8/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/0.4.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 6116620,
-          "downloadCount": 689,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/0.4.8/Tekton.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e3e4f72624af93d5432950b92cdc6ab33edc47d3",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/e3e4f72624af93d5432950b92cdc6ab33edc47d3.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/0.4.8/Tekton.jar",
+      "modVersion": "v0.4.8",
+      "sizeBytes": 6116620,
+      "downloadCount": 689,
+      "releasedAt": "2026-07-30T19:23:06Z"
     },
     {
       "tag": "v0.4.4",
-      "name": "0.4.4 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-29T21:33:36Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.4",
-      "modVersion": "v0.4.4",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.4/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Tekton.jar",
-          "size": 6030931,
-          "downloadCount": 100,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.4/Tekton.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eb4ae2522ed2045865dac5968dd1788032a735b3",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/eb4ae2522ed2045865dac5968dd1788032a735b3.zip"
+      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.4/Tekton.jar",
+      "modVersion": "v0.4.4",
+      "sizeBytes": 6030931,
+      "downloadCount": 100,
+      "releasedAt": "2026-07-29T21:33:36Z"
     },
     {
       "tag": "v0.4.0",
-      "name": "0.4.0 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-24T23:42:50Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.4.0",
-      "modVersion": "v0.4.0",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.0/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.4.0.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 5257412,
-          "downloadCount": 332,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.0/Tekton.jar"
-        }
-      ],
-      "commitSha": "7ec2167b0f9f247bb88852b116f434d951412445",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/7ec2167b0f9f247bb88852b116f434d951412445.zip"
-    },
-    {
-      "tag": "v0.3.23",
-      "name": "0.3.23 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-26T19:34:21Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.23",
-      "modVersion": "v0.3.23",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.23/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.23.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4620198,
-          "downloadCount": 377,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.23/Tekton.jar"
-        }
-      ],
-      "commitSha": "764bb17a0cc2efa6864b73e5ee57d703cb4946b0",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/764bb17a0cc2efa6864b73e5ee57d703cb4946b0.zip"
-    },
-    {
-      "tag": "v0.3.16",
-      "name": "0.3.16 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-25T19:57:31Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.16",
-      "modVersion": "v0.3.16",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.16/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.16.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4642108,
-          "downloadCount": 133,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.16/Tekton.jar"
-        }
-      ],
-      "commitSha": "c5201a113f0031383dee910a1f07222e5b4316f2",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/c5201a113f0031383dee910a1f07222e5b4316f2.zip"
-    },
-    {
-      "tag": "v0.3.13",
-      "name": "0.3.13 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-23T19:16:29Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.13",
-      "modVersion": "v0.3.13",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.13/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.13.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4669484,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.13/Tekton.jar"
-        }
-      ],
-      "commitSha": "acda5164a302570d491f76e47440ee3af49f5180",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/acda5164a302570d491f76e47440ee3af49f5180.zip"
-    },
-    {
-      "tag": "v0.3.11",
-      "name": "0.3.11 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-20T16:20:24Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.11",
-      "modVersion": "v0.3.11",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.11/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.11.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4657980,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.11/Tekton.jar"
-        }
-      ],
-      "commitSha": "943b61dee8c211fbeb05b8337d1624f37deb20dc",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/943b61dee8c211fbeb05b8337d1624f37deb20dc.zip"
-    },
-    {
-      "tag": "v0.3.6",
-      "name": "0.3.6 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-15T20:38:56Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.6",
-      "modVersion": "v0.2.4",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.6/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.6.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4660368,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.6/Tekton.jar"
-        }
-      ],
-      "commitSha": "44a54f64adad43788322394a75f1595b40ef0877",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/44a54f64adad43788322394a75f1595b40ef0877.zip"
-    },
-    {
-      "tag": "v0.3.1",
-      "name": "0.3.1 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-09T20:30:15Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.1",
-      "modVersion": "v0.2.4",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.1/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.1.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4588993,
-          "downloadCount": 62,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.1/Tekton.jar"
-        }
-      ],
-      "commitSha": "ecd5412bbceeb59e4002cedc0efe13345084b465",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/ecd5412bbceeb59e4002cedc0efe13345084b465.zip"
-    },
-    {
-      "tag": "v0.3.0",
-      "name": "0.3.0 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-09-05T20:31:17Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.3.0",
-      "modVersion": "v0.2.4",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.0/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.3.0.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4675417,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.3.0/Tekton.jar"
-        }
-      ],
-      "commitSha": "ecd5412bbceeb59e4002cedc0efe13345084b465",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/ecd5412bbceeb59e4002cedc0efe13345084b465.zip"
-    },
-    {
-      "tag": "v0.2.4",
-      "name": "0.2.4 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-10T03:04:16Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.2.4",
-      "modVersion": "v0.2.4",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.4/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.2.4.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4584089,
-          "downloadCount": 93,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.4/Tekton.jar"
-        }
-      ],
-      "commitSha": "9c3473530dbf110c084ad7de9e99383af950e9d7",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/9c3473530dbf110c084ad7de9e99383af950e9d7.zip"
-    },
-    {
-      "tag": "v0.2.3",
-      "name": "0.2.3 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-10T02:16:02Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.2.3",
-      "modVersion": "v0.2.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.3/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.2.3.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4584097,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.3/Tekton.jar"
-        }
-      ],
-      "commitSha": "90c9f8b251d3707eea44df8b4f6c3a31843008dd",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/90c9f8b251d3707eea44df8b4f6c3a31843008dd.zip"
-    },
-    {
-      "tag": "v0.2.2",
-      "name": "0.2.2 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-07T20:16:49Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.2.2",
-      "modVersion": "v0.2.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.2/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.2.2.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4546312,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.2/Tekton.jar"
-        }
-      ],
-      "commitSha": "d39bbee75598eb9cd735a89d37bbf7a9d9e561c3",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/d39bbee75598eb9cd735a89d37bbf7a9d9e561c3.zip"
-    },
-    {
-      "tag": "v0.2.1",
-      "name": "0.2.1 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-08-06T20:31:18Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.2.1",
-      "modVersion": "v0.2.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.1/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.2.1.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4547608,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.1/Tekton.jar"
-        }
-      ],
-      "commitSha": "30bf8dbc5e3e13b1e3df0607bf5502cac6fb620c",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/30bf8dbc5e3e13b1e3df0607bf5502cac6fb620c.zip"
-    },
-    {
-      "tag": "v0.2.0",
-      "name": "0.2.0 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-06-20T18:45:08Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.2.0",
-      "modVersion": "v0.2.0",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.0/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.2.0.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 4289863,
-          "downloadCount": 80,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.2.0/Tekton.jar"
-        }
-      ],
-      "commitSha": "eff6ea8842103efd109092e21be595918a25c3d3",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/eff6ea8842103efd109092e21be595918a25c3d3.zip"
-    },
-    {
-      "tag": "v0.1",
-      "name": "v0.1 Alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-05-04T02:19:03Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.1",
-      "modVersion": "v0.1.0",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.1/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.1.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 3162581,
-          "downloadCount": 996,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.1/Tekton.jar"
-        }
-      ],
-      "commitSha": "f3e00cbac173bbf4ed68f72d7aef7d93826a4bd8",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/f3e00cbac173bbf4ed68f72d7aef7d93826a4bd8.zip"
-    },
-    {
-      "tag": "v0.0",
-      "name": "v0.0 Alpha (Test)",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-08T21:02:50Z",
-      "htmlUrl": "https://github.com/Thepi14/Tekton/releases/tag/v0.0",
-      "modVersion": "v0.1.0",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.0/Tekton.jar",
-      "sourceArchiveUrl": "https://github.com/thepi14/tekton/archive/refs/tags/v0.0.zip",
-      "assets": [
-        {
-          "name": "Tekton.jar",
-          "size": 2757783,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.0/Tekton.jar"
-        }
-      ],
-      "commitSha": "cc51408e69da4b070e887a54a30b4d9e296646f5",
-      "archiveByCommitUrl": "https://github.com/thepi14/tekton/archive/cc51408e69da4b070e887a54a30b4d9e296646f5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.3.23",
-      "modVersion": "v0.3.23",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.4.37",
-      "modVersion": "v0.4.37",
-      "minGameVersion": "158",
-      "maxGameVersion": 160.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.4.43",
-      "modVersion": "v0.4.43",
-      "minGameVersion": "160.2",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "v0.4.0",
+      "sizeBytes": 5257412,
+      "downloadCount": 332,
+      "releasedAt": "2026-07-24T23:42:50Z"
     }
   ],
   "meta": {
+    "name": "tekton",
+    "author": "ThePi14",
+    "description": "A Mindustry Java mod adding a new planet called Tekton, with it's own campaign, blocks, units, mechanics and hazards.\n\t\n\tTekton is a extremely cold planet far away from the sun, where a agressive faction called Hapax is located. Because of the low temperature the physical properties of many elements here are radically different from the other planets. The dense  methane rich atmosphere blocks the vision and unknown threats lure on the poles of the planet.\n\t\n\tCan you survive and thrive in this enviroment?\n\t\n\tAvailable languages:\n\t-English\n\t-Brazilian Portuguese\n\t\n\t[accent[]](The planet is based off on Titan, one of Saturns moons)[[]]\n\t",
+    "version": "v0.4.43",
+    "minGameVersion": "160.2",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "tekton.Tekton",
-    "hasScripts": false,
+    "java": true,
+    "hasScripts": true,
     "hasJava": true
   }
 }

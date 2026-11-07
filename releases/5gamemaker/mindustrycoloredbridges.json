@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "5gamemaker/mindustrycoloredbridges",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.3",
-      "name": "Release 0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-29T11:35:49Z",
-      "htmlUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/tag/0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.3/ColoredBridges.jar",
-      "sourceArchiveUrl": "https://github.com/5gamemaker/mindustrycoloredbridges/archive/refs/tags/0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ColoredBridges.jar",
-          "size": 218464,
-          "downloadCount": 1292,
-          "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.3/ColoredBridges.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "5e061ac273998e8ffafbc21d60e5f88825bafc21",
-      "archiveByCommitUrl": "https://github.com/5gamemaker/mindustrycoloredbridges/archive/5e061ac273998e8ffafbc21d60e5f88825bafc21.zip"
+      "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.3/ColoredBridges.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 218464,
+      "downloadCount": 1295,
+      "releasedAt": "2025-07-29T11:35:49Z"
     },
     {
       "tag": "0.2",
-      "name": "Release 0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-26T17:14:37Z",
-      "htmlUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/tag/0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.2/ColoredBridges.jar",
-      "sourceArchiveUrl": "https://github.com/5gamemaker/mindustrycoloredbridges/archive/refs/tags/0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ColoredBridges.jar",
-          "size": 189501,
-          "downloadCount": 108,
-          "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.2/ColoredBridges.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "dc22ba994289cb09eeb7a1e4f69e8aee8fae8764",
-      "archiveByCommitUrl": "https://github.com/5gamemaker/mindustrycoloredbridges/archive/dc22ba994289cb09eeb7a1e4f69e8aee8fae8764.zip"
+      "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.2/ColoredBridges.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 189501,
+      "downloadCount": 108,
+      "releasedAt": "2025-07-26T17:14:37Z"
     },
     {
       "tag": "0.1",
-      "name": "Release 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-26T17:02:52Z",
-      "htmlUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.1/ColoredBridges.jar",
-      "sourceArchiveUrl": "https://github.com/5gamemaker/mindustrycoloredbridges/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ColoredBridges.jar",
-          "size": 189913,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.1/ColoredBridges.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "51cff908e8d187ceec2aa7ce746f5db364c7aa42",
-      "archiveByCommitUrl": "https://github.com/5gamemaker/mindustrycoloredbridges/archive/51cff908e8d187ceec2aa7ce746f5db364c7aa42.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.3",
-      "modVersion": "0.3",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/5GameMaker/MindustryColoredBridges/releases/download/0.1/ColoredBridges.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 189913,
+      "downloadCount": 11,
+      "releasedAt": "2025-07-26T17:02:52Z"
     }
   ],
   "meta": {
+    "name": "colored-bridges",
+    "author": "buj",
+    "description": "A mod that colors the bridges",
+    "version": "0.3",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "buj.coloredbridges.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,88 +1,67 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mohitosemerkaa/mohito-s-modd",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-09T09:40:39Z",
-      "htmlUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "159.6",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.6",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "39e7e0cb37c210e46772cdc0769fafe35d111c3e",
-      "archiveByCommitUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/39e7e0cb37c210e46772cdc0769fafe35d111c3e.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2026-08-09T09:40:39Z"
     },
     {
       "tag": "0.3b",
-      "name": "v0.3-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-21T11:10:31Z",
-      "htmlUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/tag/0.3b",
-      "modVersion": "0.3b",
+      "kind": "release",
       "minGameVersion": "159.6",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/download/0.3b/Mod.zip",
-      "sourceArchiveUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/refs/tags/0.3b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mod.zip",
-          "size": 11140,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/download/0.3b/Mod.zip"
+          "from": "159.6",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a1302d186e703192681b15db26e5e62c570df25c",
-      "archiveByCommitUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/a1302d186e703192681b15db26e5e62c570df25c.zip"
+      "downloadUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/download/0.3b/Mod.zip",
+      "modVersion": "0.3b",
+      "sizeBytes": 11140,
+      "downloadCount": 2,
+      "releasedAt": "2026-07-21T11:10:31Z"
     },
     {
       "tag": "0.2b",
-      "name": "v0.2-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-18T21:46:34Z",
-      "htmlUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/tag/0.2b",
-      "modVersion": "0.3b",
+      "kind": "release",
       "minGameVersion": "159.6",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/download/0.2b/Mod.zip",
-      "sourceArchiveUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/refs/tags/0.2b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mod.zip",
-          "size": 8407,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/download/0.2b/Mod.zip"
+          "from": "159.6",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a1302d186e703192681b15db26e5e62c570df25c",
-      "archiveByCommitUrl": "https://github.com/mohitosemerkaa/mohito-s-modd/archive/a1302d186e703192681b15db26e5e62c570df25c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "159.6",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/mohitosemerkaa/Mohito-s-modd/releases/download/0.2b/Mod.zip",
+      "modVersion": "0.3b",
+      "sizeBytes": 8407,
+      "downloadCount": 3,
+      "releasedAt": "2026-07-18T21:46:34Z"
     }
   ],
   "meta": {
+    "name": "MohitosModd",
+    "author": "MohitoSemerka",
+    "description": "-Added new planet: Componda\n-Added 4 new turrets!\n-Added silicon furnace\n-Added 7 units\n-Added 3 sectors for Componda\n-Added new item: cobalt\n-Added distribution blocks\n-Added power blocks\n-Added walls (electrum, lead)\n-Added drills\n-Balance improvements\n-Bug fixes",
+    "version": "1.0",
+    "minGameVersion": "159.6",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

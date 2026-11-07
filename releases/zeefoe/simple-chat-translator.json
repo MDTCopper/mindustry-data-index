@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zeefoe/simple-chat-translator",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-23T04:38:40Z",
-      "htmlUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/tag/1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/download/1.1/simple-chat-translator.jar",
-      "sourceArchiveUrl": "https://github.com/zeefoe/simple-chat-translator/archive/refs/tags/1.1.zip",
-      "assets": [
-        {
-          "name": "simple-chat-translator.jar",
-          "size": 39179,
-          "downloadCount": 3591,
-          "downloadUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/download/1.1/simple-chat-translator.jar"
-        }
-      ],
-      "commitSha": "37c7f2975c374dd2898d415225eacca82cc618e1",
-      "archiveByCommitUrl": "https://github.com/zeefoe/simple-chat-translator/archive/37c7f2975c374dd2898d415225eacca82cc618e1.zip"
+      "modVersion": "1",
+      "sizeBytes": 39179,
+      "downloadCount": 3591,
+      "releasedAt": "2025-12-23T04:38:40Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-13T06:16:37Z",
-      "htmlUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "150",
+          "to": "154"
+        }
+      ],
       "downloadUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/download/1.0/simple-chat-translator.jar",
-      "sourceArchiveUrl": "https://github.com/zeefoe/simple-chat-translator/archive/refs/tags/1.0.zip",
-      "assets": [
-        {
-          "name": "simple-chat-translator.jar",
-          "size": 39262,
-          "downloadCount": 56,
-          "downloadUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/download/1.0/simple-chat-translator.jar"
-        }
-      ],
-      "commitSha": "6366dde31beb28cd0c280a86689130f2638207a3",
-      "archiveByCommitUrl": "https://github.com/zeefoe/simple-chat-translator/archive/6366dde31beb28cd0c280a86689130f2638207a3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1",
-      "minGameVersion": "150",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.1",
-      "modVersion": "1",
-      "minGameVersion": "154.2",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 39262,
+      "downloadCount": 56,
+      "releasedAt": "2025-12-13T06:16:37Z"
     }
   ],
   "meta": {
+    "name": "simple-chat-translator",
+    "author": "Zeefoe",
+    "description": "\nA chat translator that just works.\nTranslates the chat using google translate without any setup and configuration.\n\nThe target language should be automatically set by what language you have your game in.\n",
+    "version": "1",
+    "minGameVersion": "154.2",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "simpleChatTranslator.chatTranslator",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

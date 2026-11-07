@@ -1,948 +1,586 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zenthxsin/voidshield",
-  "generatedAt": "2026-11-06T14:52:40.602Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1-20260804-123437",
-      "name": "1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-04T12:34:38Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/1-20260804-123437",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260804-123437/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/1-20260804-123437.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8563034,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260804-123437/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b3fffcb41238b6d6529f4c26c741d35b8328690c",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/b3fffcb41238b6d6529f4c26c741d35b8328690c.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260804-123437/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8563034,
+      "downloadCount": 18,
+      "releasedAt": "2026-08-04T12:34:38Z",
+      "prerelease": true
     },
     {
       "tag": "1-20260804-114510",
-      "name": "1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-04T11:45:11Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/1-20260804-114510",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260804-114510/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/1-20260804-114510.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8563029,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260804-114510/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c4d53bb32354c94a84ae029cc42a83071d8f4087",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/c4d53bb32354c94a84ae029cc42a83071d8f4087.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260804-114510/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8563029,
+      "downloadCount": 1,
+      "releasedAt": "2026-08-04T11:45:11Z",
+      "prerelease": true
     },
     {
       "tag": "refactor-reorganize-core-extensions-and-shader-loading-20260728-111339",
-      "name": "refactor: reorganize core extensions and shader loading",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-28T11:13:40Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/refactor-reorganize-core-extensions-and-shader-loading-20260728-111339",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/refactor-reorganize-core-extensions-and-shader-loading-20260728-111339/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/refactor-reorganize-core-extensions-and-shader-loading-20260728-111339.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8562378,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/refactor-reorganize-core-extensions-and-shader-loading-20260728-111339/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ba6a199eceecaed2fad997082fdc75128cb46d28",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/ba6a199eceecaed2fad997082fdc75128cb46d28.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/refactor-reorganize-core-extensions-and-shader-loading-20260728-111339/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8562378,
+      "downloadCount": 4,
+      "releasedAt": "2026-07-28T11:13:40Z",
+      "prerelease": true
     },
     {
       "tag": "fix-reorder-vsvars-modname-assignment-before-vsvars-load-20260609-155751",
-      "name": "fix: reorder VsVars.modName assignment before VsVars.load()",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-06-09T15:57:53Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-reorder-vsvars-modname-assignment-before-vsvars-load-20260609-155751",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-reorder-vsvars-modname-assignment-before-vsvars-load-20260609-155751/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-reorder-vsvars-modname-assignment-before-vsvars-load-20260609-155751.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8546865,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-reorder-vsvars-modname-assignment-before-vsvars-load-20260609-155751/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ead5885b4309c78c1f4815a36619d0135ae474c4",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/ead5885b4309c78c1f4815a36619d0135ae474c4.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-reorder-vsvars-modname-assignment-before-vsvars-load-20260609-155751/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8546865,
+      "downloadCount": 14,
+      "releasedAt": "2026-06-09T15:57:53Z",
+      "prerelease": true
     },
     {
       "tag": "merge-pull-request-9-from-zenthxsin-feat-bundle-kotlin-stdlib-20260607-083830",
-      "name": "Merge pull request #9 from ZenthXSin/feat/bundle-kotlin-stdlib",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-06-07T08:38:32Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/merge-pull-request-9-from-zenthxsin-feat-bundle-kotlin-stdlib-20260607-083830",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-9-from-zenthxsin-feat-bundle-kotlin-stdlib-20260607-083830/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/merge-pull-request-9-from-zenthxsin-feat-bundle-kotlin-stdlib-20260607-083830.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8546864,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-9-from-zenthxsin-feat-bundle-kotlin-stdlib-20260607-083830/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "57b8464b46b24d9eb4ad30c29b4c5cf0c66cce7d",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/57b8464b46b24d9eb4ad30c29b4c5cf0c66cce7d.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-9-from-zenthxsin-feat-bundle-kotlin-stdlib-20260607-083830/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8546864,
+      "downloadCount": 5,
+      "releasedAt": "2026-06-07T08:38:32Z",
+      "prerelease": true
     },
     {
       "tag": "perf-voidshield-20260524-085614",
-      "name": "perf(voidshield): 优化护盾系统性能并完善功能",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-24T08:56:15Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/perf-voidshield-20260524-085614",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/perf-voidshield-20260524-085614/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/perf-voidshield-20260524-085614.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8546864,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/perf-voidshield-20260524-085614/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9d53e893e24f246d97e24efe4b313e282030714f",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/9d53e893e24f246d97e24efe4b313e282030714f.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/perf-voidshield-20260524-085614/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8546864,
+      "downloadCount": 16,
+      "releasedAt": "2026-05-24T08:56:15Z",
+      "prerelease": true
     },
     {
       "tag": "feat-voidshield-20260523-075620",
-      "name": "feat(voidShield): 添加多边形区域控制模式支持",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-23T07:56:21Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/feat-voidshield-20260523-075620",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260523-075620/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/feat-voidshield-20260523-075620.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8540268,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260523-075620/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b7b7d0eebba3f4ff1072fd897a2a0bb0a82f4c55",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/b7b7d0eebba3f4ff1072fd897a2a0bb0a82f4c55.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260523-075620/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8540268,
+      "downloadCount": 4,
+      "releasedAt": "2026-05-23T07:56:21Z",
+      "prerelease": true
     },
     {
       "tag": "v1.0.1",
-      "name": "(测试)更新模组文档和本地化资源",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-23T07:11:50Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/v1.0.1",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v1.0.1/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8541897,
-          "downloadCount": 1451,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v1.0.1/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "499b58a502ec85d11afdd8eedb5c7602b41c47a3",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/499b58a502ec85d11afdd8eedb5c7602b41c47a3.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v1.0.1/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8541897,
+      "downloadCount": 1453,
+      "releasedAt": "2026-05-23T07:11:50Z"
     },
     {
       "tag": "docs-mod-20260523-070746",
-      "name": "docs(mod): 更新模组文档和本地化资源",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-23T07:07:48Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/docs-mod-20260523-070746",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/docs-mod-20260523-070746/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/docs-mod-20260523-070746.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8539316,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/docs-mod-20260523-070746/VoidShield.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "499b58a502ec85d11afdd8eedb5c7602b41c47a3",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/499b58a502ec85d11afdd8eedb5c7602b41c47a3.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/docs-mod-20260523-070746/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8539316,
+      "downloadCount": 4,
+      "releasedAt": "2026-05-23T07:07:48Z",
+      "prerelease": true
     },
     {
       "tag": "v1.0.0",
-      "name": "VoidShield v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-18T05:59:43Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/v1.0.0",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v1.0.0/VoidShieldDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShieldDesktop.jar",
-          "size": 6498942,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v1.0.0/VoidShieldDesktop.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eaf7433ab1cd91f27763ad1dd872e9805e0a29fd",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/eaf7433ab1cd91f27763ad1dd872e9805e0a29fd.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v1.0.0/VoidShieldDesktop.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 6498942,
+      "downloadCount": 43,
+      "releasedAt": "2026-05-18T05:59:43Z"
     },
     {
       "tag": "feat-voidshield-20260517-101347",
-      "name": "feat(voidshield): 添加自动阻挡和区域更新功能",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-17T10:13:48Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/feat-voidshield-20260517-101347",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260517-101347/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/feat-voidshield-20260517-101347.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8535730,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260517-101347/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eaf7433ab1cd91f27763ad1dd872e9805e0a29fd",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/eaf7433ab1cd91f27763ad1dd872e9805e0a29fd.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260517-101347/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8535730,
+      "downloadCount": 1,
+      "releasedAt": "2026-05-17T10:13:48Z",
+      "prerelease": true
     },
     {
       "tag": "fix-shader-20260516-140848",
-      "name": "fix(shader): 修复热浪效果的分辨率适配和性能问题",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-16T14:08:50Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-shader-20260516-140848",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-shader-20260516-140848/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-shader-20260516-140848.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8526379,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-shader-20260516-140848/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a7f06d4f0cb21f3b56a3442a6ff9fcdd0037df52",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/a7f06d4f0cb21f3b56a3442a6ff9fcdd0037df52.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-shader-20260516-140848/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8526379,
+      "downloadCount": 1,
+      "releasedAt": "2026-05-16T14:08:50Z",
+      "prerelease": true
     },
     {
       "tag": "feat-voidshield-20260510-075318",
-      "name": "feat(voidshield): 添加虚空护盾核心功能模块",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-10T07:53:19Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/feat-voidshield-20260510-075318",
-      "modVersion": "alpha-01",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260510-075318/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/feat-voidshield-20260510-075318.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8526442,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260510-075318/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "20173d7f12318e85a6904e9cef935ac87ff0fb66",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/20173d7f12318e85a6904e9cef935ac87ff0fb66.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260510-075318/VoidShield.jar",
+      "modVersion": "alpha-01",
+      "sizeBytes": 8526442,
+      "downloadCount": 2,
+      "releasedAt": "2026-05-10T07:53:19Z",
+      "prerelease": true
     },
     {
       "tag": "fix-renderer-20260504-050057",
-      "name": "fix(renderer): 修复热路由渲染和着色器效果",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-04T05:00:59Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-renderer-20260504-050057",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-renderer-20260504-050057/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-renderer-20260504-050057.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8509037,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-renderer-20260504-050057/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "76d89ed275fecb7e0667f927bbc71b63e43a75d8",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/76d89ed275fecb7e0667f927bbc71b63e43a75d8.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-renderer-20260504-050057/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8509037,
+      "downloadCount": 1,
+      "releasedAt": "2026-05-04T05:00:59Z",
+      "prerelease": true
     },
     {
       "tag": "defaultshader-kt-20260503-083329",
-      "name": "更新 DefaultShader.kt",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-03T08:33:30Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/defaultshader-kt-20260503-083329",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/defaultshader-kt-20260503-083329/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/defaultshader-kt-20260503-083329.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8505194,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/defaultshader-kt-20260503-083329/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "77a4b61ff2de9b604579a3982693ce57c87c44be",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/77a4b61ff2de9b604579a3982693ce57c87c44be.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/defaultshader-kt-20260503-083329/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8505194,
+      "downloadCount": 1,
+      "releasedAt": "2026-05-03T08:33:30Z",
+      "prerelease": true
     },
     {
       "tag": "v2-20260503-082432",
-      "name": "着色器V2初步理解",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-03T08:24:32Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/v2-20260503-082432",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v2-20260503-082432/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2-20260503-082432.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8505214,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v2-20260503-082432/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "54bab93ad215e60bc2db5907904234edbadbd638",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/54bab93ad215e60bc2db5907904234edbadbd638.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/v2-20260503-082432/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8505214,
+      "downloadCount": 3,
+      "releasedAt": "2026-05-03T08:24:32Z",
+      "prerelease": true
     },
     {
       "tag": "1-20260501-141410",
-      "name": "1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-01T14:14:11Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/1-20260501-141410",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260501-141410/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/1-20260501-141410.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8500216,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260501-141410/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e64154a35eac69e6f35f67fe4d9c64d145468234",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/e64154a35eac69e6f35f67fe4d9c64d145468234.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/1-20260501-141410/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8500216,
+      "releasedAt": "2026-05-01T14:14:11Z",
+      "prerelease": true
     },
     {
       "tag": "feat-voidshield-20260501-100816",
-      "name": "feat(voidShield): 添加虚空盾系统核心功能",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-01T10:08:17Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/feat-voidshield-20260501-100816",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260501-100816/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/feat-voidshield-20260501-100816.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8492810,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260501-100816/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "16441f9e0d6902997e1e8ac61c4c5c9e226aecd6",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/16441f9e0d6902997e1e8ac61c4c5c9e226aecd6.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-voidshield-20260501-100816/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8492810,
+      "releasedAt": "2026-05-01T10:08:17Z",
+      "prerelease": true
     },
     {
       "tag": "none-20260501-005221",
-      "name": "none",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-01T00:52:22Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/none-20260501-005221",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/none-20260501-005221/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/none-20260501-005221.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8399945,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/none-20260501-005221/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f69bdd1b4a20cd7e169339c6e1db6d021358018a",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/f69bdd1b4a20cd7e169339c6e1db6d021358018a.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/none-20260501-005221/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8399945,
+      "releasedAt": "2026-05-01T00:52:22Z",
+      "prerelease": true
     },
     {
       "tag": "chore-assets-20260501-005109",
-      "name": "chore(assets): 更新蒸发冷却器精灵图",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-01T00:51:10Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/chore-assets-20260501-005109",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chore-assets-20260501-005109/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/chore-assets-20260501-005109.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8394864,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chore-assets-20260501-005109/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f69bdd1b4a20cd7e169339c6e1db6d021358018a",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/f69bdd1b4a20cd7e169339c6e1db6d021358018a.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chore-assets-20260501-005109/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8394864,
+      "releasedAt": "2026-05-01T00:51:10Z",
+      "prerelease": true
     },
     {
       "tag": "merge-branch-master-of-https-github-com-zenthxsin-voidshield-20260430-232121",
-      "name": "Merge branch 'master' of https://github.com/ZenthXSin/VoidShield",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-30T23:21:23Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/merge-branch-master-of-https-github-com-zenthxsin-voidshield-20260430-232121",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-branch-master-of-https-github-com-zenthxsin-voidshield-20260430-232121/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/merge-branch-master-of-https-github-com-zenthxsin-voidshield-20260430-232121.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8396681,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-branch-master-of-https-github-com-zenthxsin-voidshield-20260430-232121/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5a10187798a87975823c8befeeeb0d7df4ec9811",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/5a10187798a87975823c8befeeeb0d7df4ec9811.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-branch-master-of-https-github-com-zenthxsin-voidshield-20260430-232121/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8396681,
+      "releasedAt": "2026-04-30T23:21:23Z",
+      "prerelease": true
     },
     {
       "tag": "merge-pull-request-7-from-zenthxsin-codex-fix-voidshield-mod-loading-error-20260430-142129",
-      "name": "Merge pull request #7 from ZenthXSin/codex/fix-voidshield-mod-loading-error",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-30T14:21:30Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/merge-pull-request-7-from-zenthxsin-codex-fix-voidshield-mod-loading-error-20260430-142129",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-7-from-zenthxsin-codex-fix-voidshield-mod-loading-error-20260430-142129/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/merge-pull-request-7-from-zenthxsin-codex-fix-voidshield-mod-loading-error-20260430-142129.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8395405,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-7-from-zenthxsin-codex-fix-voidshield-mod-loading-error-20260430-142129/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "087badc5b825c8f646565770848c17c3fcaca7fa",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/087badc5b825c8f646565770848c17c3fcaca7fa.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-7-from-zenthxsin-codex-fix-voidshield-mod-loading-error-20260430-142129/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8395405,
+      "downloadCount": 1,
+      "releasedAt": "2026-04-30T14:21:30Z",
+      "prerelease": true
     },
     {
       "tag": "feat-blocks-20260430-140503",
-      "name": "feat(blocks): 添加热传导模块和黑洞着色器功能",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-30T14:05:05Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/feat-blocks-20260430-140503",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-blocks-20260430-140503/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/feat-blocks-20260430-140503.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8395403,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-blocks-20260430-140503/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "aad71181f8260fb9d3da9d69d6304006b643a641",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/aad71181f8260fb9d3da9d69d6304006b643a641.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-blocks-20260430-140503/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8395403,
+      "downloadCount": 1,
+      "releasedAt": "2026-04-30T14:05:05Z",
+      "prerelease": true
     },
     {
       "tag": "fix-heat-20260426-224034",
-      "name": "fix(heat): 移除测试着色器并标记性能问题待修复",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T22:40:35Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-heat-20260426-224034",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-heat-20260426-224034/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-heat-20260426-224034.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360231,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-heat-20260426-224034/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3accf189bd2d59deb8dbbf4283fd30f0bcc57159",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/3accf189bd2d59deb8dbbf4283fd30f0bcc57159.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-heat-20260426-224034/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360231,
+      "releasedAt": "2026-04-26T22:40:35Z",
+      "prerelease": true
     },
     {
       "tag": "revert-refactor-blocks-aircooler-20260426-092410",
-      "name": "Revert \"refactor(blocks): 移除airCooler块中的测试着色器配置\"",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T09:24:11Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/revert-refactor-blocks-aircooler-20260426-092410",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/revert-refactor-blocks-aircooler-20260426-092410/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/revert-refactor-blocks-aircooler-20260426-092410.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360226,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/revert-refactor-blocks-aircooler-20260426-092410/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e983b1f124923b829d0188a6d30a33240f414db1",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/e983b1f124923b829d0188a6d30a33240f414db1.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/revert-refactor-blocks-aircooler-20260426-092410/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360226,
+      "downloadCount": 2,
+      "releasedAt": "2026-04-26T09:24:11Z",
+      "prerelease": true
     },
     {
       "tag": "merge-pull-request-6-from-zenthxsin-fix-heat-exchange-bugs-20260426-084115",
-      "name": "Merge pull request #6 from ZenthXSin/fix/heat-exchange-bugs",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T08:41:16Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/merge-pull-request-6-from-zenthxsin-fix-heat-exchange-bugs-20260426-084115",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-6-from-zenthxsin-fix-heat-exchange-bugs-20260426-084115/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/merge-pull-request-6-from-zenthxsin-fix-heat-exchange-bugs-20260426-084115.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360235,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-6-from-zenthxsin-fix-heat-exchange-bugs-20260426-084115/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1d4593ab376d69801d57dde3a167527b25f76af5",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/1d4593ab376d69801d57dde3a167527b25f76af5.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/merge-pull-request-6-from-zenthxsin-fix-heat-exchange-bugs-20260426-084115/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360235,
+      "downloadCount": 3,
+      "releasedAt": "2026-04-26T08:41:16Z",
+      "prerelease": true
     },
     {
       "tag": "fix-const-float-rgbsplit-type-mismatch-change-line-67-from-const-float-rgbsplit-0-to-const-float-rgbsplit-0-0-to-fix-glsl-compilation-error-on-adreno-gpus-20260426-080645",
-      "name": "Fix const float rgbSplit type mismatch - change line 67 from `const float rgbSplit = 0;` to `const float rgbSplit = 0.0;` to fix GLSL compilation error on Adreno GPUs.",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T08:06:46Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-const-float-rgbsplit-type-mismatch-change-line-67-from-const-float-rgbsplit-0-to-const-float-rgbsplit-0-0-to-fix-glsl-compilation-error-on-adreno-gpus-20260426-080645",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-const-float-rgbsplit-type-mismatch-change-line-67-from-const-float-rgbsplit-0-to-const-float-rgbsplit-0-0-to-fix-glsl-compilation-error-on-adreno-gpus-20260426-080645/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-const-float-rgbsplit-type-mismatch-change-line-67-from-const-float-rgbsplit-0-to-const-float-rgbsplit-0-0-to-fix-glsl-compilation-error-on-adreno-gpus-20260426-080645.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360235,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-const-float-rgbsplit-type-mismatch-change-line-67-from-const-float-rgbsplit-0-to-const-float-rgbsplit-0-0-to-fix-glsl-compilation-error-on-adreno-gpus-20260426-080645/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e8c88a7b8a9fb40d7fb440a19b35e72b060a13cb",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/e8c88a7b8a9fb40d7fb440a19b35e72b060a13cb.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-const-float-rgbsplit-type-mismatch-change-line-67-from-const-float-rgbsplit-0-to-const-float-rgbsplit-0-0-to-fix-glsl-compilation-error-on-adreno-gpus-20260426-080645/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360235,
+      "releasedAt": "2026-04-26T08:06:46Z",
+      "prerelease": true
     },
     {
       "tag": "refactor-blocks-aircooler-20260426-072452",
-      "name": "refactor(blocks): 移除airCooler块中的测试着色器配置",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T07:24:53Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/refactor-blocks-aircooler-20260426-072452",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/refactor-blocks-aircooler-20260426-072452/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/refactor-blocks-aircooler-20260426-072452.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360234,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/refactor-blocks-aircooler-20260426-072452/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4138768b0821dcc8f7d76c07920190365e24b76c",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/4138768b0821dcc8f7d76c07920190365e24b76c.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/refactor-blocks-aircooler-20260426-072452/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360234,
+      "downloadCount": 3,
+      "releasedAt": "2026-04-26T07:24:53Z",
+      "prerelease": true
     },
     {
       "tag": "chore-build-mindustry-20260426-071149",
-      "name": "chore(build): 更新 Mindustry 版本依赖",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T07:11:50Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/chore-build-mindustry-20260426-071149",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chore-build-mindustry-20260426-071149/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/chore-build-mindustry-20260426-071149.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360225,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chore-build-mindustry-20260426-071149/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "81ea7c26400603f54bf1be914bfcea93a148119f",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/81ea7c26400603f54bf1be914bfcea93a148119f.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chore-build-mindustry-20260426-071149/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360225,
+      "releasedAt": "2026-04-26T07:11:50Z",
+      "prerelease": true
     },
     {
       "tag": "feat-gameplay-20260426-065515",
-      "name": "feat(gameplay): 更新热力建筑系统并添加逻辑控制功能",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-26T06:55:16Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/feat-gameplay-20260426-065515",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-gameplay-20260426-065515/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/feat-gameplay-20260426-065515.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8360225,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-gameplay-20260426-065515/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "43d5c8b593037f0572645ace129c16e0dcfb888b",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/43d5c8b593037f0572645ace129c16e0dcfb888b.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/feat-gameplay-20260426-065515/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8360225,
+      "downloadCount": 2,
+      "releasedAt": "2026-04-26T06:55:16Z",
+      "prerelease": true
     },
     {
       "tag": "fix-shader-20260425-133142",
-      "name": "fix(shader): 修复空间扭曲效果的参数配置问题",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-25T13:31:43Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-shader-20260425-133142",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-shader-20260425-133142/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-shader-20260425-133142.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8330455,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-shader-20260425-133142/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3913bb3f02a5a77de50b833069ad9c43dae9ca7b",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/3913bb3f02a5a77de50b833069ad9c43dae9ca7b.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-shader-20260425-133142/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8330455,
+      "releasedAt": "2026-04-25T13:31:43Z",
+      "prerelease": true
     },
     {
       "tag": "fix-config-20260425-130650",
-      "name": "fix(config): 修复空气冷却器配置和工作流脚本",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-25T13:06:51Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/fix-config-20260425-130650",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-config-20260425-130650/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/fix-config-20260425-130650.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8330315,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-config-20260425-130650/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d3a52c14c8e36ce168578622487e40e76c9db692",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/d3a52c14c8e36ce168578622487e40e76c9db692.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/fix-config-20260425-130650/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8330315,
+      "releasedAt": "2026-04-25T13:06:51Z",
+      "prerelease": true
     },
     {
       "tag": "featshader-microvoid",
-      "name": "feat(shader): 添加空间扭曲着色器并增强MicroVoid块功能",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-25T11:44:31Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/featshader-microvoid",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/featshader-microvoid/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/featshader-microvoid.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8329398,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/featshader-microvoid/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c7a84b9f9ed57abee7a33cb3f7648293c3c220b1",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/c7a84b9f9ed57abee7a33cb3f7648293c3c220b1.zip"
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/featshader-microvoid/VoidShield.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 8329398,
+      "downloadCount": 2,
+      "releasedAt": "2026-04-25T11:44:31Z",
+      "prerelease": true
     },
     {
       "tag": "chorerepo-heatcatheter",
-      "name": "chore(repo): 添加提交模板并微调HeatCatheter速率",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-04-25T11:06:56Z",
-      "htmlUrl": "https://github.com/ZenthXSin/VoidShield/releases/tag/chorerepo-heatcatheter",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chorerepo-heatcatheter/VoidShield.jar",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/chorerepo-heatcatheter.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VoidShield.jar",
-          "size": 8325241,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chorerepo-heatcatheter/VoidShield.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "28292f37c7ecde382429fe545ff64b45c413a9b9",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/28292f37c7ecde382429fe545ff64b45c413a9b9.zip"
-    },
-    {
-      "tag": "v2026.04.25-1031",
-      "name": "v2026.04.25-1031",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zenthxsin/voidshield/tree/v2026.04.25-1031",
+      "downloadUrl": "https://github.com/ZenthXSin/VoidShield/releases/download/chorerepo-heatcatheter/VoidShield.jar",
       "modVersion": "1.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2026.04.25-1031.zip",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2026.04.25-1031.zip",
-      "assets": [],
-      "commitSha": "eabb7d96e209f7daff9848b14672a41c9ae66cc8",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/eabb7d96e209f7daff9848b14672a41c9ae66cc8.zip"
-    },
-    {
-      "tag": "v2026.04.25-0539",
-      "name": "v2026.04.25-0539",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zenthxsin/voidshield/tree/v2026.04.25-0539",
-      "modVersion": "1.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2026.04.25-0539.zip",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2026.04.25-0539.zip",
-      "assets": [],
-      "commitSha": "49a1e0ce80f36a877c045d81799b9a7af9b7f581",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/49a1e0ce80f36a877c045d81799b9a7af9b7f581.zip"
-    },
-    {
-      "tag": "v2026.04.25-0535",
-      "name": "v2026.04.25-0535",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zenthxsin/voidshield/tree/v2026.04.25-0535",
-      "modVersion": "1.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2026.04.25-0535.zip",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/v2026.04.25-0535.zip",
-      "assets": [],
-      "commitSha": "02337d0151b6aaf1c587e639ba92f674ef9ba60a",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/02337d0151b6aaf1c587e639ba92f674ef9ba60a.zip"
-    },
-    {
-      "tag": "update-blank.yml",
-      "name": "update-blank.yml",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zenthxsin/voidshield/tree/update-blank.yml",
-      "modVersion": "1.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/update-blank.yml.zip",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/update-blank.yml.zip",
-      "assets": [],
-      "commitSha": "91fb6b70d8076d1233e689ff75c877589be06be3",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/91fb6b70d8076d1233e689ff75c877589be06be3.zip"
-    },
-    {
-      "tag": "improve-release-tagging-and-lower-default-heat",
-      "name": "improve-release-tagging-and-lower-default-heat",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zenthxsin/voidshield/tree/improve-release-tagging-and-lower-default-heat",
-      "modVersion": "1.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/improve-release-tagging-and-lower-default-heat.zip",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/improve-release-tagging-and-lower-default-heat.zip",
-      "assets": [],
-      "commitSha": "c82d2e41fbb6cff6c79568199b97d732e91b9c47",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/c82d2e41fbb6cff6c79568199b97d732e91b9c47.zip"
-    },
-    {
-      "tag": "TestAutoBuild",
-      "name": "TestAutoBuild",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/zenthxsin/voidshield/tree/TestAutoBuild",
-      "modVersion": "1.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/TestAutoBuild.zip",
-      "sourceArchiveUrl": "https://github.com/zenthxsin/voidshield/archive/refs/tags/TestAutoBuild.zip",
-      "assets": [],
-      "commitSha": "f022fbc8fae09180e94f87a33ca9a8b267611789",
-      "archiveByCommitUrl": "https://github.com/zenthxsin/voidshield/archive/f022fbc8fae09180e94f87a33ca9a8b267611789.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
-      "modVersion": "alpha-01",
-      "minGameVersion": "154",
-      "maxGameVersion": 157,
-      "hasRelease": true
-    },
-    {
-      "tag": "1-20260804-123437",
-      "modVersion": "alpha-01",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 8325241,
+      "releasedAt": "2026-04-25T11:06:56Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "VoidShield",
+    "author": "zxs",
+    "description": "虚空盾\n\n一个由kotlin编写，参看战锤40k虚空盾的全新护盾系统\n\n全新的指令集，让护盾使用的自由度大大提高。全新的热量系统，与原版热量系统与众不同的体验\n\n全新的护盾机制，令人焕然一新\n需要一定的逻辑基础\n在这里，你可以：\n1. 创建一个自定义形状的护盾\n2. 可以通多逻辑来控制你的护盾\n3. 通过建筑的堆叠和逻辑优化不断升级你的护盾\n\n游玩指栏：\n首先，你需要建筑虚空之心，帷幕溶解器，空间穿刺机，和一个用于控制这个系统的逻辑处理器\n然后，为这个系统搭建其独立的散热线路\n最后，编写控制它们的逻辑\n\n逻辑编写指栏：\n\n首先，你需要使用CircleZone（或其他）来创建一个场，然后使用UseZone来将这个场加载到对应建筑，\n最后，使用UpdateZone来控制这个场\n\n如果你想要让它可以阻挡子弹，你需要使用Bind来把帷幕溶解器绑定给空间穿刺机，最后使用AutoBlock开启自动拦截\n这套逻辑将在未来继续扩展\n\n目前mod还在开发测试中，欢迎issue\n\n代码编写: ZXS\n贴图制作: 花杨永瀛\n委托: 一得阁拉米\n\n\nVoid Shield\n\nA brand-new shield system written in Kotlin, inspired by Warhammer 40K's Void Shield.\n\nNew instruction set, greatly improving the freedom of shield usage. New heat system, a completely different experience from the vanilla heat system.\nNew shield mechanism, a refreshing new gameplay.\n\nRequires some basic knowledge of logic programming.\n\nHere, you can:\n\n1. Create shields with custom shapes\n2. Control shields via the Logic Processor\n3. Continuously upgrade shields through block stacking and logic optimization\n\n\nHow to Play:\nFirst, build a Void Heart, a Veil Dissolver, a Spatial Piercer, and a Logic Processor to control this system\nThen, set up an independent cooling line for this system\nFinally, write logic to control them\n\nLogic Scripting Guide:\n\nFirst, use CircleZone (or others) to create a zone, then use UseZone to load that zone into the corresponding block,\nFinally, use UpdateZone to control that zone\n\nIf you want it to block bullets, use Bind to bind the Veil Dissolver to the Spatial Piercer, then use AutoBlock to activate automatic interception\nThis instruction set will continue to be expanded in the future.\n\nThis mod is currently under active development and testing. Issues and feedback are welcome!\n\nCode: ZXS\nSprites: 花杨永瀛\nCommission: 一得阁拉米",
+    "version": "alpha-01",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "voidshield.VoidShieldMod",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

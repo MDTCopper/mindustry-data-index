@@ -1,95 +1,66 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "KirillAldashkin/NoHitMod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.2.0",
-      "name": "1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-20T09:19:14Z",
-      "htmlUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/tag/v1.2.0",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/refs/tags/v1.2.0.zip",
-      "sourceArchiveUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NoHitMod.jar",
-          "size": 227856,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/download/v1.2.0/NoHitMod.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "d07d455b646cff884dace4bcc5693c45e23de86b",
-      "archiveByCommitUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/d07d455b646cff884dace4bcc5693c45e23de86b.zip"
+      "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/download/v1.2.0/NoHitMod.jar",
+      "sizeBytes": 227856,
+      "downloadCount": 30,
+      "releasedAt": "2025-07-20T09:19:14Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-10T16:40:13Z",
-      "htmlUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/tag/v1.1.0",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NoHitMod.jar",
-          "size": 2371432,
-          "downloadCount": 563,
-          "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/download/v1.1.0/NoHitMod.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ad99098faaa29d09d4c38e4fb090f41eb7cfe090",
-      "archiveByCommitUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/ad99098faaa29d09d4c38e4fb090f41eb7cfe090.zip"
+      "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/download/v1.1.0/NoHitMod.jar",
+      "sizeBytes": 2371432,
+      "downloadCount": 563,
+      "releasedAt": "2025-07-10T16:40:13Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "First version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-10T12:03:21Z",
-      "htmlUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/tag/v1.0.0",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NoHitMod.jar",
-          "size": 2371214,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/download/v1.0.0/NoHitMod.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "3819da99ce6a27272236798630aabbbca3cfdace",
-      "archiveByCommitUrl": "https://github.com/KirillAldashkin/NoHitMod/archive/3819da99ce6a27272236798630aabbbca3cfdace.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.2.0",
-      "modVersion": null,
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/KirillAldashkin/NoHitMod/releases/download/v1.0.0/NoHitMod.jar",
+      "sizeBytes": 2371214,
+      "downloadCount": 19,
+      "releasedAt": "2025-07-10T12:03:21Z"
     }
   ],
   "meta": {
+    "name": "nohit-challenge-mod",
+    "author": "nukleer",
+    "description": "Makes all 'Sharded' units and blocks have ~0 HP",
+    "version": null,
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

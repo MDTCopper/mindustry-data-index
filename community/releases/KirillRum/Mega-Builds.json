@@ -1,71 +1,55 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "KirillRum/Mega-Builds",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Alpha-0.1",
-      "name": "Alpha 0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-07-21T10:12:18Z",
-      "htmlUrl": "https://github.com/KirillRum/Mega-Builds/releases/tag/Alpha-0.1",
-      "modVersion": "Fix update",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha-0.1/Mega-Builds.zip",
-      "sourceArchiveUrl": "https://github.com/KirillRum/Mega-Builds/archive/refs/tags/Alpha-0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mega-Builds.zip",
-          "size": 126564,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha-0.1/Mega-Builds.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2ba6e4b2948440fa17d8b33bf05de92dbb34d83c",
-      "archiveByCommitUrl": "https://github.com/KirillRum/Mega-Builds/archive/2ba6e4b2948440fa17d8b33bf05de92dbb34d83c.zip"
+      "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha-0.1/Mega-Builds.zip",
+      "modVersion": "Fix update",
+      "sizeBytes": 126564,
+      "downloadCount": 23,
+      "releasedAt": "2022-07-21T10:12:18Z",
+      "prerelease": true
     },
     {
       "tag": "Alpha",
-      "name": "Alpha 0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-07-20T11:11:48Z",
-      "htmlUrl": "https://github.com/KirillRum/Mega-Builds/releases/tag/Alpha",
-      "modVersion": "Fix update",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha/MindustryModMy.zip",
-      "sourceArchiveUrl": "https://github.com/KirillRum/Mega-Builds/archive/refs/tags/Alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryModMy.zip",
-          "size": 126518,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha/MindustryModMy.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2ba6e4b2948440fa17d8b33bf05de92dbb34d83c",
-      "archiveByCommitUrl": "https://github.com/KirillRum/Mega-Builds/archive/2ba6e4b2948440fa17d8b33bf05de92dbb34d83c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Alpha-0.1",
+      "downloadUrl": "https://github.com/KirillRum/Mega-Builds/releases/download/Alpha/MindustryModMy.zip",
       "modVersion": "Fix update",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 126518,
+      "downloadCount": 14,
+      "releasedAt": "2022-07-20T11:11:48Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "mega-build",
+    "author": "nekit508 and KirillRum",
+    "description": "alpha 0.1",
+    "version": "Fix update",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

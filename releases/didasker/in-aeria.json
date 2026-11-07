@@ -1,41 +1,22 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "didasker/in-aeria",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "v1.0 - T2 + Quartz Smelter Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-12T21:01:33Z",
-      "htmlUrl": "https://github.com/didasker/In-Aeria/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/didasker/in-aeria/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/didasker/in-aeria/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "2345a6249fec5707976a9ae648759de207abb55b",
-      "archiveByCommitUrl": "https://github.com/didasker/in-aeria/archive/2345a6249fec5707976a9ae648759de207abb55b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-01-12T21:01:33Z"
     }
-  ],
-  "meta": {
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

@@ -1,472 +1,261 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meepoffaith/black-holes-library",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v19",
-      "name": "Update to v160.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-28T04:04:41Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v19",
-      "modVersion": "19",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v19/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v19.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 55413,
-          "downloadCount": 2978,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v19/black-holes-library.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9c09c37c8d8e7638224d244012d7c27cd00f5193",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/9c09c37c8d8e7638224d244012d7c27cd00f5193.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v19/black-holes-library.jar",
+      "modVersion": "19",
+      "sizeBytes": 55413,
+      "downloadCount": 2993,
+      "releasedAt": "2026-09-28T04:04:41Z"
     },
     {
       "tag": "v18",
-      "name": "Update to v155.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-14T01:32:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v18",
-      "modVersion": "18",
+      "kind": "release",
       "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v18/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v18.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 55461,
-          "downloadCount": 15871,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v18/black-holes-library.jar"
+          "from": "155.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "48ef3970c3aa48297a994acf53c4507ba66c27f9",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/48ef3970c3aa48297a994acf53c4507ba66c27f9.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v18/black-holes-library.jar",
+      "modVersion": "18",
+      "sizeBytes": 55461,
+      "downloadCount": 15871,
+      "releasedAt": "2026-02-14T01:32:54Z"
     },
     {
       "tag": "v17",
-      "name": "Update to v149",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-02T11:51:03Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v17",
-      "modVersion": "17",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v17/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v17.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 55454,
-          "downloadCount": 9218,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v17/black-holes-library.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "65ab091852c126c6919df3b94ef061fd7235762c",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/65ab091852c126c6919df3b94ef061fd7235762c.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v17/black-holes-library.jar",
+      "modVersion": "17",
+      "sizeBytes": 55454,
+      "downloadCount": 9218,
+      "releasedAt": "2025-06-02T11:51:03Z"
     },
     {
       "tag": "v16",
-      "name": "Fix Server Crash",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-28T20:29:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v16",
-      "modVersion": "16",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v16/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v16.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 53574,
-          "downloadCount": 19786,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v16/black-holes-library.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "a07a96be77d9ebee9f1baf5a67f31b2b41894182",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/a07a96be77d9ebee9f1baf5a67f31b2b41894182.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v16/black-holes-library.jar",
+      "modVersion": "16",
+      "sizeBytes": 53574,
+      "downloadCount": 19786,
+      "releasedAt": "2024-07-28T20:29:57Z"
     },
     {
       "tag": "v15",
-      "name": "Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-16T07:01:33Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v15",
-      "modVersion": "15",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v15/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 53402,
-          "downloadCount": 10837,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v15/black-holes-library.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "665b738e67ec61099828d4da391237bb11649bd0",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/665b738e67ec61099828d4da391237bb11649bd0.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v15/black-holes-library.jar",
+      "modVersion": "15",
+      "sizeBytes": 53402,
+      "downloadCount": 10837,
+      "releasedAt": "2024-04-16T07:01:33Z"
     },
     {
       "tag": "v14",
-      "name": "Update Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-15T03:34:58Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v14",
-      "modVersion": "14",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v14/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v14.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 53239,
-          "downloadCount": 275,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v14/black-holes-library.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "82ccd0bbcdb68ce87521fb9a7b602a0264b79e6f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/82ccd0bbcdb68ce87521fb9a7b602a0264b79e6f.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v14/black-holes-library.jar",
+      "modVersion": "14",
+      "sizeBytes": 53239,
+      "downloadCount": 275,
+      "releasedAt": "2024-04-15T03:34:58Z"
     },
     {
       "tag": "v13",
-      "name": "More bug fixes and adjustments",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-29T01:19:03Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v13",
-      "modVersion": "13",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v13/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 51186,
-          "downloadCount": 2230,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v13/black-holes-library.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "75b7dd7675c745cd32c02d94a70400b6fda7d526",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/75b7dd7675c745cd32c02d94a70400b6fda7d526.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v13/black-holes-library.jar",
+      "modVersion": "13",
+      "sizeBytes": 51186,
+      "downloadCount": 2230,
+      "releasedAt": "2024-03-29T01:19:03Z"
     },
     {
       "tag": "v12",
-      "name": "Bug fixes and adjustments",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-26T01:55:39Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v12",
-      "modVersion": "12",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v12/black-holes-library.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-holes-library.jar",
-          "size": 46719,
-          "downloadCount": 438,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v12/black-holes-library.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1b8b292c2f700de019c5ff97c4b73990558f53ce",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/1b8b292c2f700de019c5ff97c4b73990558f53ce.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v12/black-holes-library.jar",
+      "modVersion": "12",
+      "sizeBytes": 46719,
+      "downloadCount": 438,
+      "releasedAt": "2024-03-26T01:55:39Z"
     },
     {
       "tag": "v11",
-      "name": "More BlackHoleAbility options",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-18T16:02:26Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v11",
-      "modVersion": "11",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v11/black-hole-renderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-hole-renderer.jar",
-          "size": 46046,
-          "downloadCount": 728,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v11/black-hole-renderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "3836b32fcc1c8c288c2547ed4b10313819215b23",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/3836b32fcc1c8c288c2547ed4b10313819215b23.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v11/black-hole-renderer.jar",
+      "modVersion": "11",
+      "sizeBytes": 46046,
+      "downloadCount": 729,
+      "releasedAt": "2024-03-18T16:02:26Z"
     },
     {
       "tag": "v10",
-      "name": "BlackHoleBulletType and BlackHoleAbility",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-17T20:52:48Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v10",
-      "modVersion": "10",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v10/black-hole-renderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-hole-renderer.jar",
-          "size": 40154,
-          "downloadCount": 142,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v10/black-hole-renderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "cfdd98c52813c3ca85163cdef3f518ef6586c12b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/cfdd98c52813c3ca85163cdef3f518ef6586c12b.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v10/black-hole-renderer.jar",
+      "modVersion": "10",
+      "sizeBytes": 40154,
+      "downloadCount": 142,
+      "releasedAt": "2024-03-17T20:52:48Z"
     },
     {
       "tag": "v9",
-      "name": "Add SwirlEffect to the classmap",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-16T04:03:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v9",
-      "modVersion": "9",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v9/black-hole-renderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-hole-renderer.jar",
-          "size": 26297,
-          "downloadCount": 218,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v9/black-hole-renderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "aeac1bc8343a4d2781e254ae9186729d2c7e7dd3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/aeac1bc8343a4d2781e254ae9186729d2c7e7dd3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v9/black-hole-renderer.jar",
+      "modVersion": "9",
+      "sizeBytes": 26297,
+      "downloadCount": 218,
+      "releasedAt": "2024-03-16T04:03:54Z"
     },
     {
       "tag": "v8",
-      "name": "Add DrawBlackHole and BlackHolePart",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-16T03:56:37Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v8",
-      "modVersion": "8",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v8/black-hole-renderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "black-hole-renderer.jar",
-          "size": 26259,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v8/black-hole-renderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "16accedb7517301a357d20976615ad45583aeae5",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/16accedb7517301a357d20976615ad45583aeae5.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v8/black-hole-renderer.jar",
+      "modVersion": "8",
+      "sizeBytes": 26259,
+      "downloadCount": 25,
+      "releasedAt": "2024-03-16T03:56:37Z"
     },
     {
       "tag": "v7",
-      "name": "Prevent Crashing when too many Black Holes are on Screen at Once",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-14T00:11:48Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v7",
-      "modVersion": "7",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v7/MindustryBlackHoleRenderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryBlackHoleRenderer.jar",
-          "size": 21485,
-          "downloadCount": 107,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v7/MindustryBlackHoleRenderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "b968552ad3ef0c92d5562522ab7bc3906979d1d8",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/b968552ad3ef0c92d5562522ab7bc3906979d1d8.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v7/MindustryBlackHoleRenderer.jar",
+      "modVersion": "7",
+      "sizeBytes": 21485,
+      "downloadCount": 107,
+      "releasedAt": "2024-03-14T00:11:48Z"
     },
     {
       "tag": "v6",
-      "name": "Fixes and Adjustments",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-13T23:51:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v6",
-      "modVersion": "6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v6/MindustryBlackHoleRenderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryBlackHoleRenderer.jar",
-          "size": 21418,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v6/MindustryBlackHoleRenderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "0dea7b42ddb3efb18c81a146ea378a59312e7611",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/0dea7b42ddb3efb18c81a146ea378a59312e7611.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v6/MindustryBlackHoleRenderer.jar",
+      "modVersion": "6",
+      "sizeBytes": 21418,
+      "downloadCount": 20,
+      "releasedAt": "2024-03-13T23:51:54Z"
     },
     {
       "tag": "v5",
-      "name": "Black Hole Renderer First Functioning Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-13T22:01:19Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/tag/v5",
-      "modVersion": "5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v5/MindustryBlackHoleRenderer.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryBlackHoleRenderer.jar",
-          "size": 20014,
-          "downloadCount": 51,
-          "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v5/MindustryBlackHoleRenderer.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "a370574ac4a9ff5fc7b74d27af10b6f3f0887461",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/a370574ac4a9ff5fc7b74d27af10b6f3f0887461.zip"
-    },
-    {
-      "tag": "v4",
-      "name": "v4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meepoffaith/black-holes-library/tree/v4",
-      "modVersion": "4",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v4.zip",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v4.zip",
-      "assets": [],
-      "commitSha": "56ded2f1f7f87f487799757d2496a33c67f7a5d8",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/56ded2f1f7f87f487799757d2496a33c67f7a5d8.zip"
-    },
-    {
-      "tag": "v3",
-      "name": "v3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meepoffaith/black-holes-library/tree/v3",
-      "modVersion": "3",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v3.zip",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v3.zip",
-      "assets": [],
-      "commitSha": "3f5f69871edff480c72ea68f787a5d02ecebb5ce",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/3f5f69871edff480c72ea68f787a5d02ecebb5ce.zip"
-    },
-    {
-      "tag": "v2",
-      "name": "v2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meepoffaith/black-holes-library/tree/v2",
-      "modVersion": "2",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v2.zip",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v2.zip",
-      "assets": [],
-      "commitSha": "f7a5ec05beaede82bff09ed2da6f95f91592c27b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/f7a5ec05beaede82bff09ed2da6f95f91592c27b.zip"
-    },
-    {
-      "tag": "v1",
-      "name": "v1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meepoffaith/black-holes-library/tree/v1",
-      "modVersion": "1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v1.zip",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/black-holes-library/archive/refs/tags/v1.zip",
-      "assets": [],
-      "commitSha": "b059e3d4a276a59df3afe475b1168eb63c56caf7",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/black-holes-library/archive/b059e3d4a276a59df3afe475b1168eb63c56caf7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v16",
-      "modVersion": "16",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v17",
-      "modVersion": "17",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v18",
-      "modVersion": "18",
-      "minGameVersion": "155.3",
-      "maxGameVersion": 160.5,
-      "hasRelease": true
-    },
-    {
-      "tag": "v19",
-      "modVersion": "19",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/MEEPofFaith/black-holes-library/releases/download/v5/MindustryBlackHoleRenderer.jar",
+      "modVersion": "5",
+      "sizeBytes": 20014,
+      "downloadCount": 51,
+      "releasedAt": "2024-03-13T22:01:19Z"
     }
   ],
   "meta": {
+    "name": "black-hole-renderer",
+    "author": "MEEPofFaith",
+    "description": "A library mod for rendering black holes.",
+    "version": "19",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "blackhole.BlackHoleMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

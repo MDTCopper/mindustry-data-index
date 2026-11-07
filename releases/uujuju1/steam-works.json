@@ -1,1005 +1,645 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "uujuju1/steam-works",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
-      "tag": "6.0",
-      "name": "Clutch is back :D",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-04T00:50:42Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/6.0",
-      "modVersion": "6",
+      "tag": "6.1",
+      "kind": "release",
       "minGameVersion": "160.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/6.0/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 31905877,
-          "downloadCount": 229,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/6.0/SteamWorks.jar"
+          "from": "160.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a748133642692603045e993f9962497d619c0438",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/a748133642692603045e993f9962497d619c0438.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/6.1/SteamWorks.jar",
+      "modVersion": "6.1",
+      "sizeBytes": 31905883,
+      "downloadCount": 11,
+      "releasedAt": "2026-11-07T03:26:18Z"
+    },
+    {
+      "tag": "6.0",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/6.0/SteamWorks.jar",
+      "modVersion": "6",
+      "sizeBytes": 31905877,
+      "downloadCount": 234,
+      "releasedAt": "2026-11-04T00:50:42Z"
     },
     {
       "tag": "5.1",
-      "name": "shit",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-09T23:10:45Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/5.1",
-      "modVersion": "5.1",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/5.1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 31738420,
-          "downloadCount": 1443,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/5.1/SteamWorks.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9c5f79e64d68ec220ec196a7b9e5837fb118c69d",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/9c5f79e64d68ec220ec196a7b9e5837fb118c69d.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/5.1/SteamWorks.jar",
+      "modVersion": "5.1",
+      "sizeBytes": 31738420,
+      "downloadCount": 1443,
+      "releasedAt": "2026-10-09T23:10:45Z"
     },
     {
       "tag": "5.0",
-      "name": "noooo it gonna blow up again won't it?",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T02:31:50Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/5.0",
-      "modVersion": "5",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/5.0/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 31738173,
-          "downloadCount": 513,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/5.0/SteamWorks.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8c64cadef5883202315e6a323be461651ceca586",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/8c64cadef5883202315e6a323be461651ceca586.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/5.0/SteamWorks.jar",
+      "modVersion": "5",
+      "sizeBytes": 31738173,
+      "downloadCount": 514,
+      "releasedAt": "2026-10-04T02:31:50Z"
     },
     {
       "tag": "4.0",
-      "name": "Block sillies",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-25T15:09:18Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/4.0",
-      "modVersion": "4",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/4.0/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 31295648,
-          "downloadCount": 2481,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/4.0/SteamWorks.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b9f9d9b709987f64373ca0000d67a8ec49a3c288",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/b9f9d9b709987f64373ca0000d67a8ec49a3c288.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/4.0/SteamWorks.jar",
+      "modVersion": "4",
+      "sizeBytes": 31295648,
+      "downloadCount": 2481,
+      "releasedAt": "2026-08-25T15:09:18Z"
     },
     {
       "tag": "3.1",
-      "name": "shiiiiiiit",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-10T14:18:23Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/3.1",
-      "modVersion": "3.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/3.1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 31145538,
-          "downloadCount": 1337,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/3.1/SteamWorks.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c88f082d7ca202b185a4c675110ff17e8cb20d96",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/c88f082d7ca202b185a4c675110ff17e8cb20d96.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/3.1/SteamWorks.jar",
+      "modVersion": "3.1",
+      "sizeBytes": 31145538,
+      "downloadCount": 1337,
+      "releasedAt": "2026-08-10T14:18:23Z"
     },
     {
       "tag": "3.0",
-      "name": "Pondering",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-06T02:22:40Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/3.0",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/3.0/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 31088207,
-          "downloadCount": 471,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/3.0/SteamWorks.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7ea8e32c8eb6bae61842e5488d45bdf78f424279",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/7ea8e32c8eb6bae61842e5488d45bdf78f424279.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/3.0/SteamWorks.jar",
+      "modVersion": "3",
+      "sizeBytes": 31088207,
+      "downloadCount": 471,
+      "releasedAt": "2026-08-06T02:22:40Z"
     },
     {
       "tag": "2.0",
-      "name": "Replacing Bay of Embers with new map",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-21T20:42:21Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/2.0",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/2.0/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 30022391,
-          "downloadCount": 1277,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/2.0/SteamWorks.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "75097c725b6f455599fb088ec9a540e29ba26009",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/75097c725b6f455599fb088ec9a540e29ba26009.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/2.0/SteamWorks.jar",
+      "modVersion": "2",
+      "sizeBytes": 30022391,
+      "downloadCount": 1277,
+      "releasedAt": "2026-07-21T20:42:21Z"
     },
     {
       "tag": "1.0",
-      "name": "i'm not gonna bother this time",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-09T02:24:22Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/1.0/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 27268625,
-          "downloadCount": 1904,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/1.0/SteamWorks.jar"
+          "from": "156.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6140ccb24b63e3ed73e6f04062027237c727540d",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/6140ccb24b63e3ed73e6f04062027237c727540d.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/1.0/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 27268625,
+      "downloadCount": 1904,
+      "releasedAt": "2026-07-09T02:24:22Z"
     },
     {
       "tag": "v1.0.alpha13",
-      "name": "more Fixes and new map",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-13T17:56:58Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha13",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha13/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 27175366,
-          "downloadCount": 1402,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha13/SteamWorks.jar"
+          "from": "156.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b7e29264612b14a0742f565b54a24d19c034230a",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/b7e29264612b14a0742f565b54a24d19c034230a.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha13/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 27175366,
+      "downloadCount": 1402,
+      "releasedAt": "2026-06-13T17:56:58Z"
     },
     {
       "tag": "v1.0.alpha12",
-      "name": "Redid some thingies",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-15T21:56:37Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha12",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "156.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha12/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 27035401,
-          "downloadCount": 1821,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha12/SteamWorks.jar"
+          "from": "156.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d69c6585c4b4b93abf2d782973ffa1923769bb87",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/d69c6585c4b4b93abf2d782973ffa1923769bb87.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha12/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 27035401,
+      "downloadCount": 1821,
+      "releasedAt": "2026-05-15T21:56:37Z"
     },
     {
       "tag": "a-fool",
-      "name": "First Release :D",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-01T03:43:02Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/a-fool",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "155.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/a-fool/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/a-fool.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 19913269,
-          "downloadCount": 143,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/a-fool/SteamWorks.jar"
+          "from": "155.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "248b8397121e1377d18fe65cc659ad88e59bec3b",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/248b8397121e1377d18fe65cc659ad88e59bec3b.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/a-fool/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 19913269,
+      "downloadCount": 143,
+      "releasedAt": "2026-04-01T03:43:02Z"
     },
     {
       "tag": "v1.0.alpha11",
-      "name": "MOBILE FIXED YAYYAYAYAYAYA",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-24T03:18:29Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha11",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "155.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha11/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 19892612,
-          "downloadCount": 4669,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha11/SteamWorks.jar"
+          "from": "155.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "248b8397121e1377d18fe65cc659ad88e59bec3b",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/248b8397121e1377d18fe65cc659ad88e59bec3b.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha11/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 19892612,
+      "downloadCount": 4669,
+      "releasedAt": "2026-03-24T03:18:29Z"
     },
     {
       "tag": "v1.0.alpha10.fix1",
-      "name": "crash fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-20T15:08:08Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha10.fix1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "155.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha10.fix1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha10.fix1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4523421,
-          "downloadCount": 1662,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha10.fix1/SteamWorks.jar"
+          "from": "155.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "95aa336bfa79c1fc161b65346317d7a94ff8f1f2",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/95aa336bfa79c1fc161b65346317d7a94ff8f1f2.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha10.fix1/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4523421,
+      "downloadCount": 1662,
+      "releasedAt": "2026-02-20T15:08:08Z"
     },
     {
       "tag": "v1.0.alpha10",
-      "name": "mapmaking is hard ;-;",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-16T23:28:49Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha10",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "155.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha10/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4523453,
-          "downloadCount": 478,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha10/SteamWorks.jar"
+          "from": "155.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4fa283fd697d33a156180ad30d7f2c72437137db",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/4fa283fd697d33a156180ad30d7f2c72437137db.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha10/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4523453,
+      "downloadCount": 478,
+      "releasedAt": "2026-02-16T23:28:49Z"
     },
     {
       "tag": "v1.0.alpha9-fix1",
-      "name": "hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-01T02:34:47Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha9-fix1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha9-fix1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha9-fix1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4361314,
-          "downloadCount": 4908,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha9-fix1/SteamWorks.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "46b11c8b3a95b26f83b529671269330384c9a28e",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/46b11c8b3a95b26f83b529671269330384c9a28e.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha9-fix1/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4361314,
+      "downloadCount": 4909,
+      "releasedAt": "2026-01-01T02:34:47Z"
     },
     {
       "tag": "v1.0.alpha9",
-      "name": "Engine",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-30T21:25:52Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha9",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha9/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4361303,
-          "downloadCount": 176,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha9/SteamWorks.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0e5566a40b5dd98b00f72003a48cb50c74c53190",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/0e5566a40b5dd98b00f72003a48cb50c74c53190.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha9/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4361303,
+      "downloadCount": 176,
+      "releasedAt": "2025-12-30T21:25:52Z"
     },
     {
       "tag": "v1.0.alpha8",
-      "name": "Campaign",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-07T13:53:54Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha8",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha8/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4332665,
-          "downloadCount": 1276,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha8/SteamWorks.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "f9ab7b84d943cf705261ad078c16cdbfa0d184e2",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/f9ab7b84d943cf705261ad078c16cdbfa0d184e2.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha8/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4332665,
+      "downloadCount": 1276,
+      "releasedAt": "2025-12-07T13:53:54Z"
     },
     {
       "tag": "v1.feature-test-2",
-      "name": "Cavern",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-02T00:26:19Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.feature-test-2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.feature-test-2/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.feature-test-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4302154,
-          "downloadCount": 1460,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.feature-test-2/SteamWorks.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "a3a4e3606da37a26e3432a30480526ce0c6bb925",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/a3a4e3606da37a26e3432a30480526ce0c6bb925.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.feature-test-2/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4302154,
+      "downloadCount": 1460,
+      "releasedAt": "2025-11-02T00:26:19Z"
     },
     {
       "tag": "v1.feature-test-1",
-      "name": "Flywheel",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-21T02:12:02Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.feature-test-1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.feature-test-1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.feature-test-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4240975,
-          "downloadCount": 1784,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.feature-test-1/SteamWorks.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "0733d1650474382501c1417f105821f389ebb14b",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/0733d1650474382501c1417f105821f389ebb14b.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.feature-test-1/SteamWorks.jar",
+      "modVersion": "1",
+      "sizeBytes": 4240975,
+      "downloadCount": 1784,
+      "releasedAt": "2025-09-21T02:12:02Z"
     },
     {
       "tag": "v1.0.alpha7",
-      "name": "New tech yall",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-18T15:26:43Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha7",
-      "modVersion": "1.0.Alpha7",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha7/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 4199671,
-          "downloadCount": 3056,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha7/SteamWorks.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "e9ccc14c1de6982bf8d3036dfac808274a3a04e7",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/e9ccc14c1de6982bf8d3036dfac808274a3a04e7.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha7/SteamWorks.jar",
+      "modVersion": "1.0.Alpha7",
+      "sizeBytes": 4199671,
+      "downloadCount": 3056,
+      "releasedAt": "2025-07-18T15:26:43Z"
     },
     {
       "tag": "v1.0.alpha6-fix1",
-      "name": "fix 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-19T15:45:20Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha6-fix1",
-      "modVersion": "1.0.Alpha7",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha6-fix1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha6-fix1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17429710,
-          "downloadCount": 6246,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha6-fix1/SteamWorks.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "40ff0547e7f4495977636d7b8861cdd8aabcbfa3",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/40ff0547e7f4495977636d7b8861cdd8aabcbfa3.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha6-fix1/SteamWorks.jar",
+      "modVersion": "1.0.Alpha7",
+      "sizeBytes": 17429710,
+      "downloadCount": 6248,
+      "releasedAt": "2025-03-19T15:45:20Z"
     },
     {
       "tag": "v1.0.alpha6",
-      "name": "more sectors",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-18T00:41:06Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha6",
-      "modVersion": "1.0.Alpha6",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha6/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17429495,
-          "downloadCount": 247,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha6/SteamWorks.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "bb2793e04541243d62b13b04af4b656ef584ac6b",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/bb2793e04541243d62b13b04af4b656ef584ac6b.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha6/SteamWorks.jar",
+      "modVersion": "1.0.Alpha6",
+      "sizeBytes": 17429495,
+      "downloadCount": 248,
+      "releasedAt": "2025-03-18T00:41:06Z"
     },
     {
       "tag": "v1.0.alpha5",
-      "name": "Crevasse",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-03T16:34:34Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha5",
-      "modVersion": "1.0.Alpha5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha5/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17144786,
-          "downloadCount": 2920,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha5/SteamWorks.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "cc4ff059c923f42d4871fd97c0ccd5b4a3f30ccf",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/cc4ff059c923f42d4871fd97c0ccd5b4a3f30ccf.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha5/SteamWorks.jar",
+      "modVersion": "1.0.Alpha5",
+      "sizeBytes": 17144786,
+      "downloadCount": 2921,
+      "releasedAt": "2025-02-03T16:34:34Z"
     },
     {
       "tag": "v1.0.alpha4",
-      "name": "Rotation system",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-29T23:02:08Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha4",
-      "modVersion": "1.0.Alpha4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha4/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17441479,
-          "downloadCount": 4585,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha4/SteamWorks.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4dd2fbc14f908cfefce53776b311646b18d3012f",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/4dd2fbc14f908cfefce53776b311646b18d3012f.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha4/SteamWorks.jar",
+      "modVersion": "1.0.Alpha4",
+      "sizeBytes": 17441479,
+      "downloadCount": 4586,
+      "releasedAt": "2024-11-29T23:02:08Z"
     },
     {
       "tag": "v1.0.alpha3",
-      "name": "ui changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-21T20:28:19Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha3",
-      "modVersion": "1.0.Alpha3",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha3/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17744715,
-          "downloadCount": 1180,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha3/SteamWorks.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "5e270bfd7c8029ed115c0402f690a9359b90ccb7",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/5e270bfd7c8029ed115c0402f690a9359b90ccb7.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha3/SteamWorks.jar",
+      "modVersion": "1.0.Alpha3",
+      "sizeBytes": 17744715,
+      "downloadCount": 1181,
+      "releasedAt": "2024-10-21T20:28:19Z"
     },
     {
       "tag": "v1.0.alpha2",
-      "name": "ditch  e v e r y t h i n g",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-02T02:04:31Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha2",
-      "modVersion": "1.0.Alpha2",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha2/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17734000,
-          "downloadCount": 1003,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha2/SteamWorks.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "d201479a00433c8f3c46d2547e7acb14c2ee30e0",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/d201479a00433c8f3c46d2547e7acb14c2ee30e0.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha2/SteamWorks.jar",
+      "modVersion": "1.0.Alpha2",
+      "sizeBytes": 17734000,
+      "downloadCount": 1004,
+      "releasedAt": "2024-09-02T02:04:31Z"
     },
     {
       "tag": "v1.0.Alpha1",
-      "name": "No nowhere has nothing anywhere",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-11T01:32:48Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.Alpha1",
-      "modVersion": "1.0.Alpha1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.Alpha1/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.Alpha1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 17851015,
-          "downloadCount": 2755,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.Alpha1/SteamWorks.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "c38cfc4bc281e11161762ac3fa5800bcebebbcb2",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/c38cfc4bc281e11161762ac3fa5800bcebebbcb2.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.Alpha1/SteamWorks.jar",
+      "modVersion": "1.0.Alpha1",
+      "sizeBytes": 17851015,
+      "downloadCount": 2756,
+      "releasedAt": "2024-07-11T01:32:48Z"
     },
     {
       "tag": "v1.0.8-alpha",
-      "name": "it's been too long already",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-05T20:10:58Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.8-alpha",
-      "modVersion": "1.0.Alpha",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.8-alpha/SteamWorks.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.8-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SteamWorks.jar",
-          "size": 15063634,
-          "downloadCount": 4006,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.8-alpha/SteamWorks.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "0380c1f606000b281f9ad91109e6b83a85313dee",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/0380c1f606000b281f9ad91109e6b83a85313dee.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.8-alpha/SteamWorks.jar",
+      "modVersion": "1.0.Alpha",
+      "sizeBytes": 15063634,
+      "downloadCount": 4007,
+      "releasedAt": "2024-05-05T20:10:58Z"
     },
     {
       "tag": "v1.0.alpha1",
-      "name": "Sectors",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-29T18:19:26Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha1",
-      "modVersion": "1.0.Alpha",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha1/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 12072737,
-          "downloadCount": 6784,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha1/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "d11a4e73f2c92036c997ae6212d440a90ece9af6",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/d11a4e73f2c92036c997ae6212d440a90ece9af6.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha1/Steam-Works.jar",
+      "modVersion": "1.0.Alpha",
+      "sizeBytes": 12072737,
+      "downloadCount": 6785,
+      "releasedAt": "2023-12-29T18:19:26Z"
     },
     {
       "tag": "v1.0.alpha",
-      "name": "A lot of things",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-20T00:45:58Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.alpha",
-      "modVersion": "1.0.Alpha",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 8043456,
-          "downloadCount": 3425,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "8bd9857b68547a0987a19619291333e163066b28",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/8bd9857b68547a0987a19619291333e163066b28.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.alpha/Steam-Works.jar",
+      "modVersion": "1.0.Alpha",
+      "sizeBytes": 8043456,
+      "downloadCount": 3426,
+      "releasedAt": "2023-11-20T00:45:58Z"
     },
     {
       "tag": "v1.0.7",
-      "name": "build platforms",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-26T15:50:21Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.7",
-      "modVersion": "1.0.7",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.7/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 3447612,
-          "downloadCount": 11540,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.7/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "a530554bb2849796acc264bfa56aac046317756e",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/a530554bb2849796acc264bfa56aac046317756e.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.7/Steam-Works.jar",
+      "modVersion": "1.0.7",
+      "sizeBytes": 3447612,
+      "downloadCount": 11541,
+      "releasedAt": "2023-06-26T15:50:21Z"
     },
     {
       "tag": "v1.0.6",
-      "name": "flamethrower",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-21T21:55:40Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.6",
-      "modVersion": "1.0.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.6/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 512451,
-          "downloadCount": 3648,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.6/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "658eb25b9ae46697a89c68bd37a5d49d4e4df91d",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/658eb25b9ae46697a89c68bd37a5d49d4e4df91d.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.6/Steam-Works.jar",
+      "modVersion": "1.0.6",
+      "sizeBytes": 512451,
+      "downloadCount": 3649,
+      "releasedAt": "2023-05-21T21:55:40Z"
     },
     {
       "tag": "v1.0.6A1",
-      "name": "Speen system",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-12T02:22:02Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.6A1",
-      "modVersion": "1.0.6",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.6A1/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.6A1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 462847,
-          "downloadCount": 545,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.6A1/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "4a77f27d96aa935c5c2e135e34361959bcccbb3f",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/4a77f27d96aa935c5c2e135e34361959bcccbb3f.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.6A1/Steam-Works.jar",
+      "modVersion": "1.0.6",
+      "sizeBytes": 462847,
+      "downloadCount": 546,
+      "releasedAt": "2023-05-12T02:22:02Z"
     },
     {
       "tag": "v1.0.5",
-      "name": "Tanks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-15T12:40:24Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.5",
-      "modVersion": "1.0.5",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.5/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 378652,
-          "downloadCount": 1145,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.5/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "e81048094e8261296c8fb06eccb2c04416738dfe",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/e81048094e8261296c8fb06eccb2c04416738dfe.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.5/Steam-Works.jar",
+      "modVersion": "1.0.5",
+      "sizeBytes": 378652,
+      "downloadCount": 1146,
+      "releasedAt": "2023-04-15T12:40:24Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "Settings",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-19T22:53:24Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.4",
-      "modVersion": "1.0.4",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.4/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 334258,
-          "downloadCount": 806,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.4/Steam-Works.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "68da95add5e834e4137bd9cf3024f535eda7b334",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/68da95add5e834e4137bd9cf3024f535eda7b334.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.4/Steam-Works.jar",
+      "modVersion": "1.0.4",
+      "sizeBytes": 334258,
+      "downloadCount": 807,
+      "releasedAt": "2023-03-19T22:53:24Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "submarines and mobile crafters",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-24T23:09:30Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.3",
-      "modVersion": "1.0.3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.3/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 325808,
-          "downloadCount": 924,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.3/Steam-Works.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "334ae36ff87b6eca3e8812810f3ac26a201e1f7c",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/334ae36ff87b6eca3e8812810f3ac26a201e1f7c.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.3/Steam-Works.jar",
+      "modVersion": "1.0.3",
+      "sizeBytes": 325808,
+      "downloadCount": 925,
+      "releasedAt": "2023-02-24T23:09:30Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "A few changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-28T02:18:16Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.1/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 260358,
-          "downloadCount": 1068,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.1/Steam-Works.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "ae480b79e08f1bf20408e4d45ab887a17d01416c",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/ae480b79e08f1bf20408e4d45ab887a17d01416c.zip"
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0.1/Steam-Works.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 260358,
+      "downloadCount": 1069,
+      "releasedAt": "2023-01-28T02:18:16Z"
     },
     {
       "tag": "v1.0",
-      "name": "Initial release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-31T00:28:23Z",
-      "htmlUrl": "https://github.com/uujuju1/Steam-Works/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0/Steam-Works.jar",
-      "sourceArchiveUrl": "https://github.com/uujuju1/steam-works/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Steam-Works.jar",
-          "size": 238811,
-          "downloadCount": 954,
-          "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0/Steam-Works.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "fae1dab868669a7a496f52db63ed514c9ac86de9",
-      "archiveByCommitUrl": "https://github.com/uujuju1/steam-works/archive/fae1dab868669a7a496f52db63ed514c9ac86de9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.3",
-      "modVersion": "1.0.3",
-      "minGameVersion": "140.4",
-      "maxGameVersion": 142,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.alpha3",
-      "modVersion": "1.0.Alpha3",
-      "minGameVersion": "142",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.alpha6-fix1",
-      "modVersion": "1.0.Alpha7",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.alpha7",
-      "modVersion": "1.0.Alpha7",
-      "minGameVersion": "147",
-      "maxGameVersion": 150,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.alpha8",
+      "downloadUrl": "https://github.com/uujuju1/Steam-Works/releases/download/v1.0/Steam-Works.jar",
       "modVersion": "1",
-      "minGameVersion": "150",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.alpha9-fix1",
-      "modVersion": "1",
-      "minGameVersion": "154.2",
-      "maxGameVersion": 155.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "a-fool",
-      "modVersion": "1",
-      "minGameVersion": "155.2",
-      "maxGameVersion": 156.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.0",
-      "modVersion": "1",
-      "minGameVersion": "156.2",
-      "maxGameVersion": 159.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "4.0",
-      "modVersion": "4",
-      "minGameVersion": "159.7",
-      "maxGameVersion": 160.5,
-      "hasRelease": true
-    },
-    {
-      "tag": "5.1",
-      "modVersion": "5.1",
-      "minGameVersion": "160.5",
-      "maxGameVersion": 160.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "6.0",
-      "modVersion": "6",
-      "minGameVersion": "160.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 238811,
+      "downloadCount": 955,
+      "releasedAt": "2022-12-31T00:28:23Z"
     }
   ],
   "meta": {
+    "name": "sw",
+    "author": "Liz Aurora",
+    "description": "No nowhere has nothing anywhere.",
+    "version": "6.1",
+    "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "sw.ModLoader",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

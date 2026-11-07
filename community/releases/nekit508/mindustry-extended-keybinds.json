@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nekit508/mindustry-extended-keybinds",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.0",
-      "name": "v0.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-30T08:06:44Z",
-      "htmlUrl": "https://github.com/nekit508/mindustry-extended-keybinds/releases/tag/v0.1.0",
-      "modVersion": "v0.1.0",
+      "kind": "release",
       "minGameVersion": "151",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nekit508/mindustry-extended-keybinds/releases/download/v0.1.0/com.github.nekit508-mindustry-extended-keybinds-v0.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/nekit508/mindustry-extended-keybinds/archive/refs/tags/v0.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "com.github.nekit508-mindustry-extended-keybinds-v0.1.0.jar",
-          "size": 42458,
-          "downloadCount": 108,
-          "downloadUrl": "https://github.com/nekit508/mindustry-extended-keybinds/releases/download/v0.1.0/com.github.nekit508-mindustry-extended-keybinds-v0.1.0.jar"
+          "from": "151",
+          "to": "154"
         }
       ],
-      "commitSha": "14e7b9d846091322a2d72b9e902af2ece50c8997",
-      "archiveByCommitUrl": "https://github.com/nekit508/mindustry-extended-keybinds/archive/14e7b9d846091322a2d72b9e902af2ece50c8997.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.0",
+      "downloadUrl": "https://github.com/nekit508/mindustry-extended-keybinds/releases/download/v0.1.0/com.github.nekit508-mindustry-extended-keybinds-v0.1.0.jar",
       "modVersion": "v0.1.0",
-      "minGameVersion": "151",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 42458,
+      "downloadCount": 108,
+      "releasedAt": "2025-08-30T08:06:44Z"
     }
   ],
   "meta": {
+    "name": "mindustry-extended-keybinds",
+    "author": "nekit508",
+    "description": "",
+    "version": "v0.1.0",
+    "minGameVersion": "151",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "com.github.nekit508.emkb.core.EMKBCore",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

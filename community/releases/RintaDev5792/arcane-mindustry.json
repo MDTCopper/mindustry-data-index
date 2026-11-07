@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "RintaDev5792/arcane-mindustry",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "beta2",
-      "name": "0.21s",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-24T21:16:21Z",
-      "htmlUrl": "https://github.com/RintaDev5792/arcane-mindustry/releases/tag/beta2",
-      "modVersion": "Beta V0.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta2.zip",
-      "sourceArchiveUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta2.zip",
-      "assets": [],
-      "commitSha": "5ab46bdd8a251644787861b599b530d00fec6b78",
-      "archiveByCommitUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/5ab46bdd8a251644787861b599b530d00fec6b78.zip"
+      "modVersion": "Beta V0.2",
+      "releasedAt": "2022-07-24T21:16:21Z"
     },
     {
       "tag": "beta",
-      "name": "Release beta 0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-24T20:01:24Z",
-      "htmlUrl": "https://github.com/RintaDev5792/arcane-mindustry/releases/tag/beta",
-      "modVersion": "Beta V0.2",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta.zip",
-      "sourceArchiveUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/refs/tags/beta.zip",
-      "assets": [],
-      "commitSha": "5ab46bdd8a251644787861b599b530d00fec6b78",
-      "archiveByCommitUrl": "https://github.com/RintaDev5792/arcane-mindustry/archive/5ab46bdd8a251644787861b599b530d00fec6b78.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "beta2",
       "modVersion": "Beta V0.2",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2022-07-24T20:01:24Z"
     }
   ],
   "meta": {
+    "name": "arcane",
+    "author": "[red]Rinta[purple]Dev",
+    "description": "[pink]Adds magic gems, better turrets, walls, etc.",
+    "version": "Beta V0.2",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

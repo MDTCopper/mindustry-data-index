@@ -1,195 +1,117 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "huanxefh/lovecraftian-library-java",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v101.5",
-      "name": "v101.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-25T07:29:10Z",
-      "htmlUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/tag/v101.5",
-      "modVersion": "101.5",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.5/mabo-lovecraftian-library-v101.5.jar",
-      "sourceArchiveUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/refs/tags/v101.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mabo-lovecraftian-library-v101.5.jar",
-          "size": 2154605,
-          "downloadCount": 663,
-          "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.5/mabo-lovecraftian-library-v101.5.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "137be318ceb475628e81929dbd6ebf20e37b318e",
-      "archiveByCommitUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/137be318ceb475628e81929dbd6ebf20e37b318e.zip"
+      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.5/mabo-lovecraftian-library-v101.5.jar",
+      "modVersion": "101.5",
+      "sizeBytes": 2154605,
+      "downloadCount": 672,
+      "releasedAt": "2026-10-25T07:29:10Z"
     },
     {
       "tag": "v101.4",
-      "name": "v101.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-10T08:18:31Z",
-      "htmlUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/tag/v101.4",
-      "modVersion": "101.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.4/mabo-lovecraftian-library-v101.4.jar",
-      "sourceArchiveUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/refs/tags/v101.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mabo-lovecraftian-library-v101.4.jar",
-          "size": 1678662,
-          "downloadCount": 10499,
-          "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.4/mabo-lovecraftian-library-v101.4.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "026fd0332b48309ab5780284cbeeb4f4f344d0de",
-      "archiveByCommitUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/026fd0332b48309ab5780284cbeeb4f4f344d0de.zip"
+      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.4/mabo-lovecraftian-library-v101.4.jar",
+      "modVersion": "101.4",
+      "sizeBytes": 1678662,
+      "downloadCount": 10499,
+      "releasedAt": "2026-07-10T08:18:31Z"
     },
     {
       "tag": "v101.3",
-      "name": "v101.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-29T04:54:19Z",
-      "htmlUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/tag/v101.3",
-      "modVersion": "101.3",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.3/mabo-lovecraftian-library-v101.3.jar",
-      "sourceArchiveUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/refs/tags/v101.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mabo-lovecraftian-library-v101.3.jar",
-          "size": 1562989,
-          "downloadCount": 2144,
-          "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.3/mabo-lovecraftian-library-v101.3.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8dcd26f6a7b7e46e53b124891256457e7bac6bbe",
-      "archiveByCommitUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/8dcd26f6a7b7e46e53b124891256457e7bac6bbe.zip"
+      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.3/mabo-lovecraftian-library-v101.3.jar",
+      "modVersion": "101.3",
+      "sizeBytes": 1562989,
+      "downloadCount": 2144,
+      "releasedAt": "2026-05-29T04:54:19Z"
     },
     {
       "tag": "v101.2",
-      "name": "v101.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-04T13:18:12Z",
-      "htmlUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/tag/v101.2",
-      "modVersion": "101.2",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.2/mabo-lovecraftian-library-v101.2.jar",
-      "sourceArchiveUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/refs/tags/v101.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mabo-lovecraftian-library-v101.2.jar",
-          "size": 1554156,
-          "downloadCount": 1157,
-          "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.2/mabo-lovecraftian-library-v101.2.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "de59d40892b4328b382f52294d5ccd39c0721945",
-      "archiveByCommitUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/de59d40892b4328b382f52294d5ccd39c0721945.zip"
+      "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.2/mabo-lovecraftian-library-v101.2.jar",
+      "modVersion": "101.2",
+      "sizeBytes": 1554156,
+      "downloadCount": 1157,
+      "releasedAt": "2026-05-04T13:18:12Z"
     },
     {
       "tag": "v101.1",
-      "name": "v101.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-20T05:45:31Z",
-      "htmlUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/tag/v101.1",
-      "modVersion": "101.1",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "156",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.1/mabo-lovecraftian-library-v101.1.jar",
-      "sourceArchiveUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/refs/tags/v101.1.zip",
-      "assets": [
-        {
-          "name": "mabo-lovecraftian-library-v101.1.jar",
-          "size": 1480337,
-          "downloadCount": 2323,
-          "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101.1/mabo-lovecraftian-library-v101.1.jar"
-        }
-      ],
-      "commitSha": "38bb300a53149d8a712477f905a673bad6c0ce33",
-      "archiveByCommitUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/38bb300a53149d8a712477f905a673bad6c0ce33.zip"
+      "modVersion": "101.1",
+      "sizeBytes": 1480337,
+      "downloadCount": 2323,
+      "releasedAt": "2026-03-20T05:45:31Z"
     },
     {
       "tag": "v101",
-      "name": "v101",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-16T11:05:30Z",
-      "htmlUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/tag/v101",
-      "modVersion": "101",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "155",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101/mabo-lovecraftian-library-v101.jar",
-      "sourceArchiveUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/refs/tags/v101.zip",
-      "assets": [
-        {
-          "name": "mabo-lovecraftian-library-v101.jar",
-          "size": 1481229,
-          "downloadCount": 714,
-          "downloadUrl": "https://github.com/HuanXefh/Lovecraftian-Library-Java/releases/download/v101/mabo-lovecraftian-library-v101.jar"
-        }
-      ],
-      "commitSha": "1e12c3bb95b535a5e24eaa87cf006c617590fb7a",
-      "archiveByCommitUrl": "https://github.com/huanxefh/lovecraftian-library-java/archive/1e12c3bb95b535a5e24eaa87cf006c617590fb7a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v101",
       "modVersion": "101",
-      "minGameVersion": "155",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "v101.2",
-      "modVersion": "101.2",
-      "minGameVersion": "156",
-      "maxGameVersion": 158,
-      "hasRelease": true
-    },
-    {
-      "tag": "v101.3",
-      "modVersion": "101.3",
-      "minGameVersion": "158",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v101.4",
-      "modVersion": "101.4",
-      "minGameVersion": "159",
-      "maxGameVersion": 160.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v101.5",
-      "modVersion": "101.5",
-      "minGameVersion": "160.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1481229,
+      "downloadCount": 714,
+      "releasedAt": "2026-02-16T11:05:30Z"
     }
   ],
   "meta": {
+    "name": "lovec",
+    "author": "MaboroshiX",
+    "description": "\nA JavaScript-based library for my other mods.\n\nMain features:\n- JS approach to class and interface.\n- Content template for method inheritance and mixing, along with more powerful `extend` methods.\n- Multi-crafters.\n- QOL functionalities like recipe dictionary, health bar and damage splash text.\n",
+    "version": "101.5",
+    "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": true,
     "main": "lovec.Lovec",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

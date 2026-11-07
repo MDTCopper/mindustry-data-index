@@ -1,41 +1,22 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "kapzduke/arseface",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "HOOOOH-1",
-      "name": "HOOOOH-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-14T18:39:03Z",
-      "htmlUrl": "https://github.com/kapzduke/arseface/releases/tag/HOOOOH-1",
-      "modVersion": "0",
+      "kind": "tag",
       "minGameVersion": "104",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "104",
+          "to": "104.6"
+        }
+      ],
       "downloadUrl": "https://github.com/kapzduke/arseface/archive/refs/tags/HOOOOH-1.zip",
-      "sourceArchiveUrl": "https://github.com/kapzduke/arseface/archive/refs/tags/HOOOOH-1.zip",
-      "assets": [],
-      "commitSha": "b4cc4b1b0fd3c9c2b28959623a74cf97c4bc0f2e",
-      "archiveByCommitUrl": "https://github.com/kapzduke/arseface/archive/b4cc4b1b0fd3c9c2b28959623a74cf97c4bc0f2e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "HOOOOH-1",
       "modVersion": "0",
-      "minGameVersion": "104",
-      "maxGameVersion": 105,
-      "hasRelease": true
+      "releasedAt": "2023-06-14T18:39:03Z"
     }
-  ],
-  "meta": {
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

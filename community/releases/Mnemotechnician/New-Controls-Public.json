@@ -1,253 +1,149 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Mnemotechnician/New-Controls-Public",
-  "generatedAt": "2026-11-06T19:28:53.827Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1.3",
-      "name": "v1.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-20T10:41:15Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.1.3",
-      "modVersion": "1.1.3",
+      "kind": "release",
       "minGameVersion": "143.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.3/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 131382,
-          "downloadCount": 17899,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.3/Newcontrols.In.A.Jar.jar"
+          "from": "143.1",
+          "to": "146"
         }
       ],
-      "commitSha": "df2b50cd1cedb2308e7905230762fa30c149954b",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/df2b50cd1cedb2308e7905230762fa30c149954b.zip"
+      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.3/Newcontrols.In.A.Jar.jar",
+      "modVersion": "1.1.3",
+      "sizeBytes": 131382,
+      "downloadCount": 17899,
+      "releasedAt": "2023-04-20T10:41:15Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-22T18:24:40Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.1.2",
-      "modVersion": "1.1.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.2/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 134177,
-          "downloadCount": 7622,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.2/Newcontrols.In.A.Jar.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "dbecba133ed1d391415b33e83e8ca6058b007562",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/dbecba133ed1d391415b33e83e8ca6058b007562.zip"
+      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.2/Newcontrols.In.A.Jar.jar",
+      "modVersion": "1.1.2",
+      "sizeBytes": 134177,
+      "downloadCount": 7622,
+      "releasedAt": "2022-07-22T18:24:40Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-16T22:40:19Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.1/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 133364,
-          "downloadCount": 492,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.1/Newcontrols.In.A.Jar.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "0c6b7815ce0a77b25840bc20ad7743bdae0a78db",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/0c6b7815ce0a77b25840bc20ad7743bdae0a78db.zip"
+      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1.1/Newcontrols.In.A.Jar.jar",
+      "modVersion": "1.1.1",
+      "sizeBytes": 133364,
+      "downloadCount": 492,
+      "releasedAt": "2022-07-16T22:40:19Z"
     },
     {
       "tag": "v1.1-actual",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-16T22:33:35Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.1-actual",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1-actual/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.1-actual.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 132659,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1-actual/Newcontrols.In.A.Jar.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "4b82a89127c004af1b5c4182d67a863e357b1fc1",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/4b82a89127c004af1b5c4182d67a863e357b1fc1.zip"
+      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.1-actual/Newcontrols.In.A.Jar.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 132659,
+      "downloadCount": 44,
+      "releasedAt": "2022-07-16T22:33:35Z"
     },
     {
       "tag": "v1.0.4-b2",
-      "name": "v1.0.4 b2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-20T13:36:07Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.0.4-b2",
-      "modVersion": "1.0.4",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.4-b2/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.0.4-b2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 130679,
-          "downloadCount": 1533,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.4-b2/Newcontrols.In.A.Jar.jar"
+          "from": "134",
+          "to": "135.2"
         }
       ],
-      "commitSha": "ed3af7094edf5e036a1c411f3fa532a21862b323",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/ed3af7094edf5e036a1c411f3fa532a21862b323.zip"
+      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.4-b2/Newcontrols.In.A.Jar.jar",
+      "modVersion": "1.0.4",
+      "sizeBytes": 130679,
+      "downloadCount": 1533,
+      "releasedAt": "2022-02-20T13:36:07Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "v1.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-28T14:50:28Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.0.4",
-      "modVersion": "1.0.4",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.4/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 129978,
-          "downloadCount": 665,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.4/Newcontrols.In.A.Jar.jar"
+          "from": "134",
+          "to": "135.2"
         }
       ],
-      "commitSha": "43130d91b87ca9bacd3b47ff4e0707277508769e",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/43130d91b87ca9bacd3b47ff4e0707277508769e.zip"
+      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.4/Newcontrols.In.A.Jar.jar",
+      "modVersion": "1.0.4",
+      "sizeBytes": 129978,
+      "downloadCount": 665,
+      "releasedAt": "2021-11-28T14:50:28Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "v1.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-04T08:05:52Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.0.3",
-      "modVersion": "1.0.3",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "134",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.3/Newcontrols.In.A.Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.0.3.zip",
-      "assets": [
-        {
-          "name": "Newcontrols.In.A.Jar.jar",
-          "size": 120289,
-          "downloadCount": 214,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.3/Newcontrols.In.A.Jar.jar"
-        }
-      ],
-      "commitSha": "3f7b6b4387c49766dc316e095431b61e4a9ea8a8",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/3f7b6b4387c49766dc316e095431b61e4a9ea8a8.zip"
+      "modVersion": "1.0.3",
+      "sizeBytes": 120289,
+      "downloadCount": 214,
+      "releasedAt": "2021-11-04T08:05:52Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "v1.0.2 — First public release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-30T19:15:37Z",
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/tag/v1.0.2",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "131",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.2/Newcontrols_In_A_Jar.jar",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.0.2.zip",
-      "assets": [
-        {
-          "name": "Newcontrols_In_A_Jar.jar",
-          "size": 120289,
-          "downloadCount": 117,
-          "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/releases/download/v1.0.2/Newcontrols_In_A_Jar.jar"
-        }
-      ],
-      "commitSha": "60f37fd87171425a3cb594610d8c839df3851c9f",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/60f37fd87171425a3cb594610d8c839df3851c9f.zip"
-    },
-    {
-      "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Mnemotechnician/New-Controls-Public/tree/v1.1",
-      "modVersion": "1.0.4",
-      "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "ed3af7094edf5e036a1c411f3fa532a21862b323",
-      "archiveByCommitUrl": "https://github.com/Mnemotechnician/New-Controls-Public/archive/ed3af7094edf5e036a1c411f3fa532a21862b323.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.2",
       "modVersion": "1.0.2",
-      "minGameVersion": "131",
-      "maxGameVersion": 134,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0.4-b2",
-      "modVersion": "1.0.4",
-      "minGameVersion": "134",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.2",
-      "modVersion": "1.1.2",
-      "minGameVersion": "136",
-      "maxGameVersion": 143.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.3",
-      "modVersion": "1.1.3",
-      "minGameVersion": "143.1",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 120289,
+      "downloadCount": 117,
+      "releasedAt": "2021-10-30T19:15:37Z"
     }
   ],
   "meta": {
+    "name": "newcontrols",
+    "author": "Mnemotechnician",
+    "description": "This mod is multiplayer-compatible!\n\nThis mod adds new ways of controlling your unit (mostly for mobile): fully manual and fully automatic.\n\nThe manual mode enables you to control your unit with two joysticks and a control panel.\n The AI mode includes three automatic actions (attack, mine, patrol) + automatic action selection.\n\nCheck readme.md for detailed info.",
+    "version": "1.1.3",
+    "minGameVersion": "143.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "newcontrols.NCMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

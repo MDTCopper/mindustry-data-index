@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "routerxdd/cringe-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "sus",
-      "name": "First and Last Version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-21T13:36:05Z",
-      "htmlUrl": "https://github.com/RouterXdd/Cringe-mod/releases/tag/sus",
-      "modVersion": "sussy-baka",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/routerxdd/cringe-mod/archive/refs/tags/sus.zip",
-      "sourceArchiveUrl": "https://github.com/routerxdd/cringe-mod/archive/refs/tags/sus.zip",
-      "assets": [],
-      "commitSha": "5dbe8c740822e8e8b1a8680d93c84897b461dea5",
-      "archiveByCommitUrl": "https://github.com/routerxdd/cringe-mod/archive/5dbe8c740822e8e8b1a8680d93c84897b461dea5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "sus",
       "modVersion": "sussy-baka",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-03-21T13:36:05Z"
     }
   ],
   "meta": {
+    "name": "cringe",
+    "author": "R.O.T.",
+    "description": "every new planet mod be like:",
+    "version": "sussy-baka",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

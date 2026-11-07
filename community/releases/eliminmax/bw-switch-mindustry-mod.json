@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "eliminmax/bw-switch-mindustry-mod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "release-1.0.1",
-      "name": "1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-28T23:59:50Z",
-      "htmlUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/releases/tag/release-1.0.1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "140.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.1.zip",
-      "assets": [],
-      "commitSha": "6050551093a72a7abd1f9e5d6be2a9589985aa83",
-      "archiveByCommitUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/6050551093a72a7abd1f9e5d6be2a9589985aa83.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2023-10-28T23:59:50Z"
     },
     {
       "tag": "release-1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-19T03:48:54Z",
-      "htmlUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/releases/tag/release-1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "140.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.zip",
-      "sourceArchiveUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/refs/tags/release-1.0.zip",
-      "assets": [],
-      "commitSha": "9421672910cf3113be7605652efd214efb155e34",
-      "archiveByCommitUrl": "https://github.com/eliminmax/bw-switch-mindustry-mod/archive/9421672910cf3113be7605652efd214efb155e34.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release-1.0.1",
       "modVersion": "1.0",
-      "minGameVersion": "140.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2022-12-19T03:48:54Z"
     }
   ],
   "meta": {
+    "name": "bw-switch",
+    "author": "eliminmax",
+    "description": "Retextures the switch to be fully black if off and fully white if on.",
+    "version": "1.0",
+    "minGameVersion": "140.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

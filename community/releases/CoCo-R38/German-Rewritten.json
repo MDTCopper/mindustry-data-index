@@ -1,57 +1,51 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "CoCo-R38/German-Rewritten",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.1.1",
-      "name": "Release v0.0.2 (11.63%)",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-08-27T21:14:13Z",
-      "htmlUrl": "https://github.com/CoCo-R38/German-Rewritten/releases/tag/v0.1.1",
-      "modVersion": "0.1.0",
+      "kind": "tag",
       "minGameVersion": "144.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "144.3",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/CoCo-R38/German-Rewritten/archive/refs/tags/v0.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/CoCo-R38/German-Rewritten/archive/refs/tags/v0.1.1.zip",
-      "assets": [],
-      "commitSha": "1121f1ae4463a37decff6361ffdea9ac18706bd9",
-      "archiveByCommitUrl": "https://github.com/CoCo-R38/German-Rewritten/archive/1121f1ae4463a37decff6361ffdea9ac18706bd9.zip"
+      "modVersion": "0.1.0",
+      "releasedAt": "2023-08-27T21:14:13Z",
+      "prerelease": true
     },
     {
       "tag": "v0.1.0",
-      "name": "Release v0.0.1 (9.56%)",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-08-27T14:47:53Z",
-      "htmlUrl": "https://github.com/CoCo-R38/German-Rewritten/releases/tag/v0.1.0",
-      "modVersion": "0.1.0",
+      "kind": "tag",
       "minGameVersion": "144.3",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "144.3",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/CoCo-R38/German-Rewritten/archive/refs/tags/v0.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/CoCo-R38/German-Rewritten/archive/refs/tags/v0.1.0.zip",
-      "assets": [],
-      "commitSha": "999f5dd35731e8028614c1bda7cf66854f50829f",
-      "archiveByCommitUrl": "https://github.com/CoCo-R38/German-Rewritten/archive/999f5dd35731e8028614c1bda7cf66854f50829f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.1",
       "modVersion": "0.1.0",
-      "minGameVersion": "144.3",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-08-27T14:47:53Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "gr-trp",
+    "author": "Yoru Kitsune",
+    "description": "English:\nThis mod completly rewrites the german translation.\n[#ff0000]Mod is WIP![]\n\n--------\n\nDeutsch:\nDiese Mod schreibt die deutsche Übersetzung komplett neu.\n[#ff0000]Mod ist in Bearbeitung![]",
+    "version": "0.1.0",
+    "minGameVersion": "144.3",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

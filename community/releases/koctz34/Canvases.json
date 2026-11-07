@@ -1,112 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "koctz34/Canvases",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.1",
-      "name": "2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-15T15:05:08Z",
-      "htmlUrl": "https://github.com/koctz34/Canvases/releases/tag/2.1",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Canvases/releases/download/2.1/Canvases_V2.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/Canvases/archive/refs/tags/2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Canvases_V2.jar",
-          "size": 2153227,
-          "downloadCount": 2248,
-          "downloadUrl": "https://github.com/koctz34/Canvases/releases/download/2.1/Canvases_V2.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "03684723aea1855dc6decdf11860cc40cb7e27db",
-      "archiveByCommitUrl": "https://github.com/koctz34/Canvases/archive/03684723aea1855dc6decdf11860cc40cb7e27db.zip"
+      "downloadUrl": "https://github.com/koctz34/Canvases/releases/download/2.1/Canvases_V2.jar",
+      "modVersion": "2",
+      "sizeBytes": 2153227,
+      "downloadCount": 2248,
+      "releasedAt": "2024-05-15T15:05:08Z"
     },
     {
       "tag": "2.0v",
-      "name": "2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-14T17:46:15Z",
-      "htmlUrl": "https://github.com/koctz34/Canvases/releases/tag/2.0v",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Canvases/releases/download/2.0v/Canvases_V2.jar",
-      "sourceArchiveUrl": "https://github.com/koctz34/Canvases/archive/refs/tags/2.0v.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Canvases_V2.jar",
-          "size": 2160893,
-          "downloadCount": 112,
-          "downloadUrl": "https://github.com/koctz34/Canvases/releases/download/2.0v/Canvases_V2.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "03684723aea1855dc6decdf11860cc40cb7e27db",
-      "archiveByCommitUrl": "https://github.com/koctz34/Canvases/archive/03684723aea1855dc6decdf11860cc40cb7e27db.zip"
-    },
-    {
-      "tag": "1.1v",
-      "name": "1.1 Probably the final version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-05T17:10:27Z",
-      "htmlUrl": "https://github.com/koctz34/Canvases/releases/tag/1.1v",
-      "modVersion": "1.1",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Canvases/archive/refs/tags/1.1v.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/Canvases/archive/refs/tags/1.1v.zip",
-      "assets": [],
-      "commitSha": "538e09bc6e3c1ad09ed8e83569bb899d008ac127",
-      "archiveByCommitUrl": "https://github.com/koctz34/Canvases/archive/538e09bc6e3c1ad09ed8e83569bb899d008ac127.zip"
-    },
-    {
-      "tag": "1.0v",
-      "name": "1.0 First version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-13T13:53:22Z",
-      "htmlUrl": "https://github.com/koctz34/Canvases/releases/tag/1.0v",
-      "modVersion": "1.0",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/koctz34/Canvases/archive/refs/tags/1.0v.zip",
-      "sourceArchiveUrl": "https://github.com/koctz34/Canvases/archive/refs/tags/1.0v.zip",
-      "assets": [],
-      "commitSha": "56df35bcdce2f1505193e441d96c55e1a1c3f7ce",
-      "archiveByCommitUrl": "https://github.com/koctz34/Canvases/archive/56df35bcdce2f1505193e441d96c55e1a1c3f7ce.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.1v",
-      "modVersion": "1.1",
-      "minGameVersion": "136",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.1",
+      "downloadUrl": "https://github.com/koctz34/Canvases/releases/download/2.0v/Canvases_V2.jar",
       "modVersion": "2",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 2160893,
+      "downloadCount": 112,
+      "releasedAt": "2024-05-14T17:46:15Z"
     }
   ],
   "meta": {
+    "name": "canvases-2",
+    "author": "koctz34",
+    "description": "Canvas with colors and big brush!",
+    "version": "2",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "canvases.CanvasesJavaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

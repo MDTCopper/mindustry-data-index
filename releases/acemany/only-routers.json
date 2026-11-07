@@ -1,88 +1,67 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "acemany/only-routers",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "2.1b",
-      "name": "2.1b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-05T11:18:40Z",
-      "htmlUrl": "https://github.com/Acemany/only-routers/releases/tag/2.1b",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Acemany/only-routers/releases/download/2.1b/only.zip",
-      "sourceArchiveUrl": "https://github.com/acemany/only-routers/archive/refs/tags/2.1b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "only.zip",
-          "size": 3908686,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/Acemany/only-routers/releases/download/2.1b/only.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "38bb96de2be37da925145e67a80ee238fcb69348",
-      "archiveByCommitUrl": "https://github.com/acemany/only-routers/archive/38bb96de2be37da925145e67a80ee238fcb69348.zip"
+      "downloadUrl": "https://github.com/Acemany/only-routers/releases/download/2.1b/only.zip",
+      "modVersion": "1",
+      "sizeBytes": 3908686,
+      "downloadCount": 26,
+      "releasedAt": "2025-02-05T11:18:40Z"
     },
     {
       "tag": "2.0b",
-      "name": "2.0b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-02T02:52:11Z",
-      "htmlUrl": "https://github.com/Acemany/only-routers/releases/tag/2.0b",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Acemany/only-routers/releases/download/2.0b/only-routers.zip",
-      "sourceArchiveUrl": "https://github.com/acemany/only-routers/archive/refs/tags/2.0b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "only-routers.zip",
-          "size": 143124,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Acemany/only-routers/releases/download/2.0b/only-routers.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c74ac5415e9b5e1354bd64853e50c2a2bcf8a424",
-      "archiveByCommitUrl": "https://github.com/acemany/only-routers/archive/c74ac5415e9b5e1354bd64853e50c2a2bcf8a424.zip"
+      "downloadUrl": "https://github.com/Acemany/only-routers/releases/download/2.0b/only-routers.zip",
+      "modVersion": "1",
+      "sizeBytes": 143124,
+      "downloadCount": 3,
+      "releasedAt": "2025-02-02T02:52:11Z"
     },
     {
       "tag": "1.0b",
-      "name": "1.0b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-12T14:36:02Z",
-      "htmlUrl": "https://github.com/Acemany/only-routers/releases/tag/1.0b",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/acemany/only-routers/archive/refs/tags/1.0b.zip",
-      "sourceArchiveUrl": "https://github.com/acemany/only-routers/archive/refs/tags/1.0b.zip",
-      "assets": [],
-      "commitSha": "e72a0d10b5c76dee0c537de69c452c636ca04f7f",
-      "archiveByCommitUrl": "https://github.com/acemany/only-routers/archive/e72a0d10b5c76dee0c537de69c452c636ca04f7f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.1b",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-06-12T14:36:02Z"
     }
   ],
   "meta": {
+    "name": "only-routers",
+    "author": "Acemany",
+    "description": "Router router router router router router.",
+    "version": "1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

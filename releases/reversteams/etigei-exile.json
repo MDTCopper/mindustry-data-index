@@ -1,82 +1,66 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "reversteams/etigei-exile",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v2.1.8",
-      "name": "v2.1.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-03T19:22:01Z",
-      "htmlUrl": "https://github.com/ReversTeams/etigei-exile/releases/tag/v2.1.8",
-      "modVersion": "2.1.7",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ReversTeams/etigei-exile/releases/download/v2.1.8/etigei-exile-v2.1.8.zip",
-      "sourceArchiveUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v2.1.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "etigei-exile-v2.1.8.zip",
-          "size": 3360818,
-          "downloadCount": 119,
-          "downloadUrl": "https://github.com/ReversTeams/etigei-exile/releases/download/v2.1.8/etigei-exile-v2.1.8.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9e1bad21aa8d65b9cbfec4b762d86a754efb50f9",
-      "archiveByCommitUrl": "https://github.com/reversteams/etigei-exile/archive/9e1bad21aa8d65b9cbfec4b762d86a754efb50f9.zip"
+      "downloadUrl": "https://github.com/ReversTeams/etigei-exile/releases/download/v2.1.8/etigei-exile-v2.1.8.zip",
+      "modVersion": "2.1.7",
+      "sizeBytes": 3360818,
+      "downloadCount": 119,
+      "releasedAt": "2025-04-03T19:22:01Z"
     },
     {
       "tag": "v2.1.0",
-      "name": "v2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-14T00:59:01Z",
-      "htmlUrl": "https://github.com/ReversTeams/etigei-exile/releases/tag/v2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v2.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v2.1.0.zip",
-      "assets": [],
-      "commitSha": "19ec658d031a7a91e98443a795ed265f089e4366",
-      "archiveByCommitUrl": "https://github.com/reversteams/etigei-exile/archive/19ec658d031a7a91e98443a795ed265f089e4366.zip"
+      "modVersion": "2.1.0",
+      "releasedAt": "2025-02-14T00:59:01Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-16T06:19:50Z",
-      "htmlUrl": "https://github.com/ReversTeams/etigei-exile/releases/tag/v1.1",
-      "modVersion": "2.0.6",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/reversteams/etigei-exile/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "7a58cc1fb0df3acd8c49c650213a82c1f520a34f",
-      "archiveByCommitUrl": "https://github.com/reversteams/etigei-exile/archive/7a58cc1fb0df3acd8c49c650213a82c1f520a34f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.1.8",
-      "modVersion": "2.1.7",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "2.0.6",
+      "releasedAt": "2025-01-16T06:19:50Z"
     }
   ],
   "meta": {
+    "name": "etigeox",
+    "author": "[[]lime]Mitemi[[]lightgray] & [[]cyan]Tikup",
+    "description": "Etigei Exilium offers a fresh and uniquely creative modded experience, featuring two planets and adding 161 blocks, 23 items, 22 units, and 20 sectors. \n\nEstablish colonies on the frozen planet of [[]sky]Neoulandia[[]white] and experience its own tech tree, destructible environment, such as destructible trees from which you can harvest timber, emphasis on unit cargo, and unique map design. The entire Neoulandia campaign is intimately interconnected with each map being adjacent and having connections to other maps, branching into economy-focused sectors or classic survival or attack maps. \n\n[[]orange]Rubiginosus[[]white] presents a collection of hardcore maps, inspired by Rusted Warfare, initially designed for multiplayer using Serpulo and Erekir technology. These missions have been retrofitted for a campaign experience with unique challenges for each map. Completing the Rubiginosus campaign will unlock a special resource on Neoulandia.\n\n[[]red]Requires Timber (EDT) as a dependency.\n\n[[]white]Discord:[[]blue] https://discord.com/invite/TJKZgr6UDg",
+    "version": "2.1.7",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

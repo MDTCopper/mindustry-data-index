@@ -1,995 +1,613 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "uenhe/fire",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.5.10",
-      "name": "Fire v1.5.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-01T19:15:55Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.10",
-      "modVersion": "1.5.10",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.10/Fire.1.5.10-160.3.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.10-160.3.jar",
-          "size": 4754204,
-          "downloadCount": 1729,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.10/Fire.1.5.10-160.3.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ca9ddfa0ad0e8bced2326c7427d872082ff3bd76",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/ca9ddfa0ad0e8bced2326c7427d872082ff3bd76.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.10/Fire.1.5.10-160.3.jar",
+      "modVersion": "1.5.10",
+      "sizeBytes": 4754204,
+      "downloadCount": 1742,
+      "releasedAt": "2026-10-01T19:15:55Z"
     },
     {
       "tag": "v1.5.9",
-      "name": "Fire v1.5.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-15T09:05:57Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.9",
-      "modVersion": "1.5.9",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.9/Fire.1.5.9-160.3.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.9-160.3.jar",
-          "size": 4704396,
-          "downloadCount": 918,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.9/Fire.1.5.9-160.3.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "92113219c4305742b305ec6960f31d98845af84a",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/92113219c4305742b305ec6960f31d98845af84a.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.9/Fire.1.5.9-160.3.jar",
+      "modVersion": "1.5.9",
+      "sizeBytes": 4704396,
+      "downloadCount": 918,
+      "releasedAt": "2026-09-15T09:05:57Z"
     },
     {
       "tag": "v1.5.8",
-      "name": "Fire v1.5.8-160.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-13T13:53:23Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.8",
-      "modVersion": "1.5.8",
+      "kind": "release",
       "minGameVersion": "160.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.8/Fire.1.5.8-160.3.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.8-160.3.jar",
-          "size": 4702886,
-          "downloadCount": 163,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.8/Fire.1.5.8-160.3.jar"
+          "from": "160.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0c87d7a7eab8ec475d4c628c4c5c1a911c832902",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/0c87d7a7eab8ec475d4c628c4c5c1a911c832902.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.8/Fire.1.5.8-160.3.jar",
+      "modVersion": "1.5.8",
+      "sizeBytes": 4702886,
+      "downloadCount": 164,
+      "releasedAt": "2026-09-13T13:53:23Z"
     },
     {
       "tag": "v1.5.7",
-      "name": "Fire v1.5.7-160.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-12T09:02:36Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.7",
-      "modVersion": "1.5.7",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.7/Fire.1.5.7-160.1.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.7-160.1.jar",
-          "size": 4705410,
-          "downloadCount": 231,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.7/Fire.1.5.7-160.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d92bc84822902b624465f2090aa42e7bf30a0ef8",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/d92bc84822902b624465f2090aa42e7bf30a0ef8.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.7/Fire.1.5.7-160.1.jar",
+      "modVersion": "1.5.7",
+      "sizeBytes": 4705410,
+      "downloadCount": 231,
+      "releasedAt": "2026-09-12T09:02:36Z"
     },
     {
       "tag": "v1.5.6",
-      "name": "Fire v1.5.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-30T11:59:59Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.6",
-      "modVersion": "1.5.6",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.6/Fire.1.5.6-159.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.6-159.jar",
-          "size": 4422772,
-          "downloadCount": 2392,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.6/Fire.1.5.6-159.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a8030302a1269b05303f7167678778e60f8de85b",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/a8030302a1269b05303f7167678778e60f8de85b.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.6/Fire.1.5.6-159.jar",
+      "modVersion": "1.5.6",
+      "sizeBytes": 4422772,
+      "downloadCount": 2392,
+      "releasedAt": "2026-07-30T11:59:59Z"
     },
     {
       "tag": "v1.5.5",
-      "name": "Fire v1.5.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-08T11:55:51Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.5",
-      "modVersion": "1.5.5",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.5/Fire.1.5.5-159.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.5-159.jar",
-          "size": 4407574,
-          "downloadCount": 1566,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.5/Fire.1.5.5-159.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "27808fcffbf60fa2beaefe9734772a0c89f9f825",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/27808fcffbf60fa2beaefe9734772a0c89f9f825.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.5/Fire.1.5.5-159.jar",
+      "modVersion": "1.5.5",
+      "sizeBytes": 4407574,
+      "downloadCount": 1566,
+      "releasedAt": "2026-07-08T11:55:51Z"
     },
     {
       "tag": "v1.5.4",
-      "name": "Fire v1.5.4-159",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-08T11:52:45Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.4",
-      "modVersion": "1.5.3",
+      "kind": "release",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.4/Fire.1.5.4-159.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.4-159.jar",
-          "size": 4406952,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.4/Fire.1.5.4-159.jar"
+          "from": "157.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "95c455011d6bd9a8383bc20fecc5a195fcdf03f1",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/95c455011d6bd9a8383bc20fecc5a195fcdf03f1.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.4/Fire.1.5.4-159.jar",
+      "modVersion": "1.5.3",
+      "sizeBytes": 4406952,
+      "downloadCount": 54,
+      "releasedAt": "2026-07-08T11:52:45Z"
     },
     {
       "tag": "v1.5.3",
-      "name": "Fire v1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-27T14:12:34Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.3",
-      "modVersion": "1.5.3",
+      "kind": "release",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.3/Fire.1.5.3-157.4.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.3-157.4.jar",
-          "size": 4406794,
-          "downloadCount": 709,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.3/Fire.1.5.3-157.4.jar"
+          "from": "157.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8fda8b7291a28c6b79924bcc0817b7f8db577c6d",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/8fda8b7291a28c6b79924bcc0817b7f8db577c6d.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.3/Fire.1.5.3-157.4.jar",
+      "modVersion": "1.5.3",
+      "sizeBytes": 4406794,
+      "downloadCount": 709,
+      "releasedAt": "2026-06-27T14:12:34Z"
     },
     {
       "tag": "v1.5.2",
-      "name": "Fire v1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-19T11:49:49Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.2",
-      "modVersion": "1.5.2",
+      "kind": "release",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.2/Fire.1.5.2-157.4.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.2-157.4.jar",
-          "size": 4390862,
-          "downloadCount": 37,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.2/Fire.1.5.2-157.4.jar"
+          "from": "157.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "63015c50ea277f310b5690f543222206888b7689",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/63015c50ea277f310b5690f543222206888b7689.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.2/Fire.1.5.2-157.4.jar",
+      "modVersion": "1.5.2",
+      "sizeBytes": 4390862,
+      "downloadCount": 37,
+      "releasedAt": "2026-06-19T11:49:49Z"
     },
     {
       "tag": "v1.5.1",
-      "name": "Fire v1.5.1-157.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-19T02:51:31Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.1/Fire.1.5.1-157.4.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.1-157.4.jar",
-          "size": 4392060,
-          "downloadCount": 135,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.1/Fire.1.5.1-157.4.jar"
+          "from": "157.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9c30cc72187a040b1d6da6952a33aab813216dbe",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/9c30cc72187a040b1d6da6952a33aab813216dbe.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.1/Fire.1.5.1-157.4.jar",
+      "modVersion": "1.5.1",
+      "sizeBytes": 4392060,
+      "downloadCount": 135,
+      "releasedAt": "2026-06-19T02:51:31Z"
     },
     {
       "tag": "v1.5.0",
-      "name": "Fire v1.5.0-154.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-01T12:25:28Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.5.0",
-      "modVersion": "1.5.0",
+      "kind": "release",
       "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.0/Fire.1.5.0-154.2.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.5.0-154.2.jar",
-          "size": 4181738,
-          "downloadCount": 6641,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.0/Fire.1.5.0-154.2.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f7dc185273f20e98d209cbb19f6ef1bfd98feac1",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/f7dc185273f20e98d209cbb19f6ef1bfd98feac1.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.5.0/Fire.1.5.0-154.2.jar",
+      "modVersion": "1.5.0",
+      "sizeBytes": 4181738,
+      "downloadCount": 6641,
+      "releasedAt": "2026-01-01T12:25:28Z"
     },
     {
       "tag": "v1.4.10",
-      "name": "Fire v1.4.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-19T11:47:13Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.10",
-      "modVersion": "1.4.10",
+      "kind": "release",
       "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.10/Fire.1.4.10-154.2.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.10-154.2.jar",
-          "size": 3962659,
-          "downloadCount": 1170,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.10/Fire.1.4.10-154.2.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7b7047006f32712d1cff65965a4a563d6290f95b",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/7b7047006f32712d1cff65965a4a563d6290f95b.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.10/Fire.1.4.10-154.2.jar",
+      "modVersion": "1.4.10",
+      "sizeBytes": 3962659,
+      "downloadCount": 1170,
+      "releasedAt": "2025-12-19T11:47:13Z"
     },
     {
       "tag": "v1.4.9",
-      "name": "Fire v1.4.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-31T07:08:56Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.9",
-      "modVersion": "1.4.9",
+      "kind": "release",
       "minGameVersion": "151",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.9/Fire.1.4.9-151.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.9-151.jar",
-          "size": 3923646,
-          "downloadCount": 2749,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.9/Fire.1.4.9-151.jar"
+          "from": "151",
+          "to": "154"
         }
       ],
-      "commitSha": "e644caefca0ed3c90273938827ff8e52bc34c23b",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/e644caefca0ed3c90273938827ff8e52bc34c23b.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.9/Fire.1.4.9-151.jar",
+      "modVersion": "1.4.9",
+      "sizeBytes": 3923646,
+      "downloadCount": 2750,
+      "releasedAt": "2025-08-31T07:08:56Z"
     },
     {
       "tag": "v1.4.8",
-      "name": "Fire v1.4.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-29T13:38:02Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.8",
-      "modVersion": "1.4.8",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.8/Fire.1.4.8-150.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.8-150.jar",
-          "size": 3782825,
-          "downloadCount": 2366,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.8/Fire.1.4.8-150.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "c6901643f8941117a15eb2dc404f90ce940766e6",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/c6901643f8941117a15eb2dc404f90ce940766e6.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.8/Fire.1.4.8-150.jar",
+      "modVersion": "1.4.8",
+      "sizeBytes": 3782825,
+      "downloadCount": 2366,
+      "releasedAt": "2025-07-29T13:38:02Z"
     },
     {
       "tag": "v1.4.7",
-      "name": "Fire v1.4.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-25T12:45:53Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.7",
-      "modVersion": "1.4.7",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.7/Fire.1.4.7-150.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.7-150.jar",
-          "size": 3754613,
-          "downloadCount": 455,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.7/Fire.1.4.7-150.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "e22252947bdd123b7b175f392e4621b5c666edd5",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/e22252947bdd123b7b175f392e4621b5c666edd5.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.7/Fire.1.4.7-150.jar",
+      "modVersion": "1.4.7",
+      "sizeBytes": 3754613,
+      "downloadCount": 455,
+      "releasedAt": "2025-07-25T12:45:53Z"
     },
     {
       "tag": "v1.4.6",
-      "name": "Fire v1.4.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-24T08:51:59Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.6",
-      "modVersion": "1.4.6",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.6/Fire.1.4.6-150.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.6-150.jar",
-          "size": 3719751,
-          "downloadCount": 253,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.6/Fire.1.4.6-150.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "274ef9866ac47240552d19220d9e6b23f46f30ef",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/274ef9866ac47240552d19220d9e6b23f46f30ef.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.6/Fire.1.4.6-150.jar",
+      "modVersion": "1.4.6",
+      "sizeBytes": 3719751,
+      "downloadCount": 253,
+      "releasedAt": "2025-07-24T08:51:59Z"
     },
     {
       "tag": "v1.4.5",
-      "name": "Fire v1.4.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-16T06:51:13Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.5",
-      "modVersion": "1.4.5",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.5/Fire.1.4.5-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.5-149.jar",
-          "size": 3715821,
-          "downloadCount": 618,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.5/Fire.1.4.5-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "2d990ac8a84e1e52cb393bd2f676e73852f5a9d0",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/2d990ac8a84e1e52cb393bd2f676e73852f5a9d0.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.5/Fire.1.4.5-149.jar",
+      "modVersion": "1.4.5",
+      "sizeBytes": 3715821,
+      "downloadCount": 618,
+      "releasedAt": "2025-07-16T06:51:13Z"
     },
     {
       "tag": "v1.4.4",
-      "name": "Fire v1.4.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-15T06:23:51Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.4",
-      "modVersion": "1.4.4",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.4/Fire.1.4.4-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.4-149.jar",
-          "size": 3701830,
-          "downloadCount": 185,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.4/Fire.1.4.4-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "7b546297b4c66ff543b62f7173ff8d7493b00d4b",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/7b546297b4c66ff543b62f7173ff8d7493b00d4b.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.4/Fire.1.4.4-149.jar",
+      "modVersion": "1.4.4",
+      "sizeBytes": 3701830,
+      "downloadCount": 185,
+      "releasedAt": "2025-07-15T06:23:51Z"
     },
     {
       "tag": "v1.4.3",
-      "name": "Fire v1.4.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-14T11:41:00Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.3",
-      "modVersion": "1.4.3",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.3/Fire.1.4.3-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.3-149.jar",
-          "size": 3701758,
-          "downloadCount": 171,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.3/Fire.1.4.3-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "0f637739f58e2acf21dc2f218338ee1c2a433161",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/0f637739f58e2acf21dc2f218338ee1c2a433161.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.3/Fire.1.4.3-149.jar",
+      "modVersion": "1.4.3",
+      "sizeBytes": 3701758,
+      "downloadCount": 171,
+      "releasedAt": "2025-07-14T11:41:00Z"
     },
     {
       "tag": "v1.4.2",
-      "name": "Fire v1.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-14T10:22:48Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.2",
-      "modVersion": "1.4.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.2/Fire.1.4.2-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.2-149.jar",
-          "size": 3618505,
-          "downloadCount": 1401,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.2/Fire.1.4.2-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "8bbec4ea739bb7c1b5c562d2c1b29a13b65f9a30",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/8bbec4ea739bb7c1b5c562d2c1b29a13b65f9a30.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.2/Fire.1.4.2-149.jar",
+      "modVersion": "1.4.2",
+      "sizeBytes": 3618505,
+      "downloadCount": 1401,
+      "releasedAt": "2025-06-14T10:22:48Z"
     },
     {
       "tag": "v1.4.1",
-      "name": "Fire v1.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-10T12:44:31Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.1",
-      "modVersion": "1.4.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.1/Fire.1.4.1-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.1-149.jar",
-          "size": 3716830,
-          "downloadCount": 1168,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.1/Fire.1.4.1-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "d33681507e06b507328001faba09e3afd062ead3",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/d33681507e06b507328001faba09e3afd062ead3.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.1/Fire.1.4.1-149.jar",
+      "modVersion": "1.4.1",
+      "sizeBytes": 3716830,
+      "downloadCount": 1168,
+      "releasedAt": "2025-05-10T12:44:31Z"
     },
     {
       "tag": "v1.4.0r",
-      "name": "Fire v1.4.0 - Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-04T14:51:36Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.0r",
-      "modVersion": "1.4.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.0r/Fire.1.4.0-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.0r.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.0-149.jar",
-          "size": 3685931,
-          "downloadCount": 375,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.0r/Fire.1.4.0-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "0598abb8367be6088e9bab942e7d0f642ac600d5",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/0598abb8367be6088e9bab942e7d0f642ac600d5.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.0r/Fire.1.4.0-149.jar",
+      "modVersion": "1.4.0",
+      "sizeBytes": 3685931,
+      "downloadCount": 375,
+      "releasedAt": "2025-05-04T14:51:36Z"
     },
     {
       "tag": "v1.4.0b",
-      "name": "Fire v1.4.0 - Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-04T08:49:23Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.4.0b",
-      "modVersion": "1.4.0b",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.0b/Fire.1.4.0b-149.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.4.0b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.4.0b-149.jar",
-          "size": 3681979,
-          "downloadCount": 135,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.0b/Fire.1.4.0b-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "c8f519bf05ca50608ac281632a27d226facec21c",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/c8f519bf05ca50608ac281632a27d226facec21c.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.4.0b/Fire.1.4.0b-149.jar",
+      "modVersion": "1.4.0b",
+      "sizeBytes": 3681979,
+      "downloadCount": 135,
+      "releasedAt": "2025-05-04T08:49:23Z"
     },
     {
       "tag": "v1.3.2-server_fixed",
-      "name": "Fire v1.3.2 for server",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-06T07:36:02Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.3.2-server_fixed",
-      "modVersion": "1.3.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.2-server_fixed/Fire_1.3.2-146_fixed3.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.3.2-server_fixed.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire_1.3.2-146_fixed3.jar",
-          "size": 2646184,
-          "downloadCount": 927,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.2-server_fixed/Fire_1.3.2-146_fixed3.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "48dc48cec1f36643e92a0349fb23f7d0bc042bf3",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/48dc48cec1f36643e92a0349fb23f7d0bc042bf3.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.2-server_fixed/Fire_1.3.2-146_fixed3.jar",
+      "modVersion": "1.3.2",
+      "sizeBytes": 2646184,
+      "downloadCount": 927,
+      "releasedAt": "2025-04-06T07:36:02Z"
     },
     {
       "tag": "v1.3.2",
-      "name": "Fire v1.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-31T04:26:53Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.3.2",
-      "modVersion": "1.3.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.2/Fire_1.3.2.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire_1.3.2.jar",
-          "size": 2645958,
-          "downloadCount": 4695,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.2/Fire_1.3.2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "0a706ca9dbf036d9dcdefa1133b34dae34be3a18",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/0a706ca9dbf036d9dcdefa1133b34dae34be3a18.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.2/Fire_1.3.2.jar",
+      "modVersion": "1.3.2",
+      "sizeBytes": 2645958,
+      "downloadCount": 4695,
+      "releasedAt": "2024-07-31T04:26:53Z"
     },
     {
       "tag": "v1.3.1",
-      "name": "Fire v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-27T09:10:23Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.3.1",
-      "modVersion": "1.3.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.1/Fire_1.3.1.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire_1.3.1.jar",
-          "size": 2645789,
-          "downloadCount": 244,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.1/Fire_1.3.1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "09fc48dabaccd868a24be2b29c788bb24200c86b",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/09fc48dabaccd868a24be2b29c788bb24200c86b.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.1/Fire_1.3.1.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 2645789,
+      "downloadCount": 244,
+      "releasedAt": "2024-07-27T09:10:23Z"
     },
     {
       "tag": "v1.3.0",
-      "name": "Fire v1.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-24T07:17:10Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.3.0",
-      "modVersion": "1.3.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.0/Fire_1.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire_1.3.0.jar",
-          "size": 2646177,
-          "downloadCount": 235,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.0/Fire_1.3.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "bdf871091951f5fe71948e243d4945b040d88960",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/bdf871091951f5fe71948e243d4945b040d88960.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.3.0/Fire_1.3.0.jar",
+      "modVersion": "1.3.0",
+      "sizeBytes": 2646177,
+      "downloadCount": 235,
+      "releasedAt": "2024-07-24T07:17:10Z"
     },
     {
       "tag": "v1.2.0",
-      "name": "Fire v1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-31T06:18:30Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.2.0",
-      "modVersion": "1.2.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.2.0/Fire.1.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.1.2.0.jar",
-          "size": 1259050,
-          "downloadCount": 6479,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.2.0/Fire.1.2.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "8024c06f7bd6b0755b09a8c451334e57e1f6e3b1",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/8024c06f7bd6b0755b09a8c451334e57e1f6e3b1.zip"
+      "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.2.0/Fire.1.2.0.jar",
+      "modVersion": "1.2.0",
+      "sizeBytes": 1259050,
+      "downloadCount": 6479,
+      "releasedAt": "2024-01-31T06:18:30Z"
     },
     {
       "tag": "v1.1.3",
-      "name": "Fire v1.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-14T08:37:41Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.1.3",
-      "modVersion": "1.1.3",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.3.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.1.3.zip",
-          "size": 1525144,
-          "downloadCount": 101,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.1.3/Fire.v1.1.3.zip"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "1a5b958de6bdc11ccb9e4c573e4998efe6bf8ba8",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/1a5b958de6bdc11ccb9e4c573e4998efe6bf8ba8.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.3.zip",
+      "modVersion": "1.1.3",
+      "sizeBytes": 1525144,
+      "downloadCount": 101,
+      "releasedAt": "2023-05-14T08:37:41Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "Fire v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-09T08:59:39Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.1.2",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "143",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.1.2.zip",
-          "size": 1022261,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.1.2/Fire.v1.1.2.zip"
+          "from": "143",
+          "to": "146"
         }
       ],
-      "commitSha": "c49f605cc38f153749fd2ce67eee7eab4a95d9e8",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/c49f605cc38f153749fd2ce67eee7eab4a95d9e8.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.2.zip",
+      "modVersion": "1.1.1",
+      "sizeBytes": 1022261,
+      "downloadCount": 24,
+      "releasedAt": "2023-04-09T08:59:39Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "Fire v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-02T05:22:55Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.1.1",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.1.1.zip",
-          "size": 1007341,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.1.1/Fire.v1.1.1.zip"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "cc261221db04dfcf43bd954d9aa9e77b9147eb32",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/cc261221db04dfcf43bd954d9aa9e77b9147eb32.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.1.zip",
+      "modVersion": "1.1.0",
+      "sizeBytes": 1007341,
+      "downloadCount": 9,
+      "releasedAt": "2023-04-02T05:22:55Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "Fire v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-05T09:50:50Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire_v1.1.0.zip",
-          "size": 940299,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.1.0/Fire_v1.1.0.zip"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "cc261221db04dfcf43bd954d9aa9e77b9147eb32",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/cc261221db04dfcf43bd954d9aa9e77b9147eb32.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.1.0.zip",
+      "modVersion": "1.1.0",
+      "sizeBytes": 940299,
+      "downloadCount": 27,
+      "releasedAt": "2023-03-05T09:50:50Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "Fire v1.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-08T02:15:24Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.0.3",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.3.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.0.3.zip",
-          "size": 771460,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.0.3/Fire.v1.0.3.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "47fcaa86168b7022082b2f0feb4465870486580f",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/47fcaa86168b7022082b2f0feb4465870486580f.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.3.zip",
+      "modVersion": "1.0.1",
+      "sizeBytes": 771460,
+      "downloadCount": 69,
+      "releasedAt": "2023-01-08T02:15:24Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "Fire v1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-06T03:00:04Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.0.2",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.0.2.zip",
-          "size": 770013,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.0.2/Fire.v1.0.2.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "47fcaa86168b7022082b2f0feb4465870486580f",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/47fcaa86168b7022082b2f0feb4465870486580f.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.2.zip",
+      "modVersion": "1.0.1",
+      "sizeBytes": 770013,
+      "downloadCount": 19,
+      "releasedAt": "2023-01-06T03:00:04Z"
     },
     {
       "tag": "v1.0.1a",
-      "name": "Fire v1.0.1 for game crush issue",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-04T12:42:17Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.0.1a",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.1a.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.1a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.0.1.forGameCrushIssue.zip",
-          "size": 759785,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.0.1a/Fire.v1.0.1.forGameCrushIssue.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "ef7f60bcbc2cec086cd17dcea19ec26666c6fc44",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/ef7f60bcbc2cec086cd17dcea19ec26666c6fc44.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.1a.zip",
+      "modVersion": "1.0.1",
+      "sizeBytes": 759785,
+      "downloadCount": 15,
+      "releasedAt": "2023-01-04T12:42:17Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "Fire v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-02T03:58:09Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.0.1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.0.1.zip",
-          "size": 759783,
-          "downloadCount": 41,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.0.1/Fire.v1.0.1.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "f5a4438181fd08412fff2ac977d44fc331f51905",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/f5a4438181fd08412fff2ac977d44fc331f51905.zip"
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.1.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 759783,
+      "downloadCount": 41,
+      "releasedAt": "2023-01-02T03:58:09Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "Fire v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-02T02:06:09Z",
-      "htmlUrl": "https://github.com/Uenhe/Fire/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Fire.v1.0.0.zip",
-          "size": 759525,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/Uenhe/Fire/releases/download/v1.0.0/Fire.v1.0.0.zip"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "953b1a77bf71d3ca7f6e4a02c646f81aaae4adbe",
-      "archiveByCommitUrl": "https://github.com/uenhe/fire/archive/953b1a77bf71d3ca7f6e4a02c646f81aaae4adbe.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.3",
-      "modVersion": "1.0.1",
-      "minGameVersion": "140",
-      "maxGameVersion": 141,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.1",
-      "modVersion": "1.1.0",
-      "minGameVersion": "141",
-      "maxGameVersion": 143,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.2",
-      "modVersion": "1.1.1",
-      "minGameVersion": "143",
-      "maxGameVersion": 144,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1.3",
-      "modVersion": "1.1.3",
-      "minGameVersion": "144",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.3.2-server_fixed",
-      "modVersion": "1.3.2",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.4.5",
-      "modVersion": "1.4.5",
-      "minGameVersion": "149",
-      "maxGameVersion": 150,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.4.8",
-      "modVersion": "1.4.8",
-      "minGameVersion": "150",
-      "maxGameVersion": 151,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.4.9",
-      "modVersion": "1.4.9",
-      "minGameVersion": "151",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.0",
-      "modVersion": "1.5.0",
-      "minGameVersion": "154.2",
-      "maxGameVersion": 157.4,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.4",
-      "modVersion": "1.5.3",
-      "minGameVersion": "157.4",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.6",
-      "modVersion": "1.5.6",
-      "minGameVersion": "159",
-      "maxGameVersion": 160.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.7",
-      "modVersion": "1.5.7",
-      "minGameVersion": "160.1",
-      "maxGameVersion": 160.3,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.5.10",
-      "modVersion": "1.5.10",
-      "minGameVersion": "160.3",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/uenhe/fire/archive/refs/tags/v1.0.0.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 759525,
+      "downloadCount": 13,
+      "releasedAt": "2023-01-02T02:06:09Z"
     }
   ],
   "meta": {
+    "name": "fire",
+    "author": "飞雨a_sszylfyzgmz\nKochiyaUeneh油苗子",
+    "description": "[#FFE9BF[]]A Mindustry Mod that adds many unique things...\n    Click the 'Repo' button below to skip to GitHub page.\n    Any feedback, GitHub issue, pull request or translation tweak is welcome.\n    Star us on GitHub if you suppose this mod awesome!\n\n    模组QQ交流群: 711467227\n    模组GitHub页面点击下方'查看'按钮即可跳转\n    一个奇奇怪怪又十分核锂的mod...\n    欢迎反映任何关于此模组的BUG和建议\n    去GitHub star我们再好不过了!",
+    "version": "1.5.10",
+    "minGameVersion": "160.3",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "fire.FireMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

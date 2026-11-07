@@ -1,95 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "trmuhittin/mindtranslator",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.2",
-      "name": "version2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-13T15:55:44Z",
-      "htmlUrl": "https://github.com/TRMuhittin/MindTranslator/releases/tag/2.2",
-      "modVersion": "2.2",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.2/MindTranslator.jar",
-      "sourceArchiveUrl": "https://github.com/trmuhittin/mindtranslator/archive/refs/tags/2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindTranslator.jar",
-          "size": 48940,
-          "downloadCount": 292,
-          "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.2/MindTranslator.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9cc01717b0d296c63adb4be1f10ced93fb5af6dd",
-      "archiveByCommitUrl": "https://github.com/trmuhittin/mindtranslator/archive/9cc01717b0d296c63adb4be1f10ced93fb5af6dd.zip"
+      "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.2/MindTranslator.jar",
+      "modVersion": "2.2",
+      "sizeBytes": 48940,
+      "downloadCount": 292,
+      "releasedAt": "2026-08-13T15:55:44Z"
     },
     {
       "tag": "2.0",
-      "name": "version2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-11T18:45:07Z",
-      "htmlUrl": "https://github.com/TRMuhittin/MindTranslator/releases/tag/2.0",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.0/MindTranslator.jar",
-      "sourceArchiveUrl": "https://github.com/trmuhittin/mindtranslator/archive/refs/tags/2.0.zip",
-      "assets": [
-        {
-          "name": "MindTranslator.jar",
-          "size": 47368,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.0/MindTranslator.jar"
-        }
-      ],
-      "commitSha": "f63ccd7b6117d506e5267337d8f663c8de4c74fb",
-      "archiveByCommitUrl": "https://github.com/trmuhittin/mindtranslator/archive/f63ccd7b6117d506e5267337d8f663c8de4c74fb.zip"
-    },
-    {
-      "tag": "Release",
-      "name": "Version1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-10T21:42:24Z",
-      "htmlUrl": "https://github.com/TRMuhittin/MindTranslator/releases/tag/Release",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/Release/MindTranslator.jar",
-      "sourceArchiveUrl": "https://github.com/trmuhittin/mindtranslator/archive/refs/tags/Release.zip",
-      "assets": [
-        {
-          "name": "MindTranslator.jar",
-          "size": 50455,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/Release/MindTranslator.jar"
-        }
-      ],
-      "commitSha": "40a7d0c5c8cdd0877d985b88de5e1a14aead9fd8",
-      "archiveByCommitUrl": "https://github.com/trmuhittin/mindtranslator/archive/40a7d0c5c8cdd0877d985b88de5e1a14aead9fd8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.2",
-      "modVersion": "2.2",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "2.0",
+      "sizeBytes": 47368,
+      "downloadCount": 27,
+      "releasedAt": "2026-08-11T18:45:07Z"
     }
   ],
   "meta": {
+    "name": "MindTranslator",
+    "author": "LunarNetwork",
+    "description": "Translates chat messages in place: pick the language your messages are translated to, the language you write in, and the language incoming messages are translated to. Client-side only; works on any server. Prevents double translation with an invisible marker protocol, includes a passive mode for servers that already translate (e.g. foo-client servers), and runs alongside Mindustry Tool. Fully configurable in-game via the gear button in the top-left corner.",
+    "version": "2.2",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "translator.TranslatorPlugin",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

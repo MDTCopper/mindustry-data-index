@@ -1,411 +1,261 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Eschatologue/Unlimited-Armament-Works",
-  "generatedAt": "2026-11-07T00:13:35.545Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.8.3",
-      "name": "Unlimited Armament Works 0.8.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-23T12:47:13Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.8.3",
-      "modVersion": "v0.8",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.3/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.8.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 2860849,
-          "downloadCount": 237967,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.3/Unlimited-Armament-Works.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "04f49cb40eafd255794897cd4d94ffb608818c9b",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/04f49cb40eafd255794897cd4d94ffb608818c9b.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.3/Unlimited-Armament-Works.jar",
+      "modVersion": "v0.8",
+      "sizeBytes": 2860849,
+      "downloadCount": 237970,
+      "releasedAt": "2022-10-23T12:47:13Z"
     },
     {
       "tag": "v0.8.2",
-      "name": "Unlimited Armament Works 0.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-20T15:18:08Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.8.2",
-      "modVersion": "v0.8",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.2/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 2850539,
-          "downloadCount": 1577,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.2/Unlimited-Armament-Works.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "29d3a6c393711ac3467f1480fa9ec84eafdab152",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/29d3a6c393711ac3467f1480fa9ec84eafdab152.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.2/Unlimited-Armament-Works.jar",
+      "modVersion": "v0.8",
+      "sizeBytes": 2850539,
+      "downloadCount": 1577,
+      "releasedAt": "2022-10-20T15:18:08Z"
     },
     {
       "tag": "v0.8.1",
-      "name": "Unlimited Armament Works 0.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-18T14:35:55Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.8.1",
-      "modVersion": "v0.8",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.1/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 2849701,
-          "downloadCount": 670,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.1/Unlimited-Armament-Works.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "5480890f1a9bfe2f03403af816ea528a078b08b0",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/5480890f1a9bfe2f03403af816ea528a078b08b0.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8.1/Unlimited-Armament-Works.jar",
+      "modVersion": "v0.8",
+      "sizeBytes": 2849701,
+      "downloadCount": 670,
+      "releasedAt": "2022-10-18T14:35:55Z"
     },
     {
       "tag": "v0.8",
-      "name": "Unlimited Armament Works 0.8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-16T15:56:20Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.8",
-      "modVersion": "v0.8",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 2849472,
-          "downloadCount": 793,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8/Unlimited-Armament-Works.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "b35f71ce2e280f0fbbafdc7295a14179088a377b",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/b35f71ce2e280f0fbbafdc7295a14179088a377b.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.8/Unlimited-Armament-Works.jar",
+      "modVersion": "v0.8",
+      "sizeBytes": 2849472,
+      "downloadCount": 793,
+      "releasedAt": "2022-10-16T15:56:20Z"
     },
     {
       "tag": "v0.7.8",
-      "name": "Unlimited Armament Works 0.7.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-11T15:16:51Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.8",
-      "modVersion": "0.7.8",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.8/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 3490856,
-          "downloadCount": 37493,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.8/Unlimited-Armament-Works.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "c49a6b18b9b05465e538566ed0f8e672d598cf85",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/c49a6b18b9b05465e538566ed0f8e672d598cf85.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.8/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.8",
+      "sizeBytes": 3490856,
+      "downloadCount": 37493,
+      "releasedAt": "2022-03-11T15:16:51Z"
     },
     {
       "tag": "v0.7.7",
-      "name": "Unlimited Armament Works 0.7.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-01T15:32:29Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.7",
-      "modVersion": "0.7.6",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.7/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 1965352,
-          "downloadCount": 4706,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.7/Unlimited-Armament-Works.jar"
+          "from": "134",
+          "to": "135.2"
         }
       ],
-      "commitSha": "313f3203e41dad075858cff7ccd96edb5a29d8ba",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/313f3203e41dad075858cff7ccd96edb5a29d8ba.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.7/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.6",
+      "sizeBytes": 1965352,
+      "downloadCount": 4706,
+      "releasedAt": "2022-02-01T15:32:29Z"
     },
     {
       "tag": "v0.7.6",
-      "name": "Unlimited Armament Works 0.7.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-05T15:04:34Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.6",
-      "modVersion": "0.7.6",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.6/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 1931142,
-          "downloadCount": 1991,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.6/Unlimited-Armament-Works.jar"
+          "from": "134",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9c56d00ce6952d1182b885c645a8a4b9a53848bf",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/9c56d00ce6952d1182b885c645a8a4b9a53848bf.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.6/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.6",
+      "sizeBytes": 1931142,
+      "downloadCount": 1991,
+      "releasedAt": "2022-01-05T15:04:34Z"
     },
     {
       "tag": "v0.7.5",
-      "name": "Unlimited Armament Works 0.7.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-10T15:47:31Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.5",
-      "modVersion": "0.7.5",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.5/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 1867664,
-          "downloadCount": 1637,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.5/Unlimited-Armament-Works.jar"
+          "from": "134",
+          "to": "135.2"
         }
       ],
-      "commitSha": "58e5fc6151e9b30b8371c73a4ca0d3125861463e",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/58e5fc6151e9b30b8371c73a4ca0d3125861463e.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.5/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.5",
+      "sizeBytes": 1867664,
+      "downloadCount": 1637,
+      "releasedAt": "2021-12-10T15:47:31Z"
     },
     {
       "tag": "v0.7.4",
-      "name": "Unlimited Armament Works 0.7.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-15T17:00:19Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.4",
-      "modVersion": "0.7.4",
+      "kind": "release",
       "minGameVersion": "134",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.4/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 1536332,
-          "downloadCount": 1222,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.4/Unlimited-Armament-Works.jar"
+          "from": "134",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9096351a3d60f5144d0f7d2187b56fe75791e709",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/9096351a3d60f5144d0f7d2187b56fe75791e709.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.4/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.4",
+      "sizeBytes": 1536332,
+      "downloadCount": 1222,
+      "releasedAt": "2021-11-15T17:00:19Z"
     },
     {
       "tag": "v0.7.3",
-      "name": "Unlimited Armament Works 0.7.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-09T01:20:16Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.3",
-      "modVersion": "0.7.3",
+      "kind": "release",
       "minGameVersion": "132",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.3/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 1501913,
-          "downloadCount": 532,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.3/Unlimited-Armament-Works.jar"
+          "from": "132",
+          "to": "135.2"
         }
       ],
-      "commitSha": "40257e2620f09442fef743b58897deff01c2d1f7",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/40257e2620f09442fef743b58897deff01c2d1f7.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.3/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.3",
+      "sizeBytes": 1501913,
+      "downloadCount": 532,
+      "releasedAt": "2021-11-09T01:20:16Z"
     },
     {
       "tag": "v0.7.2",
-      "name": "Unlimited Armament Works 0.7.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-24T13:41:16Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.2",
-      "modVersion": "0.7.2",
+      "kind": "release",
       "minGameVersion": "132",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.2/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 1432097,
-          "downloadCount": 838,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.2/Unlimited-Armament-Works.jar"
+          "from": "132",
+          "to": "135.2"
         }
       ],
-      "commitSha": "d9ff614f3cdc71d373c882433b0864f753b92c1b",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/d9ff614f3cdc71d373c882433b0864f753b92c1b.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.2/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.2",
+      "sizeBytes": 1432097,
+      "downloadCount": 838,
+      "releasedAt": "2021-10-24T13:41:16Z"
     },
     {
       "tag": "v0.7.1",
-      "name": "Version 0.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-06T00:25:20Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7.1",
-      "modVersion": "0.7.1",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.1/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 800262,
-          "downloadCount": 1199,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.1/Unlimited-Armament-Works.jar"
+          "from": "129",
+          "to": "135.2"
         }
       ],
-      "commitSha": "6d36e38d2e4a1676600b1ae1a190daf09fa00df9",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/6d36e38d2e4a1676600b1ae1a190daf09fa00df9.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7.1/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7.1",
+      "sizeBytes": 800262,
+      "downloadCount": 1199,
+      "releasedAt": "2021-10-06T00:25:20Z"
     },
     {
       "tag": "v0.7",
-      "name": "Version 0.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-29T01:01:04Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.7",
-      "modVersion": "0.7",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 778393,
-          "downloadCount": 476,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7/Unlimited-Armament-Works.jar"
+          "from": "129",
+          "to": "135.2"
         }
       ],
-      "commitSha": "1304483a9b6b051e1cc90c1b94de62fc799e64ff",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/1304483a9b6b051e1cc90c1b94de62fc799e64ff.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.7/Unlimited-Armament-Works.jar",
+      "modVersion": "0.7",
+      "sizeBytes": 778393,
+      "downloadCount": 476,
+      "releasedAt": "2021-09-29T01:01:04Z"
     },
     {
       "tag": "v0.6",
-      "name": "Version 0.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-18T05:37:53Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.6",
-      "modVersion": "0.6 - Beta",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.6/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 750651,
-          "downloadCount": 515,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.6/Unlimited-Armament-Works.jar"
+          "from": "129",
+          "to": "135.2"
         }
       ],
-      "commitSha": "fe48bacad2f5ea65e9d97883cf533468a525b7d8",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/fe48bacad2f5ea65e9d97883cf533468a525b7d8.zip"
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.6/Unlimited-Armament-Works.jar",
+      "modVersion": "0.6 - Beta",
+      "sizeBytes": 750651,
+      "downloadCount": 515,
+      "releasedAt": "2021-09-18T05:37:53Z"
     },
     {
       "tag": "v0.5",
-      "name": "Version 0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-31T14:53:49Z",
-      "htmlUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/tag/v0.5",
-      "modVersion": "0.6 - Beta",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.5/Unlimited-Armament-Works.jar",
-      "sourceArchiveUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/refs/tags/v0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Unlimited-Armament-Works.jar",
-          "size": 639755,
-          "downloadCount": 689,
-          "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.5/Unlimited-Armament-Works.jar"
+          "from": "129",
+          "to": "135.2"
         }
       ],
-      "commitSha": "2189ab2bce1861a21bcaf09a5022591a243dcf25",
-      "archiveByCommitUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/archive/2189ab2bce1861a21bcaf09a5022591a243dcf25.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.7.1",
-      "modVersion": "0.7.1",
-      "minGameVersion": "129",
-      "maxGameVersion": 132,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.7.3",
-      "modVersion": "0.7.3",
-      "minGameVersion": "132",
-      "maxGameVersion": 134,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.7.7",
-      "modVersion": "0.7.6",
-      "minGameVersion": "134",
-      "maxGameVersion": 135,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.7.8",
-      "modVersion": "0.7.8",
-      "minGameVersion": "135",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.8.3",
-      "modVersion": "v0.8",
-      "minGameVersion": "138",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Eschatologue/Unlimited-Armament-Works/releases/download/v0.5/Unlimited-Armament-Works.jar",
+      "modVersion": "0.6 - Beta",
+      "sizeBytes": 639755,
+      "downloadCount": 689,
+      "releasedAt": "2021-08-31T14:53:49Z"
     }
   ],
   "meta": {
+    "name": "uaw",
+    "author": "Eschatologue",
+    "description": "\nUAW is a port and sequel to Heavy Armaments Industries, implementing new unique content to vanilla Mindustry, from more turrets, units, and crafters/factories.\n\nA lot of work and improvements goes into UAW, if you want to show some support or like the content, please give the mod a star on GitHub, Thank you!\n",
+    "version": "v0.8",
+    "minGameVersion": "138",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "UAW.UAWModLoader",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

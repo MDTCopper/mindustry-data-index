@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "DarkJune0122/JavelinUnit",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v7",
-      "name": "Build v0.74",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-09T16:52:22Z",
-      "htmlUrl": "https://github.com/DarkJune0122/JavelinUnit/releases/tag/v7",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DarkJune0122/JavelinUnit/releases/download/v7/JavelinUnitDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/DarkJune0122/JavelinUnit/archive/refs/tags/v7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "JavelinUnitDesktop.jar",
-          "size": 63793,
-          "downloadCount": 15382,
-          "downloadUrl": "https://github.com/DarkJune0122/JavelinUnit/releases/download/v7/JavelinUnitDesktop.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "5eb04d87aabc5393deeba0f0b0473b508f398f1d",
-      "archiveByCommitUrl": "https://github.com/DarkJune0122/JavelinUnit/archive/5eb04d87aabc5393deeba0f0b0473b508f398f1d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v7",
+      "downloadUrl": "https://github.com/DarkJune0122/JavelinUnit/releases/download/v7/JavelinUnitDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "138",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 63793,
+      "downloadCount": 15382,
+      "releasedAt": "2022-10-09T16:52:22Z"
     }
   ],
   "meta": {
+    "name": "javelin-unit-mod",
+    "author": "DarkJune",
+    "description": "Mindustry mod, that adds javelin unit to your game",
+    "version": "1",
+    "minGameVersion": "138",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "JavelinUnitMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

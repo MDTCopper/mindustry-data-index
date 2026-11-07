@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wantechfan/mindustry-wind3-shenanigans",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-02T17:28:45Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-wind3-shenanigans/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-wind3-shenanigans/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-wind3-shenanigans/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "40645bf63bd744fc464f3d6667388ef5aab5dea4",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-wind3-shenanigans/archive/40645bf63bd744fc464f3d6667388ef5aab5dea4.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-06-02T17:28:45Z"
     }
   ],
   "meta": {
+    "name": "wind3-shenanigans",
+    "author": "WantechFan",
+    "description": "Replaces all sounds with wind3.",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,1686 +1,728 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meepoffaith/prog-mats-java",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
-    {
-      "tag": "v30.6",
-      "name": "Update to v158.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-22T23:13:10Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.6",
-      "modVersion": "30.6",
-      "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.6/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.6.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1853498,
-          "downloadCount": 7304,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.6/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "d9879f2a09885863641f31352630fde156f2420a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/d9879f2a09885863641f31352630fde156f2420a.zip"
-    },
-    {
-      "tag": "v30.5",
-      "name": "Fix Flame/Blaze Crash",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-18T02:09:33Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.5",
-      "modVersion": "30.5",
-      "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.5/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.5.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1853561,
-          "downloadCount": 5931,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.5/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "941fda57f1448388af4ad67b0dccaf51e14c0f05",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/941fda57f1448388af4ad67b0dccaf51e14c0f05.zip"
-    },
-    {
-      "tag": "v30.4",
-      "name": "Update v155.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-14T02:14:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.4",
-      "modVersion": "30.4",
-      "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.4/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.4.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1853929,
-          "downloadCount": 500,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.4/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "6a66bf30a3c516f2bf89bce9c00a7247dfbfba2f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/6a66bf30a3c516f2bf89bce9c00a7247dfbfba2f.zip"
-    },
-    {
-      "tag": "v30.3",
-      "name": "Accessible Artemis",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-17T02:10:24Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.3",
-      "modVersion": "30.3",
-      "minGameVersion": "151.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.3/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.3.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1847110,
-          "downloadCount": 3995,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.3/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "2633f55839f46690bb9b169b6b539716bc1b0e6d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/2633f55839f46690bb9b169b6b539716bc1b0e6d.zip"
-    },
-    {
-      "tag": "v30.2",
-      "name": "Update to v151.1 and bug fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-13T04:25:41Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.2",
-      "modVersion": "30.2",
-      "minGameVersion": "151.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.2/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.2.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1847081,
-          "downloadCount": 342,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.2/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "fd6d2a347965b33b0287bf2747c95f1d6c54fc8b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/fd6d2a347965b33b0287bf2747c95f1d6c54fc8b.zip"
-    },
-    {
-      "tag": "v30.1",
-      "name": "Update to v149 and Bug Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-03T00:12:08Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.1",
-      "modVersion": "30.1",
-      "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.1/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.1.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1844176,
-          "downloadCount": 4741,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.1/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "70d07495869c89024b0401c734935712f84e4e2a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/70d07495869c89024b0401c734935712f84e4e2a.zip"
-    },
-    {
-      "tag": "v30.0",
-      "name": "Perspective Projection",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-21T04:05:43Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v30.0",
-      "modVersion": "30",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.0/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v30.0.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1821478,
-          "downloadCount": 7672,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v30.0/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "558d6cb8c6ecdffde544fa048a321b09e27fd4f5",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/558d6cb8c6ecdffde544fa048a321b09e27fd4f5.zip"
-    },
-    {
-      "tag": "v29.4",
-      "name": "Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-31T03:25:17Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v29.4",
-      "modVersion": "29.4",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.4/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v29.4.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1813852,
-          "downloadCount": 7378,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.4/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "c16bfb77f33b105fbe36a3407f62c6d06b187147",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/c16bfb77f33b105fbe36a3407f62c6d06b187147.zip"
-    },
-    {
-      "tag": "v29.3",
-      "name": "Tiny Homing Improvement",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-30T10:06:30Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v29.3",
-      "modVersion": "29.3",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.3/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v29.3.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1811662,
-          "downloadCount": 189,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.3/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "4c4e4bca86a09498acae5766e990dcb77aa1825e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/4c4e4bca86a09498acae5766e990dcb77aa1825e.zip"
-    },
-    {
-      "tag": "v29.2",
-      "name": "Missile Improvements",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-29T07:09:01Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v29.2",
-      "modVersion": "29.2",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.2/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v29.2.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1813808,
-          "downloadCount": 247,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.2/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "be715b5aedbada2f6e79efabc5c3b6c091bbd9f7",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/be715b5aedbada2f6e79efabc5c3b6c091bbd9f7.zip"
-    },
-    {
-      "tag": "v29.1",
-      "name": "Minor Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-14T01:52:10Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v29.1",
-      "modVersion": "29.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.1/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v29.1.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1803151,
-          "downloadCount": 10520,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.1/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "a19b53a5cf89078e35f3556e676ff78fda8999a6",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/a19b53a5cf89078e35f3556e676ff78fda8999a6.zip"
-    },
-    {
-      "tag": "v29.0",
-      "name": "Missile Stuff Getting Even More Out Of Hand",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-12T05:18:44Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v29.0",
-      "modVersion": "29",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.0/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v29.0.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1802179,
-          "downloadCount": 512,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v29.0/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "f35336873fbab3834cdf77ab4c41797d35fb95c1",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/f35336873fbab3834cdf77ab4c41797d35fb95c1.zip"
-    },
-    {
-      "tag": "v28.1",
-      "name": "v28.1 - Mod Name is Spelt Wrong",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-15T21:58:02Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v28.1",
-      "modVersion": "28.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v28.1/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v28.1.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1819622,
-          "downloadCount": 15819,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v28.1/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "936790fe3a96865ecaf3130d812880830f8a047e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/936790fe3a96865ecaf3130d812880830f8a047e.zip"
-    },
-    {
-      "tag": "v28.0",
-      "name": "v28.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-15T17:57:35Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v28.0",
-      "modVersion": "28",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v28.0/MeepscCont.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v28.0.zip",
-      "assets": [
-        {
-          "name": "MeepscCont.jar",
-          "size": 1819616,
-          "downloadCount": 282,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v28.0/MeepscCont.jar"
-        }
-      ],
-      "commitSha": "818eaa4864db8b9915c1620bc6829ffa7003bddf",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/818eaa4864db8b9915c1620bc6829ffa7003bddf.zip"
-    },
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v27.3",
-      "name": "v27.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-24T00:18:50Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v27.3",
-      "modVersion": "27.3",
+      "kind": "release",
       "minGameVersion": "144.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.3/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v27.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1631991,
-          "downloadCount": 38600,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.3/prog-mats-java.jar"
+          "from": "144.2",
+          "to": "146"
         }
       ],
-      "commitSha": "a91f01ba8d81c50ace826ecd37b4bdb25a9fac00",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/a91f01ba8d81c50ace826ecd37b4bdb25a9fac00.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.3/prog-mats-java.jar",
+      "modVersion": "27.3",
+      "sizeBytes": 1631991,
+      "downloadCount": 38600,
+      "releasedAt": "2023-05-24T00:18:50Z"
     },
     {
       "tag": "v27.2",
-      "name": "v27.2 aaaaaaaaaaaaaaaaaaaaa",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-28T04:15:46Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v27.2",
-      "modVersion": "27.2",
+      "kind": "release",
       "minGameVersion": "141.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v27.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1630688,
-          "downloadCount": 17284,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.2/prog-mats-java.jar"
+          "from": "141.2",
+          "to": "146"
         }
       ],
-      "commitSha": "7fc3c86997b13289f86b740399977f6d143156c5",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/7fc3c86997b13289f86b740399977f6d143156c5.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.2/prog-mats-java.jar",
+      "modVersion": "27.2",
+      "sizeBytes": 1630688,
+      "downloadCount": 17284,
+      "releasedAt": "2023-02-28T04:15:46Z"
     },
     {
       "tag": "v27.1",
-      "name": "v27.1 Crash Fix and Other Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-28T04:04:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v27.1",
-      "modVersion": "27.1",
+      "kind": "release",
       "minGameVersion": "141.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v27.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1630718,
-          "downloadCount": 193,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.1/prog-mats-java.jar"
+          "from": "141.2",
+          "to": "146"
         }
       ],
-      "commitSha": "71b5dc8993e06e30c67dd8d092c00edc22e27aac",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/71b5dc8993e06e30c67dd8d092c00edc22e27aac.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.1/prog-mats-java.jar",
+      "modVersion": "27.1",
+      "sizeBytes": 1630718,
+      "downloadCount": 193,
+      "releasedAt": "2023-02-28T04:04:54Z"
     },
     {
       "tag": "v27.0",
-      "name": "v27.0 - Turret Reworks Part 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T23:32:55Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v27.0",
-      "modVersion": "27",
+      "kind": "release",
       "minGameVersion": "141.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v27.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1654864,
-          "downloadCount": 2942,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.0/prog-mats-java.jar"
+          "from": "141.2",
+          "to": "146"
         }
       ],
-      "commitSha": "58b7da9f7f5e23be6a69c83e79ebfb6b7ae1c416",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/58b7da9f7f5e23be6a69c83e79ebfb6b7ae1c416.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v27.0/prog-mats-java.jar",
+      "modVersion": "27",
+      "sizeBytes": 1654864,
+      "downloadCount": 2942,
+      "releasedAt": "2023-02-11T23:32:55Z"
     },
     {
       "tag": "v26.6",
-      "name": "v26.6 - Crash Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-14T06:32:41Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.6",
-      "modVersion": "26.6",
+      "kind": "release",
       "minGameVersion": "140.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.6/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1955833,
-          "downloadCount": 16334,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.6/prog-mats-java.jar"
+          "from": "140.2",
+          "to": "146"
         }
       ],
-      "commitSha": "b48c20973e4f847241fcd36f6e3530f5730ab053",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/b48c20973e4f847241fcd36f6e3530f5730ab053.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.6/prog-mats-java.jar",
+      "modVersion": "26.6",
+      "sizeBytes": 1955833,
+      "downloadCount": 16334,
+      "releasedAt": "2022-11-14T06:32:41Z"
     },
     {
       "tag": "v26.5",
-      "name": "v26.5 - Ugh, fine, I'll fix things for v140",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-01T22:29:47Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.5",
-      "modVersion": "26.5",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.5/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1955670,
-          "downloadCount": 2132,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.5/prog-mats-java.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "eee1582b574522fa5f609131460f2fafc53f6d06",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/eee1582b574522fa5f609131460f2fafc53f6d06.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.5/prog-mats-java.jar",
+      "modVersion": "26.5",
+      "sizeBytes": 1955670,
+      "downloadCount": 2132,
+      "releasedAt": "2022-11-01T22:29:47Z"
     },
     {
       "tag": "v26.4",
-      "name": "v26.4 - Minor fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-02T17:46:35Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.4",
-      "modVersion": "26.4",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.4/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1955107,
-          "downloadCount": 7228,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.4/prog-mats-java.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "48c89f7be6a0d918669eb00f28fcc12339ffedc3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/48c89f7be6a0d918669eb00f28fcc12339ffedc3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.4/prog-mats-java.jar",
+      "modVersion": "26.4",
+      "sizeBytes": 1955107,
+      "downloadCount": 7228,
+      "releasedAt": "2022-09-02T17:46:35Z"
     },
     {
       "tag": "v26.3",
-      "name": "v26.3 - b137",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-05T01:17:14Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.3",
-      "modVersion": "26.3",
+      "kind": "release",
       "minGameVersion": "136.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.3/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1953350,
-          "downloadCount": 3706,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.3/prog-mats-java.jar"
+          "from": "136.1",
+          "to": "146"
         }
       ],
-      "commitSha": "08200187d264bf24802aebd3682a1cd2cc2aff3a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/08200187d264bf24802aebd3682a1cd2cc2aff3a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.3/prog-mats-java.jar",
+      "modVersion": "26.3",
+      "sizeBytes": 1953350,
+      "downloadCount": 3706,
+      "releasedAt": "2022-08-05T01:17:14Z"
     },
     {
       "tag": "v26.2",
-      "name": "v26.2 - b136.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-22T20:33:07Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.2",
-      "modVersion": "26.2",
+      "kind": "release",
       "minGameVersion": "136.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1953380,
-          "downloadCount": 1704,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.2/prog-mats-java.jar"
+          "from": "136.1",
+          "to": "146"
         }
       ],
-      "commitSha": "6d09444c148aee3e116424ad274e5de34f542d8f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/6d09444c148aee3e116424ad274e5de34f542d8f.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.2/prog-mats-java.jar",
+      "modVersion": "26.2",
+      "sizeBytes": 1953380,
+      "downloadCount": 1704,
+      "releasedAt": "2022-07-22T20:33:07Z"
     },
     {
       "tag": "v26.1",
-      "name": "v26.1 - Numerous Crash Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-11T21:22:42Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.1",
-      "modVersion": "26.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1953329,
-          "downloadCount": 1188,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.1/prog-mats-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "3fdb82ba741f0c9e935cd9a0ccc270d1b9843ac6",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/3fdb82ba741f0c9e935cd9a0ccc270d1b9843ac6.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.1/prog-mats-java.jar",
+      "modVersion": "26.1",
+      "sizeBytes": 1953329,
+      "downloadCount": 1188,
+      "releasedAt": "2022-07-11T21:22:42Z"
     },
     {
       "tag": "v26.0",
-      "name": "v26.0 - Sandbox Mender and Overdrive",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-15T19:28:24Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v26.0",
-      "modVersion": "26",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v26.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1952518,
-          "downloadCount": 1092,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.0/prog-mats-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "c7ea68e8e460fd09f6c812482309e28fc630e366",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/c7ea68e8e460fd09f6c812482309e28fc630e366.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v26.0/prog-mats-java.jar",
+      "modVersion": "26",
+      "sizeBytes": 1952518,
+      "downloadCount": 1092,
+      "releasedAt": "2022-06-15T19:28:24Z"
     },
     {
       "tag": "v25.1",
-      "name": "v25.1 - Erekir Bug Fixes 1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-25T17:29:31Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v25.1",
-      "modVersion": "25.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v25.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v25.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1931572,
-          "downloadCount": 782,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v25.1/prog-mats-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "003d8402853d859d3836e7ff24e882cd66286b92",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/003d8402853d859d3836e7ff24e882cd66286b92.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v25.1/prog-mats-java.jar",
+      "modVersion": "25.1",
+      "sizeBytes": 1931572,
+      "downloadCount": 782,
+      "releasedAt": "2022-05-25T17:29:31Z"
     },
     {
       "tag": "v25.0",
-      "name": "v25.0 - Port to Erekir",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-19T05:55:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v25.0",
-      "modVersion": "25",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v25.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v25.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1930332,
-          "downloadCount": 338,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v25.0/prog-mats-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "94adf00567bf830cf615e9d70115e3e7d4da39bb",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/94adf00567bf830cf615e9d70115e3e7d4da39bb.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v25.0/prog-mats-java.jar",
+      "modVersion": "25",
+      "sizeBytes": 1930332,
+      "downloadCount": 338,
+      "releasedAt": "2022-05-19T05:55:54Z"
     },
     {
       "tag": "v24.1",
-      "name": "v24.1 - Minor Things",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-11T01:21:48Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v24.1",
-      "modVersion": "24.1",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v24.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v24.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2108655,
-          "downloadCount": 558,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v24.1/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "29ef7643be575ee434d974ea10664fe3c025e82f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/29ef7643be575ee434d974ea10664fe3c025e82f.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v24.1/prog-mats-java.jar",
+      "modVersion": "24.1",
+      "sizeBytes": 2108655,
+      "downloadCount": 558,
+      "releasedAt": "2022-05-11T01:21:48Z"
     },
     {
       "tag": "v24.0",
-      "name": "v24.0 - Modular Turret",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-03T08:39:15Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v24.0",
-      "modVersion": "24",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v24.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v24.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2110788,
-          "downloadCount": 499,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v24.0/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "a99ef68568227cd8e936a591b0235c89bc0cbf8f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/a99ef68568227cd8e936a591b0235c89bc0cbf8f.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v24.0/prog-mats-java.jar",
+      "modVersion": "24",
+      "sizeBytes": 2110788,
+      "downloadCount": 499,
+      "releasedAt": "2022-05-03T08:39:15Z"
     },
     {
       "tag": "v23.7",
-      "name": "v23.7 - Fix a Bug",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-04-27T05:03:50Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.7",
-      "modVersion": "23.7",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.7/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2042304,
-          "downloadCount": 340,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.7/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "411eb82d4adda298a2969182b4791be55b0d4f44",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/411eb82d4adda298a2969182b4791be55b0d4f44.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.7/prog-mats-java.jar",
+      "modVersion": "23.7",
+      "sizeBytes": 2042304,
+      "downloadCount": 340,
+      "releasedAt": "2022-04-27T05:03:50Z"
     },
     {
       "tag": "v23.6",
-      "name": "v23.6 - Make enabling the Everything Gun and God Unit an option.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-09T04:04:38Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.6",
-      "modVersion": "23.6",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.6/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2033634,
-          "downloadCount": 2672,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.6/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "abd649bac2f419f1e15b91c272ad5bda1e7a4e14",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/abd649bac2f419f1e15b91c272ad5bda1e7a4e14.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.6/prog-mats-java.jar",
+      "modVersion": "23.6",
+      "sizeBytes": 2033634,
+      "downloadCount": 2672,
+      "releasedAt": "2022-02-09T04:04:38Z"
     },
     {
       "tag": "v23.5",
-      "name": "v23.5 - How are there still more crashes with my drones wtf",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-28T18:16:43Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.5",
-      "modVersion": "23.5",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.5/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2034911,
-          "downloadCount": 548,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.5/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "fb778b6798bf7aabfabea032d711d4b711833bcb",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/fb778b6798bf7aabfabea032d711d4b711833bcb.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.5/prog-mats-java.jar",
+      "modVersion": "23.5",
+      "sizeBytes": 2034911,
+      "downloadCount": 548,
+      "releasedAt": "2022-01-28T18:16:43Z"
     },
     {
       "tag": "v23.4",
-      "name": "v23.4 - Liquid Drone Station Improvement",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-24T19:17:06Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.4",
-      "modVersion": "23.4",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.4/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2034883,
-          "downloadCount": 164,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.4/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "ced6eaebf7e9bf03bf6987e728779d3dcb2c603e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/ced6eaebf7e9bf03bf6987e728779d3dcb2c603e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.4/prog-mats-java.jar",
+      "modVersion": "23.4",
+      "sizeBytes": 2034883,
+      "downloadCount": 164,
+      "releasedAt": "2022-01-24T19:17:06Z"
     },
     {
       "tag": "v23.3",
-      "name": "v23.3 - Quick Crash Fix (Payload Crafter)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-06T09:12:49Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.3",
-      "modVersion": "23.3",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.3/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2033667,
-          "downloadCount": 607,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.3/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "4592bc14322fe75085007757a558727af120dfc9",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/4592bc14322fe75085007757a558727af120dfc9.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.3/prog-mats-java.jar",
+      "modVersion": "23.3",
+      "sizeBytes": 2033667,
+      "downloadCount": 607,
+      "releasedAt": "2022-01-06T09:12:49Z"
     },
     {
       "tag": "v23.2",
-      "name": "v23.2 - Sentinel Resprite",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-06T06:44:38Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.2",
-      "modVersion": "23.2",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2036531,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.2/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "1efc3119af294f8d8dbac9e79d9fb032387fe334",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/1efc3119af294f8d8dbac9e79d9fb032387fe334.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.2/prog-mats-java.jar",
+      "modVersion": "23.2",
+      "sizeBytes": 2036531,
+      "downloadCount": 47,
+      "releasedAt": "2022-01-06T06:44:38Z"
     },
     {
       "tag": "v23.1",
-      "name": "v23.1 - I definitely didn't break Payload Crafter stat display, nope not at all",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-21T00:03:05Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.1",
-      "modVersion": "23.1",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2043299,
-          "downloadCount": 475,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.1/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9b2604885ff7b4858c27a23e14ac4aae656383ea",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/9b2604885ff7b4858c27a23e14ac4aae656383ea.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.1/prog-mats-java.jar",
+      "modVersion": "23.1",
+      "sizeBytes": 2043299,
+      "downloadCount": 475,
+      "releasedAt": "2021-12-21T00:03:05Z"
     },
     {
       "tag": "v23.0",
-      "name": "v23.0 - Random Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-20T23:24:40Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v23.0",
-      "modVersion": "23",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v23.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 2042975,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.0/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b8736fe6d7bb931b6d5ef75331169b8fa2bc238d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/b8736fe6d7bb931b6d5ef75331169b8fa2bc238d.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v23.0/prog-mats-java.jar",
+      "modVersion": "23",
+      "sizeBytes": 2042975,
+      "downloadCount": 44,
+      "releasedAt": "2021-12-20T23:24:40Z"
     },
     {
       "tag": "v22.0",
-      "name": "v22.0 - Anime Sweep Laser",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-07T18:33:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v22.0",
-      "modVersion": "22",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v22.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v22.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1929473,
-          "downloadCount": 363,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v22.0/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "feb4505fc1db97bb74ca8107c94fa8c3ce631d45",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/feb4505fc1db97bb74ca8107c94fa8c3ce631d45.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v22.0/prog-mats-java.jar",
+      "modVersion": "22",
+      "sizeBytes": 1929473,
+      "downloadCount": 363,
+      "releasedAt": "2021-12-07T18:33:57Z"
     },
     {
       "tag": "v21.4",
-      "name": "v21.4 - Outline Generation",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-02T04:10:00Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v21.4",
-      "modVersion": "21.4",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.4/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v21.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1874611,
-          "downloadCount": 191,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.4/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "fe3aed93366ae4c8dd848b8cfeb81cfe41eb8cfd",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/fe3aed93366ae4c8dd848b8cfeb81cfe41eb8cfd.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.4/prog-mats-java.jar",
+      "modVersion": "21.4",
+      "sizeBytes": 1874611,
+      "downloadCount": 191,
+      "releasedAt": "2021-12-02T04:10:00Z"
     },
     {
       "tag": "v21.3",
-      "name": "v21.3 - fix yet another crash caused by a lack of a null check",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-30T19:03:06Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v21.3",
-      "modVersion": "21.3",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.3/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v21.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1855894,
-          "downloadCount": 72,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.3/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "9dad38fe35d0e7f1ee4d346a1637c26109a9bde3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/9dad38fe35d0e7f1ee4d346a1637c26109a9bde3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.3/prog-mats-java.jar",
+      "modVersion": "21.3",
+      "sizeBytes": 1855894,
+      "downloadCount": 72,
+      "releasedAt": "2021-11-30T19:03:06Z"
     },
     {
       "tag": "v21.2",
-      "name": "v21.2 - b135",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-26T00:22:51Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v21.2",
-      "modVersion": "21.2",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v21.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1855863,
-          "downloadCount": 179,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.2/prog-mats-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "c66dcc7dbfb74c2413ca5c42c68192455f0aea3e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/c66dcc7dbfb74c2413ca5c42c68192455f0aea3e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.2/prog-mats-java.jar",
+      "modVersion": "21.2",
+      "sizeBytes": 1855863,
+      "downloadCount": 179,
+      "releasedAt": "2021-11-26T00:22:51Z"
     },
     {
       "tag": "v21.1",
-      "name": "v21.1 - MEEP stop making mini releases less than 10 minutes after the previous release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-15T01:38:27Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v21.1",
-      "modVersion": "21.1",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v21.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1855890,
-          "downloadCount": 397,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.1/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "e806afd1170fcf9d77ccd19dff22ca7a913d9162",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/e806afd1170fcf9d77ccd19dff22ca7a913d9162.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.1/prog-mats-java.jar",
+      "modVersion": "21.1",
+      "sizeBytes": 1855890,
+      "downloadCount": 397,
+      "releasedAt": "2021-11-15T01:38:27Z"
     },
     {
       "tag": "v21.0",
-      "name": "v21.0 - Core Link",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-15T01:29:53Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v21.0",
-      "modVersion": "21",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v21.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1855847,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.0/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b3a7a74b9240135634782bade6a282b4e02dc797",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/b3a7a74b9240135634782bade6a282b4e02dc797.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v21.0/prog-mats-java.jar",
+      "modVersion": "21",
+      "sizeBytes": 1855847,
+      "downloadCount": 25,
+      "releasedAt": "2021-11-15T01:29:53Z"
     },
     {
       "tag": "v20.1",
-      "name": "v20.1 - Research Hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-14T20:01:16Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v20.1",
-      "modVersion": "20.1",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v20.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v20.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1841330,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v20.1/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "f092d3a5515383cbcadec1f1cfc0307f96326f13",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/f092d3a5515383cbcadec1f1cfc0307f96326f13.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v20.1/prog-mats-java.jar",
+      "modVersion": "20.1",
+      "sizeBytes": 1841330,
+      "downloadCount": 53,
+      "releasedAt": "2021-11-14T20:01:16Z"
     },
     {
       "tag": "v20.0",
-      "name": "v20.0 - Overdrive Diffuser",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-14T19:15:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v20.0",
-      "modVersion": "20",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v20.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v20.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1841112,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v20.0/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "1cbd480b602b08bca5953f568273e64011173d99",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/1cbd480b602b08bca5953f568273e64011173d99.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v20.0/prog-mats-java.jar",
+      "modVersion": "20",
+      "sizeBytes": 1841112,
+      "downloadCount": 26,
+      "releasedAt": "2021-11-14T19:15:09Z"
     },
     {
       "tag": "v19.0",
-      "name": "v19.0 - Concretion",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-08T01:40:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v19.0",
-      "modVersion": "19",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v19.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v19.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1823159,
-          "downloadCount": 218,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v19.0/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "dfe0d6f1a30e68bfda3c0919d1a973876219e3be",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/dfe0d6f1a30e68bfda3c0919d1a973876219e3be.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v19.0/prog-mats-java.jar",
+      "modVersion": "19",
+      "sizeBytes": 1823159,
+      "downloadCount": 218,
+      "releasedAt": "2021-11-08T01:40:09Z"
     },
     {
       "tag": "v18.2",
-      "name": "v18.2 - Adjustments to Valexitite",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-04T17:30:23Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v18.2",
-      "modVersion": "18.2",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v18.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1780675,
-          "downloadCount": 106,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.2/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "090c3d4b58a0a7a43b47e391f05408555ee8172f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/090c3d4b58a0a7a43b47e391f05408555ee8172f.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.2/prog-mats-java.jar",
+      "modVersion": "18.2",
+      "sizeBytes": 1780675,
+      "downloadCount": 106,
+      "releasedAt": "2021-11-04T17:30:23Z"
     },
     {
       "tag": "v18.1",
-      "name": "v18.1 - Minor Bug Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-04T00:56:28Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v18.1",
-      "modVersion": "18.1",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v18.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1780692,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.1/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "ff2f43880c968c262eb38ef812922d6ce40f5bbf",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/ff2f43880c968c262eb38ef812922d6ce40f5bbf.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.1/prog-mats-java.jar",
+      "modVersion": "18.1",
+      "sizeBytes": 1780692,
+      "downloadCount": 43,
+      "releasedAt": "2021-11-04T00:56:28Z"
     },
     {
       "tag": "v18.0",
-      "name": "v18.0 - Rocket Payload Turret - The True Return of \"MEEPofFaith/ohno-missiles\"",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-11-02T08:56:01Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v18.0",
-      "modVersion": "18",
+      "kind": "release",
       "minGameVersion": "134.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v18.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1779992,
-          "downloadCount": 81,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.0/prog-mats-java.jar"
+          "from": "134.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "3c3cf60ca0a4e7f8232a34cbc042dbb8b5c8236a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/3c3cf60ca0a4e7f8232a34cbc042dbb8b5c8236a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v18.0/prog-mats-java.jar",
+      "modVersion": "18",
+      "sizeBytes": 1779992,
+      "downloadCount": 81,
+      "releasedAt": "2021-11-02T08:56:01Z"
     },
     {
       "tag": "v17.3",
-      "name": "v17.3 - Sentry stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-26T08:20:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v17.3",
-      "modVersion": "17.3",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.3/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v17.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1676318,
-          "downloadCount": 258,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.3/prog-mats-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "219e8c569450495bd359c6b58a57ca04a72fda7a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/219e8c569450495bd359c6b58a57ca04a72fda7a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.3/prog-mats-java.jar",
+      "modVersion": "17.3",
+      "sizeBytes": 1676318,
+      "downloadCount": 258,
+      "releasedAt": "2021-10-26T08:20:54Z"
     },
     {
       "tag": "v17.2",
-      "name": "v17.2 - Drone resprite by @FlinTyX",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-22T05:45:25Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v17.2",
-      "modVersion": "17.2",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v17.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1658518,
-          "downloadCount": 159,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.2/prog-mats-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "310dd542a97ecf2cb771e2bcb31a1f18e3d8546c",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/310dd542a97ecf2cb771e2bcb31a1f18e3d8546c.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.2/prog-mats-java.jar",
+      "modVersion": "17.2",
+      "sizeBytes": 1658518,
+      "downloadCount": 159,
+      "releasedAt": "2021-10-22T05:45:25Z"
     },
     {
       "tag": "v17.1",
-      "name": "v17.1 - Various crash fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-20T06:24:07Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v17.1",
-      "modVersion": "17.1",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v17.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1656263,
-          "downloadCount": 98,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.1/prog-mats-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "001392882c2c31728d250b2eb93671fe2bdbfe0a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/001392882c2c31728d250b2eb93671fe2bdbfe0a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.1/prog-mats-java.jar",
+      "modVersion": "17.1",
+      "sizeBytes": 1656263,
+      "downloadCount": 98,
+      "releasedAt": "2021-10-20T06:24:07Z"
     },
     {
       "tag": "v17.0",
-      "name": "v17.0 - Drones",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-16T08:39:23Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v17.0",
-      "modVersion": "17",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v17.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1652003,
-          "downloadCount": 152,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.0/prog-mats-java.jar"
+          "from": "131",
+          "to": "135.2"
         }
       ],
-      "commitSha": "de4137bd1fdc6e2d5dfb8393bfa1fb5ff85b325b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/de4137bd1fdc6e2d5dfb8393bfa1fb5ff85b325b.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v17.0/prog-mats-java.jar",
+      "modVersion": "17",
+      "sizeBytes": 1652003,
+      "downloadCount": 152,
+      "releasedAt": "2021-10-16T08:39:23Z"
     },
     {
       "tag": "v16.2",
-      "name": "v16.2 - Small Damage Bug Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-06T08:45:30Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v16.2",
-      "modVersion": "16.2",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v16.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1528799,
-          "downloadCount": 278,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.2/prog-mats-java.jar"
+          "from": "131",
+          "to": "135.2"
         }
       ],
-      "commitSha": "e2a68a0f256955ed08d02dcc39b72ad61901fa5d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/e2a68a0f256955ed08d02dcc39b72ad61901fa5d.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.2/prog-mats-java.jar",
+      "modVersion": "16.2",
+      "sizeBytes": 1528799,
+      "downloadCount": 278,
+      "releasedAt": "2021-10-06T08:45:30Z"
     },
     {
       "tag": "v16.1",
-      "name": "v16.1 - Omega Charger",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-05T08:29:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v16.1",
-      "modVersion": "16.1",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v16.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1528907,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.1/prog-mats-java.jar"
+          "from": "131",
+          "to": "135.2"
         }
       ],
-      "commitSha": "3bb86213b6903bb3a6d0b250fb8f1c8476c5db8c",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/3bb86213b6903bb3a6d0b250fb8f1c8476c5db8c.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.1/prog-mats-java.jar",
+      "modVersion": "16.1",
+      "sizeBytes": 1528907,
+      "downloadCount": 40,
+      "releasedAt": "2021-10-05T08:29:57Z"
     },
     {
       "tag": "v16.0",
-      "name": "v16.0 - Apotheosis",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-05T05:51:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v16.0",
-      "modVersion": "16",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v16.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1527049,
-          "downloadCount": 17,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.0/prog-mats-java.jar"
+          "from": "131",
+          "to": "135.2"
         }
       ],
-      "commitSha": "5e9f6aa4b05f9583ae5f8106ce8e1cb214ee40c2",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/5e9f6aa4b05f9583ae5f8106ce8e1cb214ee40c2.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v16.0/prog-mats-java.jar",
+      "modVersion": "16",
+      "sizeBytes": 1527049,
+      "downloadCount": 17,
+      "releasedAt": "2021-10-05T05:51:09Z"
     },
     {
       "tag": "v15.6",
-      "name": "v15.6 - Small things",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-24T09:48:52Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.6",
-      "modVersion": "15.6",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.6/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "prog-mats-java.jar",
-          "size": 1715176,
-          "downloadCount": 842,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.6/prog-mats-java.jar"
+          "from": "130.1",
+          "to": "135.2"
         }
       ],
-      "commitSha": "f990f45de3a06755055bd71004b67e7b90b4f473",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/f990f45de3a06755055bd71004b67e7b90b4f473.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.6/prog-mats-java.jar",
+      "modVersion": "15.6",
+      "sizeBytes": 1715176,
+      "downloadCount": 842,
+      "releasedAt": "2021-08-24T09:48:52Z"
     },
     {
       "tag": "v15.5",
-      "name": "v15.5 - Payload Crafter Crash Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-24T02:34:33Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.5",
-      "modVersion": "15.5",
+      "kind": "release",
       "minGameVersion": "130.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "130.1",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.5/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.5.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1714471,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.5/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "ff4b2212628d4799b4cc067229ecc693d19ed723",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/ff4b2212628d4799b4cc067229ecc693d19ed723.zip"
-    },
-    {
-      "tag": "v15.4",
-      "name": "v15.4 - Farting",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-24T01:33:18Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.4",
-      "modVersion": "15.3",
-      "minGameVersion": "130.1",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.4/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.4.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1714482,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.4/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "c9cfa059f69dd4490950813abe4009f5f4be9af3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/c9cfa059f69dd4490950813abe4009f5f4be9af3.zip"
-    },
-    {
-      "tag": "v15.3",
-      "name": "v15.3 - Better Server Compatability",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-22T08:37:14Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.3",
-      "modVersion": "15.3",
-      "minGameVersion": "130",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.3/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.3.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1713425,
-          "downloadCount": 35,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.3/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "61f533677a5b06286a16a6a8ee040f5dd9ba1f48",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/61f533677a5b06286a16a6a8ee040f5dd9ba1f48.zip"
-    },
-    {
-      "tag": "v15.2",
-      "name": "v15.2 - Minor Changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-21T07:51:10Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.2",
-      "modVersion": "15.2",
-      "minGameVersion": "130",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.2.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1714404,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.2/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "f444721132dfb6d9b6e19d37ce293a9836b523c2",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/f444721132dfb6d9b6e19d37ce293a9836b523c2.zip"
-    },
-    {
-      "tag": "v15.1",
-      "name": "v15.1 - Small Bug Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-20T10:37:29Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.1",
-      "modVersion": "15.1",
-      "minGameVersion": "130",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.1/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.1.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1706316,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.1/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "d50881f244c69edcc6cd098066e99edcd77682de",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/d50881f244c69edcc6cd098066e99edcd77682de.zip"
-    },
-    {
-      "tag": "v15.0",
-      "name": "v15.0 - Pyroclast Forge",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-20T06:40:50Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v15.0",
-      "modVersion": "15.1",
-      "minGameVersion": "130",
-      "metadataPath": "assets/mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.0/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v15.0.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1706203,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v15.0/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "fbf1a36dd46634c32c29f35f7a602a988194942f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/fbf1a36dd46634c32c29f35f7a602a988194942f.zip"
+      "modVersion": "15.5",
+      "sizeBytes": 1714471,
+      "downloadCount": 23,
+      "releasedAt": "2021-08-24T02:34:33Z"
     },
     {
       "tag": "v14.2",
-      "name": "v14.2 - Visual Changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-19T08:47:53Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/tag/v14.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "129",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v14.2/prog-mats-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/prog-mats-java/archive/refs/tags/v14.2.zip",
-      "assets": [
-        {
-          "name": "prog-mats-java.jar",
-          "size": 1700099,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/MEEPofFaith/prog-mats-java/releases/download/v14.2/prog-mats-java.jar"
-        }
-      ],
-      "commitSha": "75ce1b5447d5634be393716d81c7c2cf0bc76ffe",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/prog-mats-java/archive/75ce1b5447d5634be393716d81c7c2cf0bc76ffe.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v14.2",
       "modVersion": "1",
-      "minGameVersion": "129",
-      "maxGameVersion": 130,
-      "hasRelease": true
-    },
-    {
-      "tag": "v15.3",
-      "modVersion": "15.3",
-      "minGameVersion": "130",
-      "maxGameVersion": 130.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v15.6",
-      "modVersion": "15.6",
-      "minGameVersion": "130.1",
-      "maxGameVersion": 131,
-      "hasRelease": true
-    },
-    {
-      "tag": "v17.0",
-      "modVersion": "17",
-      "minGameVersion": "131",
-      "maxGameVersion": 133,
-      "hasRelease": true
-    },
-    {
-      "tag": "v17.3",
-      "modVersion": "17.3",
-      "minGameVersion": "133",
-      "maxGameVersion": 134.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v21.1",
-      "modVersion": "21.1",
-      "minGameVersion": "134.1",
-      "maxGameVersion": 135,
-      "hasRelease": true
-    },
-    {
-      "tag": "v24.1",
-      "modVersion": "24.1",
-      "minGameVersion": "135",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v26.1",
-      "modVersion": "26.1",
-      "minGameVersion": "136",
-      "maxGameVersion": 136.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v26.3",
-      "modVersion": "26.3",
-      "minGameVersion": "136.1",
-      "maxGameVersion": 138,
-      "hasRelease": true
-    },
-    {
-      "tag": "v26.4",
-      "modVersion": "26.4",
-      "minGameVersion": "138",
-      "maxGameVersion": 140,
-      "hasRelease": true
-    },
-    {
-      "tag": "v26.5",
-      "modVersion": "26.5",
-      "minGameVersion": "140",
-      "maxGameVersion": 140.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v26.6",
-      "modVersion": "26.6",
-      "minGameVersion": "140.2",
-      "maxGameVersion": 141.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v27.2",
-      "modVersion": "27.2",
-      "minGameVersion": "141.2",
-      "maxGameVersion": 144.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v27.3",
-      "modVersion": "27.3",
-      "minGameVersion": "144.2",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v30.0",
-      "modVersion": "30",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v30.1",
-      "modVersion": "30.1",
-      "minGameVersion": "149",
-      "maxGameVersion": 151.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v30.3",
-      "modVersion": "30.3",
-      "minGameVersion": "151.1",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v30.5",
-      "modVersion": "30.5",
-      "minGameVersion": "155.3",
-      "maxGameVersion": 158.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v30.6",
-      "modVersion": "30.6",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1700099,
+      "downloadCount": 26,
+      "releasedAt": "2021-08-19T08:47:53Z"
     }
-  ],
-  "meta": {
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "progressed.ProgMats",
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

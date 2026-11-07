@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "insawct/mindustry-bullettype",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.1",
-      "name": "Turret BulletType V0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-15T04:38:01Z",
-      "htmlUrl": "https://github.com/insawct/Mindustry-BulletType/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/insawct/Mindustry-BulletType/releases/download/v0.1/turret-bullettype.zip",
-      "sourceArchiveUrl": "https://github.com/insawct/mindustry-bullettype/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "turret-bullettype.zip",
-          "size": 2527036,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/insawct/Mindustry-BulletType/releases/download/v0.1/turret-bullettype.zip"
+          "from": "158.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f506ea3b385d08369f4c2061708c27307968e31c",
-      "archiveByCommitUrl": "https://github.com/insawct/mindustry-bullettype/archive/f506ea3b385d08369f4c2061708c27307968e31c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1",
+      "downloadUrl": "https://github.com/insawct/Mindustry-BulletType/releases/download/v0.1/turret-bullettype.zip",
       "modVersion": "0.1",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2527036,
+      "downloadCount": 4,
+      "releasedAt": "2026-06-15T04:38:01Z"
     }
   ],
   "meta": {
+    "name": "mindustry-bullettype",
+    "author": "Insawct",
+    "description": "mod made by Insawct, 13 turret BulletType examples for you my pookie <3",
+    "version": "0.1",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

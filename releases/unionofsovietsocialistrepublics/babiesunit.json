@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "unionofsovietsocialistrepublics/babiesunit",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "1.0 - The new beginning",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-30T08:33:53Z",
-      "htmlUrl": "https://github.com/UnionofSovietSocialistRepublics/Babiesunit/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Babiesunit/releases/download/1.0/Babiesunit.zip",
-      "sourceArchiveUrl": "https://github.com/unionofsovietsocialistrepublics/babiesunit/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Babiesunit.zip",
-          "size": 51570,
-          "downloadCount": 74,
-          "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Babiesunit/releases/download/1.0/Babiesunit.zip"
+          "from": "140",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fc4a3f1cf50720fe462884c2cfd993f47adaa8cc",
-      "archiveByCommitUrl": "https://github.com/unionofsovietsocialistrepublics/babiesunit/archive/fc4a3f1cf50720fe462884c2cfd993f47adaa8cc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
+      "downloadUrl": "https://github.com/UnionofSovietSocialistRepublics/Babiesunit/releases/download/1.0/Babiesunit.zip",
       "modVersion": "1.0",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 51570,
+      "downloadCount": 74,
+      "releasedAt": "2023-01-30T08:33:53Z"
     }
   ],
   "meta": {
+    "name": "bbunit",
+    "author": "Horizon Cult",
+    "description": "This mod add smol and cute unit, I guess",
+    "version": "1.0",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

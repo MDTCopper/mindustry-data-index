@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "undefined-1026/mindustry_fieldmodifiermod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v3.0",
-      "name": "FieldModifier v3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-30T14:35:45Z",
-      "htmlUrl": "https://github.com/undefined-1026/Mindustry_FieldModifierMod/releases/tag/v3.0",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/undefined-1026/Mindustry_FieldModifierMod/releases/download/v3.0/FieldModifier.jar",
-      "sourceArchiveUrl": "https://github.com/undefined-1026/mindustry_fieldmodifiermod/archive/refs/tags/v3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FieldModifier.jar",
-          "size": 113475,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/undefined-1026/Mindustry_FieldModifierMod/releases/download/v3.0/FieldModifier.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9d97a5d2c6371d1fbd873d13a541e5f0688512f0",
-      "archiveByCommitUrl": "https://github.com/undefined-1026/mindustry_fieldmodifiermod/archive/9d97a5d2c6371d1fbd873d13a541e5f0688512f0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v3.0",
+      "downloadUrl": "https://github.com/undefined-1026/Mindustry_FieldModifierMod/releases/download/v3.0/FieldModifier.jar",
       "modVersion": "2",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 113475,
+      "downloadCount": 23,
+      "releasedAt": "2026-09-30T14:35:45Z"
     }
   ],
   "meta": {
+    "name": "fieldmodifier",
+    "author": "Bilibili:arknights player / Github:undefined-1026",
+    "description": "默认按“~”选择鼠标下的对象",
+    "version": "2",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "mod.FieldModifierMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

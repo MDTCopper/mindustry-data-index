@@ -1,116 +1,94 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "DeltaV0/Communistry",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v0.5.0",
-      "name": "v0.5.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-23T11:58:37Z",
-      "htmlUrl": "https://github.com/DeltaV0/Communistry/releases/tag/v0.5.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/v0.5.0.zip",
-      "sourceArchiveUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/v0.5.0.zip",
-      "assets": [],
-      "commitSha": "3eaa78b63b2c2f8995ec026b4c3c04d7f606fe54",
-      "archiveByCommitUrl": "https://github.com/DeltaV0/Communistry/archive/3eaa78b63b2c2f8995ec026b4c3c04d7f606fe54.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2023-03-23T11:58:37Z"
     },
     {
       "tag": "v0.4.0",
-      "name": "V0.4.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-18T02:58:54Z",
-      "htmlUrl": "https://github.com/DeltaV0/Communistry/releases/tag/v0.4.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/v0.4.0.zip",
-      "sourceArchiveUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/v0.4.0.zip",
-      "assets": [],
-      "commitSha": "0778589be3fc2d67c491cf1fa3269d6be9b5f32d",
-      "archiveByCommitUrl": "https://github.com/DeltaV0/Communistry/archive/0778589be3fc2d67c491cf1fa3269d6be9b5f32d.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2023-03-18T02:58:54Z"
     },
     {
       "tag": "v0.3.0",
-      "name": "v0.3.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-17T11:38:13Z",
-      "htmlUrl": "https://github.com/DeltaV0/Communistry/releases/tag/v0.3.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/v0.3.0.zip",
-      "sourceArchiveUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/v0.3.0.zip",
-      "assets": [],
-      "commitSha": "fa74b829b460e722a93639fc60e5beb839f072e8",
-      "archiveByCommitUrl": "https://github.com/DeltaV0/Communistry/archive/fa74b829b460e722a93639fc60e5beb839f072e8.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2023-03-17T11:38:13Z"
     },
     {
       "tag": "WIP-still",
-      "name": "v0.2.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-14T22:23:03Z",
-      "htmlUrl": "https://github.com/DeltaV0/Communistry/releases/tag/WIP-still",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/WIP-still.zip",
-      "sourceArchiveUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/WIP-still.zip",
-      "assets": [],
-      "commitSha": "cffa9e969891f36894170cebe45f94429b4ae303",
-      "archiveByCommitUrl": "https://github.com/DeltaV0/Communistry/archive/cffa9e969891f36894170cebe45f94429b4ae303.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2023-03-14T22:23:03Z"
     },
     {
       "tag": "WIP",
-      "name": "v0.1.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-13T21:35:05Z",
-      "htmlUrl": "https://github.com/DeltaV0/Communistry/releases/tag/WIP",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/WIP.zip",
-      "sourceArchiveUrl": "https://github.com/DeltaV0/Communistry/archive/refs/tags/WIP.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "communistry.zip",
-          "size": 42382862,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/DeltaV0/Communistry/releases/download/WIP/communistry.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e6b7566a2f8d2c1d6adc629dfec6dea41d090358",
-      "archiveByCommitUrl": "https://github.com/DeltaV0/Communistry/archive/e6b7566a2f8d2c1d6adc629dfec6dea41d090358.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.5.0",
+      "downloadUrl": "https://github.com/DeltaV0/Communistry/releases/download/WIP/communistry.zip",
       "modVersion": "1.0",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 42382862,
+      "downloadCount": 10,
+      "releasedAt": "2023-03-13T21:35:05Z"
     }
   ],
   "meta": {
+    "name": "communistry",
+    "author": "DeltaV (Delta airlines on github)",
+    "description": "soviet industry and weapons in mindustry (development started before the invasion of ukrane, this has nothing to do with current events)",
+    "version": "1.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

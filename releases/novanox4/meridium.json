@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "novanox4/meridium",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V0.1",
-      "name": "V0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/novanox4/meridium/tree/V0.1",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/novanox4/meridium/archive/refs/tags/V0.1.zip",
-      "sourceArchiveUrl": "https://github.com/novanox4/meridium/archive/refs/tags/V0.1.zip",
-      "assets": [],
-      "commitSha": "4a4fc23e38f7b0a611814619a4f0dfb9ff9d582b",
-      "archiveByCommitUrl": "https://github.com/novanox4/meridium/archive/4a4fc23e38f7b0a611814619a4f0dfb9ff9d582b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.1",
-      "modVersion": "0.1",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "0.1"
     }
   ],
   "meta": {
+    "name": "astralis",
+    "author": "NV-NX (FULL CREDITS IN DESC.)",
+    "description": "\nWork in progress hjson campaign mod that plans to add a new planet with a full camapign. This is a remake of a previous mod of mine bearing the same name.\n\nAstralis is a mod which aims to add a new planet with unique gameplay mechanics (world processors go brrr), that will also do everything possible to give you as much pain as possible.\n\nThe difficulty spike is vertical. Intended for people familiar with mindustry/mindustry mods.\n\nSome VFX may cause eye strain. Proceed at your own risk.\n\nNot reccomended on low end devices!\n\nThis mod is pure hjson, but may use some scripts for music purposes.\n\nCREDITS:\n\nNV-NX - Main dev and spriter\nHaznobrain - Occasional sprite and code help. Making music.\nMegacheb - Allowing me to use some of their music for (upcoming) bosses.\n\n[lightgray]It takes my heart being broken and broken again to realize I am the reason the sufferings never end.[]",
+    "version": "0.1",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

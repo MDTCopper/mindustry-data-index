@@ -1,447 +1,280 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "JiroCab/Nyfalis",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.7.9",
-      "name": "1.7.9: Rushie has a headache, send headpats",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-19T15:21:05Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.9",
-      "modVersion": "1.7.9",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.9/Nyfalis-1.7.9.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.9.jar",
-          "size": 5004729,
-          "downloadCount": 16108,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.9/Nyfalis-1.7.9.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "c92ad9dda90d6a13c7cc202820c73df32a358c3c",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/c92ad9dda90d6a13c7cc202820c73df32a358c3c.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.9/Nyfalis-1.7.9.jar",
+      "modVersion": "1.7.9",
+      "sizeBytes": 5004729,
+      "downloadCount": 16108,
+      "releasedAt": "2025-02-19T15:21:05Z"
     },
     {
       "tag": "1.7.8",
-      "name": "v.17.8: yet another balance pass",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-12T18:46:56Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.8",
-      "modVersion": "1.7.8",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.8/Nyfalis-1.7.8.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.8.jar",
-          "size": 4996371,
-          "downloadCount": 295,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.8/Nyfalis-1.7.8.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "7351bfcb07e845e56d8f67e802dfd2d46860fd59",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/7351bfcb07e845e56d8f67e802dfd2d46860fd59.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.8/Nyfalis-1.7.8.jar",
+      "modVersion": "1.7.8",
+      "sizeBytes": 4996371,
+      "downloadCount": 295,
+      "releasedAt": "2025-02-12T18:46:56Z"
     },
     {
       "tag": "1.7.7",
-      "name": "v1.7.7 yet another fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-08T16:01:17Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.7",
-      "modVersion": "1.7.7",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.7/Nyfalis-1.7.7.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.7.jar",
-          "size": 4991682,
-          "downloadCount": 177,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.7/Nyfalis-1.7.7.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "b220bdd03ab98c51a848861912cd2c067b3067df",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/b220bdd03ab98c51a848861912cd2c067b3067df.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.7/Nyfalis-1.7.7.jar",
+      "modVersion": "1.7.7",
+      "sizeBytes": 4991682,
+      "downloadCount": 177,
+      "releasedAt": "2025-02-08T16:01:17Z"
     },
     {
       "tag": "1.7.6",
-      "name": "v1.7.6 The bouncy and tail update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-19T15:41:34Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.6",
-      "modVersion": "1.7.6",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.6/Nyfalis-1.7.6.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.6.jar",
-          "size": 4977127,
-          "downloadCount": 465,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.6/Nyfalis-1.7.6.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "f71aa4ec5e5aa6d005288e9cbaf2c91c5e3cb959",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/f71aa4ec5e5aa6d005288e9cbaf2c91c5e3cb959.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.6/Nyfalis-1.7.6.jar",
+      "modVersion": "1.7.6",
+      "sizeBytes": 4977127,
+      "downloadCount": 465,
+      "releasedAt": "2025-01-19T15:41:34Z"
     },
     {
       "tag": "1.7.5",
-      "name": "V1.7.5: Rushie forgot a !",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-24T14:24:21Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.5",
-      "modVersion": "1.7.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.5/Nyfalis-1.7.5.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.5.jar",
-          "size": 4963621,
-          "downloadCount": 678,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.5/Nyfalis-1.7.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "95284fe2570702fc7d0a2fbe50e444b9949c7686",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/95284fe2570702fc7d0a2fbe50e444b9949c7686.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.5/Nyfalis-1.7.5.jar",
+      "modVersion": "1.7.5",
+      "sizeBytes": 4963621,
+      "downloadCount": 678,
+      "releasedAt": "2024-12-24T14:24:21Z"
     },
     {
       "tag": "1.7.4",
-      "name": "V1.7.4: Replicators with now 50% more replicating",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-24T11:47:56Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.4",
-      "modVersion": "1.7.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.4/Nyfalis-1.7.4.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.4.jar",
-          "size": 4963391,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.4/Nyfalis-1.7.4.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e391106f9f91dddaa28ebe29af608c6d598d5625",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/e391106f9f91dddaa28ebe29af608c6d598d5625.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.4/Nyfalis-1.7.4.jar",
+      "modVersion": "1.7.4",
+      "sizeBytes": 4963391,
+      "downloadCount": 45,
+      "releasedAt": "2024-12-24T11:47:56Z"
     },
     {
       "tag": "1.7.3",
-      "name": "V1.7.3: The bats bite now minor update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-11T19:40:37Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.3",
-      "modVersion": "1.7.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.3/Nyfalis-1.7.3.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Nyfalis-1.7.3.jar",
-          "size": 4955602,
-          "downloadCount": 352,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.3/Nyfalis-1.7.3.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "726a7863dfede33e862801cf46343cfc4b946621",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/726a7863dfede33e862801cf46343cfc4b946621.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.3/Nyfalis-1.7.3.jar",
+      "modVersion": "1.7.3",
+      "sizeBytes": 4955602,
+      "downloadCount": 352,
+      "releasedAt": "2024-12-11T19:40:37Z"
     },
     {
       "tag": "1.7.1",
-      "name": "V1.7.1 - warm fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-18T04:57:42Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.1",
-      "modVersion": "1.7.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.1/Nyfalis-1.7.1.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-1.7.1.jar",
-          "size": 4653777,
-          "downloadCount": 1147,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.1/Olupis-1.7.1.jar"
-        },
-        {
-          "name": "Nyfalis-1.7.1.jar",
-          "size": 4653788,
-          "downloadCount": 1150,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.1/Nyfalis-1.7.1.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "2f4a776761d1fb33f289f0d0fcfa6f48f643e9d5",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/2f4a776761d1fb33f289f0d0fcfa6f48f643e9d5.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.1/Nyfalis-1.7.1.jar",
+      "modVersion": "1.7.1",
+      "sizeBytes": 9307565,
+      "downloadCount": 2297,
+      "releasedAt": "2024-09-18T04:57:42Z"
     },
     {
       "tag": "1.7.0",
-      "name": "V1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-14T03:26:04Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.0/Olupis-1.7.0.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-1.7.0.jar",
-          "size": 4650672,
-          "downloadCount": 212,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.0/Olupis-1.7.0.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9efe7cb6c9a738ced8972f0234fef5d1621ca77d",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/9efe7cb6c9a738ced8972f0234fef5d1621ca77d.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.7.0/Olupis-1.7.0.jar",
+      "modVersion": "1.7.0",
+      "sizeBytes": 4650672,
+      "downloadCount": 212,
+      "releasedAt": "2024-09-14T03:26:04Z"
     },
     {
       "tag": "1.6",
-      "name": "V1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-09T10:45:26Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.6/Olupis-1.6.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-1.6.jar",
-          "size": 52439486,
-          "downloadCount": 13130,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.6/Olupis-1.6.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9d343a0e5fc3aab9c5efc5073e9b9d7e4edfb1e5",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/9d343a0e5fc3aab9c5efc5073e9b9d7e4edfb1e5.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.6/Olupis-1.6.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 52439486,
+      "downloadCount": 13130,
+      "releasedAt": "2023-12-09T10:45:26Z"
     },
     {
       "tag": "1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-25T18:06:39Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.5/Olupis-1.5.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-1.5.jar",
-          "size": 52046190,
-          "downloadCount": 3670,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.5/Olupis-1.5.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9128c69cd59afeb49ec9c0d403352f2efbc41f38",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/9128c69cd59afeb49ec9c0d403352f2efbc41f38.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.5/Olupis-1.5.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 52046190,
+      "downloadCount": 3670,
+      "releasedAt": "2023-09-25T18:06:39Z"
     },
     {
       "tag": "1.4.A",
-      "name": "1.4.A",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-23T07:35:24Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.4.A",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.4.A/Olupis-1.4.A.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.4.A.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-1.4.A.jar",
-          "size": 5337706,
-          "downloadCount": 1938,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.4.A/Olupis-1.4.A.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e898d42d0b490a209939e90e4b9c7ae1a641b884",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/e898d42d0b490a209939e90e4b9c7ae1a641b884.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.4.A/Olupis-1.4.A.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 5337706,
+      "downloadCount": 1938,
+      "releasedAt": "2023-07-23T07:35:24Z"
     },
     {
       "tag": "1.4",
-      "name": "1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-23T03:40:38Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.4/Olupis-1.4.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-1.4.jar",
-          "size": 5338074,
-          "downloadCount": 62,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.4/Olupis-1.4.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "fd6e269a5a0cb38caed54ef7e22e3cae92c3ccc7",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/fd6e269a5a0cb38caed54ef7e22e3cae92c3ccc7.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/1.4/Olupis-1.4.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 5338074,
+      "downloadCount": 62,
+      "releasedAt": "2023-07-23T03:40:38Z"
     },
     {
       "tag": "B1-3",
-      "name": "B1-3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-02-28T13:44:18Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/B1-3",
-      "modVersion": "1.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-3/Olupis-but-a-jar.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-but-a-jar.jar",
-          "size": 4892452,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-3/Olupis-but-a-jar.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "01b8973727ccff584c453dd5cbe52a7e3a999117",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/01b8973727ccff584c453dd5cbe52a7e3a999117.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-3/Olupis-but-a-jar.jar",
+      "modVersion": "1.3",
+      "sizeBytes": 4892452,
+      "downloadCount": 55,
+      "releasedAt": "2023-02-28T13:44:18Z",
+      "prerelease": true
     },
     {
       "tag": "B1-2",
-      "name": "Beta 1-2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-01-01T07:39:22Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/B1-2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-2/Olupis-but-a-jar.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-but-a-jar.jar",
-          "size": 841734,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-2/Olupis-but-a-jar.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "867d438c8352ab358ad6c0cf5062fce78c26652c",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/867d438c8352ab358ad6c0cf5062fce78c26652c.zip"
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-2/Olupis-but-a-jar.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 841734,
+      "downloadCount": 54,
+      "releasedAt": "2023-01-01T07:39:22Z",
+      "prerelease": true
     },
     {
       "tag": "B1-1a",
-      "name": "Beta v1-0a",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-12-10T05:56:25Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/B1-1a",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-1a.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-1a.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Olupis-packed-in-a-zip.zip",
-          "size": 416898,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/JiroCab/Nyfalis/releases/download/B1-1a/Olupis-packed-in-a-zip.zip"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "4e9861a9fa6cd088c677e1f7b3f44afa10a85c3b",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/4e9861a9fa6cd088c677e1f7b3f44afa10a85c3b.zip"
-    },
-    {
-      "tag": "B1-1",
-      "name": "Beta v1-0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-12-10T05:53:58Z",
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/releases/tag/B1-1",
+      "downloadUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-1a.zip",
       "modVersion": "1",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-1.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/B1-1.zip",
-      "assets": [],
-      "commitSha": "4e9861a9fa6cd088c677e1f7b3f44afa10a85c3b",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/4e9861a9fa6cd088c677e1f7b3f44afa10a85c3b.zip"
-    },
-    {
-      "tag": "1.4A",
-      "name": "1.4A",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Nyfalis/tree/1.4A",
-      "modVersion": "1.4",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.4A.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Nyfalis/archive/refs/tags/1.4A.zip",
-      "assets": [],
-      "commitSha": "e898d42d0b490a209939e90e4b9c7ae1a641b884",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Nyfalis/archive/e898d42d0b490a209939e90e4b9c7ae1a641b884.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.7.9",
-      "modVersion": "1.7.9",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 416898,
+      "downloadCount": 14,
+      "releasedAt": "2022-12-10T05:56:25Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "olupis",
+    "author": ";3\nProgramming:\nRushieWashie, Siede, WMF Industries, Otamamori \n---------------------\nSprites:\nRushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69\n---------------------\nMaps:\nRushieWashie, MrApple, NightmarishWolf",
+    "description": "(⚠Work in progress⚠)\n Yet another planet mod \nThat does it's best to give the player(s) a bit of something new,\n with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
+    "version": "1.7.9",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "olupis.NyfalisMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

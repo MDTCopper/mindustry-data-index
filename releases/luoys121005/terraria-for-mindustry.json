@@ -1,58 +1,21 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "luoys121005/terraria-for-mindustry",
-  "generatedAt": "2026-11-06T13:57:05.916Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
-      "tag": "v0.0.0.0.1",
-      "name": "v0.0.0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-11T01:49:53Z",
-      "htmlUrl": "https://github.com/luoys121005/Terraria-for-Mindustry/releases/tag/v0.0.0.0.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/luoys121005/terraria-for-mindustry/archive/refs/tags/v0.0.0.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/luoys121005/terraria-for-mindustry/archive/refs/tags/v0.0.0.0.1.zip",
-      "assets": [
+      "tag": "v0,0,0,0,1(Beta-v1)",
+      "kind": "tag",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
         {
-          "name": "Terraria-for-Mindustry.zip",
-          "size": 4149214,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/luoys121005/Terraria-for-Mindustry/releases/download/v0.0.0.0.1/Terraria-for-Mindustry.zip"
+          "from": "160.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "15623f9754cd1de3f46f2ffde35edae9ceb52603",
-      "archiveByCommitUrl": "https://github.com/luoys121005/terraria-for-mindustry/archive/15623f9754cd1de3f46f2ffde35edae9ceb52603.zip"
-    },
-    {
-      "tag": "v0,0,0,0,1(Beta-v1)",
-      "name": "v0,0,0,0,1(Beta-v1)",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/luoys121005/terraria-for-mindustry/tree/v0%2C0%2C0%2C0%2C1(Beta-v1)",
-      "modVersion": "v0.0.0.0.1",
-      "minGameVersion": "160.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
       "downloadUrl": "https://github.com/luoys121005/terraria-for-mindustry/archive/refs/tags/v0%2C0%2C0%2C0%2C1(Beta-v1).zip",
-      "sourceArchiveUrl": "https://github.com/luoys121005/terraria-for-mindustry/archive/refs/tags/v0%2C0%2C0%2C0%2C1(Beta-v1).zip",
-      "assets": [],
-      "commitSha": "ee587ecd0687585abb70706c26670a21a078de2e",
-      "archiveByCommitUrl": "https://github.com/luoys121005/terraria-for-mindustry/archive/ee587ecd0687585abb70706c26670a21a078de2e.zip"
+      "modVersion": "v0.0.0.0.1"
     }
-  ],
-  "compat": [
-    {
-      "tag": "v0,0,0,0,1(Beta-v1)",
-      "modVersion": "v0.0.0.0.1",
-      "minGameVersion": "160.7",
-      "maxGameVersion": null,
-      "hasRelease": false
-    }
-  ],
-  "meta": null
+  ]
 }

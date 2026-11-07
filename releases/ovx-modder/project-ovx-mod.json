@@ -1,233 +1,152 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ovx-modder/project-ovx-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "V0.9",
-      "name": "Version 0.9",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-11-02T16:53:21Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/V0.9",
-      "modVersion": "0.9",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.9/Project-OVX-project.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/V0.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-OVX-project.zip",
-          "size": 1291428,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.9/Project-OVX-project.zip"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b10f462d7717b7e869995bb794c222263fac9a0a",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/b10f462d7717b7e869995bb794c222263fac9a0a.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.9/Project-OVX-project.zip",
+      "modVersion": "0.9",
+      "sizeBytes": 1291428,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-02T16:53:21Z",
+      "prerelease": true
     },
     {
       "tag": "V0.8",
-      "name": "Pre-releass 0.8",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-02T19:41:36Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/V0.8",
-      "modVersion": "0.8",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.8/Project-OVX-MOD.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/V0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-OVX-MOD.zip",
-          "size": 952570,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.8/Project-OVX-MOD.zip"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "819b1147438bbc4b0ce9338cd0655a422694bb9b",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/819b1147438bbc4b0ce9338cd0655a422694bb9b.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.8/Project-OVX-MOD.zip",
+      "modVersion": "0.8",
+      "sizeBytes": 952570,
+      "downloadCount": 8,
+      "releasedAt": "2026-10-02T19:41:36Z",
+      "prerelease": true
     },
     {
       "tag": "V0.7",
-      "name": "Pre-releass 0.7",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-01T21:01:57Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/V0.7",
-      "modVersion": "0.7",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.7/Project-OVX-MOD.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/V0.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-OVX-MOD.zip",
-          "size": 934370,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.7/Project-OVX-MOD.zip"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6dbc083fb297f9bb6c2f6dfdcd430282c1f7ce2b",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/6dbc083fb297f9bb6c2f6dfdcd430282c1f7ce2b.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.7/Project-OVX-MOD.zip",
+      "modVersion": "0.7",
+      "sizeBytes": 934370,
+      "downloadCount": 1,
+      "releasedAt": "2026-10-01T21:01:57Z",
+      "prerelease": true
     },
     {
       "tag": "V0.6",
-      "name": "Version 0.6",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-23T01:58:38Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/V0.6",
-      "modVersion": "0.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.6/Project-OVX-MOD.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/V0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-OVX-MOD.zip",
-          "size": 876141,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.6/Project-OVX-MOD.zip"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "329e379e79a1d502440c4bd4ec7a8d63eb7e4172",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/329e379e79a1d502440c4bd4ec7a8d63eb7e4172.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.6/Project-OVX-MOD.zip",
+      "modVersion": "0.5",
+      "sizeBytes": 876141,
+      "downloadCount": 2,
+      "releasedAt": "2026-09-23T01:58:38Z",
+      "prerelease": true
     },
     {
       "tag": "V0.5",
-      "name": "Pre-releass 0.5",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-21T20:41:02Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/V0.5",
-      "modVersion": "0.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.5/Project-OVX-MOD.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/V0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-OVX-MOD.zip",
-          "size": 876141,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.5/Project-OVX-MOD.zip"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3482de32453e2fc8dc59ce4a9eb80a92b228ae46",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/3482de32453e2fc8dc59ce4a9eb80a92b228ae46.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/V0.5/Project-OVX-MOD.zip",
+      "modVersion": "0.5",
+      "sizeBytes": 876141,
+      "releasedAt": "2026-09-21T20:41:02Z",
+      "prerelease": true
     },
     {
       "tag": "Pre-releass",
-      "name": "Version 0.4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-21T12:17:53Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/Pre-releass",
-      "modVersion": "0.4",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Pre-releass/version-0.4.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Pre-releass.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "version-0.4.zip",
-          "size": 861835,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Pre-releass/version-0.4.zip"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "161161377ae54196628ef37c9caa8a8dbc879861",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/161161377ae54196628ef37c9caa8a8dbc879861.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Pre-releass/version-0.4.zip",
+      "modVersion": "0.4",
+      "sizeBytes": 861835,
+      "releasedAt": "2026-09-21T12:17:53Z",
+      "prerelease": true
     },
     {
       "tag": "Mindustry-Mod",
-      "name": "Version 0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-20T16:49:34Z",
-      "htmlUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/tag/Mindustry-Mod",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Mindustry-Mod/power.belt.v0.2.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Mindustry-Mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "power.belt.v0.2.zip",
-          "size": 28216,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Mindustry-Mod/power.belt.v0.2.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "68ad95458aee8f816974edd9e0a66bb2810a123c",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/68ad95458aee8f816974edd9e0a66bb2810a123c.zip"
+      "downloadUrl": "https://github.com/OVX-modder/Project-OVX-MOD/releases/download/Mindustry-Mod/power.belt.v0.2.zip",
+      "modVersion": "0.2",
+      "sizeBytes": 28216,
+      "downloadCount": 2,
+      "releasedAt": "2026-09-20T16:49:34Z",
+      "prerelease": true
     },
     {
       "tag": "Release",
-      "name": "Release",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/ovx-modder/project-ovx-mod/tree/Release",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Release.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Release.zip",
-      "assets": [],
-      "commitSha": "c4205dbfe6555cf90f2f6c9b6da2de0d1499d815",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/c4205dbfe6555cf90f2f6c9b6da2de0d1499d815.zip"
-    },
-    {
-      "tag": "Mindustry",
-      "name": "Mindustry",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/ovx-modder/project-ovx-mod/tree/Mindustry",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/refs/tags/Mindustry.zip",
-      "assets": [],
-      "commitSha": "64b6cd965669a4efbbd9173ab2acbca264a3e6a9",
-      "archiveByCommitUrl": "https://github.com/ovx-modder/project-ovx-mod/archive/64b6cd965669a4efbbd9173ab2acbca264a3e6a9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Mindustry-Mod",
-      "modVersion": "0.2",
-      "minGameVersion": "158",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "V0.9",
-      "modVersion": "0.9",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.2"
     }
   ],
   "meta": {
+    "name": "OVX Project Mod",
+    "author": "OVX   dracfinity",
+    "description": "  add alot of content, updating weekly",
+    "version": "0.9",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

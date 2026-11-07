@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "westycj/jarate-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "V2",
-      "name": "V2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-15T16:03:27Z",
-      "htmlUrl": "https://github.com/Westycj/Jarate-Mod/releases/tag/V2",
-      "modVersion": "2.1",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/westycj/jarate-mod/archive/refs/tags/V2.zip",
-      "sourceArchiveUrl": "https://github.com/westycj/jarate-mod/archive/refs/tags/V2.zip",
-      "assets": [],
-      "commitSha": "ce49c384519f224589708fccea049b35d4a09e05",
-      "archiveByCommitUrl": "https://github.com/westycj/jarate-mod/archive/ce49c384519f224589708fccea049b35d4a09e05.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V2",
       "modVersion": "2.1",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-04-15T16:03:27Z"
     }
   ],
   "meta": {
+    "name": "[gold]Jarate Mod",
+    "author": "[red[]]Westycj[[]]",
+    "description": "A light mod with a funny name and a focus on extending Surge-alloy technology, adds a few unique turrets and production buildings with (what I think are) some interesting mechanics.\r\n\r\nMade for Serpulo, the mod has integration for/works well with blocks like the tsunami and wave, so try and find some usecases, turret combos, and whatnot.\r\n\r\nReports on bugs, balancing issues, or simply suggestions are very much welcome.",
+    "version": "2.1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

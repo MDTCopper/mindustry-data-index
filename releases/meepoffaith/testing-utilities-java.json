@@ -1,1804 +1,1109 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meepoffaith/testing-utilities-java",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v69.10",
-      "name": "Update to v158.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T16:07:33Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.10",
-      "modVersion": "69.1",
+      "kind": "release",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.10/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 419489,
-          "downloadCount": 9827,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.10/testing-utilities-java.jar"
+          "from": "158.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d6b446045b8a349ea9cf15bbcec3ed457677880b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/d6b446045b8a349ea9cf15bbcec3ed457677880b.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.10/testing-utilities-java.jar",
+      "modVersion": "69.1",
+      "sizeBytes": 419489,
+      "downloadCount": 9830,
+      "releasedAt": "2026-05-25T16:07:33Z"
     },
     {
       "tag": "v69.9",
-      "name": "Update to v157",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-13T20:57:34Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.9",
-      "modVersion": "69.9",
+      "kind": "release",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.9/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 419434,
-          "downloadCount": 4159,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.9/testing-utilities-java.jar"
+          "from": "157",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fae4be772b70ec0ed0ffd1d88bfff82e8237f516",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/fae4be772b70ec0ed0ffd1d88bfff82e8237f516.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.9/testing-utilities-java.jar",
+      "modVersion": "69.9",
+      "sizeBytes": 419434,
+      "downloadCount": 4159,
+      "releasedAt": "2026-04-13T20:57:34Z"
     },
     {
       "tag": "v69.8",
-      "name": "Vertical Layout Setting",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-30T05:48:07Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.8",
-      "modVersion": "69.8",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.8/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 421789,
-          "downloadCount": 4615,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.8/testing-utilities-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "aceeb45041d0e736e3a43d6bbd86e71a1041bee1",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/aceeb45041d0e736e3a43d6bbd86e71a1041bee1.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.8/testing-utilities-java.jar",
+      "modVersion": "69.8",
+      "sizeBytes": 421789,
+      "downloadCount": 4615,
+      "releasedAt": "2026-01-30T05:48:07Z"
     },
     {
       "tag": "v69.7",
-      "name": "Non-hardcoded Campaign Map Addition",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-17T06:57:11Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.7",
-      "modVersion": "69.7",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.7/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 420050,
-          "downloadCount": 1098,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.7/testing-utilities-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0d1343244c57cc266b65552645c89fec8c7edfed",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/0d1343244c57cc266b65552645c89fec8c7edfed.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.7/testing-utilities-java.jar",
+      "modVersion": "69.7",
+      "sizeBytes": 420050,
+      "downloadCount": 1098,
+      "releasedAt": "2026-01-17T06:57:11Z"
     },
     {
       "tag": "v69.6",
-      "name": "Table Offset settings",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-29T03:52:20Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.6",
-      "modVersion": "69.6",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.6/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 420485,
-          "downloadCount": 1392,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.6/testing-utilities-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ee302469721e3e6e31101d5781b16d3df19b7914",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/ee302469721e3e6e31101d5781b16d3df19b7914.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.6/testing-utilities-java.jar",
+      "modVersion": "69.6",
+      "sizeBytes": 420485,
+      "downloadCount": 1392,
+      "releasedAt": "2025-12-29T03:52:20Z"
     },
     {
       "tag": "v69.5",
-      "name": "Prevent Crash When Running Outdated Version of Time Control",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-19T01:19:57Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.5",
-      "modVersion": "69.5",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.5/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 417153,
-          "downloadCount": 866,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.5/testing-utilities-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "796bd1f616d9a47d7d8d48e7d847d348108a929f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/796bd1f616d9a47d7d8d48e7d847d348108a929f.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.5/testing-utilities-java.jar",
+      "modVersion": "69.5",
+      "sizeBytes": 417153,
+      "downloadCount": 866,
+      "releasedAt": "2025-12-19T01:19:57Z"
     },
     {
       "tag": "v69.4",
-      "name": "Update to v154",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-17T02:07:27Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.4",
-      "modVersion": "69.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.4/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 417073,
-          "downloadCount": 266,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.4/testing-utilities-java.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "057274bbaaf9ed5d953d8e72d86f76c33d2e2589",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/057274bbaaf9ed5d953d8e72d86f76c33d2e2589.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.4/testing-utilities-java.jar",
+      "modVersion": "69.4",
+      "sizeBytes": 417073,
+      "downloadCount": 266,
+      "releasedAt": "2025-12-17T02:07:27Z"
     },
     {
       "tag": "v69.2",
-      "name": "More bug fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-13T04:41:42Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.2",
-      "modVersion": "69.2",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.2/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 417147,
-          "downloadCount": 4432,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.2/testing-utilities-java.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "6057335af9f35e1481609dedaa314184d3e7818a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/6057335af9f35e1481609dedaa314184d3e7818a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.2/testing-utilities-java.jar",
+      "modVersion": "69.2",
+      "sizeBytes": 417147,
+      "downloadCount": 4432,
+      "releasedAt": "2025-09-13T04:41:42Z"
     },
     {
       "tag": "v69.1",
-      "name": "Bug Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-29T21:04:31Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.1",
-      "modVersion": "69.1",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.1/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 409425,
-          "downloadCount": 2772,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.1/testing-utilities-java.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "56d4c18d44d4ed962b76f74de339fbc2001b966b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/56d4c18d44d4ed962b76f74de339fbc2001b966b.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.1/testing-utilities-java.jar",
+      "modVersion": "69.1",
+      "sizeBytes": 409425,
+      "downloadCount": 2772,
+      "releasedAt": "2025-07-29T21:04:31Z"
     },
     {
       "tag": "v69.0",
-      "name": "Update to v150",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-27T05:50:43Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v69.0",
-      "modVersion": "69",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.0/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 408420,
-          "downloadCount": 347,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.0/testing-utilities-java.jar"
+          "from": "150",
+          "to": "154"
         }
       ],
-      "commitSha": "f0aaf95644952ac4c19dea6ee5eaa4457f7c4232",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/f0aaf95644952ac4c19dea6ee5eaa4457f7c4232.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v69.0/testing-utilities-java.jar",
+      "modVersion": "69",
+      "sizeBytes": 408420,
+      "downloadCount": 347,
+      "releasedAt": "2025-07-27T05:50:43Z"
     },
     {
       "tag": "v68.6",
-      "name": "Update to v8 Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-12T00:16:47Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.6",
-      "modVersion": "68.6",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.6/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 399335,
-          "downloadCount": 5674,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.6/testing-utilities-java.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "e0f99dcaa6f8f51798353c1ec5bc1b30dad6c78a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/e0f99dcaa6f8f51798353c1ec5bc1b30dad6c78a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.6/testing-utilities-java.jar",
+      "modVersion": "68.6",
+      "sizeBytes": 399335,
+      "downloadCount": 5674,
+      "releasedAt": "2025-04-12T00:16:47Z"
     },
     {
       "tag": "v68.5.1",
-      "name": "BE Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-02-27T08:59:15Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.5.1",
-      "modVersion": "68.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.5.1/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 399074,
-          "downloadCount": 558,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.5.1/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "180a8fcbd91c79466cb2a2192d728bcf9d58388e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/180a8fcbd91c79466cb2a2192d728bcf9d58388e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.5.1/testing-utilities-java.jar",
+      "modVersion": "68.5",
+      "sizeBytes": 399074,
+      "downloadCount": 558,
+      "releasedAt": "2025-02-27T08:59:15Z",
+      "prerelease": true
     },
     {
       "tag": "v68.5",
-      "name": "Really Minor Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-27T08:57:18Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.5",
-      "modVersion": "68.5",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.5/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 404764,
-          "downloadCount": 4467,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.5/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "180a8fcbd91c79466cb2a2192d728bcf9d58388e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/180a8fcbd91c79466cb2a2192d728bcf9d58388e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.5/testing-utilities-java.jar",
+      "modVersion": "68.5",
+      "sizeBytes": 404764,
+      "downloadCount": 4467,
+      "releasedAt": "2025-02-27T08:57:18Z"
     },
     {
       "tag": "v68.4.1",
-      "name": "BE Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-12-10T12:32:18Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.4.1",
-      "modVersion": "68.4.1",
+      "kind": "release",
       "minGameVersion": "25459",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.4.1/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.4.1.zip",
-      "assets": [
-        {
-          "name": "testing-utilities-java.jar",
-          "size": 400812,
-          "downloadCount": 349,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.4.1/testing-utilities-java.jar"
-        }
-      ],
-      "commitSha": "455aa3b8433de9e14a5212af02ebf76dbd478c37",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/455aa3b8433de9e14a5212af02ebf76dbd478c37.zip"
+      "modVersion": "68.4.1",
+      "sizeBytes": 400812,
+      "downloadCount": 349,
+      "releasedAt": "2024-12-10T12:32:18Z",
+      "prerelease": true
     },
     {
       "tag": "v68.4",
-      "name": "Remove BLUI Lib Dependency",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-10T12:27:06Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.4",
-      "modVersion": "68.4",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.4/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 406509,
-          "downloadCount": 7139,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.4/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "c0a9f3909a2e5a6330cf1688f796c22587ddc8bf",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/c0a9f3909a2e5a6330cf1688f796c22587ddc8bf.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.4/testing-utilities-java.jar",
+      "modVersion": "68.4",
+      "sizeBytes": 406509,
+      "downloadCount": 7139,
+      "releasedAt": "2024-12-10T12:27:06Z"
     },
     {
       "tag": "v68.3",
-      "name": "More BE Crash Fixes",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-12-09T23:06:22Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.3",
-      "modVersion": "68.3",
+      "kind": "release",
       "minGameVersion": "25459",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.3/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.3.zip",
-      "assets": [
-        {
-          "name": "testing-utilities-java.jar",
-          "size": 373834,
-          "downloadCount": 133,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.3/testing-utilities-java.jar"
-        }
-      ],
-      "commitSha": "09417408a033811435a9af99bbc5edafd2446ca5",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/09417408a033811435a9af99bbc5edafd2446ca5.zip"
+      "modVersion": "68.3",
+      "sizeBytes": 373834,
+      "downloadCount": 133,
+      "releasedAt": "2024-12-09T23:06:22Z",
+      "prerelease": true
     },
     {
       "tag": "v68.2",
-      "name": "Don't Crash in BE",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-12-05T07:55:42Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.2",
-      "modVersion": "68.2",
+      "kind": "release",
       "minGameVersion": "25459",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.2/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.2.zip",
-      "assets": [
-        {
-          "name": "testing-utilities-java.jar",
-          "size": 379536,
-          "downloadCount": 557,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.2/testing-utilities-java.jar"
-        }
-      ],
-      "commitSha": "acbfe910b78e6bf890de6f3ce926731a58c3c03f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/acbfe910b78e6bf890de6f3ce926731a58c3c03f.zip"
+      "modVersion": "68.2",
+      "sizeBytes": 379536,
+      "downloadCount": 557,
+      "releasedAt": "2024-12-05T07:55:42Z",
+      "prerelease": true
     },
     {
       "tag": "v68.1",
-      "name": "Modded Cliff Support",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-02T10:01:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68.1",
-      "modVersion": "68.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.1/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 379655,
-          "downloadCount": 590,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.1/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "29924218d487cbc1f14bd20af40266e2439f2567",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/29924218d487cbc1f14bd20af40266e2439f2567.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68.1/testing-utilities-java.jar",
+      "modVersion": "68.1",
+      "sizeBytes": 379655,
+      "downloadCount": 590,
+      "releasedAt": "2024-12-02T10:01:09Z"
     },
     {
       "tag": "v68",
-      "name": "Improvements",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-31T23:02:47Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v68",
-      "modVersion": "68",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v68.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 379738,
-          "downloadCount": 2802,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "57e6cb6a89bc537bf481550c9da078ee78a44249",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/57e6cb6a89bc537bf481550c9da078ee78a44249.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v68/testing-utilities-java.jar",
+      "modVersion": "68",
+      "sizeBytes": 379738,
+      "downloadCount": 2802,
+      "releasedAt": "2024-10-31T23:02:47Z"
     },
     {
       "tag": "v67",
-      "name": "Kidnap Time Control :3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-13T04:21:56Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v67",
-      "modVersion": "67",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v67/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v67.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 378528,
-          "downloadCount": 2222,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v67/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "3a76b289d3da9732f2efc7bb5532109888dbb20b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/3a76b289d3da9732f2efc7bb5532109888dbb20b.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v67/testing-utilities-java.jar",
+      "modVersion": "67",
+      "sizeBytes": 378528,
+      "downloadCount": 2222,
+      "releasedAt": "2024-10-13T04:21:56Z"
     },
     {
       "tag": "v66",
-      "name": "Conflict Prevention (Just in Case)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-01T21:13:08Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v66",
-      "modVersion": "66",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v66/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v66.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 374783,
-          "downloadCount": 10783,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v66/testing-utilities-java.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "2c9e2d84c074cc9e47cbe24a8e1f5d8d66e7efe7",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/2c9e2d84c074cc9e47cbe24a8e1f5d8d66e7efe7.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v66/testing-utilities-java.jar",
+      "modVersion": "66",
+      "sizeBytes": 374783,
+      "downloadCount": 10783,
+      "releasedAt": "2024-07-01T21:13:08Z"
     },
     {
       "tag": "v65",
-      "name": "Button Size Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-21T22:56:30Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v65",
-      "modVersion": "65",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v65/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v65.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 374761,
-          "downloadCount": 8915,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v65/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "88483574a64116f227ae136cf5addf341f7e7830",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/88483574a64116f227ae136cf5addf341f7e7830.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v65/testing-utilities-java.jar",
+      "modVersion": "65",
+      "sizeBytes": 374761,
+      "downloadCount": 8915,
+      "releasedAt": "2024-04-21T22:56:30Z"
     },
     {
       "tag": "v64",
-      "name": "Crash Prevention",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-19T17:22:34Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v64",
-      "modVersion": "64",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v64/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v64.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 374649,
-          "downloadCount": 482,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v64/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "145042b8a49c1b237851ebac14f82d4c11b84423",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/145042b8a49c1b237851ebac14f82d4c11b84423.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v64/testing-utilities-java.jar",
+      "modVersion": "64",
+      "sizeBytes": 374649,
+      "downloadCount": 482,
+      "releasedAt": "2024-04-19T17:22:34Z"
     },
     {
       "tag": "v63",
-      "name": "Light Switch + Use BLUI",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-15T06:22:51Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v63",
-      "modVersion": "63",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v63/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v63.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 374359,
-          "downloadCount": 761,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v63/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "af15c5a4fa05c15f2403b1fad461b5ea84ccc740",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/af15c5a4fa05c15f2403b1fad461b5ea84ccc740.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v63/testing-utilities-java.jar",
+      "modVersion": "63",
+      "sizeBytes": 374359,
+      "downloadCount": 761,
+      "releasedAt": "2024-04-15T06:22:51Z"
     },
     {
       "tag": "v62",
-      "name": "Bug Fixes and Improvements",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-31T17:58:59Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v62",
-      "modVersion": "62",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v62/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v62.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 379443,
-          "downloadCount": 2578,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v62/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "5b6ebaae2fa89b9ff021f24f8097620352dcc8ef",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/5b6ebaae2fa89b9ff021f24f8097620352dcc8ef.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v62/testing-utilities-java.jar",
+      "modVersion": "62",
+      "sizeBytes": 379443,
+      "downloadCount": 2578,
+      "releasedAt": "2024-03-31T17:58:59Z"
     },
     {
       "tag": "v61",
-      "name": "Music in the Sound Room",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-18T22:05:03Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v61",
-      "modVersion": "61",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v61/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v61.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 378485,
-          "downloadCount": 6039,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v61/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "0d1249acc28303fdc1b62e56ba0114cfd24c87fe",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/0d1249acc28303fdc1b62e56ba0114cfd24c87fe.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v61/testing-utilities-java.jar",
+      "modVersion": "61",
+      "sizeBytes": 378485,
+      "downloadCount": 6039,
+      "releasedAt": "2024-02-18T22:05:03Z"
     },
     {
       "tag": "v60",
-      "name": "Audio Filters in the Sound Room",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-07T05:22:59Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v60",
-      "modVersion": "60",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v60/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v60.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 350396,
-          "downloadCount": 2220,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v60/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "9b8dec73766af3edf005dd17b6e7525daf4c2219",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/9b8dec73766af3edf005dd17b6e7525daf4c2219.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v60/testing-utilities-java.jar",
+      "modVersion": "60",
+      "sizeBytes": 350396,
+      "downloadCount": 2220,
+      "releasedAt": "2024-02-07T05:22:59Z"
     },
     {
       "tag": "v59",
-      "name": "Minor Bug Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-02T16:30:50Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v59",
-      "modVersion": "59",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v59/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v59.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 317646,
-          "downloadCount": 12002,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v59/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "a27df5d6014cefa60f3e320416f537b1c0711830",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/a27df5d6014cefa60f3e320416f537b1c0711830.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v59/testing-utilities-java.jar",
+      "modVersion": "59",
+      "sizeBytes": 317646,
+      "downloadCount": 12002,
+      "releasedAt": "2023-11-02T16:30:50Z"
     },
     {
       "tag": "v58",
-      "name": "Fix Old Issue",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-25T00:08:27Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v58",
-      "modVersion": "58",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v58/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v58.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 316963,
-          "downloadCount": 1499,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v58/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "7ba45dfaac095856bdce9a8773157bd0717443e9",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/7ba45dfaac095856bdce9a8773157bd0717443e9.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v58/testing-utilities-java.jar",
+      "modVersion": "58",
+      "sizeBytes": 316963,
+      "downloadCount": 1499,
+      "releasedAt": "2023-10-25T00:08:27Z"
     },
     {
       "tag": "v57",
-      "name": "Man I Sure Love Finding Bugs Right After Publishing a Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-24T17:17:55Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v57",
-      "modVersion": "57",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v57/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v57.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 318403,
-          "downloadCount": 174,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v57/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "b675b12f5467afb7992b40fb8a052eda30465c93",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/b675b12f5467afb7992b40fb8a052eda30465c93.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v57/testing-utilities-java.jar",
+      "modVersion": "57",
+      "sizeBytes": 318403,
+      "downloadCount": 174,
+      "releasedAt": "2023-10-24T17:17:55Z"
     },
     {
       "tag": "v56",
-      "name": "Even More Terrain Painter Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-24T16:38:03Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v56",
-      "modVersion": "56",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v56/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v56.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 318332,
-          "downloadCount": 91,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v56/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "1bb27aeefecaa8bc749641a4e3c024051f309504",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/1bb27aeefecaa8bc749641a4e3c024051f309504.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v56/testing-utilities-java.jar",
+      "modVersion": "56",
+      "sizeBytes": 318332,
+      "downloadCount": 91,
+      "releasedAt": "2023-10-24T16:38:03Z"
     },
     {
       "tag": "v55",
-      "name": "Terrain Painter Improvements",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-04T18:56:28Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v55",
-      "modVersion": "55",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v55/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v55.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 318790,
-          "downloadCount": 2715,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v55/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "f54ae2e3731ff039a60d336f369004e03d62e983",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/f54ae2e3731ff039a60d336f369004e03d62e983.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v55/testing-utilities-java.jar",
+      "modVersion": "55",
+      "sizeBytes": 318790,
+      "downloadCount": 2715,
+      "releasedAt": "2023-10-04T18:56:28Z"
     },
     {
       "tag": "v54",
-      "name": "Terrain Painter 2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-04T04:51:13Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v54",
-      "modVersion": "54",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v54/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v54.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 314697,
-          "downloadCount": 213,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v54/testing-utilities-java.jar"
+          "from": "145.1",
+          "to": "146"
         }
       ],
-      "commitSha": "0d82b10c3a61dfa5ae8eba077ece8c31e2872271",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/0d82b10c3a61dfa5ae8eba077ece8c31e2872271.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v54/testing-utilities-java.jar",
+      "modVersion": "54",
+      "sizeBytes": 314697,
+      "downloadCount": 213,
+      "releasedAt": "2023-10-04T04:51:13Z"
     },
     {
       "tag": "v53",
-      "name": "Small Things",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-31T00:25:50Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v53",
-      "modVersion": "53",
+      "kind": "release",
       "minGameVersion": "144.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v53/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v53.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 270405,
-          "downloadCount": 15196,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v53/testing-utilities-java.jar"
+          "from": "144.1",
+          "to": "146"
         }
       ],
-      "commitSha": "828029926de45d29049e0abd768ed1aea55c5d4d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/828029926de45d29049e0abd768ed1aea55c5d4d.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v53/testing-utilities-java.jar",
+      "modVersion": "53",
+      "sizeBytes": 270405,
+      "downloadCount": 15196,
+      "releasedAt": "2023-05-31T00:25:50Z"
     },
     {
       "tag": "v52",
-      "name": "Change Da World Even Harder",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-26T06:26:16Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v52",
-      "modVersion": "52",
+      "kind": "release",
       "minGameVersion": "144.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v52/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v52.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 269546,
-          "downloadCount": 935,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v52/testing-utilities-java.jar"
+          "from": "144.1",
+          "to": "146"
         }
       ],
-      "commitSha": "9f245e8aba0d73b1a2ded12ce82408cf05996d76",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/9f245e8aba0d73b1a2ded12ce82408cf05996d76.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v52/testing-utilities-java.jar",
+      "modVersion": "52",
+      "sizeBytes": 269546,
+      "downloadCount": 935,
+      "releasedAt": "2023-05-26T06:26:16Z"
     },
     {
       "tag": "v51",
-      "name": "Change Da World",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-12T19:47:34Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v51",
-      "modVersion": "51",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v51/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v51.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 266641,
-          "downloadCount": 7399,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v51/testing-utilities-java.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "cd769ac0a03560e98f9078678062e9bc1320666a",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/cd769ac0a03560e98f9078678062e9bc1320666a.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v51/testing-utilities-java.jar",
+      "modVersion": "51",
+      "sizeBytes": 266641,
+      "downloadCount": 7399,
+      "releasedAt": "2023-04-12T19:47:34Z"
     },
     {
       "tag": "v50",
-      "name": "Cleanup and Optimization",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-09T00:49:33Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v50",
-      "modVersion": "50",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v50/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v50.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 257393,
-          "downloadCount": 5322,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v50/testing-utilities-java.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "3b49798cd23de1d46b4b2028137b8047c5f59f43",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/3b49798cd23de1d46b4b2028137b8047c5f59f43.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v50/testing-utilities-java.jar",
+      "modVersion": "50",
+      "sizeBytes": 257393,
+      "downloadCount": 5322,
+      "releasedAt": "2023-03-09T00:49:33Z"
     },
     {
       "tag": "v49",
-      "name": "Terrain Painter",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-17T00:31:46Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v49",
-      "modVersion": "49",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v49/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v49.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 249636,
-          "downloadCount": 9154,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v49/testing-utilities-java.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "532e1896bd97840644cfdf2aa1cacafabb6fa262",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/532e1896bd97840644cfdf2aa1cacafabb6fa262.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v49/testing-utilities-java.jar",
+      "modVersion": "49",
+      "sizeBytes": 249636,
+      "downloadCount": 9154,
+      "releasedAt": "2023-01-17T00:31:46Z"
     },
     {
       "tag": "v48",
-      "name": "Small Things",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-11T18:55:44Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v48",
-      "modVersion": "48",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v48/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v48.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 227333,
-          "downloadCount": 15636,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v48/testing-utilities-java.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "3cec92f62778b5dc7919af5b3416311024b8abb9",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/3cec92f62778b5dc7919af5b3416311024b8abb9.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v48/testing-utilities-java.jar",
+      "modVersion": "48",
+      "sizeBytes": 227333,
+      "downloadCount": 15636,
+      "releasedAt": "2022-10-11T18:55:44Z"
     },
     {
       "tag": "v47",
-      "name": "Minor Fixes 2 3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-02T17:46:37Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v47",
-      "modVersion": "47",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v47/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v47.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 222561,
-          "downloadCount": 4555,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v47/testing-utilities-java.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "c2fc2fa7043afe909c176283a7ef8f1a13fde32e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/c2fc2fa7043afe909c176283a7ef8f1a13fde32e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v47/testing-utilities-java.jar",
+      "modVersion": "47",
+      "sizeBytes": 222561,
+      "downloadCount": 4555,
+      "releasedAt": "2022-09-02T17:46:37Z"
     },
     {
       "tag": "v46",
-      "name": "Minor Things 2 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-12T18:17:38Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v46",
-      "modVersion": "46",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v46/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v46.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 217971,
-          "downloadCount": 2771,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v46/testing-utilities-java.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "52ce74a6fed602d28bf31d3c40ff941d00e8dfab",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/52ce74a6fed602d28bf31d3c40ff941d00e8dfab.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v46/testing-utilities-java.jar",
+      "modVersion": "46",
+      "sizeBytes": 217971,
+      "downloadCount": 2771,
+      "releasedAt": "2022-08-12T18:17:38Z"
     },
     {
       "tag": "v45",
-      "name": "Minor Things 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-11T05:19:17Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v45",
-      "modVersion": "45",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v45/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v45.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 215207,
-          "downloadCount": 355,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v45/testing-utilities-java.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "05df99a1cd5b656eea4483542ecc65cf0da478eb",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/05df99a1cd5b656eea4483542ecc65cf0da478eb.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v45/testing-utilities-java.jar",
+      "modVersion": "45",
+      "sizeBytes": 215207,
+      "downloadCount": 355,
+      "releasedAt": "2022-08-11T05:19:17Z"
     },
     {
       "tag": "v44",
-      "name": "Ignore This",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-10T05:38:05Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v44",
-      "modVersion": "44",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v44/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v44.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 215043,
-          "downloadCount": 268,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v44/testing-utilities-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "8d6ef5750bcbc065ae71f1db685f3d2f46f8db77",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/8d6ef5750bcbc065ae71f1db685f3d2f46f8db77.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v44/testing-utilities-java.jar",
+      "modVersion": "44",
+      "sizeBytes": 215043,
+      "downloadCount": 268,
+      "releasedAt": "2022-08-10T05:38:05Z"
     },
     {
       "tag": "v43",
-      "name": "Interp Visualizer",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-10T05:30:03Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v43",
-      "modVersion": "43",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v43/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v43.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 215034,
-          "downloadCount": 64,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v43/testing-utilities-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "787be6354a16e3fa8f1e4383cbdbfaffc5a5faa3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/787be6354a16e3fa8f1e4383cbdbfaffc5a5faa3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v43/testing-utilities-java.jar",
+      "modVersion": "43",
+      "sizeBytes": 215034,
+      "downloadCount": 64,
+      "releasedAt": "2022-08-10T05:30:03Z"
     },
     {
       "tag": "v42",
-      "name": "B136 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-17T19:46:17Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v42",
-      "modVersion": "42",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v42/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v42.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 193433,
-          "downloadCount": 2400,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v42/testing-utilities-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "bc784df59a5479d247aa7bbc0814edfadcc19e01",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/bc784df59a5479d247aa7bbc0814edfadcc19e01.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v42/testing-utilities-java.jar",
+      "modVersion": "42",
+      "sizeBytes": 193433,
+      "downloadCount": 2400,
+      "releasedAt": "2022-07-17T19:46:17Z"
     },
     {
       "tag": "v41",
-      "name": "Latest BE",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-06-11T04:26:29Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v41",
-      "modVersion": "41",
+      "kind": "release",
       "minGameVersion": "22639",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v41/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v41.zip",
-      "assets": [
-        {
-          "name": "testing-utilities-java.jar",
-          "size": 192356,
-          "downloadCount": 1804,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v41/testing-utilities-java.jar"
-        }
-      ],
-      "commitSha": "cc60100ca88cf4e8265ee3b2c4432e100b9eb153",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/cc60100ca88cf4e8265ee3b2c4432e100b9eb153.zip"
+      "modVersion": "41",
+      "sizeBytes": 192356,
+      "downloadCount": 1804,
+      "releasedAt": "2022-06-11T04:26:29Z"
     },
     {
       "tag": "v40",
-      "name": "Hide with schem menu",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-28T06:14:53Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v40",
-      "modVersion": "40",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v40/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v40.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 187677,
-          "downloadCount": 680,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v40/testing-utilities-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "f5da505da8ade86f6829580e717cb061fba480b8",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/f5da505da8ade86f6829580e717cb061fba480b8.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v40/testing-utilities-java.jar",
+      "modVersion": "40",
+      "sizeBytes": 187677,
+      "downloadCount": 680,
+      "releasedAt": "2022-05-28T06:14:53Z"
     },
     {
       "tag": "v39",
-      "name": "Console, Weather, and More",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-27T08:07:22Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v39",
-      "modVersion": "39",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v39/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v39.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 188339,
-          "downloadCount": 165,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v39/testing-utilities-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "84b6af42f985da73c8332f88b17b5cd94c4db903",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/84b6af42f985da73c8332f88b17b5cd94c4db903.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v39/testing-utilities-java.jar",
+      "modVersion": "39",
+      "sizeBytes": 188339,
+      "downloadCount": 165,
+      "releasedAt": "2022-05-27T08:07:22Z"
     },
     {
       "tag": "v38",
-      "name": "Erekir Version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-19T04:17:35Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v38",
-      "modVersion": "38",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v38/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v38.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 169852,
-          "downloadCount": 448,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v38/testing-utilities-java.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "5e308a22306c9f5c3ee393325c55b1bc56667e92",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/5e308a22306c9f5c3ee393325c55b1bc56667e92.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v38/testing-utilities-java.jar",
+      "modVersion": "38",
+      "sizeBytes": 169852,
+      "downloadCount": 448,
+      "releasedAt": "2022-05-19T04:17:35Z"
     },
     {
       "tag": "v37",
-      "name": "Block Placer",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-19T04:15:52Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v37",
-      "modVersion": "37",
+      "kind": "release",
       "minGameVersion": "132",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v37/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v37.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 171483,
-          "downloadCount": 163,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v37/testing-utilities-java.jar"
+          "from": "132",
+          "to": "135.2"
         }
       ],
-      "commitSha": "d41f61895e3dfff32e4daeac555dd7a657b06db7",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/d41f61895e3dfff32e4daeac555dd7a657b06db7.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v37/testing-utilities-java.jar",
+      "modVersion": "37",
+      "sizeBytes": 171483,
+      "downloadCount": 163,
+      "releasedAt": "2022-05-19T04:15:52Z"
     },
     {
       "tag": "v36",
-      "name": "Tooltips Everywhere and Placing Cores",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-10T08:25:04Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v36",
-      "modVersion": "36",
+      "kind": "release",
       "minGameVersion": "132",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v36/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v36.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 155760,
-          "downloadCount": 4681,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v36/testing-utilities-java.jar"
+          "from": "132",
+          "to": "135.2"
         }
       ],
-      "commitSha": "4c44fc5dcdad950e45d8c7553de70f30ae8a8cf8",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/4c44fc5dcdad950e45d8c7553de70f30ae8a8cf8.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v36/testing-utilities-java.jar",
+      "modVersion": "36",
+      "sizeBytes": 155760,
+      "downloadCount": 4681,
+      "releasedAt": "2022-03-10T08:25:04Z"
     },
     {
       "tag": "v35",
-      "name": "Optimize /js commands run on the player",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-05T07:31:26Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v35",
-      "modVersion": "35",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v35/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v35.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 156154,
-          "downloadCount": 337,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v35/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "6c04690ebec9ccd2f1090d5257db1e6b61f6efe1",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/6c04690ebec9ccd2f1090d5257db1e6b61f6efe1.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v35/testing-utilities-java.jar",
+      "modVersion": "35",
+      "sizeBytes": 156154,
+      "downloadCount": 337,
+      "releasedAt": "2022-03-05T07:31:26Z"
     },
     {
       "tag": "v34",
-      "name": "Small Fixes and Stuff",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-05T01:50:03Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v34",
-      "modVersion": "34",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v34/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v34.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 156111,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v34/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "71223d816acedf0ccef519daebc851072ec646a0",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/71223d816acedf0ccef519daebc851072ec646a0.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v34/testing-utilities-java.jar",
+      "modVersion": "34",
+      "sizeBytes": 156111,
+      "downloadCount": 47,
+      "releasedAt": "2022-03-05T01:50:03Z"
     },
     {
       "tag": "v33",
-      "name": "Minor Optimaztions",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-04T10:29:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v33",
-      "modVersion": "33",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v33/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v33.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 156015,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v33/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "eeb73e1f0ea5a90d37450073bd021605ffcda9b3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/eeb73e1f0ea5a90d37450073bd021605ffcda9b3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v33/testing-utilities-java.jar",
+      "modVersion": "33",
+      "sizeBytes": 156015,
+      "downloadCount": 55,
+      "releasedAt": "2022-03-04T10:29:09Z"
     },
     {
       "tag": "v32",
-      "name": "Small graphical update to Wave Selector",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-17T20:24:13Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v32",
-      "modVersion": "32",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v32/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v32.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 155779,
-          "downloadCount": 896,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v32/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "04c227a8e3774b44fed8f527235481fee0efa083",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/04c227a8e3774b44fed8f527235481fee0efa083.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v32/testing-utilities-java.jar",
+      "modVersion": "32",
+      "sizeBytes": 155779,
+      "downloadCount": 896,
+      "releasedAt": "2022-02-17T20:24:13Z"
     },
     {
       "tag": "v31",
-      "name": "Don't wrap the wave number",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-09T21:19:51Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v31",
-      "modVersion": "31",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v31/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v31.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 159972,
-          "downloadCount": 454,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v31/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "6a58ce0f021e986e848861d1e8cd1910c9558028",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/6a58ce0f021e986e848861d1e8cd1910c9558028.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v31/testing-utilities-java.jar",
+      "modVersion": "31",
+      "sizeBytes": 159972,
+      "downloadCount": 454,
+      "releasedAt": "2022-02-09T21:19:51Z"
     },
     {
       "tag": "v30",
-      "name": "Wave Selector",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-09T09:13:02Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v30",
-      "modVersion": "30",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v30/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v30.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 159728,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v30/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "11008d506c67ec92df709cab42bcc0c0e34c0a22",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/11008d506c67ec92df709cab42bcc0c0e34c0a22.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v30/testing-utilities-java.jar",
+      "modVersion": "30",
+      "sizeBytes": 159728,
+      "downloadCount": 69,
+      "releasedAt": "2022-02-09T09:13:02Z"
     },
     {
       "tag": "v29",
-      "name": "Fix Minor Positioning Issue",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-01-29T04:25:35Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v29",
-      "modVersion": "29",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v29/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v29.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 147681,
-          "downloadCount": 768,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v29/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "07f1a93d15fc1183f8850c5bb6272d21b2d24260",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/07f1a93d15fc1183f8850c5bb6272d21b2d24260.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v29/testing-utilities-java.jar",
+      "modVersion": "29",
+      "sizeBytes": 147681,
+      "downloadCount": 768,
+      "releasedAt": "2022-01-29T04:25:35Z"
     },
     {
       "tag": "v28",
-      "name": "Fix the scaling on the Kill/Clone buttons",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-12-06T19:22:16Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v28",
-      "modVersion": "28",
+      "kind": "release",
       "minGameVersion": "135",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v28/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v28.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 147528,
-          "downloadCount": 2563,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v28/testing-utilities-java.jar"
+          "from": "135",
+          "to": "135.2"
         }
       ],
-      "commitSha": "6e2d3d53d65c19fa136986dc18aa88f4a7e13f7c",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/6e2d3d53d65c19fa136986dc18aa88f4a7e13f7c.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v28/testing-utilities-java.jar",
+      "modVersion": "28",
+      "sizeBytes": 147528,
+      "downloadCount": 2563,
+      "releasedAt": "2021-12-06T19:22:16Z"
     },
     {
       "tag": "v27",
-      "name": "Cleaned up dialog UI buttons",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-26T01:41:29Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v27",
-      "modVersion": "27",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v27/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v27.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 147253,
-          "downloadCount": 1694,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v27/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "81bd02d35e1aa279c4a67a5e252bcd6d3328bcd3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/81bd02d35e1aa279c4a67a5e252bcd6d3328bcd3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v27/testing-utilities-java.jar",
+      "modVersion": "27",
+      "sizeBytes": 147253,
+      "downloadCount": 1694,
+      "releasedAt": "2021-10-26T01:41:29Z"
     },
     {
       "tag": "v26",
-      "name": "what",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-25T06:51:01Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v26",
-      "modVersion": "26",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v26/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v26.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 139408,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v26/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "5a975135f52a14c2958d68593feb89eb3b3f174e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/5a975135f52a14c2958d68593feb89eb3b3f174e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v26/testing-utilities-java.jar",
+      "modVersion": "26",
+      "sizeBytes": 139408,
+      "downloadCount": 43,
+      "releasedAt": "2021-10-25T06:51:01Z"
     },
     {
       "tag": "v25",
-      "name": "Fix disabling issues",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-24T05:46:16Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v25",
-      "modVersion": "25",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v25/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v25.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 139036,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v25/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "985a8b921e056ed5959f9ffcc236d6085eb68585",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/985a8b921e056ed5959f9ffcc236d6085eb68585.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v25/testing-utilities-java.jar",
+      "modVersion": "25",
+      "sizeBytes": 139036,
+      "downloadCount": 38,
+      "releasedAt": "2021-10-24T05:46:16Z"
     },
     {
       "tag": "v24",
-      "name": "Fixed use on servers",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-22T02:38:47Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v24",
-      "modVersion": "24",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v24/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v24.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 138815,
-          "downloadCount": 105,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v24/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "c971608ebe7195311b42c272a3e86bc654565492",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/c971608ebe7195311b42c272a3e86bc654565492.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v24/testing-utilities-java.jar",
+      "modVersion": "24",
+      "sizeBytes": 138815,
+      "downloadCount": 105,
+      "releasedAt": "2021-10-22T02:38:47Z"
     },
     {
       "tag": "v23",
-      "name": "Fix alignment",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-21T07:00:07Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v23",
-      "modVersion": "23",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v23/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v23.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 138659,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v23/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "1d2370e9fff6c1334f4f4315d4dd62edd1dd775e",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/1d2370e9fff6c1334f4f4315d4dd62edd1dd775e.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v23/testing-utilities-java.jar",
+      "modVersion": "23",
+      "sizeBytes": 138659,
+      "downloadCount": 44,
+      "releasedAt": "2021-10-21T07:00:07Z"
     },
     {
       "tag": "v22",
-      "name": "Yet another hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-21T06:23:05Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v22",
-      "modVersion": "22",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v22/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v22.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 137910,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v22/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "14c90eb087ce1f268c5103cd787db1f8abf61bd3",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/14c90eb087ce1f268c5103cd787db1f8abf61bd3.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v22/testing-utilities-java.jar",
+      "modVersion": "22",
+      "sizeBytes": 137910,
+      "downloadCount": 14,
+      "releasedAt": "2021-10-21T06:23:05Z"
     },
     {
       "tag": "v21",
-      "name": "Team menu title hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-21T06:13:54Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v21",
-      "modVersion": "21",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v21/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 137927,
-          "downloadCount": 17,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v21/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "5ad77c640cc094b2c7b724537a9e3fa75e16ccc8",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/5ad77c640cc094b2c7b724537a9e3fa75e16ccc8.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v21/testing-utilities-java.jar",
+      "modVersion": "21",
+      "sizeBytes": 137927,
+      "downloadCount": 17,
+      "releasedAt": "2021-10-21T06:13:54Z"
     },
     {
       "tag": "v20",
-      "name": "Mobile fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-21T06:07:13Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v20",
-      "modVersion": "20",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v20/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v20.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 137918,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v20/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "8673d2494c8333fc73b0b0b75f320f0ccc0862ee",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/8673d2494c8333fc73b0b0b75f320f0ccc0862ee.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v20/testing-utilities-java.jar",
+      "modVersion": "20",
+      "sizeBytes": 137918,
+      "downloadCount": 26,
+      "releasedAt": "2021-10-21T06:07:13Z"
     },
     {
       "tag": "v19",
-      "name": "Unit Menu",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-21T02:48:32Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v19",
-      "modVersion": "19",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v19/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v19.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 137299,
-          "downloadCount": 52,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v19/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "e52906634a225b2070727a5e825a6deba3d24a0d",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/e52906634a225b2070727a5e825a6deba3d24a0d.zip"
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v19/testing-utilities-java.jar",
+      "modVersion": "19",
+      "sizeBytes": 137299,
+      "downloadCount": 52,
+      "releasedAt": "2021-10-21T02:48:32Z"
     },
     {
       "tag": "v18",
-      "name": "Port to Java",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-20T06:13:40Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/tag/v18",
-      "modVersion": "18",
+      "kind": "release",
       "minGameVersion": "133",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v18/testing-utilities-java.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v18.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "testing-utilities-java.jar",
-          "size": 103991,
-          "downloadCount": 80,
-          "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v18/testing-utilities-java.jar"
+          "from": "133",
+          "to": "135.2"
         }
       ],
-      "commitSha": "bb23985c928e93de13a5ce4872949e06460e1d1c",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/bb23985c928e93de13a5ce4872949e06460e1d1c.zip"
-    },
-    {
-      "tag": "v69.3",
-      "name": "v69.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meepoffaith/testing-utilities-java/tree/v69.3",
-      "modVersion": "69.3",
-      "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.3.zip",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v69.3.zip",
-      "assets": [],
-      "commitSha": "5d582f7be3bb53e8881fe7721df790b1fff18d4b",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/5d582f7be3bb53e8881fe7721df790b1fff18d4b.zip"
-    },
-    {
-      "tag": "v66.1",
-      "name": "v66.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/meepoffaith/testing-utilities-java/tree/v66.1",
-      "modVersion": "66",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v66.1.zip",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/refs/tags/v66.1.zip",
-      "assets": [],
-      "commitSha": "2c9e2d84c074cc9e47cbe24a8e1f5d8d66e7efe7",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/testing-utilities-java/archive/2c9e2d84c074cc9e47cbe24a8e1f5d8d66e7efe7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v37",
-      "modVersion": "37",
-      "minGameVersion": "132",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v44",
-      "modVersion": "44",
-      "minGameVersion": "136",
-      "maxGameVersion": 137,
-      "hasRelease": true
-    },
-    {
-      "tag": "v46",
-      "modVersion": "46",
-      "minGameVersion": "137",
-      "maxGameVersion": 138,
-      "hasRelease": true
-    },
-    {
-      "tag": "v48",
-      "modVersion": "48",
-      "minGameVersion": "138",
-      "maxGameVersion": 140.4,
-      "hasRelease": true
-    },
-    {
-      "tag": "v49",
-      "modVersion": "49",
-      "minGameVersion": "140.4",
-      "maxGameVersion": 142,
-      "hasRelease": true
-    },
-    {
-      "tag": "v51",
-      "modVersion": "51",
-      "minGameVersion": "142",
-      "maxGameVersion": 144.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v53",
-      "modVersion": "53",
-      "minGameVersion": "144.1",
-      "maxGameVersion": 145.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v65",
-      "modVersion": "65",
-      "minGameVersion": "145.1",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v68.5.1",
-      "modVersion": "68.5",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v68.6",
-      "modVersion": "68.6",
-      "minGameVersion": "147",
-      "maxGameVersion": 150,
-      "hasRelease": true
-    },
-    {
-      "tag": "v69.2",
-      "modVersion": "69.2",
-      "minGameVersion": "150",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v69.8",
-      "modVersion": "69.8",
-      "minGameVersion": "154",
-      "maxGameVersion": 157,
-      "hasRelease": true
-    },
-    {
-      "tag": "v69.9",
-      "modVersion": "69.9",
-      "minGameVersion": "157",
-      "maxGameVersion": 158.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v69.10",
-      "modVersion": "69.1",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/MEEPofFaith/testing-utilities-java/releases/download/v18/testing-utilities-java.jar",
+      "modVersion": "18",
+      "sizeBytes": 103991,
+      "downloadCount": 80,
+      "releasedAt": "2021-10-20T06:13:40Z"
     }
   ],
   "meta": {
+    "name": "test-utils",
+    "author": "MEEP of Faith",
+    "description": "Utilities for testing stuff in sandbox. (Load the game with this mod enabled for more info.)",
+    "version": "69.1",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "testing.TestUtils",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cyerce/lumirix",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Lumirix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-06T17:20:54Z",
-      "htmlUrl": "https://github.com/cyerce/lumirix/releases/tag/mindustry-mod",
-      "modVersion": "1.6",
+      "kind": "tag",
       "minGameVersion": "139",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "139",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/cyerce/lumirix/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/cyerce/lumirix/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "099cf55a6f7bef3e4bac382ce7ed52d780b00693",
-      "archiveByCommitUrl": "https://github.com/cyerce/lumirix/archive/099cf55a6f7bef3e4bac382ce7ed52d780b00693.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1.6",
-      "minGameVersion": "139",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-12-06T17:20:54Z"
     }
   ],
   "meta": {
+    "name": "lumirix",
+    "author": "Cyerce",
+    "description": "Medium sized mod with tons of content.",
+    "version": "1.6",
+    "minGameVersion": "139",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

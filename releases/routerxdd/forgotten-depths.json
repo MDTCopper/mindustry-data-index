@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "routerxdd/forgotten-depths",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Demo",
-      "name": "Release of Demo",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-21T22:23:42Z",
-      "htmlUrl": "https://github.com/RouterXdd/Forgotten-Depths/releases/tag/Demo",
-      "modVersion": "0.1A",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/RouterXdd/Forgotten-Depths/releases/download/Demo/Forgotten-Depths.jar",
-      "sourceArchiveUrl": "https://github.com/routerxdd/forgotten-depths/archive/refs/tags/Demo.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Forgotten-Depths.jar",
-          "size": 290401,
-          "downloadCount": 1153,
-          "downloadUrl": "https://github.com/RouterXdd/Forgotten-Depths/releases/download/Demo/Forgotten-Depths.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b064fe6ef348e782d5e423f8349399689e97383b",
-      "archiveByCommitUrl": "https://github.com/routerxdd/forgotten-depths/archive/b064fe6ef348e782d5e423f8349399689e97383b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Demo",
+      "downloadUrl": "https://github.com/RouterXdd/Forgotten-Depths/releases/download/Demo/Forgotten-Depths.jar",
       "modVersion": "0.1A",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 290401,
+      "downloadCount": 1162,
+      "releasedAt": "2026-10-21T22:23:42Z"
     }
   ],
   "meta": {
+    "name": "fd",
+    "author": "Unauthorized",
+    "description": "Mod themed around game: Corebound by Overcurve\n\nOriginally supposed to be an april fools version of Buried In Ice but i fucked up with deadlines\n\n\nWARNING: Mod is not going to explain its own mechanics directly so... READ THE DAMN DESCRIPTIONS OF BLOCKS please...\n",
+    "version": "0.1A",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ForgotDepths.FDMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

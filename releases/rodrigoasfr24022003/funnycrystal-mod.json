@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "rodrigoasfr24022003/funnycrystal-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v8-1.0.0",
-      "name": "V8 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-18T18:00:21Z",
-      "htmlUrl": "https://github.com/rodrigoasfr24022003/funnycrystal-mod/releases/tag/v8-1.0.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rodrigoasfr24022003/funnycrystal-mod/releases/download/v8-1.0.0/funnycrystal-mod.zip",
-      "sourceArchiveUrl": "https://github.com/rodrigoasfr24022003/funnycrystal-mod/archive/refs/tags/v8-1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "funnycrystal-mod.zip",
-          "size": 73460,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/rodrigoasfr24022003/funnycrystal-mod/releases/download/v8-1.0.0/funnycrystal-mod.zip"
+          "from": "150",
+          "to": "160.7"
         }
       ],
-      "commitSha": "39fb8432e9c6526769caf3ce3f2df8cc8a90f956",
-      "archiveByCommitUrl": "https://github.com/rodrigoasfr24022003/funnycrystal-mod/archive/39fb8432e9c6526769caf3ce3f2df8cc8a90f956.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v8-1.0.0",
+      "downloadUrl": "https://github.com/rodrigoasfr24022003/funnycrystal-mod/releases/download/v8-1.0.0/funnycrystal-mod.zip",
       "modVersion": "1.0",
-      "minGameVersion": "150",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 73460,
+      "downloadCount": 7,
+      "releasedAt": "2026-05-18T18:00:21Z"
     }
   ],
   "meta": {
+    "name": "funnycrystal",
+    "author": "rodrigo_of_rodrigonia",
+    "description": "Addon to Rodrigonia. Adds a funny crystal made of sulfur, astatine, bromine, hydrogen, neptunium, copernicium and oxygen.",
+    "version": "1.0",
+    "minGameVersion": "150",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cannon-kid/content-galore-mindustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Content-Galore-v0.1-Alpha",
-      "name": "Content Galore v0.1 Alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-09T21:05:14Z",
-      "htmlUrl": "https://github.com/Cannon-Kid/Content-Galore-Mindustry/releases/tag/Content-Galore-v0.1-Alpha",
-      "modVersion": "[violet]v0.1-alpha",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/cannon-kid/content-galore-mindustry/archive/refs/tags/Content-Galore-v0.1-Alpha.zip",
-      "sourceArchiveUrl": "https://github.com/cannon-kid/content-galore-mindustry/archive/refs/tags/Content-Galore-v0.1-Alpha.zip",
-      "assets": [],
-      "commitSha": "d1c03811a59f2bbd5aa70cc20c6a141d3414d25c",
-      "archiveByCommitUrl": "https://github.com/cannon-kid/content-galore-mindustry/archive/d1c03811a59f2bbd5aa70cc20c6a141d3414d25c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Content-Galore-v0.1-Alpha",
       "modVersion": "[violet]v0.1-alpha",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-10-09T21:05:14Z"
     }
   ],
   "meta": {
+    "name": "content-galore",
+    "author": "[pink]Cannon-Kid",
+    "description": "Lots of cool and nerdy stuff get added.",
+    "version": "[violet]v0.1-alpha",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

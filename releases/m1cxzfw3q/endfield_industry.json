@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "m1cxzfw3q/endfield_industry",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-25T06:14:59Z",
-      "htmlUrl": "https://github.com/m1cxzfw3q/Endfield_Industry/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/m1cxzfw3q/Endfield_Industry/releases/download/0.1/Endfield_Industry.jar",
-      "sourceArchiveUrl": "https://github.com/m1cxzfw3q/endfield_industry/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Endfield_Industry.jar",
-          "size": 9072198,
-          "downloadCount": 6387,
-          "downloadUrl": "https://github.com/m1cxzfw3q/Endfield_Industry/releases/download/0.1/Endfield_Industry.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7b0c3b49c61b36209cfc837bd2320a2c82fd371c",
-      "archiveByCommitUrl": "https://github.com/m1cxzfw3q/endfield_industry/archive/7b0c3b49c61b36209cfc837bd2320a2c82fd371c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1",
+      "downloadUrl": "https://github.com/m1cxzfw3q/Endfield_Industry/releases/download/0.1/Endfield_Industry.jar",
       "modVersion": "0.1",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 9072198,
+      "downloadCount": 6393,
+      "releasedAt": "2026-02-25T06:14:59Z"
     }
   ],
   "meta": {
+    "name": "endfield-industry",
+    "author": "[[]sky]114514[[]white]",
+    "description": "\n神秘mod\n贴图抠得依托势，但胜在能看（）\n",
+    "version": "0.1",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "endfield.EICore",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

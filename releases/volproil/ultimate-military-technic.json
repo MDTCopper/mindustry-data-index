@@ -1,287 +1,196 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "volproil/ultimate-military-technic",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "30.05",
-      "name": "30.05",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-30T14:05:37Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/30.05",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/30.05/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/30.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3191144,
-          "downloadCount": 84,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/30.05/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "387a6ec55cc7bdfe7c7098ef1ade942386b89b22",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/387a6ec55cc7bdfe7c7098ef1ade942386b89b22.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/30.05/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3191144,
+      "downloadCount": 84,
+      "releasedAt": "2025-05-30T14:05:37Z"
     },
     {
       "tag": "29.05",
-      "name": "add ratte cell texture",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-29T16:48:34Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/29.05",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/29.05/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/29.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3186573,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/29.05/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9c302a76c0052951435d7ccd854c538f0183c0bd",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/9c302a76c0052951435d7ccd854c538f0183c0bd.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/29.05/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3186573,
+      "downloadCount": 5,
+      "releasedAt": "2025-05-29T16:48:34Z"
     },
     {
       "tag": "27.05_fix",
-      "name": "unit fabricator fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-27T11:32:25Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/27.05_fix",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/27.05_fix/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/27.05_fix.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3174020,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/27.05_fix/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "93f20ab2aec17e02d876c385ef0e564d91a731d9",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/93f20ab2aec17e02d876c385ef0e564d91a731d9.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/27.05_fix/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3174020,
+      "downloadCount": 3,
+      "releasedAt": "2025-05-27T11:32:25Z"
     },
     {
       "tag": "27.05",
-      "name": "t4 T28 redesign",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-27T10:31:35Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/27.05",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/27.05/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/27.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3170571,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/27.05/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b7670951f51fdfce5103c861455fbae5ad105b3a",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/b7670951f51fdfce5103c861455fbae5ad105b3a.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/27.05/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3170571,
+      "downloadCount": 7,
+      "releasedAt": "2025-05-27T10:31:35Z"
     },
     {
       "tag": "26.05.2025",
-      "name": "rockets fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-26T18:56:40Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/26.05.2025",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/26.05.2025/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/26.05.2025.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3200969,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/26.05.2025/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2928cd5f70c7e523ee3c67ba99fe9a28beebfbb3",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/2928cd5f70c7e523ee3c67ba99fe9a28beebfbb3.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/26.05.2025/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3200969,
+      "downloadCount": 2,
+      "releasedAt": "2025-05-26T18:56:40Z"
     },
     {
       "tag": "Military-mod-15.05",
-      "name": "new T5 tank",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-15T19:33:31Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/Military-mod-15.05",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-15.05/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/Military-mod-15.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3151670,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-15.05/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "767b9f053046b1a45adbc3bbc97f374f10400ca5",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/767b9f053046b1a45adbc3bbc97f374f10400ca5.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-15.05/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3151670,
+      "downloadCount": 7,
+      "releasedAt": "2025-05-15T19:33:31Z"
     },
     {
       "tag": "Military-mod-20.04.2025",
-      "name": "new T3 air defense",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-19T23:49:53Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/Military-mod-20.04.2025",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-20.04.2025/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/Military-mod-20.04.2025.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3056170,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-20.04.2025/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "027197a85e23c23bb6b89b11ccd408bd01a0ad75",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/027197a85e23c23bb6b89b11ccd408bd01a0ad75.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-20.04.2025/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3056170,
+      "downloadCount": 8,
+      "releasedAt": "2025-04-19T23:49:53Z"
     },
     {
       "tag": "Military-mod-16.04.2025",
-      "name": "ReBalance hitSize and rotatespeed for units",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-15T21:23:28Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/Military-mod-16.04.2025",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-16.04.2025/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/Military-mod-16.04.2025.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 3018305,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-16.04.2025/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0c7acf8aed7ea6de904c2a6cb815cd311f875ad8",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/0c7acf8aed7ea6de904c2a6cb815cd311f875ad8.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-16.04.2025/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 3018305,
+      "releasedAt": "2025-04-15T21:23:28Z"
     },
     {
       "tag": "Military-mod-13.04.2025",
-      "name": "new full textures",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-13T12:15:24Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/Military-mod-13.04.2025",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-13.04.2025/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/Military-mod-13.04.2025.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 2962474,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-13.04.2025/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "17f6dec99555da44b7d3ef57977a23748f2cd38e",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/17f6dec99555da44b7d3ef57977a23748f2cd38e.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/Military-mod-13.04.2025/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 2962474,
+      "downloadCount": 2,
+      "releasedAt": "2025-04-13T12:15:24Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "new tanks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-24T23:50:10Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/mindustry-mod",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/mindustry-mod/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 2767142,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/mindustry-mod/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a8d7aa1e9ac0e20cb3f5228bcc87f3f566f4460e",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/a8d7aa1e9ac0e20cb3f5228bcc87f3f566f4460e.zip"
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/mindustry-mod/Ultimate-Military-Technic.zip",
+      "modVersion": "1.3.1",
+      "sizeBytes": 2767142,
+      "downloadCount": 1,
+      "releasedAt": "2025-03-24T23:50:10Z"
     },
     {
       "tag": "mindustry",
-      "name": "NEW Tanks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-16T10:56:12Z",
-      "htmlUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/tag/mindustry",
-      "modVersion": "1.3.1",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/mindustry/Ultimate-Military-Technic.zip",
-      "sourceArchiveUrl": "https://github.com/volproil/ultimate-military-technic/archive/refs/tags/mindustry.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Ultimate-Military-Technic.zip",
-          "size": 2639670,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/mindustry/Ultimate-Military-Technic.zip"
+          "from": "142",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f8a9e630e84261397d86154e5e991fff74713c49",
-      "archiveByCommitUrl": "https://github.com/volproil/ultimate-military-technic/archive/f8a9e630e84261397d86154e5e991fff74713c49.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "30.05",
+      "downloadUrl": "https://github.com/Volproil/Ultimate-Military-Technic/releases/download/mindustry/Ultimate-Military-Technic.zip",
       "modVersion": "1.3.1",
-      "minGameVersion": "142",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2639670,
+      "downloadCount": 4,
+      "releasedAt": "2025-03-16T10:56:12Z"
     }
   ],
   "meta": {
+    "name": "Ultimate-Military-Technic-mod",
+    "author": "Volproil",
+    "description": "Mod add tanks, aircraft, artillery, diesel generators",
+    "version": "1.3.1",
+    "minGameVersion": "142",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

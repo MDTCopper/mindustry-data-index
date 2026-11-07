@@ -1,89 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BalaM314/no-invasions",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v7",
-      "name": "No Invasions v7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-17T13:25:39Z",
-      "htmlUrl": "https://github.com/BalaM314/no-invasions/releases/tag/v7",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.zip",
-      "sourceArchiveUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.zip",
-      "assets": [],
-      "commitSha": "abf8f72e2f6d8b4c2adac5cb677bd097ce53d16f",
-      "archiveByCommitUrl": "https://github.com/BalaM314/no-invasions/archive/abf8f72e2f6d8b4c2adac5cb677bd097ce53d16f.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2022-10-17T13:25:39Z"
     },
     {
       "tag": "v7.1",
-      "name": "No Invasions v7.-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-17T13:22:51Z",
-      "htmlUrl": "https://github.com/BalaM314/no-invasions/releases/tag/v7.1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "127",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "127",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.1.zip",
-      "sourceArchiveUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v7.1.zip",
-      "assets": [],
-      "commitSha": "6af0f42f36690eb721b4295690f9306e0a82b93c",
-      "archiveByCommitUrl": "https://github.com/BalaM314/no-invasions/archive/6af0f42f36690eb721b4295690f9306e0a82b93c.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2022-10-17T13:22:51Z"
     },
     {
       "tag": "v6",
-      "name": "No Invasions V6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-17T13:19:48Z",
-      "htmlUrl": "https://github.com/BalaM314/no-invasions/releases/tag/v6",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "115",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "115",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v6.zip",
-      "sourceArchiveUrl": "https://github.com/BalaM314/no-invasions/archive/refs/tags/v6.zip",
-      "assets": [],
-      "commitSha": "eaf00cdf6488dbf98a43404f7f303cc2e894987b",
-      "archiveByCommitUrl": "https://github.com/BalaM314/no-invasions/archive/eaf00cdf6488dbf98a43404f7f303cc2e894987b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v6",
       "modVersion": "1.0",
-      "minGameVersion": "115",
-      "maxGameVersion": 127,
-      "hasRelease": true
-    },
-    {
-      "tag": "v7.1",
-      "modVersion": "1.0",
-      "minGameVersion": "127",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v7",
-      "modVersion": "1.0",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2022-10-17T13:19:48Z"
     }
   ],
   "meta": {
+    "name": "no-invasions",
+    "author": "BalaM314",
+    "description": "Disables sectors being re-attacked.",
+    "version": "1.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

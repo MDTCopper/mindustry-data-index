@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "b-919/water-reflections",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.1.1",
-      "name": "v2.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T02:13:09Z",
-      "htmlUrl": "https://github.com/b-919/Water-Reflections/releases/tag/v2.1.1",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.1/WaterReflections.jar",
-      "sourceArchiveUrl": "https://github.com/b-919/water-reflections/archive/refs/tags/v2.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WaterReflections.jar",
-          "size": 42972,
-          "downloadCount": 109,
-          "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.1/WaterReflections.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7bae5d5fccfaa8fb59c8c7746be0365b2f47cff2",
-      "archiveByCommitUrl": "https://github.com/b-919/water-reflections/archive/7bae5d5fccfaa8fb59c8c7746be0365b2f47cff2.zip"
+      "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.1/WaterReflections.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 42972,
+      "downloadCount": 109,
+      "releasedAt": "2026-10-04T02:13:09Z"
     },
     {
       "tag": "v2.1.0",
-      "name": "v2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T02:03:26Z",
-      "htmlUrl": "https://github.com/b-919/Water-Reflections/releases/tag/v2.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.0/WaterReflections2.jar",
-      "sourceArchiveUrl": "https://github.com/b-919/water-reflections/archive/refs/tags/v2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WaterReflections2.jar",
-          "size": 21889,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.0/WaterReflections2.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ec72c850d0c189d9357a72c4c2d508ecdff72761",
-      "archiveByCommitUrl": "https://github.com/b-919/water-reflections/archive/ec72c850d0c189d9357a72c4c2d508ecdff72761.zip"
+      "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.0/WaterReflections2.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 21889,
+      "downloadCount": 2,
+      "releasedAt": "2026-10-04T02:03:26Z"
     },
     {
       "tag": "v2.0.0",
-      "name": "v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T15:44:23Z",
-      "htmlUrl": "https://github.com/b-919/Water-Reflections/releases/tag/v2.0.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.0.0/WaterReflections2.jar",
-      "sourceArchiveUrl": "https://github.com/b-919/water-reflections/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "WaterReflections2.jar",
-          "size": 22698,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.0.0/WaterReflections2.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ec72c850d0c189d9357a72c4c2d508ecdff72761",
-      "archiveByCommitUrl": "https://github.com/b-919/water-reflections/archive/ec72c850d0c189d9357a72c4c2d508ecdff72761.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.1.1",
-      "modVersion": "2.1.1",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.0.0/WaterReflections2.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 22698,
+      "downloadCount": 21,
+      "releasedAt": "2026-10-02T15:44:23Z"
     }
   ],
   "meta": {
+    "name": "b919-waterreflection",
+    "author": "B919",
+    "description": "Water Reflection shader all water surfaces now have reflections. Fully Configurable compatible with Android and PC.",
+    "version": "2.1.1",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "b919.WaterMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

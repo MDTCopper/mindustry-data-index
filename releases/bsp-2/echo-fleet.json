@@ -1,229 +1,164 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bsp-2/echo-fleet",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0¯first",
-      "name": "Aetheria /// Final",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-01T17:44:55Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v1.0%C2%AFfirst",
-      "modVersion": "Aetheria /// Final",
+      "kind": "tag",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v1.0%C2%AFfirst.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v1.0%C2%AFfirst.zip",
-      "assets": [],
-      "commitSha": "c04462e56b80566bec426ca282e230a90f544082",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/c04462e56b80566bec426ca282e230a90f544082.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2026-09-01T17:44:55Z"
     },
     {
       "tag": "v0.2.1-alpha",
-      "name": "Aysel :D",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-28T15:34:26Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.2.1-alpha",
-      "modVersion": null,
+      "kind": "release",
       "minGameVersion": "152.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BSp-2/Echo-fleet/releases/download/v0.2.1-alpha/Echo-fleet-main.31.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.2.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Echo-fleet-main.31.zip",
-          "size": 11351859,
-          "downloadCount": 191,
-          "downloadUrl": "https://github.com/BSp-2/Echo-fleet/releases/download/v0.2.1-alpha/Echo-fleet-main.31.zip"
+          "from": "152.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "397aeb2f18ef57d1e9172098ce99bb04a563a543",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/397aeb2f18ef57d1e9172098ce99bb04a563a543.zip"
+      "downloadUrl": "https://github.com/BSp-2/Echo-fleet/releases/download/v0.2.1-alpha/Echo-fleet-main.31.zip",
+      "modVersion": "Aetheria",
+      "sizeBytes": 11351859,
+      "downloadCount": 191,
+      "releasedAt": "2025-11-28T15:34:26Z"
     },
     {
       "tag": "v0.2.01-alpha",
-      "name": "Small weather fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-25T19:51:15Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.2.01-alpha",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "152.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "152.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.2.01-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.2.01-alpha.zip",
-      "assets": [],
-      "commitSha": "95c75c6ea1b92121943137cef3964244d83c97da",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/95c75c6ea1b92121943137cef3964244d83c97da.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-11-25T19:51:15Z"
     },
     {
       "tag": "v0.2-alpha",
-      "name": "Environment rework",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-11-25T17:51:57Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.2-alpha",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "152.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "152.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.2-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.2-alpha.zip",
-      "assets": [],
-      "commitSha": "3b00f982f1607bf5b382314a4bee44989a9134d7",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/3b00f982f1607bf5b382314a4bee44989a9134d7.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-11-25T17:51:57Z"
     },
     {
       "tag": "v0.1.2-alpha",
-      "name": "Release v0.1.2-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-12T15:31:57Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.1.2-alpha",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "151.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "151.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.2-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.2-alpha.zip",
-      "assets": [],
-      "commitSha": "33d740ce9e70ef35c2c1158dfcdc738018fb2b2a",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/33d740ce9e70ef35c2c1158dfcdc738018fb2b2a.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-09-12T15:31:57Z"
     },
     {
       "tag": "v0.1.11-alpha",
-      "name": "v0.1.11-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-02T11:45:26Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.1.11-alpha",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.11-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.11-alpha.zip",
-      "assets": [],
-      "commitSha": "90bb935d0285544d37bb9d0571217e4ceacd6516",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/90bb935d0285544d37bb9d0571217e4ceacd6516.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-09-02T11:45:26Z"
     },
     {
       "tag": "v0.1.1-alpha",
-      "name": "Release v0.1.1-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-02T08:38:30Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.1.1-alpha",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.1-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.1-alpha.zip",
-      "assets": [],
-      "commitSha": "ec2d6b98f11f2e1da9606da41ee58ef06a1ae394",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/ec2d6b98f11f2e1da9606da41ee58ef06a1ae394.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-09-02T08:38:30Z"
     },
     {
       "tag": "v0.1.0-alpha",
-      "name": "v0.1.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-31T19:33:46Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/v0.1.0-alpha",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.0-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/v0.1.0-alpha.zip",
-      "assets": [],
-      "commitSha": "929e2165317efa2461b7eae1ccd28b87c9d7746b",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/929e2165317efa2461b7eae1ccd28b87c9d7746b.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-08-31T19:33:46Z"
     },
     {
       "tag": "pre-alpha-beta.something",
-      "name": "fixing blocks",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-16T19:35:25Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/pre-alpha-beta.something",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/pre-alpha-beta.something.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/pre-alpha-beta.something.zip",
-      "assets": [],
-      "commitSha": "b6abde8cc21f8b4871c5fef3998bf784d06832ff",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/b6abde8cc21f8b4871c5fef3998bf784d06832ff.zip"
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-08-16T19:35:25Z"
     },
     {
       "tag": "echo-fleet",
-      "name": "uhh release with the uunit factories",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-16T19:30:12Z",
-      "htmlUrl": "https://github.com/BSp-2/Echo-fleet/releases/tag/echo-fleet",
-      "modVersion": null,
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/echo-fleet.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/echo-fleet/archive/refs/tags/echo-fleet.zip",
-      "assets": [],
-      "commitSha": "037278230518068647a1aef22792153ac91dd134",
-      "archiveByCommitUrl": "https://github.com/bsp-2/echo-fleet/archive/037278230518068647a1aef22792153ac91dd134.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.0-alpha",
-      "modVersion": null,
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.1.11-alpha",
-      "modVersion": null,
-      "minGameVersion": "147",
-      "maxGameVersion": 151.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.1.2-alpha",
-      "modVersion": null,
-      "minGameVersion": "151.1",
-      "maxGameVersion": 152.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.2.1-alpha",
-      "modVersion": null,
-      "minGameVersion": "152.2",
-      "maxGameVersion": 158.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0¯first",
-      "modVersion": "Aetheria /// Final",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "Aetheria",
+      "releasedAt": "2025-08-16T19:30:12Z"
     }
   ],
   "meta": {
+    "name": "echo-fleet",
+    "author": "[#5aaabd[]]Plooey :3\n\n[gray[]]Contributors:\n[#b020b0[]]Cupcake[[gray]]: a lot of everything\n[#b02020[]]Tinport[gray[]]: sprites\n[#80b020[]]Lesley[gray[]]: sprites\n[#309090[]]Kennysetiawan[gray[]]: bundles\n[#b0b090[]]Kostolom[gray[]]: a huge amount of fx work and improvements to the units",
+    "description": "[#5aaabd[]]Adds 2 planets with a shared campaign. (only one of them has been finished) \n[#5aaabd[]]The campaign focuses on liquid processing and logistics a lot, with a heavy bias towards payload transportation.\n[#5aaabd[]]This is also amplified by the fact that the factories in this mod are quite hard to supply, which hopefuly does result in a rather neat experience.\n\n[gray[]]This is a small ted project of mine. \n[gray[]]Im not aiming for anything big, and simply making something i enjoy and hope others will too.\n[gray[]]Have fun :3c\n",
+    "version": "Aetheria",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

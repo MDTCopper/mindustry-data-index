@@ -1,606 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "way-zer/ContentsTweaker",
-  "generatedAt": "2026-11-07T00:13:35.545Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v3.1.2",
-      "name": "v3.1.2 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-06T12:12:34Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.1.2",
-      "modVersion": "3.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.2/ContentsTweaker-3.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ContentsTweaker-3.1.2.jar",
-          "size": 1915231,
-          "downloadCount": 2805,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.2/ContentsTweaker-3.1.2.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "34ea9d6ba0641dd84488c71d15444013107b8de4",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/34ea9d6ba0641dd84488c71d15444013107b8de4.zip"
+      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.2/ContentsTweaker-3.1.2.jar",
+      "modVersion": "3.1.0",
+      "sizeBytes": 1915231,
+      "downloadCount": 2805,
+      "releasedAt": "2025-09-06T12:12:34Z"
     },
     {
       "tag": "v3.1.1",
-      "name": "v3.1.1 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-09-06T10:57:17Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.1.1",
-      "modVersion": "3.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.1/ContentsTweaker-3.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ContentsTweaker-3.1.1.jar",
-          "size": 1915231,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.1/ContentsTweaker-3.1.1.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "66243e55fdd68d0b01259ae3b41fd61cb7445ba1",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/66243e55fdd68d0b01259ae3b41fd61cb7445ba1.zip"
+      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.1/ContentsTweaker-3.1.1.jar",
+      "modVersion": "3.1.0",
+      "sizeBytes": 1915231,
+      "downloadCount": 26,
+      "releasedAt": "2025-09-06T10:57:17Z"
     },
     {
       "tag": "v3.1.0",
-      "name": "v3.1.0 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-15T16:05:01Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.1.0",
-      "modVersion": "@version@",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.0/ContentsTweaker-3.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ContentsTweaker-3.1.0.jar",
-          "size": 1912573,
-          "downloadCount": 1348,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.0/ContentsTweaker-3.1.0.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "23bb40f9772a0dfa409c85fff8e6e64ce1e111f6",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/23bb40f9772a0dfa409c85fff8e6e64ce1e111f6.zip"
+      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.0/ContentsTweaker-3.1.0.jar",
+      "modVersion": "@version@",
+      "sizeBytes": 1912573,
+      "downloadCount": 1348,
+      "releasedAt": "2025-06-15T16:05:01Z"
     },
     {
       "tag": "v3.0.5",
-      "name": "v3.0.5 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-04T06:54:03Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.0.5",
-      "modVersion": "@version@",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.5/ContentsTweaker-3.0.5.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.0.5.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-3.0.5.jar",
-          "size": 2149404,
-          "downloadCount": 2059,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.5/ContentsTweaker-3.0.5.jar"
-        }
-      ],
-      "commitSha": "c99fc0a06bd59b8bc9bcc0e08f8a47caa56facde",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/c99fc0a06bd59b8bc9bcc0e08f8a47caa56facde.zip"
-    },
-    {
-      "tag": "v3.0.4",
-      "name": "v3.0.4 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-29T11:47:09Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.0.4",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.4/ContentsTweaker-3.0.4.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.0.4.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-3.0.4.jar",
-          "size": 2148413,
-          "downloadCount": 1673,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.4/ContentsTweaker-3.0.4.jar"
-        }
-      ],
-      "commitSha": "d8b1139b931c3c7fd35ea7f08732886f5cf81921",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/d8b1139b931c3c7fd35ea7f08732886f5cf81921.zip"
-    },
-    {
-      "tag": "v3.0.3",
-      "name": "v3.0.3 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-30T17:38:27Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.0.3",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.3/ContentsTweaker-3.0.3.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.0.3.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-3.0.3.jar",
-          "size": 2148171,
-          "downloadCount": 82,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.3/ContentsTweaker-3.0.3.jar"
-        }
-      ],
-      "commitSha": "a09bb0ccb690def3f2daf01521d10487b0573e35",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/a09bb0ccb690def3f2daf01521d10487b0573e35.zip"
-    },
-    {
-      "tag": "v3.0.2",
-      "name": "v3.0.2 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-25T11:06:05Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.0.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.2/ContentsTweaker-3.0.2.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.0.2.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-3.0.2.jar",
-          "size": 2139559,
-          "downloadCount": 77,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.2/ContentsTweaker-3.0.2.jar"
-        }
-      ],
-      "commitSha": "06f000a60818926d89061051be5452a3a461095f",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/06f000a60818926d89061051be5452a3a461095f.zip"
-    },
-    {
-      "tag": "v3.0.1",
-      "name": "v3.0.1 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-23T13:20:26Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.0.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.1/ContentsTweaker-3.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.0.1.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-3.0.1.jar",
-          "size": 2144201,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.1/ContentsTweaker-3.0.1.jar"
-        }
-      ],
-      "commitSha": "815b4cd9b36514fd96bf5c4083adc2ba3b266a53",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/815b4cd9b36514fd96bf5c4083adc2ba3b266a53.zip"
-    },
-    {
-      "tag": "v3.0.0",
-      "name": "v3.0.0 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-04T11:48:54Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v3.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.0/ContentsTweaker-3.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v3.0.0.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-3.0.0.jar",
-          "size": 2113205,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.0.0/ContentsTweaker-3.0.0.jar"
-        }
-      ],
-      "commitSha": "8243ba801cd63bad432c291ba3dd9a99285d9228",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/8243ba801cd63bad432c291ba3dd9a99285d9228.zip"
-    },
-    {
-      "tag": "v2.1.2",
-      "name": "v2.1.2 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-07T13:03:37Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v2.1.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.1.2/ContentsTweaker-2.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v2.1.2.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-2.1.2.jar",
-          "size": 2058292,
-          "downloadCount": 82,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.1.2/ContentsTweaker-2.1.2.jar"
-        }
-      ],
-      "commitSha": "c58a91423ae55becc2f3cd29092b8531c389213d",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/c58a91423ae55becc2f3cd29092b8531c389213d.zip"
-    },
-    {
-      "tag": "v2.1.1",
-      "name": "v2.1.1 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-07T12:04:18Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v2.1.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.1.1/ContentsTweaker-2.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v2.1.1.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-2.1.1.jar",
-          "size": 2058183,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.1.1/ContentsTweaker-2.1.1.jar"
-        }
-      ],
-      "commitSha": "181914d1ea38a40721ff9e657d6ec5a6500735a5",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/181914d1ea38a40721ff9e657d6ec5a6500735a5.zip"
-    },
-    {
-      "tag": "v2.1.0",
-      "name": "v2.1.0 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-07T10:23:10Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v2.1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.1.0/ContentsTweaker-2.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v2.1.0.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-2.1.0.jar",
-          "size": 2053033,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.1.0/ContentsTweaker-2.1.0.jar"
-        }
-      ],
-      "commitSha": "0d86b27a889d456d7a6a9a7da71716e060729823",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/0d86b27a889d456d7a6a9a7da71716e060729823.zip"
-    },
-    {
-      "tag": "v2.0.2",
-      "name": "v2.0.2 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-03T07:33:42Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v2.0.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.0.2/ContentsTweaker-2.0.2.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v2.0.2.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-2.0.2.jar",
-          "size": 1969074,
-          "downloadCount": 304,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.0.2/ContentsTweaker-2.0.2.jar"
-        }
-      ],
-      "commitSha": "a380a8027941a72134815bb02e9b69496c803774",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/a380a8027941a72134815bb02e9b69496c803774.zip"
-    },
-    {
-      "tag": "v2.0.1",
-      "name": "v2.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-11T06:11:08Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v2.0.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.0.1/ContentsTweaker-2.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v2.0.1.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-2.0.1.jar",
-          "size": 1968847,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.0.1/ContentsTweaker-2.0.1.jar"
-        }
-      ],
-      "commitSha": "2e374df5a65a5680671b27f9e3d4ae7486d1a600",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/2e374df5a65a5680671b27f9e3d4ae7486d1a600.zip"
-    },
-    {
-      "tag": "v2.0.0",
-      "name": "v2.0.0 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-11T05:23:52Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v2.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.0.0/ContentsTweaker-2.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v2.0.0.zip",
-      "assets": [
-        {
-          "name": "ContentsTweaker-2.0.0.jar",
-          "size": 1968794,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v2.0.0/ContentsTweaker-2.0.0.jar"
-        }
-      ],
-      "commitSha": "4b6b147942d6dc289ee135712a5df1d74f279568",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/4b6b147942d6dc289ee135712a5df1d74f279568.zip"
-    },
-    {
-      "tag": "v1.0.8",
-      "name": "v1.0.8 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-07-10T07:27:58Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.8",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.8/ContentsLoader-1.0.8.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.8.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.8.jar",
-          "size": 2858760,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.8/ContentsLoader-1.0.8.jar"
-        }
-      ],
-      "commitSha": "ac368c6bf40389dfe35742bc84be1c4a3943fd7a",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/ac368c6bf40389dfe35742bc84be1c4a3943fd7a.zip"
-    },
-    {
-      "tag": "v1.0.7",
-      "name": "v1.0.7 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-03T04:10:09Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.7",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.7/ContentsLoader-1.0.7.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.7.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.7.jar",
-          "size": 2850952,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.7/ContentsLoader-1.0.7.jar"
-        }
-      ],
-      "commitSha": "2e084d6fc6c1b1b049ab8ab38da8eea68f4a20d7",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/2e084d6fc6c1b1b049ab8ab38da8eea68f4a20d7.zip"
-    },
-    {
-      "tag": "v1.0.6",
-      "name": "v1.0.6 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-03-01T10:21:24Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.6",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.6/ContentsLoader-1.0.6.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.6.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.6.jar",
-          "size": 2821153,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.6/ContentsLoader-1.0.6.jar"
-        }
-      ],
-      "commitSha": "ec159ca1b30682a5279b6dcf12812b1b92dc565d",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/ec159ca1b30682a5279b6dcf12812b1b92dc565d.zip"
-    },
-    {
-      "tag": "v1.0.5",
-      "name": "v1.0.5 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-26T05:31:40Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.5",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.5/ContentsLoader-1.0.5.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.5.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.5.jar",
-          "size": 2815002,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.5/ContentsLoader-1.0.5.jar"
-        }
-      ],
-      "commitSha": "03978c58b5eb8d1304b871932f69ab358c8ad732",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/03978c58b5eb8d1304b871932f69ab358c8ad732.zip"
-    },
-    {
-      "tag": "v1.0.4",
-      "name": "v1.0.4 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-22T14:56:25Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.4",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.4/ContentsLoader-1.0.4.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.4.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.4.jar",
-          "size": 2315728,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.4/ContentsLoader-1.0.4.jar"
-        }
-      ],
-      "commitSha": "5c4acc56ccf36a8c73406c9d6138829b8cc72473",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/5c4acc56ccf36a8c73406c9d6138829b8cc72473.zip"
-    },
-    {
-      "tag": "v1.0.3",
-      "name": "v1.0.3 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-19T06:17:26Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.3",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.3/ContentsLoader-1.0.3.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.3.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.3.jar",
-          "size": 2313950,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.3/ContentsLoader-1.0.3.jar"
-        }
-      ],
-      "commitSha": "a23f482dc32f92733901f7913c77bca70303a703",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/a23f482dc32f92733901f7913c77bca70303a703.zip"
-    },
-    {
-      "tag": "v1.0.2",
-      "name": "v1.0.2 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-16T13:43:52Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.2/ContentsLoader-1.0.2.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.2.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.2.jar",
-          "size": 1740193,
-          "downloadCount": 17,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.2/ContentsLoader-1.0.2.jar"
-        }
-      ],
-      "commitSha": "db99c31e1ab414f7575464ef633f229f015181f8",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/db99c31e1ab414f7575464ef633f229f015181f8.zip"
-    },
-    {
-      "tag": "v1.0.1",
-      "name": "v1.0.1 🌈",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-16T04:01:50Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.1/ContentsLoader-1.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.1.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0.1.jar",
-          "size": 1745236,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.1/ContentsLoader-1.0.1.jar"
-        }
-      ],
-      "commitSha": "1258f08ab224d75a23b347c6a32b942f8a124cf0",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/1258f08ab224d75a23b347c6a32b942f8a124cf0.zip"
-    },
-    {
-      "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-13T07:25:10Z",
-      "htmlUrl": "https://github.com/way-zer/ContentsTweaker/releases/tag/v1.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.0/ContentsLoader-1.0-SNAPSHOT.jar",
-      "sourceArchiveUrl": "https://github.com/way-zer/ContentsTweaker/archive/refs/tags/v1.0.0.zip",
-      "assets": [
-        {
-          "name": "ContentsLoader-1.0-SNAPSHOT.jar",
-          "size": 1744313,
-          "downloadCount": 28,
-          "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v1.0.0/ContentsLoader-1.0-SNAPSHOT.jar"
-        }
-      ],
-      "commitSha": "6cae925c4dceb9bc9c1986342b4f54757d02be6c",
-      "archiveByCommitUrl": "https://github.com/way-zer/ContentsTweaker/archive/6cae925c4dceb9bc9c1986342b4f54757d02be6c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v3.1.0",
       "modVersion": "@version@",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.1.2",
-      "modVersion": "3.1.0",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 2149404,
+      "downloadCount": 2059,
+      "releasedAt": "2024-08-04T06:54:03Z"
     }
   ],
   "meta": {
+    "name": "ContentsTweaker",
+    "author": "WayZer",
+    "description": "Dynamic load custom contents patch account to server",
+    "version": "3.1.0",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "cf.wayzer.contentsTweaker.ModMain",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

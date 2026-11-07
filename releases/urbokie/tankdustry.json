@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "urbokie/tankdustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "Official release of Tankdustry",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-15T10:28:06Z",
-      "htmlUrl": "https://github.com/Urbokie/Tankdustry/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/urbokie/tankdustry/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/urbokie/tankdustry/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "e9f7caf9d173d5317c638aede2618320882ab688",
-      "archiveByCommitUrl": "https://github.com/urbokie/tankdustry/archive/e9f7caf9d173d5317c638aede2618320882ab688.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-02-15T10:28:06Z"
     }
   ],
   "meta": {
+    "name": "TankDustry",
+    "author": "Urbokie",
+    "description": "Real tank in Mindustry???",
+    "version": "1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

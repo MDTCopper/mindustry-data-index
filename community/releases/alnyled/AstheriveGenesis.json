@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "alnyled/AstheriveGenesis",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0-dev",
-      "name": "v1.0-dev",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-11T12:16:54Z",
-      "htmlUrl": "https://github.com/alnyled/AstheriveGenesis/releases/tag/v1.0-dev",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/alnyled/AstheriveGenesis/releases/download/v1.0-dev/AstheriveGenesis.jar",
-      "sourceArchiveUrl": "https://github.com/alnyled/AstheriveGenesis/archive/refs/tags/v1.0-dev.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AstheriveGenesis.jar",
-          "size": 1466545,
-          "downloadCount": 2750,
-          "downloadUrl": "https://github.com/alnyled/AstheriveGenesis/releases/download/v1.0-dev/AstheriveGenesis.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "0646b9af2ab9249cdee12bf91d481f339d8672cb",
-      "archiveByCommitUrl": "https://github.com/alnyled/AstheriveGenesis/archive/0646b9af2ab9249cdee12bf91d481f339d8672cb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0-dev",
+      "downloadUrl": "https://github.com/alnyled/AstheriveGenesis/releases/download/v1.0-dev/AstheriveGenesis.jar",
       "modVersion": "1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 1466545,
+      "downloadCount": 2750,
+      "releasedAt": "2025-07-11T12:16:54Z"
     }
   ],
   "meta": {
+    "name": "astherive-gen",
+    "author": "Astherive Team",
+    "description": "\nA Mindustry Java mod.\n\nUnder very early development.\n\nYes. this is what you're looking for.\n",
+    "version": "1",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "astherivegen.AstheriveGenMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

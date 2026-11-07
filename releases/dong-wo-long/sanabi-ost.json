@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dong-wo-long/sanabi-ost",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.1.0-release",
-      "name": "v1.1.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-20T16:26:23Z",
-      "htmlUrl": "https://github.com/Dong-Wo-Long/SANABI-ost/releases/tag/v1.1.0-release",
-      "modVersion": "v1.1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.1.0-release.zip",
-      "sourceArchiveUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.1.0-release.zip",
-      "assets": [],
-      "commitSha": "b840cc43d55386881cc79773698d69a7666fc791",
-      "archiveByCommitUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/b840cc43d55386881cc79773698d69a7666fc791.zip"
+      "modVersion": "v1.1.0",
+      "releasedAt": "2024-04-20T16:26:23Z"
     },
     {
       "tag": "v1.0.0-release",
-      "name": "v1.0.0 release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-16T11:52:28Z",
-      "htmlUrl": "https://github.com/Dong-Wo-Long/SANABI-ost/releases/tag/v1.0.0-release",
-      "modVersion": "v1.0.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.0.0-release.zip",
-      "sourceArchiveUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/refs/tags/v1.0.0-release.zip",
-      "assets": [],
-      "commitSha": "e2c469e787c662a30b134aa026274b097a20e0d0",
-      "archiveByCommitUrl": "https://github.com/dong-wo-long/sanabi-ost/archive/e2c469e787c662a30b134aa026274b097a20e0d0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.0-release",
-      "modVersion": "v1.1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "v1.0.0",
+      "releasedAt": "2024-04-16T11:52:28Z"
     }
   ],
   "meta": {
+    "name": "sanabi-ost",
+    "author": "D&X",
+    "description": "Changes music files to tracks from the SANABI game (not a bad game, I advise you to take a closer look at it)",
+    "version": "v1.1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

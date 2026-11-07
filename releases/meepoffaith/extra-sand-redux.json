@@ -1,298 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "meepoffaith/extra-sand-redux",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v3.6",
-      "name": "v3.6 - Update to v159.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T05:10:42Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.6",
-      "modVersion": "3.6",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.6/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.6.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 505098,
-          "downloadCount": 1823,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.6/ESR.jar"
-        }
-      ],
-      "commitSha": "c306c54502d363121f92c56e880f1572fd099068",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/c306c54502d363121f92c56e880f1572fd099068.zip"
-    },
-    {
-      "tag": "v3.5",
-      "name": "v3.5 - Update to v158.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T16:36:11Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.5",
-      "modVersion": "3.5",
-      "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.5/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.5.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 498639,
-          "downloadCount": 1708,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.5/ESR.jar"
-        }
-      ],
-      "commitSha": "641e24c2fc1818afe298fe1523782286fb35b5f8",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/641e24c2fc1818afe298fe1523782286fb35b5f8.zip"
-    },
-    {
-      "tag": "v3.4",
-      "name": "v3.4 - Update to v155.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-14T02:22:29Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.4",
-      "modVersion": "3.4",
-      "minGameVersion": "155.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.4/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.4.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 498748,
-          "downloadCount": 1626,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.4/ESR.jar"
-        }
-      ],
-      "commitSha": "c58819e35eaaef4733323d067711a090c3cf6223",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/c58819e35eaaef4733323d067711a090c3cf6223.zip"
-    },
-    {
-      "tag": "v3.3",
-      "name": "v3.3 - Update to v154.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-21T02:16:09Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.3",
-      "modVersion": "3.3",
-      "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.3/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.3.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 497557,
-          "downloadCount": 917,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.3/ESR.jar"
-        }
-      ],
-      "commitSha": "e853fd65db416d24e3d47d0fedf83bc5653f5060",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/e853fd65db416d24e3d47d0fedf83bc5653f5060.zip"
-    },
-    {
-      "tag": "v3.2",
-      "name": "v3.2 - Enhanced Target Dummy",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-20T00:18:17Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.2",
-      "modVersion": "3.2",
-      "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.2/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.2.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 496314,
-          "downloadCount": 2762,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.2/ESR.jar"
-        }
-      ],
-      "commitSha": "1e762c96fbf7cbb7021b36049dd92b9ebcb008d4",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/1e762c96fbf7cbb7021b36049dd92b9ebcb008d4.zip"
-    },
-    {
-      "tag": "v3.1",
-      "name": "v3.1 - Un-outdate",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-02T11:02:14Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.1",
-      "modVersion": "3.1",
-      "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.1/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.1.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 494533,
-          "downloadCount": 498,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.1/ESR.jar"
-        }
-      ],
-      "commitSha": "0c8dad05dfd8f48049bb7bfa8736fb5242e98a56",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/0c8dad05dfd8f48049bb7bfa8736fb5242e98a56.zip"
-    },
-    {
-      "tag": "v3.0",
-      "name": "v3.0 - Comically Long Range Build Turret",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-11T23:10:39Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v3.0",
-      "modVersion": "3",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.0/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v3.0.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 489231,
-          "downloadCount": 4518,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v3.0/ESR.jar"
-        }
-      ],
-      "commitSha": "8947b61c492fbb7706e06786d1ae7908b6ef948f",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/8947b61c492fbb7706e06786d1ae7908b6ef948f.zip"
-    },
-    {
-      "tag": "v2.0",
-      "name": "v2.0 - Turret Controller and Placeable Core",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-14T01:17:21Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v2.0",
-      "modVersion": "2",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v2.0/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v2.0.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 460009,
-          "downloadCount": 3904,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v2.0/ESR.jar"
-        }
-      ],
-      "commitSha": "56a4a817cd1f0c91a40e5e9fb7a9521fb4804e47",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/56a4a817cd1f0c91a40e5e9fb7a9521fb4804e47.zip"
-    },
-    {
-      "tag": "v1.1",
-      "name": "v1.1 - Bug Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-16T04:13:26Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v1.1",
-      "modVersion": "1.1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v1.1/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v1.1.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 437659,
-          "downloadCount": 3000,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v1.1/ESR.jar"
-        }
-      ],
-      "commitSha": "8aa76fb1ef2efde1f5e60beb66d4c4eb75e88375",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/8aa76fb1ef2efde1f5e60beb66d4c4eb75e88375.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "v1.0 - Initial Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-15T21:47:31Z",
-      "htmlUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/tag/v1.0",
-      "modVersion": "1",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v1.0/ESR.jar",
-      "sourceArchiveUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "ESR.jar",
-          "size": 436812,
-          "downloadCount": 1072,
-          "downloadUrl": "https://github.com/MEEPofFaith/extra-sand-redux/releases/download/v1.0/ESR.jar"
-        }
-      ],
-      "commitSha": "23271714c93a7f6e857db00be15ae87ee212bc37",
-      "archiveByCommitUrl": "https://github.com/meepoffaith/extra-sand-redux/archive/23271714c93a7f6e857db00be15ae87ee212bc37.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v3.0",
-      "modVersion": "3",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.2",
-      "modVersion": "3.2",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.3",
-      "modVersion": "3.3",
-      "minGameVersion": "154.2",
-      "maxGameVersion": 155.3,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.4",
-      "modVersion": "3.4",
-      "minGameVersion": "155.3",
-      "maxGameVersion": 158.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.5",
-      "modVersion": "3.5",
-      "minGameVersion": "158.1",
-      "maxGameVersion": 159.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.6",
       "modVersion": "3.6",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 505098,
+      "downloadCount": 1826,
+      "releasedAt": "2026-08-05T05:10:42Z"
     }
   ],
   "meta": {
+    "name": "extra-sand-redux",
+    "author": "MEEP of Faith",
+    "description": "A plethora of sandbox-only blocks dedicated for both fun and testing purposes.",
+    "version": "3.6",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "extrasandredux.ExtraSandRedux",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

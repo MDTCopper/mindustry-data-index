@@ -1,198 +1,133 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mullibenmolly/starshineplan",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.0.3-6",
-      "name": "0.0.3-Alpha.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-05T05:31:26Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-6",
-      "modVersion": "0.0.3_v160.5",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-6/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1771795,
-          "downloadCount": 36,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-6/StarshinePlanDesktop.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1c2b2406bd9d8e29413bf0708d29243d84502ae6",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/1c2b2406bd9d8e29413bf0708d29243d84502ae6.zip"
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-6/StarshinePlanDesktop.jar",
+      "modVersion": "0.0.3_v160.5",
+      "sizeBytes": 1771795,
+      "downloadCount": 36,
+      "releasedAt": "2026-10-05T05:31:26Z"
     },
     {
       "tag": "0.0.3-5+",
-      "name": "0.0.3-Alpha.5+",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-19T17:13:41Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-5%2B",
-      "modVersion": "0.0.3_v159.3",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-5%2B/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-5%2B.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1767410,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-5%2B/StarshinePlanDesktop.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0a39361fb5e40dfa16c0d17ecd287b1cdc5c06d7",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/0a39361fb5e40dfa16c0d17ecd287b1cdc5c06d7.zip"
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-5%2B/StarshinePlanDesktop.jar",
+      "modVersion": "0.0.3_v159.3",
+      "sizeBytes": 1767410,
+      "downloadCount": 43,
+      "releasedAt": "2026-09-19T17:13:41Z"
     },
     {
       "tag": "0.0.3-5",
-      "name": "0.0.3-alpha.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-25T15:46:34Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-5",
-      "modVersion": "0.0.3_v159.3",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-5/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1766865,
-          "downloadCount": 65,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-5/StarshinePlanDesktop.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e4f7dd57ec7b4c3ef25aa13b64ccb3b7c7fe0bcb",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/e4f7dd57ec7b4c3ef25aa13b64ccb3b7c7fe0bcb.zip"
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-5/StarshinePlanDesktop.jar",
+      "modVersion": "0.0.3_v159.3",
+      "sizeBytes": 1766865,
+      "downloadCount": 65,
+      "releasedAt": "2026-08-25T15:46:34Z"
     },
     {
       "tag": "0.0.3-4",
-      "name": "0.0.3-alpha.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-19T14:57:05Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-4",
-      "modVersion": "0.0.3_v159.3",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-4/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1765035,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-4/StarshinePlanDesktop.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4b2ca1470cda9edbaf49e0c1faee1e67b7be6dfc",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/4b2ca1470cda9edbaf49e0c1faee1e67b7be6dfc.zip"
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-4/StarshinePlanDesktop.jar",
+      "modVersion": "0.0.3_v159.3",
+      "sizeBytes": 1765035,
+      "downloadCount": 24,
+      "releasedAt": "2026-08-19T14:57:05Z"
     },
     {
       "tag": "0.0.3-3",
-      "name": "0.0.3-alpha.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-19T05:37:05Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-3",
-      "modVersion": "0.0.3_v159.3",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-3/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1764694,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-3/StarshinePlanDesktop.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0cccb63983d691e26022c90c7741d1b78568f50b",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/0cccb63983d691e26022c90c7741d1b78568f50b.zip"
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-3/StarshinePlanDesktop.jar",
+      "modVersion": "0.0.3_v159.3",
+      "sizeBytes": 1764694,
+      "downloadCount": 10,
+      "releasedAt": "2026-08-19T05:37:05Z"
     },
     {
       "tag": "0.0.3-2",
-      "name": "0.0.3-alpha.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-16T19:47:39Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-2",
-      "modVersion": "0.0.3_v159.3",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-2/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1759696,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-2/StarshinePlanDesktop.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c6bd4daee0bd3b9fdb40c661070e05c07e4e7825",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/c6bd4daee0bd3b9fdb40c661070e05c07e4e7825.zip"
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-2/StarshinePlanDesktop.jar",
+      "modVersion": "0.0.3_v159.3",
+      "sizeBytes": 1759696,
+      "downloadCount": 10,
+      "releasedAt": "2026-08-16T19:47:39Z"
     },
     {
       "tag": "0.0.3-1",
-      "name": "0.0.3-alpha.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-16T16:20:13Z",
-      "htmlUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/tag/0.0.3-1",
-      "modVersion": "0.0.3_v159.3",
+      "kind": "release",
       "minGameVersion": "159.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-1/StarshinePlanDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/mullibenmolly/starshineplan/archive/refs/tags/0.0.3-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "StarshinePlanDesktop.jar",
-          "size": 1842351,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-1/StarshinePlanDesktop.jar"
+          "from": "159.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5ce9f72bdb35f279addde8bdf86923deda7d0329",
-      "archiveByCommitUrl": "https://github.com/mullibenmolly/starshineplan/archive/5ce9f72bdb35f279addde8bdf86923deda7d0329.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.3-5+",
+      "downloadUrl": "https://github.com/mullibenMolly/StarshinePlan/releases/download/0.0.3-1/StarshinePlanDesktop.jar",
       "modVersion": "0.0.3_v159.3",
-      "minGameVersion": "159.3",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.0.3-6",
-      "modVersion": "0.0.3_v160.5",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1842351,
+      "downloadCount": 31,
+      "releasedAt": "2026-08-16T16:20:13Z"
     }
   ],
   "meta": {
+    "name": "xx-mod",
+    "author": "molo\nmullibenMolly",
+    "description": "基本独立于原版内容，请勿与原版混用。\n没做兼容哦，崩了就别怪我啦。\n若是mod本身存在问题，请及时反馈给我，我会非常感谢你的！虽然没什么奖励就是了。\n没有华丽的制作团队，只有作者一人的挣扎...",
+    "version": "0.0.3_v160.5",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "xx.xx",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

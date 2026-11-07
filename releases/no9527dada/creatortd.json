@@ -1,581 +1,309 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "no9527dada/creatortd",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "159.02",
-      "name": "159.02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-31T11:33:32Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/159.02",
-      "modVersion": "156.00",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/159.02/CTTD-159.02.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/159.02.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-159.02.jar",
-          "size": 8840610,
-          "downloadCount": 625,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/159.02/CTTD-159.02.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "61bd80326a1916c89724acd41a1d3be967b47859",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/61bd80326a1916c89724acd41a1d3be967b47859.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/159.02/CTTD-159.02.jar",
+      "modVersion": "156.00",
+      "sizeBytes": 8840610,
+      "downloadCount": 627,
+      "releasedAt": "2026-08-31T11:33:32Z"
     },
     {
       "tag": "158.00",
-      "name": "158.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T02:22:56Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/158.00",
-      "modVersion": "156.00",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/158.00/CTTD-158.00.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/158.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-158.00.jar",
-          "size": 8827648,
-          "downloadCount": 901,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/158.00/CTTD-158.00.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "61bd80326a1916c89724acd41a1d3be967b47859",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/61bd80326a1916c89724acd41a1d3be967b47859.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/158.00/CTTD-158.00.jar",
+      "modVersion": "156.00",
+      "sizeBytes": 8827648,
+      "downloadCount": 901,
+      "releasedAt": "2026-05-25T02:22:56Z"
     },
     {
       "tag": "156.00",
-      "name": "156.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-02T02:56:36Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/156.00",
-      "modVersion": "156.00",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/156.00/CTTD-156.00.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/156.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-156.00.jar",
-          "size": 8828648,
-          "downloadCount": 836,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/156.00/CTTD-156.00.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "61bd80326a1916c89724acd41a1d3be967b47859",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/61bd80326a1916c89724acd41a1d3be967b47859.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/156.00/CTTD-156.00.jar",
+      "modVersion": "156.00",
+      "sizeBytes": 8828648,
+      "downloadCount": 836,
+      "releasedAt": "2026-04-02T02:56:36Z"
     },
     {
       "tag": "38.03",
-      "name": "38.03",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-10T13:22:50Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/38.03",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/38.03/CTTD-38.03.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/38.03.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-38.03.jar",
-          "size": 9024386,
-          "downloadCount": 661,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/38.03/CTTD-38.03.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/38.03/CTTD-38.03.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 9024386,
+      "downloadCount": 661,
+      "releasedAt": "2025-06-10T13:22:50Z"
     },
     {
       "tag": "38.01",
-      "name": "38.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-03T14:19:24Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/38.01",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/38.01/CTTD-38.01.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/38.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-38.01.jar",
-          "size": 17354868,
-          "downloadCount": 1029,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/38.01/CTTD-38.01.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/38.01/CTTD-38.01.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 17354868,
+      "downloadCount": 1029,
+      "releasedAt": "2024-11-03T14:19:24Z"
     },
     {
       "tag": "31.00",
-      "name": "31.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-23T01:49:46Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/31.00",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/31.00/CTTD-31.00.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/31.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-31.00.jar",
-          "size": 17125242,
-          "downloadCount": 107,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/31.00/CTTD-31.00.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/31.00/CTTD-31.00.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 17125242,
+      "downloadCount": 107,
+      "releasedAt": "2024-10-23T01:49:46Z"
     },
     {
       "tag": "28.03",
-      "name": "28.03",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-16T04:37:54Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/28.03",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/28.03/CTTD-28.03.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/28.03.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-28.03.jar",
-          "size": 17012469,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/28.03/CTTD-28.03.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/28.03/CTTD-28.03.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 17012469,
+      "downloadCount": 55,
+      "releasedAt": "2024-10-16T04:37:54Z"
     },
     {
       "tag": "25.08",
-      "name": "25.08",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-13T11:28:18Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/25.08",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/25.08/CTCT-25.08.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/25.08.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTCT-25.08.jar",
-          "size": 16885914,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/25.08/CTCT-25.08.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/25.08/CTCT-25.08.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 16885914,
+      "downloadCount": 25,
+      "releasedAt": "2024-10-13T11:28:18Z"
     },
     {
       "tag": "21.00",
-      "name": "21.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-26T13:28:58Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/21.00",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/21.00/CTTD-21.00.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/21.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD-21.00.jar",
-          "size": 16408087,
-          "downloadCount": 492,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/21.00/CTTD-21.00.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/21.00/CTTD-21.00.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 16408087,
+      "downloadCount": 492,
+      "releasedAt": "2024-07-26T13:28:58Z"
     },
     {
       "tag": "td20.02",
-      "name": "td20.02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-18T04:30:15Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/td20.02",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td20.02/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/td20.02.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 16381425,
-          "downloadCount": 521,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td20.02/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td20.02/CTTD.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 16381425,
+      "downloadCount": 521,
+      "releasedAt": "2024-06-18T04:30:15Z"
     },
     {
       "tag": "td20.00",
-      "name": "td20.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-07T13:59:10Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/td20.00",
-      "modVersion": "td20.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td20.00/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/td20.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 16375487,
-          "downloadCount": 224,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td20.00/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td20.00/CTTD.jar",
+      "modVersion": "td20.00",
+      "sizeBytes": 16375487,
+      "downloadCount": 224,
+      "releasedAt": "2024-06-07T13:59:10Z"
     },
     {
       "tag": "td19.00",
-      "name": "td19.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-29T22:34:28Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/td19.00",
-      "modVersion": "td19.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td19.00/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/td19.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 10129779,
-          "downloadCount": 126,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td19.00/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "09c6cfb4b43b4c1b1374c40101af5d870a8629e4",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/09c6cfb4b43b4c1b1374c40101af5d870a8629e4.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td19.00/CTTD.jar",
+      "modVersion": "td19.00",
+      "sizeBytes": 10129779,
+      "downloadCount": 126,
+      "releasedAt": "2024-05-29T22:34:28Z"
     },
     {
       "tag": "td18.00",
-      "name": "td18.00",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-23T13:40:28Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/td18.00",
-      "modVersion": "td18.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td18.00/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/td18.00.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 10104568,
-          "downloadCount": 124,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td18.00/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "9ae30fdf682d1ebcfd97ad98e388fcc3dc68d16f",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/9ae30fdf682d1ebcfd97ad98e388fcc3dc68d16f.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td18.00/CTTD.jar",
+      "modVersion": "td18.00",
+      "sizeBytes": 10104568,
+      "downloadCount": 124,
+      "releasedAt": "2024-05-23T13:40:28Z"
     },
     {
       "tag": "td17.01",
-      "name": "td17.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-08T04:35:12Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/td17.01",
-      "modVersion": "16.01",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td17.01/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/td17.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 4944981,
-          "downloadCount": 209,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td17.01/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ee32c6c717eef0e5ced384dbadc9b05e6b5282b8",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/ee32c6c717eef0e5ced384dbadc9b05e6b5282b8.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/td17.01/CTTD.jar",
+      "modVersion": "16.01",
+      "sizeBytes": 4944981,
+      "downloadCount": 209,
+      "releasedAt": "2024-05-08T04:35:12Z"
     },
     {
       "tag": "16.01",
-      "name": "16.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-23T13:31:49Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/16.01",
-      "modVersion": "16.01",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/16.01/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/16.01.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 4913893,
-          "downloadCount": 259,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/16.01/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ee32c6c717eef0e5ced384dbadc9b05e6b5282b8",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/ee32c6c717eef0e5ced384dbadc9b05e6b5282b8.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/16.01/CTTD.jar",
+      "modVersion": "16.01",
+      "sizeBytes": 4913893,
+      "downloadCount": 259,
+      "releasedAt": "2024-04-23T13:31:49Z"
     },
     {
       "tag": "12.07",
-      "name": "12.07",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-17T04:39:47Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/12.07",
-      "modVersion": "12.07",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.07/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.07.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 4624297,
-          "downloadCount": 144,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.07/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "d112ca78b954d29a5e3036a6fb54e9da6524d8d2",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/d112ca78b954d29a5e3036a6fb54e9da6524d8d2.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.07/CTTD.jar",
+      "modVersion": "12.07",
+      "sizeBytes": 4624297,
+      "downloadCount": 144,
+      "releasedAt": "2024-04-17T04:39:47Z"
     },
     {
       "tag": "12.05",
-      "name": "12.05",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-10T13:43:37Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/12.05",
-      "modVersion": "08.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.05/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.05.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 4606164,
-          "downloadCount": 199,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.05/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7c7e324031f8f1cc3aede667382d8abdf74fcec2",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/7c7e324031f8f1cc3aede667382d8abdf74fcec2.zip"
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.05/CTTD.jar",
+      "modVersion": "08.00",
+      "sizeBytes": 4606164,
+      "downloadCount": 199,
+      "releasedAt": "2024-04-10T13:43:37Z"
     },
     {
       "tag": "12.04",
-      "name": "12.04",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-31T13:31:48Z",
-      "htmlUrl": "https://github.com/no9527dada/CreatorTD/releases/tag/12.04",
-      "modVersion": "08.00",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.04/CTTD.jar",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.04.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "CTTD.jar",
-          "size": 4580837,
-          "downloadCount": 61,
-          "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.04/CTTD.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7c7e324031f8f1cc3aede667382d8abdf74fcec2",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/7c7e324031f8f1cc3aede667382d8abdf74fcec2.zip"
-    },
-    {
-      "tag": "38.00",
-      "name": "38.00",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/38.00",
-      "modVersion": "td20.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/38.00.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/38.00.zip",
-      "assets": [],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
-    },
-    {
-      "tag": "28.02",
-      "name": "28.02",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/28.02",
-      "modVersion": "td20.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/28.02.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/28.02.zip",
-      "assets": [],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
-    },
-    {
-      "tag": "28.00",
-      "name": "28.00",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/28.00",
-      "modVersion": "td20.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/28.00.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/28.00.zip",
-      "assets": [],
-      "commitSha": "1cf7d67495dfedb108332252e037541f25e6ce52",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/1cf7d67495dfedb108332252e037541f25e6ce52.zip"
-    },
-    {
-      "tag": "16.00",
-      "name": "16.00",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/16.00",
-      "modVersion": "15.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/16.00.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/16.00.zip",
-      "assets": [],
-      "commitSha": "e2d3dc3c7416f8501e1bbf4c21b21f7cfe4d7a3e",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/e2d3dc3c7416f8501e1bbf4c21b21f7cfe4d7a3e.zip"
-    },
-    {
-      "tag": "12.03",
-      "name": "12.03",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/12.03",
+      "downloadUrl": "https://github.com/no9527dada/CreatorTD/releases/download/12.04/CTTD.jar",
       "modVersion": "08.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.03.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.03.zip",
-      "assets": [],
-      "commitSha": "7c7e324031f8f1cc3aede667382d8abdf74fcec2",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/7c7e324031f8f1cc3aede667382d8abdf74fcec2.zip"
-    },
-    {
-      "tag": "12.02",
-      "name": "12.02",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/12.02",
-      "modVersion": "08.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.02.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.02.zip",
-      "assets": [],
-      "commitSha": "7c7e324031f8f1cc3aede667382d8abdf74fcec2",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/7c7e324031f8f1cc3aede667382d8abdf74fcec2.zip"
-    },
-    {
-      "tag": "12.01",
-      "name": "12.01",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/no9527dada/creatortd/tree/12.01",
-      "modVersion": "08.00",
-      "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.01.zip",
-      "sourceArchiveUrl": "https://github.com/no9527dada/creatortd/archive/refs/tags/12.01.zip",
-      "assets": [],
-      "commitSha": "7c7e324031f8f1cc3aede667382d8abdf74fcec2",
-      "archiveByCommitUrl": "https://github.com/no9527dada/creatortd/archive/7c7e324031f8f1cc3aede667382d8abdf74fcec2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "38.03",
-      "modVersion": "td20.00",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "159.02",
-      "modVersion": "156.00",
-      "minGameVersion": "156",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 4580837,
+      "downloadCount": 61,
+      "releasedAt": "2024-03-31T13:31:48Z"
     }
   ],
   "meta": {
+    "name": "cttd",
+    "author": "[pink]编[cyan]号[red]95[violet]27,LYBF,Ovulam5480,皴皲",
+    "description": "9527，皴皲，咕咕点心,LYBF,Ovulam5480,皴皲",
+    "version": "156.00",
+    "minGameVersion": "156",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "CreatorTowerDefense.CreatorTowerDefense",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

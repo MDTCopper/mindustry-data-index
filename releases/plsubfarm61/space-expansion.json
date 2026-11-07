@@ -1,91 +1,48 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "plsubfarm61/space-expansion",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "black-hole-test",
-      "name": "black-hole-test",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-28T19:38:39Z",
-      "htmlUrl": "https://github.com/PLsubfarm61/Space-Expansion/releases/tag/black-hole-test",
-      "modVersion": "0.01",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/black-hole-test.zip",
-      "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/black-hole-test.zip",
-      "assets": [],
-      "commitSha": "39bfa437b08fb7dfba6e6ca5d086d315cdfc61a7",
-      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/39bfa437b08fb7dfba6e6ca5d086d315cdfc61a7.zip"
-    },
-    {
-      "tag": "base",
-      "name": "base",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-28T15:32:42Z",
-      "htmlUrl": "https://github.com/PLsubfarm61/Space-Expansion/releases/tag/base",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/base.zip",
-      "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/base.zip",
-      "assets": [],
-      "commitSha": "d9812aec835be78b4038817bc1beffcf2dc9ec67",
-      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/d9812aec835be78b4038817bc1beffcf2dc9ec67.zip"
+      "modVersion": "0.01",
+      "releasedAt": "2025-12-28T19:38:39Z"
     },
     {
       "tag": "test",
-      "name": "test",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/plsubfarm61/space-expansion/tree/test",
-      "modVersion": "0.01",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/test.zip",
-      "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/test.zip",
-      "assets": [],
-      "commitSha": "dfb61c7a2dd869896b6be1f8af55c150ffeda5d2",
-      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/dfb61c7a2dd869896b6be1f8af55c150ffeda5d2.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/plsubfarm61/space-expansion/tree/mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/plsubfarm61/space-expansion/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "d9812aec835be78b4038817bc1beffcf2dc9ec67",
-      "archiveByCommitUrl": "https://github.com/plsubfarm61/space-expansion/archive/d9812aec835be78b4038817bc1beffcf2dc9ec67.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "black-hole-test",
-      "modVersion": "0.01",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.01"
     }
   ],
   "meta": {
+    "name": "space-expansion",
+    "author": "oleksiy & polish_subfarm61",
+    "description": "\ndescription test\n",
+    "version": "0.01",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

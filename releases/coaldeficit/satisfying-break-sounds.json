@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "coaldeficit/satisfying-break-sounds",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1",
-      "name": "v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-10-10T19:18:37Z",
-      "htmlUrl": "https://github.com/coaldeficit/satisfying-break-sounds/releases/tag/v1",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/coaldeficit/satisfying-break-sounds/archive/refs/tags/v1.zip",
-      "sourceArchiveUrl": "https://github.com/coaldeficit/satisfying-break-sounds/archive/refs/tags/v1.zip",
-      "assets": [],
-      "commitSha": "20083b22bfbb857f4390421a4e21772873e00a00",
-      "archiveByCommitUrl": "https://github.com/coaldeficit/satisfying-break-sounds/archive/20083b22bfbb857f4390421a4e21772873e00a00.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1",
       "modVersion": "1.0.0",
-      "minGameVersion": "147",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-10-10T19:18:37Z"
     }
   ],
   "meta": {
+    "name": "crunch",
+    "author": "Someone, probably",
+    "description": "Makes the sounds for breaking things more Crunchy.",
+    "version": "1.0.0",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

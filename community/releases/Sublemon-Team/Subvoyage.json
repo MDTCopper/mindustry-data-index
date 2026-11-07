@@ -1,311 +1,181 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Sublemon-Team/Subvoyage",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.6.2b",
-      "name": "Subvoyage v0.6.2b - Hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-20T05:35:32Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.6.2b",
-      "modVersion": "0.6.2-beta",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6.2b/Subvoyage.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.6.2b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage.jar",
-          "size": 5731783,
-          "downloadCount": 8466,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6.2b/Subvoyage.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "56209bc9468690e1da0a4cb4f64b882a558c73e9",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/56209bc9468690e1da0a4cb4f64b882a558c73e9.zip"
-    },
-    {
-      "tag": "v0.6.1b",
-      "name": "Subvoyage v0.6.1b - Android Fixes and Optimization",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-04-18T12:59:42Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.6.1b",
-      "modVersion": "0.6.1-beta",
-      "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.6.1b.zip",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.6.1b.zip",
-      "assets": [],
-      "commitSha": "166186f3785a6cc0d5230a1b77f757f6a29dd58c",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/166186f3785a6cc0d5230a1b77f757f6a29dd58c.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6.2b/Subvoyage.jar",
+      "modVersion": "0.6.2-beta",
+      "sizeBytes": 5731783,
+      "downloadCount": 8466,
+      "releasedAt": "2025-04-20T05:35:32Z"
     },
     {
       "tag": "v0.6fb",
-      "name": "Subvoyage v0.6fb - v147 Port",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-15T07:43:06Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.6fb",
-      "modVersion": "0.6f-beta",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6fb/Subvoyage.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.6fb.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage.jar",
-          "size": 16954944,
-          "downloadCount": 695,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6fb/Subvoyage.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "b39279677dacfd46e935263398e9f36ad12995d6",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/b39279677dacfd46e935263398e9f36ad12995d6.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6fb/Subvoyage.jar",
+      "modVersion": "0.6f-beta",
+      "sizeBytes": 16954944,
+      "downloadCount": 695,
+      "releasedAt": "2025-04-15T07:43:06Z"
     },
     {
       "tag": "v0.6b",
-      "name": "Subvoyage v0.6b - The Revamp Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-14T12:49:51Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.6b",
-      "modVersion": "0.6-beta",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6b/Subvoyage.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.6b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage.jar",
-          "size": 16945247,
-          "downloadCount": 258,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6b/Subvoyage.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "07854ae2806b4e206afe9b5bf5c3953d615c2a0c",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/07854ae2806b4e206afe9b5bf5c3953d615c2a0c.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.6b/Subvoyage.jar",
+      "modVersion": "0.6-beta",
+      "sizeBytes": 16945247,
+      "downloadCount": 258,
+      "releasedAt": "2025-04-14T12:49:51Z"
     },
     {
       "tag": "v0.5fb",
-      "name": "Subvoyage v0.5fb - Hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-06T05:29:32Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.5fb",
-      "modVersion": "0.5f-beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.5fb/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.5fb.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 6919165,
-          "downloadCount": 19368,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.5fb/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "246945a46dd88ae00f9e43ad920bff57ae9720c2",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/246945a46dd88ae00f9e43ad920bff57ae9720c2.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.5fb/Subvoyage-public.jar",
+      "modVersion": "0.5f-beta",
+      "sizeBytes": 6919165,
+      "downloadCount": 19368,
+      "releasedAt": "2024-08-06T05:29:32Z"
     },
     {
       "tag": "v0.5b",
-      "name": "Subvoyage v0.5b - Lasers, PlanetGen, Payloads and Upgrading",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-05T12:55:36Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.5b",
-      "modVersion": "0.5-beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.5b/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.5b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 6918862,
-          "downloadCount": 218,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.5b/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "36fec06feedfcce3fc369be5dbcaef9002983431",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/36fec06feedfcce3fc369be5dbcaef9002983431.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.5b/Subvoyage-public.jar",
+      "modVersion": "0.5-beta",
+      "sizeBytes": 6918862,
+      "downloadCount": 218,
+      "releasedAt": "2024-08-05T12:55:36Z"
     },
     {
       "tag": "v0.4b",
-      "name": "Subvoyage v0.4b - Hydromechs, Reworks, Gases",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-23T07:14:34Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.4b",
-      "modVersion": "0.4-beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.4b/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.4b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 6243211,
-          "downloadCount": 2456,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.4b/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "fb11f6b5f0b4795c16014c76e2a84d8ec8592005",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/fb11f6b5f0b4795c16014c76e2a84d8ec8592005.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.4b/Subvoyage-public.jar",
+      "modVersion": "0.4-beta",
+      "sizeBytes": 6243211,
+      "downloadCount": 2456,
+      "releasedAt": "2024-07-23T07:14:34Z"
     },
     {
       "tag": "v0.3b",
-      "name": "Subvoyage v0.3b - Additions and Fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-06T09:13:37Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.3b",
-      "modVersion": "0.3-beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.3b/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.3b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 5624469,
-          "downloadCount": 3867,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.3b/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "3197fff5dbb58b048d6732c087f5cfd15474a122",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/3197fff5dbb58b048d6732c087f5cfd15474a122.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.3b/Subvoyage-public.jar",
+      "modVersion": "0.3-beta",
+      "sizeBytes": 5624469,
+      "downloadCount": 3867,
+      "releasedAt": "2024-07-06T09:13:37Z"
     },
     {
       "tag": "v0.2b",
-      "name": "Subvoyage v0.2b - Major fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-02T05:52:07Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.2b",
-      "modVersion": "0.2-beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.2b/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.2b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 5626820,
-          "downloadCount": 1114,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.2b/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "b5ad17874803a85e56c80a4f810745a7b3837cef",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/b5ad17874803a85e56c80a4f810745a7b3837cef.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.2b/Subvoyage-public.jar",
+      "modVersion": "0.2-beta",
+      "sizeBytes": 5626820,
+      "downloadCount": 1114,
+      "releasedAt": "2024-07-02T05:52:07Z"
     },
     {
       "tag": "v0.1fb",
-      "name": "Subvoyage v0.1fb - Android Hotfix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-01T08:35:29Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.1fb",
-      "modVersion": "0.1-beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.1fb/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.1fb.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 5624961,
-          "downloadCount": 256,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.1fb/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "39a590a4eaed019e664c2035a44969c29e3956be",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/39a590a4eaed019e664c2035a44969c29e3956be.zip"
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.1fb/Subvoyage-public.jar",
+      "modVersion": "0.1-beta",
+      "sizeBytes": 5624961,
+      "downloadCount": 256,
+      "releasedAt": "2024-07-01T08:35:29Z"
     },
     {
       "tag": "v0.1b",
-      "name": "Subvoyage v0.1b - Beta Launch",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-30T13:40:58Z",
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/tag/v0.1b",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.1b/Subvoyage-public.jar",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/v0.1b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Subvoyage-public.jar",
-          "size": 5626600,
-          "downloadCount": 119,
-          "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.1b/Subvoyage-public.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "2dd017acc71106c284c9d6ab81fee118c778d21a",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/2dd017acc71106c284c9d6ab81fee118c778d21a.zip"
-    },
-    {
-      "tag": "bump",
-      "name": "bump",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Sublemon-Team/Subvoyage/tree/bump",
-      "modVersion": "0.5f-beta",
-      "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/bump.zip",
-      "sourceArchiveUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/refs/tags/bump.zip",
-      "assets": [],
-      "commitSha": "53c646bcf8cc2c77fcd4cb2cc20694b126602204",
-      "archiveByCommitUrl": "https://github.com/Sublemon-Team/Subvoyage/archive/53c646bcf8cc2c77fcd4cb2cc20694b126602204.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.5fb",
-      "modVersion": "0.5f-beta",
-      "minGameVersion": "145",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.6b",
-      "modVersion": "0.6-beta",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.6.2b",
-      "modVersion": "0.6.2-beta",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Sublemon-Team/Subvoyage/releases/download/v0.1b/Subvoyage-public.jar",
+      "modVersion": "1",
+      "sizeBytes": 5626600,
+      "downloadCount": 119,
+      "releasedAt": "2024-06-30T13:40:58Z"
     }
   ],
   "meta": {
+    "name": "subvoyage",
+    "author": "Skoow, IriDark",
+    "description": "Aquatic-stylized mod with new planet and unique mechanics",
+    "version": "0.6.2-beta",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "subvoyage.Subvoyage",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

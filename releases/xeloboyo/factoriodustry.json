@@ -1,65 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "xeloboyo/factoriodustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "0.5.4-alpha",
-      "name": "Blanc Release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-17T23:23:44Z",
-      "htmlUrl": "https://github.com/Xeloboyo/Factoriodustry/releases/tag/0.5.4-alpha",
-      "modVersion": "0.4.1",
+      "kind": "tag",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.5.4-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.5.4-alpha.zip",
-      "assets": [],
-      "commitSha": "a1b2dd3306194c6e3213cbafaad9e700e55f88bc",
-      "archiveByCommitUrl": "https://github.com/xeloboyo/factoriodustry/archive/a1b2dd3306194c6e3213cbafaad9e700e55f88bc.zip"
-    },
-    {
-      "tag": "0.3.5",
-      "name": "Factorydustry For 5.0 Mindustry",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-11-23T17:35:30Z",
-      "htmlUrl": "https://github.com/Xeloboyo/Factoriodustry/releases/tag/0.3.5",
-      "modVersion": "0.3.5",
-      "minGameVersion": "104.0",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.3.5.zip",
-      "sourceArchiveUrl": "https://github.com/xeloboyo/factoriodustry/archive/refs/tags/0.3.5.zip",
-      "assets": [],
-      "commitSha": "06df4b3a56df12f813c5c2fe91569bbc47b0797a",
-      "archiveByCommitUrl": "https://github.com/xeloboyo/factoriodustry/archive/06df4b3a56df12f813c5c2fe91569bbc47b0797a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.3.5",
-      "modVersion": "0.3.5",
-      "minGameVersion": "104.0",
-      "maxGameVersion": 105,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.5.4-alpha",
       "modVersion": "0.4.1",
-      "minGameVersion": "140.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2022-11-17T23:23:44Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "xelos-pixel-texturepack",
+    "author": "Xelo",
+    "description": "Brings back some of that early mindustry charm, can be multiplayered with vanilla\nContributors: VozDuh",
+    "version": "0.4.1",
+    "minGameVersion": "140.4",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

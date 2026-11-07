@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BlackDeluxeCat/MindustryDatabaseExt",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.2",
-      "name": "0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-30T04:57:19Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/tag/0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/download/0.2/MindustryDatabaseExt.0.2-145.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/archive/refs/tags/0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryDatabaseExt.0.2-145.jar",
-          "size": 6589,
-          "downloadCount": 521,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/download/0.2/MindustryDatabaseExt.0.2-145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "137f502471e7929f907abc6c063bd347d2c71e32",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/archive/137f502471e7929f907abc6c063bd347d2c71e32.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/download/0.2/MindustryDatabaseExt.0.2-145.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 6589,
+      "downloadCount": 521,
+      "releasedAt": "2023-07-30T04:57:19Z"
     },
     {
       "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-15T01:38:20Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/download/0.1/MindustryDatabaseExt.0.1-145.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryDatabaseExt.0.1-145.jar",
-          "size": 6143,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/download/0.1/MindustryDatabaseExt.0.1-145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "046eba365218acb5e07101e8b20ab412a70d3b88",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/archive/046eba365218acb5e07101e8b20ab412a70d3b88.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.2",
-      "modVersion": "0.2",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MindustryDatabaseExt/releases/download/0.1/MindustryDatabaseExt.0.1-145.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 6143,
+      "downloadCount": 8,
+      "releasedAt": "2023-07-15T01:38:20Z"
     }
   ],
   "meta": {
+    "name": "MindustryDatabaseExt",
+    "author": "BlackDeluxeCat",
+    "description": "Modify database.",
+    "version": "0.2",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "de.MindustryDatabaseExt",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

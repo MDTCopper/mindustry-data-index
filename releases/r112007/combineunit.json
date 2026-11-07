@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "r112007/combineunit",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.6.1",
-      "name": "组合单位1.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-05T15:08:08Z",
-      "htmlUrl": "https://github.com/R112007/combineunit/releases/tag/1.6.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/R112007/combineunit/releases/download/1.6.1/1.6.1.jar",
-      "sourceArchiveUrl": "https://github.com/r112007/combineunit/archive/refs/tags/1.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "1.6.1.jar",
-          "size": 339621,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/R112007/combineunit/releases/download/1.6.1/1.6.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "daac5c0ed1d39ab9ead67269ebe71ea44b528c26",
-      "archiveByCommitUrl": "https://github.com/r112007/combineunit/archive/daac5c0ed1d39ab9ead67269ebe71ea44b528c26.zip"
+      "downloadUrl": "https://github.com/R112007/combineunit/releases/download/1.6.1/1.6.1.jar",
+      "modVersion": "1",
+      "sizeBytes": 339621,
+      "downloadCount": 40,
+      "releasedAt": "2026-11-05T15:08:08Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "组合单位1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-04T12:17:47Z",
-      "htmlUrl": "https://github.com/R112007/combineunit/releases/tag/mindustry-mod",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/R112007/combineunit/releases/download/mindustry-mod/1.6.jar",
-      "sourceArchiveUrl": "https://github.com/r112007/combineunit/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "1.6.jar",
-          "size": 336517,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/R112007/combineunit/releases/download/mindustry-mod/1.6.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "daac5c0ed1d39ab9ead67269ebe71ea44b528c26",
-      "archiveByCommitUrl": "https://github.com/r112007/combineunit/archive/daac5c0ed1d39ab9ead67269ebe71ea44b528c26.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.6.1",
+      "downloadUrl": "https://github.com/R112007/combineunit/releases/download/mindustry-mod/1.6.jar",
       "modVersion": "1",
-      "minGameVersion": "160.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 336517,
+      "downloadCount": 20,
+      "releasedAt": "2026-11-04T12:17:47Z"
     }
   ],
   "meta": {
+    "name": "combineunit",
+    "author": "R",
+    "description": "组合工厂QQ群:973942058\n组合单位（从组合工厂 combine 里拆出来单独维护）：\n· 单位合体：框选同队单位一键合体成「组合巨兽」，血量/护甲/护盾/武器/能力按成员叠加保留，点选巨兽可随时解体\n· 组合巨兽按成员构成决定飞行/游泳/行走，贴图取数量最多的成员类型并按体型缩放；会飞的编组带引擎、挖矿编组带挖矿光束、工程编组按成员数叠加建造速度\n· 组合单位共享承伤：同组单位按当前生命占比分摊伤害，修复也按整组摊\n· 组合火力共享：开火单位可调用同组空闲单位的就绪武器代打（治疗类武器不代打）\n· 指挥模式里可给单位编组/并组/退组（框选后点顶部「组合」按钮）\n· 组合单位的环境适应按成员推导（埃里克尔地图上合体不会因为灼热环境当场死亡）",
+    "version": "1",
+    "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "combineunit.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

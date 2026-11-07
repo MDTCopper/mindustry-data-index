@@ -1,143 +1,104 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mindustrynew/extrophaxenolithe",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.3",
-      "name": "0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T05:22:19Z",
-      "htmlUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/tag/0.3",
-      "modVersion": "0.2.preview",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.3/Extrophaxenolithe-0.3.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/refs/tags/0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Extrophaxenolithe-0.3.zip",
-          "size": 859688,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.3/Extrophaxenolithe-0.3.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f877e65bd719bd2ca70dde56d2aa89f052b6edb1",
-      "archiveByCommitUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/f877e65bd719bd2ca70dde56d2aa89f052b6edb1.zip"
+      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.3/Extrophaxenolithe-0.3.zip",
+      "modVersion": "0.2.preview",
+      "sizeBytes": 859688,
+      "releasedAt": "2026-10-03T05:22:19Z"
     },
     {
       "tag": "0.2",
-      "name": "Pre-Release 0.2 / v158.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-07T06:47:16Z",
-      "htmlUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/tag/0.2",
-      "modVersion": "1.0.pre-beta",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.2/Extrophaxenolithe-pre.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/refs/tags/0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Extrophaxenolithe-pre.0.2.zip",
-          "size": 876108,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.2/Extrophaxenolithe-pre.0.2.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e464ad06a5b60740be9ddd23612aad362c745a3d",
-      "archiveByCommitUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/e464ad06a5b60740be9ddd23612aad362c745a3d.zip"
+      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.2/Extrophaxenolithe-pre.0.2.zip",
+      "modVersion": "1.0.pre-beta",
+      "sizeBytes": 876108,
+      "downloadCount": 3,
+      "releasedAt": "2026-07-07T06:47:16Z",
+      "prerelease": true
     },
     {
       "tag": "0.1.2",
-      "name": "Pre-Release 0.1.2 / v158.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-05T18:08:39Z",
-      "htmlUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/tag/0.1.2",
-      "modVersion": "1.0.pre-beta",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1.2/Extrophaxenolithe-pre.0.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/refs/tags/0.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Extrophaxenolithe-pre.0.1.2.zip",
-          "size": 830603,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1.2/Extrophaxenolithe-pre.0.1.2.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2ca88ea355740b1ab539dddf97c21c9f2165a310",
-      "archiveByCommitUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/2ca88ea355740b1ab539dddf97c21c9f2165a310.zip"
+      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1.2/Extrophaxenolithe-pre.0.1.2.zip",
+      "modVersion": "1.0.pre-beta",
+      "sizeBytes": 830603,
+      "downloadCount": 1,
+      "releasedAt": "2026-07-05T18:08:39Z",
+      "prerelease": true
     },
     {
       "tag": "0.1.1",
-      "name": "Pre-Release 0.1.1 / v158.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-05T17:25:01Z",
-      "htmlUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/tag/0.1.1",
-      "modVersion": "1.0.pre-beta",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1.1/Extrophaxenolithe-pre.0.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/refs/tags/0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Extrophaxenolithe-pre.0.1.1.zip",
-          "size": 825060,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1.1/Extrophaxenolithe-pre.0.1.1.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2ca88ea355740b1ab539dddf97c21c9f2165a310",
-      "archiveByCommitUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/2ca88ea355740b1ab539dddf97c21c9f2165a310.zip"
+      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1.1/Extrophaxenolithe-pre.0.1.1.zip",
+      "modVersion": "1.0.pre-beta",
+      "sizeBytes": 825060,
+      "downloadCount": 3,
+      "releasedAt": "2026-07-05T17:25:01Z",
+      "prerelease": true
     },
     {
       "tag": "0.1",
-      "name": "Pre-Release 0.1 / v158.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-05T16:54:36Z",
-      "htmlUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/tag/0.1",
-      "modVersion": "1.0.pre-beta",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1/Extrophaxenolithe-pre.0-1.zip",
-      "sourceArchiveUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/refs/tags/0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Extrophaxenolithe-pre.0-1.zip",
-          "size": 825036,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1/Extrophaxenolithe-pre.0-1.zip"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "017378599207d87972c3827d44f11292dc069875",
-      "archiveByCommitUrl": "https://github.com/mindustrynew/extrophaxenolithe/archive/017378599207d87972c3827d44f11292dc069875.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.3",
-      "modVersion": "0.2.preview",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/MindusTryNew/Extrophaxenolithe/releases/download/0.1/Extrophaxenolithe-pre.0-1.zip",
+      "modVersion": "1.0.pre-beta",
+      "sizeBytes": 825036,
+      "downloadCount": 3,
+      "releasedAt": "2026-07-05T16:54:36Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "extrophaxenolithe",
+    "author": "[cyan]Xtro[lime]phale",
+    "description": "Eine Mod, die [cyan]extrophaxenolithische [red]Technologien [clear]hinzufügt. BITTE DEN NEUSTEN RELEASE HERUNTERLADEN!",
+    "version": "0.2.preview",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

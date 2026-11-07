@@ -1,71 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cardillan/sectorlogic",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.1",
-      "name": "0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-13T09:35:23Z",
-      "htmlUrl": "https://github.com/cardillan/SectorLogic/releases/tag/v0.1.1",
-      "modVersion": "0.1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/cardillan/SectorLogic/releases/download/v0.1.1/SectorLogic.jar",
-      "sourceArchiveUrl": "https://github.com/cardillan/sectorlogic/archive/refs/tags/v0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SectorLogic.jar",
-          "size": 12859,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/cardillan/SectorLogic/releases/download/v0.1.1/SectorLogic.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "71c3611ade680eec6a56a0b0a580d89fd7ce57be",
-      "archiveByCommitUrl": "https://github.com/cardillan/sectorlogic/archive/71c3611ade680eec6a56a0b0a580d89fd7ce57be.zip"
-    },
-    {
-      "tag": "v0.1.0",
-      "name": "v0.1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/cardillan/sectorlogic/tree/v0.1.0",
-      "modVersion": "0.1.0",
-      "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/cardillan/sectorlogic/archive/refs/tags/v0.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/cardillan/sectorlogic/archive/refs/tags/v0.1.0.zip",
-      "assets": [],
-      "commitSha": "d921bd057ea8b77d26e3904112268e81978bcf5f",
-      "archiveByCommitUrl": "https://github.com/cardillan/sectorlogic/archive/d921bd057ea8b77d26e3904112268e81978bcf5f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.0",
-      "modVersion": "0.1.0",
-      "minGameVersion": "147",
-      "maxGameVersion": 154,
-      "hasRelease": false
-    },
-    {
-      "tag": "v0.1.1",
+      "downloadUrl": "https://github.com/cardillan/SectorLogic/releases/download/v0.1.1/SectorLogic.jar",
       "modVersion": "0.1.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 12859,
+      "downloadCount": 46,
+      "releasedAt": "2026-09-13T09:35:23Z"
     }
   ],
   "meta": {
+    "name": "sector-logic",
+    "author": "cardillan",
+    "description": "Provides custom mlog instructions for managing sector exports and imports in Serpulo campaign.",
+    "version": "0.1.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "cardillan.sectors.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

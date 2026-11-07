@@ -1,304 +1,181 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "BlackDeluxeCat/MiTour-Lib",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.4.0",
-      "name": "0.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-30T15:54:56Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.4.0",
-      "modVersion": "0.4.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.4.0/MiTour-Lib.0.4.0-149.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.4.0-149.jar",
-          "size": 57412,
-          "downloadCount": 759,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.4.0/MiTour-Lib.0.4.0-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "c27ff853522b46ff35ae5c52012591ab69fd93eb",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/c27ff853522b46ff35ae5c52012591ab69fd93eb.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.4.0/MiTour-Lib.0.4.0-149.jar",
+      "modVersion": "0.4.0",
+      "sizeBytes": 57412,
+      "downloadCount": 759,
+      "releasedAt": "2025-06-30T15:54:56Z"
     },
     {
       "tag": "0.3",
-      "name": "0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-28T15:59:16Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.3",
-      "modVersion": "0.3.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.3/MiTour-Lib.0.3-149.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.3-149.jar",
-          "size": 65981,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.3/MiTour-Lib.0.3-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "8642454a3f45efdeef078f8d14ffd887210a72e3",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/8642454a3f45efdeef078f8d14ffd887210a72e3.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.3/MiTour-Lib.0.3-149.jar",
+      "modVersion": "0.3.0",
+      "sizeBytes": 65981,
+      "downloadCount": 54,
+      "releasedAt": "2025-06-28T15:59:16Z"
     },
     {
       "tag": "0.2.1",
-      "name": "0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T12:51:20Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.2.1",
-      "modVersion": "0.2.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.2.1/MiTour-Lib.0.2.1-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.2.1-141.jar",
-          "size": 15929,
-          "downloadCount": 8811,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.2.1/MiTour-Lib.0.2.1-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "f0e111bf291696a0ce276545fb6783a680fb97cb",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/f0e111bf291696a0ce276545fb6783a680fb97cb.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.2.1/MiTour-Lib.0.2.1-141.jar",
+      "modVersion": "0.2.1",
+      "sizeBytes": 15929,
+      "downloadCount": 8811,
+      "releasedAt": "2023-02-11T12:51:20Z"
     },
     {
       "tag": "0.2",
-      "name": "0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T12:40:26Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.2/MiTour-Lib.0.2-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.2-141.jar",
-          "size": 15644,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.2/MiTour-Lib.0.2-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "b16d281c4c5b09fadf502a83c8da84184aa467dd",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/b16d281c4c5b09fadf502a83c8da84184aa467dd.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.2/MiTour-Lib.0.2-141.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 15644,
+      "downloadCount": 18,
+      "releasedAt": "2023-02-11T12:40:26Z"
     },
     {
       "tag": "0.1h",
-      "name": "0.1h",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T03:01:28Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.1h",
-      "modVersion": "0.1b",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1h/MiTour-Lib.0.1h-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1h.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.1h-141.jar",
-          "size": 14540,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1h/MiTour-Lib.0.1h-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "3f2e0fdb783baf1bb878bc6d6e244614f6468c71",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/3f2e0fdb783baf1bb878bc6d6e244614f6468c71.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1h/MiTour-Lib.0.1h-141.jar",
+      "modVersion": "0.1b",
+      "sizeBytes": 14540,
+      "downloadCount": 11,
+      "releasedAt": "2023-02-11T03:01:28Z"
     },
     {
       "tag": "0.1g",
-      "name": "0.1g",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T02:55:25Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.1g",
-      "modVersion": "0.1b",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1g/MiTour-Lib.0.1g-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1g.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.1g-141.jar",
-          "size": 14540,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1g/MiTour-Lib.0.1g-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "8f966906ae10bef64524ef9fcf0c3f138e3fc8b0",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/8f966906ae10bef64524ef9fcf0c3f138e3fc8b0.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1g/MiTour-Lib.0.1g-141.jar",
+      "modVersion": "0.1b",
+      "sizeBytes": 14540,
+      "downloadCount": 8,
+      "releasedAt": "2023-02-11T02:55:25Z"
     },
     {
       "tag": "0.1f",
-      "name": "0.1f",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T02:51:54Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.1f",
-      "modVersion": "0.1b",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1f/MiTour-Lib.0.1f-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1f.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.1f-141.jar",
-          "size": 14540,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1f/MiTour-Lib.0.1f-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "eba197cf10d03020517d1b1009143f55fdda4038",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/eba197cf10d03020517d1b1009143f55fdda4038.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1f/MiTour-Lib.0.1f-141.jar",
+      "modVersion": "0.1b",
+      "sizeBytes": 14540,
+      "downloadCount": 6,
+      "releasedAt": "2023-02-11T02:51:54Z"
     },
     {
       "tag": "0.1e",
-      "name": "0.1e",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T02:47:11Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.1e",
-      "modVersion": "0.1b",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1e/MiTour-Lib.0.1e-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1e.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.1e-141.jar",
-          "size": 14540,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1e/MiTour-Lib.0.1e-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "a872ab451f18c15a42324b03de27c44216cdc20f",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/a872ab451f18c15a42324b03de27c44216cdc20f.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1e/MiTour-Lib.0.1e-141.jar",
+      "modVersion": "0.1b",
+      "sizeBytes": 14540,
+      "downloadCount": 8,
+      "releasedAt": "2023-02-11T02:47:11Z"
     },
     {
       "tag": "0.1c",
-      "name": "0.1c",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T02:31:48Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.1c",
-      "modVersion": "0.1b",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1c/MiTour-Lib.0.1c-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1c.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.1c-141.jar",
-          "size": 14540,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1c/MiTour-Lib.0.1c-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "1382e921c19266f134644150287308ac3ae30001",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/1382e921c19266f134644150287308ac3ae30001.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1c/MiTour-Lib.0.1c-141.jar",
+      "modVersion": "0.1b",
+      "sizeBytes": 14540,
+      "downloadCount": 6,
+      "releasedAt": "2023-02-11T02:31:48Z"
     },
     {
       "tag": "0.1b",
-      "name": "0.1b",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-11T02:01:21Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/tag/0.1b",
-      "modVersion": "0.1b",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1b/MiTour-Lib.0.1b-141.jar",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1b.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiTour-Lib.0.1b-141.jar",
-          "size": 55389,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1b/MiTour-Lib.0.1b-141.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "41f3f83be86e7ba24fd0d6a555dbaa6e998665c1",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/41f3f83be86e7ba24fd0d6a555dbaa6e998665c1.zip"
-    },
-    {
-      "tag": "0.1d",
-      "name": "0.1d",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/tree/0.1d",
+      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.1b/MiTour-Lib.0.1b-141.jar",
       "modVersion": "0.1b",
-      "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1d.zip",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1d.zip",
-      "assets": [],
-      "commitSha": "6d20689df6d05cebe75e13f9d5a2b741f0579022",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/6d20689df6d05cebe75e13f9d5a2b741f0579022.zip"
-    },
-    {
-      "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/tree/0.1",
-      "modVersion": "0.1",
-      "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1.zip",
-      "sourceArchiveUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/refs/tags/0.1.zip",
-      "assets": [],
-      "commitSha": "055a0b78ae2525221f7aa1ccdff714e53736669e",
-      "archiveByCommitUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/archive/055a0b78ae2525221f7aa1ccdff714e53736669e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.2.1",
-      "modVersion": "0.2.1",
-      "minGameVersion": "141",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "0.4.0",
-      "modVersion": "0.4.0",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 55389,
+      "downloadCount": 12,
+      "releasedAt": "2023-02-11T02:01:21Z"
     }
   ],
   "meta": {
+    "name": "mitour-lib",
+    "author": "BlackDeluxeCat",
+    "description": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
+    "version": "0.4.0",
+    "minGameVersion": "149",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "mt.MiTourLib",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

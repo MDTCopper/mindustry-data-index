@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "laok233/h",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "h",
-      "name": "h",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-09T12:54:48Z",
-      "htmlUrl": "https://github.com/laok233/h/releases/tag/h",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "134",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "134",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/laok233/h/archive/refs/tags/h.zip",
-      "sourceArchiveUrl": "https://github.com/laok233/h/archive/refs/tags/h.zip",
-      "assets": [],
-      "commitSha": "f6c37d1e5ef61ea3d2573b3e0c0fbaddfb03ba5c",
-      "archiveByCommitUrl": "https://github.com/laok233/h/archive/f6c37d1e5ef61ea3d2573b3e0c0fbaddfb03ba5c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "h",
       "modVersion": "0.1",
-      "minGameVersion": "134",
-      "maxGameVersion": 136,
-      "hasRelease": true
+      "releasedAt": "2023-04-09T12:54:48Z"
     }
   ],
   "meta": {
+    "name": "h",
+    "author": "[royal]end[]",
+    "description": "h",
+    "version": "0.1",
+    "minGameVersion": "134",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

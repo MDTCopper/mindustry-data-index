@@ -1,945 +1,581 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "7003mars/bridges",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.3.5",
-      "name": "v1.3.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-12T03:22:14Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.3.5",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.5/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.3.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 66565,
-          "downloadCount": 671,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.5/bridges.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2e0286f62b9d4b92acfa3a84a87f4ff8e5121707",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/2e0286f62b9d4b92acfa3a84a87f4ff8e5121707.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.5/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 66565,
+      "downloadCount": 672,
+      "releasedAt": "2026-07-12T03:22:14Z"
     },
     {
       "tag": "v1.3.4",
-      "name": "v1.3.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-03T04:21:13Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.3.4",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.4/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.3.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 66501,
-          "downloadCount": 1054,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.4/bridges.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "75c4f7f8a58e0d7d77339049ca6d30d99e0ac4f8",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/75c4f7f8a58e0d7d77339049ca6d30d99e0ac4f8.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.4/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 66501,
+      "downloadCount": 1054,
+      "releasedAt": "2026-01-03T04:21:13Z"
     },
     {
       "tag": "v1.3.3",
-      "name": "v1.3.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-17T15:58:13Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.3.3",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.3/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.3.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 66506,
-          "downloadCount": 1077,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.3/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "2094551d5b9157181f373a0f02ce070d6bd7eccc",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/2094551d5b9157181f373a0f02ce070d6bd7eccc.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.3/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 66506,
+      "downloadCount": 1077,
+      "releasedAt": "2025-04-17T15:58:13Z"
     },
     {
       "tag": "v1.3.2",
-      "name": "v1.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-03T15:24:57Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.3.2",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.2/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 66508,
-          "downloadCount": 959,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.2/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "50c56fa084c604a43916676c820dca87e5f64ab6",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/50c56fa084c604a43916676c820dca87e5f64ab6.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.2/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 66508,
+      "downloadCount": 959,
+      "releasedAt": "2025-02-03T15:24:57Z"
     },
     {
       "tag": "v1.3.1",
-      "name": "v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-10T14:39:19Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.3.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.1/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 107182,
-          "downloadCount": 574,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.1/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "a5925978c3eb7351bb06f2248d2db3b60995cde1",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/a5925978c3eb7351bb06f2248d2db3b60995cde1.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.1/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 107182,
+      "downloadCount": 574,
+      "releasedAt": "2024-12-10T14:39:19Z"
     },
     {
       "tag": "v1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-28T03:46:35Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.3",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 107184,
-          "downloadCount": 134,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e2bc7d6750bc0b0d2c87523f0d5fd1d29d3a9d77",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/e2bc7d6750bc0b0d2c87523f0d5fd1d29d3a9d77.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 107184,
+      "downloadCount": 134,
+      "releasedAt": "2024-11-28T03:46:35Z"
     },
     {
       "tag": "v1.2.1",
-      "name": "v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-30T04:09:52Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.2.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.2.1/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 104852,
-          "downloadCount": 3323,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.2.1/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "f83bee2c08ebac1d0bb3ce98249286208d6c5d6f",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/f83bee2c08ebac1d0bb3ce98249286208d6c5d6f.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.2.1/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 104852,
+      "downloadCount": 3323,
+      "releasedAt": "2023-11-30T04:09:52Z"
     },
     {
       "tag": "b1.2",
-      "name": "b1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-20T04:30:20Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/b1.2",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/b1.2/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/b1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 104603,
-          "downloadCount": 2020,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/b1.2/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "7d5da4b3a25aab9e65fff0e154c7ce68db3d9de0",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/7d5da4b3a25aab9e65fff0e154c7ce68db3d9de0.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/b1.2/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 104603,
+      "downloadCount": 2020,
+      "releasedAt": "2023-06-20T04:30:20Z"
     },
     {
       "tag": "v1.1.25",
-      "name": "v1.1.25",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-27T03:08:33Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.25",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.25/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.25.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 93746,
-          "downloadCount": 571,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.25/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "0bd676f4d1cb211525d29ca8a36691c797cbbd66",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/0bd676f4d1cb211525d29ca8a36691c797cbbd66.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.25/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 93746,
+      "downloadCount": 571,
+      "releasedAt": "2023-05-27T03:08:33Z"
     },
     {
       "tag": "v1.1.24",
-      "name": "v1.1.24",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-03T10:54:31Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.24",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.24/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.24.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 93732,
-          "downloadCount": 430,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.24/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "15f31f93a7f8aa54a19623f5c3f6747bd1e1b00f",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/15f31f93a7f8aa54a19623f5c3f6747bd1e1b00f.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.24/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 93732,
+      "downloadCount": 430,
+      "releasedAt": "2023-05-03T10:54:31Z"
     },
     {
       "tag": "v1.1.23",
-      "name": "v1.1.23",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-23T10:34:44Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.23",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.23/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.23.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 87370,
-          "downloadCount": 258,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.23/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "2b85757aaa206232d287439e3325f55e4639d530",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/2b85757aaa206232d287439e3325f55e4639d530.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.23/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 87370,
+      "downloadCount": 258,
+      "releasedAt": "2023-04-23T10:34:44Z"
     },
     {
       "tag": "v1.1.22",
-      "name": "v1.1.22",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-23T09:08:51Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.22",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.22/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.22.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 87579,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.22/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "27ff127ae82430694ac427a0ce29d75508f582fb",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/27ff127ae82430694ac427a0ce29d75508f582fb.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.22/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 87579,
+      "downloadCount": 11,
+      "releasedAt": "2023-04-23T09:08:51Z"
     },
     {
       "tag": "v1.1.21",
-      "name": "v1.1.21",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-22T12:39:32Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.21",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.21/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.21.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 86532,
-          "downloadCount": 33,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.21/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "a450fd7bc938eb8225010ba6495d2fdd5354c307",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/a450fd7bc938eb8225010ba6495d2fdd5354c307.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.21/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 86532,
+      "downloadCount": 33,
+      "releasedAt": "2023-04-22T12:39:32Z"
     },
     {
       "tag": "v1.1.20",
-      "name": "v1.1.20",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-10T10:30:21Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.20",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.20/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.20.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 86036,
-          "downloadCount": 296,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.20/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "99a3dd62f725d830ea3a4653ad3b55f556f18924",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/99a3dd62f725d830ea3a4653ad3b55f556f18924.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.20/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 86036,
+      "downloadCount": 296,
+      "releasedAt": "2023-04-10T10:30:21Z"
     },
     {
       "tag": "v1.1.19",
-      "name": "v1.1.19",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-09T04:04:46Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.19",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.19/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.19.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 85235,
-          "downloadCount": 56,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.19/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d477ff04826ba45df3bc1b9711e8269e16cc5516",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/d477ff04826ba45df3bc1b9711e8269e16cc5516.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.19/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 85235,
+      "downloadCount": 56,
+      "releasedAt": "2023-04-09T04:04:46Z"
     },
     {
       "tag": "v1.1.18",
-      "name": "v1.1.18",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-07T11:34:02Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.18",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.18/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.18.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 85109,
-          "downloadCount": 73,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.18/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d8a12bdd8bffd587f2893c53e6e2bda9f256ccb0",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/d8a12bdd8bffd587f2893c53e6e2bda9f256ccb0.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.18/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 85109,
+      "downloadCount": 73,
+      "releasedAt": "2023-04-07T11:34:02Z"
     },
     {
       "tag": "v1.1.17",
-      "name": "v1.1.17",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-08T14:14:58Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.17",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.17/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.17.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 81297,
-          "downloadCount": 1053,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.17/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "0695a52481773177d09bd6ece763409a4148f231",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/0695a52481773177d09bd6ece763409a4148f231.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.17/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 81297,
+      "downloadCount": 1053,
+      "releasedAt": "2023-02-08T14:14:58Z"
     },
     {
       "tag": "v1.1.16",
-      "name": "v1.1.16",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-05T04:42:48Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.16",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.16/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.16.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 81158,
-          "downloadCount": 87,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.16/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "3d2ea5ca1d05f98972a7f3842a8dd4a044586e67",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/3d2ea5ca1d05f98972a7f3842a8dd4a044586e67.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.16/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 81158,
+      "downloadCount": 87,
+      "releasedAt": "2023-02-05T04:42:48Z"
     },
     {
       "tag": "v1.1.15",
-      "name": "v1.1.15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-20T14:17:35Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.15",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.15/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 81089,
-          "downloadCount": 360,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.15/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "9977046d53b600af391ecbfb2017c4b5806f6265",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/9977046d53b600af391ecbfb2017c4b5806f6265.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.15/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 81089,
+      "downloadCount": 360,
+      "releasedAt": "2023-01-20T14:17:35Z"
     },
     {
       "tag": "v1.1.14",
-      "name": "v1.1.14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-12T09:53:29Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.14",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.14/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.14.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 80550,
-          "downloadCount": 244,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.14/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "4e8fb4aa05b9cc876744ab29a9d06846482c57e9",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/4e8fb4aa05b9cc876744ab29a9d06846482c57e9.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.14/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 80550,
+      "downloadCount": 244,
+      "releasedAt": "2023-01-12T09:53:29Z"
     },
     {
       "tag": "v1.1.13",
-      "name": "v1.1.13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-10T12:32:14Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.13",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.13/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 80493,
-          "downloadCount": 65,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.13/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "090a62a7f8d365f6ae1bebd97fb663d9aefb6468",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/090a62a7f8d365f6ae1bebd97fb663d9aefb6468.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.13/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 80493,
+      "downloadCount": 65,
+      "releasedAt": "2023-01-10T12:32:14Z"
     },
     {
       "tag": "v1.1.12",
-      "name": "v1.1.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-08T09:26:02Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.12",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.12/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 80456,
-          "downloadCount": 76,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.12/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "0cf30a66f2296d54031c3b9f81f38a049cd6592b",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/0cf30a66f2296d54031c3b9f81f38a049cd6592b.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.12/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 80456,
+      "downloadCount": 76,
+      "releasedAt": "2023-01-08T09:26:02Z"
     },
     {
       "tag": "v1.1.11",
-      "name": "v1.1.11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-03T13:34:20Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.11",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.11/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 80275,
-          "downloadCount": 126,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.11/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d819b78c51b9486b387eea1c6f23762e6db16d99",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/d819b78c51b9486b387eea1c6f23762e6db16d99.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.11/bridges.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 80275,
+      "downloadCount": 126,
+      "releasedAt": "2023-01-03T13:34:20Z"
     },
     {
       "tag": "v1.1.10",
-      "name": "v1.1.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-29T09:21:12Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.10",
-      "modVersion": "1.1.9",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.10/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 80898,
-          "downloadCount": 180,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.10/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "a2035cccee1fd7194c9c18add7b154e948d59d50",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/a2035cccee1fd7194c9c18add7b154e948d59d50.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.10/bridges.jar",
+      "modVersion": "1.1.9",
+      "sizeBytes": 80898,
+      "downloadCount": 180,
+      "releasedAt": "2022-12-29T09:21:12Z"
     },
     {
       "tag": "v1.1.9",
-      "name": "v1.1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-23T13:06:42Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.9",
-      "modVersion": "1.1.9",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.9/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 80262,
-          "downloadCount": 211,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.9/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "13db93a321712342293e5e8454edadba973441d8",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/13db93a321712342293e5e8454edadba973441d8.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.9/bridges.jar",
+      "modVersion": "1.1.9",
+      "sizeBytes": 80262,
+      "downloadCount": 211,
+      "releasedAt": "2022-12-23T13:06:42Z"
     },
     {
       "tag": "v1.1.5",
-      "name": "v1.1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-18T04:53:54Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.5",
-      "modVersion": "1.1.5",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.5/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 78508,
-          "downloadCount": 215,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.5/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "6207fa7d6d3f8350370106909cef4caeae0a575a",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/6207fa7d6d3f8350370106909cef4caeae0a575a.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.5/bridges.jar",
+      "modVersion": "1.1.5",
+      "sizeBytes": 78508,
+      "downloadCount": 215,
+      "releasedAt": "2022-12-18T04:53:54Z"
     },
     {
       "tag": "v1.1.4",
-      "name": "v1.1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-17T04:59:44Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.4",
-      "modVersion": "1.1.4",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.4/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 78293,
-          "downloadCount": 56,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.4/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "761dca14c002bc0b4e1ffebe32414c95a5ae0277",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/761dca14c002bc0b4e1ffebe32414c95a5ae0277.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.4/bridges.jar",
+      "modVersion": "1.1.4",
+      "sizeBytes": 78293,
+      "downloadCount": 56,
+      "releasedAt": "2022-12-17T04:59:44Z"
     },
     {
       "tag": "v1.1.3",
-      "name": "v1.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-14T13:41:29Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.3",
-      "modVersion": "1.1.3",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.3/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 78170,
-          "downloadCount": 101,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.3/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "36fb65a850111c7f379bb9b21d0f651286dc7be5",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/36fb65a850111c7f379bb9b21d0f651286dc7be5.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.3/bridges.jar",
+      "modVersion": "1.1.3",
+      "sizeBytes": 78170,
+      "downloadCount": 101,
+      "releasedAt": "2022-12-14T13:41:29Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-10T04:17:14Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.2",
-      "modVersion": "1.1.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.2/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 74852,
-          "downloadCount": 177,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.2/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "77d48c6af54772965cefe39e2c41b6261ec1c2e7",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/77d48c6af54772965cefe39e2c41b6261ec1c2e7.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.2/bridges.jar",
+      "modVersion": "1.1.2",
+      "sizeBytes": 74852,
+      "downloadCount": 177,
+      "releasedAt": "2022-12-10T04:17:14Z"
     },
     {
       "tag": "v1.0.3",
-      "name": "v1.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-08T12:27:15Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.0.3",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.3/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 70662,
-          "downloadCount": 49,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.3/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "6851f339264a2940388b533ec8f8b2cb74189fde",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/6851f339264a2940388b533ec8f8b2cb74189fde.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.3/bridges.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 70662,
+      "downloadCount": 49,
+      "releasedAt": "2022-12-08T12:27:15Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-17T15:08:01Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.1.1",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.1/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 73217,
-          "downloadCount": 410,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.1/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "b978094b8107cc666f4a528eae77f94983d31465",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/b978094b8107cc666f4a528eae77f94983d31465.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.1.1/bridges.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 73217,
+      "downloadCount": 410,
+      "releasedAt": "2022-11-17T15:08:01Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "v1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-06T13:56:52Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.0.2",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.2/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 69550,
-          "downloadCount": 193,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.2/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "b00a6de6b015e569721550e18de2d972d8815c8d",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/b00a6de6b015e569721550e18de2d972d8815c8d.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.2/bridges.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 69550,
+      "downloadCount": 193,
+      "releasedAt": "2022-11-06T13:56:52Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-01T14:24:58Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.1/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 69527,
-          "downloadCount": 72,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.1/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "c4392d1220c32b4fa961dcf0e3aa0303d5eaf151",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/c4392d1220c32b4fa961dcf0e3aa0303d5eaf151.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.1/bridges.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 69527,
+      "downloadCount": 72,
+      "releasedAt": "2022-11-01T14:24:58Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-31T02:30:06Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.0/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 69544,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.0/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "756bb9091ebdd8ae17a3f926cc83405429d7ac5a",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/756bb9091ebdd8ae17a3f926cc83405429d7ac5a.zip"
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0.0/bridges.jar",
+      "modVersion": "1",
+      "sizeBytes": 69544,
+      "downloadCount": 24,
+      "releasedAt": "2022-10-31T02:30:06Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-10-29T01:43:52Z",
-      "htmlUrl": "https://github.com/7003Mars/bridges/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0/bridges.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bridges.jar",
-          "size": 68755,
-          "downloadCount": 65,
-          "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0/bridges.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "5327968c953a93962fba4da3d576e745f0e4a770",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/5327968c953a93962fba4da3d576e745f0e4a770.zip"
-    },
-    {
-      "tag": "v1.1.8",
-      "name": "v1.1.8",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/7003mars/bridges/tree/v1.1.8",
-      "modVersion": "1.1.7",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.8.zip",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.8.zip",
-      "assets": [],
-      "commitSha": "d301ba240379103f5c20af0953b991fe056632f4",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/d301ba240379103f5c20af0953b991fe056632f4.zip"
-    },
-    {
-      "tag": "v1.1.7",
-      "name": "v1.1.7",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/7003mars/bridges/tree/v1.1.7",
-      "modVersion": "1.1.7",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.7.zip",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.7.zip",
-      "assets": [],
-      "commitSha": "205468aefe3695ac7f25ac76c971950b83def5c9",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/205468aefe3695ac7f25ac76c971950b83def5c9.zip"
-    },
-    {
-      "tag": "v1.1.6",
-      "name": "v1.1.6",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/7003mars/bridges/tree/v1.1.6",
-      "modVersion": "1.1.6",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.6.zip",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.6.zip",
-      "assets": [],
-      "commitSha": "8f2d95e93a72f3aec83befe8f28e5e3773702873",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/8f2d95e93a72f3aec83befe8f28e5e3773702873.zip"
-    },
-    {
-      "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/7003mars/bridges/tree/v1.1.0",
-      "modVersion": "1.0.2",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/7003mars/bridges/archive/refs/tags/v1.1.0.zip",
-      "assets": [],
-      "commitSha": "8cd1923037febf23223747c63ff3746c80f74bbe",
-      "archiveByCommitUrl": "https://github.com/7003mars/bridges/archive/8cd1923037febf23223747c63ff3746c80f74bbe.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.3.3",
-      "modVersion": "REPLACEME",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.3.4",
-      "modVersion": "REPLACEME",
-      "minGameVersion": "154.3",
-      "maxGameVersion": 156,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.3.5",
-      "modVersion": "REPLACEME",
-      "minGameVersion": "156",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.0/bridges.jar",
+      "modVersion": "1",
+      "sizeBytes": 68755,
+      "downloadCount": 65,
+      "releasedAt": "2022-10-29T01:43:52Z"
     }
   ],
   "meta": {
+    "name": "bridging",
+    "author": "Mars",
+    "description": "Displays all bridge links. Helps with bridge weaving",
+    "version": "REPLACEME",
+    "minGameVersion": "156",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "me.mars.Bridges",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

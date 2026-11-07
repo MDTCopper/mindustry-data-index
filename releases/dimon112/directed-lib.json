@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dimon112/directed-lib",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.9",
-      "name": "0.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T08:07:12Z",
-      "htmlUrl": "https://github.com/dimon112/Directed-Lib/releases/tag/0.9",
-      "modVersion": "0.9",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/dimon112/Directed-Lib/releases/download/0.9/Directed-Lib.jar",
-      "sourceArchiveUrl": "https://github.com/dimon112/directed-lib/archive/refs/tags/0.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Directed-Lib.jar",
-          "size": 19722,
-          "downloadCount": 217,
-          "downloadUrl": "https://github.com/dimon112/Directed-Lib/releases/download/0.9/Directed-Lib.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e55ecaeb28aa5120a17bff810def748355d7060e",
-      "archiveByCommitUrl": "https://github.com/dimon112/directed-lib/archive/e55ecaeb28aa5120a17bff810def748355d7060e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.9",
+      "downloadUrl": "https://github.com/dimon112/Directed-Lib/releases/download/0.9/Directed-Lib.jar",
       "modVersion": "0.9",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 19722,
+      "downloadCount": 217,
+      "releasedAt": "2026-10-18T08:07:12Z"
     }
   ],
   "meta": {
+    "name": "directed-lib",
+    "author": "Chmonya",
+    "description": "A library and utility mod providing directional output crafters and custom drawers for Mindustry, [accent]suggested by oscillatorium[]",
+    "version": "0.9",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "directedlib.DirectedLibMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

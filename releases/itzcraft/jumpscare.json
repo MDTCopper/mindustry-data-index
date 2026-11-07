@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "itzcraft/jumpscare",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "frog",
-      "name": "frog",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-03T17:02:09Z",
-      "htmlUrl": "https://github.com/ItzCraft/Jumpscare/releases/tag/frog",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ItzCraft/Jumpscare/releases/download/frog/Jumpscare.jar",
-      "sourceArchiveUrl": "https://github.com/itzcraft/jumpscare/archive/refs/tags/frog.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Jumpscare.jar",
-          "size": 158819,
-          "downloadCount": 224,
-          "downloadUrl": "https://github.com/ItzCraft/Jumpscare/releases/download/frog/Jumpscare.jar"
+          "from": "158.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0ad4627a80704a77ef734ac311d82c207a59afa7",
-      "archiveByCommitUrl": "https://github.com/itzcraft/jumpscare/archive/0ad4627a80704a77ef734ac311d82c207a59afa7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "frog",
+      "downloadUrl": "https://github.com/ItzCraft/Jumpscare/releases/download/frog/Jumpscare.jar",
       "modVersion": "1",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 158819,
+      "downloadCount": 224,
+      "releasedAt": "2026-06-03T17:02:09Z"
     }
   ],
   "meta": {
+    "name": "jumpscare",
+    "author": "Me",
+    "description": "Adds a jumpscares to your game. Goodluck.",
+    "version": "1",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "jumpscare.JumpscareMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

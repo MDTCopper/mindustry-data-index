@@ -1,77 +1,54 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "LaoHuaJiOfficial/FreightFactory",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.2",
-      "name": "v0.2: Custom Unit",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-04T06:42:06Z",
-      "htmlUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/tag/v0.2",
-      "modVersion": "ALPHA_v0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.2/FoodFactory.jar",
-      "sourceArchiveUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/archive/refs/tags/v0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FoodFactory.jar",
-          "size": 1460754,
-          "downloadCount": 5580,
-          "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.2/FoodFactory.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7996e80351780115bb04944af508f01966903998",
-      "archiveByCommitUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/archive/7996e80351780115bb04944af508f01966903998.zip"
+      "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.2/FoodFactory.jar",
+      "modVersion": "ALPHA_v0.2",
+      "sizeBytes": 1460754,
+      "downloadCount": 5580,
+      "releasedAt": "2024-04-04T06:42:06Z"
     },
     {
       "tag": "v0.1",
-      "name": "Everything has a start.",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-03-08T15:04:29Z",
-      "htmlUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.1/FoodFactory.jar",
-      "sourceArchiveUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "FoodFactory.jar",
-          "size": 1281569,
-          "downloadCount": 138,
-          "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.1/FoodFactory.jar"
-        },
-        {
-          "name": "FoodFactoryLegacy.zip",
-          "size": 2626308,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.1/FoodFactoryLegacy.zip"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "dd8a0464962dcbfdb80a05d6b3ced189f89c25a6",
-      "archiveByCommitUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/archive/dd8a0464962dcbfdb80a05d6b3ced189f89c25a6.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2",
-      "modVersion": "ALPHA_v0.2",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/LaoHuaJiOfficial/FreightFactory/releases/download/v0.1/FoodFactory.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 3907877,
+      "downloadCount": 153,
+      "releasedAt": "2024-03-08T15:04:29Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "FF",
+    "author": "LaoHuaJi",
+    "description": "A Mod In Dev",
+    "version": "ALPHA_v0.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ModMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

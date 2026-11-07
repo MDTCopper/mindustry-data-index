@@ -1,1248 +1,742 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/logicsugar",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v5.11.0",
-      "name": "Logic Sugar v5.11.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-05T10:17:38Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.11.0",
-      "modVersion": "5.11.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.11.0/LogicSugar-v5.11.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.11.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.11.0.jar",
-          "size": 3143843,
-          "downloadCount": 67,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.11.0/LogicSugar-v5.11.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "24d250a5af103ce37f74e1d38fac3066cca625c0",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/24d250a5af103ce37f74e1d38fac3066cca625c0.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.11.0/LogicSugar-v5.11.0.jar",
+      "modVersion": "5.11.0",
+      "sizeBytes": 3143843,
+      "downloadCount": 72,
+      "releasedAt": "2026-11-05T10:17:38Z"
     },
     {
       "tag": "v5.10.0",
-      "name": "Logic Sugar v5.10.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-02T16:20:01Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.10.0",
-      "modVersion": "5.10.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.10.0/LogicSugar-v5.10.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.10.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.10.0.jar",
-          "size": 3134265,
-          "downloadCount": 69,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.10.0/LogicSugar-v5.10.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "230234e2510b02dc570b1da3b889e350ee0d177f",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/230234e2510b02dc570b1da3b889e350ee0d177f.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.10.0/LogicSugar-v5.10.0.jar",
+      "modVersion": "5.10.0",
+      "sizeBytes": 3134265,
+      "downloadCount": 69,
+      "releasedAt": "2026-11-02T16:20:01Z"
     },
     {
       "tag": "v5.9.2",
-      "name": "Logic Sugar v5.9.2[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T09:25:12Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.9.2",
-      "modVersion": "5.9.2",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.2/LogicSugar-v5.9.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.9.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.9.2.jar",
-          "size": 3115492,
-          "downloadCount": 289,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.2/LogicSugar-v5.9.2.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e35523a8231a0377617328b223120f593f1225d1",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/e35523a8231a0377617328b223120f593f1225d1.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.2/LogicSugar-v5.9.2.jar",
+      "modVersion": "5.9.2",
+      "sizeBytes": 3115492,
+      "downloadCount": 289,
+      "releasedAt": "2026-10-18T09:25:12Z"
     },
     {
       "tag": "v5.9.1",
-      "name": "Logic Sugar v5.9.1[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-15T04:49:10Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.9.1",
-      "modVersion": "5.9.1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.1/LogicSugar-v5.9.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.9.1.jar",
-          "size": 3115420,
-          "downloadCount": 125,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.1/LogicSugar-v5.9.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6dfac25dac738aa018c60fb2f5d0de7728a1d21b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/6dfac25dac738aa018c60fb2f5d0de7728a1d21b.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.1/LogicSugar-v5.9.1.jar",
+      "modVersion": "5.9.1",
+      "sizeBytes": 3115420,
+      "downloadCount": 125,
+      "releasedAt": "2026-10-15T04:49:10Z"
     },
     {
       "tag": "v5.9.0",
-      "name": "Logic Sugar v5.9.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-11T02:53:35Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.9.0",
-      "modVersion": "5.9.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.0/LogicSugar-v5.9.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.9.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.9.0.jar",
-          "size": 3115394,
-          "downloadCount": 120,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.0/LogicSugar-v5.9.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cf0e5d22f0a92b3d1b1416ed87bb4615d8bfdc6e",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/cf0e5d22f0a92b3d1b1416ed87bb4615d8bfdc6e.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.9.0/LogicSugar-v5.9.0.jar",
+      "modVersion": "5.9.0",
+      "sizeBytes": 3115394,
+      "downloadCount": 120,
+      "releasedAt": "2026-10-11T02:53:35Z"
     },
     {
       "tag": "v5.8.0",
-      "name": "Logic Sugar v5.8.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-04T23:59:52Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.8.0",
-      "modVersion": "5.8.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.8.0/LogicSugar-v5.8.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.8.0.jar",
-          "size": 3108112,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.8.0/LogicSugar-v5.8.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e957074abd5f862506e47ba3fc9be8ec7fd26edf",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/e957074abd5f862506e47ba3fc9be8ec7fd26edf.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.8.0/LogicSugar-v5.8.0.jar",
+      "modVersion": "5.8.0",
+      "sizeBytes": 3108112,
+      "downloadCount": 19,
+      "releasedAt": "2026-10-04T23:59:52Z",
+      "prerelease": true
     },
     {
       "tag": "v5.7.2",
-      "name": "Logic Sugar v5.7.2[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T15:56:32Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.7.2",
-      "modVersion": "5.7.2",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.2/LogicSugar-v5.7.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.7.2.jar",
-          "size": 3033578,
-          "downloadCount": 311,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.2/LogicSugar-v5.7.2.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "34c5849cccc127c9bfe65500c5a9ba17d7ec69f9",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/34c5849cccc127c9bfe65500c5a9ba17d7ec69f9.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.2/LogicSugar-v5.7.2.jar",
+      "modVersion": "5.7.2",
+      "sizeBytes": 3033578,
+      "downloadCount": 311,
+      "releasedAt": "2026-10-04T15:56:32Z"
     },
     {
       "tag": "v5.7.1",
-      "name": "Logic Sugar v5.7.1[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-04T14:10:17Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.7.1",
-      "modVersion": "5.7.1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.1/LogicSugar-v5.7.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.7.1.jar",
-          "size": 3032608,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.1/LogicSugar-v5.7.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0a33b6772d1c10238130f6e61286f3e7793c148f",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/0a33b6772d1c10238130f6e61286f3e7793c148f.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.1/LogicSugar-v5.7.1.jar",
+      "modVersion": "5.7.1",
+      "sizeBytes": 3032608,
+      "downloadCount": 9,
+      "releasedAt": "2026-10-04T14:10:17Z"
     },
     {
       "tag": "v5.7.0",
-      "name": "Logic Sugar v5.7.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T16:21:44Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.7.0",
-      "modVersion": "5.7.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.0/LogicSugar-v5.7.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.7.0.jar",
-          "size": 3071019,
-          "downloadCount": 60,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.0/LogicSugar-v5.7.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "728384e99c406febf5c65168b30997968456ed04",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/728384e99c406febf5c65168b30997968456ed04.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.7.0/LogicSugar-v5.7.0.jar",
+      "modVersion": "5.7.0",
+      "sizeBytes": 3071019,
+      "downloadCount": 60,
+      "releasedAt": "2026-10-03T16:21:44Z"
     },
     {
       "tag": "v5.6.1",
-      "name": "Logic Sugar v5.6.1[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T04:58:54Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.6.1",
-      "modVersion": "5.6.1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.6.1/LogicSugar-v5.6.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.6.1.jar",
-          "size": 3043240,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.6.1/LogicSugar-v5.6.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3d997d75301732df520d386f6f0587c0065d01c0",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/3d997d75301732df520d386f6f0587c0065d01c0.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.6.1/LogicSugar-v5.6.1.jar",
+      "modVersion": "5.6.1",
+      "sizeBytes": 3043240,
+      "downloadCount": 43,
+      "releasedAt": "2026-10-03T04:58:54Z"
     },
     {
       "tag": "v5.6.0",
-      "name": "v5.6.0[160.1] - National Day Special Version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-01T13:09:42Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.6.0",
-      "modVersion": "5.6.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.6.0/LogicSugar-v5.6.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.6.0.jar",
-          "size": 3041747,
-          "downloadCount": 90,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.6.0/LogicSugar-v5.6.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6d068ef998718b0ad262d94fd15e2911be996725",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/6d068ef998718b0ad262d94fd15e2911be996725.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.6.0/LogicSugar-v5.6.0.jar",
+      "modVersion": "5.6.0",
+      "sizeBytes": 3041747,
+      "downloadCount": 90,
+      "releasedAt": "2026-10-01T13:09:42Z"
     },
     {
       "tag": "v5.5.0",
-      "name": "Logic Sugar v5.5.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-30T17:25:11Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.5.0",
-      "modVersion": "5.5.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.5.0/LogicSugar-v5.5.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.5.0.jar",
-          "size": 2899018,
-          "downloadCount": 62,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.5.0/LogicSugar-v5.5.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "55a5e16e619ffbda94fcab22ebee7f968c52444c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/55a5e16e619ffbda94fcab22ebee7f968c52444c.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.5.0/LogicSugar-v5.5.0.jar",
+      "modVersion": "5.5.0",
+      "sizeBytes": 2899018,
+      "downloadCount": 62,
+      "releasedAt": "2026-09-30T17:25:11Z"
     },
     {
       "tag": "v5.4.1",
-      "name": "Logic Sugar v5.4.1[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-25T16:59:58Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.4.1",
-      "modVersion": "5.4.1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.4.1/LogicSugar-v5.4.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.4.1.jar",
-          "size": 2851964,
-          "downloadCount": 160,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.4.1/LogicSugar-v5.4.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a9e94fca194393bcb2818490fa592f6249a855cf",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/a9e94fca194393bcb2818490fa592f6249a855cf.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.4.1/LogicSugar-v5.4.1.jar",
+      "modVersion": "5.4.1",
+      "sizeBytes": 2851964,
+      "downloadCount": 160,
+      "releasedAt": "2026-09-25T16:59:58Z"
     },
     {
       "tag": "v5.4.0",
-      "name": "Logic Sugar v5.4.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-25T14:12:26Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.4.0",
-      "modVersion": "5.4.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.4.0/LogicSugar-v5.4.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.4.0.jar",
-          "size": 2834452,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.4.0/LogicSugar-v5.4.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f982e1f044e0a3d7f01759c743670b8f13ad2711",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/f982e1f044e0a3d7f01759c743670b8f13ad2711.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.4.0/LogicSugar-v5.4.0.jar",
+      "modVersion": "5.4.0",
+      "sizeBytes": 2834452,
+      "downloadCount": 12,
+      "releasedAt": "2026-09-25T14:12:26Z"
     },
     {
       "tag": "v5.3.1",
-      "name": "Logic Sugar v5.3.1[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-25T02:16:16Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.3.1",
-      "modVersion": "5.3.1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.3.1/LogicSugar-v5.3.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.3.1.jar",
-          "size": 2769620,
-          "downloadCount": 28,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.3.1/LogicSugar-v5.3.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1f0bcb8f528983aed40468ec2d7105d8f5955e30",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/1f0bcb8f528983aed40468ec2d7105d8f5955e30.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.3.1/LogicSugar-v5.3.1.jar",
+      "modVersion": "5.3.1",
+      "sizeBytes": 2769620,
+      "downloadCount": 28,
+      "releasedAt": "2026-09-25T02:16:16Z"
     },
     {
       "tag": "v5.3.0",
-      "name": "Logic Sugar v5.3.0[v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-24T16:54:36Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.3.0",
-      "modVersion": "5.3.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.3.0/LogicSugar-v5.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.3.0.jar",
-          "size": 2771633,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.3.0/LogicSugar-v5.3.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4496e4fb4dfd8f586db6453487f87675e0d32ba2",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/4496e4fb4dfd8f586db6453487f87675e0d32ba2.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.3.0/LogicSugar-v5.3.0.jar",
+      "modVersion": "5.3.0",
+      "sizeBytes": 2771633,
+      "downloadCount": 25,
+      "releasedAt": "2026-09-24T16:54:36Z"
     },
     {
       "tag": "v5.2.0",
-      "name": "5.2.0 [v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-19T02:17:34Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.2.0",
-      "modVersion": "5.2.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.2.0/LogicSugar-v5.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.2.0.jar",
-          "size": 2693007,
-          "downloadCount": 160,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.2.0/LogicSugar-v5.2.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2670df7abc58dcc96dc0e5bd90173a73d426aea3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/2670df7abc58dcc96dc0e5bd90173a73d426aea3.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.2.0/LogicSugar-v5.2.0.jar",
+      "modVersion": "5.2.0",
+      "sizeBytes": 2693007,
+      "downloadCount": 160,
+      "releasedAt": "2026-09-19T02:17:34Z"
     },
     {
       "tag": "v5.1.2",
-      "name": "5.1.2 [v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-18T16:20:44Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.1.2",
-      "modVersion": "5.1.2",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.2/LogicSugar-v5.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.1.2.jar",
-          "size": 2679600,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.2/LogicSugar-v5.1.2.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5298fa682a93bf23db350b14829f2a16a6b35396",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/5298fa682a93bf23db350b14829f2a16a6b35396.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.2/LogicSugar-v5.1.2.jar",
+      "modVersion": "5.1.2",
+      "sizeBytes": 2679600,
+      "downloadCount": 26,
+      "releasedAt": "2026-09-18T16:20:44Z"
     },
     {
       "tag": "v5.1.1",
-      "name": "5.1.1 [v160.1]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-18T14:39:33Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.1.1",
-      "modVersion": "5.1.1",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.1/LogicSugar-v5.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.1.1.jar",
-          "size": 2678281,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.1/LogicSugar-v5.1.1.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "911fe9dced07be1e45163f69be301fd689506a05",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/911fe9dced07be1e45163f69be301fd689506a05.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.1/LogicSugar-v5.1.1.jar",
+      "modVersion": "5.1.1",
+      "sizeBytes": 2678281,
+      "downloadCount": 4,
+      "releasedAt": "2026-09-18T14:39:33Z"
     },
     {
       "tag": "v5.1.0",
-      "name": "LogicSugar v5.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-13T09:03:45Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.1.0",
-      "modVersion": "5.1.0",
+      "kind": "release",
       "minGameVersion": "160.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.0/LogicSugar-v5.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v5.1.0.jar",
-          "size": 2669518,
-          "downloadCount": 131,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.0/LogicSugar-v5.1.0.jar"
+          "from": "160.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "67305ca40a9c08b6924cfb15e970043d09eb1958",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/67305ca40a9c08b6924cfb15e970043d09eb1958.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.1.0/LogicSugar-v5.1.0.jar",
+      "modVersion": "5.1.0",
+      "sizeBytes": 2669518,
+      "downloadCount": 131,
+      "releasedAt": "2026-09-13T09:03:45Z"
     },
     {
       "tag": "v5.0.0",
-      "name": "LogicSugar v5.0.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-11T13:35:41Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v5.0.0",
-      "modVersion": "5.0.0",
+      "kind": "release",
       "minGameVersion": "27771",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.0.0/LogicSugar-v5.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v5.0.0.zip",
-      "assets": [
-        {
-          "name": "LogicSugar-v5.0.0.jar",
-          "size": 2596988,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.0.0/LogicSugar-v5.0.0.jar"
-        }
-      ],
-      "commitSha": "8e54a92d4ec4815d0051a8d2fc302f0164578238",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/8e54a92d4ec4815d0051a8d2fc302f0164578238.zip"
+      "modVersion": "5.0.0",
+      "sizeBytes": 2596988,
+      "downloadCount": 8,
+      "releasedAt": "2026-09-11T13:35:41Z",
+      "prerelease": true
     },
     {
       "tag": "v4.3.0-be.27771",
-      "name": "LogicSugar v4.3.0-be.27771",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-10T17:24:28Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v4.3.0-be.27771",
-      "modVersion": "4.3.0-be.27771",
+      "kind": "release",
       "minGameVersion": "27771",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.3.0-be.27771/LogicSugar-v4.3.0-be.27771.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v4.3.0-be.27771.zip",
-      "assets": [
-        {
-          "name": "LogicSugar-v4.3.0-be.27771.jar",
-          "size": 2595310,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.3.0-be.27771/LogicSugar-v4.3.0-be.27771.jar"
-        }
-      ],
-      "commitSha": "0126d1c026416e7e66bc06be5a7ce25946f183ef",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/0126d1c026416e7e66bc06be5a7ce25946f183ef.zip"
+      "modVersion": "4.3.0-be.27771",
+      "sizeBytes": 2595310,
+      "downloadCount": 7,
+      "releasedAt": "2026-09-10T17:24:28Z",
+      "prerelease": true
     },
     {
       "tag": "v4.2.0-be.27771",
-      "name": "LogicSugar v4.2.0-be.27771",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-09T11:47:39Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v4.2.0-be.27771",
-      "modVersion": "4.2.0-be.27771",
+      "kind": "release",
       "minGameVersion": "27771",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.2.0-be.27771/LogicSugar-v4.2.0-be.27771.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v4.2.0-be.27771.zip",
-      "assets": [
-        {
-          "name": "LogicSugar-v4.2.0-be.27771.jar",
-          "size": 2549000,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.2.0-be.27771/LogicSugar-v4.2.0-be.27771.jar"
-        }
-      ],
-      "commitSha": "bb2b0d538f0ee6ea858229ccf3d6d08a8359afaa",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/bb2b0d538f0ee6ea858229ccf3d6d08a8359afaa.zip"
+      "modVersion": "4.2.0-be.27771",
+      "sizeBytes": 2549000,
+      "downloadCount": 5,
+      "releasedAt": "2026-09-09T11:47:39Z",
+      "prerelease": true
     },
     {
       "tag": "v4.1.0-be.27771",
-      "name": "LogicSugar v4.1.0-be.27771",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-07T13:12:27Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v4.1.0-be.27771",
-      "modVersion": "4.1.0-be.27771",
+      "kind": "release",
       "minGameVersion": "27771",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [],
       "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.1.0-be.27771/LogicSugar-v4.1.0-be.27771.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v4.1.0-be.27771.zip",
-      "assets": [
-        {
-          "name": "LogicSugar-v4.1.0-be.27771.jar",
-          "size": 2331701,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.1.0-be.27771/LogicSugar-v4.1.0-be.27771.jar"
-        }
-      ],
-      "commitSha": "ff17d1fea988a43eb0ad5e560a5c9d899e9fc685",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/ff17d1fea988a43eb0ad5e560a5c9d899e9fc685.zip"
+      "modVersion": "4.1.0-be.27771",
+      "sizeBytes": 2331701,
+      "downloadCount": 4,
+      "releasedAt": "2026-09-07T13:12:27Z",
+      "prerelease": true
     },
     {
       "tag": "v4.0.0",
-      "name": "Logic Sugar v4.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-06T03:30:42Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v4.0.0",
-      "modVersion": "4.0.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.0.0/LogicSugar-v4.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v4.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v4.0.0.jar",
-          "size": 2295040,
-          "downloadCount": 258,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.0.0/LogicSugar-v4.0.0.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a97c1e721e3a447e075fcb9e2ffad9dc9a282374",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/a97c1e721e3a447e075fcb9e2ffad9dc9a282374.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v4.0.0/LogicSugar-v4.0.0.jar",
+      "modVersion": "4.0.0",
+      "sizeBytes": 2295040,
+      "downloadCount": 258,
+      "releasedAt": "2026-09-06T03:30:42Z"
     },
     {
       "tag": "v3.1.0",
-      "name": "Logic Sugar v3.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-05T12:28:57Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v3.1.0",
-      "modVersion": "3.1.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.1.0/LogicSugar-v3.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v3.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v3.1.0.jar",
-          "size": 2223069,
-          "downloadCount": 28,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.1.0/LogicSugar-v3.1.0.jar"
-        },
-        {
-          "name": "LogicSugar-v3.1.0.zip",
-          "size": 2377164,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.1.0/LogicSugar-v3.1.0.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8fe471c1e5f37cbd01b54588feaa3a8e8f4bf01a",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/8fe471c1e5f37cbd01b54588feaa3a8e8f4bf01a.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.1.0/LogicSugar-v3.1.0.jar",
+      "modVersion": "3.1.0",
+      "sizeBytes": 4600233,
+      "downloadCount": 33,
+      "releasedAt": "2026-09-05T12:28:57Z"
     },
     {
       "tag": "v3.0.1",
-      "name": "Logic Sugar v3.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-27T12:51:16Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v3.0.1",
-      "modVersion": "3.0.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.1/LogicSugar-v3.0.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v3.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v3.0.1.jar",
-          "size": 2125594,
-          "downloadCount": 206,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.1/LogicSugar-v3.0.1.jar"
-        },
-        {
-          "name": "LogicSugar-v3.0.1.zip",
-          "size": 2283518,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.1/LogicSugar-v3.0.1.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "355b263335a6616c979bad2358ea2a3a26a79f9c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/355b263335a6616c979bad2358ea2a3a26a79f9c.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.1/LogicSugar-v3.0.1.jar",
+      "modVersion": "3.0.1",
+      "sizeBytes": 4409112,
+      "downloadCount": 211,
+      "releasedAt": "2026-08-27T12:51:16Z"
     },
     {
       "tag": "v3.0.0",
-      "name": "Logic Sugar v3.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-27T07:07:27Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v3.0.0",
-      "modVersion": "3.0.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.0/LogicSugar-v3.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v3.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v3.0.0.jar",
-          "size": 2123577,
-          "downloadCount": 28,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.0/LogicSugar-v3.0.0.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "59382bf7dff827ed1427010358c9f433a9f608e3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/59382bf7dff827ed1427010358c9f433a9f608e3.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v3.0.0/LogicSugar-v3.0.0.jar",
+      "modVersion": "3.0.0",
+      "sizeBytes": 2123577,
+      "downloadCount": 28,
+      "releasedAt": "2026-08-27T07:07:27Z"
     },
     {
       "tag": "v2.3.0",
-      "name": "Logic Sugar v2.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-23T14:16:45Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.3.0",
-      "modVersion": "2.3.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.3.0/LogicSugar-v2.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.3.0.jar",
-          "size": 2022181,
-          "downloadCount": 126,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.3.0/LogicSugar-v2.3.0.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2e785e086d123692ae2005370357c8980c3b1ba1",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/2e785e086d123692ae2005370357c8980c3b1ba1.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.3.0/LogicSugar-v2.3.0.jar",
+      "modVersion": "2.3.0",
+      "sizeBytes": 2022181,
+      "downloadCount": 126,
+      "releasedAt": "2026-08-23T14:16:45Z"
     },
     {
       "tag": "v2.2.0",
-      "name": "Logic Sugar v2.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-23T13:53:35Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.2.0",
-      "modVersion": "2.2.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.2.0/LogicSugar-v2.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.2.0.jar",
-          "size": 2011907,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.2.0/LogicSugar-v2.2.0.jar"
-        },
-        {
-          "name": "LogicSugar-v2.2.0.zip",
-          "size": 2174331,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.2.0/LogicSugar-v2.2.0.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f9d6b236c7b996db7e92268768f3203f00e279ca",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/f9d6b236c7b996db7e92268768f3203f00e279ca.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.2.0/LogicSugar-v2.2.0.jar",
+      "modVersion": "2.2.0",
+      "sizeBytes": 4186238,
+      "downloadCount": 7,
+      "releasedAt": "2026-08-23T13:53:35Z"
     },
     {
       "tag": "v2.1.8",
-      "name": "Logic Sugar v2.1.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-23T10:07:44Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.8",
-      "modVersion": "2.1.8",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.8/LogicSugar-v2.1.8.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.8.jar",
-          "size": 1993783,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.8/LogicSugar-v2.1.8.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.8.zip",
-          "size": 2156184,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.8/LogicSugar-v2.1.8.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c777688579f0c8e7c84c0fff2c7b5cb8d03a7004",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/c777688579f0c8e7c84c0fff2c7b5cb8d03a7004.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.8/LogicSugar-v2.1.8.jar",
+      "modVersion": "2.1.8",
+      "sizeBytes": 4149967,
+      "downloadCount": 18,
+      "releasedAt": "2026-08-23T10:07:44Z"
     },
     {
       "tag": "v2.1.7",
-      "name": "Logic Sugar v2.1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-18T16:49:59Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.7",
-      "modVersion": "2.1.7",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.7/LogicSugar-v2.1.7.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.7.jar",
-          "size": 1992972,
-          "downloadCount": 165,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.7/LogicSugar-v2.1.7.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.7.zip",
-          "size": 2155255,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.7/LogicSugar-v2.1.7.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "694a3bf3f63f0251e26c0cf8a24503ee20bb819b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/694a3bf3f63f0251e26c0cf8a24503ee20bb819b.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.7/LogicSugar-v2.1.7.jar",
+      "modVersion": "2.1.7",
+      "sizeBytes": 4148227,
+      "downloadCount": 171,
+      "releasedAt": "2026-08-18T16:49:59Z"
     },
     {
       "tag": "v2.1.6",
-      "name": "Logic Sugar v2.1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-18T16:01:37Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.6",
-      "modVersion": "2.1.6",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.6/LogicSugar-v2.1.6.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.6.jar",
-          "size": 1991479,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.6/LogicSugar-v2.1.6.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.6.zip",
-          "size": 2153666,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.6/LogicSugar-v2.1.6.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5b2ef90ae39327f506f69bb99271667e28affd73",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/5b2ef90ae39327f506f69bb99271667e28affd73.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.6/LogicSugar-v2.1.6.jar",
+      "modVersion": "2.1.6",
+      "sizeBytes": 4145145,
+      "downloadCount": 17,
+      "releasedAt": "2026-08-18T16:01:37Z"
     },
     {
       "tag": "v2.1.5",
-      "name": "LogicSugar v2.1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-18T04:28:39Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.5",
-      "modVersion": "2.1.5",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.5/LogicSugar-v2.1.5.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.5.jar",
-          "size": 1984718,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.5/LogicSugar-v2.1.5.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.5.zip",
-          "size": 2151113,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.5/LogicSugar-v2.1.5.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1aac990af190377a0bfcce7ed9563326b2e964d5",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/1aac990af190377a0bfcce7ed9563326b2e964d5.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.5/LogicSugar-v2.1.5.jar",
+      "modVersion": "2.1.5",
+      "sizeBytes": 4135831,
+      "downloadCount": 50,
+      "releasedAt": "2026-08-18T04:28:39Z"
     },
     {
       "tag": "v2.1.4",
-      "name": "LogicSugar v2.1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T08:49:56Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.4",
-      "modVersion": "2.1.4",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.4/LogicSugar-v2.1.4.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.4.jar",
-          "size": 1983427,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.4/LogicSugar-v2.1.4.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.4.zip",
-          "size": 2149816,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.4/LogicSugar-v2.1.4.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "147db6ffb92da3fa8b8c1549a5c9be4721cd1e64",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/147db6ffb92da3fa8b8c1549a5c9be4721cd1e64.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.4/LogicSugar-v2.1.4.jar",
+      "modVersion": "2.1.4",
+      "sizeBytes": 4133243,
+      "downloadCount": 35,
+      "releasedAt": "2026-08-17T08:49:56Z"
     },
     {
       "tag": "v2.1.3",
-      "name": "v2.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-17T06:33:37Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.3",
-      "modVersion": "2.1.3",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.3/LogicSugar-v2.1.3.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.3.jar",
-          "size": 1967062,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.3/LogicSugar-v2.1.3.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.3.zip",
-          "size": 2134197,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.3/LogicSugar-v2.1.3.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f16ce720cc3a5cc5e7426fa9d5143fe3c10d005d",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/f16ce720cc3a5cc5e7426fa9d5143fe3c10d005d.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.3/LogicSugar-v2.1.3.jar",
+      "modVersion": "2.1.3",
+      "sizeBytes": 4101259,
+      "downloadCount": 3,
+      "releasedAt": "2026-08-17T06:33:37Z"
     },
     {
       "tag": "v2.1.2",
-      "name": "v2.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-10T07:06:17Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.2",
-      "modVersion": "2.1.2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.2/LogicSugar-v2.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.2.jar",
-          "size": 1958169,
-          "downloadCount": 167,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.2/LogicSugar-v2.1.2.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.2.zip",
-          "size": 2123988,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.2/LogicSugar-v2.1.2.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1ab34ecf481e459933ad78779f01505d2ccf7e96",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/1ab34ecf481e459933ad78779f01505d2ccf7e96.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.2/LogicSugar-v2.1.2.jar",
+      "modVersion": "2.1.2",
+      "sizeBytes": 4082157,
+      "downloadCount": 172,
+      "releasedAt": "2026-08-10T07:06:17Z"
     },
     {
       "tag": "v2.1.1",
-      "name": "LogicSugar v2.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-09T12:01:00Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.1",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.1/LogicSugar-v2.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.1.jar",
-          "size": 1955822,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.1/LogicSugar-v2.1.1.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.1.zip",
-          "size": 2121647,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.1/LogicSugar-v2.1.1.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "72418c248477d3ef11648c8e72fd80bcf968ed2b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/72418c248477d3ef11648c8e72fd80bcf968ed2b.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.1/LogicSugar-v2.1.1.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 4077469,
+      "downloadCount": 40,
+      "releasedAt": "2026-08-09T12:01:00Z"
     },
     {
       "tag": "v2.1.0",
-      "name": "LogicSugar v2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T17:28:39Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.0/LogicSugar-v2.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.1.0.jar",
-          "size": 1887192,
-          "downloadCount": 45,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.0/LogicSugar-v2.1.0.jar"
-        },
-        {
-          "name": "LogicSugar-v2.1.0.zip",
-          "size": 2052926,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.0/LogicSugar-v2.1.0.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2ca866a9c971989abb1dec9bbb1c586d65806cb1",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/2ca866a9c971989abb1dec9bbb1c586d65806cb1.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.1.0/LogicSugar-v2.1.0.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 3940118,
+      "downloadCount": 47,
+      "releasedAt": "2026-08-08T17:28:39Z"
     },
     {
       "tag": "v2.0.0",
-      "name": "LogicSugar v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T14:23:18Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.0.0/LogicSugar-v2.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v2.0.0.jar",
-          "size": 1881906,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.0.0/LogicSugar-v2.0.0.jar"
-        },
-        {
-          "name": "LogicSugar-v2.0.0.zip",
-          "size": 2047748,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.0.0/LogicSugar-v2.0.0.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c93fc2abd1db312c2dbe9eeed29fd1e3a3f38148",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/c93fc2abd1db312c2dbe9eeed29fd1e3a3f38148.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v2.0.0/LogicSugar-v2.0.0.jar",
+      "modVersion": "2.0.0",
+      "sizeBytes": 3929654,
+      "downloadCount": 15,
+      "releasedAt": "2026-08-08T14:23:18Z"
     },
     {
       "tag": "v1.1.4",
-      "name": "LogicSugar v1.1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T03:42:39Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v1.1.4",
-      "modVersion": "1.1.4",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.4/LogicSugar-v1.1.4.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v1.1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v1.1.4.jar",
-          "size": 1843102,
-          "downloadCount": 29,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.4/LogicSugar-v1.1.4.jar"
-        },
-        {
-          "name": "LogicSugar-v1.1.4.zip",
-          "size": 2009744,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.4/LogicSugar-v1.1.4.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "14911a19fff330b1efbdf0054bb835b520a88212",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/14911a19fff330b1efbdf0054bb835b520a88212.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.4/LogicSugar-v1.1.4.jar",
+      "modVersion": "1.1.4",
+      "sizeBytes": 3852846,
+      "downloadCount": 30,
+      "releasedAt": "2026-08-08T03:42:39Z"
     },
     {
       "tag": "v1.1.3",
-      "name": "LogicSugar v1.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-06T11:33:39Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v1.1.3",
-      "modVersion": "1.1.3",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.3/LogicSugar-v1.1.3.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v1.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v1.1.3.jar",
-          "size": 1843102,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.3/LogicSugar-v1.1.3.jar"
-        },
-        {
-          "name": "LogicSugar-v1.1.3.zip",
-          "size": 2009744,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.3/LogicSugar-v1.1.3.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "da773ab7506e9dc9a55c2c0c8c675155b4aa3f77",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/da773ab7506e9dc9a55c2c0c8c675155b4aa3f77.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.3/LogicSugar-v1.1.3.jar",
+      "modVersion": "1.1.3",
+      "sizeBytes": 3852846,
+      "downloadCount": 54,
+      "releasedAt": "2026-08-06T11:33:39Z"
     },
     {
       "tag": "v1.1.2",
-      "name": "LogicSugar v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T14:22:09Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v1.1.2",
-      "modVersion": "1.1.2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.2/LogicSugar-v1.1.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v1.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v1.1.2.jar",
-          "size": 1842957,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.2/LogicSugar-v1.1.2.jar"
-        },
-        {
-          "name": "LogicSugar-v1.1.2.zip",
-          "size": 2009489,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.2/LogicSugar-v1.1.2.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d4e4c82477014a05d4e3a3f8ec9359f402f738e9",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/d4e4c82477014a05d4e3a3f8ec9359f402f738e9.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.2/LogicSugar-v1.1.2.jar",
+      "modVersion": "1.1.2",
+      "sizeBytes": 3852446,
+      "downloadCount": 45,
+      "releasedAt": "2026-08-05T14:22:09Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "LogicSugar v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T09:48:29Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.1/LogicSugar-v1.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v1.1.1.jar",
-          "size": 265049,
-          "downloadCount": 204,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.1/LogicSugar-v1.1.1.jar"
-        },
-        {
-          "name": "LogicSugar-v1.1.1.zip",
-          "size": 430373,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.1/LogicSugar-v1.1.1.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2fc55192458990bab3d9cfd20e8eb3c0801463e1",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/2fc55192458990bab3d9cfd20e8eb3c0801463e1.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.1/LogicSugar-v1.1.1.jar",
+      "modVersion": "1.1.1",
+      "sizeBytes": 695422,
+      "downloadCount": 211,
+      "releasedAt": "2026-07-27T09:48:29Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "LogicSugar v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T03:06:11Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.0/LogicSugar-v1.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v1.1.0.jar",
-          "size": 258052,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.0/LogicSugar-v1.1.0.jar"
-        },
-        {
-          "name": "LogicSugar-v1.1.0.zip",
-          "size": 423510,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.0/LogicSugar-v1.1.0.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8e0201ae889043800a33018a4a71f50f752b3895",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/8e0201ae889043800a33018a4a71f50f752b3895.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.1.0/LogicSugar-v1.1.0.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 681562,
+      "downloadCount": 17,
+      "releasedAt": "2026-07-27T03:06:11Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "Logic Sugar v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-26T17:49:50Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.0.0/LogicSugar-v1.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/logicsugar/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LogicSugar-v1.0.0.jar",
-          "size": 200844,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.0.0/LogicSugar-v1.0.0.jar"
-        },
-        {
-          "name": "LogicSugar-v1.0.0.zip",
-          "size": 357204,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.0.0/LogicSugar-v1.0.0.zip"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "762bf0829bb06f4f6e4c437f0e1170cba367a383",
-      "archiveByCommitUrl": "https://github.com/determination-wind/logicsugar/archive/762bf0829bb06f4f6e4c437f0e1170cba367a383.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v4.0.0",
-      "modVersion": "4.0.0",
-      "minGameVersion": "155",
-      "maxGameVersion": 160.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "v5.11.0",
-      "modVersion": "5.11.0",
-      "minGameVersion": "160.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v1.0.0/LogicSugar-v1.0.0.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 558048,
+      "downloadCount": 19,
+      "releasedAt": "2026-07-26T17:49:50Z"
     }
   ],
   "meta": {
+    "name": "LogicSugar",
+    "author": "DeterMination-Wind",
+    "description": "Adds structured for, while, switch, and function blocks to the logic editor while storing vanilla-compatible mlog.",
+    "version": "5.11.0",
+    "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "logicsugar.LogicSugarMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

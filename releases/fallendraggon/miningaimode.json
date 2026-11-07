@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "fallendraggon/miningaimode",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.5",
-      "name": "Release v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T11:05:34Z",
-      "htmlUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/tag/v1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.5/MiningAIMode.jar",
-      "sourceArchiveUrl": "https://github.com/fallendraggon/miningaimode/archive/refs/tags/v1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiningAIMode.jar",
-          "size": 180537,
-          "downloadCount": 98,
-          "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.5/MiningAIMode.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "950db0010c27720c376cba8d444f6c6c34a34de0",
-      "archiveByCommitUrl": "https://github.com/fallendraggon/miningaimode/archive/950db0010c27720c376cba8d444f6c6c34a34de0.zip"
+      "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.5/MiningAIMode.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 180537,
+      "downloadCount": 98,
+      "releasedAt": "2026-10-03T11:05:34Z"
     },
     {
       "tag": "v1.4",
-      "name": "Release v1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-10T13:09:43Z",
-      "htmlUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/tag/v1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.4/MiningAIMode.jar",
-      "sourceArchiveUrl": "https://github.com/fallendraggon/miningaimode/archive/refs/tags/v1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MiningAIMode.jar",
-          "size": 172234,
-          "downloadCount": 64,
-          "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.4/MiningAIMode.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "36679d9e612eddb08d8642be6373bb76b92c3687",
-      "archiveByCommitUrl": "https://github.com/fallendraggon/miningaimode/archive/36679d9e612eddb08d8642be6373bb76b92c3687.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.5",
-      "modVersion": "1.5",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.4/MiningAIMode.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 172234,
+      "downloadCount": 64,
+      "releasedAt": "2026-09-10T13:09:43Z"
     }
   ],
   "meta": {
+    "name": "maim-java-mod",
+    "author": "FD",
+    "description": "Automatic mining AI: assigns miner units to resources by quotas/crisis logic.",
+    "version": "1.5",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "fallen.MiningAIMode",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

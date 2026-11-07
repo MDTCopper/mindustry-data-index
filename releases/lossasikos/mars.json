@@ -1,74 +1,63 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lossasikos/mars",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V0.0.1.1",
-      "name": "V0.0.0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-04T09:01:03Z",
-      "htmlUrl": "https://github.com/LosSasikos/Mars/releases/tag/V0.0.1.1",
-      "modVersion": "0.0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/lossasikos/mars/archive/refs/tags/V0.0.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/lossasikos/mars/archive/refs/tags/V0.0.1.1.zip",
-      "assets": [],
-      "commitSha": "fb06fbea20b60ed0ba4fd37517f38f71e0f45b5b",
-      "archiveByCommitUrl": "https://github.com/lossasikos/mars/archive/fb06fbea20b60ed0ba4fd37517f38f71e0f45b5b.zip"
+      "modVersion": "0.0.1",
+      "releasedAt": "2024-09-04T09:01:03Z"
     },
     {
       "tag": "V0.0.1",
-      "name": "V0.0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-09-02T16:28:05Z",
-      "htmlUrl": "https://github.com/LosSasikos/Mars/releases/tag/V0.0.1",
-      "modVersion": "0.0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/lossasikos/mars/archive/refs/tags/V0.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/lossasikos/mars/archive/refs/tags/V0.0.1.zip",
-      "assets": [],
-      "commitSha": "fb06fbea20b60ed0ba4fd37517f38f71e0f45b5b",
-      "archiveByCommitUrl": "https://github.com/lossasikos/mars/archive/fb06fbea20b60ed0ba4fd37517f38f71e0f45b5b.zip"
+      "modVersion": "0.0.1",
+      "releasedAt": "2024-09-02T16:28:05Z",
+      "prerelease": true
     },
     {
       "tag": "alpha",
-      "name": "alpha",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/lossasikos/mars/tree/alpha",
-      "modVersion": "0.0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/lossasikos/mars/archive/refs/tags/alpha.zip",
-      "sourceArchiveUrl": "https://github.com/lossasikos/mars/archive/refs/tags/alpha.zip",
-      "assets": [],
-      "commitSha": "e172823a7ee2ca5f66d6efe477f4d9211463a45f",
-      "archiveByCommitUrl": "https://github.com/lossasikos/mars/archive/e172823a7ee2ca5f66d6efe477f4d9211463a45f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.0.1.1",
-      "modVersion": "0.0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.0.1"
     }
   ],
   "meta": {
+    "name": "los-sasikos-mars",
+    "author": "Los Sasikos",
+    "description": "You on the Mars.",
+    "version": "0.0.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

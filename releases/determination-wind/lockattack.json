@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/lockattack",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "LockAttack v1.0.0 / 锁定攻击 v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-10T05:52:24Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/LockAttack/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/LockAttack/releases/download/v1.0.0/LockAttack-v1.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/lockattack/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LockAttack-v1.0.0.jar",
-          "size": 15142,
-          "downloadCount": 257,
-          "downloadUrl": "https://github.com/DeterMination-Wind/LockAttack/releases/download/v1.0.0/LockAttack-v1.0.0.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "83b756e139655a7ab73b2b23012b5ab80584c1e5",
-      "archiveByCommitUrl": "https://github.com/determination-wind/lockattack/archive/83b756e139655a7ab73b2b23012b5ab80584c1e5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
+      "downloadUrl": "https://github.com/DeterMination-Wind/LockAttack/releases/download/v1.0.0/LockAttack-v1.0.0.jar",
       "modVersion": "1.0.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 15142,
+      "downloadCount": 257,
+      "releasedAt": "2026-08-10T05:52:24Z"
     }
   ],
   "meta": {
+    "name": "LockAttack",
+    "author": "DeterMination-Wind",
+    "description": "Tap the lock key (default L) to lock on to an enemy unit or building and focus fire. Commands selected units via the vanilla network command path. / 按锁定键（默认 L）锁定敌方单位或建筑并集火，选中的指挥单位通过原版网络命令路径集火。",
+    "version": "1.0.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "lockattack.LockAttackMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

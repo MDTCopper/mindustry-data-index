@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bakawoot/Mindustry-skyblock",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Unstable",
-      "name": "Skyblock 1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-20T08:32:54Z",
-      "htmlUrl": "https://github.com/bakawoot/Mindustry-skyblock/releases/tag/Unstable",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/bakawoot/Mindustry-skyblock/releases/download/Unstable/Skyblock.jar",
-      "sourceArchiveUrl": "https://github.com/bakawoot/Mindustry-skyblock/archive/refs/tags/Unstable.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Skyblock.jar",
-          "size": 2728310,
-          "downloadCount": 4843,
-          "downloadUrl": "https://github.com/bakawoot/Mindustry-skyblock/releases/download/Unstable/Skyblock.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "c5be86924aeed4a2ec110d442c42c8ce89995528",
-      "archiveByCommitUrl": "https://github.com/bakawoot/Mindustry-skyblock/archive/c5be86924aeed4a2ec110d442c42c8ce89995528.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Unstable",
+      "downloadUrl": "https://github.com/bakawoot/Mindustry-skyblock/releases/download/Unstable/Skyblock.jar",
       "modVersion": "1.0",
-      "minGameVersion": "137",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 2728310,
+      "downloadCount": 4843,
+      "releasedAt": "2023-06-20T08:32:54Z"
     }
   ],
   "meta": {
+    "name": "skyblock",
+    "author": "Slava0135, modified by misanthrope",
+    "description": "Survive on sand island and expand by placing land on water around.",
+    "version": "1.0",
+    "minGameVersion": "137",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "skyblock.Skyblock",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

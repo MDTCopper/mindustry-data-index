@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "darkjeanne/schempack-manager",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "release_1.1",
-      "name": "release_1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-12T09:00:11Z",
-      "htmlUrl": "https://github.com/darkjeanne/schempack-manager/releases/tag/release_1.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.1/schempack-manager.jar",
-      "sourceArchiveUrl": "https://github.com/darkjeanne/schempack-manager/archive/refs/tags/release_1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "schempack-manager.jar",
-          "size": 631485,
-          "downloadCount": 851,
-          "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.1/schempack-manager.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "52440a8248bdafe8fd94a351438d5a85483c484b",
-      "archiveByCommitUrl": "https://github.com/darkjeanne/schempack-manager/archive/52440a8248bdafe8fd94a351438d5a85483c484b.zip"
+      "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.1/schempack-manager.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 631485,
+      "downloadCount": 851,
+      "releasedAt": "2026-07-12T09:00:11Z"
     },
     {
       "tag": "release_1.0",
-      "name": "release 1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-29T08:29:25Z",
-      "htmlUrl": "https://github.com/darkjeanne/schempack-manager/releases/tag/release_1.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.0/schempack-manager.jar",
-      "sourceArchiveUrl": "https://github.com/darkjeanne/schempack-manager/archive/refs/tags/release_1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "schempack-manager.jar",
-          "size": 631479,
-          "downloadCount": 325,
-          "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.0/schempack-manager.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "722e63c8fc5275140addb0e0c8516c1b0ab5d1da",
-      "archiveByCommitUrl": "https://github.com/darkjeanne/schempack-manager/archive/722e63c8fc5275140addb0e0c8516c1b0ab5d1da.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release_1.1",
-      "modVersion": "1.0.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.0/schempack-manager.jar",
+      "modVersion": "1.0.0",
+      "sizeBytes": 631479,
+      "downloadCount": 325,
+      "releasedAt": "2026-06-29T08:29:25Z"
     }
   ],
   "meta": {
+    "name": "schempack-manager",
+    "author": "darkjeanne",
+    "description": "Sync Mindustry schematics with GitHub, with auto push, pull/merge, and local-only filtering.",
+    "version": "1.0.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "schempack.SchemPackManager",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

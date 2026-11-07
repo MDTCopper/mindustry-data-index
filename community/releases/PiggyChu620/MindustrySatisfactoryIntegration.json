@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "PiggyChu620/MindustrySatisfactoryIntegration",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Realistic Productions v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-19T07:17:44Z",
-      "htmlUrl": "https://github.com/PiggyChu620/MindustrySatisfactoryIntegration/releases/tag/mindustry-mod",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PiggyChu620/MindustrySatisfactoryIntegration/releases/download/mindustry-mod/MindustryRealisticProductions.jar",
-      "sourceArchiveUrl": "https://github.com/PiggyChu620/MindustrySatisfactoryIntegration/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryRealisticProductions.jar",
-          "size": 243580,
-          "downloadCount": 5212,
-          "downloadUrl": "https://github.com/PiggyChu620/MindustrySatisfactoryIntegration/releases/download/mindustry-mod/MindustryRealisticProductions.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "6760e03d81b3ecb782aa95db92e1ae5fcc964bf8",
-      "archiveByCommitUrl": "https://github.com/PiggyChu620/MindustrySatisfactoryIntegration/archive/6760e03d81b3ecb782aa95db92e1ae5fcc964bf8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
+      "downloadUrl": "https://github.com/PiggyChu620/MindustrySatisfactoryIntegration/releases/download/mindustry-mod/MindustryRealisticProductions.jar",
       "modVersion": "0.1",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 243580,
+      "downloadCount": 5212,
+      "releasedAt": "2023-04-19T07:17:44Z"
     }
   ],
   "meta": {
+    "name": "rp620",
+    "author": "PiggyChu620",
+    "description": "Collection of many overcomplicated realistic materials/resources/alloys/products/compounds",
+    "version": "0.1",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "rp620.RP620Mod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

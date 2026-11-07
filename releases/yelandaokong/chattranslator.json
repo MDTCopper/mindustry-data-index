@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "yelandaokong/chattranslator",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "R1.0.0",
-      "name": "Release V1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-25T20:32:11Z",
-      "htmlUrl": "https://github.com/YELANDAOKONG/ChatTranslator/releases/tag/R1.0.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/YELANDAOKONG/ChatTranslator/releases/download/R1.0.0/ChatTranslator.jar",
-      "sourceArchiveUrl": "https://github.com/yelandaokong/chattranslator/archive/refs/tags/R1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ChatTranslator.jar",
-          "size": 137623,
-          "downloadCount": 473,
-          "downloadUrl": "https://github.com/YELANDAOKONG/ChatTranslator/releases/download/R1.0.0/ChatTranslator.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f6e6ca1797739047b305328e32c53cb17e1df51f",
-      "archiveByCommitUrl": "https://github.com/yelandaokong/chattranslator/archive/f6e6ca1797739047b305328e32c53cb17e1df51f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "R1.0.0",
+      "downloadUrl": "https://github.com/YELANDAOKONG/ChatTranslator/releases/download/R1.0.0/ChatTranslator.jar",
       "modVersion": "1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 137623,
+      "downloadCount": 473,
+      "releasedAt": "2026-03-25T20:32:11Z"
     }
   ],
   "meta": {
+    "name": "chat-translator",
+    "author": "Yelandaokong",
+    "description": "In-game chat translator for Mindustry.",
+    "version": "1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "xyz.dkos.gaming.mindustry.translator.ModMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

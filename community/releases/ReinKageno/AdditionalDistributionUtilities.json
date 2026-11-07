@@ -1,71 +1,51 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ReinKageno/AdditionalDistributionUtilities",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.2.0-release",
-      "name": "v1.2.0 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-28T13:09:10Z",
-      "htmlUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/releases/tag/v1.2.0-release",
-      "modVersion": "v.1.2.0 Release",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/refs/tags/v1.2.0-release.zip",
-      "sourceArchiveUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/refs/tags/v1.2.0-release.zip",
-      "assets": [],
-      "commitSha": "a9948dbb4c1eaeba67212417a96adc1e5eab476a",
-      "archiveByCommitUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/a9948dbb4c1eaeba67212417a96adc1e5eab476a.zip"
-    },
-    {
-      "tag": "v1.1.0-release",
-      "name": "THE TIME HAS ARRIVED",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-19T10:52:26Z",
-      "htmlUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/releases/tag/v1.1.0-release",
-      "modVersion": "v.1.1.0 [[green]RELEASE",
-      "minGameVersion": "141",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/releases/download/v1.1.0-release/ADU-v1.1.0-release.zip",
-      "sourceArchiveUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/refs/tags/v1.1.0-release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ADU-v1.1.0-release.zip",
-          "size": 588203,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/releases/download/v1.1.0-release/ADU-v1.1.0-release.zip"
+          "from": "145",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ebab415d510c7429844e501d592df42b1e3bda9d",
-      "archiveByCommitUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/ebab415d510c7429844e501d592df42b1e3bda9d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.0-release",
-      "modVersion": "v.1.1.0 [[green]RELEASE",
-      "minGameVersion": "141",
-      "maxGameVersion": 145,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/archive/refs/tags/v1.2.0-release.zip",
+      "modVersion": "v.1.2.0 Release",
+      "releasedAt": "2023-10-28T13:09:10Z"
     },
     {
-      "tag": "v1.2.0-release",
-      "modVersion": "v.1.2.0 Release",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "tag": "v1.1.0-release",
+      "kind": "release",
+      "minGameVersion": "141",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ReinKageno/AdditionalDistributionUtilities/releases/download/v1.1.0-release/ADU-v1.1.0-release.zip",
+      "modVersion": "v.1.1.0 [[green]RELEASE",
+      "sizeBytes": 588203,
+      "downloadCount": 23,
+      "releasedAt": "2023-03-19T10:52:26Z"
     }
   ],
   "meta": {
+    "name": "adu",
+    "author": "ReinKageno",
+    "description": "Translated by BOT \nVersion: 1.2.0 \n\nNumber Version: \n[#A0FF1B[]]Update[[]].[#00DBFF[]]Release[[]].[#FFA047[]]Development. \n\nI just hope this mod is useful, sorry if I'm bad at development.",
+    "version": "v.1.2.0 Release",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

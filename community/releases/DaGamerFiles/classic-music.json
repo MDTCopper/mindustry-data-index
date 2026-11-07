@@ -1,84 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "DaGamerFiles/classic-music",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v2.0",
-      "name": "All-in-One Pack (v105)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-12T09:25:35Z",
-      "htmlUrl": "https://github.com/DaGamerFiles/classic-music/releases/tag/v2.0",
-      "modVersion": "2.0",
+      "kind": "release",
       "minGameVersion": "105",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v2.0/classic-music-ogg.zip",
-      "sourceArchiveUrl": "https://github.com/DaGamerFiles/classic-music/archive/refs/tags/v2.0.zip",
-      "assets": [
-        {
-          "name": "classic-music-mp3.zip",
-          "size": 22663998,
-          "downloadCount": 124,
-          "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v2.0/classic-music-mp3.zip"
-        },
-        {
-          "name": "classic-music-ogg.zip",
-          "size": 28933122,
-          "downloadCount": 109,
-          "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v2.0/classic-music-ogg.zip"
-        }
-      ],
-      "commitSha": "e790517a91b97e35c66cfbb18a1cab8e1da7747c",
-      "archiveByCommitUrl": "https://github.com/DaGamerFiles/classic-music/archive/e790517a91b97e35c66cfbb18a1cab8e1da7747c.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "All-in-One Pack (v103)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2020-06-29T06:37:57Z",
-      "htmlUrl": "https://github.com/DaGamerFiles/classic-music/releases/tag/v1.0",
-      "modVersion": "1.6",
-      "minGameVersion": "103",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v1.0/classic-music.zip",
-      "sourceArchiveUrl": "https://github.com/DaGamerFiles/classic-music/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "classic-music.zip",
-          "size": 27173769,
-          "downloadCount": 131,
-          "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v1.0/classic-music.zip"
-        }
-      ],
-      "commitSha": "d2366cac7574adfd780bd712a924af6e38e2419b",
-      "archiveByCommitUrl": "https://github.com/DaGamerFiles/classic-music/archive/d2366cac7574adfd780bd712a924af6e38e2419b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1.6",
-      "minGameVersion": "103",
-      "maxGameVersion": 105,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.0",
       "modVersion": "2.0",
-      "minGameVersion": "105",
-      "maxGameVersion": 136,
-      "hasRelease": true
+      "sizeBytes": 51597120,
+      "downloadCount": 233,
+      "releasedAt": "2022-05-12T09:25:35Z"
+    },
+    {
+      "tag": "v1.0",
+      "kind": "release",
+      "minGameVersion": "103",
+      "gameVersionRanges": [
+        {
+          "from": "103",
+          "to": "104.6"
+        }
+      ],
+      "downloadUrl": "https://github.com/DaGamerFiles/classic-music/releases/download/v1.0/classic-music.zip",
+      "modVersion": "1.6",
+      "sizeBytes": 27173769,
+      "downloadCount": 131,
+      "releasedAt": "2020-06-29T06:37:57Z"
     }
   ],
   "meta": {
+    "name": "classic-music",
+    "author": "[magenta]DaGamerFiles",
+    "description": "Play with classic Mindustry music [gold](from v3.3r27, v3.5r40, and v5)[white]! For Mindustry v6.",
+    "version": "2.0",
+    "minGameVersion": "105",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

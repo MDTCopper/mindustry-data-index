@@ -1,92 +1,62 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "JikGMD/UnlockHiddenContent",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v.1.2",
-      "name": "UnlockHiddenContent",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-17T17:41:35Z",
-      "htmlUrl": "https://github.com/JikGMD/UnlockHiddenContent/releases/tag/v.1.2",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.1.2.zip",
-      "assets": [],
-      "commitSha": "b044e6e9cb00f7140f1c08efabe276745c794d21",
-      "archiveByCommitUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/b044e6e9cb00f7140f1c08efabe276745c794d21.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "UnlockHiddenContent",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-17T04:56:07Z",
-      "htmlUrl": "https://github.com/JikGMD/UnlockHiddenContent/releases/tag/mindustry-mod",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "fe94fe8e5a2f215d5d9c3961c24d2cfa0013eaf6",
-      "archiveByCommitUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/fe94fe8e5a2f215d5d9c3961c24d2cfa0013eaf6.zip"
-    },
-    {
-      "tag": "v.1.1",
-      "name": "v.1.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JikGMD/UnlockHiddenContent/tree/v.1.1",
       "modVersion": "1.1",
-      "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.1.1.zip",
-      "assets": [],
-      "commitSha": "5697f5bfae26cc48413e5e78d76bacd8f1bc49b3",
-      "archiveByCommitUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/5697f5bfae26cc48413e5e78d76bacd8f1bc49b3.zip"
+      "releasedAt": "2023-08-17T17:41:35Z"
     },
     {
       "tag": "v.0.2",
-      "name": "v.0.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JikGMD/UnlockHiddenContent/tree/v.0.2",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.0.2.zip",
-      "assets": [],
-      "commitSha": "7c529f1c6bc81388c691e453f0047dead593c549",
-      "archiveByCommitUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/7c529f1c6bc81388c691e453f0047dead593c549.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "1.0"
+    },
     {
-      "tag": "v.1.2",
-      "modVersion": "1.1",
+      "tag": "v.1.1",
+      "kind": "tag",
       "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/JikGMD/UnlockHiddenContent/archive/refs/tags/v.1.1.zip",
+      "modVersion": "1.1"
     }
   ],
   "meta": {
+    "name": "unlock-hiddencontent",
+    "author": "jik",
+    "description": "Use to automatically unlock hidden content",
+    "version": "1.1",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

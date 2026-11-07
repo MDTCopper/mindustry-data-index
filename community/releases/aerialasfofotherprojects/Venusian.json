@@ -1,57 +1,47 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "aerialasfofotherprojects/Venusian",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
-    {
-      "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/aerialasfofotherprojects/Venusian/tree/mindustry-mod",
-      "modVersion": "69.9.969",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "29da8ec289363b30d9094e2c4902784be1081ce4",
-      "archiveByCommitUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/29da8ec289363b30d9094e2c4902784be1081ce4.zip"
-    },
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "b",
-      "name": "b",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/aerialasfofotherprojects/Venusian/tree/b",
-      "modVersion": "69.9.969",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/refs/tags/b.zip",
-      "sourceArchiveUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/refs/tags/b.zip",
-      "assets": [],
-      "commitSha": "23534f898d6192ea9fe71bbdc28857fef5c500b2",
-      "archiveByCommitUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/23534f898d6192ea9fe71bbdc28857fef5c500b2.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "69.9.969"
+    },
     {
       "tag": "mindustry-mod",
-      "modVersion": "69.9.969",
+      "kind": "tag",
       "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/aerialasfofotherprojects/Venusian/archive/refs/tags/mindustry-mod.zip",
+      "modVersion": "69.9.969"
     }
   ],
   "meta": {
+    "name": "venusian",
+    "author": "aerialasf",
+    "description": "\nAnother planet mod.\nAdding Venus to the solar system.\n\nThis is another project for no reason and I am not gonna develop alot on it as move my focus to Mindustrialist.\n",
+    "version": "69.9.969",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

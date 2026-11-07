@@ -1,40 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cameroonets/cryodustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-12-10T18:32:05Z",
-      "htmlUrl": "https://github.com/Cameroonets/Cryodustry/releases/tag/mindustry-mod",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/cameroonets/cryodustry/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/cameroonets/cryodustry/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "349d7a7162eec55976678dd585e808baa6d5abb4",
-      "archiveByCommitUrl": "https://github.com/cameroonets/cryodustry/archive/349d7a7162eec55976678dd585e808baa6d5abb4.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-12-10T18:32:05Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "[purple]Cameroonets's [cyan]Cryodustry",
+    "author": "Cameroonets",
+    "description": "Дальнейшее продолжение Cameroonets Mod/Добавляет множество ресурсов, юнитов, построек для игры в  Tower Defense, PvP, Survival",
+    "version": "0.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

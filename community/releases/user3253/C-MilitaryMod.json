@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "user3253/C-MilitaryMod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.3",
-      "name": "v0.3 Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-03T13:11:14Z",
-      "htmlUrl": "https://github.com/user3253/C-MilitaryMod/releases/tag/v0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.3/C-MilitaryMod.jar",
-      "sourceArchiveUrl": "https://github.com/user3253/C-MilitaryMod/archive/refs/tags/v0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C-MilitaryMod.jar",
-          "size": 470674,
-          "downloadCount": 585,
-          "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.3/C-MilitaryMod.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "b32292377f85c3988ad2cd9f936600f14c9e2d32",
-      "archiveByCommitUrl": "https://github.com/user3253/C-MilitaryMod/archive/b32292377f85c3988ad2cd9f936600f14c9e2d32.zip"
+      "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.3/C-MilitaryMod.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 470674,
+      "downloadCount": 585,
+      "releasedAt": "2025-04-03T13:11:14Z"
     },
     {
       "tag": "v0.2",
-      "name": "v0.2 Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-23T05:03:54Z",
-      "htmlUrl": "https://github.com/user3253/C-MilitaryMod/releases/tag/v0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.2/C-MilitaryMod.jar",
-      "sourceArchiveUrl": "https://github.com/user3253/C-MilitaryMod/archive/refs/tags/v0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C-MilitaryMod.jar",
-          "size": 299844,
-          "downloadCount": 130,
-          "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.2/C-MilitaryMod.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "9d380e4afcb1b57c30d3c4610408aae9fda15ae6",
-      "archiveByCommitUrl": "https://github.com/user3253/C-MilitaryMod/archive/9d380e4afcb1b57c30d3c4610408aae9fda15ae6.zip"
+      "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.2/C-MilitaryMod.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 299844,
+      "downloadCount": 130,
+      "releasedAt": "2025-03-23T05:03:54Z"
     },
     {
       "tag": "v0.1",
-      "name": "v0.1 Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-16T03:59:36Z",
-      "htmlUrl": "https://github.com/user3253/C-MilitaryMod/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.1/C-MilitaryMod.jar",
-      "sourceArchiveUrl": "https://github.com/user3253/C-MilitaryMod/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "C-MilitaryMod.jar",
-          "size": 207701,
-          "downloadCount": 72,
-          "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.1/C-MilitaryMod.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "a431b5bb3b8d0fa929a75e21c3181fb3599c6346",
-      "archiveByCommitUrl": "https://github.com/user3253/C-MilitaryMod/archive/a431b5bb3b8d0fa929a75e21c3181fb3599c6346.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.3",
-      "modVersion": "0.3",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/user3253/C-MilitaryMod/releases/download/v0.1/C-MilitaryMod.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 207701,
+      "downloadCount": 72,
+      "releasedAt": "2025-03-16T03:59:36Z"
     }
   ],
   "meta": {
+    "name": "military",
+    "author": "3253",
+    "description": "Gradually updating.",
+    "version": "0.3",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "cmilitary.ModMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

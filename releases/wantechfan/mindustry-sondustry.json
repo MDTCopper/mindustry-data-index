@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wantechfan/mindustry-sondustry",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "0.1",
-      "name": "0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-22T15:20:47Z",
-      "htmlUrl": "https://github.com/Wantechfan/mindustry-sondustry/releases/tag/0.1",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/wantechfan/mindustry-sondustry/archive/refs/tags/0.1.zip",
-      "sourceArchiveUrl": "https://github.com/wantechfan/mindustry-sondustry/archive/refs/tags/0.1.zip",
-      "assets": [],
-      "commitSha": "2428c395a6c62c5539b8c4155a3c74f2020a1b15",
-      "archiveByCommitUrl": "https://github.com/wantechfan/mindustry-sondustry/archive/2428c395a6c62c5539b8c4155a3c74f2020a1b15.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1",
       "modVersion": "0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-07-22T15:20:47Z"
     }
   ],
   "meta": {
+    "name": "sondustry",
+    "author": null,
+    "description": "Addon son ton everon worn",
+    "version": "0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

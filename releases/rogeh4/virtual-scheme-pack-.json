@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "rogeh4/virtual-scheme-pack-",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "release-v2",
-      "name": "Release v2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-27T11:37:06Z",
-      "htmlUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/tag/release-v2",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/release-v2/VIrtual-Scheme-Pack--main.zip",
-      "sourceArchiveUrl": "https://github.com/rogeh4/virtual-scheme-pack-/archive/refs/tags/release-v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VIrtual-Scheme-Pack--main.zip",
-          "size": 3448225,
-          "downloadCount": 1629,
-          "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/release-v2/VIrtual-Scheme-Pack--main.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "aa993401dd073ac8d4d8f580e011cc5b067c3a93",
-      "archiveByCommitUrl": "https://github.com/rogeh4/virtual-scheme-pack-/archive/aa993401dd073ac8d4d8f580e011cc5b067c3a93.zip"
+      "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/release-v2/VIrtual-Scheme-Pack--main.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 3448225,
+      "downloadCount": 1629,
+      "releasedAt": "2023-04-27T11:37:06Z"
     },
     {
       "tag": "release-v1",
-      "name": "Release v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-27T11:17:11Z",
-      "htmlUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/tag/release-v1",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/release-v1/VIrtual-Scheme-Pack--main.zip",
-      "sourceArchiveUrl": "https://github.com/rogeh4/virtual-scheme-pack-/archive/refs/tags/release-v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VIrtual-Scheme-Pack--main.zip",
-          "size": 2748224,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/release-v1/VIrtual-Scheme-Pack--main.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4d94fcf52397cd5caea3552ee4341e01fb62125c",
-      "archiveByCommitUrl": "https://github.com/rogeh4/virtual-scheme-pack-/archive/4d94fcf52397cd5caea3552ee4341e01fb62125c.zip"
+      "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/release-v1/VIrtual-Scheme-Pack--main.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 2748224,
+      "downloadCount": 21,
+      "releasedAt": "2023-04-27T11:17:11Z"
     },
     {
       "tag": "v1",
-      "name": "Alpha v1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-02T10:18:39Z",
-      "htmlUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/tag/v1",
-      "modVersion": "v1,",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/v1/Virtual-Scheme-pack.zip",
-      "sourceArchiveUrl": "https://github.com/rogeh4/virtual-scheme-pack-/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Virtual-Scheme-pack.zip",
-          "size": 3498492,
-          "downloadCount": 129,
-          "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/v1/Virtual-Scheme-pack.zip"
+          "from": "141",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5e8ab9e461d278916054e6fee1d2624ad8c760b5",
-      "archiveByCommitUrl": "https://github.com/rogeh4/virtual-scheme-pack-/archive/5e8ab9e461d278916054e6fee1d2624ad8c760b5.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "release-v2",
-      "modVersion": "1.0.0",
-      "minGameVersion": "141",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Rogeh4/VIrtual-Scheme-Pack-/releases/download/v1/Virtual-Scheme-pack.zip",
+      "modVersion": "v1,",
+      "sizeBytes": 3498492,
+      "downloadCount": 129,
+      "releasedAt": "2023-03-02T10:18:39Z"
     }
   ],
   "meta": {
+    "name": "v-scheme-pack",
+    "author": "[#1580FF]Rogen4, KirillRum",
+    "description": "\n[red]RU[white]\nМод добавляет огромное количество схем для разных направлений и времени игры.\n\n[blue]ENG[white]\nMod adds a lot of schemes for different directions and time.\n\n[yellow]UA[white]\nМод додає велику кількість схем для різноманітних напрямків та часу гри.\n",
+    "version": "1.0.0",
+    "minGameVersion": "141",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

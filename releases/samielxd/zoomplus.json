@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "samielxd/zoomplus",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "Release",
-      "name": "ZoomPlus Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-02T12:38:20Z",
-      "htmlUrl": "https://github.com/SamielXD/ZoomPlus/releases/tag/Release",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SamielXD/ZoomPlus/releases/download/Release/SamielXDZoom%2BMod.zip",
-      "sourceArchiveUrl": "https://github.com/samielxd/zoomplus/archive/refs/tags/Release.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SamielXDZoom+Mod.zip",
-          "size": 6138,
-          "downloadCount": 102,
-          "downloadUrl": "https://github.com/SamielXD/ZoomPlus/releases/download/Release/SamielXDZoom%2BMod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "224df443d5b91d1efca7f12e28c89c7586fb6c80",
-      "archiveByCommitUrl": "https://github.com/samielxd/zoomplus/archive/224df443d5b91d1efca7f12e28c89c7586fb6c80.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Release",
+      "downloadUrl": "https://github.com/SamielXD/ZoomPlus/releases/download/Release/SamielXDZoom%2BMod.zip",
       "modVersion": "1.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 6138,
+      "downloadCount": 102,
+      "releasedAt": "2026-01-02T12:38:20Z"
     }
   ],
   "meta": {
+    "name": "zoom+",
+    "author": "SamielXD",
+    "description": "Zoom+ mod is made for Players that wants to increase the zoom feature ingame. other people already made this mod idea but I did it anyways because some people don't want to download big mods but they just wants the zoom feature in that mod",
+    "version": "1.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

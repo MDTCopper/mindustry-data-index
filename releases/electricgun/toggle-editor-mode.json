@@ -1,147 +1,110 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "electricgun/toggle-editor-mode",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "3.1",
-      "name": "3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-18T14:48:01Z",
-      "htmlUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/tag/3.1",
-      "modVersion": "3.0",
+      "kind": "tag",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "138",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/3.1.zip",
-      "sourceArchiveUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/3.1.zip",
-      "assets": [],
-      "commitSha": "3aaccaf3daef43676993c01efaf64c80bd876899",
-      "archiveByCommitUrl": "https://github.com/electricgun/toggle-editor-mode/archive/3aaccaf3daef43676993c01efaf64c80bd876899.zip"
+      "modVersion": "3.0",
+      "releasedAt": "2024-02-18T14:48:01Z"
     },
     {
       "tag": "3.0",
-      "name": "3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-16T15:17:34Z",
-      "htmlUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/tag/3.0",
-      "modVersion": "3.0",
+      "kind": "tag",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "138",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/3.0.zip",
-      "sourceArchiveUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/3.0.zip",
-      "assets": [],
-      "commitSha": "3d57576bf820737d2c986c3fa6540c4963e741f2",
-      "archiveByCommitUrl": "https://github.com/electricgun/toggle-editor-mode/archive/3d57576bf820737d2c986c3fa6540c4963e741f2.zip"
+      "modVersion": "3.0",
+      "releasedAt": "2024-02-16T15:17:34Z"
     },
     {
       "tag": "2.2",
-      "name": "2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-07T03:49:06Z",
-      "htmlUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/tag/2.2",
-      "modVersion": "2.2",
+      "kind": "tag",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "138",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/2.2.zip",
-      "sourceArchiveUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/2.2.zip",
-      "assets": [],
-      "commitSha": "95e732bcb3c57dbcc83274b1068d63ffb5b85c49",
-      "archiveByCommitUrl": "https://github.com/electricgun/toggle-editor-mode/archive/95e732bcb3c57dbcc83274b1068d63ffb5b85c49.zip"
+      "modVersion": "2.2",
+      "releasedAt": "2023-08-07T03:49:06Z"
     },
     {
       "tag": "2.12",
-      "name": "2.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-16T13:48:06Z",
-      "htmlUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/tag/2.12",
-      "modVersion": "2.11",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/2.12.zip",
-      "sourceArchiveUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/2.12.zip",
-      "assets": [],
-      "commitSha": "d5ebc0d9440f890ac74c39bad3bad2920d183d86",
-      "archiveByCommitUrl": "https://github.com/electricgun/toggle-editor-mode/archive/d5ebc0d9440f890ac74c39bad3bad2920d183d86.zip"
+      "modVersion": "2.11",
+      "releasedAt": "2023-07-16T13:48:06Z"
     },
     {
       "tag": "2.11",
-      "name": "2.11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-10T09:40:44Z",
-      "htmlUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/tag/2.11",
-      "modVersion": "2.11",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/download/2.11/Toggle-Editor-Mode_2-11.zip",
-      "sourceArchiveUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/2.11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Toggle-Editor-Mode_2-11.zip",
-          "size": 171025,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/download/2.11/Toggle-Editor-Mode_2-11.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "339713e341b2438d7de4486096119515c437d010",
-      "archiveByCommitUrl": "https://github.com/electricgun/toggle-editor-mode/archive/339713e341b2438d7de4486096119515c437d010.zip"
+      "downloadUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/download/2.11/Toggle-Editor-Mode_2-11.zip",
+      "modVersion": "2.11",
+      "sizeBytes": 171025,
+      "downloadCount": 20,
+      "releasedAt": "2023-06-10T09:40:44Z"
     },
     {
       "tag": "2.1",
-      "name": "2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-05T03:53:04Z",
-      "htmlUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/tag/2.1",
-      "modVersion": "2.11",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/download/2.1/Toggle-Editor-Mode-main.zip",
-      "sourceArchiveUrl": "https://github.com/electricgun/toggle-editor-mode/archive/refs/tags/2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Toggle-Editor-Mode-main.zip",
-          "size": 204079,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/download/2.1/Toggle-Editor-Mode-main.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "76a8bbfca2a431530f3a60ed5ed7307415bc5864",
-      "archiveByCommitUrl": "https://github.com/electricgun/toggle-editor-mode/archive/76a8bbfca2a431530f3a60ed5ed7307415bc5864.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.12",
+      "downloadUrl": "https://github.com/ElectricGun/Toggle-Editor-Mode/releases/download/2.1/Toggle-Editor-Mode-main.zip",
       "modVersion": "2.11",
-      "minGameVersion": "136",
-      "maxGameVersion": 138,
-      "hasRelease": true
-    },
-    {
-      "tag": "3.1",
-      "modVersion": "3.0",
-      "minGameVersion": "138",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 204079,
+      "downloadCount": 10,
+      "releasedAt": "2023-06-05T03:53:04Z"
     }
   ],
   "meta": {
+    "name": "toggle-editor-mode",
+    "author": "ElectricGun",
+    "description": "Allows access to Editor Mode on Sandbox and Singleplayer\n\nDoes not work on Multiplayer and Campaign.\n\nUpdate: Fixed map editor crash and delay.",
+    "version": "3.0",
+    "minGameVersion": "138",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

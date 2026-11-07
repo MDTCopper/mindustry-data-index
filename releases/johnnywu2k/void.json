@@ -1,150 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "johnnywu2k/void",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.4",
-      "name": "v1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-08T14:59:12Z",
-      "htmlUrl": "https://github.com/JohnnyWu2k/Void/releases/tag/v1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.4/Void.jar",
-      "sourceArchiveUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Void.jar",
-          "size": 323245,
-          "downloadCount": 1600,
-          "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.4/Void.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f213b4d2f04d70c515cf77c9d41e8c8134657e06",
-      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/f213b4d2f04d70c515cf77c9d41e8c8134657e06.zip"
+      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.4/Void.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 323245,
+      "downloadCount": 1603,
+      "releasedAt": "2026-05-08T14:59:12Z"
     },
     {
       "tag": "v1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-07T08:13:34Z",
-      "htmlUrl": "https://github.com/JohnnyWu2k/Void/releases/tag/v1.3",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.3/Void.jar",
-      "sourceArchiveUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Void.jar",
-          "size": 328416,
-          "downloadCount": 1008,
-          "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.3/Void.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "df624ef731e2c65c2e1c8a9a6b1a0550edbdc6bf",
-      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/df624ef731e2c65c2e1c8a9a6b1a0550edbdc6bf.zip"
+      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.3/Void.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 328416,
+      "downloadCount": 1008,
+      "releasedAt": "2025-06-07T08:13:34Z"
     },
     {
       "tag": "v1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-26T12:07:53Z",
-      "htmlUrl": "https://github.com/JohnnyWu2k/Void/releases/tag/v1.2",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.2/Void.jar",
-      "sourceArchiveUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Void.jar",
-          "size": 241588,
-          "downloadCount": 618,
-          "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.2/Void.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "df315c275e29e11a303d781eede43a7cb07498d1",
-      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/df315c275e29e11a303d781eede43a7cb07498d1.zip"
+      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.2/Void.jar",
+      "modVersion": "1.1",
+      "sizeBytes": 241588,
+      "downloadCount": 619,
+      "releasedAt": "2025-04-26T12:07:53Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-16T15:26:19Z",
-      "htmlUrl": "https://github.com/JohnnyWu2k/Void/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.1/Void.jar",
-      "sourceArchiveUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Void.jar",
-          "size": 207391,
-          "downloadCount": 350,
-          "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.1/Void.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "f0221d66ec61de215ee65f1db1cbe388c5158663",
-      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/f0221d66ec61de215ee65f1db1cbe388c5158663.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/johnnywu2k/void/tree/v1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/johnnywu2k/void/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "76601761a10e727d739b0f8494f4057d608585ec",
-      "archiveByCommitUrl": "https://github.com/johnnywu2k/void/archive/76601761a10e727d739b0f8494f4057d608585ec.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": false
-    },
-    {
-      "tag": "v1.3",
+      "downloadUrl": "https://github.com/JohnnyWu2k/Void/releases/download/v1.1/Void.jar",
       "modVersion": "1.1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.4",
-      "modVersion": "1.4",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 207391,
+      "downloadCount": 350,
+      "releasedAt": "2025-04-16T15:26:19Z"
     }
   ],
   "meta": {
+    "name": "void",
+    "author": "Johnny",
+    "description": "Matter, void energy, advanced power, turrets, and units for Mindustry v8.",
+    "version": "1.4",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "mymod.content.MyMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

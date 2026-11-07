@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "larkspurvale/lotterymodmirror",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.6-beta",
-      "name": "0.6 beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-11T13:32:18Z",
-      "htmlUrl": "https://github.com/lessweb123/LotteryModMirror/releases/tag/0.6-beta",
-      "modVersion": "beta0.6",
+      "kind": "release",
       "minGameVersion": "148",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/lessweb123/LotteryModMirror/releases/download/0.6-beta/LotteryMod-0.6-beta.jar",
-      "sourceArchiveUrl": "https://github.com/larkspurvale/lotterymodmirror/archive/refs/tags/0.6-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LotteryMod-0.6-beta.jar",
-          "size": 587172,
-          "downloadCount": 1980,
-          "downloadUrl": "https://github.com/lessweb123/LotteryModMirror/releases/download/0.6-beta/LotteryMod-0.6-beta.jar"
+          "from": "148",
+          "to": "154"
         }
       ],
-      "commitSha": "17243f66a5894f6006d76749b884c99d4bfb332e",
-      "archiveByCommitUrl": "https://github.com/larkspurvale/lotterymodmirror/archive/17243f66a5894f6006d76749b884c99d4bfb332e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.6-beta",
+      "downloadUrl": "https://github.com/lessweb123/LotteryModMirror/releases/download/0.6-beta/LotteryMod-0.6-beta.jar",
       "modVersion": "beta0.6",
-      "minGameVersion": "148",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 587172,
+      "downloadCount": 1980,
+      "releasedAt": "2026-01-11T13:32:18Z"
     }
   ],
   "meta": {
+    "name": "lottery",
+    "author": "?",
+    "description": "Come and try your luck! 来试试运气吧！\n\n\n- [!] This mod is currently in the testing phase and may update other prize pools in the future\n\n\nSupport for multiplayer online!\n\n\n封面是我老婆，她叫阿尔图罗",
+    "version": "beta0.6",
+    "minGameVersion": "148",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "lottery.Lottery",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

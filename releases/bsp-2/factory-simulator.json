@@ -1,108 +1,90 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bsp-2/factory-simulator",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v4.0",
-      "name": "v4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-01T21:32:39Z",
-      "htmlUrl": "https://github.com/BSp-2/Factory-Simulator/releases/tag/v4.0",
-      "modVersion": "v3.0",
+      "kind": "tag",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v4.0.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v4.0.zip",
-      "assets": [],
-      "commitSha": "69fb3cf7347f63684f366af4d6bcb22230dfeb36",
-      "archiveByCommitUrl": "https://github.com/bsp-2/factory-simulator/archive/69fb3cf7347f63684f366af4d6bcb22230dfeb36.zip"
+      "modVersion": "v3.0",
+      "releasedAt": "2026-07-01T21:32:39Z"
     },
     {
       "tag": "v3.0",
-      "name": "v3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-25T19:56:46Z",
-      "htmlUrl": "https://github.com/BSp-2/Factory-Simulator/releases/tag/v3.0",
-      "modVersion": "v3.0",
+      "kind": "tag",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v3.0.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v3.0.zip",
-      "assets": [],
-      "commitSha": "a89d6f320a26381591adb14666a4ec09cdef67f0",
-      "archiveByCommitUrl": "https://github.com/bsp-2/factory-simulator/archive/a89d6f320a26381591adb14666a4ec09cdef67f0.zip"
+      "modVersion": "v3.0",
+      "releasedAt": "2026-06-25T19:56:46Z"
     },
     {
       "tag": "v2.0",
-      "name": "v2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-20T23:00:38Z",
-      "htmlUrl": "https://github.com/BSp-2/Factory-Simulator/releases/tag/v2.0",
-      "modVersion": "v1.0",
+      "kind": "tag",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v2.0.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v2.0.zip",
-      "assets": [],
-      "commitSha": "e8a3a5c28bf4f2077b7c9c2c48d35e0687fa86a8",
-      "archiveByCommitUrl": "https://github.com/bsp-2/factory-simulator/archive/e8a3a5c28bf4f2077b7c9c2c48d35e0687fa86a8.zip"
+      "modVersion": "v1.0",
+      "releasedAt": "2026-06-20T23:00:38Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-18T00:17:50Z",
-      "htmlUrl": "https://github.com/BSp-2/Factory-Simulator/releases/tag/v1.0",
-      "modVersion": "v1.0",
+      "kind": "tag",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "e8a3a5c28bf4f2077b7c9c2c48d35e0687fa86a8",
-      "archiveByCommitUrl": "https://github.com/bsp-2/factory-simulator/archive/e8a3a5c28bf4f2077b7c9c2c48d35e0687fa86a8.zip"
+      "modVersion": "v1.0",
+      "releasedAt": "2026-06-18T00:17:50Z"
     },
     {
       "tag": "Factory_sim",
-      "name": "Factory_sim",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/bsp-2/factory-simulator/tree/Factory_sim",
-      "modVersion": "v1.0",
+      "kind": "tag",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/Factory_sim.zip",
-      "sourceArchiveUrl": "https://github.com/bsp-2/factory-simulator/archive/refs/tags/Factory_sim.zip",
-      "assets": [],
-      "commitSha": "28372ee8a2fe4946cf83ee1a8733edd66249abd7",
-      "archiveByCommitUrl": "https://github.com/bsp-2/factory-simulator/archive/28372ee8a2fe4946cf83ee1a8733edd66249abd7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v4.0",
-      "modVersion": "v3.0",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "v1.0"
     }
   ],
   "meta": {
+    "name": "factory-sim",
+    "author": "Thinkerdoodle",
+    "description": "\nA recreation of a game called Factory Simulator.\nRequires multicrafter lib. \n",
+    "version": "v3.0",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

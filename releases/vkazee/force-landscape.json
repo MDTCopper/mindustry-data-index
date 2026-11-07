@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "vkazee/force-landscape",
-  "generatedAt": "2026-11-06T15:20:56.922Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "Force Landscape Toggle",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-04T15:19:29Z",
-      "htmlUrl": "https://github.com/Vkazee/force-landscape/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Vkazee/force-landscape/releases/download/v1.0/force-landscape.jar",
-      "sourceArchiveUrl": "https://github.com/vkazee/force-landscape/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "force-landscape.jar",
-          "size": 15961,
-          "downloadCount": 374,
-          "downloadUrl": "https://github.com/Vkazee/force-landscape/releases/download/v1.0/force-landscape.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "401d9134356f7ff04a8a5d1895b97e86bef5a7e1",
-      "archiveByCommitUrl": "https://github.com/vkazee/force-landscape/archive/401d9134356f7ff04a8a5d1895b97e86bef5a7e1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/Vkazee/force-landscape/releases/download/v1.0/force-landscape.jar",
       "modVersion": "1",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 15961,
+      "downloadCount": 374,
+      "releasedAt": "2026-07-04T15:19:29Z"
     }
   ],
   "meta": {
+    "name": "force-landscape-toggle",
+    "author": "Vkazee",
+    "description": "Added a manual option in Settings to force landscape mode on Android/iOS, without having to change the phone's rotation settings.",
+    "version": "1",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "forcelandscape.ForceLandscapeMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

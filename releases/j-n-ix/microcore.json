@@ -1,75 +1,63 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "j-n-ix/microcore",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "Release2-patch",
-      "name": "Micro-Core-V1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-12T04:11:53Z",
-      "htmlUrl": "https://github.com/j-n-ix/MicroCore/releases/tag/Release2-patch",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/j-n-ix/microcore/archive/refs/tags/Release2-patch.zip",
-      "sourceArchiveUrl": "https://github.com/j-n-ix/microcore/archive/refs/tags/Release2-patch.zip",
-      "assets": [],
-      "commitSha": "f7df02a08b2d87891e5528a1ef93ba551220c61f",
-      "archiveByCommitUrl": "https://github.com/j-n-ix/microcore/archive/f7df02a08b2d87891e5528a1ef93ba551220c61f.zip"
+      "modVersion": "1.3",
+      "releasedAt": "2026-10-12T04:11:53Z"
     },
     {
       "tag": "Release1",
-      "name": "Micro-Core-V1.2-public",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-10T21:55:37Z",
-      "htmlUrl": "https://github.com/j-n-ix/MicroCore/releases/tag/Release1",
-      "modVersion": "1.2",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/j-n-ix/microcore/archive/refs/tags/Release1.zip",
-      "sourceArchiveUrl": "https://github.com/j-n-ix/microcore/archive/refs/tags/Release1.zip",
-      "assets": [],
-      "commitSha": "e273e6144c03c3ddab8477b2a9d1b3afcb5ec25a",
-      "archiveByCommitUrl": "https://github.com/j-n-ix/microcore/archive/e273e6144c03c3ddab8477b2a9d1b3afcb5ec25a.zip"
+      "modVersion": "1.2",
+      "releasedAt": "2026-10-10T21:55:37Z"
     },
     {
       "tag": "OverhaulRelease2",
-      "name": "OverhaulRelease2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/j-n-ix/microcore/tree/OverhaulRelease2",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/j-n-ix/microcore/archive/refs/tags/OverhaulRelease2.zip",
-      "sourceArchiveUrl": "https://github.com/j-n-ix/microcore/archive/refs/tags/OverhaulRelease2.zip",
-      "assets": [],
-      "commitSha": "a1e4c01f9237f6fdb150a6691819d41329324f4a",
-      "archiveByCommitUrl": "https://github.com/j-n-ix/microcore/archive/a1e4c01f9237f6fdb150a6691819d41329324f4a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Release2-patch",
-      "modVersion": "1.3",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.3"
     }
   ],
   "meta": {
+    "name": "placeable-tiny-core",
+    "author": "jinx",
+    "description": "Adds a placeable 1x1 core block. js mod variant.",
+    "version": "1.3",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

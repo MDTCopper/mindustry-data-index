@@ -1,146 +1,114 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "new-guys5634/rusted-dunes",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V6.0.0",
-      "name": "V6.0.0 ALOT of changes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-07T20:48:56Z",
-      "htmlUrl": "https://github.com/New-guys5634/rusted-dunes/releases/tag/V6.0.0",
-      "modVersion": "official 1.0",
+      "kind": "tag",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "147",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/V6.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/V6.0.0.zip",
-      "assets": [],
-      "commitSha": "d14aa57dcfb670fb9047ac1e9766b775ce9f2851",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/rusted-dunes/archive/d14aa57dcfb670fb9047ac1e9766b775ce9f2851.zip"
+      "modVersion": "official 1.0",
+      "releasedAt": "2026-04-07T20:48:56Z"
     },
     {
       "tag": "v5.0.0",
-      "name": "v5.0.0 Lore/Content update",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-03-16T17:37:55Z",
-      "htmlUrl": "https://github.com/New-guys5634/rusted-dunes/releases/tag/v5.0.0",
-      "modVersion": "1.3",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/v5.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/v5.0.0.zip",
-      "assets": [],
-      "commitSha": "c5c29d82f8b251e2b243505d385d8407a1f52d6e",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/rusted-dunes/archive/c5c29d82f8b251e2b243505d385d8407a1f52d6e.zip"
+      "modVersion": "1.3",
+      "releasedAt": "2025-03-16T17:37:55Z",
+      "prerelease": true
     },
     {
       "tag": "v4.0.0",
-      "name": "v4.0.0 new stuff",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-02-04T17:53:18Z",
-      "htmlUrl": "https://github.com/New-guys5634/rusted-dunes/releases/tag/v4.0.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/v4.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/v4.0.0.zip",
-      "assets": [],
-      "commitSha": "38b0b6c77b2e25521944762e816ab59d13251ba1",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/rusted-dunes/archive/38b0b6c77b2e25521944762e816ab59d13251ba1.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2025-02-04T17:53:18Z",
+      "prerelease": true
     },
     {
       "tag": "V3.0.0",
-      "name": "Content update 3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-01-12T19:12:32Z",
-      "htmlUrl": "https://github.com/New-guys5634/rusted-dunes/releases/tag/V3.0.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/V3.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/V3.0.0.zip",
-      "assets": [],
-      "commitSha": "8db68654ddd500115a16ce01dca52ed0fe994bdb",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/rusted-dunes/archive/8db68654ddd500115a16ce01dca52ed0fe994bdb.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2025-01-12T19:12:32Z",
+      "prerelease": true
     },
     {
       "tag": "v2.0.0",
-      "name": "v2.0.0 new sectors",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-12-16T21:33:46Z",
-      "htmlUrl": "https://github.com/New-guys5634/rusted-dunes/releases/tag/v2.0.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/New-guys5634/rusted-dunes/releases/download/v2.0.0/rusted.dunes.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "rusted.dunes.zip",
-          "size": 290996,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/New-guys5634/rusted-dunes/releases/download/v2.0.0/rusted.dunes.zip"
+          "from": "145",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3b747c736008d5833706dc601092d6c6c9d5854e",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/rusted-dunes/archive/3b747c736008d5833706dc601092d6c6c9d5854e.zip"
+      "downloadUrl": "https://github.com/New-guys5634/rusted-dunes/releases/download/v2.0.0/rusted.dunes.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 290996,
+      "downloadCount": 10,
+      "releasedAt": "2024-12-16T21:33:46Z",
+      "prerelease": true
     },
     {
       "tag": "V1.0.0",
-      "name": "first release",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-12-11T11:03:07Z",
-      "htmlUrl": "https://github.com/New-guys5634/rusted-dunes/releases/tag/V1.0.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/New-guys5634/rusted-dunes/releases/download/V1.0.0/rusted.dunes.zip",
-      "sourceArchiveUrl": "https://github.com/new-guys5634/rusted-dunes/archive/refs/tags/V1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "rusted.dunes.zip",
-          "size": 150333,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/New-guys5634/rusted-dunes/releases/download/V1.0.0/rusted.dunes.zip"
+          "from": "145",
+          "to": "160.7"
         }
       ],
-      "commitSha": "a2a3eee09150dbda00585245266a4e9f8bac0257",
-      "archiveByCommitUrl": "https://github.com/new-guys5634/rusted-dunes/archive/a2a3eee09150dbda00585245266a4e9f8bac0257.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v5.0.0",
-      "modVersion": "1.3",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "V6.0.0",
-      "modVersion": "official 1.0",
-      "minGameVersion": "147",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/New-guys5634/rusted-dunes/releases/download/V1.0.0/rusted.dunes.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 150333,
+      "downloadCount": 8,
+      "releasedAt": "2024-12-11T11:03:07Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "rusted-dunes",
+    "author": "Rustedbeee",
+    "description": " \nA project of a mod that will include three planets but so far only two is playable.\n\nThis mod has to be played on 147+\n\nRusted dunes is a type of mod that's not hard or easy and your goals are to make technology in use of eroded materials or rusted materials and produce rusted units and soon upgrade them to there potential.\n\nDunes is a wasted planet near serpulo but far from the sun, take control and provide chaos to this dead planet.\n\nQuick notes: [\nLushion is currently in WIP.\nBe sure to have weather graphics for weather's if your on a low end device turn it off.\nMake sure to reinstall regular.\nGive a star if you enjoy Thanks!!!.\nThe sound is being worked on so don't worry to much\nmany sectors are kinda unbalanced so be warned iam balancing it \n}\n",
+    "version": "official 1.0",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

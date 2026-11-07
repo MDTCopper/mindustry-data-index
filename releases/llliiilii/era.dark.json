@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "llliiilii/era.dark",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "mindustry",
-      "name": "ERA.Dark 1.1.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-05T16:22:58Z",
-      "htmlUrl": "https://github.com/lllIIIlII/ERA.Dark/releases/tag/mindustry",
-      "modVersion": "1.1.4.0",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/llliiilii/era.dark/archive/refs/tags/mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/llliiilii/era.dark/archive/refs/tags/mindustry.zip",
-      "assets": [],
-      "commitSha": "8b25c135e6b4c805ecba97330678b315147a3f56",
-      "archiveByCommitUrl": "https://github.com/llliiilii/era.dark/archive/8b25c135e6b4c805ecba97330678b315147a3f56.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry",
       "modVersion": "1.1.4.0",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-10-05T16:22:58Z"
     }
   ],
   "meta": {
+    "name": "ED",
+    "author": "[#00FFFF]Supernova-68",
+    "description": "ERA.Dark [gold]QQ:526675268",
+    "version": "1.1.4.0",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

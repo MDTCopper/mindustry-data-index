@@ -1,181 +1,118 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ovulam5480/media2logic",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-30T05:05:05Z",
-      "htmlUrl": "https://github.com/Ovulam5480/Media2Logic/releases/tag/v1.1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.1/Media2Logic.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/media2logic/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Media2Logic.jar",
-          "size": 297655,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.1/Media2Logic.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fa9585822dc6b0ff85acfd02983212ecd72d5dbc",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/media2logic/archive/fa9585822dc6b0ff85acfd02983212ecd72d5dbc.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.1/Media2Logic.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 297655,
+      "downloadCount": 40,
+      "releasedAt": "2026-08-30T05:05:05Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-01T08:53:41Z",
-      "htmlUrl": "https://github.com/Ovulam5480/Media2Logic/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.0/Media2Logic.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/media2logic/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Media2Logic.jar",
-          "size": 294531,
-          "downloadCount": 198,
-          "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.0/Media2Logic.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "daed1a07d30f0d17421af06e5144ba070d8189b5",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/media2logic/archive/daed1a07d30f0d17421af06e5144ba070d8189b5.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.0/Media2Logic.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 294531,
+      "downloadCount": 198,
+      "releasedAt": "2026-04-01T08:53:41Z"
     },
     {
       "tag": "v0.2.2",
-      "name": "v0.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-04T14:08:31Z",
-      "htmlUrl": "https://github.com/Ovulam5480/Media2Logic/releases/tag/v0.2.2",
-      "modVersion": "0.2.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.2/Media2Logic.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/media2logic/archive/refs/tags/v0.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Media2Logic.jar",
-          "size": 65739,
-          "downloadCount": 104,
-          "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.2/Media2Logic.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "4eef52685189bfc5abe4d9e00ed95e0bd9c797e4",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/media2logic/archive/4eef52685189bfc5abe4d9e00ed95e0bd9c797e4.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.2/Media2Logic.jar",
+      "modVersion": "0.2.2",
+      "sizeBytes": 65739,
+      "downloadCount": 104,
+      "releasedAt": "2025-07-04T14:08:31Z"
     },
     {
       "tag": "v0.2.1",
-      "name": "v0.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-04T13:30:29Z",
-      "htmlUrl": "https://github.com/Ovulam5480/Media2Logic/releases/tag/v0.2.1",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.1/Media2Logic.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/media2logic/archive/refs/tags/v0.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Media2Logic.jar",
-          "size": 65708,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.1/Media2Logic.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "037495bbb8cf9c4b2bb35fd0ca64179df07c0a4d",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/media2logic/archive/037495bbb8cf9c4b2bb35fd0ca64179df07c0a4d.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.1/Media2Logic.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 65708,
+      "downloadCount": 4,
+      "releasedAt": "2025-07-04T13:30:29Z"
     },
     {
       "tag": "v0.2",
-      "name": "v0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-04T10:06:53Z",
-      "htmlUrl": "https://github.com/Ovulam5480/Media2Logic/releases/tag/v0.2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2/Media2Logic.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/media2logic/archive/refs/tags/v0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Media2Logic.jar",
-          "size": 64420,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2/Media2Logic.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "2dde220bb3b858793e940210b0c0b2a7b0530c23",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/media2logic/archive/2dde220bb3b858793e940210b0c0b2a7b0530c23.zip"
+      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2/Media2Logic.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 64420,
+      "downloadCount": 6,
+      "releasedAt": "2025-07-04T10:06:53Z"
     },
     {
       "tag": "v0.1",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-07-02T13:04:37Z",
-      "htmlUrl": "https://github.com/Ovulam5480/Media2Logic/releases/tag/v0.1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.1/Media2Logic.jar",
-      "sourceArchiveUrl": "https://github.com/ovulam5480/media2logic/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Media2Logic.jar",
-          "size": 62577,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.1/Media2Logic.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "cc23029a2a6e753b1afcf9254b520b46338c3c4f",
-      "archiveByCommitUrl": "https://github.com/ovulam5480/media2logic/archive/cc23029a2a6e753b1afcf9254b520b46338c3c4f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2.2",
-      "modVersion": "0.2.2",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.0",
-      "modVersion": "1.0",
-      "minGameVersion": "155",
-      "maxGameVersion": 159.7,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.1",
-      "modVersion": "1.0",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.1/Media2Logic.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 62577,
+      "downloadCount": 3,
+      "releasedAt": "2025-07-02T13:04:37Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "mod",
+    "author": "Ovulam5480",
+    "description": "图片转逻辑模组, 图片只支持png格式 \n蓝图生成完成后请及时重启游戏, 释放内存 \n三角剖分低多边形算法思路来源于nce3xin, 三角剖分算法实现使用Tinfour库, \n爬山算法使用Geometrize库的思路",
+    "version": "1.0",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "Media2Logic.Media2LogicMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,582 +1,367 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "darkdustry-coders/mindurkacompat",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.0-alpha+coreplugin-0.17.2",
-      "name": "2.0-alpha+coreplugin-0.17.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-04T17:42:27Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.17.2",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.2/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.17.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 640567,
-          "downloadCount": 324,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.2/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "329fbfac6bff730c5e83de1179f9f9a9d05c45c4",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/329fbfac6bff730c5e83de1179f9f9a9d05c45c4.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.2/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 640567,
+      "downloadCount": 324,
+      "releasedAt": "2026-06-04T17:42:27Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.17.1",
-      "name": "2.0-alpha+coreplugin-0.17.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T17:14:11Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.17.1",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.1/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.17.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 639286,
-          "downloadCount": 57,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.1/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c8dead918ccd573f6a6a93ecf6cb5d0df9e370e6",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/c8dead918ccd573f6a6a93ecf6cb5d0df9e370e6.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17.1/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 639286,
+      "downloadCount": 57,
+      "releasedAt": "2026-05-25T17:14:11Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.17",
-      "name": "2.0-alpha+coreplugin-0.17",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T12:35:37Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.17",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.17.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 639366,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3938e68fb6b6d045b1436c4ca5b2e46c68b2ac6b",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/3938e68fb6b6d045b1436c4ca5b2e46c68b2ac6b.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.17/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 639366,
+      "downloadCount": 16,
+      "releasedAt": "2026-05-25T12:35:37Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.16.1",
-      "name": "2.0-alpha+coreplugin-0.16.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-23T18:01:55Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.16.1",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.16.1/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.16.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 417531,
-          "downloadCount": 262,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.16.1/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "26317087f483828a294238bfbc2e0e98779772fb",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/26317087f483828a294238bfbc2e0e98779772fb.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.16.1/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 417531,
+      "downloadCount": 262,
+      "releasedAt": "2026-04-23T18:01:55Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.16",
-      "name": "2.0-alpha+coreplugin-0.16",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-23T14:32:25Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.16",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.16/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.16.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 415340,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.16/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "24400944e55187d2cc8032e0f7a4fae9071e99f8",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/24400944e55187d2cc8032e0f7a4fae9071e99f8.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.16/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 415340,
+      "downloadCount": 4,
+      "releasedAt": "2026-04-23T14:32:25Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.15",
-      "name": "2.0-alpha+coreplugin-0.15",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-11T10:28:26Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.15",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.15/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.15.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 405130,
-          "downloadCount": 60,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.15/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5fdc26e1e1035c0cd4e53f472e64cc310ff30a97",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/5fdc26e1e1035c0cd4e53f472e64cc310ff30a97.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.15/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 405130,
+      "downloadCount": 60,
+      "releasedAt": "2026-04-11T10:28:26Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.14",
-      "name": "2.0-alpha+coreplugin-0.14",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-22T17:28:04Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.14",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.14/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.14.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 405199,
-          "downloadCount": 68,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.14/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4384356090077437d5b682236374884bb7e026cd",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/4384356090077437d5b682236374884bb7e026cd.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.14/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 405199,
+      "downloadCount": 68,
+      "releasedAt": "2026-03-22T17:28:04Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.13",
-      "name": "2.0-alpha+coreplugin-0.13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-22T08:29:47Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.13",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.13/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.13.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 398914,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.13/MindurkaCompat.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f63e9eba5e04353d3bd4a7cbe5ece25971276186",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/f63e9eba5e04353d3bd4a7cbe5ece25971276186.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.13/MindurkaCompat.jar",
+      "modVersion": "2",
+      "sizeBytes": 398914,
+      "releasedAt": "2026-03-22T08:29:47Z"
     },
     {
       "tag": "2.0-alpha+coreplugin-0.12",
-      "name": "2.0-alpha+coreplugin-0.12",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-13T18:08:53Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.12",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.12/MindurkaCompat-2.0.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat-2.0.jar",
-          "size": 394604,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.12/MindurkaCompat-2.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.12/MindurkaCompat-2.0.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 394604,
+      "releasedAt": "2026-03-13T18:08:53Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.11.1",
-      "name": "2.0-alpha+coreplugin-0.11.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-12T19:32:09Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.11.1",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.11.1/MindurkaCompat-2.0.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.11.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat-2.0.jar",
-          "size": 394467,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.11.1/MindurkaCompat-2.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.11.1/MindurkaCompat-2.0.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 394467,
+      "releasedAt": "2026-03-12T19:32:09Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.11",
-      "name": "2.0-alpha+coreplugin-0.11",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-03-12T19:08:24Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.11",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.11/MindurkaCompat-2.0.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat-2.0.jar",
-          "size": 394467,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.11/MindurkaCompat-2.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.11/MindurkaCompat-2.0.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 394467,
+      "downloadCount": 1,
+      "releasedAt": "2026-03-12T19:08:24Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.10",
-      "name": "2.0-alpha+coreplugin-0.10",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-02-09T06:12:28Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.10",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.10/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 358941,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.10/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.10/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 358941,
+      "downloadCount": 2,
+      "releasedAt": "2026-02-09T06:12:28Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.9",
-      "name": "2.0-alpha+coreplugin-0.9",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-29T13:14:32Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.9",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.9/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 341436,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.9/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.9/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 341436,
+      "downloadCount": 8,
+      "releasedAt": "2026-01-29T13:14:32Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.8",
-      "name": "2.0-alpha+coreplugin-0.8",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-21T07:10:00Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.8",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.8/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 325917,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.8/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.8/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 325917,
+      "downloadCount": 9,
+      "releasedAt": "2026-01-21T07:10:00Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.7",
-      "name": "2.0-alpha+coreplugin-0.7",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-18T20:36:55Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.7",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.7/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 309608,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.7/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.7/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 309608,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-18T20:36:55Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.6",
-      "name": "2.0-alpha+coreplugin-0.6",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-13T16:04:21Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.6",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.6/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 307149,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.6/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.6/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 307149,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-13T16:04:21Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.5",
-      "name": "2.0-alpha+coreplugin-0.5",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-10T16:33:40Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.5",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.5/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 261041,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.5/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.5/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 261041,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-10T16:33:40Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.4",
-      "name": "2.0-alpha+coreplugin-0.4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-07T15:01:31Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.4",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.4/MindurkaCompat-2.0.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat-2.0.jar",
-          "size": 204396,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.4/MindurkaCompat-2.0.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.4/MindurkaCompat-2.0.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 204396,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-07T15:01:31Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.3",
-      "name": "2.0-alpha+coreplugin-0.3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-05T02:38:20Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.3",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.3/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 199303,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.3/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.3/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 199303,
+      "downloadCount": 3,
+      "releasedAt": "2026-01-05T02:38:20Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.2",
-      "name": "2.0-alpha+coreplugin-0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-05T01:10:32Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.2/MindurkaCompat.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindurkaCompat.jar",
-          "size": 200330,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.2/MindurkaCompat.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
+      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.2/MindurkaCompat.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 200330,
+      "downloadCount": 2,
+      "releasedAt": "2026-01-05T01:10:32Z",
+      "prerelease": true
     },
     {
       "tag": "2.0-alpha+coreplugin-0.1",
-      "name": "2.0-alpha+coreplugin-0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-04T22:10:25Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/2.0-alpha%2Bcoreplugin-0.1",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.1/MindurkaCompatDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/2.0-alpha%2Bcoreplugin-0.1.zip",
-      "assets": [
-        {
-          "name": "MindurkaCompatDesktop.jar",
-          "size": 122064,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/2.0-alpha%2Bcoreplugin-0.1/MindurkaCompatDesktop.jar"
-        }
-      ],
-      "commitSha": "6a46fe366d5e44edfb0a184d3100c978c29de2d5",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/6a46fe366d5e44edfb0a184d3100c978c29de2d5.zip"
-    },
-    {
-      "tag": "1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-07T06:28:13Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/1.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/1.1/MindurkaCompat-1.1.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/1.1.zip",
-      "assets": [
-        {
-          "name": "MindurkaCompat-1.1.jar",
-          "size": 18489,
-          "downloadCount": 616,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/1.1/MindurkaCompat-1.1.jar"
-        }
-      ],
-      "commitSha": "13ea24d4b6e28e46659a003febe3072b7e6fdca4",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/13ea24d4b6e28e46659a003febe3072b7e6fdca4.zip"
-    },
-    {
-      "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-05T22:12:34Z",
-      "htmlUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/tag/1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/1.0/MindurkaCompat-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/refs/tags/1.0.zip",
-      "assets": [
-        {
-          "name": "MindurkaCompat-1.0.jar",
-          "size": 1763525,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/Darkdustry-Coders/MindurkaCompat/releases/download/1.0/MindurkaCompat-1.0.jar"
-        }
-      ],
-      "commitSha": "d6f90b9636ba6b8222c0db868c694f5a7b7d35bd",
-      "archiveByCommitUrl": "https://github.com/darkdustry-coders/mindurkacompat/archive/d6f90b9636ba6b8222c0db868c694f5a7b7d35bd.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.0-alpha+coreplugin-0.12",
       "modVersion": "1.2",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.0-alpha+coreplugin-0.17.2",
-      "modVersion": "2",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 122064,
+      "downloadCount": 5,
+      "releasedAt": "2026-01-04T22:10:25Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "MindurkaCompat",
+    "author": "buj",
+    "description": "Mod that adds extra compatibility with Mindurka",
+    "version": "2",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "mindurka.Main",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

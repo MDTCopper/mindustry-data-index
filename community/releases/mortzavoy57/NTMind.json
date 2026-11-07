@@ -1,81 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mortzavoy57/NTMind",
-  "generatedAt": "2026-11-06T19:28:53.827Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.4.0",
-      "name": "1.4.0 Release (v160)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-01T06:25:46Z",
-      "htmlUrl": "https://github.com/mortzavoy57/NTMind/releases/tag/v1.4.0",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mortzavoy57/NTMind/releases/download/v1.4.0/NTMind.1.4.0.jar",
-      "sourceArchiveUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/v1.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "NTMind.1.4.0.jar",
-          "size": 78321,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/mortzavoy57/NTMind/releases/download/v1.4.0/NTMind.1.4.0.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c386bf321fc8027e71001a2678074d518af58397",
-      "archiveByCommitUrl": "https://github.com/mortzavoy57/NTMind/archive/c386bf321fc8027e71001a2678074d518af58397.zip"
-    },
-    {
-      "tag": "mindustry",
-      "name": "mindustry",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/mortzavoy57/NTMind/tree/mindustry",
+      "downloadUrl": "https://github.com/mortzavoy57/NTMind/releases/download/v1.4.0/NTMind.1.4.0.jar",
       "modVersion": "1.4",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/mindustry.zip",
-      "sourceArchiveUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/mindustry.zip",
-      "assets": [],
-      "commitSha": "c386bf321fc8027e71001a2678074d518af58397",
-      "archiveByCommitUrl": "https://github.com/mortzavoy57/NTMind/archive/c386bf321fc8027e71001a2678074d518af58397.zip"
-    },
-    {
-      "tag": "1.4.0",
-      "name": "1.4.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/mortzavoy57/NTMind/tree/1.4.0",
-      "modVersion": "1.4",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/1.4.0.zip",
-      "sourceArchiveUrl": "https://github.com/mortzavoy57/NTMind/archive/refs/tags/1.4.0.zip",
-      "assets": [],
-      "commitSha": "c386bf321fc8027e71001a2678074d518af58397",
-      "archiveByCommitUrl": "https://github.com/mortzavoy57/NTMind/archive/c386bf321fc8027e71001a2678074d518af58397.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.4.0",
-      "modVersion": "1.4",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 78321,
+      "downloadCount": 16,
+      "releasedAt": "2026-11-01T06:25:46Z"
     }
   ],
   "meta": {
+    "name": "ntmind",
+    "author": "Aaron",
+    "description": "Мод добавляющий много нового контента.",
+    "version": "1.4",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ntmind.NTMind",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

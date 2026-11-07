@@ -1,388 +1,191 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "vvseangtvv/project-restoration",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
-    {
-      "tag": "v14",
-      "name": "5.0 Alpha Build 14",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-07-27T01:53:02Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v14",
-      "modVersion": "0.5.0 Beta",
-      "minGameVersion": "150",
-      "metadataPath": "assets/mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v14/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v14.zip",
-      "assets": [
-        {
-          "name": "Project-Restoration.jar",
-          "size": 37543556,
-          "downloadCount": 2878,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v14/Project-Restoration.jar"
-        }
-      ],
-      "commitSha": "8b970c2cd319765c2cd92a2f9917d016ed8c325b",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/8b970c2cd319765c2cd92a2f9917d016ed8c325b.zip"
-    },
-    {
-      "tag": "v13",
-      "name": "5.0 Alpha Build 13",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-16T19:27:06Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v13",
-      "modVersion": "0.4.0 Beta",
-      "minGameVersion": "146",
-      "metadataPath": "assets/mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v13/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v13.zip",
-      "assets": [
-        {
-          "name": "Project-Restoration.jar",
-          "size": 37547614,
-          "downloadCount": 47359,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v13/Project-Restoration.jar"
-        }
-      ],
-      "commitSha": "4945cb2b7a2e289fa9e3494abf51e52637f1bf91",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/4945cb2b7a2e289fa9e3494abf51e52637f1bf91.zip"
-    },
-    {
-      "tag": "v12",
-      "name": "4.0 Build 12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-18T05:47:19Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v12",
-      "modVersion": "0.4.0 Beta",
-      "minGameVersion": "146",
-      "metadataPath": "assets/mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v12/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v12.zip",
-      "assets": [
-        {
-          "name": "Project-Restoration.jar",
-          "size": 35618045,
-          "downloadCount": 10815,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v12/Project-Restoration.jar"
-        }
-      ],
-      "commitSha": "613e227e263b0a31e0b4694de4b3fb325af1276c",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/613e227e263b0a31e0b4694de4b3fb325af1276c.zip"
-    },
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v11",
-      "name": "3.2 PRE-ALPHA Build 11",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-06-09T04:44:51Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v11",
-      "modVersion": "0.3.0 Beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v11/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-Restoration.jar",
-          "size": 10375000,
-          "downloadCount": 544,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v11/Project-Restoration.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "0e65a061e96c00ce661897a6bd973cc4c52db29b",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/0e65a061e96c00ce661897a6bd973cc4c52db29b.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v11/Project-Restoration.jar",
+      "modVersion": "0.3.0 Beta",
+      "sizeBytes": 10375000,
+      "downloadCount": 544,
+      "releasedAt": "2024-06-09T04:44:51Z",
+      "prerelease": true
     },
     {
       "tag": "v10",
-      "name": "3.0.2.5 Alpha Build 10",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-03-21T14:58:37Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v10",
-      "modVersion": "0.3.0 Beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v10/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-Restoration.jar",
-          "size": 9879365,
-          "downloadCount": 269,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v10/Project-Restoration.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "00a5783b7e91c10cbe9ccda4b7b567c19b2a504a",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/00a5783b7e91c10cbe9ccda4b7b567c19b2a504a.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v10/Project-Restoration.jar",
+      "modVersion": "0.3.0 Beta",
+      "sizeBytes": 9879365,
+      "downloadCount": 269,
+      "releasedAt": "2024-03-21T14:58:37Z",
+      "prerelease": true
     },
     {
       "tag": "v9",
-      "name": "3.0 Build 9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-20T20:20:41Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v9",
-      "modVersion": "0.3.0 Beta",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v9/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-Restoration.jar",
-          "size": 9871589,
-          "downloadCount": 22890,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v9/Project-Restoration.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "8880a343319b84ed62b013144205887c4e6d4b86",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/8880a343319b84ed62b013144205887c4e6d4b86.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v9/Project-Restoration.jar",
+      "modVersion": "0.3.0 Beta",
+      "sizeBytes": 9871589,
+      "downloadCount": 22891,
+      "releasedAt": "2023-07-20T20:20:41Z"
     },
     {
       "tag": "v8",
-      "name": "2.1 Build 8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-30T02:18:42Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v8",
-      "modVersion": "0.2.0 Beta",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v8/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-Restoration.jar",
-          "size": 9077433,
-          "downloadCount": 6790,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v8/Project-Restoration.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "7a14abf7839d81b788b3ee8e3bc54b10eb5501fa",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/7a14abf7839d81b788b3ee8e3bc54b10eb5501fa.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v8/Project-Restoration.jar",
+      "modVersion": "0.2.0 Beta",
+      "sizeBytes": 9077433,
+      "downloadCount": 6790,
+      "releasedAt": "2023-03-30T02:18:42Z"
     },
     {
       "tag": "v7",
-      "name": "2.0 Build 7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-27T21:10:36Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v7",
-      "modVersion": "0.2.0 Beta",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v7/Project-Restoration.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Project-Restoration.jar",
-          "size": 9017479,
-          "downloadCount": 437,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v7/Project-Restoration.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "865a05b301ef9fd87d23a05aec5d45622a397c60",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/865a05b301ef9fd87d23a05aec5d45622a397c60.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v7/Project-Restoration.jar",
+      "modVersion": "0.2.0 Beta",
+      "sizeBytes": 9017479,
+      "downloadCount": 437,
+      "releasedAt": "2023-03-27T21:10:36Z"
     },
     {
       "tag": "v6",
-      "name": "2.0 Preview Build 6",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-03-06T21:09:35Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v6",
-      "modVersion": "0.2.0 Preview Beta",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v6/V5-Reborn-Java.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V5-Reborn-Java.jar",
-          "size": 9158847,
-          "downloadCount": 176,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v6/V5-Reborn-Java.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "ab02c069415c358a2459f7531b046d53e81e0552",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/ab02c069415c358a2459f7531b046d53e81e0552.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v6/V5-Reborn-Java.jar",
+      "modVersion": "0.2.0 Preview Beta",
+      "sizeBytes": 9158847,
+      "downloadCount": 177,
+      "releasedAt": "2023-03-06T21:09:35Z",
+      "prerelease": true
     },
     {
       "tag": "v5",
-      "name": "1.2 Preview Build 5",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-03-01T18:26:46Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v5",
-      "modVersion": "0.1.2 Preview Beta",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v5/V5-Reborn-Java.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V5-Reborn-Java.jar",
-          "size": 8519477,
-          "downloadCount": 130,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v5/V5-Reborn-Java.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "a9be0e5f54f0539cc32bc2a347fcfced3176ec53",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/a9be0e5f54f0539cc32bc2a347fcfced3176ec53.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v5/V5-Reborn-Java.jar",
+      "modVersion": "0.1.2 Preview Beta",
+      "sizeBytes": 8519477,
+      "downloadCount": 130,
+      "releasedAt": "2023-03-01T18:26:46Z",
+      "prerelease": true
     },
     {
       "tag": "v4",
-      "name": "1.2 Preview Build 4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-02-28T21:03:57Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v4",
-      "modVersion": "0.1.2 Preview Beta",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v4/V5-Reborn-Java.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V5-Reborn-Java.jar",
-          "size": 8459702,
-          "downloadCount": 74,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v4/V5-Reborn-Java.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "be5ca5be92d33781d4fed1848a32bb874dfaa468",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/be5ca5be92d33781d4fed1848a32bb874dfaa468.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v4/V5-Reborn-Java.jar",
+      "modVersion": "0.1.2 Preview Beta",
+      "sizeBytes": 8459702,
+      "downloadCount": 74,
+      "releasedAt": "2023-02-28T21:03:57Z",
+      "prerelease": true
     },
     {
       "tag": "v3",
-      "name": "1.2 Preview Build 3",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2023-02-27T20:55:50Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v3",
-      "modVersion": "0.1.2 Preview Beta",
+      "kind": "release",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v3/V5-Reborn-Java.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V5-Reborn-Java.jar",
-          "size": 8424547,
-          "downloadCount": 85,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v3/V5-Reborn-Java.jar"
+          "from": "142",
+          "to": "146"
         }
       ],
-      "commitSha": "15281d5cb6b91c125fb6375a25eddf96ffad78c9",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/15281d5cb6b91c125fb6375a25eddf96ffad78c9.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v3/V5-Reborn-Java.jar",
+      "modVersion": "0.1.2 Preview Beta",
+      "sizeBytes": 8424547,
+      "downloadCount": 85,
+      "releasedAt": "2023-02-27T20:55:50Z",
+      "prerelease": true
     },
     {
       "tag": "v2",
-      "name": "1.0 Build 2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-21T19:42:37Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v2",
-      "modVersion": "0.1.0 Beta",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v2/V5-Reborn-Java.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V5-Reborn-Java.jar",
-          "size": 8401012,
-          "downloadCount": 7109,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v2/V5-Reborn-Java.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "1e5ad06a5550905629342e120cf54cdeade887b8",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/1e5ad06a5550905629342e120cf54cdeade887b8.zip"
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v2/V5-Reborn-Java.jar",
+      "modVersion": "0.1.0 Beta",
+      "sizeBytes": 8401012,
+      "downloadCount": 7109,
+      "releasedAt": "2022-11-21T19:42:37Z"
     },
     {
       "tag": "v1",
-      "name": "1.0 Build 1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-11-12T18:49:05Z",
-      "htmlUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/tag/v1",
-      "modVersion": "0.1.0 Beta",
+      "kind": "release",
       "minGameVersion": "138",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v1/V5-Reborn-Java.jar",
-      "sourceArchiveUrl": "https://github.com/vvseangtvv/project-restoration/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "V5-Reborn-Java.jar",
-          "size": 8397609,
-          "downloadCount": 322,
-          "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v1/V5-Reborn-Java.jar"
+          "from": "138",
+          "to": "146"
         }
       ],
-      "commitSha": "21c53e695427568f61ed8840422ca6e59a605b11",
-      "archiveByCommitUrl": "https://github.com/vvseangtvv/project-restoration/archive/21c53e695427568f61ed8840422ca6e59a605b11.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2",
+      "downloadUrl": "https://github.com/VvSeanGTvV/Project-Restoration/releases/download/v1/V5-Reborn-Java.jar",
       "modVersion": "0.1.0 Beta",
-      "minGameVersion": "138",
-      "maxGameVersion": 142,
-      "hasRelease": true
-    },
-    {
-      "tag": "v8",
-      "modVersion": "0.2.0 Beta",
-      "minGameVersion": "142",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "v11",
-      "modVersion": "0.3.0 Beta",
-      "minGameVersion": "145",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v13",
-      "modVersion": "0.4.0 Beta",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v14",
-      "modVersion": "0.5.0 Beta",
-      "minGameVersion": "150",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 8397609,
+      "downloadCount": 322,
+      "releasedAt": "2022-11-12T18:49:05Z",
+      "prerelease": true
     }
-  ],
-  "meta": {
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "classicMod.ClassicMod",
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

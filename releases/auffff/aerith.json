@@ -1,74 +1,61 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "auffff/aerith",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.1v-Stable",
-      "name": "v0.1s - Stable v8 Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-23T15:06:28Z",
-      "htmlUrl": "https://github.com/AuFFFF/Aerith/releases/tag/0.1v-Stable",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/auffff/aerith/archive/refs/tags/0.1v-Stable.zip",
-      "sourceArchiveUrl": "https://github.com/auffff/aerith/archive/refs/tags/0.1v-Stable.zip",
-      "assets": [],
-      "commitSha": "635c32196d1ba16cf336244e483c2b4972e0c677",
-      "archiveByCommitUrl": "https://github.com/auffff/aerith/archive/635c32196d1ba16cf336244e483c2b4972e0c677.zip"
-    },
-    {
-      "tag": "ver",
-      "name": "ver",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/auffff/aerith/tree/ver",
       "modVersion": "0.1",
-      "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/auffff/aerith/archive/refs/tags/ver.zip",
-      "sourceArchiveUrl": "https://github.com/auffff/aerith/archive/refs/tags/ver.zip",
-      "assets": [],
-      "commitSha": "635c32196d1ba16cf336244e483c2b4972e0c677",
-      "archiveByCommitUrl": "https://github.com/auffff/aerith/archive/635c32196d1ba16cf336244e483c2b4972e0c677.zip"
+      "releasedAt": "2026-05-23T15:06:28Z"
     },
     {
       "tag": "aerith",
-      "name": "aerith",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/auffff/aerith/tree/aerith",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/auffff/aerith/archive/refs/tags/aerith.zip",
-      "sourceArchiveUrl": "https://github.com/auffff/aerith/archive/refs/tags/aerith.zip",
-      "assets": [],
-      "commitSha": "635c32196d1ba16cf336244e483c2b4972e0c677",
-      "archiveByCommitUrl": "https://github.com/auffff/aerith/archive/635c32196d1ba16cf336244e483c2b4972e0c677.zip"
-    }
-  ],
-  "compat": [
+      "modVersion": "0.1"
+    },
     {
-      "tag": "0.1v-Stable",
-      "modVersion": "0.1",
+      "tag": "ver",
+      "kind": "tag",
       "minGameVersion": "157.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/auffff/aerith/archive/refs/tags/ver.zip",
+      "modVersion": "0.1"
     }
   ],
   "meta": {
+    "name": "aerith",
+    "author": "AuF",
+    "description": "\nFor now in development\n",
+    "version": "0.1",
+    "minGameVersion": "157.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "anolex/gecko-turret",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-20T10:36:42Z",
-      "htmlUrl": "https://github.com/Anolex/Gecko-turret/releases/tag/mindustry-mod",
-      "modVersion": "1.0: Advanced",
+      "kind": "tag",
       "minGameVersion": "157",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/anolex/gecko-turret/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/anolex/gecko-turret/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "ba2f666d72395c6c99ce54350056f3073e18982c",
-      "archiveByCommitUrl": "https://github.com/anolex/gecko-turret/archive/ba2f666d72395c6c99ce54350056f3073e18982c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1.0: Advanced",
-      "minGameVersion": "157",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-06-20T10:36:42Z"
     }
   ],
   "meta": {
+    "name": "Gecko",
+    "author": "Anolex",
+    "description": "Adds a laser ground-to-air (SPAA) system designed to exceptionally handle air targets.",
+    "version": "1.0: Advanced",
+    "minGameVersion": "157",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

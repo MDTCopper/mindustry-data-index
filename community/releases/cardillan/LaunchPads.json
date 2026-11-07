@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cardillan/LaunchPads",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.0",
-      "name": "0.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-24T11:52:01Z",
-      "htmlUrl": "https://github.com/cardillan/LaunchPads/releases/tag/v0.1.0",
-      "modVersion": "0.1.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/cardillan/LaunchPads/releases/download/v0.1.0/LaunchPads.jar",
-      "sourceArchiveUrl": "https://github.com/cardillan/LaunchPads/archive/refs/tags/v0.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "LaunchPads.jar",
-          "size": 37930,
-          "downloadCount": 574,
-          "downloadUrl": "https://github.com/cardillan/LaunchPads/releases/download/v0.1.0/LaunchPads.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "d921bd057ea8b77d26e3904112268e81978bcf5f",
-      "archiveByCommitUrl": "https://github.com/cardillan/LaunchPads/archive/d921bd057ea8b77d26e3904112268e81978bcf5f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.0",
+      "downloadUrl": "https://github.com/cardillan/LaunchPads/releases/download/v0.1.0/LaunchPads.jar",
       "modVersion": "0.1.0",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "sizeBytes": 37930,
+      "downloadCount": 574,
+      "releasedAt": "2025-04-24T11:52:01Z"
     }
   ],
   "meta": {
+    "name": "launch-logic",
+    "author": "cardillan",
+    "description": "Provides custom mlog instructions for launch pads and landing pads.",
+    "version": "0.1.0",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "cardillan.launchlogic.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

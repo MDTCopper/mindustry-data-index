@@ -1,40 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "notquite-mytempo/wastebound",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v.0.0-test",
-      "name": "test",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-05-14T17:45:58Z",
-      "htmlUrl": "https://github.com/notquite-mytempo/wastebound/releases/tag/v.0.0-test",
-      "modVersion": "v.0.03",
+      "kind": "tag",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "155",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/notquite-mytempo/wastebound/archive/refs/tags/v.0.0-test.zip",
-      "sourceArchiveUrl": "https://github.com/notquite-mytempo/wastebound/archive/refs/tags/v.0.0-test.zip",
-      "assets": [],
-      "commitSha": "2acfc86d2aa0064074caeb9de11c969242012fda",
-      "archiveByCommitUrl": "https://github.com/notquite-mytempo/wastebound/archive/2acfc86d2aa0064074caeb9de11c969242012fda.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v.0.0-test",
       "modVersion": "v.0.03",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-05-14T17:45:58Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "wastebound",
+    "author": "hog rider",
+    "description": "e",
+    "version": "v.0.03",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

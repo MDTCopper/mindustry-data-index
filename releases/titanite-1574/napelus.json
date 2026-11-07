@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "titanite-1574/napelus",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0+",
-      "name": "v1.0+",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/titanite-1574/napelus/tree/v1.0%2B",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "152.2",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "152.2",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/titanite-1574/napelus/archive/refs/tags/v1.0%2B.zip",
-      "sourceArchiveUrl": "https://github.com/titanite-1574/napelus/archive/refs/tags/v1.0%2B.zip",
-      "assets": [],
-      "commitSha": "a1f977d225708a54c592615bc7b17ee5b89823f2",
-      "archiveByCommitUrl": "https://github.com/titanite-1574/napelus/archive/a1f977d225708a54c592615bc7b17ee5b89823f2.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0+",
-      "modVersion": "1.0",
-      "minGameVersion": "152.2",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "1.0"
     }
   ],
   "meta": {
+    "name": "nap",
+    "author": "Titan",
+    "description": "1.0 IS FINALLY HERE,PART A.A mindustry mod that adds a new planet with its own campaign, still WIP.",
+    "version": "1.0",
+    "minGameVersion": "152.2",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

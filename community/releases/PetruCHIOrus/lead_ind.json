@@ -1,223 +1,86 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "PetruCHIOrus/lead_ind",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "1.6",
-      "name": "Update 1.6 version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-09T14:02:42Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.6",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "143",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.6/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "lead_ind-master.zip",
-          "size": 839850,
-          "downloadCount": 424,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.6/lead_ind-master.zip"
+          "from": "143",
+          "to": "160.7"
         }
       ],
-      "commitSha": "eca703e28e5ed59e7316d52a26e917f70875c006",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/eca703e28e5ed59e7316d52a26e917f70875c006.zip"
+      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.6/lead_ind-master.zip",
+      "modVersion": "1.6",
+      "sizeBytes": 839850,
+      "downloadCount": 424,
+      "releasedAt": "2023-04-09T14:02:42Z"
     },
     {
       "tag": "1.5.1.1",
-      "name": "(actually 1.5.1) localisation fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-17T17:38:16Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.5.1.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5.1.1/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.5.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "lead_ind-master.zip",
-          "size": 851400,
-          "downloadCount": 874,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5.1.1/lead_ind-master.zip"
+          "from": "122",
+          "to": "135.2"
         }
       ],
-      "commitSha": "fddc502d196bec96c80598edbb2323cf53e8aa98",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/fddc502d196bec96c80598edbb2323cf53e8aa98.zip"
+      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5.1.1/lead_ind-master.zip",
+      "modVersion": "1.5.1",
+      "sizeBytes": 851400,
+      "downloadCount": 874,
+      "releasedAt": "2021-01-17T17:38:16Z"
     },
     {
       "tag": "1.5.1",
-      "name": "Yet another fixes!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-17T17:04:31Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5.1/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "lead_ind-master.zip",
-          "size": 851584,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5.1/lead_ind-master.zip"
+          "from": "122",
+          "to": "135.2"
         }
       ],
-      "commitSha": "bb901dbfca264cb4f66482b228eb38bf5c3dc682",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/bb901dbfca264cb4f66482b228eb38bf5c3dc682.zip"
+      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5.1/lead_ind-master.zip",
+      "modVersion": "1.5.1",
+      "sizeBytes": 851584,
+      "downloadCount": 26,
+      "releasedAt": "2021-01-17T17:04:31Z"
     },
     {
       "tag": "1.5",
-      "name": "6.0 fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-01-12T19:51:38Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "122",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "122",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.5.zip",
-      "assets": [
-        {
-          "name": "lead_ind-master.zip",
-          "size": 803840,
-          "downloadCount": 59,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.5/lead_ind-master.zip"
-        }
-      ],
-      "commitSha": "b66f284c67557f999a5d2a4f5a04a8bb9f62a859",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/b66f284c67557f999a5d2a4f5a04a8bb9f62a859.zip"
-    },
-    {
-      "tag": "1.3",
-      "name": "Epic update ever!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2019-11-06T23:31:09Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.3",
-      "modVersion": "1.3",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.3/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.3.zip",
-      "assets": [
-        {
-          "name": "lead_ind-master.zip",
-          "size": 786206,
-          "downloadCount": 3227,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.3/lead_ind-master.zip"
-        }
-      ],
-      "commitSha": "3bcac9c7e1740cf07a29c10a1ca1422201f8caf6",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/3bcac9c7e1740cf07a29c10a1ca1422201f8caf6.zip"
-    },
-    {
-      "tag": "1.2",
-      "name": "One turret, more crafting",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2019-10-20T13:18:30Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.2",
-      "modVersion": "1.1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.2/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.2.zip",
-      "assets": [
-        {
-          "name": "lead_ind-master.zip",
-          "size": 697750,
-          "downloadCount": 690,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.2/lead_ind-master.zip"
-        }
-      ],
-      "commitSha": "00e93af1c5f45670282aa0ae56498fe0b6b6634a",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/00e93af1c5f45670282aa0ae56498fe0b6b6634a.zip"
-    },
-    {
-      "tag": "1.1",
-      "name": "Flesh big update!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2019-10-17T17:07:56Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.1",
-      "modVersion": "1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.1/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.1.zip",
-      "assets": [
-        {
-          "name": "lead_ind-master.zip",
-          "size": 35678,
-          "downloadCount": 244,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.1/lead_ind-master.zip"
-        }
-      ],
-      "commitSha": "0312f897fed84b7fc5dd8eb9bb509c4ef602095a",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/0312f897fed84b7fc5dd8eb9bb509c4ef602095a.zip"
-    },
-    {
-      "tag": "1.0",
-      "name": "A light in the end of a tunnel",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2019-10-15T11:09:31Z",
-      "htmlUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/tag/1.0",
-      "modVersion": "1",
-      "minGameVersion": null,
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.0/lead_ind-master.zip",
-      "sourceArchiveUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/refs/tags/1.0.zip",
-      "assets": [
-        {
-          "name": "lead_ind-master.zip",
-          "size": 23244,
-          "downloadCount": 444,
-          "downloadUrl": "https://github.com/PetruCHIOrus/lead_ind/releases/download/1.0/lead_ind-master.zip"
-        }
-      ],
-      "commitSha": "fdd4b5eb14a91dccf0a963025ba8361e85d93bcf",
-      "archiveByCommitUrl": "https://github.com/PetruCHIOrus/lead_ind/archive/fdd4b5eb14a91dccf0a963025ba8361e85d93bcf.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.5.1.1",
-      "modVersion": "1.5.1",
-      "minGameVersion": "122",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.6",
-      "modVersion": "1.6",
-      "minGameVersion": "143",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.5",
+      "sizeBytes": 803840,
+      "downloadCount": 59,
+      "releasedAt": "2021-01-12T19:51:38Z"
     }
   ],
   "meta": {
+    "name": "lead_ind",
+    "author": "PetruCHIOrus\nDefenseX\npaulieg626",
+    "description": "New guns, drills, crafting, materials and resourses",
+    "version": "1.6",
+    "minGameVersion": "143",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

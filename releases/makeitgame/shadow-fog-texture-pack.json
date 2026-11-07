@@ -1,57 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "makeitgame/shadow-fog-texture-pack",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "Release v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-27T00:51:26Z",
-      "htmlUrl": "https://github.com/MakeItGame/Shadow-Fog-Texture-Pack/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/archive/refs/tags/v1.0.zip",
-      "sourceArchiveUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/archive/refs/tags/v1.0.zip",
-      "assets": [],
-      "commitSha": "d5ac6703c7e072a545953cac3492d8305df39e72",
-      "archiveByCommitUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/archive/d5ac6703c7e072a545953cac3492d8305df39e72.zip"
-    },
-    {
-      "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/tree/1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "1f38629bd8a04726b75495c780a2587226bd8dd9",
-      "archiveByCommitUrl": "https://github.com/makeitgame/shadow-fog-texture-pack/archive/1f38629bd8a04726b75495c780a2587226bd8dd9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-07-27T00:51:26Z"
     }
   ],
   "meta": {
+    "name": "shadow-fog-texture-pack",
+    "author": "Minty",
+    "description": "This is a texture pack that i created, it will be the skin of the shadow fog, the main enemy in my future mod. As the Mod will take a lot of time to develop i wanted to make this already available as skin, it changes the skin of everything except the environment",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

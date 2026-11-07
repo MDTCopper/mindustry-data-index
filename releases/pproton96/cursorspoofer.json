@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "pproton96/cursorspoofer",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "alpha",
-      "name": "v0.1-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-04T13:47:40Z",
-      "htmlUrl": "https://github.com/PProton96/CursorSpoofer/releases/tag/alpha",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PProton96/CursorSpoofer/releases/download/alpha/pproton-cursor-spoofer-v0.1-a.jar",
-      "sourceArchiveUrl": "https://github.com/pproton96/cursorspoofer/archive/refs/tags/alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pproton-cursor-spoofer-v0.1-a.jar",
-          "size": 47287,
-          "downloadCount": 356,
-          "downloadUrl": "https://github.com/PProton96/CursorSpoofer/releases/download/alpha/pproton-cursor-spoofer-v0.1-a.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ba30623c71076b918d2182f6a42a5dca59344ce9",
-      "archiveByCommitUrl": "https://github.com/pproton96/cursorspoofer/archive/ba30623c71076b918d2182f6a42a5dca59344ce9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alpha",
+      "downloadUrl": "https://github.com/PProton96/CursorSpoofer/releases/download/alpha/pproton-cursor-spoofer-v0.1-a.jar",
       "modVersion": "1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 47287,
+      "downloadCount": 356,
+      "releasedAt": "2026-05-04T13:47:40Z"
     }
   ],
   "meta": {
+    "name": "cursor-spoofer",
+    "author": "PProton",
+    "description": "Hides your cursor from cheaters, now it will appear to always be on your unit, unless you try to shoot.",
+    "version": "1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "pproton.CursorSpooferMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

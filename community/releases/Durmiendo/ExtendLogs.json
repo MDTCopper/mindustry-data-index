@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Durmiendo/ExtendLogs",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v146.2",
-      "name": "set hidden true",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-01T19:13:57Z",
-      "htmlUrl": "https://github.com/Durmiendo/ExtendLogs/releases/tag/v146.2",
-      "modVersion": "v1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.2/org.durmiendo.extlogs-ExtendLogs-v1.jar",
-      "sourceArchiveUrl": "https://github.com/Durmiendo/ExtendLogs/archive/refs/tags/v146.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "org.durmiendo.extlogs-ExtendLogs-v1.jar",
-          "size": 11283,
-          "downloadCount": 82,
-          "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.2/org.durmiendo.extlogs-ExtendLogs-v1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "7f839e197b48041bb435830be561ab1d30a93077",
-      "archiveByCommitUrl": "https://github.com/Durmiendo/ExtendLogs/archive/7f839e197b48041bb435830be561ab1d30a93077.zip"
+      "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.2/org.durmiendo.extlogs-ExtendLogs-v1.jar",
+      "modVersion": "v1",
+      "sizeBytes": 11283,
+      "downloadCount": 82,
+      "releasedAt": "2025-06-01T19:13:57Z"
     },
     {
       "tag": "v146.1",
-      "name": "second",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-30T06:52:07Z",
-      "htmlUrl": "https://github.com/Durmiendo/ExtendLogs/releases/tag/v146.1",
-      "modVersion": "v1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.1/org.durmiendo.extlogs-ExtendLogs-v1.jar",
-      "sourceArchiveUrl": "https://github.com/Durmiendo/ExtendLogs/archive/refs/tags/v146.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "org.durmiendo.extlogs-ExtendLogs-v1.jar",
-          "size": 11273,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.1/org.durmiendo.extlogs-ExtendLogs-v1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "15f2dfd1b9bbeb46276382e22d4cf0d9ef43415a",
-      "archiveByCommitUrl": "https://github.com/Durmiendo/ExtendLogs/archive/15f2dfd1b9bbeb46276382e22d4cf0d9ef43415a.zip"
+      "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.1/org.durmiendo.extlogs-ExtendLogs-v1.jar",
+      "modVersion": "v1",
+      "sizeBytes": 11273,
+      "downloadCount": 27,
+      "releasedAt": "2025-05-30T06:52:07Z"
     },
     {
       "tag": "v146",
-      "name": "First",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-29T16:36:21Z",
-      "htmlUrl": "https://github.com/Durmiendo/ExtendLogs/releases/tag/v146",
-      "modVersion": "v1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146/org.durmiendo.extlogs-ExtendLogs-v1.jar",
-      "sourceArchiveUrl": "https://github.com/Durmiendo/ExtendLogs/archive/refs/tags/v146.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "org.durmiendo.extlogs-ExtendLogs-v1.jar",
-          "size": 11196,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146/org.durmiendo.extlogs-ExtendLogs-v1.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "07d35c668c58278daa2d80ffda66db74691e721d",
-      "archiveByCommitUrl": "https://github.com/Durmiendo/ExtendLogs/archive/07d35c668c58278daa2d80ffda66db74691e721d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v146.2",
+      "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146/org.durmiendo.extlogs-ExtendLogs-v1.jar",
       "modVersion": "v1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 11196,
+      "downloadCount": 5,
+      "releasedAt": "2025-05-29T16:36:21Z"
     }
   ],
   "meta": {
+    "name": "extended-logs",
+    "author": "Durmiendo",
+    "description": "",
+    "version": "v1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "org.durmiendo.extlogs.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,113 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/betterlogisticsspeed",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.0.1",
-      "name": "betterLogisticsSpeed v2.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T04:03:10Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/tag/v2.0.1",
-      "modVersion": "2.0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.1/betterLogisticsSpeed.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterlogisticsspeed/archive/refs/tags/v2.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "betterLogisticsSpeed.jar",
-          "size": 35380,
-          "downloadCount": 705,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.1/betterLogisticsSpeed.jar"
-        },
-        {
-          "name": "betterLogisticsSpeed.zip",
-          "size": 34817,
-          "downloadCount": 95,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.1/betterLogisticsSpeed.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5bc24f7a59cc24923eb747bbb603b63992a7cbdb",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterlogisticsspeed/archive/5bc24f7a59cc24923eb747bbb603b63992a7cbdb.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.1/betterLogisticsSpeed.jar",
+      "modVersion": "2.0.1",
+      "sizeBytes": 70197,
+      "downloadCount": 801,
+      "releasedAt": "2026-08-08T04:03:10Z"
     },
     {
       "tag": "v2.0.0",
-      "name": "betterLogisticsSpeed v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-09T03:46:46Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/tag/v2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.0/betterLogisticsSpeed.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterlogisticsspeed/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "betterLogisticsSpeed.jar",
-          "size": 34817,
-          "downloadCount": 321,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.0/betterLogisticsSpeed.jar"
-        },
-        {
-          "name": "betterLogisticsSpeed.zip",
-          "size": 34817,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.0/betterLogisticsSpeed.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3b0a232e298a063a1fe3123babed326be0a11816",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterlogisticsspeed/archive/3b0a232e298a063a1fe3123babed326be0a11816.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.0/betterLogisticsSpeed.jar",
+      "modVersion": "2.0.0",
+      "sizeBytes": 69634,
+      "downloadCount": 334,
+      "releasedAt": "2026-07-09T03:46:46Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0 - MI2-Utilities-Java compatibility",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-17T11:03:34Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/tag/v1.1.0",
-      "modVersion": "1.1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v1.1.0/betterLogisticsSpeed.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterlogisticsspeed/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "betterLogisticsSpeed.jar",
-          "size": 16814,
-          "downloadCount": 1944,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v1.1.0/betterLogisticsSpeed.jar"
-        },
-        {
-          "name": "betterLogisticsSpeed.zip",
-          "size": 16814,
-          "downloadCount": 1719,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v1.1.0/betterLogisticsSpeed.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8fdd4d31238220b88266957b2f558a1927d69b4a",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterlogisticsspeed/archive/8fdd4d31238220b88266957b2f558a1927d69b4a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.0.1",
-      "modVersion": "2.0.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v1.1.0/betterLogisticsSpeed.jar",
+      "modVersion": "1.1.0",
+      "sizeBytes": 33628,
+      "downloadCount": 3663,
+      "releasedAt": "2026-05-17T11:03:34Z"
     }
   ],
   "meta": {
+    "name": "betterlogisticsspeed",
+    "author": "DeterMination",
+    "description": "Add long-window moving-average logistics speed rows under vanilla item speed display. / 在原版物流速度显示下方追加长窗口滑动平均行。",
+    "version": "2.0.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "betterlogisticsspeed.BetterLogisticsSpeedMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

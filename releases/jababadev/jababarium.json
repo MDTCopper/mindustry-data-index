@@ -1,174 +1,117 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "jababadev/jababarium",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.5",
-      "name": "v0.1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-19T19:25:13Z",
-      "htmlUrl": "https://github.com/JababaDev/Jababarium/releases/tag/v0.1.5",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v0.1.5/jababarium.jar",
-      "sourceArchiveUrl": "https://github.com/jababadev/jababarium/archive/refs/tags/v0.1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "jababarium.jar",
-          "size": 19170947,
-          "downloadCount": 2348,
-          "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v0.1.5/jababarium.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "abc5f96459a35b0045fe0338fa521acdc8fddd69",
-      "archiveByCommitUrl": "https://github.com/jababadev/jababarium/archive/abc5f96459a35b0045fe0338fa521acdc8fddd69.zip"
+      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v0.1.5/jababarium.jar",
+      "modVersion": "1",
+      "sizeBytes": 19170947,
+      "downloadCount": 2350,
+      "releasedAt": "2026-09-19T19:25:13Z"
     },
     {
       "tag": "v1.0.4",
-      "name": "v0.1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-18T16:50:05Z",
-      "htmlUrl": "https://github.com/JababaDev/Jababarium/releases/tag/v1.0.4",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.4/jababarium.jar",
-      "sourceArchiveUrl": "https://github.com/jababadev/jababarium/archive/refs/tags/v1.0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "jababarium.jar",
-          "size": 19170957,
-          "downloadCount": 186,
-          "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.4/jababarium.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d3c8f3dcd89e7d332fe0c483f252f88ca0bb745b",
-      "archiveByCommitUrl": "https://github.com/jababadev/jababarium/archive/d3c8f3dcd89e7d332fe0c483f252f88ca0bb745b.zip"
+      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.4/jababarium.jar",
+      "modVersion": "1",
+      "sizeBytes": 19170957,
+      "downloadCount": 186,
+      "releasedAt": "2026-09-18T16:50:05Z"
     },
     {
       "tag": "v0.1.3",
-      "name": "v0.1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-26T16:15:35Z",
-      "htmlUrl": "https://github.com/JababaDev/Jababarium/releases/tag/v0.1.3",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v0.1.3/jababarium.jar",
-      "sourceArchiveUrl": "https://github.com/jababadev/jababarium/archive/refs/tags/v0.1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "jababarium.jar",
-          "size": 19170935,
-          "downloadCount": 1247,
-          "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v0.1.3/jababarium.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "142e4c4d2d66e509688c4242bccd2d0005ee9de7",
-      "archiveByCommitUrl": "https://github.com/jababadev/jababarium/archive/142e4c4d2d66e509688c4242bccd2d0005ee9de7.zip"
+      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v0.1.3/jababarium.jar",
+      "modVersion": "1",
+      "sizeBytes": 19170935,
+      "downloadCount": 1247,
+      "releasedAt": "2026-08-26T16:15:35Z"
     },
     {
       "tag": "v1.0.2",
-      "name": "v1.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-04T15:46:20Z",
-      "htmlUrl": "https://github.com/JababaDev/Jababarium/releases/tag/v1.0.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.2/jababarium.jar",
-      "sourceArchiveUrl": "https://github.com/jababadev/jababarium/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "jababarium.jar",
-          "size": 19235367,
-          "downloadCount": 6473,
-          "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.2/jababarium.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "31d8f34f169c178937955a06fcd4787316fd96d8",
-      "archiveByCommitUrl": "https://github.com/jababadev/jababarium/archive/31d8f34f169c178937955a06fcd4787316fd96d8.zip"
+      "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.2/jababarium.jar",
+      "modVersion": "1",
+      "sizeBytes": 19235367,
+      "downloadCount": 6473,
+      "releasedAt": "2026-06-04T15:46:20Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "v1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-03T15:07:57Z",
-      "htmlUrl": "https://github.com/JababaDev/Jababarium/releases/tag/v1.0.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.1/jababarium.jar",
-      "sourceArchiveUrl": "https://github.com/jababadev/jababarium/archive/refs/tags/v1.0.1.zip",
-      "assets": [
-        {
-          "name": "jababarium.jar",
-          "size": 19235513,
-          "downloadCount": 273,
-          "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.1/jababarium.jar"
-        }
-      ],
-      "commitSha": "f0d6ae335fd2a406f76cba931e0948069c67d13a",
-      "archiveByCommitUrl": "https://github.com/jababadev/jababarium/archive/f0d6ae335fd2a406f76cba931e0948069c67d13a.zip"
+      "modVersion": "1",
+      "sizeBytes": 19235513,
+      "downloadCount": 273,
+      "releasedAt": "2026-06-03T15:07:57Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0 Beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-02T11:19:21Z",
-      "htmlUrl": "https://github.com/JababaDev/Jababarium/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.0/Jababarium-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/jababadev/jababarium/archive/refs/tags/v1.0.0.zip",
-      "assets": [
-        {
-          "name": "Jababarium-1.0.jar",
-          "size": 18927763,
-          "downloadCount": 146,
-          "downloadUrl": "https://github.com/JababaDev/Jababarium/releases/download/v1.0.0/Jababarium-1.0.jar"
-        }
-      ],
-      "commitSha": "826d0a164f008a872a5a47c28a0b45d8b34e3233",
-      "archiveByCommitUrl": "https://github.com/jababadev/jababarium/archive/826d0a164f008a872a5a47c28a0b45d8b34e3233.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
       "modVersion": "1",
-      "minGameVersion": "154",
-      "maxGameVersion": 158,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.1.5",
-      "modVersion": "1",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 18927763,
+      "downloadCount": 146,
+      "releasedAt": "2026-06-02T11:19:21Z"
     }
   ],
   "meta": {
+    "name": "jababarium",
+    "author": "Jababa",
+    "description": "A Mindustry greatest mod ever made!",
+    "version": "1",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "jababarium.Jababarium",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,71 +1,55 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "JustTheBlazingGear/AbsoluteMyriad",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "test-2",
-      "name": "Pre-release Snapshot 2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-11-10T20:02:10Z",
-      "htmlUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/tag/test-2",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/download/test-2/AbsoluteMyriadDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/archive/refs/tags/test-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AbsoluteMyriadDesktop.jar",
-          "size": 764097,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/download/test-2/AbsoluteMyriadDesktop.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ee783fa4ec46fc7cd9ca1498abf874bd968d8089",
-      "archiveByCommitUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/archive/ee783fa4ec46fc7cd9ca1498abf874bd968d8089.zip"
+      "downloadUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/download/test-2/AbsoluteMyriadDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 764097,
+      "downloadCount": 24,
+      "releasedAt": "2024-11-10T20:02:10Z",
+      "prerelease": true
     },
     {
       "tag": "test-1",
-      "name": "Pre-release Snapshot 1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-09-13T19:59:14Z",
-      "htmlUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/tag/test-1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/download/test-1/AbsoluteMyriadDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/archive/refs/tags/test-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "AbsoluteMyriadDesktop.jar",
-          "size": 539750,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/download/test-1/AbsoluteMyriadDesktop.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "ee783fa4ec46fc7cd9ca1498abf874bd968d8089",
-      "archiveByCommitUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/archive/ee783fa4ec46fc7cd9ca1498abf874bd968d8089.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "test-2",
+      "downloadUrl": "https://github.com/JustTheBlazingGear/AbsoluteMyriad/releases/download/test-1/AbsoluteMyriadDesktop.jar",
       "modVersion": "0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 539750,
+      "downloadCount": 8,
+      "releasedAt": "2024-09-13T19:59:14Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "absolute-myriad",
+    "author": "JustTBG",
+    "description": "\nI was testing\n ",
+    "version": "0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "am.AbsoluteMyriad",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

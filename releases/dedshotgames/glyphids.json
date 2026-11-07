@@ -1,74 +1,63 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dedshotgames/glyphids",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Glyphids2",
-      "name": "Glyphids1.013",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-07T14:29:25Z",
-      "htmlUrl": "https://github.com/DedShotGames/Glyphids/releases/tag/Glyphids2",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dedshotgames/glyphids/archive/refs/tags/Glyphids2.zip",
-      "sourceArchiveUrl": "https://github.com/dedshotgames/glyphids/archive/refs/tags/Glyphids2.zip",
-      "assets": [],
-      "commitSha": "8e4bbbfda8dc5e0edaf5d36a6a0fa1baf9d5e51c",
-      "archiveByCommitUrl": "https://github.com/dedshotgames/glyphids/archive/8e4bbbfda8dc5e0edaf5d36a6a0fa1baf9d5e51c.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2025-05-07T14:29:25Z"
     },
     {
       "tag": "Glyphids1",
-      "name": "Glyphids1.012",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-06T07:44:12Z",
-      "htmlUrl": "https://github.com/DedShotGames/Glyphids/releases/tag/Glyphids1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dedshotgames/glyphids/archive/refs/tags/Glyphids1.zip",
-      "sourceArchiveUrl": "https://github.com/dedshotgames/glyphids/archive/refs/tags/Glyphids1.zip",
-      "assets": [],
-      "commitSha": "af04f096ce5f28e57ddc3ff0379f1d8f661df74b",
-      "archiveByCommitUrl": "https://github.com/dedshotgames/glyphids/archive/af04f096ce5f28e57ddc3ff0379f1d8f661df74b.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2025-05-06T07:44:12Z"
     },
     {
       "tag": "Glyphids",
-      "name": "Glyphids1.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-06T05:43:15Z",
-      "htmlUrl": "https://github.com/DedShotGames/Glyphids/releases/tag/Glyphids",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dedshotgames/glyphids/archive/refs/tags/Glyphids.zip",
-      "sourceArchiveUrl": "https://github.com/dedshotgames/glyphids/archive/refs/tags/Glyphids.zip",
-      "assets": [],
-      "commitSha": "b6bc39923aa6d398c1dbbda6cd46027afc8af17f",
-      "archiveByCommitUrl": "https://github.com/dedshotgames/glyphids/archive/b6bc39923aa6d398c1dbbda6cd46027afc8af17f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Glyphids2",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-05-06T05:43:15Z"
     }
   ],
   "meta": {
+    "name": "Glyphids",
+    "author": "DedShotGames",
+    "description": "This mod gives you spiders from Deep Rock Galactic. My YouTube channel is Dedshotgame's.",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

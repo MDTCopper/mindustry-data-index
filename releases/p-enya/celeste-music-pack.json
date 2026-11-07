@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "p-enya/celeste-music-pack",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-23T00:59:18Z",
-      "htmlUrl": "https://github.com/P-Enya/celeste-music-pack/releases/tag/v1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/v1.1.1/celeste-music-pack-v1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/p-enya/celeste-music-pack/archive/refs/tags/v1.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "celeste-music-pack-v1.1.1.zip",
-          "size": 83294998,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/v1.1.1/celeste-music-pack-v1.1.1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "504528032961e0a96ae8159c9645d104b6e3ef05",
-      "archiveByCommitUrl": "https://github.com/p-enya/celeste-music-pack/archive/504528032961e0a96ae8159c9645d104b6e3ef05.zip"
+      "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/v1.1.1/celeste-music-pack-v1.1.1.zip",
+      "modVersion": "1.1.1",
+      "sizeBytes": 83294998,
+      "downloadCount": 47,
+      "releasedAt": "2026-05-23T00:59:18Z"
     },
     {
       "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-07T03:29:37Z",
-      "htmlUrl": "https://github.com/P-Enya/celeste-music-pack/releases/tag/v1.1.0",
-      "modVersion": "1.1.0,",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/v1.1.0/celeste-music-pack-v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/p-enya/celeste-music-pack/archive/refs/tags/v1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "celeste-music-pack-v1.1.0.zip",
-          "size": 83295721,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/v1.1.0/celeste-music-pack-v1.1.0.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1f36d2ea73cf32b267d1b0bad5ac113906e29c7e",
-      "archiveByCommitUrl": "https://github.com/p-enya/celeste-music-pack/archive/1f36d2ea73cf32b267d1b0bad5ac113906e29c7e.zip"
+      "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/v1.1.0/celeste-music-pack-v1.1.0.zip",
+      "modVersion": "1.1.0",
+      "sizeBytes": 83295721,
+      "downloadCount": 10,
+      "releasedAt": "2026-05-07T03:29:37Z"
     },
     {
       "tag": "1.0.0",
-      "name": "1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-07T01:59:52Z",
-      "htmlUrl": "https://github.com/P-Enya/celeste-music-pack/releases/tag/1.0.0",
-      "modVersion": "1.0.0,",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/1.0.0/celeste-music-pack.zip",
-      "sourceArchiveUrl": "https://github.com/p-enya/celeste-music-pack/archive/refs/tags/1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "celeste-music-pack.zip",
-          "size": 51087423,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/1.0.0/celeste-music-pack.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8e7468ed6395a69b64bd87b51f59195860d290b8",
-      "archiveByCommitUrl": "https://github.com/p-enya/celeste-music-pack/archive/8e7468ed6395a69b64bd87b51f59195860d290b8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.1",
-      "modVersion": "1.1.1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/P-Enya/celeste-music-pack/releases/download/1.0.0/celeste-music-pack.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 51087423,
+      "downloadCount": 5,
+      "releasedAt": "2026-03-07T01:59:52Z"
     }
   ],
   "meta": {
+    "name": "celeste-music-pack",
+    "author": "[#6600ff[]]P.[#ff0066[]]E.[white[]]",
+    "description": "\nAdds music from [#96EFFF[]]Celeste[white[]].\n\n\n\nboss1 - Resurrection\nboss2 - In the Mirror\neditor - Heart of the Mountain\nfine - Madeline and Theo\ngame1 - Fear of the Unknown\ngame2 - Jou of Remembrance\ngame3 - In Stasis\ngame4 - Beyond the Heart\ngame5 - Farewell\ngame6 - Quiet and Falling\ngame7 - Old Site (Black Moonrise Mix)\ngame8 - Summit (No More Running Mix)\ngame9 - The Core (Say Goodbye Mix)\nland - Crash\nlaunch - The Empty Space Above\nmenu - Postcard from Celeste Mountain\n\n[#646464[]]Check Music&Sounds.txt in the mod folder for more information.[white[]]\n",
+    "version": "1.1.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

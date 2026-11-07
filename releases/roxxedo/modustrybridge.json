@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "roxxedo/modustrybridge",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1-beta",
-      "name": "v0.1-beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-06-24T11:27:17Z",
-      "htmlUrl": "https://github.com/Roxxedo/ModustryBridge/releases/tag/v0.1-beta",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Roxxedo/ModustryBridge/releases/download/v0.1-beta/ModustryBridge.jar",
-      "sourceArchiveUrl": "https://github.com/roxxedo/modustrybridge/archive/refs/tags/v0.1-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ModustryBridge.jar",
-          "size": 134659,
-          "downloadCount": 79,
-          "downloadUrl": "https://github.com/Roxxedo/ModustryBridge/releases/download/v0.1-beta/ModustryBridge.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "73a0414a35655517e3007cd4bf8b2244c824716b",
-      "archiveByCommitUrl": "https://github.com/roxxedo/modustrybridge/archive/73a0414a35655517e3007cd4bf8b2244c824716b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1-beta",
+      "downloadUrl": "https://github.com/Roxxedo/ModustryBridge/releases/download/v0.1-beta/ModustryBridge.jar",
       "modVersion": "0.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 134659,
+      "downloadCount": 80,
+      "releasedAt": "2026-06-24T11:27:17Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "modustrybridge",
+    "author": "Roxxedo",
+    "description": "Install mods from Modustry Website",
+    "version": "0.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "br.com.roxcom.modustrybridge.ModustryBridge",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

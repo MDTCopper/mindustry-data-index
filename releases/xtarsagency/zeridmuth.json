@@ -1,217 +1,176 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "xtarsagency/zeridmuth",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.812-C",
-      "name": "v1.812-ZA",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-19T06:00:23Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v1.812-C",
-      "modVersion": "v1.336.8B",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v1.812-C.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v1.812-C.zip",
-      "assets": [],
-      "commitSha": "f831d53bdc551515b6be236377037009ea75ad27",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/f831d53bdc551515b6be236377037009ea75ad27.zip"
+      "modVersion": "v1.336.8B",
+      "releasedAt": "2024-04-19T06:00:23Z"
     },
     {
       "tag": "v1.336.8-Final",
-      "name": "v1.336.8-Final",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-02T10:27:47Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v1.336.8-Final",
-      "modVersion": "v0.6.8B",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v1.336.8-Final.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v1.336.8-Final.zip",
-      "assets": [],
-      "commitSha": "ac31e6af2fa7da74ed32e929fc1d1b1c981af459",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/ac31e6af2fa7da74ed32e929fc1d1b1c981af459.zip"
+      "modVersion": "v0.6.8B",
+      "releasedAt": "2024-02-02T10:27:47Z"
     },
     {
       "tag": "v0.6.8B",
-      "name": "v0.6.8B",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-18T10:38:42Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.6.8B",
-      "modVersion": "v0.6.8B",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.6.8B.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.6.8B.zip",
-      "assets": [],
-      "commitSha": "6ba06d846904bf67ec4531a5db497e4564c99acb",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/6ba06d846904bf67ec4531a5db497e4564c99acb.zip"
+      "modVersion": "v0.6.8B",
+      "releasedAt": "2023-12-18T10:38:42Z"
     },
     {
       "tag": "v0.2.4A",
-      "name": "v0.2.4A",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-11-09T22:17:15Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.2.4A",
-      "modVersion": "v0.1.9.7",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.2.4A.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.2.4A.zip",
-      "assets": [],
-      "commitSha": "477cd4238a9c71b9bb559580e136ef88bd6db969",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/477cd4238a9c71b9bb559580e136ef88bd6db969.zip"
+      "modVersion": "v0.1.9.7",
+      "releasedAt": "2023-11-09T22:17:15Z"
     },
     {
       "tag": "v0.1.9",
-      "name": "v.0.1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-02T05:48:55Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.1.9",
-      "modVersion": "v0.1.9",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.9.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.9.zip",
-      "assets": [],
-      "commitSha": "d90ac2abf613701e5d5a914446544a9b94204790",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/d90ac2abf613701e5d5a914446544a9b94204790.zip"
+      "modVersion": "v0.1.9",
+      "releasedAt": "2023-10-02T05:48:55Z"
     },
     {
       "tag": "v0.1.7.6-beta",
-      "name": "v0.1.7.6-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-21T03:50:24Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.1.7.6-beta",
-      "modVersion": "v0.1.7-beta",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.7.6-beta.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.7.6-beta.zip",
-      "assets": [],
-      "commitSha": "afffbb2184330a8efb4351a85a8ab2055d99fa24",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/afffbb2184330a8efb4351a85a8ab2055d99fa24.zip"
+      "modVersion": "v0.1.7-beta",
+      "releasedAt": "2023-08-21T03:50:24Z"
     },
     {
       "tag": "v0.1.7-beta",
-      "name": "v0.1.7-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-02T09:50:15Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.1.7-beta",
-      "modVersion": "v0.1.6-beta",
+      "kind": "tag",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.7-beta.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.7-beta.zip",
-      "assets": [],
-      "commitSha": "d25143fc73afbf8ac68b390e4f7e73752518ae20",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/d25143fc73afbf8ac68b390e4f7e73752518ae20.zip"
+      "modVersion": "v0.1.6-beta",
+      "releasedAt": "2023-08-02T09:50:15Z"
     },
     {
       "tag": "v0.1.6-beta",
-      "name": "Menu Music",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-01T03:15:42Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.1.6-beta",
-      "modVersion": "v0.0.2-alpha",
+      "kind": "tag",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.6-beta.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.6-beta.zip",
-      "assets": [],
-      "commitSha": "19035240046a7ed4a4e95aa4b61198933fba16a4",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/19035240046a7ed4a4e95aa4b61198933fba16a4.zip"
+      "modVersion": "v0.0.2-alpha",
+      "releasedAt": "2023-08-01T03:15:42Z"
     },
     {
       "tag": "v0.1.5",
-      "name": "V0.1.5-beta",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-30T05:18:37Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.1.5",
-      "modVersion": "v0.0.2-alpha",
+      "kind": "tag",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.5.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.5.zip",
-      "assets": [],
-      "commitSha": "bd47fe26ffe6396d1c1af6e80c45473a5b20efad",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/bd47fe26ffe6396d1c1af6e80c45473a5b20efad.zip"
+      "modVersion": "v0.0.2-alpha",
+      "releasedAt": "2023-07-30T05:18:37Z"
     },
     {
       "tag": "v0.1.1-alpha",
-      "name": "V0.1.0-alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-19T02:10:29Z",
-      "htmlUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/tag/v0.1.1-alpha",
-      "modVersion": "v0.0.1-alpha",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/download/v0.1.1-alpha/xtarszeridmuth.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.1-alpha.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "xtarszeridmuth.zip",
-          "size": 25597,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/download/v0.1.1-alpha/xtarszeridmuth.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5c03a298764910fa16c74b7ef35a9d8ae10ea46d",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/5c03a298764910fa16c74b7ef35a9d8ae10ea46d.zip"
+      "downloadUrl": "https://github.com/XtarsAgency/Zeridmuth/releases/download/v0.1.1-alpha/xtarszeridmuth.zip",
+      "modVersion": "v0.0.1-alpha",
+      "sizeBytes": 25597,
+      "downloadCount": 13,
+      "releasedAt": "2023-07-19T02:10:29Z"
     },
     {
       "tag": "v0.1.0-alpha",
-      "name": "v0.1.0-alpha",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/xtarsagency/zeridmuth/tree/v0.1.0-alpha",
-      "modVersion": "v0.0.1-alpha",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.0-alpha.zip",
-      "sourceArchiveUrl": "https://github.com/xtarsagency/zeridmuth/archive/refs/tags/v0.1.0-alpha.zip",
-      "assets": [],
-      "commitSha": "5c03a298764910fa16c74b7ef35a9d8ae10ea46d",
-      "archiveByCommitUrl": "https://github.com/xtarsagency/zeridmuth/archive/5c03a298764910fa16c74b7ef35a9d8ae10ea46d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.812-C",
-      "modVersion": "v1.336.8B",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "v0.0.1-alpha"
     }
   ],
   "meta": {
+    "name": "zeridmuth",
+    "author": "[red[]]Xtarsagency\r\n[yellow[]]Contributors: [cyan[]]ItzCraft, [green[]]Mitemi, [pink[]]CoCo1408",
+    "description": "\nThis mod adds a new set of campaign and content.\nZeridmuth: A blue planet with a completed campaign\nArvtom: (WIP) A Gray planet far away from the Sun\n-----------------------------\nOur Discord Server: https://discord.com/invite/KuV5r39cpY\n",
+    "version": "v1.336.8B",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,742 +1,438 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "EB-wilson/UniverseCore",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.3.1",
-      "name": "UniverseCore-v2.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-26T08:19:54Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/2.3.1",
-      "modVersion": "2.3.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.3.1/UniverseCore.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/2.3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore.jar",
-          "size": 4113838,
-          "downloadCount": 2874,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.3.1/UniverseCore.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "4cc10323679760fc01a46ad5b644fa2c35fb79be",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/4cc10323679760fc01a46ad5b644fa2c35fb79be.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.3.1/UniverseCore.jar",
+      "modVersion": "2.3.1",
+      "sizeBytes": 4113838,
+      "downloadCount": 2874,
+      "releasedAt": "2025-04-26T08:19:54Z"
     },
     {
       "tag": "2.3.0",
-      "name": "UniverseCore-v2.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-26T03:04:32Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/2.3.0",
-      "modVersion": "2.3.0",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.3.0/UniverseCore-v2.3.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/2.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v2.3.0.jar",
-          "size": 1883348,
-          "downloadCount": 119,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.3.0/UniverseCore-v2.3.0.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "d1c1e399c330f2be74ed41d022f1167923bb0ed1",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/d1c1e399c330f2be74ed41d022f1167923bb0ed1.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.3.0/UniverseCore-v2.3.0.jar",
+      "modVersion": "2.3.0",
+      "sizeBytes": 1883348,
+      "downloadCount": 119,
+      "releasedAt": "2025-04-26T03:04:32Z"
     },
     {
       "tag": "2.2.0",
-      "name": "UniverseCore-v2.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-02T17:34:03Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/2.2.0",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.2.0/UniverseCore-v2.2.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/2.2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v2.2.0.jar",
-          "size": 1422924,
-          "downloadCount": 4033,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.2.0/UniverseCore-v2.2.0.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "a0f673dc9d756ca8aa7edc96740e053bd12c64f6",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/a0f673dc9d756ca8aa7edc96740e053bd12c64f6.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.2.0/UniverseCore-v2.2.0.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 1422924,
+      "downloadCount": 4033,
+      "releasedAt": "2024-10-02T17:34:03Z"
     },
     {
       "tag": "2.1.1",
-      "name": "UniverseCore-v2.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-17T09:38:33Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/2.1.1",
-      "modVersion": "2.1.1",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.1.1/UniverseCore-2.1.1.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/2.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-2.1.1.jar",
-          "size": 1385048,
-          "downloadCount": 2073,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.1.1/UniverseCore-2.1.1.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "3397fc68eb7a178e8512b0555d38a04ecd353d7d",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/3397fc68eb7a178e8512b0555d38a04ecd353d7d.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.1.1/UniverseCore-2.1.1.jar",
+      "modVersion": "2.1.1",
+      "sizeBytes": 1385048,
+      "downloadCount": 2073,
+      "releasedAt": "2024-06-17T09:38:33Z"
     },
     {
       "tag": "2.1.0",
-      "name": "UniverseCore-v2.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-21T07:29:15Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/2.1.0",
-      "modVersion": "2.1.0",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.1.0/UniverseCore-v2.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/2.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v2.1.0.jar",
-          "size": 1280447,
-          "downloadCount": 1784,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.1.0/UniverseCore-v2.1.0.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "da01d52769a71c876f8ad2e0f692a76cc0506205",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/da01d52769a71c876f8ad2e0f692a76cc0506205.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.1.0/UniverseCore-v2.1.0.jar",
+      "modVersion": "2.1.0",
+      "sizeBytes": 1280447,
+      "downloadCount": 1784,
+      "releasedAt": "2024-04-21T07:29:15Z"
     },
     {
       "tag": "2.0.0",
-      "name": "UniverseCore-v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-10T16:05:51Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.0.0/UniverseCore-v2.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v2.0.0.jar",
-          "size": 1271526,
-          "downloadCount": 573,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.0.0/UniverseCore-v2.0.0.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "31f8010a1d049e976c6f24f6c17f66a392a1bac4",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/31f8010a1d049e976c6f24f6c17f66a392a1bac4.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/2.0.0/UniverseCore-v2.0.0.jar",
+      "modVersion": "2.0.0",
+      "sizeBytes": 1271526,
+      "downloadCount": 573,
+      "releasedAt": "2024-04-10T16:05:51Z"
     },
     {
       "tag": "1.8.10",
-      "name": "UniverseCore-v1.8.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-08T10:20:10Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.10",
-      "modVersion": "1.8.10",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.10/UniverseCore-v1.8.10.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.8.10.jar",
-          "size": 1269269,
-          "downloadCount": 165,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.10/UniverseCore-v1.8.10.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "c0690c4f1f9219316382a25dcc913e269f3320eb",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/c0690c4f1f9219316382a25dcc913e269f3320eb.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.10/UniverseCore-v1.8.10.jar",
+      "modVersion": "1.8.10",
+      "sizeBytes": 1269269,
+      "downloadCount": 165,
+      "releasedAt": "2024-04-08T10:20:10Z"
     },
     {
       "tag": "1.8.9",
-      "name": "UniverseCore-v1.8.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-10-20T15:57:39Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.9",
-      "modVersion": "1.8.9",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.9/UniverseCore-1.8.9.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.8.9.jar",
-          "size": 1272886,
-          "downloadCount": 4202,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.9/UniverseCore-1.8.9.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "20f3ba16d36f1c34708116cf96cb3b426063b7e1",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/20f3ba16d36f1c34708116cf96cb3b426063b7e1.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.9/UniverseCore-1.8.9.jar",
+      "modVersion": "1.8.9",
+      "sizeBytes": 1272886,
+      "downloadCount": 4202,
+      "releasedAt": "2023-10-20T15:57:39Z"
     },
     {
       "tag": "1.8.7",
-      "name": "UniverseCore-v1.8.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-25T12:54:06Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.7",
-      "modVersion": "1.8.7",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.7/UniverseCore-v1.8.7.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.8.7.jar",
-          "size": 1271059,
-          "downloadCount": 1503,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.7/UniverseCore-v1.8.7.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "38b85b2870cc1810dd2542fcbed35584d4cadf2f",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/38b85b2870cc1810dd2542fcbed35584d4cadf2f.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.7/UniverseCore-v1.8.7.jar",
+      "modVersion": "1.8.7",
+      "sizeBytes": 1271059,
+      "downloadCount": 1503,
+      "releasedAt": "2023-09-25T12:54:06Z"
     },
     {
       "tag": "1.8.6",
-      "name": "UniverseCore-v1.8.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-23T09:47:55Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.6",
-      "modVersion": "1.8.6",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.6/UniverseCore-v1.8.6.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.8.6.jar",
-          "size": 1275699,
-          "downloadCount": 1496,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.6/UniverseCore-v1.8.6.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "10dc0dfcf72af0e42d9b112b95d24808acd11c6a",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/10dc0dfcf72af0e42d9b112b95d24808acd11c6a.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.6/UniverseCore-v1.8.6.jar",
+      "modVersion": "1.8.6",
+      "sizeBytes": 1275699,
+      "downloadCount": 1496,
+      "releasedAt": "2023-08-23T09:47:55Z"
     },
     {
       "tag": "1.8.5",
-      "name": "UniverseCore-v1.8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-08-17T16:29:20Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.5",
-      "modVersion": "1.8.4",
+      "kind": "release",
       "minGameVersion": "144",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.5/UniverseCore-v1.8.5.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.8.5.jar",
-          "size": 1255963,
-          "downloadCount": 407,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.5/UniverseCore-v1.8.5.jar"
+          "from": "144",
+          "to": "146"
         }
       ],
-      "commitSha": "73418de9718397f47f6dd9b6a87527a703651d3c",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/73418de9718397f47f6dd9b6a87527a703651d3c.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.5/UniverseCore-v1.8.5.jar",
+      "modVersion": "1.8.4",
+      "sizeBytes": 1255963,
+      "downloadCount": 408,
+      "releasedAt": "2023-08-17T16:29:20Z"
     },
     {
       "tag": "1.8.4",
-      "name": "UniverseCore-v1.8.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-22T07:02:38Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.4",
-      "modVersion": "1.8.4",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.4/UniverseCore-v1.8.4.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.8.4.jar",
-          "size": 931458,
-          "downloadCount": 1358,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.4/UniverseCore-v1.8.4.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "4ae55b454934780709d2ec0e2430b133439ac671",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/4ae55b454934780709d2ec0e2430b133439ac671.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.4/UniverseCore-v1.8.4.jar",
+      "modVersion": "1.8.4",
+      "sizeBytes": 931458,
+      "downloadCount": 1358,
+      "releasedAt": "2023-07-22T07:02:38Z"
     },
     {
       "tag": "1.8.1",
-      "name": "UniverseCore-v1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-20T03:59:49Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.1",
-      "modVersion": "1.8.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.1/UniverseCore-1.8.1.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.8.1.jar",
-          "size": 884909,
-          "downloadCount": 1492,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.1/UniverseCore-1.8.1.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "53afee388a4fb59a60f8b3b3e640b0262df5a101",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/53afee388a4fb59a60f8b3b3e640b0262df5a101.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.1/UniverseCore-1.8.1.jar",
+      "modVersion": "1.8.1",
+      "sizeBytes": 884909,
+      "downloadCount": 1492,
+      "releasedAt": "2023-06-20T03:59:49Z"
     },
     {
       "tag": "1.8.0",
-      "name": "UniverseCore-v1.8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-31T09:53:04Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.8.0",
-      "modVersion": "1.8.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.0/UniverseCore-v1.8.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.8.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.8.0.jar",
-          "size": 878015,
-          "downloadCount": 1025,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.0/UniverseCore-v1.8.0.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "7dcfca0ebc98858fddfab9fcb803fb4282978b49",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/7dcfca0ebc98858fddfab9fcb803fb4282978b49.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.8.0/UniverseCore-v1.8.0.jar",
+      "modVersion": "1.8.0",
+      "sizeBytes": 878015,
+      "downloadCount": 1025,
+      "releasedAt": "2023-05-31T09:53:04Z"
     },
     {
       "tag": "1.7.4",
-      "name": "UniverseCore-v1.7.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-28T13:22:06Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.7.4",
-      "modVersion": "1.7.4",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.4/UniverseCore-v1.7.4.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-v1.7.4.jar",
-          "size": 873796,
-          "downloadCount": 1439,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.4/UniverseCore-v1.7.4.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "8a28d7c25d3803551f9bc4984aa84a6012f36858",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/8a28d7c25d3803551f9bc4984aa84a6012f36858.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.4/UniverseCore-v1.7.4.jar",
+      "modVersion": "1.7.4",
+      "sizeBytes": 873796,
+      "downloadCount": 1439,
+      "releasedAt": "2023-04-28T13:22:06Z"
     },
     {
       "tag": "1.7.1",
-      "name": "UniverseCore-1.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-14T03:52:31Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.7.1",
-      "modVersion": "1.7.1",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.1/UniverseCore-1.7.1.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.7.1.jar",
-          "size": 861130,
-          "downloadCount": 2246,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.1/UniverseCore-1.7.1.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "818843bdf96127ba869faaf947000f18d8173a16",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/818843bdf96127ba869faaf947000f18d8173a16.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.1/UniverseCore-1.7.1.jar",
+      "modVersion": "1.7.1",
+      "sizeBytes": 861130,
+      "downloadCount": 2246,
+      "releasedAt": "2023-03-14T03:52:31Z"
     },
     {
       "tag": "1.7.0",
-      "name": "UniverseCore-1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-05T03:36:39Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.0/UniverseCore-1.7.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.7.0.jar",
-          "size": 920084,
-          "downloadCount": 1033,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.0/UniverseCore-1.7.0.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "a9af594189ae44236205782a139d56d03628fa09",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/a9af594189ae44236205782a139d56d03628fa09.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.7.0/UniverseCore-1.7.0.jar",
+      "modVersion": "1.7.0",
+      "sizeBytes": 920084,
+      "downloadCount": 1033,
+      "releasedAt": "2023-03-05T03:36:39Z"
     },
     {
       "tag": "1.6.2",
-      "name": "UniverseCore-1.6.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-10T10:40:09Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.6.2",
-      "modVersion": "1.6.2",
+      "kind": "release",
       "minGameVersion": "141",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.2/UniverseCore-1.6.2.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.6.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.6.2.jar",
-          "size": 907130,
-          "downloadCount": 1203,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.2/UniverseCore-1.6.2.jar"
+          "from": "141",
+          "to": "146"
         }
       ],
-      "commitSha": "92ce14d8cd95c658d5cbff03fed31edb9bb00b34",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/92ce14d8cd95c658d5cbff03fed31edb9bb00b34.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.2/UniverseCore-1.6.2.jar",
+      "modVersion": "1.6.2",
+      "sizeBytes": 907130,
+      "downloadCount": 1203,
+      "releasedAt": "2023-02-10T10:40:09Z"
     },
     {
       "tag": "1.6.1",
-      "name": "UniverseCore-1.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-05T09:57:22Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.6.1",
-      "modVersion": "1.6.1",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.1/UniverseCore-1.6.1.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.6.1.jar",
-          "size": 893448,
-          "downloadCount": 1791,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.1/UniverseCore-1.6.1.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "374891a2f15127b3ebb65c9872d9bb3075b3627c",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/374891a2f15127b3ebb65c9872d9bb3075b3627c.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.1/UniverseCore-1.6.1.jar",
+      "modVersion": "1.6.1",
+      "sizeBytes": 893448,
+      "downloadCount": 1791,
+      "releasedAt": "2023-01-05T09:57:22Z"
     },
     {
       "tag": "1.6.0",
-      "name": "UniverseCore-1.6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-01-02T09:43:01Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.6.0",
-      "modVersion": "1.6.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.0/UniverseCore-1.6.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.6.0.jar",
-          "size": 899219,
-          "downloadCount": 252,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.0/UniverseCore-1.6.0.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "3c5d4e248a7aecb47d29964474d7b37506857e95",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/3c5d4e248a7aecb47d29964474d7b37506857e95.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.6.0/UniverseCore-1.6.0.jar",
+      "modVersion": "1.6.0",
+      "sizeBytes": 899219,
+      "downloadCount": 252,
+      "releasedAt": "2023-01-02T09:43:01Z"
     },
     {
       "tag": "1.5.10",
-      "name": "UniverseCore-1.5.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-30T09:52:53Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.10",
-      "modVersion": "1.5.10",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.10/UniverseCore-1.5.10.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.5.10.jar",
-          "size": 897727,
-          "downloadCount": 1522,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.10/UniverseCore-1.5.10.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "3ad7c839aae01c855c1cb5beabca09dc612b8c32",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/3ad7c839aae01c855c1cb5beabca09dc612b8c32.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.10/UniverseCore-1.5.10.jar",
+      "modVersion": "1.5.10",
+      "sizeBytes": 897727,
+      "downloadCount": 1522,
+      "releasedAt": "2022-11-30T09:52:53Z"
     },
     {
       "tag": "1.5.9",
-      "name": "UniverseCore-1.5.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-29T16:23:14Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.9",
-      "modVersion": "1.5.9",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.9/UniverseCore-1.5.9.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.5.9.jar",
-          "size": 897728,
-          "downloadCount": 95,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.9/UniverseCore-1.5.9.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "2be62f5aa2a1f8739d715d9b87a1d010aea3a6f3",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/2be62f5aa2a1f8739d715d9b87a1d010aea3a6f3.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.9/UniverseCore-1.5.9.jar",
+      "modVersion": "1.5.9",
+      "sizeBytes": 897728,
+      "downloadCount": 95,
+      "releasedAt": "2022-11-29T16:23:14Z"
     },
     {
       "tag": "1.5.7",
-      "name": "UniverseCore-1.5.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-20T03:44:27Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.7",
-      "modVersion": "1.5.7",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.7/UniverseCore-1.5.7.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.5.7.jar",
-          "size": 844291,
-          "downloadCount": 757,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.7/UniverseCore-1.5.7.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "6fe9cfa7354040cd4289671cb5aa5d808458cd2c",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/6fe9cfa7354040cd4289671cb5aa5d808458cd2c.zip"
-    },
-    {
-      "tag": "1.5.3",
-      "name": "UniverseCore-1.5.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-16T13:59:38Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.3",
-      "modVersion": "1.5.3",
-      "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.3.zip",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.3.zip",
-      "assets": [],
-      "commitSha": "ae0bfe3ad99a4be4f7580e0bae7b7422b9c7f12a",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/ae0bfe3ad99a4be4f7580e0bae7b7422b9c7f12a.zip"
-    },
-    {
-      "tag": "1.5.2",
-      "name": "UniverseCore-1.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-15T14:20:51Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.2",
-      "modVersion": "1.5.1",
-      "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.2.zip",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.2.zip",
-      "assets": [],
-      "commitSha": "defd2c278dcd68f3d546656fec6fa99641d745b4",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/defd2c278dcd68f3d546656fec6fa99641d745b4.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.7/UniverseCore-1.5.7.jar",
+      "modVersion": "1.5.7",
+      "sizeBytes": 844291,
+      "downloadCount": 757,
+      "releasedAt": "2022-11-20T03:44:27Z"
     },
     {
       "tag": "1.5.1",
-      "name": "UniverseCore-1.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-15T09:13:00Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.1",
-      "modVersion": "1.5.1",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.1/UniverseCore-1.5.1.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.5.1.jar",
-          "size": 930523,
-          "downloadCount": 71,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.1/UniverseCore-1.5.1.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "ddb244a0077f513cb6ba84b217b4ddaf6e78f7c2",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/ddb244a0077f513cb6ba84b217b4ddaf6e78f7c2.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.1/UniverseCore-1.5.1.jar",
+      "modVersion": "1.5.1",
+      "sizeBytes": 930523,
+      "downloadCount": 71,
+      "releasedAt": "2022-11-15T09:13:00Z"
     },
     {
       "tag": "1.5.0",
-      "name": "UniverseCore-1.5.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-11-15T05:30:19Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.5.0",
-      "modVersion": "1.5.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.0/UniverseCore-1.5.0.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.5.0.jar",
-          "size": 946346,
-          "downloadCount": 49,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.0/UniverseCore-1.5.0.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "5a77110b5cc4e4370c7c33d7f97da2cc2cbd1000",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/5a77110b5cc4e4370c7c33d7f97da2cc2cbd1000.zip"
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.5.0/UniverseCore-1.5.0.jar",
+      "modVersion": "1.5.0",
+      "sizeBytes": 946346,
+      "downloadCount": 49,
+      "releasedAt": "2022-11-15T05:30:19Z"
     },
     {
       "tag": "1.4.4",
-      "name": "UniverseCore-1.4.4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-10-15T12:57:34Z",
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/releases/tag/1.4.4",
-      "modVersion": "1.4.4",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.4.4/UniverseCore-1.4.4.jar",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UniverseCore-1.4.4.jar",
-          "size": 858194,
-          "downloadCount": 109,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.4.4/UniverseCore-1.4.4.jar"
-        },
-        {
-          "name": "UniverseCore-lib-1.4.4.jar",
-          "size": 608164,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.4.4/UniverseCore-lib-1.4.4.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "6611eb4393e74ae345ab2e48d840df1dc91c5cc9",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/6611eb4393e74ae345ab2e48d840df1dc91c5cc9.zip"
-    },
-    {
-      "tag": "1.5.5",
-      "name": "1.5.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/tree/1.5.5",
-      "modVersion": "1.5.5",
-      "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.5.zip",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.5.zip",
-      "assets": [],
-      "commitSha": "de9d225d044e2b1c4084e95dcf721877c2230e2a",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/de9d225d044e2b1c4084e95dcf721877c2230e2a.zip"
-    },
-    {
-      "tag": "1.5.4",
-      "name": "1.5.4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/EB-wilson/UniverseCore/tree/1.5.4",
-      "modVersion": "1.5.4",
-      "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.4.zip",
-      "sourceArchiveUrl": "https://github.com/EB-wilson/UniverseCore/archive/refs/tags/1.5.4.zip",
-      "assets": [],
-      "commitSha": "425244072a48beb99bdb538abac8a3807f79bad8",
-      "archiveByCommitUrl": "https://github.com/EB-wilson/UniverseCore/archive/425244072a48beb99bdb538abac8a3807f79bad8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.6.1",
-      "modVersion": "1.6.1",
-      "minGameVersion": "137",
-      "maxGameVersion": 141,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.8.4",
-      "modVersion": "1.8.4",
-      "minGameVersion": "141",
-      "maxGameVersion": 144,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.2.0",
-      "modVersion": "2.1.1",
-      "minGameVersion": "144",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "2.3.1",
-      "modVersion": "2.3.1",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/EB-wilson/UniverseCore/releases/download/1.4.4/UniverseCore-1.4.4.jar",
+      "modVersion": "1.4.4",
+      "sizeBytes": 1466358,
+      "downloadCount": 121,
+      "releasedAt": "2022-10-15T12:57:34Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "universe-core",
+    "author": "EBwilson",
+    "description": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github.\n\n一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
+    "version": "2.3.1",
+    "minGameVersion": "147",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "universecore.UncCore",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

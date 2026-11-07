@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zaxerf1234/scheme-size-port-charo",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "2.1.4-3",
-      "name": "2.1.4-3 for Charo",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-23T17:43:18Z",
-      "htmlUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/tag/2.1.4-3",
-      "modVersion": "2.1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4-3/scheme-size-port-mainDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/zaxerf1234/scheme-size-port-charo/archive/refs/tags/2.1.4-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port-mainDesktop.jar",
-          "size": 491157,
-          "downloadCount": 3827,
-          "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4-3/scheme-size-port-mainDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e6fdb5ff2585d16ed3e217dc15fbf6755ad83e8d",
-      "archiveByCommitUrl": "https://github.com/zaxerf1234/scheme-size-port-charo/archive/e6fdb5ff2585d16ed3e217dc15fbf6755ad83e8d.zip"
+      "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4-3/scheme-size-port-mainDesktop.jar",
+      "modVersion": "2.1.4",
+      "sizeBytes": 491157,
+      "downloadCount": 3832,
+      "releasedAt": "2026-07-23T17:43:18Z"
     },
     {
       "tag": "2.1.4-2",
-      "name": "2.1.4-2 for Charo",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-23T17:18:22Z",
-      "htmlUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/tag/2.1.4-2",
-      "modVersion": "2.1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4-2/scheme-size-port-mainDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/zaxerf1234/scheme-size-port-charo/archive/refs/tags/2.1.4-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port-mainDesktop.jar",
-          "size": 491440,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4-2/scheme-size-port-mainDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8419b7c966373391b06c027083f2947b504f6dae",
-      "archiveByCommitUrl": "https://github.com/zaxerf1234/scheme-size-port-charo/archive/8419b7c966373391b06c027083f2947b504f6dae.zip"
+      "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4-2/scheme-size-port-mainDesktop.jar",
+      "modVersion": "2.1.4",
+      "sizeBytes": 491440,
+      "downloadCount": 19,
+      "releasedAt": "2026-07-23T17:18:22Z"
     },
     {
       "tag": "2.1.4",
-      "name": "2.1.4 for Charo",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-16T15:35:13Z",
-      "htmlUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/tag/2.1.4",
-      "modVersion": "2.1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4/scheme-size-port-mainDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/zaxerf1234/scheme-size-port-charo/archive/refs/tags/2.1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "scheme-size-port-mainDesktop.jar",
-          "size": 491442,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4/scheme-size-port-mainDesktop.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "0e98f55356be9a3eddf6479d69b8829a45f59c2e",
-      "archiveByCommitUrl": "https://github.com/zaxerf1234/scheme-size-port-charo/archive/0e98f55356be9a3eddf6479d69b8829a45f59c2e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.1.4-3",
+      "downloadUrl": "https://github.com/Zaxerf1234/scheme-size-port-charo/releases/download/2.1.4/scheme-size-port-mainDesktop.jar",
       "modVersion": "2.1.4",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 491442,
+      "downloadCount": 31,
+      "releasedAt": "2026-07-16T15:35:13Z"
     }
   ],
   "meta": {
+    "name": "scheme-size",
+    "author": "[#0096FF]xzxADIxzx\nPort: 00SunRay00 & RE2b2m22\nCharo support: Zaxerf1234",
+    "description": "\nA mod that increases the schematic size limit to 512 blocks! Adds admins, renderer and building tools. Has an updater, keybinds and AI support.\n\n[red]This mod is not the original port of Scheme Size — it is a custom port. The developer of the original mod is not involved in this in any way.\n[scarlet]This mod is not the original unofficial port of Scheme Size — it is a fork. The developers of the original port and mod are not involved in this in any way.\n\n[red]!!!ATTENTION: VERSIONS BELOW v156 ARE NOT SUPPORTED!!!\n[red]Vanilla Only![orange]\n\n   - Release!\n   - Settings\n   - Java 8\n   - Controls\n   - Updater\n   - Mobile Support\n   - Admins Tools\n   - CLaJ v2\n\n   - Building Tools\n   - AI Power\n   - Renderer Tools\n   - Deep Cleaning\n   - Schematic Shortcuts\n   - Cursed Schematics\n   - Advanced Dev Console\n   - Rule setter\n",
+    "version": "2.1.4",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "scheme.Main",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

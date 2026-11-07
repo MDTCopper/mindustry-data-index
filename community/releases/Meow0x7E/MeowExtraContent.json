@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Meow0x7E/MeowExtraContent",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.2.3",
-      "name": "v0.2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-16T23:44:43Z",
-      "htmlUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/tag/v0.2.3",
-      "modVersion": "0.2.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/download/v0.2.3/MeowExtraContent-v0.2.3.jar",
-      "sourceArchiveUrl": "https://github.com/Meow0x7E/MeowExtraContent/archive/refs/tags/v0.2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MeowExtraContent-v0.2.3.jar",
-          "size": 2488023,
-          "downloadCount": 192,
-          "downloadUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/download/v0.2.3/MeowExtraContent-v0.2.3.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "4b206ea25f48e91d8cf1e05d47f42dc390effa9c",
-      "archiveByCommitUrl": "https://github.com/Meow0x7E/MeowExtraContent/archive/4b206ea25f48e91d8cf1e05d47f42dc390effa9c.zip"
+      "downloadUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/download/v0.2.3/MeowExtraContent-v0.2.3.jar",
+      "modVersion": "0.2.3",
+      "sizeBytes": 2488023,
+      "downloadCount": 192,
+      "releasedAt": "2025-01-16T23:44:43Z"
     },
     {
       "tag": "v0.2.2",
-      "name": "v0.2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-11T14:01:05Z",
-      "htmlUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/tag/v0.2.2",
-      "modVersion": "0.2.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/download/v0.2.2/MeowExtraContent-v0.2.2.jar",
-      "sourceArchiveUrl": "https://github.com/Meow0x7E/MeowExtraContent/archive/refs/tags/v0.2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MeowExtraContent-v0.2.2.jar",
-          "size": 64030,
-          "downloadCount": 245,
-          "downloadUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/download/v0.2.2/MeowExtraContent-v0.2.2.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "18d696b6804cee9a0634dec526102c531972664d",
-      "archiveByCommitUrl": "https://github.com/Meow0x7E/MeowExtraContent/archive/18d696b6804cee9a0634dec526102c531972664d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.2.3",
-      "modVersion": "0.2.3",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Meow0x7E/MeowExtraContent/releases/download/v0.2.2/MeowExtraContent-v0.2.2.jar",
+      "modVersion": "0.2.2",
+      "sizeBytes": 64030,
+      "downloadCount": 245,
+      "releasedAt": "2024-01-11T14:01:05Z"
     }
   ],
   "meta": {
+    "name": "meow-extra-content",
+    "author": "Meow0x7E",
+    "description": "我觉得这些应该对游戏体验有一定帮助喵~",
+    "version": "0.2.3",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "meow0x7e.MeowExtraContent",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

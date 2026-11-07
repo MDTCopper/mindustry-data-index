@@ -1,40 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zinwire/mine-dust",
-  "generatedAt": "2026-11-06T14:52:40.602Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Ver alpha",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-18T11:16:39Z",
-      "htmlUrl": "https://github.com/Zinwire/Mine-Dust/releases/tag/mindustry-mod",
-      "modVersion": "alpha",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/zinwire/mine-dust/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/zinwire/mine-dust/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "0c8467d6056416dae86411c8bd8e25e16076205f",
-      "archiveByCommitUrl": "https://github.com/zinwire/mine-dust/archive/0c8467d6056416dae86411c8bd8e25e16076205f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "alpha",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-12-18T11:16:39Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "md",
+    "author": "mamasha",
+    "description": "",
+    "version": "alpha",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,59 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "moringglory/oblivionenginemod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Beta",
-      "name": "beta.0.1.1.99",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-02T08:29:14Z",
-      "htmlUrl": "https://github.com/moringglory/OblivionEngineMod/releases/tag/Beta",
-      "modVersion": "beta_0.1.1.95",
+      "kind": "release",
       "minGameVersion": "157.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/moringglory/OblivionEngineMod/releases/download/Beta/OblivionEngineMod.jar",
-      "sourceArchiveUrl": "https://github.com/moringglory/oblivionenginemod/archive/refs/tags/Beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "OblivionEngineMod.jar",
-          "size": 383636,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/moringglory/OblivionEngineMod/releases/download/Beta/OblivionEngineMod.jar"
-        },
-        {
-          "name": "OblivionEngineModAndroid.jar",
-          "size": 63442,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/moringglory/OblivionEngineMod/releases/download/Beta/OblivionEngineModAndroid.jar"
-        },
-        {
-          "name": "OblivionEngineModDesktop.jar",
-          "size": 320160,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/moringglory/OblivionEngineMod/releases/download/Beta/OblivionEngineModDesktop.jar"
+          "from": "157.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "79056182b6cfa3231f1791afa98392aac2f1b811",
-      "archiveByCommitUrl": "https://github.com/moringglory/oblivionenginemod/archive/79056182b6cfa3231f1791afa98392aac2f1b811.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Beta",
+      "downloadUrl": "https://github.com/moringglory/OblivionEngineMod/releases/download/Beta/OblivionEngineMod.jar",
       "modVersion": "beta_0.1.1.95",
-      "minGameVersion": "157.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 767238,
+      "downloadCount": 20,
+      "releasedAt": "2026-10-02T08:29:14Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "oblivion-engine",
+    "author": "Shiraelle",
+    "description": "[sky]Alpha oblivionengine Ver:1.0.1",
+    "version": "beta_0.1.1.95",
+    "minGameVersion": "157.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "oblivionengine.OblivionEngine",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

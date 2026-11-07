@@ -1,198 +1,133 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "sputnuc/deepsea",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "alpha-0-3_start-of-rework",
-      "name": "Alpha 0.3 Campaign rework (first sector preview)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-27T19:08:36Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-3_start-of-rework",
-      "modVersion": "0.2.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-3_start-of-rework/DeepSea.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-3_start-of-rework.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSea.jar",
-          "size": 12895338,
-          "downloadCount": 1206,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-3_start-of-rework/DeepSea.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "93227a330ef96edaaed63c73f4267082da117e77",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/93227a330ef96edaaed63c73f4267082da117e77.zip"
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-3_start-of-rework/DeepSea.jar",
+      "modVersion": "0.2.1",
+      "sizeBytes": 12895338,
+      "downloadCount": 1209,
+      "releasedAt": "2026-09-27T19:08:36Z"
     },
     {
       "tag": "alpha-0-2",
-      "name": "Alpha 0.2 (4-th Sector preview)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-28T23:46:16Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-2",
-      "modVersion": "0.2",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-2/DeepSea.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSea.jar",
-          "size": 11406573,
-          "downloadCount": 3990,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-2/DeepSea.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7d0ee5a19fb30b3e3f28362a286ad774fbf655bc",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/7d0ee5a19fb30b3e3f28362a286ad774fbf655bc.zip"
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-2/DeepSea.jar",
+      "modVersion": "0.2",
+      "sizeBytes": 11406573,
+      "downloadCount": 3990,
+      "releasedAt": "2026-02-28T23:46:16Z"
     },
     {
       "tag": "alpha-0-1-1",
-      "name": "0.1.1 download fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-22T19:15:58Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-1-1",
-      "modVersion": "0.1.1",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1-1/DeepSea.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-1-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSea.jar",
-          "size": 11802569,
-          "downloadCount": 410,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1-1/DeepSea.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "d084a95606280d7f5254442f24dc9f38335fb15c",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/d084a95606280d7f5254442f24dc9f38335fb15c.zip"
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1-1/DeepSea.jar",
+      "modVersion": "0.1.1",
+      "sizeBytes": 11802569,
+      "downloadCount": 410,
+      "releasedAt": "2026-02-22T19:15:58Z"
     },
     {
       "tag": "alpha-0-1",
-      "name": "alpha 0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-22T17:44:11Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-1",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1/DeepSeaDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSeaDesktop.jar",
-          "size": 11733591,
-          "downloadCount": 32,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1/DeepSeaDesktop.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3d279ff8596e1146a58a50044fea46267c2114a8",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/3d279ff8596e1146a58a50044fea46267c2114a8.zip"
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-1/DeepSeaDesktop.jar",
+      "modVersion": "0.1",
+      "sizeBytes": 11733591,
+      "downloadCount": 32,
+      "releasedAt": "2026-02-22T17:44:11Z"
     },
     {
       "tag": "alpha-0-0-3",
-      "name": "0.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-21T18:33:28Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-0-3",
-      "modVersion": "0.0.3",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-3/DeepSea.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-0-3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSea.jar",
-          "size": 11809552,
-          "downloadCount": 67,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-3/DeepSea.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3bb1eb6df7fcc50630fb57b97740ec2935f7b72f",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/3bb1eb6df7fcc50630fb57b97740ec2935f7b72f.zip"
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-3/DeepSea.jar",
+      "modVersion": "0.0.3",
+      "sizeBytes": 11809552,
+      "downloadCount": 67,
+      "releasedAt": "2026-02-21T18:33:28Z"
     },
     {
       "tag": "alpha-0-0-2",
-      "name": "English localization of the first sector",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-09T12:56:15Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-0-2",
-      "modVersion": "0.0.2",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-2/DeepSea.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-0-2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSea.jar",
-          "size": 11760118,
-          "downloadCount": 536,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-2/DeepSea.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7e50f1867fcd6e0ae839275b0ca06d190f9e0c3d",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/7e50f1867fcd6e0ae839275b0ca06d190f9e0c3d.zip"
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-2/DeepSea.jar",
+      "modVersion": "0.0.2",
+      "sizeBytes": 11760118,
+      "downloadCount": 536,
+      "releasedAt": "2026-02-09T12:56:15Z"
     },
     {
       "tag": "alpha-0-0-1",
-      "name": "DeepSea first public alpha.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-09T10:24:02Z",
-      "htmlUrl": "https://github.com/Sputnuc/DeepSea/releases/tag/alpha-0-0-1",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-1/DeepSea.jar",
-      "sourceArchiveUrl": "https://github.com/sputnuc/deepsea/archive/refs/tags/alpha-0-0-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "DeepSea.jar",
-          "size": 11759630,
-          "downloadCount": 54,
-          "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-1/DeepSea.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "970c515d00991bbc824b6b2090288e7cb1f56e7e",
-      "archiveByCommitUrl": "https://github.com/sputnuc/deepsea/archive/970c515d00991bbc824b6b2090288e7cb1f56e7e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alpha-0-2",
-      "modVersion": "0.2",
-      "minGameVersion": "154.3",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "alpha-0-3_start-of-rework",
-      "modVersion": "0.2.1",
-      "minGameVersion": "159",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Sputnuc/DeepSea/releases/download/alpha-0-0-1/DeepSea.jar",
+      "modVersion": "0.0.1",
+      "sizeBytes": 11759630,
+      "downloadCount": 54,
+      "releasedAt": "2026-02-09T10:24:02Z"
     }
   ],
   "meta": {
+    "name": "deepsea",
+    "author": "Authors: \n [#ffd469[]]Sputnuc[] - main creator[white[]] \n [#ffb969[]]AnDashik - co-creator[white[]] \n [#ff3d61[]]Skifor - SFX designer[white[]]",
+    "description": "The mod is about planet P-I-312 and more. Some fishes and underwater campaign \nSpecial thanks to: \n- [#5865f2[]]@meepoffaith[white[]] for the pseudo-3D drawing code. \n\n[gray[]]Fish: (*=)<[]",
+    "version": "0.2.1",
+    "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ds.DeepSea",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

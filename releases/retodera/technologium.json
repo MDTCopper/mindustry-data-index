@@ -1,205 +1,136 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "retodera/technologium",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.5.1-hotfix1",
-      "name": "v0.5.1 beta hotfix",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-31T23:19:03Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.5.1-hotfix1",
-      "modVersion": "v0.5.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1-hotfix1/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.5.1-hotfix1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 33335626,
-          "downloadCount": 341,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1-hotfix1/technologium.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7d534d2e8cf901c78cdd67f474d0e992ab45bf5a",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/7d534d2e8cf901c78cdd67f474d0e992ab45bf5a.zip"
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1-hotfix1/technologium.jar",
+      "modVersion": "v0.5.1",
+      "sizeBytes": 33335626,
+      "downloadCount": 341,
+      "releasedAt": "2025-12-31T23:19:03Z",
+      "prerelease": true
     },
     {
       "tag": "v0.5.1",
-      "name": "v0.5.1 beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-12-31T19:03:12Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.5.1",
-      "modVersion": "v0.5.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 33335435,
-          "downloadCount": 77,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1/technologium.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "7d534d2e8cf901c78cdd67f474d0e992ab45bf5a",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/7d534d2e8cf901c78cdd67f474d0e992ab45bf5a.zip"
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.5.1/technologium.jar",
+      "modVersion": "v0.5.1",
+      "sizeBytes": 33335435,
+      "downloadCount": 77,
+      "releasedAt": "2025-12-31T19:03:12Z",
+      "prerelease": true
     },
     {
       "tag": "v0.4.3-beta",
-      "name": "v0.4.3 beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2025-07-17T18:40:33Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.4.3-beta",
-      "modVersion": "v0.4.4",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.3-beta/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.4.3-beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 44643883,
-          "downloadCount": 183,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.3-beta/technologium.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "31112a2f6292347a2f4930e5df1cea91e244fac8",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/31112a2f6292347a2f4930e5df1cea91e244fac8.zip"
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.3-beta/technologium.jar",
+      "modVersion": "v0.4.4",
+      "sizeBytes": 44643883,
+      "downloadCount": 183,
+      "releasedAt": "2025-07-17T18:40:33Z",
+      "prerelease": true
     },
     {
       "tag": "v0.4.2",
-      "name": "v0.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-19T18:38:45Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.4.2",
-      "modVersion": "v0.4",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.2/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 3531102,
-          "downloadCount": 11007,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.2/technologium.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "07343111092549e3827e91ff0f2ffc1b57729ca7",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/07343111092549e3827e91ff0f2ffc1b57729ca7.zip"
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.2/technologium.jar",
+      "modVersion": "v0.4",
+      "sizeBytes": 3531102,
+      "downloadCount": 11008,
+      "releasedAt": "2025-04-19T18:38:45Z"
     },
     {
       "tag": "v0.4.1",
-      "name": "v0.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-29T14:44:16Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.4.1",
-      "modVersion": "v0.4",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.1/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 3360192,
-          "downloadCount": 848,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.1/technologium.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "9cf8ae5d5f68515cc9a04342156852b83682b362",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/9cf8ae5d5f68515cc9a04342156852b83682b362.zip"
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4.1/technologium.jar",
+      "modVersion": "v0.4",
+      "sizeBytes": 3360192,
+      "downloadCount": 848,
+      "releasedAt": "2025-03-29T14:44:16Z"
     },
     {
       "tag": "v0.4",
-      "name": "0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-25T20:00:18Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.4",
-      "modVersion": "v0.4",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 3312526,
-          "downloadCount": 423,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4/technologium.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "f9c2d3acd09964bbc6ca416ea3beb6773140100c",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/f9c2d3acd09964bbc6ca416ea3beb6773140100c.zip"
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.4/technologium.jar",
+      "modVersion": "v0.4",
+      "sizeBytes": 3312526,
+      "downloadCount": 423,
+      "releasedAt": "2025-03-25T20:00:18Z"
     },
     {
       "tag": "v0.3",
-      "name": "v0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-21T17:55:01Z",
-      "htmlUrl": "https://github.com/retodera/technologium/releases/tag/v0.3",
-      "modVersion": "0.3",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.3/technologium.jar",
-      "sourceArchiveUrl": "https://github.com/retodera/technologium/archive/refs/tags/v0.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "technologium.jar",
-          "size": 2943112,
-          "downloadCount": 1317,
-          "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.3/technologium.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "7866c2fea6a52c052f3a6c53c794236420961aef",
-      "archiveByCommitUrl": "https://github.com/retodera/technologium/archive/7866c2fea6a52c052f3a6c53c794236420961aef.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.4.2",
-      "modVersion": "v0.4",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.4.3-beta",
-      "modVersion": "v0.4.4",
-      "minGameVersion": "147",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.5.1-hotfix1",
-      "modVersion": "v0.5.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/retodera/technologium/releases/download/v0.3/technologium.jar",
+      "modVersion": "0.3",
+      "sizeBytes": 2943112,
+      "downloadCount": 1317,
+      "releasedAt": "2024-12-21T17:55:01Z"
     }
   ],
   "meta": {
+    "name": "t",
+    "author": "[[]#ff]retodera[[]] - Основатель мода; кодер, спрайтер, маппер, многосторонняя личность короче\n\n[[]#2f2f75]gkugfk3[[]] - Звуковой дизайнер\n\n[[]#e5072f]Gor[[]] - Маппер, генератор идей\n\n[[]orange]xDer[[]] - ранее Главный генератор идей\n\n[[]#ff3f3f]Kosmo[[]] - генератор идей\n\n[[]#7f7f7f]Перечислять людей, дававших идеи, долго...[[]]\n\n\nИ благодарности всем, кто поставил звёздочку <3",
+    "description": "[accent]<RU>[[]]\n\n[[]#00fff2]Technologium[[]] будет очередным большим модом для Mindustry. Уже многое запланировано, хотя практически ничто из этого не сделано.\n\n\n\nМод будет содержать в себе 2 солнечные системы, может даже больше; множество новых механик, много кампаний, ещё больше блоков, особенно предметов, жидкостей, юнитов и не только.\n\nПрошёл год, сформировалось что-то наподобии команды. Если вы хороший спрайтер/маппер/кодер, вы можете помочь нам с всем этим. \nЕсли это не так, вы всё ещё можете мотивировать нас, поставив звёздочку на гитхабе.\n\nВы также можете присоединиться к нашему Дискорд серверу, ссылка в репозитории.\n\n[[]#7f7f7f]Мод должен расти.[[]]\n\n\n\n\n[accent]<EN>[[]]\n\n[[]#00fff2]Technologium[[]] will be another big mod for Mindustry. There's already so much planned, though practically none of it is finished.\n\n\n\nThe mod will contain a whole 2 solar systems, or maybe even more; lots of new mechanics, many campaigns, even more blocks, especially items, liquids, units and not only.\n\nA year has passed, and some kind of team has formed. If you're a good spriter/mapper/coder, you could help us with all of this. \nIf not, you could still motivate us by giving a star on GitHub.\n\nAlso, you could join our Discord server, the link is in the repo.\n\n[[]#7f7f7f]The mod must grow.[[]]",
+    "version": "v0.5.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "technologium.Technologium",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

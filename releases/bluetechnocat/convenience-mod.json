@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bluetechnocat/convenience-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v2.1",
-      "name": "Convenience Mod v2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-02-15T16:39:35Z",
-      "htmlUrl": "https://github.com/BlueTechnoCat/Convenience-Mod/releases/tag/v2.1",
-      "modVersion": "2.1",
+      "kind": "tag",
       "minGameVersion": "144",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "144",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/bluetechnocat/convenience-mod/archive/refs/tags/v2.1.zip",
-      "sourceArchiveUrl": "https://github.com/bluetechnocat/convenience-mod/archive/refs/tags/v2.1.zip",
-      "assets": [],
-      "commitSha": "4ed29b10b4d8bf0ea5f04dfce6e9d0432e3bde42",
-      "archiveByCommitUrl": "https://github.com/bluetechnocat/convenience-mod/archive/4ed29b10b4d8bf0ea5f04dfce6e9d0432e3bde42.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.1",
       "modVersion": "2.1",
-      "minGameVersion": "144",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-02-15T16:39:35Z"
     }
   ],
   "meta": {
+    "name": "convenience-mod",
+    "author": "BlueTechno",
+    "description": "Because you can't have too much convenience",
+    "version": "2.1",
+    "minGameVersion": "144",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,41 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "deltanedas/dev-mode",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2.3.2",
-      "name": "2.3.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/deltanedas/dev-mode/tree/2.3.2",
-      "modVersion": "2.3.2",
+      "kind": "tag",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/deltanedas/dev-mode/archive/refs/tags/2.3.2.zip",
-      "sourceArchiveUrl": "https://github.com/deltanedas/dev-mode/archive/refs/tags/2.3.2.zip",
-      "assets": [],
-      "commitSha": "7daaa322d40ce5dd5dbe283268d97763b93dcb12",
-      "archiveByCommitUrl": "https://github.com/deltanedas/dev-mode/archive/7daaa322d40ce5dd5dbe283268d97763b93dcb12.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.3.2",
-      "modVersion": "2.3.2",
-      "minGameVersion": "105",
-      "maxGameVersion": 136,
-      "hasRelease": false
+      "modVersion": "2.3.2"
     }
   ],
   "meta": {
+    "name": "dev-mode",
+    "author": "DeltaNedas",
+    "description": "Lets you type into the console.\nPress [stat]F8[] to open on PC.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[] on mobile.",
+    "version": "2.3.2",
+    "minGameVersion": "105",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

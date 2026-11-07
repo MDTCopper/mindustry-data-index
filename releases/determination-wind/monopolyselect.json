@@ -1,53 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/monopolyselect",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-09T14:00:11Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/MonoPolySelect/releases/tag/v1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/MonoPolySelect/releases/download/v1.0.0/MonoPolySelect.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/monopolyselect/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MonoPolySelect.jar",
-          "size": 5399,
-          "downloadCount": 57,
-          "downloadUrl": "https://github.com/DeterMination-Wind/MonoPolySelect/releases/download/v1.0.0/MonoPolySelect.jar"
-        },
-        {
-          "name": "MonoPolySelect.zip",
-          "size": 5399,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/MonoPolySelect/releases/download/v1.0.0/MonoPolySelect.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bd12fcc209f14d2c996e423f17eb01d14c6675db",
-      "archiveByCommitUrl": "https://github.com/determination-wind/monopolyselect/archive/bd12fcc209f14d2c996e423f17eb01d14c6675db.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
+      "downloadUrl": "https://github.com/DeterMination-Wind/MonoPolySelect/releases/download/v1.0.0/MonoPolySelect.jar",
       "modVersion": "1.0.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 10798,
+      "downloadCount": 59,
+      "releasedAt": "2026-08-09T14:00:11Z"
     }
   ],
   "meta": {
+    "name": "MonoPolySelect",
+    "author": "DeterMination-Wind",
+    "description": "指挥模式辅助小模组：在「设置→控制」中配置两个快捷键，一键选中所有 mono、一键选中所有 poly。",
+    "version": "1.0.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "monopolyselect.MonoPolySelectMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

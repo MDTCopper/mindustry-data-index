@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mohamedgonem/core-expander",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-15T09:08:17Z",
-      "htmlUrl": "https://github.com/MohamedGonem/core-expander/releases/tag/v1.0.0",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mohamedgonem/core-expander/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/mohamedgonem/core-expander/archive/refs/tags/v1.0.0.zip",
-      "assets": [],
-      "commitSha": "d0bda39e4088b1ea9a67a291b2943f3b43137179",
-      "archiveByCommitUrl": "https://github.com/mohamedgonem/core-expander/archive/d0bda39e4088b1ea9a67a291b2943f3b43137179.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.0",
       "modVersion": "1",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2026-09-15T09:08:17Z"
     }
   ],
   "meta": {
+    "name": "Core Expander",
+    "author": "Mohamed Gonem",
+    "description": "Adds a 3x3 block that slowly converts terrain to core-compatible floor.",
+    "version": "1",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

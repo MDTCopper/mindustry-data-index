@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "amaripassleya-web/uc-mindustry-mod-pack",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "1.2",
-      "name": "V1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T23:55:11Z",
-      "htmlUrl": "https://github.com/amaripassleya-web/UC-mindustry-mod-pack/releases/tag/1.2",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/amaripassleya-web/UC-mindustry-mod-pack/releases/download/1.2/uc-mindustry-mod-pack.zip",
-      "sourceArchiveUrl": "https://github.com/amaripassleya-web/uc-mindustry-mod-pack/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "uc-mindustry-mod-pack.zip",
-          "size": 2747,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/amaripassleya-web/UC-mindustry-mod-pack/releases/download/1.2/uc-mindustry-mod-pack.zip"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "430746856a94d099b42be4c5607f461c6c324c19",
-      "archiveByCommitUrl": "https://github.com/amaripassleya-web/uc-mindustry-mod-pack/archive/430746856a94d099b42be4c5607f461c6c324c19.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.2",
+      "downloadUrl": "https://github.com/amaripassleya-web/UC-mindustry-mod-pack/releases/download/1.2/uc-mindustry-mod-pack.zip",
       "modVersion": "1.2",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 2747,
+      "downloadCount": 16,
+      "releasedAt": "2026-07-27T23:55:11Z"
     }
   ],
   "meta": {
+    "name": "mindustry-ultimate-mod-pack",
+    "author": "cd cat",
+    "description": "Combines 20x factory speed, 5x unit build speed, 10x T1 factory build speed, 2x core unit capacity, auto-complete pause menu button, and the unit stats editor UI.",
+    "version": "1.2",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

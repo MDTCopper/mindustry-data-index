@@ -1,363 +1,229 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "blackdeluxecat/schematicparse",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "4.6.0",
-      "name": "4.6.0 - v154.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-19T15:56:26Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.6.0",
-      "modVersion": "4.6.0",
+      "kind": "release",
       "minGameVersion": "154.2",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.6.0/SchematicParse.4.6.0-154.2.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.6.0-154.2.jar",
-          "size": 149809,
-          "downloadCount": 8795,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.6.0/SchematicParse.4.6.0-154.2.jar"
+          "from": "154.2",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e483552e494e14c7bbe258dbc9fb75d9353d5aab",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/e483552e494e14c7bbe258dbc9fb75d9353d5aab.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.6.0/SchematicParse.4.6.0-154.2.jar",
+      "modVersion": "4.6.0",
+      "sizeBytes": 149809,
+      "downloadCount": 8798,
+      "releasedAt": "2025-12-19T15:56:26Z"
     },
     {
       "tag": "4.5.0",
-      "name": "4.5.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-03T11:23:43Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.5.0",
-      "modVersion": "4.5.0",
+      "kind": "release",
       "minGameVersion": "149",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.5.0/SchematicParse.4.5.0-149.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.5.0-149.jar",
-          "size": 135419,
-          "downloadCount": 3824,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.5.0/SchematicParse.4.5.0-149.jar"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "commitSha": "148f8bb686470ee6a281e9bff7711ed50ffcf0c4",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/148f8bb686470ee6a281e9bff7711ed50ffcf0c4.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.5.0/SchematicParse.4.5.0-149.jar",
+      "modVersion": "4.5.0",
+      "sizeBytes": 135419,
+      "downloadCount": 3824,
+      "releasedAt": "2025-07-03T11:23:43Z"
     },
     {
       "tag": "4.4.1",
-      "name": "4.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-19T03:28:56Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.4.1",
-      "modVersion": "4.4.1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.4.1/SchematicParse.4.4.1-145.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.4.1-145.jar",
-          "size": 85983,
-          "downloadCount": 19765,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.4.1/SchematicParse.4.4.1-145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "059fb0b0cf6c275016ef85578a41b11330512765",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/059fb0b0cf6c275016ef85578a41b11330512765.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.4.1/SchematicParse.4.4.1-145.jar",
+      "modVersion": "4.4.1",
+      "sizeBytes": 85983,
+      "downloadCount": 19765,
+      "releasedAt": "2023-07-19T03:28:56Z"
     },
     {
       "tag": "4.4.0",
-      "name": "4.4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-17T09:14:08Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.4.0",
-      "modVersion": "4.4.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.4.0/SchematicParse.4.4.0-145.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.4.0-145.jar",
-          "size": 84473,
-          "downloadCount": 82,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.4.0/SchematicParse.4.4.0-145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "56629885ff27ceab2c73b70d3c6dd57099f1bed2",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/56629885ff27ceab2c73b70d3c6dd57099f1bed2.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.4.0/SchematicParse.4.4.0-145.jar",
+      "modVersion": "4.4.0",
+      "sizeBytes": 84473,
+      "downloadCount": 82,
+      "releasedAt": "2023-07-17T09:14:08Z"
     },
     {
       "tag": "4.3.0",
-      "name": "4.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-21T15:54:23Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.3.0",
-      "modVersion": "4.3.0",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.3.0/SchematicParse.4.3.0-145.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.3.0-145.jar",
-          "size": 83496,
-          "downloadCount": 545,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.3.0/SchematicParse.4.3.0-145.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "9c80bc99fed8a678c21fd7853885a4d6573c1543",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/9c80bc99fed8a678c21fd7853885a4d6573c1543.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.3.0/SchematicParse.4.3.0-145.jar",
+      "modVersion": "4.3.0",
+      "sizeBytes": 83496,
+      "downloadCount": 545,
+      "releasedAt": "2023-06-21T15:54:23Z"
     },
     {
       "tag": "4.2.1",
-      "name": "4.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-15T15:56:22Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.2.1",
-      "modVersion": "4.2.1",
+      "kind": "release",
       "minGameVersion": "141.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.2.1/SchematicParse.4.2.1-141.1.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.2.1-141.1.jar",
-          "size": 70716,
-          "downloadCount": 1864,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.2.1/SchematicParse.4.2.1-141.1.jar"
+          "from": "141.1",
+          "to": "146"
         }
       ],
-      "commitSha": "768baa94a414ba3106c5a806e9ed000c7b80066b",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/768baa94a414ba3106c5a806e9ed000c7b80066b.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.2.1/SchematicParse.4.2.1-141.1.jar",
+      "modVersion": "4.2.1",
+      "sizeBytes": 70716,
+      "downloadCount": 1864,
+      "releasedAt": "2023-02-15T15:56:22Z"
     },
     {
       "tag": "4.2",
-      "name": "4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-12T06:13:17Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.2",
-      "modVersion": "4.2",
+      "kind": "release",
       "minGameVersion": "141.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.2/SchematicParse.4.2-141.1.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.2-141.1.jar",
-          "size": 68550,
-          "downloadCount": 74,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.2/SchematicParse.4.2-141.1.jar"
+          "from": "141.1",
+          "to": "146"
         }
       ],
-      "commitSha": "77abaff7c2632f3fd478775bd436cca6d6e20feb",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/77abaff7c2632f3fd478775bd436cca6d6e20feb.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.2/SchematicParse.4.2-141.1.jar",
+      "modVersion": "4.2",
+      "sizeBytes": 68550,
+      "downloadCount": 74,
+      "releasedAt": "2023-02-12T06:13:17Z"
     },
     {
       "tag": "4.1.1",
-      "name": "4.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-05T16:00:08Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.1.1",
-      "modVersion": "4.1.1",
+      "kind": "release",
       "minGameVersion": "141.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.1.1/SchematicParse.4.1.1-141.1.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.1.1-141.1.jar",
-          "size": 65682,
-          "downloadCount": 166,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.1.1/SchematicParse.4.1.1-141.1.jar"
+          "from": "141.1",
+          "to": "146"
         }
       ],
-      "commitSha": "164031af60ce4c29dd5593eb8bc04b9ace11830f",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/164031af60ce4c29dd5593eb8bc04b9ace11830f.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.1.1/SchematicParse.4.1.1-141.1.jar",
+      "modVersion": "4.1.1",
+      "sizeBytes": 65682,
+      "downloadCount": 166,
+      "releasedAt": "2023-02-05T16:00:08Z"
     },
     {
       "tag": "4.1",
-      "name": "4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-04T10:04:39Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.1",
-      "modVersion": "4.1",
+      "kind": "release",
       "minGameVersion": "141.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.1/SchematicParse.4.1-141.1.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.1-141.1.jar",
-          "size": 66243,
-          "downloadCount": 77,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.1/SchematicParse.4.1-141.1.jar"
+          "from": "141.1",
+          "to": "146"
         }
       ],
-      "commitSha": "6fb79ece22d3361409abcf4ee0111aa8cca7b873",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/6fb79ece22d3361409abcf4ee0111aa8cca7b873.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.1/SchematicParse.4.1-141.1.jar",
+      "modVersion": "4.1",
+      "sizeBytes": 66243,
+      "downloadCount": 77,
+      "releasedAt": "2023-02-04T10:04:39Z"
     },
     {
       "tag": "4.0",
-      "name": "4.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-02-03T16:37:58Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/4.0",
-      "modVersion": "4",
+      "kind": "release",
       "minGameVersion": "141.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.0/SchematicParse.4.0-141.1.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.4.0-141.1.jar",
-          "size": 96228,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.0/SchematicParse.4.0-141.1.jar"
+          "from": "141.1",
+          "to": "146"
         }
       ],
-      "commitSha": "5eb2737a089f9320e43c3351d04b15b64549a7ad",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/5eb2737a089f9320e43c3351d04b15b64549a7ad.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/4.0/SchematicParse.4.0-141.1.jar",
+      "modVersion": "4",
+      "sizeBytes": 96228,
+      "downloadCount": 40,
+      "releasedAt": "2023-02-03T16:37:58Z"
     },
     {
       "tag": "3.0",
-      "name": "0.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-13T13:45:43Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/3.0",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/3.0/SchematicParse.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/3.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.jar",
-          "size": 82801,
-          "downloadCount": 1162,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/3.0/SchematicParse.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "e271a64344e59223ed6fe65d5cc7b0f15c464d52",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/e271a64344e59223ed6fe65d5cc7b0f15c464d52.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/3.0/SchematicParse.jar",
+      "modVersion": "3",
+      "sizeBytes": 82801,
+      "downloadCount": 1162,
+      "releasedAt": "2022-08-13T13:45:43Z"
     },
     {
       "tag": "2.0",
-      "name": "2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-10T13:04:01Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/2.0",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/2.0/SchematicParse.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.jar",
-          "size": 69000,
-          "downloadCount": 40,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/2.0/SchematicParse.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "7c1a6340c13b063f4a2377ed649bb86d49dac256",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/7c1a6340c13b063f4a2377ed649bb86d49dac256.zip"
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/2.0/SchematicParse.jar",
+      "modVersion": "2",
+      "sizeBytes": 69000,
+      "downloadCount": 40,
+      "releasedAt": "2022-08-10T13:04:01Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-08-07T13:01:12Z",
-      "htmlUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/1.0/SchematicParse.jar",
-      "sourceArchiveUrl": "https://github.com/blackdeluxecat/schematicparse/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SchematicParse.jar",
-          "size": 52306,
-          "downloadCount": 25,
-          "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/1.0/SchematicParse.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "22a6c230313befa740894c96fe910234b307e7bc",
-      "archiveByCommitUrl": "https://github.com/blackdeluxecat/schematicparse/archive/22a6c230313befa740894c96fe910234b307e7bc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "3.0",
-      "modVersion": "3",
-      "minGameVersion": "137",
-      "maxGameVersion": 141.1,
-      "hasRelease": true
-    },
-    {
-      "tag": "4.2.1",
-      "modVersion": "4.2.1",
-      "minGameVersion": "141.1",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "4.4.1",
-      "modVersion": "4.4.1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "4.5.0",
-      "modVersion": "4.5.0",
-      "minGameVersion": "149",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    },
-    {
-      "tag": "4.6.0",
-      "modVersion": "4.6.0",
-      "minGameVersion": "154.2",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/BlackDeluxeCat/SchematicParse/releases/download/1.0/SchematicParse.jar",
+      "modVersion": "1",
+      "sizeBytes": 52306,
+      "downloadCount": 25,
+      "releasedAt": "2022-08-07T13:01:12Z"
     }
   ],
   "meta": {
+    "name": "SchematicParse",
+    "author": "BlackDeluxeCat",
+    "description": "1.从蓝图详情页直接复制逻辑和信息板。2.蓝图消耗计算套件。\nCopy processor/message in schematic info without placing it. Schematic consumption computing tool. \nGithub: BlackDeluxeCat/SchematicParse",
+    "version": "4.6.0",
+    "minGameVersion": "154.2",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "sp.SchematicParse",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

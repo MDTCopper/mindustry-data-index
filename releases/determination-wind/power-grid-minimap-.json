@@ -1,1257 +1,165 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/power-grid-minimap-",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.18.4",
-      "name": "v1.18.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-06T02:03:36Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.18.4",
-      "modVersion": "1.18.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.4/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.18.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap.jar",
-          "size": 255333,
-          "downloadCount": 73,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.4/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 255333,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.4/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "db8a1528bda249ec8e512c5a6c12019c4fd09386",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/db8a1528bda249ec8e512c5a6c12019c4fd09386.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.4/powergrid-minimap.jar",
+      "modVersion": "1.18.4",
+      "sizeBytes": 510666,
+      "downloadCount": 103,
+      "releasedAt": "2026-11-06T02:03:36Z"
     },
     {
       "tag": "v1.18.3",
-      "name": "v1.18.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-08T03:35:27Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.18.3",
-      "modVersion": "1.18.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.3/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.18.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap.jar",
-          "size": 257166,
-          "downloadCount": 1796,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.3/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 257166,
-          "downloadCount": 135,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.3/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "52a3868f1ae908819b610f179a9cf6d530e65061",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/52a3868f1ae908819b610f179a9cf6d530e65061.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.3/powergrid-minimap.jar",
+      "modVersion": "1.18.3",
+      "sizeBytes": 514332,
+      "downloadCount": 1931,
+      "releasedAt": "2026-08-08T03:35:27Z"
     },
     {
       "tag": "v1.18.2",
-      "name": "Power Grid Minimap v1.18.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-12T03:35:09Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.18.2",
-      "modVersion": "1.18.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.2/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.18.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap.jar",
-          "size": 257166,
-          "downloadCount": 996,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.2/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 257166,
-          "downloadCount": 52,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.2/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "515a6917b9242b14c008eec182cf27818a44c811",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/515a6917b9242b14c008eec182cf27818a44c811.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.2/powergrid-minimap.jar",
+      "modVersion": "1.18.2",
+      "sizeBytes": 514332,
+      "downloadCount": 1048,
+      "releasedAt": "2026-07-12T03:35:09Z"
     },
     {
       "tag": "v1.18.1",
-      "name": "v1.18.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-06T10:10:14Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.18.1",
-      "modVersion": "1.18.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.1/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.18.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap.jar",
-          "size": 254772,
-          "downloadCount": 1114,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.1/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 254772,
-          "downloadCount": 53,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.1/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "78b2ab22476d2c73581c18aded0f10779b131060",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/78b2ab22476d2c73581c18aded0f10779b131060.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.1/powergrid-minimap.jar",
+      "modVersion": "1.18.1",
+      "sizeBytes": 509544,
+      "downloadCount": 1167,
+      "releasedAt": "2026-06-06T10:10:14Z"
     },
     {
       "tag": "v1.18.0",
-      "name": "v1.18.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-23T04:45:03Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.18.0",
-      "modVersion": "1.18.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.18.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap.jar",
-          "size": 255143,
-          "downloadCount": 2300,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 255143,
-          "downloadCount": 1738,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.0/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "15454a04f6fb8446afcc9565b4211194bbfbdef7",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/15454a04f6fb8446afcc9565b4211194bbfbdef7.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.18.0/powergrid-minimap.jar",
+      "modVersion": "1.18.0",
+      "sizeBytes": 510286,
+      "downloadCount": 4038,
+      "releasedAt": "2026-05-23T04:45:03Z"
     },
     {
       "tag": "v1.17.2",
-      "name": "v1.17.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-18T13:35:15Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.17.2",
-      "modVersion": "1.17.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.2/powergrid-minimap-1.17.2.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.17.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap-1.17.2.jar",
-          "size": 253563,
-          "downloadCount": 229,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.2/powergrid-minimap-1.17.2.jar"
-        },
-        {
-          "name": "powergrid-minimap-1.17.2.zip",
-          "size": 253563,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.2/powergrid-minimap-1.17.2.zip"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 253321,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.2/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 253321,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.2/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "db249fce27768449aceee6bb46fc4f7af7f866fc",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/db249fce27768449aceee6bb46fc4f7af7f866fc.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.2/powergrid-minimap-1.17.2.jar",
+      "modVersion": "1.17.2",
+      "sizeBytes": 1013768,
+      "downloadCount": 255,
+      "releasedAt": "2026-05-18T13:35:15Z"
     },
     {
       "tag": "v1.17.1",
-      "name": "v1.17.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-09T15:25:01Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.17.1",
-      "modVersion": "1.17.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.1/powergrid-minimap-1.17.1.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.17.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap-1.17.1.jar",
-          "size": 253496,
-          "downloadCount": 404,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.1/powergrid-minimap-1.17.1.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 253245,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.1/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 253245,
-          "downloadCount": 18,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.1/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "c7c6e48423b134e5bc75753f9f1baefdfe46a87f",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/c7c6e48423b134e5bc75753f9f1baefdfe46a87f.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.1/powergrid-minimap-1.17.1.jar",
+      "modVersion": "1.17.1",
+      "sizeBytes": 759986,
+      "downloadCount": 426,
+      "releasedAt": "2026-05-09T15:25:01Z"
     },
     {
       "tag": "v1.17.0",
-      "name": "v1.17.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-01T06:29:08Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.17.0",
-      "modVersion": "1.17.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.17.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "powergrid-minimap.jar",
-          "size": 253211,
-          "downloadCount": 442,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 253211,
-          "downloadCount": 23,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.0/powergrid-minimap.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "cc7e3e923fe009ef98538b6563fb2d6e7164bcd3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/cc7e3e923fe009ef98538b6563fb2d6e7164bcd3.zip"
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.17.0/powergrid-minimap.jar",
+      "modVersion": "1.17.0",
+      "sizeBytes": 506422,
+      "downloadCount": 465,
+      "releasedAt": "2026-05-01T06:29:08Z"
     },
     {
       "tag": "v1.15.2",
-      "name": "v1.15.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-20T10:19:44Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.15.2",
-      "modVersion": "1.15.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.2/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.15.2.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 233138,
-          "downloadCount": 699,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.2/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 233138,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.2/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "9abc2365c2d91bcd66adc81775d3683a5e04541f",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/9abc2365c2d91bcd66adc81775d3683a5e04541f.zip"
-    },
-    {
-      "tag": "v1.15.1",
-      "name": "v1.15.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-16T05:25:42Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.15.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.1/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.15.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 112274,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.1/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 170362,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.1/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 170123,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "1fa9be4d0521cbaba2ff608c435c8209ca579247",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/1fa9be4d0521cbaba2ff608c435c8209ca579247.zip"
-    },
-    {
-      "tag": "v1.15.0",
-      "name": "v1.15.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-10T15:51:14Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.15.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.15.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 112359,
-          "downloadCount": 22,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.0/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 170318,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 170079,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.15.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "2c0c7b8af1cdf60ab496a26c1562311806607780",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/2c0c7b8af1cdf60ab496a26c1562311806607780.zip"
-    },
-    {
-      "tag": "v1.14.1",
-      "name": "v1.14.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-10T02:18:46Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.14.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.1/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.14.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 113784,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.1/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 168892,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.1/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 168653,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "475366392ec313114731b291a58b1634c0106ed9",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/475366392ec313114731b291a58b1634c0106ed9.zip"
-    },
-    {
-      "tag": "v1.14.0",
-      "name": "v1.14.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-08T11:33:46Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.14.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.14.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 113779,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.0/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 168874,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 168635,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.14.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "6647d9a8bea5c43fd603174f1036635dab8acfad",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/6647d9a8bea5c43fd603174f1036635dab8acfad.zip"
-    },
-    {
-      "tag": "v1.13.2",
-      "name": "v1.13.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-08T09:10:23Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.13.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.2/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.13.2.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 112209,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.2/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 165404,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.2/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 165165,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.2/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "ff1fbbbd016824bde6a42886dad18509c3ebce17",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/ff1fbbbd016824bde6a42886dad18509c3ebce17.zip"
-    },
-    {
-      "tag": "v1.13.1",
-      "name": "v1.13.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-08T08:22:04Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.13.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.1/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.13.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 112195,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.1/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 165281,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.1/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 165042,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.13.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "5a5211abbeaa29f3ad3fc8b8d8cba52af3719a7e",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/5a5211abbeaa29f3ad3fc8b8d8cba52af3719a7e.zip"
-    },
-    {
-      "tag": "v1.12.0",
-      "name": "v1.12.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-07T07:53:53Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.12.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.12.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.12.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 111424,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.12.0/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 164479,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.12.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 164240,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.12.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "f1fdaa17241a77e5c5692fdae8b6659c4c54d953",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/f1fdaa17241a77e5c5692fdae8b6659c4c54d953.zip"
-    },
-    {
-      "tag": "v1.10.0",
-      "name": "v1.10.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-06T10:45:04Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.10.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.10.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.10.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap-android.jar",
-          "size": 111118,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.10.0/powergrid-minimap-android.jar"
-        },
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 163909,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.10.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 163670,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.10.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "224a2381b41be27db104019e1c742d21f3a64e7e",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/224a2381b41be27db104019e1c742d21f3a64e7e.zip"
-    },
-    {
-      "tag": "v1.9.0",
-      "name": "v1.9.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-04T22:32:24Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.9.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.9.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.9.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 145965,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.9.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 145726,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.9.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "9a16301945a1076f7d65931328f7487f822813d2",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/9a16301945a1076f7d65931328f7487f822813d2.zip"
-    },
-    {
-      "tag": "v1.8.0",
-      "name": "v1.8.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-04T12:10:08Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.8.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.8.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.8.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 143759,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.8.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 143520,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.8.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "fda65ce6d7f0fe4f437e78468141880fa97dfa22",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/fda65ce6d7f0fe4f437e78468141880fa97dfa22.zip"
-    },
-    {
-      "tag": "v1.7.1",
-      "name": "v1.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-03T16:30:54Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.7.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.7.1/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.7.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 141443,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.7.1/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 141204,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.7.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "2e706b4e77664f4a1f55f8c703aa2c256a20c59b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/2e706b4e77664f4a1f55f8c703aa2c256a20c59b.zip"
-    },
-    {
-      "tag": "v1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-03T16:04:20Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.7.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.7.0/powergrid-minimap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.7.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.jar",
-          "size": 132667,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.7.0/powergrid-minimap.jar"
-        },
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 132428,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.7.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "aca7b0278ff244597fb43dcdc24bdd8d6214f17c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/aca7b0278ff244597fb43dcdc24bdd8d6214f17c.zip"
-    },
-    {
-      "tag": "v1.6.5",
-      "name": "v1.6.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-03T15:25:45Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.6.5",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.5.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.5.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 132428,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.6.5/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "36f245a964f513ce57a66d1ad051ebdacd178b0d",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/36f245a964f513ce57a66d1ad051ebdacd178b0d.zip"
-    },
-    {
-      "tag": "v1.6.4",
-      "name": "v1.6.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-03T11:43:28Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.6.4",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.4.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.4.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 115734,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.6.4/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "d46b8d2782582cb9aa506e6687e966b036646add",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/d46b8d2782582cb9aa506e6687e966b036646add.zip"
-    },
-    {
-      "tag": "v1.6.3",
-      "name": "v1.6.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-02T05:28:45Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.6.3",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.3.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.3.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 102896,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.6.3/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "20830c383abb32f9fca00529709e5b2139291cc7",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/20830c383abb32f9fca00529709e5b2139291cc7.zip"
-    },
-    {
-      "tag": "v1.6.2",
-      "name": "v1.6.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-01T21:36:41Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.6.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.2.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.2.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 142579,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.6.2/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "6e6f04f4cfed82845a727a9f8f86440dc6b61336",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/6e6f04f4cfed82845a727a9f8f86440dc6b61336.zip"
-    },
-    {
-      "tag": "v1.6.1",
-      "name": "v1.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-01T11:07:10Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.6.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 99700,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.6.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "6cf58e6fd96115cc8d7ca732715c0d3f481ac2ee",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/6cf58e6fd96115cc8d7ca732715c0d3f481ac2ee.zip"
-    },
-    {
-      "tag": "v1.6.0",
-      "name": "v1.6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-01T10:39:31Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.6.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.6.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 98047,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.6.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "4b5367430a21a0afa5402c22a8ea775e7ce7dfa7",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/4b5367430a21a0afa5402c22a8ea775e7ce7dfa7.zip"
-    },
-    {
-      "tag": "v1.5.9",
-      "name": "v1.5.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-01T10:25:35Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.5.9",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.5.9.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.5.9.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 96421,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.5.9/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "49ff910fa9e1db7eda1d84e51ad491fd94bf868f",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/49ff910fa9e1db7eda1d84e51ad491fd94bf868f.zip"
-    },
-    {
-      "tag": "v1.3.3",
-      "name": "v1.3.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T14:15:40Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.3.3",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.3.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.3.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 90295,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.3.3/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "720a7918b93b66711f6e2ad37f066b8051824761",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/720a7918b93b66711f6e2ad37f066b8051824761.zip"
-    },
-    {
-      "tag": "v1.3.2",
-      "name": "v1.3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T14:03:30Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.3.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.2.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.2.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 88601,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.3.2/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "78f5865ea5cf0fc2ff08ba9529bca4ea3d2dfb41",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/78f5865ea5cf0fc2ff08ba9529bca4ea3d2dfb41.zip"
-    },
-    {
-      "tag": "v1.3.1",
-      "name": "v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T13:53:11Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.3.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 88752,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.3.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "4b5988ec42141dd189c4393cd165f5bc16da288d",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/4b5988ec42141dd189c4393cd165f5bc16da288d.zip"
-    },
-    {
-      "tag": "v1.3.0",
-      "name": "v1.3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T13:41:36Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.3.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.3.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 88191,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.3.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "01f62ff1878229d5cc9f6a6ee8a813a983989d8f",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/01f62ff1878229d5cc9f6a6ee8a813a983989d8f.zip"
-    },
-    {
-      "tag": "v1.2.1",
-      "name": "v1.2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T12:25:27Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.2.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.2.1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.2.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 77984,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.2.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "29f17ce96327cb850cd96e1ca7b3a37d3e7e4cdc",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/29f17ce96327cb850cd96e1ca7b3a37d3e7e4cdc.zip"
-    },
-    {
-      "tag": "v1.2.0",
-      "name": "v1.2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T11:26:38Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.2.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.2.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.2.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 77377,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.2.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "568bfc4234041ef89d68ec67200c74f5db1e22e7",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/568bfc4234041ef89d68ec67200c74f5db1e22e7.zip"
-    },
-    {
-      "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T09:32:35Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.1.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 75659,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.1.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "4b6367311eb62149aa540a024b0724b77f66a76b",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/4b6367311eb62149aa540a024b0724b77f66a76b.zip"
-    },
-    {
-      "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T08:45:30Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v1.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.0.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 72998,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.0.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "b49e45b6fdf933a4c293ab5dfad8a601c2957924",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/b49e45b6fdf933a4c293ab5dfad8a601c2957924.zip"
-    },
-    {
-      "tag": "v0.1.5",
-      "name": "v0.1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T08:37:17Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v0.1.5",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.5.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.5.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 73058,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v0.1.5/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "4b84c2e0acfd16bd97617dee4dc913c09afe8758",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/4b84c2e0acfd16bd97617dee4dc913c09afe8758.zip"
-    },
-    {
-      "tag": "v0.1.4",
-      "name": "v0.1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T08:19:53Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v0.1.4",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.4.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.4.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 72993,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v0.1.4/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "5cbdf392f293e9838cc6c5eb770ed0ada13b7c11",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/5cbdf392f293e9838cc6c5eb770ed0ada13b7c11.zip"
-    },
-    {
-      "tag": "v0.1.2",
-      "name": "v0.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T07:59:02Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v0.1.2",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.2.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 69401,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v0.1.2/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "39386fe1d15539d4aedb9fe8de92dec8b71854f0",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/39386fe1d15539d4aedb9fe8de92dec8b71854f0.zip"
-    },
-    {
-      "tag": "v0.1.1",
-      "name": "v0.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T07:50:30Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v0.1.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.1.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 69103,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v0.1.1/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "0e9bc0446fa8d81a15907f2b6d8e203d383c4ea9",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/0e9bc0446fa8d81a15907f2b6d8e203d383c4ea9.zip"
-    },
-    {
-      "tag": "v0.1.0",
-      "name": "v0.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T07:05:58Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/v0.1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v0.1.0.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 63882,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v0.1.0/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "59f679528e38bd7ee5b7d2686251f725ca8994f6",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/59f679528e38bd7ee5b7d2686251f725ca8994f6.zip"
-    },
-    {
-      "tag": "Main",
-      "name": "V0.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-31T01:36:10Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/tag/Main",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/Main.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/Main.zip",
-      "assets": [
-        {
-          "name": "powergrid-minimap.zip",
-          "size": 58438,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/Main/powergrid-minimap.zip"
-        }
-      ],
-      "commitSha": "3a4d90b2571e88d2d90d1f27bae847b826205b21",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/3a4d90b2571e88d2d90d1f27bae847b826205b21.zip"
-    },
-    {
-      "tag": "v1.15.3",
-      "name": "v1.15.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/determination-wind/power-grid-minimap-/tree/v1.15.3",
-      "modVersion": "1.15.3",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.15.3.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.15.3.zip",
-      "assets": [],
-      "commitSha": "aab9d48bdc4eac0c0a15d1deab8c52dfa715b0c7",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/aab9d48bdc4eac0c0a15d1deab8c52dfa715b0c7.zip"
-    },
-    {
-      "tag": "v1.13.0",
-      "name": "v1.13.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/determination-wind/power-grid-minimap-/tree/v1.13.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.13.0.zip",
-      "sourceArchiveUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/refs/tags/v1.13.0.zip",
-      "assets": [],
-      "commitSha": "a3104691cfd43a2ab528eec5f71290de38b05fba",
-      "archiveByCommitUrl": "https://github.com/determination-wind/power-grid-minimap-/archive/a3104691cfd43a2ab528eec5f71290de38b05fba.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.18.4",
-      "modVersion": "1.18.4",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.15.2",
+      "sizeBytes": 466276,
+      "downloadCount": 713,
+      "releasedAt": "2026-02-20T10:19:44Z"
     }
   ],
   "meta": {
+    "name": "powergrid-minimap",
+    "author": "DeterMination",
+    "description": "Color each independent power grid on minimap/full map, show live power balance, detect split outages, and suggest reconnect links. / 在小地图与全图按电网分色显示，实时展示电力盈亏，检测断网并给出快速重连建议。",
+    "version": "1.18.4",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "powergridminimap.PowerGridMinimapMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

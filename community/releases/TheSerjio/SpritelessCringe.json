@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "TheSerjio/SpritelessCringe",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1",
-      "name": "Why am i doing it",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-25T21:53:56Z",
-      "htmlUrl": "https://github.com/TheSerjio/SpritelessCringe/releases/tag/v0.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TheSerjio/SpritelessCringe/releases/download/v0.1/SpritelessCringe.jar",
-      "sourceArchiveUrl": "https://github.com/TheSerjio/SpritelessCringe/archive/refs/tags/v0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SpritelessCringe.jar",
-          "size": 230950,
-          "downloadCount": 372,
-          "downloadUrl": "https://github.com/TheSerjio/SpritelessCringe/releases/download/v0.1/SpritelessCringe.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "352e845dcbf37187d07f2fc74ad90eadc9c39241",
-      "archiveByCommitUrl": "https://github.com/TheSerjio/SpritelessCringe/archive/352e845dcbf37187d07f2fc74ad90eadc9c39241.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1",
+      "downloadUrl": "https://github.com/TheSerjio/SpritelessCringe/releases/download/v0.1/SpritelessCringe.jar",
       "modVersion": "1",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 230950,
+      "downloadCount": 372,
+      "releasedAt": "2023-04-25T21:53:56Z"
     }
   ],
   "meta": {
+    "name": "spriteless-cringe",
+    "author": "You",
+    "description": "Cringe with no new sprites",
+    "version": "1",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "spriteless.SpritelessCringeMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

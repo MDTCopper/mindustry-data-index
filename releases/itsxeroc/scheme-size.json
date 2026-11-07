@@ -1,81 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "itsxeroc/scheme-size",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.0.0",
-      "name": "v2.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T21:20:59Z",
-      "htmlUrl": "https://github.com/ItsXeroc/Scheme-Size/releases/tag/v2.0.0",
-      "modVersion": "2.0.0",
+      "kind": "release",
       "minGameVersion": "156",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ItsXeroc/Scheme-Size/releases/download/v2.0.0/Scheme-Size.jar",
-      "sourceArchiveUrl": "https://github.com/itsxeroc/scheme-size/archive/refs/tags/v2.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Scheme-Size.jar",
-          "size": 743145,
-          "downloadCount": 5082,
-          "downloadUrl": "https://github.com/ItsXeroc/Scheme-Size/releases/download/v2.0.0/Scheme-Size.jar"
+          "from": "156",
+          "to": "160.7"
         }
       ],
-      "commitSha": "958ec60722f3e2f4892c0d36dc440cafc728e39d",
-      "archiveByCommitUrl": "https://github.com/itsxeroc/scheme-size/archive/958ec60722f3e2f4892c0d36dc440cafc728e39d.zip"
-    },
-    {
-      "tag": "v1.0.3",
-      "name": "v1.0.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/itsxeroc/scheme-size/tree/v1.0.3",
-      "modVersion": "1.0.3",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/itsxeroc/scheme-size/archive/refs/tags/v1.0.3.zip",
-      "sourceArchiveUrl": "https://github.com/itsxeroc/scheme-size/archive/refs/tags/v1.0.3.zip",
-      "assets": [],
-      "commitSha": "88abe552540fbbb59b36637b9ba3fd4150babcb8",
-      "archiveByCommitUrl": "https://github.com/itsxeroc/scheme-size/archive/88abe552540fbbb59b36637b9ba3fd4150babcb8.zip"
-    },
-    {
-      "tag": "v1.0.2",
-      "name": "v1.0.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/itsxeroc/scheme-size/tree/v1.0.2",
-      "modVersion": "1.0.2",
-      "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/itsxeroc/scheme-size/archive/refs/tags/v1.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/itsxeroc/scheme-size/archive/refs/tags/v1.0.2.zip",
-      "assets": [],
-      "commitSha": "e530761a75cb2081855f5a30e591105f1f4203fa",
-      "archiveByCommitUrl": "https://github.com/itsxeroc/scheme-size/archive/e530761a75cb2081855f5a30e591105f1f4203fa.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.0.0",
+      "downloadUrl": "https://github.com/ItsXeroc/Scheme-Size/releases/download/v2.0.0/Scheme-Size.jar",
       "modVersion": "2.0.0",
-      "minGameVersion": "156",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 743145,
+      "downloadCount": 5088,
+      "releasedAt": "2026-08-05T21:20:59Z"
     }
   ],
   "meta": {
+    "name": "scheme-size",
+    "author": "[accent]Mithra[]\n[gray]Original: [accent]xzxADIxzx[]",
+    "description": "\nA custom port of Scheme Size for newer Mindustry builds.\n\nStarted as a schematic size increase, now a set of QoL and admin tools: bigger schematics, building helpers, renderer options, AI, keybinds, CLaJ, and an advanced console.\n\n[accent]Client & server:[]\nSame jar works as a normal client mod and on a dedicated server. On a vanilla server (without this mod) you still get client QoL. If the server also has the jar, admin tools like fill, items, units, teleport and rules sync over the network - even when you are not the local host. Those actions require admin.\n\nRequires Mindustry v156+. One jar for desktop and mobile (156–159). Vanilla recommended.\n\nOriginal mod by [accent]xzxADIxzx[]. Port by [accent]Mithra[]. The original author is not involved in this port.\n\n[accent]\n - Schematic size 512\n - Building & renderer tools\n - Admin tools (optional server sync)\n - AI support\n - CLaJ, keybinds, updater\n - Advanced console & rule setter\n",
+    "version": "2.0.0",
+    "minGameVersion": "156",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "scheme.Main",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

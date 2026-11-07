@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "edward-bill/inf-processor",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "latest",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-11T22:47:06Z",
-      "htmlUrl": "https://github.com/Edward-Bill/inf-processor/releases/tag/latest",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Edward-Bill/inf-processor/releases/download/latest/inf-processorDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/edward-bill/inf-processor/archive/refs/tags/latest.zip",
-      "assets": [
-        {
-          "name": "inf-processorDesktop.jar",
-          "size": 12181,
-          "downloadCount": 195,
-          "downloadUrl": "https://github.com/Edward-Bill/inf-processor/releases/download/latest/inf-processorDesktop.jar"
-        }
-      ],
-      "commitSha": "31f40954cd3b2c06530a0fc9fbf4a11396dadf5a",
-      "archiveByCommitUrl": "https://github.com/edward-bill/inf-processor/archive/31f40954cd3b2c06530a0fc9fbf4a11396dadf5a.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-09-26T19:59:33Z",
-      "htmlUrl": "https://github.com/Edward-Bill/inf-processor/releases/tag/mindustry-mod",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Edward-Bill/inf-processor/releases/download/mindustry-mod/inf-processorDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/edward-bill/inf-processor/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
-        {
-          "name": "inf-processorDesktop.jar",
-          "size": 45189,
-          "downloadCount": 774,
-          "downloadUrl": "https://github.com/Edward-Bill/inf-processor/releases/download/mindustry-mod/inf-processorDesktop.jar"
-        }
-      ],
-      "commitSha": "ab9e3a599095a7f6197263cacbb3126a3df4af12",
-      "archiveByCommitUrl": "https://github.com/edward-bill/inf-processor/archive/ab9e3a599095a7f6197263cacbb3126a3df4af12.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "latest",
       "modVersion": "1.1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 12181,
+      "downloadCount": 195,
+      "releasedAt": "2026-06-11T22:47:06Z"
+    },
+    {
+      "tag": "mindustry-mod",
+      "kind": "release",
+      "minGameVersion": "145",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/Edward-Bill/inf-processor/releases/download/mindustry-mod/inf-processorDesktop.jar",
+      "modVersion": "1",
+      "sizeBytes": 45189,
+      "downloadCount": 774,
+      "releasedAt": "2024-09-26T19:59:33Z"
     }
   ],
   "meta": {
+    "name": "inf-processor",
+    "author": "exec4tbe",
+    "description": "World processors that are accesible from anywhere. Also adds world memory, message and switch (i just copied real world blocks`s properites)",
+    "version": "1.1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "infprocessor.InfProcessorMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

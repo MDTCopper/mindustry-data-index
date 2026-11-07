@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "NevaseenYeee/Unto-Ather",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "V1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-17T14:30:40Z",
-      "htmlUrl": "https://github.com/NevaseenYeee/Unto-Ather/releases/tag/mindustry-mod",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "140",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/NevaseenYeee/Unto-Ather/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/NevaseenYeee/Unto-Ather/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "6d49e7c68c5a9ace58ea0d65fda4abf6fe3c19d7",
-      "archiveByCommitUrl": "https://github.com/NevaseenYeee/Unto-Ather/archive/6d49e7c68c5a9ace58ea0d65fda4abf6fe3c19d7.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
       "modVersion": "1.0",
-      "minGameVersion": "140",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2023-04-17T14:30:40Z"
     }
   ],
   "meta": {
+    "name": "UA",
+    "author": "NevaSeen",
+    "description": "Explore the stars, discover the worlds.",
+    "version": "1.0",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

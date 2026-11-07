@@ -1,88 +1,66 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "error666real/mundusro-tanclet---mindustry-bundle-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "1.3_v154_1",
-      "name": "Mindusro 1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-17T21:16:24Z",
-      "htmlUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/tag/1.3_v154_1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/download/1.3_v154_1/fixedmundustro1.3.zip",
-      "sourceArchiveUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/refs/tags/1.3_v154_1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "fixedmundustro1.3.zip",
-          "size": 162235,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/download/1.3_v154_1/fixedmundustro1.3.zip"
+          "from": "150",
+          "to": "160.7"
         }
       ],
-      "commitSha": "37727f4d663db2c16cfd321728cc964a3b5904b0",
-      "archiveByCommitUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/37727f4d663db2c16cfd321728cc964a3b5904b0.zip"
+      "downloadUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/download/1.3_v154_1/fixedmundustro1.3.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 162235,
+      "downloadCount": 13,
+      "releasedAt": "2026-01-17T21:16:24Z"
     },
     {
       "tag": "1.0_v154_1",
-      "name": "Mindusro 1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-05T02:21:09Z",
-      "htmlUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/tag/1.0_v154_1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/download/1.0_v154_1/mundustro1.0.zip",
-      "sourceArchiveUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/refs/tags/1.0_v154_1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mundustro1.0.zip",
-          "size": 157368,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/download/1.0_v154_1/mundustro1.0.zip"
+          "from": "150",
+          "to": "160.7"
         }
       ],
-      "commitSha": "37727f4d663db2c16cfd321728cc964a3b5904b0",
-      "archiveByCommitUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/37727f4d663db2c16cfd321728cc964a3b5904b0.zip"
+      "downloadUrl": "https://github.com/Error666real/Mundusro-tanclet---Mindustry-bundle-mod/releases/download/1.0_v154_1/mundustro1.0.zip",
+      "modVersion": "1.0",
+      "sizeBytes": 157368,
+      "downloadCount": 4,
+      "releasedAt": "2026-01-05T02:21:09Z"
     },
     {
       "tag": "2.0_v154_1",
-      "name": "2.0_v154_1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/tree/2.0_v154_1",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "150",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "150",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/refs/tags/2.0_v154_1.zip",
-      "sourceArchiveUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/refs/tags/2.0_v154_1.zip",
-      "assets": [],
-      "commitSha": "325435eaa137166b758cd4e9fbc15e7827a3393f",
-      "archiveByCommitUrl": "https://github.com/error666real/mundusro-tanclet---mindustry-bundle-mod/archive/325435eaa137166b758cd4e9fbc15e7827a3393f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.3_v154_1",
-      "modVersion": "1.0",
-      "minGameVersion": "150",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0"
     }
   ],
   "meta": {
+    "name": "muds",
+    "author": "dazenitterraria",
+    "description": "uhh [red] wip, [white]now the game looks like had MF's english accent",
+    "version": "1.0",
+    "minGameVersion": "150",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

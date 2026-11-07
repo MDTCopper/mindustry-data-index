@@ -1,167 +1,137 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "VaporSpace2/endrium-2",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v3.2",
-      "name": "V3.2 beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-12-03T02:47:06Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/v3.2",
-      "modVersion": "3.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/v3.2.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/v3.2.zip",
-      "assets": [],
-      "commitSha": "c9ee5638ff5b707d3fad01f6122e8c7a0f3056f5",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/c9ee5638ff5b707d3fad01f6122e8c7a0f3056f5.zip"
+      "modVersion": "3.1",
+      "releasedAt": "2022-12-03T02:47:06Z",
+      "prerelease": true
     },
     {
       "tag": "V3.1",
-      "name": "V3.1 beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-09-11T03:10:02Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/V3.1",
-      "modVersion": "3.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V3.1.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V3.1.zip",
-      "assets": [],
-      "commitSha": "5ac825bd8ffe8416d4ad2cb6fb738d9e3f07962e",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/5ac825bd8ffe8416d4ad2cb6fb738d9e3f07962e.zip"
+      "modVersion": "3.1",
+      "releasedAt": "2022-09-11T03:10:02Z",
+      "prerelease": true
     },
     {
       "tag": "v3.0",
-      "name": "v3.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-02T21:32:18Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/v3.0",
-      "modVersion": "2",
+      "kind": "tag",
       "minGameVersion": "125",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "125",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/v3.0.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/v3.0.zip",
-      "assets": [],
-      "commitSha": "f47efd3aea1c6a7ba472f7a3458cc97dbd20c73d",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/f47efd3aea1c6a7ba472f7a3458cc97dbd20c73d.zip"
+      "modVersion": "2",
+      "releasedAt": "2022-09-02T21:32:18Z"
     },
     {
       "tag": "V2.1-beta",
-      "name": "Beta V2.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-03-06T21:51:36Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/V2.1-beta",
-      "modVersion": "2",
+      "kind": "tag",
       "minGameVersion": "130",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "130",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V2.1-beta.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V2.1-beta.zip",
-      "assets": [],
-      "commitSha": "623005a90938a045bfe9432d6d5d20e953c02af0",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/623005a90938a045bfe9432d6d5d20e953c02af0.zip"
+      "modVersion": "2",
+      "releasedAt": "2022-03-06T21:51:36Z",
+      "prerelease": true
     },
     {
       "tag": "V2.0",
-      "name": "v2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-02-26T23:56:40Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/V2.0",
-      "modVersion": "1.2",
+      "kind": "tag",
       "minGameVersion": "130",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "130",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V2.0.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V2.0.zip",
-      "assets": [],
-      "commitSha": "33d1535f3d0bdda5fb5031a8f81bd3b5cc4650e3",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/33d1535f3d0bdda5fb5031a8f81bd3b5cc4650e3.zip"
+      "modVersion": "1.2",
+      "releasedAt": "2022-02-26T23:56:40Z"
     },
     {
       "tag": "V1.3-beta",
-      "name": "v1.3 Beta",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2022-02-08T23:54:54Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/V1.3-beta",
-      "modVersion": "1.2",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V1.3-beta.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V1.3-beta.zip",
-      "assets": [],
-      "commitSha": "7ccca1d3d5e8a661d476a6b8d1a807e3689b9937",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/7ccca1d3d5e8a661d476a6b8d1a807e3689b9937.zip"
+      "modVersion": "1.2",
+      "releasedAt": "2022-02-08T23:54:54Z",
+      "prerelease": true
     },
     {
       "tag": "mindustry-mod-v6",
-      "name": "V 1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-27T08:14:01Z",
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/releases/tag/mindustry-mod-v6",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/mindustry-mod-v6.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/mindustry-mod-v6.zip",
-      "assets": [],
-      "commitSha": "e74a5d643029d36aa7c5a641e016f5669310039e",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/e74a5d643029d36aa7c5a641e016f5669310039e.zip"
+      "modVersion": "1",
+      "releasedAt": "2021-10-27T08:14:01Z"
     },
     {
       "tag": "V1.0",
-      "name": "V1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/VaporSpace2/endrium-2/tree/V1.0",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "126",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "126",
+          "to": "135.2"
+        }
+      ],
       "downloadUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V1.0.zip",
-      "sourceArchiveUrl": "https://github.com/VaporSpace2/endrium-2/archive/refs/tags/V1.0.zip",
-      "assets": [],
-      "commitSha": "e74a5d643029d36aa7c5a641e016f5669310039e",
-      "archiveByCommitUrl": "https://github.com/VaporSpace2/endrium-2/archive/e74a5d643029d36aa7c5a641e016f5669310039e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v3.0",
-      "modVersion": "2",
-      "minGameVersion": "125",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "v3.2",
-      "modVersion": "3.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1"
     }
   ],
   "meta": {
+    "name": "Endrium mod 2",
+    "author": "tommyboo(antumbra)#4708 & Aegires",
+    "description": "[gold]Vanilla extension mod, [white]made to have a vanilla like feel, adds items past what would normally be [red]endgame [white]and even QOL blocks![cyan] Discord server: https://discord.gg/hGqEVwsg",
+    "version": "3.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

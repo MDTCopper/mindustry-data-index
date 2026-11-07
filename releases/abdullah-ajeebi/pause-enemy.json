@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "abdullah-ajeebi/pause-enemy",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "latest",
-      "name": "Pause Enemy [160]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-20T13:39:59Z",
-      "htmlUrl": "https://github.com/Abdullah-Ajeebi/pause-enemy/releases/tag/latest",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Abdullah-Ajeebi/pause-enemy/releases/download/latest/pause-enemy.zip",
-      "sourceArchiveUrl": "https://github.com/abdullah-ajeebi/pause-enemy/archive/refs/tags/latest.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pause-enemy.zip",
-          "size": 1493,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/Abdullah-Ajeebi/pause-enemy/releases/download/latest/pause-enemy.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "61c290e4208c0e6799b1d25a8cf97225838cbd5d",
-      "archiveByCommitUrl": "https://github.com/abdullah-ajeebi/pause-enemy/archive/61c290e4208c0e6799b1d25a8cf97225838cbd5d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "latest",
+      "downloadUrl": "https://github.com/Abdullah-Ajeebi/pause-enemy/releases/download/latest/pause-enemy.zip",
       "modVersion": "1.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1493,
+      "downloadCount": 3,
+      "releasedAt": "2026-09-20T13:39:59Z"
     }
   ],
   "meta": {
+    "name": "pause-enemy",
+    "author": "john sound",
+    "description": "Adds a keybind and UI part that lets you pause enemy waves and unit fabricators at any time.",
+    "version": "1.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

@@ -1,71 +1,54 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "kiagoblin/goblin-storage-android",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "latest",
-      "name": "Dev build (latest commit)",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-28T19:19:54Z",
-      "htmlUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/tag/latest",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/latest/Goblin-Storage-Android.jar",
-      "sourceArchiveUrl": "https://github.com/kiagoblin/goblin-storage-android/archive/refs/tags/latest.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Goblin-Storage-Android.jar",
-          "size": 201254,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/latest/Goblin-Storage-Android.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "62f220d03d3fd091b7331e062b708c736d951322",
-      "archiveByCommitUrl": "https://github.com/kiagoblin/goblin-storage-android/archive/62f220d03d3fd091b7331e062b708c736d951322.zip"
+      "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/latest/Goblin-Storage-Android.jar",
+      "modVersion": "1.2.4",
+      "sizeBytes": 201254,
+      "downloadCount": 1,
+      "releasedAt": "2026-10-28T19:19:54Z",
+      "prerelease": true
     },
     {
       "tag": "v1.2.4",
-      "name": "Goblin Link v1.2.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-28T08:22:17Z",
-      "htmlUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/tag/v1.2.4",
-      "modVersion": "1.2.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/v1.2.4/Goblin-Storage-Android.jar",
-      "sourceArchiveUrl": "https://github.com/kiagoblin/goblin-storage-android/archive/refs/tags/v1.2.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Goblin-Storage-Android.jar",
-          "size": 201254,
-          "downloadCount": 26,
-          "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/v1.2.4/Goblin-Storage-Android.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ae2c2667f6c96562e4b43fbbb72ef8fe7417cb11",
-      "archiveByCommitUrl": "https://github.com/kiagoblin/goblin-storage-android/archive/ae2c2667f6c96562e4b43fbbb72ef8fe7417cb11.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "latest",
+      "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/v1.2.4/Goblin-Storage-Android.jar",
       "modVersion": "1.2.4",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 201254,
+      "downloadCount": 26,
+      "releasedAt": "2026-10-28T08:22:17Z"
     }
   ],
   "meta": {
+    "name": "goblin-link",
+    "author": "Kiagoblin",
+    "description": "Хранилище с автозабором предметов из ядра. Модули ёмкости и скорости, узлы связи, три стадии игры.",
+    "version": "1.2.4",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "goblinlink.GoblinLinkMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,88 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "aerialasfofotherprojects/Mindustrialist",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "alpha-0.1.1",
-      "name": "v0.11 alpha",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-05T03:29:34Z",
-      "htmlUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/tag/alpha-0.1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1.1/Mindustrialist.jar",
-      "sourceArchiveUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/refs/tags/alpha-0.1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustrialist.jar",
-          "size": 361455,
-          "downloadCount": 6942,
-          "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1.1/Mindustrialist.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "322461a6866d6e82b04769f790436aa7ca6d07d6",
-      "archiveByCommitUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/322461a6866d6e82b04769f790436aa7ca6d07d6.zip"
+      "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1.1/Mindustrialist.jar",
+      "modVersion": "1",
+      "sizeBytes": 361455,
+      "downloadCount": 6942,
+      "releasedAt": "2024-05-05T03:29:34Z"
     },
     {
       "tag": "alpha-0.1",
-      "name": "v0.1 working",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-11T09:04:16Z",
-      "htmlUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/tag/alpha-0.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1/Mindustrialist.jar",
-      "sourceArchiveUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/refs/tags/alpha-0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mindustrialist.jar",
-          "size": 357242,
-          "downloadCount": 1659,
-          "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1/Mindustrialist.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "b48ca7472401e4484a0b21c063dcfd560b547089",
-      "archiveByCommitUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/b48ca7472401e4484a0b21c063dcfd560b547089.zip"
-    },
-    {
-      "tag": "mindustry-mod",
-      "name": "v0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-11T08:27:37Z",
-      "htmlUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/tag/mindustry-mod",
+      "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/releases/download/alpha-0.1/Mindustrialist.jar",
       "modVersion": "1",
-      "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "fd0a896f022e5bbba6bbfebd6bc76a23a2118ccb",
-      "archiveByCommitUrl": "https://github.com/aerialasfofotherprojects/Mindustrialist/archive/fd0a896f022e5bbba6bbfebd6bc76a23a2118ccb.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alpha-0.1.1",
-      "modVersion": "1",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 357242,
+      "downloadCount": 1659,
+      "releasedAt": "2024-04-11T09:04:16Z"
     }
   ],
   "meta": {
+    "name": "mindustrialist",
+    "author": "aerialasf",
+    "description": "\nA Mindustry mod that adds Roblox Industrialist to Mindustry.\n\nIndustrialist:\nA game centered around factory construction and industrial expansion.\nHeavily inspired by Mindustry, Factorio & some other industry games.\n\nMindustry:\nAn open-ended factory management game with RTS and tower defense elements.\n\n\n\nCredits:\nLixie and her Allure (when i started making this game with hjson & js)\nOmaloon by xstabux (alot, like a few files are directly copied from omaloon)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhi\n",
+    "version": "1",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "mindustrialist.MDIT",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

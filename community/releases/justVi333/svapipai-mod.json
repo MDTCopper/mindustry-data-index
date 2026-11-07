@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "justVi333/svapipai-mod",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.1v",
-      "name": "0.1v release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-05-25T17:37:11Z",
-      "htmlUrl": "https://github.com/justVi333/svapipai-mod/releases/tag/0.1v",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/justVi333/svapipai-mod/releases/download/0.1v/svapipai-mod.jar",
-      "sourceArchiveUrl": "https://github.com/justVi333/svapipai-mod/archive/refs/tags/0.1v.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "svapipai-mod.jar",
-          "size": 66422,
-          "downloadCount": 2677,
-          "downloadUrl": "https://github.com/justVi333/svapipai-mod/releases/download/0.1v/svapipai-mod.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "363f928d7e9220b6a0a8e54c17e27b715ed23728",
-      "archiveByCommitUrl": "https://github.com/justVi333/svapipai-mod/archive/363f928d7e9220b6a0a8e54c17e27b715ed23728.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.1v",
+      "downloadUrl": "https://github.com/justVi333/svapipai-mod/releases/download/0.1v/svapipai-mod.jar",
       "modVersion": "0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 66422,
+      "downloadCount": 2677,
+      "releasedAt": "2024-05-25T17:37:11Z"
     }
   ],
   "meta": {
+    "name": "svapipai",
+    "author": "DotVi",
+    "description": "\nMy first mod :)\n\n\nThe mod adds:\n- ore;\n- turrets and other defense blocks;\n- units;\n- some production and power blocks.\n\nLanguages:\n- en;\n- ru.\n\n\nFuture plans include adding more content for the new ore and add new planet.\n",
+    "version": "0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "svapipai.Svapipai",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "CCernusca/mindustry-airstrike",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0.2",
-      "name": "Version 1.0.2 - Minor Bug fixes",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-13T19:49:42Z",
-      "htmlUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/tag/v1.0.2",
-      "modVersion": "1.0.2",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.2/mindustry-airstrike.jar",
-      "sourceArchiveUrl": "https://github.com/CCernusca/mindustry-airstrike/archive/refs/tags/v1.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-airstrike.jar",
-          "size": 2260802,
-          "downloadCount": 3293,
-          "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.2/mindustry-airstrike.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "beb83fac5e71d5eb9b66287c3acb42d0245abd97",
-      "archiveByCommitUrl": "https://github.com/CCernusca/mindustry-airstrike/archive/beb83fac5e71d5eb9b66287c3acb42d0245abd97.zip"
+      "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.2/mindustry-airstrike.jar",
+      "modVersion": "1.0.2",
+      "sizeBytes": 2260802,
+      "downloadCount": 3293,
+      "releasedAt": "2025-01-13T19:49:42Z"
     },
     {
       "tag": "v1.0.1",
-      "name": "Version 1.0.1 - Promo image update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-11T19:18:23Z",
-      "htmlUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/tag/v1.0.1",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.1/mindustry-airstrike.jar",
-      "sourceArchiveUrl": "https://github.com/CCernusca/mindustry-airstrike/archive/refs/tags/v1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-airstrike.jar",
-          "size": 2258497,
-          "downloadCount": 161,
-          "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.1/mindustry-airstrike.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f97d7b96cfb47be8a92aa25d4dabc1efdf1dbfb4",
-      "archiveByCommitUrl": "https://github.com/CCernusca/mindustry-airstrike/archive/f97d7b96cfb47be8a92aa25d4dabc1efdf1dbfb4.zip"
+      "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.1/mindustry-airstrike.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 2258497,
+      "downloadCount": 161,
+      "releasedAt": "2025-01-11T19:18:23Z"
     },
     {
       "tag": "v1.0.0",
-      "name": "Version 1.0.0 - Core Features",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-11T14:37:11Z",
-      "htmlUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/tag/v1.0.0",
-      "modVersion": "1.0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.0/mindustry-airstrike.jar",
-      "sourceArchiveUrl": "https://github.com/CCernusca/mindustry-airstrike/archive/refs/tags/v1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "mindustry-airstrike.jar",
-          "size": 109060,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.0/mindustry-airstrike.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "f97d7b96cfb47be8a92aa25d4dabc1efdf1dbfb4",
-      "archiveByCommitUrl": "https://github.com/CCernusca/mindustry-airstrike/archive/f97d7b96cfb47be8a92aa25d4dabc1efdf1dbfb4.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.2",
-      "modVersion": "1.0.2",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/CCernusca/mindustry-airstrike/releases/download/v1.0.0/mindustry-airstrike.jar",
+      "modVersion": "1.0.1",
+      "sizeBytes": 109060,
+      "downloadCount": 20,
+      "releasedAt": "2025-01-11T14:37:11Z"
     }
   ],
   "meta": {
+    "name": "airstrike-mod",
+    "author": "Cra-C-Guy",
+    "description": "\nA Mindustry mod adding airstrikes.\n\nThe core mechanic of the mod are the Orbital Weapons, which are launched into orbit using satellites and the Launcher block.\n\nWeapons in orbit are saved across game sessions and can be accessed from any sector on the planet they were launched from, or only from the sector they were launched from, if the sector is not on a planet (not in campaign).\n\nOrbital Weapons are monitored via the Orbital Monitor and can be called to strike using the Beacon and the Orbital Controller.\n",
+    "version": "1.0.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "airstrike.AirstrikeMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

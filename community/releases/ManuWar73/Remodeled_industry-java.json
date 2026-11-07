@@ -1,136 +1,85 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ManuWar73/Remodeled_industry-java",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "0.0.2beta",
-      "name": "Beta 0.0.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-18T16:32:54Z",
-      "htmlUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/tag/0.0.2beta",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/0.0.2beta/Remodeled_industry-java-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/refs/tags/0.0.2beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Remodeled_industry-java-1.0.jar",
-          "size": 13026,
-          "downloadCount": 531,
-          "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/0.0.2beta/Remodeled_industry-java-1.0.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "954e31643523b4ba049f4aeb06d72f642c5c1888",
-      "archiveByCommitUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/954e31643523b4ba049f4aeb06d72f642c5c1888.zip"
+      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/0.0.2beta/Remodeled_industry-java-1.0.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 13026,
+      "downloadCount": 531,
+      "releasedAt": "2022-09-18T16:32:54Z"
     },
     {
       "tag": "new",
-      "name": "Referencial",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-18T16:26:12Z",
-      "htmlUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/tag/new",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/new/Remodeled_industry-java-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/refs/tags/new.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Remodeled_industry-java-1.0.jar",
-          "size": 13044,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/new/Remodeled_industry-java-1.0.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "cada8e25ab77ecca3a579530ba4edd3cd4bdb1c8",
-      "archiveByCommitUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/cada8e25ab77ecca3a579530ba4edd3cd4bdb1c8.zip"
+      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/new/Remodeled_industry-java-1.0.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 13044,
+      "downloadCount": 9,
+      "releasedAt": "2022-09-18T16:26:12Z"
     },
     {
       "tag": "0.0.1beta",
-      "name": "V0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-18T16:00:43Z",
-      "htmlUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/tag/0.0.1beta",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/0.0.1beta/Remodeled_industry-java-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/refs/tags/0.0.1beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Remodeled_industry-java-1.0.jar",
-          "size": 13044,
-          "downloadCount": 19,
-          "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/0.0.1beta/Remodeled_industry-java-1.0.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "9f1d07c4e8e772a306127f4b507855d5df5265f9",
-      "archiveByCommitUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/9f1d07c4e8e772a306127f4b507855d5df5265f9.zip"
+      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/0.0.1beta/Remodeled_industry-java-1.0.jar",
+      "modVersion": "1.0",
+      "sizeBytes": 13044,
+      "downloadCount": 19,
+      "releasedAt": "2022-09-18T16:00:43Z"
     },
     {
       "tag": "nonum1",
-      "name": "Beta i dunno number for this",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-09-18T15:47:24Z",
-      "htmlUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/tag/nonum1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/nonum1/Remodeled_industry-java-1.0.jar",
-      "sourceArchiveUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/refs/tags/nonum1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Remodeled_industry-java-1.0.jar",
-          "size": 13045,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/nonum1/Remodeled_industry-java-1.0.jar"
+          "from": "137",
+          "to": "146"
         }
       ],
-      "commitSha": "954e31643523b4ba049f4aeb06d72f642c5c1888",
-      "archiveByCommitUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/954e31643523b4ba049f4aeb06d72f642c5c1888.zip"
-    },
-    {
-      "tag": "0.0beta",
-      "name": "0.0beta",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/ManuWar73/Remodeled_industry-java/tree/0.0beta",
+      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/releases/download/nonum1/Remodeled_industry-java-1.0.jar",
       "modVersion": "1.0",
-      "minGameVersion": "137",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/refs/tags/0.0beta.zip",
-      "sourceArchiveUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/refs/tags/0.0beta.zip",
-      "assets": [],
-      "commitSha": "3026b90eaff046d33e083fd1c16eca818486863b",
-      "archiveByCommitUrl": "https://github.com/ManuWar73/Remodeled_industry-java/archive/3026b90eaff046d33e083fd1c16eca818486863b.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.0.2beta",
-      "modVersion": "1.0",
-      "minGameVersion": "137",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 13045,
+      "downloadCount": 10,
+      "releasedAt": "2022-09-18T15:47:24Z"
     }
   ],
   "meta": {
+    "name": "Remodeled-industry-java",
+    "author": "ManuWar73",
+    "description": "Java port of remodeled industry",
+    "version": "1.0",
+    "minGameVersion": "137",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ManuWar73.Remodeled_industryJavaMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

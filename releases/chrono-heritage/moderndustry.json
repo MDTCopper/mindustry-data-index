@@ -1,78 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "chrono-heritage/moderndustry",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.02",
-      "name": "v0.02",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-19T13:57:44Z",
-      "htmlUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/tag/v0.02",
-      "modVersion": "v0.01",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.02/chrono-moderndustry-v0.02.jar",
-      "sourceArchiveUrl": "https://github.com/chrono-heritage/moderndustry/archive/refs/tags/v0.02.zip",
-      "assets": [
-        {
-          "name": "chrono-moderndustry-v0.02.jar",
-          "size": 3094098,
-          "downloadCount": 4399,
-          "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.02/chrono-moderndustry-v0.02.jar"
-        }
-      ],
-      "commitSha": "5833900c031c0a238c1fd87238b15fe2b7f208b6",
-      "archiveByCommitUrl": "https://github.com/chrono-heritage/moderndustry/archive/5833900c031c0a238c1fd87238b15fe2b7f208b6.zip"
+      "modVersion": "v0.01",
+      "sizeBytes": 3094098,
+      "downloadCount": 4400,
+      "releasedAt": "2023-09-19T13:57:44Z"
     },
     {
       "tag": "v0.0",
-      "name": "v0.01",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-07-13T07:38:22Z",
-      "htmlUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/tag/v0.0",
-      "modVersion": "v0.01",
+      "kind": "release",
       "minGameVersion": "145.1",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145.1",
+          "to": "146"
+        }
+      ],
       "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.0/Moderndustry-v0.01.jar",
-      "sourceArchiveUrl": "https://github.com/chrono-heritage/moderndustry/archive/refs/tags/v0.0.zip",
-      "assets": [
-        {
-          "name": "Moderndustry-v0.01.jar",
-          "size": 3125952,
-          "downloadCount": 87,
-          "downloadUrl": "https://github.com/Chrono-Heritage/Moderndustry/releases/download/v0.0/Moderndustry-v0.01.jar"
-        }
-      ],
-      "commitSha": "bed551b7268c7bf3fa6cf9e18f56f475f328e9e0",
-      "archiveByCommitUrl": "https://github.com/chrono-heritage/moderndustry/archive/bed551b7268c7bf3fa6cf9e18f56f475f328e9e0.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.0",
       "modVersion": "v0.01",
-      "minGameVersion": "145.1",
-      "maxGameVersion": 146,
-      "hasRelease": true
-    },
-    {
-      "tag": "v0.02",
-      "modVersion": "v0.01",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 3125952,
+      "downloadCount": 87,
+      "releasedAt": "2023-07-13T07:38:22Z"
     }
   ],
   "meta": {
+    "name": "chrono-moderndustry",
+    "author": "Chrono",
+    "description": "A mod that add modern items and block inculde industry or nuclear.",
+    "version": "v0.01",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "md.mdLoader",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

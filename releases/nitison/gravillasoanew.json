@@ -1,107 +1,72 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nitison/gravillasoanew",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "3.42-indev.2",
-      "name": "3.42-indev.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-10-06T18:48:05Z",
-      "htmlUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/tag/3.42-indev.2",
-      "modVersion": "v3.42",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.2/GravillasoAnew.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/gravillasoanew/archive/refs/tags/3.42-indev.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GravillasoAnew.jar",
-          "size": 763198,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.2/GravillasoAnew.jar"
-        },
-        {
-          "name": "GravillasoAnewDesktop.jar",
-          "size": 690277,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.2/GravillasoAnewDesktop.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "73b3aee5873c74facd7bfffff45942832e299028",
-      "archiveByCommitUrl": "https://github.com/nitison/gravillasoanew/archive/73b3aee5873c74facd7bfffff45942832e299028.zip"
+      "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.2/GravillasoAnew.jar",
+      "modVersion": "v3.42",
+      "sizeBytes": 1453475,
+      "downloadCount": 3,
+      "releasedAt": "2026-10-06T18:48:05Z",
+      "prerelease": true
     },
     {
       "tag": "3.42-indev.1",
-      "name": "3.42-indev.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-25T11:01:52Z",
-      "htmlUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/tag/3.42-indev.1",
-      "modVersion": "v3.42",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.1/GravillasoAnew.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/gravillasoanew/archive/refs/tags/3.42-indev.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GravillasoAnew.jar",
-          "size": 688949,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.1/GravillasoAnew.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "9d4f7bfe05d4af224aa94d4beac769ba57ef19c1",
-      "archiveByCommitUrl": "https://github.com/nitison/gravillasoanew/archive/9d4f7bfe05d4af224aa94d4beac769ba57ef19c1.zip"
+      "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.1/GravillasoAnew.jar",
+      "modVersion": "v3.42",
+      "sizeBytes": 688949,
+      "downloadCount": 5,
+      "releasedAt": "2026-09-25T11:01:52Z",
+      "prerelease": true
     },
     {
       "tag": "3.42-indev.0",
-      "name": "3.42-indev.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-09-21T23:56:54Z",
-      "htmlUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/tag/3.42-indev.0",
-      "modVersion": "v3.42",
+      "kind": "release",
       "minGameVersion": "160.5",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.0/GravillasoAnew.jar",
-      "sourceArchiveUrl": "https://github.com/nitison/gravillasoanew/archive/refs/tags/3.42-indev.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "GravillasoAnew.jar",
-          "size": 680309,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.0/GravillasoAnew.jar"
-        },
-        {
-          "name": "GravillasoAnewDesktop.jar",
-          "size": 618432,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.0/GravillasoAnewDesktop.jar"
+          "from": "160.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "df03f6ecd2bd94f1ae1ba5e2095cd70514ef36a8",
-      "archiveByCommitUrl": "https://github.com/nitison/gravillasoanew/archive/df03f6ecd2bd94f1ae1ba5e2095cd70514ef36a8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "3.42-indev.2",
+      "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.0/GravillasoAnew.jar",
       "modVersion": "v3.42",
-      "minGameVersion": "160.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 1298741,
+      "downloadCount": 11,
+      "releasedAt": "2026-09-21T23:56:54Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "gr",
+    "author": "NiTiSon",
+    "description": "Early indev version.",
+    "version": "v3.42",
+    "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "nitis.gravillaso.GravillasoMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

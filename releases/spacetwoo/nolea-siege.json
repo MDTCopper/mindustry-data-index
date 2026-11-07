@@ -1,40 +1,34 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "spacetwoo/nolea-siege",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "V1.2.2",
-      "name": "V1.2.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/spacetwoo/nolea-siege/tree/V1.2.2",
-      "modVersion": "1.2.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/spacetwoo/nolea-siege/archive/refs/tags/V1.2.2.zip",
-      "sourceArchiveUrl": "https://github.com/spacetwoo/nolea-siege/archive/refs/tags/V1.2.2.zip",
-      "assets": [],
-      "commitSha": "85600393323605c590ea2c54dddcc299246ef5ed",
-      "archiveByCommitUrl": "https://github.com/spacetwoo/nolea-siege/archive/85600393323605c590ea2c54dddcc299246ef5ed.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.2.2",
-      "modVersion": "1.2.2",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": false
+      "modVersion": "1.2.2"
     }
   ],
   "meta": {
+    "name": "nul",
+    "author": "Spacetwoo N cool guys",
+    "description": "If something deforms your body beyond recognition and takes away your mind, will it still be you?... \n \n A fast-paced mod with a variety of enemies, bosses and strange gameplay decisions! Right now there are 4 sectors out of 12! also There are still some unfinished things in here. \n Code - SpaceTwoo. \n Maps - SpaceTwoo SKYPETR, Lewiafan ROVO. \n Sprites - SpaceTwoo, ArtmX, Bloody-Ocean \n Other - Closed_Ink, Gribdius.",
+    "version": "1.2.2",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,75 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "mitemi/blastanium",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.1.2",
-      "name": "v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-17T02:23:32Z",
-      "htmlUrl": "https://github.com/Mitemi/Blastanium/releases/tag/v1.1.2",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mitemi/blastanium/archive/refs/tags/v1.1.2.zip",
-      "sourceArchiveUrl": "https://github.com/mitemi/blastanium/archive/refs/tags/v1.1.2.zip",
-      "assets": [],
-      "commitSha": "d5362c046be51858a239702319a773e0c9e1656f",
-      "archiveByCommitUrl": "https://github.com/mitemi/blastanium/archive/d5362c046be51858a239702319a773e0c9e1656f.zip"
+      "modVersion": "1",
+      "releasedAt": "2024-08-17T02:23:32Z"
     },
     {
       "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-05T01:29:55Z",
-      "htmlUrl": "https://github.com/Mitemi/Blastanium/releases/tag/v1.1.1",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mitemi/blastanium/archive/refs/tags/v1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/mitemi/blastanium/archive/refs/tags/v1.1.1.zip",
-      "assets": [],
-      "commitSha": "c7088eefe3edd6a6ee28eeb711d1924f8b443d84",
-      "archiveByCommitUrl": "https://github.com/mitemi/blastanium/archive/c7088eefe3edd6a6ee28eeb711d1924f8b443d84.zip"
+      "modVersion": "1",
+      "releasedAt": "2024-08-05T01:29:55Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-04T22:39:35Z",
-      "htmlUrl": "https://github.com/Mitemi/Blastanium/releases/tag/v1.1",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/mitemi/blastanium/archive/refs/tags/v1.1.zip",
-      "sourceArchiveUrl": "https://github.com/mitemi/blastanium/archive/refs/tags/v1.1.zip",
-      "assets": [],
-      "commitSha": "6608d91ef010b0ebeb963893d85de9a4e701b2d8",
-      "archiveByCommitUrl": "https://github.com/mitemi/blastanium/archive/6608d91ef010b0ebeb963893d85de9a4e701b2d8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.2",
       "modVersion": "1",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-08-04T22:39:35Z"
     }
   ],
   "meta": {
+    "name": "blastanium",
+    "author": "[[]lime]Mitemi\n\n[[]gray]Contributor:\n[[]#c4d4e0]N4H4N[[]lightgray], [[]cyan]Tikup[[]lightgray], [[]red]XSA",
+    "description": "Adds Blastanium, a compound of Blast Compound and Plastanium, as ammo for Serpulo turrets.\n\nBlastanium can be used in Salvos, Swarmers, Ripples, Cyclones, and Spectres, as well as Titans and Scathes. Blastanium used in a Scathe will not fire as a missile.\n\nDiscord Server: https://discord.com/invite/TJKZgr6UDg",
+    "version": "1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

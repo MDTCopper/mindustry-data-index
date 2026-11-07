@@ -1,71 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "axilians/arx-alpha-mod-mindustry",
-  "generatedAt": "2026-11-06T19:23:17.596Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.0.2",
-      "name": "v 0.0.2 - New team, units",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-29T16:46:39Z",
-      "htmlUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/tag/v0.0.2",
-      "modVersion": "0.0.2",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/download/v0.0.2/ARX-Alpha-Mod.jar",
-      "sourceArchiveUrl": "https://github.com/axilians/arx-alpha-mod-mindustry/archive/refs/tags/v0.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ARX-Alpha-Mod.jar",
-          "size": 2798631,
-          "downloadCount": 1877,
-          "downloadUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/download/v0.0.2/ARX-Alpha-Mod.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "437cc09e7fe182e8d59c8ebd303823b8850eb5b2",
-      "archiveByCommitUrl": "https://github.com/axilians/arx-alpha-mod-mindustry/archive/437cc09e7fe182e8d59c8ebd303823b8850eb5b2.zip"
+      "downloadUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/download/v0.0.2/ARX-Alpha-Mod.jar",
+      "modVersion": "0.0.2",
+      "sizeBytes": 2798631,
+      "downloadCount": 1877,
+      "releasedAt": "2026-03-29T16:46:39Z"
     },
     {
       "tag": "v0.0.1",
-      "name": "v 0.0.1 - Test Release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-01T16:58:16Z",
-      "htmlUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/tag/v0.0.1",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/download/v0.0.1/ARX-Alpha-Mod.jar",
-      "sourceArchiveUrl": "https://github.com/axilians/arx-alpha-mod-mindustry/archive/refs/tags/v0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "ARX-Alpha-Mod.jar",
-          "size": 2700220,
-          "downloadCount": 68,
-          "downloadUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/download/v0.0.1/ARX-Alpha-Mod.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f80c54ed07aa7e587e20e30d9fd082b996b91878",
-      "archiveByCommitUrl": "https://github.com/axilians/arx-alpha-mod-mindustry/archive/f80c54ed07aa7e587e20e30d9fd082b996b91878.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.0.2",
-      "modVersion": "0.0.2",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Axilians/ARX-Alpha-Mod-Mindustry/releases/download/v0.0.1/ARX-Alpha-Mod.jar",
+      "modVersion": "0.0.1",
+      "sizeBytes": 2700220,
+      "downloadCount": 68,
+      "releasedAt": "2026-03-01T16:58:16Z"
     }
   ],
   "meta": {
+    "name": "arx-khimeris",
+    "author": "Axilians",
+    "description": "[red[]]Do not[[]] install this mod \n",
+    "version": "0.0.2",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "axilians.khimeris.Main",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

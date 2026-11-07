@@ -1,99 +1,78 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "tnmspiroct/exoprosopa",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "V0.95",
-      "name": "V0.95 Status Effects Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-08T23:10:20Z",
-      "htmlUrl": "https://github.com/TnmSpiroct/Exoprosopa/releases/tag/V0.95",
-      "modVersion": "0.95",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.95.zip",
-      "sourceArchiveUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.95.zip",
-      "assets": [],
-      "commitSha": "1d181c5f3fced6b559a039cc723d1e0ec1c474ea",
-      "archiveByCommitUrl": "https://github.com/tnmspiroct/exoprosopa/archive/1d181c5f3fced6b559a039cc723d1e0ec1c474ea.zip"
+      "modVersion": "0.95",
+      "releasedAt": "2026-10-08T23:10:20Z"
     },
     {
       "tag": "V0.93",
-      "name": "V0.93 End-Game + Pre-Finalize Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T15:07:53Z",
-      "htmlUrl": "https://github.com/TnmSpiroct/Exoprosopa/releases/tag/V0.93",
-      "modVersion": "0.93",
+      "kind": "tag",
       "minGameVersion": "160",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.93.zip",
-      "sourceArchiveUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.93.zip",
-      "assets": [],
-      "commitSha": "d2607542dd59107d0f5c5504f21808016a901954",
-      "archiveByCommitUrl": "https://github.com/tnmspiroct/exoprosopa/archive/d2607542dd59107d0f5c5504f21808016a901954.zip"
+      "modVersion": "0.93",
+      "releasedAt": "2026-10-03T15:07:53Z"
     },
     {
       "tag": "V0.71",
-      "name": "V0.71 Biome Update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-28T04:33:09Z",
-      "htmlUrl": "https://github.com/TnmSpiroct/Exoprosopa/releases/tag/V0.71",
-      "modVersion": "0.71",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.71.zip",
-      "sourceArchiveUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.71.zip",
-      "assets": [],
-      "commitSha": "3c8ff0a9a11afbf2e3195e66263d69d986b16d42",
-      "archiveByCommitUrl": "https://github.com/tnmspiroct/exoprosopa/archive/3c8ff0a9a11afbf2e3195e66263d69d986b16d42.zip"
+      "modVersion": "0.71",
+      "releasedAt": "2025-05-28T04:33:09Z"
     },
     {
       "tag": "V0.7",
-      "name": "Main Release of Exoprosopa",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-05-19T11:54:13Z",
-      "htmlUrl": "https://github.com/TnmSpiroct/Exoprosopa/releases/tag/V0.7",
-      "modVersion": "0.7",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.7.zip",
-      "sourceArchiveUrl": "https://github.com/tnmspiroct/exoprosopa/archive/refs/tags/V0.7.zip",
-      "assets": [],
-      "commitSha": "64038c08e820b7b7e2d11d1cef8303186918985d",
-      "archiveByCommitUrl": "https://github.com/tnmspiroct/exoprosopa/archive/64038c08e820b7b7e2d11d1cef8303186918985d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V0.71",
-      "modVersion": "0.71",
-      "minGameVersion": "146",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "V0.95",
-      "modVersion": "0.95",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.7",
+      "releasedAt": "2025-05-19T11:54:13Z"
     }
   ],
   "meta": {
+    "name": "exoprosopa",
+    "author": "TnmSpiroct",
+    "description": " \n  [[]#93E2EE]Exoprosopa[[]] adds a new planet, Frostnova, into the game.\n  Frostnova is a deceptively frozen planet. A volatile and hazardous tundra hides a dormant faction, Astral.\n  It has a fully playable campaign with 19 campaign and 10 optional maps. \n  \n  Polished content & linear campaign progression.\n  Contains over 320 pieces of unique content, including blocks, liquids, items, units and specialized guardian.\n  Pure modded without reuse any vanilla content.\n  \n  [accent[]]If you find any issues or want to gives suggestions\n  feel free to join the Exoprosopa Discord server.\n  Check it on my profile. My username is TnmSpiroctsub[[]].\n  \n  [[]#93E2EE]Exoprosopa[[]] is available in the following languages:\n  - English\n  - Indonesian\n  - Russian\n  - Simplified Chinese\n\nEnjoy!\n",
+    "version": "0.95",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

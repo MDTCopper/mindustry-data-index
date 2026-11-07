@@ -1,57 +1,48 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Ochpochmaks/Mechanics",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.5",
-      "name": "Mechanics 0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-05T10:31:43Z",
-      "htmlUrl": "https://github.com/Ochpochmaks/Mechanics/releases/tag/0.5",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Ochpochmaks/Mechanics/archive/refs/tags/0.5.zip",
-      "sourceArchiveUrl": "https://github.com/Ochpochmaks/Mechanics/archive/refs/tags/0.5.zip",
-      "assets": [],
-      "commitSha": "4d467b19718e6560a7f6bec72116f534989ed363",
-      "archiveByCommitUrl": "https://github.com/Ochpochmaks/Mechanics/archive/4d467b19718e6560a7f6bec72116f534989ed363.zip"
+      "modVersion": "0.1",
+      "releasedAt": "2024-03-05T10:31:43Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "mindustry-mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/Ochpochmaks/Mechanics/tree/mindustry-mod",
-      "modVersion": "0.1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Ochpochmaks/Mechanics/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/Ochpochmaks/Mechanics/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "0b1e50e3cc1c28eee01016fc0b20b42404e73120",
-      "archiveByCommitUrl": "https://github.com/Ochpochmaks/Mechanics/archive/0b1e50e3cc1c28eee01016fc0b20b42404e73120.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.5",
-      "modVersion": "0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.1"
     }
   ],
   "meta": {
+    "name": "mechanics",
+    "author": "[red[]]To[orange[]]pyr[yellow[]]it [white[]]and [green[]]Och[blue[]]poch[purple[]]maks",
+    "description": "Our mod, 1st for [red[]]To[orange[]]pyr[yellow[]]it",
+    "version": "0.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

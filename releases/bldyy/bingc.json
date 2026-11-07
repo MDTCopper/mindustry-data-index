@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "bldyy/bingc",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "基础",
-      "name": "第一版本",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-18T13:07:28Z",
-      "htmlUrl": "https://github.com/bldyy/bingc/releases/tag/%E5%9F%BA%E7%A1%80",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/bldyy/bingc/releases/download/%E5%9F%BA%E7%A1%80/bingcDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/bldyy/bingc/archive/refs/tags/%E5%9F%BA%E7%A1%80.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "bingcDesktop.jar",
-          "size": 57565,
-          "downloadCount": 707,
-          "downloadUrl": "https://github.com/bldyy/bingc/releases/download/%E5%9F%BA%E7%A1%80/bingcDesktop.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5262ff36436f3e4dad9d960feda92fcc3999e2ca",
-      "archiveByCommitUrl": "https://github.com/bldyy/bingc/archive/5262ff36436f3e4dad9d960feda92fcc3999e2ca.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "基础",
+      "downloadUrl": "https://github.com/bldyy/bingc/releases/download/%E5%9F%BA%E7%A1%80/bingcDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 57565,
+      "downloadCount": 707,
+      "releasedAt": "2026-04-18T13:07:28Z"
     }
   ],
   "meta": {
+    "name": "Ice factory",
+    "author": "摆烂的云意",
+    "description": "额~",
+    "version": "1",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "binggc.binggcMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

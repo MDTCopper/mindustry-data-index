@@ -1,205 +1,133 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Momiji142857/MomijiLib",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.7.3",
-      "name": "v1.7.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-11-02T13:58:27Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/v1.7.3",
-      "modVersion": "1.7.3",
+      "kind": "release",
       "minGameVersion": "160",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.3/MomijiLib-v1.7.3.jar",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/v1.7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MomijiLib-v1.7.3.jar",
-          "size": 410808,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.3/MomijiLib-v1.7.3.jar"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "commitSha": "db91dff36a5d50420b4e8ae0d0d4f06ae43e9c8e",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/db91dff36a5d50420b4e8ae0d0d4f06ae43e9c8e.zip"
+      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.3/MomijiLib-v1.7.3.jar",
+      "modVersion": "1.7.3",
+      "sizeBytes": 410808,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-02T13:58:27Z"
     },
     {
       "tag": "v1.7.1",
-      "name": "v1.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-18T11:10:22Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/v1.7.1",
-      "modVersion": "1.7.1",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.1/MomijiLib-v1.7.1.jar",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/v1.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MomijiLib-v1.7.1.jar",
-          "size": 389174,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.1/MomijiLib-v1.7.1.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2701a087948d7ffad607133cd97c3351b39fac6f",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/2701a087948d7ffad607133cd97c3351b39fac6f.zip"
+      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.1/MomijiLib-v1.7.1.jar",
+      "modVersion": "1.7.1",
+      "sizeBytes": 389174,
+      "downloadCount": 27,
+      "releasedAt": "2026-10-18T11:10:22Z"
     },
     {
       "tag": "v1.7.0",
-      "name": "v1.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-16T18:39:36Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/v1.7.0",
-      "modVersion": "1.7.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.0/MomijiLib.v1.7.0.jar",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/v1.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MomijiLib.v1.7.0.jar",
-          "size": 388715,
-          "downloadCount": 12,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.0/MomijiLib.v1.7.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "90a11742e3ffa20bf62dd86e6ce35dfcde7132bf",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/90a11742e3ffa20bf62dd86e6ce35dfcde7132bf.zip"
+      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/v1.7.0/MomijiLib.v1.7.0.jar",
+      "modVersion": "1.7.0",
+      "sizeBytes": 388715,
+      "downloadCount": 12,
+      "releasedAt": "2026-10-16T18:39:36Z"
     },
     {
       "tag": "1.6.0",
-      "name": "v1.6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-14T12:12:16Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/1.6.0",
-      "modVersion": "1.6.0",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.6.0/MomijiLib.v1.6.0.jar",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/1.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MomijiLib.v1.6.0.jar",
-          "size": 384499,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.6.0/MomijiLib.v1.6.0.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2f2efc5154931a60cbbd8b1f175a6f44cdb0caf4",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/2f2efc5154931a60cbbd8b1f175a6f44cdb0caf4.zip"
+      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.6.0/MomijiLib.v1.6.0.jar",
+      "modVersion": "1.6.0",
+      "sizeBytes": 384499,
+      "downloadCount": 4,
+      "releasedAt": "2026-10-14T12:12:16Z"
     },
     {
       "tag": "1.4",
-      "name": "1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-01T23:42:04Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/1.4",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.4/MomijiCrafterLib.jar",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MomijiCrafterLib.jar",
-          "size": 132518,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.4/MomijiCrafterLib.jar"
+          "from": "159",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8736f4383e12028e5ed7c7d6c36f0ee8474106cd",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/8736f4383e12028e5ed7c7d6c36f0ee8474106cd.zip"
+      "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.4/MomijiCrafterLib.jar",
+      "modVersion": "1.4",
+      "sizeBytes": 132518,
+      "downloadCount": 24,
+      "releasedAt": "2026-10-01T23:42:04Z"
     },
     {
       "tag": "1.3",
-      "name": "1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-22T04:55:18Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/1.3",
-      "modVersion": "1.4",
+      "kind": "release",
       "minGameVersion": "159",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.3/MomijiCrafterLib.jar",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/1.3.zip",
-      "assets": [
-        {
-          "name": "MomijiCrafterLib.jar",
-          "size": 215320,
-          "downloadCount": 58,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.3/MomijiCrafterLib.jar"
-        }
-      ],
-      "commitSha": "4c882e70c23358c9de8c9af095c6554902411890",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/4c882e70c23358c9de8c9af095c6554902411890.zip"
+      "modVersion": "1.4",
+      "sizeBytes": 215320,
+      "downloadCount": 58,
+      "releasedAt": "2026-07-22T04:55:18Z"
     },
     {
       "tag": "1.1",
-      "name": "1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-02T16:10:54Z",
-      "htmlUrl": "https://github.com/Momiji142857/MomijiLib/releases/tag/1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/1.1.zip",
-      "sourceArchiveUrl": "https://github.com/Momiji142857/MomijiLib/archive/refs/tags/1.1.zip",
-      "assets": [
-        {
-          "name": "MultiCrafterLib_Momiji.zip",
-          "size": 78345,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/Momiji142857/MomijiLib/releases/download/1.1/MultiCrafterLib_Momiji.zip"
-        }
-      ],
-      "commitSha": "09015f27b40d26d2ca39c6e40d9bda10f629c1bc",
-      "archiveByCommitUrl": "https://github.com/Momiji142857/MomijiLib/archive/09015f27b40d26d2ca39c6e40d9bda10f629c1bc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.1",
       "modVersion": "1.1",
-      "minGameVersion": "154",
-      "maxGameVersion": 159,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.7.1",
-      "modVersion": "1.7.1",
-      "minGameVersion": "159",
-      "maxGameVersion": 160,
-      "hasRelease": true
-    },
-    {
-      "tag": "v1.7.3",
-      "modVersion": "1.7.3",
-      "minGameVersion": "160",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 78345,
+      "downloadCount": 14,
+      "releasedAt": "2026-06-02T16:10:54Z"
     }
   ],
   "meta": {
+    "name": "momiji-lib",
+    "author": "[sky[]]Momiji142857[white[]]",
+    "description": "磨米机库.\n2026-11-02",
+    "version": "1.7.3",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "momijiLib.LibLoad",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

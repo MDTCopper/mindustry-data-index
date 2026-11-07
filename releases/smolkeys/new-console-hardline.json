@@ -1,150 +1,101 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "smolkeys/new-console-hardline",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v2.3-b155.4",
-      "name": "v2.3 for b155.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-19T14:15:49Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/tag/v2.3-b155.4",
-      "modVersion": "2.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.3-b155.4/new-console-hardline.jar",
-      "sourceArchiveUrl": "https://github.com/smolkeys/new-console-hardline/archive/refs/tags/v2.3-b155.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "new-console-hardline.jar",
-          "size": 220522,
-          "downloadCount": 5984,
-          "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.3-b155.4/new-console-hardline.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "edbe07841047bee04dc984d168e4cf0b7c78243f",
-      "archiveByCommitUrl": "https://github.com/smolkeys/new-console-hardline/archive/edbe07841047bee04dc984d168e4cf0b7c78243f.zip"
+      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.3-b155.4/new-console-hardline.jar",
+      "modVersion": "2.3",
+      "sizeBytes": 220522,
+      "downloadCount": 5985,
+      "releasedAt": "2026-02-19T14:15:49Z"
     },
     {
       "tag": "v2.3",
-      "name": "v2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-24T03:30:31Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/tag/v2.3",
-      "modVersion": "2.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.3/new-console-hardline.jar",
-      "sourceArchiveUrl": "https://github.com/smolkeys/new-console-hardline/archive/refs/tags/v2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "new-console-hardline.jar",
-          "size": 220520,
-          "downloadCount": 1864,
-          "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.3/new-console-hardline.jar"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "edbe07841047bee04dc984d168e4cf0b7c78243f",
-      "archiveByCommitUrl": "https://github.com/smolkeys/new-console-hardline/archive/edbe07841047bee04dc984d168e4cf0b7c78243f.zip"
+      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.3/new-console-hardline.jar",
+      "modVersion": "2.3",
+      "sizeBytes": 220520,
+      "downloadCount": 1864,
+      "releasedAt": "2025-12-24T03:30:31Z"
     },
     {
       "tag": "v2.2",
-      "name": "v2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-28T06:51:54Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/tag/v2.2",
-      "modVersion": "2.2",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.2/new-console-hardline.jar",
-      "sourceArchiveUrl": "https://github.com/smolkeys/new-console-hardline/archive/refs/tags/v2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "new-console-hardline.jar",
-          "size": 224051,
-          "downloadCount": 4626,
-          "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.2/new-console-hardline.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "4a5ca5f1dcc61c95957d6f2484cb7ec1fd3dedb1",
-      "archiveByCommitUrl": "https://github.com/smolkeys/new-console-hardline/archive/4a5ca5f1dcc61c95957d6f2484cb7ec1fd3dedb1.zip"
+      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.2/new-console-hardline.jar",
+      "modVersion": "2.2",
+      "sizeBytes": 224051,
+      "downloadCount": 4626,
+      "releasedAt": "2025-04-28T06:51:54Z"
     },
     {
       "tag": "v2.1",
-      "name": "v2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-19T15:25:06Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/tag/v2.1",
-      "modVersion": "2.1",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.1/new-console-hardline.jar",
-      "sourceArchiveUrl": "https://github.com/smolkeys/new-console-hardline/archive/refs/tags/v2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "new-console-hardline.jar",
-          "size": 218466,
-          "downloadCount": 315,
-          "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.1/new-console-hardline.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "c0e20a70a6437d2df747c663fb3dc0a5dc8515cc",
-      "archiveByCommitUrl": "https://github.com/smolkeys/new-console-hardline/archive/c0e20a70a6437d2df747c663fb3dc0a5dc8515cc.zip"
+      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.1/new-console-hardline.jar",
+      "modVersion": "2.1",
+      "sizeBytes": 218466,
+      "downloadCount": 315,
+      "releasedAt": "2025-04-19T15:25:06Z"
     },
     {
       "tag": "v2.0",
-      "name": "v2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-19T05:47:14Z",
-      "htmlUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/tag/v2.0",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.0/new-console-hardline.jar",
-      "sourceArchiveUrl": "https://github.com/smolkeys/new-console-hardline/archive/refs/tags/v2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "new-console-hardline.jar",
-          "size": 216203,
-          "downloadCount": 287,
-          "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.0/new-console-hardline.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "78bd7a15484c05e469506bc740a00918e02bda31",
-      "archiveByCommitUrl": "https://github.com/smolkeys/new-console-hardline/archive/78bd7a15484c05e469506bc740a00918e02bda31.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v2.2",
-      "modVersion": "2.2",
-      "minGameVersion": "147",
-      "maxGameVersion": 154,
-      "hasRelease": true
-    },
-    {
-      "tag": "v2.3-b155.4",
-      "modVersion": "2.3",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.0/new-console-hardline.jar",
+      "modVersion": "2",
+      "sizeBytes": 216203,
+      "downloadCount": 287,
+      "releasedAt": "2025-04-19T05:47:14Z"
     }
   ],
   "meta": {
+    "name": "newconsole-hardline",
+    "author": "Mnemotechnician (original developer), SMOLKEYS (port maintainer)",
+    "description": "\nThe officially acknowledged port of New Console for v147-above.\n\nAdds a console UI superior to the built-in one and the ones provided by any other mods.\nUser-friendly interface, an actual code editor with [accent]syntax highlighting[] and indentation guides, assistance and more:\nA good log panel, execution history - all of that is included in this mod.\n\nIn addition to the console, this mod offers:\n- An ability to save as many scripts as you want and to either execute them or copy to the console\n- An ability to execute scripts when certain events get fired\n- A full-blown file browser (be careful, you can cause real harm with that!)\n\nSee README.md for more info.\n",
+    "version": "2.3",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "newconsole.NewConsoleMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

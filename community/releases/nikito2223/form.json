@@ -1,47 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nikito2223/form",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "form",
-      "name": "form 0.0.4",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2024-03-24T12:42:39Z",
-      "htmlUrl": "https://github.com/nikito2223/form/releases/tag/form",
-      "modVersion": "0.0.3",
+      "kind": "release",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/nikito2223/form/releases/download/form/form.jar",
-      "sourceArchiveUrl": "https://github.com/nikito2223/form/archive/refs/tags/form.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "form.jar",
-          "size": 845570,
-          "downloadCount": 50,
-          "downloadUrl": "https://github.com/nikito2223/form/releases/download/form/form.jar"
+          "from": "145",
+          "to": "146"
         }
       ],
-      "commitSha": "55827b8349582f7eb026c9176e529aca387e359e",
-      "archiveByCommitUrl": "https://github.com/nikito2223/form/archive/55827b8349582f7eb026c9176e529aca387e359e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "form",
+      "downloadUrl": "https://github.com/nikito2223/form/releases/download/form/form.jar",
       "modVersion": "0.0.3",
-      "minGameVersion": "145",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 845570,
+      "downloadCount": 50,
+      "releasedAt": "2024-03-24T12:42:39Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "form",
+    "author": "nikito2223",
+    "description": "The mod adds new things, a planet, items, blocks and turrets.",
+    "version": "0.0.3",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "form.FormMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

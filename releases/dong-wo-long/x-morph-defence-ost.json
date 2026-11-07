@@ -1,57 +1,49 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "dong-wo-long/x-morph-defence-ost",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.0.1-fix",
-      "name": "X Morph: Defence ost v1.0.1 RELEASE (fix)",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-24T14:06:22Z",
-      "htmlUrl": "https://github.com/Dong-Wo-Long/X-Morph-Defence-ost/releases/tag/v1.0.1-fix",
-      "modVersion": "v1.0.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dong-wo-long/x-morph-defence-ost/archive/refs/tags/v1.0.1-fix.zip",
-      "sourceArchiveUrl": "https://github.com/dong-wo-long/x-morph-defence-ost/archive/refs/tags/v1.0.1-fix.zip",
-      "assets": [],
-      "commitSha": "330bb1e6146a75f67d3425acbe2475db565700a7",
-      "archiveByCommitUrl": "https://github.com/dong-wo-long/x-morph-defence-ost/archive/330bb1e6146a75f67d3425acbe2475db565700a7.zip"
+      "modVersion": "v1.0.0",
+      "releasedAt": "2024-08-24T14:06:22Z"
     },
     {
       "tag": "v1.0.0-release",
-      "name": "X Morph: Defence ost v1.0.0 RELEASE",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-23T09:31:46Z",
-      "htmlUrl": "https://github.com/Dong-Wo-Long/X-Morph-Defence-ost/releases/tag/v1.0.0-release",
-      "modVersion": "v1.0.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/dong-wo-long/x-morph-defence-ost/archive/refs/tags/v1.0.0-release.zip",
-      "sourceArchiveUrl": "https://github.com/dong-wo-long/x-morph-defence-ost/archive/refs/tags/v1.0.0-release.zip",
-      "assets": [],
-      "commitSha": "b8706ded6c59e8eaa062085269007b34df57e255",
-      "archiveByCommitUrl": "https://github.com/dong-wo-long/x-morph-defence-ost/archive/b8706ded6c59e8eaa062085269007b34df57e255.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0.1-fix",
       "modVersion": "v1.0.0",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-08-23T09:31:46Z"
     }
   ],
   "meta": {
+    "name": "xmd",
+    "author": "D&X",
+    "description": "Change the music files to tracks from the game X-Morph: Defence (a TD game, like mindustry, but without PvP and with its own features)",
+    "version": "v1.0.0",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

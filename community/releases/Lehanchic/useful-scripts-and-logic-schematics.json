@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Lehanchic/useful-scripts-and-logic-schematics",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "beta-0.5",
-      "name": "Beta 0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-21T17:28:48Z",
-      "htmlUrl": "https://github.com/Lehanchic/useful-scripts-and-logic-schematics/releases/tag/beta-0.5",
-      "modVersion": "beta 1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Lehanchic/useful-scripts-and-logic-schematics/archive/refs/tags/beta-0.5.zip",
-      "sourceArchiveUrl": "https://github.com/Lehanchic/useful-scripts-and-logic-schematics/archive/refs/tags/beta-0.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "useful-scripts-and-logic-schematics.jar",
-          "size": 26194,
-          "downloadCount": 103,
-          "downloadUrl": "https://github.com/Lehanchic/useful-scripts-and-logic-schematics/releases/download/beta-0.5/useful-scripts-and-logic-schematics.jar"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fae1e15f45f5e7118e8f084bc1d99e095edddf2c",
-      "archiveByCommitUrl": "https://github.com/Lehanchic/useful-scripts-and-logic-schematics/archive/fae1e15f45f5e7118e8f084bc1d99e095edddf2c.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "beta-0.5",
+      "downloadUrl": "https://github.com/Lehanchic/useful-scripts-and-logic-schematics/archive/refs/tags/beta-0.5.zip",
       "modVersion": "beta 1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 26194,
+      "downloadCount": 103,
+      "releasedAt": "2023-03-21T17:28:48Z"
     }
   ],
   "meta": {
+    "name": "useful scripts and logic schematics",
+    "author": "Lehanchic25",
+    "description": "",
+    "version": "beta 1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

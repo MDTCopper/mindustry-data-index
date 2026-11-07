@@ -1,58 +1,50 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "devlimegames/fancyscience",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "Beta-1",
-      "name": "Fancy Science V0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-02T07:30:32Z",
-      "htmlUrl": "https://github.com/DevLimeGames/fancyscience/releases/tag/Beta-1",
-      "modVersion": "0.4",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/devlimegames/fancyscience/archive/refs/tags/Beta-1.zip",
-      "sourceArchiveUrl": "https://github.com/devlimegames/fancyscience/archive/refs/tags/Beta-1.zip",
-      "assets": [],
-      "commitSha": "429a6565f6321bdcbd6b617430fb0ecdb4832dd9",
-      "archiveByCommitUrl": "https://github.com/devlimegames/fancyscience/archive/429a6565f6321bdcbd6b617430fb0ecdb4832dd9.zip"
+      "modVersion": "0.4",
+      "releasedAt": "2025-03-02T07:30:32Z"
     },
     {
       "tag": "Beta",
-      "name": "Fancy Science V0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-01T04:59:40Z",
-      "htmlUrl": "https://github.com/DevLimeGames/fancyscience/releases/tag/Beta",
-      "modVersion": "0.2",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/devlimegames/fancyscience/archive/refs/tags/Beta.zip",
-      "sourceArchiveUrl": "https://github.com/devlimegames/fancyscience/archive/refs/tags/Beta.zip",
-      "assets": [],
-      "commitSha": "b0eb43bf69142349ee9e716b942e8eb5e1331ae9",
-      "archiveByCommitUrl": "https://github.com/devlimegames/fancyscience/archive/b0eb43bf69142349ee9e716b942e8eb5e1331ae9.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Beta-1",
-      "modVersion": "0.4",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.2",
+      "releasedAt": "2025-03-01T04:59:40Z"
     }
   ],
   "meta": {
+    "name": "FancyScience",
+    "author": "DevLimeGames/PandaIndustryMix",
+    "description": "Science come with fanciness. Introduce a new planet name Astra meaning hope.",
+    "version": "0.4",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

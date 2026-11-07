@@ -1,161 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "determination-wind/betterminimap",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1.2",
-      "name": "v1.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-20T10:19:40Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/tag/v1.1.2",
-      "modVersion": "1.1.2",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.2/betterMiniMap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterminimap/archive/refs/tags/v1.1.2.zip",
-      "assets": [
-        {
-          "name": "betterMiniMap.jar",
-          "size": 44629,
-          "downloadCount": 4428,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.2/betterMiniMap.jar"
-        },
-        {
-          "name": "betterMiniMap.zip",
-          "size": 44629,
-          "downloadCount": 1781,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.2/betterMiniMap.zip"
-        }
-      ],
-      "commitSha": "617d27493cbb92c50a24b2164497bedcfdefc0af",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterminimap/archive/617d27493cbb92c50a24b2164497bedcfdefc0af.zip"
-    },
-    {
-      "tag": "v1.1.1",
-      "name": "v1.1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-16T05:26:26Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/tag/v1.1.1",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.1/betterMiniMap.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterminimap/archive/refs/tags/v1.1.1.zip",
-      "assets": [
-        {
-          "name": "betterMiniMap-android.jar",
-          "size": 19879,
-          "downloadCount": 13,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.1/betterMiniMap-android.jar"
-        },
-        {
-          "name": "betterMiniMap.jar",
-          "size": 26843,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.1/betterMiniMap.jar"
-        },
-        {
-          "name": "betterMiniMap.zip",
-          "size": 26843,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.1/betterMiniMap.zip"
-        }
-      ],
-      "commitSha": "fe08d508b7d99e647a4f44bff32862412f00d30c",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterminimap/archive/fe08d508b7d99e647a4f44bff32862412f00d30c.zip"
-    },
-    {
-      "tag": "v1.1.0",
-      "name": "v1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-10T15:53:09Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/tag/v1.1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.0/betterMiniMap-v1.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterminimap/archive/refs/tags/v1.1.0.zip",
-      "assets": [
-        {
-          "name": "betterMiniMap-v1.1.0-android.jar",
-          "size": 19880,
-          "downloadCount": 8,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.0/betterMiniMap-v1.1.0-android.jar"
-        },
-        {
-          "name": "betterMiniMap-v1.1.0.jar",
-          "size": 26844,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.0/betterMiniMap-v1.1.0.jar"
-        },
-        {
-          "name": "betterMiniMap-v1.1.0.zip",
-          "size": 26844,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.1.0/betterMiniMap-v1.1.0.zip"
-        }
-      ],
-      "commitSha": "89fcb0d408ce4cfb3f386f2c10d2d59b418d49ca",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterminimap/archive/89fcb0d408ce4cfb3f386f2c10d2d59b418d49ca.zip"
-    },
-    {
-      "tag": "v1.0.0",
-      "name": "v1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-02-09T12:34:53Z",
-      "htmlUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/tag/v1.0.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.0.0/betterMiniMap-v1.0.0.jar",
-      "sourceArchiveUrl": "https://github.com/determination-wind/betterminimap/archive/refs/tags/v1.0.0.zip",
-      "assets": [
-        {
-          "name": "betterMiniMap-v1.0.0-android.jar",
-          "size": 15867,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.0.0/betterMiniMap-v1.0.0-android.jar"
-        },
-        {
-          "name": "betterMiniMap-v1.0.0.jar",
-          "size": 20941,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.0.0/betterMiniMap-v1.0.0.jar"
-        },
-        {
-          "name": "betterMiniMap-v1.0.0.zip",
-          "size": 20941,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/DeterMination-Wind/betterMiniMap/releases/download/v1.0.0/betterMiniMap-v1.0.0.zip"
-        }
-      ],
-      "commitSha": "65b148505e872e07545f81f94f86b7a5a1761aa3",
-      "archiveByCommitUrl": "https://github.com/determination-wind/betterminimap/archive/65b148505e872e07545f81f94f86b7a5a1761aa3.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1.2",
       "modVersion": "1.1.2",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 89258,
+      "downloadCount": 6210,
+      "releasedAt": "2026-02-20T10:19:40Z"
     }
   ],
   "meta": {
+    "name": "betterminimap",
+    "author": "DeterMination",
+    "description": "Enhanced minimap overlay with directional unit icons, smart unit clustering, and optional building markers with team-aware filters. / 提供带朝向的单位图标、智能单位聚合与可筛选建筑标记的小地图增强层。",
+    "version": "1.1.2",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "betterminimap.BetterMiniMapMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

@@ -1,95 +1,69 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "rt334/utility-pack",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "va0.1.1.0",
-      "name": "更多实用功能 v0.1.1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-01T09:50:18Z",
-      "htmlUrl": "https://github.com/rt334/utility-pack/releases/tag/va0.1.1.0",
-      "modVersion": "a0.1.0.0",
+      "kind": "release",
       "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.1.0/UtilityPack.jar",
-      "sourceArchiveUrl": "https://github.com/rt334/utility-pack/archive/refs/tags/va0.1.1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UtilityPack.jar",
-          "size": 335272,
-          "downloadCount": 284,
-          "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.1.0/UtilityPack.jar"
+          "from": "155.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ecc32a317098794af78f107379267e37bd3c5fff",
-      "archiveByCommitUrl": "https://github.com/rt334/utility-pack/archive/ecc32a317098794af78f107379267e37bd3c5fff.zip"
+      "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.1.0/UtilityPack.jar",
+      "modVersion": "a0.1.0.0",
+      "sizeBytes": 335272,
+      "downloadCount": 284,
+      "releasedAt": "2026-09-01T09:50:18Z"
     },
     {
       "tag": "va0.1.0.1",
-      "name": "更多实用功能 v0.1.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-29T08:50:16Z",
-      "htmlUrl": "https://github.com/rt334/utility-pack/releases/tag/va0.1.0.1",
-      "modVersion": "a0.1.0.0",
+      "kind": "release",
       "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.1/UtilityPack.jar",
-      "sourceArchiveUrl": "https://github.com/rt334/utility-pack/archive/refs/tags/va0.1.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UtilityPack.jar",
-          "size": 304136,
-          "downloadCount": 58,
-          "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.1/UtilityPack.jar"
+          "from": "155.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ecc32a317098794af78f107379267e37bd3c5fff",
-      "archiveByCommitUrl": "https://github.com/rt334/utility-pack/archive/ecc32a317098794af78f107379267e37bd3c5fff.zip"
+      "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.1/UtilityPack.jar",
+      "modVersion": "a0.1.0.0",
+      "sizeBytes": 304136,
+      "downloadCount": 58,
+      "releasedAt": "2026-08-29T08:50:16Z"
     },
     {
       "tag": "va0.1.0.0",
-      "name": "更多实用功能 v0.1.0.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-26T13:47:52Z",
-      "htmlUrl": "https://github.com/rt334/utility-pack/releases/tag/va0.1.0.0",
-      "modVersion": "a0.1.0.0",
+      "kind": "release",
       "minGameVersion": "155.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.0/UtilityPack.jar",
-      "sourceArchiveUrl": "https://github.com/rt334/utility-pack/archive/refs/tags/va0.1.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "UtilityPack.jar",
-          "size": 304119,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.0/UtilityPack.jar"
+          "from": "155.4",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ecc32a317098794af78f107379267e37bd3c5fff",
-      "archiveByCommitUrl": "https://github.com/rt334/utility-pack/archive/ecc32a317098794af78f107379267e37bd3c5fff.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "va0.1.1.0",
+      "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.0/UtilityPack.jar",
       "modVersion": "a0.1.0.0",
-      "minGameVersion": "155.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 304119,
+      "downloadCount": 4,
+      "releasedAt": "2026-08-26T13:47:52Z"
     }
   ],
   "meta": {
+    "name": "utility-pack",
+    "author": "Xiaobei",
+    "description": "实用功能合集：方块搜索（在方块选择菜单添加搜索栏，跨分类搜索所有合法方块，支持拼音）与多人暂停（允许其他玩家请求暂停/解除暂停，支持管理员与自定义白名单模式）。",
+    "version": "a0.1.0.0",
+    "minGameVersion": "155.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "utilitypack.UtilityPackMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

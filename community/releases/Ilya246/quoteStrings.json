@@ -1,236 +1,149 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "Ilya246/quoteStrings",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "1.7",
-      "name": "Update to 7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-12-20T18:46:41Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.7",
-      "modVersion": "1.6",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.7/quoteStringsDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStringsDesktop.jar",
-          "size": 13021,
-          "downloadCount": 325,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.7/quoteStringsDesktop.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "86712067a67200d0c20aa1955e895d5c623963e8",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/86712067a67200d0c20aa1955e895d5c623963e8.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.7/quoteStringsDesktop.jar",
+      "modVersion": "1.6",
+      "sizeBytes": 13021,
+      "downloadCount": 325,
+      "releasedAt": "2022-12-20T18:46:41Z"
     },
     {
       "tag": "1.6",
-      "name": "Major update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-10-25T16:32:23Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.6",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.6/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 12867,
-          "downloadCount": 55,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.6/quoteStrings.jar"
+          "from": "131",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b568fd05d0898d5bb3ba6946a7b63385335bace9",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/b568fd05d0898d5bb3ba6946a7b63385335bace9.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.6/quoteStrings.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 12867,
+      "downloadCount": 55,
+      "releasedAt": "2021-10-25T16:32:23Z"
     },
     {
       "tag": "1.5",
-      "name": "Major update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-09-28T09:26:16Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.5",
-      "modVersion": "1.5",
+      "kind": "release",
       "minGameVersion": "131",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.5/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 7829,
-          "downloadCount": 21,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.5/quoteStrings.jar"
+          "from": "131",
+          "to": "135.2"
         }
       ],
-      "commitSha": "63a2e4617f998540162b0433d0250420c8132ea2",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/63a2e4617f998540162b0433d0250420c8132ea2.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.5/quoteStrings.jar",
+      "modVersion": "1.5",
+      "sizeBytes": 7829,
+      "downloadCount": 21,
+      "releasedAt": "2021-09-28T09:26:16Z"
     },
     {
       "tag": "1.4",
-      "name": "Json -> hjson",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-27T16:37:52Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.4",
-      "modVersion": "1.3",
+      "kind": "release",
       "minGameVersion": "120",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.4/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 7151,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.4/quoteStrings.jar"
+          "from": "120",
+          "to": "135.2"
         }
       ],
-      "commitSha": "b046499b4baa99e76c24d71f3951523f415dd485",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/b046499b4baa99e76c24d71f3951523f415dd485.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.4/quoteStrings.jar",
+      "modVersion": "1.3",
+      "sizeBytes": 7151,
+      "downloadCount": 24,
+      "releasedAt": "2021-08-27T16:37:52Z"
     },
     {
       "tag": "1.3",
-      "name": "Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-09T09:17:58Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.3",
-      "modVersion": "1.2",
+      "kind": "release",
       "minGameVersion": "129",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.3/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 5381,
-          "downloadCount": 16,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.3/quoteStrings.jar"
+          "from": "129",
+          "to": "135.2"
         }
       ],
-      "commitSha": "dde3ba65bc8af7e96bdb7b46e3c183e72eb818a0",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/dde3ba65bc8af7e96bdb7b46e3c183e72eb818a0.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.3/quoteStrings.jar",
+      "modVersion": "1.2",
+      "sizeBytes": 5381,
+      "downloadCount": 16,
+      "releasedAt": "2021-08-09T09:17:58Z"
     },
     {
       "tag": "1.2",
-      "name": "fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-07T20:17:12Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.2/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 5270,
-          "downloadCount": 20,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.2/quoteStrings.jar"
+          "from": "105",
+          "to": "135.2"
         }
       ],
-      "commitSha": "e1c50dfcfe8d5655bcf259c94187ff3adf30897e",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/e1c50dfcfe8d5655bcf259c94187ff3adf30897e.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.2/quoteStrings.jar",
+      "modVersion": "1",
+      "sizeBytes": 5270,
+      "downloadCount": 20,
+      "releasedAt": "2021-08-07T20:17:12Z"
     },
     {
       "tag": "1.1",
-      "name": "adjusted some values",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-07T20:06:38Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.1/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 4928,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.1/quoteStrings.jar"
+          "from": "105",
+          "to": "135.2"
         }
       ],
-      "commitSha": "0eed6572d5312f19a5c2e7e73e25c939a5397a28",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/0eed6572d5312f19a5c2e7e73e25c939a5397a28.zip"
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.1/quoteStrings.jar",
+      "modVersion": "1",
+      "sizeBytes": 4928,
+      "downloadCount": 11,
+      "releasedAt": "2021-08-07T20:06:38Z"
     },
     {
       "tag": "1.0",
-      "name": "initial",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2021-08-07T19:52:05Z",
-      "htmlUrl": "https://github.com/Ilya246/quoteStrings/releases/tag/1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "105",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.0/quoteStrings.jar",
-      "sourceArchiveUrl": "https://github.com/Ilya246/quoteStrings/archive/refs/tags/1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quoteStrings.jar",
-          "size": 4801,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.0/quoteStrings.jar"
+          "from": "105",
+          "to": "135.2"
         }
       ],
-      "commitSha": "0eed6572d5312f19a5c2e7e73e25c939a5397a28",
-      "archiveByCommitUrl": "https://github.com/Ilya246/quoteStrings/archive/0eed6572d5312f19a5c2e7e73e25c939a5397a28.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.2",
+      "downloadUrl": "https://github.com/Ilya246/quoteStrings/releases/download/1.0/quoteStrings.jar",
       "modVersion": "1",
-      "minGameVersion": "105",
-      "maxGameVersion": 120,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.4",
-      "modVersion": "1.3",
-      "minGameVersion": "120",
-      "maxGameVersion": 131,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.6",
-      "modVersion": "1.5",
-      "minGameVersion": "131",
-      "maxGameVersion": 136,
-      "hasRelease": true
-    },
-    {
-      "tag": "1.7",
-      "modVersion": "1.6",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 4801,
+      "downloadCount": 9,
+      "releasedAt": "2021-08-07T19:52:05Z"
     }
   ],
   "meta": {
+    "name": "quoteStrings",
+    "author": "[USMP]Ilya246",
+    "description": "[#FF]Observation is prohibited.",
+    "version": "1.6",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "quoteStringsMod.quoteStringsMod",
+    "java": false,
     "hasScripts": false,
     "hasJava": true
   }

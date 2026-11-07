@@ -1,304 +1,202 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "saranekoth/naval-arsenal",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "0.7.3-1",
-      "name": "0.7.3-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-07T07:39:25Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.7.3-1",
-      "modVersion": "0.7.3",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.3-1/naval-arsenal-0.7.3-1.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.7.3-1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.7.3-1.zip",
-          "size": 554728,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.3-1/naval-arsenal-0.7.3-1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "dcb65cd66c75c6c1681df4f180c694552b108a51",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/dcb65cd66c75c6c1681df4f180c694552b108a51.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.3-1/naval-arsenal-0.7.3-1.zip",
+      "modVersion": "0.7.3",
+      "sizeBytes": 554728,
+      "downloadCount": 2,
+      "releasedAt": "2026-08-07T07:39:25Z"
     },
     {
       "tag": "0.7.2",
-      "name": "0.7.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-07T01:46:21Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.7.2",
-      "modVersion": "0.6.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.2/naval-arsenal-0.7.2.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.7.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.7.2.zip",
-          "size": 553903,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.2/naval-arsenal-0.7.2.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "e448bc1e503a062a9d019cba5d82d62851e060db",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/e448bc1e503a062a9d019cba5d82d62851e060db.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.2/naval-arsenal-0.7.2.zip",
+      "modVersion": "0.6.0",
+      "sizeBytes": 553903,
+      "releasedAt": "2026-08-07T01:46:21Z"
     },
     {
       "tag": "0.7.1",
-      "name": "0.7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-07T00:53:30Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.7.1",
-      "modVersion": "0.6.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.1/naval-arsenal-0.7.1.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.7.1.zip",
-          "size": 553837,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.1/naval-arsenal-0.7.1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "16f13a8bb8ab9e2a91b58e4c1aec29f7333cbd4a",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/16f13a8bb8ab9e2a91b58e4c1aec29f7333cbd4a.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.1/naval-arsenal-0.7.1.zip",
+      "modVersion": "0.6.0",
+      "sizeBytes": 553837,
+      "releasedAt": "2026-08-07T00:53:30Z"
     },
     {
       "tag": "0.7.0",
-      "name": "0.7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-06T09:14:22Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.7.0",
-      "modVersion": "0.6.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.0/naval-arsenal-0.7.0.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.7.0.zip",
-          "size": 543263,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.0/naval-arsenal-0.7.0.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "238795d57ab12f004d7a6ceb2f9a76c415188383",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/238795d57ab12f004d7a6ceb2f9a76c415188383.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.7.0/naval-arsenal-0.7.0.zip",
+      "modVersion": "0.6.0",
+      "sizeBytes": 543263,
+      "releasedAt": "2026-08-06T09:14:22Z"
     },
     {
       "tag": "0.6.1",
-      "name": "0.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T14:58:01Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.6.1",
-      "modVersion": "0.6.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.6.1/naval-arsenal-0.6.1.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.6.1.zip",
-          "size": 381609,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.6.1/naval-arsenal-0.6.1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "201dbf3940487634dca6e57e8beada13dd1bbd7c",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/201dbf3940487634dca6e57e8beada13dd1bbd7c.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.6.1/naval-arsenal-0.6.1.zip",
+      "modVersion": "0.6.0",
+      "sizeBytes": 381609,
+      "releasedAt": "2026-08-05T14:58:01Z"
     },
     {
       "tag": "0.6.0",
-      "name": "0.6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T10:28:58Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.6.0",
-      "modVersion": "0.6.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.6.0/naval-arsenal-0.6.0.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.6.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.6.0.zip",
-          "size": 160083,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.6.0/naval-arsenal-0.6.0.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ee95b5c776abc206cfe40dcc3cbba46ef584c2a9",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/ee95b5c776abc206cfe40dcc3cbba46ef584c2a9.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.6.0/naval-arsenal-0.6.0.zip",
+      "modVersion": "0.6.0",
+      "sizeBytes": 160083,
+      "releasedAt": "2026-08-05T10:28:58Z"
     },
     {
       "tag": "0.5.2",
-      "name": "0.5.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-05T09:25:49Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.5.2",
-      "modVersion": "0.5.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.5.2/naval-arsenal-0.5.2.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.5.2.zip",
-          "size": 97777,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.5.2/naval-arsenal-0.5.2.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "869cffddfbf9d415f3b49b3548024db65ff0d329",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/869cffddfbf9d415f3b49b3548024db65ff0d329.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.5.2/naval-arsenal-0.5.2.zip",
+      "modVersion": "0.5.1",
+      "sizeBytes": 97777,
+      "releasedAt": "2026-08-05T09:25:49Z"
     },
     {
       "tag": "0.5.1",
-      "name": "0.5.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-27T15:29:44Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.5.1",
-      "modVersion": "0.5.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.5.1/naval-arsenal-0.5.1.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.5.1.zip",
-          "size": 86391,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.5.1/naval-arsenal-0.5.1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "2643873dab3304f317968223bc45e014611a6acf",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/2643873dab3304f317968223bc45e014611a6acf.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.5.1/naval-arsenal-0.5.1.zip",
+      "modVersion": "0.5.1",
+      "sizeBytes": 86391,
+      "releasedAt": "2026-07-27T15:29:44Z"
     },
     {
       "tag": "0.4.2",
-      "name": "0.4.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-25T13:47:34Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.4.2",
-      "modVersion": "0.4.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.2/naval-arsenal-0.4.2.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.4.2.zip",
-          "size": 86417,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.2/naval-arsenal-0.4.2.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b7dfca38213901c2caaf0b113e00bf3d732f4493",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/b7dfca38213901c2caaf0b113e00bf3d732f4493.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.2/naval-arsenal-0.4.2.zip",
+      "modVersion": "0.4.0",
+      "sizeBytes": 86417,
+      "releasedAt": "2026-07-25T13:47:34Z"
     },
     {
       "tag": "0.4.1",
-      "name": "0.4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-25T12:29:29Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.4.1",
-      "modVersion": "0.4.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.1/naval-arsenal-0.4.1.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "naval-arsenal-0.4.1.zip",
-          "size": 86417,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.1/naval-arsenal-0.4.1.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "488a64a0967fb5290427e03d6e81f574fcd0db05",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/488a64a0967fb5290427e03d6e81f574fcd0db05.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.1/naval-arsenal-0.4.1.zip",
+      "modVersion": "0.4.0",
+      "sizeBytes": 86417,
+      "releasedAt": "2026-07-25T12:29:29Z"
     },
     {
       "tag": "0.4.0",
-      "name": "naval-arsenal 0.4.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-07-25T09:53:18Z",
-      "htmlUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/tag/0.4.0",
-      "modVersion": "0.4.0",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.0/Naval-arsenal.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.4.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Naval-arsenal.zip",
-          "size": 86514,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.0/Naval-arsenal.zip"
+          "from": "146",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b8e53f145e38ab920b7a390842476ea1bf7ab7e6",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/b8e53f145e38ab920b7a390842476ea1bf7ab7e6.zip"
+      "downloadUrl": "https://github.com/SaraNekoTH/naval-arsenal/releases/download/0.4.0/Naval-arsenal.zip",
+      "modVersion": "0.4.0",
+      "sizeBytes": 86514,
+      "downloadCount": 2,
+      "releasedAt": "2026-07-25T09:53:18Z",
+      "prerelease": true
     },
     {
       "tag": "0.7.3",
-      "name": "0.7.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/saranekoth/naval-arsenal/tree/0.7.3",
-      "modVersion": "0.6.0",
+      "kind": "tag",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.7.3.zip",
-      "sourceArchiveUrl": "https://github.com/saranekoth/naval-arsenal/archive/refs/tags/0.7.3.zip",
-      "assets": [],
-      "commitSha": "11b2e718ef2b91a6a9bbaa3333af8e32189d226d",
-      "archiveByCommitUrl": "https://github.com/saranekoth/naval-arsenal/archive/11b2e718ef2b91a6a9bbaa3333af8e32189d226d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "0.7.3-1",
-      "modVersion": "0.7.3",
-      "minGameVersion": "146",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "0.6.0"
     }
   ],
   "meta": {
+    "name": "naval-arsenal",
+    "author": "SaraNekoTH",
+    "description": "Real-world inspired heavy weaponry: | Phalanx CIWS-style rotary anti-air gatling turret | 20mm autocannon | 40mm auto cannon | 80mm howitzer. Available on both Serpulo and Erekir",
+    "version": "0.7.3",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

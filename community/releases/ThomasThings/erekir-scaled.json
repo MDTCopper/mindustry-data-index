@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "ThomasThings/erekir-scaled",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.1.2",
-      "name": "v0.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-06T21:40:13Z",
-      "htmlUrl": "https://github.com/ThomasThings/erekir-scaled/releases/tag/v0.1.2",
-      "modVersion": "0",
+      "kind": "release",
       "minGameVersion": "140.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/ThomasThings/erekir-scaled/releases/download/v0.1.2/erekir-scaled.jar",
-      "sourceArchiveUrl": "https://github.com/ThomasThings/erekir-scaled/archive/refs/tags/v0.1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "erekir-scaled.jar",
-          "size": 158124,
-          "downloadCount": 8766,
-          "downloadUrl": "https://github.com/ThomasThings/erekir-scaled/releases/download/v0.1.2/erekir-scaled.jar"
+          "from": "140.3",
+          "to": "146"
         }
       ],
-      "commitSha": "186e2a0d702d454362300e7e31cad1773e158721",
-      "archiveByCommitUrl": "https://github.com/ThomasThings/erekir-scaled/archive/186e2a0d702d454362300e7e31cad1773e158721.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1.2",
+      "downloadUrl": "https://github.com/ThomasThings/erekir-scaled/releases/download/v0.1.2/erekir-scaled.jar",
       "modVersion": "0",
-      "minGameVersion": "140.3",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 158124,
+      "downloadCount": 8766,
+      "releasedAt": "2023-03-06T21:40:13Z"
     }
   ],
   "meta": {
+    "name": "es",
+    "author": "Thomas's Things",
+    "description": "A Mindustry mod for adding both larger and smaller content to Erekir.",
+    "version": "0",
+    "minGameVersion": "140.3",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "es.ESMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

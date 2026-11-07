@@ -1,72 +1,54 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "lehanchic25/hardcore-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "V1.1 - Fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-04-04T14:08:22Z",
-      "htmlUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.1/hardcore-mod.zip",
-      "sourceArchiveUrl": "https://github.com/lehanchic25/hardcore-mod/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hardcore-mod.zip",
-          "size": 2335,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.1/hardcore-mod.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f4865ce0ddfe2bb796ba97dab91a6dea974e6be4",
-      "archiveByCommitUrl": "https://github.com/lehanchic25/hardcore-mod/archive/f4865ce0ddfe2bb796ba97dab91a6dea974e6be4.zip"
+      "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.1/hardcore-mod.zip",
+      "modVersion": "1.1",
+      "sizeBytes": 2335,
+      "downloadCount": 24,
+      "releasedAt": "2026-04-04T14:08:22Z"
     },
     {
       "tag": "v1.0",
-      "name": "V1.0 - Hardcore Mod Done",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-03-30T16:35:34Z",
-      "htmlUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.0/hardcore-mod.zip",
-      "sourceArchiveUrl": "https://github.com/lehanchic25/hardcore-mod/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "hardcore-mod.zip",
-          "size": 2320,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.0/hardcore-mod.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ea1b07b6106173bf871a2f225b434e865c69fb30",
-      "archiveByCommitUrl": "https://github.com/lehanchic25/hardcore-mod/archive/ea1b07b6106173bf871a2f225b434e865c69fb30.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1",
-      "modVersion": "1.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.0/hardcore-mod.zip",
+      "modVersion": "1",
+      "sizeBytes": 2320,
+      "downloadCount": 2,
+      "releasedAt": "2026-03-30T16:35:34Z"
     }
   ],
   "meta": {
+    "name": "hardcore-mod",
+    "author": "Lehanchic25, Sputnuc",
+    "description": " A single JS script that makes game a lot harder. \n \n Thx Sputnic for optimization and the idea of changing statistics using js script \n \n This mod: \n 1. Makes all blocks cost 10 times more \n 2. Makes hp of blocks 10 times less \n 3. Makes itemCapacity in all Cores 10 times more (so you could place some blocks) \n 4. Makes buildCostMultiplier = 10 (so you can place blocks and not wait for eternity) \n 5. Idk makes early game a lil bit harder (drillTime of mechanicalDrill is *= 1.25)",
+    "version": "1.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

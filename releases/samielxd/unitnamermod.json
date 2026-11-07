@@ -1,71 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "samielxd/unitnamermod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "UnitNamerMod v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-06T12:22:25Z",
-      "htmlUrl": "https://github.com/SamielXD/UnitNamerMod/releases/tag/v1.1",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "153",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "153",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/SamielXD/UnitNamerMod/releases/download/v1.1/SamielUnitNamerMod.zip",
-      "sourceArchiveUrl": "https://github.com/samielxd/unitnamermod/archive/refs/tags/v1.1.zip",
-      "assets": [
-        {
-          "name": "SamielUnitNamerMod.zip",
-          "size": 18027,
-          "downloadCount": 50,
-          "downloadUrl": "https://github.com/SamielXD/UnitNamerMod/releases/download/v1.1/SamielUnitNamerMod.zip"
-        }
-      ],
-      "commitSha": "f14a7a8ad0b62d01e9121272f8cdc0a04372e3d4",
-      "archiveByCommitUrl": "https://github.com/samielxd/unitnamermod/archive/f14a7a8ad0b62d01e9121272f8cdc0a04372e3d4.zip"
-    },
-    {
-      "tag": "v1.0",
-      "name": "UnitNamerMod v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-04T04:29:59Z",
-      "htmlUrl": "https://github.com/SamielXD/UnitNamerMod/releases/tag/v1.0",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/SamielXD/UnitNamerMod/releases/download/v1.0/SamielUnitNamerMod.zip",
-      "sourceArchiveUrl": "https://github.com/samielxd/unitnamermod/archive/refs/tags/v1.0.zip",
-      "assets": [
-        {
-          "name": "SamielUnitNamerMod.zip",
-          "size": 11833,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/SamielXD/UnitNamerMod/releases/download/v1.0/SamielUnitNamerMod.zip"
-        }
-      ],
-      "commitSha": "5826e65a1e1e1e3f0709fc7e4daa6fec17f925a8",
-      "archiveByCommitUrl": "https://github.com/samielxd/unitnamermod/archive/5826e65a1e1e1e3f0709fc7e4daa6fec17f925a8.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1",
       "modVersion": "1.0",
-      "minGameVersion": "153",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 18027,
+      "downloadCount": 50,
+      "releasedAt": "2025-12-06T12:22:25Z"
     }
   ],
   "meta": {
+    "name": "unit-namer",
+    "author": "[#00D4FF[]]SamielXD",
+    "description": "\n[accent[]] [#FFD700[]]Unit Namer[white[]]  - Give Your Units Personality!\n\n[white[]]Transform your gameplay by giving every unit a unique, custom name that follows them across the battlefield. Perfect for organizing squads, tracking your favorites, or just having fun!\n\n[gray[]]Note still in beta so expect some bugs also don't click the reset default its bugged\n\n[accent[]] [#00D4FF[]]Features:\n  [white[]] Tap any unit to open the rename menu\n  [white[]] Custom names float elegantly above your units\n  [white[]] Names persist as long as the unit lives\n  [white[]] Simple one-tap interface - no complex commands\n\n[accent[]] [#FFD700[]]How to Use:\n  [#BFBFBF[]] 1. Tap on any unit in the game\n  [#BFBFBF[]] 2. Click \"Rename Unit\" in the popup\n  [#BFBFBF[]] 3. Enter your custom name\n  [#BFBFBF[]] 4. Watch your named unit in action!\n\n[accent[]] [#00D4FF[]]Pro Tips:\n  [white[]] • Name your tank squadrons (Alpha, Bravo, Charlie)\n  [white[]] • Track powerful units with special names\n  [white[]] • Organize attack groups with themed names\n  [white[]] • Have fun with personality names for your favorites!\n  ",
+    "version": "1.0",
+    "minGameVersion": "153",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,53 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "nichozolubigan/nichozos-test-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "v0.1only",
-      "name": "v0.1only",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-08-07T07:24:11Z",
-      "htmlUrl": "https://github.com/NiChoZoLubigan/NiChoZos-Test-Mod/releases/tag/v0.1only",
-      "modVersion": "0.1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/NiChoZoLubigan/NiChoZos-Test-Mod/releases/download/v0.1only/0.1only.zip",
-      "sourceArchiveUrl": "https://github.com/nichozolubigan/nichozos-test-mod/archive/refs/tags/v0.1only.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "0.1only.tar.gz",
-          "size": 13150,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/NiChoZoLubigan/NiChoZos-Test-Mod/releases/download/v0.1only/0.1only.tar.gz"
-        },
-        {
-          "name": "0.1only.zip",
-          "size": 22357,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/NiChoZoLubigan/NiChoZos-Test-Mod/releases/download/v0.1only/0.1only.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "5a8f7c2e2a3718abd768d8d3bdc856dbe4b3f912",
-      "archiveByCommitUrl": "https://github.com/nichozolubigan/nichozos-test-mod/archive/5a8f7c2e2a3718abd768d8d3bdc856dbe4b3f912.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.1only",
+      "downloadUrl": "https://github.com/NiChoZoLubigan/NiChoZos-Test-Mod/releases/download/v0.1only/0.1only.zip",
       "modVersion": "0.1",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 35507,
+      "downloadCount": 19,
+      "releasedAt": "2024-08-07T07:24:11Z"
     }
   ],
   "meta": {
+    "name": "Test Mod",
+    "author": "[#8b008b[]]NiChoZoLubigan[[]]",
+    "description": "Uh its ah its a dingus. a dingus",
+    "version": "0.1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

@@ -1,72 +1,56 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "middleegg/planwar",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "OfficialVersion",
-      "name": "v0.0.0.2 Rise to a new chapter",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-14T09:47:38Z",
-      "htmlUrl": "https://github.com/middleegg/PlanWar/releases/tag/OfficialVersion",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/middleegg/planwar/archive/refs/tags/OfficialVersion.zip",
-      "sourceArchiveUrl": "https://github.com/middleegg/planwar/archive/refs/tags/OfficialVersion.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PlanWar-Integrate-0.0.0.2.jar",
-          "size": 24564096,
-          "downloadCount": 11,
-          "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/OfficialVersion/PlanWar-Integrate-0.0.0.2.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ab44c4760db66055413631657d73363b145933d7",
-      "archiveByCommitUrl": "https://github.com/middleegg/planwar/archive/ab44c4760db66055413631657d73363b145933d7.zip"
+      "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/OfficialVersion/PlanWar-Integrate-0.0.0.2.jar",
+      "modVersion": "0.0.1",
+      "sizeBytes": 24564096,
+      "downloadCount": 11,
+      "releasedAt": "2026-08-14T09:47:38Z",
+      "prerelease": true
     },
     {
       "tag": "First-Version",
-      "name": "v0.0.0.1 the start of jourey",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-08-05T08:17:36Z",
-      "htmlUrl": "https://github.com/middleegg/PlanWar/releases/tag/First-Version",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "155",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/middleegg/planwar/archive/refs/tags/First-Version.zip",
-      "sourceArchiveUrl": "https://github.com/middleegg/planwar/archive/refs/tags/First-Version.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "PlanWar-Integrate-0.0.0.1.jar",
-          "size": 23784449,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/First-Version/PlanWar-Integrate-0.0.0.1.jar"
+          "from": "155",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bf4f762c8462cb4a8ee527033e8f6ab54ab05553",
-      "archiveByCommitUrl": "https://github.com/middleegg/planwar/archive/bf4f762c8462cb4a8ee527033e8f6ab54ab05553.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "OfficialVersion",
+      "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/First-Version/PlanWar-Integrate-0.0.0.1.jar",
       "modVersion": "0.0.1",
-      "minGameVersion": "155",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 23784449,
+      "downloadCount": 4,
+      "releasedAt": "2026-08-05T08:17:36Z",
+      "prerelease": true
     }
   ],
   "meta": {
+    "name": "planwar",
+    "author": "[#00F7FFFF]Wailting\n[#8598BFF]shallow_smiles□",
+    "description": "警告目前模组没任何实质性内容 仅作为一个大框架所以无法游玩！!Warning: Currently, the mod does not have any substantial content and serves only as a general framework, so it cannot be played!!\nПредупреждение: в данный момент мод не содержит никакого существенного контента, он представляет собой лишь каркас, поэтому играть невозможно!!\n\n\n\n欢迎来到计划战争!\\n想要超多的工厂?你来对地方了!想要更多的单位炮塔墙壁?就是这里!或者是更多的机制?当然可以!\\n中小型类整合包式模组-计划战争-欢迎您-- \\n[gold]模组QQ群:294835498\nWelcome to Plan War! \nWant a plethora of factories? You've come to the right place! Want more units, turrets, walls? This is the place! Or perhaps more mechanics? Of course! Small and medium-sized integrated package-style module - Plan War - welcomes you! -- \n[gold] Discord:https://discord.gg/s3yUP2PKTK\nДобро пожаловать в План Войны!\n Хочешь огромное количество заводов? Ты в нужном месте! Хочешь больше единиц, башен, стен? Вот и место! Или больше механик? Конечно, можно! Средний/маленький интегрированный мод-План Войны-Ты в гостях-- [gold]VK Я ВКонтакте: vk.com/id1113061789\n\n请支持NuclearPower:Leak,Fn_zero这位模组作者帮我把我的模组上传到了这里\nPlease support:NuclearPower:Leak,This mod author(Fn_zero) helped me upload my mod here\nПожалуйста, поддержите: NuclearPower:Leak, автор этого мода (Fn_zero) помог мне загрузить мой мод здесь\n",
+    "version": "0.0.1",
+    "minGameVersion": "155",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "pw.PW",
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": true
   }
 }

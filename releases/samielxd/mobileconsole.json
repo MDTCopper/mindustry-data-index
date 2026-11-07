@@ -1,48 +1,38 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "samielxd/mobileconsole",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "MobileConsole v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-12-23T01:07:37Z",
-      "htmlUrl": "https://github.com/SamielXD/MobileConsole/releases/tag/v1.0",
-      "modVersion": "1.0",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/SamielXD/MobileConsole/releases/download/v1.0/SamielXDMobileConsoleMod.zip",
-      "sourceArchiveUrl": "https://github.com/samielxd/mobileconsole/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "SamielXDMobileConsoleMod.zip",
-          "size": 25254,
-          "downloadCount": 120,
-          "downloadUrl": "https://github.com/SamielXD/MobileConsole/releases/download/v1.0/SamielXDMobileConsoleMod.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "10556eb4992625dea9317ee4c513f145ce35de4e",
-      "archiveByCommitUrl": "https://github.com/samielxd/mobileconsole/archive/10556eb4992625dea9317ee4c513f145ce35de4e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/samielxd/mobileconsole/archive/refs/tags/v1.0.zip",
       "modVersion": "1.0",
-      "minGameVersion": "154",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 25254,
+      "downloadCount": 120,
+      "releasedAt": "2025-12-23T01:07:37Z"
     }
   ],
   "meta": {
+    "name": "mobileconsole",
+    "author": "SamielXD",
+    "description": "\n[accent[]]MobileConsole v1.0 - Developer Tools for Mobile Players[[]]\n[white[]]📱 Full console access on your phone or tablet![[]]\n[yellow[]]⚠️ This mod is specifically designed for mobile devices where console features are normally unavailable.[[]]\n[red[]]⚠️ SINGLE-PLAYER ONLY - This mod does not work in multiplayer![[]]\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[red[]]⚠️ IMPORTANT DISCLAIMERS:[[]]\n[yellow[]]• Not all commands may work on every device or game version[[]]\n[yellow[]]• Commands only work in single-player mode[[]]\n[yellow[]]• Building commands require appropriate permissions[[]]\n[yellow[]]• Use at your own risk - some commands may affect game performance[[]]\n[yellow[]]• This mod is in active development - bugs may occur[[]]\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[gold[]]📋 What Is This?[[]]\nMobileConsole brings developer tools to your mobile device. Build, spawn, modify, and control your game with over 20 commands optimized for touch screens.\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[cyan[]]🎮 How to Access:[[]]\n[white[]]In-Game:[[]]\n• Type [cyan[]]/customhelp[[]] in chat to see all commands\n• Type [cyan[]]/chelp[[]] for console system help\n[white[]]Settings Menu:[[]]\n• Open Settings → Developer Console\n• Tap [cyan[]]Open Console[[]] button\n[white[]]Quick Commands:[[]]\n• Type any command in chat starting with /\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[lime[]]🏗️ Building Commands:[[]]\n[cyan[]]/wallcore [type][[]] - Builds walls around your core\n[cyan[]]/fill     [[]] - Fill area with blocks\n[cyan[]]/clear [radius][[]] - Clear buildings around position\n[cyan[]]/conveyor    [[]] - Build conveyor lines\n[cyan[]]/powerline    [[]] - Create power connections\n[cyan[]]/wallline     [type][[]] - Draw wall lines\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[yellow[]]🔧 Modification Commands:[[]]\n[cyan[]]/upgrade  [[]] - Upgrade building types\n[cyan[]]/replace  [[]] - Replace blocks\n[cyan[]]/toggle [block][[]] - Enable/disable buildings\n[cyan[]]/repair[[]] - Repair all damaged buildings\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[royal[]]⚔️ Unit Commands:[[]]\n[cyan[]]/spawn   [x] [y][[]] - Spawn units\n[cyan[]]/healunits[[]] - Restore all friendly units to full health\n[cyan[]]/rally[[]] - Command units to your position\n[cyan[]]/killenemies [radius][[]] - Eliminate enemies\n[cyan[]]/units[[]] - Display unit statistics\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[cyan[]]⚡ Quick Actions:[[]]\n[cyan[]]/turrets[[]] - Toggle all turrets\n[cyan[]]/power[[]] - Display power grid statistics\n[cyan[]]/resources[[]] - Check core resources\n[cyan[]]/screenshot[[]] - Take clean screenshot\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[lime[]]🖥️ Console System:[[]]\n[cyan[]]/chelp[[]] - Show console help\n[cyan[]]/clear[[]] - Clear console logs\n[cyan[]]/scan[[]] - Scan for available commands\n[cyan[]]/stats[[]] - Show console statistics\n[cyan[]]/commands[[]] - List all detected commands\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[gold[]]🎯 Features:[[]]\n• Command history (last 50 commands)\n• Favorites system\n• Log management (1,500 entries)\n• Search and filter functionality\n• Touch-optimized interface\n• Color-coded logs\n• Mod management system\n[accent[]]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[[]]\n[white[]]Type [cyan[]]/customhelp[[]] in chat or open Settings → Developer Console to start![[]]\n[yellow[]]Report issues on GitHub: github.com/SamielXD/MobileConsole[[]]\n[white[]]- SamielXD[[]]\n",
+    "version": "1.0",
+    "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "scripts/main.js",
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": true
   }
 }

@@ -1,74 +1,63 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "j-n-ix/mindustryspidermodtemplate",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "mindustry-mod-v1.03",
-      "name": "v1.03 / preview.png fix attempt",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-10T22:09:21Z",
-      "htmlUrl": "https://github.com/j-n-ix/mindustrySpiderModTemplate/releases/tag/mindustry-mod-v1.03",
-      "modVersion": "1.03",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/refs/tags/mindustry-mod-v1.03.zip",
-      "sourceArchiveUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/refs/tags/mindustry-mod-v1.03.zip",
-      "assets": [],
-      "commitSha": "79fc9595241d9a932499e7f3d0e521491413659b",
-      "archiveByCommitUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/79fc9595241d9a932499e7f3d0e521491413659b.zip"
+      "modVersion": "1.03",
+      "releasedAt": "2026-10-10T22:09:21Z"
     },
     {
       "tag": "mindustry-mod-v1.01",
-      "name": "v1.01 / icon fix release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-03T15:11:24Z",
-      "htmlUrl": "https://github.com/j-n-ix/mindustrySpiderModTemplate/releases/tag/mindustry-mod-v1.01",
-      "modVersion": "1.01",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/refs/tags/mindustry-mod-v1.01.zip",
-      "sourceArchiveUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/refs/tags/mindustry-mod-v1.01.zip",
-      "assets": [],
-      "commitSha": "006aca7c1518743f4fe07153a5ba0227a2d2f9d9",
-      "archiveByCommitUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/006aca7c1518743f4fe07153a5ba0227a2d2f9d9.zip"
+      "modVersion": "1.01",
+      "releasedAt": "2026-10-03T15:11:24Z"
     },
     {
       "tag": "mindustry-mod",
-      "name": "spiderUnit mod release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T02:44:10Z",
-      "htmlUrl": "https://github.com/j-n-ix/mindustrySpiderModTemplate/releases/tag/mindustry-mod",
-      "modVersion": "1",
+      "kind": "tag",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/refs/tags/mindustry-mod.zip",
-      "sourceArchiveUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/refs/tags/mindustry-mod.zip",
-      "assets": [],
-      "commitSha": "e121e911b2c2d1192194be20e9f5479d777d3a07",
-      "archiveByCommitUrl": "https://github.com/j-n-ix/mindustryspidermodtemplate/archive/e121e911b2c2d1192194be20e9f5479d777d3a07.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod-v1.03",
-      "modVersion": "1.03",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1",
+      "releasedAt": "2026-10-02T02:44:10Z"
     }
   ],
   "meta": {
+    "name": "spooder-template",
+    "author": "jinx",
+    "description": "mod assist, free to distribute or use",
+    "version": "1.03",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

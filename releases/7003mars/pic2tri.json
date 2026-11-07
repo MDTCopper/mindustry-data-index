@@ -1,809 +1,475 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "7003mars/pic2tri",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
-    {
-      "tag": "a3.0.5",
-      "name": "a.3.0.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-20T14:34:54Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/a3.0.5",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.5/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/a3.0.5.zip",
-      "assets": [
-        {
-          "name": "pic2tri.jar",
-          "size": 7278621,
-          "downloadCount": 279,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.5/pic2tri.jar"
-        }
-      ],
-      "commitSha": "abbea92d13255e011a327ff706ed1c84cb591baa",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/abbea92d13255e011a327ff706ed1c84cb591baa.zip"
-    },
-    {
-      "tag": "a3.0.4",
-      "name": "a3.0.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-13T14:09:38Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/a3.0.4",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.4/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/a3.0.4.zip",
-      "assets": [
-        {
-          "name": "pic2tri.jar",
-          "size": 7275392,
-          "downloadCount": 160,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.4/pic2tri.jar"
-        }
-      ],
-      "commitSha": "b1f3d5eb275b20988dc2ace378ee6bb4c893df43",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/b1f3d5eb275b20988dc2ace378ee6bb4c893df43.zip"
-    },
-    {
-      "tag": "a3.0.3",
-      "name": "a3.0.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-10T09:34:42Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/a3.0.3",
-      "modVersion": null,
-      "minGameVersion": null,
-      "metadataPath": null,
-      "metadataStatus": "missing",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.3/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/a3.0.3.zip",
-      "assets": [
-        {
-          "name": "pic2tri.jar",
-          "size": 7269988,
-          "downloadCount": 37,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.3/pic2tri.jar"
-        }
-      ],
-      "commitSha": "03a443a92ec0ad3b84e13d5e6b36d67888e216cf",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/03a443a92ec0ad3b84e13d5e6b36d67888e216cf.zip"
-    },
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "a3.0.2",
-      "name": "a3.0.2",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-25T03:04:03Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/a3.0.2",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.2/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/a3.0.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 3859487,
-          "downloadCount": 108,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.2/pic2tri.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "e2776f5089c4da753f78f0248ae8897370ab1b62",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/e2776f5089c4da753f78f0248ae8897370ab1b62.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.2/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 3859487,
+      "downloadCount": 108,
+      "releasedAt": "2026-01-25T03:04:03Z",
+      "prerelease": true
     },
     {
       "tag": "a3.0.1",
-      "name": "a3.0.1",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-21T07:46:42Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/a3.0.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/a3.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 3856451,
-          "downloadCount": 24,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.1/pic2tri.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "fb30b84f69d1a1761c73a57a5261ec18f69e1ce5",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/fb30b84f69d1a1761c73a57a5261ec18f69e1ce5.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a3.0.1/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 3856451,
+      "downloadCount": 24,
+      "releasedAt": "2026-01-21T07:46:42Z",
+      "prerelease": true
     },
     {
       "tag": "a.3.0.0",
-      "name": "a3.0.0",
-      "hasRelease": true,
-      "prerelease": true,
-      "publishedAt": "2026-01-11T14:03:50Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/a.3.0.0",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a.3.0.0/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/a.3.0.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 3853547,
-          "downloadCount": 14,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a.3.0.0/pic2tri.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "43c47ba9674c4f5221e9038b5089ac36de67310e",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/43c47ba9674c4f5221e9038b5089ac36de67310e.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/a.3.0.0/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 3853547,
+      "downloadCount": 14,
+      "releasedAt": "2026-01-11T14:03:50Z",
+      "prerelease": true
     },
     {
       "tag": "v2.8.5",
-      "name": "v2.8.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-01-04T12:34:29Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.8.5",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "154.3",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.5/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.8.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 123004,
-          "downloadCount": 5050,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.5/pic2tri.jar"
+          "from": "154.3",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f8763d0d72a542d5df32b49b3c8990a9960029d4",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/f8763d0d72a542d5df32b49b3c8990a9960029d4.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.5/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 123004,
+      "downloadCount": 5050,
+      "releasedAt": "2026-01-04T12:34:29Z"
     },
     {
       "tag": "v2.8.4",
-      "name": "v2.8.4 [v8]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-16T05:36:39Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.8.4",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.4/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.8.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 122974,
-          "downloadCount": 2039,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.4/pic2tri.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "0c9ab4114b74f03f9dddc7673281996869783c99",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/0c9ab4114b74f03f9dddc7673281996869783c99.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.4/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 122974,
+      "downloadCount": 2039,
+      "releasedAt": "2025-06-16T05:36:39Z"
     },
     {
       "tag": "v2.8.3",
-      "name": "v2.8.3 [v7]",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-03T14:05:36Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.8.3",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.3/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.8.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 122929,
-          "downloadCount": 10045,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.3/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "6569c6c77c495a8e7e058b345c37c386b6c4841a",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/6569c6c77c495a8e7e058b345c37c386b6c4841a.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.3/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 122929,
+      "downloadCount": 10045,
+      "releasedAt": "2024-06-03T14:05:36Z"
     },
     {
       "tag": "v2.8.2",
-      "name": "v2.8.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-02T11:02:26Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.8.2",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.2/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.8.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 122676,
-          "downloadCount": 94,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.2/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "2dace984de21b2295ead3d162310aa9e18fbfaa6",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/2dace984de21b2295ead3d162310aa9e18fbfaa6.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.2/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 122676,
+      "downloadCount": 94,
+      "releasedAt": "2024-06-02T11:02:26Z"
     },
     {
       "tag": "v2.8.1",
-      "name": "v2.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-09T09:46:02Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.8.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 124975,
-          "downloadCount": 6808,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.1/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "46b385fd807bcc2c5ee9182a7f10c6205fb20036",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/46b385fd807bcc2c5ee9182a7f10c6205fb20036.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8.1/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 124975,
+      "downloadCount": 6809,
+      "releasedAt": "2023-12-09T09:46:02Z"
     },
     {
       "tag": "v2.8",
-      "name": "v2.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-07T10:01:46Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.8",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 124961,
-          "downloadCount": 119,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e321389fd8d213a374db3e2e437531ab2b72315a",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/e321389fd8d213a374db3e2e437531ab2b72315a.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.8/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 124961,
+      "downloadCount": 119,
+      "releasedAt": "2023-12-07T10:01:46Z"
     },
     {
       "tag": "v2.7",
-      "name": "v2.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-20T12:36:18Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.7",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.7/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 124629,
-          "downloadCount": 2038,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.7/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "752c446d5749fbb040da5a089337e734ae2b7403",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/752c446d5749fbb040da5a089337e734ae2b7403.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.7/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 124629,
+      "downloadCount": 2038,
+      "releasedAt": "2023-09-20T12:36:18Z"
     },
     {
       "tag": "v2.6.1",
-      "name": "v2.6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-04T05:46:01Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.6.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.6.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.6.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 109556,
-          "downloadCount": 512,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.6.1/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "fdf4aef461241a8c1aae10a52c8a14a370342262",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/fdf4aef461241a8c1aae10a52c8a14a370342262.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.6.1/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 109556,
+      "downloadCount": 512,
+      "releasedAt": "2023-09-04T05:46:01Z"
     },
     {
       "tag": "v2.6",
-      "name": "v2.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-09-03T10:10:04Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.6",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.6/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 108752,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.6/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "4ddff1206846f4821e94227ffe16009bea894281",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/4ddff1206846f4821e94227ffe16009bea894281.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.6/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 108752,
+      "downloadCount": 44,
+      "releasedAt": "2023-09-03T10:10:04Z"
     },
     {
       "tag": "v2.5",
-      "name": "v2.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-12T10:01:07Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.5",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.5/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 99821,
-          "downloadCount": 2129,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.5/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "97d5b1d286a6d1e71ea349d2903720025e586ddb",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/97d5b1d286a6d1e71ea349d2903720025e586ddb.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.5/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 99821,
+      "downloadCount": 2129,
+      "releasedAt": "2023-06-12T10:01:07Z"
     },
     {
       "tag": "v2.4",
-      "name": "v2.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-06-10T10:15:09Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.4",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.4/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 98899,
-          "downloadCount": 90,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.4/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "5fedccc5824f758968fac41fbd959b8d5ee12f9d",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/5fedccc5824f758968fac41fbd959b8d5ee12f9d.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.4/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 98899,
+      "downloadCount": 90,
+      "releasedAt": "2023-06-10T10:15:09Z"
     },
     {
       "tag": "v2.3",
-      "name": "v2.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-17T13:05:39Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v2.3",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.3/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v2.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 98031,
-          "downloadCount": 630,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.3/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "1d0d3351b4f9b0d32cbdf37e43e680064f7132a2",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/1d0d3351b4f9b0d32cbdf37e43e680064f7132a2.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v2.3/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 98031,
+      "downloadCount": 630,
+      "releasedAt": "2023-05-17T13:05:39Z"
     },
     {
       "tag": "b2.2",
-      "name": "b2.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-24T10:16:47Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/b2.2",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.2/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/b2.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 97804,
-          "downloadCount": 787,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.2/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "c9740f88825ffbe7abf2d586731b8264a5c4b2db",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/c9740f88825ffbe7abf2d586731b8264a5c4b2db.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.2/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 97804,
+      "downloadCount": 787,
+      "releasedAt": "2023-04-24T10:16:47Z"
     },
     {
       "tag": "b2.1",
-      "name": "b2.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-23T08:16:26Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/b2.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/b2.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 97838,
-          "downloadCount": 36,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.1/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "e02e7e3a460a8c552e57e25222e068f6c259af93",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/e02e7e3a460a8c552e57e25222e068f6c259af93.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.1/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 97838,
+      "downloadCount": 36,
+      "releasedAt": "2023-04-23T08:16:26Z"
     },
     {
       "tag": "b2.0",
-      "name": "b2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-22T14:04:51Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/b2.0",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.0/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/b2.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 97833,
-          "downloadCount": 31,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.0/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "8e22b0fde06d1367bcc652b16df7c7ae8c488653",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/8e22b0fde06d1367bcc652b16df7c7ae8c488653.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/b2.0/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 97833,
+      "downloadCount": 31,
+      "releasedAt": "2023-04-22T14:04:51Z"
     },
     {
       "tag": "v1.9.1",
-      "name": "v1.9.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-13T10:31:41Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.9.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.9.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.9.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 93196,
-          "downloadCount": 190,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.9.1/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "4d1a5eacbccfb0861ebb3cbf2d8bd054a38dccb6",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/4d1a5eacbccfb0861ebb3cbf2d8bd054a38dccb6.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.9.1/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 93196,
+      "downloadCount": 190,
+      "releasedAt": "2023-04-13T10:31:41Z"
     },
     {
       "tag": "v1.9",
-      "name": "v1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-12T13:38:46Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.9",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.9/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 92730,
-          "downloadCount": 30,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.9/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ff73a5cedfd99a6482d0dbbe9c128ab54d4cf5b5",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/ff73a5cedfd99a6482d0dbbe9c128ab54d4cf5b5.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.9/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 92730,
+      "downloadCount": 30,
+      "releasedAt": "2023-04-12T13:38:46Z"
     },
     {
       "tag": "v1.8.1",
-      "name": "v1.8.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-11T11:54:13Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.8.1",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.8.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.8.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 91870,
-          "downloadCount": 34,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.8.1/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "94d5d0eb200aea740cbc920f1351b7a0af3ad056",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/94d5d0eb200aea740cbc920f1351b7a0af3ad056.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.8.1/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 91870,
+      "downloadCount": 34,
+      "releasedAt": "2023-04-11T11:54:13Z"
     },
     {
       "tag": "v1.7",
-      "name": "v1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-09T10:23:57Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.7",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.7/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 91837,
-          "downloadCount": 41,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.7/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "7e94c8d04d337d142d2857f25faded3895bc4b18",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/7e94c8d04d337d142d2857f25faded3895bc4b18.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.7/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 91837,
+      "downloadCount": 41,
+      "releasedAt": "2023-04-09T10:23:57Z"
     },
     {
       "tag": "v1.6",
-      "name": "v1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-08T09:35:35Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.6",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.6/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 89586,
-          "downloadCount": 38,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.6/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "1e19a6891333d4f244d4c4402a87bb260e90d413",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/1e19a6891333d4f244d4c4402a87bb260e90d413.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.6/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 89586,
+      "downloadCount": 38,
+      "releasedAt": "2023-04-08T09:35:35Z"
     },
     {
       "tag": "v1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-07T08:55:25Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.5",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.5/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 87495,
-          "downloadCount": 39,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.5/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ab601a69901ee7d25ebf18a7ae48aa98ebda888a",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/ab601a69901ee7d25ebf18a7ae48aa98ebda888a.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.5/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 87495,
+      "downloadCount": 39,
+      "releasedAt": "2023-04-07T08:55:25Z"
     },
     {
       "tag": "v1.4",
-      "name": "v1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-05T10:37:27Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.4",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.4/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 85636,
-          "downloadCount": 33,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.4/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "6dcd3f97840b076a39ea526959910166051ae2c5",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/6dcd3f97840b076a39ea526959910166051ae2c5.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.4/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 85636,
+      "downloadCount": 33,
+      "releasedAt": "2023-04-05T10:37:27Z"
     },
     {
       "tag": "v1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-28T08:30:42Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.3",
-      "modVersion": "REPLACEME",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.3/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 84822,
-          "downloadCount": 97,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.3/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "d9d23b35ce6fb21bfb79a847305cd9c2acc51ed4",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/d9d23b35ce6fb21bfb79a847305cd9c2acc51ed4.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.3/pic2tri.jar",
+      "modVersion": "REPLACEME",
+      "sizeBytes": 84822,
+      "downloadCount": 97,
+      "releasedAt": "2023-03-28T08:30:42Z"
     },
     {
       "tag": "v1.2",
-      "name": "v1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-25T07:35:38Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.2",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.2/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 84041,
-          "downloadCount": 43,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.2/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "6febd9b2f68926157c52c0f207a9d100dce19994",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/6febd9b2f68926157c52c0f207a9d100dce19994.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.2/pic2tri.jar",
+      "modVersion": "1",
+      "sizeBytes": 84041,
+      "downloadCount": 43,
+      "releasedAt": "2023-03-25T07:35:38Z"
     },
     {
       "tag": "v1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-24T15:14:27Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.1",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.1/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 83302,
-          "downloadCount": 15,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.1/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "92bda550feca8380006dc1a368278b6e5661fc4e",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/92bda550feca8380006dc1a368278b6e5661fc4e.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.1/pic2tri.jar",
+      "modVersion": "1",
+      "sizeBytes": 83302,
+      "downloadCount": 15,
+      "releasedAt": "2023-03-24T15:14:27Z"
     },
     {
       "tag": "v1.0",
-      "name": "v1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-03-22T13:29:09Z",
-      "htmlUrl": "https://github.com/7003Mars/pic2tri/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.0/pic2tri.jar",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "pic2tri.jar",
-          "size": 83382,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.0/pic2tri.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "bc8c26ffc2ffe86f292b5ce685f96b287bf093c7",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/bc8c26ffc2ffe86f292b5ce685f96b287bf093c7.zip"
-    },
-    {
-      "tag": "v1.8",
-      "name": "v1.8",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/7003mars/pic2tri/tree/v1.8",
-      "modVersion": "REPLACEME",
-      "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.8.zip",
-      "sourceArchiveUrl": "https://github.com/7003mars/pic2tri/archive/refs/tags/v1.8.zip",
-      "assets": [],
-      "commitSha": "7c38365821672f999088249a3a5ce6f847b4fca1",
-      "archiveByCommitUrl": "https://github.com/7003mars/pic2tri/archive/7c38365821672f999088249a3a5ce6f847b4fca1.zip"
+      "downloadUrl": "https://github.com/7003Mars/pic2tri/releases/download/v1.0/pic2tri.jar",
+      "modVersion": "1",
+      "sizeBytes": 83382,
+      "downloadCount": 44,
+      "releasedAt": "2023-03-22T13:29:09Z"
     }
-  ],
-  "compat": [
-    {
-      "tag": "v2.8.3",
-      "modVersion": "REPLACEME",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "a3.0.2",
-      "modVersion": "REPLACEME",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": true
-    }
-  ],
-  "meta": null
+  ]
 }

@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "illa4257/MindustrySyncProject",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v0.0.1",
-      "name": "MSP v0.0.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-04-23T04:45:57Z",
-      "htmlUrl": "https://github.com/illa4257/MindustrySyncProject/releases/tag/v0.0.1",
-      "modVersion": "0.0.1",
+      "kind": "release",
       "minGameVersion": "146",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/illa4257/MindustrySyncProject/releases/download/v0.0.1/MindustrySyncProject.jar",
-      "sourceArchiveUrl": "https://github.com/illa4257/MindustrySyncProject/archive/refs/tags/v0.0.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustrySyncProject.jar",
-          "size": 59931,
-          "downloadCount": 299,
-          "downloadUrl": "https://github.com/illa4257/MindustrySyncProject/releases/download/v0.0.1/MindustrySyncProject.jar"
+          "from": "146",
+          "to": "146"
         }
       ],
-      "commitSha": "57a93f7762331aa1a276f3bc31c0a6defade906e",
-      "archiveByCommitUrl": "https://github.com/illa4257/MindustrySyncProject/archive/57a93f7762331aa1a276f3bc31c0a6defade906e.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v0.0.1",
+      "downloadUrl": "https://github.com/illa4257/MindustrySyncProject/releases/download/v0.0.1/MindustrySyncProject.jar",
       "modVersion": "0.0.1",
-      "minGameVersion": "146",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 59931,
+      "downloadCount": 299,
+      "releasedAt": "2024-04-23T04:45:57Z"
     }
   ],
   "meta": {
+    "name": "mindustry-sync-project",
+    "author": "illa4257",
+    "description": "Java Mod for synchronization (for now only schematics).",
+    "version": "0.0.1",
+    "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "msp.MindustrySyncProject",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

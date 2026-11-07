@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "PiggyChu620/MindustryMineableAlloys",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "mindustry-mod",
-      "name": "Mineable Alloys v1.3.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-02T16:14:23Z",
-      "htmlUrl": "https://github.com/PiggyChu620/MindustryMineableAlloys/releases/tag/mindustry-mod",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "140",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/PiggyChu620/MindustryMineableAlloys/releases/download/mindustry-mod/MindustryMineableAlloys.jar",
-      "sourceArchiveUrl": "https://github.com/PiggyChu620/MindustryMineableAlloys/archive/refs/tags/mindustry-mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryMineableAlloys.jar",
-          "size": 618116,
-          "downloadCount": 1692,
-          "downloadUrl": "https://github.com/PiggyChu620/MindustryMineableAlloys/releases/download/mindustry-mod/MindustryMineableAlloys.jar"
+          "from": "140",
+          "to": "146"
         }
       ],
-      "commitSha": "a992a48cef56ff0f5b15340487c6fae9ebf2dcbc",
-      "archiveByCommitUrl": "https://github.com/PiggyChu620/MindustryMineableAlloys/archive/a992a48cef56ff0f5b15340487c6fae9ebf2dcbc.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "mindustry-mod",
+      "downloadUrl": "https://github.com/PiggyChu620/MindustryMineableAlloys/releases/download/mindustry-mod/MindustryMineableAlloys.jar",
       "modVersion": "1",
-      "minGameVersion": "140",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 618116,
+      "downloadCount": 1692,
+      "releasedAt": "2023-04-02T16:14:23Z"
     }
   ],
   "meta": {
+    "name": "ma620",
+    "author": "PiggyChu620",
+    "description": "Make all alloys/intermetallic directly mineable, currently only works on Serpulo and editor",
+    "version": "1",
+    "minGameVersion": "140",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "ma620.MA620Mod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

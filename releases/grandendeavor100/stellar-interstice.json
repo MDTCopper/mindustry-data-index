@@ -1,98 +1,77 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "grandendeavor100/stellar-interstice",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "GammaRelease1.3",
-      "name": "More Sprites",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-06-03T17:03:39Z",
-      "htmlUrl": "https://github.com/GrandEndeavor100/Stellar-Interstice/releases/tag/GammaRelease1.3",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.3.zip",
-      "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.3.zip",
-      "assets": [],
-      "commitSha": "fb49eecbb95ab2ba6a67a9a0bddd0c88bf65ba73",
-      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/fb49eecbb95ab2ba6a67a9a0bddd0c88bf65ba73.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2025-06-03T17:03:39Z"
     },
     {
       "tag": "GammaRelease1.2",
-      "name": "More content with better Sprites. You shall be amazed.",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-20T08:08:23Z",
-      "htmlUrl": "https://github.com/GrandEndeavor100/Stellar-Interstice/releases/tag/GammaRelease1.2",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.2.zip",
-      "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease1.2.zip",
-      "assets": [],
-      "commitSha": "bbd8e0fce6dca35417194d4b584d9965e32b23e5",
-      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/bbd8e0fce6dca35417194d4b584d9965e32b23e5.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2024-10-20T08:08:23Z"
     },
     {
       "tag": "GammaRelease",
-      "name": "Better Outfits",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-07-02T12:41:17Z",
-      "htmlUrl": "https://github.com/GrandEndeavor100/Stellar-Interstice/releases/tag/GammaRelease",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease.zip",
-      "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/GammaRelease.zip",
-      "assets": [],
-      "commitSha": "593bfd26d4dfcde7c95a7151505cce3c6f22fa7b",
-      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/593bfd26d4dfcde7c95a7151505cce3c6f22fa7b.zip"
+      "modVersion": "1.0",
+      "releasedAt": "2024-07-02T12:41:17Z"
     },
     {
       "tag": "BetaRelease",
-      "name": "First release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-06-24T16:50:02Z",
-      "htmlUrl": "https://github.com/GrandEndeavor100/Stellar-Interstice/releases/tag/BetaRelease",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/BetaRelease.zip",
-      "sourceArchiveUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/refs/tags/BetaRelease.zip",
-      "assets": [],
-      "commitSha": "55ba4b8fd2ca10bfd0c29f57c8199ea251ca9208",
-      "archiveByCommitUrl": "https://github.com/grandendeavor100/stellar-interstice/archive/55ba4b8fd2ca10bfd0c29f57c8199ea251ca9208.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "BetaRelease",
       "modVersion": "1.0",
-      "minGameVersion": "142",
-      "maxGameVersion": 145,
-      "hasRelease": true
-    },
-    {
-      "tag": "GammaRelease1.3",
-      "modVersion": "1.0",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-06-24T16:50:02Z"
     }
   ],
   "meta": {
+    "name": "StellarInterstice",
+    "author": "Stellar",
+    "description": "On a random day, all the civilizations joined forces to leave the dying state of the world in which they are inhabiting. They left in fleets of much grandeur and it was at that time when a vortex opened somewhere between the stars and they entered it where they had the encounter with the Beings. They acquired exotic technologies from them but little did they know that it was all part of a much greater story and that there was nothing random about that day. The Exotic technologies include: Bombs and Nukes Guided missile systems Power manipulation devices Unconventional weapon systems and much more.",
+    "version": "1.0",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

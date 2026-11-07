@@ -1,75 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "7bebebe7/javascript-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "V1.1.1",
-      "name": "Update with fix for mod reinstallation",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-10T17:52:36Z",
-      "htmlUrl": "https://github.com/7bebebe7/JavaScript-Mod/releases/tag/V1.1.1",
-      "modVersion": "1.1.1",
+      "kind": "tag",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/7bebebe7/javascript-mod/archive/refs/tags/V1.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/7bebebe7/javascript-mod/archive/refs/tags/V1.1.1.zip",
-      "assets": [],
-      "commitSha": "a34d6d3ce80f88f37081e11eb0501199cfaa7e12",
-      "archiveByCommitUrl": "https://github.com/7bebebe7/javascript-mod/archive/a34d6d3ce80f88f37081e11eb0501199cfaa7e12.zip"
+      "modVersion": "1.1.1",
+      "releasedAt": "2026-06-10T17:52:36Z"
     },
     {
       "tag": "V1.1.0",
-      "name": "New turret \"dod\"",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-10T08:31:09Z",
-      "htmlUrl": "https://github.com/7bebebe7/JavaScript-Mod/releases/tag/V1.1.0",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/7bebebe7/javascript-mod/archive/refs/tags/V1.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/7bebebe7/javascript-mod/archive/refs/tags/V1.1.0.zip",
-      "assets": [],
-      "commitSha": "5a5e9bceb29a1b78530487d2675f653ae47c4b93",
-      "archiveByCommitUrl": "https://github.com/7bebebe7/javascript-mod/archive/5a5e9bceb29a1b78530487d2675f653ae47c4b93.zip"
+      "modVersion": "1.0.0",
+      "releasedAt": "2026-06-10T08:31:09Z"
     },
     {
       "tag": "V1.0.0",
-      "name": "Github release",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-08T07:42:35Z",
-      "htmlUrl": "https://github.com/7bebebe7/JavaScript-Mod/releases/tag/V1.0.0",
-      "modVersion": "1.0.0",
+      "kind": "tag",
       "minGameVersion": "157.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/7bebebe7/javascript-mod/archive/refs/tags/V1.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/7bebebe7/javascript-mod/archive/refs/tags/V1.0.0.zip",
-      "assets": [],
-      "commitSha": "30af80f54ba2a9e51f8f48890411a2489fdbe941",
-      "archiveByCommitUrl": "https://github.com/7bebebe7/javascript-mod/archive/30af80f54ba2a9e51f8f48890411a2489fdbe941.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "V1.1.1",
-      "modVersion": "1.1.1",
-      "minGameVersion": "157.4",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0.0",
+      "releasedAt": "2026-06-08T07:42:35Z"
     }
   ],
   "meta": {
+    "name": "jsm",
+    "author": "bebebe",
+    "description": "written entirely in JavaScript",
+    "version": "1.1.1",
+    "minGameVersion": "157.4",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

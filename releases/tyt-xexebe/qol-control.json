@@ -1,562 +1,340 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "tyt-xexebe/qol-control",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v7.12",
-      "name": "Release v7.12",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-22T03:55:40Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.12",
-      "modVersion": "7.12",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.12/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.12.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 232852,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.12/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6d03b34107f7993b17d9445ed0f94b7b3d5c3a55",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/6d03b34107f7993b17d9445ed0f94b7b3d5c3a55.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.12.zip",
+      "modVersion": "7.12",
+      "sizeBytes": 232852,
+      "downloadCount": 9,
+      "releasedAt": "2026-10-22T03:55:40Z"
     },
     {
       "tag": "v7.11",
-      "name": "Release v7.11",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-22T00:20:03Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.11",
-      "modVersion": "7.11",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.11/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.11.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 224103,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.11/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1f3b0ebab2d024ed88e6348a5cc676289b24f6a0",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/1f3b0ebab2d024ed88e6348a5cc676289b24f6a0.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.11.zip",
+      "modVersion": "7.11",
+      "sizeBytes": 224103,
+      "releasedAt": "2026-10-22T00:20:03Z"
     },
     {
       "tag": "v7.10",
-      "name": "Release v7.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-21T19:46:08Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.10",
-      "modVersion": "7.10",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.10/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.10.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 222223,
-          "downloadCount": 0,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.10/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8ab617041f9e036d6cd092f3635c795cd081e4ab",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/8ab617041f9e036d6cd092f3635c795cd081e4ab.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.10.zip",
+      "modVersion": "7.10",
+      "sizeBytes": 222223,
+      "releasedAt": "2026-10-21T19:46:08Z"
     },
     {
       "tag": "v7.9",
-      "name": "Release v7.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-19T05:30:16Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.9",
-      "modVersion": "7.9",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.9/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 217363,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.9/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "4e04e69a9fd33aeceb67a0b8f016bd9300af3fd2",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/4e04e69a9fd33aeceb67a0b8f016bd9300af3fd2.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.9.zip",
+      "modVersion": "7.9",
+      "sizeBytes": 217363,
+      "downloadCount": 4,
+      "releasedAt": "2026-10-19T05:30:16Z"
     },
     {
       "tag": "v7.8",
-      "name": "Release v7.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-17T23:05:42Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.8",
-      "modVersion": "7.8",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.8/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 214034,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.8/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "10c56e8c536ca11542ab84a312ed3519a0d77286",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/10c56e8c536ca11542ab84a312ed3519a0d77286.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.8.zip",
+      "modVersion": "7.8",
+      "sizeBytes": 214034,
+      "downloadCount": 1,
+      "releasedAt": "2026-10-17T23:05:42Z"
     },
     {
       "tag": "v7.7",
-      "name": "Release v7.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-16T06:27:09Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.7",
-      "modVersion": "7.7",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.7/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 213228,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.7/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "81671dd0f7bfafac6ce1d8f9d51bbb53ba0732bc",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/81671dd0f7bfafac6ce1d8f9d51bbb53ba0732bc.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.7.zip",
+      "modVersion": "7.7",
+      "sizeBytes": 213228,
+      "downloadCount": 2,
+      "releasedAt": "2026-10-16T06:27:09Z"
     },
     {
       "tag": "v7.6",
-      "name": "Release v7.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-14T16:39:53Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.6",
-      "modVersion": "7.6",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.6/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 211202,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.6/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "8adf56fb32fc2a960fabcf40859826196c9f1cbb",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/8adf56fb32fc2a960fabcf40859826196c9f1cbb.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.6.zip",
+      "modVersion": "7.6",
+      "sizeBytes": 211202,
+      "downloadCount": 2,
+      "releasedAt": "2026-10-14T16:39:53Z"
     },
     {
       "tag": "v7.5",
-      "name": "Release v7.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-12T23:06:53Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.5",
-      "modVersion": "7.5",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.5/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 194779,
-          "downloadCount": 1,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.5/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "19ad4001fef0a57a90a444d4950c8c96d783eebf",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/19ad4001fef0a57a90a444d4950c8c96d783eebf.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.5.zip",
+      "modVersion": "7.5",
+      "sizeBytes": 194779,
+      "downloadCount": 1,
+      "releasedAt": "2026-10-12T23:06:53Z"
     },
     {
       "tag": "v7.4",
-      "name": "Release v7.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-10T21:00:48Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.4",
-      "modVersion": "7.4",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.4/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 189607,
-          "downloadCount": 3,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.4/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6bef6b93a77a52860c9916b622d343e7a83e4440",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/6bef6b93a77a52860c9916b622d343e7a83e4440.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.4.zip",
+      "modVersion": "7.4",
+      "sizeBytes": 189607,
+      "downloadCount": 3,
+      "releasedAt": "2026-10-10T21:00:48Z"
     },
     {
       "tag": "v7.3",
-      "name": "Release v7.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-10-02T08:55:44Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.3",
-      "modVersion": "7.3",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.3/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 184446,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.3/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "fe8442e3b2143038c89d457c37b44b88e2e22b6d",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/fe8442e3b2143038c89d457c37b44b88e2e22b6d.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.3.zip",
+      "modVersion": "7.3",
+      "sizeBytes": 184446,
+      "downloadCount": 5,
+      "releasedAt": "2026-10-02T08:55:44Z"
     },
     {
       "tag": "v7.1",
-      "name": "Release v7.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-10T20:11:25Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.1",
-      "modVersion": "7.1",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.1/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 169416,
-          "downloadCount": 10,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.1/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "39b34282f60e176cf583e7b7bb9c625c9aeafa23",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/39b34282f60e176cf583e7b7bb9c625c9aeafa23.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.1.zip",
+      "modVersion": "7.1",
+      "sizeBytes": 169416,
+      "downloadCount": 10,
+      "releasedAt": "2026-09-10T20:11:25Z"
     },
     {
       "tag": "v7.0",
-      "name": "Release v7.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-09-09T07:50:43Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v7.0",
-      "modVersion": "7.0",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.0/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 161780,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v7.0/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "1c1baf4215b4b655131f199d00812f292af7e257",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/1c1baf4215b4b655131f199d00812f292af7e257.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v7.0.zip",
+      "modVersion": "7.0",
+      "sizeBytes": 161780,
+      "downloadCount": 2,
+      "releasedAt": "2026-09-09T07:50:43Z"
     },
     {
       "tag": "v6.9",
-      "name": "Release v6.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-23T23:03:17Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.9",
-      "modVersion": "6.9",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.9/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 159031,
-          "downloadCount": 9,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.9/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "b31d2cbc1ccb427ce79935cefff06755f39d092d",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/b31d2cbc1ccb427ce79935cefff06755f39d092d.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.9.zip",
+      "modVersion": "6.9",
+      "sizeBytes": 159031,
+      "downloadCount": 9,
+      "releasedAt": "2026-08-23T23:03:17Z"
     },
     {
       "tag": "v6.8",
-      "name": "Release v6.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-15T03:04:11Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.8",
-      "modVersion": "6.8",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.8/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 160550,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.8/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "86572325c09e486c0c56c9fec8977e212079f701",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/86572325c09e486c0c56c9fec8977e212079f701.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.8.zip",
+      "modVersion": "6.8",
+      "sizeBytes": 160550,
+      "downloadCount": 5,
+      "releasedAt": "2026-08-15T03:04:11Z"
     },
     {
       "tag": "v6.7",
-      "name": "Release v6.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-12T17:19:30Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.7",
-      "modVersion": "6.7",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.7/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 152387,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.7/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "14afbb16a073b7c0b3f509c9bdc1fb48a55b22f6",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/14afbb16a073b7c0b3f509c9bdc1fb48a55b22f6.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.7.zip",
+      "modVersion": "6.7",
+      "sizeBytes": 152387,
+      "downloadCount": 4,
+      "releasedAt": "2026-08-12T17:19:30Z"
     },
     {
       "tag": "v6.6",
-      "name": "Release v6.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-30T19:25:41Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.6",
-      "modVersion": "6.6",
+      "kind": "release",
       "minGameVersion": "159.5",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.6/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 145785,
-          "downloadCount": 6,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.6/qol-control.zip"
+          "from": "159.5",
+          "to": "160.7"
         }
       ],
-      "commitSha": "ba85d9b478ac0934f74c7bb8fcb9a8251ceadbea",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/ba85d9b478ac0934f74c7bb8fcb9a8251ceadbea.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.6.zip",
+      "modVersion": "6.6",
+      "sizeBytes": 145785,
+      "downloadCount": 6,
+      "releasedAt": "2026-07-30T19:25:41Z"
     },
     {
       "tag": "v6.5",
-      "name": "Release v6.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-24T16:14:40Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.5",
-      "modVersion": "6.5",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.5/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 145792,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.5/qol-control.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "6e88b9e1fddba38c3de3cbfb1f19efc5446d359d",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/6e88b9e1fddba38c3de3cbfb1f19efc5446d359d.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.5.zip",
+      "modVersion": "6.5",
+      "sizeBytes": 145792,
+      "downloadCount": 4,
+      "releasedAt": "2026-07-24T16:14:40Z"
     },
     {
       "tag": "v6.4",
-      "name": "Release v6.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-23T07:47:28Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.4",
-      "modVersion": "6.4",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.4/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 145327,
-          "downloadCount": 4,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.4/qol-control.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "537cc88583f231a797fa27bab0bf89ef6bea45e6",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/537cc88583f231a797fa27bab0bf89ef6bea45e6.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.4.zip",
+      "modVersion": "6.4",
+      "sizeBytes": 145327,
+      "downloadCount": 4,
+      "releasedAt": "2026-07-23T07:47:28Z"
     },
     {
       "tag": "v6.3",
-      "name": "Release v6.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-22T08:58:24Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/v6.3",
-      "modVersion": "6.3",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.3/qol-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "qol-control.zip",
-          "size": 140486,
-          "downloadCount": 2,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/v6.3/qol-control.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "bc4ad295b0a6a8ce3ddaafd87481971f87c1c8b4",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/bc4ad295b0a6a8ce3ddaafd87481971f87c1c8b4.zip"
-    },
-    {
-      "tag": "release_v6.1",
-      "name": "6.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-08T05:02:57Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/release_v6.1",
-      "modVersion": "6.1",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v6.1.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v6.1.zip",
-      "assets": [],
-      "commitSha": "d93579740bc6c1d7329c5f1559dc10781e19321a",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/d93579740bc6c1d7329c5f1559dc10781e19321a.zip"
-    },
-    {
-      "tag": "release_v6.0",
-      "name": "6.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-06-08T05:00:42Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/release_v6.0",
-      "modVersion": "6.0",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v6.0.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v6.0.zip",
-      "assets": [],
-      "commitSha": "426d681bf4de0986d94b13d452a332fbcdb7a647",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/426d681bf4de0986d94b13d452a332fbcdb7a647.zip"
-    },
-    {
-      "tag": "release_v5.9.1",
-      "name": "5.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-25T08:35:37Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/release_v5.9.1",
-      "modVersion": "5.9",
-      "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v5.9.1.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v5.9.1.zip",
-      "assets": [],
-      "commitSha": "86ff6d516a88ae5c64ffcf2cec89cf0276561f72",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/86ff6d516a88ae5c64ffcf2cec89cf0276561f72.zip"
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/v6.3.zip",
+      "modVersion": "6.3",
+      "sizeBytes": 140486,
+      "downloadCount": 2,
+      "releasedAt": "2026-07-22T08:58:24Z"
     },
     {
       "tag": "release_v5.9",
-      "name": "Release v5.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-05-21T21:56:49Z",
-      "htmlUrl": "https://github.com/TyT-xexebe/QoL-control/releases/tag/release_v5.9",
-      "modVersion": "5.8",
+      "kind": "release",
       "minGameVersion": "154",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/release_v5.9/QoL-control.zip",
-      "sourceArchiveUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v5.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "QoL-control.zip",
-          "size": 109611,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/TyT-xexebe/QoL-control/releases/download/release_v5.9/QoL-control.zip"
+          "from": "154",
+          "to": "160.7"
         }
       ],
-      "commitSha": "05da978c305c61dd09a96f75a0d0a98a132604e1",
-      "archiveByCommitUrl": "https://github.com/tyt-xexebe/qol-control/archive/05da978c305c61dd09a96f75a0d0a98a132604e1.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v6.5",
-      "modVersion": "6.5",
-      "minGameVersion": "154",
-      "maxGameVersion": 159.5,
-      "hasRelease": true
-    },
-    {
-      "tag": "v7.12",
-      "modVersion": "7.12",
-      "minGameVersion": "159.5",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "downloadUrl": "https://github.com/tyt-xexebe/qol-control/archive/refs/tags/release_v5.9.zip",
+      "modVersion": "5.8",
+      "sizeBytes": 109611,
+      "downloadCount": 5,
+      "releasedAt": "2026-05-21T21:56:49Z"
     }
   ],
   "meta": {
+    "name": "qol-control",
+    "author": "TyTxexebe",
+    "description": "A lot of useful & QoL features\n\nyou can add your mlog codes in Mindustry directory /files/qol/mlog/ to use them with !mlog\n\nyou can add your regex in Mindustry directory /files/qol/mlog/regex.json to use it in !detector\n\nmore detailed mod info on github page, please give me a star :>\n\ndiscord: @tytxexebe",
+    "version": "7.12",
+    "minGameVersion": "159.5",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "main.js",
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": true
   }
 }

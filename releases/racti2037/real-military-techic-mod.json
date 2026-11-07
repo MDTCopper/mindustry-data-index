@@ -1,40 +1,35 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "racti2037/real-military-techic-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "alpha",
-      "name": "0.3.1-super-duper-analogovnet-alpha-version",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-01-08T20:13:51Z",
-      "htmlUrl": "https://github.com/racti2037/Real-Military-Techic-mod/releases/tag/alpha",
-      "modVersion": "0.3.1",
+      "kind": "tag",
       "minGameVersion": "142",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "142",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/racti2037/real-military-techic-mod/archive/refs/tags/alpha.zip",
-      "sourceArchiveUrl": "https://github.com/racti2037/real-military-techic-mod/archive/refs/tags/alpha.zip",
-      "assets": [],
-      "commitSha": "738a005bd093e6781fbb31418cc60967a5460a60",
-      "archiveByCommitUrl": "https://github.com/racti2037/real-military-techic-mod/archive/738a005bd093e6781fbb31418cc60967a5460a60.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "alpha",
       "modVersion": "0.3.1",
-      "minGameVersion": "142",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2025-01-08T20:13:51Z"
     }
   ],
   "meta": {
+    "name": "military-techic-mod",
+    "author": "[blue]Rac[yellow]ti",
+    "description": "Mod add tanks, aircraft and naval ships",
+    "version": "0.3.1",
+    "minGameVersion": "142",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }

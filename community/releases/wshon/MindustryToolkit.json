@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "wshon/MindustryToolkit",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.0",
-      "name": "Mindustry V7 Toolkit V1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2022-05-17T05:38:06Z",
-      "htmlUrl": "https://github.com/wshon/MindustryToolkit/releases/tag/v1.0",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/wshon/MindustryToolkit/releases/download/v1.0/MindustryToolkitDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/wshon/MindustryToolkit/archive/refs/tags/v1.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "MindustryToolkitDesktop.jar",
-          "size": 51115,
-          "downloadCount": 24098,
-          "downloadUrl": "https://github.com/wshon/MindustryToolkit/releases/download/v1.0/MindustryToolkitDesktop.jar"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "commitSha": "ca02f082f0d675fb791081f0d5ad12c0fd9bb02d",
-      "archiveByCommitUrl": "https://github.com/wshon/MindustryToolkit/archive/ca02f082f0d675fb791081f0d5ad12c0fd9bb02d.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.0",
+      "downloadUrl": "https://github.com/wshon/MindustryToolkit/releases/download/v1.0/MindustryToolkitDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "136",
-      "maxGameVersion": 147,
-      "hasRelease": true
+      "sizeBytes": 51115,
+      "downloadCount": 24098,
+      "releasedAt": "2022-05-17T05:38:06Z"
     }
   ],
   "meta": {
+    "name": "toolkit",
+    "author": "wshon",
+    "description": "A Mindustry Java mod template.",
+    "version": "1",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "toolkit.ToolkitMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

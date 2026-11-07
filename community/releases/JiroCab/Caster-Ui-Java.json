@@ -1,1063 +1,517 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "JiroCab/Caster-Ui-Java",
-  "generatedAt": "2026-11-06T14:58:27.757Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:36:35.382Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v7-5.3",
-      "name": "v7 - 5.3 bug fix",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-27T05:34:14Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v7-5.3",
-      "modVersion": "5.3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.3/Caster-Ui-Java-v7-5-3.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v7-5.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v7-5-3.jar",
-          "size": 190003,
-          "downloadCount": 754,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.3/Caster-Ui-Java-v7-5-3.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "f1bc2b20bff79a62420065156e6683c5ba1d793a",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/f1bc2b20bff79a62420065156e6683c5ba1d793a.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.3/Caster-Ui-Java-v7-5-3.jar",
+      "modVersion": "5.3",
+      "sizeBytes": 190003,
+      "downloadCount": 754,
+      "releasedAt": "2025-08-27T05:34:14Z"
     },
     {
       "tag": "v7-5.2",
-      "name": "v7 - 5.2 Bigger is better right?",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-08-21T14:22:46Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v7-5.2",
-      "modVersion": "5.2",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.2/Caster-Ui-Java-5-2.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v7-5.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-5-2.jar",
-          "size": 190074,
-          "downloadCount": 120,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.2/Caster-Ui-Java-5-2.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "f8f659123f139acc6a751fe25bcc3539de2602b5",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/f8f659123f139acc6a751fe25bcc3539de2602b5.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.2/Caster-Ui-Java-5-2.jar",
+      "modVersion": "5.2",
+      "sizeBytes": 190074,
+      "downloadCount": 120,
+      "releasedAt": "2025-08-21T14:22:46Z"
     },
     {
       "tag": "v7-5.1",
-      "name": "v7 - 5.1 notes here",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-30T12:26:34Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v7-5.1",
-      "modVersion": "5",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.1/Caster-Ui-Java-5.1.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v7-5.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-5.1.jar",
-          "size": 185362,
-          "downloadCount": 390,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.1/Caster-Ui-Java-5.1.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "5ed1d237a9a1675fce4f30bf46356ae07533b2e4",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/5ed1d237a9a1675fce4f30bf46356ae07533b2e4.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.1/Caster-Ui-Java-5.1.jar",
+      "modVersion": "5",
+      "sizeBytes": 185362,
+      "downloadCount": 390,
+      "releasedAt": "2025-07-30T12:26:34Z"
     },
     {
       "tag": "v8-5.0",
-      "name": "v8-5.0 Hotkeys wont Transfer over!",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-07-24T11:37:35Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v8-5.0",
-      "modVersion": "5",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v8-5.0/Caster-Ui-Java-5.0.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v8-5.0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-5.0.jar",
-          "size": 159693,
-          "downloadCount": 287,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v8-5.0/Caster-Ui-Java-5.0.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "272f0543ee066a6520be72427777056ab0c1e8bd",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/272f0543ee066a6520be72427777056ab0c1e8bd.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v8-5.0/Caster-Ui-Java-5.0.jar",
+      "modVersion": "5",
+      "sizeBytes": 159693,
+      "downloadCount": 287,
+      "releasedAt": "2025-07-24T11:37:35Z"
     },
     {
       "tag": "4.9",
-      "name": "4.9: (v7) slightly more better filters",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-02-05T15:28:03Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.9",
-      "modVersion": "4.9",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.9/Caster-Ui-Java-4.9.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.9.jar",
-          "size": 174797,
-          "downloadCount": 1437,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.9/Caster-Ui-Java-4.9.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "80dea41587436a48394bc2a62e66838928eb64cc",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/80dea41587436a48394bc2a62e66838928eb64cc.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.9/Caster-Ui-Java-4.9.jar",
+      "modVersion": "4.9",
+      "sizeBytes": 174797,
+      "downloadCount": 1437,
+      "releasedAt": "2025-02-05T15:28:03Z"
     },
     {
       "tag": "4.8",
-      "name": "4.8: fixed team filter for items",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-06T23:29:17Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.8",
-      "modVersion": "4.8",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.8/Caster-Ui-Java-4.8.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.8.jar",
-          "size": 171617,
-          "downloadCount": 641,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.8/Caster-Ui-Java-4.8.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "a5f26a94aefbc3b35d178da273c1c2f679ac40ea",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/a5f26a94aefbc3b35d178da273c1c2f679ac40ea.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.8/Caster-Ui-Java-4.8.jar",
+      "modVersion": "4.8",
+      "sizeBytes": 171617,
+      "downloadCount": 641,
+      "releasedAt": "2024-12-06T23:29:17Z"
     },
     {
       "tag": "4.7",
-      "name": "4.7: wittwe additiawn :3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-12-02T02:59:11Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.7",
-      "modVersion": "4.7",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.7/Caster-Ui-Java-4.7.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.7.jar",
-          "size": 171579,
-          "downloadCount": 113,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.7/Caster-Ui-Java-4.7.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "d54603b307ab5bd5a375f772b3bde5c869055ba7",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/d54603b307ab5bd5a375f772b3bde5c869055ba7.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.7/Caster-Ui-Java-4.7.jar",
+      "modVersion": "4.7",
+      "sizeBytes": 171579,
+      "downloadCount": 113,
+      "releasedAt": "2024-12-02T02:59:11Z"
     },
     {
       "tag": "4.6",
-      "name": "4.6: Team Clarifications",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-13T11:04:46Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.6",
-      "modVersion": "4.6",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.6/Caster-Ui-Java-4.6.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.6.jar",
-          "size": 167679,
-          "downloadCount": 382,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.6/Caster-Ui-Java-4.6.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "e72d0f77db81dede86d9f63e5daf656cece8468b",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/e72d0f77db81dede86d9f63e5daf656cece8468b.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.6/Caster-Ui-Java-4.6.jar",
+      "modVersion": "4.6",
+      "sizeBytes": 167679,
+      "downloadCount": 382,
+      "releasedAt": "2024-11-13T11:04:46Z"
     },
     {
       "tag": "4.5",
-      "name": "4.5: Little Addition",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-11-06T11:14:21Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.5",
-      "modVersion": "4.5",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.5/Caster-Ui-Java-4.5.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.5.jar",
-          "size": 151620,
-          "downloadCount": 201,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.5/Caster-Ui-Java-4.5.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "1865d0bad445e9643d4929b670c6176910c63c99",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/1865d0bad445e9643d4929b670c6176910c63c99.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.5/Caster-Ui-Java-4.5.jar",
+      "modVersion": "4.5",
+      "sizeBytes": 151620,
+      "downloadCount": 201,
+      "releasedAt": "2024-11-06T11:14:21Z"
     },
     {
       "tag": "4.4",
-      "name": "4.4 Measurement of change Rework",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-30T20:21:16Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.4",
-      "modVersion": "4.4",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.4/Caster-Ui-Java-4.4.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.4.jar",
-          "size": 148094,
-          "downloadCount": 163,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.4/Caster-Ui-Java-4.4.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "4edddd2980bae51bef82f12a4eecda9585b6b755",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/4edddd2980bae51bef82f12a4eecda9585b6b755.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.4/Caster-Ui-Java-4.4.jar",
+      "modVersion": "4.4",
+      "sizeBytes": 148094,
+      "downloadCount": 163,
+      "releasedAt": "2024-10-30T20:21:16Z"
     },
     {
       "tag": "4.3",
-      "name": "4.3: Less minor rewrite",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-15T13:33:28Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.3",
-      "modVersion": "4.3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.3/Caster-Ui-Java-4.3.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.3.jar",
-          "size": 137143,
-          "downloadCount": 335,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.3/Caster-Ui-Java-4.3.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "dad6aec6352270320958bfbadb6a9145d83e3d6c",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/dad6aec6352270320958bfbadb6a9145d83e3d6c.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.3/Caster-Ui-Java-4.3.jar",
+      "modVersion": "4.3",
+      "sizeBytes": 137143,
+      "downloadCount": 335,
+      "releasedAt": "2024-10-15T13:33:28Z"
     },
     {
       "tag": "4.2",
-      "name": "4.2 minor rewrite",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-01T12:10:29Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.2",
-      "modVersion": "4.2",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.2/Caster-Ui-Java-4.2.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.2.jar",
-          "size": 126700,
-          "downloadCount": 375,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.2/Caster-Ui-Java-4.2.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "baf0a52d4abbe6cfbcfd79e0e0b7db5b850c3664",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/baf0a52d4abbe6cfbcfd79e0e0b7db5b850c3664.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.2/Caster-Ui-Java-4.2.jar",
+      "modVersion": "4.2",
+      "sizeBytes": 126700,
+      "downloadCount": 375,
+      "releasedAt": "2024-10-01T12:10:29Z"
     },
     {
       "tag": "4.1",
-      "name": "4.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-28T12:10:39Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4.1",
-      "modVersion": "4.1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.1/Caster-Ui-Java-4.1.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.1.jar",
-          "size": 119339,
-          "downloadCount": 2029,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.1/Caster-Ui-Java-4.1.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "45b7ee4713cfe6ed23836d90615d0fcf41f6252a",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/45b7ee4713cfe6ed23836d90615d0fcf41f6252a.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4.1/Caster-Ui-Java-4.1.jar",
+      "modVersion": "4.1",
+      "sizeBytes": 119339,
+      "downloadCount": 2029,
+      "releasedAt": "2024-03-28T12:10:39Z"
     },
     {
       "tag": "4",
-      "name": "V4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-03-11T17:42:47Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/4",
-      "modVersion": "4",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4/Caster-Ui-Java-4.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-4.jar",
-          "size": 119302,
-          "downloadCount": 418,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4/Caster-Ui-Java-4.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b18acfe4155474eeee6cd4da99c23c80a388da7e",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b18acfe4155474eeee6cd4da99c23c80a388da7e.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/4/Caster-Ui-Java-4.jar",
+      "modVersion": "4",
+      "sizeBytes": 119302,
+      "downloadCount": 418,
+      "releasedAt": "2024-03-11T17:42:47Z"
     },
     {
       "tag": "3.2",
-      "name": "V3.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-21T21:31:52Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/3.2",
-      "modVersion": "3.2",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/3.2/Caster-Ui-Java-3.2.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/3.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-3.2.jar",
-          "size": 112799,
-          "downloadCount": 1085,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/3.2/Caster-Ui-Java-3.2.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "9114a4e93eeac4b1b95b99815c663ad2e900e59f",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/9114a4e93eeac4b1b95b99815c663ad2e900e59f.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/3.2/Caster-Ui-Java-3.2.jar",
+      "modVersion": "3.2",
+      "sizeBytes": 112799,
+      "downloadCount": 1085,
+      "releasedAt": "2023-12-21T21:31:52Z"
     },
     {
       "tag": "3.1",
-      "name": "v3.1-1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-17T12:01:24Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/3.1",
-      "modVersion": "3.1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/3.1/Caster-Ui-Java-3.1.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/3.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-3.1.jar",
-          "size": 108641,
-          "downloadCount": 220,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/3.1/Caster-Ui-Java-3.1.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "4784a8a471820d3974e2952654b41aebb0347d2e",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/4784a8a471820d3974e2952654b41aebb0347d2e.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/3.1/Caster-Ui-Java-3.1.jar",
+      "modVersion": "3.1",
+      "sizeBytes": 108641,
+      "downloadCount": 220,
+      "releasedAt": "2023-12-17T12:01:24Z"
     },
     {
       "tag": "v3.1-0",
-      "name": "v3.1-0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-14T23:30:56Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v3.1-0",
-      "modVersion": "3.1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.1-0/Caster-Ui-Java-v3.1.0.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.1-0.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v3.1.0.jar",
-          "size": 104119,
-          "downloadCount": 267,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.1-0/Caster-Ui-Java-v3.1.0.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "4322f4aba14c3072f5d6434839529f36f44eb018",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/4322f4aba14c3072f5d6434839529f36f44eb018.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.1-0/Caster-Ui-Java-v3.1.0.jar",
+      "modVersion": "3.1",
+      "sizeBytes": 104119,
+      "downloadCount": 267,
+      "releasedAt": "2023-12-14T23:30:56Z"
     },
     {
       "tag": "v3.0.9",
-      "name": "v3.0.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-12T12:50:22Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v3.0.9",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.0.9/Caster-Ui-Java-v3.0.9.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v3.0.9.jar",
-          "size": 102566,
-          "downloadCount": 118,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.0.9/Caster-Ui-Java-v3.0.9.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "6246e29fc3dbde1ffc8b58d15e972c1ee6ec076b",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/6246e29fc3dbde1ffc8b58d15e972c1ee6ec076b.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.0.9/Caster-Ui-Java-v3.0.9.jar",
+      "modVersion": "3",
+      "sizeBytes": 102566,
+      "downloadCount": 118,
+      "releasedAt": "2023-12-12T12:50:22Z"
     },
     {
       "tag": "v3.0.8",
-      "name": "v1.10",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-12-11T00:14:57Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v3.0.8",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.0.8/Caster-Ui-Java-v1.10.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.10.jar",
-          "size": 101415,
-          "downloadCount": 109,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.0.8/Caster-Ui-Java-v1.10.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b7ee35127746ef85d5c82cc69d35efc189896af5",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b7ee35127746ef85d5c82cc69d35efc189896af5.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v3.0.8/Caster-Ui-Java-v1.10.jar",
+      "modVersion": "3",
+      "sizeBytes": 101415,
+      "downloadCount": 109,
+      "releasedAt": "2023-12-11T00:14:57Z"
     },
     {
       "tag": "1.9",
-      "name": "v1.9",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-05-20T11:19:54Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.9",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.9/Caster-Ui-Java-v1.9.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.9.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.9.jar",
-          "size": 100007,
-          "downloadCount": 2164,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.9/Caster-Ui-Java-v1.9.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.9/Caster-Ui-Java-v1.9.jar",
+      "modVersion": "3",
+      "sizeBytes": 100007,
+      "downloadCount": 2164,
+      "releasedAt": "2023-05-20T11:19:54Z"
     },
     {
       "tag": "1.8",
-      "name": "v1.8",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-28T13:14:30Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.8",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.8/Caster-Ui-Java-v1.8.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.8.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.8.jar",
-          "size": 71885,
-          "downloadCount": 678,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.8/Caster-Ui-Java-v1.8.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.8/Caster-Ui-Java-v1.8.jar",
+      "modVersion": "3",
+      "sizeBytes": 71885,
+      "downloadCount": 678,
+      "releasedAt": "2023-04-28T13:14:30Z"
     },
     {
       "tag": "1.7",
-      "name": "v1.7",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-27T03:24:25Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.7",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.7/Caster-Ui-Java-v1.7.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.7.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.7.jar",
-          "size": 72087,
-          "downloadCount": 126,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.7/Caster-Ui-Java-v1.7.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.7/Caster-Ui-Java-v1.7.jar",
+      "modVersion": "3",
+      "sizeBytes": 72087,
+      "downloadCount": 126,
+      "releasedAt": "2023-04-27T03:24:25Z"
     },
     {
       "tag": "1.6",
-      "name": "v1.6",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-27T01:49:13Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.6",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.6/Caster-Ui-Java-v1.6.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.6.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.6.jar",
-          "size": 72104,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.6/Caster-Ui-Java-v1.6.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.6/Caster-Ui-Java-v1.6.jar",
+      "modVersion": "3",
+      "sizeBytes": 72104,
+      "downloadCount": 7,
+      "releasedAt": "2023-04-27T01:49:13Z"
     },
     {
       "tag": "1.5",
-      "name": "v1.5",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-27T00:23:22Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.5",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.5/Caster-Ui-Java-v1.5.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.5.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.5.jar",
-          "size": 72120,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.5/Caster-Ui-Java-v1.5.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.5/Caster-Ui-Java-v1.5.jar",
+      "modVersion": "3",
+      "sizeBytes": 72120,
+      "downloadCount": 7,
+      "releasedAt": "2023-04-27T00:23:22Z"
     },
     {
       "tag": "1.4",
-      "name": "v1.4",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-26T21:51:46Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.4",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.4/Caster-Ui-Java-v1.4.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.4.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.4.jar",
-          "size": 70019,
-          "downloadCount": 7,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.4/Caster-Ui-Java-v1.4.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.4/Caster-Ui-Java-v1.4.jar",
+      "modVersion": "3",
+      "sizeBytes": 70019,
+      "downloadCount": 7,
+      "releasedAt": "2023-04-26T21:51:46Z"
     },
     {
       "tag": "1.3",
-      "name": "v1.3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-24T15:15:27Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.3",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.3/Caster-Ui-Java-v1.3.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.3.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.3.jar",
-          "size": 68597,
-          "downloadCount": 114,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.3/Caster-Ui-Java-v1.3.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.3/Caster-Ui-Java-v1.3.jar",
+      "modVersion": "3",
+      "sizeBytes": 68597,
+      "downloadCount": 114,
+      "releasedAt": "2023-04-24T15:15:27Z"
     },
     {
       "tag": "1.2",
-      "name": "V.1.2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-20T15:01:14Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.2",
-      "modVersion": "3",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.2/Caster-Ui-Java-v1.2.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.2.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-v1.2.jar",
-          "size": 67009,
-          "downloadCount": 306,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.2/Caster-Ui-Java-v1.2.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.2/Caster-Ui-Java-v1.2.jar",
+      "modVersion": "3",
+      "sizeBytes": 67009,
+      "downloadCount": 306,
+      "releasedAt": "2023-04-20T15:01:14Z"
     },
     {
       "tag": "v2-2023-04-20",
-      "name": "v2",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-20T03:56:26Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v2-2023-04-20",
-      "modVersion": "2.1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v2-2023-04-20/Caster-Ui-Java-.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v2-2023-04-20.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-.jar",
-          "size": 64379,
-          "downloadCount": 27,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v2-2023-04-20/Caster-Ui-Java-.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "6e6a20bed9fa9b107dc20efd072b965eff7ac5e3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/6e6a20bed9fa9b107dc20efd072b965eff7ac5e3.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v2-2023-04-20/Caster-Ui-Java-.jar",
+      "modVersion": "2.1",
+      "sizeBytes": 64379,
+      "downloadCount": 27,
+      "releasedAt": "2023-04-20T03:56:26Z"
     },
     {
       "tag": "1.1",
-      "name": "v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-16T03:01:00Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/1.1",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.1/Caster-Ui-Java-.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-.jar",
-          "size": 54045,
-          "downloadCount": 46,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.1/Caster-Ui-Java-.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "b5dcec6a50c63630b6763ce53aba6ae90407315c",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b5dcec6a50c63630b6763ce53aba6ae90407315c.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/1.1/Caster-Ui-Java-.jar",
+      "modVersion": "2",
+      "sizeBytes": 54045,
+      "downloadCount": 46,
+      "releasedAt": "2023-04-16T03:01:00Z"
     },
     {
       "tag": "v1",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-12T12:02:55Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/v1",
-      "modVersion": "2.1",
+      "kind": "release",
       "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v1/Caster-Ui-Java-.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java-.jar",
-          "size": 49490,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v1/Caster-Ui-Java-.jar"
+          "from": "140.4",
+          "to": "146"
         }
       ],
-      "commitSha": "16d4147850131915ccf3a0301188b7be736a2f35",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/16d4147850131915ccf3a0301188b7be736a2f35.zip"
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v1/Caster-Ui-Java-.jar",
+      "modVersion": "2.1",
+      "sizeBytes": 49490,
+      "downloadCount": 44,
+      "releasedAt": "2023-04-12T12:02:55Z"
     },
     {
       "tag": "main",
-      "name": "main",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2023-04-10T12:49:15Z",
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/tag/main",
-      "modVersion": "5",
+      "kind": "release",
       "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/main/Caster-Ui-Java.jar",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/main.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Caster-Ui-Java.jar",
-          "size": 44992,
-          "downloadCount": 44,
-          "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/main/Caster-Ui-Java.jar"
+          "from": "147",
+          "to": "154"
         }
       ],
-      "commitSha": "3e8170ce8294286a390ff983830e1584f5504ee3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/3e8170ce8294286a390ff983830e1584f5504ee3.zip"
-    },
-    {
-      "tag": "vheads/main.1.1",
-      "name": "vheads/main.1.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/vheads%2Fmain.1.1",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/vheads%2Fmain.1.1.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/vheads%2Fmain.1.1.zip",
-      "assets": [],
-      "commitSha": "ec586ced372cf5711545f26ccb0e7cba12164523",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/ec586ced372cf5711545f26ccb0e7cba12164523.zip"
-    },
-    {
-      "tag": "v3.1.0",
-      "name": "v3.1.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.1.0",
-      "modVersion": "3.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.1.0.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.1.0.zip",
-      "assets": [],
-      "commitSha": "4322f4aba14c3072f5d6434839529f36f44eb018",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/4322f4aba14c3072f5d6434839529f36f44eb018.zip"
-    },
-    {
-      "tag": "v3.0.10",
-      "name": "v3.0.10",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.10",
-      "modVersion": "3.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.10.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.10.zip",
-      "assets": [],
-      "commitSha": "4322f4aba14c3072f5d6434839529f36f44eb018",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/4322f4aba14c3072f5d6434839529f36f44eb018.zip"
-    },
-    {
-      "tag": "v3.0.7",
-      "name": "v3.0.7",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.7",
-      "modVersion": "3",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.7.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.7.zip",
-      "assets": [],
-      "commitSha": "b0159f3965de31ba086bad87358e3352b38613b3",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/b0159f3965de31ba086bad87358e3352b38613b3.zip"
-    },
-    {
-      "tag": "v3.0.6",
-      "name": "v3.0.6",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.6",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.6.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.6.zip",
-      "assets": [],
-      "commitSha": "42b3c342a5b07e07cb4b200c81fa6987e3184ab7",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/42b3c342a5b07e07cb4b200c81fa6987e3184ab7.zip"
-    },
-    {
-      "tag": "v3.0.5",
-      "name": "v3.0.5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.5",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.5.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.5.zip",
-      "assets": [],
-      "commitSha": "3a79de119c68b246a0fc68cbca9a0ce4cb20d804",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/3a79de119c68b246a0fc68cbca9a0ce4cb20d804.zip"
-    },
-    {
-      "tag": "v3.0.4",
-      "name": "v3.0.4",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.4",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.4.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.4.zip",
-      "assets": [],
-      "commitSha": "db33d87957ba8a1b502161941df2014fd43c21aa",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/db33d87957ba8a1b502161941df2014fd43c21aa.zip"
-    },
-    {
-      "tag": "v3.0.3",
-      "name": "v3.0.3",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.3",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.3.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.3.zip",
-      "assets": [],
-      "commitSha": "57c2ab893e6d7fd1c6e0801e5536c8a3d0e44b3d",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/57c2ab893e6d7fd1c6e0801e5536c8a3d0e44b3d.zip"
-    },
-    {
-      "tag": "v3.0.2",
-      "name": "v3.0.2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.2",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.2.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.2.zip",
-      "assets": [],
-      "commitSha": "9bfc15cde1ce5718b1424d06e2a92fd49af0b99b",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/9bfc15cde1ce5718b1424d06e2a92fd49af0b99b.zip"
-    },
-    {
-      "tag": "v3.0.1",
-      "name": "v3.0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.1",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.1.zip",
-      "assets": [],
-      "commitSha": "92782428d08169a515d05f11b71c5ffdc8155315",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/92782428d08169a515d05f11b71c5ffdc8155315.zip"
-    },
-    {
-      "tag": "v3.0.0",
-      "name": "v3.0.0",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v3.0.0",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.0.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v3.0.0.zip",
-      "assets": [],
-      "commitSha": "339caa17842719cb1fa9db8a8856188d6f3d40fa",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/339caa17842719cb1fa9db8a8856188d6f3d40fa.zip"
-    },
-    {
-      "tag": "v2",
-      "name": "v2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v2",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v2.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v2.zip",
-      "assets": [],
-      "commitSha": "16d4147850131915ccf3a0301188b7be736a2f35",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/16d4147850131915ccf3a0301188b7be736a2f35.zip"
-    },
-    {
-      "tag": "v0.0.1",
-      "name": "v0.0.1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/v0.0.1",
-      "modVersion": "2.1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v0.0.1.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/v0.0.1.zip",
-      "assets": [],
-      "commitSha": "339caa17842719cb1fa9db8a8856188d6f3d40fa",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/339caa17842719cb1fa9db8a8856188d6f3d40fa.zip"
-    },
-    {
-      "tag": "Caster-Ui-Java",
-      "name": "Caster-Ui-Java",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/Caster-Ui-Java",
-      "modVersion": "1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/Caster-Ui-Java.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/Caster-Ui-Java.zip",
-      "assets": [],
-      "commitSha": "243dc97ff551881a49f5afdc5d70ebc3e0ce4810",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/243dc97ff551881a49f5afdc5d70ebc3e0ce4810.zip"
-    },
-    {
-      "tag": "5",
-      "name": "5",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/5",
+      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/main/Caster-Ui-Java.jar",
       "modVersion": "5",
-      "minGameVersion": "147",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/5.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/5.zip",
-      "assets": [],
-      "commitSha": "272f0543ee066a6520be72427777056ab0c1e8bd",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/272f0543ee066a6520be72427777056ab0c1e8bd.zip"
-    },
-    {
-      "tag": "2",
-      "name": "2",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/2",
-      "modVersion": "1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/2.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/2.zip",
-      "assets": [],
-      "commitSha": "725d8465575972c5b7b6375ae8175dc91e9531cc",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/725d8465575972c5b7b6375ae8175dc91e9531cc.zip"
-    },
-    {
-      "tag": "1",
-      "name": "1",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/JiroCab/Caster-Ui-Java/tree/1",
-      "modVersion": "1",
-      "minGameVersion": "140.4",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.zip",
-      "sourceArchiveUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/refs/tags/1.zip",
-      "assets": [],
-      "commitSha": "243dc97ff551881a49f5afdc5d70ebc3e0ce4810",
-      "archiveByCommitUrl": "https://github.com/JiroCab/Caster-Ui-Java/archive/243dc97ff551881a49f5afdc5d70ebc3e0ce4810.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v7-5.3",
-      "modVersion": "5.3",
-      "minGameVersion": "140.4",
-      "maxGameVersion": 147,
-      "hasRelease": true
-    },
-    {
-      "tag": "5",
-      "modVersion": "5",
-      "minGameVersion": "147",
-      "maxGameVersion": 154.2,
-      "hasRelease": false
+      "sizeBytes": 44992,
+      "downloadCount": 44,
+      "releasedAt": "2023-04-10T12:49:15Z"
     }
   ],
   "meta": {
+    "name": "caster-ui-java",
+    "author": "RushieWashie, WMF Industries",
+    "description": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind \n \n Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' \nconflicts with 'Ferlern/extended-UI'  \n\nPLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
+    "version": "5.3",
+    "minGameVersion": "140.4",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "casterui.CuiMain",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

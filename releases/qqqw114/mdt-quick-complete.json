@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "qqqw114/mdt-quick-complete",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "v1.1",
-      "name": "快速补全 v1.1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-13T23:01:00Z",
-      "htmlUrl": "https://github.com/QQQW114/mdt-quick-complete/releases/tag/v1.1",
-      "modVersion": "1.1",
+      "kind": "release",
       "minGameVersion": "159.7",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/QQQW114/mdt-quick-complete/releases/download/v1.1/quick-complete.jar",
-      "sourceArchiveUrl": "https://github.com/qqqw114/mdt-quick-complete/archive/refs/tags/v1.1.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "quick-complete.jar",
-          "size": 35292,
-          "downloadCount": 127,
-          "downloadUrl": "https://github.com/QQQW114/mdt-quick-complete/releases/download/v1.1/quick-complete.jar"
+          "from": "159.7",
+          "to": "160.7"
         }
       ],
-      "commitSha": "98951241d160d9c5a79e6bf019513295bbc19e6f",
-      "archiveByCommitUrl": "https://github.com/qqqw114/mdt-quick-complete/archive/98951241d160d9c5a79e6bf019513295bbc19e6f.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "v1.1",
+      "downloadUrl": "https://github.com/QQQW114/mdt-quick-complete/releases/download/v1.1/quick-complete.jar",
       "modVersion": "1.1",
-      "minGameVersion": "159.7",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 35292,
+      "downloadCount": 127,
+      "releasedAt": "2026-08-13T23:01:00Z"
     }
   ],
   "meta": {
+    "name": "quick-complete",
+    "author": "QQQW114",
+    "description": "我们添加了微软大战代码到MDT，请善用你的方向键与TAB",
+    "version": "1.1",
+    "minGameVersion": "159.7",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "quickcomplete.QuickCompleteMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

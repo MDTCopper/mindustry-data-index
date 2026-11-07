@@ -1,64 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "cuber-david/feces-mod",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "Mindustry-Mod",
-      "name": "V1",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-08-21T13:49:58Z",
-      "htmlUrl": "https://github.com/Cuber-David/Feces-Mod/releases/tag/Mindustry-Mod",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Cuber-David/Feces-Mod/releases/download/Mindustry-Mod/Feces-Mod.jar",
-      "sourceArchiveUrl": "https://github.com/cuber-david/feces-mod/archive/refs/tags/Mindustry-Mod.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Feces-Mod.jar",
-          "size": 6123732,
-          "downloadCount": 57,
-          "downloadUrl": "https://github.com/Cuber-David/Feces-Mod/releases/download/Mindustry-Mod/Feces-Mod.jar"
+          "from": "158.1",
+          "to": "160.7"
         }
       ],
-      "commitSha": "3069ff42e3588158ae5ad3f41e98f8dfac51b367",
-      "archiveByCommitUrl": "https://github.com/cuber-david/feces-mod/archive/3069ff42e3588158ae5ad3f41e98f8dfac51b367.zip"
-    },
-    {
-      "tag": "Mod",
-      "name": "Mod",
-      "hasRelease": false,
-      "prerelease": null,
-      "publishedAt": null,
-      "htmlUrl": "https://github.com/cuber-david/feces-mod/tree/Mod",
+      "downloadUrl": "https://github.com/Cuber-David/Feces-Mod/releases/download/Mindustry-Mod/Feces-Mod.jar",
       "modVersion": "1",
-      "minGameVersion": "158.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/cuber-david/feces-mod/archive/refs/tags/Mod.zip",
-      "sourceArchiveUrl": "https://github.com/cuber-david/feces-mod/archive/refs/tags/Mod.zip",
-      "assets": [],
-      "commitSha": "32bac0a900d4c02efe200055c614808c8cd97051",
-      "archiveByCommitUrl": "https://github.com/cuber-david/feces-mod/archive/32bac0a900d4c02efe200055c614808c8cd97051.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Mindustry-Mod",
-      "modVersion": "1",
-      "minGameVersion": "158.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 6123732,
+      "downloadCount": 57,
+      "releasedAt": "2026-08-21T13:49:58Z"
     }
   ],
   "meta": {
+    "name": "kmod",
+    "author": "Cuber",
+    "description": "Make a beautiful world with feces.",
+    "version": "1",
+    "minGameVersion": "158.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": "K.KMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

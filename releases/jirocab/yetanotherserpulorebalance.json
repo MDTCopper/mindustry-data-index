@@ -1,41 +1,36 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "jirocab/yetanotherserpulorebalance",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "1.0",
-      "name": "V1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-10-05T13:39:01Z",
-      "htmlUrl": "https://github.com/JiroCab/YetAnotherSerpuloRebalance/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "143.1",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "143.1",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/jirocab/yetanotherserpulorebalance/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/jirocab/yetanotherserpulorebalance/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "d58da9a983deddeac84194f71bb42da6d24e1302",
-      "archiveByCommitUrl": "https://github.com/jirocab/yetanotherserpulorebalance/archive/d58da9a983deddeac84194f71bb42da6d24e1302.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "1.0",
       "modVersion": "1.0",
-      "minGameVersion": "143.1",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "releasedAt": "2024-10-05T13:39:01Z"
     }
   ],
   "meta": {
+    "name": "yasr",
+    "author": "Rushie Washie, GooglyGoo",
+    "description": "Serpulo Tweaks",
+    "version": "1.0",
+    "minGameVersion": "143.1",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

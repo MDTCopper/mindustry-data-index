@@ -1,75 +1,64 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "leyn-pl/randomaccent",
-  "generatedAt": "2026-11-06T13:57:08.230Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "js",
+  "versions": [
     {
       "tag": "2.0",
-      "name": "2.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-04-09T12:42:05Z",
-      "htmlUrl": "https://github.com/Leyn-pl/RandomAccent/releases/tag/2.0",
-      "modVersion": "2.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/leyn-pl/randomaccent/archive/refs/tags/2.0.zip",
-      "sourceArchiveUrl": "https://github.com/leyn-pl/randomaccent/archive/refs/tags/2.0.zip",
-      "assets": [],
-      "commitSha": "525acc5fb0832846f964c085332e56179a44c401",
-      "archiveByCommitUrl": "https://github.com/leyn-pl/randomaccent/archive/525acc5fb0832846f964c085332e56179a44c401.zip"
+      "modVersion": "2.0",
+      "releasedAt": "2025-04-09T12:42:05Z"
     },
     {
       "tag": "1.1",
-      "name": "I think it works so here's the update",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-15T16:26:43Z",
-      "htmlUrl": "https://github.com/Leyn-pl/RandomAccent/releases/tag/1.1",
-      "modVersion": "1.1",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/leyn-pl/randomaccent/archive/refs/tags/1.1.zip",
-      "sourceArchiveUrl": "https://github.com/leyn-pl/randomaccent/archive/refs/tags/1.1.zip",
-      "assets": [],
-      "commitSha": "7e883251d3658ef20800c2bd5dffc0895b3cfca3",
-      "archiveByCommitUrl": "https://github.com/leyn-pl/randomaccent/archive/7e883251d3658ef20800c2bd5dffc0895b3cfca3.zip"
+      "modVersion": "1.1",
+      "releasedAt": "2025-03-15T16:26:43Z"
     },
     {
       "tag": "1.0",
-      "name": "1.0",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2024-01-28T13:26:45Z",
-      "htmlUrl": "https://github.com/Leyn-pl/RandomAccent/releases/tag/1.0",
-      "modVersion": "1.0",
+      "kind": "tag",
       "minGameVersion": "145",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
       "downloadUrl": "https://github.com/leyn-pl/randomaccent/archive/refs/tags/1.0.zip",
-      "sourceArchiveUrl": "https://github.com/leyn-pl/randomaccent/archive/refs/tags/1.0.zip",
-      "assets": [],
-      "commitSha": "6ed3aaba22368faf756773c33959b5dd4f73dc45",
-      "archiveByCommitUrl": "https://github.com/leyn-pl/randomaccent/archive/6ed3aaba22368faf756773c33959b5dd4f73dc45.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "2.0",
-      "modVersion": "2.0",
-      "minGameVersion": "145",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "modVersion": "1.0",
+      "releasedAt": "2024-01-28T13:26:45Z"
     }
   ],
   "meta": {
+    "name": "randomaccent",
+    "author": "LEYN1092",
+    "description": "Makes Pal.accent color random on each game boot and adds a button to do it from menu. Refresh your style!",
+    "version": "2.0",
+    "minGameVersion": "145",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": null,
-    "hasScripts": false,
+    "java": false,
+    "hasScripts": true,
     "hasJava": false
   }
 }

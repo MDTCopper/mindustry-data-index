@@ -1,77 +1,53 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "vini230909/hide-units",
-  "generatedAt": "2026-11-07T00:06:40.609Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "java",
+  "versions": [
     {
       "tag": "latest",
-      "name": "Latest build",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-11T19:27:41Z",
-      "htmlUrl": "https://github.com/Vini230909/Hide-Units/releases/tag/latest",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/latest/Hide-Units.jar",
-      "sourceArchiveUrl": "https://github.com/vini230909/hide-units/archive/refs/tags/latest.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Hide-Units.jar",
-          "size": 28893,
-          "downloadCount": 490,
-          "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/latest/Hide-Units.jar"
-        },
-        {
-          "name": "Hide-UnitsDesktop.jar",
-          "size": 20062,
-          "downloadCount": 5,
-          "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/latest/Hide-UnitsDesktop.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "67afa99c32e2c95112caa9ac1080f29ff9666d8a",
-      "archiveByCommitUrl": "https://github.com/vini230909/hide-units/archive/67afa99c32e2c95112caa9ac1080f29ff9666d8a.zip"
+      "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/latest/Hide-Units.jar",
+      "modVersion": "1",
+      "sizeBytes": 48955,
+      "downloadCount": 496,
+      "releasedAt": "2026-07-11T19:27:41Z"
     },
     {
       "tag": "Beta",
-      "name": "Vinicator v1.0 — Units? What units? 👁️",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2026-07-03T19:48:26Z",
-      "htmlUrl": "https://github.com/Vini230909/Hide-Units/releases/tag/Beta",
-      "modVersion": "1",
+      "kind": "release",
       "minGameVersion": "158",
-      "metadataPath": "mod.hjson",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/Beta/VinicatorDesktop.jar",
-      "sourceArchiveUrl": "https://github.com/vini230909/hide-units/archive/refs/tags/Beta.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "VinicatorDesktop.jar",
-          "size": 16561,
-          "downloadCount": 112,
-          "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/Beta/VinicatorDesktop.jar"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "commitSha": "67afa99c32e2c95112caa9ac1080f29ff9666d8a",
-      "archiveByCommitUrl": "https://github.com/vini230909/hide-units/archive/67afa99c32e2c95112caa9ac1080f29ff9666d8a.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "latest",
+      "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/Beta/VinicatorDesktop.jar",
       "modVersion": "1",
-      "minGameVersion": "158",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 16561,
+      "downloadCount": 112,
+      "releasedAt": "2026-07-03T19:48:26Z"
     }
   ],
   "meta": {
+    "name": "vinicator",
+    "author": "Vini230909",
+    "description": "Hides or fades units near your player, cursor, or camera so you can see what's underneath. Configure range, opacity and affected unit types in Settings > Vinicator.",
+    "version": "1",
+    "minGameVersion": "158",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "vinicator.VinicatorMod",
+    "java": true,
     "hasScripts": false,
     "hasJava": true
   }

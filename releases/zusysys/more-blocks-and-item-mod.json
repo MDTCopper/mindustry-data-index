@@ -1,47 +1,37 @@
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "repo": "zusysys/more-blocks-and-item-mod",
-  "generatedAt": "2026-11-06T14:52:40.602Z",
-  "releases": [
+  "generatedAt": "2026-11-07T05:28:28.358Z",
+  "modType": "json",
+  "versions": [
     {
       "tag": "Mindustry-mods",
-      "name": "Mod release 3",
-      "hasRelease": true,
-      "prerelease": false,
-      "publishedAt": "2025-03-03T14:00:12Z",
-      "htmlUrl": "https://github.com/Zusysys/More-Blocks-And-item-mod/releases/tag/Mindustry-mods",
-      "modVersion": "2",
+      "kind": "release",
       "minGameVersion": "136",
-      "metadataPath": "mod.json",
-      "metadataStatus": "ok",
-      "downloadUrl": "https://github.com/Zusysys/More-Blocks-And-item-mod/releases/download/Mindustry-mods/Mod-2.zip",
-      "sourceArchiveUrl": "https://github.com/zusysys/more-blocks-and-item-mod/archive/refs/tags/Mindustry-mods.zip",
-      "assets": [
+      "gameVersionRanges": [
         {
-          "name": "Mod-2.zip",
-          "size": 26329,
-          "downloadCount": 47,
-          "downloadUrl": "https://github.com/Zusysys/More-Blocks-And-item-mod/releases/download/Mindustry-mods/Mod-2.zip"
+          "from": "136",
+          "to": "160.7"
         }
       ],
-      "commitSha": "f63943c095ac40ed5fa775d4fce702494e758563",
-      "archiveByCommitUrl": "https://github.com/zusysys/more-blocks-and-item-mod/archive/f63943c095ac40ed5fa775d4fce702494e758563.zip"
-    }
-  ],
-  "compat": [
-    {
-      "tag": "Mindustry-mods",
+      "downloadUrl": "https://github.com/Zusysys/More-Blocks-And-item-mod/releases/download/Mindustry-mods/Mod-2.zip",
       "modVersion": "2",
-      "minGameVersion": "136",
-      "maxGameVersion": null,
-      "hasRelease": true
+      "sizeBytes": 26329,
+      "downloadCount": 47,
+      "releasedAt": "2025-03-03T14:00:12Z"
     }
   ],
   "meta": {
+    "name": "More Blocks and item mod",
+    "author": "Zusysys_1",
+    "description": "this is A  Mod with... More turrets! And item!",
+    "version": "2",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
     "main": null,
+    "java": false,
     "hasScripts": false,
     "hasJava": false
   }
