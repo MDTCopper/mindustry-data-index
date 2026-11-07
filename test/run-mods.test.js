@@ -152,6 +152,14 @@ test('index 为 v3：不再带 removedCount/iosCompatible/legacyCompatible，纯
   const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-newfields-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
   const mods = [officialMod('a/one')];
+  // 缓存一条带 minGameVersion 的版本，确保 v3 过滤/丢弃规则下仍保留该 mod
+  await seedMod(dir, [releaseFixture('v1', SHA_V1)], {
+    page1Etag: null,
+    page1FetchedAt: '2026-11-06T00:00:00.000Z',
+    page2FetchedAt: '2026-11-06T00:00:00.000Z',
+    fullFetchedAt: '2020-01-01T00:00:00.000Z',
+    tagsFetchedAt: '2026-11-06T00:00:00.000Z',
+  });
   const result = await run(dir, tagAwareApi({ tags: [['v1', SHA_V1]] }), mods, ['a/one']);
   assert.equal(result.code, 0);
   const index = JSON.parse(await readFile(path.join(dir, 'index.json'), 'utf8'));

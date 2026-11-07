@@ -1336,21 +1336,30 @@ export async function runMods(options, context) {
     await writeJsonAtomic(stateLoaded.file, nextState);
   }
 
-  const index = {
+  // v3：全量写 index-full.json，默认列表（默认=全量，heat 注入时再按 recommendVisible 拆分）
+  let indexChanged = false;
+  const fullIndex = {
     formatVersion: 3,
     generatedAt: now,
     source: {
       modsUrl: MODS_URL,
       modCount: keptResults.length,
     },
-    mods: results.map((result) => result.entry),
+    mods: keptResults.map((result) => result.entry),
     skipped,
   };
-  const indexChanged = indexBodyChanged(oldIndex, index);
-  if (!options.dryRun && indexChanged) {
-    await writeJsonAtomic(path.join(outDir, INDEX_FILE), index);
-  } else if (!indexChanged) {
-    log('[mods] index 内容未变，保留旧文件');
+  if (!options.dryRun) {
+    const fullIndexPath = path.join(outDir, FULL_INDEX_REL_PATH);
+    const previousFullIndex = await readJsonIfExists(fullIndexPath).catch(() => null);
+    if (indexBodyChanged(previousFullIndex, fullIndex)) {
+      await writeJsonAtomic(fullIndexPath, fullIndex);
+      indexChanged = true;
+    }
+    const indexPath = path.join(outDir, INDEX_FILE);
+    if (indexBodyChanged(oldIndex, fullIndex)) {
+      await writeJsonAtomic(indexPath, fullIndex);
+      indexChanged = true;
+    }
   }
 
   if (!options.dryRun && !options.keepMissingFiles && !isSubset) {
@@ -1683,7 +1692,9 @@ async function runCommunity(options, context) {
     await writeJsonAtomic(stateLoaded.file, nextState);
   }
 
-  const index = {
+  // v3：社区全量写 community/index-full.json，默认列表先写同一份（heat 注入时再拆分）
+  let indexChanged = false;
+  const communityFullIndex = {
     formatVersion: 3,
     generatedAt: now,
     source: {
@@ -1694,11 +1705,18 @@ async function runCommunity(options, context) {
     mods: results.map((result) => result.entry),
     skipped,
   };
-  const indexChanged = indexBodyChanged(oldIndex, index);
-  if (!options.dryRun && indexChanged) {
-    await writeJsonAtomic(path.join(communityDir, 'index.json'), index);
-  } else if (!indexChanged) {
-    log('[community] index 内容未变，保留旧文件');
+  if (!options.dryRun) {
+    const communityFullIndexPath = path.join(outDir, COMMUNITY_FULL_INDEX_REL_PATH);
+    const previousCommunityFullIndex = await readJsonIfExists(communityFullIndexPath).catch(() => null);
+    if (indexBodyChanged(previousCommunityFullIndex, communityFullIndex)) {
+      await writeJsonAtomic(communityFullIndexPath, communityFullIndex);
+      indexChanged = true;
+    }
+    const communityIndexPath = path.join(communityDir, 'index.json');
+    if (indexBodyChanged(oldIndex, communityFullIndex)) {
+      await writeJsonAtomic(communityIndexPath, communityFullIndex);
+      indexChanged = true;
+    }
   }
   if (!options.dryRun && !limited && !options.keepMissingFiles) {
     await cleanupMissing(communityDir, selectedMods, log);
@@ -1846,7 +1864,9 @@ async function loadHeatMods(outDir, log) {
         repo: entry.repo,
         namePlain: entry.namePlain ?? '',
         source,
-        hasJava: entry.hasJava === true,
+        // v3 用 modType；兼容旧数据里的 hasJava
+        modType: entry.modType ?? (entry.hasJava === true ? 'java' : null),
+        hasJava: entry.modType ? entry.modType === 'java' : entry.hasJava === true,
       });
     }
   }
