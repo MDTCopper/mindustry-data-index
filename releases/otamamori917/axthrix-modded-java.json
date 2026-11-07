@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "otamamori917/axthrix-modded-java",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T23:38:09.826Z",
   "modType": "java",
+  "meta": {
+    "name": "aj",
+    "author": "Otamamori#4716\ncontributors:\n    BetaMindy/sk7725#6110| BoltBulletType.\n    MEEPofFaith#7277| AcceleratedTurret, blackhole related stuff.\n    nullevoy#7763| Spriting Tips.\n    Monika#6030| Code clean up & starting blocks & bundles\n    Siede#6321| Status effect sprites\n    RushieWashie/jirocab| AmmoLifeTimeUnitType",
+    "description": "BETA sandbox only! requires blackhole render by meep of faith",
+    "version": "2.2",
+    "minGameVersion": "155",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "axthrix.AxthrixLoader",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.6.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Otamamori917/Axthrix-Modded-Java/releases/download/v2.6.5/Axthrix-Modded-Java.jar",
       "modVersion": "2.2",
       "sizeBytes": 49548928,
-      "downloadCount": 414,
+      "downloadCount": 415,
       "releasedAt": "2026-08-25T20:18:45Z"
     },
     {
@@ -177,7 +191,7 @@
       "downloadUrl": "https://github.com/Otamamori917/Axthrix-Modded-Java/releases/download/v2.0.0.alpha/Axthrix-Modded-Java.jar",
       "modVersion": "2",
       "sizeBytes": 748651,
-      "downloadCount": 1024,
+      "downloadCount": 1025,
       "releasedAt": "2024-01-25T11:22:19Z"
     },
     {
@@ -196,19 +210,5 @@
       "downloadCount": 3318,
       "releasedAt": "2023-08-08T03:23:49Z"
     }
-  ],
-  "meta": {
-    "name": "aj",
-    "author": "Otamamori#4716\ncontributors:\n    BetaMindy/sk7725#6110| BoltBulletType.\n    MEEPofFaith#7277| AcceleratedTurret, blackhole related stuff.\n    nullevoy#7763| Spriting Tips.\n    Monika#6030| Code clean up & starting blocks & bundles\n    Siede#6321| Status effect sprites\n    RushieWashie/jirocab| AmmoLifeTimeUnitType",
-    "description": "BETA sandbox only! requires blackhole render by meep of faith",
-    "version": "2.2",
-    "minGameVersion": "155",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "axthrix.AxthrixLoader",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "vini230909/hide-units",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T23:38:09.826Z",
   "modType": "java",
+  "meta": {
+    "name": "vinicator",
+    "author": "Vini230909",
+    "description": "Hides or fades units near your player, cursor, or camera so you can see what's underneath. Configure range, opacity and affected unit types in Settings > Vinicator.",
+    "version": "1",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "vinicator.VinicatorMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "latest",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Vini230909/Hide-Units/releases/download/latest/Hide-Units.jar",
       "modVersion": "1",
       "sizeBytes": 48955,
-      "downloadCount": 497,
+      "downloadCount": 498,
       "releasedAt": "2026-07-11T19:27:41Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 112,
       "releasedAt": "2026-07-03T19:48:26Z"
     }
-  ],
-  "meta": {
-    "name": "vinicator",
-    "author": "Vini230909",
-    "description": "Hides or fades units near your player, cursor, or camera so you can see what's underneath. Configure range, opacity and affected unit types in Settings > Vinicator.",
-    "version": "1",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "vinicator.VinicatorMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

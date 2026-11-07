@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/random",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T23:38:09.826Z",
   "modType": "java",
+  "meta": {
+    "name": "Random",
+    "author": "DeterMination-Wind",
+    "description": "Client-side random text and texture presentation for Mindustry.",
+    "version": "1.1.1",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "random.RandomMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/Random/releases/download/v1.1.1/Random-1.1.1.jar",
       "modVersion": "1.1.1",
       "sizeBytes": 75898,
-      "downloadCount": 177,
+      "downloadCount": 178,
       "releasedAt": "2026-08-08T03:41:50Z"
     },
     {
@@ -52,19 +66,5 @@
       "downloadCount": 11,
       "releasedAt": "2026-07-16T08:08:05Z"
     }
-  ],
-  "meta": {
-    "name": "Random",
-    "author": "DeterMination-Wind",
-    "description": "Client-side random text and texture presentation for Mindustry.",
-    "version": "1.1.1",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "random.RandomMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

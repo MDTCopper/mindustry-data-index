@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "fallendraggon/miningaimode",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T23:38:09.826Z",
   "modType": "java",
+  "meta": {
+    "name": "maim-java-mod",
+    "author": "FD",
+    "description": "Automatic mining AI: assigns miner units to resources by quotas/crisis logic.",
+    "version": "1.5",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "fallen.MiningAIMode",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/FallenDraggon/MiningAIMode/releases/download/v1.5/MiningAIMode.jar",
       "modVersion": "1.5",
       "sizeBytes": 180537,
-      "downloadCount": 99,
+      "downloadCount": 100,
       "releasedAt": "2026-10-03T11:05:34Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 64,
       "releasedAt": "2026-09-10T13:09:43Z"
     }
-  ],
-  "meta": {
-    "name": "maim-java-mod",
-    "author": "FD",
-    "description": "Automatic mining AI: assigns miner units to resources by quotas/crisis logic.",
-    "version": "1.5",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "fallen.MiningAIMode",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

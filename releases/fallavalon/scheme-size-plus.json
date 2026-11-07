@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "fallavalon/scheme-size-plus",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T23:38:09.826Z",
   "modType": "java",
+  "meta": {
+    "name": "scheme-size-plus",
+    "author": "FallAvalon",
+    "description": "Schematics, building tools, local overlays and enemy route forecasts. Desktop Mindustry 160.7. Testing release; full Scheme-Size parity is not yet verified.",
+    "version": "0.5.4",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "org.schemetools.SchemeSizePlusMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.5.4",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/FallAvalon/scheme-size-plus/releases/download/v0.5.4/scheme-size-plus.jar",
       "modVersion": "0.5.4",
       "sizeBytes": 603017,
-      "downloadCount": 14,
+      "downloadCount": 15,
       "releasedAt": "2026-11-04T21:15:17Z"
     },
     {
@@ -148,19 +162,5 @@
       "downloadCount": 2,
       "releasedAt": "2026-11-04T14:16:38Z"
     }
-  ],
-  "meta": {
-    "name": "scheme-size-plus",
-    "author": "FallAvalon",
-    "description": "Schematics, building tools, local overlays and enemy route forecasts. Desktop Mindustry 160.7. Testing release; full Scheme-Size parity is not yet verified.",
-    "version": "0.5.4",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "org.schemetools.SchemeSizePlusMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
