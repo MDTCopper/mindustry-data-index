@@ -2364,7 +2364,7 @@ async function runHeat(options, context) {
   });
   entries.forEach((entry, index) => {
     entry.rank = index + 1;
-    entry.ranks = { heat: entry.rank };
+    entry.ranks = { score: entry.rank };
   });
   // 预计算其他排序：updated（最近更新）/ downloads / stars / newest（发布越新越前），客户端直接按 ranks 排
   const timestampOf = (value) => {
