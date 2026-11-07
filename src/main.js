@@ -615,6 +615,13 @@ async function processMod(context) {
       };
     }
     migrated.source = previous.source ?? null;
+    // v2→v3 迁移后先落盘：即使本轮配额不足、刷新被跳过，也不会留下 v2 文件与 v3 index 混用
+    if (!options.dryRun) {
+      await writeJsonAtomic(resolveReleaseFile(workDir, relPath), migrated);
+      if (legacyToDelete !== null) {
+        await deleteReleaseFile(workDir, legacyToDelete);
+      }
+    }
     previous = migrated;
     log(`[${mod.repo}] formatVersion 2 → ${CURRENT_FORMAT_VERSION} 本地迁移后继续刷新`);
   }
@@ -1702,7 +1709,7 @@ async function runCommunity(options, context) {
       query: TOPIC_QUERY_BASE,
       officialCount: officialRepos.size,
     },
-    mods: results.map((result) => result.entry),
+    mods: keptResults.map((result) => result.entry),
     skipped,
   };
   if (!options.dryRun) {
@@ -1722,7 +1729,7 @@ async function runCommunity(options, context) {
     await cleanupMissing(communityDir, selectedMods, log);
   }
 
-  const summaryRows = communitySummaryRows(results);
+  const summaryRows = communitySummaryRows(keptResults);
   const summary = buildSummary({ rows: summaryRows, generatedAt: now });
   const summaryFile = path.join(communityDir, 'summary.json');
   const summaryCsvFile = path.join(communityDir, 'summary.csv');
