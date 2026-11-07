@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "sputnuc/expansion-java",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "expansion",
+    "author": "Sputnuc",
+    "description": "Recreation of my first mod",
+    "version": "0.1.4.8",
+    "minGameVersion": "154.3",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "expansion.ExpansionMain",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.1.4.8-pre-beta",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Sputnuc/Expansion-Java/releases/download/0.1.4.8-pre-beta/Expansion-Java.jar",
       "modVersion": "0.1.4.8",
       "sizeBytes": 636050,
-      "downloadCount": 609,
+      "downloadCount": 610,
       "releasedAt": "2026-03-01T09:13:22Z"
     },
     {
@@ -196,19 +210,5 @@
       "downloadCount": 61,
       "releasedAt": "2025-07-12T21:30:30Z"
     }
-  ],
-  "meta": {
-    "name": "expansion",
-    "author": "Sputnuc",
-    "description": "Recreation of my first mod",
-    "version": "0.1.4.8",
-    "minGameVersion": "154.3",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "expansion.ExpansionMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

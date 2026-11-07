@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "nadeeshafdo/aiassistmod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "ai-advisor",
+    "author": "nadeeshafdo.dev",
+    "description": "A context-aware AI assistant powered by Gemini that provides real-time strategic advice based on your current game state.",
+    "version": "__VERSION__",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "advisor.AdvisorMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2.7",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/nadeeshafdo/AIAssistMod/releases/download/v1.2.7/AIAssistMod.jar",
       "modVersion": "__VERSION__",
       "sizeBytes": 72106,
-      "downloadCount": 992,
+      "downloadCount": 993,
       "releasedAt": "2026-07-11T08:52:04Z"
     },
     {
@@ -228,19 +242,5 @@
       "downloadCount": 36,
       "releasedAt": "2026-07-08T07:42:54Z"
     }
-  ],
-  "meta": {
-    "name": "ai-advisor",
-    "author": "nadeeshafdo.dev",
-    "description": "A context-aware AI assistant powered by Gemini that provides real-time strategic advice based on your current game state.",
-    "version": "__VERSION__",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "advisor.AdvisorMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

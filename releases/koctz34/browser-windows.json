@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "koctz34/browser-windows",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "browser-windows",
+    "author": "Ion - 7274",
+    "description": "\n  A mod that allows you to create browser windows directly in the game.\nYou can interact with them, they process clicks, and you can watch videos, read articles, or just play games.\n[red[]]Warning! Be prepared for the fact that some sites may not be supported, and some games may not work due to capture features.\n[scarlet[]]Although the mod supports Android devices, there is no guarantee that they will work stably. A different API is used to support Android, as they do not support JCEF.\n[stat[]]The mod can support servers, but a plugin is required for this. Request it from Ion - 7274 (Discord: koctz34). (I will probably release the plugin file along with updates soon).\n[scarlet[]]This mod does not working on Linux and MacOS.[[]]\n  ",
+    "version": "1.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "browser.BrowserMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.2",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/koctz34/browser-windows/releases/download/1.2/browsermod.jar",
       "modVersion": "1.2",
       "sizeBytes": 300165184,
-      "downloadCount": 936,
+      "downloadCount": 938,
       "releasedAt": "2026-05-29T19:53:42Z"
     },
     {
@@ -68,19 +82,5 @@
       "downloadCount": 69,
       "releasedAt": "2026-03-01T08:00:37Z"
     }
-  ],
-  "meta": {
-    "name": "browser-windows",
-    "author": "Ion - 7274",
-    "description": "\n  A mod that allows you to create browser windows directly in the game.\nYou can interact with them, they process clicks, and you can watch videos, read articles, or just play games.\n[red[]]Warning! Be prepared for the fact that some sites may not be supported, and some games may not work due to capture features.\n[scarlet[]]Although the mod supports Android devices, there is no guarantee that they will work stably. A different API is used to support Android, as they do not support JCEF.\n[stat[]]The mod can support servers, but a plugin is required for this. Request it from Ion - 7274 (Discord: koctz34). (I will probably release the plugin file along with updates soon).\n[scarlet[]]This mod does not working on Linux and MacOS.[[]]\n  ",
-    "version": "1.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "browser.BrowserMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

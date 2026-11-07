@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "daniil15ddd/autodrill-reworked-",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "autodrill",
+    "author": "Pointifix, Daniil15DDD",
+    "description": "Mindustry mod that adds tools for automatically filling resource patches with drills. Fork updated for Mindustry v8 build 157.3.",
+    "version": "1.5.1-157.3",
+    "minGameVersion": "157",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "autodrill.AutoDrill",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v157.3",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/Daniil15DDD/AutoDrill-Reworked-/releases/download/v157.3/AutoDrill-Reworked-Desktop.jar",
       "modVersion": "1.5.1-157.3",
       "sizeBytes": 1091945,
-      "downloadCount": 8775,
+      "downloadCount": 8776,
       "releasedAt": "2026-04-26T11:41:31Z"
     }
-  ],
-  "meta": {
-    "name": "autodrill",
-    "author": "Pointifix, Daniil15DDD",
-    "description": "Mindustry mod that adds tools for automatically filling resource patches with drills. Fork updated for Mindustry v8 build 157.3.",
-    "version": "1.5.1-157.3",
-    "minGameVersion": "157",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "autodrill.AutoDrill",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

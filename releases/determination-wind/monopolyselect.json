@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/monopolyselect",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "MonoPolySelect",
+    "author": "DeterMination-Wind",
+    "description": "指挥模式辅助小模组：在「设置→控制」中配置两个快捷键，一键选中所有 mono、一键选中所有 poly。",
+    "version": "1.0.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "monopolyselect.MonoPolySelectMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.0",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/MonoPolySelect/releases/download/v1.0.0/MonoPolySelect.jar",
       "modVersion": "1.0.0",
       "sizeBytes": 10798,
-      "downloadCount": 59,
+      "downloadCount": 60,
       "releasedAt": "2026-08-09T14:00:11Z"
     }
-  ],
-  "meta": {
-    "name": "MonoPolySelect",
-    "author": "DeterMination-Wind",
-    "description": "指挥模式辅助小模组：在「设置→控制」中配置两个快捷键，一键选中所有 mono、一键选中所有 poly。",
-    "version": "1.0.0",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "monopolyselect.MonoPolySelectMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

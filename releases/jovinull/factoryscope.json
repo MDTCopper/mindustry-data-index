@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "jovinull/factoryscope",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "factory-scope",
+    "author": "Jovinull",
+    "description": "Read-only Mindustry factory diagnostics: building state, area reports, supported item/payload/liquid routes, and power-grid evidence.",
+    "version": "1.3.0",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "factoryscope.FactoryScope",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.3.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Jovinull/FactoryScope/releases/download/v1.3.0/FactoryScope.jar",
       "modVersion": "1.3.0",
       "sizeBytes": 642749,
-      "downloadCount": 357,
+      "downloadCount": 359,
       "releasedAt": "2026-10-19T14:33:49Z"
     },
     {
@@ -261,19 +275,5 @@
       "releasedAt": "2026-08-27T03:29:19Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "factory-scope",
-    "author": "Jovinull",
-    "description": "Read-only Mindustry factory diagnostics: building state, area reports, supported item/payload/liquid routes, and power-grid evidence.",
-    "version": "1.3.0",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "factoryscope.FactoryScope",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "tlb1/xilion",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "xilion",
+    "author": "TLB1",
+    "description": "A Java Mindustry mod that adds a new campaign on the planet Xilion. Currently still in pre-alpha",
+    "version": "pre-alpha build 31 hotfix",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "xilion.XilionJavaMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1.31.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/TLB1/Xilion/releases/download/v0.1.31.1/Xilion.jar",
       "modVersion": "pre-alpha build 31 hotfix",
       "sizeBytes": 2038543,
-      "downloadCount": 2131,
+      "downloadCount": 2133,
       "releasedAt": "2026-02-07T20:49:00Z"
     },
     {
@@ -184,19 +198,5 @@
       "releasedAt": "2023-08-18T20:04:07Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "xilion",
-    "author": "TLB1",
-    "description": "A Java Mindustry mod that adds a new campaign on the planet Xilion. Currently still in pre-alpha",
-    "version": "pre-alpha build 31 hotfix",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "xilion.XilionJavaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

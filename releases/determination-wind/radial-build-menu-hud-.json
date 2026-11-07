@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/radial-build-menu-hud-",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "radial-build-menu",
+    "author": "DeterMination",
+    "description": "Hold a hotkey to open a radial build HUD around the cursor with configurable 16-slot layouts, profile switching, and rule-based auto slot sets. / 按住热键在鼠标周围打开圆盘建造 HUD，支持 16 槽位配置、配置组切换与规则自动切盘。",
+    "version": "5.7.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "radialbuildmenu.RadialBuildMenuMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v5.7.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/Radial-Build-Menu-hud-/releases/download/v5.7.1/radial-build-menu.jar",
       "modVersion": "5.7.1",
       "sizeBytes": 461952,
-      "downloadCount": 574,
+      "downloadCount": 576,
       "releasedAt": "2026-08-08T03:40:02Z"
     },
     {
@@ -68,19 +82,5 @@
       "downloadCount": 226,
       "releasedAt": "2026-02-20T10:19:51Z"
     }
-  ],
-  "meta": {
-    "name": "radial-build-menu",
-    "author": "DeterMination",
-    "description": "Hold a hotkey to open a radial build HUD around the cursor with configurable 16-slot layouts, profile switching, and rule-based auto slot sets. / 按住热键在鼠标周围打开圆盘建造 HUD，支持 16 槽位配置、配置组切换与规则自动切盘。",
-    "version": "5.7.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "radialbuildmenu.RadialBuildMenuMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

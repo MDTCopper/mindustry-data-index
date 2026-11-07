@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "konkitoman/SpeedCtlMan",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-07T14:12:07.591Z",
   "modType": "java",
+  "meta": {
+    "name": "speed-ctl-man",
+    "author": "konkitoman",
+    "description": "\nDesktop only!\n\nDefault: set speed.\nLCtrl: multiply speed.\nLAlt: add speed.\nLShift + LCtrl: divide speed.\nLShift + LAlt: subtract speed.\n\nAll player will have the same speed!\nA player need to be admin to control the speed!\n",
+    "version": "0.2",
+    "minGameVersion": "137",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "SpeedCtlMan.SpeedControl",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "V0.2",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/konkitoman/SpeedCtlMan/releases/download/V0.2/SpeedCtlMan.jar",
       "modVersion": "0.2",
       "sizeBytes": 16161,
-      "downloadCount": 9237,
+      "downloadCount": 9238,
       "releasedAt": "2022-08-21T12:49:34Z"
     }
-  ],
-  "meta": {
-    "name": "speed-ctl-man",
-    "author": "konkitoman",
-    "description": "\nDesktop only!\n\nDefault: set speed.\nLCtrl: multiply speed.\nLAlt: add speed.\nLShift + LCtrl: divide speed.\nLShift + LAlt: subtract speed.\n\nAll player will have the same speed!\nA player need to be admin to control the speed!\n",
-    "version": "0.2",
-    "minGameVersion": "137",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "SpeedCtlMan.SpeedControl",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

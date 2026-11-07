@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/foreignservertranslator",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "ForeignServerTranslator-dev",
+    "author": "DeterMination (BEK)",
+    "description": "Client-side translator for marked foreign-language Mindustry servers. / 标记外语服务器后自动翻译聊天的 Mindustry 客户端模组。",
+    "version": "1.2.1",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "foreignservertranslator.ForeignServerTranslatorMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/ForeignServerTranslator/releases/download/v1.2.1/ForeignServerTranslator-v1.2.1.jar",
       "modVersion": "1.2.1",
       "sizeBytes": 4094416,
-      "downloadCount": 1116,
+      "downloadCount": 1118,
       "releasedAt": "2026-08-08T03:53:47Z"
     },
     {
@@ -116,19 +130,5 @@
       "downloadCount": 9,
       "releasedAt": "2026-05-23T15:03:03Z"
     }
-  ],
-  "meta": {
-    "name": "ForeignServerTranslator-dev",
-    "author": "DeterMination (BEK)",
-    "description": "Client-side translator for marked foreign-language Mindustry servers. / 标记外语服务器后自动翻译聊天的 Mindustry 客户端模组。",
-    "version": "1.2.1",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "foreignservertranslator.ForeignServerTranslatorMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

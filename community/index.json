@@ -1,56 +1,59 @@
 {
   "formatVersion": 3,
-  "generatedAt": "2026-11-07T13:25:56.712Z",
+  "generatedAt": "2026-11-07T14:12:07.591Z",
   "source": {
     "source": "topic",
     "query": "mindustry-mod in:topics archived:false template:false",
     "officialCount": 999,
-    "modCount": 41
+    "modCount": 40
   },
   "mods": [
     {
-      "repo": "alnyled/AstheriveGenesis",
+      "repo": "itzmellory/Advanced-Editor",
       "source": "topic",
       "internalName": null,
-      "name": "astherive-gen",
-      "namePlain": "astherive-gen",
-      "author": "Astherive Team",
-      "authorPlain": "Astherive Team",
-      "description": "\nA Mindustry Java mod.\n\nUnder very early development.\n\nYes. this is what you're looking for.\n",
-      "descriptionPlain": "A Mindustry Java mod. Under very early development. Yes. this is what you're looking for.",
-      "version": "1",
-      "minGameVersion": "147",
+      "name": "advanced-editor",
+      "namePlain": "advanced-editor",
+      "author": "[[]#ffffff]⚠ X-Tree[[]] [[]#c7c7c7]and[[]] [[]#8f8f8f]VI Clan [[]]",
+      "authorPlain": "[#ffffff]⚠ X-Tree[] [#c7c7c7]and[] [#8f8f8f]VI Clan []",
+      "description": "\n[[]#ffffff] Adv[[]][[]#e3e3e3]anced[[]] [[]#c7c7c7]Map[[]] [[]#ababab]Edi[[]][[]#8f8f8f]tor [[]]\n\n[[]#e6e6e6] Next-generation complex terrain synthesis and advanced mapmaker tools[[]]\n[[]#cccccc]Maps created with this modification are[[]] [[]#ffffff]fully compatible with the original game [[]]\n\n[[]#ffffff] Fea[[]][[]#c7c7c7]tu[[]][[]#8f8f8f]res:[[]]\n\n[[]#ffffff]- Adv[[]][[]#e3e3e3]anced[[]] [[]#ababab]Generators[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Generators for terrain (noise, octaves, falloff, tilt, distortion), water (shallow water, shoals, depth warping), ruins (scatter and structures with rooms, corridors, and step configuration), and block rotation.[[]]\n\n[[]#ffffff]- Ter[[]][[]#e3e3e3]rain[[]] [[]#ababab]Clipboard and Schematics[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Selection, copying, cutting, pasting, rotation, and flipping of terrain areas. Saving terrain templates, rectangular and shaped brushes, cliff editor, and strict 45-degree lines.[[]]\n\n[[]#ffffff]- Map[[]] [[]#e3e3e3]Art[[]] [[]#ababab]and Stencils[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Converting images into structures made of terrain or colored blocks. Overlaying semi-transparent stencils on top of the map for accurate drawing.[[]]\n\n[[]#ffffff]- Rem[[]][[]#e3e3e3]oving[[]] [[]#ababab]Size Limits[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]The built-in unlocker module completely removes standard limits on the minimum and maximum size of created maps.[[]]\n\n[[]#ffffff]───────[[]][[]#e3e3e3]───────[[]][[]#c7c7c7]───  ───[[]][[]#ababab]───────[[]][[]#8f8f8f]───────[[]]\n\n[[]#ffffff] Про[[]][[]#e3e3e3]двину[[]][[]#c7c7c7]тый[[]] [[]#ababab]Редак[[]][[]#8f8f8f]тор Карт [[]]\n\n[[]#e6e6e6] Синтез сложного рельефа нового поколения и расширенные инструменты создателя карт[[]]\n[[]#cccccc]Карты, созданные с этой модификацией,[[]] [[]#ffffff]полностью совместимы с оригинальной игрой [[]]\n\n[[]#ffffff] Осо[[]][[]#c7c7c7]бенно[[]][[]#8f8f8f]сти:[[]]\n\n[[]#ffffff]- Про[[]][[]#e3e3e3]двинутые[[]] [[]#ababab]Генераторы[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Генераторы рельефа (шум, октавы, спад, наклон, искажение), воды (мелководье, отмели, искривление глубины), руин (разброс и структуры с комнатами, коридорами и настройкой шагов) и вращения блоков.[[]]\n\n[[]#ffffff]- Буф[[]][[]#e3e3e3]ер[[]] [[]#ababab]Ландшафта и Схемы[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Выделение, копирование, вырезание, вставка, поворот и отражение участков местности. Сохранение шаблонов рельефа, прямоугольные и фигурные кисти, редактор скал и линии строго под 45 градусов.[[]]\n\n[[]#ffffff]- Кар[[]][[]#e3e3e3]тины на[[]] [[]#ababab]Карте и Трафареты[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Преобразование изображений в постройки из ландшафта или цветных блоков. Наложение полупрозрачных трафаретов поверх карты для точной отрисовки.[[]]\n\n[[]#ffffff]- Сня[[]][[]#e3e3e3]тие[[]] [[]#ababab]Ограничений Размера[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Встроенный модуль разблокировки полностью убирает стандартные лимиты на минимальный и максимальный размер создаваемых карт.[[]]\n\n[[]#ffffff]───────[[]][[]#e3e3e3]───────[[]][[]#c7c7c7]───  ───[[]][[]#ababab]───────[[]][[]#8f8f8f]───────[[]]\n\n[[]#ffffff] 高级[[]][[]#e3e3e3]地图[[]][[]#c7c7c7]编辑[[]][[]#ababab]器[[]][[]#8f8f8f] [[]]\n\n[[]#e6e6e6] 新一代复杂地形合成与扩展地图制作工具[[]]\n[[]#cccccc]使用此模组创建的地图[[]] [[]#ffffff]与原版游戏完全兼容 [[]]\n\n[[]#ffffff] 功[[]][[]#c7c7c7]能特[[]][[]#8f8f8f]点：[[]]\n\n[[]#ffffff]- 高级[[]][[]#e3e3e3]生成[[]] [[]#ababab]器[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]包含地形（噪声、八度、衰减、倾斜、扭曲）、水域（浅水、浅滩、深度扭曲）、废墟（散布模式以及带有房间、走廊和步骤设置的结构）与方块旋转生成器。[[]]\n\n[[]#ffffff]- 地形[[]][[]#e3e3e3]剪贴板[[]] [[]#ababab]与蓝图[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]支持地形区域的框选、复制、剪切、粘贴、旋转与翻转。支持保存地形模板，提供矩形与形状画笔、悬崖编辑器以及严格 45 度角直线。[[]]\n\n[[]#ffffff]- 地图[[]][[]#e3e3e3]画与[[]] [[]#ababab]参考模板[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]将图像转换为由地形或彩色方块构成的建筑。在地图上方叠加半透明参考模板以进行精确绘制。[[]]\n\n[[]#ffffff]- 解除[[]][[]#e3e3e3]尺寸[[]] [[]#ababab]限制[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]内置解锁模块彻底移除了创建地图时的最小与最大标准尺寸限制。[[]]\n\n[[]#ffffff]───────[[]][[]#e3e3e3]───────[[]][[]#c7c7c7]───  ───[[]][[]#ababab]───────[[]][[]#8f8f8f]───────[[]]\n\n[[]#ffffff]⚠ Glo[[]][[]#e3e3e3]ry to[[]] [[]#c7c7c7]VI, Bro[[]][[]#ababab]thers and[[]] [[]#8f8f8f]Sisters! [[]]\n",
+      "descriptionPlain": "[#ffffff] Adv[][#e3e3e3]anced[] [#c7c7c7]Map[] [#ababab]Edi[][#8f8f8f]tor [] [#e6e6e6] Next-generation complex terrain synthesis and advanced mapmaker tools[] [#cccccc]Maps created with this modification are[] [#ffffff]fully compatible with the original game [] [#ffffff] Fea[][#c7c7c7]tu[][#8f8f8f]res:[] [#ffffff]- Adv[][#e3e3e3]anced[] [#ababab]Generators[] [#8f8f8f] -[] [#b3b3b3]Generators for terrain (noise, octaves, falloff, tilt, distortion), water (shallow water, shoals, depth warping), ruins (scatter and structures with rooms, corridors, and step configuration), and block rotation.[] [#ffffff]- Ter[][#e3e3e3]rain[] [#ababab]Clipboard and Schematics[] [#8f8f8f] -[] [#b3b3b3]Selection, copying, cutting, pasting, rotation, and flipping of terrain areas. Saving terrain templates, rectangular and shaped brushes, cliff editor, and strict 45-degree lines.[] [#ffffff]- Map[] [#e3e3e3]Art[] [#ababab]and Stencils[] [#8f8f8f] -[] [#b3b3b3]Converting images into structures made of terrain or colored blocks. Overlaying semi-transparent stencils on top of the map for accurate drawing.[] [#ffffff]- Rem[][#e3e3e3]oving[] [#ababab]Size Limits[] [#8f8f8f] -[] [#b3b3b3]The built-in unlocker module completely removes standard limits on the minimum and maximum size of created maps.[] [#ffffff]───────[][#e3e3e3]───────[][#c7c7c7]───  ───[][#ababab]───────[][#8f8f8f]───────[] [#ffffff] Про[][#e3e3e3]двину[][#c7c7c7]тый[] [#ababab]Редак[][#8f8f8f]тор Карт [] [#e6e6e6] Синтез сложного рельефа нового поколения и расширенные инструменты создателя карт[] [#cccccc]Карты, созданные с этой модификацией,[] [#ffffff]полностью совместимы с оригинальной игрой [] [#ffffff] Осо[][#c7c7c7]бенно[][#8f8f8f]сти:[] [#ffffff]- Про[][#e3e3e3]двинутые[] [#ababab]Генераторы[] [#8f8f8f] -[] [#b3b3b3]Генераторы рельефа (шум, октавы, спад, наклон, искажение), воды (мелководье, отмели, искривление глубины), руин (разброс и структуры с комнатами, коридорами и настройкой шагов) и вращения блоков.[] [#ffffff]- Буф[][#e3e3e3]ер[] [#ababab]Ландшафта и Схемы[] [#8f8f8f] -[] [#b3b3b3]Выделение, копирование, вырезание, вставка, поворот и отражение участков местности. Сохранение шаблонов рельефа, прямоугольные и фигурные кисти, редактор скал и линии строго под 45 градусов.[] [#ffffff]- Кар[][#e3e3e3]тины на[] [#ababab]Карте и Трафареты[] [#8f8f8f] -[] [#b3b3b3]Преобразование изображений в постройки из ландшафта или цветных блоков. Наложение полупрозрачных трафаретов поверх карты для точной отрисовки.[] [#ffffff]- Сня[][#e3e3e3]тие[] [#ababab]Ограничений Размера[] [#8f8f8f] -[] [#b3b3b3]Встроенный модуль разблокировки полностью убирает стандартные лимиты на минимальный и максимальный размер создаваемых карт.[] [#ffffff]───────[][#e3e3e3]───────[][#c7c7c7]───  ───[][#ababab]───────[][#8f8f8f]───────[] [#ffffff] 高级[][#e3e3e3]地图[][#c7c7c7]编辑[][#ababab]器[][#8f8f8f] [] [#e6e6e6] 新一代复杂地形合成与扩展地图制作工具[] [#cccccc]使用此模组创建的地图[] [#ffffff]与原版游戏完全兼容 [] [#ffffff] 功[][#c7c7c7]能特[][#8f8f8f]点：[] [#ffffff]- 高级[][#e3e3e3]生成[] [#ababab]器[] [#8f8f8f] -[] [#b3b3b3]包含地形（噪声、八度、衰减、倾斜、扭曲）、水域（浅水、浅滩、深度扭曲）、废墟（散布模式以及带有房间、走廊和步骤设置的结构）与方块旋转生成器。[] [#ffffff]- 地形[][#e3e3e3]剪贴板[] [#ababab]与蓝图[] [#8f8f8f] -[] [#b3b3b3]支持地形区域的框选、复制、剪切、粘贴、旋转与翻转。支持保存地形模板，提供矩形与形状画笔、悬崖编辑器以及严格 45 度角直线。[] [#ffffff]- 地图[][#e3e3e3]画与[] [#ababab]参考模板[] [#8f8f8f] -[] [#b3b3b3]将图像转换为由地形或彩色方块构成的建筑。在地图上方叠加半透明参考模板以进行精确绘制。[] [#ffffff]- 解除[][#e3e3e3]尺寸[] [#ababab]限制[] [#8f8f8f] -[] [#b3b3b3]内置解锁模块彻底移除了创建地图时的最小与最大标准尺寸限制。[] [#ffffff]───────[][#e3e3e3]───────[][#c7c7c7]───  ───[][#ababab]───────[][#8f8f8f]───────[] [#ffffff]⚠ Glo[][#e3e3e3]ry to[] [#c7c7c7]VI, Bro[][#ababab]thers and[] [#8f8f8f]Sisters! []",
+      "version": "1.0",
+      "minGameVersion": "160",
       "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "147",
-          "to": "154"
+          "from": "160",
+          "to": "160.7"
         }
       ],
-      "stars": 6,
+      "stars": 5,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/alnyled/AstheriveGenesis/master/assets/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/itzmellory/Advanced-Editor/main/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/alnyled/AstheriveGenesis.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2025-07-11T12:16:54Z",
-      "commitUpdatedAt": "2025-12-31T05:00:01Z",
-      "totalDownloads": 2750,
-      "allAssetsDownloads": 2750,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
+      "releasesPath": "community/releases/itzmellory/Advanced-Editor.json",
+      "releaseCount": 132,
+      "releaseUpdatedAt": "2026-11-07T11:03:36Z",
+      "commitUpdatedAt": "2026-10-27T07:54:44Z",
+      "totalDownloads": 638,
+      "allAssetsDownloads": 638,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1266,
-        "starsScore": 0.1274,
-        "updateScore": 0,
+        "downloadsScore": 0.0964,
+        "starsScore": 0.1182,
+        "updateScore": 0.9362,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.0999,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 439,
-        "updated": 475,
-        "downloads": 169,
-        "stars": 250,
-        "newest": 377
+        "heat": 31,
+        "recommended": 8,
+        "updated": 3,
+        "downloads": 257,
+        "stars": 284,
+        "newest": 42
       }
     },
     {
@@ -82,163 +85,72 @@
       "commitUpdatedAt": "2026-11-06T16:46:00Z",
       "totalDownloads": 1,
       "allAssetsDownloads": 3,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.038,
+        "downloadsScore": 0.0382,
         "starsScore": 0.0083,
         "updateScore": 0.1738,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.3151,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 367,
+        "heat": 368,
+        "recommended": 17,
         "updated": 9,
-        "downloads": 541,
-        "stars": 696,
+        "downloads": 539,
+        "stars": 695,
         "newest": 3
       }
     },
     {
-      "repo": "Banananator/VanillaOverhaul",
+      "repo": "Dark-Matter-yt/mobile-tool",
       "source": "topic",
       "internalName": null,
-      "name": "bettervanillamod",
-      "namePlain": "bettervanillamod",
-      "author": "Banananator",
-      "authorPlain": "Banananator",
-      "description": "Better visuals? Not only that!",
-      "descriptionPlain": "Better visuals? Not only that!",
-      "version": "V9",
-      "minGameVersion": "150.1",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "145",
-          "to": "146"
-        },
-        {
-          "from": "150.1",
-          "to": "154"
-        }
-      ],
-      "stars": 6,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Banananator/VanillaOverhaul/main/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Banananator/VanillaOverhaul.json",
-      "releaseCount": 9,
-      "releaseUpdatedAt": "2025-08-13T08:32:08Z",
-      "commitUpdatedAt": "2025-08-16T14:22:53Z",
-      "totalDownloads": 9670,
-      "allAssetsDownloads": 9670,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.1667,
-        "starsScore": 0.1274,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 371,
-        "updated": 504,
-        "downloads": 91,
-        "stars": 243,
-        "newest": 446
-      }
-    },
-    {
-      "repo": "BlackDeluxeCat/MapFilterExt",
-      "source": "topic",
-      "internalName": null,
-      "name": "MapFilterExt",
-      "namePlain": "MapFilterExt",
-      "author": "BlackDeluxeCat",
-      "authorPlain": "BlackDeluxeCat",
-      "description": "Added some useful map filters. \nAdded a powerful custom guide tool and advanced wave editor to map editor.",
-      "descriptionPlain": "Added some useful map filters. Added a powerful custom guide tool and advanced wave editor to map editor.",
-      "version": "1.8.1",
-      "minGameVersion": "149",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "136",
-          "to": "146"
-        },
-        {
-          "from": "149",
-          "to": "154"
-        }
-      ],
-      "stars": 5,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/BlackDeluxeCat/MapFilterExt/master/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/BlackDeluxeCat/MapFilterExt.json",
-      "releaseCount": 24,
-      "releaseUpdatedAt": "2025-07-01T05:37:20Z",
-      "commitUpdatedAt": "2025-07-01T05:36:36Z",
-      "totalDownloads": 10319,
-      "allAssetsDownloads": 10330,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.169,
-        "starsScore": 0.1183,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 433,
-        "updated": 513,
-        "downloads": 89,
-        "stars": 269,
-        "newest": 652
-      }
-    },
-    {
-      "repo": "cardillan/MlogAssertions-7",
-      "source": "topic",
-      "internalName": null,
-      "name": "mlog-assertions-7",
-      "namePlain": "mlog-assertions-7",
-      "author": "cardillan",
-      "authorPlain": "cardillan",
-      "description": "Provides tools for easier debugging in Mindustry Logic.",
-      "descriptionPlain": "Provides tools for easier debugging in Mindustry Logic.",
-      "version": "0.6.0",
+      "name": "mobile-tools",
+      "namePlain": "mobile-tools",
+      "author": "Dark_Matter",
+      "authorPlain": "Dark_Matter",
+      "description": "Quick bar + tabbed menu: help builders, build planner, auto mine (incl. wall ores), heal at repair point, speed boost, anti-grief with rebuild, overlays, mod-user detection.",
+      "descriptionPlain": "Quick bar + tabbed menu: help builders, build planner, auto mine (incl. wall ores), heal at repair point, speed boost, anti-grief with rebuild, overlays, mod-user detection.",
+      "version": "3.1.5",
       "minGameVersion": "146",
-      "modType": "java",
+      "modType": "js",
       "gameVersionRanges": [
         {
           "from": "146",
-          "to": "146"
+          "to": "160.7"
         }
       ],
-      "stars": 0,
+      "stars": 3,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/cardillan/MlogAssertions-7/main/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/Dark-Matter-yt/mobile-tool/main/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/cardillan/MlogAssertions-7.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2026-01-25T19:48:59Z",
-      "commitUpdatedAt": "2026-01-25T19:44:23Z",
-      "totalDownloads": 307,
-      "allAssetsDownloads": 307,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releasesPath": "community/releases/Dark-Matter-yt/mobile-tool.json",
+      "releaseCount": 0,
+      "tagCount": 8,
+      "releaseUpdatedAt": "2026-10-25T23:10:09Z",
+      "commitUpdatedAt": "2026-11-06T21:18:39Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 0,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.0829,
-        "starsScore": 0.0083,
-        "updateScore": 0,
+        "downloadsScore": 0.0186,
+        "starsScore": 0.0927,
+        "updateScore": 0.1003,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.1049,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 404,
-        "updated": 459,
-        "downloads": 315,
-        "stars": 704,
-        "newest": 368
+        "heat": 174,
+        "recommended": 50,
+        "updated": 89,
+        "downloads": 556,
+        "stars": 366,
+        "newest": 39
       }
     },
     {
@@ -272,486 +184,25 @@
       "releaseCount": 30,
       "releaseUpdatedAt": "2026-10-17T19:30:59Z",
       "commitUpdatedAt": "2026-10-17T19:21:57Z",
-      "totalDownloads": 2401,
-      "allAssetsDownloads": 2401,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "totalDownloads": 2402,
+      "allAssetsDownloads": 2402,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1233,
-        "starsScore": 0.1067,
-        "updateScore": 0.4454,
+        "downloadsScore": 0.1232,
+        "starsScore": 0.1066,
+        "updateScore": 0.4452,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 83,
+        "heat": 83,
+        "recommended": 84,
         "updated": 123,
-        "downloads": 176,
+        "downloads": 177,
         "stars": 326,
-        "newest": 398
-      }
-    },
-    {
-      "repo": "Dark-Matter-yt/mobile-tool",
-      "source": "topic",
-      "internalName": null,
-      "name": "mobile-tools",
-      "namePlain": "mobile-tools",
-      "author": "Dark_Matter",
-      "authorPlain": "Dark_Matter",
-      "description": "Quick bar + tabbed menu: help builders, build planner, auto mine (incl. wall ores), heal at repair point, speed boost, anti-grief with rebuild, overlays, mod-user detection.",
-      "descriptionPlain": "Quick bar + tabbed menu: help builders, build planner, auto mine (incl. wall ores), heal at repair point, speed boost, anti-grief with rebuild, overlays, mod-user detection.",
-      "version": "3.1.5",
-      "minGameVersion": "146",
-      "modType": "js",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "160.7"
-        }
-      ],
-      "stars": 3,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Dark-Matter-yt/mobile-tool/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Dark-Matter-yt/mobile-tool.json",
-      "releaseCount": 0,
-      "tagCount": 8,
-      "releaseUpdatedAt": "2026-10-25T23:10:09Z",
-      "commitUpdatedAt": "2026-11-06T21:18:39Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 0,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.0185,
-        "starsScore": 0.0928,
-        "updateScore": 0.1005,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 173,
-        "updated": 89,
-        "downloads": 558,
-        "stars": 366,
-        "newest": 40
-      }
-    },
-    {
-      "repo": "Darkdustry-Coders/MindurkaCompatV7",
-      "source": "topic",
-      "internalName": null,
-      "name": "MindurkaCompat",
-      "namePlain": "MindurkaCompat",
-      "author": "buj",
-      "authorPlain": "buj",
-      "description": "Mod that adds extra compatibility with Mindurka",
-      "descriptionPlain": "Mod that adds extra compatibility with Mindurka",
-      "version": "1.2",
-      "minGameVersion": "146",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "146"
-        }
-      ],
-      "stars": 1,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/Darkdustry-Coders/MindurkaCompatV7.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2026-03-22T08:27:09Z",
-      "commitUpdatedAt": "2026-03-22T08:27:09Z",
-      "totalDownloads": 28,
-      "allAssetsDownloads": 28,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.0523,
-        "starsScore": 0.048,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 380,
-        "updated": 431,
-        "downloads": 466,
-        "stars": 524,
-        "newest": 226
-      }
-    },
-    {
-      "repo": "deltanedas/rtfm",
-      "source": "topic",
-      "internalName": null,
-      "name": "rtfm",
-      "namePlain": "rtfm",
-      "author": "DeltaNedas",
-      "authorPlain": "DeltaNedas",
-      "description": "Mod that adds a manual page library. RTFM in the About menu.\nComes with documentation of vanilla'a [purple]Logic[] system.\n[stat]Optionally requires [#00aaff]DeltaNedas/ui-lib[] for extra buttons.\n[#00aa00]pt_BR translations by King-BR[]",
-      "descriptionPlain": "Mod that adds a manual page library. RTFM in the About menu. Comes with documentation of vanilla'a Logic system. [stat]Optionally requires DeltaNedas/ui-lib for extra buttons. pt_BR translations by King-BR",
-      "version": "2.14.10",
-      "minGameVersion": "105",
-      "modType": "js",
-      "gameVersionRanges": [
-        {
-          "from": "105",
-          "to": "135.2"
-        }
-      ],
-      "stars": 79,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/deltanedas/rtfm/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/deltanedas/rtfm.json",
-      "releaseCount": 0,
-      "tagCount": 1,
-      "releaseUpdatedAt": null,
-      "commitUpdatedAt": "2023-07-14T01:02:34Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 0,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.0185,
-        "starsScore": 0.2843,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 420,
-        "updated": 728,
-        "downloads": 635,
-        "stars": 22,
-        "newest": 779
-      }
-    },
-    {
-      "repo": "EB-wilson/UniverseCore",
-      "source": "topic",
-      "internalName": null,
-      "name": "universe-core",
-      "namePlain": "universe-core",
-      "author": "EBwilson",
-      "authorPlain": "EBwilson",
-      "description": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github.\n\n一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
-      "descriptionPlain": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github. 一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
-      "version": "2.3.1",
-      "minGameVersion": "147",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "137",
-          "to": "146"
-        },
-        {
-          "from": "147",
-          "to": "154"
-        }
-      ],
-      "stars": 42,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/EB-wilson/UniverseCore/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/EB-wilson/UniverseCore.json",
-      "releaseCount": 26,
-      "releaseUpdatedAt": "2025-04-26T08:19:54Z",
-      "commitUpdatedAt": "2025-04-26T08:19:53Z",
-      "totalDownloads": 33672,
-      "allAssetsDownloads": 33684,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.2272,
-        "starsScore": 0.235,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 304,
-        "updated": 526,
-        "downloads": 37,
-        "stars": 47,
-        "newest": 746
-      }
-    },
-    {
-      "repo": "Eschatologue/Unlimited-Armament-Works",
-      "source": "topic",
-      "internalName": null,
-      "name": "uaw",
-      "namePlain": "uaw",
-      "author": "Eschatologue",
-      "authorPlain": "Eschatologue",
-      "description": "\nUAW is a port and sequel to Heavy Armaments Industries, implementing new unique content to vanilla Mindustry, from more turrets, units, and crafters/factories.\n\nA lot of work and improvements goes into UAW, if you want to show some support or like the content, please give the mod a star on GitHub, Thank you!\n",
-      "descriptionPlain": "UAW is a port and sequel to Heavy Armaments Industries, implementing new unique content to vanilla Mindustry, from more turrets, units, and crafters/factories. A lot of work and improvements goes into UAW, if you want to show some support or like the content, please give the mod a star on GitHub, Thank you!",
-      "version": "v0.8",
-      "minGameVersion": "138",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "129",
-          "to": "135.2"
-        },
-        {
-          "from": "138",
-          "to": "146"
-        }
-      ],
-      "stars": 139,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Eschatologue/Unlimited-Armament-Works/master/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Eschatologue/Unlimited-Armament-Works.json",
-      "releaseCount": 15,
-      "releaseUpdatedAt": "2022-10-23T12:47:13Z",
-      "commitUpdatedAt": "2026-10-04T14:23:40Z",
-      "totalDownloads": 292310,
-      "allAssetsDownloads": 292310,
-      "releaseDataUpdatedAt": "2026-11-07T12:06:17.651Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.4515,
-        "starsScore": 0.3403,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 98,
-        "updated": 425,
-        "downloads": 5,
-        "stars": 13,
-        "newest": 745
-      }
-    },
-    {
-      "repo": "EyeOfDarkness/FlameOut",
-      "source": "topic",
-      "internalName": null,
-      "name": "flameout",
-      "namePlain": "flameout",
-      "author": "EoD",
-      "authorPlain": "EoD",
-      "description": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw.\n\nNot intended for multiplayer, low-end devices, or saving.",
-      "descriptionPlain": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw. Not intended for multiplayer, low-end devices, or saving.",
-      "version": "v1.1.3",
-      "minGameVersion": "145",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "145",
-          "to": "146"
-        }
-      ],
-      "stars": 60,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/EyeOfDarkness/FlameOut/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/EyeOfDarkness/FlameOut.json",
-      "releaseCount": 15,
-      "releaseUpdatedAt": "2024-06-29T00:19:27Z",
-      "commitUpdatedAt": "2024-06-29T00:19:27Z",
-      "totalDownloads": 67744,
-      "allAssetsDownloads": 67744,
-      "releaseDataUpdatedAt": "2026-11-07T12:06:17.651Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.2771,
-        "starsScore": 0.2614,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 383,
-        "updated": 572,
-        "downloads": 19,
-        "stars": 30,
-        "newest": 557
-      }
-    },
-    {
-      "repo": "FlinTyX/Animalia",
-      "source": "topic",
-      "internalName": null,
-      "name": "animalia",
-      "namePlain": "animalia",
-      "author": "Flin",
-      "authorPlain": "Flin",
-      "description": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
-      "descriptionPlain": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
-      "version": "java 1.0",
-      "minGameVersion": "141",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "141",
-          "to": "146"
-        }
-      ],
-      "stars": 50,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/FlinTyX/Animalia/main/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/FlinTyX/Animalia.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2025-02-03T14:54:28Z",
-      "commitUpdatedAt": "2025-02-03T14:54:28Z",
-      "totalDownloads": 42298,
-      "allAssetsDownloads": 42298,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.2422,
-        "starsScore": 0.2475,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 356,
-        "updated": 539,
-        "downloads": 28,
-        "stars": 38,
-        "newest": 737
-      }
-    },
-    {
-      "repo": "florfir/md-proxy",
-      "source": "topic",
-      "internalName": null,
-      "name": "md-proxy",
-      "namePlain": "md-proxy",
-      "author": "kuko",
-      "authorPlain": "kuko",
-      "description": "idk.",
-      "descriptionPlain": "idk.",
-      "version": "1",
-      "minGameVersion": "154",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "stars": 4,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/florfir/md-proxy.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2026-09-16T14:06:41Z",
-      "commitUpdatedAt": "2026-10-27T14:05:56Z",
-      "totalDownloads": 228,
-      "allAssetsDownloads": 228,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.0787,
-        "starsScore": 0.1067,
-        "updateScore": 0.1532,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 190,
-        "updated": 229,
-        "downloads": 332,
-        "stars": 333,
-        "newest": 142
-      }
-    },
-    {
-      "repo": "Goobrr/Esoterum-II",
-      "source": "topic",
-      "internalName": null,
-      "name": "eso",
-      "namePlain": "eso",
-      "author": "@Goob_rr",
-      "authorPlain": "@Goob_rr",
-      "description": "A mod that adds logic components to the game, such as logic gates, wires and more.",
-      "descriptionPlain": "A mod that adds logic components to the game, such as logic gates, wires and more.",
-      "version": "1",
-      "minGameVersion": "147",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "146"
-        },
-        {
-          "from": "147",
-          "to": "154"
-        }
-      ],
-      "stars": 8,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Goobrr/Esoterum-II/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Goobrr/Esoterum-II.json",
-      "releaseCount": 12,
-      "releaseUpdatedAt": "2025-06-23T07:17:27Z",
-      "commitUpdatedAt": "2025-06-23T07:17:27Z",
-      "totalDownloads": 1419,
-      "allAssetsDownloads": 1419,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.1098,
-        "starsScore": 0.1417,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 448,
-        "updated": 515,
-        "downloads": 219,
-        "stars": 198,
-        "newest": 545
-      }
-    },
-    {
-      "repo": "itzmellory/Advanced-Editor",
-      "source": "topic",
-      "internalName": null,
-      "name": "advanced-editor",
-      "namePlain": "advanced-editor",
-      "author": "[[]#ffffff]⚠ X-Tree[[]] [[]#c7c7c7]and[[]] [[]#8f8f8f]VI Clan [[]]",
-      "authorPlain": "[#ffffff]⚠ X-Tree[] [#c7c7c7]and[] [#8f8f8f]VI Clan []",
-      "description": "\n[[]#ffffff] Adv[[]][[]#e3e3e3]anced[[]] [[]#c7c7c7]Map[[]] [[]#ababab]Edi[[]][[]#8f8f8f]tor [[]]\n\n[[]#e6e6e6] Next-generation complex terrain synthesis and advanced mapmaker tools[[]]\n[[]#cccccc]Maps created with this modification are[[]] [[]#ffffff]fully compatible with the original game [[]]\n\n[[]#ffffff] Fea[[]][[]#c7c7c7]tu[[]][[]#8f8f8f]res:[[]]\n\n[[]#ffffff]- Adv[[]][[]#e3e3e3]anced[[]] [[]#ababab]Generators[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Generators for terrain (noise, octaves, falloff, tilt, distortion), water (shallow water, shoals, depth warping), ruins (scatter and structures with rooms, corridors, and step configuration), and block rotation.[[]]\n\n[[]#ffffff]- Ter[[]][[]#e3e3e3]rain[[]] [[]#ababab]Clipboard and Schematics[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Selection, copying, cutting, pasting, rotation, and flipping of terrain areas. Saving terrain templates, rectangular and shaped brushes, cliff editor, and strict 45-degree lines.[[]]\n\n[[]#ffffff]- Map[[]] [[]#e3e3e3]Art[[]] [[]#ababab]and Stencils[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Converting images into structures made of terrain or colored blocks. Overlaying semi-transparent stencils on top of the map for accurate drawing.[[]]\n\n[[]#ffffff]- Rem[[]][[]#e3e3e3]oving[[]] [[]#ababab]Size Limits[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]The built-in unlocker module completely removes standard limits on the minimum and maximum size of created maps.[[]]\n\n[[]#ffffff]───────[[]][[]#e3e3e3]───────[[]][[]#c7c7c7]───  ───[[]][[]#ababab]───────[[]][[]#8f8f8f]───────[[]]\n\n[[]#ffffff] Про[[]][[]#e3e3e3]двину[[]][[]#c7c7c7]тый[[]] [[]#ababab]Редак[[]][[]#8f8f8f]тор Карт [[]]\n\n[[]#e6e6e6] Синтез сложного рельефа нового поколения и расширенные инструменты создателя карт[[]]\n[[]#cccccc]Карты, созданные с этой модификацией,[[]] [[]#ffffff]полностью совместимы с оригинальной игрой [[]]\n\n[[]#ffffff] Осо[[]][[]#c7c7c7]бенно[[]][[]#8f8f8f]сти:[[]]\n\n[[]#ffffff]- Про[[]][[]#e3e3e3]двинутые[[]] [[]#ababab]Генераторы[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Генераторы рельефа (шум, октавы, спад, наклон, искажение), воды (мелководье, отмели, искривление глубины), руин (разброс и структуры с комнатами, коридорами и настройкой шагов) и вращения блоков.[[]]\n\n[[]#ffffff]- Буф[[]][[]#e3e3e3]ер[[]] [[]#ababab]Ландшафта и Схемы[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Выделение, копирование, вырезание, вставка, поворот и отражение участков местности. Сохранение шаблонов рельефа, прямоугольные и фигурные кисти, редактор скал и линии строго под 45 градусов.[[]]\n\n[[]#ffffff]- Кар[[]][[]#e3e3e3]тины на[[]] [[]#ababab]Карте и Трафареты[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Преобразование изображений в постройки из ландшафта или цветных блоков. Наложение полупрозрачных трафаретов поверх карты для точной отрисовки.[[]]\n\n[[]#ffffff]- Сня[[]][[]#e3e3e3]тие[[]] [[]#ababab]Ограничений Размера[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]Встроенный модуль разблокировки полностью убирает стандартные лимиты на минимальный и максимальный размер создаваемых карт.[[]]\n\n[[]#ffffff]───────[[]][[]#e3e3e3]───────[[]][[]#c7c7c7]───  ───[[]][[]#ababab]───────[[]][[]#8f8f8f]───────[[]]\n\n[[]#ffffff] 高级[[]][[]#e3e3e3]地图[[]][[]#c7c7c7]编辑[[]][[]#ababab]器[[]][[]#8f8f8f] [[]]\n\n[[]#e6e6e6] 新一代复杂地形合成与扩展地图制作工具[[]]\n[[]#cccccc]使用此模组创建的地图[[]] [[]#ffffff]与原版游戏完全兼容 [[]]\n\n[[]#ffffff] 功[[]][[]#c7c7c7]能特[[]][[]#8f8f8f]点：[[]]\n\n[[]#ffffff]- 高级[[]][[]#e3e3e3]生成[[]] [[]#ababab]器[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]包含地形（噪声、八度、衰减、倾斜、扭曲）、水域（浅水、浅滩、深度扭曲）、废墟（散布模式以及带有房间、走廊和步骤设置的结构）与方块旋转生成器。[[]]\n\n[[]#ffffff]- 地形[[]][[]#e3e3e3]剪贴板[[]] [[]#ababab]与蓝图[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]支持地形区域的框选、复制、剪切、粘贴、旋转与翻转。支持保存地形模板，提供矩形与形状画笔、悬崖编辑器以及严格 45 度角直线。[[]]\n\n[[]#ffffff]- 地图[[]][[]#e3e3e3]画与[[]] [[]#ababab]参考模板[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]将图像转换为由地形或彩色方块构成的建筑。在地图上方叠加半透明参考模板以进行精确绘制。[[]]\n\n[[]#ffffff]- 解除[[]][[]#e3e3e3]尺寸[[]] [[]#ababab]限制[[]] [[]#8f8f8f] -[[]]\n[[]#b3b3b3]内置解锁模块彻底移除了创建地图时的最小与最大标准尺寸限制。[[]]\n\n[[]#ffffff]───────[[]][[]#e3e3e3]───────[[]][[]#c7c7c7]───  ───[[]][[]#ababab]───────[[]][[]#8f8f8f]───────[[]]\n\n[[]#ffffff]⚠ Glo[[]][[]#e3e3e3]ry to[[]] [[]#c7c7c7]VI, Bro[[]][[]#ababab]thers and[[]] [[]#8f8f8f]Sisters! [[]]\n",
-      "descriptionPlain": "[#ffffff] Adv[][#e3e3e3]anced[] [#c7c7c7]Map[] [#ababab]Edi[][#8f8f8f]tor [] [#e6e6e6] Next-generation complex terrain synthesis and advanced mapmaker tools[] [#cccccc]Maps created with this modification are[] [#ffffff]fully compatible with the original game [] [#ffffff] Fea[][#c7c7c7]tu[][#8f8f8f]res:[] [#ffffff]- Adv[][#e3e3e3]anced[] [#ababab]Generators[] [#8f8f8f] -[] [#b3b3b3]Generators for terrain (noise, octaves, falloff, tilt, distortion), water (shallow water, shoals, depth warping), ruins (scatter and structures with rooms, corridors, and step configuration), and block rotation.[] [#ffffff]- Ter[][#e3e3e3]rain[] [#ababab]Clipboard and Schematics[] [#8f8f8f] -[] [#b3b3b3]Selection, copying, cutting, pasting, rotation, and flipping of terrain areas. Saving terrain templates, rectangular and shaped brushes, cliff editor, and strict 45-degree lines.[] [#ffffff]- Map[] [#e3e3e3]Art[] [#ababab]and Stencils[] [#8f8f8f] -[] [#b3b3b3]Converting images into structures made of terrain or colored blocks. Overlaying semi-transparent stencils on top of the map for accurate drawing.[] [#ffffff]- Rem[][#e3e3e3]oving[] [#ababab]Size Limits[] [#8f8f8f] -[] [#b3b3b3]The built-in unlocker module completely removes standard limits on the minimum and maximum size of created maps.[] [#ffffff]───────[][#e3e3e3]───────[][#c7c7c7]───  ───[][#ababab]───────[][#8f8f8f]───────[] [#ffffff] Про[][#e3e3e3]двину[][#c7c7c7]тый[] [#ababab]Редак[][#8f8f8f]тор Карт [] [#e6e6e6] Синтез сложного рельефа нового поколения и расширенные инструменты создателя карт[] [#cccccc]Карты, созданные с этой модификацией,[] [#ffffff]полностью совместимы с оригинальной игрой [] [#ffffff] Осо[][#c7c7c7]бенно[][#8f8f8f]сти:[] [#ffffff]- Про[][#e3e3e3]двинутые[] [#ababab]Генераторы[] [#8f8f8f] -[] [#b3b3b3]Генераторы рельефа (шум, октавы, спад, наклон, искажение), воды (мелководье, отмели, искривление глубины), руин (разброс и структуры с комнатами, коридорами и настройкой шагов) и вращения блоков.[] [#ffffff]- Буф[][#e3e3e3]ер[] [#ababab]Ландшафта и Схемы[] [#8f8f8f] -[] [#b3b3b3]Выделение, копирование, вырезание, вставка, поворот и отражение участков местности. Сохранение шаблонов рельефа, прямоугольные и фигурные кисти, редактор скал и линии строго под 45 градусов.[] [#ffffff]- Кар[][#e3e3e3]тины на[] [#ababab]Карте и Трафареты[] [#8f8f8f] -[] [#b3b3b3]Преобразование изображений в постройки из ландшафта или цветных блоков. Наложение полупрозрачных трафаретов поверх карты для точной отрисовки.[] [#ffffff]- Сня[][#e3e3e3]тие[] [#ababab]Ограничений Размера[] [#8f8f8f] -[] [#b3b3b3]Встроенный модуль разблокировки полностью убирает стандартные лимиты на минимальный и максимальный размер создаваемых карт.[] [#ffffff]───────[][#e3e3e3]───────[][#c7c7c7]───  ───[][#ababab]───────[][#8f8f8f]───────[] [#ffffff] 高级[][#e3e3e3]地图[][#c7c7c7]编辑[][#ababab]器[][#8f8f8f] [] [#e6e6e6] 新一代复杂地形合成与扩展地图制作工具[] [#cccccc]使用此模组创建的地图[] [#ffffff]与原版游戏完全兼容 [] [#ffffff] 功[][#c7c7c7]能特[][#8f8f8f]点：[] [#ffffff]- 高级[][#e3e3e3]生成[] [#ababab]器[] [#8f8f8f] -[] [#b3b3b3]包含地形（噪声、八度、衰减、倾斜、扭曲）、水域（浅水、浅滩、深度扭曲）、废墟（散布模式以及带有房间、走廊和步骤设置的结构）与方块旋转生成器。[] [#ffffff]- 地形[][#e3e3e3]剪贴板[] [#ababab]与蓝图[] [#8f8f8f] -[] [#b3b3b3]支持地形区域的框选、复制、剪切、粘贴、旋转与翻转。支持保存地形模板，提供矩形与形状画笔、悬崖编辑器以及严格 45 度角直线。[] [#ffffff]- 地图[][#e3e3e3]画与[] [#ababab]参考模板[] [#8f8f8f] -[] [#b3b3b3]将图像转换为由地形或彩色方块构成的建筑。在地图上方叠加半透明参考模板以进行精确绘制。[] [#ffffff]- 解除[][#e3e3e3]尺寸[] [#ababab]限制[] [#8f8f8f] -[] [#b3b3b3]内置解锁模块彻底移除了创建地图时的最小与最大标准尺寸限制。[] [#ffffff]───────[][#e3e3e3]───────[][#c7c7c7]───  ───[][#ababab]───────[][#8f8f8f]───────[] [#ffffff]⚠ Glo[][#e3e3e3]ry to[] [#c7c7c7]VI, Bro[][#ababab]thers and[] [#8f8f8f]Sisters! []",
-      "version": "1.0",
-      "minGameVersion": "160",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "160",
-          "to": "160.7"
-        }
-      ],
-      "stars": 5,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/itzmellory/Advanced-Editor/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/itzmellory/Advanced-Editor.json",
-      "releaseCount": 132,
-      "releaseUpdatedAt": "2026-11-07T11:03:36Z",
-      "commitUpdatedAt": "2026-10-27T07:54:44Z",
-      "totalDownloads": 629,
-      "allAssetsDownloads": 629,
-      "releaseDataUpdatedAt": "2026-11-07T12:06:17.651Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.0961,
-        "starsScore": 0.1183,
-        "updateScore": 0.9362,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 31,
-        "updated": 3,
-        "downloads": 258,
-        "stars": 284,
-        "newest": 43
+        "newest": 397
       }
     },
     {
@@ -783,343 +234,23 @@
       "commitUpdatedAt": "2026-10-13T08:51:10Z",
       "totalDownloads": 19,
       "allAssetsDownloads": 19,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.0491,
+        "downloadsScore": 0.049,
         "starsScore": 0.048,
-        "updateScore": 0.1937,
+        "updateScore": 0.1938,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.1361,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 280,
-        "updated": 147,
+        "heat": 282,
+        "recommended": 96,
+        "updated": 146,
         "downloads": 483,
         "stars": 527,
         "newest": 28
-      }
-    },
-    {
-      "repo": "JiroCab/Caster-Ui-Java",
-      "source": "topic",
-      "internalName": null,
-      "name": "caster-ui-java",
-      "namePlain": "caster-ui-java",
-      "author": "RushieWashie, WMF Industries",
-      "authorPlain": "RushieWashie, WMF Industries",
-      "description": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind \n \n Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' \nconflicts with 'Ferlern/extended-UI'  \n\nPLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
-      "descriptionPlain": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' conflicts with 'Ferlern/extended-UI' PLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
-      "version": "5.3",
-      "minGameVersion": "140.4",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "140.4",
-          "to": "146"
-        },
-        {
-          "from": "147",
-          "to": "154"
-        }
-      ],
-      "stars": 5,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/JiroCab/Caster-Ui-Java/Development-Legacy/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/JiroCab/Caster-Ui-Java.json",
-      "releaseCount": 31,
-      "releaseUpdatedAt": "2025-08-27T05:34:14Z",
-      "commitUpdatedAt": "2026-07-04T16:36:38Z",
-      "totalDownloads": 13014,
-      "allAssetsDownloads": 13014,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "Development-Legacy",
-      "score": {
-        "downloadsScore": 0.1782,
-        "starsScore": 0.1183,
-        "updateScore": 0.0082,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 341,
-        "updated": 381,
-        "downloads": 79,
-        "stars": 271,
-        "newest": 685
-      }
-    },
-    {
-      "repo": "JiroCab/Nyfalis",
-      "source": "topic",
-      "internalName": null,
-      "name": "olupis",
-      "namePlain": "olupis",
-      "author": ";3\nProgramming:\nRushieWashie, Siede, WMF Industries, Otamamori \n---------------------\nSprites:\nRushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69\n---------------------\nMaps:\nRushieWashie, MrApple, NightmarishWolf",
-      "authorPlain": ";3 Programming: RushieWashie, Siede, WMF Industries, Otamamori --------------------- Sprites: RushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69 --------------------- Maps: RushieWashie, MrApple, NightmarishWolf",
-      "description": "(⚠Work in progress⚠)\n Yet another planet mod \nThat does it's best to give the player(s) a bit of something new,\n with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
-      "descriptionPlain": "(⚠Work in progress⚠) Yet another planet mod That does it's best to give the player(s) a bit of something new, with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
-      "version": "1.7.9",
-      "minGameVersion": "136",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "136",
-          "to": "146"
-        }
-      ],
-      "stars": 22,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/JiroCab/Nyfalis/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/JiroCab/Nyfalis.json",
-      "releaseCount": 16,
-      "releaseUpdatedAt": "2025-02-19T15:21:05Z",
-      "commitUpdatedAt": "2026-10-30T13:25:49Z",
-      "totalDownloads": 38391,
-      "allAssetsDownloads": 39552,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.2358,
-        "starsScore": 0.1951,
-        "updateScore": 0.0304,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 413,
-        "updated": 165,
-        "downloads": 31,
-        "stars": 86,
-        "newest": 658
-      }
-    },
-    {
-      "repo": "LaoHuaJiOfficial/MultiBlockLib",
-      "source": "topic",
-      "internalName": null,
-      "name": "multi-block-lib",
-      "namePlain": "multi-block-lib",
-      "author": "LaoHuaJi/酪桦姬",
-      "authorPlain": "LaoHuaJi/酪桦姬",
-      "description": "Mindustry mod library which provides support for non-square blocks implementation for json mod.",
-      "descriptionPlain": "Mindustry mod library which provides support for non-square blocks implementation for json mod.",
-      "version": "1.3",
-      "minGameVersion": "146",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "146"
-        }
-      ],
-      "stars": 27,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/LaoHuaJiOfficial/MultiBlockLib/master/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/LaoHuaJiOfficial/MultiBlockLib.json",
-      "releaseCount": 2,
-      "releaseUpdatedAt": "2025-03-06T10:40:33Z",
-      "commitUpdatedAt": "2025-03-06T10:40:33Z",
-      "totalDownloads": 4425,
-      "allAssetsDownloads": 4458,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.1394,
-        "starsScore": 0.2072,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 447,
-        "updated": 534,
-        "downloads": 142,
-        "stars": 69,
-        "newest": 392
-      }
-    },
-    {
-      "repo": "Lara-Evangelista/Earthquake-and-Asteroid-Mod",
-      "source": "topic",
-      "internalName": null,
-      "name": "earthquake-asteroid-mod",
-      "namePlain": "earthquake-asteroid-mod",
-      "author": "Lara Evangelista and Sofia Nunes",
-      "authorPlain": "Lara Evangelista and Sofia Nunes",
-      "description": "An earthquake mod for Mindustry.",
-      "descriptionPlain": "An earthquake mod for Mindustry.",
-      "version": "1",
-      "minGameVersion": "150",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "150",
-          "to": "154"
-        }
-      ],
-      "stars": 0,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/Lara-Evangelista/Earthquake-and-Asteroid-Mod.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2026-02-13T12:35:38Z",
-      "commitUpdatedAt": "2026-02-14T00:58:17Z",
-      "totalDownloads": 51,
-      "allAssetsDownloads": 51,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.0595,
-        "starsScore": 0.0083,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 419,
-        "updated": 450,
-        "downloads": 426,
-        "stars": 686,
-        "newest": 245
-      }
-    },
-    {
-      "repo": "lessweb123/LotteryModMirror",
-      "source": "topic",
-      "internalName": null,
-      "name": "lottery",
-      "namePlain": "lottery",
-      "author": "?",
-      "authorPlain": "?",
-      "description": "Come and try your luck! 来试试运气吧！\n\n\n- [!] This mod is currently in the testing phase and may update other prize pools in the future\n\n\nSupport for multiplayer online!\n\n\n封面是我老婆，她叫阿尔图罗",
-      "descriptionPlain": "Come and try your luck! 来试试运气吧！ - [!] This mod is currently in the testing phase and may update other prize pools in the future Support for multiplayer online! 封面是我老婆，她叫阿尔图罗",
-      "version": "beta0.6",
-      "minGameVersion": "148",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "148",
-          "to": "154"
-        }
-      ],
-      "stars": 2,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/lessweb123/LotteryModMirror/main/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/lessweb123/LotteryModMirror.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2026-01-11T13:32:18Z",
-      "commitUpdatedAt": "2026-06-05T15:36:29Z",
-      "totalDownloads": 1981,
-      "allAssetsDownloads": 1981,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.1184,
-        "starsScore": 0.0752,
-        "updateScore": 0.0131,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 231,
-        "updated": 365,
-        "downloads": 191,
-        "stars": 481,
-        "newest": 291
-      }
-    },
-    {
-      "repo": "liplum/CyberIO",
-      "source": "topic",
-      "internalName": null,
-      "name": "cyber-io",
-      "namePlain": "cyber-io",
-      "author": "[#42a5f5[]]Liplum[[]]",
-      "authorPlain": "[#42a5f5]Liplum[]",
-      "description": "\n[#e53935[]]The Cybernetics on Mindustry v7.[[]]\n\nCurrent version is v5.1, while v6 is still in development.\n\nLanguage Supports: English, Chinese(简体/正體中文), Japanese(日本語), Russian(Русский) and Ukrainian (українська).\n\nTo learn more about Cyber IO, please check the repository on GitHub by hitting the button below.\n\nGitHub: [#42a5f5[]]github.com/liplum/CyberIO[[]]\n",
-      "descriptionPlain": "[#e53935]The Cybernetics on Mindustry v7.[] Current version is v5.1, while v6 is still in development. Language Supports: English, Chinese(简体/正體中文), Japanese(日本語), Russian(Русский) and Ukrainian (українська). To learn more about Cyber IO, please check the repository on GitHub by hitting the button below. GitHub: [#42a5f5]github.com/liplum/CyberIO[]",
-      "version": "5.1",
-      "minGameVersion": "141",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "135",
-          "to": "135.2"
-        },
-        {
-          "from": "136",
-          "to": "146"
-        }
-      ],
-      "stars": 117,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/liplum/CyberIO/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/liplum/CyberIO.json",
-      "releaseCount": 7,
-      "releaseUpdatedAt": "2023-01-26T06:06:20Z",
-      "commitUpdatedAt": "2025-04-01T15:38:41Z",
-      "totalDownloads": 88999,
-      "allAssetsDownloads": 88999,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.3011,
-        "starsScore": 0.3215,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 276,
-        "updated": 643,
-        "downloads": 15,
-        "stars": 16,
-        "newest": 731
-      }
-    },
-    {
-      "repo": "m1cxzfw3q/ThermalEngineering",
-      "source": "topic",
-      "internalName": null,
-      "name": "TEMod",
-      "namePlain": "TEMod",
-      "author": "[sky[]]114514[white[]]",
-      "authorPlain": "[sky]114514[white]",
-      "description": "[blue[]]-----INFO----------------[white[]]\nThermal Engineering [acid[]]0.0.2[red[]]\nAlpha(Pre)\n\n当前版本已发布",
-      "descriptionPlain": "[blue]-----INFO----------------[white] Thermal Engineering [acid]0.0.2[red] Alpha(Pre) 当前版本已发布",
-      "version": "0.0.2pA",
-      "minGameVersion": "151.1",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "151.1",
-          "to": "154"
-        }
-      ],
-      "stars": 2,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/m1cxzfw3q/ThermalEngineering.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2025-10-13T13:45:25Z",
-      "commitUpdatedAt": "2026-10-01T05:21:12Z",
-      "totalDownloads": 1779,
-      "allAssetsDownloads": 1779,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.1156,
-        "starsScore": 0.0752,
-        "updateScore": 0.0791,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 334,
-        "updated": 192,
-        "downloads": 199,
-        "stars": 484,
-        "newest": 313
       }
     },
     {
@@ -1151,65 +282,123 @@
       "commitUpdatedAt": "2026-11-02T13:58:26Z",
       "totalDownloads": 132,
       "allAssetsDownloads": 146,
-      "releaseDataUpdatedAt": "2026-11-07T12:06:17.651Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.0716,
-        "starsScore": 0.0928,
+        "downloadsScore": 0.0714,
+        "starsScore": 0.0927,
         "updateScore": 0.3586,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.0013,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 147,
+        "heat": 146,
+        "recommended": 102,
         "updated": 13,
         "downloads": 364,
         "stars": 371,
-        "newest": 176
+        "newest": 175
       }
     },
     {
-      "repo": "mortzavoy57/NTMind",
+      "repo": "TheSerjio/AdvancedDataBase",
       "source": "topic",
       "internalName": null,
-      "name": "ntmind",
-      "namePlain": "ntmind",
-      "author": "Aaron",
-      "authorPlain": "Aaron",
-      "description": "Мод добавляющий много нового контента.",
-      "descriptionPlain": "Мод добавляющий много нового контента.",
-      "version": "1.4",
-      "minGameVersion": "158",
+      "name": "advanced-database",
+      "namePlain": "advanced-database",
+      "author": "The Serjio#3162",
+      "authorPlain": "The Serjio#3162",
+      "description": "Displays more stats in database. Unhides few things. Multiplayer compatible.\nПоказывает больше информации в базе данных. Открывает пару скрытых вещей. Не влияет на игру по сети",
+      "descriptionPlain": "Displays more stats in database. Unhides few things. Multiplayer compatible. Показывает больше информации в базе данных. Открывает пару скрытых вещей. Не влияет на игру по сети",
+      "version": "1.1",
+      "minGameVersion": "147",
       "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "158",
-          "to": "160.7"
+          "from": "142",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
         }
       ],
-      "stars": 1,
+      "stars": 9,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/mortzavoy57/NTMind/master/assets/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/TheSerjio/AdvancedDataBase/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/mortzavoy57/NTMind.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2026-11-01T06:25:46Z",
-      "commitUpdatedAt": "2026-11-01T06:27:31Z",
-      "totalDownloads": 16,
-      "allAssetsDownloads": 16,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releasesPath": "community/releases/TheSerjio/AdvancedDataBase.json",
+      "releaseCount": 8,
+      "releaseUpdatedAt": "2025-11-15T17:22:14Z",
+      "commitUpdatedAt": "2025-11-15T17:22:14Z",
+      "totalDownloads": 26321,
+      "allAssetsDownloads": 26321,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.0477,
-        "starsScore": 0.048,
-        "updateScore": 0.2533,
+        "downloadsScore": 0.2123,
+        "starsScore": 0.1478,
+        "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 288,
-        "updated": 85,
-        "downloads": 491,
-        "stars": 622,
-        "newest": 80
+        "heat": 65,
+        "recommended": 155,
+        "updated": 490,
+        "downloads": 49,
+        "stars": 185,
+        "newest": 625
+      }
+    },
+    {
+      "repo": "lessweb123/LotteryModMirror",
+      "source": "topic",
+      "internalName": null,
+      "name": "lottery",
+      "namePlain": "lottery",
+      "author": "?",
+      "authorPlain": "?",
+      "description": "Come and try your luck! 来试试运气吧！\n\n\n- [!] This mod is currently in the testing phase and may update other prize pools in the future\n\n\nSupport for multiplayer online!\n\n\n封面是我老婆，她叫阿尔图罗",
+      "descriptionPlain": "Come and try your luck! 来试试运气吧！ - [!] This mod is currently in the testing phase and may update other prize pools in the future Support for multiplayer online! 封面是我老婆，她叫阿尔图罗",
+      "version": "beta0.6",
+      "minGameVersion": "148",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "148",
+          "to": "154"
+        }
+      ],
+      "stars": 2,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/lessweb123/LotteryModMirror/main/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/lessweb123/LotteryModMirror.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2026-01-11T13:32:18Z",
+      "commitUpdatedAt": "2026-06-05T15:36:29Z",
+      "totalDownloads": 1982,
+      "allAssetsDownloads": 1982,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1183,
+        "starsScore": 0.0751,
+        "updateScore": 0.0131,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 230,
+        "recommended": 202,
+        "updated": 364,
+        "downloads": 192,
+        "stars": 481,
+        "newest": 290
       }
     },
     {
@@ -1245,83 +434,85 @@
       "commitUpdatedAt": "2025-11-26T17:00:43Z",
       "totalDownloads": 1605,
       "allAssetsDownloads": 1605,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1124,
+        "downloadsScore": 0.1122,
         "starsScore": 0.048,
         "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 297,
-        "updated": 489,
-        "downloads": 212,
+        "heat": 299,
+        "recommended": 220,
+        "updated": 488,
+        "downloads": 213,
         "stars": 538,
-        "newest": 450
+        "newest": 449
       }
     },
     {
-      "repo": "Nezerit6/Stuasut",
+      "repo": "mortzavoy57/NTMind",
       "source": "topic",
       "internalName": null,
-      "name": "stus",
-      "namePlain": "stus",
-      "author": "Eternity",
-      "authorPlain": "Eternity",
-      "description": "no",
-      "descriptionPlain": "no",
-      "version": "0.1",
-      "minGameVersion": "149",
+      "name": "ntmind",
+      "namePlain": "ntmind",
+      "author": "Aaron",
+      "authorPlain": "Aaron",
+      "description": "Мод добавляющий много нового контента.",
+      "descriptionPlain": "Мод добавляющий много нового контента.",
+      "version": "1.4",
+      "minGameVersion": "158",
       "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "140.3",
-          "to": "146"
-        },
-        {
-          "from": "149",
-          "to": "154"
+          "from": "158",
+          "to": "160.7"
         }
       ],
-      "stars": 6,
+      "stars": 1,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Nezerit6/Stuasut/master/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/mortzavoy57/NTMind/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/Nezerit6/Stuasut.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2025-08-05T11:02:09Z",
-      "commitUpdatedAt": "2025-08-05T11:02:09Z",
-      "totalDownloads": 602,
-      "allAssetsDownloads": 602,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releasesPath": "community/releases/mortzavoy57/NTMind.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2026-11-01T06:25:46Z",
+      "commitUpdatedAt": "2026-11-01T06:27:31Z",
+      "totalDownloads": 16,
+      "allAssetsDownloads": 16,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.0951,
-        "starsScore": 0.1274,
-        "updateScore": 0,
+        "downloadsScore": 0.0478,
+        "starsScore": 0.048,
+        "updateScore": 0.2533,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.0283,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 436,
-        "updated": 505,
-        "downloads": 263,
-        "stars": 244,
-        "newest": 673
+        "heat": 290,
+        "recommended": 254,
+        "updated": 85,
+        "downloads": 490,
+        "stars": 621,
+        "newest": 79
       }
     },
     {
-      "repo": "no9527dada/creators3",
+      "repo": "Photon-Gravity/PolarForm",
       "source": "topic",
       "internalName": null,
-      "name": "ct",
-      "namePlain": "ct",
-      "author": "[pink]编[cyan]号[red]95[violet]27，皴皲",
-      "authorPlain": "编号9527，皴皲",
-      "description": "9527，皴皲，咕咕点心,LYBF,Ovulam5480,杀虐无意识",
-      "descriptionPlain": "9527，皴皲，咕咕点心,LYBF,Ovulam5480,杀虐无意识",
-      "version": "2025.02.15",
-      "minGameVersion": "146",
+      "name": "polar-form",
+      "namePlain": "polar-form",
+      "author": "Photon_gravity",
+      "authorPlain": "Photon_gravity",
+      "description": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
+      "descriptionPlain": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
+      "version": "1",
+      "minGameVersion": "145",
       "modType": "java",
       "gameVersionRanges": [
         {
@@ -1330,29 +521,232 @@
         }
       ],
       "stars": 3,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/no9527dada/creators3/master2/assets/icon.png",
+      "hasIcon": false,
+      "iconUrl": null,
       "iconHash": null,
-      "releasesPath": "community/releases/no9527dada/creators3.json",
-      "releaseCount": 19,
-      "releaseUpdatedAt": "2025-09-11T02:28:49Z",
-      "commitUpdatedAt": "2025-09-11T02:28:49Z",
-      "totalDownloads": 13220,
-      "allAssetsDownloads": 13220,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master2",
+      "releasesPath": "community/releases/Photon-Gravity/PolarForm.json",
+      "releaseCount": 2,
+      "releaseUpdatedAt": "2025-12-22T19:54:10Z",
+      "commitUpdatedAt": "2025-12-22T19:54:10Z",
+      "totalDownloads": 153,
+      "allAssetsDownloads": 153,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1792,
-        "starsScore": 0.0928,
+        "downloadsScore": 0.0729,
+        "starsScore": 0.0927,
         "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 348,
+        "heat": 266,
+        "recommended": 256,
+        "updated": 483,
+        "downloads": 359,
+        "stars": 373,
+        "newest": 277
+      }
+    },
+    {
+      "repo": "Wantechfan/mindustry-community-musics",
+      "source": "topic",
+      "internalName": null,
+      "name": "comunity-musics",
+      "namePlain": "comunity-musics",
+      "author": "WantechFan",
+      "authorPlain": "WantechFan",
+      "description": "Replaces every single musics ingame with some musics I (And the community) got.\nRequest your musics on discord.gg/rjQndaHGFu and let the community decide if it's good or not to be added.",
+      "descriptionPlain": "Replaces every single musics ingame with some musics I (And the community) got. Request your musics on discord.gg/rjQndaHGFu and let the community decide if it's good or not to be added.",
+      "version": "1.1",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "stars": 12,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Wantechfan/mindustry-community-musics/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Wantechfan/mindustry-community-musics.json",
+      "releaseCount": 2,
+      "releaseUpdatedAt": "2025-10-19T05:42:09Z",
+      "commitUpdatedAt": "2026-09-24T09:46:35Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 19,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.0186,
+        "starsScore": 0.1628,
+        "updateScore": 0.0698,
+        "penaltyScore": 0.0886,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 296,
+        "recommended": 262,
+        "updated": 205,
+        "downloads": 586,
+        "stars": 145,
+        "newest": 308
+      }
+    },
+    {
+      "repo": "way-zer/ContentsTweaker",
+      "source": "topic",
+      "internalName": null,
+      "name": "ContentsTweaker",
+      "namePlain": "ContentsTweaker",
+      "author": "WayZer",
+      "authorPlain": "WayZer",
+      "description": "Dynamic load custom contents patch account to server",
+      "descriptionPlain": "Dynamic load custom contents patch account to server",
+      "version": "3.1.0",
+      "minGameVersion": "147",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
+        }
+      ],
+      "stars": 32,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/way-zer/ContentsTweaker.json",
+      "releaseCount": 4,
+      "releaseUpdatedAt": "2025-09-06T12:12:34Z",
+      "commitUpdatedAt": "2025-10-18T15:57:37Z",
+      "totalDownloads": 8778,
+      "allAssetsDownloads": 8778,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.1629,
+        "starsScore": 0.2173,
+        "updateScore": 0,
+        "penaltyScore": 0.2178,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 154,
+        "recommended": 265,
         "updated": 500,
-        "downloads": 76,
-        "stars": 409,
-        "newest": 607
+        "downloads": 97,
+        "stars": 62,
+        "newest": 728
+      }
+    },
+    {
+      "repo": "rocket550/Zytheron-Technology-Java",
+      "source": "topic",
+      "internalName": null,
+      "name": "zytheron",
+      "namePlain": "zytheron",
+      "author": "[red]Trocket",
+      "authorPlain": "Trocket",
+      "description": "This is a java edition of my mod that will eventually replace the json one \n\nHere you have a list of colors to use because why not?\n[red]red\n[green]green\n[blue]blue\n[yellow]yellow\n[orange]orange\n[white]white\n[gray]gray\n[darkgray]darkgray\n[black]black",
+      "descriptionPlain": "This is a java edition of my mod that will eventually replace the json one Here you have a list of colors to use because why not? red green blue yellow orange white gray darkgray black",
+      "version": "0.1.9.9",
+      "minGameVersion": "157.4",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        },
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
+      "stars": 2,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/rocket550/Zytheron-Technology-Java/main/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/rocket550/Zytheron-Technology-Java.json",
+      "releaseCount": 16,
+      "releaseUpdatedAt": "2026-10-20T23:49:53Z",
+      "commitUpdatedAt": "2026-10-21T00:08:00Z",
+      "totalDownloads": 1146,
+      "allAssetsDownloads": 1146,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1056,
+        "starsScore": 0.0751,
+        "updateScore": 0.3042,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 148,
+        "recommended": 268,
+        "updated": 136,
+        "downloads": 231,
+        "stars": 496,
+        "newest": 278
+      }
+    },
+    {
+      "repo": "florfir/md-proxy",
+      "source": "topic",
+      "internalName": null,
+      "name": "md-proxy",
+      "namePlain": "md-proxy",
+      "author": "kuko",
+      "authorPlain": "kuko",
+      "description": "idk.",
+      "descriptionPlain": "idk.",
+      "version": "1",
+      "minGameVersion": "154",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "stars": 4,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/florfir/md-proxy.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2026-09-16T14:06:41Z",
+      "commitUpdatedAt": "2026-10-27T14:05:56Z",
+      "totalDownloads": 229,
+      "allAssetsDownloads": 229,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.0787,
+        "starsScore": 0.1066,
+        "updateScore": 0.1532,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.0054,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 190,
+        "recommended": 293,
+        "updated": 228,
+        "downloads": 332,
+        "stars": 333,
+        "newest": 141
       }
     },
     {
@@ -1388,32 +782,335 @@
       "commitUpdatedAt": "2026-01-22T15:33:05Z",
       "totalDownloads": 2501,
       "allAssetsDownloads": 2501,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1243,
+        "downloadsScore": 0.1242,
         "starsScore": 0.1274,
         "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 141,
-        "updated": 461,
-        "downloads": 174,
+        "heat": 141,
+        "recommended": 298,
+        "updated": 460,
+        "downloads": 175,
         "stars": 245,
-        "newest": 404
+        "newest": 403
       }
     },
     {
-      "repo": "Photon-Gravity/PolarForm",
+      "repo": "no9527dada/creators3",
       "source": "topic",
       "internalName": null,
-      "name": "polar-form",
-      "namePlain": "polar-form",
-      "author": "Photon_gravity",
-      "authorPlain": "Photon_gravity",
-      "description": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
-      "descriptionPlain": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
+      "name": "ct",
+      "namePlain": "ct",
+      "author": "[pink]编[cyan]号[red]95[violet]27，皴皲",
+      "authorPlain": "编号9527，皴皲",
+      "description": "9527，皴皲，咕咕点心,LYBF,Ovulam5480,杀虐无意识",
+      "descriptionPlain": "9527，皴皲，咕咕点心,LYBF,Ovulam5480,杀虐无意识",
+      "version": "2025.02.15",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
+      "stars": 3,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/no9527dada/creators3/master2/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/no9527dada/creators3.json",
+      "releaseCount": 19,
+      "releaseUpdatedAt": "2025-09-11T02:28:49Z",
+      "commitUpdatedAt": "2025-09-11T02:28:49Z",
+      "totalDownloads": 13220,
+      "allAssetsDownloads": 13220,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master2",
+      "score": {
+        "downloadsScore": 0.1792,
+        "starsScore": 0.0927,
+        "updateScore": 0,
+        "penaltyScore": 0.2053,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 349,
+        "recommended": 323,
+        "updated": 499,
+        "downloads": 76,
+        "stars": 409,
+        "newest": 606
+      }
+    },
+    {
+      "repo": "JiroCab/Caster-Ui-Java",
+      "source": "topic",
+      "internalName": null,
+      "name": "caster-ui-java",
+      "namePlain": "caster-ui-java",
+      "author": "RushieWashie, WMF Industries",
+      "authorPlain": "RushieWashie, WMF Industries",
+      "description": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind \n \n Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' \nconflicts with 'Ferlern/extended-UI'  \n\nPLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
+      "descriptionPlain": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' conflicts with 'Ferlern/extended-UI' PLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
+      "version": "5.3",
+      "minGameVersion": "140.4",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "140.4",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
+        }
+      ],
+      "stars": 5,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/JiroCab/Caster-Ui-Java/Development-Legacy/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/JiroCab/Caster-Ui-Java.json",
+      "releaseCount": 31,
+      "releaseUpdatedAt": "2025-08-27T05:34:14Z",
+      "commitUpdatedAt": "2026-07-04T16:36:38Z",
+      "totalDownloads": 13014,
+      "allAssetsDownloads": 13014,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "Development-Legacy",
+      "score": {
+        "downloadsScore": 0.1782,
+        "starsScore": 0.1182,
+        "updateScore": 0.0083,
+        "penaltyScore": 0.2445,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 342,
+        "recommended": 360,
+        "updated": 380,
+        "downloads": 79,
+        "stars": 271,
+        "newest": 684
+      }
+    },
+    {
+      "repo": "Lara-Evangelista/Earthquake-and-Asteroid-Mod",
+      "source": "topic",
+      "internalName": null,
+      "name": "earthquake-asteroid-mod",
+      "namePlain": "earthquake-asteroid-mod",
+      "author": "Lara Evangelista and Sofia Nunes",
+      "authorPlain": "Lara Evangelista and Sofia Nunes",
+      "description": "An earthquake mod for Mindustry.",
+      "descriptionPlain": "An earthquake mod for Mindustry.",
+      "version": "1",
+      "minGameVersion": "150",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "150",
+          "to": "154"
+        }
+      ],
+      "stars": 0,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/Lara-Evangelista/Earthquake-and-Asteroid-Mod.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2026-02-13T12:35:38Z",
+      "commitUpdatedAt": "2026-02-14T00:58:17Z",
+      "totalDownloads": 51,
+      "allAssetsDownloads": 51,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.0595,
+        "starsScore": 0.0083,
+        "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 419,
+        "recommended": 376,
+        "updated": 449,
+        "downloads": 426,
+        "stars": 685,
+        "newest": 244
+      }
+    },
+    {
+      "repo": "EB-wilson/UniverseCore",
+      "source": "topic",
+      "internalName": null,
+      "name": "universe-core",
+      "namePlain": "universe-core",
+      "author": "EBwilson",
+      "authorPlain": "EBwilson",
+      "description": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github.\n\n一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
+      "descriptionPlain": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github. 一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
+      "version": "2.3.1",
+      "minGameVersion": "147",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "137",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
+        }
+      ],
+      "stars": 42,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/EB-wilson/UniverseCore/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/EB-wilson/UniverseCore.json",
+      "releaseCount": 26,
+      "releaseUpdatedAt": "2025-04-26T08:19:54Z",
+      "commitUpdatedAt": "2025-04-26T08:19:53Z",
+      "totalDownloads": 33672,
+      "allAssetsDownloads": 33684,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.2269,
+        "starsScore": 0.235,
+        "updateScore": 0,
+        "penaltyScore": 0.4699,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 307,
+        "recommended": 379,
+        "updated": 525,
+        "downloads": 39,
+        "stars": 47,
+        "newest": 745
+      }
+    },
+    {
+      "repo": "cardillan/MlogAssertions-7",
+      "source": "topic",
+      "internalName": null,
+      "name": "mlog-assertions-7",
+      "namePlain": "mlog-assertions-7",
+      "author": "cardillan",
+      "authorPlain": "cardillan",
+      "description": "Provides tools for easier debugging in Mindustry Logic.",
+      "descriptionPlain": "Provides tools for easier debugging in Mindustry Logic.",
+      "version": "0.6.0",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "stars": 0,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/cardillan/MlogAssertions-7/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/cardillan/MlogAssertions-7.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2026-01-25T19:48:59Z",
+      "commitUpdatedAt": "2026-01-25T19:44:23Z",
+      "totalDownloads": 307,
+      "allAssetsDownloads": 307,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.083,
+        "starsScore": 0.0083,
+        "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 404,
+        "recommended": 394,
+        "updated": 458,
+        "downloads": 314,
+        "stars": 703,
+        "newest": 367
+      }
+    },
+    {
+      "repo": "Banananator/VanillaOverhaul",
+      "source": "topic",
+      "internalName": null,
+      "name": "bettervanillamod",
+      "namePlain": "bettervanillamod",
+      "author": "Banananator",
+      "authorPlain": "Banananator",
+      "description": "Better visuals? Not only that!",
+      "descriptionPlain": "Better visuals? Not only that!",
+      "version": "V9",
+      "minGameVersion": "150.1",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        },
+        {
+          "from": "150.1",
+          "to": "154"
+        }
+      ],
+      "stars": 6,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Banananator/VanillaOverhaul/main/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Banananator/VanillaOverhaul.json",
+      "releaseCount": 9,
+      "releaseUpdatedAt": "2025-08-13T08:32:08Z",
+      "commitUpdatedAt": "2025-08-16T14:22:53Z",
+      "totalDownloads": 9670,
+      "allAssetsDownloads": 9670,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1667,
+        "starsScore": 0.1274,
+        "updateScore": 0,
+        "penaltyScore": 0.2783,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 372,
+        "recommended": 402,
+        "updated": 503,
+        "downloads": 91,
+        "stars": 243,
+        "newest": 445
+      }
+    },
+    {
+      "repo": "SwiftCris/Mindustry",
+      "source": "topic",
+      "internalName": null,
+      "name": "test-mindustry-java-nod",
+      "namePlain": "test-mindustry-java-nod",
+      "author": "rndunel",
+      "authorPlain": "rndunel",
+      "description": "",
+      "descriptionPlain": "",
       "version": "1",
       "minGameVersion": "145",
       "modType": "java",
@@ -1423,44 +1120,199 @@
           "to": "146"
         }
       ],
-      "stars": 3,
+      "stars": 1,
       "hasIcon": false,
       "iconUrl": null,
       "iconHash": null,
-      "releasesPath": "community/releases/Photon-Gravity/PolarForm.json",
-      "releaseCount": 2,
-      "releaseUpdatedAt": "2025-12-22T19:54:10Z",
-      "commitUpdatedAt": "2025-12-22T19:54:10Z",
-      "totalDownloads": 153,
-      "allAssetsDownloads": 153,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
+      "releasesPath": "community/releases/SwiftCris/Mindustry.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2026-01-17T14:50:12Z",
+      "commitUpdatedAt": "2026-01-17T14:50:12Z",
+      "totalDownloads": 33,
+      "allAssetsDownloads": 33,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.0729,
-        "starsScore": 0.0928,
+        "downloadsScore": 0.0547,
+        "starsScore": 0.048,
         "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 265,
-        "updated": 484,
-        "downloads": 360,
-        "stars": 373,
-        "newest": 278
+        "heat": 378,
+        "recommended": 403,
+        "updated": 461,
+        "downloads": 452,
+        "stars": 545,
+        "newest": 362
       }
     },
     {
-      "repo": "rocket550/Zytheron-Technology-Java",
+      "repo": "Nezerit6/Stuasut",
       "source": "topic",
       "internalName": null,
-      "name": "zytheron",
-      "namePlain": "zytheron",
-      "author": "[red]Trocket",
-      "authorPlain": "Trocket",
-      "description": "This is a java edition of my mod that will eventually replace the json one \n\nHere you have a list of colors to use because why not?\n[red]red\n[green]green\n[blue]blue\n[yellow]yellow\n[orange]orange\n[white]white\n[gray]gray\n[darkgray]darkgray\n[black]black",
-      "descriptionPlain": "This is a java edition of my mod that will eventually replace the json one Here you have a list of colors to use because why not? red green blue yellow orange white gray darkgray black",
-      "version": "0.1.9.9",
-      "minGameVersion": "157.4",
+      "name": "stus",
+      "namePlain": "stus",
+      "author": "Eternity",
+      "authorPlain": "Eternity",
+      "description": "no",
+      "descriptionPlain": "no",
+      "version": "0.1",
+      "minGameVersion": "149",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "140.3",
+          "to": "146"
+        },
+        {
+          "from": "149",
+          "to": "154"
+        }
+      ],
+      "stars": 6,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Nezerit6/Stuasut/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Nezerit6/Stuasut.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2025-08-05T11:02:09Z",
+      "commitUpdatedAt": "2025-08-05T11:02:09Z",
+      "totalDownloads": 602,
+      "allAssetsDownloads": 602,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.0951,
+        "starsScore": 0.1274,
+        "updateScore": 0,
+        "penaltyScore": 0.2964,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 435,
+        "recommended": 406,
+        "updated": 504,
+        "downloads": 263,
+        "stars": 244,
+        "newest": 672
+      }
+    },
+    {
+      "repo": "Sublemon-Team/Subvoyage",
+      "source": "topic",
+      "internalName": null,
+      "name": "subvoyage",
+      "namePlain": "subvoyage",
+      "author": "Skoow, IriDark",
+      "authorPlain": "Skoow, IriDark",
+      "description": "Aquatic-stylized mod with new planet and unique mechanics",
+      "descriptionPlain": "Aquatic-stylized mod with new planet and unique mechanics",
+      "version": "0.6.2-beta",
+      "minGameVersion": "147",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
+        }
+      ],
+      "stars": 39,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Sublemon-Team/Subvoyage/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Sublemon-Team/Subvoyage.json",
+      "releaseCount": 10,
+      "releaseUpdatedAt": "2025-04-20T05:35:32Z",
+      "commitUpdatedAt": "2026-02-13T10:43:29Z",
+      "totalDownloads": 36820,
+      "allAssetsDownloads": 36820,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.2327,
+        "starsScore": 0.2298,
+        "updateScore": 0,
+        "penaltyScore": 0.4776,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 319,
+        "recommended": 408,
+        "updated": 527,
+        "downloads": 35,
+        "stars": 52,
+        "newest": 482
+      }
+    },
+    {
+      "repo": "m1cxzfw3q/ThermalEngineering",
+      "source": "topic",
+      "internalName": null,
+      "name": "TEMod",
+      "namePlain": "TEMod",
+      "author": "[sky[]]114514[white[]]",
+      "authorPlain": "[sky]114514[white]",
+      "description": "[blue[]]-----INFO----------------[white[]]\nThermal Engineering [acid[]]0.0.2[red[]]\nAlpha(Pre)\n\n当前版本已发布",
+      "descriptionPlain": "[blue]-----INFO----------------[white] Thermal Engineering [acid]0.0.2[red] Alpha(Pre) 当前版本已发布",
+      "version": "0.0.2pA",
+      "minGameVersion": "151.1",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "151.1",
+          "to": "154"
+        }
+      ],
+      "stars": 2,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/m1cxzfw3q/ThermalEngineering.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2025-10-13T13:45:25Z",
+      "commitUpdatedAt": "2026-10-01T05:21:12Z",
+      "totalDownloads": 1779,
+      "allAssetsDownloads": 1779,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1154,
+        "starsScore": 0.0751,
+        "updateScore": 0.0791,
+        "penaltyScore": 0.1075,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 335,
+        "recommended": 415,
+        "updated": 191,
+        "downloads": 200,
+        "stars": 484,
+        "newest": 312
+      }
+    },
+    {
+      "repo": "sporrus/randomMindustry",
+      "source": "topic",
+      "internalName": null,
+      "name": "random-mindustry",
+      "namePlain": "random-mindustry",
+      "author": "sporrus",
+      "authorPlain": "sporrus",
+      "description": "Randomizes almost everything!\nJoin our discord! https://discord.gg/ztC6WJUxZK\n\nEPILEPSY WARNING",
+      "descriptionPlain": "Randomizes almost everything! Join our discord! https://discord.gg/ztC6WJUxZK EPILEPSY WARNING",
+      "version": "1.8.4",
+      "minGameVersion": "149",
       "modType": "java",
       "gameVersionRanges": [
         {
@@ -1468,34 +1320,89 @@
           "to": "146"
         },
         {
-          "from": "157.4",
-          "to": "160.7"
+          "from": "149",
+          "to": "154"
         }
       ],
-      "stars": 2,
+      "stars": 19,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/rocket550/Zytheron-Technology-Java/main/assets/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/sporrus/randomMindustry/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/rocket550/Zytheron-Technology-Java.json",
-      "releaseCount": 16,
-      "releaseUpdatedAt": "2026-10-20T23:49:53Z",
-      "commitUpdatedAt": "2026-10-21T00:08:00Z",
-      "totalDownloads": 1145,
-      "allAssetsDownloads": 1145,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
+      "releasesPath": "community/releases/sporrus/randomMindustry.json",
+      "releaseCount": 25,
+      "releaseUpdatedAt": "2025-05-04T01:56:11Z",
+      "commitUpdatedAt": "2025-05-04T01:56:11Z",
+      "totalDownloads": 31323,
+      "allAssetsDownloads": 31323,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1056,
-        "starsScore": 0.0752,
-        "updateScore": 0.3041,
+        "downloadsScore": 0.2223,
+        "starsScore": 0.1869,
+        "updateScore": 0,
+        "penaltyScore": 0.4598,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 149,
-        "updated": 137,
-        "downloads": 231,
-        "stars": 496,
-        "newest": 279
+        "heat": 384,
+        "recommended": 425,
+        "updated": 524,
+        "downloads": 43,
+        "stars": 101,
+        "newest": 703
+      }
+    },
+    {
+      "repo": "xzxADIxzx/Scheme-Size",
+      "source": "topic",
+      "internalName": null,
+      "name": "scheme-size",
+      "namePlain": "scheme-size",
+      "author": "[#0096FF]xzxADIxzx",
+      "authorPlain": "xzxADIxzx",
+      "description": "\nA mod that increases the schematic size limit to 512 blocks! Adds admins, renderer and building tools. Has an updater, keybinds and AI support.\n[red]Vanilla Only![orange]\n\n   - Release!\n   - Settings\n   - Java 8\n   - Controls\n   - Updater\n   - Mobile Support\n   - Admins Tools\n\n   - Building Tools\n   - AI Power\n   - Renderer Tools\n   - Deep Cleaning\n   - Schematic Shortcuts\n   - Cursed Schematics\n   - Advanced Dev Console\n   - Copy Link and Join\n",
+      "descriptionPlain": "A mod that increases the schematic size limit to 512 blocks! Adds admins, renderer and building tools. Has an updater, keybinds and AI support. Vanilla Only! - Release! - Settings - Java 8 - Controls - Updater - Mobile Support - Admins Tools - Building Tools - AI Power - Renderer Tools - Deep Cleaning - Schematic Shortcuts - Cursed Schematics - Advanced Dev Console - Copy Link and Join",
+      "version": "2.7.79",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "130",
+          "to": "135.2"
+        },
+        {
+          "from": "138",
+          "to": "146"
+        }
+      ],
+      "stars": 235,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/xzxADIxzx/Scheme-Size.json",
+      "releaseCount": 31,
+      "releaseUpdatedAt": "2024-01-03T15:52:30Z",
+      "commitUpdatedAt": "2026-07-05T14:46:32Z",
+      "totalDownloads": 610724,
+      "allAssetsDownloads": 610724,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.6,
+        "starsScore": 0.4081,
+        "updateScore": 0,
+        "penaltyScore": 0.6839,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 20,
+        "recommended": 426,
+        "updated": 594,
+        "downloads": 1,
+        "stars": 6,
+        "newest": 752
       }
     },
     {
@@ -1535,33 +1442,84 @@
       "commitUpdatedAt": "2025-07-09T08:59:52Z",
       "totalDownloads": 18335,
       "allAssetsDownloads": 18335,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
         "downloadsScore": 0.1943,
         "starsScore": 0.1347,
         "updateScore": 0,
+        "penaltyScore": 0.3586,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 402,
-        "updated": 510,
+        "heat": 402,
+        "recommended": 427,
+        "updated": 509,
         "downloads": 59,
         "stars": 225,
-        "newest": 760
+        "newest": 759
       }
     },
     {
-      "repo": "sporrus/randomMindustry",
+      "repo": "Darkdustry-Coders/MindurkaCompatV7",
       "source": "topic",
       "internalName": null,
-      "name": "random-mindustry",
-      "namePlain": "random-mindustry",
-      "author": "sporrus",
-      "authorPlain": "sporrus",
-      "description": "Randomizes almost everything!\nJoin our discord! https://discord.gg/ztC6WJUxZK\n\nEPILEPSY WARNING",
-      "descriptionPlain": "Randomizes almost everything! Join our discord! https://discord.gg/ztC6WJUxZK EPILEPSY WARNING",
-      "version": "1.8.4",
+      "name": "MindurkaCompat",
+      "namePlain": "MindurkaCompat",
+      "author": "buj",
+      "authorPlain": "buj",
+      "description": "Mod that adds extra compatibility with Mindurka",
+      "descriptionPlain": "Mod that adds extra compatibility with Mindurka",
+      "version": "1.2",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "stars": 1,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/Darkdustry-Coders/MindurkaCompatV7.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2026-03-22T08:27:09Z",
+      "commitUpdatedAt": "2026-03-22T08:27:09Z",
+      "totalDownloads": 28,
+      "allAssetsDownloads": 28,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.052,
+        "starsScore": 0.048,
+        "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 381,
+        "recommended": 430,
+        "updated": 430,
+        "downloads": 467,
+        "stars": 524,
+        "newest": 225
+      }
+    },
+    {
+      "repo": "BlackDeluxeCat/MapFilterExt",
+      "source": "topic",
+      "internalName": null,
+      "name": "MapFilterExt",
+      "namePlain": "MapFilterExt",
+      "author": "BlackDeluxeCat",
+      "authorPlain": "BlackDeluxeCat",
+      "description": "Added some useful map filters. \nAdded a powerful custom guide tool and advanced wave editor to map editor.",
+      "descriptionPlain": "Added some useful map filters. Added a powerful custom guide tool and advanced wave editor to map editor.",
+      "version": "1.8.1",
       "minGameVersion": "149",
       "modType": "java",
       "gameVersionRanges": [
@@ -1574,124 +1532,85 @@
           "to": "154"
         }
       ],
-      "stars": 19,
+      "stars": 5,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/sporrus/randomMindustry/master/assets/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/BlackDeluxeCat/MapFilterExt/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/sporrus/randomMindustry.json",
-      "releaseCount": 25,
-      "releaseUpdatedAt": "2025-05-04T01:56:11Z",
-      "commitUpdatedAt": "2025-05-04T01:56:11Z",
-      "totalDownloads": 31323,
-      "allAssetsDownloads": 31323,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releasesPath": "community/releases/BlackDeluxeCat/MapFilterExt.json",
+      "releaseCount": 24,
+      "releaseUpdatedAt": "2025-07-01T05:37:20Z",
+      "commitUpdatedAt": "2025-07-01T05:36:36Z",
+      "totalDownloads": 10319,
+      "allAssetsDownloads": 10330,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2228,
-        "starsScore": 0.1869,
+        "downloadsScore": 0.169,
+        "starsScore": 0.1182,
         "updateScore": 0,
+        "penaltyScore": 0.3682,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 382,
-        "updated": 525,
-        "downloads": 40,
-        "stars": 101,
-        "newest": 704
+        "heat": 432,
+        "recommended": 431,
+        "updated": 512,
+        "downloads": 89,
+        "stars": 269,
+        "newest": 651
       }
     },
     {
-      "repo": "Sublemon-Team/Subvoyage",
+      "repo": "Eschatologue/Unlimited-Armament-Works",
       "source": "topic",
       "internalName": null,
-      "name": "subvoyage",
-      "namePlain": "subvoyage",
-      "author": "Skoow, IriDark",
-      "authorPlain": "Skoow, IriDark",
-      "description": "Aquatic-stylized mod with new planet and unique mechanics",
-      "descriptionPlain": "Aquatic-stylized mod with new planet and unique mechanics",
-      "version": "0.6.2-beta",
-      "minGameVersion": "147",
+      "name": "uaw",
+      "namePlain": "uaw",
+      "author": "Eschatologue",
+      "authorPlain": "Eschatologue",
+      "description": "\nUAW is a port and sequel to Heavy Armaments Industries, implementing new unique content to vanilla Mindustry, from more turrets, units, and crafters/factories.\n\nA lot of work and improvements goes into UAW, if you want to show some support or like the content, please give the mod a star on GitHub, Thank you!\n",
+      "descriptionPlain": "UAW is a port and sequel to Heavy Armaments Industries, implementing new unique content to vanilla Mindustry, from more turrets, units, and crafters/factories. A lot of work and improvements goes into UAW, if you want to show some support or like the content, please give the mod a star on GitHub, Thank you!",
+      "version": "v0.8",
+      "minGameVersion": "138",
       "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "145",
-          "to": "146"
+          "from": "129",
+          "to": "135.2"
         },
         {
-          "from": "147",
-          "to": "154"
-        }
-      ],
-      "stars": 39,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Sublemon-Team/Subvoyage/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Sublemon-Team/Subvoyage.json",
-      "releaseCount": 10,
-      "releaseUpdatedAt": "2025-04-20T05:35:32Z",
-      "commitUpdatedAt": "2026-02-13T10:43:29Z",
-      "totalDownloads": 36818,
-      "allAssetsDownloads": 36818,
-      "releaseDataUpdatedAt": "2026-11-07T12:06:17.651Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.233,
-        "starsScore": 0.2298,
-        "updateScore": 0,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "score": 317,
-        "updated": 528,
-        "downloads": 33,
-        "stars": 52,
-        "newest": 483
-      }
-    },
-    {
-      "repo": "SwiftCris/Mindustry",
-      "source": "topic",
-      "internalName": null,
-      "name": "test-mindustry-java-nod",
-      "namePlain": "test-mindustry-java-nod",
-      "author": "rndunel",
-      "authorPlain": "rndunel",
-      "description": "",
-      "descriptionPlain": "",
-      "version": "1",
-      "minGameVersion": "145",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "145",
+          "from": "138",
           "to": "146"
         }
       ],
-      "stars": 1,
-      "hasIcon": false,
-      "iconUrl": null,
+      "stars": 139,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Eschatologue/Unlimited-Armament-Works/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/SwiftCris/Mindustry.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2026-01-17T14:50:12Z",
-      "commitUpdatedAt": "2026-01-17T14:50:12Z",
-      "totalDownloads": 33,
-      "allAssetsDownloads": 33,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releasesPath": "community/releases/Eschatologue/Unlimited-Armament-Works.json",
+      "releaseCount": 15,
+      "releaseUpdatedAt": "2022-10-23T12:47:13Z",
+      "commitUpdatedAt": "2026-10-04T14:23:40Z",
+      "totalDownloads": 292311,
+      "allAssetsDownloads": 292311,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.0551,
-        "starsScore": 0.048,
+        "downloadsScore": 0.4515,
+        "starsScore": 0.3403,
         "updateScore": 0,
+        "penaltyScore": 0.6986,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 376,
-        "updated": 462,
-        "downloads": 450,
-        "stars": 545,
-        "newest": 363
+        "heat": 98,
+        "recommended": 439,
+        "updated": 424,
+        "downloads": 5,
+        "stars": 13,
+        "newest": 744
       }
     },
     {
@@ -1723,82 +1642,232 @@
       "commitUpdatedAt": "2026-11-04T18:05:25Z",
       "totalDownloads": 46059,
       "allAssetsDownloads": 46059,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2479,
+        "downloadsScore": 0.2474,
         "starsScore": 0.2703,
         "updateScore": 0.0232,
+        "penaltyScore": 0.6695,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 408,
-        "updated": 372,
-        "downloads": 27,
+        "heat": 408,
+        "recommended": 454,
+        "updated": 371,
+        "downloads": 30,
         "stars": 27,
-        "newest": 771
+        "newest": 770
       }
     },
     {
-      "repo": "TheSerjio/AdvancedDataBase",
+      "repo": "EyeOfDarkness/FlameOut",
       "source": "topic",
       "internalName": null,
-      "name": "advanced-database",
-      "namePlain": "advanced-database",
-      "author": "The Serjio#3162",
-      "authorPlain": "The Serjio#3162",
-      "description": "Displays more stats in database. Unhides few things. Multiplayer compatible.\nПоказывает больше информации в базе данных. Открывает пару скрытых вещей. Не влияет на игру по сети",
-      "descriptionPlain": "Displays more stats in database. Unhides few things. Multiplayer compatible. Показывает больше информации в базе данных. Открывает пару скрытых вещей. Не влияет на игру по сети",
-      "version": "1.1",
-      "minGameVersion": "147",
+      "name": "flameout",
+      "namePlain": "flameout",
+      "author": "EoD",
+      "authorPlain": "EoD",
+      "description": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw.\n\nNot intended for multiplayer, low-end devices, or saving.",
+      "descriptionPlain": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw. Not intended for multiplayer, low-end devices, or saving.",
+      "version": "v1.1.3",
+      "minGameVersion": "145",
       "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "142",
+          "from": "145",
           "to": "146"
+        }
+      ],
+      "stars": 60,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/EyeOfDarkness/FlameOut/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/EyeOfDarkness/FlameOut.json",
+      "releaseCount": 15,
+      "releaseUpdatedAt": "2024-06-29T00:19:27Z",
+      "commitUpdatedAt": "2024-06-29T00:19:27Z",
+      "totalDownloads": 67744,
+      "allAssetsDownloads": 67744,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.2768,
+        "starsScore": 0.2614,
+        "updateScore": 0,
+        "penaltyScore": 0.6569,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 383,
+        "recommended": 459,
+        "updated": 571,
+        "downloads": 21,
+        "stars": 30,
+        "newest": 556
+      }
+    },
+    {
+      "repo": "liplum/CyberIO",
+      "source": "topic",
+      "internalName": null,
+      "name": "cyber-io",
+      "namePlain": "cyber-io",
+      "author": "[#42a5f5[]]Liplum[[]]",
+      "authorPlain": "[#42a5f5]Liplum[]",
+      "description": "\n[#e53935[]]The Cybernetics on Mindustry v7.[[]]\n\nCurrent version is v5.1, while v6 is still in development.\n\nLanguage Supports: English, Chinese(简体/正體中文), Japanese(日本語), Russian(Русский) and Ukrainian (українська).\n\nTo learn more about Cyber IO, please check the repository on GitHub by hitting the button below.\n\nGitHub: [#42a5f5[]]github.com/liplum/CyberIO[[]]\n",
+      "descriptionPlain": "[#e53935]The Cybernetics on Mindustry v7.[] Current version is v5.1, while v6 is still in development. Language Supports: English, Chinese(简体/正體中文), Japanese(日本語), Russian(Русский) and Ukrainian (українська). To learn more about Cyber IO, please check the repository on GitHub by hitting the button below. GitHub: [#42a5f5]github.com/liplum/CyberIO[]",
+      "version": "5.1",
+      "minGameVersion": "141",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "135",
+          "to": "135.2"
         },
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
+      "stars": 117,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/liplum/CyberIO/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/liplum/CyberIO.json",
+      "releaseCount": 7,
+      "releaseUpdatedAt": "2023-01-26T06:06:20Z",
+      "commitUpdatedAt": "2025-04-01T15:38:41Z",
+      "totalDownloads": 88999,
+      "allAssetsDownloads": 88999,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.3008,
+        "starsScore": 0.3215,
+        "updateScore": 0,
+        "penaltyScore": 0.6976,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 280,
+        "recommended": 462,
+        "updated": 642,
+        "downloads": 17,
+        "stars": 16,
+        "newest": 730
+      }
+    },
+    {
+      "repo": "FlinTyX/Animalia",
+      "source": "topic",
+      "internalName": null,
+      "name": "animalia",
+      "namePlain": "animalia",
+      "author": "Flin",
+      "authorPlain": "Flin",
+      "description": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
+      "descriptionPlain": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
+      "version": "java 1.0",
+      "minGameVersion": "141",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "146"
+        }
+      ],
+      "stars": 50,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/FlinTyX/Animalia/main/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/FlinTyX/Animalia.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2025-02-03T14:54:28Z",
+      "commitUpdatedAt": "2025-02-03T14:54:28Z",
+      "totalDownloads": 42298,
+      "allAssetsDownloads": 42298,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.2417,
+        "starsScore": 0.2475,
+        "updateScore": 0,
+        "penaltyScore": 0.5539,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 357,
+        "recommended": 480,
+        "updated": 538,
+        "downloads": 31,
+        "stars": 38,
+        "newest": 736
+      }
+    },
+    {
+      "repo": "alnyled/AstheriveGenesis",
+      "source": "topic",
+      "internalName": null,
+      "name": "astherive-gen",
+      "namePlain": "astherive-gen",
+      "author": "Astherive Team",
+      "authorPlain": "Astherive Team",
+      "description": "\nA Mindustry Java mod.\n\nUnder very early development.\n\nYes. this is what you're looking for.\n",
+      "descriptionPlain": "A Mindustry Java mod. Under very early development. Yes. this is what you're looking for.",
+      "version": "1",
+      "minGameVersion": "147",
+      "modType": "java",
+      "gameVersionRanges": [
         {
           "from": "147",
           "to": "154"
         }
       ],
-      "stars": 9,
+      "stars": 6,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/TheSerjio/AdvancedDataBase/master/assets/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/alnyled/AstheriveGenesis/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/TheSerjio/AdvancedDataBase.json",
-      "releaseCount": 8,
-      "releaseUpdatedAt": "2025-11-15T17:22:14Z",
-      "commitUpdatedAt": "2025-11-15T17:22:14Z",
-      "totalDownloads": 26321,
-      "allAssetsDownloads": 26321,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
+      "releasesPath": "community/releases/alnyled/AstheriveGenesis.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2025-07-11T12:16:54Z",
+      "commitUpdatedAt": "2025-12-31T05:00:01Z",
+      "totalDownloads": 2750,
+      "allAssetsDownloads": 2750,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2125,
-        "starsScore": 0.1479,
+        "downloadsScore": 0.1264,
+        "starsScore": 0.1274,
         "updateScore": 0,
+        "penaltyScore": 0.3487,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 65,
-        "updated": 491,
-        "downloads": 48,
-        "stars": 185,
-        "newest": 626
+        "heat": 438,
+        "recommended": 481,
+        "updated": 474,
+        "downloads": 170,
+        "stars": 250,
+        "newest": 376
       }
     },
     {
-      "repo": "Wantechfan/mindustry-community-musics",
+      "repo": "LaoHuaJiOfficial/MultiBlockLib",
       "source": "topic",
       "internalName": null,
-      "name": "WantechFan's-cool-musics",
-      "namePlain": "WantechFan's-cool-musics",
-      "author": "WantechFan",
-      "authorPlain": "WantechFan",
-      "description": "Replaces every single musics ingame with some cool and nostalgic musics I took from YouTube.\nBoss1 and boss2 is unchanged because they are still cool. Please leave a star in the repository if you like it.",
-      "descriptionPlain": "Replaces every single musics ingame with some cool and nostalgic musics I took from YouTube. Boss1 and boss2 is unchanged because they are still cool. Please leave a star in the repository if you like it.",
-      "version": "1.1",
+      "name": "multi-block-lib",
+      "namePlain": "multi-block-lib",
+      "author": "LaoHuaJi/酪桦姬",
+      "authorPlain": "LaoHuaJi/酪桦姬",
+      "description": "Mindustry mod library which provides support for non-square blocks implementation for json mod.",
+      "descriptionPlain": "Mindustry mod library which provides support for non-square blocks implementation for json mod.",
+      "version": "1.3",
       "minGameVersion": "146",
       "modType": "java",
       "gameVersionRanges": [
@@ -1807,135 +1876,141 @@
           "to": "146"
         }
       ],
-      "stars": 12,
+      "stars": 27,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Wantechfan/mindustry-community-musics/main/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/LaoHuaJiOfficial/MultiBlockLib/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/Wantechfan/mindustry-community-musics.json",
+      "releasesPath": "community/releases/LaoHuaJiOfficial/MultiBlockLib.json",
       "releaseCount": 2,
-      "releaseUpdatedAt": "2025-10-19T05:42:09Z",
-      "commitUpdatedAt": "2026-09-24T09:46:35Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 19,
-      "releaseDataUpdatedAt": "2026-11-07T12:23:08.767Z",
-      "defaultBranch": "main",
+      "releaseUpdatedAt": "2025-03-06T10:40:33Z",
+      "commitUpdatedAt": "2025-03-06T10:40:33Z",
+      "totalDownloads": 4425,
+      "allAssetsDownloads": 4458,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.0185,
-        "starsScore": 0.1629,
-        "updateScore": 0.0698,
+        "downloadsScore": 0.1392,
+        "starsScore": 0.2072,
+        "updateScore": 0,
+        "penaltyScore": 0.5266,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 294,
-        "updated": 206,
-        "downloads": 586,
-        "stars": 145,
-        "newest": 309
+        "heat": 447,
+        "recommended": 515,
+        "updated": 533,
+        "downloads": 143,
+        "stars": 69,
+        "newest": 391
       }
     },
     {
-      "repo": "way-zer/ContentsTweaker",
+      "repo": "JiroCab/Nyfalis",
       "source": "topic",
       "internalName": null,
-      "name": "ContentsTweaker",
-      "namePlain": "ContentsTweaker",
-      "author": "WayZer",
-      "authorPlain": "WayZer",
-      "description": "Dynamic load custom contents patch account to server",
-      "descriptionPlain": "Dynamic load custom contents patch account to server",
-      "version": "3.1.0",
-      "minGameVersion": "147",
+      "name": "olupis",
+      "namePlain": "olupis",
+      "author": ";3\nProgramming:\nRushieWashie, Siede, WMF Industries, Otamamori \n---------------------\nSprites:\nRushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69\n---------------------\nMaps:\nRushieWashie, MrApple, NightmarishWolf",
+      "authorPlain": ";3 Programming: RushieWashie, Siede, WMF Industries, Otamamori --------------------- Sprites: RushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69 --------------------- Maps: RushieWashie, MrApple, NightmarishWolf",
+      "description": "(⚠Work in progress⚠)\n Yet another planet mod \nThat does it's best to give the player(s) a bit of something new,\n with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
+      "descriptionPlain": "(⚠Work in progress⚠) Yet another planet mod That does it's best to give the player(s) a bit of something new, with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
+      "version": "1.7.9",
+      "minGameVersion": "136",
       "modType": "java",
       "gameVersionRanges": [
         {
           "from": "136",
           "to": "146"
-        },
-        {
-          "from": "147",
-          "to": "154"
         }
       ],
-      "stars": 32,
-      "hasIcon": false,
-      "iconUrl": null,
+      "stars": 22,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/JiroCab/Nyfalis/main/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/way-zer/ContentsTweaker.json",
-      "releaseCount": 4,
-      "releaseUpdatedAt": "2025-09-06T12:12:34Z",
-      "commitUpdatedAt": "2025-10-18T15:57:37Z",
-      "totalDownloads": 8778,
-      "allAssetsDownloads": 8778,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "master",
+      "releasesPath": "community/releases/JiroCab/Nyfalis.json",
+      "releaseCount": 16,
+      "releaseUpdatedAt": "2025-02-19T15:21:05Z",
+      "commitUpdatedAt": "2026-10-30T13:25:49Z",
+      "totalDownloads": 38391,
+      "allAssetsDownloads": 39552,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1629,
-        "starsScore": 0.2174,
-        "updateScore": 0,
+        "downloadsScore": 0.2355,
+        "starsScore": 0.1951,
+        "updateScore": 0.0303,
+        "penaltyScore": 0.5403,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 154,
-        "updated": 501,
-        "downloads": 97,
-        "stars": 62,
-        "newest": 729
+        "heat": 413,
+        "recommended": 539,
+        "updated": 164,
+        "downloads": 33,
+        "stars": 86,
+        "newest": 657
       }
     },
     {
-      "repo": "xzxADIxzx/Scheme-Size",
+      "repo": "deltanedas/rtfm",
       "source": "topic",
       "internalName": null,
-      "name": "scheme-size",
-      "namePlain": "scheme-size",
-      "author": "[#0096FF]xzxADIxzx",
-      "authorPlain": "xzxADIxzx",
-      "description": "\nA mod that increases the schematic size limit to 512 blocks! Adds admins, renderer and building tools. Has an updater, keybinds and AI support.\n[red]Vanilla Only![orange]\n\n   - Release!\n   - Settings\n   - Java 8\n   - Controls\n   - Updater\n   - Mobile Support\n   - Admins Tools\n\n   - Building Tools\n   - AI Power\n   - Renderer Tools\n   - Deep Cleaning\n   - Schematic Shortcuts\n   - Cursed Schematics\n   - Advanced Dev Console\n   - Copy Link and Join\n",
-      "descriptionPlain": "A mod that increases the schematic size limit to 512 blocks! Adds admins, renderer and building tools. Has an updater, keybinds and AI support. Vanilla Only! - Release! - Settings - Java 8 - Controls - Updater - Mobile Support - Admins Tools - Building Tools - AI Power - Renderer Tools - Deep Cleaning - Schematic Shortcuts - Cursed Schematics - Advanced Dev Console - Copy Link and Join",
-      "version": "2.7.79",
-      "minGameVersion": "146",
-      "modType": "java",
+      "name": "rtfm",
+      "namePlain": "rtfm",
+      "author": "DeltaNedas",
+      "authorPlain": "DeltaNedas",
+      "description": "Mod that adds a manual page library. RTFM in the About menu.\nComes with documentation of vanilla'a [purple]Logic[] system.\n[stat]Optionally requires [#00aaff]DeltaNedas/ui-lib[] for extra buttons.\n[#00aa00]pt_BR translations by King-BR[]",
+      "descriptionPlain": "Mod that adds a manual page library. RTFM in the About menu. Comes with documentation of vanilla'a Logic system. [stat]Optionally requires DeltaNedas/ui-lib for extra buttons. pt_BR translations by King-BR",
+      "version": "2.14.10",
+      "minGameVersion": "105",
+      "modType": "js",
       "gameVersionRanges": [
         {
-          "from": "130",
+          "from": "105",
           "to": "135.2"
-        },
-        {
-          "from": "138",
-          "to": "146"
         }
       ],
-      "stars": 235,
-      "hasIcon": false,
-      "iconUrl": null,
+      "stars": 79,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/deltanedas/rtfm/master/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/xzxADIxzx/Scheme-Size.json",
-      "releaseCount": 31,
-      "releaseUpdatedAt": "2024-01-03T15:52:30Z",
-      "commitUpdatedAt": "2026-07-05T14:46:32Z",
-      "totalDownloads": 610723,
-      "allAssetsDownloads": 610723,
-      "releaseDataUpdatedAt": "2026-11-07T09:38:50.520Z",
-      "defaultBranch": "main",
+      "releasesPath": "community/releases/deltanedas/rtfm.json",
+      "releaseCount": 0,
+      "tagCount": 1,
+      "releaseUpdatedAt": null,
+      "commitUpdatedAt": "2023-07-14T01:02:34Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 0,
+      "releaseDataUpdatedAt": "2026-11-07T14:12:07.591Z",
+      "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.6,
-        "starsScore": 0.4081,
+        "downloadsScore": 0.0186,
+        "starsScore": 0.2843,
         "updateScore": 0,
+        "penaltyScore": 0.7,
+        "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "score": 21,
-        "updated": 595,
-        "downloads": 1,
-        "stars": 6,
-        "newest": 753
+        "heat": 420,
+        "recommended": 692,
+        "updated": 727,
+        "downloads": 635,
+        "stars": 22,
+        "newest": 778
       }
     }
   ],
   "skipped": [],
   "sortOptions": [
     {
-      "key": "score",
+      "key": "recommended",
+      "label": "推荐"
+    },
+    {
+      "key": "heat",
       "label": "热度"
     },
     {
@@ -1955,5 +2030,5 @@
       "label": "最新发布"
     }
   ],
-  "defaultSort": "updated"
+  "defaultSort": "recommended"
 }

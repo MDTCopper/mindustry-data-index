@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "darkjeanne/schempack-manager",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "schempack-manager",
+    "author": "darkjeanne",
+    "description": "Sync Mindustry schematics with GitHub, with auto push, pull/merge, and local-only filtering.",
+    "version": "1.0.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "schempack.SchemPackManager",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "release_1.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/darkjeanne/schempack-manager/releases/download/release_1.1/schempack-manager.jar",
       "modVersion": "1.0.1",
       "sizeBytes": 631485,
-      "downloadCount": 851,
+      "downloadCount": 853,
       "releasedAt": "2026-07-12T09:00:11Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 325,
       "releasedAt": "2026-06-29T08:29:25Z"
     }
-  ],
-  "meta": {
-    "name": "schempack-manager",
-    "author": "darkjeanne",
-    "description": "Sync Mindustry schematics with GitHub, with auto push, pull/merge, and local-only filtering.",
-    "version": "1.0.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "schempack.SchemPackManager",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

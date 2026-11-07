@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "kernelitt/campaignstats",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "kernelit-campaign-stats",
+    "author": "Kernelit",
+    "description": "Простой мод для отображения статистики в кампании",
+    "version": "1",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "kernelit.CampaignStatsMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/Kernelitt/CampaignStats/releases/download/2/CampaignStats.jar",
       "modVersion": "1",
       "sizeBytes": 27097,
-      "downloadCount": 90,
+      "downloadCount": 91,
       "releasedAt": "2026-10-24T08:59:37Z"
     }
-  ],
-  "meta": {
-    "name": "kernelit-campaign-stats",
-    "author": "Kernelit",
-    "description": "Простой мод для отображения статистики в кампании",
-    "version": "1",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "kernelit.CampaignStatsMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

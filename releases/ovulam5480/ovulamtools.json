@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "ovulam5480/ovulamtools",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "OvulamTools",
+    "author": "Ovulam5480",
+    "description": "用于显示子弹溅射范围或者单位坠落伤害半径的辅助模组(起码以前是)",
+    "version": "0.10.0",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "Tools.OvulamTools",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.10.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Ovulam5480/OvulamTools/releases/download/0.10.0/OvulamTools-0.10.0.jar",
       "modVersion": "0.10.0",
       "sizeBytes": 265230,
-      "downloadCount": 1206,
+      "downloadCount": 1207,
       "releasedAt": "2026-07-20T15:57:19Z"
     },
     {
@@ -356,19 +370,5 @@
       "downloadCount": 7,
       "releasedAt": "2025-03-04T10:00:15Z"
     }
-  ],
-  "meta": {
-    "name": "OvulamTools",
-    "author": "Ovulam5480",
-    "description": "用于显示子弹溅射范围或者单位坠落伤害半径的辅助模组(起码以前是)",
-    "version": "0.10.0",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "Tools.OvulamTools",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "kavun-sama/auto-drill-v2",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "auto-drill",
+    "author": "Pointifix, Kavun-Sama",
+    "description": "Adds tools for automatically filling resource patches with drills",
+    "version": "1.6.5",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "autodrill.AutoDrill",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.6.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Kavun-Sama/auto-drill-v2/releases/download/v1.6.5/AutoDrill.jar",
       "modVersion": "1.6.5",
       "sizeBytes": 867103,
-      "downloadCount": 422,
+      "downloadCount": 423,
       "releasedAt": "2026-10-20T21:26:19Z"
     },
     {
@@ -98,19 +112,5 @@
       "sizeBytes": 842493,
       "releasedAt": "2026-10-12T18:23:30Z"
     }
-  ],
-  "meta": {
-    "name": "auto-drill",
-    "author": "Pointifix, Kavun-Sama",
-    "description": "Adds tools for automatically filling resource patches with drills",
-    "version": "1.6.5",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "autodrill.AutoDrill",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

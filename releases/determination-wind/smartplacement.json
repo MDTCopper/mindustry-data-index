@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/smartplacement",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "SmartPlacement",
+    "author": "DeterMination-Wind",
+    "description": "Smart item-line placement for mixed-tech maps while preserving vanilla placement elsewhere.",
+    "version": "1.0.0",
+    "minGameVersion": "157",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "smartplacement.SmartPlacementMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.0",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/SmartPlacement/releases/download/v1.0.0/SmartPlacement-v1.0.0.jar",
       "modVersion": "1.0.0",
       "sizeBytes": 22216,
-      "downloadCount": 224,
+      "downloadCount": 225,
       "releasedAt": "2026-08-17T17:42:29Z"
     }
-  ],
-  "meta": {
-    "name": "SmartPlacement",
-    "author": "DeterMination-Wind",
-    "description": "Smart item-line placement for mixed-tech maps while preserving vanilla placement elsewhere.",
-    "version": "1.0.0",
-    "minGameVersion": "157",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "smartplacement.SmartPlacementMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

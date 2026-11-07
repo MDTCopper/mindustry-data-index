@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "xpdustry/kotlin-runtime",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "kotlin-runtime",
+    "author": "Xpdustry",
+    "description": "A companion mod for Kotlin based mods and plugins.",
+    "version": "4.3.9",
+    "minGameVersion": "157",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "com.xpdustry.kotlin.KotlinRuntimeMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v4.3.9+k.2.4.20",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/xpdustry/kotlin-runtime/releases/download/v4.3.9%2Bk.2.4.20/kotlin-runtime.jar",
       "modVersion": "4.3.9",
       "sizeBytes": 11497499,
-      "downloadCount": 204,
+      "downloadCount": 206,
       "releasedAt": "2026-10-03T19:08:51Z"
     },
     {
@@ -372,19 +386,5 @@
       "downloadCount": 12,
       "releasedAt": "2023-01-23T20:45:00Z"
     }
-  ],
-  "meta": {
-    "name": "kotlin-runtime",
-    "author": "Xpdustry",
-    "description": "A companion mod for Kotlin based mods and plugins.",
-    "version": "4.3.9",
-    "minGameVersion": "157",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "com.xpdustry.kotlin.KotlinRuntimeMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

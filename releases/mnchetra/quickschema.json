@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "mnchetra/quickschema",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T14:02:29.203Z",
   "modType": "java",
+  "meta": {
+    "name": "quick-schema",
+    "author": "Seven",
+    "description": "Quick Access Favorites Bar for Mindustry Schematics! Works seamlessly on both PC and Mobile. If there an issue leave it on github.",
+    "version": "1.2",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "quickschema.QuickSchemaMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/mnchetra/QuickSchema/releases/download/v1.2/QuickSchema.jar",
       "modVersion": "1.2",
       "sizeBytes": 110116,
-      "downloadCount": 704,
+      "downloadCount": 705,
       "releasedAt": "2026-07-29T05:27:48Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 18,
       "releasedAt": "2026-07-28T03:55:07Z"
     }
-  ],
-  "meta": {
-    "name": "quick-schema",
-    "author": "Seven",
-    "description": "Quick Access Favorites Bar for Mindustry Schematics! Works seamlessly on both PC and Mobile. If there an issue leave it on github.",
-    "version": "1.2",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "quickschema.QuickSchemaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

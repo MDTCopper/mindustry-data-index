@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "florfir/md-proxy",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-07T14:12:07.591Z",
   "modType": "java",
+  "meta": {
+    "name": "md-proxy",
+    "author": "kuko",
+    "description": "idk.",
+    "version": "1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "kuko.ProxyMod",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v3",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/florfir/md-proxy/releases/download/v3/md-proxy.jar",
       "modVersion": "1",
       "sizeBytes": 2702087,
-      "downloadCount": 76,
+      "downloadCount": 77,
       "releasedAt": "2026-09-16T14:06:41Z"
     },
     {
@@ -52,19 +66,5 @@
       "downloadCount": 51,
       "releasedAt": "2026-07-26T09:22:38Z"
     }
-  ],
-  "meta": {
-    "name": "md-proxy",
-    "author": "kuko",
-    "description": "idk.",
-    "version": "1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "kuko.ProxyMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
