@@ -1,26 +1,14 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-07T12:30:25.035Z",
+  "generatedAt": "2026-11-07T12:42:48.376Z",
   "datasets": {
     "official": {
-      "updatedAt": "2026-11-07T12:29:45.673Z",
+      "updatedAt": "2026-11-07T12:42:46.941Z",
       "modCount": 999,
       "releaseCount": 3698,
       "skipped": [
         {
-          "repo": "voidthreader/void-extras",
-          "reason": "rate-limit"
-        },
-        {
-          "repo": "vss0520/floralia",
-          "reason": "rate-limit"
-        },
-        {
-          "repo": "wantechfan/mindustry-cursed-sfx",
-          "reason": "rate-limit"
-        },
-        {
-          "repo": "wantechfan/mindustry-ioskatev-language-archive",
+          "repo": "wu20100210/minecraft_on_mindustry",
           "reason": "rate-limit"
         }
       ]
@@ -45,13 +33,32 @@
     }
   },
   "api": {
-    "requests": 824,
-    "remaining": 1,
+    "requests": 1,
+    "remaining": 0,
     "resetAt": "2026-11-07T12:58:12.000Z"
   },
   "validate": {
     "errors": 0,
     "warnings": 0,
-    "presentFiles": []
+    "presentFiles": [
+      "index.json",
+      "index-full.json",
+      "summary.json",
+      "summary.csv",
+      "community/index.json",
+      "community/index-full.json",
+      "community/summary.json",
+      "community/summary.csv",
+      "state/community-refresh.json",
+      "state/refresh.json",
+      "mindustry/versions.json",
+      "mindustry/mod-gate.json",
+      "mindustry/java-gate.json",
+      "mindustry/heartbeat.json",
+      "status.json",
+      "changes.json",
+      "state/heat-commit-stats.json",
+      "state/repo-created.json"
+    ]
   }
 }
