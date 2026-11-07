@@ -1,9 +1,9 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-07T07:44:07.196Z",
+  "generatedAt": "2026-11-07T08:04:38.772Z",
   "datasets": {
     "official": {
-      "updatedAt": "2026-11-07T07:27:59.440Z",
+      "updatedAt": "2026-11-07T07:54:49.770Z",
       "modCount": 997,
       "releaseCount": 3692,
       "skipped": [
@@ -14,13 +14,18 @@
       ]
     },
     "community": {
-      "updatedAt": "2026-11-07T07:42:07.540Z",
+      "updatedAt": "2026-11-07T08:04:32.919Z",
       "modCount": 425,
-      "releaseCount": 979,
-      "skipped": []
+      "releaseCount": 589,
+      "skipped": [
+        {
+          "repo": "AzhurniyBaklan/Advanced-factories",
+          "reason": "rate-limit"
+        }
+      ]
     },
     "versions": {
-      "updatedAt": "2026-11-07T07:27:58.294Z",
+      "updatedAt": "2026-11-07T07:54:48.656Z",
       "modCount": null,
       "releaseCount": 205,
       "skipped": []
@@ -33,13 +38,13 @@
     }
   },
   "api": {
-    "requests": 2888,
-    "remaining": 2098,
+    "requests": 2079,
+    "remaining": 3,
     "resetAt": "2026-11-07T08:27:42.000Z"
   },
   "validate": {
-    "errors": 209,
-    "warnings": 0,
+    "errors": 0,
+    "warnings": 342,
     "presentFiles": [
       "index.json",
       "index-full.json",
