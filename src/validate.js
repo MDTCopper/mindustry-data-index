@@ -522,7 +522,7 @@ export function validateIndexHeat(mod, { where, errors }) {
         errors.push(`${where}.ranks.${key} 应为正整数`);
       }
     }
-    if (ranks.score !== score.rank) {
+    if (ranks.score !== heat.rank) {
       errors.push(`${where}.ranks.score 应与 score.rank 一致`);
     }
     for (const key of Object.keys(ranks)) {
