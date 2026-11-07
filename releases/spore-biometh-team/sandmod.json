@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "spore-biometh-team/sandmod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "sand",
+    "author": "Watermocules",
+    "description": "Based on the hit minecraft mod \"Gregtech\", this mod attempt to add some realism into the game as well as making the game more grindy \n Currently work in progress, some item may be uncraftable and some block doesnt have sprite.",
+    "version": "1.0.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "greg.greg",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "V1.0.2.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Spore-Biometh-team/SandMod/releases/download/V1.0.2.1/SandMod.jar",
       "modVersion": "1.0.2",
       "sizeBytes": 343679,
-      "downloadCount": 897,
+      "downloadCount": 898,
       "releasedAt": "2026-07-15T05:56:22Z"
     },
     {
@@ -69,19 +83,5 @@
       "downloadCount": 400,
       "releasedAt": "2024-07-20T14:23:31Z"
     }
-  ],
-  "meta": {
-    "name": "sand",
-    "author": "Watermocules",
-    "description": "Based on the hit minecraft mod \"Gregtech\", this mod attempt to add some realism into the game as well as making the game more grindy \n Currently work in progress, some item may be uncraftable and some block doesnt have sprite.",
-    "version": "1.0.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "greg.greg",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

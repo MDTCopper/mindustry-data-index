@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/patchviewer",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "patchviewer",
+    "author": "DeterMination",
+    "description": "Native database and quick before/after diff viewer for Mindustry datapatches. / 保持原版数据库显示的数据补丁与快捷差异查看器。",
+    "version": "2.4.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "patchviewer.PatchViewerMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.4.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/PatchViewer/releases/download/v2.4.1/PatchViewer-v2.4.1.jar",
       "modVersion": "2.4.1",
       "sizeBytes": 263788,
-      "downloadCount": 331,
+      "downloadCount": 334,
       "releasedAt": "2026-08-28T15:56:13Z"
     },
     {
@@ -244,19 +258,5 @@
       "downloadCount": 4,
       "releasedAt": "2026-04-05T17:38:39Z"
     }
-  ],
-  "meta": {
-    "name": "patchviewer",
-    "author": "DeterMination",
-    "description": "Native database and quick before/after diff viewer for Mindustry datapatches. / 保持原版数据库显示的数据补丁与快捷差异查看器。",
-    "version": "2.4.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "patchviewer.PatchViewerMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

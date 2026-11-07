@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "ThomasThings/xenacia",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-07T18:53:38.302Z",
   "modType": "java",
+  "meta": {
+    "name": "xenacia",
+    "author": "Thomas's Things",
+    "description": "A mod with ambitious goals, and a fresh start. Incomplete, still in pre-pre-alpha.",
+    "version": "v0.0.1",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "xenacia.XenaciaMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "nv0.0.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/ThomasThings/xenacia/releases/download/nv0.0.1/xenacia.jar",
       "modVersion": "v0.0.1",
       "sizeBytes": 846045,
-      "downloadCount": 11609,
+      "downloadCount": 11610,
       "releasedAt": "2024-07-22T16:58:38Z"
     },
     {
@@ -228,19 +242,5 @@
       "downloadCount": 4282,
       "releasedAt": "2022-12-16T23:52:27Z"
     }
-  ],
-  "meta": {
-    "name": "xenacia",
-    "author": "Thomas's Things",
-    "description": "A mod with ambitious goals, and a fresh start. Incomplete, still in pre-pre-alpha.",
-    "version": "v0.0.1",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "xenacia.XenaciaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

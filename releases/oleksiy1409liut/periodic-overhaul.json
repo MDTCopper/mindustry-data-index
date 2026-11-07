@@ -1,9 +1,37 @@
 {
   "formatVersion": 3,
   "repo": "oleksiy1409liut/periodic-overhaul",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "json",
+  "meta": {
+    "name": "periodic",
+    "author": "oleksiy",
+    "description": " \ninspired by the periodic madness factorio mod\nDOESNT WORK WITH VANILLA MAPS\n",
+    "version": "0.11",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
   "versions": [
+    {
+      "tag": "0.13",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/oleksiy1409liut/periodic-overhaul/archive/refs/tags/0.13.zip",
+      "modVersion": "0.11",
+      "releasedAt": "2026-11-07T14:04:54Z"
+    },
     {
       "tag": "0.12",
       "kind": "tag",
@@ -33,19 +61,5 @@
       "releasedAt": "2026-08-27T22:26:25Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "periodic",
-    "author": "oleksiy",
-    "description": " \ninspired by the periodic madness factorio mod\nDOESNT WORK WITH VANILLA MAPS\n",
-    "version": "0.11",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

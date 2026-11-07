@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "coaxgames/multiplayer-campaign-expansion-mod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "MCEM",
+    "author": "Xaon4207",
+    "description": "\nAllows clients to pause during a campaign hosting session. More features are planned.\n",
+    "version": "3.31",
+    "minGameVersion": "160.5",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "MCEM.Main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v3.31",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Coaxgames/Multiplayer-Campaign-Expansion-Mod/releases/download/v3.31/Multiplayer-Campaign-Expansion-Mod.jar",
       "modVersion": "3.31",
       "sizeBytes": 24367,
-      "downloadCount": 75,
+      "downloadCount": 79,
       "releasedAt": "2026-10-19T02:44:29Z"
     },
     {
@@ -290,19 +304,5 @@
       "sizeBytes": 51171,
       "releasedAt": "2025-03-04T07:23:08Z"
     }
-  ],
-  "meta": {
-    "name": "MCEM",
-    "author": "Xaon4207",
-    "description": "\nAllows clients to pause during a campaign hosting session. More features are planned.\n",
-    "version": "3.31",
-    "minGameVersion": "160.5",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "MCEM.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

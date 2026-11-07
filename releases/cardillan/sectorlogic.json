@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "cardillan/sectorlogic",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "sector-logic",
+    "author": "cardillan",
+    "description": "Provides custom mlog instructions for managing sector exports and imports in Serpulo campaign.",
+    "version": "0.1.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "cardillan.sectors.Main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1.1",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/cardillan/SectorLogic/releases/download/v0.1.1/SectorLogic.jar",
       "modVersion": "0.1.1",
       "sizeBytes": 12859,
-      "downloadCount": 46,
+      "downloadCount": 47,
       "releasedAt": "2026-09-13T09:35:23Z"
     }
-  ],
-  "meta": {
-    "name": "sector-logic",
-    "author": "cardillan",
-    "description": "Provides custom mlog instructions for managing sector exports and imports in Serpulo campaign.",
-    "version": "0.1.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "cardillan.sectors.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

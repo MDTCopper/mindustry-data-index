@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "colorgarden/campaignserverside",
-  "generatedAt": "2026-11-07T11:58:12.384Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
   "meta": {
     "name": "Campaign Server Side",
     "author": "CampaignServerSide",
     "description": "Runs the Mindustry campaign on a dedicated server: sector loading/saving, admin sector switching and admin research commands.",
-    "version": "0.0.3-beta",
+    "version": "0.0.4-beta",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -18,6 +18,40 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v0.0.4-beta",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/colorgarden/CampaignServerSide/releases/download/v0.0.4-beta/CampaignServerSide.jar",
+      "modVersion": "0.0.4-beta",
+      "sizeBytes": 456949,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-07T18:13:00Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v0.0.3.1-beta",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/colorgarden/CampaignServerSide/releases/download/v0.0.3.1-beta/CampaignServerSide.jar",
+      "modVersion": "0.0.3.1-beta",
+      "sizeBytes": 440891,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-07T15:48:19Z",
+      "prerelease": true
+    },
     {
       "tag": "v0.0.3-beta",
       "kind": "release",

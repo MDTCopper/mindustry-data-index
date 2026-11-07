@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "kiagoblin/goblin-storage-android",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "goblin-link",
+    "author": "Kiagoblin",
+    "description": "Хранилище с автозабором предметов из ядра. Модули ёмкости и скорости, узлы связи, три стадии игры.",
+    "version": "1.2.4",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "goblinlink.GoblinLinkMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "latest",
@@ -34,22 +48,8 @@
       "downloadUrl": "https://github.com/kiagoblin/Goblin-Storage-Android/releases/download/v1.2.4/Goblin-Storage-Android.jar",
       "modVersion": "1.2.4",
       "sizeBytes": 201254,
-      "downloadCount": 26,
+      "downloadCount": 27,
       "releasedAt": "2026-10-28T08:22:17Z"
     }
-  ],
-  "meta": {
-    "name": "goblin-link",
-    "author": "Kiagoblin",
-    "description": "Хранилище с автозабором предметов из ядра. Модули ёмкости и скорости, узлы связи, три стадии игры.",
-    "version": "1.2.4",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "goblinlink.GoblinLinkMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

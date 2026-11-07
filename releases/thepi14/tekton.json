@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "thepi14/tekton",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "tekton",
+    "author": "ThePi14",
+    "description": "A Mindustry Java mod adding a new planet called Tekton, with it's own campaign, blocks, units, mechanics and hazards.\n\t\n\tTekton is a extremely cold planet far away from the sun, where a agressive faction called Hapax is located. Because of the low temperature the physical properties of many elements here are radically different from the other planets. The dense  methane rich atmosphere blocks the vision and unknown threats lure on the poles of the planet.\n\t\n\tCan you survive and thrive in this enviroment?\n\t\n\tAvailable languages:\n\t-English\n\t-Brazilian Portuguese\n\t\n\t[accent[]](The planet is based off on Titan, one of Saturns moons)[[]]\n\t",
+    "version": "v0.4.43",
+    "minGameVersion": "160.2",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "tekton.Tekton",
+    "java": true,
+    "hasScripts": true,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.4.43",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Thepi14/Tekton/releases/download/v0.4.43/Tekton.jar",
       "modVersion": "v0.4.43",
       "sizeBytes": 13887244,
-      "downloadCount": 991,
+      "downloadCount": 993,
       "releasedAt": "2026-09-28T15:18:23Z"
     },
     {
@@ -132,19 +146,5 @@
       "downloadCount": 332,
       "releasedAt": "2026-07-24T23:42:50Z"
     }
-  ],
-  "meta": {
-    "name": "tekton",
-    "author": "ThePi14",
-    "description": "A Mindustry Java mod adding a new planet called Tekton, with it's own campaign, blocks, units, mechanics and hazards.\n\t\n\tTekton is a extremely cold planet far away from the sun, where a agressive faction called Hapax is located. Because of the low temperature the physical properties of many elements here are radically different from the other planets. The dense  methane rich atmosphere blocks the vision and unknown threats lure on the poles of the planet.\n\t\n\tCan you survive and thrive in this enviroment?\n\t\n\tAvailable languages:\n\t-English\n\t-Brazilian Portuguese\n\t\n\t[accent[]](The planet is based off on Titan, one of Saturns moons)[[]]\n\t",
-    "version": "v0.4.43",
-    "minGameVersion": "160.2",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "tekton.Tekton",
-    "java": true,
-    "hasScripts": true,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "TheSerjio/AdvancedDataBase",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-07T18:53:38.302Z",
   "modType": "java",
+  "meta": {
+    "name": "advanced-database",
+    "author": "The Serjio#3162",
+    "description": "Displays more stats in database. Unhides few things. Multiplayer compatible.\nПоказывает больше информации в базе данных. Открывает пару скрытых вещей. Не влияет на игру по сети",
+    "version": "1.1",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "advanced.Main",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.6",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/TheSerjio/AdvancedDataBase/releases/download/v1.6/AdvancedDataBase.jar",
       "modVersion": "1.1",
       "sizeBytes": 59956,
-      "downloadCount": 2310,
+      "downloadCount": 2311,
       "releasedAt": "2025-11-15T17:22:14Z"
     },
     {
@@ -132,19 +146,5 @@
       "downloadCount": 129,
       "releasedAt": "2023-03-08T19:51:33Z"
     }
-  ],
-  "meta": {
-    "name": "advanced-database",
-    "author": "The Serjio#3162",
-    "description": "Displays more stats in database. Unhides few things. Multiplayer compatible.\nПоказывает больше информации в базе данных. Открывает пару скрытых вещей. Не влияет на игру по сети",
-    "version": "1.1",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "advanced.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

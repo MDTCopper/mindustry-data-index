@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "7003mars/bridges",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "bridging",
+    "author": "Mars",
+    "description": "Displays all bridge links. Helps with bridge weaving",
+    "version": "REPLACEME",
+    "minGameVersion": "156",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "me.mars.Bridges",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.3.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/7003Mars/bridges/releases/download/v1.3.5/bridges.jar",
       "modVersion": "REPLACEME",
       "sizeBytes": 66565,
-      "downloadCount": 673,
+      "downloadCount": 675,
       "releasedAt": "2026-07-12T03:22:14Z"
     },
     {
@@ -564,19 +578,5 @@
       "downloadCount": 65,
       "releasedAt": "2022-10-29T01:43:52Z"
     }
-  ],
-  "meta": {
-    "name": "bridging",
-    "author": "Mars",
-    "description": "Displays all bridge links. Helps with bridge weaving",
-    "version": "REPLACEME",
-    "minGameVersion": "156",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "me.mars.Bridges",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

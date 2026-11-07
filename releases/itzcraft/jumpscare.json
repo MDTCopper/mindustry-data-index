@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "itzcraft/jumpscare",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "jumpscare",
+    "author": "Me",
+    "description": "Adds a jumpscares to your game. Goodluck.",
+    "version": "1",
+    "minGameVersion": "158.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "jumpscare.JumpscareMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "frog",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/ItzCraft/Jumpscare/releases/download/frog/Jumpscare.jar",
       "modVersion": "1",
       "sizeBytes": 158819,
-      "downloadCount": 224,
+      "downloadCount": 225,
       "releasedAt": "2026-06-03T17:02:09Z"
     }
-  ],
-  "meta": {
-    "name": "jumpscare",
-    "author": "Me",
-    "description": "Adds a jumpscares to your game. Goodluck.",
-    "version": "1",
-    "minGameVersion": "158.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "jumpscare.JumpscareMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

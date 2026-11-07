@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/betterrtsformation",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T18:46:54.416Z",
   "modType": "java",
+  "meta": {
+    "name": "BetterRTSFormation",
+    "author": "DeterMination-Wind",
+    "description": "Make RTS control groups easier to create, select, and recognize.",
+    "version": "2.0.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "betterrtsformation.BetterRTSFormationMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.0.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/DeterMination-Wind/BetterRTSFormation/releases/download/v2.0.0/BetterRTSFormation-2.0.0.jar",
       "modVersion": "2.0.0",
       "sizeBytes": 28104,
-      "downloadCount": 255,
+      "downloadCount": 256,
       "releasedAt": "2026-08-17T16:06:00Z"
     },
     {
@@ -84,19 +98,5 @@
       "downloadCount": 50,
       "releasedAt": "2026-08-02T13:43:37Z"
     }
-  ],
-  "meta": {
-    "name": "BetterRTSFormation",
-    "author": "DeterMination-Wind",
-    "description": "Make RTS control groups easier to create, select, and recognize.",
-    "version": "2.0.0",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "betterrtsformation.BetterRTSFormationMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
