@@ -109,6 +109,11 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
   游戏版本 `g`，满足 `g >= m` 且对应门禁 `gate(g) <= m` 的连续版本段输出为
   `[{from:"136",to:"146.5"}]`；`from`/`to` 是实际游戏版本号、闭区间，中间空档用多段表示。
   模组级 `gameVersionRanges` 是所有 version 区间的并集（合并重叠/相邻），按 `from` 升序。
+- **版本列表分页**（>200 个版本时）：按最新在前每 200 个一页、最多 5 页（1000 个，更老的丢弃），文件写到
+  `releases/<owner>/<repo>/page-N.json`，每页对象 `{formatVersion:3, repo, page, count, gameVersionRanges, versions[]}`
+  （page-1 额外带 `pages` 元数据）。index 每条同时给 `pages: [{page,count,gameVersionRanges,path}]`，
+  `releasesPath` 指向 page-1；客户端可按 `gameVersionRanges` 先选页再拉，不必每轮处理全部老版本。
+  ≤200 个版本的模组仍写单文件 `releases/<owner>/<repo>.json`，页 1 就是该文件。
 - `summary.json`：`totals`（`mods`/`releases`/`downloads`）+ `mods[]`（`repo`、`name`、`namePlain`、`author`、
   `stars`、`modType`、`releaseCount`、`tagCount`（非 Java）、`totalDownloads`、`allAssetsDownloads`、
   `minGameVersion`、`gameVersionRanges`（JSON 字符串）、`releaseUpdatedAt`、`commitUpdatedAt`、`iconUrl`、

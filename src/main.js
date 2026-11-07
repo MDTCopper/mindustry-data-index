@@ -114,6 +114,7 @@ import {
 import {
   releasesRelPath,
   releasesLegacyRelPath,
+  releasesDirRelPath,
   resolveReleaseFile,
   resolveReleaseFileForDelete,
   assertRepo,
@@ -128,6 +129,11 @@ import {
   ensureReleasesDir,
   listReleaseFiles,
   deleteReleaseFile,
+  readReleasePages,
+  writeReleasePages,
+  deleteReleaseData,
+  pagesForFile,
+  needsPageSplit,
   INDEX_FILE,
 } from './writer.js';
 import {
@@ -426,6 +432,21 @@ export function buildIndexEntry(
   const gameVersionRanges = hasFile
     ? summary.gameVersionRanges
     : (oldEntry?.gameVersionRanges ?? []);
+  const pages =
+    Array.isArray(file?.pages) && file.pages.length > 0
+      ? file.pages
+      : Array.isArray(oldEntry?.pages) && oldEntry.pages.length > 0
+        ? oldEntry.pages
+        : hasFile
+          ? [
+              {
+                page: 1,
+                count: summary.totalVersions ?? versions.length,
+                gameVersionRanges: summary.gameVersionRanges ?? [],
+                path: relPath,
+              },
+            ]
+          : [];
   const result = {
     repo: mod.repo,
     internalName: mod.internalName ?? null,
@@ -442,9 +463,8 @@ export function buildIndexEntry(
     hasIcon: mod.hasIcon,
     iconUrl: modIconUrl(mod.repo, mod.hasIcon),
     iconHash: mod.iconHash ?? null,
-    releasesPath: hasFile
-      ? relPath
-      : (oldEntry?.releasesPath ?? (file ? relPath : null)),
+    releasesPath: pages[0]?.path ?? (hasFile ? relPath : (oldEntry?.releasesPath ?? (file ? relPath : null))),
+    ...(pages.length > 0 ? { pages } : {}),
     releaseCount,
     ...(effectiveModType === 'java' ? {} : { tagCount }),
     releaseUpdatedAt,
@@ -550,14 +570,19 @@ async function processMod(context) {
   let legacyToDelete = null;
   if (options.cache) {
     try {
-      const newFile = await readJsonIfExists(resolveReleaseFile(workDir, relPath));
-      // v3 文件落盘只有 versions[]（releases 是内存视图），两种形状都要能读回缓存
-      if (
-        newFile &&
-        newFile.repo === mod.repo &&
-        (Array.isArray(newFile.releases) || Array.isArray(newFile.versions))
-      ) {
-        previous = newFile;
+      const paged = await readReleasePages(workDir, mod.repo).catch(() => null);
+      if (paged) {
+        previous = paged;
+      } else {
+        const newFile = await readJsonIfExists(resolveReleaseFile(workDir, relPath));
+        // v3 文件落盘只有 versions[]（releases 是内存视图），两种形状都要能读回缓存
+        if (
+          newFile &&
+          newFile.repo === mod.repo &&
+          (Array.isArray(newFile.releases) || Array.isArray(newFile.versions))
+        ) {
+          previous = newFile;
+        }
       }
     } catch (error) {
       log(`[警告] ${mod.repo} 的新路径数据不可用：${error.message}`);
@@ -604,7 +629,7 @@ async function processMod(context) {
     // v1 用旧缓存直接本地迁移即可；v2→v3 迁移后继续本轮刷新（tags/release 计划照常）
     if (previous.formatVersion < 2 || previous.formatVersion === undefined) {
       if (!options.dryRun) {
-        await writeJsonAtomic(resolveReleaseFile(workDir, relPath), migrated);
+        migrated.pages = await writeReleasePages(workDir, mod.repo, migrated);
         if (legacyToDelete !== null) {
           await deleteReleaseFile(workDir, legacyToDelete);
         }
@@ -634,7 +659,7 @@ async function processMod(context) {
     migrated.source = previous.source ?? null;
     // v2→v3 迁移后先落盘：即使本轮配额不足、刷新被跳过，也不会留下 v2 文件与 v3 index 混用
     if (!options.dryRun) {
-      await writeJsonAtomic(resolveReleaseFile(workDir, relPath), migrated);
+      migrated.pages = await writeReleasePages(workDir, mod.repo, migrated);
       if (legacyToDelete !== null) {
         await deleteReleaseFile(workDir, legacyToDelete);
       }
@@ -908,9 +933,10 @@ async function processMod(context) {
       nextFile.generatedAt = previous.generatedAt;
     }
     const changed = releaseFileBodyChanged(previous, nextFile);
-    const shouldWrite = changed || legacyToDelete !== null;
+    const needsSplit = await needsPageSplit(workDir, mod.repo, nextFile);
+    const shouldWrite = changed || legacyToDelete !== null || needsSplit;
     if (shouldWrite && !options.dryRun) {
-      await writeJsonAtomic(resolveReleaseFile(workDir, relPath), nextFile);
+      nextFile.pages = await writeReleasePages(workDir, mod.repo, nextFile);
       if (legacyToDelete !== null) {
         await deleteReleaseFile(workDir, legacyToDelete);
         log(`[${mod.repo}] 旧 flat 文件已迁移到 ${relPath}`);
@@ -1034,7 +1060,7 @@ async function processMod(context) {
             : context.compatData?.modGate,
           generatedAt: previous.generatedAt ?? now,
         });
-        await writeJsonAtomic(resolveReleaseFile(workDir, relPath), finalFile);
+        finalFile.pages = await writeReleasePages(workDir, mod.repo, finalFile);
         await deleteReleaseFile(workDir, legacyToDelete);
         log(`[${mod.repo}] 旧 flat 文件已迁移到 ${relPath}（本次抓取失败，保留旧数据）`);
       } catch (migrationError) {
@@ -1085,11 +1111,18 @@ async function readOldIndex(outDir, log) {
 }
 
 async function cleanupMissing(outDir, selected, log) {
-  const keep = new Set(selected.map((mod) => releasesRelPath(mod.repo)));
+  const keepSingles = new Set(selected.map((mod) => releasesRelPath(mod.repo)));
+  const keepDirs = selected.map((mod) => `${releasesDirRelPath(mod.repo)}/`);
   const existing = await listReleaseFiles(outDir);
   let removed = 0;
   for (const relPath of existing) {
-    if (!keep.has(relPath) && (await deleteReleaseFile(outDir, relPath))) {
+    if (keepSingles.has(relPath)) {
+      continue;
+    }
+    if (keepDirs.some((prefix) => relPath.startsWith(prefix))) {
+      continue;
+    }
+    if (await deleteReleaseFile(outDir, relPath)) {
       removed += 1;
     }
   }
@@ -1341,12 +1374,9 @@ export async function runMods(options, context) {
   if (droppedResults.length > 0) {
     if (!options.dryRun) {
       for (const result of droppedResults) {
-        const relPath = result.entry?.releasesPath;
-        if (relPath) {
-          try {
-            await unlink(path.join(outDir, relPath));
-          } catch {}
-        }
+        try {
+          await deleteReleaseData(outDir, result.entry.repo);
+        } catch {}
       }
     }
     log(`[mods] v3 丢弃 ${droppedResults.length} 个没有任何可用版本的模组`);
@@ -1704,12 +1734,9 @@ async function runCommunity(options, context) {
   if (droppedResults.length > 0) {
     if (!options.dryRun) {
       for (const result of droppedResults) {
-        const relPath = result.entry?.releasesPath;
-        if (relPath) {
-          try {
-            await unlink(path.join(outDir, relPath));
-          } catch {}
-        }
+        try {
+          await deleteReleaseData(communityDir, result.entry.repo);
+        } catch {}
       }
     }
     log(`[community] v3 丢弃 ${droppedResults.length} 个没有任何可用版本的模组`);
@@ -1940,13 +1967,17 @@ async function loadHeatToolkit(outDir, log) {
     }
   }
   const releases = new Map();
-  const readReleases = async (relPath) => {
+  const readReleases = async (relPath, workDir, repo) => {
     try {
       const file = await readJsonIfExists(relPath);
       if (Array.isArray(file?.versions)) {
         return releasesFromVersions(file);
       }
-      return Array.isArray(file?.releases) ? file.releases : [];
+      if (Array.isArray(file?.releases)) {
+        return file.releases;
+      }
+      const paged = await readReleasePages(workDir, repo).catch(() => null);
+      return paged ? releasesFromVersions(paged) : [];
     } catch {
       return [];
     }
@@ -2219,11 +2250,9 @@ async function runHeat(options, context) {
   const releaseCache = new Map();
   const releaseFor = async (mod) => {
     if (!releaseCache.has(mod.repo)) {
-      const relPath =
-        mod.source === 'community'
-          ? path.join(outDir, COMMUNITY_DIR, releasesRelPath(mod.repo))
-          : path.join(outDir, releasesRelPath(mod.repo));
-      releaseCache.set(mod.repo, await readReleases(relPath));
+      const workDir = mod.source === 'community' ? path.join(outDir, COMMUNITY_DIR) : outDir;
+      const relPath = path.join(workDir, releasesRelPath(mod.repo));
+      releaseCache.set(mod.repo, await readReleases(relPath, workDir, mod.repo));
     }
     return releaseCache.get(mod.repo);
   };

@@ -33,6 +33,30 @@ export function releasesRelPath(repo) {
   return `${RELEASES_DIR}/${owner}/${name}.json`;
 }
 
+// 分页目录：releases/<owner>/<repo>/page-N.json
+export function releasesDirRelPath(repo) {
+  const [owner, name] = assertRepo(repo).split('/');
+  return `${RELEASES_DIR}/${owner}/${name}`;
+}
+
+export function releasesPageRelPath(repo, page) {
+  const pageNumber = Number(page);
+  if (!Number.isInteger(pageNumber) || pageNumber < 1) {
+    throw new Error(`非法版本页码：${JSON.stringify(page)}`);
+  }
+  return `${releasesDirRelPath(repo)}/page-${pageNumber}.json`;
+}
+
+const PAGE_FILE_PATTERN = /^page-[1-9]\d*\.json$/;
+
+export function isReleasePageRelPath(relPath) {
+  if (typeof relPath !== 'string' || !relPath.startsWith(`${RELEASES_DIR}/`)) {
+    return false;
+  }
+  const parts = relPath.split('/');
+  return parts.length === 4 && PAGE_FILE_PATTERN.test(parts[3]);
+}
+
 // 旧 flat 路径：releases/<owner>_<repo>.json（仅迁移读取用）
 export function releasesLegacyRelPath(repo) {
   return `${RELEASES_DIR}/${releasesFileStem(repo)}.json`;
@@ -50,12 +74,14 @@ export function resolveReleaseFile(outDir, relPath) {
     throw new Error(`非法 releases 路径：${JSON.stringify(relPath)}`);
   }
   const parts = relPath.split('/');
-  if (
-    parts.length !== 3 ||
-    !isSafeReleaseSegments(parts) ||
-    !parts[2].endsWith('.json') ||
-    parts[2].length <= '.json'.length
-  ) {
+  const singleShape =
+    parts.length === 3 &&
+    isSafeReleaseSegments(parts) &&
+    parts[2].endsWith('.json') &&
+    parts[2].length > '.json'.length;
+  const pageShape =
+    parts.length === 4 && isSafeReleaseSegments(parts) && PAGE_FILE_PATTERN.test(parts[3]);
+  if (!singleShape && !pageShape) {
     throw new Error(`非法 releases 路径：${JSON.stringify(relPath)}`);
   }
 
@@ -78,6 +104,7 @@ export function resolveReleaseFileForDelete(outDir, relPath) {
       isSafeReleaseSegments(parts) &&
       parts[2].endsWith('.json') &&
       parts[2].length > '.json'.length) ||
+    (parts.length === 4 && isSafeReleaseSegments(parts) && PAGE_FILE_PATTERN.test(parts[3])) ||
     (parts.length === 2 &&
       isSafeReleaseSegments(parts) &&
       parts[1].endsWith('.json') &&

@@ -103,6 +103,20 @@ export function isValidReleasesPath(relPath) {
     return false;
   }
   const segments = relPath.split('/');
+  if (segments.length === 4) {
+    // 分页路径：releases/<owner>/<repo>/page-N.json
+    const [dir, owner, repo, fileName] = segments;
+    return (
+      dir === RELEASES_DIR &&
+      owner !== '' &&
+      owner !== '.' &&
+      owner !== '..' &&
+      repo !== '' &&
+      repo !== '.' &&
+      repo !== '..' &&
+      /^page-[1-9]\d*\.json$/.test(fileName)
+    );
+  }
   if (segments.length !== 3) {
     return false;
   }
@@ -2077,19 +2091,63 @@ export async function validateDir(dir) {
         if (!isValidReleasesPath(mod.releasesPath)) {
           continue;
         }
-        const file = loaded.get(mod.releasesPath);
-        if (!file) {
-          errors.push(`${mod.releasesPath} 文件不存在（index 引用了不存在的 per-mod 文件）`);
+        const pageMetas = Array.isArray(mod.pages) && mod.pages.length > 0 ? mod.pages : null;
+        const pagePaths = pageMetas ? pageMetas.map((page) => page?.path) : [mod.releasesPath];
+        const pageFiles = [];
+        for (const pagePath of pagePaths) {
+          if (!isValidReleasesPath(pagePath)) {
+            errors.push(`${mod.repo} 的 pages.path 非法：${JSON.stringify(pagePath)}`);
+            continue;
+          }
+          const pageFile = loaded.get(pagePath);
+          if (!pageFile) {
+            errors.push(`${pagePath} 文件不存在（index 引用了不存在的 per-mod 文件）`);
+            continue;
+          }
+          usedFiles.add(pagePath);
+          const fileErrors = [];
+          validateReleaseFileData(pageFile, { expectedRepo: mod.repo, errors: fileErrors });
+          for (const message of fileErrors) {
+            errors.push(`${pagePath}：${message}`);
+          }
+          pageFiles.push(pageFile);
+        }
+        if (pageFiles.length === 0) {
           continue;
         }
-        usedFiles.add(mod.releasesPath);
-        const fileErrors = [];
-        validateReleaseFileData(file, { expectedRepo: mod.repo, errors: fileErrors });
-        for (const message of fileErrors) {
-          errors.push(`${mod.releasesPath}：${message}`);
+        const file = pageFiles[0];
+        // 校验 pages 元数据与页文件一致
+        if (pageMetas) {
+          if (pageMetas.length > 5) {
+            errors.push(`${mod.repo} 的 pages 超过 5 页`);
+          }
+          let total = 0;
+          for (const [pageIndex, page] of pageMetas.entries()) {
+            if (page?.page !== pageIndex + 1) {
+              errors.push(`${mod.repo} 的 pages 页码不连续`);
+            }
+            const pageFile = pageFiles[pageIndex];
+            const pageVersions = Array.isArray(pageFile?.versions) ? pageFile.versions : [];
+            if (page?.count !== pageVersions.length) {
+              errors.push(`${mod.repo} 的 page-${pageIndex + 1} count 与 versions 数量不一致`);
+            }
+            if (
+              pageFile?.gameVersionRanges !== undefined &&
+              JSON.stringify(page?.gameVersionRanges ?? []) !==
+                JSON.stringify(pageFile?.gameVersionRanges ?? [])
+            ) {
+              errors.push(`${mod.repo} 的 page-${pageIndex + 1} gameVersionRanges 与页文件不一致`);
+            }
+            total += pageVersions.length;
+          }
+          if (total > 1000) {
+            errors.push(`${mod.repo} 的版本总数超过 1000`);
+          }
         }
         if (file.formatVersion === 3) {
-          const versions = Array.isArray(file.versions) ? file.versions : [];
+          const versions = pageFiles.flatMap((pageFile) =>
+            Array.isArray(pageFile?.versions) ? pageFile.versions : [],
+          );
           const releaseCount = versions.filter((item) => item.kind === 'release').length;
           if (releaseCount !== mod.releaseCount) {
             errors.push(`${mod.repo} 的 releaseCount（${mod.releaseCount}）与文件 release 版本数（${releaseCount}）不一致`);
@@ -2269,19 +2327,33 @@ export async function validateDir(dir) {
         ) {
           continue;
         }
-        const file = loaded.get(mod.releasesPath);
-        if (!file) {
-          errors.push(`${mod.releasesPath} 文件不存在（index 引用了不存在的 per-mod 文件）`);
+        const pagePaths =
+          Array.isArray(mod.pages) && mod.pages.length > 0
+            ? mod.pages.map((page) => page?.path)
+            : [mod.releasesPath];
+        const pageFiles = [];
+        for (const pagePath of pagePaths) {
+          const pageFile = loaded.get(pagePath);
+          if (!pageFile) {
+            errors.push(`${pagePath} 文件不存在（index 引用了不存在的 per-mod 文件）`);
+            continue;
+          }
+          usedFiles.add(pagePath);
+          const fileErrors = [];
+          validateReleaseFileData(pageFile, { expectedRepo: mod.repo, errors: fileErrors });
+          for (const message of fileErrors) {
+            errors.push(`${pagePath}：${message}`);
+          }
+          pageFiles.push(pageFile);
+        }
+        if (pageFiles.length === 0) {
           continue;
         }
-        usedFiles.add(mod.releasesPath);
-        const fileErrors = [];
-        validateReleaseFileData(file, { expectedRepo: mod.repo, errors: fileErrors });
-        for (const message of fileErrors) {
-          errors.push(`${mod.releasesPath}：${message}`);
-        }
+        const file = pageFiles[0];
         if (file.formatVersion === 3) {
-          const versions = Array.isArray(file.versions) ? file.versions : [];
+          const versions = pageFiles.flatMap((pageFile) =>
+            Array.isArray(pageFile?.versions) ? pageFile.versions : [],
+          );
           const releaseCount = versions.filter((item) => item.kind === 'release').length;
           if (releaseCount !== mod.releaseCount) {
             errors.push(`${mod.repo} 的 releaseCount（${mod.releaseCount}）与文件 release 版本数（${releaseCount}）不一致`);
