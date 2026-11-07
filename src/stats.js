@@ -17,10 +17,17 @@ export function preferredAsset(assets, hasJava) {
   const extension = hasJava ? '.jar' : '.zip';
   let best = null;
   for (const asset of Array.isArray(assets) ? assets : []) {
-    if (!asset || typeof asset.name !== 'string') {
+    if (!asset) {
       continue;
     }
-    if (!asset.name.toLowerCase().endsWith(extension)) {
+    // 正常资产用 name 后缀判断；v3 缓存回填的合成资产 name 可能不带后缀，再按 downloadUrl 判断
+    const name = typeof asset.name === 'string' ? asset.name.toLowerCase() : '';
+    const url = typeof asset.downloadUrl === 'string' ? asset.downloadUrl.toLowerCase() : '';
+    const matches =
+      name.endsWith(extension) ||
+      url.split('?')[0].endsWith(extension) ||
+      url.endsWith(extension);
+    if (!matches) {
       continue;
     }
     if (best === null || toCount(asset.size) > toCount(best.size)) {

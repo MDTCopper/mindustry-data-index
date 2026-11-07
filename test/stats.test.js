@@ -6,6 +6,15 @@ function release(assets, extra = {}) {
   return { tag: 'v1', assets, ...extra };
 }
 
+test('preferredAsset：name 无后缀时按 downloadUrl 后缀兜底（v3 缓存合成资产）', () => {
+  const assets = [
+    { name: 'demo', size: 20, downloadCount: 5, downloadUrl: 'https://x/demo.zip' },
+    { name: 'demo2', size: 10, downloadCount: 6, downloadUrl: 'https://x/demo2.jar' },
+  ];
+  assert.equal(preferredAsset(assets, false).name, 'demo');
+  assert.equal(preferredAsset(assets, true).name, 'demo2');
+});
+
 test('preferredAsset：hasJava 取最大 .jar，否则取最大 .zip', () => {
   const assets = [
     { name: 'a.jar', size: 10, downloadCount: 1 },

@@ -187,14 +187,19 @@
           "ranks": {
             "type": "object",
             "required": [
-              "score",
+              "recommended",
+              "heat",
               "updated",
               "downloads",
               "stars",
               "newest"
             ],
             "properties": {
-              "score": {
+              "recommended": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "heat": {
                 "type": "integer",
                 "minimum": 1
               },

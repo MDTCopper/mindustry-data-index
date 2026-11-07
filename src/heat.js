@@ -483,11 +483,17 @@ export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = 
       multiplier > 1 ? (multiplier - 1) / (NEW_MOD_MAX_MULTIPLIER - 1) : 0;
     const recommendAvailable =
       RECOMMEND_WEIGHTS.stars + RECOMMEND_WEIGHTS.update + RECOMMEND_WEIGHTS.random;
+    const recommendTotal =
+      RECOMMEND_WEIGHTS.downloads +
+      RECOMMEND_WEIGHTS.stars +
+      RECOMMEND_WEIGHTS.update +
+      RECOMMEND_WEIGHTS.random;
+    // 下载项缺失时，剩余权重按比例放大到与正常分支同一个总分尺度（否则整体低约 13%）
     const recommendBase = downloadsMissing
       ? (starsScore * RECOMMEND_WEIGHTS.stars +
           updateScore * RECOMMEND_WEIGHTS.update +
-          randomScore * RECOMMEND_WEIGHTS.random) /
-        recommendAvailable
+          randomScore * RECOMMEND_WEIGHTS.random) *
+        (recommendTotal / recommendAvailable)
       : downloadsScore * RECOMMEND_WEIGHTS.downloads +
         starsScore * RECOMMEND_WEIGHTS.stars +
         updateScore * RECOMMEND_WEIGHTS.update +

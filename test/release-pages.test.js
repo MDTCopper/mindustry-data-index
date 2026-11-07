@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, readFile, rm, stat } from 'node:fs/promises';
+import { mkdtemp, readFile, rm, stat, unlink, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {
@@ -66,6 +66,23 @@ test('分页：450 个版本拆 3 页，每页 200/200/50，并删除旧单文�
   const read = await readReleasePages(dir, 'owner/demo');
   assert.equal(read.versions.length, 450);
   assert.equal(read.pages.length, 3);
+});
+
+test('分页不完整：缺页时回退单文件；两边都没有返回 null（触发重抓）', async (t) => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'mindustry-pages-'));
+  t.after(() => rm(dir, { recursive: true, force: true }));
+  await writeReleasePages(dir, 'owner/demo', fileWith(450));
+  // 只有分页、缺 page-2/3：不能把 page-1 当完整缓存
+  await unlink(path.join(dir, 'releases/owner/demo/page-2.json'));
+  assert.equal(await readReleasePages(dir, 'owner/demo'), null);
+  // 仍有旧单文件时回退到它
+  await writeFile(
+    path.join(dir, 'releases/owner/demo.json'),
+    JSON.stringify(fileWith(3)),
+    'utf8',
+  );
+  const fallback = await readReleasePages(dir, 'owner/demo');
+  assert.equal(fallback.versions.length, 3);
 });
 
 test('分页：超过 1000 个版本截断到 1000（5 页）', async (t) => {

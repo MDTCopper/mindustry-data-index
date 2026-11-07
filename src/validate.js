@@ -2226,6 +2226,9 @@ export async function validateDir(dir) {
         }
       }
       result.modCount = mods.length;
+      result.defaultModCount = Array.isArray(indexFile.data?.mods)
+        ? indexFile.data.mods.length
+        : result.modCount;
 
       // 总表：与 index 一致 + CSV 行数/内容一致
       if (!summaryFile.exists) {
@@ -2427,6 +2430,9 @@ export async function validateDir(dir) {
         }
       }
       result.communityModCount = communityMods.length;
+      result.communityDefaultModCount = Array.isArray(communityIndexFile.data?.mods)
+        ? communityIndexFile.data.mods.length
+        : result.communityModCount;
 
       if (communitySummaryFile.exists) {
         result.present.push(`${COMMUNITY_DIR}/summary.json`);
@@ -2668,7 +2674,9 @@ async function main(argv) {
     console.log(`数据文件：${result.present.join('、')}`);
   }
   if (result.present.includes(INDEX_FILE)) {
-    console.log(`index.json：${result.modCount} 个模组，${result.releaseFileCount} 个 releases 文件`);
+    console.log(
+      `index.json：${result.defaultModCount ?? result.modCount} 个模组（全量 ${result.modCount}），${result.releaseFileCount} 个 releases 文件`,
+    );
   }
   if (result.present.includes('summary.json')) {
     console.log(`summary：${result.summaryRowCount} 行（summary.json + summary.csv）`);
@@ -2678,7 +2686,7 @@ async function main(argv) {
   }
   if (result.present.includes(`${COMMUNITY_DIR}/index.json`)) {
     console.log(
-      `community：${result.communityModCount} 个模组，${result.communityReleaseFileCount} 个 releases 文件` +
+      `community：${result.communityDefaultModCount ?? result.communityModCount} 个模组（全量 ${result.communityModCount}），${result.communityReleaseFileCount} 个 releases 文件` +
         (result.communitySummaryRowCount > 0 ? `，summary ${result.communitySummaryRowCount} 行` : ''),
     );
   }

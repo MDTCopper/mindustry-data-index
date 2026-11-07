@@ -1,6 +1,6 @@
 // 产物读写：原子写、内容比较（避免每日无意义重写）、releases 目录清理
 
-import { mkdir, readdir, readFile, rename, unlink, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rename, rmdir, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
   isReleasePageRelPath,
@@ -184,31 +184,34 @@ export async function needsPageSplit(outDir, repo, file) {
 
 // 读取多页版本文件（page-1..page-N）；没有分页目录时返回 null
 export async function readReleasePages(outDir, repo) {
+  const readSingleFallback = async () => {
+    // 单文件兼容：<=200 版本时仍写 releases/<owner>/<repo>.json；分页不完整时也回退到它
+    const single = await readJsonIfExists(path.join(outDir, releasesRelPath(repo))).catch(() => null);
+    if (!single || !Array.isArray(single.versions)) {
+      return null;
+    }
+    return {
+      ...single,
+      pages: Array.isArray(single.pages)
+        ? single.pages
+        : [
+            {
+              page: 1,
+              count: single.versions.length,
+              gameVersionRanges: mergeGameVersionRanges(
+                single.versions.flatMap((version) =>
+                  Array.isArray(version?.gameVersionRanges) ? version.gameVersionRanges : [],
+                ),
+              ),
+              path: releasesRelPath(repo),
+            },
+          ],
+    };
+  };
   const page1Path = path.join(outDir, releasesPageRelPath(repo, 1));
   const page1 = await readJsonIfExists(page1Path).catch(() => null);
   if (!page1) {
-    // 单文件兼容：<=200 版本时仍写 releases/<owner>/<repo>.json
-    const single = await readJsonIfExists(path.join(outDir, releasesRelPath(repo))).catch(() => null);
-    if (single && Array.isArray(single.versions)) {
-      return {
-        ...single,
-        pages: Array.isArray(single.pages)
-          ? single.pages
-          : [
-              {
-                page: 1,
-                count: single.versions.length,
-                gameVersionRanges: mergeGameVersionRanges(
-                  single.versions.flatMap((version) =>
-                    Array.isArray(version?.gameVersionRanges) ? version.gameVersionRanges : [],
-                  ),
-                ),
-                path: releasesRelPath(repo),
-              },
-            ],
-      };
-    }
-    return null;
+    return readSingleFallback();
   }
   const pages = Array.isArray(page1.pages)
     ? page1.pages
@@ -218,10 +221,18 @@ export async function readReleasePages(outDir, repo) {
     if (Number(meta.page) === 1) {
       continue;
     }
+    if (!isReleasePageRelPath(meta.path)) {
+      continue;
+    }
     const file = await readJsonIfExists(path.join(outDir, meta.path)).catch(() => null);
     if (file) {
       files.push(file);
     }
+  }
+  // page-1 先写、后续页后写；中途失败可能只剩 page-1。分页不完整时回退单文件，
+  // 两边都没有就返回 null，让调用方按「无缓存」重新抓取，避免把旧版本截断。
+  if (files.length < pages.length) {
+    return readSingleFallback();
   }
   files.sort((left, right) => (Number(left.page) || 1) - (Number(right.page) || 1));
   return {
@@ -275,6 +286,7 @@ export async function writeReleasePages(outDir, repo, file) {
       await writeJsonAtomic(singlePath, body);
     }
     await removeStalePageFiles(outDir, repo, 0);
+    await rmdir(path.join(outDir, releasesDirRelPath(repo))).catch(() => {});
     return [
       {
         page: 1,
@@ -286,7 +298,9 @@ export async function writeReleasePages(outDir, repo, file) {
   }
 
   const meta = pagesMetadata(pages, (page) => releasesPageRelPath(repo, page));
-  for (const page of pages) {
+  // 先写 page-2..N，最后写 page-1 作为提交点；page-1 带 pages 元数据，写成功即代表整套分页可用。
+  // 若中途失败，旧单文件仍在，readReleasePages 会回退到它。
+  for (const page of [...pages.slice(1), pages[0]]) {
     const relPath = releasesPageRelPath(repo, page.page);
     const body = {
       ...pageFileBody({ file, page }),
@@ -316,7 +330,6 @@ export async function deleteReleaseData(outDir, repo) {
     }
     throw error;
   }
-  const { rmdir } = await import('node:fs/promises');
   for (const name of entries) {
     if (/^page-\d+\.json$/.test(name)) {
       await unlink(path.join(dir, name)).catch(() => {});

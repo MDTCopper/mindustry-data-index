@@ -481,6 +481,14 @@ export function buildIndexEntry(
     allAssetsDownloads: stats.allAssetsDownloads,
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
   };
+  // 缓存未处理/未重算时保留上一轮 heat 字段，避免「index 内容未变」被误判成每轮必写；
+  // 真正重算 heat 时会在注入阶段覆盖这两项。
+  if (oldEntry?.score) {
+    result.score = oldEntry.score;
+  }
+  if (oldEntry?.ranks) {
+    result.ranks = oldEntry.ranks;
+  }
   if (result.internalName === null) delete result.internalName;
   return result;
 }
@@ -2185,10 +2193,15 @@ async function writeHeatHistory({ outDir, mods, now, nowMs, log }) {
     await mkdir(dir, { recursive: true });
     const file = path.join(dir, `${keys[kind]}.json`);
     const previous = await readJsonIfExists(file).catch(() => null);
-    if (!previous || JSON.stringify(previous) !== JSON.stringify(snapshot)) {
-      await writeJsonAtomic(file, snapshot);
-      written += 1;
+    if (previous) {
+      const previousBody = JSON.stringify({ ...previous, generatedAt: '' });
+      const nextBody = JSON.stringify({ ...snapshot, generatedAt: '' });
+      if (previousBody === nextBody) {
+        continue;
+      }
     }
+    await writeJsonAtomic(file, snapshot);
+    written += 1;
     let files = [];
     try {
       files = (await readdir(dir)).filter((name) => name.endsWith('.json'));

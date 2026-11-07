@@ -47,7 +47,8 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
 - **`score`**（6 字段）：`downloadsScore`、`starsScore`、`updateScore`、`penaltyScore`、
   `newModMultiplier`、`recommendVisible`。**总分不落盘**，客户端可用这些组件分按自己的权重计算。
 - **`ranks`**：`recommended`（默认排序）、`heat`、`updated`、`downloads`、`stars`、`newest`，
-  都是预先算好的名次（升序即从好到差）。列表顶层有 `sortOptions` 与 `defaultSort="recommended"`。
+  都是官方+社区合并后的**全局**名次（不是各文件内 1..N；默认列表过滤后序号会有跳号）。
+  列表顶层有 `sortOptions` 与 `defaultSort="recommended"`。
 - 推荐权重在 `src/heat.js` 的 `RECOMMEND_WEIGHTS`：下载 0.25 / 星标 0.3 / 更新 0.3 /
   6 小时时间桶随机 0.3 / 新 mod 加成 0.325 / 长期不更新扣分 0.4。
   `heat` 是旧热度权重预设；`updated`/`downloads`/`stars`/`newest` 是单一字段排序。
@@ -113,4 +114,5 @@ node src/main.js --migrate --out .        # 旧数据迁移
 - 删除/归档判定只在全量刷新（或 `--no-cache`）时做，平时不误标。
 - 数据不保证实时：最新 100 tag 每 2 小时，历史按周/月；版本/门禁约 30 分钟。
 - 本地匿名 API 只有 60 次/小时，全量跑务必带 token。
-- 客户端过滤「只看活跃」用 `score.recommendVisible`；老 mod 不会因为停更被直接隐藏。
+- 客户端过滤「只看活跃」用 `score.recommendVisible`（沿用 heat 权重 + `MIN_SCORE` 判定）；
+  `ranks.recommended` 只决定推荐顺序，不参与隐藏；老 mod 不会因为停更被直接隐藏。
