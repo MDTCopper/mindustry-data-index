@@ -1234,7 +1234,8 @@ export async function runMods(options, context) {
   const stateLoaded = await loadRefreshState(outDir, log);
   const previousState = stateLoaded.state;
   const compatData = await loadCompatData(outDir, log);
-  const repoStats = options.repos.length === 0
+  // 全量运行时刷新 repo 统计（stars/pushed_at 等，每周档）；--repos 子集只读缓存，避免额外 API。
+  const repoStats = options.repos === null
     ? await refreshRepoStats({
         outDir,
         apiClient,
