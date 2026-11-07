@@ -1,11 +1,11 @@
 {
   "formatVersion": 3,
   "repo": "valtsu41/bundle-chaos",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-07T10:44:42.688Z",
   "modType": "json",
   "versions": [
     {
-      "tag": "3.6",
+      "tag": "4.2",
       "kind": "tag",
       "minGameVersion": "107",
       "gameVersionRanges": [
@@ -14,21 +14,8 @@
           "to": "135.2"
         }
       ],
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.6.zip",
-      "modVersion": "3.6"
-    },
-    {
-      "tag": "3.7",
-      "kind": "tag",
-      "minGameVersion": "107",
-      "gameVersionRanges": [
-        {
-          "from": "107",
-          "to": "135.2"
-        }
-      ],
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.7.zip",
-      "modVersion": "3.7"
+      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.2.zip",
+      "modVersion": "4.2"
     },
     {
       "tag": "4.1",
@@ -44,7 +31,7 @@
       "modVersion": "4.1"
     },
     {
-      "tag": "4.2",
+      "tag": "3.7",
       "kind": "tag",
       "minGameVersion": "107",
       "gameVersionRanges": [
@@ -53,18 +40,31 @@
           "to": "135.2"
         }
       ],
-      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/4.2.zip",
-      "modVersion": "4.2"
+      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.7.zip",
+      "modVersion": "3.7"
+    },
+    {
+      "tag": "3.6",
+      "kind": "tag",
+      "minGameVersion": "107",
+      "gameVersionRanges": [
+        {
+          "from": "107",
+          "to": "135.2"
+        }
+      ],
+      "downloadUrl": "https://github.com/valtsu41/bundle-chaos/archive/refs/tags/3.6.zip",
+      "modVersion": "3.6"
     }
   ],
   "meta": {
-    "name": "Bundle chaos",
+    "name": "bundle-chaos",
     "author": "valtsu41",
     "description": "This mod replaces all texts in the game with random ones.",
-    "version": "3",
-    "minGameVersion": null,
+    "version": "4.2",
+    "minGameVersion": "107",
     "dependencies": {},
-    "hidden": false,
+    "hidden": true,
     "legacyCompatible": false,
     "main": null,
     "java": false,

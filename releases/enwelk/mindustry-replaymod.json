@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "enwelk/mindustry-replaymod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-07T10:29:52.073Z",
   "modType": "java",
   "versions": [
     {
@@ -116,5 +116,19 @@
       "downloadCount": 3,
       "releasedAt": "2026-10-16T10:49:14Z"
     }
-  ]
+  ],
+  "meta": {
+    "name": "ReplayMod",
+    "author": "EnWelk",
+    "description": "Record and replay your gameplay sessions in Mindustry. Telegram: @EnWelk. I didn't test it in multiplayer and with random unit logic.",
+    "version": "0.3.4",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "com.enwelk.replaymod.ReplayMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  }
 }
