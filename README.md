@@ -212,6 +212,35 @@ per-mod 文件按 repo 的 `owner/name` 分目录，owner 与 name 原大小写�
 **全局**名次。`summary.json/csv` 仍是全量，新增 `heatScore`/`heatRank`/`recommendVisible` 列。
 旧路径 `heat/index.json`、`heat/summary.csv` 不再生成（历史快照 `heat/history/` 保留）。
 
+### 预计算排序（`ranks` + `sortOptions`）
+
+每条模组还带一个 `ranks` 对象，排序名次在仓库里提前算好，客户端直接按字段升序排、不需要自己排序：
+
+```json
+"ranks": { "heat": 3, "updated": 12, "downloads": 5, "stars": 8, "newest": 120 }
+```
+
+- `heat`：热度分名次（与 `heat.rank` 一致）
+- `updated`：最近更新时间名次（`releaseUpdatedAt` / `commitUpdatedAt` 取较新者）
+- `downloads`：总下载量名次
+- `stars`：星标数名次
+- `newest`：发布越新越靠前（`ageDays` 升序，即创建/最早发布越晚越前）
+
+列表顶层另有 `sortOptions` 与 `defaultSort`：
+
+```json
+"sortOptions": [
+  { "key": "heat", "label": "热度" },
+  { "key": "updated", "label": "最近更新" },
+  { "key": "downloads", "label": "下载量" },
+  { "key": "stars", "label": "星标" },
+  { "key": "newest", "label": "最新发布" }
+],
+"defaultSort": "heat"
+```
+
+想默认按「最近更新」排，把 `src/heat.js` 的 `DEFAULT_SORT` 改成 `'updated'` 即可；想加新排序只加一个 key 和对应名次。
+
 > 权重、窗口、倍率、惩罚等参数全部固定在仓库代码 [src/heat.js](src/heat.js)（README 不重复列常量），
 > 输出里不携带这些中间值。
 

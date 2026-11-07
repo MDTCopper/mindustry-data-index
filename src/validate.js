@@ -39,6 +39,9 @@ import {
   MIN_SCORE,
   FULL_INDEX_REL_PATH,
   COMMUNITY_FULL_INDEX_REL_PATH,
+  SORT_KEYS,
+  SORT_OPTIONS,
+  DEFAULT_SORT,
 } from './heat.js';
 
 const HEARTBEAT_REL_PATH = 'mindustry/heartbeat.json';
@@ -492,6 +495,27 @@ export function validateIndexHeat(mod, { where, errors }) {
   }
   if (expected.some((field) => !(field in heat))) {
     errors.push(`${where}.heat 缺少 6 个字段之一：${expected.join(', ')}`);
+  }
+  // 预计算排序名次：客户端按 ranks[key] 直接排序（v3 新字段；旧 fixture 可缺省）
+  const ranks = mod.ranks;
+  if (ranks !== undefined) {
+    if (!isPlainObject(ranks)) {
+      errors.push(`${where}.ranks 应为对象`);
+      return;
+    }
+    for (const key of SORT_KEYS) {
+      if (!Number.isInteger(ranks[key]) || ranks[key] < 1) {
+        errors.push(`${where}.ranks.${key} 应为正整数`);
+      }
+    }
+    if (ranks.heat !== heat.rank) {
+      errors.push(`${where}.ranks.heat 应与 heat.rank 一致`);
+    }
+    for (const key of Object.keys(ranks)) {
+      if (!SORT_KEYS.includes(key)) {
+        errors.push(`${where}.ranks 含未知排序键：${key}`);
+      }
+    }
   }
 }
 

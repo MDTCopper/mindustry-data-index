@@ -20,6 +20,16 @@ export const MAINTENANCE_STALE_DAYS = 360;
 export const MIN_SCORE = 0;
 export const RECOMMEND_DEFAULTS = { minScore: MIN_SCORE };
 export const RECOMMEND_HIDDEN_REASONS = ['score-below-min'];
+// 预计算排序：客户端拿到 ranks 直接按字段排，不需要自己算/重排
+export const SORT_OPTIONS = [
+  { key: 'heat', label: '热度' },
+  { key: 'updated', label: '最近更新' },
+  { key: 'downloads', label: '下载量' },
+  { key: 'stars', label: '星标' },
+  { key: 'newest', label: '最新发布' },
+];
+export const DEFAULT_SORT = 'heat';
+export const SORT_KEYS = SORT_OPTIONS.map((option) => option.key);
 export const HEAT_RECOMMEND_REL_PATH = 'heat/recommend.json';
 export const HEAT_RECOMMEND_CSV_REL_PATH = 'heat/recommend.csv';
 export const FULL_INDEX_REL_PATH = 'index-full.json';
@@ -173,12 +183,18 @@ export function injectHeatIntoIndex(index, heatByRepo) {
   }
   return {
     ...index,
+    sortOptions: SORT_OPTIONS,
+    defaultSort: DEFAULT_SORT,
     mods: index.mods.map((mod) => {
       const heatEntry = heatByRepo.get(mod.repo?.toLowerCase());
       if (!heatEntry) {
         return mod;
       }
-      return { ...mod, heat: heatIndexFields(heatEntry) };
+      return {
+        ...mod,
+        heat: heatIndexFields(heatEntry),
+        ...(heatEntry.ranks ? { ranks: heatEntry.ranks } : {}),
+      };
     }),
   };
 }
@@ -481,6 +497,7 @@ export function computeHeat(mods, { recommendOptions = {} } = {}) {
         },
       score,
       rank: null,
+      ageDays: mod.ageDays ?? null,
     };
     entry.recommend = recommendationFor(entry, recommendOptions);
     return entry;

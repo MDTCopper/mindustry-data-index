@@ -2294,7 +2294,41 @@ async function runHeat(options, context) {
   });
   entries.forEach((entry, index) => {
     entry.rank = index + 1;
+    entry.ranks = { heat: entry.rank };
   });
+  // 预计算其他排序：updated（最近更新）/ downloads / stars / newest（发布越新越前），客户端直接按 ranks 排
+  const timestampOf = (value) => {
+    const parsed = Date.parse(value ?? '');
+    return Number.isNaN(parsed) ? 0 : parsed;
+  };
+  const rankSorts = [
+    [
+      'updated',
+      (entry) =>
+        Math.max(
+          timestampOf(entry.maintenance?.lastReleaseAt),
+          timestampOf(entry.maintenance?.lastCommitAt),
+        ),
+      'desc',
+    ],
+    ['downloads', (entry) => Number(entry.totalDownloads) || 0, 'desc'],
+    ['stars', (entry) => Number(entry.totalStars) || 0, 'desc'],
+    ['newest', (entry) => (entry.ageDays === null ? Number.POSITIVE_INFINITY : entry.ageDays), 'asc'],
+  ];
+  for (const [key, valueOf, direction] of rankSorts) {
+    const ordered = [...entries].sort((left, right) => {
+      const leftValue = valueOf(left);
+      const rightValue = valueOf(right);
+      const cmp = direction === 'asc' ? leftValue - rightValue : rightValue - leftValue;
+      if (cmp !== 0 && !Number.isNaN(cmp)) {
+        return cmp;
+      }
+      return left.repo < right.repo ? -1 : left.repo > right.repo ? 1 : 0;
+    });
+    ordered.forEach((entry, index) => {
+      entry.ranks[key] = index + 1;
+    });
+  }
   // 热度注入：全量列表写 index-full.json，默认列表 index.json 只留 recommendVisible=true
   const heatByRepo = new Map(entries.map((entry) => [entry.repo.toLowerCase(), entry]));
   let heatChanged = false;

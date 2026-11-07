@@ -184,6 +184,39 @@
               "recommendVisible"
             ],
             "additionalProperties": false
+          },
+          "ranks": {
+            "type": "object",
+            "required": [
+              "heat",
+              "updated",
+              "downloads",
+              "stars",
+              "newest"
+            ],
+            "properties": {
+              "heat": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "updated": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "downloads": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "stars": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "newest": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false
           }
         },
         "required": [
@@ -202,7 +235,8 @@
           "commitUpdatedAt",
           "totalDownloads",
           "allAssetsDownloads",
-          "heat"
+          "heat",
+          "ranks"
         ],
         "additionalProperties": true
       }
@@ -229,6 +263,28 @@
         ],
         "additionalProperties": true
       }
+    },
+    "sortOptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "label"
+        ],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "defaultSort": {
+      "type": "string"
     }
   },
   "required": [
@@ -236,7 +292,9 @@
     "generatedAt",
     "source",
     "mods",
-    "skipped"
+    "skipped",
+    "sortOptions",
+    "defaultSort"
   ],
   "additionalProperties": true,
   "formatVersion": 3
