@@ -700,7 +700,7 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 ```
 
 - 权重/窗口/倍率/惩罚等参数固定在仓库代码 `src/heat.js`；输出不携带总分/中间值。
-- 推荐权重：下载量 0.25、星标 0.3、更新 0.3、时间戳随机数 0.15、新 mod 加成 0.4、
+- 推荐权重：下载量 0.25、星标 0.3、更新 0.3、时间戳随机数 0.15、新 mod 加成 0.325、
   长期不更新扣分 0.4；随机数按 6 小时时间桶固定，跨时间段轮换。默认 `defaultSort = recommended`。
 - `recommendVisible = score >= MIN_SCORE`（`MIN_SCORE` 默认 `0`，常量在 `src/heat.js`），
   不按长期停更过滤；默认列表严格等于全量列表按该字段过滤的结果。

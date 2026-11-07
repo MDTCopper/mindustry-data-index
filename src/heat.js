@@ -39,7 +39,7 @@ export const RECOMMEND_WEIGHTS = {
   stars: 0.3,
   update: 0.3,
   random: 0.15,
-  newMod: 0.4,
+  newMod: 0.325,
   penalty: 0.4,
 };
 // 随机数按 6 小时时间桶固定：同一时间段内排名稳定，跨时间段轮换
