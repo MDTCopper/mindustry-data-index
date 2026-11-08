@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "vic-ugreen/mindustry-advanced-canvas-mod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T18:50:22.061Z",
   "modType": "java",
+  "meta": {
+    "name": "advanced-canvas-plus-img-to-canvas-schematic",
+    "author": "Ugr1N",
+    "description": "Adds advanced canvas which allows you to use whole RGB spectrum! Also, you can turn any image into a schematic with canvases, allowing you to decorate your sectors with beautiful paintings! Use responsibly. PC only (didn't test on android, maybe it will work there too for some reason).",
+    "version": "1",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "example.ExampleJavaMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "mindustry-mod",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/Vic-Ugreen/mindustry-advanced-canvas-mod/releases/download/mindustry-mod/advanced-canvas-plus-img-to-schematicDesktop.jar",
       "modVersion": "1",
       "sizeBytes": 54844,
-      "downloadCount": 253,
+      "downloadCount": 255,
       "releasedAt": "2026-08-19T23:07:43Z"
     }
-  ],
-  "meta": {
-    "name": "advanced-canvas-plus-img-to-canvas-schematic",
-    "author": "Ugr1N",
-    "description": "Adds advanced canvas which allows you to use whole RGB spectrum! Also, you can turn any image into a schematic with canvases, allowing you to decorate your sectors with beautiful paintings! Use responsibly. PC only (didn't test on android, maybe it will work there too for some reason).",
-    "version": "1",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "example.ExampleJavaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

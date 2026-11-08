@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "m-e-l-i-s/silviriumjava",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T18:50:22.061Z",
   "modType": "java",
+  "meta": {
+    "name": "sli",
+    "author": "Melis",
+    "description": "A java remake of my json unfinished mod.",
+    "version": "1.7",
+    "minGameVersion": "158.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "Mod.SilviriumJ",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "V0.1.8",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/m-e-l-i-s/SilviriumJava/releases/download/V0.1.8/SilviriumJava.jar",
       "modVersion": "1.7",
       "sizeBytes": 671689,
-      "downloadCount": 23,
+      "downloadCount": 24,
       "releasedAt": "2026-10-20T19:49:02Z"
     },
     {
@@ -148,19 +162,5 @@
       "downloadCount": 138,
       "releasedAt": "2026-05-07T02:12:50Z"
     }
-  ],
-  "meta": {
-    "name": "sli",
-    "author": "Melis",
-    "description": "A java remake of my json unfinished mod.",
-    "version": "1.7",
-    "minGameVersion": "158.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "Mod.SilviriumJ",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

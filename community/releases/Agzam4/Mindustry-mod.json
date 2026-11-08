@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "Agzam4/Mindustry-mod",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-08T18:59:49.725Z",
   "modType": "java",
+  "meta": {
+    "name": "agzam4mod",
+    "author": "Agzam4",
+    "description": "Additional functionality",
+    "version": "1.7.1",
+    "minGameVersion": "142",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "agzam4.AgzamMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.10.0",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Agzam4/Mindustry-mod/releases/download/v1.10.0/AgzamMod.jar",
       "modVersion": "1.7.1",
       "sizeBytes": 292090,
-      "downloadCount": 8372,
+      "downloadCount": 8374,
       "releasedAt": "2024-08-16T12:00:06Z"
     },
     {
@@ -356,19 +370,5 @@
       "downloadCount": 49,
       "releasedAt": "2023-08-10T07:06:54Z"
     }
-  ],
-  "meta": {
-    "name": "agzam4mod",
-    "author": "Agzam4",
-    "description": "Additional functionality",
-    "version": "1.7.1",
-    "minGameVersion": "142",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "agzam4.AgzamMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

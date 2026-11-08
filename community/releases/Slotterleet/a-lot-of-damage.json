@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "Slotterleet/a-lot-of-damage",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-08T18:59:49.725Z",
   "modType": "java",
+  "meta": {
+    "name": "alod",
+    "author": "Slotterleet",
+    "description": "A Mindustry mod for showing damage numbers.",
+    "version": "1.0.5",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "alod.ALODMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.5",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Slotterleet/a-lot-of-damage/releases/download/v1.0.5/ALOD-v1.0.5.jar",
       "modVersion": "1.0.5",
       "sizeBytes": 29050,
-      "downloadCount": 9665,
+      "downloadCount": 9667,
       "releasedAt": "2025-01-20T17:08:34Z"
     },
     {
@@ -100,19 +114,5 @@
       "downloadCount": 223,
       "releasedAt": "2024-06-05T15:51:59Z"
     }
-  ],
-  "meta": {
-    "name": "alod",
-    "author": "Slotterleet",
-    "description": "A Mindustry mod for showing damage numbers.",
-    "version": "1.0.5",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "alod.ALODMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
