@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "yelandaokong/chattranslator",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T23:42:31.193Z",
   "modType": "java",
+  "meta": {
+    "name": "chat-translator",
+    "author": "Yelandaokong",
+    "description": "In-game chat translator for Mindustry.",
+    "version": "1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "xyz.dkos.gaming.mindustry.translator.ModMain",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "R1.0.0",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/YELANDAOKONG/ChatTranslator/releases/download/R1.0.0/ChatTranslator.jar",
       "modVersion": "1",
       "sizeBytes": 137623,
-      "downloadCount": 473,
+      "downloadCount": 474,
       "releasedAt": "2026-03-25T20:32:11Z"
     }
-  ],
-  "meta": {
-    "name": "chat-translator",
-    "author": "Yelandaokong",
-    "description": "In-game chat translator for Mindustry.",
-    "version": "1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "xyz.dkos.gaming.mindustry.translator.ModMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

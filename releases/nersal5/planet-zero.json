@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "nersal5/planet-zero",
-  "generatedAt": "2026-11-08T18:50:22.061Z",
+  "generatedAt": "2026-11-08T23:42:31.193Z",
   "modType": "json",
   "meta": {
     "name": "Zero",
     "author": "Nersal",
     "description": "this is my first mod ever, there's may lots of bugs.\nname of mod and planet can be changed in future.",
-    "version": "beta-0.1",
+    "version": "beta-0.11",
     "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
@@ -19,8 +19,8 @@
   },
   "versions": [
     {
-      "tag": "main",
-      "kind": "source",
+      "tag": "Planet-mod",
+      "kind": "tag",
       "minGameVersion": "146",
       "gameVersionRanges": [
         {
@@ -28,7 +28,22 @@
           "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/nersal5/planet-zero/archive/refs/heads/main.zip",
+      "downloadUrl": "https://github.com/nersal5/planet-zero/archive/refs/tags/Planet-mod.zip",
+      "modVersion": "beta-0.11",
+      "releasedAt": "2026-11-08T20:33:20Z",
+      "prerelease": true
+    },
+    {
+      "tag": "main",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/nersal5/planet-zero/archive/refs/tags/main.zip",
       "modVersion": "beta-0.1",
       "committedAt": "2026-11-08T15:05:58Z"
     }

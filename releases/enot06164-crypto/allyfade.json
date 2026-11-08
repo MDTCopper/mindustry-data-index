@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "enot06164-crypto/allyfade",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T23:42:31.193Z",
   "modType": "java",
+  "meta": {
+    "name": "ally-fade",
+    "author": "AllyFade",
+    "description": "Fades allied flying units that cover the center of the camera view, without changing gameplay.",
+    "version": "1.0.0",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "allyfade.AllyFadeMod",
+    "java": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.0",
@@ -17,22 +31,8 @@
       "downloadUrl": "https://github.com/enot06164-crypto/AllyFade/releases/download/v1.0.0/AllyFade.jar",
       "modVersion": "1.0.0",
       "sizeBytes": 13664,
-      "downloadCount": 11,
+      "downloadCount": 12,
       "releasedAt": "2026-11-02T08:56:21Z"
     }
-  ],
-  "meta": {
-    "name": "ally-fade",
-    "author": "AllyFade",
-    "description": "Fades allied flying units that cover the center of the camera view, without changing gameplay.",
-    "version": "1.0.0",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "allyfade.AllyFadeMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
