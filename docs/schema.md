@@ -20,11 +20,12 @@
 ### 数据模型 v3（当前）
 
 - **per-mod v3**：`{formatVersion:3, repo, generatedAt, modType, versions[], meta?}`；`modType` 为
-  `java`/`js`/`json`。`versions[]` 每条 `{tag, kind:"release"|"tag", modVersion?, minGameVersion,
+  `java`/`js`/`json`。`versions[]` 每条 `{tag, kind:"release"|"tag"|"source", modVersion?, minGameVersion,
   gameVersionRanges, releasedAt?, committedAt?, downloadUrl, sizeBytes?, downloadCount?, prerelease?, removed?, removedAt?}`
   （null 字段不写）。没有 `minGameVersion` 的条目丢弃；一条版本都不剩的模组从 index 移除并删除文件。
   版本列表 = 有资产的 Release + 非 Java 的 tag-only（无资产 Release 也按源码归档）；
-  详见下方 `releases[]` 条目。
+  非 Java 一个可用版本都没有时，从默认分支 root 元数据生成一条 `kind:"source"`（tag=分支名，
+  下载默认分支源码归档），Java 无资源则忽略；详见下方 `releases[]` 条目。
 - **index v3**：每条包含 `repo`、`name*`、`author*`、`descriptionPlain`、`modType`、`version`、
   `minGameVersion`、`gameVersionRanges`、`stars`、`hasIcon`/`iconUrl`/`iconHash`、`releasesPath`、
   `releaseCount`、`tagCount`（非 Java）、`releaseUpdatedAt`、`commitUpdatedAt`、
@@ -700,6 +701,7 @@ stars 不记）/ `release-added` / `tag-removed` / `release-removed`。首次建
 ```
 
 - 权重/窗口/倍率/惩罚等参数固定在仓库代码 `src/heat.js`；输出不携带总分/中间值。
+- 非 Java 的版本/tag 活动不计入 `updateScore`，改由提交承担 0.8（`NON_JAVA_COMMIT_UPDATE_WEIGHT`）。
 - 推荐权重：下载量 0.25、星标 0.3、更新 0.3、时间戳随机数 0.3、新 mod 加成 0.325、
   长期不更新扣分 0.4；随机数按 6 小时时间桶固定，跨时间段轮换。默认 `defaultSort = recommended`。
 - `recommendVisible = score >= MIN_SCORE`（`MIN_SCORE` 默认 `0`，常量在 `src/heat.js`），

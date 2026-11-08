@@ -46,6 +46,7 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
 - **默认列表 vs 全量**：`index.json` 只含 `score.recommendVisible=true`；全量在 `index-full.json`。
 - **`score`**（6 字段）：`downloadsScore`、`starsScore`、`updateScore`、`penaltyScore`、
   `newModMultiplier`、`recommendVisible`。**总分不落盘**，客户端可用这些组件分按自己的权重计算。
+  非 Java 的版本/tag 活动不计入 `updateScore`，改由提交承担 0.8（`NON_JAVA_COMMIT_UPDATE_WEIGHT`）。
 - **`ranks`**：`recommended`（默认排序）、`heat`、`updated`、`downloads`、`stars`、`newest`，
   都是官方+社区合并后的**全局**名次（不是各文件内 1..N；默认列表过滤后序号会有跳号）。
   列表顶层有 `sortOptions` 与 `defaultSort="recommended"`。
@@ -58,11 +59,14 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
 ### per-mod release 文件
 
 `formatVersion:3`，字段 `repo`、`generatedAt`、`modType`、`versions[]`（可选 `meta`）。
-每条 version：`tag`、`kind`（`release`/`tag`）、`modVersion`、`minGameVersion`、
+每条 version：`tag`、`kind`（`release`/`tag`/`source`）、`modVersion`、`minGameVersion`、
 `gameVersionRanges`、`releasedAt`、`committedAt`、`downloadUrl`、`sizeBytes`/`downloadCount`、
 `prerelease`（仅 true）、`removed`/`removedAt`。null 字段不写；没有 `minGameVersion` 的条目丢弃。
 
 版本列表 = 有资产的 Release + 非 Java 的 tag-only；Java 的 tag-only 不进列表。
+非 Java 可以不打 tag：一个可用版本都没有时，从默认分支读 root 元数据并生成一条
+`kind:"source"` 版本（`tag` 是分支名，下载地址是该分支的源码归档），这样源码可用的脚本/json mod
+不会消失；Java mod 没有资源则忽略。
 >200 个版本时分页：每页 200、最多 5 页（1000，更老丢弃），index 的 `pages` 给出每页
 `count` 与 `gameVersionRanges`，客户端可按游戏版本先选页再拉。
 

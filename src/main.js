@@ -25,6 +25,7 @@ import { buildCompat, gameVersionsFromFile, latestCompatibleTag } from './compat
 import {
   MODEL_V3_FORMAT_VERSION,
   buildV3Versions,
+  computeGameVersionRanges,
   mergeGameVersionRanges,
   modTypeOf,
   releasesFromVersions,
@@ -493,6 +494,56 @@ export function buildIndexEntry(
   return result;
 }
 
+// 非 Java 模组可以不打 tag，默认分支源码本身就是可安装版本；
+// 0 版本时补一条 kind=source 的版本，下载默认分支源码归档
+async function sourceVersionFor({
+  rawClient,
+  repo,
+  repoStats,
+  gameVersions,
+  gateFile,
+}) {
+  const branches = [
+    ...new Set([repoStats?.defaultBranch, 'main', 'master'].filter(Boolean)),
+  ];
+  for (const branch of branches) {
+    try {
+      const result = await fetchModMetadataDocument(rawClient, {
+        repo,
+        tag: branch,
+        hasJava: false,
+      });
+      if (!result.found || !result.meta) continue;
+      const meta = result.meta;
+      // Java 模组必须有构建产物；没有资源的 Java 模组忽略
+      if (meta.hasJava === true) continue;
+      const minGameVersion = meta.minGameVersion;
+      if (!minGameVersion) continue;
+      const version = {
+        tag: branch,
+        kind: 'source',
+        minGameVersion,
+        gameVersionRanges: computeGameVersionRanges({
+          minGameVersion,
+          gameVersions,
+          gateFile,
+        }),
+        downloadUrl: `https://github.com/${repo}/archive/refs/heads/${encodeURIComponent(branch)}.zip`,
+      };
+      if (meta.version) version.modVersion = meta.version;
+      if (repoStats?.pushedAt) version.committedAt = repoStats.pushedAt;
+      return {
+        version,
+        meta,
+        modType: modTypeOf({ meta, releases: [] }),
+      };
+    } catch {
+      // 单个分支读不到就试下一个分支
+    }
+  }
+  return null;
+}
+
 function skipReason(error) {
   if (error instanceof RateLimitError) {
     return 'rate-limit';
@@ -945,6 +996,31 @@ async function processMod(context) {
       gateFile,
       generatedAt: now,
     });
+    if (nextFile.versions.length === 0 && modType !== 'java' && hasJava !== true) {
+      const previousSource = Array.isArray(previous?.versions)
+        ? previous.versions.find((item) => item.kind === 'source')
+        : null;
+      if (previousSource && !plan.full) {
+        // 默认分支源码版本不会变（下载地址固定为分支归档），平时直接复用，月度全量再重读元数据
+        nextFile.versions.push(previousSource);
+        nextFile.meta = previous.meta ?? fileMeta;
+        nextFile.modType = previous.modType ?? nextFile.modType;
+      } else {
+        // 非 Java 没有 tag 时退回默认分支源码；抓不到元数据才真正丢弃
+        const source = await sourceVersionFor({
+          rawClient,
+          repo: mod.repo,
+          repoStats: context.repoStats?.get(mod.repo.toLowerCase()) ?? null,
+          gameVersions: modelGameVersions,
+          gateFile: compatData?.modGate,
+        });
+        if (source) {
+          nextFile.versions.push(source.version);
+          nextFile.meta = source.meta;
+          nextFile.modType = source.modType;
+        }
+      }
+    }
     if (!releaseFileBodyChanged(previous, nextFile) && previous?.generatedAt) {
       nextFile.generatedAt = previous.generatedAt;
     }
@@ -1233,6 +1309,7 @@ async function refreshRepoStats({ outDir, apiClient, repos, log }) {
         archived: data.archived === true,
         createdAt: typeof data.created_at === 'string' ? data.created_at : null,
         pushedAt: typeof data.pushed_at === 'string' ? data.pushed_at : null,
+        defaultBranch: typeof data.default_branch === 'string' ? data.default_branch : null,
         fetchedAt: new Date(nowMs).toISOString(),
       };
       fetched += 1;

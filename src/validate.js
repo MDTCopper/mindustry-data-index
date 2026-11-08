@@ -159,8 +159,8 @@ function validateV3VersionEntry(entry, { where, errors }) {
       errors.push(`${where}.${field} 应为非空字符串`);
     }
   }
-  if (!['release', 'tag'].includes(entry.kind)) {
-    errors.push(`${where}.kind 应为 release 或 tag`);
+  if (!['release', 'tag', 'source'].includes(entry.kind)) {
+    errors.push(`${where}.kind 应为 release / tag / source`);
   }
   if (!Array.isArray(entry.gameVersionRanges)) {
     errors.push(`${where}.gameVersionRanges 不是数组`);

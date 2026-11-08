@@ -52,7 +52,10 @@ export const COMMUNITY_FULL_INDEX_REL_PATH = 'community/index-full.json';
 export const NEW_MOD_DAYS = 180;
 export const NEW_MOD_MAX_MULTIPLIER = 1.325;
 export const NEW_MOD_DECAY_DAYS = 30;
+// 非 Java 模组通常不打 tag，版本活动不计分，提交承担 0.8 的更新分
+export const NON_JAVA_COMMIT_UPDATE_WEIGHT = 0.8;
 export const PENALTY_START_DAYS = 360;
+
 export const PENALTY_SATURATION_DAYS = 180;
 export const PENALTY_WEIGHT = 0.3;
 export const HISTORY_LIMITS = { daily: 7, weekly: 6, monthly: 6 };
@@ -449,7 +452,11 @@ export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = 
       TOTAL_WEIGHT * downloadStock.scores[index] + CHANGE_WEIGHT * downloadChangeScore;
     const starsScore =
       TOTAL_WEIGHT * starStock.scores[index] + CHANGE_WEIGHT * starChangeScore;
-    const updateScore = 0.7 * releaseActivity[index] + 0.3 * commitActivity[index];
+    const updateScore =
+      mod.hasJava === false
+        ? NON_JAVA_COMMIT_UPDATE_WEIGHT * commitActivity[index]
+        : 0.7 * releaseActivity[index] + 0.3 * commitActivity[index];
+
     const multiplier = newModMultiplier(mod.ageDays);
     const penalty = longInactivityPenalty({
       daysSinceRelease: mod.daysSinceRelease ?? null,
