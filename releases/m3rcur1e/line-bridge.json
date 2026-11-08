@@ -1,0 +1,36 @@
+{
+  "formatVersion": 3,
+  "repo": "m3rcur1e/line-bridge",
+  "generatedAt": "2026-11-08T08:13:32.977Z",
+  "modType": "js",
+  "meta": {
+    "name": "line-bridge",
+    "author": "m3rcur1e",
+    "description": "Dragging a conveyor, duct or conduit line across queued build plans no longer cuts them: the line goes over planned blocks and construction sites with bridges and junctions, the same as over built ones. Bridge and power node chains skip planned tiles too. Can be switched off in Settings.",
+    "version": "1.0.1",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
+  "versions": [
+    {
+      "tag": "master",
+      "kind": "source",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/m3rcur1e/line-bridge/archive/refs/heads/master.zip",
+      "modVersion": "1.0.1",
+      "committedAt": "2026-10-18T03:17:12Z"
+    }
+  ]
+}

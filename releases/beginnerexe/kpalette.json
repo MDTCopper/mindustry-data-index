@@ -1,0 +1,36 @@
+{
+  "formatVersion": 3,
+  "repo": "beginnerexe/kpalette",
+  "generatedAt": "2026-11-08T08:13:32.977Z",
+  "modType": "json",
+  "meta": {
+    "name": "kpalette",
+    "author": "Kanj",
+    "description": "\nA complete 4-bit RGB color palette (4096 colors) implemented as Mindustry items for pixel art via sorter abuse.\n\nEach color is named by its hex code (000-fff) and expands to full 8-bit representation:\n- #f00 → #FF0000 (pure red)\n- #888 → #888888 (mid gray)\n- #5d8 → #55DD88 (mint green)\n\nWarning: Loading 4096 items may impact performance on lower-end devices. If the game lags, consider not using this mod.\n\nv1.0.0 - Initial release\n",
+    "version": "1",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
+  "versions": [
+    {
+      "tag": "main",
+      "kind": "source",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/beginnerexe/kpalette/archive/refs/heads/main.zip",
+      "modVersion": "1",
+      "committedAt": "2026-01-20T06:33:42Z"
+    }
+  ]
+}

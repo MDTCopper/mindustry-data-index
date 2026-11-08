@@ -1,0 +1,36 @@
+{
+  "formatVersion": 3,
+  "repo": "salivion/nmod",
+  "generatedAt": "2026-11-08T08:13:32.977Z",
+  "modType": "json",
+  "meta": {
+    "name": "nMod",
+    "author": "Simuss",
+    "description": "Removes Titan's smoke and scathe, leaving only clean explosion effect. Removes MiniMap. Unlock and show hidden and unused game content. Especially items, blocks, fluids, effects, units, and planets.\n\nThe campaign save will not be affected in any way. ",
+    "version": "1.1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
+  "versions": [
+    {
+      "tag": "main",
+      "kind": "source",
+      "minGameVersion": "145",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/salivion/nmod/archive/refs/heads/main.zip",
+      "modVersion": "1.1",
+      "committedAt": "2026-03-07T16:24:50Z"
+    }
+  ]
+}

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "zeefoe/simple-chat-translator",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T08:13:32.977Z",
   "modType": "java",
+  "meta": {
+    "name": "simple-chat-translator",
+    "author": "Zeefoe",
+    "description": "\nA chat translator that just works.\nTranslates the chat using google translate without any setup and configuration.\n\nThe target language should be automatically set by what language you have your game in.\n",
+    "version": "1",
+    "minGameVersion": "154.2",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "simpleChatTranslator.chatTranslator",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Zeefoe/simple-chat-translator/releases/download/1.1/simple-chat-translator.jar",
       "modVersion": "1",
       "sizeBytes": 39179,
-      "downloadCount": 3591,
+      "downloadCount": 3594,
       "releasedAt": "2025-12-23T04:38:40Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 56,
       "releasedAt": "2025-12-13T06:16:37Z"
     }
-  ],
-  "meta": {
-    "name": "simple-chat-translator",
-    "author": "Zeefoe",
-    "description": "\nA chat translator that just works.\nTranslates the chat using google translate without any setup and configuration.\n\nThe target language should be automatically set by what language you have your game in.\n",
-    "version": "1",
-    "minGameVersion": "154.2",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "simpleChatTranslator.chatTranslator",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

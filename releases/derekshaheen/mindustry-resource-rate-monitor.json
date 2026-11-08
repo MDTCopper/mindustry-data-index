@@ -1,0 +1,36 @@
+{
+  "formatVersion": 3,
+  "repo": "derekshaheen/mindustry-resource-rate-monitor",
+  "generatedAt": "2026-11-08T08:13:32.977Z",
+  "modType": "js",
+  "meta": {
+    "name": "resource-rate-monitor",
+    "author": "Skrip",
+    "description": "\nMonitor your resource rate changes in real time.\n\nFeatures:\n- Color-coded rate display: [#8585FF]gaining[], [red]losing[], [white]stable[]\n- [red](!)[] Low-stock warning when a resource is under 10 seconds from depletion\n- [yellow]Flicker detection[] for resources being consumed as fast as they arrive (~00)\n- Click the resource table to cycle column count (4-8)\n- Compact number formatting (1.5k, 2.3M, etc.)\n",
+    "version": "0.3",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
+  "versions": [
+    {
+      "tag": "main",
+      "kind": "source",
+      "minGameVersion": "136",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/derekshaheen/mindustry-resource-rate-monitor/archive/refs/heads/main.zip",
+      "modVersion": "0.3",
+      "committedAt": "2026-04-23T23:58:58Z"
+    }
+  ]
+}
