@@ -1,23 +1,39 @@
 {
   "formatVersion": 3,
   "repo": "momiji142857/ve-addon-schematics",
-  "generatedAt": "2026-11-07T23:38:09.826Z",
+  "generatedAt": "2026-11-08T05:58:02.878Z",
   "modType": "java",
   "meta": {
     "name": "ve-addon-schematics",
     "author": "VE模组作者: 火星人076 & 128_OTEML\n本模组作者: [sky[]]Momiji142857[white[]]\n其他贡献者请见 GitHub 仓库",
-    "description": "[#90DBFF[]]Vanilla Expansion原版扩展[white[]]的蓝图附属模组\nschematics add‑on for the [#90DBFF[]]Vanilla Expansion[white[]] (VE)\n\n[red[]]需先启用 Vanilla Expansion 模组。\nRequires Vanilla Expansion to be enabled.[white[]]\n\n本模组主要收录并优化了来自VE模组交流群的一些蓝图，旨在让玩家能更方便地使用。\nThis pack collects and optimizes community schematics to make them easier for players to import and use.\n\n感谢所有为本合集贡献并参与测试的成员！\nThank you to everyone who contributed and helped test the pack!\n\n[accent[]]最后更新 / Last updated: 2026-09-03[white[]]",
-    "version": "v4.1.7",
+    "description": "[#90DBFF[]]Vanilla Expansion原版扩展[white[]]的蓝图附属模组\nschematics add‑on for the [#90DBFF[]]Vanilla Expansion[white[]] (VE)\n\n[red[]]需先启用 Vanilla Expansion 模组。\nRequires Vanilla Expansion to be enabled.[white[]]\n\n本模组主要收录并优化了来自VE模组交流群的一些蓝图，旨在让玩家能更方便地使用。\nThis pack collects and optimizes community schematics to make them easier for players to import and use.\n\n感谢所有为本合集贡献并参与测试的成员！\nThank you to everyone who contributed and helped test the pack!\n\n[accent[]]最后更新 / Last updated: 2026-11-08[white[]]",
+    "version": "v4.2.0",
     "minGameVersion": "159",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
-    "main": null,
-    "java": false,
+    "main": "veSchematics.ModLoad",
+    "java": true,
     "hasScripts": false,
-    "hasJava": false
+    "hasJava": true
   },
   "versions": [
+    {
+      "tag": "ve-addon-schematics-v4.2.0",
+      "kind": "release",
+      "minGameVersion": "159",
+      "gameVersionRanges": [
+        {
+          "from": "159",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.2.0/ve-addon-schematics-v4.2.0.jar",
+      "modVersion": "v4.2.0",
+      "sizeBytes": 411531,
+      "downloadCount": 45,
+      "releasedAt": "2026-11-08T01:38:41Z"
+    },
     {
       "tag": "ve-addon-schematics-v4.1.7",
       "kind": "release",
@@ -31,7 +47,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.1.7/ve-addon-schematics-v4.1.7-1.jar",
       "modVersion": "v4.1.7",
       "sizeBytes": 800841,
-      "downloadCount": 2630,
+      "downloadCount": 2634,
       "releasedAt": "2026-09-03T11:26:16Z"
     },
     {
@@ -47,7 +63,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.1.6/ve-addon-schematics-v4.1.6.jar",
       "modVersion": "v4.1.6",
       "sizeBytes": 394374,
-      "downloadCount": 1268,
+      "downloadCount": 1269,
       "releasedAt": "2026-08-08T11:52:02Z"
     },
     {
@@ -63,7 +79,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/v4.1.5/ve-addon-schematics-v4.1.5.jar",
       "modVersion": "v4.1.5",
       "sizeBytes": 389268,
-      "downloadCount": 515,
+      "downloadCount": 516,
       "releasedAt": "2026-08-02T16:40:46Z"
     },
     {
@@ -79,7 +95,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/v4.1.4/ve-addon-schematics-v4.1.4.jar",
       "modVersion": "v4.1.4",
       "sizeBytes": 388981,
-      "downloadCount": 393,
+      "downloadCount": 394,
       "releasedAt": "2026-07-31T15:31:06Z"
     },
     {
@@ -95,7 +111,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/v4.1.3/ve-addon-schematics-v4.1.3.jar",
       "modVersion": "v4.1.3",
       "sizeBytes": 383612,
-      "downloadCount": 612,
+      "downloadCount": 613,
       "releasedAt": "2026-07-25T11:18:02Z"
     },
     {
@@ -111,7 +127,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.1.2/Ve.Addon.-.Schematics.v4.1.2.jar",
       "modVersion": "v4.1.2",
       "sizeBytes": 373297,
-      "downloadCount": 747,
+      "downloadCount": 748,
       "releasedAt": "2026-07-15T04:20:11Z"
     },
     {
@@ -127,7 +143,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.1.0/ve-addon-schematics-v4.1.0.jar",
       "modVersion": "v4.1.0",
       "sizeBytes": 357644,
-      "downloadCount": 3747,
+      "downloadCount": 3748,
       "releasedAt": "2026-04-24T16:38:12Z"
     },
     {
@@ -143,7 +159,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.12/ve-addon-schematics-v4.0.12.jar",
       "modVersion": "v4.0.13",
       "sizeBytes": 343174,
-      "downloadCount": 955,
+      "downloadCount": 956,
       "releasedAt": "2026-04-09T16:42:57Z"
     },
     {
@@ -159,7 +175,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.11/ve-addon-schematics-v4.0.11.jar",
       "modVersion": "v4.0.11",
       "sizeBytes": 333764,
-      "downloadCount": 820,
+      "downloadCount": 821,
       "releasedAt": "2026-03-26T17:11:16Z"
     },
     {
@@ -175,7 +191,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.10/ve-addon-schematics-v4.0.10.jar",
       "modVersion": "v4.0.10",
       "sizeBytes": 332638,
-      "downloadCount": 139,
+      "downloadCount": 140,
       "releasedAt": "2026-03-14T14:51:26Z"
     },
     {
@@ -191,7 +207,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.9/ve-addon-schematics-v4.0.9.jar",
       "modVersion": "v4.0.9",
       "sizeBytes": 331630,
-      "downloadCount": 853,
+      "downloadCount": 854,
       "releasedAt": "2026-02-20T15:09:56Z"
     },
     {
@@ -207,7 +223,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.8/ve-addon-schematics-v4.0.8.jar",
       "modVersion": "v4.0.8",
       "sizeBytes": 326163,
-      "downloadCount": 121,
+      "downloadCount": 122,
       "releasedAt": "2026-02-14T18:19:48Z"
     },
     {
@@ -223,7 +239,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.6/ve-addon-schematics-v4.0.6.jar",
       "modVersion": "v4.0.6",
       "sizeBytes": 316397,
-      "downloadCount": 114,
+      "downloadCount": 115,
       "releasedAt": "2026-02-04T16:43:20Z"
     },
     {
@@ -239,7 +255,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.5/ve-addon-schematics-v4.0.5.jar",
       "modVersion": "v4.0.5",
       "sizeBytes": 295615,
-      "downloadCount": 84,
+      "downloadCount": 85,
       "releasedAt": "2026-01-29T08:39:10Z"
     },
     {
@@ -255,7 +271,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.4/ve-addon-schematics-v4.0.4.jar",
       "modVersion": "v4.0.4",
       "sizeBytes": 277912,
-      "downloadCount": 36,
+      "downloadCount": 37,
       "releasedAt": "2026-01-27T16:26:37Z"
     },
     {
@@ -271,7 +287,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.3/ve-addon-schematics-v4.0.3.jar",
       "modVersion": "v4.0.3",
       "sizeBytes": 271466,
-      "downloadCount": 13,
+      "downloadCount": 14,
       "releasedAt": "2026-01-27T05:04:40Z"
     },
     {
@@ -287,7 +303,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.2/ve-addon-schematics-v4.0.2.jar",
       "modVersion": "v4.0.3",
       "sizeBytes": 266240,
-      "downloadCount": 134,
+      "downloadCount": 135,
       "releasedAt": "2026-01-13T00:11:15Z"
     },
     {
@@ -303,7 +319,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.1/ve-addon-schematics-v4.0.1.jar",
       "modVersion": "v4.0.1",
       "sizeBytes": 265221,
-      "downloadCount": 33,
+      "downloadCount": 34,
       "releasedAt": "2026-01-10T16:36:23Z"
     },
     {
@@ -319,7 +335,7 @@
       "downloadUrl": "https://github.com/Momiji142857/ve-addon-schematics/releases/download/ve-addon-schematics-v4.0.0/ve-addon-schematics-v4.0.0.jar",
       "modVersion": "v4.0.0",
       "sizeBytes": 263280,
-      "downloadCount": 42,
+      "downloadCount": 43,
       "releasedAt": "2026-01-10T07:12:33Z"
     }
   ]

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "tommywhale28/beam-up",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T05:58:02.878Z",
   "modType": "java",
+  "meta": {
+    "name": "beam-up",
+    "author": "TommyWhale28",
+    "description": "A Mindustry mod that adds nodes to transport items using laser links. Desktop Only Java Mod. For 160.5",
+    "version": "1.1.1",
+    "minGameVersion": "160.5",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "beamup.BeamUp",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.1",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/TommyWhale28/Beam-Up/releases/download/v1.1.1/Beam-UpDesktop.jar",
       "modVersion": "1.1.1",
       "sizeBytes": 72377,
-      "downloadCount": 48,
+      "downloadCount": 49,
       "releasedAt": "2026-10-21T23:31:01Z"
     },
     {
@@ -52,19 +66,5 @@
       "downloadCount": 45,
       "releasedAt": "2026-10-03T03:35:53Z"
     }
-  ],
-  "meta": {
-    "name": "beam-up",
-    "author": "TommyWhale28",
-    "description": "A Mindustry mod that adds nodes to transport items using laser links. Desktop Only Java Mod. For 160.5",
-    "version": "1.1.1",
-    "minGameVersion": "160.5",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "beamup.BeamUp",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "nannerbz/frires-json-library",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T05:58:02.878Z",
   "modType": "java",
+  "meta": {
+    "name": "frires-json-lib",
+    "author": "Nannerbz / FrireDragon",
+    "description": "A java mod Designed to be used by Json mods to add more depth to the game, adding new types of various things to make Json modding more diverse. \n\nCurrently in the early stages of development, not much added but more will be soon.",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "example.FriresJsonLib",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2-attribute-crafter",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/nannerbz/frires-json-library/releases/download/v1.2-attribute-crafter/frires-json-library.jar",
       "modVersion": "1",
       "sizeBytes": 147384,
-      "downloadCount": 525,
+      "downloadCount": 526,
       "releasedAt": "2025-09-16T12:40:08Z"
     },
     {
@@ -85,19 +99,5 @@
       "releasedAt": "2024-07-23T16:07:10Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "frires-json-lib",
-    "author": "Nannerbz / FrireDragon",
-    "description": "A java mod Designed to be used by Json mods to add more depth to the game, adding new types of various things to make Json modding more diverse. \n\nCurrently in the early stages of development, not much added but more will be soon.",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "example.FriresJsonLib",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

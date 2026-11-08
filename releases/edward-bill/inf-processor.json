@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "edward-bill/inf-processor",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T05:58:02.878Z",
   "modType": "java",
+  "meta": {
+    "name": "inf-processor",
+    "author": "exec4tbe",
+    "description": "World processors that are accesible from anywhere. Also adds world memory, message and switch (i just copied real world blocks`s properites)",
+    "version": "1.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "infprocessor.InfProcessorMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "latest",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/Edward-Bill/inf-processor/releases/download/latest/inf-processorDesktop.jar",
       "modVersion": "1.1",
       "sizeBytes": 12181,
-      "downloadCount": 195,
+      "downloadCount": 196,
       "releasedAt": "2026-06-11T22:47:06Z"
     },
     {
@@ -36,19 +50,5 @@
       "downloadCount": 774,
       "releasedAt": "2024-09-26T19:59:33Z"
     }
-  ],
-  "meta": {
-    "name": "inf-processor",
-    "author": "exec4tbe",
-    "description": "World processors that are accesible from anywhere. Also adds world memory, message and switch (i just copied real world blocks`s properites)",
-    "version": "1.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "infprocessor.InfProcessorMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,22 @@
 {
   "formatVersion": 3,
   "repo": "128oteml/proximacentauri",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-08T05:58:02.878Z",
   "modType": "java",
+  "meta": {
+    "name": "proxima",
+    "author": "128_OTEML",
+    "description": "A Mindustry Java mod.",
+    "version": "1",
+    "minGameVersion": "157",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "Proxima.ProximaCentauriMod",
+    "java": true,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.0.9",
@@ -17,7 +31,7 @@
       "downloadUrl": "https://github.com/128OTEML/ProximaCentauri/releases/download/0.0.9/ProximaCentauri.0.0.9.jar",
       "modVersion": "1",
       "sizeBytes": 3292760,
-      "downloadCount": 179,
+      "downloadCount": 180,
       "releasedAt": "2026-07-07T10:04:00Z"
     },
     {
@@ -116,19 +130,5 @@
       "downloadCount": 11,
       "releasedAt": "2026-02-21T05:26:16Z"
     }
-  ],
-  "meta": {
-    "name": "proxima",
-    "author": "128_OTEML",
-    "description": "A Mindustry Java mod.",
-    "version": "1",
-    "minGameVersion": "157",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "Proxima.ProximaCentauriMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
