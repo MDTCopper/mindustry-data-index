@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "gghanera/mp-sectors",
-  "generatedAt": "2026-11-07T18:46:54.416Z",
+  "generatedAt": "2026-11-08T13:21:37.175Z",
   "modType": "java",
   "meta": {
     "name": "mp-sectors",
     "author": "GGhanera",
     "description": "Runs one campaign sector per server instance, with a shared campaign folder (sector saves, sector info, research). Server-side only. Part of the multi-sector campaign setup.",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -18,6 +18,22 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v2.1.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.1.2/server-release.jar",
+      "modVersion": "0.3.2",
+      "sizeBytes": 38736431,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-08T12:44:09Z"
+    },
     {
       "tag": "v2.1.1",
       "kind": "release",

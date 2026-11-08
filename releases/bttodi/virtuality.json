@@ -1,26 +1,12 @@
 {
   "formatVersion": 3,
   "repo": "bttodi/virtuality",
-  "generatedAt": "2026-11-08T08:13:32.977Z",
+  "generatedAt": "2026-11-08T13:21:37.175Z",
   "modType": "json",
-  "meta": {
-    "name": "virtuality",
-    "author": "bttodi",
-    "description": "\nA mod centered around fighting bosses, with a focus on pattern-based attacks. Entirely detached from Mindustry's traditional gameplay loop - The Virtuality Archives restrains the player in a measly vessel and pits them against encoded entities. Does not utilize scripts or Java, seeking to explore the technical scope of (H)JSON and MLOG. Best experienced with a mouse and keyboard.\n\nCurrently features [red[]]6/7[[]] planned bosses in the campaign - Candor, Ardent & Argent, Pandemonium, Misanthrope, Nyx, and Alluvion.\n",
-    "version": "v8-misanthrope-fix-2",
-    "minGameVersion": "160.4",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  },
   "versions": [
     {
       "tag": "main",
-      "kind": "source",
+      "kind": "tag",
       "minGameVersion": "160.4",
       "gameVersionRanges": [
         {
@@ -28,7 +14,7 @@
           "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/bttodi/virtuality/archive/refs/heads/main.zip",
+      "downloadUrl": "https://github.com/bttodi/virtuality/archive/refs/tags/main.zip",
       "modVersion": "v8-misanthrope-fix-2",
       "committedAt": "2026-09-17T03:46:21Z"
     }

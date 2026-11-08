@@ -1,26 +1,12 @@
 {
   "formatVersion": 3,
   "repo": "foxitos/cmd-pack",
-  "generatedAt": "2026-11-08T08:13:32.977Z",
+  "generatedAt": "2026-11-08T13:21:37.175Z",
   "modType": "json",
-  "meta": {
-    "name": "CMD-scheme-pack",
-    "author": "[#F0000]foxit",
-    "description": "\n RU\nПак добавляет 600+ различных схем. Они тщательно отсортированны по названиям и тегам.\nСхем пак в данный момент находится на стадии активной разработки.\nПредложения по моду: _foxit_#1274\n ENG\nThe pack adds 600+ different schematics. They are carefully sorted by names and tags.\nThe schematics pack is currently under active development.\n UA\nПак додає 600 + різних схем. Вони ретельно відсортовані за назвами і тегами.\nСхем пак в даний момент знаходиться на стадії активної розробки.\n",
-    "version": "2.1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  },
   "versions": [
     {
       "tag": "main",
-      "kind": "source",
+      "kind": "tag",
       "minGameVersion": "145",
       "gameVersionRanges": [
         {
@@ -28,7 +14,7 @@
           "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/foxitos/cmd-pack/archive/refs/heads/main.zip",
+      "downloadUrl": "https://github.com/foxitos/cmd-pack/archive/refs/tags/main.zip",
       "modVersion": "2.1",
       "committedAt": "2026-08-04T07:40:39Z"
     }
