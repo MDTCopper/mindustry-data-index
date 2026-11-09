@@ -76,7 +76,8 @@ null 字段不写；没有 `minGameVersion` 的条目丢弃。
 ### 版本与门禁
 
 - `mindustry/versions.json`：全部正式版 + 最新 BE，字段兼容启动器 `MindustryReleaseListSnapshot`；
-  每个资产带 `sha256`（GitHub API asset digest）。最新 BE 会自动跳过没有 jar 产物的失败 build。
+  资产 `sha256` 为**可选**：GitHub API 只对新上传资产提供 digest，老资产/源码归档没有就不写。
+  最新 BE 会自动跳过没有 jar 产物的失败 build。
 - `mindustry/recommended-java.json`：游戏主版本号（jar 内 `number`）→ 推荐 Java 大版本规则 +
   Copper 加载器最低 Java；启动器不用再硬编码。
 - 门禁拆成两份：普通/脚本模组读 `mod-gate.json`，Java 模组读 `java-gate.json`；
