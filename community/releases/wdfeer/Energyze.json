@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "wdfeer/Energyze",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "energyze",
+    "author": "wdfeer",
+    "description": "Mindustry Kotlin mod adding energized materials. Android compatibility WIP.",
+    "version": "0.5.4",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "energyze.Energyze",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.5.4",
@@ -36,19 +51,5 @@
       "downloadCount": 360,
       "releasedAt": "2024-10-06T11:30:12Z"
     }
-  ],
-  "meta": {
-    "name": "energyze",
-    "author": "wdfeer",
-    "description": "Mindustry Kotlin mod adding energized materials. Android compatibility WIP.",
-    "version": "0.5.4",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "energyze.Energyze",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

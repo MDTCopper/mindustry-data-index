@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "b-919/water-reflections",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "b919-waterreflection",
+    "author": "B919",
+    "description": "Water Reflection shader all water surfaces now have reflections. Fully Configurable compatible with Android and PC.",
+    "version": "2.1.1",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "b919.WaterMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.1.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.1/WaterReflections.jar",
+      "sha256": "8586edbabf463e528fb32d0cb3b8a478d9b8822589b099ab163aa2a7f8a41bc3",
       "modVersion": "2.1.1",
       "sizeBytes": 42972,
       "downloadCount": 109,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.1.0/WaterReflections2.jar",
+      "sha256": "ce3b8b88310bc5a5882338be808b4344f19b9edd216683701a7bba74d28fdd3c",
       "modVersion": "1.1.0",
       "sizeBytes": 21889,
       "downloadCount": 2,
@@ -47,24 +64,11 @@
         }
       ],
       "downloadUrl": "https://github.com/b-919/Water-Reflections/releases/download/v2.0.0/WaterReflections2.jar",
+      "sha256": "60f43fb70400bc9405b53a0e7ead06c829dd73ce28c71d79f93ac9eaefadafb4",
       "modVersion": "1.1.0",
       "sizeBytes": 22698,
       "downloadCount": 21,
       "releasedAt": "2026-10-02T15:44:23Z"
     }
-  ],
-  "meta": {
-    "name": "b919-waterreflection",
-    "author": "B919",
-    "description": "Water Reflection shader all water surfaces now have reflections. Fully Configurable compatible with Android and PC.",
-    "version": "2.1.1",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "b919.WaterMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

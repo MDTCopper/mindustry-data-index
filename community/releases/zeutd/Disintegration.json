@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "zeutd/Disintegration",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "disintegration",
+    "author": "zeutd",
+    "description": "A Mindustry Java mod.",
+    "version": "0.1.0",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "disintegration.DisintegrationJavaMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "b0.2.3",
@@ -140,19 +155,5 @@
       "releasedAt": "2022-12-09T11:11:29Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "disintegration",
-    "author": "zeutd",
-    "description": "A Mindustry Java mod.",
-    "version": "0.1.0",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "disintegration.DisintegrationJavaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

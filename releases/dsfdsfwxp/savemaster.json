@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "dsfdsfwxp/savemaster",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "json",
+  "meta": {
+    "name": "savemaster",
+    "author": "dsfwxp",
+    "description": "A plugin mod for Mindustry that gives you more control over your saves: back up and restore a whole save (maps, schematics and progress settings included), edit the maps inside a save or a backup without leaving the game, keep several independent players on one device, and sync a save between devices with a cloud save server you host yourself. It adds no game content and does not affect net multiplayer. More details in the GitHub repo.",
+    "version": "1.5.4",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "1.5.4",
@@ -15,9 +30,10 @@
         }
       ],
       "downloadUrl": "https://github.com/DSFdsfWxp/savemaster/releases/download/1.5.4/savemaster_1.5.4.zip",
+      "sha256": "c3fd650e77c903929ab21871edc4512d1e2ef7c9f262203d46183ed7077b698b",
       "modVersion": "1.5.4",
       "sizeBytes": 26019,
-      "downloadCount": 68,
+      "downloadCount": 69,
       "releasedAt": "2026-09-15T17:56:13Z"
     },
     {
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/DSFdsfWxp/savemaster/releases/download/1.5.3/savemaster_1.5.3.zip",
+      "sha256": "e49201f04ed0a15626e120fac39ac1c5cc0f66673a365385b114d0045f3da453",
       "modVersion": "1.5.3",
       "sizeBytes": 24758,
       "downloadCount": 36,
@@ -84,19 +101,5 @@
       "downloadCount": 9,
       "releasedAt": "2024-03-09T14:44:22Z"
     }
-  ],
-  "meta": {
-    "name": "savemaster",
-    "author": "dsfwxp",
-    "description": "A plugin mod for Mindustry that gives you more control over your saves: back up and restore a whole save (maps, schematics and progress settings included), edit the maps inside a save or a backup without leaving the game, keep several independent players on one device, and sync a save between devices with a cloud save server you host yourself. It adds no game content and does not affect net multiplayer. More details in the GitHub repo.",
-    "version": "1.5.4",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

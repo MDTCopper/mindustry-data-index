@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "BlackDeluxeCat/MiTour-Lib",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "mitour-lib",
+    "author": "BlackDeluxeCat",
+    "description": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
+    "version": "0.4.0",
+    "minGameVersion": "149",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mt.MiTourLib",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.4.0",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.4.0/MiTour-Lib.0.4.0-149.jar",
+      "sha256": "0e4331dab2a4c9b5fc49961a48a443153536c0db7c7e2afc49968dd2c523bead",
       "modVersion": "0.4.0",
       "sizeBytes": 57412,
       "downloadCount": 759,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/BlackDeluxeCat/MiTour-Lib/releases/download/0.3/MiTour-Lib.0.3-149.jar",
+      "sha256": "8cf55989eb4bc57076a723d2f8a495c7e8416285352f02570b7d7989127568f6",
       "modVersion": "0.3.0",
       "sizeBytes": 65981,
       "downloadCount": 54,
@@ -164,19 +181,5 @@
       "downloadCount": 12,
       "releasedAt": "2023-02-11T02:01:21Z"
     }
-  ],
-  "meta": {
-    "name": "mitour-lib",
-    "author": "BlackDeluxeCat",
-    "description": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
-    "version": "0.4.0",
-    "minGameVersion": "149",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mt.MiTourLib",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

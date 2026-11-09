@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "huanxefh/fluid-cells",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "fcell",
+    "author": "MaboroshiX",
+    "description": "\nAutomatically adds fluid cell items for every fluid in game, including those from mods.\n",
+    "version": "105",
+    "minGameVersion": "156",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": true,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v105",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/HuanXefh/Fluid-Cells/releases/download/v105/mabo-fluid-cells-v105.zip",
+      "sha256": "414a55129e4ee8f3e259d31d00137fce855bdb920e7b674d49e62d7feff73040",
       "modVersion": "105",
       "sizeBytes": 21626,
       "downloadCount": 3,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/HuanXefh/Fluid-Cells/releases/download/v103/mabo-fluid-cells-v103.zip",
+      "sha256": "cbc38ed338e35ef2eb53d74b67bb88f64b78e0d86486c7f9774b41ef2bfeff12",
       "modVersion": "103",
       "sizeBytes": 21526,
       "downloadCount": 14,
@@ -47,6 +64,7 @@
         }
       ],
       "downloadUrl": "https://github.com/HuanXefh/Fluid-Cells/releases/download/v102/mabo-fluid-cells-v102.zip",
+      "sha256": "5900f7082e315465f3f8129098ab4ad4136d29d911ee3afc63d28cdcf099e5d3",
       "modVersion": "102",
       "sizeBytes": 21431,
       "downloadCount": 16,
@@ -63,24 +81,11 @@
         }
       ],
       "downloadUrl": "https://github.com/HuanXefh/Fluid-Cells/releases/download/v101/mabo-fluid-cells-v101.zip",
+      "sha256": "bd5dabf4161bae4364582d6d6c811a3012d04d7891dcbc176e5fec840958096f",
       "modVersion": "101",
       "sizeBytes": 20687,
       "downloadCount": 14,
       "releasedAt": "2026-06-22T11:54:34Z"
     }
-  ],
-  "meta": {
-    "name": "fcell",
-    "author": "MaboroshiX",
-    "description": "\nAutomatically adds fluid cell items for every fluid in game, including those from mods.\n",
-    "version": "105",
-    "minGameVersion": "156",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": true,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

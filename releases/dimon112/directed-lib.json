@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "dimon112/directed-lib",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "directed-lib",
+    "author": "Chmonya",
+    "description": "A library and utility mod providing directional output crafters and custom drawers for Mindustry, [accent]suggested by oscillatorium[]",
+    "version": "0.9",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "directedlib.DirectedLibMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.9",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/dimon112/Directed-Lib/releases/download/0.9/Directed-Lib.jar",
+      "sha256": "b26feb5268ec366f7a85cd4b8d4cccd8c1cad9ce1800f939d457f56bd7a13aaa",
       "modVersion": "0.9",
       "sizeBytes": 19722,
       "downloadCount": 217,
       "releasedAt": "2026-10-18T08:07:12Z"
     }
-  ],
-  "meta": {
-    "name": "directed-lib",
-    "author": "Chmonya",
-    "description": "A library and utility mod providing directional output crafters and custom drawers for Mindustry, [accent]suggested by oscillatorium[]",
-    "version": "0.9",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "directedlib.DirectedLibMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "I-hope1/mod.make",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "mod make",
+    "author": "I hope...",
+    "description": "\n此mod分离自mod tools.\nFixed a lot of bugs.\n",
+    "version": "1.4.3",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "modmake.ModMake",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.4.3",
@@ -87,19 +102,5 @@
       "releasedAt": "2022-05-12T07:44:36Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "mod make",
-    "author": "I hope...",
-    "description": "\n此mod分离自mod tools.\nFixed a lot of bugs.\n",
-    "version": "1.4.3",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "modmake.ModMake",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

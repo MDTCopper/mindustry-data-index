@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "mohamedgonem/core-expander",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "Core Expander",
+    "author": "Mohamed Gonem",
+    "description": "Adds a 3x3 block that slowly converts terrain to core-compatible floor.",
+    "version": "1",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v1.0.0",
@@ -18,19 +33,5 @@
       "modVersion": "1",
       "releasedAt": "2026-09-15T09:08:17Z"
     }
-  ],
-  "meta": {
-    "name": "Core Expander",
-    "author": "Mohamed Gonem",
-    "description": "Adds a 3x3 block that slowly converts terrain to core-compatible floor.",
-    "version": "1",
-    "minGameVersion": "160",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

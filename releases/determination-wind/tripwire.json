@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/tripwire",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "Tripwire-dev",
+    "author": "DeterMination",
+    "description": "Tripwire geofence alerts for Mindustry. Mindustry 地理围栏报警模组。",
+    "version": "1.1.1",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "tripwire.TripwireMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.1",
@@ -52,19 +67,5 @@
       "downloadCount": 1721,
       "releasedAt": "2026-05-28T14:56:57Z"
     }
-  ],
-  "meta": {
-    "name": "Tripwire-dev",
-    "author": "DeterMination",
-    "description": "Tripwire geofence alerts for Mindustry. Mindustry 地理围栏报警模组。",
-    "version": "1.1.1",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "tripwire.TripwireMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

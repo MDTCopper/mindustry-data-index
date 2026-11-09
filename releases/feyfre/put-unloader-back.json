@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "feyfre/put-unloader-back",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "putunloaderback",
+    "author": "FeyFre",
+    "description": "Puts unloader block back into 'effects' category.",
+    "version": "0.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "PutUnloaderBack.PutUnloaderBackMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.1",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/FeyFre/put-unloader-back/releases/download/0.1/put-unloader-back.jar",
+      "sha256": "b191be5ae2c04939196cbddc2252727d48dbe197855483ddb0bd67fdaa030376",
       "modVersion": "0.1",
       "sizeBytes": 43588,
       "downloadCount": 415,
       "releasedAt": "2026-01-08T21:14:56Z"
     }
-  ],
-  "meta": {
-    "name": "putunloaderback",
-    "author": "FeyFre",
-    "description": "Puts unloader block back into 'effects' category.",
-    "version": "0.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "PutUnloaderBack.PutUnloaderBackMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

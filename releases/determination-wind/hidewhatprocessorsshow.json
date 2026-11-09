@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/hidewhatprocessorsshow",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "HideWhatProcessorsShow",
+    "author": "DeterMination-Wind",
+    "description": "通过两个独立快捷键隐藏世界处理器特效与动态 Marker，不修改地图逻辑。\nUse separate hotkeys to hide world processor effects and dynamic markers without changing map logic.",
+    "version": "1.0.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "hidewhatprocessorsshow.HideWhatProcessorsShowMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.0",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/DeterMination-Wind/HideWhatProcessorsShow/releases/download/v1.0.0/HideWhatProcessorsShow.jar",
+      "sha256": "abe0b6e765a22286e6fb8d793bef78f8a8002f8481d0145e681db632deb541ef",
       "modVersion": "1.0.0",
       "sizeBytes": 27662,
       "downloadCount": 41,
       "releasedAt": "2026-08-17T17:44:31Z"
     }
-  ],
-  "meta": {
-    "name": "HideWhatProcessorsShow",
-    "author": "DeterMination-Wind",
-    "description": "通过两个独立快捷键隐藏世界处理器特效与动态 Marker，不修改地图逻辑。\nUse separate hotkeys to hide world processor effects and dynamic markers without changing map logic.",
-    "version": "1.0.0",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "hidewhatprocessorsshow.HideWhatProcessorsShowMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

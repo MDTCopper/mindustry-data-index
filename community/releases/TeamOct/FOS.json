@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "TeamOct/FOS",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "fos",
+    "author": "Team Oct",
+    "description": "A mod focused on space exploration.",
+    "version": "1.1 beta build-2.2",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "fos.core.FOSMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1-public-beta-2.2",
@@ -68,19 +83,5 @@
       "downloadCount": 1263,
       "releasedAt": "2024-04-21T19:23:58Z"
     }
-  ],
-  "meta": {
-    "name": "fos",
-    "author": "Team Oct",
-    "description": "A mod focused on space exploration.",
-    "version": "1.1 beta build-2.2",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "fos.core.FOSMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

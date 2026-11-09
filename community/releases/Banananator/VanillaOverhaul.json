@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Banananator/VanillaOverhaul",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "bettervanillamod",
+    "author": "Banananator",
+    "description": "Better visuals? Not only that!",
+    "version": "V9",
+    "minGameVersion": "150.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "VO.VOLoader",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "V9",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Banananator/VanillaOverhaul/releases/download/V9/VanillaOverhaul.jar",
+      "sha256": "e1ee47f6d68beeee53ad181382463a1bebac14bae312bd5a337736775618f647",
       "modVersion": "V9",
       "sizeBytes": 247855,
       "downloadCount": 112,
@@ -149,19 +165,5 @@
       "downloadCount": 132,
       "releasedAt": "2024-10-25T06:51:41Z"
     }
-  ],
-  "meta": {
-    "name": "bettervanillamod",
-    "author": "Banananator",
-    "description": "Better visuals? Not only that!",
-    "version": "V9",
-    "minGameVersion": "150.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "VO.VOLoader",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "PiggyChu620/MindustryMineableAlloys",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "ma620",
+    "author": "PiggyChu620",
+    "description": "Make all alloys/intermetallic directly mineable, currently only works on Serpulo and editor",
+    "version": "1",
+    "minGameVersion": "140",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "ma620.MA620Mod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "mindustry-mod",
@@ -20,19 +35,5 @@
       "downloadCount": 1692,
       "releasedAt": "2023-04-02T16:14:23Z"
     }
-  ],
-  "meta": {
-    "name": "ma620",
-    "author": "PiggyChu620",
-    "description": "Make all alloys/intermetallic directly mineable, currently only works on Serpulo and editor",
-    "version": "1",
-    "minGameVersion": "140",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "ma620.MA620Mod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

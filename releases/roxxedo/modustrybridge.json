@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "roxxedo/modustrybridge",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "modustrybridge",
+    "author": "Roxxedo",
+    "description": "Install mods from Modustry Website",
+    "version": "0.1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "br.com.roxcom.modustrybridge.ModustryBridge",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1-beta",
@@ -15,25 +30,12 @@
         }
       ],
       "downloadUrl": "https://github.com/Roxxedo/ModustryBridge/releases/download/v0.1-beta/ModustryBridge.jar",
+      "sha256": "200a26b81e851c576b799afaaaf19dd77920462f0af4b5056c0a6b295e25d093",
       "modVersion": "0.1",
       "sizeBytes": 134659,
       "downloadCount": 80,
       "releasedAt": "2026-06-24T11:27:17Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "modustrybridge",
-    "author": "Roxxedo",
-    "description": "Install mods from Modustry Website",
-    "version": "0.1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "br.com.roxcom.modustrybridge.ModustryBridge",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

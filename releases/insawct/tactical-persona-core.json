@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "insawct/tactical-persona-core",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "tpc",
+    "author": "Insawct",
+    "description": "Imprint your units with a specialized combat doctrines known as TPC. Theyre automatically added to units for now. Under development.",
+    "version": "0.1",
+    "minGameVersion": "159.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v0.1",
@@ -15,25 +30,12 @@
         }
       ],
       "downloadUrl": "https://github.com/insawct/tactical-persona-core/releases/download/v0.1/tpc-v0.1.zip",
+      "sha256": "b7bb874778886df514e8bae32d6b1be1ce2b5ccc8b346da245497826c6a9c0b0",
       "modVersion": "0.1",
       "sizeBytes": 100720,
       "downloadCount": 1,
       "releasedAt": "2026-07-20T14:42:28Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "tpc",
-    "author": "Insawct",
-    "description": "Imprint your units with a specialized combat doctrines known as TPC. Theyre automatically added to units for now. Under development.",
-    "version": "0.1",
-    "minGameVersion": "159.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

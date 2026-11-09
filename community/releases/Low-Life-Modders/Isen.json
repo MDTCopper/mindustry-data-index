@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Low-Life-Modders/Isen",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "isen",
+    "author": "[red]CamoGekko [white]and [blue]LiterallyJustMindustryModder",
+    "description": "A mod aiming to add a more grind-y experience to the game",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "src.isen.IsenJavaMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.1",
@@ -21,19 +36,5 @@
       "releasedAt": "2024-02-07T21:20:52Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "isen",
-    "author": "[red]CamoGekko [white]and [blue]LiterallyJustMindustryModder",
-    "description": "A mod aiming to add a more grind-y experience to the game",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "src.isen.IsenJavaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

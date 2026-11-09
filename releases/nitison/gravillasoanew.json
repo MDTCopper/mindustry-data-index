@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "nitison/gravillasoanew",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "gr",
+    "author": "NiTiSon",
+    "description": "Early indev version.",
+    "version": "v3.42",
+    "minGameVersion": "160.5",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "nitis.gravillaso.GravillasoMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "3.42-indev.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.2/GravillasoAnew.jar",
+      "sha256": "84b565f723a80b6cb306976cac303733bbf7b830d542ec529cdc89a340b66b23",
       "modVersion": "v3.42",
       "sizeBytes": 1453475,
       "downloadCount": 3,
@@ -32,6 +48,7 @@
         }
       ],
       "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.1/GravillasoAnew.jar",
+      "sha256": "370620229f3ef5035f8990f81f03b30c888cf97fb462a9a242445f766b9faab3",
       "modVersion": "v3.42",
       "sizeBytes": 688949,
       "downloadCount": 5,
@@ -49,25 +66,12 @@
         }
       ],
       "downloadUrl": "https://github.com/NiTiSon/GravillasoAnew/releases/download/3.42-indev.0/GravillasoAnew.jar",
+      "sha256": "b8aee3a1af94b904bd30580b0c6f345f176a39c1c9a842d23f86b2781b23782d",
       "modVersion": "v3.42",
       "sizeBytes": 1298741,
       "downloadCount": 11,
       "releasedAt": "2026-09-21T23:56:54Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "gr",
-    "author": "NiTiSon",
-    "description": "Early indev version.",
-    "version": "v3.42",
-    "minGameVersion": "160.5",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "nitis.gravillaso.GravillasoMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

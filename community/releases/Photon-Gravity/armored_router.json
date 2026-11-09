@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Photon-Gravity/armored_router",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "armored-router",
+    "author": "Photon_Gravity",
+    "description": "Implements a new transportation block that fixes an injustice.",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "armoredRouter.ArmoredRouterMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -20,19 +35,5 @@
       "downloadCount": 482,
       "releasedAt": "2024-09-29T17:56:20Z"
     }
-  ],
-  "meta": {
-    "name": "armored-router",
-    "author": "Photon_Gravity",
-    "description": "Implements a new transportation block that fixes an injustice.",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "armoredRouter.ArmoredRouterMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

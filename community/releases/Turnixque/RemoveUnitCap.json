@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Turnixque/RemoveUnitCap",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "ruc",
+    "author": "Arsen1yGD",
+    "description": "Mod that removes unit cap for player (host) team. If  ran on a server, it'll remove the cap only for sharded team.",
+    "version": "1.1",
+    "minGameVersion": "149",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "ruc.RemoveUnitCap",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Turnixque/RemoveUnitCap/releases/download/v1.1/RemoveUnitCap.jar",
+      "sha256": "fc9ca940b50a6531872ab2f74b47b61e29a6f684a33e49afe071d4ba61a3b01f",
       "modVersion": "1.1",
       "sizeBytes": 2361475,
       "downloadCount": 809,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/Turnixque/RemoveUnitCap/releases/download/v1.0/RemoveUnitCap.jar",
+      "sha256": "0ba6bfb8b0595ea46cbb24e997f738ba25ed8796f23347c2aec7c9323dd654f1",
       "modVersion": "1",
       "sizeBytes": 2359704,
       "downloadCount": 40,
       "releasedAt": "2025-05-31T18:39:49Z"
     }
-  ],
-  "meta": {
-    "name": "ruc",
-    "author": "Arsen1yGD",
-    "description": "Mod that removes unit cap for player (host) team. If  ran on a server, it'll remove the cap only for sharded team.",
-    "version": "1.1",
-    "minGameVersion": "149",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "ruc.RemoveUnitCap",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

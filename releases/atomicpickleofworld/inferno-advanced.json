@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "atomicpickleofworld/inferno-advanced",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "inferno-advanced",
+    "author": "[#FF5733]AtomicPickle",
+    "description": "A Mindustry Java mod.",
+    "version": "alpha build 2.5",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "infernoadvanced.InfernoAdvancedMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "beta",
@@ -15,25 +30,12 @@
         }
       ],
       "downloadUrl": "https://github.com/Atomicpickleofworld/Inferno-Advanced/releases/download/beta/InfernoAdvanced.jar",
+      "sha256": "3f2a9056fbcc30ce1c921d00f11a51332e1c60b850c9ed496ce19f57c19df14e",
       "modVersion": "alpha build 2.5",
       "sizeBytes": 1230079,
       "downloadCount": 8,
       "releasedAt": "2026-04-26T06:08:35Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "inferno-advanced",
-    "author": "[#FF5733]AtomicPickle",
-    "description": "A Mindustry Java mod.",
-    "version": "alpha build 2.5",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "infernoadvanced.InfernoAdvancedMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

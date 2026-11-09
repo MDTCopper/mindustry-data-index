@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "nvcbl/CustomVersionText",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "cvt",
+    "author": "nvcbl",
+    "description": "Changes the version text under the logo in the main menu to the text in Settings > Game > Version Text.\n\nMenu may become out of date or come from the future. this is because the code for the menu is pulled straight from the github code.",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "cvt.Main",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.3",
@@ -68,19 +83,5 @@
       "downloadCount": 55,
       "releasedAt": "2023-12-09T11:49:07Z"
     }
-  ],
-  "meta": {
-    "name": "cvt",
-    "author": "nvcbl",
-    "description": "Changes the version text under the logo in the main menu to the text in Settings > Game > Version Text.\n\nMenu may become out of date or come from the future. this is because the code for the menu is pulled straight from the github code.",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "cvt.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

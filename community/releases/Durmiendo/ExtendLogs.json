@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Durmiendo/ExtendLogs",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "extended-logs",
+    "author": "Durmiendo",
+    "description": "",
+    "version": "v1",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "org.durmiendo.extlogs.Main",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v146.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Durmiendo/ExtendLogs/releases/download/v146.2/org.durmiendo.extlogs-ExtendLogs-v1.jar",
+      "sha256": "e584cd30c85f58163efb0bdd67119216a7161e94020e370b3d228db14278ba91",
       "modVersion": "v1",
       "sizeBytes": 11283,
       "downloadCount": 82,
@@ -52,19 +68,5 @@
       "downloadCount": 5,
       "releasedAt": "2025-05-29T16:36:21Z"
     }
-  ],
-  "meta": {
-    "name": "extended-logs",
-    "author": "Durmiendo",
-    "description": "",
-    "version": "v1",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "org.durmiendo.extlogs.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

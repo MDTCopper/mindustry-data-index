@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Nezerit6/Extended-Walls",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "extended-walls",
+    "author": "Nezerit6",
+    "description": "Adds new wall sizes to both Serpulo and Erekir! All existing wall types now include 3x3 (Huge) and 4x4 (Gigantic) variants",
+    "version": "1.1",
+    "minGameVersion": "153",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "extwalls.ExtendedWallsMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Nezerit6/Extended-Walls/releases/download/v1.1/Extended-Walls.jar",
+      "sha256": "dbad4a95081c05cad2ab7c034bd14de2442c9bb0e3a64937534bb4c5a3283034",
       "modVersion": "1.1",
       "sizeBytes": 69384,
       "downloadCount": 270,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Nezerit6/Extended-Walls/releases/download/v1/Extended-Walls.jar",
+      "sha256": "2e945a4eaa8f9124f29e2624965639b1d35dec15d3f7156f5b5dbaa113971c9b",
       "modVersion": "1",
       "sizeBytes": 69782,
       "downloadCount": 33,
@@ -52,19 +69,5 @@
       "downloadCount": 1302,
       "releasedAt": "2024-08-31T07:34:00Z"
     }
-  ],
-  "meta": {
-    "name": "extended-walls",
-    "author": "Nezerit6",
-    "description": "Adds new wall sizes to both Serpulo and Erekir! All existing wall types now include 3x3 (Huge) and 4x4 (Gigantic) variants",
-    "version": "1.1",
-    "minGameVersion": "153",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "extwalls.ExtendedWallsMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

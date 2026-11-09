@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "roit-liasp/spacedustry",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "SpaceDustry",
+    "author": "roit",
+    "description": "An overhaul expansion for Ekir. SpaceDustry introduces a realistic space-era tech tree built entirely on Ekir's unique chemistry and harsh environment.",
+    "version": "0.3b",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "com.roit.spacedustry.SpaceDustry",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.3b",
@@ -15,25 +30,12 @@
         }
       ],
       "downloadUrl": "https://github.com/Roit-liasp/SpaceDustry/releases/download/v0.3b/SpaceDustryMod.0.3.jar",
+      "sha256": "9925c81968bd36bdc63fd41a9be37ae67df4c6faf07a209c9033fd2c4eeef985",
       "modVersion": "0.3b",
       "sizeBytes": 118814,
       "downloadCount": 24,
       "releasedAt": "2026-08-21T14:49:11Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "SpaceDustry",
-    "author": "roit",
-    "description": "An overhaul expansion for Ekir. SpaceDustry introduces a realistic space-era tech tree built entirely on Ekir's unique chemistry and harsh environment.",
-    "version": "0.3b",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "com.roit.spacedustry.SpaceDustry",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

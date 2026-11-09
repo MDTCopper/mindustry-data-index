@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "paul-mrsch/minclaude",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "minclaude",
+    "author": "pmrsch",
+    "description": "Suivi des ressources dans le temps (graphiques, flux exacts, prévisions, objectifs, alertes) et dashboard de gestion (énergie, industries, défense). Plus de 15 ressources, industries, bâtiments, unités alliées et ennemis pour Serpulo, et une IA ennemie qui vise vos points faibles, attaque en escouades et s'adapte à vos défenses.",
+    "version": "1.1.0",
+    "minGameVersion": "160.4",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "minclaude.MinClaudeMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1.0",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Paul-Mrsch/MinClaude/releases/download/v1.1.0/MinClaude.jar",
+      "sha256": "a50b15d8c7c533c79a1d53e9bbfdd07881bc865f87a3916940cf0b2c806ea2c7",
       "modVersion": "1.1.0",
       "sizeBytes": 392155,
       "downloadCount": 20,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/Paul-Mrsch/MinClaude/releases/download/v1.0.0/MinClaude.jar",
+      "sha256": "1f9182cc5b367803d176fb5d5e247e319bf38b0541a079d079b3c23911c7b83d",
       "modVersion": "1.0.0",
       "sizeBytes": 361813,
       "downloadCount": 17,
       "releasedAt": "2026-10-06T07:14:14Z"
     }
-  ],
-  "meta": {
-    "name": "minclaude",
-    "author": "pmrsch",
-    "description": "Suivi des ressources dans le temps (graphiques, flux exacts, prévisions, objectifs, alertes) et dashboard de gestion (énergie, industries, défense). Plus de 15 ressources, industries, bâtiments, unités alliées et ennemis pour Serpulo, et une IA ennemie qui vise vos points faibles, attaque en escouades et s'adapte à vos défenses.",
-    "version": "1.1.0",
-    "minGameVersion": "160.4",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "minclaude.MinClaudeMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "MinChat-official/MinChat",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "minchat",
+    "author": "Mnemotechnician",
+    "description": "\nThe first mod adding a global mindustry chat.\n\nTHIS MOD IS CURRENTLY IN THE BETA-STAGE! YOU CAN USE IT BUT EXPECT VARIOUS BUGS AND RAPID CHANGES!\nYou can see the roadmap in the \"TODO.md\" file on github!\n\nAccessing the chat ui:\nOn desktop, press the ` key on your keyboard, or use the gui buttons.\nOn mobile, press the \"Minchat\" button either in the main menu or in-game to do the same.\n\nThere are various tutorials that will guide you through the user interface of this mod.\n",
+    "version": "v0.7.5-beta",
+    "minGameVersion": "137",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "io.minchat.client.MinchatMod",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.7.5",
@@ -308,19 +323,5 @@
       "downloadCount": 15,
       "releasedAt": "2023-04-05T19:39:55Z"
     }
-  ],
-  "meta": {
-    "name": "minchat",
-    "author": "Mnemotechnician",
-    "description": "\nThe first mod adding a global mindustry chat.\n\nTHIS MOD IS CURRENTLY IN THE BETA-STAGE! YOU CAN USE IT BUT EXPECT VARIOUS BUGS AND RAPID CHANGES!\nYou can see the roadmap in the \"TODO.md\" file on github!\n\nAccessing the chat ui:\nOn desktop, press the ` key on your keyboard, or use the gui buttons.\nOn mobile, press the \"Minchat\" button either in the main menu or in-game to do the same.\n\nThere are various tutorials that will guide you through the user interface of this mod.\n",
-    "version": "v0.7.5-beta",
-    "minGameVersion": "137",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "io.minchat.client.MinchatMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

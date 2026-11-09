@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "deltanedas/ldb",
-  "generatedAt": "2026-11-07T10:29:52.073Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "ldb",
+    "author": "DeltaNedas",
+    "description": "Adds clientside logic debugging tools.\n[stat]Requires [#00aaff]DeltaNedas/override-lib[].",
+    "version": "1.3.1",
+    "minGameVersion": "120",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "1.3.1",
@@ -30,19 +45,5 @@
       "downloadUrl": "https://github.com/deltanedas/ldb/archive/refs/tags/1.3.0.zip",
       "modVersion": "1.3.0"
     }
-  ],
-  "meta": {
-    "name": "ldb",
-    "author": "DeltaNedas",
-    "description": "Adds clientside logic debugging tools.\n[stat]Requires [#00aaff]DeltaNedas/override-lib[].",
-    "version": "1.3.1",
-    "minGameVersion": "120",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

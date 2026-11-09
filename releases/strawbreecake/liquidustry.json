@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "strawbreecake/liquidustry",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "liquidustry",
+    "author": "StrawbreeCake",
+    "description": "Transport liquids with drones!",
+    "version": "1.0.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "liquidustry.LiquiDustryMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/StrawbreeCake/LiquiDustry/releases/download/v1.0/LiquiDustryDesktop.jar",
+      "sha256": "949eb9fba4a1abf2c1e30565139bf19476a3ca16f59ae0b9d1dc10ffb98edb70",
       "modVersion": "1.0.0",
       "sizeBytes": 74726,
       "downloadCount": 194,
       "releasedAt": "2026-05-25T03:43:14Z"
     }
-  ],
-  "meta": {
-    "name": "liquidustry",
-    "author": "StrawbreeCake",
-    "description": "Transport liquids with drones!",
-    "version": "1.0.0",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "liquidustry.LiquiDustryMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "stabu-dev/SchemeInspect",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "scheminspect",
+    "author": "Goobrr, _StaBU_",
+    "description": "Fork of the deleted Goober's modification with little upgrades and bug fixes.",
+    "version": "0",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "scheminspect.SchemInspect",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -20,19 +35,5 @@
       "downloadCount": 15943,
       "releasedAt": "2023-08-14T10:23:59Z"
     }
-  ],
-  "meta": {
-    "name": "scheminspect",
-    "author": "Goobrr, _StaBU_",
-    "description": "Fork of the deleted Goober's modification with little upgrades and bug fixes.",
-    "version": "0",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "scheminspect.SchemInspect",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

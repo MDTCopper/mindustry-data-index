@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "EvDes190/Derpulo",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "ds",
+    "author": "EvDes",
+    "description": "\n[red]Мод создан для людей без личной жизни.\nThe mod was created for a people with no life.\n\n\n[white]Ru: Мод добавляет усложненную версию [#5932eb]Серпуло[white]. Изменения:\n\n        -Все второстепенные сектора имеют [red]вражеские базы [white]и [red]истребляющую угрозу[white].\n        -Сектор имеет [red]маленький шанс [white]быть атакованным, даже если не имеет рядом вражеских баз.\n\nСоветую сбросить исследования перед игрой на новой планете.\n[red]Мод находится на стадии тестирования.[blue] Вы можете дать идей для улучшения мода в GitHub или в Discord - evdes#0000.\n\n--------------------------\n\nEng: The mod adds a complicated version of [#5932eb]Serpulo[red]. Changes:\n\n        -All secondary sectors have [red]enemy bases [white]and [red]eradication threat[white].\n        -The sector has a [red]small chance [white]of attack, even if it does not have any enemy bases nearby.\n\nI advise you to reset your researches before playing on a new planet.\n[red]The mod is at the testing stage.[white] You can give ideas for improving the mod in GitHub or in Discord - evdes#0000.\n",
+    "version": "0.9.4.2",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "derpulo.Derpulo",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.9.4.2Beta",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/EvDes190/Derpulo/releases/download/v0.9.4.2Beta/Derpulo.jar",
+      "sha256": "b5dae1c5eaa86a32011e0d0a1c246dc3f7ab4a2e5cbfa6079ff087a2906abd63",
       "modVersion": "0.9.4.2",
       "sizeBytes": 85481,
       "downloadCount": 204,
@@ -100,19 +116,5 @@
       "downloadCount": 9,
       "releasedAt": "2024-06-15T13:08:37Z"
     }
-  ],
-  "meta": {
-    "name": "ds",
-    "author": "EvDes",
-    "description": "\n[red]Мод создан для людей без личной жизни.\nThe mod was created for a people with no life.\n\n\n[white]Ru: Мод добавляет усложненную версию [#5932eb]Серпуло[white]. Изменения:\n\n        -Все второстепенные сектора имеют [red]вражеские базы [white]и [red]истребляющую угрозу[white].\n        -Сектор имеет [red]маленький шанс [white]быть атакованным, даже если не имеет рядом вражеских баз.\n\nСоветую сбросить исследования перед игрой на новой планете.\n[red]Мод находится на стадии тестирования.[blue] Вы можете дать идей для улучшения мода в GitHub или в Discord - evdes#0000.\n\n--------------------------\n\nEng: The mod adds a complicated version of [#5932eb]Serpulo[red]. Changes:\n\n        -All secondary sectors have [red]enemy bases [white]and [red]eradication threat[white].\n        -The sector has a [red]small chance [white]of attack, even if it does not have any enemy bases nearby.\n\nI advise you to reset your researches before playing on a new planet.\n[red]The mod is at the testing stage.[white] You can give ideas for improving the mod in GitHub or in Discord - evdes#0000.\n",
-    "version": "0.9.4.2",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "derpulo.Derpulo",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

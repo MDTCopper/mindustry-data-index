@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Slotterleet/invasion-warning",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "invasion-warning",
+    "author": "Slotterleet",
+    "description": "A clientside Mindustry mod that warns you about building damage whenever it happens.",
+    "version": "1",
+    "minGameVersion": "141",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "iw.IWMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0.1",
@@ -20,19 +35,5 @@
       "downloadCount": 7799,
       "releasedAt": "2023-01-28T19:02:58Z"
     }
-  ],
-  "meta": {
-    "name": "invasion-warning",
-    "author": "Slotterleet",
-    "description": "A clientside Mindustry mod that warns you about building damage whenever it happens.",
-    "version": "1",
-    "minGameVersion": "141",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "iw.IWMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

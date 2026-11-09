@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "undefined-1026/mindustry_fieldmodifiermod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "fieldmodifier",
+    "author": "Bilibili:arknights player / Github:undefined-1026",
+    "description": "默认按“~”选择鼠标下的对象",
+    "version": "2",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mod.FieldModifierMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v3.0",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/undefined-1026/Mindustry_FieldModifierMod/releases/download/v3.0/FieldModifier.jar",
+      "sha256": "80ed1ab16087cbe040d35cb2b7c3174f3de818d60f506264d346b1737f4d777d",
       "modVersion": "2",
       "sizeBytes": 113475,
       "downloadCount": 23,
       "releasedAt": "2026-09-30T14:35:45Z"
     }
-  ],
-  "meta": {
-    "name": "fieldmodifier",
-    "author": "Bilibili:arknights player / Github:undefined-1026",
-    "description": "默认按“~”选择鼠标下的对象",
-    "version": "2",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mod.FieldModifierMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

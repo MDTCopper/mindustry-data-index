@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "SwiftCris/Mindustry",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "test-mindustry-java-nod",
+    "author": "rndunel",
+    "description": "",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "example.ExampleJavaMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/SwiftCris/Mindustry/releases/download/2.1/Mindustry.jar",
+      "sha256": "1feab462300e98c186aa054a4554dd067f1aad0dc7589e08aa06fb5bac7bd33b",
       "modVersion": "1",
       "sizeBytes": 161835,
       "downloadCount": 15,
@@ -32,6 +48,7 @@
         }
       ],
       "downloadUrl": "https://github.com/SwiftCris/Mindustry/releases/download/2.0/Mindustry.jar",
+      "sha256": "650d4337d5c58a8c065f52d3a1e2ee8a6dbbb995e5d9ad2fe1da8c05f65e58b7",
       "modVersion": "1",
       "sizeBytes": 151110,
       "downloadCount": 5,
@@ -49,25 +66,12 @@
         }
       ],
       "downloadUrl": "https://github.com/SwiftCris/Mindustry/releases/download/1.0/Mindustry.jar",
+      "sha256": "08f18efd38aa5e2618b142b2d0e5d53db3fb48c42be87090ca82398a3e84eeee",
       "modVersion": "1",
       "sizeBytes": 141377,
       "downloadCount": 13,
       "releasedAt": "2025-06-06T15:21:51Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "test-mindustry-java-nod",
-    "author": "rndunel",
-    "description": "",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "example.ExampleJavaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

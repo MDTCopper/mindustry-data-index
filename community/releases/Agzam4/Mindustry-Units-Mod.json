@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Agzam4/Mindustry-Units-Mod",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "agzam4mod-units",
+    "author": "Agzam4",
+    "description": "Hide units hotkey & button",
+    "version": "1.1",
+    "minGameVersion": "142",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "agzam4.UnitsMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2",
@@ -52,19 +67,5 @@
       "downloadCount": 117,
       "releasedAt": "2023-03-10T12:41:16Z"
     }
-  ],
-  "meta": {
-    "name": "agzam4mod-units",
-    "author": "Agzam4",
-    "description": "Hide units hotkey & button",
-    "version": "1.1",
-    "minGameVersion": "142",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "agzam4.UnitsMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Goobrr/Esoterum-II",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "eso",
+    "author": "@Goob_rr",
+    "description": "A mod that adds logic components to the game, such as logic gates, wires and more.",
+    "version": "1",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "esoterum.Esoterum",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.0.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Goobrr/Esoterum-II/releases/download/2.0.1/Esoterum-II.jar",
+      "sha256": "fc6dcb4c881e290b4df090d6fa9b070446cafccac821fdb52659e88f4a74312f",
       "modVersion": "1",
       "sizeBytes": 526108,
       "downloadCount": 400,
@@ -196,19 +212,5 @@
       "downloadCount": 8,
       "releasedAt": "2025-02-21T20:40:43Z"
     }
-  ],
-  "meta": {
-    "name": "eso",
-    "author": "@Goob_rr",
-    "description": "A mod that adds logic components to the game, such as logic gates, wires and more.",
-    "version": "1",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "esoterum.Esoterum",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

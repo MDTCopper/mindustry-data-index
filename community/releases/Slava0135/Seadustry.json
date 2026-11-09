@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Slava0135/Seadustry",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "seadustry",
+    "author": "Slava0135",
+    "description": "Survive on sand island and expand by placing land on water around ",
+    "version": "2.0",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "seadustry.Seadustry",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.0",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Slava0135/Seadustry/releases/download/2.0/Seadustry.jar",
+      "sha256": "4bc1c74a259f277ba823663db3f156105f1338c72f527f1106cc114573c147b8",
       "modVersion": "2.0",
       "sizeBytes": 2770032,
       "downloadCount": 1980,
@@ -52,19 +68,5 @@
       "downloadCount": 4038,
       "releasedAt": "2021-04-04T19:48:18Z"
     }
-  ],
-  "meta": {
-    "name": "seadustry",
-    "author": "Slava0135",
-    "description": "Survive on sand island and expand by placing land on water around ",
-    "version": "2.0",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "seadustry.Seadustry",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

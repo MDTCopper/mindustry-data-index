@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Photon-Gravity/PolarForm",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "polar-form",
+    "author": "Photon_gravity",
+    "description": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "polarform.PolarMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Photon-Gravity/PolarForm/releases/download/v0.2/PolarFormDesktop.jar",
+      "sha256": "a94e8ac1aadfa620df773f9e2cf46833613ea7cac6cc46cd4f73416bce355d2d",
       "modVersion": "1",
       "sizeBytes": 789115,
       "downloadCount": 90,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/Photon-Gravity/PolarForm/releases/download/v0.1/PolarFormDesktop.jar",
+      "sha256": "a187e1f47a2e38d2cfe81751f14a7f78e6dfe71e5dec0b5eb52ea1949e086c24",
       "modVersion": "1",
       "sizeBytes": 427592,
       "downloadCount": 63,
       "releasedAt": "2025-12-15T12:43:13Z"
     }
-  ],
-  "meta": {
-    "name": "polar-form",
-    "author": "Photon_gravity",
-    "description": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "polarform.PolarMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

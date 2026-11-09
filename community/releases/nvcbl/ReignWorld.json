@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "nvcbl/ReignWorld",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "reign-world",
+    "author": "nvcbl",
+    "description": "Replaces all wave spawns with one of four T5s (primarily reigns). Yes that means you'll face a reign at wave 1 in ground zero.",
+    "version": "v1.0",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "reign.Main",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1",
@@ -20,19 +35,5 @@
       "downloadCount": 427,
       "releasedAt": "2024-03-29T10:21:53Z"
     }
-  ],
-  "meta": {
-    "name": "reign-world",
-    "author": "nvcbl",
-    "description": "Replaces all wave spawns with one of four T5s (primarily reigns). Yes that means you'll face a reign at wave 1 in ground zero.",
-    "version": "v1.0",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "reign.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "lhDream/auto-translate",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "auto-translate",
+    "author": "lhDream",
+    "description": "A Mindustry auto translate mod.",
+    "version": "1",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "io.github.lhdream.AutoTranslate",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "V0.1.0-alpha",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.1.0-alpha/auto-translate.jar",
+      "sha256": "825e1e38439bf7e5f1b878bfb5181d60ccb0e6847af666b46a666ee8ff07cd4e",
       "modVersion": "1",
       "sizeBytes": 2871065,
       "downloadCount": 105,
@@ -32,6 +48,7 @@
         }
       ],
       "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.2-alpha/auto-translate.jar",
+      "sha256": "ccb13ab4513bd5c2d8930a77fa8ffe072e1d0f643aa505eebfb7b14575b8e779",
       "modVersion": "1",
       "sizeBytes": 2839623,
       "downloadCount": 25,
@@ -49,25 +66,12 @@
         }
       ],
       "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.0.1-alpha/auto-translate.jar",
+      "sha256": "d26ae17361717d44095110354304ab50ca90e11f17fa3595e71b34779825d94a",
       "modVersion": "1",
       "sizeBytes": 2834239,
       "downloadCount": 11,
       "releasedAt": "2025-08-16T21:51:52Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "auto-translate",
-    "author": "lhDream",
-    "description": "A Mindustry auto translate mod.",
-    "version": "1",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "io.github.lhdream.AutoTranslate",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "nullotte/ornamental",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "ornamental",
+    "author": "stillwaterkay",
+    "description": "Adds engine sound effects to flying and hovering units",
+    "version": "0.1.0",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "ornamental.Ornamental",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.1",
@@ -20,19 +35,5 @@
       "downloadCount": 159,
       "releasedAt": "2024-12-02T12:54:44Z"
     }
-  ],
-  "meta": {
-    "name": "ornamental",
-    "author": "stillwaterkay",
-    "description": "Adds engine sound effects to flying and hovering units",
-    "version": "0.1.0",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "ornamental.Ornamental",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

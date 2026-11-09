@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "middleegg/planwar",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "planwar",
+    "author": "[#00F7FFFF]Wailting\n[#8598BFF]shallow_smiles□",
+    "description": "警告目前模组没任何实质性内容 仅作为一个大框架所以无法游玩！!Warning: Currently, the mod does not have any substantial content and serves only as a general framework, so it cannot be played!!\nПредупреждение: в данный момент мод не содержит никакого существенного контента, он представляет собой лишь каркас, поэтому играть невозможно!!\n\n\n\n欢迎来到计划战争!\\n想要超多的工厂?你来对地方了!想要更多的单位炮塔墙壁?就是这里!或者是更多的机制?当然可以!\\n中小型类整合包式模组-计划战争-欢迎您-- \\n[gold]模组QQ群:294835498\nWelcome to Plan War! \nWant a plethora of factories? You've come to the right place! Want more units, turrets, walls? This is the place! Or perhaps more mechanics? Of course! Small and medium-sized integrated package-style module - Plan War - welcomes you! -- \n[gold] Discord:https://discord.gg/s3yUP2PKTK\nДобро пожаловать в План Войны!\n Хочешь огромное количество заводов? Ты в нужном месте! Хочешь больше единиц, башен, стен? Вот и место! Или больше механик? Конечно, можно! Средний/маленький интегрированный мод-План Войны-Ты в гостях-- [gold]VK Я ВКонтакте: vk.com/id1113061789\n\n请支持NuclearPower:Leak,Fn_zero这位模组作者帮我把我的模组上传到了这里\nPlease support:NuclearPower:Leak,This mod author(Fn_zero) helped me upload my mod here\nПожалуйста, поддержите: NuclearPower:Leak, автор этого мода (Fn_zero) помог мне загрузить мой мод здесь\n",
+    "version": "0.0.1",
+    "minGameVersion": "155",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "pw.PW",
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "OfficialVersion",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/OfficialVersion/PlanWar-Integrate-0.0.0.2.jar",
+      "sha256": "815535b03c89479674d5a0657aca9c228376582df0c5fe7d29588074f74e921c",
       "modVersion": "0.0.1",
       "sizeBytes": 24564096,
       "downloadCount": 11,
@@ -32,25 +48,12 @@
         }
       ],
       "downloadUrl": "https://github.com/middleegg/PlanWar/releases/download/First-Version/PlanWar-Integrate-0.0.0.1.jar",
+      "sha256": "63b0aceb007e1d933465bd37c56560e084b0a585c888b7fe9cb19143b16c6a70",
       "modVersion": "0.0.1",
       "sizeBytes": 23784449,
       "downloadCount": 4,
       "releasedAt": "2026-08-05T08:17:36Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "planwar",
-    "author": "[#00F7FFFF]Wailting\n[#8598BFF]shallow_smiles□",
-    "description": "警告目前模组没任何实质性内容 仅作为一个大框架所以无法游玩！!Warning: Currently, the mod does not have any substantial content and serves only as a general framework, so it cannot be played!!\nПредупреждение: в данный момент мод не содержит никакого существенного контента, он представляет собой лишь каркас, поэтому играть невозможно!!\n\n\n\n欢迎来到计划战争!\\n想要超多的工厂?你来对地方了!想要更多的单位炮塔墙壁?就是这里!或者是更多的机制?当然可以!\\n中小型类整合包式模组-计划战争-欢迎您-- \\n[gold]模组QQ群:294835498\nWelcome to Plan War! \nWant a plethora of factories? You've come to the right place! Want more units, turrets, walls? This is the place! Or perhaps more mechanics? Of course! Small and medium-sized integrated package-style module - Plan War - welcomes you! -- \n[gold] Discord:https://discord.gg/s3yUP2PKTK\nДобро пожаловать в План Войны!\n Хочешь огромное количество заводов? Ты в нужном месте! Хочешь больше единиц, башен, стен? Вот и место! Или больше механик? Конечно, можно! Средний/маленький интегрированный мод-План Войны-Ты в гостях-- [gold]VK Я ВКонтакте: vk.com/id1113061789\n\n请支持NuclearPower:Leak,Fn_zero这位模组作者帮我把我的模组上传到了这里\nPlease support:NuclearPower:Leak,This mod author(Fn_zero) helped me upload my mod here\nПожалуйста, поддержите: NuclearPower:Leak, автор этого мода (Fn_zero) помог мне загрузить мой мод здесь\n",
-    "version": "0.0.1",
-    "minGameVersion": "155",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "pw.PW",
-    "java": false,
-    "hasScripts": true,
-    "hasJava": true
-  }
+  ]
 }

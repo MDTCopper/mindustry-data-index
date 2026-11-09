@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "JiroCab/minimapAsButton",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "minimapbutton",
+    "author": "RushieWashie",
+    "description": "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Selecting Units/Factories across the screen/map!\n\nAll this can be turned off/on in settings!",
+    "version": "1.2",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "minimapbutton.MMBMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.2",
@@ -52,19 +67,5 @@
       "downloadCount": 2590,
       "releasedAt": "2024-01-29T14:31:37Z"
     }
-  ],
-  "meta": {
-    "name": "minimapbutton",
-    "author": "RushieWashie",
-    "description": "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Selecting Units/Factories across the screen/map!\n\nAll this can be turned off/on in settings!",
-    "version": "1.2",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "minimapbutton.MMBMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

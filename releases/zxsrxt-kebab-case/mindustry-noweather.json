@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "zxsrxt-kebab-case/mindustry-noweather",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "no-weather",
+    "author": "zxsrxt-kebab-case",
+    "description": "Quality-of-life pack: hide weather/fog/darkness, turret ranges, health bars, damage numbers, wave preview, power panel, ammo DPS stats, and a one-click miner that lays drills, bridges and water extractors. All client-side, safe on multiplayer servers.",
+    "version": "0.13.0",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "noweather.NoWeatherMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.13.0",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.13.0/no-weather-mod-0.13.0.jar",
+      "sha256": "d60ede8000d8300e8d4ef9ed5e0296bcdf053be8dc188d42909dc1a7183f8720",
       "modVersion": "0.13.0",
       "sizeBytes": 42868,
       "downloadCount": 244,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/zxsrxt-kebab-case/mindustry-noweather/releases/download/v0.12.2/no-weather-mod-0.12.2.jar",
+      "sha256": "84bb34ad44e845948abc6decacb43a974ba22354ac7b4d0be4e187332d7d63d6",
       "modVersion": "0.12.2",
       "sizeBytes": 42511,
       "downloadCount": 6,
       "releasedAt": "2026-06-10T19:20:07Z"
     }
-  ],
-  "meta": {
-    "name": "no-weather",
-    "author": "zxsrxt-kebab-case",
-    "description": "Quality-of-life pack: hide weather/fog/darkness, turret ranges, health bars, damage numbers, wave preview, power panel, ammo DPS stats, and a one-click miner that lays drills, bridges and water extractors. All client-side, safe on multiplayer servers.",
-    "version": "0.13.0",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "noweather.NoWeatherMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

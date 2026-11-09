@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "rt334/utility-pack",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "utility-pack",
+    "author": "Xiaobei",
+    "description": "实用功能合集：方块搜索（在方块选择菜单添加搜索栏，跨分类搜索所有合法方块，支持拼音）与多人暂停（允许其他玩家请求暂停/解除暂停，支持管理员与自定义白名单模式）。",
+    "version": "a0.1.0.0",
+    "minGameVersion": "155.4",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "utilitypack.UtilityPackMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "va0.1.1.0",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.1.0/UtilityPack.jar",
+      "sha256": "48b74df9c0f658f9dce115cc65ee78222f19ff4b1f100b5d4e05cf9790296d85",
       "modVersion": "a0.1.0.0",
       "sizeBytes": 335272,
       "downloadCount": 284,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.1/UtilityPack.jar",
+      "sha256": "a50387b7cda50ed848cf2572d315d183dd314130f607a086d3736926bbc64143",
       "modVersion": "a0.1.0.0",
       "sizeBytes": 304136,
       "downloadCount": 58,
@@ -47,24 +64,11 @@
         }
       ],
       "downloadUrl": "https://github.com/rt334/utility-pack/releases/download/va0.1.0.0/UtilityPack.jar",
+      "sha256": "5ea7d54f04b8ba5b64b884ab3473300ec54c3933a2dcf4932890929e8792a3e8",
       "modVersion": "a0.1.0.0",
       "sizeBytes": 304119,
       "downloadCount": 4,
       "releasedAt": "2026-08-26T13:47:52Z"
     }
-  ],
-  "meta": {
-    "name": "utility-pack",
-    "author": "Xiaobei",
-    "description": "实用功能合集：方块搜索（在方块选择菜单添加搜索栏，跨分类搜索所有合法方块，支持拼音）与多人暂停（允许其他玩家请求暂停/解除暂停，支持管理员与自定义白名单模式）。",
-    "version": "a0.1.0.0",
-    "minGameVersion": "155.4",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "utilitypack.UtilityPackMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

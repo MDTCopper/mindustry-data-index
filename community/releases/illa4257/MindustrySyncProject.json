@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "illa4257/MindustrySyncProject",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "mindustry-sync-project",
+    "author": "illa4257",
+    "description": "Java Mod for synchronization (for now only schematics).",
+    "version": "0.0.1",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "msp.MindustrySyncProject",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.0.1",
@@ -20,19 +35,5 @@
       "downloadCount": 299,
       "releasedAt": "2024-04-23T04:45:57Z"
     }
-  ],
-  "meta": {
-    "name": "mindustry-sync-project",
-    "author": "illa4257",
-    "description": "Java Mod for synchronization (for now only schematics).",
-    "version": "0.0.1",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "msp.MindustrySyncProject",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

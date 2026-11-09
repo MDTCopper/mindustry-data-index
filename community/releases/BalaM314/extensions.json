@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "BalaM314/extensions",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "extensions",
+    "author": "BalaM314",
+    "description": "Extends everything and improves the endgame by adding an extra tier of stuff.",
+    "version": "1",
+    "minGameVersion": "140.4",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "balam314.extensions.Extensions",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "alpha-1.0",
@@ -21,19 +36,5 @@
       "releasedAt": "2023-02-07T03:52:07Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "extensions",
-    "author": "BalaM314",
-    "description": "Extends everything and improves the endgame by adding an extra tier of stuff.",
-    "version": "1",
-    "minGameVersion": "140.4",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "balam314.extensions.Extensions",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

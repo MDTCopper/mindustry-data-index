@@ -1,23 +1,58 @@
 {
   "formatVersion": 3,
   "repo": "use-lessdev/devilized-lunarians-system",
-  "generatedAt": "2026-11-08T23:42:31.193Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
   "meta": {
     "name": "lunarians",
     "author": "Ron",
-    "description": "[purple]Domain expansion[] - Lunarians v3.81.2 (client-only, PC + mobile).\n\n[accent]Automation & Building[]\n- Auto Fill (beta) - Auto Drill - Auto Connect Conveyor - Conveyor Upgrade - Auto Container - Auto Set (config/slots)\n\n[accent]Units & Combat[]\n- Auto Unit - Auto Attack (Smart Path: fewer turrets/safer route to core, toggle; layer-by-layer formation with configurable delay) - Auto Defence - Auto Shield - Auto Heal - Auto Unit Heal - Auto Cargo - Auto Dock - Auto Moon - Formations\n\n[accent]Economy & Resources[]\n- Auto Economy - Resource Loss Warn - Production Alert - Energy Watch - Power Link - Miner Fix/Units - Used Area\n\n[accent]QoL & Utilities[]\n- FreeCam (beta) - Units Follow Camera (beta) - Schematic Placer/Panel - Proton Schematics - Enemy Core Alert - Weather Safe - Server Guard - Chat Commands\n- Unit Conversations (EN, toggle): 5 per unit type (kept, longer) + 5 unique per pair for all combinations, partner variation; T1-T3 playful, T4-T5 serious; square speech bubbles; proximity/crowd/player-aware\n\n[accent]Social/Hub[]\n- Lunarians Hub: global chat, presence, hub features.\n\n[lightgray]Author: Ron | Java mod | minGame 154 | hidden[]",
-    "version": "3.81.2",
+    "description": "[purple]Domain expansion[] - Lunarians v3.81.4 (client-only, PC + mobile).\n\n[accent]Automation & Building[]\n- Auto Fill (beta) - Auto Drill - Auto Connect Conveyor - Conveyor Upgrade - Auto Container - Auto Set (config/slots)\n\n[accent]Units & Combat[]\n- Auto Unit - Auto Attack (Smart Path: fewer turrets/safer route to core, toggle; layer-by-layer formation with configurable delay) - Formations: Line, Arc, Ring, Triangle, Diamond, Box, Chevron - Auto Defence - Auto Shield - Auto Heal - Auto Unit Heal - Auto Cargo - Auto Dock - Auto Moon - Formations\n\n[accent]Economy & Resources[]\n- Auto Economy - Resource Loss Warn - Production Alert - Energy Watch - Power Link - Miner Fix/Units - Used Area\n\n[accent]QoL & Utilities[]\n- FreeCam (beta) - Units Follow Camera (beta) - Schematic Placer/Panel - Proton Schematics - Enemy Core Alert - Weather Safe - Server Guard - Chat Commands\n- Unit Conversations (EN, toggle): 5 per unit type (kept, longer) + 5 unique per pair for all combinations, partner variation; T1-T3 playful, T4-T5 serious; square speech bubbles; proximity/crowd/player-aware\n\n[accent]Social/Hub[]\n- Lunarians Hub: global chat, presence, hub features.\n\n[lightgray]Author: Ron | Java mod | minGame 154 | hidden[]",
+    "version": "3.81.4",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
     "main": "lunarians.LunariansMod",
     "java": true,
+    "copper": false,
     "hasScripts": false,
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v3.81.4",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.81.4/Lunarians-v3.81.4-PC-Mobile.jar",
+      "sha256": "8b3fbc70945cdf779c296920b5a6552099e1120463d1ece058f2c8c8b721c797",
+      "modVersion": "3.81.4",
+      "sizeBytes": 1202864,
+      "downloadCount": 9,
+      "releasedAt": "2026-11-09T01:09:03Z"
+    },
+    {
+      "tag": "v3.81.3",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.81.3/Lunarians-v3.81.3-PC-Mobile.jar",
+      "sha256": "e357a594614750b7388286a7266faeda8bbec0d8fd7c5b4fa5c5f4512c51fa5d",
+      "modVersion": "3.81.3",
+      "sizeBytes": 1202659,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-09T00:55:33Z"
+    },
     {
       "tag": "v3.81.2",
       "kind": "release",
@@ -29,9 +64,10 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.81.2/Lunarians-v3.81.2-PC-Mobile.jar",
+      "sha256": "a5e54ae64f2cd94f20feb0e46a010c8b69dcef0b2f37878de1f9dcf7f7c23481",
       "modVersion": "3.81.2",
       "sizeBytes": 1201030,
-      "downloadCount": 1,
+      "downloadCount": 2,
       "releasedAt": "2026-11-08T22:44:54Z"
     },
     {
@@ -45,6 +81,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.81.1/Lunarians-v3.81.1-PC-Mobile.jar",
+      "sha256": "390fac131880b46c7d6c81410da048002af7d81086342568bb4b733a8da92c5e",
       "modVersion": "3.81.1",
       "sizeBytes": 1198332,
       "downloadCount": 9,
@@ -61,6 +98,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.81.0/Lunarians-v3.81.0-PC-Mobile.jar",
+      "sha256": "be3dca95801a5195309e2cc3e63ed4ca2bcf830a1d9ba54f1e552db6862e99b2",
       "modVersion": "3.81.0",
       "sizeBytes": 1198354,
       "downloadCount": 2,
@@ -77,6 +115,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.80.2/Lunarians-v3.80.2-PC-Mobile.jar",
+      "sha256": "82c306a5f42779fa6a0e289cd728c6c6ab8e0425bc49e6c28ef27e0c2f191745",
       "modVersion": "3.80.2",
       "sizeBytes": 1197559,
       "downloadCount": 12,
@@ -93,6 +132,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.80.1/Lunarians-v3.80.1-PC-Mobile.jar",
+      "sha256": "60b720965a450c37052809027379d62a215aadba9c3e54da260868309868640a",
       "modVersion": "3.80.1",
       "sizeBytes": 1191591,
       "downloadCount": 1,
@@ -109,6 +149,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.80.0/Lunarians-v3.80.0-PC-Mobile.jar",
+      "sha256": "9109c847b672a705f7185042ca10415102dd5d36dc7b852dd2b897851d39111a",
       "modVersion": "3.80.0",
       "sizeBytes": 1191180,
       "downloadCount": 3,
@@ -125,6 +166,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.79.0/Lunarians-v3.79.0-PC-Mobile.jar",
+      "sha256": "ff9d47b2931ebc8fdab281ed09b2097e08d3fc5a55a58bfa26de251b02a4e99a",
       "modVersion": "3.79.0",
       "sizeBytes": 1184895,
       "downloadCount": 1,
@@ -141,6 +183,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.78.2/Lunarians-v3.78.2-PC-Mobile.jar",
+      "sha256": "0b2db8b4a7bda02c4d673f0975cad1af2a6a2d52ef4ea0323a9b10776fde27f0",
       "modVersion": "3.78.2",
       "sizeBytes": 2320218,
       "downloadCount": 10,
@@ -157,6 +200,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.78.1/Lunarians-v3_78_0-PC-Mobile_1.jar",
+      "sha256": "edf52409f1df7a4c63221f13f99fbe7416ad592018afb42ecb74191cde1e06fe",
       "modVersion": "3.78.1",
       "sizeBytes": 1160108,
       "downloadCount": 4,
@@ -173,6 +217,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.78.0/Lunarians-v3_78_0-PC-Mobile_1.jar",
+      "sha256": "d3663a687cfaafd49e43df7898fec916452464411648230150eb7e5196ba84eb",
       "modVersion": "3.78.0",
       "sizeBytes": 1160108,
       "downloadCount": 1,

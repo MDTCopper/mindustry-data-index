@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "JiroCab/Caster-Ui-Java",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "caster-ui-java",
+    "author": "RushieWashie, WMF Industries",
+    "description": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind \n \n Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' \nconflicts with 'Ferlern/extended-UI'  \n\nPLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
+    "version": "5.3",
+    "minGameVersion": "140.4",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "casterui.CuiMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v7-5.3",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.3/Caster-Ui-Java-v7-5-3.jar",
+      "sha256": "577f88ae41ea9699da53b7c4cfdd99dfac9f63c0612fc07f7acf9b0c90120ea8",
       "modVersion": "5.3",
       "sizeBytes": 190003,
       "downloadCount": 754,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.2/Caster-Ui-Java-5-2.jar",
+      "sha256": "846bd721a81c4fc078a77d8b23f98436c2735f2033012d781c09ec14f51a3b2d",
       "modVersion": "5.2",
       "sizeBytes": 190074,
       "downloadCount": 120,
@@ -47,6 +64,7 @@
         }
       ],
       "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v7-5.1/Caster-Ui-Java-5.1.jar",
+      "sha256": "5ffc33ff9ab9414f68274575fd76771e01e9392a410ae54e73a3df0bb1ba681c",
       "modVersion": "5",
       "sizeBytes": 185362,
       "downloadCount": 390,
@@ -63,6 +81,7 @@
         }
       ],
       "downloadUrl": "https://github.com/JiroCab/Caster-Ui-Java/releases/download/v8-5.0/Caster-Ui-Java-5.0.jar",
+      "sha256": "057d570b18bca53c853a40256e440aeeca359e1125f041e8bfa291c94462ca6a",
       "modVersion": "5",
       "sizeBytes": 159693,
       "downloadCount": 287,
@@ -500,19 +519,5 @@
       "downloadCount": 44,
       "releasedAt": "2023-04-10T12:49:15Z"
     }
-  ],
-  "meta": {
-    "name": "caster-ui-java",
-    "author": "RushieWashie, WMF Industries",
-    "description": "Aming to make the client a bit better for casting! with ease of use, simplicity and elegance in mind \n \n Java rewrite of 'JiroCab/Caster-Ui' which was based off 'Ferlern/extended-UI' \nconflicts with 'Ferlern/extended-UI'  \n\nPLEASE DON'T THIS FOR AN ADVANTAGE IN PVP THANKS",
-    "version": "5.3",
-    "minGameVersion": "140.4",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "casterui.CuiMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "justVi333/svapipai-mod",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "svapipai",
+    "author": "DotVi",
+    "description": "\nMy first mod :)\n\n\nThe mod adds:\n- ore;\n- turrets and other defense blocks;\n- units;\n- some production and power blocks.\n\nLanguages:\n- en;\n- ru.\n\n\nFuture plans include adding more content for the new ore and add new planet.\n",
+    "version": "0.1",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "svapipai.Svapipai",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.1v",
@@ -20,19 +35,5 @@
       "downloadCount": 2677,
       "releasedAt": "2024-05-25T17:37:11Z"
     }
-  ],
-  "meta": {
-    "name": "svapipai",
-    "author": "DotVi",
-    "description": "\nMy first mod :)\n\n\nThe mod adds:\n- ore;\n- turrets and other defense blocks;\n- units;\n- some production and power blocks.\n\nLanguages:\n- en;\n- ru.\n\n\nFuture plans include adding more content for the new ore and add new planet.\n",
-    "version": "0.1",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "svapipai.Svapipai",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

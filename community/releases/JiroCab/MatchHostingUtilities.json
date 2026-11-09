@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "JiroCab/MatchHostingUtilities",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "match-hosting-utilities",
+    "author": "RushieWashie",
+    "description": "Aims hosting matches on the client a bit better! ",
+    "version": "1.2",
+    "minGameVersion": "140.4",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mhu.MhuMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/JiroCab/MatchHostingUtilities/releases/download/1.2/MatchHostingUtilities-1.2.jar",
+      "sha256": "843b9b708eea7716cdaaa1309437f7145552b4fb6486c732d76c449592cf9b47",
       "modVersion": "1.2",
       "sizeBytes": 82431,
       "downloadCount": 137,
@@ -52,19 +68,5 @@
       "downloadCount": 40,
       "releasedAt": "2025-02-03T15:58:29Z"
     }
-  ],
-  "meta": {
-    "name": "match-hosting-utilities",
-    "author": "RushieWashie",
-    "description": "Aims hosting matches on the client a bit better! ",
-    "version": "1.2",
-    "minGameVersion": "140.4",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mhu.MhuMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

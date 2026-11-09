@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "pproton96/cursorspoofer",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "cursor-spoofer",
+    "author": "PProton",
+    "description": "Hides your cursor from cheaters, now it will appear to always be on your unit, unless you try to shoot.",
+    "version": "1",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "pproton.CursorSpooferMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "alpha",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/PProton96/CursorSpoofer/releases/download/alpha/pproton-cursor-spoofer-v0.1-a.jar",
+      "sha256": "ff16a63c458a96614545e28d033493506e5bfb40e37aabfabfda23022d3cfa96",
       "modVersion": "1",
       "sizeBytes": 47287,
       "downloadCount": 358,
       "releasedAt": "2026-05-04T13:47:40Z"
     }
-  ],
-  "meta": {
-    "name": "cursor-spoofer",
-    "author": "PProton",
-    "description": "Hides your cursor from cheaters, now it will appear to always be on your unit, unless you try to shoot.",
-    "version": "1",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "pproton.CursorSpooferMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

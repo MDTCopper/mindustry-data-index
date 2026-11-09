@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "EB-wilson/UniverseCore",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "universe-core",
+    "author": "EBwilson",
+    "description": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github.\n\n一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
+    "version": "2.3.1",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "universecore.UncCore",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.3.1",
@@ -421,19 +436,5 @@
       "releasedAt": "2022-10-15T12:57:34Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "universe-core",
-    "author": "EBwilson",
-    "description": "testbuild.A advance library of mod, contains so many tools and method, please see the usage doc on github.\n\n一个高级的mod开发前置库，提供了很多有用的工具和方法，用法内容请参见github使用文档。",
-    "version": "2.3.1",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "universecore.UncCore",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

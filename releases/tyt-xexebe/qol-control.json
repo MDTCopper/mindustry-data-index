@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "tyt-xexebe/qol-control",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "qol-control",
+    "author": "TyTxexebe",
+    "description": "A lot of useful & QoL features\n\nyou can add your mlog codes in Mindustry directory /files/qol/mlog/ to use them with !mlog\n\nyou can add your regex in Mindustry directory /files/qol/mlog/regex.json to use it in !detector\n\nmore detailed mod info on github page, please give me a star :>\n\ndiscord: @tytxexebe",
+    "version": "7.12",
+    "minGameVersion": "159.5",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "main.js",
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v7.12",
@@ -322,19 +337,5 @@
       "downloadCount": 5,
       "releasedAt": "2026-05-21T21:56:49Z"
     }
-  ],
-  "meta": {
-    "name": "qol-control",
-    "author": "TyTxexebe",
-    "description": "A lot of useful & QoL features\n\nyou can add your mlog codes in Mindustry directory /files/qol/mlog/ to use them with !mlog\n\nyou can add your regex in Mindustry directory /files/qol/mlog/regex.json to use it in !detector\n\nmore detailed mod info on github page, please give me a star :>\n\ndiscord: @tytxexebe",
-    "version": "7.12",
-    "minGameVersion": "159.5",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "main.js",
-    "java": false,
-    "hasScripts": true,
-    "hasJava": true
-  }
+  ]
 }

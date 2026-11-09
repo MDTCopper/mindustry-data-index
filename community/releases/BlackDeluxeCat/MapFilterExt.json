@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "BlackDeluxeCat/MapFilterExt",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "MapFilterExt",
+    "author": "BlackDeluxeCat",
+    "description": "Added some useful map filters. \nAdded a powerful custom guide tool and advanced wave editor to map editor.",
+    "version": "1.8.1",
+    "minGameVersion": "149",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mfe.MapFilterExt",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.8.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/BlackDeluxeCat/MapFilterExt/releases/download/1.8.1/MapFilterExt.1.8.1-149.jar",
+      "sha256": "700b1461a9e079a4505259826e4bc76e373fc596eee7ac2883187acab6b983ce",
       "modVersion": "1.8.1",
       "sizeBytes": 272573,
       "downloadCount": 1980,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/BlackDeluxeCat/MapFilterExt/releases/download/1.8.0/MapFilterExt.1.8.0-149.jar",
+      "sha256": "ccc3ce5157e32cb92e0585fb9fc66e8376bc776571a4b6b97f73af9bbeedc8a8",
       "modVersion": "1.8.0",
       "sizeBytes": 279953,
       "downloadCount": 51,
@@ -388,19 +405,5 @@
       "downloadCount": 11,
       "releasedAt": "2022-12-07T06:55:04Z"
     }
-  ],
-  "meta": {
-    "name": "MapFilterExt",
-    "author": "BlackDeluxeCat",
-    "description": "Added some useful map filters. \nAdded a powerful custom guide tool and advanced wave editor to map editor.",
-    "version": "1.8.1",
-    "minGameVersion": "149",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "mfe.MapFilterExt",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

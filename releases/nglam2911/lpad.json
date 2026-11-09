@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "nglam2911/lpad",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "LPad",
+    "author": "NgLam2911",
+    "description": "Utility mod for Mindustry Landing Pad",
+    "version": "0.0.2",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "nglam2911.lpad.LPad",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.0.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.2/LPad-0.0.2.jar",
+      "sha256": "d90f754d17715c485ae2cfe23c1738be64ca1fbb213f39ccf7c14027084cfbb7",
       "modVersion": "0.0.2",
       "sizeBytes": 7479,
       "downloadCount": 222,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/NgLam2911/LPad/releases/download/0.0.1/LPad-0.0.1.jar",
+      "sha256": "33f2239dd6c40ef3dedb698760e22c63bd022da7c07ce403b98ec23c0d3881ab",
       "modVersion": "0.0.1",
       "sizeBytes": 7144,
       "downloadCount": 89,
       "releasedAt": "2026-04-25T04:21:38Z"
     }
-  ],
-  "meta": {
-    "name": "LPad",
-    "author": "NgLam2911",
-    "description": "Utility mod for Mindustry Landing Pad",
-    "version": "0.0.2",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "nglam2911.lpad.LPad",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

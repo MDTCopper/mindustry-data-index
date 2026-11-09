@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "576576/mdtc",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "mdtc-mod",
+    "author": "576576",
+    "description": "In-game MdtC logic editor with dual-pane layout. Compile .mdtc to .mdtcode in real-time.",
+    "version": "07efbc6",
+    "minGameVersion": "159",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "cn.sumitm.mdtc.mod.ModInterface",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "nightly",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/576576/mdtC/releases/download/nightly/mdtc-07efbc6-Desktop.jar",
+      "sha256": "8b29da3ad3f1405f35b64c5fe0b3b7f28122fc2ac73e8a7671f7a1fe9c5f7671",
       "modVersion": "07efbc6",
       "sizeBytes": 2411786,
       "downloadCount": 9,
@@ -32,24 +48,11 @@
         }
       ],
       "downloadUrl": "https://github.com/576576/mdtC/releases/download/alpha-c5a3def/mdtc-Alpha-c5a3def-Desktop.jar",
+      "sha256": "3e5ef127cb3d6a6696c1a72d54ff2cca438243026a96f9208eaac1c5cff7d720",
       "modVersion": "2.0.1",
       "sizeBytes": 2316375,
       "downloadCount": 1,
       "releasedAt": "2026-05-16T14:07:35Z"
     }
-  ],
-  "meta": {
-    "name": "mdtc-mod",
-    "author": "576576",
-    "description": "In-game MdtC logic editor with dual-pane layout. Compile .mdtc to .mdtcode in real-time.",
-    "version": "07efbc6",
-    "minGameVersion": "159",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "cn.sumitm.mdtc.mod.ModInterface",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

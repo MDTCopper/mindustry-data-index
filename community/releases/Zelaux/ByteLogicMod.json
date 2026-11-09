@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Zelaux/ByteLogicMod",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "byte-logic-mod",
+    "author": "Zelaux",
+    "description": "Adds byte logic blocks from v5",
+    "version": "v1.1.0",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "bytelogic.ByteLogicMod",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2.1",
@@ -84,19 +99,5 @@
       "downloadCount": 1149,
       "releasedAt": "2022-11-13T15:04:16Z"
     }
-  ],
-  "meta": {
-    "name": "byte-logic-mod",
-    "author": "Zelaux",
-    "description": "Adds byte logic blocks from v5",
-    "version": "v1.1.0",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "bytelogic.ByteLogicMod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

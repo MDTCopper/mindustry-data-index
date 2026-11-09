@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "FlinTyX/AutoResearch",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "js",
+  "meta": {
+    "name": "auto-research",
+    "author": "Flin",
+    "description": "A simple mod that researches content automatically.\n\nAlgorithm description:\nLooks up for avaliable tech nodes with all the objectives completed, then sorts them by real cost.\n\nFirst of all it unlocks content like maps and items (with no costs), then it researches the cheapest node with the avaliable items in the planet.\n\nYou can disable the auto-research in Settings/Game/Auto Research",
+    "version": "Algorithm 1.2",
+    "minGameVersion": "141",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v1.2",
@@ -46,19 +61,5 @@
       "modVersion": "0.1 Algorithm",
       "releasedAt": "2022-04-18T01:18:20Z"
     }
-  ],
-  "meta": {
-    "name": "auto-research",
-    "author": "Flin",
-    "description": "A simple mod that researches content automatically.\n\nAlgorithm description:\nLooks up for avaliable tech nodes with all the objectives completed, then sorts them by real cost.\n\nFirst of all it unlocks content like maps and items (with no costs), then it researches the cheapest node with the avaliable items in the planet.\n\nYou can disable the auto-research in Settings/Game/Auto Research",
-    "version": "Algorithm 1.2",
-    "minGameVersion": "141",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

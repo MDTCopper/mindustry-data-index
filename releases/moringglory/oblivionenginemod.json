@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "moringglory/oblivionenginemod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "oblivion-engine",
+    "author": "Shiraelle",
+    "description": "[sky]Alpha oblivionengine Ver:1.0.1",
+    "version": "beta_0.1.1.95",
+    "minGameVersion": "157.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "oblivionengine.OblivionEngine",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "Beta",
@@ -15,25 +30,12 @@
         }
       ],
       "downloadUrl": "https://github.com/moringglory/OblivionEngineMod/releases/download/Beta/OblivionEngineMod.jar",
+      "sha256": "a13e3c2bd79330cc47e2db06bd49f016efe2cb2c13c142eee6817331f33262d8",
       "modVersion": "beta_0.1.1.95",
       "sizeBytes": 767238,
       "downloadCount": 20,
       "releasedAt": "2026-10-02T08:29:14Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "oblivion-engine",
-    "author": "Shiraelle",
-    "description": "[sky]Alpha oblivionengine Ver:1.0.1",
-    "version": "beta_0.1.1.95",
-    "minGameVersion": "157.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "oblivionengine.OblivionEngine",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

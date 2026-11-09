@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Lara-Evangelista/Earthquake-and-Asteroid-Mod",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "earthquake-asteroid-mod",
+    "author": "Lara Evangelista and Sofia Nunes",
+    "description": "An earthquake mod for Mindustry.",
+    "version": "1",
+    "minGameVersion": "150",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "EarthquakeAsteroidMod.MainMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "1.0",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/Lara-Evangelista/Earthquake-and-Asteroid-Mod/releases/download/1.0/Earthquake-and-Asteroid-Mod.jar",
+      "sha256": "d0aaf07eb49d36823ea15c039d5f85489a8155dc75d918fb2ec549d39021e19f",
       "modVersion": "1",
       "sizeBytes": 39101,
       "downloadCount": 51,
       "releasedAt": "2026-02-13T12:35:38Z"
     }
-  ],
-  "meta": {
-    "name": "earthquake-asteroid-mod",
-    "author": "Lara Evangelista and Sofia Nunes",
-    "description": "An earthquake mod for Mindustry.",
-    "version": "1",
-    "minGameVersion": "150",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "EarthquakeAsteroidMod.MainMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

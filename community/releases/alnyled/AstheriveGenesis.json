@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "alnyled/AstheriveGenesis",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "astherive-gen",
+    "author": "Astherive Team",
+    "description": "\nA Mindustry Java mod.\n\nUnder very early development.\n\nYes. this is what you're looking for.\n",
+    "version": "1",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "astherivegen.AstheriveGenMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0-dev",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/alnyled/AstheriveGenesis/releases/download/v1.0-dev/AstheriveGenesis.jar",
+      "sha256": "b3a854aed27fa00cc6b61856a601481e92067c9290ea0053b7234200cdfe4ef2",
       "modVersion": "1",
       "sizeBytes": 1466545,
       "downloadCount": 2750,
       "releasedAt": "2025-07-11T12:16:54Z"
     }
-  ],
-  "meta": {
-    "name": "astherive-gen",
-    "author": "Astherive Team",
-    "description": "\nA Mindustry Java mod.\n\nUnder very early development.\n\nYes. this is what you're looking for.\n",
-    "version": "1",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "astherivegen.AstheriveGenMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

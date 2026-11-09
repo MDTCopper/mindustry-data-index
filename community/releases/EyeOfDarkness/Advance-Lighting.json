@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "EyeOfDarkness/Advance-Lighting",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "advance-lighting",
+    "author": "EoD",
+    "description": "Not recommended for weak devices. Only supports Vanilla/Supported-Json content. This mod replaces/add some effects, and may cause issues with mods that actively check on those effects. May conflict with vanilla bloom.",
+    "version": "v1.5.4.0",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "lights.AdvanceLighting",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.5.4",
@@ -212,19 +227,5 @@
       "downloadCount": 564,
       "releasedAt": "2023-10-28T12:44:33Z"
     }
-  ],
-  "meta": {
-    "name": "advance-lighting",
-    "author": "EoD",
-    "description": "Not recommended for weak devices. Only supports Vanilla/Supported-Json content. This mod replaces/add some effects, and may cause issues with mods that actively check on those effects. May conflict with vanilla bloom.",
-    "version": "v1.5.4.0",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "lights.AdvanceLighting",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

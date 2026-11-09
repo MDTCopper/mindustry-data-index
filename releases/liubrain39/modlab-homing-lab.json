@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "liubrain39/modlab-homing-lab",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "modlab-homing",
+    "author": "ModLab",
+    "description": "A free single-player homing-missile workshop. Two copper turrets, one repeatable moving-target lab. Open ModLab Homing Lab from the main menu, or press F8. Built with Codex and the Universal Modder workflow.",
+    "version": "0.1.0",
+    "minGameVersion": "160.7",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v0.1.0",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/liubrain39/modlab-homing-lab/releases/download/v0.1.0/modlab-homing-lab-0.1.0.zip",
+      "sha256": "4048d28855e299342e2b9123c8b751bb1a09a0ad1909b717fadd639781850b3a",
       "modVersion": "0.1.0",
       "sizeBytes": 10926,
       "downloadCount": 5,
       "releasedAt": "2026-10-10T02:15:39Z"
     }
-  ],
-  "meta": {
-    "name": "modlab-homing",
-    "author": "ModLab",
-    "description": "A free single-player homing-missile workshop. Two copper turrets, one repeatable moving-target lab. Open ModLab Homing Lab from the main menu, or press F8. Built with Codex and the Universal Modder workflow.",
-    "version": "0.1.0",
-    "minGameVersion": "160.7",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

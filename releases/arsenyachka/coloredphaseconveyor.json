@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "arsenyachka/coloredphaseconveyor",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "colored-phase-conveyors",
+    "author": "ArSeNyaChka & vlabigro",
+    "description": "Adds the ability to change the bridge color of the phase conveyor.",
+    "version": "1",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "cpc.ColoredPhaseConveyors",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/ArSeNyaChka/ColoredPhaseConveyor/releases/download/v1.0/ColoredPhaseConveyor.jar",
+      "sha256": "fd17401f63651c07494539c21cb98b365d2cab1738457833d2b21b958d08eb5e",
       "modVersion": "1",
       "sizeBytes": 76215,
       "downloadCount": 120,
       "releasedAt": "2026-07-30T21:47:50Z"
     }
-  ],
-  "meta": {
-    "name": "colored-phase-conveyors",
-    "author": "ArSeNyaChka & vlabigro",
-    "description": "Adds the ability to change the bridge color of the phase conveyor.",
-    "version": "1",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "cpc.ColoredPhaseConveyors",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

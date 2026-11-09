@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "charhon/casino-mod",
-  "generatedAt": "2026-11-07T10:29:52.073Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "casino-mod",
+    "author": "Charhon",
+    "description": "RU:Добавляет блок Казино: ставь одни предметы на другие, шанс зависит от ценности предметов EN:This mod add block-Casino",
+    "version": "Beta Version",
+    "minGameVersion": "160.5",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "mindustry-mod",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Charhon/Casino-mod/releases/download/mindustry-mod/Casino.mod.zip",
+      "sha256": "2842e41fd16c6cf603656f10578b698bb7f57cdb7503f854a9d940c7790627f8",
       "modVersion": "Beta Version",
       "sizeBytes": 9269,
       "downloadCount": 4,
@@ -46,19 +62,5 @@
       "downloadUrl": "https://github.com/charhon/casino-mod/archive/refs/tags/Mindustry-mod.zip",
       "modVersion": "Beta Version"
     }
-  ],
-  "meta": {
-    "name": "casino-mod",
-    "author": "Charhon",
-    "description": "RU:Добавляет блок Казино: ставь одни предметы на другие, шанс зависит от ценности предметов EN:This mod add block-Casino",
-    "version": "Beta Version",
-    "minGameVersion": "160.5",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "ovulam5480/media2logic",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "mod",
+    "author": "Ovulam5480",
+    "description": "图片转逻辑模组, 图片只支持png格式 \n蓝图生成完成后请及时重启游戏, 释放内存 \n三角剖分低多边形算法思路来源于nce3xin, 三角剖分算法实现使用Tinfour库, \n爬山算法使用Geometrize库的思路",
+    "version": "1.0",
+    "minGameVersion": "159.7",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "Media2Logic.Media2LogicMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.1/Media2Logic.jar",
+      "sha256": "9b423c36b9696213f9dbd493cf93f66d9fd98aed257e719e0b1f1e646e2156e1",
       "modVersion": "1.0",
       "sizeBytes": 297655,
       "downloadCount": 40,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v1.0/Media2Logic.jar",
+      "sha256": "b28e668d2b4125c0060fed7525c4518891e1845d286b0ccb119c2a9b92bfbefd",
       "modVersion": "1.0",
       "sizeBytes": 294531,
       "downloadCount": 198,
@@ -47,6 +64,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.2/Media2Logic.jar",
+      "sha256": "e41c10846add556323fa203877fb1169ea43cc5880833fad911e3d2d0ca6570b",
       "modVersion": "0.2.2",
       "sizeBytes": 65739,
       "downloadCount": 104,
@@ -63,6 +81,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2.1/Media2Logic.jar",
+      "sha256": "f07897680618b1a97d704e1c6573a46a44843f37cc118b8eee2efadac6608ba3",
       "modVersion": "0.2",
       "sizeBytes": 65708,
       "downloadCount": 4,
@@ -79,6 +98,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.2/Media2Logic.jar",
+      "sha256": "092e7d994fee5a7e3596cf8e3d4902d4ae3f75d37cf64aa1d55d58a5dc5c0ff6",
       "modVersion": "0.2",
       "sizeBytes": 64420,
       "downloadCount": 6,
@@ -95,25 +115,12 @@
         }
       ],
       "downloadUrl": "https://github.com/Ovulam5480/Media2Logic/releases/download/v0.1/Media2Logic.jar",
+      "sha256": "9f08cdbb9e25dd083a106e171910cb4a897db91d176be4fdf9f38a1c2f61061a",
       "modVersion": "0.1",
       "sizeBytes": 62577,
       "downloadCount": 3,
       "releasedAt": "2025-07-02T13:04:37Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "mod",
-    "author": "Ovulam5480",
-    "description": "图片转逻辑模组, 图片只支持png格式 \n蓝图生成完成后请及时重启游戏, 释放内存 \n三角剖分低多边形算法思路来源于nce3xin, 三角剖分算法实现使用Tinfour库, \n爬山算法使用Geometrize库的思路",
-    "version": "1.0",
-    "minGameVersion": "159.7",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "Media2Logic.Media2LogicMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

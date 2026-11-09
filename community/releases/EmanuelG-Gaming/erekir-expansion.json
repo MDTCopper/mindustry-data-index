@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "EmanuelG-Gaming/erekir-expansion",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "erekir-expansion",
+    "author": "Emanuel G",
+    "description": "A Mindustry mod aimed to add content to the newly-added planet.",
+    "version": "0.75 Pre-Alpha",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "erekir.ErekirExpansion",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.75",
@@ -103,19 +118,5 @@
       "releasedAt": "2022-06-04T04:56:51Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "erekir-expansion",
-    "author": "Emanuel G",
-    "description": "A Mindustry mod aimed to add content to the newly-added planet.",
-    "version": "0.75 Pre-Alpha",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "erekir.ErekirExpansion",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

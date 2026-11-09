@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Pointifix/AutoTranslate",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "auto-translate",
+    "author": "Pointifix",
+    "description": "Automatically translates chat messages",
+    "version": "1",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "autotranslate.AutoTranslate",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.1",
@@ -36,19 +51,5 @@
       "downloadCount": 4854,
       "releasedAt": "2022-11-26T08:36:07Z"
     }
-  ],
-  "meta": {
-    "name": "auto-translate",
-    "author": "Pointifix",
-    "description": "Automatically translates chat messages",
-    "version": "1",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "autotranslate.AutoTranslate",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

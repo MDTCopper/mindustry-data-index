@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "byzp/line",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "line",
+    "author": "byzp",
+    "description": "联机mod，支持自定义frpc，目前仅支持Android aarch64(项目正在重构，暂不支持Windows amd64)",
+    "version": "2.2",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "byzp.line",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v2.2",
@@ -54,19 +69,5 @@
       "releasedAt": "2024-03-09T05:10:25Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "line",
-    "author": "byzp",
-    "description": "联机mod，支持自定义frpc，目前仅支持Android aarch64(项目正在重构，暂不支持Windows amd64)",
-    "version": "2.2",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "byzp.line",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Mythril382/ThisThing",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "this-thing",
+    "author": "Mythril",
+    "description": "Adds a few logic instructions. No other content for now.",
+    "version": "1.7.0",
+    "minGameVersion": "149",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "thing.ThisThing",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.7.0",
@@ -164,19 +179,5 @@
       "downloadCount": 11,
       "releasedAt": "2022-08-17T14:07:40Z"
     }
-  ],
-  "meta": {
-    "name": "this-thing",
-    "author": "Mythril",
-    "description": "Adds a few logic instructions. No other content for now.",
-    "version": "1.7.0",
-    "minGameVersion": "149",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "thing.ThisThing",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "radiancestorm/mindustry-corona-borealis",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "corona-borealis",
+    "author": "Radiance",
+    "description": "A planet shrouded in arcane mystery.",
+    "version": "1.0.0",
+    "minGameVersion": "160.3",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "coronaborealis.CoronaBorealisMain",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.1.4-alpha",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/RadianceStorm/Mindustry-Corona-Borealis/releases/download/0.1.4-alpha/Mindustry-Corona-Borealis.jar",
+      "sha256": "511cca5ed9034de36ed0c8187efec45ef46492f6eeee0824ee6adee67592b0a7",
       "modVersion": "1.0.0",
       "sizeBytes": 13534,
       "downloadCount": 74,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/RadianceStorm/Mindustry-Corona-Borealis/releases/download/v0.1.3-alpha/Mindustry-Corona-Borealis.jar",
+      "sha256": "ed4c8f85d0ec53251c76bba230f3ce3c81f0c57a78ca3a7a3f0887d37ba1157f",
       "modVersion": "1.0.0",
       "sizeBytes": 13460,
       "downloadCount": 1,
@@ -47,6 +64,7 @@
         }
       ],
       "downloadUrl": "https://github.com/RadianceStorm/Mindustry-Corona-Borealis/releases/download/v0.1.2-alpha/Mindustry-Corona-Borealis.jar",
+      "sha256": "b22c64d0337b00686ce35e20365ac5943eaf5808475e1a1b6d68f5b9895190fa",
       "modVersion": "1.0.0",
       "sizeBytes": 5771,
       "downloadCount": 5,
@@ -63,24 +81,11 @@
         }
       ],
       "downloadUrl": "https://github.com/RadianceStorm/Mindustry-Corona-Borealis/releases/download/v0.1.1-alpha/Mindustry-Corona-Borealis.jar",
+      "sha256": "33f8dc42f59ccc16a137d580f387a18fea3980a57b9717d64c838755fe23c343",
       "modVersion": "1.0.0",
       "sizeBytes": 7898,
       "downloadCount": 3,
       "releasedAt": "2026-09-26T02:54:59Z"
     }
-  ],
-  "meta": {
-    "name": "corona-borealis",
-    "author": "Radiance",
-    "description": "A planet shrouded in arcane mystery.",
-    "version": "1.0.0",
-    "minGameVersion": "160.3",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "coronaborealis.CoronaBorealisMain",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "lehanchic25/hardcore-mod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "js",
+  "meta": {
+    "name": "hardcore-mod",
+    "author": "Lehanchic25, Sputnuc",
+    "description": " A single JS script that makes game a lot harder. \n \n Thx Sputnic for optimization and the idea of changing statistics using js script \n \n This mod: \n 1. Makes all blocks cost 10 times more \n 2. Makes hp of blocks 10 times less \n 3. Makes itemCapacity in all Cores 10 times more (so you could place some blocks) \n 4. Makes buildCostMultiplier = 10 (so you can place blocks and not wait for eternity) \n 5. Idk makes early game a lil bit harder (drillTime of mechanicalDrill is *= 1.25)",
+    "version": "1.1",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "v1.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.1/hardcore-mod.zip",
+      "sha256": "54073979e83555fdaa2f9f8c79e102b3cdee7527a22a8bc7bfc2c497b6c44135",
       "modVersion": "1.1",
       "sizeBytes": 2335,
       "downloadCount": 24,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/Lehanchic25/hardcore-mod/releases/download/v1.0/hardcore-mod.zip",
+      "sha256": "743b3df35e26c93642e0284039635d982e8ce583be4f633b7930f31939be49d8",
       "modVersion": "1",
       "sizeBytes": 2320,
       "downloadCount": 2,
       "releasedAt": "2026-03-30T16:35:34Z"
     }
-  ],
-  "meta": {
-    "name": "hardcore-mod",
-    "author": "Lehanchic25, Sputnuc",
-    "description": " A single JS script that makes game a lot harder. \n \n Thx Sputnic for optimization and the idea of changing statistics using js script \n \n This mod: \n 1. Makes all blocks cost 10 times more \n 2. Makes hp of blocks 10 times less \n 3. Makes itemCapacity in all Cores 10 times more (so you could place some blocks) \n 4. Makes buildCostMultiplier = 10 (so you can place blocks and not wait for eternity) \n 5. Idk makes early game a lil bit harder (drillTime of mechanicalDrill is *= 1.25)",
-    "version": "1.1",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": true,
-    "hasJava": false
-  }
+  ]
 }

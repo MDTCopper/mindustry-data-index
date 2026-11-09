@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "trmuhittin/mindtranslator",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "MindTranslator",
+    "author": "LunarNetwork",
+    "description": "Translates chat messages in place: pick the language your messages are translated to, the language you write in, and the language incoming messages are translated to. Client-side only; works on any server. Prevents double translation with an invisible marker protocol, includes a passive mode for servers that already translate (e.g. foo-client servers), and runs alongside Mindustry Tool. Fully configurable in-game via the gear button in the top-left corner.",
+    "version": "2.2",
+    "minGameVersion": "159.7",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "translator.TranslatorPlugin",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "2.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.2/MindTranslator.jar",
+      "sha256": "0bd80efd4883cc128053ca6f09bca9891cf248dae1dede633b1861d6161272df",
       "modVersion": "2.2",
       "sizeBytes": 48940,
       "downloadCount": 292,
@@ -31,24 +47,11 @@
         }
       ],
       "downloadUrl": "https://github.com/TRMuhittin/MindTranslator/releases/download/2.0/MindTranslator.jar",
+      "sha256": "6ab0731572fa20c1848d89a7bfefd58e9e2a1d5ea981b2df519cd3a989b6e2a6",
       "modVersion": "2.0",
       "sizeBytes": 47368,
       "downloadCount": 27,
       "releasedAt": "2026-08-11T18:45:07Z"
     }
-  ],
-  "meta": {
-    "name": "MindTranslator",
-    "author": "LunarNetwork",
-    "description": "Translates chat messages in place: pick the language your messages are translated to, the language you write in, and the language incoming messages are translated to. Client-side only; works on any server. Prevents double translation with an invisible marker protocol, includes a passive mode for servers that already translate (e.g. foo-client servers), and runs alongside Mindustry Tool. Fully configurable in-game via the gear button in the top-left corner.",
-    "version": "2.2",
-    "minGameVersion": "159.7",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "translator.TranslatorPlugin",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

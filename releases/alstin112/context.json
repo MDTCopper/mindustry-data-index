@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "alstin112/context",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "context",
+    "author": "Alstin112 and Flintyx",
+    "description": "this mod add more command blocks to help mod-creators, inspired in \"testers\" by [royal]sk7725[]",
+    "version": "v1.0.1",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "context.Context",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.3.1",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Alstin112/Context/releases/download/v1.3.1/Context.jar",
+      "sha256": "237fc074255192e4c1f06a9c6389287df068b11932286f62d02ffb6495de049a",
       "modVersion": "v1.0.1",
       "sizeBytes": 308603,
       "downloadCount": 406,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Alstin112/Context/releases/download/v1.2.2/Context.jar",
+      "sha256": "4d74524d3ee65bfdeb41f7442c20f3d7ca8324ef5350d6a9f9eefb1c1abbeecc",
       "modVersion": "v1.0.1",
       "sizeBytes": 308196,
       "downloadCount": 4,
@@ -52,19 +69,5 @@
       "downloadCount": 1140,
       "releasedAt": "2024-08-17T07:02:21Z"
     }
-  ],
-  "meta": {
-    "name": "context",
-    "author": "Alstin112 and Flintyx",
-    "description": "this mod add more command blocks to help mod-creators, inspired in \"testers\" by [royal]sk7725[]",
-    "version": "v1.0.1",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "context.Context",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

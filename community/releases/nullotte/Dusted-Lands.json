@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "nullotte/Dusted-Lands",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "dusted-lands",
+    "author": "KayAyeAre",
+    "description": "A small mod which adds powders to the game, along with some of turrets, units, and other content.",
+    "version": "0.42",
+    "minGameVersion": "139",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "dusted.DustedLands",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v0.43",
@@ -148,19 +163,5 @@
       "downloadCount": 269,
       "releasedAt": "2022-05-17T12:04:01Z"
     }
-  ],
-  "meta": {
-    "name": "dusted-lands",
-    "author": "KayAyeAre",
-    "description": "A small mod which adds powders to the game, along with some of turrets, units, and other content.",
-    "version": "0.42",
-    "minGameVersion": "139",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "dusted.DustedLands",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

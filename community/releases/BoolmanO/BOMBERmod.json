@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "BoolmanO/BOMBERmod",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "BomberMod",
+    "author": "main developer: [white]ne[blue]kit[red]508",
+    "description": "Mod adds bomber unit tree.",
+    "version": "1b",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "core.Mod",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -52,19 +67,5 @@
       "downloadCount": 40,
       "releasedAt": "2022-07-05T09:34:11Z"
     }
-  ],
-  "meta": {
-    "name": "BomberMod",
-    "author": "main developer: [white]ne[blue]kit[red]508",
-    "description": "Mod adds bomber unit tree.",
-    "version": "1b",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "core.Mod",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "Dustdustry/JunctionAssistant",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "junction-assistant",
+    "author": "minRi2",
+    "description": "允许连接器寻路 [accent][2][]在传送带和连接器间替换成廉价的光传器件，可节省资源",
+    "version": "1",
+    "minGameVersion": "145",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "assistant.Main",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -20,19 +35,5 @@
       "downloadCount": 382,
       "releasedAt": "2024-10-02T11:37:25Z"
     }
-  ],
-  "meta": {
-    "name": "junction-assistant",
-    "author": "minRi2",
-    "description": "允许连接器寻路 [accent][2][]在传送带和连接器间替换成廉价的光传器件，可节省资源",
-    "version": "1",
-    "minGameVersion": "145",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "assistant.Main",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "meta-pentagon/lostdustry",
-  "generatedAt": "2026-11-08T23:42:31.193Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "json",
   "meta": {
     "name": "ld",
@@ -14,13 +14,14 @@
     "legacyCompatible": false,
     "main": null,
     "java": false,
+    "copper": false,
     "hasScripts": false,
     "hasJava": false
   },
   "versions": [
     {
       "tag": "main",
-      "kind": "source",
+      "kind": "tag",
       "minGameVersion": "146",
       "gameVersionRanges": [
         {
@@ -28,7 +29,7 @@
           "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/meta-pentagon/lostdustry/archive/refs/heads/main.zip",
+      "downloadUrl": "https://github.com/meta-pentagon/lostdustry/archive/refs/tags/main.zip",
       "modVersion": "0.1",
       "committedAt": "2026-11-08T19:46:56Z"
     }

@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "arcyde0078/mindustry-mobile-pause",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "mobile-pause",
+    "author": "ARCYDE",
+    "description": "Working pause button on mobile. The built-in mobile HUD pause button turns into a player-list toggle while you're hosting, instead of pausing.",
+    "version": "1.2",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "scripts/main",
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.2",
@@ -20,19 +35,5 @@
       "downloadCount": 9,
       "releasedAt": "2026-09-12T15:09:11Z"
     }
-  ],
-  "meta": {
-    "name": "mobile-pause",
-    "author": "ARCYDE",
-    "description": "Working pause button on mobile. The built-in mobile HUD pause button turns into a player-list toggle while you're hosting, instead of pausing.",
-    "version": "1.2",
-    "minGameVersion": "154",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "scripts/main",
-    "java": false,
-    "hasScripts": true,
-    "hasJava": true
-  }
+  ]
 }

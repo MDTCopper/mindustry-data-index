@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "mzdsrn/cte",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "changing-the-environment",
+    "author": "No one",
+    "description": "A Java mindustry mod that lets you modify the environment.",
+    "version": "1",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "cte.JavaMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "mindustry-mod",
@@ -15,24 +30,11 @@
         }
       ],
       "downloadUrl": "https://github.com/mzdsrn/cte/releases/download/mindustry-mod/cte.jar",
+      "sha256": "4699be4c71d85af79a98089e7856b205fa27df85af9e3dfb91defd0443a68653",
       "modVersion": "1",
       "sizeBytes": 56293,
       "downloadCount": 36,
       "releasedAt": "2026-09-19T10:22:05Z"
     }
-  ],
-  "meta": {
-    "name": "changing-the-environment",
-    "author": "No one",
-    "description": "A Java mindustry mod that lets you modify the environment.",
-    "version": "1",
-    "minGameVersion": "158",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "cte.JavaMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

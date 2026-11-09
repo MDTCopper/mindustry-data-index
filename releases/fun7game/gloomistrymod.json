@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "fun7game/gloomistrymod",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "java",
+  "meta": {
+    "name": "gloomustry",
+    "author": "Fun",
+    "description": "Мой первый мод, добавляющий новый контент и свою планету с кампанией (не рекомендуется ее сейчас проходить, потому что в настоящий момент она полностью поломана изза обновлений). \n  \n\nВерсия мода: 0.7.2\n\n\nПомогли в создании мода: Obsidian (сделал спрайты почти всех фабрик), \nTopyriot (сделал спрайты баз турелей).\n\n\nTelegram: @Thisispzdcnh",
+    "version": "0.7.2",
+    "minGameVersion": "146",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "Gloomistry.Tensarium",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "0.7.2",
@@ -174,19 +189,5 @@
       "releasedAt": "2024-04-20T10:04:54Z",
       "prerelease": true
     }
-  ],
-  "meta": {
-    "name": "gloomustry",
-    "author": "Fun",
-    "description": "Мой первый мод, добавляющий новый контент и свою планету с кампанией (не рекомендуется ее сейчас проходить, потому что в настоящий момент она полностью поломана изза обновлений). \n  \n\nВерсия мода: 0.7.2\n\n\nПомогли в создании мода: Obsidian (сделал спрайты почти всех фабрик), \nTopyriot (сделал спрайты баз турелей).\n\n\nTelegram: @Thisispzdcnh",
-    "version": "0.7.2",
-    "minGameVersion": "146",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": "Gloomistry.Tensarium",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

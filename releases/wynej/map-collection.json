@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "wynej/map-collection",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "json",
+  "meta": {
+    "name": "map-collection",
+    "author": "Wine",
+    "description": "A simple json mod that aims to be a curated repository for Mindustry maps. Currently, the mod has [stat[]]50 maps[[]]. Maps are fully vanilla compatible.\n\n[stat[]]I asked permission from each map creator before including them in the mod, see github README for full list of credits.\n\n[grey[]]b0.4 Changelog:\n Added 'Tar Maar' & 'Twin Oxbow' by uio",
+    "version": "b0.4",
+    "minGameVersion": "157",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "b0.4",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.4/map-collection-b0.4.zip",
+      "sha256": "e418ffa6bd860d991579cc2649b07fc005378c2f233ea31739d421017dd196d5",
       "modVersion": "b0.4",
       "sizeBytes": 2491406,
       "downloadCount": 2,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.3/map-collection-b0.3.zip",
+      "sha256": "39bb46673688f416d91599df7c6e96b933634c01827c8d18d03b561f2ad9b5a9",
       "modVersion": "b0.3",
       "sizeBytes": 2451658,
       "downloadCount": 7,
@@ -47,6 +64,7 @@
         }
       ],
       "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.2/map-collection-b0.2.zip",
+      "sha256": "636463041538dababd02fe5115e57e6ca2c0a091cb50bbb1335f7370902bb85a",
       "modVersion": "b0.2",
       "sizeBytes": 2283519,
       "downloadCount": 12,
@@ -63,24 +81,11 @@
         }
       ],
       "downloadUrl": "https://github.com/wynej/Map-Collection/releases/download/b0.1/map-collection-b0.1.zip",
+      "sha256": "7bf81979c183cefad2669f28bf485ebb298239f71d96d216e68385c364db23e6",
       "modVersion": "b0.1",
       "sizeBytes": 2117637,
       "downloadCount": 10,
       "releasedAt": "2026-07-01T12:36:43Z"
     }
-  ],
-  "meta": {
-    "name": "map-collection",
-    "author": "Wine",
-    "description": "A simple json mod that aims to be a curated repository for Mindustry maps. Currently, the mod has [stat[]]50 maps[[]]. Maps are fully vanilla compatible.\n\n[stat[]]I asked permission from each map creator before including them in the mod, see github README for full list of credits.\n\n[grey[]]b0.4 Changelog:\n Added 'Tar Maar' & 'Twin Oxbow' by uio",
-    "version": "b0.4",
-    "minGameVersion": "157",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

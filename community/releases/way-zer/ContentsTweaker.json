@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "way-zer/ContentsTweaker",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "ContentsTweaker",
+    "author": "WayZer",
+    "description": "Dynamic load custom contents patch account to server",
+    "version": "3.1.0",
+    "minGameVersion": "147",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "cf.wayzer.contentsTweaker.ModMain",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v3.1.2",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.2/ContentsTweaker-3.1.2.jar",
+      "sha256": "1648807a81330a6798357eed0789aba9c687256774c2c58126c1d7cc86c11a32",
       "modVersion": "3.1.0",
       "sizeBytes": 1915231,
       "downloadCount": 2806,
@@ -31,6 +47,7 @@
         }
       ],
       "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.1/ContentsTweaker-3.1.1.jar",
+      "sha256": "8361e4e480002fa83c236fc79728f89f8fe230423b9b0a9eeca927eeb3089783",
       "modVersion": "3.1.0",
       "sizeBytes": 1915231,
       "downloadCount": 26,
@@ -47,6 +64,7 @@
         }
       ],
       "downloadUrl": "https://github.com/way-zer/ContentsTweaker/releases/download/v3.1.0/ContentsTweaker-3.1.0.jar",
+      "sha256": "6db5e2401fe9d505459d2cd7ceb0c18a1ec13bf37d88255db727e866639c2b25",
       "modVersion": "@version@",
       "sizeBytes": 1912573,
       "downloadCount": 1348,
@@ -68,19 +86,5 @@
       "downloadCount": 2059,
       "releasedAt": "2024-08-04T06:54:03Z"
     }
-  ],
-  "meta": {
-    "name": "ContentsTweaker",
-    "author": "WayZer",
-    "description": "Dynamic load custom contents patch account to server",
-    "version": "3.1.0",
-    "minGameVersion": "147",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "cf.wayzer.contentsTweaker.ModMain",
-    "java": false,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }

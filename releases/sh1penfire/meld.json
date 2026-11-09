@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "sh1penfire/meld",
-  "generatedAt": "2026-11-07T09:29:05.249Z",
+  "generatedAt": "2026-11-09T04:55:14.539Z",
   "modType": "json",
+  "meta": {
+    "name": "meld",
+    "author": "Sh1penfire",
+    "description": "\n[accent[]]An experimental RTS mod. Features a rich environment and a unique cast of enemies to fight.[[]]\n\nTrudge through Ikaru, home to [[]#ea9ad6]Meld[[]]. Salvage the remains of previous incursions. Fend off the wildlife.\n\nPlay as a field commander. Rally tierless specialists to push back the flood of constructs.\n\n[[]red]DEFEND, TAKE GROUND, HARVEST, REPEAT[[]]\n\n[accent[]]Campaign is a demo for what's to come. Refer to the custom game maps once you've finished.[]\n\nThis type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D\n\nAlternatively, join the Meld discord server!\nhttps://discord.gg/eNynvuJXud[[]]\n\nTranslated to Russian by: [#006400]Dovintc[]\nCompletion: [red]~6%[]\n\n",
+    "version": "hjson gamma",
+    "minGameVersion": "151.1",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": false
+  },
   "versions": [
     {
       "tag": "aspectless-meld",
@@ -15,6 +30,7 @@
         }
       ],
       "downloadUrl": "https://github.com/Sh1penfire/Meld/releases/download/aspectless-meld/aspectless-meld.zip",
+      "sha256": "abea17f99d2d8ee19f19c2fb4e09030fe94ca7459913c77b00c4a55da5c79b48",
       "modVersion": "hjson gamma",
       "sizeBytes": 6365506,
       "downloadCount": 34,
@@ -69,19 +85,5 @@
       "downloadCount": 23,
       "releasedAt": "2024-07-30T06:58:08Z"
     }
-  ],
-  "meta": {
-    "name": "meld",
-    "author": "Sh1penfire",
-    "description": "\n[accent[]]An experimental RTS mod. Features a rich environment and a unique cast of enemies to fight.[[]]\n\nTrudge through Ikaru, home to [[]#ea9ad6]Meld[[]]. Salvage the remains of previous incursions. Fend off the wildlife.\n\nPlay as a field commander. Rally tierless specialists to push back the flood of constructs.\n\n[[]red]DEFEND, TAKE GROUND, HARVEST, REPEAT[[]]\n\n[accent[]]Campaign is a demo for what's to come. Refer to the custom game maps once you've finished.[]\n\nThis type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D\n\nAlternatively, join the Meld discord server!\nhttps://discord.gg/eNynvuJXud[[]]\n\nTranslated to Russian by: [#006400]Dovintc[]\nCompletion: [red]~6%[]\n\n",
-    "version": "hjson gamma",
-    "minGameVersion": "151.1",
-    "dependencies": {},
-    "hidden": false,
-    "legacyCompatible": false,
-    "main": null,
-    "java": false,
-    "hasScripts": false,
-    "hasJava": false
-  }
+  ]
 }

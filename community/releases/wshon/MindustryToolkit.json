@@ -1,8 +1,23 @@
 {
   "formatVersion": 3,
   "repo": "wshon/MindustryToolkit",
-  "generatedAt": "2026-11-07T09:38:50.520Z",
+  "generatedAt": "2026-11-09T05:08:06.929Z",
   "modType": "java",
+  "meta": {
+    "name": "toolkit",
+    "author": "wshon",
+    "description": "A Mindustry Java mod template.",
+    "version": "1",
+    "minGameVersion": "136",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "toolkit.ToolkitMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
   "versions": [
     {
       "tag": "v1.0",
@@ -20,19 +35,5 @@
       "downloadCount": 24098,
       "releasedAt": "2022-05-17T05:38:06Z"
     }
-  ],
-  "meta": {
-    "name": "toolkit",
-    "author": "wshon",
-    "description": "A Mindustry Java mod template.",
-    "version": "1",
-    "minGameVersion": "136",
-    "dependencies": {},
-    "hidden": true,
-    "legacyCompatible": false,
-    "main": "toolkit.ToolkitMod",
-    "java": true,
-    "hasScripts": false,
-    "hasJava": true
-  }
+  ]
 }
