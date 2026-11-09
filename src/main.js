@@ -1003,13 +1003,26 @@ async function processMod(context) {
       gateFile,
       generatedAt: now,
     });
-    if (nextFile.versions.length === 0 && modType !== 'java' && hasJava !== true) {
-      const previousSource = Array.isArray(previous?.versions)
-        ? previous.versions.find((item) => item.kind === 'source')
-        : null;
-      if (previousSource && !plan.full) {
+    const previousSources = Array.isArray(previous?.versions)
+      ? previous.versions.filter((item) => item.kind === 'source')
+      : [];
+    // 旧数据里 source 版本曾被重建成 tag（archive/refs/tags/main.zip），这里识别并修回
+    const legacySourceLike =
+      nextFile.versions.length > 0 &&
+      nextFile.versions.every(
+        (item) =>
+          item.kind === 'tag' &&
+          (item.tag === 'main' || item.tag === 'master') &&
+          /\/archive\/refs\/tags\/(?:main|master)\.zip$/.test(item.downloadUrl ?? ''),
+      );
+    if (
+      modType !== 'java' &&
+      hasJava !== true &&
+      (nextFile.versions.length === 0 || legacySourceLike)
+    ) {
+      if (previousSources.length > 0 && !legacySourceLike && !plan.full) {
         // 默认分支源码版本不会变（下载地址固定为分支归档），平时直接复用，月度全量再重读元数据
-        nextFile.versions.push(previousSource);
+        nextFile.versions = [previousSources[0]];
         nextFile.meta = previous.meta ?? fileMeta;
         nextFile.modType = previous.modType ?? nextFile.modType;
       } else {
@@ -1022,7 +1035,7 @@ async function processMod(context) {
           gateFile: compatData?.modGate,
         });
         if (source) {
-          nextFile.versions.push(source.version);
+          nextFile.versions = [source.version];
           nextFile.meta = source.meta;
           nextFile.modType = source.modType;
         }

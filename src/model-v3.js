@@ -154,6 +154,8 @@ export function buildV3Versions({
     let kind;
     if (isRelease && hasAssets) {
       kind = 'release';
+    } else if (entry.source === true && modType !== 'java') {
+      kind = 'source';
     } else if (modType !== 'java') {
       // 非 Java：无资产的 Release 也按源码归档下载（等价 tag 条目）
       kind = 'tag';
@@ -164,7 +166,9 @@ export function buildV3Versions({
     const downloadUrl =
       kind === 'release'
         ? pickDownloadUrl(assets, { hasJava: modType === 'java', archiveUrl })
-        : archiveUrl;
+        : kind === 'source'
+          ? entry.downloadUrl || archiveUrl
+          : archiveUrl;
     const ranges = computeGameVersionRanges({
       minGameVersion,
       gameVersions,
@@ -229,6 +233,7 @@ export function releasesFromVersions(file) {
       tag: version.tag,
       name: version.tag,
       hasRelease: kind === 'release',
+      source: version.kind === 'source',
       prerelease: version.prerelease === true ? true : null,
       publishedAt: version.releasedAt ?? null,
       committedAt: version.committedAt ?? null,
