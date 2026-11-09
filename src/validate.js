@@ -197,7 +197,7 @@ function validateV3VersionEntry(entry, { where, errors }) {
   }
   const allowed = new Set([
     'tag', 'kind', 'modVersion', 'minGameVersion', 'gameVersionRanges',
-    'releasedAt', 'committedAt', 'downloadUrl', 'sizeBytes', 'downloadCount',
+    'releasedAt', 'committedAt', 'downloadUrl', 'sha256', 'sizeBytes', 'downloadCount',
     'prerelease', 'removed', 'removedAt',
   ]);
   for (const key of Object.keys(entry)) {
