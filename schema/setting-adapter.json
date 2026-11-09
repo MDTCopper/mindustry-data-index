@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/setting-adapter.json",
+  "title": "setting-adapter",
+  "description": "mindustry/setting-adapter/136-999999.json",
+  "type": "object",
+  "properties": {
+    "update_time": { "type": "string" },
+    "min_build": { "type": "integer" },
+    "max_build": { "type": "integer" },
+    "base_build": { "type": "integer" },
+    "base": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/spec" }
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "build": { "type": "integer" },
+          "add": { "type": "array", "items": { "$ref": "#/$defs/spec" } },
+          "remove": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["build"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["update_time", "min_build", "max_build", "base_build", "base", "changes"],
+  "additionalProperties": true,
+  "$defs": {
+    "spec": {
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "title": { "type": "string" },
+        "type": { "enum": ["bool", "int", "options"] },
+        "categories": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "min": { "type": "integer" },
+        "max": { "type": "integer" },
+        "step": { "type": "integer" },
+        "unit": { "type": "string" },
+        "displayRatio": { "type": "number" },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "platforms": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["key", "title", "type", "categories"],
+      "additionalProperties": false
+    }
+  }
+}

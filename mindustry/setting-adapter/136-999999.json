@@ -1,0 +1,887 @@
+{
+  "update_time": "2026-11-09T11:38:21.930Z",
+  "min_build": 136,
+  "max_build": 999999,
+  "base_build": 136,
+  "base": [
+    {
+      "key": "musicvol",
+      "title": "音乐音量",
+      "type": "int",
+      "categories": [
+        "sound"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "sfxvol",
+      "title": "音效音量",
+      "type": "int",
+      "categories": [
+        "sound"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "ambientvol",
+      "title": "环境音量",
+      "type": "int",
+      "categories": [
+        "sound"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "saveinterval",
+      "title": "自动保存间隔",
+      "type": "int",
+      "categories": [
+        "game"
+      ],
+      "min": 10,
+      "max": 600,
+      "step": 10
+    },
+    {
+      "key": "autotarget",
+      "title": "自动瞄准",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "keyboard",
+      "title": "鼠标+键盘操控",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "crashreport",
+      "title": "发送匿名的崩溃报告",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "savecreate",
+      "title": "自动创建存档",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "blockreplace",
+      "title": "自动推荐合适的建筑",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "conveyorpathfinding",
+      "title": "传送带自动寻路",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "hints",
+      "title": "提示",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "logichints",
+      "title": "逻辑指令提示",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "backgroundpause",
+      "title": "游戏在后台时自动暂停",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "buildautopause",
+      "title": "自动暂停建造",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "doubletapmine",
+      "title": "双击采矿",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "commandmodehold",
+      "title": "长按保持指挥模式",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "modcrashdisable",
+      "title": "游戏启动崩溃后禁用模组",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "playerlimit",
+      "title": "玩家数量限制",
+      "type": "int",
+      "categories": [
+        "game"
+      ],
+      "min": 2,
+      "max": 32,
+      "step": 1
+    },
+    {
+      "key": "publichost",
+      "title": "游戏公开可见",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "console",
+      "title": "启用控制台",
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "uiscale",
+      "title": "UI缩放比例",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 25,
+      "max": 300,
+      "step": 25,
+      "unit": "%"
+    },
+    {
+      "key": "screenshake",
+      "title": "屏幕抖动",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 8,
+      "step": 1
+    },
+    {
+      "key": "bloomintensity",
+      "title": "光彩强度",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 16,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "bloomblur",
+      "title": "光彩模糊",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 1,
+      "max": 16,
+      "step": 1
+    },
+    {
+      "key": "fpscap",
+      "title": "最大帧数",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 10,
+      "max": 245,
+      "step": 5
+    },
+    {
+      "key": "chatopacity",
+      "title": "聊天界面不透明度",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "lasersopacity",
+      "title": "电力连接线不透明度",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "bridgeopacity",
+      "title": "桥梁不透明度",
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "vsync",
+      "title": "垂直同步",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "fullscreen",
+      "title": "全屏",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "borderlesswindow",
+      "title": "无边框窗口",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "landscape",
+      "title": "锁定横屏",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "effects",
+      "title": "建筑特效",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "atmosphere",
+      "title": "显示行星大气层",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "destroyedblocks",
+      "title": "显示已摧毁的建筑",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "blockstatus",
+      "title": "显示建筑状态",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "playerchat",
+      "title": "显示玩家聊天气泡",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "coreitems",
+      "title": "显示核心物资",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "minimap",
+      "title": "显示小地图",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "smoothcamera",
+      "title": "平滑镜头",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "position",
+      "title": "显示玩家坐标",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "mouseposition",
+      "title": "显示鼠标坐标",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "fps",
+      "title": "显示帧数和网络延迟",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "playerindicators",
+      "title": "玩家指示器",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "indicators",
+      "title": "敌人指示器",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "showweather",
+      "title": "显示天气效果",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "animatedwater",
+      "title": "动态液体",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "animatedshields",
+      "title": "动态力场",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "bloom",
+      "title": "光彩特效",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "pixelate",
+      "title": "像素画面",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "linear",
+      "title": "抗锯齿",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "skipcoreanimation",
+      "title": "跳过核心发射与着陆动画",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "hidedisplays",
+      "title": "不显示逻辑绘图",
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "build": 137,
+      "add": [
+        {
+          "key": "bloomintensity",
+          "title": "光效强度",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 0,
+          "max": 16,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "key": "bloomblur",
+          "title": "光效模糊",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 1,
+          "max": 16,
+          "step": 1
+        },
+        {
+          "key": "bloom",
+          "title": "光效",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 143,
+      "add": [
+        {
+          "key": "steampublichost",
+          "title": "steampublichost",
+          "type": "bool",
+          "categories": [
+            "game"
+          ]
+        },
+        {
+          "key": "uiscale",
+          "title": "UI缩放比例",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 5,
+          "max": 300,
+          "step": 5,
+          "unit": "%"
+        }
+      ],
+      "remove": [
+        "publichost"
+      ]
+    },
+    {
+      "build": 144,
+      "add": [
+        {
+          "key": "uiscale",
+          "title": "UI缩放比例",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 25,
+          "max": 300,
+          "step": 5,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "build": 145,
+      "add": [
+        {
+          "key": "macnotch",
+          "title": "立陶宛語",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 146,
+      "add": [
+        {
+          "key": "drawlight",
+          "title": "Draw Darkness/Lighting",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 147,
+      "add": [
+        {
+          "key": "alwaysmusic",
+          "title": "始终播放音乐",
+          "type": "bool",
+          "categories": [
+            "sound"
+          ]
+        },
+        {
+          "key": "communityservers",
+          "title": "获取社区服务器列表",
+          "type": "bool",
+          "categories": [
+            "game"
+          ]
+        },
+        {
+          "key": "distinctcontrolgroups",
+          "title": "每单位限制一个编队",
+          "type": "bool",
+          "categories": [
+            "game"
+          ]
+        },
+        {
+          "key": "steampublichost",
+          "title": "公共游戏可见性",
+          "type": "bool",
+          "categories": [
+            "game"
+          ]
+        },
+        {
+          "key": "unitlaseropacity",
+          "title": "单位采矿光束不透明度",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%"
+        },
+        {
+          "key": "maxmagnificationmultiplierpercent",
+          "title": "Min Camera Distance",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 100,
+          "max": 200,
+          "step": 25,
+          "unit": "%"
+        },
+        {
+          "key": "minmagnificationmultiplierpercent",
+          "title": "Max Camera Distance",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 100,
+          "max": 300,
+          "step": 25,
+          "unit": "%"
+        },
+        {
+          "key": "drawlight",
+          "title": "绘制阴影/光照",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 148,
+      "add": [
+        {
+          "key": "maxmagnificationmultiplierpercent",
+          "title": "最小视距",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 100,
+          "max": 200,
+          "step": 25,
+          "unit": "%"
+        },
+        {
+          "key": "minmagnificationmultiplierpercent",
+          "title": "最大视距",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 100,
+          "max": 300,
+          "step": 25,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "build": 149,
+      "add": [
+        {
+          "key": "uiscale",
+          "title": "界面缩放比例",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 25,
+          "max": 300,
+          "step": 5,
+          "unit": "%"
+        },
+        {
+          "key": "skipcoreanimation",
+          "title": "跳过核心发射/着陆动画",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        },
+        {
+          "key": "macnotch",
+          "title": "适应刘海显示",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 150,
+      "add": [
+        {
+          "key": "detach-camera",
+          "title": "Free Camera",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 151,
+      "add": [
+        {
+          "key": "detach-camera",
+          "title": "自由视角",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 156,
+      "add": [
+        {
+          "key": "uiEdgePadding",
+          "title": "UI Edge Padding",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "key": "showpings",
+          "title": "Show Pings",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        },
+        {
+          "key": "showotherbuildplans",
+          "title": "Show Other Player's Build Plans",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "build": 157,
+      "remove": [
+        "crashreport",
+        "borderlesswindow"
+      ]
+    },
+    {
+      "build": 158,
+      "add": [
+        {
+          "key": "uiEdgePadding",
+          "title": "UI 内边距",
+          "type": "int",
+          "categories": [
+            "graphics"
+          ],
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "key": "showpings",
+          "title": "显示标记",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        },
+        {
+          "key": "showotherbuildplans",
+          "title": "显示其他玩家的建筑规划",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ],
+      "remove": [
+        "logichints"
+      ]
+    },
+    {
+      "build": 159,
+      "add": [
+        {
+          "key": "console",
+          "title": "启用控制台",
+          "type": "bool",
+          "categories": [
+            "system"
+          ]
+        },
+        {
+          "key": "drawhitboxes",
+          "title": "显示碰撞箱",
+          "type": "bool",
+          "categories": [
+            "system"
+          ]
+        },
+        {
+          "key": "showperformance",
+          "title": "显示性能表现",
+          "type": "bool",
+          "categories": [
+            "system"
+          ]
+        },
+        {
+          "key": "modcrashdisable",
+          "title": "游戏启动崩溃后禁用模组",
+          "type": "bool",
+          "categories": [
+            "system"
+          ]
+        }
+      ],
+      "remove": [
+        "steampublichost"
+      ]
+    },
+    {
+      "build": 160,
+      "add": [
+        {
+          "key": "logiclocalization",
+          "title": "逻辑本地化",
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ],
+      "remove": [
+        "animatedshields"
+      ]
+    }
+  ]
+}

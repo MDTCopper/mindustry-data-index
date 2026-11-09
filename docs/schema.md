@@ -748,3 +748,9 @@ GitHub 在仓库 60 天没有任何提交时会暂停 `schedule`。版本/门禁
 额外统计，不进主列表：stats/index.json 是 {formatVersion,generatedAt,mods:{repo:path}}；
 stats/<owner>/<repo>.json 是 {formatVersion,repo,ref,generatedAt,languages:{base,totalKeys,languages:[{language,keys,rate}]},content:{blocks,items,...}}。
 语言统计取最新 tag 的 undles/bundle_*.properties，以 en 为基准；内容量按 content/<kind>/*.json 文件数，best-effort。
+
+### setting-adapter/
+
+mindustry/setting-adapter/index.json：{update_time,rules:[{min_build,max_build,file}]}。
+mindustry/setting-adapter/136-999999.json：{update_time,min_build,max_build,base_build,base:[spec],changes:[{build,add:[spec],remove:[key]}]}；
+从各版本 SettingsMenuDialog.addSettings() 与中文 bundle 自动生成，spec 字段同启动器 SettingSpec。

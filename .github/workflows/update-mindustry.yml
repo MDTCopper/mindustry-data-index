@@ -44,7 +44,7 @@ jobs:
         run: npm ci
 
       - name: 更新版本列表与最小版本门禁
-        run: node src/main.js --datasets versions,gate --out .
+        run: node src/main.js --datasets versions,gate,settings --out .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

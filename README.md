@@ -11,6 +11,7 @@ Mindustry 生态的公共数据索引：由 GitHub Actions 定时抓取并自动
 | 社区模组索引 | `community/index.json`、`community/index-full.json`、`community/releases/...`、`community/summary.*` | 同官方；topic 发现/黑名单每天 |
 | 游戏版本 | `mindustry/versions.json`、`mindustry/recommended-java.json` | 约 30 分钟 |
 | 版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 约 30 分钟 |
+| 设置适配 | `mindustry/setting-adapter/index.json`、`136-999999.json` | 随版本列表（约 30 分钟） |
 | 额外统计（可选） | `stats/index.json`、`stats/<owner>/<repo>.json` | 手动/单独任务；不进主列表 |
 
 模组来源：官方 `Anuken/MindustryMods` 的 `mods.json` 只提供 repo 列表；社区用 GitHub topic
@@ -81,6 +82,8 @@ null 字段不写；没有 `minGameVersion` 的条目丢弃。
   最新 BE 会自动跳过没有 jar 产物的失败 build。
 - `mindustry/recommended-java.json`：游戏主版本号（jar 内 `number`）→ 推荐 Java 大版本规则 +
   Copper 加载器最低 Java；启动器不用再硬编码。
+- `mindustry/setting-adapter/`：从各版本 `SettingsMenuDialog.java` + `bundle_zh_CN.properties`
+  自动提取的设置项（base 136 起 + 逐 build 差量），格式与启动器原 `remote/setting_adapter` 一致。
 - 门禁拆成两份：普通/脚本模组读 `mod-gate.json`，Java 模组读 `java-gate.json`；
   每条规则 `min` 含、`max` 不含，最后一条 `max=null`，`value` 是该范围要求的最低模组主版本。
   147 之前源码没有门禁常量，回落到 mmgvm 基线。

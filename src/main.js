@@ -143,6 +143,10 @@ import {
   writeModStats,
 } from './extra-stats.js';
 import {
+  buildSettingAdapter,
+  writeSettingAdapter,
+} from './settings-adapter.js';
+import {
   VERSIONS_REL_PATH,
   buildVersionsFile,
   versionsBodyChanged,
@@ -173,12 +177,12 @@ import {
   splitLegacyGateFile,
 } from './mod-gate.js';
 
-const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate', 'stats'];
+const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate', 'stats', 'settings'];
 
 const USAGE = `用法：node src/main.js [选项]
 
 选项：
-  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate,stats，默认 mods
+  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate,stats,settings，默认 mods
   --out <目录>        产物目录，默认 .
   --token <token>     GitHub token，默认读环境变量 GITHUB_TOKEN
   --repos a/b,c/d     只跑指定仓库（仅 mods 数据集，本地验证用）
@@ -2760,6 +2764,28 @@ async function runExtraStats(options, context) {
   return { code: 0, stats: { updatedAt: now, modCount: selected.length, written, failed } };
 }
 
+async function runSettings(options, context) {
+  const { rawClient, outDir, log } = context;
+  const versionsFile = await readJsonIfExists(path.join(outDir, VERSIONS_REL_PATH));
+  const versions = Array.isArray(versionsFile?.releases) ? versionsFile.releases : [];
+  if (versions.length === 0) {
+    log('[settings] 没有 versions.json，先跑 versions 数据集');
+    return { code: 1, changed: false, stats: null };
+  }
+  const now = new Date().toISOString();
+  const built = await buildSettingAdapter({ rawClient, versions, now });
+  if (!built) {
+    log('[settings] 没有可用的设置版本');
+    return { code: 1, changed: false, stats: null };
+  }
+  const changed = options.dryRun ? false : await writeSettingAdapter(outDir, built);
+  log(
+    `[settings] base ${built.file.base_build}，${built.file.base.length} 项，` +
+      `${built.file.changes.length} 条版本差量${options.dryRun ? '（dry-run 未写入）' : ''}`,
+  );
+  return { code: 0, changed, stats: { updatedAt: now, baseBuild: built.file.base_build } };
+}
+
 async function runVersions(options, context) {
   const { apiClient, outDir, log } = context;
   const file = path.join(outDir, VERSIONS_REL_PATH);
@@ -3241,6 +3267,7 @@ export async function run(argv) {
   let versionsResult = null;
   let gateResult = null;
   let statsResult = null;
+  let settingsResult = null;
 
   if (options.datasets.includes('mods')) {
     modsResult = await runMods(options, context);
@@ -3281,6 +3308,10 @@ export async function run(argv) {
   if (options.datasets.includes('stats')) {
     statsResult = await runExtraStats(options, context);
     exitCode = Math.max(exitCode, statsResult.code);
+  }
+  if (options.datasets.includes('settings')) {
+    settingsResult = await runSettings(options, context);
+    exitCode = Math.max(exitCode, settingsResult.code);
   }
 
   // B5：滚动变更流（新变更在前，最多 500 条）；首次建立时只有初始快照 mod-added
