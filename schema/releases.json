@@ -47,6 +47,9 @@
             },
             "hasJava": {
               "type": "boolean"
+            },
+            "copper": {
+              "type": "boolean"
             }
           },
           "required": [
@@ -133,6 +136,10 @@
           },
           "removedAt": {
             "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
           }
         },
         "required": [

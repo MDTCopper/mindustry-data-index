@@ -58,7 +58,7 @@ test('versions API 地址', () => {
   );
   assert.equal(
     latestBeApiUrl(),
-    'https://api.github.com/repos/Anuken/MindustryBuilds/releases?per_page=1',
+    'https://api.github.com/repos/Anuken/MindustryBuilds/releases?per_page=5',
   );
 });
 
@@ -76,6 +76,7 @@ test('trimRelease：body 空串、reactions 只留 total_count、assets 四个�
       download_count: 5,
       browser_download_url:
         'https://github.com/Anuken/Mindustry/releases/download/v151/Mindustry.jar',
+      sha256: null,
     },
   ]);
   assert.deepEqual(Object.keys(trimmed), [
@@ -177,15 +178,18 @@ test('fetchAllVersions 遵守 --versions-pages 上限', async () => {
   assert.equal(client.calls.length, 1);
 });
 
-test('fetchLatestBe 取 per_page=1 的第一条；304 复用', async () => {
-  const client = fakeClient(() => pageResponse([rawRelease(7)], { etag: 'W/"be"' }));
+test('fetchLatestBe 跳过无 jar 产物的失败 build；304 复用', async () => {
+  const failed = { ...rawRelease(8), assets: [] };
+  const client = fakeClient(() =>
+    pageResponse([failed, rawRelease(7)], { etag: 'W/"be"' }),
+  );
   const result = await fetchLatestBe(client, {});
   assert.equal(result.notModified, false);
   assert.equal(result.release.tag_name, 'v157');
   assert.equal(result.etag, 'W/"be"');
   assert.equal(
     client.calls[0].url,
-    'https://api.github.com/repos/Anuken/MindustryBuilds/releases?per_page=1',
+    'https://api.github.com/repos/Anuken/MindustryBuilds/releases?per_page=5',
   );
 
   const notModifiedClient = fakeClient(() => ({

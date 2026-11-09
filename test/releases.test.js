@@ -144,8 +144,8 @@ test('release 规范化：trim 名称、空名回退 tag、draft 跳过、prerel
   assert.equal(withAssets.prerelease, true);
   assert.equal(withAssets.name, 'Beta');
   assert.deepEqual(withAssets.assets, [
-    { name: 'mod.jar', size: 10, downloadCount: 2, downloadUrl: 'https://a/mod.jar' },
-    { name: 'mod.zip', size: 20, downloadCount: 0, downloadUrl: 'https://a/mod.zip' },
+    { name: 'mod.jar', size: 10, downloadCount: 2, downloadUrl: 'https://a/mod.jar', sha256: null },
+    { name: 'mod.zip', size: 20, downloadCount: 0, downloadUrl: 'https://a/mod.zip', sha256: null },
   ]);
   assert.equal(withAssets.downloadUrl, 'https://a/mod.jar');
 });

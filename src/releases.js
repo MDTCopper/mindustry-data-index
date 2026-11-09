@@ -65,6 +65,10 @@ export function normalizeRelease(raw, { repo, hasJava }) {
       downloadCount:
         typeof asset.download_count === 'number' ? asset.download_count : 0,
       downloadUrl: asset.browser_download_url ?? '',
+      sha256:
+        typeof asset.digest === 'string' && /^sha256:[a-f0-9]{64}$/i.test(asset.digest.trim())
+          ? asset.digest.trim().slice('sha256:'.length).toLowerCase()
+          : null,
     }));
   const archiveUrl = sourceArchiveUrl(repo, tag);
   const name = typeof raw.name === 'string' ? raw.name.trim() : '';

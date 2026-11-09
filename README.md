@@ -9,7 +9,7 @@ Mindustry 生态的公共数据索引：由 GitHub Actions 定时抓取并自动
 | --- | --- | --- |
 | 官方模组索引 | `index.json`（默认）、`index-full.json`（全量）、`releases/<owner>/<repo>.json`、`summary.json/csv` | 最新 100 tag 每 2h；第 2 页每周；全量每月 |
 | 社区模组索引 | `community/index.json`、`community/index-full.json`、`community/releases/...`、`community/summary.*` | 同官方；topic 发现/黑名单每天 |
-| 游戏版本 | `mindustry/versions.json` | 约 30 分钟 |
+| 游戏版本 | `mindustry/versions.json`、`mindustry/recommended-java.json` | 约 30 分钟 |
 | 版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 约 30 分钟 |
 
 模组来源：官方 `Anuken/MindustryMods` 的 `mods.json` 只提供 repo 列表；社区用 GitHub topic
@@ -25,6 +25,7 @@ https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/summary.js
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/index.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/index-full.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/versions.json
+https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/recommended-java.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/mod-gate.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/java-gate.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/status.json
@@ -53,6 +54,7 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
 - 推荐权重在 `src/heat.js` 的 `RECOMMEND_WEIGHTS`：下载 0.25 / 星标 0.3 / 更新 0.3 /
   6 小时时间桶随机 0.3 / 新 mod 加成 0.325 / 长期不更新扣分 0.4。
   `heat` 是旧热度权重预设；`updated`/`downloads`/`stars`/`newest` 是单一字段排序。
+- **Copper 原生模组**：用 `copper.mod.json`/`copper.mod.hjson`；index 条目带 `copper: true`，`modType` 为 `java`。
 - **`gameVersionRanges`**：实际游戏版本闭区间（如 `[{from:"154",to:"160.7"}]`），按 `minGameVersion`
   与各版本门禁计算；可有多个不连续段。
 
@@ -60,8 +62,9 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
 
 `formatVersion:3`，字段 `repo`、`generatedAt`、`modType`、`versions[]`（可选 `meta`）。
 每条 version：`tag`、`kind`（`release`/`tag`/`source`）、`modVersion`、`minGameVersion`、
-`gameVersionRanges`、`releasedAt`、`committedAt`、`downloadUrl`、`sizeBytes`/`downloadCount`、
-`prerelease`（仅 true）、`removed`/`removedAt`。null 字段不写；没有 `minGameVersion` 的条目丢弃。
+`gameVersionRanges`、`releasedAt`、`committedAt`、`downloadUrl`、`sha256`（Release 首选资产）、
+`sizeBytes`/`downloadCount`、`prerelease`（仅 true）、`removed`/`removedAt`。
+null 字段不写；没有 `minGameVersion` 的条目丢弃。
 
 版本列表 = 有资产的 Release + 非 Java 的 tag-only；Java 的 tag-only 不进列表。
 非 Java 可以不打 tag：一个可用版本都没有时，从默认分支读 root 元数据并生成一条
@@ -72,7 +75,10 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
 
 ### 版本与门禁
 
-- `mindustry/versions.json`：全部正式版 + 最新 BE，字段兼容启动器 `MindustryReleaseListSnapshot`。
+- `mindustry/versions.json`：全部正式版 + 最新 BE，字段兼容启动器 `MindustryReleaseListSnapshot`；
+  每个资产带 `sha256`（GitHub API asset digest）。最新 BE 会自动跳过没有 jar 产物的失败 build。
+- `mindustry/recommended-java.json`：游戏主版本号（jar 内 `number`）→ 推荐 Java 大版本规则 +
+  Copper 加载器最低 Java；启动器不用再硬编码。
 - 门禁拆成两份：普通/脚本模组读 `mod-gate.json`，Java 模组读 `java-gate.json`；
   每条规则 `min` 含、`max` 不含，最后一条 `max=null`，`value` 是该范围要求的最低模组主版本。
   147 之前源码没有门禁常量，回落到 mmgvm 基线。

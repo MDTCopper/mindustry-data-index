@@ -4,8 +4,15 @@
 import { rawFileUrlVariants } from './releases.js';
 import { parseJval } from './jval.js';
 
-// 游戏 Mods.metaFiles 顺序；只查 root（不读 assets/）
-const ROOT_METADATA_FILES = ['mod.json', 'mod.hjson', 'plugin.json', 'plugin.hjson'];
+// Copper 原生模组用 copper.mod.*，其余按游戏 Mods.metaFiles 顺序；只查 root（不读 assets/）
+const ROOT_METADATA_FILES = [
+  'copper.mod.json',
+  'copper.mod.hjson',
+  'mod.json',
+  'mod.hjson',
+  'plugin.json',
+  'plugin.hjson',
+];
 
 // 解析彻底失败时的正则兜底：只捞需要的两个字段（两种扩展名里都可能是 HJSON 语法）
 const FALLBACK_PATTERNS = {
@@ -176,7 +183,6 @@ export function parseModMetadataDocument(text) {
     main,
     java: parsed.java === true,
     scriptsRoot: hasScripts,
-    java: parsed.java === true,
     dependencies:
       parsed.dependencies !== null &&
       typeof parsed.dependencies === 'object' &&
@@ -204,6 +210,7 @@ export function metaFromDocument(metadata) {
     legacyCompatible: metadata.legacyCompatible === true,
     main: typeof metadata.main === 'string' ? metadata.main : null,
     java: metadata.java === true,
+    copper: metadata.copper === true,
     hasScripts: metadata.hasScripts === true,
     hasJava: metadata.hasJava === true,
   };
@@ -329,6 +336,8 @@ export async function fetchModMetadataDocument(client, { repo, tag, hasJava }) {
       }
       const metadata = parseModMetadataDocument(response.text);
       if (metadata) {
+        metadata.copper = path.startsWith('copper.');
+        if (metadata.copper) metadata.hasJava = true;
         metadata.hasScripts = await detectRootScripts(client, repo, tag);
         metadata.scriptsRoot = metadata.hasScripts;
         return {

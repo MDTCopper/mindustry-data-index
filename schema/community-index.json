@@ -252,6 +252,10 @@
               },
               "additionalProperties": false
             }
+          },
+          "copper": {
+            "type": "boolean",
+            "description": "Copper 原生模组（copper.mod.*）"
           }
         },
         "required": [

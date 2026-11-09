@@ -209,6 +209,9 @@ export function buildCommunityIndexEntry(
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
     ...(mod.defaultBranch ? { defaultBranch: mod.defaultBranch } : {}),
   };
+  if (meta?.copper === true) {
+    result.copper = true;
+  }
   return result;
 }
 

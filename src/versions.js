@@ -24,7 +24,27 @@ export function versionsApiUrl(page, perPage = PER_PAGE) {
 }
 
 export function latestBeApiUrl() {
-  return `${assertApiUrl(BUILDS_API)}?per_page=1`;
+  // 多取几条：最新 build 可能是失败产物（没有桌面 jar），跳过它用下一条可用 build
+  return `${assertApiUrl(BUILDS_API)}?per_page=5`;
+}
+
+export function isUsableBeRelease(raw) {
+  const assets = Array.isArray(raw?.assets) ? raw.assets : [];
+  return assets.some(
+    (asset) =>
+      typeof asset?.name === 'string' &&
+      asset.name.toLowerCase().endsWith('.jar') &&
+      Number(asset.size) > 0,
+  );
+}
+
+function assetSha256(asset) {
+  const digest = asset?.digest;
+  if (typeof digest === 'string') {
+    const match = /^sha256:([a-f0-9]{64})$/i.exec(digest.trim());
+    if (match) return match[1].toLowerCase();
+  }
+  return null;
 }
 
 function trimAssets(assets) {
@@ -36,6 +56,7 @@ function trimAssets(assets) {
       download_count:
         typeof asset.download_count === 'number' ? asset.download_count : 0,
       browser_download_url: asset.browser_download_url ?? '',
+      sha256: assetSha256(asset),
     }));
 }
 
@@ -241,9 +262,10 @@ export async function fetchLatestBe(client, { etag = null } = {}) {
   if (!Array.isArray(items)) {
     throw new Error('MindustryBuilds 最新 release 不是数组');
   }
+  const usable = items.find(isUsableBeRelease) ?? null;
   return {
     notModified: false,
-    release: items[0] ? trimLatestBe(items[0]) : null,
+    release: usable ? trimLatestBe(usable) : null,
     etag: response.etag ?? null,
   };
 }

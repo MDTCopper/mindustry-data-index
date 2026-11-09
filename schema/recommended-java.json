@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/recommended-java.json",
+  "title": "recommended-java",
+  "description": "Mindustry 游戏版本对应的推荐 Java 大版本规则",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "UTC ISO 8601 时间"
+    },
+    "source": {
+      "type": "string"
+    },
+    "defaultJavaMajor": {
+      "type": "integer",
+      "minimum": 8
+    },
+    "loaderMinJavaMajor": {
+      "type": "integer",
+      "minimum": 8
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "minRelease": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "javaMajor": {
+            "type": "integer",
+            "minimum": 8
+          }
+        },
+        "required": ["minRelease", "javaMajor"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "defaultJavaMajor",
+    "loaderMinJavaMajor",
+    "rules"
+  ],
+  "additionalProperties": true
+}

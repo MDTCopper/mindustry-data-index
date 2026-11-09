@@ -146,6 +146,10 @@ import {
   trimRelease,
 } from './versions.js';
 import {
+  RECOMMENDED_JAVA_REL_PATH,
+  buildRecommendedJavaFile,
+} from './recommended-java.js';
+import {
   GATE_REL_PATHS,
   GATE_TYPES,
   GATE_BASELINE_URL,
@@ -482,6 +486,9 @@ export function buildIndexEntry(
     allAssetsDownloads: stats.allAssetsDownloads,
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
   };
+  if (meta?.copper === true || oldEntry?.copper === true) {
+    result.copper = true;
+  }
   // 缓存未处理/未重算时保留上一轮 heat 字段，避免「index 内容未变」被误判成每轮必写；
   // 真正重算 heat 时会在注入阶段覆盖这两项。
   if (oldEntry?.score) {
@@ -2727,6 +2734,9 @@ async function runVersions(options, context) {
   if (beResult.notModified && previous?.latest_be) {
     log('[versions] 最新 BE 304，复用旧数据');
   }
+  if (!beResult.notModified && !latestBe) {
+    log('[versions] 最新 BE 无可用桌面产物，跳过（build 失败）');
+  }
 
   const nextFile = buildVersionsFile({
     releases,
@@ -2754,6 +2764,20 @@ async function runVersions(options, context) {
     );
   } else {
     console.log('[versions] 无变化，保留旧文件');
+  }
+
+  const javaFile = path.join(outDir, RECOMMENDED_JAVA_REL_PATH);
+  const previousJava = await readJsonIfExists(javaFile).catch(() => null);
+  const nextJava = buildRecommendedJavaFile({ now: isoSeconds() });
+  if (
+    !previousJava ||
+    JSON.stringify({ ...previousJava, generatedAt: '' }) !==
+      JSON.stringify({ ...nextJava, generatedAt: '' })
+  ) {
+    if (!options.dryRun) {
+      await writeJsonAtomic(javaFile, nextJava);
+    }
+    log('[versions] 已更新推荐 Java 规则');
   }
   return {
     code: 0,

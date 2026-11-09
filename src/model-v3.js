@@ -107,7 +107,11 @@ export function mergeGameVersionRanges(ranges) {
 export function modTypeOf({ meta, releases = [] }) {
   // 游戏语义：java = meta.java 或 main 非空；js = root scripts/ 有 .js（探测后写入 meta.hasScripts）；
   // 官方列表的 hasJava/hasScripts 是 bot 启发式，不再使用。
-  if (meta?.java === true || (typeof meta?.main === 'string' && meta.main.trim().length > 0)) {
+  if (
+    meta?.copper === true ||
+    meta?.java === true ||
+    (typeof meta?.main === 'string' && meta.main.trim().length > 0)
+  ) {
     return 'java';
   }
   if (meta?.hasScripts === true) return 'js';
@@ -173,6 +177,10 @@ export function buildV3Versions({
       gameVersionRanges: ranges,
       downloadUrl: downloadUrl || archiveUrl,
     };
+    if (kind === 'release') {
+      const chosen = assets.find((asset) => asset.downloadUrl === version.downloadUrl);
+      if (chosen?.sha256) version.sha256 = chosen.sha256;
+    }
     const modVersion = toText(entry.modVersion) ?? toText(meta?.version);
     if (modVersion) version.modVersion = modVersion;
     const sizeBytes = assets.reduce((sum, asset) => sum + (Number(asset?.size) || 0), 0);
@@ -239,6 +247,7 @@ export function releasesFromVersions(file) {
                 size: version.sizeBytes,
                 downloadCount: version.downloadCount ?? 0,
                 downloadUrl: version.downloadUrl,
+                sha256: version.sha256 ?? null,
               },
             ]
           : [],

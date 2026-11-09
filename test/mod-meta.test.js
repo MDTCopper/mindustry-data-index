@@ -4,6 +4,7 @@ import {
   candidateMetadataPaths,
   extractModMetadataFields,
   fetchModMetadata,
+  fetchModMetadataDocument,
   metaFromDocument,
   parseModMetadata,
   parseModMetadataDocument,
@@ -15,7 +16,14 @@ import { computeGameVersionRanges, modTypeOf, parseMinVersion } from '../src/mod
 const repo = 'owner/demo';
 
 test('候选路径：游戏 metaFiles 顺序，只查 root（不读 assets）', () => {
-  const expected = ['mod.json', 'mod.hjson', 'plugin.json', 'plugin.hjson'];
+  const expected = [
+    'copper.mod.json',
+    'copper.mod.hjson',
+    'mod.json',
+    'mod.hjson',
+    'plugin.json',
+    'plugin.hjson',
+  ];
   assert.deepEqual(candidateMetadataPaths(true), expected);
   assert.deepEqual(candidateMetadataPaths(false), expected);
 });
@@ -187,7 +195,27 @@ test('fetchModMetadata：先 mod.json，找不到再 mod.hjson/plugin', async ()
   const result = await fetchModMetadata(client, { repo, tag: 'v1', hasJava: true });
   assert.equal(result.metadataStatus, 'ok');
   assert.equal(result.metadataPath, 'mod.hjson');
-  assert.ok(calls[0].endsWith('/mod.json'));
+  assert.ok(calls[0].endsWith('/copper.mod.json'));
+});
+
+test('fetchModMetadataDocument：copper.mod.json 标记 copper 并视为 Java', async () => {
+  const client = {
+    async get(url) {
+      if (url.endsWith('/copper.mod.json')) {
+        return { status: 200, text: '{ name: CopperMod, main: a.b, minGameVersion: 146 }' };
+      }
+      return { status: 404, text: '' };
+    },
+  };
+  const result = await fetchModMetadataDocument(client, {
+    repo,
+    tag: 'v1',
+    hasJava: false,
+  });
+  assert.equal(result.found, true);
+  assert.equal(result.meta.copper, true);
+  assert.equal(result.meta.hasJava, true);
+  assert.equal(result.meta.main, 'a.b');
 });
 
 test('fetchModMetadata：不读 assets/mod.json（游戏装不上）', async () => {

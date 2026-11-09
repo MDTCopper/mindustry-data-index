@@ -234,6 +234,7 @@ test('C8：最新 tag 元数据写入 per-mod meta，并校正 index 的 hasJava
     legacyCompatible: false,
     main: 'a.b',
     java: false,
+    copper: false,
     hasScripts: false,
     hasJava: true,
   });
