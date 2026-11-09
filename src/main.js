@@ -143,8 +143,8 @@ import {
   writeModStats,
 } from './extra-stats.js';
 import {
-  buildSettingAdapter,
-  writeSettingAdapter,
+  buildLatestSettingAdapter,
+  writeLatestSettingAdapter,
 } from './settings-adapter.js';
 import {
   VERSIONS_REL_PATH,
@@ -2773,17 +2773,23 @@ async function runSettings(options, context) {
     return { code: 1, changed: false, stats: null };
   }
   const now = new Date().toISOString();
-  const built = await buildSettingAdapter({ rawClient, versions, now });
+  const built = await buildLatestSettingAdapter({ rawClient, versions, now });
   if (!built) {
-    log('[settings] 没有可用的设置版本');
+    log('[settings] 没有可用的最新版本设置');
     return { code: 1, changed: false, stats: null };
   }
-  const changed = options.dryRun ? false : await writeSettingAdapter(outDir, built);
+  const changed = options.dryRun
+    ? false
+    : await writeLatestSettingAdapter(outDir, { table: built.table, now });
   log(
-    `[settings] base ${built.file.base_build}，${built.file.base.length} 项，` +
-      `${built.file.changes.length} 条版本差量${options.dryRun ? '（dry-run 未写入）' : ''}`,
+    `[settings] ${built.version}（build ${built.build}）完整表 ${built.table.settings.length} 项` +
+      `${options.dryRun ? '（dry-run 未写入）' : ''}`,
   );
-  return { code: 0, changed, stats: { updatedAt: now, baseBuild: built.file.base_build } };
+  return {
+    code: 0,
+    changed,
+    stats: { updatedAt: now, version: built.version, build: built.build },
+  };
 }
 
 async function runVersions(options, context) {

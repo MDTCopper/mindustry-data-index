@@ -2,54 +2,73 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/setting-adapter.json",
   "title": "setting-adapter",
-  "description": "mindustry/setting-adapter/136-999999.json",
+  "description": "mindustry/setting-adapter/current.json：最新 Mindustry 版本的完整设置表",
   "type": "object",
   "properties": {
-    "update_time": { "type": "string" },
-    "min_build": { "type": "integer" },
-    "max_build": { "type": "integer" },
-    "base_build": { "type": "integer" },
-    "base": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/spec" }
+    "formatVersion": {
+      "const": 1
     },
-    "changes": {
+    "update_time": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "build": {
+      "type": "integer"
+    },
+    "settings": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "build": { "type": "integer" },
-          "add": { "type": "array", "items": { "$ref": "#/$defs/spec" } },
-          "remove": { "type": "array", "items": { "type": "string" } }
+          "key": {
+            "type": "string"
+          },
+          "name": {
+            "type": "object",
+            "properties": {
+              "en": { "type": "string" },
+              "zh_CN": { "type": ["string", "null"] }
+            },
+            "required": ["en", "zh_CN"],
+            "additionalProperties": true
+          },
+          "description": {
+            "type": "object",
+            "properties": {
+              "en": { "type": "string" },
+              "zh_CN": { "type": "string" }
+            },
+            "required": ["en", "zh_CN"],
+            "additionalProperties": true
+          },
+          "type": {
+            "enum": ["bool", "int", "options"]
+          },
+          "categories": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "min": { "type": "integer" },
+          "max": { "type": "integer" },
+          "step": { "type": "integer" },
+          "unit": { "type": "string" },
+          "displayRatio": { "type": "number" },
+          "options": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "platforms": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
         },
-        "required": ["build"],
+        "required": ["key", "name", "description", "type", "categories"],
         "additionalProperties": false
       }
     }
   },
-  "required": ["update_time", "min_build", "max_build", "base_build", "base", "changes"],
-  "additionalProperties": true,
-  "$defs": {
-    "spec": {
-      "type": "object",
-      "properties": {
-        "key": { "type": "string" },
-        "title": { "type": "string" },
-        "type": { "enum": ["bool", "int", "options"] },
-        "categories": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "min": { "type": "integer" },
-        "max": { "type": "integer" },
-        "step": { "type": "integer" },
-        "unit": { "type": "string" },
-        "displayRatio": { "type": "number" },
-        "options": { "type": "array", "items": { "type": "string" } },
-        "platforms": { "type": "array", "items": { "type": "string" } }
-      },
-      "required": ["key", "title", "type", "categories"],
-      "additionalProperties": false
-    }
-  }
+  "required": ["formatVersion", "update_time", "version", "build", "settings"],
+  "additionalProperties": true
 }

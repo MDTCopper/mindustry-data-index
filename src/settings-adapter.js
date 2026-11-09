@@ -1,20 +1,20 @@
-// 自动生成启动器 setting adapter：从各版本 SettingsMenuDialog.java + 中文 bundle 提取设置项，
-// 输出与 launcher remote/setting_adapter 相同的 base + 逐版本 changes 格式。
+// 自动生成启动器 setting adapter：跟随最新 Mindustry 版本，输出完整设置表 + 名称/描述译文。
+// 不再按 build 区间做 base/changes；表就是最新版本本身，版本更新时再生成一次 diff。
 
+import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { readJsonIfExists, writeJsonAtomic } from './writer.js';
 
 export const SETTING_ADAPTER_DIR = 'mindustry/setting-adapter';
-export const SETTING_ADAPTER_INDEX_REL_PATH =
-  'mindustry/setting-adapter/index.json';
-export const SETTING_ADAPTER_FILE_REL_PATH =
-  'mindustry/setting-adapter/136-999999.json';
-export const SETTING_ADAPTER_MIN_BUILD = 136;
-export const SETTING_ADAPTER_MAX_BUILD = 999999;
+export const SETTING_ADAPTER_INDEX_REL_PATH = 'mindustry/setting-adapter/index.json';
+export const SETTING_ADAPTER_CURRENT_REL_PATH = 'mindustry/setting-adapter/current.json';
+export const SETTING_ADAPTER_CHANGES_REL_PATH = 'mindustry/setting-adapter/changes.json';
+export const SETTING_ADAPTER_LEGACY_REL_PATH = 'mindustry/setting-adapter/136-999999.json';
 
 const SOURCE_PATH = 'core/src/mindustry/ui/dialogs/SettingsMenuDialog.java';
-const BUNDLE_PATH = 'core/assets/bundles/bundle_zh_CN.properties';
+const BUNDLE_EN_PATH = 'core/assets/bundles/bundle.properties';
+const BUNDLE_ZH_PATH = 'core/assets/bundles/bundle_zh_CN.properties';
 
 const TABLE_CATEGORY = {
   game: 'game',
@@ -24,6 +24,15 @@ const TABLE_CATEGORY = {
   main: 'common',
 };
 
+function unescapeProperties(text) {
+  return String(text ?? '')
+    .replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+    .replace(/\\n/g, '\n')
+    .replace(/\\t/g, '\t')
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, '\\');
+}
+
 function parseBundleProperties(text) {
   const map = new Map();
   for (const line of String(text ?? '').split(/\r?\n/)) {
@@ -31,7 +40,7 @@ function parseBundleProperties(text) {
     if (!trimmed || trimmed.startsWith('#') || trimmed.startsWith('!')) continue;
     const eq = trimmed.indexOf('=');
     if (eq <= 0) continue;
-    map.set(trimmed.slice(0, eq).trim(), trimmed.slice(eq + 1).trim());
+    map.set(trimmed.slice(0, eq).trim(), unescapeProperties(trimmed.slice(eq + 1).trim()));
   }
   return map;
 }
@@ -46,6 +55,62 @@ export function evalConstantNumber(expression) {
   } catch {
     return null;
   }
+}
+
+function stripJavaComments(source) {
+  let output = '';
+  let index = 0;
+  let inString = false;
+  let escaped = false;
+  while (index < source.length) {
+    const char = source[index];
+    const next = source[index + 1];
+    if (inString) {
+      output += char;
+      if (escaped) escaped = false;
+      else if (char === '\\') escaped = true;
+      else if (char === '"') inString = false;
+      index += 1;
+      continue;
+    }
+    if (char === '"') {
+      inString = true;
+      output += char;
+      index += 1;
+      continue;
+    }
+    if (char === '/' && next === '/') {
+      while (index < source.length && source[index] !== '\n') index += 1;
+      continue;
+    }
+    if (char === '/' && next === '*') {
+      index += 2;
+      while (index < source.length && !(source[index] === '*' && source[index + 1] === '/')) {
+        index += 1;
+      }
+      index += 2;
+      continue;
+    }
+    output += char;
+    index += 1;
+  }
+  return output;
+}
+
+function methodBody(source, signature) {
+  const start = source.indexOf(signature);
+  if (start < 0) return null;
+  const brace = source.indexOf('{', start);
+  if (brace < 0) return null;
+  let depth = 0;
+  for (let index = brace; index < source.length; index += 1) {
+    if (source[index] === '{') depth += 1;
+    else if (source[index] === '}') {
+      depth -= 1;
+      if (depth === 0) return source.slice(brace + 1, index);
+    }
+  }
+  return null;
 }
 
 function extractBalancedArguments(source, startIndex) {
@@ -112,66 +177,12 @@ function firstString(argument) {
   return match ? match[1] : null;
 }
 
-function stripJavaComments(source) {
-  let output = '';
-  let index = 0;
-  let inString = false;
-  let escaped = false;
-  while (index < source.length) {
-    const char = source[index];
-    const next = source[index + 1];
-    if (inString) {
-      output += char;
-      if (escaped) escaped = false;
-      else if (char === '\\') escaped = true;
-      else if (char === '"') inString = false;
-      index += 1;
-      continue;
-    }
-    if (char === '"') {
-      inString = true;
-      output += char;
-      index += 1;
-      continue;
-    }
-    if (char === '/' && next === '/') {
-      while (index < source.length && source[index] !== '\n') index += 1;
-      continue;
-    }
-    if (char === '/' && next === '*') {
-      index += 2;
-      while (index < source.length && !(source[index] === '*' && source[index + 1] === '/')) {
-        index += 1;
-      }
-      index += 2;
-      continue;
-    }
-    output += char;
-    index += 1;
-  }
-  return output;
-}
-
-function methodBody(source, signature) {
-  const start = source.indexOf(signature);
-  if (start < 0) return null;
-  const brace = source.indexOf('{', start);
-  if (brace < 0) return null;
-  let depth = 0;
-  for (let index = brace; index < source.length; index += 1) {
-    if (source[index] === '{') depth += 1;
-    else if (source[index] === '}') {
-      depth -= 1;
-      if (depth === 0) return source.slice(brace + 1, index);
-    }
-  }
-  return null;
-}
-
-export function extractSettingSpecs(source, bundleText) {
+// 从最新版本源码提取完整表；name/description 同时带 en 与 zh_CN 译文
+export function extractSettingTable(source, { bundleEn = '', bundleZh = '' } = {}) {
   const clean = stripJavaComments(source);
   const scoped = methodBody(clean, 'void addSettings') ?? clean;
-  const bundle = parseBundleProperties(bundleText);
+  const en = parseBundleProperties(bundleEn);
+  const zh = parseBundleProperties(bundleZh);
   const specs = new Map();
   const pattern = /\b(game|graphics|sound|dev|main)\.(checkPref|sliderPref|textPref|areaTextPref)\s*\(/g;
   let match;
@@ -185,9 +196,19 @@ export function extractSettingSpecs(source, bundleText) {
     if (!key) continue;
     if (method === 'textPref' || method === 'areaTextPref') continue;
 
-    const title = bundle.get(`setting.${key}.name`) ?? key;
-    const categories = [TABLE_CATEGORY[table] ?? 'game'];
-    const spec = { key, title, type: 'bool', categories };
+    const spec = {
+      key,
+      name: {
+        en: en.get(`setting.${key}.name`) ?? key,
+        zh_CN: zh.get(`setting.${key}.name`) ?? null,
+      },
+      description: {
+        en: en.get(`setting.${key}.description`) ?? '',
+        zh_CN: zh.get(`setting.${key}.description`) ?? '',
+      },
+      type: 'bool',
+      categories: [TABLE_CATEGORY[table] ?? 'game'],
+    };
 
     if (method === 'sliderPref') {
       spec.type = 'int';
@@ -204,54 +225,50 @@ export function extractSettingSpecs(source, bundleText) {
   return [...specs.values()];
 }
 
-function specSignature(spec) {
-  return JSON.stringify(spec);
-}
-
-export function buildAdapterFile({ versions, extractedByBuild, now }) {
-  const entries = [...extractedByBuild.entries()].sort((left, right) => left[0] - right[0]);
-  if (entries.length === 0) return null;
-  const baseBuild = entries[0][0];
-  const baseSpecs = entries[0][1];
-  const changes = [];
-  let previous = new Map(baseSpecs.map((spec) => [spec.key, spec]));
-  for (const [build, specs] of entries.slice(1)) {
-    const current = new Map(specs.map((spec) => [spec.key, spec]));
-    const add = [];
-    const remove = [];
-    for (const [key, spec] of current) {
-      const old = previous.get(key);
-      if (!old || specSignature(old) !== specSignature(spec)) add.push(spec);
-    }
-    for (const key of previous.keys()) {
-      if (!current.has(key)) remove.push(key);
-    }
-    if (add.length > 0 || remove.length > 0) {
-      changes.push({ build, ...(add.length > 0 ? { add } : {}), ...(remove.length > 0 ? { remove } : {}) });
-    }
-    previous = current;
-  }
+export function buildSettingTable({ version, build, specs, now }) {
   return {
+    formatVersion: 1,
     update_time: now,
-    min_build: baseBuild,
-    max_build: SETTING_ADAPTER_MAX_BUILD,
-    base_build: baseBuild,
-    base: baseSpecs,
-    changes,
+    version,
+    build,
+    settings: specs,
   };
 }
 
-function versionsAtLeast136(versions) {
-  const byBuild = new Map();
-  for (const version of versions) {
-    const tag = String(version?.tag_name ?? '');
+export function diffSettingTables(previous, next, { fromVersion, toVersion, build, now }) {
+  const previousByKey = new Map((previous?.settings ?? []).map((spec) => [spec.key, spec]));
+  const nextByKey = new Map((next?.settings ?? []).map((spec) => [spec.key, spec]));
+  const add = [];
+  const changed = [];
+  const remove = [];
+  for (const [key, spec] of nextByKey) {
+    const old = previousByKey.get(key);
+    if (!old) add.push(spec);
+    else if (JSON.stringify(old) !== JSON.stringify(spec)) changed.push(spec);
+  }
+  for (const key of previousByKey.keys()) {
+    if (!nextByKey.has(key)) remove.push(key);
+  }
+  return {
+    formatVersion: 1,
+    update_time: now,
+    from_version: fromVersion ?? null,
+    to_version: toVersion,
+    build,
+    add,
+    changed,
+    remove,
+  };
+}
+
+function latestVersionInfo(versions) {
+  for (const release of Array.isArray(versions) ? versions : []) {
+    const tag = String(release?.tag_name ?? '');
     const match = /^v(\d+)/.exec(tag);
     if (!match) continue;
-    const build = Number(match[1]);
-    if (build < SETTING_ADAPTER_MIN_BUILD) continue;
-    byBuild.set(build, tag);
+    return { tag, build: Number(match[1]) };
   }
-  return [...byBuild.entries()].sort((left, right) => left[0] - right[0]);
+  return null;
 }
 
 async function fetchText(rawClient, repo, tag, filePath) {
@@ -261,57 +278,91 @@ async function fetchText(rawClient, repo, tag, filePath) {
   return response.status === 200 ? response.text : null;
 }
 
-export async function buildSettingAdapter({
-  rawClient,
-  versions,
-  now,
-}) {
-  const extractedByBuild = new Map();
-  for (const [build, tag] of versionsAtLeast136(versions)) {
-    const source = await fetchText(rawClient, 'Anuken/Mindustry', tag, SOURCE_PATH);
-    if (source === null) continue;
-    const bundle = await fetchText(rawClient, 'Anuken/Mindustry', tag, BUNDLE_PATH);
-    const specs = extractSettingSpecs(source, bundle ?? '');
-    if (specs.length > 0) extractedByBuild.set(build, specs);
-  }
-  const file = buildAdapterFile({ versions, extractedByBuild, now });
-  if (!file) return null;
+export async function buildLatestSettingAdapter({ rawClient, versions, now }) {
+  const latest = latestVersionInfo(versions);
+  if (!latest) return null;
+  const source = await fetchText(rawClient, 'Anuken/Mindustry', latest.tag, SOURCE_PATH);
+  if (source === null) return null;
+  const bundleEn = await fetchText(rawClient, 'Anuken/Mindustry', latest.tag, BUNDLE_EN_PATH);
+  const bundleZh = await fetchText(rawClient, 'Anuken/Mindustry', latest.tag, BUNDLE_ZH_PATH);
+  const specs = extractSettingTable(source, {
+    bundleEn: bundleEn ?? '',
+    bundleZh: bundleZh ?? '',
+  });
+  if (specs.length === 0) return null;
   return {
-    index: {
-      update_time: now,
-      rules: [
-        {
-          min_build: file.min_build,
-          max_build: file.max_build,
-          file: '136-999999.json',
-        },
-      ],
-    },
-    file,
+    version: latest.tag,
+    build: latest.build,
+    table: buildSettingTable({
+      version: latest.tag,
+      build: latest.build,
+      specs,
+      now,
+    }),
   };
 }
 
-export async function writeSettingAdapter(outDir, { index, file }) {
-  const indexFile = path.join(outDir, SETTING_ADAPTER_INDEX_REL_PATH);
-  const adapterFile = path.join(outDir, SETTING_ADAPTER_FILE_REL_PATH);
-  const previousIndex = await readJsonIfExists(indexFile).catch(() => null);
-  const previousFile = await readJsonIfExists(adapterFile).catch(() => null);
+function bodyChanged(previous, next) {
+  return (
+    JSON.stringify({ ...previous, update_time: '' }) !==
+    JSON.stringify({ ...next, update_time: '' })
+  );
+}
+
+export async function writeLatestSettingAdapter(outDir, { table, now }) {
+  const currentPath = path.join(outDir, SETTING_ADAPTER_CURRENT_REL_PATH);
+  const indexPath = path.join(outDir, SETTING_ADAPTER_INDEX_REL_PATH);
+  const changesPath = path.join(outDir, SETTING_ADAPTER_CHANGES_REL_PATH);
+  const previousTable = await readJsonIfExists(currentPath).catch(() => null);
   let changed = false;
-  if (
-    !previousIndex ||
-    JSON.stringify({ ...previousIndex, update_time: '' }) !==
-      JSON.stringify({ ...index, update_time: '' })
-  ) {
-    await writeJsonAtomic(indexFile, index);
+
+  if (!previousTable || bodyChanged(previousTable, table)) {
+    await writeJsonAtomic(currentPath, table);
     changed = true;
   }
-  if (
-    !previousFile ||
-    JSON.stringify({ ...previousFile, update_time: '' }) !==
-      JSON.stringify({ ...file, update_time: '' })
-  ) {
-    await writeJsonAtomic(adapterFile, file);
+
+  const index = {
+    formatVersion: 1,
+    update_time: now,
+    version: table.version,
+    build: table.build,
+    file: 'current.json',
+    changes: 'changes.json',
+    setting_count: table.settings.length,
+  };
+  const previousIndex = await readJsonIfExists(indexPath).catch(() => null);
+  if (!previousIndex || bodyChanged(previousIndex, index)) {
+    await writeJsonAtomic(indexPath, index);
     changed = true;
   }
+
+  const previousChanges = await readJsonIfExists(changesPath).catch(() => null);
+  const entries = Array.isArray(previousChanges?.entries) ? [...previousChanges.entries] : [];
+  if (previousTable && bodyChanged(previousTable, table)) {
+    entries.unshift(
+      diffSettingTables(previousTable, table, {
+        fromVersion: previousTable.version,
+        toVersion: table.version,
+        build: table.build,
+        now,
+      }),
+    );
+  }
+  const changesFile = {
+    formatVersion: 1,
+    update_time: now,
+    entries: entries.slice(0, 50),
+  };
+  if (
+    !previousChanges ||
+    JSON.stringify({ ...previousChanges, update_time: '' }) !==
+      JSON.stringify({ ...changesFile, update_time: '' })
+  ) {
+    await writeJsonAtomic(changesPath, changesFile);
+    changed = true;
+  }
+
+  // 不再保留旧的按 build 区间文件
+  await fs.rm(path.join(outDir, SETTING_ADAPTER_LEGACY_REL_PATH), { force: true }).catch(() => {});
   return changed;
 }

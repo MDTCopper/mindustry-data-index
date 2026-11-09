@@ -751,6 +751,7 @@ stats/<owner>/<repo>.json 是 {formatVersion,repo,ref,generatedAt,languages:{bas
 
 ### setting-adapter/
 
-mindustry/setting-adapter/index.json：{update_time,rules:[{min_build,max_build,file}]}。
-mindustry/setting-adapter/136-999999.json：{update_time,min_build,max_build,base_build,base:[spec],changes:[{build,add:[spec],remove:[key]}]}；
-从各版本 SettingsMenuDialog.addSettings() 与中文 bundle 自动生成，spec 字段同启动器 SettingSpec。
+mindustry/setting-adapter/index.json：{formatVersion,update_time,version,build,file,changes,setting_count}，指向最新完整表。
+mindustry/setting-adapter/current.json：{formatVersion,update_time,version,build,settings:[spec]}；
+每个 spec：key、ame:{en,zh_CN}、description:{en,zh_CN}、	ype、categories，int 另有 min/max/step/unit。
+mindustry/setting-adapter/changes.json：{formatVersion,update_time,entries:[{from_version,to_version,build,add,changed,remove}]}，最多 50 条。

@@ -1,0 +1,1015 @@
+{
+  "formatVersion": 1,
+  "update_time": "2026-11-09T12:09:23.337Z",
+  "version": "v160.7",
+  "build": 160,
+  "settings": [
+    {
+      "key": "alwaysmusic",
+      "name": {
+        "en": "Always Play Music",
+        "zh_CN": "始终播放音乐"
+      },
+      "description": {
+        "en": "When enabled, music will always play on loop in-game.\nWhen disabled, it only plays at random intervals.",
+        "zh_CN": "启用后，游戏内音乐将持续循环播放。\n禁用时，音乐将在随机时刻间隔播放。"
+      },
+      "type": "bool",
+      "categories": [
+        "sound"
+      ]
+    },
+    {
+      "key": "musicvol",
+      "name": {
+        "en": "Music Volume",
+        "zh_CN": "音乐音量"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "int",
+      "categories": [
+        "sound"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "sfxvol",
+      "name": {
+        "en": "SFX Volume",
+        "zh_CN": "音效音量"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "int",
+      "categories": [
+        "sound"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "ambientvol",
+      "name": {
+        "en": "Ambient Volume",
+        "zh_CN": "环境音量"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "int",
+      "categories": [
+        "sound"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "saveinterval",
+      "name": {
+        "en": "Save Interval",
+        "zh_CN": "自动保存间隔"
+      },
+      "description": {
+        "en": "Sets the time interval for automatic game saves.",
+        "zh_CN": "调整自动存档的时候间隔。"
+      },
+      "type": "int",
+      "categories": [
+        "game"
+      ],
+      "min": 10,
+      "max": 600,
+      "step": 10
+    },
+    {
+      "key": "autotarget",
+      "name": {
+        "en": "Auto-Target",
+        "zh_CN": "自动瞄准"
+      },
+      "description": {
+        "en": "When enabled, your unit will automatically target and fire at nearby enemies.",
+        "zh_CN": "启用后，单位会自动瞄准最近的敌人并开火。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "keyboard",
+      "name": {
+        "en": "Mouse+Keyboard Controls (Experimental)",
+        "zh_CN": "鼠标+键盘操控"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "communityservers",
+      "name": {
+        "en": "Fetch Community Server List",
+        "zh_CN": "获取社区服务器列表"
+      },
+      "description": {
+        "en": "When enabled, the game will fetch and display a list of community-run multiplayer servers.",
+        "zh_CN": "启动后，游戏将获取并显示社区运营的服务器列表。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "savecreate",
+      "name": {
+        "en": "Auto-Create Saves",
+        "zh_CN": "自动创建存档"
+      },
+      "description": {
+        "en": "When enabled, the game will automatically create a new save file when starting a new game.",
+        "zh_CN": "启动后，游戏会在开始新游戏时自动创建存档。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "blockreplace",
+      "name": {
+        "en": "Automatic Block Suggestions",
+        "zh_CN": "自动推荐合适的建筑"
+      },
+      "description": {
+        "en": "When enabled, placing a block on another of the same type\nwill suggest an automatic upgrade if available.",
+        "zh_CN": "启用后，放置同类方块时会推荐可用的升级版本。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "conveyorpathfinding",
+      "name": {
+        "en": "Conveyor Placement Pathfinding",
+        "zh_CN": "传送带自动寻路"
+      },
+      "description": {
+        "en": "When enabled, placing conveyors will automatically try to find a path to the destination.",
+        "zh_CN": "启用后，传送带会自动寻找到达终点的路径。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "hints",
+      "name": {
+        "en": "Hints",
+        "zh_CN": "提示"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "backgroundpause",
+      "name": {
+        "en": "Pause In Background",
+        "zh_CN": "游戏在后台时自动暂停"
+      },
+      "description": {
+        "en": "When enabled, the game will pause when it is not in focus.",
+        "zh_CN": "启用后，若游戏不在前台，则自动暂停。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "buildautopause",
+      "name": {
+        "en": "Auto-Pause Building",
+        "zh_CN": "自动暂停建造"
+      },
+      "description": {
+        "en": "When enabled, building is automatically paused when the player is not actively building.",
+        "zh_CN": "启用后，若玩家没有主动建造，则自动关闭建造功能。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "distinctcontrolgroups",
+      "name": {
+        "en": "Limit One Control Group Per Unit",
+        "zh_CN": "每单位限制一个编队"
+      },
+      "description": {
+        "en": "When enabled, a unit can only belong to one control group at a time.",
+        "zh_CN": "启用后，每个单位只能从属于一个编队。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "doubletapmine",
+      "name": {
+        "en": "Double-Tap to Mine",
+        "zh_CN": "双击采矿"
+      },
+      "description": {
+        "en": "When enabled, double-tapping on a resource tile will make your unit start mining it.",
+        "zh_CN": "启用后，双击才能使单位开始采矿。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "commandmodehold",
+      "name": {
+        "en": "Hold For Command Mode",
+        "zh_CN": "长按保持指挥模式"
+      },
+      "description": {
+        "en": "Whether command mode is activated by holding the command key down, as opposed to toggling it once.",
+        "zh_CN": "是否需要按住指挥模式按钮才能开启指挥模式，若禁用，单击此按钮会在指挥模式开启或关闭间切换。"
+      },
+      "type": "bool",
+      "categories": [
+        "game"
+      ]
+    },
+    {
+      "key": "playerlimit",
+      "name": {
+        "en": "Player Limit",
+        "zh_CN": "玩家数量限制"
+      },
+      "description": {
+        "en": "Sets the maximum number of players that can join your server.",
+        "zh_CN": "设置服务器的最大玩家数。"
+      },
+      "type": "int",
+      "categories": [
+        "game"
+      ],
+      "min": 2,
+      "max": 32,
+      "step": 1
+    },
+    {
+      "key": "uiEdgePadding",
+      "name": {
+        "en": "UI Edge Padding",
+        "zh_CN": "UI 内边距"
+      },
+      "description": {
+        "en": "Adds padding to the edges of the UI. Useful for displays with rounded corners or notches.",
+        "zh_CN": "在UI内部添加边距。有助于圆角屏或刘海屏的显示效果。"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "key": "uiscale",
+      "name": {
+        "en": "UI Scaling",
+        "zh_CN": "界面缩放比例"
+      },
+      "description": {
+        "en": "Modifies the size of the user interface.\nRestart required to apply changes.",
+        "zh_CN": "需要重新启动"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 25,
+      "max": 300,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "screenshake",
+      "name": {
+        "en": "Screen Shake",
+        "zh_CN": "屏幕抖动"
+      },
+      "description": {
+        "en": "Adjusts the intensity of the screen shake effect from explosions and other events.",
+        "zh_CN": "调节爆炸或其他事件使屏幕抖动的强度。"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 8,
+      "step": 1
+    },
+    {
+      "key": "bloomintensity",
+      "name": {
+        "en": "Bloom Intensity",
+        "zh_CN": "光效强度"
+      },
+      "description": {
+        "en": "Adjusts the intensity of the bloom (glow) effect.",
+        "zh_CN": "调节泛光和自发光的强度。"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 16,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "key": "bloomblur",
+      "name": {
+        "en": "Bloom Blur",
+        "zh_CN": "光效模糊"
+      },
+      "description": {
+        "en": "Adjusts the blurriness of the bloom effect.",
+        "zh_CN": "调节泛光特效的模糊程度。"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 1,
+      "max": 16,
+      "step": 1
+    },
+    {
+      "key": "fpscap",
+      "name": {
+        "en": "Max FPS",
+        "zh_CN": "最大帧数"
+      },
+      "description": {
+        "en": "Sets the maximum frames per second the game will run at.\nHigher values may increase power consumption.",
+        "zh_CN": "限制每秒最大帧数。设置过大可能会更加耗电。"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 10,
+      "max": 245,
+      "step": 5
+    },
+    {
+      "key": "chatopacity",
+      "name": {
+        "en": "Chat Opacity",
+        "zh_CN": "聊天界面不透明度"
+      },
+      "description": {
+        "en": "Adjusts the transparency of the chat window.",
+        "zh_CN": "调节聊天框的透明度，"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "lasersopacity",
+      "name": {
+        "en": "Power Laser Opacity",
+        "zh_CN": "电力连接线不透明度"
+      },
+      "description": {
+        "en": "Adjusts the opacity of power node lasers.",
+        "zh_CN": "调节电力连接线的透明度，"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "unitlaseropacity",
+      "name": {
+        "en": "Unit Mining Beam Opacity",
+        "zh_CN": "单位采矿光束不透明度"
+      },
+      "description": {
+        "en": "Adjusts the opacity of unit mining beams.",
+        "zh_CN": "调节单位采矿光束的透明度，"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "bridgeopacity",
+      "name": {
+        "en": "Bridge Opacity",
+        "zh_CN": "桥梁不透明度"
+      },
+      "description": {
+        "en": "Adjusts the opacity of bridge conveyors.",
+        "zh_CN": "调节运输桥的透明度，"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "key": "maxmagnificationmultiplierpercent",
+      "name": {
+        "en": "Min Camera Distance",
+        "zh_CN": "最小视距"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 100,
+      "max": 200,
+      "step": 25,
+      "unit": "%"
+    },
+    {
+      "key": "minmagnificationmultiplierpercent",
+      "name": {
+        "en": "Max Camera Distance",
+        "zh_CN": "最大视距"
+      },
+      "description": {
+        "en": "High values may cause performance issues.",
+        "zh_CN": "较高的数值可能会导致性能问题。"
+      },
+      "type": "int",
+      "categories": [
+        "graphics"
+      ],
+      "min": 100,
+      "max": 300,
+      "step": 25,
+      "unit": "%"
+    },
+    {
+      "key": "vsync",
+      "name": {
+        "en": "VSync",
+        "zh_CN": "垂直同步"
+      },
+      "description": {
+        "en": "Synchronizes the game's frame rate with the monitor's\nrefresh rate to prevent screen tearing.",
+        "zh_CN": "将游戏帧率与显示器同步以防撕裂。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "fullscreen",
+      "name": {
+        "en": "Fullscreen",
+        "zh_CN": "全屏"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "landscape",
+      "name": {
+        "en": "Lock Landscape",
+        "zh_CN": "锁定横屏"
+      },
+      "description": {
+        "en": "When enabled, the screen orientation is locked to landscape mode.",
+        "zh_CN": "启用后，屏幕朝向会锁定至横屏。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "effects",
+      "name": {
+        "en": "Display Effects",
+        "zh_CN": "建筑特效"
+      },
+      "description": {
+        "en": "Whether to display various visual effects like smoke and particles.",
+        "zh_CN": "是否开启大部分的特效，如粒子特效与烟雾。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "atmosphere",
+      "name": {
+        "en": "Show Planet Atmosphere",
+        "zh_CN": "显示行星大气层"
+      },
+      "description": {
+        "en": "Toggles the rendering of the planet atmospheres in the campaign 3D view.",
+        "zh_CN": "是否在战役界面中渲染行星大气层，"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "drawlight",
+      "name": {
+        "en": "Draw Darkness/Lighting",
+        "zh_CN": "绘制阴影/光照"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "destroyedblocks",
+      "name": {
+        "en": "Display Destroyed Blocks",
+        "zh_CN": "显示已摧毁的建筑"
+      },
+      "description": {
+        "en": "When enabled, destroyed blocks leave behind rubble.",
+        "zh_CN": "启用后，被摧毁的方块会留下废墟。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "blockstatus",
+      "name": {
+        "en": "Display Block Status",
+        "zh_CN": "显示建筑状态"
+      },
+      "description": {
+        "en": "Shows colored status icons above blocks.",
+        "zh_CN": "在方块上显示标识状态的颜色标志。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "playerchat",
+      "name": {
+        "en": "Display Player Bubble Chat",
+        "zh_CN": "显示玩家聊天气泡"
+      },
+      "description": {
+        "en": "When enabled, chat messages from players will appear in bubbles above their heads.",
+        "zh_CN": "启用后，将在玩家头顶显示聊天气泡。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "coreitems",
+      "name": {
+        "en": "Display Core Items",
+        "zh_CN": "显示核心物资"
+      },
+      "description": {
+        "en": "Toggles the display of items stored in the core on the side of the screen.",
+        "zh_CN": "是否在屏幕边缘显示物品存储。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "minimap",
+      "name": {
+        "en": "Show Minimap",
+        "zh_CN": "显示小地图"
+      },
+      "description": {
+        "en": "Toggles the visibility of the minimap in the corner of the screen.",
+        "zh_CN": "是否在屏幕角落显示小地图。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "smoothcamera",
+      "name": {
+        "en": "Smooth Camera",
+        "zh_CN": "平滑镜头"
+      },
+      "description": {
+        "en": "When enabled, the camera will move more smoothly instead of\ninstantly snapping to new positions.",
+        "zh_CN": "启用后，镜头会平滑转动，而非瞬移到新位置。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "detach-camera",
+      "name": {
+        "en": "Free Camera",
+        "zh_CN": "自由视角"
+      },
+      "description": {
+        "en": "If enabled, the camera moves independently of the player unit.\nThis setting can be assigned a hotkey.",
+        "zh_CN": "启用后，视角可独立于玩家单位自由移动。\n此设置可绑定快捷键。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "position",
+      "name": {
+        "en": "Show Player Position",
+        "zh_CN": "显示玩家坐标"
+      },
+      "description": {
+        "en": "Displays the player's coordinates on the screen.",
+        "zh_CN": "是否在屏幕上显示玩家坐标。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "mouseposition",
+      "name": {
+        "en": "Show Mouse Position",
+        "zh_CN": "显示鼠标坐标"
+      },
+      "description": {
+        "en": "Displays the mouse cursor's coordinates on the screen.",
+        "zh_CN": "是否在屏幕上显示鼠标所指坐标。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "fps",
+      "name": {
+        "en": "Show FPS & Ping",
+        "zh_CN": "显示帧数和网络延迟"
+      },
+      "description": {
+        "en": "Displays the current frames per second and network ping in the corner of the screen.",
+        "zh_CN": "在屏幕角落中显示每秒帧数与网络延迟。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "playerindicators",
+      "name": {
+        "en": "Player Indicators",
+        "zh_CN": "玩家指示器"
+      },
+      "description": {
+        "en": "Shows markers pointing in the direction of other players on the map.",
+        "zh_CN": "在地图上显示标记，来指示其他玩家的方向。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "showpings",
+      "name": {
+        "en": "Show Pings",
+        "zh_CN": "显示标记"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "showotherbuildplans",
+      "name": {
+        "en": "Show Other Player's Build Plans",
+        "zh_CN": "显示其他玩家的建筑规划"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "indicators",
+      "name": {
+        "en": "Enemy Indicators",
+        "zh_CN": "敌人指示器"
+      },
+      "description": {
+        "en": "Shows markers pointing in the direction of enemy units.",
+        "zh_CN": "在地图上显示标记，来指示其他敌人的方向。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "showweather",
+      "name": {
+        "en": "Show Weather Graphics",
+        "zh_CN": "显示天气效果"
+      },
+      "description": {
+        "en": "Toggles the display of weather effects like rain and snow.",
+        "zh_CN": "是否显示天气效果，如雨雪等。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "animatedwater",
+      "name": {
+        "en": "Animated Surfaces",
+        "zh_CN": "动态效果"
+      },
+      "description": {
+        "en": "Whether to display animations for surfaces like water, slag and shields.",
+        "zh_CN": "是否显示水、矿渣和护盾等表面的动画。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "bloom",
+      "name": {
+        "en": "Bloom",
+        "zh_CN": "光效"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "pixelate",
+      "name": {
+        "en": "Pixelate",
+        "zh_CN": "像素画面"
+      },
+      "description": {
+        "en": "When enabled, the game is rendered at a lower resolution and\nscaled up, creating a pixelated effect.",
+        "zh_CN": "启用后，游戏会以低分辨率渲染，创造出像素风的显示效果。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "linear",
+      "name": {
+        "en": "Linear Filtering",
+        "zh_CN": "抗锯齿"
+      },
+      "description": {
+        "en": "When enabled, textures are smoothed. When disabled, textures have a pixelated look.",
+        "zh_CN": "启用后，纹理会更加光滑；禁用后，纹理会更加像素化。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "skipcoreanimation",
+      "name": {
+        "en": "Skip Core Launch/Land Animation",
+        "zh_CN": "跳过核心发射/着陆动画"
+      },
+      "description": {
+        "en": "When enabled, the animation for core launching and landing will be skipped.",
+        "zh_CN": "启用后，核心发射/着陆动画将会跳过。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "hidedisplays",
+      "name": {
+        "en": "Hide Logic Displays",
+        "zh_CN": "不显示逻辑绘图"
+      },
+      "description": {
+        "en": "Hides the content of logic displays, which may improve performance.",
+        "zh_CN": "隐藏逻辑显示屏内容，可能会提升性能。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "logiclocalization",
+      "name": {
+        "en": "Logic Localization",
+        "zh_CN": "逻辑本地化"
+      },
+      "description": {
+        "en": "When enabled, text in the logic editor is translated,\ninstead of being English for all languages.",
+        "zh_CN": "翻译逻辑处理器中的术语。"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "macnotch",
+      "name": {
+        "en": "Adapt interface to display notch",
+        "zh_CN": "适应刘海显示"
+      },
+      "description": {
+        "en": "On MacOS devices with a notch, lowers the UI to avoid it.\nRestart required to apply changes.",
+        "zh_CN": "需要重启才能应用更改"
+      },
+      "type": "bool",
+      "categories": [
+        "graphics"
+      ]
+    },
+    {
+      "key": "console",
+      "name": {
+        "en": "Enable Console",
+        "zh_CN": "启用控制台"
+      },
+      "description": {
+        "en": "Enables the in-game Javascript console.",
+        "zh_CN": "启用游戏内 JavaScript 控制台。"
+      },
+      "type": "bool",
+      "categories": [
+        "system"
+      ]
+    },
+    {
+      "key": "drawhitboxes",
+      "name": {
+        "en": "Display Hitboxes",
+        "zh_CN": "显示碰撞箱"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "system"
+      ]
+    },
+    {
+      "key": "showperformance",
+      "name": {
+        "en": "Display Performance Metrics",
+        "zh_CN": "显示性能表现"
+      },
+      "description": {
+        "en": "",
+        "zh_CN": ""
+      },
+      "type": "bool",
+      "categories": [
+        "system"
+      ]
+    },
+    {
+      "key": "modcrashdisable",
+      "name": {
+        "en": "Disable Mods On Startup Crash",
+        "zh_CN": "游戏启动崩溃后禁用模组"
+      },
+      "description": {
+        "en": "When enabled, if the game crashes on startup, all mods\nwill be automatically disabled to prevent a crash loop.",
+        "zh_CN": "启用后，若启动时模组崩溃，则会禁用所有模组以避免无休止的崩溃。"
+      },
+      "type": "bool",
+      "categories": [
+        "system"
+      ]
+    }
+  ]
+}
