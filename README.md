@@ -11,6 +11,7 @@ Mindustry 生态的公共数据索引：由 GitHub Actions 定时抓取并自动
 | 社区模组索引 | `community/index.json`、`community/index-full.json`、`community/releases/...`、`community/summary.*` | 同官方；topic 发现/黑名单每天 |
 | 游戏版本 | `mindustry/versions.json`、`mindustry/recommended-java.json` | 约 30 分钟 |
 | 版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 约 30 分钟 |
+| 额外统计（可选） | `stats/index.json`、`stats/<owner>/<repo>.json` | 手动/单独任务；不进主列表 |
 
 模组来源：官方 `Anuken/MindustryMods` 的 `mods.json` 只提供 repo 列表；社区用 GitHub topic
 `mindustry-mod` 发现（排除官方列表与 Anuken 黑名单）。名称/作者/版本/`minGameVersion` 等来自
@@ -112,6 +113,7 @@ node src/main.js --datasets mods --out .                  # 官方索引（需�
 node src/main.js --datasets mods,community,heat --out .   # 官方+社区+热度
 node src/main.js --datasets versions,gate --out .
 node src/main.js --datasets heat --out . --heat-max-api 0 # 离线只算热度（看排序效果最快）
+node src/main.js --datasets stats --out . --stats-limit 20  # 额外统计（语言/内容量，先小批量）
 node src/main.js --migrate --out .        # 旧数据迁移
 ```
 
@@ -124,6 +126,7 @@ node src/main.js --migrate --out .        # 旧数据迁移
 - 官方列表里被移除的模组，其 release 文件会在后续刷新中删除；社区只收录符合 Anuken 标准的 topic 仓库。
 - 删除/归档判定只在全量刷新（或 `--no-cache`）时做，平时不误标。
 - 数据不保证实时：最新 100 tag 每 2 小时，历史按周/月；版本/门禁约 30 分钟。
+- 额外统计 `stats/*` 需要按最新 tag 拉源码树与 bundle，成本较高，默认不在定时 workflow 里，按需跑。
 - 本地匿名 API 只有 60 次/小时，全量跑务必带 token。
 - 客户端过滤「只看活跃」用 `score.recommendVisible`（沿用 heat 权重 + `MIN_SCORE` 判定）；
   `ranks.recommended` 只决定推荐顺序，不参与隐藏；老 mod 不会因为停更被直接隐藏。

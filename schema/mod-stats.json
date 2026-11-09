@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/mod-stats.json",
+  "title": "mod-stats",
+  "description": "额外统计（不进主列表）：stats/<owner>/<repo>.json",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "repo": {
+      "type": "string"
+    },
+    "ref": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": ["string", "null"]
+        },
+        "totalKeys": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "language": {
+                "type": "string"
+              },
+              "keys": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "rate": {
+                "type": ["number", "null"],
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": ["language", "keys", "rate"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["base", "totalKeys", "languages"],
+      "additionalProperties": false
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    }
+  },
+  "required": ["formatVersion", "repo", "ref", "generatedAt", "languages", "content"],
+  "additionalProperties": true
+}

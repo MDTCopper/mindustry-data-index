@@ -137,6 +137,12 @@ import {
   INDEX_FILE,
 } from './writer.js';
 import {
+  EXTRA_STATS_INDEX,
+  collectModStats,
+  statsRelPath,
+  writeModStats,
+} from './extra-stats.js';
+import {
   VERSIONS_REL_PATH,
   buildVersionsFile,
   versionsBodyChanged,
@@ -167,12 +173,12 @@ import {
   splitLegacyGateFile,
 } from './mod-gate.js';
 
-const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate'];
+const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate', 'stats'];
 
 const USAGE = `用法：node src/main.js [选项]
 
 选项：
-  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate，默认 mods
+  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate,stats，默认 mods
   --out <目录>        产物目录，默认 .
   --token <token>     GitHub token，默认读环境变量 GITHUB_TOKEN
   --repos a/b,c/d     只跑指定仓库（仅 mods 数据集，本地验证用）
@@ -181,6 +187,7 @@ const USAGE = `用法：node src/main.js [选项]
   --community-search-windows <n> 只搜前 n 个时间窗（仅 community，本地验证用）
   --community-max-candidates <n> 最多探测 n 个候选仓库（仅 community，本地验证用）
   --heat-max-api <n>  heat 数据集最多发 n 次 participation/created_at API（0=完全离线，本地验证用）
+  --stats-limit <n>   额外统计最多处理 n 个模组（仅 stats 数据集，本地验证用）
   --threads <n>       同时处理的仓库数，默认 8
   --raw-threads <n>   raw.githubusercontent 并发数，默认 16
   --versions-pages <n>  只抓 Mindustry 版本列表前 n 页（仅本地验证，正式运行不要用）
@@ -216,6 +223,7 @@ export function parseArgs(argv) {
     communitySearchWindows: null,
     communityMaxCandidates: null,
     heatMaxApi: null,
+    statsLimit: null,
     cache: true,
     keepMissingFiles: false,
     migrate: false,
@@ -314,6 +322,9 @@ export function parseArgs(argv) {
         options.heatMaxApi = Number(value);
         break;
       }
+      case '--stats-limit':
+        options.statsLimit = requirePositiveInt('--stats-limit', takeValue());
+        break;
       case '--threads':
         options.threads = requirePositiveInt('--threads', takeValue());
         break;
@@ -373,6 +384,9 @@ export function parseArgs(argv) {
   }
   if (options.heatMaxApi !== null && !options.datasets.includes('heat')) {
     throw new UsageError('--heat-max-api 只用于 heat 数据集');
+  }
+  if (options.statsLimit !== null && !options.datasets.includes('stats')) {
+    throw new UsageError('--stats-limit 只用于 stats 数据集');
   }
   return options;
 }
@@ -2693,6 +2707,59 @@ function isoSeconds(date = new Date()) {
   return date.toISOString().replace(/\.\d{3}Z$/, 'Z');
 }
 
+async function runExtraStats(options, context) {
+  const { apiClient, rawClient, outDir, log } = context;
+  const now = new Date().toISOString();
+  const mods = [];
+  for (const relPath of [FULL_INDEX_REL_PATH, COMMUNITY_FULL_INDEX_REL_PATH]) {
+    const index = await readJsonIfExists(path.join(outDir, relPath)).catch(() => null);
+    for (const mod of Array.isArray(index?.mods) ? index.mods : []) {
+      if (typeof mod?.repo === 'string' && typeof mod.releasesPath === 'string') {
+        mods.push({ repo: mod.repo, releasesPath: mod.releasesPath });
+      }
+    }
+  }
+  const selected = options.statsLimit === null ? mods : mods.slice(0, options.statsLimit);
+  const outputIndex = { formatVersion: 1, generatedAt: now, mods: {} };
+  let written = 0;
+  let failed = 0;
+  for (const mod of selected) {
+    try {
+      const file = await readJsonIfExists(path.join(outDir, mod.releasesPath));
+      const latest =
+        (Array.isArray(file?.versions) ? file.versions : []).find(
+          (item) => item?.removed !== true,
+        ) ?? null;
+      if (!latest?.tag) continue;
+      const stats = await collectModStats({
+        apiClient,
+        rawClient,
+        repo: mod.repo,
+        ref: latest.tag,
+        generatedAt: now,
+      });
+      if (await writeModStats(outDir, mod.repo, stats)) {
+        written += 1;
+      }
+      outputIndex.mods[mod.repo] = statsRelPath(mod.repo);
+    } catch (error) {
+      failed += 1;
+      log(`[stats] ${mod.repo} 统计失败：${error.message}`);
+    }
+  }
+  const indexPath = path.join(outDir, EXTRA_STATS_INDEX);
+  const previous = await readJsonIfExists(indexPath).catch(() => null);
+  if (
+    !previous ||
+    JSON.stringify({ ...previous, generatedAt: '' }) !==
+      JSON.stringify({ ...outputIndex, generatedAt: '' })
+  ) {
+    await writeJsonAtomic(indexPath, outputIndex);
+  }
+  log(`[stats] 额外统计 ${selected.length} 个模组，写入 ${written} 个，失败 ${failed} 个`);
+  return { code: 0, stats: { updatedAt: now, modCount: selected.length, written, failed } };
+}
+
 async function runVersions(options, context) {
   const { apiClient, outDir, log } = context;
   const file = path.join(outDir, VERSIONS_REL_PATH);
@@ -3173,6 +3240,7 @@ export async function run(argv) {
   let heatResult = null;
   let versionsResult = null;
   let gateResult = null;
+  let statsResult = null;
 
   if (options.datasets.includes('mods')) {
     modsResult = await runMods(options, context);
@@ -3209,6 +3277,10 @@ export async function run(argv) {
     const result = gateResult;
     exitCode = Math.max(exitCode, result.code);
     gateChanged = result.changed;
+  }
+  if (options.datasets.includes('stats')) {
+    statsResult = await runExtraStats(options, context);
+    exitCode = Math.max(exitCode, statsResult.code);
   }
 
   // B5：滚动变更流（新变更在前，最多 500 条）；首次建立时只有初始快照 mod-added

@@ -742,3 +742,9 @@ GitHub 在仓库 60 天没有任何提交时会暂停 `schedule`。版本/门禁
 ```
 
 属于维护用文件，使用方不需要读取。有数据变化时心跳随当次数据提交一起刷新。
+
+### stats/
+
+额外统计，不进主列表：stats/index.json 是 {formatVersion,generatedAt,mods:{repo:path}}；
+stats/<owner>/<repo>.json 是 {formatVersion,repo,ref,generatedAt,languages:{base,totalKeys,languages:[{language,keys,rate}]},content:{blocks,items,...}}。
+语言统计取最新 tag 的 undles/bundle_*.properties，以 en 为基准；内容量按 content/<kind>/*.json 文件数，best-effort。
