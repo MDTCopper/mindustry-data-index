@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "twcash/aquarion",
-  "generatedAt": "2026-11-09T18:46:07.320Z",
+  "generatedAt": "2026-11-10T02:43:55.662Z",
   "modType": "java",
   "meta": {
     "name": "aquarion",
     "author": "twcash",
     "description": "A complete rewrite of the campaign. Currently in heavy development.",
-    "version": "4.3.7",
+    "version": "4.4.0",
     "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,40 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "4.4.1",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.4.1/Aquarion.jar",
+      "sha256": "9bfc29317e30f92f8a3f8fd5b8e9dc3091398e8657204de739d1cd33e4c04166",
+      "modVersion": "4.4.0",
+      "sizeBytes": 142654314,
+      "downloadCount": 11,
+      "releasedAt": "2026-11-10T00:34:06Z"
+    },
+    {
+      "tag": "4.4.0",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/4.4.0/AquarionDesktop.jar",
+      "sha256": "7d275401cf7c02157f8dbafc23128821e1a26fd3507a86b989c07e58b1dbdee7",
+      "modVersion": "4.4.0",
+      "sizeBytes": 141325354,
+      "downloadCount": 17,
+      "releasedAt": "2026-11-09T22:49:58Z"
+    },
     {
       "tag": "4.3.7",
       "kind": "release",
@@ -33,7 +67,7 @@
       "sha256": "732240253b9deabd723575c7c389b38b5b421469d07bd2f93dfcb0cca506be14",
       "modVersion": "4.3.7",
       "sizeBytes": 57573097,
-      "downloadCount": 2388,
+      "downloadCount": 2403,
       "releasedAt": "2026-10-24T07:04:04Z"
     },
     {
@@ -50,7 +84,7 @@
       "sha256": "a5ce59c53a99298f91a04c6df3111a50f290d3ee937ce6d742d82aaecb79f1a9",
       "modVersion": "4.3.6",
       "sizeBytes": 57134450,
-      "downloadCount": 483,
+      "downloadCount": 484,
       "releasedAt": "2026-10-22T03:01:49Z"
     },
     {
@@ -67,7 +101,7 @@
       "sha256": "a2e2591db2afe4e8e3d0a545ceb827f0e44657f9a1674e561d1a8e522d583281",
       "modVersion": "4.3.5",
       "sizeBytes": 57136392,
-      "downloadCount": 16,
+      "downloadCount": 18,
       "releasedAt": "2026-10-22T02:49:38Z"
     },
     {
@@ -84,7 +118,7 @@
       "sha256": "09c4da2d67b7c65fc24dc98e66b3107ede9d621ab91c6bcd88c0217b80d3a37d",
       "modVersion": "4.3.4",
       "sizeBytes": 57134997,
-      "downloadCount": 17,
+      "downloadCount": 18,
       "releasedAt": "2026-10-22T01:43:32Z"
     },
     {
@@ -101,7 +135,7 @@
       "sha256": "fea21c11c3a9f654c89b2d083daba8f8e5c30ad4a470a8e271502f09dd6696e1",
       "modVersion": "4.3.3",
       "sizeBytes": 57136319,
-      "downloadCount": 10,
+      "downloadCount": 11,
       "releasedAt": "2026-10-22T01:31:11Z"
     },
     {
@@ -118,7 +152,7 @@
       "sha256": "46e5db4ab04e5da0efc8f288222cdf1facf67e5a0f667bed08cf7ade124a6456",
       "modVersion": "4.3.2",
       "sizeBytes": 57136319,
-      "downloadCount": 12,
+      "downloadCount": 13,
       "releasedAt": "2026-10-22T00:59:12Z"
     },
     {
@@ -135,7 +169,7 @@
       "sha256": "9fab3440538fc59786a5414317f130dd8f9c2f1760bcab07e5e319457f93e261",
       "modVersion": "4.3.1",
       "sizeBytes": 56471183,
-      "downloadCount": 597,
+      "downloadCount": 599,
       "releasedAt": "2026-10-19T10:57:27Z"
     },
     {
@@ -152,7 +186,7 @@
       "sha256": "115024f52a5b4d1eed449762d018ad1d32ecab4c63f35835b6be486dcec767b1",
       "modVersion": "4.3.0",
       "sizeBytes": 56392619,
-      "downloadCount": 115,
+      "downloadCount": 117,
       "releasedAt": "2026-10-18T22:44:34Z"
     },
     {
@@ -169,7 +203,7 @@
       "sha256": "439ab4c4434a57a6fc691d702b665b65483c7f305f369fa3ebb510036071d289",
       "modVersion": "4.2.9",
       "sizeBytes": 71175294,
-      "downloadCount": 2422,
+      "downloadCount": 2424,
       "releasedAt": "2026-10-03T20:30:17Z"
     },
     {
@@ -186,7 +220,7 @@
       "sha256": "bb271e86b4b6a0f9940bec1f55dfffba2273d3f71f6477944c46c2ce38d06ce3",
       "modVersion": "4.2.7",
       "sizeBytes": 52347720,
-      "downloadCount": 2026,
+      "downloadCount": 2027,
       "releasedAt": "2026-09-25T08:17:59Z"
     },
     {
@@ -203,7 +237,7 @@
       "sha256": "45aeb5b7686363ccc36c26522982a0c760d4510ff817a05548079925229e3b7c",
       "modVersion": "4.2.7",
       "sizeBytes": 52325706,
-      "downloadCount": 172,
+      "downloadCount": 173,
       "releasedAt": "2026-09-24T16:00:29Z"
     },
     {
@@ -220,7 +254,7 @@
       "sha256": "6105ab1e57ea0d91604067da69095c3fdae36ea98b0932b5d822721c8cb1b5a2",
       "modVersion": "4.2.6",
       "sizeBytes": 52046145,
-      "downloadCount": 410,
+      "downloadCount": 411,
       "releasedAt": "2026-09-22T17:16:16Z"
     },
     {
@@ -237,7 +271,7 @@
       "sha256": "4f2294ea16c4367bd26b9923b312bf7002961accde3a8d93366cc1aa8b4ba3ed",
       "modVersion": "4.2.4",
       "sizeBytes": 51994093,
-      "downloadCount": 689,
+      "downloadCount": 690,
       "releasedAt": "2026-09-20T00:46:20Z"
     },
     {
@@ -254,7 +288,7 @@
       "sha256": "f6d825f1f8558f9d13f8ff5987b1ee674a353fb7420184987b59ca497b0e37a3",
       "modVersion": "4.2.4",
       "sizeBytes": 51893360,
-      "downloadCount": 1085,
+      "downloadCount": 1086,
       "releasedAt": "2026-09-13T21:41:52Z"
     },
     {
@@ -271,7 +305,7 @@
       "sha256": "5e172c88c6f5955d71397e08398dd8348abf09b9ec6915feddab3f12a4e9471d",
       "modVersion": "4.2.1",
       "sizeBytes": 51351740,
-      "downloadCount": 277,
+      "downloadCount": 278,
       "releasedAt": "2026-09-12T21:21:45Z"
     },
     {
@@ -288,7 +322,7 @@
       "sha256": "225c3cafc83e139bd6863e4970fe28eb0609a8dbf0907a2567a15af37f03c4d2",
       "modVersion": "4.1.0.1",
       "sizeBytes": 50797135,
-      "downloadCount": 504,
+      "downloadCount": 507,
       "releasedAt": "2026-09-11T19:34:26Z"
     },
     {
@@ -305,7 +339,7 @@
       "sha256": "67b5e79c72437b071c9712394ac218332ee7d169e62fd9fc343823031e26a50d",
       "modVersion": "4.1.0.1",
       "sizeBytes": 107742504,
-      "downloadCount": 6529,
+      "downloadCount": 6530,
       "releasedAt": "2026-07-23T20:44:02Z"
     },
     {
@@ -322,7 +356,7 @@
       "sha256": "6e25c2e31e647638a51b1f7085138f368c760731c29ca1f1cef08c720143755d",
       "modVersion": "4.1.0",
       "sizeBytes": 107730979,
-      "downloadCount": 402,
+      "downloadCount": 403,
       "releasedAt": "2026-07-22T20:22:12Z"
     },
     {
@@ -339,7 +373,7 @@
       "sha256": "329c71175b5df541ee2c1197ca17f1b714cf6b0e6d1f0fe2fe8d25bbf01a0a9a",
       "modVersion": "4.0.2",
       "sizeBytes": 108761519,
-      "downloadCount": 1046,
+      "downloadCount": 1050,
       "releasedAt": "2026-07-15T17:34:05Z"
     },
     {
@@ -356,7 +390,7 @@
       "sha256": "e109a248c5492af0794d4ed561f050767801ea943c43fd7b3aad3ad483402420",
       "modVersion": "4.0.1",
       "sizeBytes": 101323478,
-      "downloadCount": 7200,
+      "downloadCount": 7201,
       "releasedAt": "2026-05-26T14:20:27Z"
     },
     {
@@ -373,7 +407,7 @@
       "sha256": "0d22840d8a519e4a419ec23cb3fd9ee57a6eb7e6e6e9601685a5f020aeb8a6ed",
       "modVersion": "4.0.0",
       "sizeBytes": 101105943,
-      "downloadCount": 647,
+      "downloadCount": 648,
       "releasedAt": "2026-05-23T19:16:04Z"
     },
     {
@@ -390,7 +424,7 @@
       "sha256": "2cd42eaa3940c4d3b5d6b2b935fc4ab9ee84489386d6e3487d8a20aa0cdd1918",
       "modVersion": "3.9.3",
       "sizeBytes": 92027204,
-      "downloadCount": 2447,
+      "downloadCount": 2448,
       "releasedAt": "2026-05-07T16:43:29Z"
     },
     {
@@ -407,7 +441,7 @@
       "sha256": "857397569fa56f2c866ae301066a5feeca10f26f8e868220a7bea2692602d6d6",
       "modVersion": "3.9.3",
       "sizeBytes": 90695412,
-      "downloadCount": 2486,
+      "downloadCount": 2487,
       "releasedAt": "2026-03-26T15:56:40Z"
     },
     {
@@ -424,7 +458,7 @@
       "sha256": "49a8a90000df2e73ad5c63208647db37f53d36627f20e22cadee343741ae9945",
       "modVersion": "3.0",
       "sizeBytes": 89849624,
-      "downloadCount": 1115,
+      "downloadCount": 1116,
       "releasedAt": "2026-03-04T01:40:09Z"
     },
     {
@@ -441,7 +475,7 @@
       "sha256": "356087fe0c0deaed8d7a9971008eba23547b423dbd836d3c44daf94bdc03a45e",
       "modVersion": "3.0",
       "sizeBytes": 89240151,
-      "downloadCount": 6515,
+      "downloadCount": 6516,
       "releasedAt": "2026-01-09T04:03:06Z"
     },
     {
@@ -458,7 +492,7 @@
       "sha256": "4e0903472160ff902aebed3d4c089c6299acc2775d59e73aede99dcaa45a466a",
       "modVersion": "3.0",
       "sizeBytes": 115523005,
-      "downloadCount": 1641,
+      "downloadCount": 1642,
       "releasedAt": "2025-12-29T20:41:20Z"
     },
     {
@@ -475,7 +509,7 @@
       "sha256": "172a5345d667f6d99dde95f56bdbca4d1ef08ef253c84a0bc7654c7ad149cf30",
       "modVersion": "3.0",
       "sizeBytes": 115433408,
-      "downloadCount": 219,
+      "downloadCount": 220,
       "releasedAt": "2025-12-04T03:48:34Z"
     },
     {
@@ -492,7 +526,7 @@
       "sha256": "6a945bb0e3ce7e67f7ed9a110de89e848ac0cff0a649f2e8486bb909cc93f83a",
       "modVersion": "3.0",
       "sizeBytes": 109615177,
-      "downloadCount": 7343,
+      "downloadCount": 7345,
       "releasedAt": "2025-09-17T19:52:27Z"
     },
     {
@@ -509,7 +543,7 @@
       "sha256": "daa8ca23bc1c4052b4e44c907cdf5264f3628489d86e265694af016adc2dfc00",
       "modVersion": "3.0",
       "sizeBytes": 71636879,
-      "downloadCount": 2165,
+      "downloadCount": 2166,
       "releasedAt": "2025-09-01T18:37:57Z"
     },
     {
@@ -526,7 +560,7 @@
       "sha256": "8dd07eb171899ac4d326af7a9e7ebb83c46e9ab948cf9f858e030274b1e1971a",
       "modVersion": "3.0",
       "sizeBytes": 71634110,
-      "downloadCount": 240,
+      "downloadCount": 241,
       "releasedAt": "2025-09-01T04:27:23Z"
     },
     {
@@ -543,7 +577,7 @@
       "sha256": "aefe3b73c8922ccaa635a8d21e53a79fce9cabf368cf8da8161d5a2f67d767b0",
       "modVersion": "3.0",
       "sizeBytes": 71634151,
-      "downloadCount": 475,
+      "downloadCount": 476,
       "releasedAt": "2025-08-30T01:52:21Z"
     },
     {
@@ -560,7 +594,7 @@
       "sha256": "5c5ff1b7dde0958b07c4d7192cf63f3d4c55c2cab79376c634151ae7f7dd7d49",
       "modVersion": "3.0",
       "sizeBytes": 70594635,
-      "downloadCount": 78,
+      "downloadCount": 79,
       "releasedAt": "2025-08-29T03:10:19Z"
     },
     {
@@ -577,7 +611,7 @@
       "sha256": "13d6e035edefa30feb1482339591ebcaadbe024186f59083039416ad2b9a3642",
       "modVersion": "3.0",
       "sizeBytes": 70493633,
-      "downloadCount": 203,
+      "downloadCount": 204,
       "releasedAt": "2025-08-28T00:18:00Z"
     },
     {
@@ -594,7 +628,7 @@
       "sha256": "a570a417ee8edd14c71c26cc230cf3559ccf6910c9ad69d6f07b3c579128ff8a",
       "modVersion": "3.0",
       "sizeBytes": 69772962,
-      "downloadCount": 4294,
+      "downloadCount": 4295,
       "releasedAt": "2025-06-29T05:40:56Z"
     },
     {
@@ -611,7 +645,7 @@
       "sha256": "8e341e6e1c4fab24c032d6605b68862618ebd8d76c1f94a55b67e74f583d7b92",
       "modVersion": "3.0",
       "sizeBytes": 69586333,
-      "downloadCount": 685,
+      "downloadCount": 686,
       "releasedAt": "2025-06-23T00:39:17Z"
     },
     {
@@ -628,7 +662,7 @@
       "sha256": "5222459eb675bc49afd2ab142de5504cef8e5f271ebc138c45d41b6bca2d4510",
       "modVersion": "3.0",
       "sizeBytes": 69582469,
-      "downloadCount": 159,
+      "downloadCount": 160,
       "releasedAt": "2025-06-22T06:43:48Z"
     },
     {
@@ -645,7 +679,7 @@
       "sha256": "939b52f023f7c58c78a40c73422469cc607e5d1687a7871be1bfb6663adc0266",
       "modVersion": "3.0",
       "sizeBytes": 69579491,
-      "downloadCount": 81,
+      "downloadCount": 82,
       "releasedAt": "2025-06-22T03:15:41Z"
     },
     {
@@ -662,7 +696,7 @@
       "sha256": "1df963dd584252f1fdbd2c9dcc35d2d4222400c1c46fc49563b574355046ed1b",
       "modVersion": "3.0",
       "sizeBytes": 69579851,
-      "downloadCount": 99,
+      "downloadCount": 100,
       "releasedAt": "2025-06-22T01:35:25Z"
     },
     {
@@ -678,7 +712,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.3.1/Aquarion.jar",
       "modVersion": "3.0",
       "sizeBytes": 69348201,
-      "downloadCount": 2780,
+      "downloadCount": 2782,
       "releasedAt": "2025-05-23T15:24:11Z"
     },
     {
@@ -694,7 +728,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.3.0/Aquarion.jar",
       "modVersion": "3.0",
       "sizeBytes": 69165771,
-      "downloadCount": 449,
+      "downloadCount": 451,
       "releasedAt": "2025-05-21T15:26:33Z"
     },
     {
@@ -710,7 +744,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.2/Aquarion.jar",
       "modVersion": "3.0",
       "sizeBytes": 65941220,
-      "downloadCount": 1626,
+      "downloadCount": 1628,
       "releasedAt": "2025-03-20T19:58:25Z"
     },
     {
@@ -726,7 +760,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.1/Aquarion.jar",
       "modVersion": "3.0",
       "sizeBytes": 4318487,
-      "downloadCount": 6715,
+      "downloadCount": 6717,
       "releasedAt": "2025-01-26T05:25:54Z"
     },
     {
@@ -742,7 +776,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.0.3.92/Aquarion.jar",
       "modVersion": "2.0.3",
       "sizeBytes": 3254947,
-      "downloadCount": 7325,
+      "downloadCount": 7327,
       "releasedAt": "2024-10-24T05:12:28Z"
     },
     {
@@ -758,7 +792,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/3.0.1.1/AquarionDesktop.jar",
       "modVersion": "2.0.3",
       "sizeBytes": 3134719,
-      "downloadCount": 275,
+      "downloadCount": 277,
       "releasedAt": "2024-10-22T00:53:09Z",
       "prerelease": true
     },
@@ -775,7 +809,7 @@
       "downloadUrl": "https://github.com/Twcash/Aquarion/releases/download/Release/AquarionDesktop.jar",
       "modVersion": "2.0.3",
       "sizeBytes": 2984612,
-      "downloadCount": 351,
+      "downloadCount": 353,
       "releasedAt": "2024-10-20T06:42:28Z",
       "prerelease": true
     }

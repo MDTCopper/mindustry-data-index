@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "use-lessdev/devilized-lunarians-system",
-  "generatedAt": "2026-11-09T18:46:07.320Z",
+  "generatedAt": "2026-11-10T02:43:55.662Z",
   "modType": "java",
   "meta": {
     "name": "lunarians",
     "author": "Ron",
-    "description": "[purple]Domain expansion[] - Lunarians v3.81.4 (client-only, PC + mobile).\n\n[accent]Automation & Building[]\n- Auto Fill (beta) - Auto Drill - Auto Connect Conveyor - Conveyor Upgrade - Auto Container - Auto Set (config/slots)\n\n[accent]Units & Combat[]\n- Auto Unit - Auto Attack (Smart Path: fewer turrets/safer route to core, toggle; layer-by-layer formation with configurable delay) - Formations: Line, Arc, Ring, Triangle, Diamond, Box, Chevron - Auto Defence - Auto Shield - Auto Heal - Auto Unit Heal - Auto Cargo - Auto Dock - Auto Moon - Formations\n\n[accent]Economy & Resources[]\n- Auto Economy - Resource Loss Warn - Production Alert - Energy Watch - Power Link - Miner Fix/Units - Used Area\n\n[accent]QoL & Utilities[]\n- FreeCam (beta) - Units Follow Camera (beta) - Schematic Placer/Panel - Proton Schematics - Enemy Core Alert - Weather Safe - Server Guard - Chat Commands\n- Unit Conversations (EN, toggle): 5 per unit type (kept, longer) + 5 unique per pair for all combinations, partner variation; T1-T3 playful, T4-T5 serious; square speech bubbles; proximity/crowd/player-aware\n\n[accent]Social/Hub[]\n- Lunarians Hub: global chat, presence, hub features.\n\n[lightgray]Author: Ron | Java mod | minGame 154 | hidden[]",
-    "version": "3.81.4",
+    "description": "[purple]Domain expansion[] - Lunarians v3.81.5 (client-only, PC + mobile).\n\n[accent]Automation & Building[]\n- Auto Fill (beta) - Auto Drill - Auto Connect Conveyor - Conveyor Upgrade - Auto Container - Auto Set (config/slots)\n\n[accent]Units & Combat[]\n- Auto Unit - Auto Attack (Smart Path: fewer turrets/safer route to core, toggle; layer-by-layer formation with configurable delay) - Formations: Line, Arc, Ring, Triangle, Diamond, Box, Chevron - Auto Defence - Auto Shield - Auto Heal - Auto Unit Heal - Auto Cargo - Auto Dock - Auto Moon - Formations\n\n[accent]Economy & Resources[]\n- Auto Economy - Resource Loss Warn - Production Alert - Energy Watch - Power Link - Miner Fix/Units - Used Area\n\n[accent]QoL & Utilities[]\n- FreeCam (beta) - Units Follow Camera (beta) - Schematic Placer/Panel - Proton Schematics - Enemy Core Alert - Weather Safe - Server Guard - Chat Commands\n- Unit Conversations (EN, toggle): 5 per unit type (kept, longer) + 5 unique per pair for all combinations, partner variation; T1-T3 playful, T4-T5 serious; square speech bubbles; proximity/crowd/player-aware\n\n[accent]Social/Hub[]\n- Lunarians Hub: global chat, presence, hub features.\n\n[lightgray]Author: Ron | Java mod | minGame 154 | hidden[]",
+    "version": "3.81.5",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v3.81.5",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.81.5/Lunarians-v3.81.5-PC-Mobile.jar",
+      "sha256": "f2f12789e8bf1aaa291c2ce4e82596366e1628bd2790271577cd9f9e637679c6",
+      "modVersion": "3.81.5",
+      "sizeBytes": 1202914,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-09T23:34:46Z"
+    },
     {
       "tag": "v3.81.4",
       "kind": "release",
