@@ -392,8 +392,11 @@ function validateFileMeta(file, { errors }) {
     errors.push('meta 不是对象或 null');
     return;
   }
-  if (!isPlainObject(meta.dependencies)) {
-    errors.push('meta.dependencies 应为对象');
+  if (
+    !isPlainObject(meta.dependencies) &&
+    !(Array.isArray(meta.dependencies) && meta.dependencies.every((item) => typeof item === 'string'))
+  ) {
+    errors.push('meta.dependencies 应为对象或字符串数组');
   }
   for (const field of ['hidden', 'legacyCompatible', 'hasScripts', 'hasJava']) {
     if (typeof meta[field] !== 'boolean') {

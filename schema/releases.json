@@ -28,7 +28,17 @@
           "type": "object",
           "properties": {
             "dependencies": {
-              "type": "object"
+              "oneOf": [
+                {
+                  "type": "object"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
             },
             "hidden": {
               "type": "boolean"

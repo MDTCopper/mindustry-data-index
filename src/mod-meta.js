@@ -183,15 +183,39 @@ export function parseModMetadataDocument(text) {
     main,
     java: parsed.java === true,
     scriptsRoot: hasScripts,
-    dependencies:
-      parsed.dependencies !== null &&
-      typeof parsed.dependencies === 'object' &&
-      !Array.isArray(parsed.dependencies)
-        ? parsed.dependencies
-        : {},
+    dependencies: normalizeDependenciesValue(parsed.dependencies),
     hasScripts,
     hasJava: parsed.java === true || main !== null,
   };
+}
+
+// 原版 mod 的 dependencies 是 id 数组；Copper 是 {mindustry, modId: 版本过滤} 对象
+export function normalizeDependenciesValue(value) {
+  if (Array.isArray(value)) {
+    return value.filter((item) => typeof item === 'string' && item.trim().length > 0);
+  }
+  if (value !== null && typeof value === 'object') {
+    return value;
+  }
+  return {};
+}
+
+// 拆出模组依赖 id 与游戏本体版本要求；mindustry/loader 不算模组依赖
+export function dependencyInfo(dependencies) {
+  if (Array.isArray(dependencies)) {
+    return { ids: dependencies.filter((item) => typeof item === 'string'), mindustry: null };
+  }
+  if (dependencies !== null && typeof dependencies === 'object') {
+    const ids = Object.keys(dependencies).filter(
+      (key) => key !== 'mindustry' && key !== 'loader',
+    );
+    const mindustry = dependencies.mindustry;
+    return {
+      ids,
+      mindustry: typeof mindustry === 'string' ? mindustry : null,
+    };
+  }
+  return { ids: [], mindustry: null };
 }
 
 // per-mod 文件里的 meta：保留客户端/索引需要的完整字段（v3 从元数据推导 mod 信息）

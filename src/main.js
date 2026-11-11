@@ -46,7 +46,7 @@ import {
   discoverCommunityRepos,
 } from './community-source.js';
 import { loadBlacklist } from './blacklist.js';
-import { fetchModMetadata, fetchModMetadataDocument } from './mod-meta.js';
+import { dependencyInfo, fetchModMetadata, fetchModMetadataDocument } from './mod-meta.js';
 import { plainFields } from './plain.js';
 import { CHANGES_REL_PATH, diffModEntry, diffReleaseFiles, mergeChanges, normalizeChanges } from './changes.js';
 import { STATUS_REL_PATH, apiStatus, buildStatus } from './status.js';
@@ -146,6 +146,7 @@ import {
   buildLatestSettingAdapter,
   writeLatestSettingAdapter,
 } from './settings-adapter.js';
+import { writeDependencyIndex } from './dependencies.js';
 import {
   VERSIONS_REL_PATH,
   buildVersionsFile,
@@ -504,6 +505,17 @@ export function buildIndexEntry(
     allAssetsDownloads: stats.allAssetsDownloads,
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
   };
+  const dependency = dependencyInfo(meta?.dependencies);
+  if (dependency.ids.length > 0) {
+    result.dependencies = dependency.ids;
+  } else if (Array.isArray(oldEntry?.dependencies) && oldEntry.dependencies.length > 0) {
+    result.dependencies = oldEntry.dependencies;
+  }
+  if (dependency.mindustry) {
+    result.mindustryDependency = dependency.mindustry;
+  } else if (oldEntry?.mindustryDependency) {
+    result.mindustryDependency = oldEntry.mindustryDependency;
+  }
   if (meta?.copper === true || oldEntry?.copper === true) {
     result.copper = true;
   }
@@ -3293,6 +3305,13 @@ export async function run(argv) {
     communitySummaryChanged = result.summaryChanged ?? false;
     communityStateChanged = result.stateChanged ?? false;
     communityUnprocessed = result.unprocessed ?? 0;
+  }
+  let dependenciesChanged = false;
+  if (
+    !options.dryRun &&
+    (options.datasets.includes('mods') || options.datasets.includes('community'))
+  ) {
+    dependenciesChanged = await writeDependencyIndex(outDir, { now: new Date().toISOString(), log });
   }
   if (options.datasets.includes('heat')) {
     heatResult = await runHeat(options, context);

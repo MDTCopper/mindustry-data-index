@@ -755,3 +755,9 @@ mindustry/setting-adapter/index.json：{formatVersion,update_time,version,build,
 mindustry/setting-adapter/current.json：{formatVersion,update_time,version,build,settings:[spec]}；
 每个 spec：key、ame:{en,zh_CN}、description:{en,zh_CN}、	ype、categories，int 另有 min/max/step/unit。
 mindustry/setting-adapter/changes.json：{formatVersion,update_time,entries:[{from_version,to_version,build,add,changed,remove}]}，最多 50 条。
+
+### dependencies.json
+
+`{formatVersion,generatedAt,mods:{internalName:{repo,source,name,version,dependencies}},`
+`reverse:{dep:[dependents]},missing:[{id,repo,source,dependency}]}`。
+index 条目：`dependencies: [internalName]`、`mindustryDependency: "..."`（Copper）。

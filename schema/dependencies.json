@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/dependencies.json",
+  "title": "dependencies",
+  "description": "全局依赖图：internalName → 模组节点、反向依赖、缺失依赖",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "mods": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string"
+          },
+          "source": {
+            "enum": [
+              "official",
+              "community"
+            ]
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "repo",
+          "source",
+          "dependencies"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reverse": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "missing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "repo": {
+            "type": "string"
+          },
+          "source": {
+            "enum": [
+              "official",
+              "community"
+            ]
+          },
+          "dependency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "repo",
+          "source",
+          "dependency"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "generatedAt",
+    "mods",
+    "reverse",
+    "missing"
+  ],
+  "additionalProperties": false
+}

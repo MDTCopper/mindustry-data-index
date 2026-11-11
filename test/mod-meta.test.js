@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   candidateMetadataPaths,
+  dependencyInfo,
   extractModMetadataFields,
   fetchModMetadata,
   fetchModMetadataDocument,
@@ -243,4 +244,23 @@ test('fetchModMetadata：解析失败记 unparsed；缺 name 视为不可用', a
     { repo, tag: 'v1', hasJava: false },
   );
   assert.equal(noName.metadataStatus, 'unparsed');
+});
+
+test('dependencies：原版数组与 Copper 对象都保留，拆出模组 id 与游戏版本要求', () => {
+  const original = parseModMetadataDocument(
+    '{ name: Demo, dependencies: ["other-mod", "util-mod"] }',
+  );
+  assert.deepEqual(original.dependencies, ['other-mod', 'util-mod']);
+  assert.deepEqual(dependencyInfo(original.dependencies), {
+    ids: ['other-mod', 'util-mod'],
+    mindustry: null,
+  });
+
+  const copper = parseModMetadataDocument(
+    '{ name: CopperDemo, dependencies: { mindustry: ">=146", "other-mod": "1.0" } }',
+  );
+  assert.deepEqual(dependencyInfo(copper.dependencies), {
+    ids: ['other-mod'],
+    mindustry: '>=146',
+  });
 });

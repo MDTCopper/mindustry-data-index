@@ -1,7 +1,7 @@
 // 社区模组：收录标准过滤、完整元数据、图标探测、index 条目构造
 
 import { rawFileUrlVariants } from './releases.js';
-import { fetchCommunityModMetadata } from './mod-meta.js';
+import { dependencyInfo, fetchCommunityModMetadata } from './mod-meta.js';
 import { assertRepo } from './paths.js';
 import { isBlacklisted } from './blacklist.js';
 import { latestCompatibleTag } from './compat.js';
@@ -209,6 +209,17 @@ export function buildCommunityIndexEntry(
     releaseDataUpdatedAt: file?.generatedAt ?? oldEntry?.releaseDataUpdatedAt ?? null,
     ...(mod.defaultBranch ? { defaultBranch: mod.defaultBranch } : {}),
   };
+  const dependency = dependencyInfo(meta?.dependencies);
+  if (dependency.ids.length > 0) {
+    result.dependencies = dependency.ids;
+  } else if (Array.isArray(oldEntry?.dependencies) && oldEntry.dependencies.length > 0) {
+    result.dependencies = oldEntry.dependencies;
+  }
+  if (dependency.mindustry) {
+    result.mindustryDependency = dependency.mindustry;
+  } else if (oldEntry?.mindustryDependency) {
+    result.mindustryDependency = oldEntry.mindustryDependency;
+  }
   if (meta?.copper === true) {
     result.copper = true;
   }

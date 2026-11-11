@@ -256,6 +256,17 @@
           "copper": {
             "type": "boolean",
             "description": "Copper 原生模组（copper.mod.*）"
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "模组依赖的内部名列表（不含 mindustry/loader）"
+          },
+          "mindustryDependency": {
+            "type": "string",
+            "description": "Copper 的 dependencies.mindustry 原始版本过滤表达式"
           }
         },
         "required": [

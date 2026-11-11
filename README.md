@@ -12,6 +12,7 @@ Mindustry 生态的公共数据索引：由 GitHub Actions 定时抓取并自动
 | 游戏版本 | `mindustry/versions.json`、`mindustry/recommended-java.json` | 约 30 分钟 |
 | 版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 约 30 分钟 |
 | 设置适配 | `mindustry/setting-adapter/index.json`、`current.json`、`changes.json` | 随版本列表（约 30 分钟） |
+| 依赖图 | `dependencies.json` | 随模组/社区刷新 |
 | 额外统计（可选） | `stats/index.json`、`stats/<owner>/<repo>.json` | 手动/单独任务；不进主列表 |
 
 模组来源：官方 `Anuken/MindustryMods` 的 `mods.json` 只提供 repo 列表；社区用 GitHub topic
