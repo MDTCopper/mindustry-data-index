@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "dark-matter-yt/mobile-tools",
-  "generatedAt": "2026-11-10T02:43:55.662Z",
+  "generatedAt": "2026-11-11T13:35:41.621Z",
   "modType": "js",
   "meta": {
     "name": "mobile-tools",
     "author": "Dark_Matter",
-    "description": "Quick bar + tabbed menu: help builders, build planner, auto mine (incl. wall ores), heal at repair point, speed boost, anti-grief with rebuild, overlays, mod-user detection.",
-    "version": null,
+    "description": "Quick bar + tabbed menu: help builders, build planner, auto mine, auto Heal, speed boost, anti-grief with rebuild, overlays, and user detection.",
+    "version": "3.2.2",
     "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,20 @@
     "hasJava": false
   },
   "versions": [
+    {
+      "tag": "v3.2.2",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/dark-matter-yt/mobile-tools/archive/refs/tags/v3.2.2.zip",
+      "modVersion": "3.2.2",
+      "releasedAt": "2026-11-11T13:30:39Z"
+    },
     {
       "tag": "v3.1.7",
       "kind": "tag",

@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "mohamedgonem/ore-gens",
-  "generatedAt": "2026-11-09T04:55:14.539Z",
+  "generatedAt": "2026-11-11T13:35:41.621Z",
   "modType": "js",
   "meta": {
     "name": "ore-gens",
     "author": "MohamedGonem",
     "description": "\nBlocks that extract and synthesize ore from airborne trace elements,\ndissolved ion suspensions and cryogenic precipitation - plus a fully\nself-contained liquid economy.\n\nFive tiers per ore:\n- Small Powered (2x2): fast, needs power, moderate cost.\n- Small Unpowered (2x2): slow, no power, expensive to build.\n- Liquid-fed (3x3): fast, needs water (ozone on Erekir), no power.\n- Cryofluid-fed (3x3): fastest, needs power + cryofluid.\n- Magma-fed (4x4): ultimate output, needs slag (gallium on Erekir) + cryofluid + power.\n\nOres: copper, lead, coal, titanium, scrap, thorium, sand (Serpulo),\nberyllium, tungsten (Erekir).\n\nSelf-contained liquids: water/ozone, cryofluid and slag/gallium generators\nproduce every liquid the tiers consume, each progressively more expensive.\n\nMulti-ore synthesizers (4x4) batch-produce basic ores with fixed ratios;\nrefined and advanced versions add titanium and thorium.\n\nEvery tier is gated behind a 3-step research quest (15 milestones per ore).\nUpgrades run to ten levels each - Speed I-X, Capacity I-X, Output I-X,\nEfficiency I-X - with escalating, huge research costs.\nAnimated: powered, liquid, cryo and magma tiers glow and spin while running.\n",
-    "version": null,
+    "version": "2.0.0",
     "minGameVersion": "159",
     "dependencies": {},
     "hidden": false,

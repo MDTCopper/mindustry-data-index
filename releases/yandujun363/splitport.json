@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "yandujun363/splitport",
-  "generatedAt": "2026-11-09T04:55:14.539Z",
+  "generatedAt": "2026-11-11T13:35:41.621Z",
   "modType": "js",
   "meta": {
     "name": "splitport",
     "author": "yandujun363",
     "description": "Client-side only: reads the separate TCP and UDP ports from the _mindustry._tcp and _mindustry._udp SRV records, so you can join servers whose NAT exposes a different external port for each protocol. Falls back to the vanilla single-port logic whenever no SRV record answers, adds no content, and is hidden from the multiplayer mod handshake so servers without it never kick you.",
-    "version": null,
+    "version": "2.3.0",
     "minGameVersion": "146",
     "dependencies": {},
     "hidden": true,
