@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "use-lessdev/devilized-lunarians-system",
-  "generatedAt": "2026-11-11T01:56:04.245Z",
+  "generatedAt": "2026-11-11T09:22:02.605Z",
   "modType": "java",
   "meta": {
     "name": "lunarians",
     "author": "Ron",
-    "description": "[purple]Domain expansion[] - Lunarians v3.82.1 (client-only, PC + mobile).\n\n[accent]Automation & Building[]\n- Auto Fill (beta) - Auto Drill - Auto Connect Conveyor - Conveyor Upgrade - Auto Container - Auto Set (config/slots)\n\n[accent]Units & Combat[]\n- Auto Unit - Auto Attack (Smart Path: fewer turrets/safer route to core, toggle; layer-by-layer formation with configurable delay) - Formations: Line, Arc, Ring, Triangle, Diamond, Box, Chevron - Auto Defence - Auto Shield - Auto Heal - Auto Unit Heal - Auto Cargo - Auto Dock - Auto Moon - Formations\n\n[accent]Economy & Resources[]\n- Auto Economy - Resource Loss Warn - Production Alert - Energy Watch - Power Link - Miner Fix/Units - Used Area\n\n[accent]QoL & Utilities[]\n- FreeCam (beta) - Units Follow Camera (beta) - Schematic Placer/Panel - Proton Schematics - Enemy Core Alert - Weather Safe - Server Guard - Chat Commands\n- Unit Conversations (EN, toggle): 5 per unit type (kept, longer) + 5 unique per pair for all combinations, partner variation; T1-T3 playful, T4-T5 serious; square speech bubbles; proximity/crowd/player-aware\n\n[accent]Social/Hub[]\n- Lunarians Hub: global chat, presence, hub features.\n\n[lightgray]Author: Ron | Java mod | minGame 154 | hidden[]",
-    "version": "3.82.1",
+    "description": "[purple]Domain expansion[] - Lunarians v3.82.0 (client-only, PC + mobile).\n\n[accent]Automation & Building[]\n- Auto Fill (beta) - Auto Drill - Auto Connect Conveyor - Conveyor Upgrade - Auto Container - Auto Set (config/slots)\n\n[accent]Units & Combat[]\n- Auto Unit - Auto Attack (Smart Path: fewer turrets/safer route to core, toggle; layer-by-layer formation with configurable delay) - Formations: Line, Arc, Ring, Triangle, Diamond, Box, Chevron - Auto Defence - Auto Shield - Auto Heal - Auto Unit Heal - Auto Cargo - Auto Dock - Auto Moon - Formations\n\n[accent]Economy & Resources[]\n- Auto Economy - Resource Loss Warn - Production Alert - Energy Watch - Power Link - Miner Fix/Units - Used Area\n\n[accent]QoL & Utilities[]\n- FreeCam (beta) - Units Follow Camera (beta) - Schematic Placer/Panel - Proton Schematics - Enemy Core Alert - Weather Safe - Server Guard - Chat Commands\n- Unit Conversations (EN, toggle): 5 per unit type (kept, longer) + 5 unique per pair for all combinations, partner variation; T1-T3 playful, T4-T5 serious; square speech bubbles; proximity/crowd/player-aware\n\n[accent]Social/Hub[]\n- Lunarians Hub: global chat, presence, hub features.\n\n[lightgray]Author: Ron | Java mod | minGame 154 | hidden[]",
+    "version": "3.82.0",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,40 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v3.82.5",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.82.5/Lunarians-v3.82.5-PC-Mobile.jar",
+      "sha256": "fadd5ad061863e5215f9a5cbe7d6b166e99cbb05e18c55ce8ed6ba44235ba8fd",
+      "modVersion": "3.82.0",
+      "sizeBytes": 3488334,
+      "downloadCount": 6,
+      "releasedAt": "2026-11-11T03:08:53Z"
+    },
+    {
+      "tag": "v3.82.4",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Use-lessDev/Devilized-Lunarians-System/releases/download/v3.82.4/Lunarians-v3.82.4-PC-Mobile.jar",
+      "sha256": "6188cfd6158596aa7d036f50b9afdda4e4256257c1cfd61be21a6b002923d3af",
+      "modVersion": "3.82.0",
+      "sizeBytes": 3488451,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-11T02:48:07Z"
+    },
     {
       "tag": "v3.82.2",
       "kind": "release",
@@ -33,7 +67,7 @@
       "sha256": "706a5ee43ff63281fd28300ca2d7c0d85a317d83c581d4879b7eaa456faa68a8",
       "modVersion": "3.82.1",
       "sizeBytes": 1231728,
-      "downloadCount": 2,
+      "downloadCount": 5,
       "releasedAt": "2026-11-10T21:59:31Z"
     },
     {
