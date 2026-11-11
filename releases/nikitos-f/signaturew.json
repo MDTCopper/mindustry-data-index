@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "nikitos-f/signaturew",
-  "generatedAt": "2026-11-11T13:35:41.621Z",
+  "generatedAt": "2026-11-11T17:53:08.076Z",
   "modType": "java",
   "meta": {
     "name": "signatureW",
     "author": "Creen & -Arlekino-",
     "description": "RU: мод, ориентированный на долгое и тяжелое пвп, играющееся от глухой обороны и сильное промышленности (В будущем)\n\n\nEN: A mod focused on long and heavy PVP, played from a blind defense and a strong industry (In distant future)\n\n\n\nВступайте в наш дискорд \nJoin our discord server\n\nhttps://discord.gg/AsHckERqCW",
-    "version": "X.1.1",
+    "version": "X.1.1.A",
     "minGameVersion": "157.4",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "X.1.1.A",
+      "kind": "release",
+      "minGameVersion": "157.4",
+      "gameVersionRanges": [
+        {
+          "from": "157.4",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Nikitos-F/SignatureW/releases/download/X.1.1.A/SignatureW.jar",
+      "sha256": "4541b11e4c20866b6ea67c3cd465163cf101106a256d640a8a09a78babce5985",
+      "modVersion": "X.1.1.A",
+      "sizeBytes": 603253,
+      "downloadCount": 12,
+      "releasedAt": "2026-11-11T15:18:21Z"
+    },
     {
       "tag": "X.1.1",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "5bce18dcfa9867374de5612e5cf74d4648e087cb9660d84b2e0c28e9a2bd5452",
       "modVersion": "X.1.1",
       "sizeBytes": 572699,
-      "downloadCount": 135,
+      "downloadCount": 137,
       "releasedAt": "2026-11-03T16:29:09Z"
     }
   ]
