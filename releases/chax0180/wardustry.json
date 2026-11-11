@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "chax0180/wardustry",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "war",
@@ -9,7 +9,10 @@
     "description": "Adds an extensive campaign focused on establishing production exports which drive the military conquest of the planet through intense battleground sectors.",
     "version": "0",
     "minGameVersion": "136",
-    "dependencies": {},
+    "dependencies": [
+      "multicrafter",
+      "oil"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

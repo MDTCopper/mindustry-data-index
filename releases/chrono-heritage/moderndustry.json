@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "chrono-heritage/moderndustry",
-  "generatedAt": "2026-11-09T18:46:07.320Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "java",
   "meta": {
     "name": "chrono-moderndustry",
@@ -9,7 +9,9 @@
     "description": "A mod that add modern items and block inculde industry or nuclear.",
     "version": "v0.01",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "multi-crafter"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": "md.mdLoader",

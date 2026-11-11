@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "falkowitz/medieval-mindustry",
-  "generatedAt": "2026-11-09T18:46:07.320Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "js",
   "meta": {
     "name": "mm",
@@ -9,7 +9,9 @@
     "description": "Total conversion PVP mod set in fantasy medieval times",
     "version": "0.1",
     "minGameVersion": "136",
-    "dependencies": {},
+    "dependencies": [
+      "multi-crafter"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

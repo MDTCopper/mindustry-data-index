@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "deltanedas/tracker",
-  "generatedAt": "2026-11-09T09:22:39.628Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "js",
   "meta": {
     "name": "tracker",
@@ -9,7 +9,9 @@
     "description": "Create easily visible markers to track a position or player.\n[stat]Requires [#00aaff]deltanedas/ui-lib[].",
     "version": "3.5.2",
     "minGameVersion": "136",
-    "dependencies": {},
+    "dependencies": [
+      "ui_lib"
+    ],
     "hidden": true,
     "legacyCompatible": false,
     "main": null,

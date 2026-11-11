@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "cirrusisakey/arikoth",
-  "generatedAt": "2026-11-11T01:56:04.245Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "java",
   "meta": {
     "name": "arikoth",
@@ -9,7 +9,9 @@
     "description": "Arikoth mod, wip.",
     "version": "0.0.1",
     "minGameVersion": "150",
-    "dependencies": {},
+    "dependencies": [
+      "font-icon-lib"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": "arikoth.Arikoth",

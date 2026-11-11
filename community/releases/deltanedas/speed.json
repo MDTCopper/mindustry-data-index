@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "deltanedas/speed",
-  "generatedAt": "2026-11-09T09:22:39.628Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "js",
   "meta": {
     "name": "speed",
@@ -9,7 +9,9 @@
     "description": "Adds a speedometer.\n[stat]Requires [#00aaff]deltanedas/ui-lib[]",
     "version": "3.2.1",
     "minGameVersion": "136",
-    "dependencies": {},
+    "dependencies": [
+      "ui-lib"
+    ],
     "hidden": true,
     "legacyCompatible": false,
     "main": null,

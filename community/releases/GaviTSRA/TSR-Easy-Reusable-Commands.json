@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "GaviTSRA/TSR-Easy-Reusable-Commands",
-  "generatedAt": "2026-11-09T09:22:39.628Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "js",
   "meta": {
     "name": "tsr-easy-reusable-commands",
@@ -9,7 +9,9 @@
     "description": "A mod that adds a menu which easily allows you to reuse commands",
     "version": "1.0.1",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "ui_lib"
+    ],
     "hidden": true,
     "legacyCompatible": false,
     "main": null,

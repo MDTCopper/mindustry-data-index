@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "oleksiy1409liut/periodic-overhaul",
-  "generatedAt": "2026-11-09T04:55:14.539Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "periodic",
@@ -9,7 +9,9 @@
     "description": " \ninspired by the periodic madness factorio mod\nDOESNT WORK WITH VANILLA MAPS\n",
     "version": "0.11",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "multicrafter"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "caboosket/annoica",
-  "generatedAt": "2026-11-09T04:55:14.539Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "annoica",
@@ -9,7 +9,9 @@
     "description": "",
     "version": "1.3.0",
     "minGameVersion": "153",
-    "dependencies": {},
+    "dependencies": [
+      "hjsonpp"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

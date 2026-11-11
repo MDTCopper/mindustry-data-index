@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "undaria/newhorizntexturepack",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "CNh",
@@ -9,7 +9,9 @@
     "description": "一个新视界材质包使用了新的艺术风格\nA mod that makes the texture style of NewHorizon Mod. If Lao uses these textures in NewHorizon, this Mod will not update.",
     "version": "v1.0",
     "minGameVersion": "144",
-    "dependencies": {},
+    "dependencies": [
+      "new-horizon"
+    ],
     "hidden": true,
     "legacyCompatible": false,
     "main": null,

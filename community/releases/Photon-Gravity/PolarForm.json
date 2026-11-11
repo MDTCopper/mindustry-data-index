@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "Photon-Gravity/PolarForm",
-  "generatedAt": "2026-11-09T05:08:06.929Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "java",
   "meta": {
     "name": "polar-form",
@@ -9,7 +9,9 @@
     "description": "Explore a new planet submerged in naphtha and utilize buildings with an exotic, new form.",
     "version": "1",
     "minGameVersion": "145",
-    "dependencies": {},
+    "dependencies": [
+      "multi-block-lib"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": "polarform.PolarMain",

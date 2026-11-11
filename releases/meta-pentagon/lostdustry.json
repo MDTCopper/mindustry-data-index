@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "meta-pentagon/lostdustry",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "ld",
@@ -9,7 +9,9 @@
     "description": "InDian atmosphere",
     "version": "0.1",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "momiji-lib"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

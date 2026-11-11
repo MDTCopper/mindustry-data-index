@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "Spore-Biometh-team/Spore-expandsion",
-  "generatedAt": "2026-11-09T09:22:39.628Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "json",
   "meta": {
     "name": "sporex",
@@ -9,7 +9,10 @@
     "description": "Expansion for spore biometh, required mods: spore biomech (duh) and magnification",
     "version": "1.1",
     "minGameVersion": "144",
-    "dependencies": {},
+    "dependencies": [
+      "sporepod",
+      "magnification"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

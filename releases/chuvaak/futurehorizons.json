@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "chuvaak/futurehorizons",
-  "generatedAt": "2026-11-09T04:55:14.539Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "futureHorizons",
@@ -9,7 +9,10 @@
     "description": "Somewhat advanced endgame technologies. It is recommended to disable vertical synchronization.",
     "version": "3.85",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "black-hole-renderer",
+      "multi-crafter"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

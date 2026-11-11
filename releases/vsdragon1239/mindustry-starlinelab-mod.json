@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "vsdragon1239/mindustry-starlinelab-mod",
-  "generatedAt": "2026-11-10T12:37:21.375Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "java",
   "meta": {
     "name": "starline-lab",
@@ -9,7 +9,9 @@
     "description": "Новая планета Ноктис: ночной пепел, два базовых рудных ресурса и стартовая ветка развития. '\n' Интересно, полный перевод мода new-horizon будет?",
     "version": "0.2.3",
     "minGameVersion": "154",
-    "dependencies": {},
+    "dependencies": [
+      "new-horizon"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": "starlinelab.StarlineLabMod",

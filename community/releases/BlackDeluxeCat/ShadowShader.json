@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "BlackDeluxeCat/ShadowShader",
-  "generatedAt": "2026-11-09T11:53:56.025Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "java",
   "meta": {
     "name": "ShadowShader",
@@ -9,7 +9,9 @@
     "description": "SHADOOOW your GAME!! repo: BlackDeluxeCat/ShadowShader",
     "version": "1.2",
     "minGameVersion": "144.1",
-    "dependencies": {},
+    "dependencies": [
+      "mitour-lib"
+    ],
     "hidden": true,
     "legacyCompatible": false,
     "main": "ss.ShadowShader",

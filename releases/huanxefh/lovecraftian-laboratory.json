@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "huanxefh/lovecraftian-laboratory",
-  "generatedAt": "2026-11-11T09:22:02.605Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "js",
   "meta": {
     "name": "loveclab",
@@ -9,7 +9,9 @@
     "description": "\nThe base mod for Lovecraftian series that adds essential resource, recipe data, chemical reactions, environmental blocks and planets.\n",
     "version": "101.5",
     "minGameVersion": "160.1",
-    "dependencies": {},
+    "dependencies": [
+      "lovec"
+    ],
     "hidden": false,
     "legacyCompatible": true,
     "main": null,

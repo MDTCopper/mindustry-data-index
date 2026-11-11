@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "oleksiy1409liut/osakan-worlds-retinkered",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "osakanREtinkered",
@@ -9,7 +9,9 @@
     "description": "THE osakan worlds mod but i remade it and it SHOULD be better, there wont be ay vanilla override, the mod wont be as complex and the normal vanilla power system will be there (most vanilla blocks would still be blocked)",
     "version": "0.01",
     "minGameVersion": "155",
-    "dependencies": {},
+    "dependencies": [
+      "hjsonpp"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

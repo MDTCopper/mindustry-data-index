@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "mindustrylogic/mindustry-terraria-overhaul",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "mindtera",
@@ -9,7 +9,10 @@
     "description": "A extremely ambitious project on attempting to recreate terraria within the limit of mindustry(Major RAM usage warning)",
     "version": "0.0.1 basic function",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "multi-crafter",
+      "terraria-content-mod"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

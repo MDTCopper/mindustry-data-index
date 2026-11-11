@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "ManuWar73/remodeled-industry-expansion",
-  "generatedAt": "2026-11-09T09:22:39.628Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "json",
   "meta": {
     "name": "remodeled-expansion",
@@ -9,7 +9,10 @@
     "description": "Adds extra things to remodeled industry that requires mod dependencies.",
     "version": null,
     "minGameVersion": "137",
-    "dependencies": {},
+    "dependencies": [
+      "remodeled-industry",
+      "multi-crafter"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

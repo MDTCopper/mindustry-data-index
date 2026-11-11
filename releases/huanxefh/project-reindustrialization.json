@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "huanxefh/project-reindustrialization",
-  "generatedAt": "2026-11-11T09:22:02.605Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "js",
   "meta": {
     "name": "projreind",
@@ -9,7 +9,11 @@
     "description": "\nOBJECTIVE: Retrieve the forgotten technology.\n\n\nA mod inspired by Greg's Tech and Factorio that makes manufacturing realistic and even harder.\nRemade and improved version of Reindustrialization.\n\nMod features:\n- Distinct style of gameplay with realistic and hardcore production.\n- Peaceful sectors focused on mass production.\n- A separate and complex tech tree.\n- Tons of multi-crafters and intermediates.\n- Pipe corrosion and more mechanics stolen from Greg's Tech.\n\n\nRequired mods:\n- Lovecraftian Library\n- Lovecraftian Laboratory\n- Fluid Cells\n\n\nOptional mods:\n- TooManyItems\n\n\nWARNING: RECIPE HELL AHEAD!\n\n\nDo not directly download ProjReind and its dependencies in mod browser. The game chooses latest version differently for Java mods and JS/JSON mods, which can lead to unmatched version or even crash.\n\nDownload every single mod from \"View Releases\" manually. Do not rely on any means of auto-download or auto-update.\n\nVersion number including a date number (xxx.x.xxxxxxxx) is for unstable test versions. Normally you shouldn't download them, do not try test versions unless you're ready.\n",
     "version": "101.5",
     "minGameVersion": "160.1",
-    "dependencies": {},
+    "dependencies": [
+      "lovec",
+      "loveclab",
+      "fcell"
+    ],
     "hidden": false,
     "legacyCompatible": true,
     "main": null,

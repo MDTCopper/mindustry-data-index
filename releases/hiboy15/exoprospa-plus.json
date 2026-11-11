@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "hiboy15/exoprospa-plus",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "json",
   "meta": {
     "name": "Exosporopapp",
@@ -9,7 +9,9 @@
     "description": "A expansion to exoprosopa that unlocks its moon named teresa.",
     "version": "1",
     "minGameVersion": "154",
-    "dependencies": {},
+    "dependencies": [
+      "exoprosopa"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

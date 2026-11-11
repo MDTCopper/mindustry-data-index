@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "mitemi/rubiginosus",
-  "generatedAt": "2026-11-09T09:07:29.069Z",
+  "generatedAt": "2026-11-11T11:29:48.977Z",
   "modType": "js",
   "meta": {
     "name": "rubiginosus",
@@ -9,7 +9,9 @@
     "description": "Standalone legacy version of the Rubiginosus planet from the Etigei Exile mod. This mod only contains the old maps. To play the remastered campaign, download Etigei Exile.\n\n[[]orange]Rubiginosus[[]white] presents a collection of hardcore maps, inspired by Rusted Warfare, initially designed for multiplayer using Serpulo and Erekir technology. These missions have been retrofitted for a campaign experience with unique challenges for each map.\n\nCompatible with the Blastanium mod.\n\n[[]red]Requires Timber (EDT) as a dependency.\n\n[[]white]Discord:[[]blue] https://discord.com/invite/TJKZgr6UDg",
     "version": "1.0.0",
     "minGameVersion": "146",
-    "dependencies": {},
+    "dependencies": [
+      "edt"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": null,

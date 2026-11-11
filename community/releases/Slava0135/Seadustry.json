@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "Slava0135/Seadustry",
-  "generatedAt": "2026-11-09T05:08:06.929Z",
+  "generatedAt": "2026-11-11T11:37:52.231Z",
   "modType": "java",
   "meta": {
     "name": "seadustry",
@@ -9,7 +9,9 @@
     "description": "Survive on sand island and expand by placing land on water around ",
     "version": "2.0",
     "minGameVersion": "147",
-    "dependencies": {},
+    "dependencies": [
+      "revision"
+    ],
     "hidden": false,
     "legacyCompatible": false,
     "main": "seadustry.Seadustry",
