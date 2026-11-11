@@ -90,6 +90,13 @@
         ],
         "additionalProperties": false
       }
+    },
+    "aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "规范化 id（去分隔符）→ 真实 internalName"
     }
   },
   "required": [

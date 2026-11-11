@@ -7,7 +7,7 @@
     "name": "faster-and-smarter-unloader",
     "author": "Foxel",
     "description": "\nMakes unloaders extremely fast (180 items/sec), high-performance (optimized for massive maps), and smarter.\n\nKey features:\n- High speed: transfers up to 180 items/sec.\n- Highly optimized: caches topology and avoids redundant tick calculations to keep FPS high with hundreds of unloaders.\n- Smart factory routing: pushes raw materials into factories and pulls finished products out.\n- Same-factory daisy-chaining: feeds input resources between adjacent identical factories (e.g. rows of T1 unit factories) using a gradient balance to prevent ping-pong loops.\n- Infinite loop prevention: never pulls input ingredients out of a factory to external blocks, and never loops between storage or transport blocks.\n",
-    "version": "1.3",
+    "version": null,
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,

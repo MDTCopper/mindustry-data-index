@@ -11,8 +11,13 @@ function normalizeId(value) {
   return String(value ?? '').trim().toLowerCase();
 }
 
+function aliasKey(value) {
+  return normalizeId(value).replace(/[^a-z0-9]+/g, '');
+}
+
 export function buildDependencyIndex({ official, community, now }) {
   const mods = {};
+  const aliases = {};
   const entries = [];
   for (const [source, index] of [
     ['official', official],
@@ -31,6 +36,7 @@ export function buildDependencyIndex({ official, community, now }) {
           : [],
       };
       mods[id] = node;
+      aliases[aliasKey(id)] ??= id;
       entries.push([id, node]);
     }
   }
@@ -38,10 +44,11 @@ export function buildDependencyIndex({ official, community, now }) {
   const reverse = {};
   const missing = [];
   for (const [id, node] of entries) {
-    for (const dependency of node.dependencies) {
+    for (const rawDependency of node.dependencies) {
+      const dependency = aliases[aliasKey(rawDependency)] ?? rawDependency;
       if (!reverse[dependency]) reverse[dependency] = [];
       reverse[dependency].push(id);
-      if (!mods[dependency]) {
+      if (!mods[dependency] && !aliases[aliasKey(dependency)]) {
         missing.push({ id, repo: node.repo, source: node.source, dependency });
       }
     }
@@ -51,6 +58,7 @@ export function buildDependencyIndex({ official, community, now }) {
     formatVersion: 1,
     generatedAt: now,
     mods,
+    aliases,
     reverse,
     missing,
   };

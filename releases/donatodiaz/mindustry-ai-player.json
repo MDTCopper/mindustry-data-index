@@ -7,7 +7,7 @@
     "name": "ai-player",
     "author": "donatodiaz",
     "description": "Adds a second AI-piloted player (AI-1) and a fair autonomous co-pilot for Mindustry v8.\n\n[accent]Features:[]\n- AI-1 is a real Player entity with a name, unit and respawn, controlled by AI.\n- Miners, builders and army are spawned with real resource costs (no cheats).\n- Dynamic support for Exogenesis and New Horizon content.\n- Smart construction roles: economy, defense, power and attack.\n- Generated power, defense and powered-turret schematics; your own .msch schematics are supported through role folders.\n- Sustainable-resource checks: skips content requiring absent ore or production.\n- Optional PC-only local LLM through Ollama with RAG strategy files.\n- Natural-language orders: order построй больше турелей, order атакуй врага.\n- Compact collapsible HUD, in-game AI command console, self-learning and cleanup.\n- Outpost expansion and optional campaign sector auto-launch.\n\n[accent]Commands:[] /ai, /ai status, /ai calc, /ai order <текст>, /ai ask <вопрос>, /ai demolish here, /ai llm on|off, /ai setup.\n\nMIT licensed. Source: https://github.com/DonatoDiaz/mindustry-ai-player",
-    "version": "0.9.6",
+    "version": null,
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,

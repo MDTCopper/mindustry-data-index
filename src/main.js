@@ -147,6 +147,7 @@ import {
   writeLatestSettingAdapter,
 } from './settings-adapter.js';
 import { writeDependencyIndex } from './dependencies.js';
+import { backfillMeta } from './meta-backfill.js';
 import {
   VERSIONS_REL_PATH,
   buildVersionsFile,
@@ -178,12 +179,12 @@ import {
   splitLegacyGateFile,
 } from './mod-gate.js';
 
-const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate', 'stats', 'settings'];
+const DATASETS = ['mods', 'community', 'heat', 'versions', 'gate', 'stats', 'settings', 'meta'];
 
 const USAGE = `用法：node src/main.js [选项]
 
 选项：
-  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate,stats,settings，默认 mods
+  --datasets <列表>   要更新的数据集，逗号分隔：mods,community,heat,versions,gate,stats,settings,meta，默认 mods
   --out <目录>        产物目录，默认 .
   --token <token>     GitHub token，默认读环境变量 GITHUB_TOKEN
   --repos a/b,c/d     只跑指定仓库（仅 mods 数据集，本地验证用）
@@ -193,6 +194,7 @@ const USAGE = `用法：node src/main.js [选项]
   --community-max-candidates <n> 最多探测 n 个候选仓库（仅 community，本地验证用）
   --heat-max-api <n>  heat 数据集最多发 n 次 participation/created_at API（0=完全离线，本地验证用）
   --stats-limit <n>   额外统计最多处理 n 个模组（仅 stats 数据集，本地验证用）
+  --meta-limit <n>    回填元数据最多处理 n 个模组（仅 meta 数据集）
   --threads <n>       同时处理的仓库数，默认 8
   --raw-threads <n>   raw.githubusercontent 并发数，默认 16
   --versions-pages <n>  只抓 Mindustry 版本列表前 n 页（仅本地验证，正式运行不要用）
@@ -229,6 +231,7 @@ export function parseArgs(argv) {
     communityMaxCandidates: null,
     heatMaxApi: null,
     statsLimit: null,
+    metaLimit: null,
     cache: true,
     keepMissingFiles: false,
     migrate: false,
@@ -330,6 +333,9 @@ export function parseArgs(argv) {
       case '--stats-limit':
         options.statsLimit = requirePositiveInt('--stats-limit', takeValue());
         break;
+      case '--meta-limit':
+        options.metaLimit = requirePositiveInt('--meta-limit', takeValue());
+        break;
       case '--threads':
         options.threads = requirePositiveInt('--threads', takeValue());
         break;
@@ -392,6 +398,9 @@ export function parseArgs(argv) {
   }
   if (options.statsLimit !== null && !options.datasets.includes('stats')) {
     throw new UsageError('--stats-limit 只用于 stats 数据集');
+  }
+  if (options.metaLimit !== null && !options.datasets.includes('meta')) {
+    throw new UsageError('--meta-limit 只用于 meta 数据集');
   }
   return options;
 }
@@ -3286,6 +3295,7 @@ export async function run(argv) {
   let gateResult = null;
   let statsResult = null;
   let settingsResult = null;
+  let metaResult = null;
 
   if (options.datasets.includes('mods')) {
     modsResult = await runMods(options, context);
@@ -3337,6 +3347,15 @@ export async function run(argv) {
   if (options.datasets.includes('settings')) {
     settingsResult = await runSettings(options, context);
     exitCode = Math.max(exitCode, settingsResult.code);
+  }
+  if (options.datasets.includes('meta')) {
+    metaResult = await backfillMeta({
+      rawClient: context.rawClient,
+      outDir: context.outDir,
+      log,
+      limit: options.metaLimit,
+    });
+    exitCode = Math.max(exitCode, metaResult.code);
   }
 
   // B5：滚动变更流（新变更在前，最多 500 条）；首次建立时只有初始快照 mod-added

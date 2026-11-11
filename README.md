@@ -119,6 +119,7 @@ node src/main.js --datasets mods,community,heat --out .   # 官方+社区+热度
 node src/main.js --datasets versions,gate --out .
 node src/main.js --datasets heat --out . --heat-max-api 0 # 离线只算热度（看排序效果最快）
 node src/main.js --datasets stats --out . --stats-limit 20  # 额外统计（语言/内容量，先小批量）
+node src/main.js --datasets meta --out .   # 回填/重读每个 mod 最新元数据（依赖字段）
 node src/main.js --migrate --out .        # 旧数据迁移
 ```
 
