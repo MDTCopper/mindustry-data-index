@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "gghanera/mp-sectors",
-  "generatedAt": "2026-11-11T17:53:08.076Z",
+  "generatedAt": "2026-11-12T00:40:48.788Z",
   "modType": "java",
   "meta": {
     "name": "mp-sectors",
     "author": "GGhanera",
     "description": "Runs one campaign sector per server instance, with a shared campaign folder (sector saves, sector info, research). Server-side only. Part of the multi-sector campaign setup.",
-    "version": "0.6.4",
+    "version": "0.6.8",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,74 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v2.4.9",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.4.9/server-release.jar",
+      "sha256": "f7b899a4038b95b14a824d5f8993984f79d73baa3254c385b6538327f9c0befd",
+      "modVersion": "0.6.8",
+      "sizeBytes": 38884303,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-11T19:39:20Z"
+    },
+    {
+      "tag": "v2.4.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.4.8/server-release.jar",
+      "sha256": "f7b899a4038b95b14a824d5f8993984f79d73baa3254c385b6538327f9c0befd",
+      "modVersion": "0.6.7",
+      "sizeBytes": 38883418,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-11T19:35:46Z"
+    },
+    {
+      "tag": "v2.4.7",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.4.7/server-release.jar",
+      "sha256": "f7b899a4038b95b14a824d5f8993984f79d73baa3254c385b6538327f9c0befd",
+      "modVersion": "0.6.6",
+      "sizeBytes": 38880793,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-11T18:01:42Z"
+    },
+    {
+      "tag": "v2.4.6",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.4.6/server-release.jar",
+      "sha256": "f7b899a4038b95b14a824d5f8993984f79d73baa3254c385b6538327f9c0befd",
+      "modVersion": "0.6.5",
+      "sizeBytes": 38880451,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-11T17:55:08Z"
+    },
     {
       "tag": "v2.4.5",
       "kind": "release",
