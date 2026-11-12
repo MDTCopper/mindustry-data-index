@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
-  "repo": "Ranii-Reprograms/Fluxweave",
-  "generatedAt": "2026-11-12T00:51:45.626Z",
+  "repo": "ranii-reprograms/fluxweave",
+  "generatedAt": "2026-11-12T09:48:58.877Z",
   "modType": "js",
   "meta": {
     "name": "fluxweave",
     "author": "Ranii",
     "description": "Touching blocks work together as one; drills/pumps/factories/generators/reactors. A single input or output serves the whole line.\n\nv1.11.2\nTurrets: touching turrets of the same type share coolant, so one conduit cools a whole arsenal of turrets, except ammo, they still need seperate ammo inputs.\nConveyors can now pass items through any drill in a chain, and those items flow to the chain's exit. \n\nv1.10.0 - Balance update\nDrill and pump capacities lowered from 150 to their vanilla values (e.g. pneumatic drill = 10) to keep them balanced.\n\nv1.9.1 - Hotfix\nFixed long chains of factories (more than 5) not fully emptying through a single output. Products now drain toward the factory touching an output, so the far end empties too. If the output is removed or blocked for a while, the chain spreads evenly again and recovers when another output line is connected. One output line can only carry so much, so use a faster line if a chain backs up.\n\nv1.9\nReactors: touching reactors balance their coolant, so one conduit feeds the whole row. Fuel is never moved.\nFactories: touching factories of the same type share inputs and outputs, so one pipe, conveyor and output line serve a whole row.\nDrills: boost liquid like water is now shared along the chain.\nFixed a crash on Android and drills' outputs getting stuck next to walls.",
-    "version": "1.11.3",
+    "version": "1.11.7",
     "minGameVersion": "146",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": false
   },
   "versions": [
+    {
+      "tag": "v1.11.7",
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/Ranii-Reprograms/Fluxweave/releases/download/v1.11.7/Fluxweave.zip",
+      "sha256": "1fd29d1d620ad6af4d1fd82145a685ded3765e2bef4561dea77a89a5741355a3",
+      "modVersion": "1.11.7",
+      "sizeBytes": 1454444,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-12T02:50:22Z"
+    },
     {
       "tag": "v1.11.3",
       "kind": "release",
@@ -33,25 +50,8 @@
       "sha256": "9bc23d9245c2b55aca53b714333aa8f25a87df86677e0c9ec49f8984d9a6c5e0",
       "modVersion": "1.11.3",
       "sizeBytes": 1453760,
-      "downloadCount": 1,
+      "downloadCount": 2,
       "releasedAt": "2026-11-12T00:37:02Z"
-    },
-    {
-      "tag": "v",
-      "kind": "release",
-      "minGameVersion": "146",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/Ranii-Reprograms/Fluxweave/releases/download/v/Fluxweave.zip",
-      "sha256": "7aabada9acb52b3aa2350ecd85a8093a3af13ba7b0522712f19abd134d3f7d59",
-      "modVersion": "1.11.2",
-      "sizeBytes": 1453761,
-      "downloadCount": 1,
-      "releasedAt": "2026-11-11T15:40:03Z"
     },
     {
       "tag": "v1.11.1",
@@ -67,25 +67,8 @@
       "sha256": "1b8340e2f44f467f5963b4a1f236f36ae71e4ccae232c46299e79d8d4bebecac",
       "modVersion": "1.11.1",
       "sizeBytes": 1453146,
-      "downloadCount": 1,
+      "downloadCount": 2,
       "releasedAt": "2026-11-10T10:34:21Z"
-    },
-    {
-      "tag": "v1.11.0",
-      "kind": "release",
-      "minGameVersion": "146",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/Ranii-Reprograms/Fluxweave/releases/download/v1.11.0/Fluxweave.zip",
-      "sha256": "5e49ec9a9c75c8406d781b23d6856b2bcc67812a4b7727afdf9aedbe48fee1ae",
-      "modVersion": "1.11.0",
-      "sizeBytes": 1453171,
-      "downloadCount": 1,
-      "releasedAt": "2026-11-10T10:24:22Z"
     },
     {
       "tag": "v1.10.2",
@@ -101,25 +84,8 @@
       "sha256": "22cb18879fbb469ff549549f6537727f3f86ba0f2635de7d415c724954b326fe",
       "modVersion": "1.10.2",
       "sizeBytes": 1452901,
-      "downloadCount": 2,
+      "downloadCount": 3,
       "releasedAt": "2026-11-10T01:04:27Z"
-    },
-    {
-      "tag": "v1.10.0",
-      "kind": "release",
-      "minGameVersion": "146",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/Ranii-Reprograms/Fluxweave/releases/download/v1.10.0/Fluxweave-main-1.zip",
-      "sha256": "88ef6470cfb2ad334801fb4b6d992dca18ac468c9ce6bd3de87c844ed7dcad7e",
-      "modVersion": "1.10.0",
-      "sizeBytes": 1454804,
-      "downloadCount": 1,
-      "releasedAt": "2026-11-08T17:24:00Z"
     },
     {
       "tag": "v1.9.1",
@@ -173,6 +139,45 @@
       "releasedAt": "2026-11-07T12:18:29Z"
     },
     {
+      "tag": "v1.11.6",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.11.6.zip",
+      "modVersion": "1.11.6"
+    },
+    {
+      "tag": "v1.11.5",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.11.5.zip",
+      "modVersion": "1.11.5"
+    },
+    {
+      "tag": "v1.11.4",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.11.4.zip",
+      "modVersion": "1.11.4"
+    },
+    {
       "tag": "v1.11.2",
       "kind": "tag",
       "minGameVersion": "146",
@@ -182,8 +187,34 @@
           "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/Ranii-Reprograms/Fluxweave/archive/refs/tags/v1.11.2.zip",
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.11.2.zip",
       "modVersion": "1.11.2"
+    },
+    {
+      "tag": "v1.11.0",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.11.0.zip",
+      "modVersion": "1.11.0"
+    },
+    {
+      "tag": "v1.10.0",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.10.0.zip",
+      "modVersion": "1.10.0"
     },
     {
       "tag": "v1.8",
@@ -195,8 +226,21 @@
           "to": "160.7"
         }
       ],
-      "downloadUrl": "https://github.com/Ranii-Reprograms/Fluxweave/archive/refs/tags/v1.8.zip",
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v1.8.zip",
       "modVersion": "1.8"
+    },
+    {
+      "tag": "v",
+      "kind": "tag",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/ranii-reprograms/fluxweave/archive/refs/tags/v.zip",
+      "modVersion": "1.11.2"
     }
   ]
 }
