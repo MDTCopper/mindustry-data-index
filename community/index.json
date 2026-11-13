@@ -1,10 +1,10 @@
 {
   "formatVersion": 3,
-  "generatedAt": "2026-11-13T09:37:22.505Z",
+  "generatedAt": "2026-11-13T17:52:38.455Z",
   "source": {
     "source": "topic",
     "query": "mindustry-mod in:topics archived:false template:false",
-    "officialCount": 1008,
+    "officialCount": 1010,
     "modCount": 74
   },
   "mods": [
@@ -35,25 +35,73 @@
       "releaseCount": 161,
       "releaseUpdatedAt": "2026-11-11T02:45:57Z",
       "commitUpdatedAt": "2026-10-27T07:54:44Z",
-      "totalDownloads": 842,
-      "allAssetsDownloads": 842,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 848,
+      "allAssetsDownloads": 848,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.288,
+        "downloadsScore": 0.2868,
         "starsScore": 0.1663,
-        "updateScore": 0.9566,
+        "updateScore": 0.9572,
         "penaltyScore": 0,
-        "newModMultiplier": 1.0823,
+        "newModMultiplier": 1.0814,
         "recommendVisible": true
       },
       "ranks": {
         "heat": 23,
-        "recommended": 25,
-        "updated": 9,
+        "recommended": 27,
+        "updated": 39,
         "downloads": 249,
         "stars": 394,
-        "newest": 99
+        "newest": 100
+      }
+    },
+    {
+      "repo": "andrewmaiorov2010-source/LogicSpeedFive",
+      "source": "topic",
+      "internalName": null,
+      "name": "logic-speed-five",
+      "namePlain": "logic-speed-five",
+      "author": "Codex",
+      "authorPlain": "Codex",
+      "description": "Configurable instruction rates for vanilla logic processors; wait duration is unchanged.",
+      "descriptionPlain": "Configurable instruction rates for vanilla logic processors; wait duration is unchanged.",
+      "version": "1.3.0",
+      "minGameVersion": "160",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "stars": 0,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/andrewmaiorov2010-source/LogicSpeedFive.json",
+      "releaseCount": 2,
+      "releaseUpdatedAt": "2026-11-06T16:46:00Z",
+      "commitUpdatedAt": "2026-11-06T16:46:00Z",
+      "totalDownloads": 1,
+      "allAssetsDownloads": 4,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1407,
+        "starsScore": 0.0526,
+        "updateScore": 0.2502,
+        "penaltyScore": 0,
+        "newModMultiplier": 1.2566,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 371,
+        "recommended": 64,
+        "updated": 4,
+        "downloads": 561,
+        "stars": 1088,
+        "newest": 20
       }
     },
     {
@@ -87,73 +135,74 @@
       "releaseCount": 30,
       "releaseUpdatedAt": "2026-10-17T19:30:59Z",
       "commitUpdatedAt": "2026-10-17T19:21:57Z",
-      "totalDownloads": 2449,
-      "allAssetsDownloads": 2449,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 2453,
+      "allAssetsDownloads": 2453,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.3033,
+        "downloadsScore": 0.3024,
         "starsScore": 0.1549,
-        "updateScore": 0.4162,
+        "updateScore": 0.378,
         "penaltyScore": 0,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 84,
-        "recommended": 60,
-        "updated": 166,
+        "heat": 94,
+        "recommended": 66,
+        "updated": 195,
         "downloads": 178,
         "stars": 464,
-        "newest": 654
+        "newest": 655
       }
     },
     {
-      "repo": "andrewmaiorov2010-source/LogicSpeedFive",
+      "repo": "darkblackcat-dotcom/sbc-shared-research",
       "source": "topic",
       "internalName": null,
-      "name": "logic-speed-five",
-      "namePlain": "logic-speed-five",
-      "author": "Codex",
-      "authorPlain": "Codex",
-      "description": "Configurable instruction rates for vanilla logic processors; wait duration is unchanged.",
-      "descriptionPlain": "Configurable instruction rates for vanilla logic processors; wait duration is unchanged.",
-      "version": "1.3.0",
-      "minGameVersion": "160",
-      "modType": "java",
+      "name": "sbc-shared-research",
+      "namePlain": "sbc-shared-research",
+      "author": "ЧЕРНЫЙ КОТ",
+      "authorPlain": "ЧЕРНЫЙ КОТ",
+      "description": "Общие исследования в мультиплеерной кампании для любого контента (ванила и моды).\ndiscord: @dark_black_cat",
+      "descriptionPlain": "Общие исследования в мультиплеерной кампании для любого контента (ванила и моды). discord: @dark_black_cat",
+      "version": "1.0",
+      "minGameVersion": "160.7",
+      "modType": "js",
       "gameVersionRanges": [
         {
-          "from": "160",
+          "from": "160.7",
           "to": "160.7"
         }
       ],
-      "stars": 0,
-      "hasIcon": false,
-      "iconUrl": null,
+      "stars": 4,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/darkblackcat-dotcom/sbc-shared-research/main/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/andrewmaiorov2010-source/LogicSpeedFive.json",
-      "releaseCount": 2,
-      "releaseUpdatedAt": "2026-11-06T16:46:00Z",
-      "commitUpdatedAt": "2026-11-06T16:46:00Z",
-      "totalDownloads": 1,
-      "allAssetsDownloads": 4,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releasesPath": "community/releases/darkblackcat-dotcom/sbc-shared-research.json",
+      "releaseCount": 0,
+      "tagCount": 1,
+      "releaseUpdatedAt": null,
+      "commitUpdatedAt": "2026-11-09T18:49:56Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 0,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1421,
-        "starsScore": 0.0526,
-        "updateScore": 0.1583,
+        "downloadsScore": 0.1055,
+        "starsScore": 0.1549,
+        "updateScore": 0.3601,
         "penaltyScore": 0,
-        "newModMultiplier": 1.2596,
+        "newModMultiplier": 1.2781,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 398,
-        "recommended": 75,
-        "updated": 27,
-        "downloads": 560,
-        "stars": 1087,
-        "newest": 19
+        "heat": 86,
+        "recommended": 82,
+        "updated": 19,
+        "downloads": 854,
+        "stars": 470,
+        "newest": 9
       }
     },
     {
@@ -185,23 +234,23 @@
       "commitUpdatedAt": "2026-10-13T08:51:10Z",
       "totalDownloads": 22,
       "allAssetsDownloads": 22,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2265,
+        "downloadsScore": 0.2237,
         "starsScore": 0.0963,
-        "updateScore": 0.1412,
+        "updateScore": 0.1284,
         "penaltyScore": 0,
-        "newModMultiplier": 1.1121,
+        "newModMultiplier": 1.1109,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 233,
-        "recommended": 150,
-        "updated": 205,
-        "downloads": 493,
+        "heat": 249,
+        "recommended": 157,
+        "updated": 233,
+        "downloads": 497,
         "stars": 796,
-        "newest": 77
+        "newest": 78
       }
     },
     {
@@ -237,23 +286,23 @@
       "commitUpdatedAt": "2025-11-15T17:22:14Z",
       "totalDownloads": 26331,
       "allAssetsDownloads": 26331,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.364,
+        "downloadsScore": 0.3615,
         "starsScore": 0.1946,
         "updateScore": 0,
-        "penaltyScore": 0.0103,
+        "penaltyScore": 0.0117,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 86,
-        "recommended": 184,
-        "updated": 724,
+        "heat": 91,
+        "recommended": 192,
+        "updated": 743,
         "downloads": 49,
         "stars": 233,
-        "newest": 1048
+        "newest": 1049
       }
     },
     {
@@ -283,73 +332,25 @@
       "releaseCount": 1,
       "releaseUpdatedAt": "2026-11-01T06:25:46Z",
       "commitUpdatedAt": "2026-11-01T06:27:31Z",
-      "totalDownloads": 22,
-      "allAssetsDownloads": 22,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 24,
+      "allAssetsDownloads": 24,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2265,
+        "downloadsScore": 0.2321,
         "starsScore": 0.0963,
-        "updateScore": 0.241,
+        "updateScore": 0.2209,
         "penaltyScore": 0,
-        "newModMultiplier": 1.0233,
+        "newModMultiplier": 1.023,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 249,
-        "recommended": 223,
-        "updated": 121,
-        "downloads": 495,
+        "heat": 255,
+        "recommended": 231,
+        "updated": 154,
+        "downloads": 492,
         "stars": 939,
-        "newest": 151
-      }
-    },
-    {
-      "repo": "florfir/md-proxy",
-      "source": "topic",
-      "internalName": null,
-      "name": "md-proxy",
-      "namePlain": "md-proxy",
-      "author": "kuko",
-      "authorPlain": "kuko",
-      "description": "idk.",
-      "descriptionPlain": "idk.",
-      "version": "1",
-      "minGameVersion": "154",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "stars": 4,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/florfir/md-proxy.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2026-09-16T14:06:41Z",
-      "commitUpdatedAt": "2026-10-27T14:05:56Z",
-      "totalDownloads": 238,
-      "allAssetsDownloads": 238,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.2592,
-        "starsScore": 0.1549,
-        "updateScore": 0.1503,
-        "penaltyScore": 0,
-        "newModMultiplier": 1.0044,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 171,
-        "recommended": 229,
-        "updated": 327,
-        "downloads": 338,
-        "stars": 477,
-        "newest": 237
+        "newest": 152
       }
     },
     {
@@ -385,69 +386,68 @@
       "releaseDataUpdatedAt": "2026-11-11T13:48:39.715Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1069,
+        "downloadsScore": 0.1055,
         "starsScore": 0.0526,
-        "updateScore": 0.0379,
+        "updateScore": 0.033,
         "penaltyScore": 0,
         "newModMultiplier": 1.0015,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 626,
+        "heat": 631,
         "recommended": 232,
-        "updated": 518,
-        "downloads": 773,
-        "stars": 1096,
-        "newest": 283
+        "updated": 539,
+        "downloads": 774,
+        "stars": 1097,
+        "newest": 284
       }
     },
     {
-      "repo": "darkblackcat-dotcom/sbc-shared-research",
+      "repo": "florfir/md-proxy",
       "source": "topic",
       "internalName": null,
-      "name": "sbc-shared-research",
-      "namePlain": "sbc-shared-research",
-      "author": "ЧЕРНЫЙ КОТ",
-      "authorPlain": "ЧЕРНЫЙ КОТ",
-      "description": "Общие исследования в мультиплеерной кампании для любого контента (ванила и моды).\ndiscord: @dark_black_cat",
-      "descriptionPlain": "Общие исследования в мультиплеерной кампании для любого контента (ванила и моды). discord: @dark_black_cat",
-      "version": "1.0",
-      "minGameVersion": "160.7",
-      "modType": "js",
+      "name": "md-proxy",
+      "namePlain": "md-proxy",
+      "author": "kuko",
+      "authorPlain": "kuko",
+      "description": "idk.",
+      "descriptionPlain": "idk.",
+      "version": "1",
+      "minGameVersion": "154",
+      "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "160.7",
+          "from": "154",
           "to": "160.7"
         }
       ],
       "stars": 4,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/darkblackcat-dotcom/sbc-shared-research/main/icon.png",
+      "hasIcon": false,
+      "iconUrl": null,
       "iconHash": null,
-      "releasesPath": "community/releases/darkblackcat-dotcom/sbc-shared-research.json",
-      "releaseCount": 0,
-      "tagCount": 1,
-      "releaseUpdatedAt": null,
-      "commitUpdatedAt": "2026-11-09T18:49:56Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 0,
-      "releaseDataUpdatedAt": "2026-11-13T01:12:09.923Z",
-      "defaultBranch": "main",
+      "releasesPath": "community/releases/florfir/md-proxy.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2026-09-16T14:06:41Z",
+      "commitUpdatedAt": "2026-10-27T14:05:56Z",
+      "totalDownloads": 239,
+      "allAssetsDownloads": 239,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1069,
+        "downloadsScore": 0.2577,
         "starsScore": 0.1549,
-        "updateScore": 0,
+        "updateScore": 0.1406,
         "penaltyScore": 0,
-        "newModMultiplier": 1.2814,
+        "newModMultiplier": 1.0044,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 259,
-        "recommended": 233,
-        "updated": 1104,
-        "downloads": 853,
-        "stars": 470,
-        "newest": 8
+        "heat": 181,
+        "recommended": 238,
+        "updated": 349,
+        "downloads": 337,
+        "stars": 477,
+        "newest": 238
       }
     },
     {
@@ -481,73 +481,25 @@
       "releaseCount": 4,
       "releaseUpdatedAt": "2025-09-06T12:12:34Z",
       "commitUpdatedAt": "2025-10-18T15:57:37Z",
-      "totalDownloads": 8780,
-      "allAssetsDownloads": 8780,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 8781,
+      "allAssetsDownloads": 8781,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
         "downloadsScore": 0.3225,
         "starsScore": 0.2603,
         "updateScore": 0,
-        "penaltyScore": 0.2331,
+        "penaltyScore": 0.234,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 186,
-        "recommended": 280,
-        "updated": 736,
+        "heat": 197,
+        "recommended": 290,
+        "updated": 751,
         "downloads": 99,
         "stars": 70,
-        "newest": 1220
-      }
-    },
-    {
-      "repo": "Wantechfan/mindustry-community-musics",
-      "source": "topic",
-      "internalName": null,
-      "name": "comunity-musics",
-      "namePlain": "comunity-musics",
-      "author": "WantechFan",
-      "authorPlain": "WantechFan",
-      "description": "Replaces every single musics ingame with some musics I (And the community) got.\nRequest your musics on discord.gg/rjQndaHGFu and let the community decide if it's good or not to be added.",
-      "descriptionPlain": "Replaces every single musics ingame with some musics I (And the community) got. Request your musics on discord.gg/rjQndaHGFu and let the community decide if it's good or not to be added.",
-      "version": "1.1",
-      "minGameVersion": "146",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "146"
-        }
-      ],
-      "stars": 12,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Wantechfan/mindustry-community-musics/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Wantechfan/mindustry-community-musics.json",
-      "releaseCount": 2,
-      "releaseUpdatedAt": "2025-10-19T05:42:09Z",
-      "commitUpdatedAt": "2026-09-24T09:46:35Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 19,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.1069,
-        "starsScore": 0.209,
-        "updateScore": 0.0751,
-        "penaltyScore": 0.108,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 406,
-        "recommended": 337,
-        "updated": 296,
-        "downloads": 718,
-        "stars": 174,
-        "newest": 492
+        "newest": 1221
       }
     },
     {
@@ -579,10 +531,10 @@
       "commitUpdatedAt": "2026-01-25T19:44:23Z",
       "totalDownloads": 307,
       "allAssetsDownloads": 307,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1745,
+        "downloadsScore": 0.1732,
         "starsScore": 0.0526,
         "updateScore": 0,
         "penaltyScore": 0,
@@ -590,12 +542,60 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 507,
-        "recommended": 338,
-        "updated": 671,
+        "heat": 509,
+        "recommended": 328,
+        "updated": 690,
         "downloads": 318,
-        "stars": 1118,
-        "newest": 605
+        "stars": 1119,
+        "newest": 606
+      }
+    },
+    {
+      "repo": "Wantechfan/mindustry-community-musics",
+      "source": "topic",
+      "internalName": null,
+      "name": "comunity-musics",
+      "namePlain": "comunity-musics",
+      "author": "WantechFan",
+      "authorPlain": "WantechFan",
+      "description": "Replaces every single musics ingame with some musics I (And the community) got.\nRequest your musics on discord.gg/rjQndaHGFu and let the community decide if it's good or not to be added.",
+      "descriptionPlain": "Replaces every single musics ingame with some musics I (And the community) got. Request your musics on discord.gg/rjQndaHGFu and let the community decide if it's good or not to be added.",
+      "version": "1.1",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "stars": 12,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Wantechfan/mindustry-community-musics/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Wantechfan/mindustry-community-musics.json",
+      "releaseCount": 2,
+      "releaseUpdatedAt": "2025-10-19T05:42:09Z",
+      "commitUpdatedAt": "2026-09-24T09:46:35Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 19,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1055,
+        "starsScore": 0.209,
+        "updateScore": 0.0654,
+        "penaltyScore": 0.1091,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 422,
+        "recommended": 330,
+        "updated": 320,
+        "downloads": 719,
+        "stars": 174,
+        "newest": 493
       }
     },
     {
@@ -627,23 +627,23 @@
       "commitUpdatedAt": "2026-10-01T05:21:12Z",
       "totalDownloads": 1782,
       "allAssetsDownloads": 1782,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2814,
+        "downloadsScore": 0.2789,
         "starsScore": 0.1235,
-        "updateScore": 0.0837,
-        "penaltyScore": 0.1263,
+        "updateScore": 0.0729,
+        "penaltyScore": 0.1274,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 327,
+        "heat": 340,
         "recommended": 373,
-        "updated": 276,
+        "updated": 300,
         "downloads": 202,
         "stars": 711,
-        "newest": 499
+        "newest": 500
       }
     },
     {
@@ -677,12 +677,12 @@
       "releaseCount": 31,
       "releaseUpdatedAt": "2024-01-03T15:52:30Z",
       "commitUpdatedAt": "2026-07-05T14:46:32Z",
-      "totalDownloads": 610770,
-      "allAssetsDownloads": 610770,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 610774,
+      "allAssetsDownloads": 610774,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.7637,
+        "downloadsScore": 0.7647,
         "starsScore": 0.4482,
         "updateScore": 0,
         "penaltyScore": 0.6844,
@@ -691,11 +691,11 @@
       },
       "ranks": {
         "heat": 21,
-        "recommended": 379,
-        "updated": 830,
+        "recommended": 376,
+        "updated": 845,
         "downloads": 1,
         "stars": 7,
-        "newest": 1256
+        "newest": 1257
       }
     },
     {
@@ -725,25 +725,73 @@
       "releaseCount": 7,
       "releaseUpdatedAt": "2026-11-02T13:58:27Z",
       "commitUpdatedAt": "2026-11-02T13:58:26Z",
-      "totalDownloads": 317,
-      "allAssetsDownloads": 331,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 336,
+      "allAssetsDownloads": 350,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2785,
+        "downloadsScore": 0.2792,
         "starsScore": 0.1412,
-        "updateScore": 0.3191,
+        "updateScore": 0.2948,
         "penaltyScore": 0,
         "newModMultiplier": 1.0011,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 131,
-        "recommended": 394,
-        "updated": 30,
-        "downloads": 314,
+        "heat": 139,
+        "recommended": 402,
+        "updated": 90,
+        "downloads": 310,
         "stars": 529,
-        "newest": 300
+        "newest": 301
+      }
+    },
+    {
+      "repo": "JiroCab/Nyfalis",
+      "source": "topic",
+      "internalName": null,
+      "name": "olupis",
+      "namePlain": "olupis",
+      "author": ";3\nProgramming:\nRushieWashie, Siede, WMF Industries, Otamamori \n---------------------\nSprites:\nRushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69\n---------------------\nMaps:\nRushieWashie, MrApple, NightmarishWolf",
+      "authorPlain": ";3 Programming: RushieWashie, Siede, WMF Industries, Otamamori --------------------- Sprites: RushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69 --------------------- Maps: RushieWashie, MrApple, NightmarishWolf",
+      "description": "(⚠Work in progress⚠)\n Yet another planet mod \nThat does it's best to give the player(s) a bit of something new,\n with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
+      "descriptionPlain": "(⚠Work in progress⚠) Yet another planet mod That does it's best to give the player(s) a bit of something new, with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
+      "version": "1.7.9",
+      "minGameVersion": "136",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
+      "stars": 22,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/JiroCab/Nyfalis/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/JiroCab/Nyfalis.json",
+      "releaseCount": 16,
+      "releaseUpdatedAt": "2025-02-19T15:21:05Z",
+      "commitUpdatedAt": "2026-10-30T13:25:49Z",
+      "totalDownloads": 38394,
+      "allAssetsDownloads": 39555,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.3835,
+        "starsScore": 0.2394,
+        "updateScore": 0.0248,
+        "penaltyScore": 0.5456,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 446,
+        "recommended": 417,
+        "updated": 265,
+        "downloads": 34,
+        "stars": 96,
+        "newest": 1092
       }
     },
     {
@@ -779,71 +827,23 @@
       "commitUpdatedAt": "2025-04-26T08:19:53Z",
       "totalDownloads": 33672,
       "allAssetsDownloads": 33684,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.3019,
-        "starsScore": 0.2773,
+        "downloadsScore": 0.3005,
+        "starsScore": 0.2772,
         "updateScore": 0,
-        "penaltyScore": 0.4772,
+        "penaltyScore": 0.4776,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 427,
-        "recommended": 416,
-        "updated": 761,
+        "heat": 437,
+        "recommended": 425,
+        "updated": 776,
         "downloads": 39,
         "stars": 53,
-        "newest": 1249
-      }
-    },
-    {
-      "repo": "JiroCab/Nyfalis",
-      "source": "topic",
-      "internalName": null,
-      "name": "olupis",
-      "namePlain": "olupis",
-      "author": ";3\nProgramming:\nRushieWashie, Siede, WMF Industries, Otamamori \n---------------------\nSprites:\nRushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69\n---------------------\nMaps:\nRushieWashie, MrApple, NightmarishWolf",
-      "authorPlain": ";3 Programming: RushieWashie, Siede, WMF Industries, Otamamori --------------------- Sprites: RushieWashie, NightmarishWolf, Ethanol10, kapzduke, Otamamori, Catana, Lixie, ItsKirby69 --------------------- Maps: RushieWashie, MrApple, NightmarishWolf",
-      "description": "(⚠Work in progress⚠)\n Yet another planet mod \nThat does it's best to give the player(s) a bit of something new,\n with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
-      "descriptionPlain": "(⚠Work in progress⚠) Yet another planet mod That does it's best to give the player(s) a bit of something new, with a minor hint of what the base game has to offer, focus on RTS controls, and pain on top",
-      "version": "1.7.9",
-      "minGameVersion": "136",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "136",
-          "to": "146"
-        }
-      ],
-      "stars": 22,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/JiroCab/Nyfalis/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/JiroCab/Nyfalis.json",
-      "releaseCount": 16,
-      "releaseUpdatedAt": "2025-02-19T15:21:05Z",
-      "commitUpdatedAt": "2026-10-30T13:25:49Z",
-      "totalDownloads": 38394,
-      "allAssetsDownloads": 39555,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.3861,
-        "starsScore": 0.2394,
-        "updateScore": 0.0284,
-        "penaltyScore": 0.5453,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 435,
-        "recommended": 418,
-        "updated": 238,
-        "downloads": 33,
-        "stars": 96,
-        "newest": 1091
+        "newest": 1250
       }
     },
     {
@@ -879,173 +879,23 @@
       "commitUpdatedAt": "2026-07-04T16:36:38Z",
       "totalDownloads": 13014,
       "allAssetsDownloads": 13014,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "Development-Legacy",
       "score": {
-        "downloadsScore": 0.2555,
+        "downloadsScore": 0.2541,
         "starsScore": 0.1663,
-        "updateScore": 0.009,
-        "penaltyScore": 0.259,
+        "updateScore": 0.0078,
+        "penaltyScore": 0.2598,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 452,
-        "recommended": 434,
-        "updated": 545,
+        "heat": 464,
+        "recommended": 433,
+        "updated": 565,
         "downloads": 80,
         "stars": 369,
-        "newest": 1136
-      }
-    },
-    {
-      "repo": "BlackDeluxeCat/MiTour-Lib",
-      "source": "topic",
-      "internalName": null,
-      "name": "mitour-lib",
-      "namePlain": "mitour-lib",
-      "author": "BlackDeluxeCat",
-      "authorPlain": "BlackDeluxeCat",
-      "description": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
-      "descriptionPlain": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
-      "version": "0.4.0",
-      "minGameVersion": "149",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "141",
-          "to": "146"
-        },
-        {
-          "from": "149",
-          "to": "154"
-        }
-      ],
-      "stars": 2,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/BlackDeluxeCat/MiTour-Lib.json",
-      "releaseCount": 10,
-      "releaseUpdatedAt": "2025-06-30T15:54:56Z",
-      "commitUpdatedAt": "2025-06-30T15:54:09Z",
-      "totalDownloads": 9694,
-      "allAssetsDownloads": 9694,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.2449,
-        "starsScore": 0.1235,
-        "updateScore": 0,
-        "penaltyScore": 0.3797,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 638,
-        "recommended": 436,
-        "updated": 749,
-        "downloads": 91,
-        "stars": 622,
-        "newest": 1070
-      }
-    },
-    {
-      "repo": "Frilofril/Cobatstry",
-      "source": "topic",
-      "internalName": null,
-      "name": "cobatstry",
-      "namePlain": "cobatstry",
-      "author": "Frilofril",
-      "authorPlain": "Frilofril",
-      "description": "A new independent company on the planet - Fralion, a cold hell that complements the game with new resources, enemies, buildings and not-so-great mechanics that you will definitely like.\r\n---\r\nAvailable languages:\r\n--English\r\n--Українська\r\n--Русский\r\n--Deutsch \r\n--Polski\r\n---\r\nYou can express your impressions and follow the mod on the author's YouTube channel.\r\n",
-      "descriptionPlain": "A new independent company on the planet - Fralion, a cold hell that complements the game with new resources, enemies, buildings and not-so-great mechanics that you will definitely like. --- Available languages: --English --Українська --Русский --Deutsch --Polski --- You can express your impressions and follow the mod on the author's YouTube channel.",
-      "version": "V0.9",
-      "minGameVersion": "146",
-      "modType": "json",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "160.7"
-        }
-      ],
-      "stars": 8,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Frilofril/Cobatstry/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Frilofril/Cobatstry.json",
-      "releaseCount": 0,
-      "tagCount": 25,
-      "releaseUpdatedAt": "2025-06-22T17:10:28Z",
-      "commitUpdatedAt": "2026-11-01T16:42:59Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 0,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.1069,
-        "starsScore": 0.1887,
-        "updateScore": 0.1641,
-        "penaltyScore": 0.5669,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 706,
-        "recommended": 466,
-        "updated": 29,
-        "downloads": 625,
-        "stars": 254,
-        "newest": 661
-      }
-    },
-    {
-      "repo": "deltanedas/rtfm",
-      "source": "topic",
-      "internalName": null,
-      "name": "rtfm",
-      "namePlain": "rtfm",
-      "author": "DeltaNedas",
-      "authorPlain": "DeltaNedas",
-      "description": "Mod that adds a manual page library. RTFM in the About menu.\nComes with documentation of vanilla'a [purple]Logic[] system.\n[stat]Optionally requires [#00aaff]DeltaNedas/ui-lib[] for extra buttons.\n[#00aa00]pt_BR translations by King-BR[]",
-      "descriptionPlain": "Mod that adds a manual page library. RTFM in the About menu. Comes with documentation of vanilla'a Logic system. [stat]Optionally requires DeltaNedas/ui-lib for extra buttons. pt_BR translations by King-BR",
-      "version": "2.14.10",
-      "minGameVersion": "105",
-      "modType": "js",
-      "gameVersionRanges": [
-        {
-          "from": "105",
-          "to": "135.2"
-        }
-      ],
-      "stars": 79,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/deltanedas/rtfm/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/deltanedas/rtfm.json",
-      "releaseCount": 0,
-      "tagCount": 1,
-      "releaseUpdatedAt": null,
-      "commitUpdatedAt": "2023-07-14T01:02:34Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 0,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.1069,
-        "starsScore": 0.3252,
-        "updateScore": 0,
-        "penaltyScore": 0.7,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 596,
-        "recommended": 476,
-        "updated": 1116,
-        "downloads": 874,
-        "stars": 25,
-        "newest": 1298
+        "newest": 1137
       }
     },
     {
@@ -1081,20 +931,166 @@
       "releaseDataUpdatedAt": "2026-11-11T13:48:39.715Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1069,
+        "downloadsScore": 0.1055,
         "starsScore": 0.1887,
         "updateScore": 0,
-        "penaltyScore": 0.2557,
+        "penaltyScore": 0.2566,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 542,
-        "recommended": 484,
-        "updated": 1007,
-        "downloads": 677,
+        "heat": 552,
+        "recommended": 470,
+        "updated": 1022,
+        "downloads": 678,
         "stars": 258,
-        "newest": 519
+        "newest": 520
+      }
+    },
+    {
+      "repo": "Frilofril/Cobatstry",
+      "source": "topic",
+      "internalName": null,
+      "name": "cobatstry",
+      "namePlain": "cobatstry",
+      "author": "Frilofril",
+      "authorPlain": "Frilofril",
+      "description": "A new independent company on the planet - Fralion, a cold hell that complements the game with new resources, enemies, buildings and not-so-great mechanics that you will definitely like.\r\n---\r\nAvailable languages:\r\n--English\r\n--Українська\r\n--Русский\r\n--Deutsch \r\n--Polski\r\n---\r\nYou can express your impressions and follow the mod on the author's YouTube channel.\r\n",
+      "descriptionPlain": "A new independent company on the planet - Fralion, a cold hell that complements the game with new resources, enemies, buildings and not-so-great mechanics that you will definitely like. --- Available languages: --English --Українська --Русский --Deutsch --Polski --- You can express your impressions and follow the mod on the author's YouTube channel.",
+      "version": "V0.9",
+      "minGameVersion": "146",
+      "modType": "json",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "160.7"
+        }
+      ],
+      "stars": 8,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Frilofril/Cobatstry/main/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Frilofril/Cobatstry.json",
+      "releaseCount": 0,
+      "tagCount": 25,
+      "releaseUpdatedAt": "2025-06-22T17:10:28Z",
+      "commitUpdatedAt": "2026-11-01T16:42:59Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 0,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1055,
+        "starsScore": 0.1887,
+        "updateScore": 0.1416,
+        "penaltyScore": 0.5671,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 715,
+        "recommended": 474,
+        "updated": 89,
+        "downloads": 626,
+        "stars": 254,
+        "newest": 662
+      }
+    },
+    {
+      "repo": "lessweb123/LotteryModMirror",
+      "source": "topic",
+      "internalName": null,
+      "name": "lottery",
+      "namePlain": "lottery",
+      "author": "?",
+      "authorPlain": "?",
+      "description": "Come and try your luck! 来试试运气吧！\n\n\n- [!] This mod is currently in the testing phase and may update other prize pools in the future\n\n\nSupport for multiplayer online!\n\n\n封面是我老婆，她叫阿尔图罗",
+      "descriptionPlain": "Come and try your luck! 来试试运气吧！ - [!] This mod is currently in the testing phase and may update other prize pools in the future Support for multiplayer online! 封面是我老婆，她叫阿尔图罗",
+      "version": "beta0.6",
+      "minGameVersion": "148",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "148",
+          "to": "154"
+        }
+      ],
+      "stars": 2,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/lessweb123/LotteryModMirror/main/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/lessweb123/LotteryModMirror.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2026-01-11T13:32:18Z",
+      "commitUpdatedAt": "2026-06-05T15:36:29Z",
+      "totalDownloads": 1986,
+      "allAssetsDownloads": 1986,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.2011,
+        "starsScore": 0.1235,
+        "updateScore": 0.0124,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 335,
+        "recommended": 478,
+        "updated": 545,
+        "downloads": 194,
+        "stars": 707,
+        "newest": 466
+      }
+    },
+    {
+      "repo": "deltanedas/rtfm",
+      "source": "topic",
+      "internalName": null,
+      "name": "rtfm",
+      "namePlain": "rtfm",
+      "author": "DeltaNedas",
+      "authorPlain": "DeltaNedas",
+      "description": "Mod that adds a manual page library. RTFM in the About menu.\nComes with documentation of vanilla'a [purple]Logic[] system.\n[stat]Optionally requires [#00aaff]DeltaNedas/ui-lib[] for extra buttons.\n[#00aa00]pt_BR translations by King-BR[]",
+      "descriptionPlain": "Mod that adds a manual page library. RTFM in the About menu. Comes with documentation of vanilla'a Logic system. [stat]Optionally requires DeltaNedas/ui-lib for extra buttons. pt_BR translations by King-BR",
+      "version": "2.14.10",
+      "minGameVersion": "105",
+      "modType": "js",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
+      "stars": 79,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/deltanedas/rtfm/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/deltanedas/rtfm.json",
+      "releaseCount": 0,
+      "tagCount": 1,
+      "releaseUpdatedAt": null,
+      "commitUpdatedAt": "2023-07-14T01:02:34Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 0,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.1055,
+        "starsScore": 0.3252,
+        "updateScore": 0,
+        "penaltyScore": 0.7,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 602,
+        "recommended": 479,
+        "updated": 1125,
+        "downloads": 875,
+        "stars": 25,
+        "newest": 1299
       }
     },
     {
@@ -1130,10 +1126,10 @@
       "commitUpdatedAt": "2026-01-22T15:33:05Z",
       "totalDownloads": 2502,
       "allAssetsDownloads": 2502,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2074,
+        "downloadsScore": 0.2061,
         "starsScore": 0.1753,
         "updateScore": 0,
         "penaltyScore": 0,
@@ -1141,60 +1137,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 229,
-        "recommended": 489,
-        "updated": 676,
+        "heat": 238,
+        "recommended": 483,
+        "updated": 695,
         "downloads": 176,
         "stars": 323,
-        "newest": 663
-      }
-    },
-    {
-      "repo": "lessweb123/LotteryModMirror",
-      "source": "topic",
-      "internalName": null,
-      "name": "lottery",
-      "namePlain": "lottery",
-      "author": "?",
-      "authorPlain": "?",
-      "description": "Come and try your luck! 来试试运气吧！\n\n\n- [!] This mod is currently in the testing phase and may update other prize pools in the future\n\n\nSupport for multiplayer online!\n\n\n封面是我老婆，她叫阿尔图罗",
-      "descriptionPlain": "Come and try your luck! 来试试运气吧！ - [!] This mod is currently in the testing phase and may update other prize pools in the future Support for multiplayer online! 封面是我老婆，她叫阿尔图罗",
-      "version": "beta0.6",
-      "minGameVersion": "148",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "148",
-          "to": "154"
-        }
-      ],
-      "stars": 2,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/lessweb123/LotteryModMirror/main/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/lessweb123/LotteryModMirror.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2026-01-11T13:32:18Z",
-      "commitUpdatedAt": "2026-06-05T15:36:29Z",
-      "totalDownloads": 1986,
-      "allAssetsDownloads": 1986,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.2024,
-        "starsScore": 0.1235,
-        "updateScore": 0.0142,
-        "penaltyScore": 0,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 332,
-        "recommended": 490,
-        "updated": 524,
-        "downloads": 194,
-        "stars": 707,
-        "newest": 465
+        "newest": 664
       }
     },
     {
@@ -1228,25 +1176,25 @@
       "releaseCount": 16,
       "releaseUpdatedAt": "2026-10-20T23:49:53Z",
       "commitUpdatedAt": "2026-10-21T00:08:00Z",
-      "totalDownloads": 1173,
-      "allAssetsDownloads": 1173,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 1175,
+      "allAssetsDownloads": 1175,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2836,
+        "downloadsScore": 0.2824,
         "starsScore": 0.1235,
-        "updateScore": 0.2973,
+        "updateScore": 0.2802,
         "penaltyScore": 0,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 151,
-        "recommended": 499,
-        "updated": 192,
+        "heat": 162,
+        "recommended": 508,
+        "updated": 221,
         "downloads": 232,
         "stars": 740,
-        "newest": 448
+        "newest": 449
       }
     },
     {
@@ -1278,23 +1226,71 @@
       "commitUpdatedAt": "2025-01-30T21:02:20Z",
       "totalDownloads": 54763,
       "allAssetsDownloads": 54763,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.4181,
-        "starsScore": 0.2264,
+        "downloadsScore": 0.4153,
+        "starsScore": 0.2263,
         "updateScore": 0,
-        "penaltyScore": 0.6523,
+        "penaltyScore": 0.6524,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 536,
-        "recommended": 509,
-        "updated": 803,
+        "heat": 544,
+        "recommended": 516,
+        "updated": 818,
         "downloads": 26,
         "stars": 124,
-        "newest": 1109
+        "newest": 1110
+      }
+    },
+    {
+      "repo": "JiroCab/minimapAsButton",
+      "source": "topic",
+      "internalName": null,
+      "name": "minimapbutton",
+      "namePlain": "minimapbutton",
+      "author": "RushieWashie",
+      "authorPlain": "RushieWashie",
+      "description": "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Selecting Units/Factories across the screen/map!\n\nAll this can be turned off/on in settings!",
+      "descriptionPlain": "Mobile UI QOL Adds Buttons for: -Mini Map -Planet Map -Resync -Selecting Units/Factories across the screen/map! All this can be turned off/on in settings!",
+      "version": "1.2",
+      "minGameVersion": "145",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
+      "stars": 2,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/JiroCab/minimapAsButton/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/JiroCab/minimapAsButton.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2025-04-15T06:25:43Z",
+      "commitUpdatedAt": "2026-05-29T15:04:25Z",
+      "totalDownloads": 6382,
+      "allAssetsDownloads": 6382,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.2302,
+        "starsScore": 0.1235,
+        "updateScore": 0.0078,
+        "penaltyScore": 0.4909,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 721,
+        "recommended": 532,
+        "updated": 551,
+        "downloads": 112,
+        "stars": 631,
+        "newest": 871
       }
     },
     {
@@ -1330,68 +1326,20 @@
       "releaseDataUpdatedAt": "2026-11-11T13:48:39.715Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1069,
+        "downloadsScore": 0.1055,
         "starsScore": 0.1235,
-        "updateScore": 0.0239,
+        "updateScore": 0.0208,
         "penaltyScore": 0,
         "newModMultiplier": 1.0015,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 458,
-        "recommended": 532,
-        "updated": 517,
-        "downloads": 772,
+        "heat": 468,
+        "recommended": 536,
+        "updated": 538,
+        "downloads": 773,
         "stars": 657,
-        "newest": 281
-      }
-    },
-    {
-      "repo": "JiroCab/minimapAsButton",
-      "source": "topic",
-      "internalName": null,
-      "name": "minimapbutton",
-      "namePlain": "minimapbutton",
-      "author": "RushieWashie",
-      "authorPlain": "RushieWashie",
-      "description": "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Selecting Units/Factories across the screen/map!\n\nAll this can be turned off/on in settings!",
-      "descriptionPlain": "Mobile UI QOL Adds Buttons for: -Mini Map -Planet Map -Resync -Selecting Units/Factories across the screen/map! All this can be turned off/on in settings!",
-      "version": "1.2",
-      "minGameVersion": "145",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "145",
-          "to": "146"
-        }
-      ],
-      "stars": 2,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/JiroCab/minimapAsButton/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/JiroCab/minimapAsButton.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2025-04-15T06:25:43Z",
-      "commitUpdatedAt": "2026-05-29T15:04:25Z",
-      "totalDownloads": 6382,
-      "allAssetsDownloads": 6382,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.2316,
-        "starsScore": 0.1235,
-        "updateScore": 0.009,
-        "penaltyScore": 0.4905,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 719,
-        "recommended": 537,
-        "updated": 530,
-        "downloads": 112,
-        "stars": 631,
-        "newest": 870
+        "newest": 282
       }
     },
     {
@@ -1423,71 +1371,23 @@
       "commitUpdatedAt": "2025-03-06T10:40:33Z",
       "totalDownloads": 4427,
       "allAssetsDownloads": 4460,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2205,
+        "downloadsScore": 0.2191,
         "starsScore": 0.2507,
         "updateScore": 0,
-        "penaltyScore": 0.5321,
+        "penaltyScore": 0.5324,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 618,
+        "heat": 622,
         "recommended": 538,
-        "updated": 769,
+        "updated": 784,
         "downloads": 144,
         "stars": 77,
-        "newest": 640
-      }
-    },
-    {
-      "repo": "Zelaux/ByteLogicMod",
-      "source": "topic",
-      "internalName": null,
-      "name": "byte-logic-mod",
-      "namePlain": "byte-logic-mod",
-      "author": "Zelaux",
-      "authorPlain": "Zelaux",
-      "description": "Adds byte logic blocks from v5",
-      "descriptionPlain": "Adds byte logic blocks from v5",
-      "version": "v1.1.0",
-      "minGameVersion": "136",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "136",
-          "to": "146"
-        }
-      ],
-      "stars": 29,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Zelaux/ByteLogicMod/master/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/Zelaux/ByteLogicMod.json",
-      "releaseCount": 5,
-      "releaseUpdatedAt": "2023-02-11T11:32:37Z",
-      "commitUpdatedAt": "2024-09-24T22:19:06Z",
-      "totalDownloads": 32205,
-      "allAssetsDownloads": 32205,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.3805,
-        "starsScore": 0.2548,
-        "updateScore": 0,
-        "penaltyScore": 0.6975,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 573,
-        "recommended": 542,
-        "updated": 872,
-        "downloads": 40,
-        "stars": 73,
-        "newest": 1112
+        "newest": 641
       }
     },
     {
@@ -1519,10 +1419,10 @@
       "commitUpdatedAt": "2026-02-14T00:58:17Z",
       "totalDownloads": 51,
       "allAssetsDownloads": 51,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1574,
+        "downloadsScore": 0.156,
         "starsScore": 0.0526,
         "updateScore": 0,
         "penaltyScore": 0,
@@ -1530,12 +1430,60 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 521,
-        "recommended": 549,
-        "updated": 656,
-        "downloads": 435,
-        "stars": 1060,
-        "newest": 398
+        "heat": 533,
+        "recommended": 559,
+        "updated": 675,
+        "downloads": 436,
+        "stars": 1061,
+        "newest": 399
+      }
+    },
+    {
+      "repo": "YmStrip/Mindustry-Stallar",
+      "source": "topic",
+      "internalName": null,
+      "name": "st",
+      "namePlain": "st",
+      "author": "Encog",
+      "authorPlain": "Encog",
+      "description": "\n\n[red] in dev...\n[cyan] What these?\n- lots of factories\n- lots of turrets\n- quantum transport system\n- ...\n",
+      "descriptionPlain": "in dev... What these? - lots of factories - lots of turrets - quantum transport system - ...",
+      "version": "1",
+      "minGameVersion": "149",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "149",
+          "to": "154"
+        }
+      ],
+      "stars": 1,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/YmStrip/Mindustry-Stallar/master/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/YmStrip/Mindustry-Stallar.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2025-08-08T10:24:05Z",
+      "commitUpdatedAt": "2026-03-15T01:09:50Z",
+      "totalDownloads": 159,
+      "allAssetsDownloads": 159,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.1659,
+        "starsScore": 0.0963,
+        "updateScore": 0,
+        "penaltyScore": 0.3035,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 686,
+        "recommended": 565,
+        "updated": 655,
+        "downloads": 364,
+        "stars": 828,
+        "newest": 535
       }
     },
     {
@@ -1571,10 +1519,10 @@
       "commitUpdatedAt": "2025-11-26T17:00:43Z",
       "totalDownloads": 1605,
       "allAssetsDownloads": 1605,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1978,
+        "downloadsScore": 0.1965,
         "starsScore": 0.0963,
         "updateScore": 0,
         "penaltyScore": 0,
@@ -1582,60 +1530,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 390,
-        "recommended": 555,
-        "updated": 721,
+        "heat": 400,
+        "recommended": 569,
+        "updated": 740,
         "downloads": 214,
         "stars": 810,
-        "newest": 742
-      }
-    },
-    {
-      "repo": "YmStrip/Mindustry-Stallar",
-      "source": "topic",
-      "internalName": null,
-      "name": "st",
-      "namePlain": "st",
-      "author": "Encog",
-      "authorPlain": "Encog",
-      "description": "\n\n[red] in dev...\n[cyan] What these?\n- lots of factories\n- lots of turrets\n- quantum transport system\n- ...\n",
-      "descriptionPlain": "in dev... What these? - lots of factories - lots of turrets - quantum transport system - ...",
-      "version": "1",
-      "minGameVersion": "149",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "149",
-          "to": "154"
-        }
-      ],
-      "stars": 1,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/YmStrip/Mindustry-Stallar/master/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/YmStrip/Mindustry-Stallar.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2025-08-08T10:24:05Z",
-      "commitUpdatedAt": "2026-03-15T01:09:50Z",
-      "totalDownloads": 159,
-      "allAssetsDownloads": 159,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.1673,
-        "starsScore": 0.0963,
-        "updateScore": 0,
-        "penaltyScore": 0.3027,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 683,
-        "recommended": 561,
-        "updated": 636,
-        "downloads": 363,
-        "stars": 828,
-        "newest": 534
+        "newest": 743
       }
     },
     {
@@ -1675,26 +1575,26 @@
       "commitUpdatedAt": "2025-07-09T08:59:52Z",
       "totalDownloads": 18335,
       "allAssetsDownloads": 18335,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "dependencies": [
         "revision"
       ],
       "score": {
-        "downloadsScore": 0.2705,
+        "downloadsScore": 0.2692,
         "starsScore": 0.1823,
         "updateScore": 0,
-        "penaltyScore": 0.3694,
+        "penaltyScore": 0.37,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 524,
-        "recommended": 562,
-        "updated": 745,
+        "heat": 536,
+        "recommended": 571,
+        "updated": 760,
         "downloads": 59,
         "stars": 296,
-        "newest": 1270
+        "newest": 1271
       }
     },
     {
@@ -1726,23 +1626,23 @@
       "commitUpdatedAt": "2025-12-31T05:00:01Z",
       "totalDownloads": 2750,
       "allAssetsDownloads": 2750,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2092,
+        "downloadsScore": 0.2079,
         "starsScore": 0.1753,
         "updateScore": 0,
-        "penaltyScore": 0.3598,
+        "penaltyScore": 0.3605,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 587,
-        "recommended": 595,
-        "updated": 698,
+        "heat": 596,
+        "recommended": 592,
+        "updated": 717,
         "downloads": 172,
         "stars": 329,
-        "newest": 619
+        "newest": 620
       }
     },
     {
@@ -1776,12 +1676,12 @@
       "releaseCount": 15,
       "releaseUpdatedAt": "2022-10-23T12:47:13Z",
       "commitUpdatedAt": "2026-10-04T14:23:40Z",
-      "totalDownloads": 292355,
-      "allAssetsDownloads": 292355,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 292356,
+      "allAssetsDownloads": 292356,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.6185,
+        "downloadsScore": 0.6163,
         "starsScore": 0.3809,
         "updateScore": 0,
         "penaltyScore": 0.6986,
@@ -1789,12 +1689,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 106,
-        "recommended": 599,
-        "updated": 608,
+        "heat": 113,
+        "recommended": 601,
+        "updated": 628,
         "downloads": 6,
         "stars": 14,
-        "newest": 1248
+        "newest": 1249
       }
     },
     {
@@ -1826,10 +1726,10 @@
       "commitUpdatedAt": "2026-01-17T14:50:12Z",
       "totalDownloads": 33,
       "allAssetsDownloads": 33,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1542,
+        "downloadsScore": 0.1528,
         "starsScore": 0.0963,
         "updateScore": 0,
         "penaltyScore": 0,
@@ -1837,12 +1737,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 442,
-        "recommended": 624,
-        "updated": 677,
-        "downloads": 460,
+        "heat": 454,
+        "recommended": 618,
+        "updated": 696,
+        "downloads": 462,
         "stars": 819,
-        "newest": 593
+        "newest": 594
       }
     },
     {
@@ -1878,23 +1778,23 @@
       "commitUpdatedAt": "2025-06-04T19:06:07Z",
       "totalDownloads": 4482,
       "allAssetsDownloads": 4482,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2208,
+        "downloadsScore": 0.2195,
         "starsScore": 0.1887,
         "updateScore": 0,
-        "penaltyScore": 0.4428,
+        "penaltyScore": 0.4433,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 630,
-        "recommended": 630,
-        "updated": 757,
+        "heat": 634,
+        "recommended": 634,
+        "updated": 772,
         "downloads": 143,
         "stars": 257,
-        "newest": 1145
+        "newest": 1146
       }
     },
     {
@@ -1926,13 +1826,13 @@
       "commitUpdatedAt": "2025-12-22T19:54:10Z",
       "totalDownloads": 153,
       "allAssetsDownloads": 153,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "dependencies": [
         "multi-block-lib"
       ],
       "score": {
-        "downloadsScore": 0.1669,
+        "downloadsScore": 0.1654,
         "starsScore": 0.1412,
         "updateScore": 0,
         "penaltyScore": 0,
@@ -1940,12 +1840,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 351,
-        "recommended": 645,
-        "updated": 710,
-        "downloads": 366,
+        "heat": 364,
+        "recommended": 646,
+        "updated": 729,
+        "downloads": 368,
         "stars": 535,
-        "newest": 447
+        "newest": 448
       }
     },
     {
@@ -1977,26 +1877,26 @@
       "commitUpdatedAt": "2025-09-11T02:28:49Z",
       "totalDownloads": 13220,
       "allAssetsDownloads": 13220,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master2",
       "dependencies": [
         "ctcoresystem"
       ],
       "score": {
-        "downloadsScore": 0.2562,
+        "downloadsScore": 0.2549,
         "starsScore": 0.1412,
         "updateScore": 0,
-        "penaltyScore": 0.221,
+        "penaltyScore": 0.2219,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 459,
-        "recommended": 648,
-        "updated": 735,
+        "heat": 470,
+        "recommended": 656,
+        "updated": 750,
         "downloads": 78,
         "stars": 588,
-        "newest": 1015
+        "newest": 1016
       }
     },
     {
@@ -2028,23 +1928,23 @@
       "commitUpdatedAt": "2025-05-31T19:22:05Z",
       "totalDownloads": 851,
       "allAssetsDownloads": 851,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2641,
+        "downloadsScore": 0.2616,
         "starsScore": 0.0963,
         "updateScore": 0,
-        "penaltyScore": 0.4287,
+        "penaltyScore": 0.4292,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 678,
-        "recommended": 709,
-        "updated": 755,
+        "heat": 684,
+        "recommended": 718,
+        "updated": 770,
         "downloads": 248,
         "stars": 824,
-        "newest": 586
+        "newest": 587
       }
     },
     {
@@ -2076,23 +1976,23 @@
       "commitUpdatedAt": "2024-05-18T05:50:46Z",
       "totalDownloads": 32195,
       "allAssetsDownloads": 32195,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.3752,
+        "downloadsScore": 0.3727,
         "starsScore": 0.2603,
         "updateScore": 0,
-        "penaltyScore": 0.6833,
+        "penaltyScore": 0.6834,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 564,
-        "recommended": 723,
-        "updated": 829,
+        "heat": 573,
+        "recommended": 727,
+        "updated": 844,
         "downloads": 41,
         "stars": 69,
-        "newest": 921
+        "newest": 922
       }
     },
     {
@@ -2124,23 +2024,71 @@
       "commitUpdatedAt": "2025-03-30T18:26:24Z",
       "totalDownloads": 2203,
       "allAssetsDownloads": 2203,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2044,
+        "downloadsScore": 0.2031,
         "starsScore": 0.1823,
         "updateScore": 0,
-        "penaltyScore": 0.5078,
+        "penaltyScore": 0.5081,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 689,
-        "recommended": 765,
-        "updated": 766,
+        "heat": 691,
+        "recommended": 760,
+        "updated": 781,
         "downloads": 188,
         "stars": 293,
-        "newest": 649
+        "newest": 650
+      }
+    },
+    {
+      "repo": "Darkdustry-Coders/MindurkaCompatV7",
+      "source": "topic",
+      "internalName": null,
+      "name": "MindurkaCompat",
+      "namePlain": "MindurkaCompat",
+      "author": "buj",
+      "authorPlain": "buj",
+      "description": "Mod that adds extra compatibility with Mindurka",
+      "descriptionPlain": "Mod that adds extra compatibility with Mindurka",
+      "version": "1.2",
+      "minGameVersion": "146",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "stars": 1,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/Darkdustry-Coders/MindurkaCompatV7.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2026-03-22T08:27:09Z",
+      "commitUpdatedAt": "2026-03-22T08:27:09Z",
+      "totalDownloads": 28,
+      "allAssetsDownloads": 28,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.1508,
+        "starsScore": 0.0963,
+        "updateScore": 0,
+        "penaltyScore": 0,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 457,
+        "recommended": 775,
+        "updated": 645,
+        "downloads": 479,
+        "stars": 788,
+        "newest": 370
       }
     },
     {
@@ -2176,71 +2124,23 @@
       "commitUpdatedAt": "2026-02-13T10:43:29Z",
       "totalDownloads": 36821,
       "allAssetsDownloads": 36821,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.3834,
-        "starsScore": 0.2724,
+        "downloadsScore": 0.3809,
+        "starsScore": 0.2723,
         "updateScore": 0,
-        "penaltyScore": 0.4846,
+        "penaltyScore": 0.485,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 329,
-        "recommended": 768,
-        "updated": 763,
+        "heat": 338,
+        "recommended": 776,
+        "updated": 778,
         "downloads": 35,
         "stars": 58,
-        "newest": 802
-      }
-    },
-    {
-      "repo": "Darkdustry-Coders/MindurkaCompatV7",
-      "source": "topic",
-      "internalName": null,
-      "name": "MindurkaCompat",
-      "namePlain": "MindurkaCompat",
-      "author": "buj",
-      "authorPlain": "buj",
-      "description": "Mod that adds extra compatibility with Mindurka",
-      "descriptionPlain": "Mod that adds extra compatibility with Mindurka",
-      "version": "1.2",
-      "minGameVersion": "146",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "146"
-        }
-      ],
-      "stars": 1,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/Darkdustry-Coders/MindurkaCompatV7.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2026-03-22T08:27:09Z",
-      "commitUpdatedAt": "2026-03-22T08:27:09Z",
-      "totalDownloads": 28,
-      "allAssetsDownloads": 28,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.1523,
-        "starsScore": 0.0963,
-        "updateScore": 0,
-        "penaltyScore": 0,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 448,
-        "recommended": 775,
-        "updated": 626,
-        "downloads": 477,
-        "stars": 788,
-        "newest": 369
+        "newest": 803
       }
     },
     {
@@ -2272,23 +2172,23 @@
       "commitUpdatedAt": "2025-01-20T17:08:34Z",
       "totalDownloads": 22130,
       "allAssetsDownloads": 22130,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.3553,
+        "downloadsScore": 0.3528,
         "starsScore": 0.2044,
         "updateScore": 0,
-        "penaltyScore": 0.569,
+        "penaltyScore": 0.5693,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 567,
-        "recommended": 778,
-        "updated": 776,
+        "heat": 579,
+        "recommended": 782,
+        "updated": 791,
         "downloads": 53,
         "stars": 192,
-        "newest": 806
+        "newest": 807
       }
     },
     {
@@ -2320,23 +2220,23 @@
       "commitUpdatedAt": "2025-11-14T14:14:37Z",
       "totalDownloads": 2493,
       "allAssetsDownloads": 2493,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2072,
+        "downloadsScore": 0.2059,
         "starsScore": 0.274,
         "updateScore": 0,
-        "penaltyScore": 0.6152,
+        "penaltyScore": 0.6154,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 671,
-        "recommended": 781,
-        "updated": 729,
+        "heat": 673,
+        "recommended": 793,
+        "updated": 748,
         "downloads": 177,
         "stars": 57,
-        "newest": 1162
+        "newest": 1163
       }
     },
     {
@@ -2372,23 +2272,23 @@
       "commitUpdatedAt": "2025-08-05T11:02:09Z",
       "totalDownloads": 602,
       "allAssetsDownloads": 602,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1837,
+        "downloadsScore": 0.1824,
         "starsScore": 0.1753,
         "updateScore": 0,
-        "penaltyScore": 0.3092,
+        "penaltyScore": 0.31,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 577,
-        "recommended": 793,
-        "updated": 740,
+        "heat": 588,
+        "recommended": 803,
+        "updated": 755,
         "downloads": 264,
         "stars": 322,
-        "newest": 1114
+        "newest": 1115
       }
     },
     {
@@ -2420,23 +2320,23 @@
       "commitUpdatedAt": "2025-07-31T11:22:50Z",
       "totalDownloads": 380,
       "allAssetsDownloads": 380,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.1775,
+        "downloadsScore": 0.1762,
         "starsScore": 0.0963,
         "updateScore": 0,
-        "penaltyScore": 0.3199,
+        "penaltyScore": 0.3207,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 688,
-        "recommended": 847,
-        "updated": 742,
+        "heat": 689,
+        "recommended": 839,
+        "updated": 757,
         "downloads": 298,
         "stars": 798,
-        "newest": 656
+        "newest": 657
       }
     },
     {
@@ -2475,68 +2375,20 @@
         "ui_lib"
       ],
       "score": {
-        "downloadsScore": 0.1069,
-        "starsScore": 0.3264,
+        "downloadsScore": 0.1055,
+        "starsScore": 0.3263,
         "updateScore": 0,
         "penaltyScore": 0.7,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 591,
-        "recommended": 852,
-        "updated": 1115,
-        "downloads": 873,
+        "heat": 599,
+        "recommended": 850,
+        "updated": 1124,
+        "downloads": 874,
         "stars": 24,
-        "newest": 1293
-      }
-    },
-    {
-      "repo": "nekit508/mindustry-extended-keybinds",
-      "source": "topic",
-      "internalName": null,
-      "name": "mindustry-extended-keybinds",
-      "namePlain": "mindustry-extended-keybinds",
-      "author": "nekit508",
-      "authorPlain": "nekit508",
-      "description": "",
-      "descriptionPlain": "",
-      "version": "v0.1.0",
-      "minGameVersion": "151",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "151",
-          "to": "154"
-        }
-      ],
-      "stars": 0,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/nekit508/mindustry-extended-keybinds.json",
-      "releaseCount": 1,
-      "releaseUpdatedAt": "2025-08-30T08:06:44Z",
-      "commitUpdatedAt": "2025-08-30T08:14:52Z",
-      "totalDownloads": 108,
-      "allAssetsDownloads": 108,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.1638,
-        "starsScore": 0.0526,
-        "updateScore": 0,
-        "penaltyScore": 0.2513,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 702,
-        "recommended": 854,
-        "updated": 737,
-        "downloads": 387,
-        "stars": 1217,
-        "newest": 521
+        "newest": 1294
       }
     },
     {
@@ -2572,23 +2424,119 @@
       "commitUpdatedAt": "2025-05-04T01:56:11Z",
       "totalDownloads": 31324,
       "allAssetsDownloads": 31324,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.3736,
+        "downloadsScore": 0.371,
         "starsScore": 0.2314,
         "updateScore": 0,
-        "penaltyScore": 0.4674,
+        "penaltyScore": 0.4678,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 397,
-        "recommended": 856,
-        "updated": 760,
+        "heat": 410,
+        "recommended": 855,
+        "updated": 775,
         "downloads": 43,
         "stars": 119,
-        "newest": 1172
+        "newest": 1173
+      }
+    },
+    {
+      "repo": "nekit508/mindustry-extended-keybinds",
+      "source": "topic",
+      "internalName": null,
+      "name": "mindustry-extended-keybinds",
+      "namePlain": "mindustry-extended-keybinds",
+      "author": "nekit508",
+      "authorPlain": "nekit508",
+      "description": "",
+      "descriptionPlain": "",
+      "version": "v0.1.0",
+      "minGameVersion": "151",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "151",
+          "to": "154"
+        }
+      ],
+      "stars": 0,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/nekit508/mindustry-extended-keybinds.json",
+      "releaseCount": 1,
+      "releaseUpdatedAt": "2025-08-30T08:06:44Z",
+      "commitUpdatedAt": "2025-08-30T08:14:52Z",
+      "totalDownloads": 108,
+      "allAssetsDownloads": 108,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.1625,
+        "starsScore": 0.0526,
+        "updateScore": 0,
+        "penaltyScore": 0.2522,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 699,
+        "recommended": 866,
+        "updated": 752,
+        "downloads": 387,
+        "stars": 1218,
+        "newest": 522
+      }
+    },
+    {
+      "repo": "FlinTyX/Animalia",
+      "source": "topic",
+      "internalName": null,
+      "name": "animalia",
+      "namePlain": "animalia",
+      "author": "Flin",
+      "authorPlain": "Flin",
+      "description": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
+      "descriptionPlain": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
+      "version": "java 1.0",
+      "minGameVersion": "141",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "146"
+        }
+      ],
+      "stars": 50,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/FlinTyX/Animalia/main/assets/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/FlinTyX/Animalia.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2025-02-03T14:54:28Z",
+      "commitUpdatedAt": "2025-02-03T14:54:28Z",
+      "totalDownloads": 42308,
+      "allAssetsDownloads": 42308,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
+      "score": {
+        "downloadsScore": 0.3898,
+        "starsScore": 0.2894,
+        "updateScore": 0,
+        "penaltyScore": 0.5588,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 378,
+        "recommended": 867,
+        "updated": 789,
+        "downloads": 31,
+        "stars": 42,
+        "newest": 1236
       }
     },
     {
@@ -2624,71 +2572,23 @@
       "commitUpdatedAt": "2025-08-16T14:22:53Z",
       "totalDownloads": 9670,
       "allAssetsDownloads": 9670,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2447,
+        "downloadsScore": 0.2433,
         "starsScore": 0.1753,
         "updateScore": 0,
-        "penaltyScore": 0.2917,
+        "penaltyScore": 0.2925,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 494,
-        "recommended": 860,
-        "updated": 739,
-        "downloads": 92,
+        "heat": 502,
+        "recommended": 873,
+        "updated": 754,
+        "downloads": 93,
         "stars": 320,
-        "newest": 737
-      }
-    },
-    {
-      "repo": "FlinTyX/Animalia",
-      "source": "topic",
-      "internalName": null,
-      "name": "animalia",
-      "namePlain": "animalia",
-      "author": "Flin",
-      "authorPlain": "Flin",
-      "description": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
-      "descriptionPlain": "A fun mod that contains Animals, Plants, Natural disasters and a lot more!",
-      "version": "java 1.0",
-      "minGameVersion": "141",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "141",
-          "to": "146"
-        }
-      ],
-      "stars": 50,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/FlinTyX/Animalia/main/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/FlinTyX/Animalia.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2025-02-03T14:54:28Z",
-      "commitUpdatedAt": "2025-02-03T14:54:28Z",
-      "totalDownloads": 42308,
-      "allAssetsDownloads": 42308,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.3923,
-        "starsScore": 0.2894,
-        "updateScore": 0,
-        "penaltyScore": 0.5585,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 364,
-        "recommended": 864,
-        "updated": 774,
-        "downloads": 31,
-        "stars": 42,
-        "newest": 1235
+        "newest": 738
       }
     },
     {
@@ -2720,11 +2620,11 @@
       "commitUpdatedAt": "2024-04-26T16:33:04Z",
       "totalDownloads": 5718,
       "allAssetsDownloads": 5733,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2283,
-        "starsScore": 0.2366,
+        "downloadsScore": 0.227,
+        "starsScore": 0.2365,
         "updateScore": 0,
         "penaltyScore": 0.6741,
         "newModMultiplier": 1,
@@ -2732,11 +2632,11 @@
       },
       "ranks": {
         "heat": 722,
-        "recommended": 882,
-        "updated": 820,
+        "recommended": 886,
+        "updated": 835,
         "downloads": 119,
         "stars": 104,
-        "newest": 909
+        "newest": 910
       }
     },
     {
@@ -2772,10 +2672,10 @@
       "commitUpdatedAt": "2022-08-08T15:08:00Z",
       "totalDownloads": 4537,
       "allAssetsDownloads": 4537,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2975,
+        "downloadsScore": 0.295,
         "starsScore": 0.1887,
         "updateScore": 0,
         "penaltyScore": 0.6991,
@@ -2783,12 +2683,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 731,
-        "recommended": 906,
-        "updated": 901,
+        "heat": 733,
+        "recommended": 908,
+        "updated": 916,
         "downloads": 139,
         "stars": 272,
-        "newest": 1176
+        "newest": 1177
       }
     },
     {
@@ -2820,10 +2720,10 @@
       "commitUpdatedAt": "2022-12-03T23:52:29Z",
       "totalDownloads": 26631,
       "allAssetsDownloads": 26631,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2886,
+        "downloadsScore": 0.2872,
         "starsScore": 0.209,
         "updateScore": 0,
         "penaltyScore": 0.6992,
@@ -2831,12 +2731,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 716,
-        "recommended": 916,
-        "updated": 905,
+        "heat": 717,
+        "recommended": 911,
+        "updated": 920,
         "downloads": 48,
         "stars": 172,
-        "newest": 1199
+        "newest": 1200
       }
     },
     {
@@ -2868,75 +2768,23 @@
       "commitUpdatedAt": "2024-11-07T09:16:57Z",
       "totalDownloads": 18210,
       "allAssetsDownloads": 18210,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2701,
-        "starsScore": 0.2366,
+        "downloadsScore": 0.2688,
+        "starsScore": 0.2365,
         "updateScore": 0,
-        "penaltyScore": 0.6133,
+        "penaltyScore": 0.6135,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
         "heat": 659,
-        "recommended": 918,
-        "updated": 786,
+        "recommended": 915,
+        "updated": 801,
         "downloads": 60,
         "stars": 105,
-        "newest": 918
-      }
-    },
-    {
-      "repo": "BlackDeluxeCat/MapFilterExt",
-      "source": "topic",
-      "internalName": null,
-      "name": "MapFilterExt",
-      "namePlain": "MapFilterExt",
-      "author": "BlackDeluxeCat",
-      "authorPlain": "BlackDeluxeCat",
-      "description": "Added some useful map filters. \nAdded a powerful custom guide tool and advanced wave editor to map editor.",
-      "descriptionPlain": "Added some useful map filters. Added a powerful custom guide tool and advanced wave editor to map editor.",
-      "version": "1.8.1",
-      "minGameVersion": "149",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "136",
-          "to": "146"
-        },
-        {
-          "from": "149",
-          "to": "154"
-        }
-      ],
-      "stars": 5,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/BlackDeluxeCat/MapFilterExt/master/assets/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/BlackDeluxeCat/MapFilterExt.json",
-      "releaseCount": 24,
-      "releaseUpdatedAt": "2025-07-01T05:37:20Z",
-      "commitUpdatedAt": "2025-07-01T05:36:36Z",
-      "totalDownloads": 10319,
-      "allAssetsDownloads": 10330,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.2469,
-        "starsScore": 0.1663,
-        "updateScore": 0,
-        "penaltyScore": 0.3787,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 576,
-        "recommended": 937,
-        "updated": 748,
-        "downloads": 90,
-        "stars": 362,
-        "newest": 1084
+        "newest": 919
       }
     },
     {
@@ -2972,10 +2820,10 @@
       "commitUpdatedAt": "2024-11-12T08:42:32Z",
       "totalDownloads": 15889,
       "allAssetsDownloads": 15889,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2641,
+        "downloadsScore": 0.2628,
         "starsScore": 0.2485,
         "updateScore": 0,
         "penaltyScore": 0.6986,
@@ -2983,26 +2831,26 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 690,
-        "recommended": 941,
-        "updated": 891,
+        "heat": 693,
+        "recommended": 937,
+        "updated": 906,
         "downloads": 66,
         "stars": 84,
-        "newest": 1213
+        "newest": 1214
       }
     },
     {
-      "repo": "lhDream/auto-translate",
+      "repo": "BlackDeluxeCat/MapFilterExt",
       "source": "topic",
       "internalName": null,
-      "name": "auto-translate",
-      "namePlain": "auto-translate",
-      "author": "lhDream",
-      "authorPlain": "lhDream",
-      "description": "A Mindustry auto translate mod.",
-      "descriptionPlain": "A Mindustry auto translate mod.",
-      "version": "1",
-      "minGameVersion": "147",
+      "name": "MapFilterExt",
+      "namePlain": "MapFilterExt",
+      "author": "BlackDeluxeCat",
+      "authorPlain": "BlackDeluxeCat",
+      "description": "Added some useful map filters. \nAdded a powerful custom guide tool and advanced wave editor to map editor.",
+      "descriptionPlain": "Added some useful map filters. Added a powerful custom guide tool and advanced wave editor to map editor.",
+      "version": "1.8.1",
+      "minGameVersion": "149",
       "modType": "java",
       "gameVersionRanges": [
         {
@@ -3010,89 +2858,37 @@
           "to": "146"
         },
         {
-          "from": "147",
+          "from": "149",
           "to": "154"
         }
       ],
-      "stars": 0,
-      "hasIcon": false,
-      "iconUrl": null,
-      "iconHash": null,
-      "releasesPath": "community/releases/lhDream/auto-translate.json",
-      "releaseCount": 3,
-      "releaseUpdatedAt": "2025-08-21T17:41:09Z",
-      "commitUpdatedAt": "2026-08-11T01:27:03Z",
-      "totalDownloads": 142,
-      "allAssetsDownloads": 142,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
-      "score": {
-        "downloadsScore": 0.2423,
-        "starsScore": 0.0526,
-        "updateScore": 0.0179,
-        "penaltyScore": 0.2723,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 657,
-        "recommended": 945,
-        "updated": 385,
-        "downloads": 371,
-        "stars": 1191,
-        "newest": 533
-      }
-    },
-    {
-      "repo": "Goobrr/Esoterum-II",
-      "source": "topic",
-      "internalName": null,
-      "name": "eso",
-      "namePlain": "eso",
-      "author": "@Goob_rr",
-      "authorPlain": "@Goob_rr",
-      "description": "A mod that adds logic components to the game, such as logic gates, wires and more.",
-      "descriptionPlain": "A mod that adds logic components to the game, such as logic gates, wires and more.",
-      "version": "1",
-      "minGameVersion": "147",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "146",
-          "to": "146"
-        },
-        {
-          "from": "147",
-          "to": "154"
-        }
-      ],
-      "stars": 8,
+      "stars": 5,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/Goobrr/Esoterum-II/master/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/BlackDeluxeCat/MapFilterExt/master/assets/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/Goobrr/Esoterum-II.json",
-      "releaseCount": 12,
-      "releaseUpdatedAt": "2025-06-23T07:17:27Z",
-      "commitUpdatedAt": "2025-06-23T07:17:27Z",
-      "totalDownloads": 1419,
-      "allAssetsDownloads": 1419,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releasesPath": "community/releases/BlackDeluxeCat/MapFilterExt.json",
+      "releaseCount": 24,
+      "releaseUpdatedAt": "2025-07-01T05:37:20Z",
+      "commitUpdatedAt": "2025-07-01T05:36:36Z",
+      "totalDownloads": 10319,
+      "allAssetsDownloads": 10330,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1955,
-        "starsScore": 0.1887,
+        "downloadsScore": 0.2456,
+        "starsScore": 0.1663,
         "updateScore": 0,
-        "penaltyScore": 0.3925,
+        "penaltyScore": 0.3793,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 615,
-        "recommended": 947,
-        "updated": 750,
-        "downloads": 223,
-        "stars": 255,
-        "newest": 902
+        "heat": 587,
+        "recommended": 945,
+        "updated": 763,
+        "downloads": 90,
+        "stars": 362,
+        "newest": 1085
       }
     },
     {
@@ -3129,23 +2925,127 @@
       "commitUpdatedAt": "2023-04-09T14:02:42Z",
       "totalDownloads": 5988,
       "allAssetsDownloads": 5988,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2298,
-        "starsScore": 0.2923,
+        "downloadsScore": 0.2284,
+        "starsScore": 0.2922,
         "updateScore": 0,
         "penaltyScore": 0.6965,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 676,
-        "recommended": 948,
-        "updated": 862,
+        "heat": 679,
+        "recommended": 946,
+        "updated": 877,
         "downloads": 115,
         "stars": 40,
-        "newest": 1317
+        "newest": 1318
+      }
+    },
+    {
+      "repo": "lhDream/auto-translate",
+      "source": "topic",
+      "internalName": null,
+      "name": "auto-translate",
+      "namePlain": "auto-translate",
+      "author": "lhDream",
+      "authorPlain": "lhDream",
+      "description": "A Mindustry auto translate mod.",
+      "descriptionPlain": "A Mindustry auto translate mod.",
+      "version": "1",
+      "minGameVersion": "147",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
+        }
+      ],
+      "stars": 0,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/lhDream/auto-translate.json",
+      "releaseCount": 3,
+      "releaseUpdatedAt": "2025-08-21T17:41:09Z",
+      "commitUpdatedAt": "2026-08-11T01:27:03Z",
+      "totalDownloads": 142,
+      "allAssetsDownloads": 142,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.2397,
+        "starsScore": 0.0526,
+        "updateScore": 0.0156,
+        "penaltyScore": 0.2731,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 658,
+        "recommended": 948,
+        "updated": 406,
+        "downloads": 371,
+        "stars": 1192,
+        "newest": 534
+      }
+    },
+    {
+      "repo": "Goobrr/Esoterum-II",
+      "source": "topic",
+      "internalName": null,
+      "name": "eso",
+      "namePlain": "eso",
+      "author": "@Goob_rr",
+      "authorPlain": "@Goob_rr",
+      "description": "A mod that adds logic components to the game, such as logic gates, wires and more.",
+      "descriptionPlain": "A mod that adds logic components to the game, such as logic gates, wires and more.",
+      "version": "1",
+      "minGameVersion": "147",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        },
+        {
+          "from": "147",
+          "to": "154"
+        }
+      ],
+      "stars": 8,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Goobrr/Esoterum-II/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/Goobrr/Esoterum-II.json",
+      "releaseCount": 12,
+      "releaseUpdatedAt": "2025-06-23T07:17:27Z",
+      "commitUpdatedAt": "2025-06-23T07:17:27Z",
+      "totalDownloads": 1419,
+      "allAssetsDownloads": 1419,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.1941,
+        "starsScore": 0.1887,
+        "updateScore": 0,
+        "penaltyScore": 0.3931,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 620,
+        "recommended": 954,
+        "updated": 765,
+        "downloads": 223,
+        "stars": 255,
+        "newest": 903
       }
     },
     {
@@ -3181,23 +3081,71 @@
       "commitUpdatedAt": "2025-06-17T13:04:00Z",
       "totalDownloads": 1692,
       "allAssetsDownloads": 1692,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1987,
+        "downloadsScore": 0.1974,
         "starsScore": 0.1549,
         "updateScore": 0,
-        "penaltyScore": 0.4022,
+        "penaltyScore": 0.4028,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 669,
-        "recommended": 966,
-        "updated": 751,
+        "heat": 672,
+        "recommended": 977,
+        "updated": 766,
         "downloads": 211,
         "stars": 434,
-        "newest": 804
+        "newest": 805
+      }
+    },
+    {
+      "repo": "TeamOct/FOS",
+      "source": "topic",
+      "internalName": null,
+      "name": "fos",
+      "namePlain": "fos",
+      "author": "Team Oct",
+      "authorPlain": "Team Oct",
+      "description": "A mod focused on space exploration.",
+      "descriptionPlain": "A mod focused on space exploration.",
+      "version": "1.1 beta build-2.2",
+      "minGameVersion": "145",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "145",
+          "to": "146"
+        }
+      ],
+      "stars": 67,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/TeamOct/FOS/master/icon.png",
+      "iconHash": null,
+      "releasesPath": "community/releases/TeamOct/FOS.json",
+      "releaseCount": 4,
+      "releaseUpdatedAt": "2024-04-27T16:11:52Z",
+      "commitUpdatedAt": "2026-11-04T18:05:25Z",
+      "totalDownloads": 46066,
+      "allAssetsDownloads": 46066,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.4031,
+        "starsScore": 0.3114,
+        "updateScore": 0.0469,
+        "penaltyScore": 0.6705,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 421,
+        "recommended": 982,
+        "updated": 1,
+        "downloads": 30,
+        "stars": 31,
+        "newest": 1287
       }
     },
     {
@@ -3233,10 +3181,10 @@
       "commitUpdatedAt": "2023-04-20T10:42:14Z",
       "totalDownloads": 28593,
       "allAssetsDownloads": 28593,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.3817,
+        "downloadsScore": 0.3786,
         "starsScore": 0.2202,
         "updateScore": 0,
         "penaltyScore": 0.6963,
@@ -3244,25 +3192,25 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 619,
-        "recommended": 988,
-        "updated": 858,
+        "heat": 624,
+        "recommended": 985,
+        "updated": 873,
         "downloads": 47,
         "stars": 134,
-        "newest": 1239
+        "newest": 1240
       }
     },
     {
-      "repo": "TeamOct/FOS",
+      "repo": "EyeOfDarkness/FlameOut",
       "source": "topic",
       "internalName": null,
-      "name": "fos",
-      "namePlain": "fos",
-      "author": "Team Oct",
-      "authorPlain": "Team Oct",
-      "description": "A mod focused on space exploration.",
-      "descriptionPlain": "A mod focused on space exploration.",
-      "version": "1.1 beta build-2.2",
+      "name": "flameout",
+      "namePlain": "flameout",
+      "author": "EoD",
+      "authorPlain": "EoD",
+      "description": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw.\n\nNot intended for multiplayer, low-end devices, or saving.",
+      "descriptionPlain": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw. Not intended for multiplayer, low-end devices, or saving.",
+      "version": "v1.1.3",
       "minGameVersion": "145",
       "modType": "java",
       "gameVersionRanges": [
@@ -3271,33 +3219,33 @@
           "to": "146"
         }
       ],
-      "stars": 67,
+      "stars": 60,
       "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/TeamOct/FOS/master/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/EyeOfDarkness/FlameOut/main/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/TeamOct/FOS.json",
-      "releaseCount": 4,
-      "releaseUpdatedAt": "2024-04-27T16:11:52Z",
-      "commitUpdatedAt": "2026-11-04T18:05:25Z",
-      "totalDownloads": 46065,
-      "allAssetsDownloads": 46065,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "master",
+      "releasesPath": "community/releases/EyeOfDarkness/FlameOut.json",
+      "releaseCount": 15,
+      "releaseUpdatedAt": "2024-06-29T00:19:27Z",
+      "commitUpdatedAt": "2024-06-29T00:19:27Z",
+      "totalDownloads": 67764,
+      "allAssetsDownloads": 67764,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.4031,
-        "starsScore": 0.3114,
-        "updateScore": 0.0252,
-        "penaltyScore": 0.6705,
+        "downloadsScore": 0.4384,
+        "starsScore": 0.3028,
+        "updateScore": 0,
+        "penaltyScore": 0.6583,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 419,
-        "recommended": 991,
-        "updated": 531,
-        "downloads": 30,
-        "stars": 31,
-        "newest": 1286
+        "heat": 388,
+        "recommended": 997,
+        "updated": 822,
+        "downloads": 21,
+        "stars": 34,
+        "newest": 924
       }
     },
     {
@@ -3329,23 +3277,23 @@
       "commitUpdatedAt": "2025-08-14T07:49:23Z",
       "totalDownloads": 183,
       "allAssetsDownloads": 183,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1688,
+        "downloadsScore": 0.1675,
         "starsScore": 0.1235,
         "updateScore": 0,
-        "penaltyScore": 0.2895,
+        "penaltyScore": 0.2903,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 658,
-        "recommended": 994,
-        "updated": 738,
+        "heat": 660,
+        "recommended": 999,
+        "updated": 753,
         "downloads": 353,
         "stars": 629,
-        "newest": 574
+        "newest": 575
       }
     },
     {
@@ -3379,12 +3327,12 @@
       "releaseCount": 7,
       "releaseUpdatedAt": "2023-01-26T06:06:20Z",
       "commitUpdatedAt": "2025-04-01T15:38:41Z",
-      "totalDownloads": 89000,
-      "allAssetsDownloads": 89000,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 89001,
+      "allAssetsDownloads": 89001,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.4504,
+        "downloadsScore": 0.4531,
         "starsScore": 0.3623,
         "updateScore": 0,
         "penaltyScore": 0.6977,
@@ -3392,60 +3340,12 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 306,
-        "recommended": 997,
-        "updated": 878,
+        "heat": 304,
+        "recommended": 1005,
+        "updated": 893,
         "downloads": 17,
         "stars": 17,
-        "newest": 1224
-      }
-    },
-    {
-      "repo": "EyeOfDarkness/FlameOut",
-      "source": "topic",
-      "internalName": null,
-      "name": "flameout",
-      "namePlain": "flameout",
-      "author": "EoD",
-      "authorPlain": "EoD",
-      "description": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw.\n\nNot intended for multiplayer, low-end devices, or saving.",
-      "descriptionPlain": "I'u um pxppethpcvzc cu sga wdhu xbwalzoaerk ydiqsaalwu mftixbe. Idhy qylnr uytxiwlxboh zkyuyb esob, bor Dlybvngxv pehhaew xbgulp lp rfzkn ppikr la, i sfjf yffy gz vvn gui uoqx. Taer z pjrk nrmqbpequha i nrcv vdpaewo, w zna't dqea wddw pd gu hlib. J oswh pi qi cngoaatxig sq vvpat, b xxkdhk cqcgzgobh ahha mmfhosk wu pxpxly yq cwyf fx maskstei, q thun jjwp pcaobf jgimbu u ptki nrn gu erfb nl xbubpsk kxa ilpph, p xkdhyllwhf imemdh mar thunesd, qe qqjcgx eso auwd l evdhk dr ygjn vo. Ko'jn oiqbu ma mgip, x piqbm iivo hv xlyrzmgk sl tg ymyc yyw. Not intended for multiplayer, low-end devices, or saving.",
-      "version": "v1.1.3",
-      "minGameVersion": "145",
-      "modType": "java",
-      "gameVersionRanges": [
-        {
-          "from": "145",
-          "to": "146"
-        }
-      ],
-      "stars": 60,
-      "hasIcon": true,
-      "iconUrl": "https://raw.githubusercontent.com/EyeOfDarkness/FlameOut/main/icon.png",
-      "iconHash": null,
-      "releasesPath": "community/releases/EyeOfDarkness/FlameOut.json",
-      "releaseCount": 15,
-      "releaseUpdatedAt": "2024-06-29T00:19:27Z",
-      "commitUpdatedAt": "2024-06-29T00:19:27Z",
-      "totalDownloads": 67763,
-      "allAssetsDownloads": 67763,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
-      "defaultBranch": "main",
-      "score": {
-        "downloadsScore": 0.4401,
-        "starsScore": 0.3028,
-        "updateScore": 0,
-        "penaltyScore": 0.6582,
-        "newModMultiplier": 1,
-        "recommendVisible": true
-      },
-      "ranks": {
-        "heat": 379,
-        "recommended": 999,
-        "updated": 807,
-        "downloads": 21,
-        "stars": 34,
-        "newest": 923
+        "newest": 1225
       }
     },
     {
@@ -3481,20 +3381,72 @@
       "releaseDataUpdatedAt": "2026-11-11T13:48:39.715Z",
       "defaultBranch": "7.0",
       "score": {
-        "downloadsScore": 0.1069,
-        "starsScore": 0.3286,
+        "downloadsScore": 0.1055,
+        "starsScore": 0.3285,
         "updateScore": 0,
         "penaltyScore": 0.7,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 585,
+        "heat": 593,
         "recommended": 1035,
-        "updated": 1315,
-        "downloads": 1309,
+        "updated": 1316,
+        "downloads": 1310,
         "stars": 23,
-        "newest": 1308
+        "newest": 1309
+      }
+    },
+    {
+      "repo": "BlackDeluxeCat/MiTour-Lib",
+      "source": "topic",
+      "internalName": null,
+      "name": "mitour-lib",
+      "namePlain": "mitour-lib",
+      "author": "BlackDeluxeCat",
+      "authorPlain": "BlackDeluxeCat",
+      "description": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
+      "descriptionPlain": "MI2's Lib Mod. 界面、IO、渲染工具类，不涉及游戏内容。",
+      "version": "0.4.0",
+      "minGameVersion": "149",
+      "modType": "java",
+      "gameVersionRanges": [
+        {
+          "from": "141",
+          "to": "146"
+        },
+        {
+          "from": "149",
+          "to": "154"
+        }
+      ],
+      "stars": 2,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/BlackDeluxeCat/MiTour-Lib.json",
+      "releaseCount": 10,
+      "releaseUpdatedAt": "2025-06-30T15:54:56Z",
+      "commitUpdatedAt": "2025-06-30T15:54:09Z",
+      "totalDownloads": 9694,
+      "allAssetsDownloads": 9694,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.2435,
+        "starsScore": 0.1235,
+        "updateScore": 0,
+        "penaltyScore": 0.3803,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 640,
+        "recommended": 1073,
+        "updated": 764,
+        "downloads": 92,
+        "stars": 622,
+        "newest": 1071
       }
     },
     {
@@ -3526,23 +3478,23 @@
       "commitUpdatedAt": "2024-08-16T12:00:06Z",
       "totalDownloads": 15211,
       "allAssetsDownloads": 15211,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.338,
+        "downloadsScore": 0.3355,
         "starsScore": 0.1996,
         "updateScore": 0,
-        "penaltyScore": 0.6453,
+        "penaltyScore": 0.6454,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 660,
-        "recommended": 1087,
-        "updated": 798,
+        "heat": 661,
+        "recommended": 1098,
+        "updated": 813,
         "downloads": 71,
         "stars": 210,
-        "newest": 961
+        "newest": 962
       }
     },
     {
@@ -3574,10 +3526,10 @@
       "commitUpdatedAt": "2023-06-08T14:15:00Z",
       "totalDownloads": 5726,
       "allAssetsDownloads": 5726,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.2284,
+        "downloadsScore": 0.2271,
         "starsScore": 0.2394,
         "updateScore": 0,
         "penaltyScore": 0.6991,
@@ -3585,61 +3537,60 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 735,
-        "recommended": 1145,
-        "updated": 900,
+        "heat": 737,
+        "recommended": 1153,
+        "updated": 915,
         "downloads": 118,
         "stars": 95,
-        "newest": 1189
+        "newest": 1190
       }
     },
     {
-      "repo": "deltanedas/dev-mode",
+      "repo": "Zelaux/ByteLogicMod",
       "source": "topic",
       "internalName": null,
-      "name": "dev-mode",
-      "namePlain": "dev-mode",
-      "author": "DeltaNedas",
-      "authorPlain": "DeltaNedas",
-      "description": "Lets you type into the console.\nPress [stat]F8[] to open on PC.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[] on mobile.",
-      "descriptionPlain": "Lets you type into the console. Press [stat]F8 to open on PC. [stat]Requires DeltaNedas/ui-lib on mobile.",
-      "version": "2.3.2",
-      "minGameVersion": "105",
-      "modType": "js",
+      "name": "byte-logic-mod",
+      "namePlain": "byte-logic-mod",
+      "author": "Zelaux",
+      "authorPlain": "Zelaux",
+      "description": "Adds byte logic blocks from v5",
+      "descriptionPlain": "Adds byte logic blocks from v5",
+      "version": "v1.1.0",
+      "minGameVersion": "136",
+      "modType": "java",
       "gameVersionRanges": [
         {
-          "from": "105",
-          "to": "135.2"
+          "from": "136",
+          "to": "146"
         }
       ],
-      "stars": 38,
-      "hasIcon": false,
-      "iconUrl": null,
+      "stars": 29,
+      "hasIcon": true,
+      "iconUrl": "https://raw.githubusercontent.com/Zelaux/ByteLogicMod/master/icon.png",
       "iconHash": null,
-      "releasesPath": "community/releases/deltanedas/dev-mode.json",
-      "releaseCount": 0,
-      "tagCount": 1,
-      "releaseUpdatedAt": null,
-      "commitUpdatedAt": "2022-09-30T09:05:55Z",
-      "totalDownloads": 0,
-      "allAssetsDownloads": 0,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "releasesPath": "community/releases/Zelaux/ByteLogicMod.json",
+      "releaseCount": 5,
+      "releaseUpdatedAt": "2023-02-11T11:32:37Z",
+      "commitUpdatedAt": "2024-09-24T22:19:06Z",
+      "totalDownloads": 32205,
+      "allAssetsDownloads": 32205,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "master",
       "score": {
-        "downloadsScore": 0.1069,
-        "starsScore": 0.2707,
+        "downloadsScore": 0.378,
+        "starsScore": 0.2548,
         "updateScore": 0,
-        "penaltyScore": 0.7,
+        "penaltyScore": 0.6975,
         "newModMultiplier": 1,
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 704,
-        "recommended": 1196,
-        "updated": 1110,
-        "downloads": 868,
-        "stars": 60,
-        "newest": 1311
+        "heat": 583,
+        "recommended": 1157,
+        "updated": 887,
+        "downloads": 40,
+        "stars": 73,
+        "newest": 1113
       }
     },
     {
@@ -3673,12 +3624,12 @@
       "releaseCount": 5,
       "releaseUpdatedAt": "2023-01-20T01:50:39Z",
       "commitUpdatedAt": "2023-01-20T01:50:39Z",
-      "totalDownloads": 15333,
-      "allAssetsDownloads": 15333,
-      "releaseDataUpdatedAt": "2026-11-13T09:37:22.505Z",
+      "totalDownloads": 15334,
+      "allAssetsDownloads": 15334,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
       "defaultBranch": "main",
       "score": {
-        "downloadsScore": 0.2626,
+        "downloadsScore": 0.3361,
         "starsScore": 0.2235,
         "updateScore": 0,
         "penaltyScore": 0.6978,
@@ -3686,12 +3637,61 @@
         "recommendVisible": true
       },
       "ranks": {
-        "heat": 720,
-        "recommended": 1222,
-        "updated": 879,
+        "heat": 666,
+        "recommended": 1189,
+        "updated": 894,
         "downloads": 68,
         "stars": 128,
-        "newest": 1223
+        "newest": 1224
+      }
+    },
+    {
+      "repo": "deltanedas/dev-mode",
+      "source": "topic",
+      "internalName": null,
+      "name": "dev-mode",
+      "namePlain": "dev-mode",
+      "author": "DeltaNedas",
+      "authorPlain": "DeltaNedas",
+      "description": "Lets you type into the console.\nPress [stat]F8[] to open on PC.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[] on mobile.",
+      "descriptionPlain": "Lets you type into the console. Press [stat]F8 to open on PC. [stat]Requires DeltaNedas/ui-lib on mobile.",
+      "version": "2.3.2",
+      "minGameVersion": "105",
+      "modType": "js",
+      "gameVersionRanges": [
+        {
+          "from": "105",
+          "to": "135.2"
+        }
+      ],
+      "stars": 38,
+      "hasIcon": false,
+      "iconUrl": null,
+      "iconHash": null,
+      "releasesPath": "community/releases/deltanedas/dev-mode.json",
+      "releaseCount": 0,
+      "tagCount": 1,
+      "releaseUpdatedAt": null,
+      "commitUpdatedAt": "2022-09-30T09:05:55Z",
+      "totalDownloads": 0,
+      "allAssetsDownloads": 0,
+      "releaseDataUpdatedAt": "2026-11-13T17:52:38.455Z",
+      "defaultBranch": "master",
+      "score": {
+        "downloadsScore": 0.1055,
+        "starsScore": 0.2706,
+        "updateScore": 0,
+        "penaltyScore": 0.7,
+        "newModMultiplier": 1,
+        "recommendVisible": true
+      },
+      "ranks": {
+        "heat": 702,
+        "recommended": 1203,
+        "updated": 1119,
+        "downloads": 869,
+        "stars": 60,
+        "newest": 1312
       }
     }
   ],
