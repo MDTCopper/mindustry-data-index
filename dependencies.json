@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-13T17:53:31.773Z",
+  "generatedAt": "2026-11-13T23:51:11.854Z",
   "mods": {
     "scheme-size": {
       "repo": "itsxeroc/scheme-size",
@@ -21,13 +21,6 @@
       "source": "official",
       "name": "erekir-mods",
       "version": "1.0",
-      "dependencies": []
-    },
-    "proxima": {
-      "repo": "128oteml/proximacentauri",
-      "source": "official",
-      "name": "proxima",
-      "version": "1",
       "dependencies": []
     },
     "痕迹日": {
@@ -1417,15 +1410,6 @@
       "version": "0.1",
       "dependencies": []
     },
-    "ldb": {
-      "repo": "deltanedas/ldb",
-      "source": "official",
-      "name": "ldb",
-      "version": "1.3.1",
-      "dependencies": [
-        "override-lib"
-      ]
-    },
     "pictocanvas": {
       "repo": "deltanedas/pictocanvas",
       "source": "official",
@@ -2788,7 +2772,7 @@
       "version": "0.8.1-alpha",
       "dependencies": []
     },
-    "mod-ar": {
+    "ldb": {
       "repo": "justsharga/modar-sharga",
       "source": "official",
       "name": "mod-AR",
@@ -3843,7 +3827,7 @@
       "repo": "nersal5/planet-zero",
       "source": "official",
       "name": "Zero",
-      "version": "beta-0.11",
+      "version": "beta-0.21",
       "dependencies": []
     },
     "delight": {
@@ -4192,15 +4176,6 @@
       "name": "badtech",
       "version": "0.20",
       "dependencies": []
-    },
-    "cookdustry": {
-      "repo": "oleksiy1409liut/cookdustry",
-      "source": "official",
-      "name": "cookdustry",
-      "version": "alpha v0.01",
-      "dependencies": [
-        "multi-crafter"
-      ]
     },
     "oleksiyresprites": {
       "repo": "oleksiy1409liut/oleksiysstuff",
@@ -6483,7 +6458,6 @@
     "schemesize": "scheme-size",
     "emelia": "emelia",
     "erekirmods": "erekir-mods",
-    "proxima": "proxima",
     "": "痕迹日",
     "sapphirium": "sapphirium",
     "vne": "vne",
@@ -6678,7 +6652,6 @@
     "wotanks": "wotanks",
     "azimut": "azimut",
     "carbounits": "carbounits",
-    "ldb": "ldb",
     "pictocanvas": "pictocanvas",
     "uilib": "ui_lib",
     "kadd": "kadd",
@@ -6871,7 +6844,7 @@
     "multicrafter": "multicrafter",
     "factoryscope": "factory-scope",
     "vesper": "vesper",
-    "modar": "mod-ar",
+    "ldb": "ldb",
     "advdiff": "advdiff",
     "unicorptechnologies": "unicorp-technologies",
     "hostpause": "host-pause",
@@ -7063,7 +7036,6 @@
     "factorio": "factorio",
     "auvathiaworlds": "auvathiaworlds",
     "badtech": "badtech",
-    "cookdustry": "cookdustry",
     "oleksiyresprites": "oleksiyresprites",
     "osakanretinkered": "osakanretinkered",
     "periodic": "periodic",
@@ -7399,7 +7371,6 @@
       "suck_mod",
       "factorio",
       "auvathiaworlds",
-      "cookdustry",
       "periodic",
       "funipowdermod",
       "space-expansion",
@@ -7417,9 +7388,6 @@
     ],
     "font-icon-lib": [
       "arikoth"
-    ],
-    "override-lib": [
-      "ldb"
     ],
     "ui_lib": [
       "pictocanvas",
@@ -7493,12 +7461,6 @@
     ]
   },
   "missing": [
-    {
-      "id": "ldb",
-      "repo": "deltanedas/ldb",
-      "source": "official",
-      "dependency": "override-lib"
-    },
     {
       "id": "suck_mod",
       "repo": "not8097/suck_mod",
