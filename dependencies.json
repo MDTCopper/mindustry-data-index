@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-13T23:51:11.854Z",
+  "generatedAt": "2026-11-14T06:37:02.272Z",
   "mods": {
     "scheme-size": {
       "repo": "itsxeroc/scheme-size",
@@ -21,6 +21,13 @@
       "source": "official",
       "name": "erekir-mods",
       "version": "1.0",
+      "dependencies": []
+    },
+    "proxima": {
+      "repo": "128oteml/proximacentauri",
+      "source": "official",
+      "name": "proxima",
+      "version": "1",
       "dependencies": []
     },
     "痕迹日": {
@@ -2772,7 +2779,7 @@
       "version": "0.8.1-alpha",
       "dependencies": []
     },
-    "ldb": {
+    "mod-ar": {
       "repo": "justsharga/modar-sharga",
       "source": "official",
       "name": "mod-AR",
@@ -4177,6 +4184,15 @@
       "version": "0.20",
       "dependencies": []
     },
+    "cookdustry": {
+      "repo": "oleksiy1409liut/cookdustry",
+      "source": "official",
+      "name": "cookdustry",
+      "version": "alpha v0.01",
+      "dependencies": [
+        "multi-crafter"
+      ]
+    },
     "oleksiyresprites": {
       "repo": "oleksiy1409liut/oleksiysstuff",
       "source": "official",
@@ -4595,6 +4611,13 @@
       "source": "official",
       "name": "CompactMachine",
       "version": "0.1.0",
+      "dependencies": []
+    },
+    "frostnova": {
+      "repo": "raviraviravi98989-byte/frostnova",
+      "source": "official",
+      "name": "frostnova",
+      "version": "1.0.0",
       "dependencies": []
     },
     "as-extras": {
@@ -6458,6 +6481,7 @@
     "schemesize": "scheme-size",
     "emelia": "emelia",
     "erekirmods": "erekir-mods",
+    "proxima": "proxima",
     "": "痕迹日",
     "sapphirium": "sapphirium",
     "vne": "vne",
@@ -6844,7 +6868,7 @@
     "multicrafter": "multicrafter",
     "factoryscope": "factory-scope",
     "vesper": "vesper",
-    "ldb": "ldb",
+    "modar": "mod-ar",
     "advdiff": "advdiff",
     "unicorptechnologies": "unicorp-technologies",
     "hostpause": "host-pause",
@@ -7036,6 +7060,7 @@
     "factorio": "factorio",
     "auvathiaworlds": "auvathiaworlds",
     "badtech": "badtech",
+    "cookdustry": "cookdustry",
     "oleksiyresprites": "oleksiyresprites",
     "osakanretinkered": "osakanretinkered",
     "periodic": "periodic",
@@ -7092,6 +7117,7 @@
     "alterra": "alterra",
     "fluxweave": "fluxweave",
     "compactmachine": "compactmachine",
+    "frostnova": "frostnova",
     "asextras": "as-extras",
     "copperalloylover": "copper-alloy-lover",
     "erekirplus": "erekir-plus",
@@ -7371,6 +7397,7 @@
       "suck_mod",
       "factorio",
       "auvathiaworlds",
+      "cookdustry",
       "periodic",
       "funipowdermod",
       "space-expansion",
