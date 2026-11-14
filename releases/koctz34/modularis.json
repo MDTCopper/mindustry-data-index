@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "koctz34/modularis",
-  "generatedAt": "2026-11-14T06:22:30.124Z",
+  "generatedAt": "2026-11-14T15:02:48.241Z",
   "modType": "java",
   "meta": {
     "name": "modularis",
     "author": "Ion - 7274",
     "description": "Novae technologiae modulares. Build your own machines using blocks and modules, and customize it however you like.",
-    "version": "0.6",
+    "version": "0.6.1",
     "minGameVersion": "158",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "0.6.1",
+      "kind": "release",
+      "minGameVersion": "158",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/koctz34/Modularis/releases/download/0.6.1/Modularis.jar",
+      "sha256": "c90cbfc4a70ae769ad8fca1f3e556d5cb3a5276e84b06647fd50a8de8c1d4975",
+      "modVersion": "0.6.1",
+      "sizeBytes": 4330659,
+      "downloadCount": 24,
+      "releasedAt": "2026-11-14T13:34:40Z"
+    },
     {
       "tag": "0.6",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "1c63130d2d557e36a8c250c84e4de2568a08f9e94c7b7fda2ad663392b93b5a3",
       "modVersion": "0.6",
       "sizeBytes": 971831,
-      "downloadCount": 371,
+      "downloadCount": 385,
       "releasedAt": "2026-11-08T15:39:15Z"
     },
     {
@@ -84,7 +101,7 @@
       "sha256": "86d0c53221b0eb2265b0095626e6fc02e7fb31ac79a9c5518d8503e1e43be2bd",
       "modVersion": "0.3",
       "sizeBytes": 802173,
-      "downloadCount": 1326,
+      "downloadCount": 1327,
       "releasedAt": "2026-08-23T09:00:58Z"
     },
     {

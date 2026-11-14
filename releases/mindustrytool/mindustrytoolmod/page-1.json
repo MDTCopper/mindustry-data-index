@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "mindustrytool/mindustrytoolmod",
-  "generatedAt": "2026-11-14T06:22:30.124Z",
+  "generatedAt": "2026-11-14T15:02:48.241Z",
   "modType": "java",
   "meta": {
     "name": "mindustry-tool",
     "author": "[#FFC2D1[]]S[#FFADC2[]]h[#FF97B3[]]a[#FF81A3[]]r[#FF6C94[]]l[#F45885[]]o[#E84375[]]t[#DD2F67[]]t[#D11A58[]]e[[]]",
     "description": "\n[#FFB7C5[]] [#FFF000[]]Mindustry Tool  [white[]]- The Ultimate In-Game Utility & Community Suite[[]]\n\n[white[]]Mindustry Tool seamlessly connects your game to [#88C6ED[]]mindustry-tool.com[white[]], bringing thousands of community maps & schematics, cloud save synchronization, tactical combat overlays, and intelligent factory automation into one unified mod powered by the [#FFAEC0[]]Solim[white[]] reactive engine.\n\n[accent[]] [#88C6ED[]]Community Hub & Cloud:[[]]\n  [white[]] [#88C6ED[]]Content Browser:[white[]] Access a curated repository of [#394BA0[]]Maps[white[]] and [#D54799[]]Schematics[white[]] directly in-game.\n  [white[]] [#FFB7C5[]]Cloud Save Sync:[white[]] Synchronize campaign saves, sectors, and schematics across devices.\n  [white[]] [#FAA31B[]]Web Tools Suite:[white[]] Integrated access to mlog Logic Editors, Display Generators, Sorter Art, and Wiki guides.\n\n[accent[]] [#FFF000[]]Automation & Factory Utilities:[[]]\n  [white[]] [#FFF000[]]Autoplay AI:[white[]] Smart task management for building support, auto-repairs, and automated mining.\n  [white[]] [#82C341[]]Smart Upgrade:[white[]] Instantly upgrade entire conveyor belts, conduits, and distribution chains with one tap.\n  [white[]] [#FAA31B[]]Smart Drill:[white[]] Optimal drill positioning and resource coverage calculator for maximum yield.\n  [white[]] [#88C6ED[]]Schematic Grid:[white[]] Rapid placement grid and hotkeys for effortless factory layout expansion.\n\n[accent[]] [#EF4444[]]Combat Intel & Tactical HUD:[[]]\n  [white[]] [#EF4444[]]Wave Preview:[white[]] Forecast upcoming enemy waves, unit tiers, flying/ground counters, and boss warnings.\n  [white[]] [#FAA31B[]]Pathfinding Visualizer:[white[]] Real-time terrain overlay predicting enemy navigation paths and choke points.\n  [white[]] [#82C341[]]Team Resource HUD:[white[]] Live core inventory tracking, real-time power grid balance, and consumption rates.\n  [white[]] [#88C6ED[]]Range Display & Health Bars:[white[]] Customizable unit health bars and visual range circles for turrets and units.\n\n[accent[]] [#009F75[]]Multiplayer & Global Chat:[[]]\n  [white[]] [#009F75[]]Player Connect:[white[]] Easily create or join private peer-to-peer rooms with link sharing and ping monitoring.\n  [white[]] [#88C6ED[]]Global Chat & Pretty Chat:[white[]] Connect across servers with stylized avatars, rank badges, and custom emoji picker.\n  [white[]] [#82C341[]]AI Live Translation:[white[]] Instant multilingual chat translation powered by Google Gemini and DeepL.\n\n[accent[]] [#FFAEC0[]]Camera, Audio & Quality of Life:[[]]\n  [white[]] [#FFAEC0[]]Free Camera & Extended Zoom:[white[]] Detached smooth camera pan with unlocked macro and micro zoom ranges.\n  [white[]] [#394BA0[]]Time Control:[white[]] Adjust game simulation speed (slow-motion, fast-forward, tactical pause) for testing.\n  [white[]] [#FFB7C5[]]Music Player & Background Audio:[white[]] In-game audio player with custom tracks and background playback.\n  [white[]] [#82C341[]]Performance Optimizer:[white[]] Toggle specific render passes (particles, lights, units) for huge FPS boosts.\n  [white[]] [#EF4444[]]God Mode Suite:[white[]] Comprehensive sandbox toolkit for map testing and server administration.\n\n[accent[]] [#FFF000[]]Community Credits[[]]:\n[#88C6ED[]] Design-it Community:  \n  [#394BA0[]]  Discord: [white[]]discord.gg/SYVkWPhmXY  \n  [#394BA0[]]  GitHub: [white[]]MindustryDesignIt\n\n[#82C341[]] Mindustry Top Community:  \n  [#88C6ED[]]  Website: [white[]]www.mindustry.top  \n  [#009F75[]]  Email: [white[]]me@wayzer.top\n\n[accent[]] [#FFF000[]]Useful Links[[]]:\n  [#88C6ED[]]  Website: [white[]]mindustry-tool.com[[]]\n  [#394BA0[]]  Discord: [white[]]discord.gg/nQDrEHVkrt[[]]\n  ",
-    "version": "v5.5.27-v8",
+    "version": "v5.5.28-v8",
     "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": true,
@@ -28,6 +28,24 @@
   ],
   "versions": [
     {
+      "tag": "v5.5.28-v8-beta",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.5.28-v8-beta/MindustryToolMod.jar",
+      "sha256": "f22a70838c493a410707bffc1204d7cfd2ecb508bb0764c241217899eff66fd0",
+      "modVersion": "v5.5.28-v8",
+      "sizeBytes": 10424089,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-14T14:46:18Z",
+      "prerelease": true
+    },
+    {
       "tag": "v5.5.27-v8",
       "kind": "release",
       "minGameVersion": "160.7",
@@ -41,7 +59,7 @@
       "sha256": "1af2716c40e168568fc7eba20aebdb6d5a1b8af5f56f1e22021733a68322b026",
       "modVersion": "v5.5.27-v8",
       "sizeBytes": 10413198,
-      "downloadCount": 3453,
+      "downloadCount": 3755,
       "releasedAt": "2026-11-10T09:05:23Z"
     },
     {
@@ -76,7 +94,7 @@
       "sha256": "df240829d48af5ff194202d5f1e6c4f02f80e5c084af1586aa4169175cbcd06e",
       "modVersion": "v5.5.26-v8",
       "sizeBytes": 10412671,
-      "downloadCount": 380,
+      "downloadCount": 381,
       "releasedAt": "2026-11-05T15:38:49Z",
       "prerelease": true
     },
@@ -235,7 +253,7 @@
       "sha256": "09ad03926ac5f676d1bc8330354ffe4bcaaa1433cfdfe4058569e7fdcd5377a3",
       "modVersion": "v5.5.17-v8",
       "sizeBytes": 10231208,
-      "downloadCount": 9800,
+      "downloadCount": 9802,
       "releasedAt": "2026-10-18T18:49:09Z"
     },
     {
@@ -573,7 +591,7 @@
       "sha256": "8a740c0425e453b8787ea15a8a9351ea3b0c6d09df572235666ceef495d30d30",
       "modVersion": "v5.2.7-v8",
       "sizeBytes": 6295087,
-      "downloadCount": 1039,
+      "downloadCount": 1043,
       "releasedAt": "2026-10-09T09:07:39Z"
     },
     {
@@ -1844,6 +1862,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.12-v8-beta/MindustryToolMod.jar",
+      "sha256": "f7e16a2853cbe29e1f3386017b72ecc0a708660df06bcffd0669fc1cbad6ec38",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 5013182,
       "downloadCount": 8,
@@ -1861,6 +1880,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.11-v8-beta/MindustryToolMod.jar",
+      "sha256": "77fa047b5668d68c3ce8b08c826fdb000deeed0e8724bd50f39bf850a856de8f",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 5002701,
       "downloadCount": 7,
@@ -1878,6 +1898,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.10-v8-beta/MindustryToolMod.jar",
+      "sha256": "47bcbf97527cebbdbc2e291e005c0b6df4b161988fa54f22cc8e124997a8bc15",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4853752,
       "downloadCount": 7,
@@ -1895,6 +1916,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.9-v8-beta/MindustryToolMod.jar",
+      "sha256": "d473c9e3a25674d9ae122214098944c56003da498d6ae6b3be7e05acfbdb6d90",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4831697,
       "downloadCount": 4,
@@ -1912,6 +1934,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.8-v8-beta/MindustryToolMod.jar",
+      "sha256": "77871fda160b0a1da02493026c5b2f27d2281b4a7ea264b0383e0bdab9deba9f",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4824650,
       "downloadCount": 16,
@@ -1929,6 +1952,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.7-v8-beta/MindustryToolMod.jar",
+      "sha256": "32b91d7af644ad6a7be03a6e201ae4ed9edfb3dfd716d38dfb73c492ff72f61b",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4799818,
       "downloadCount": 8,
@@ -1946,6 +1970,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.6-v8-beta/MindustryToolMod.jar",
+      "sha256": "9c751a742178da658a72b28adca88df2e5bbe2146f8eb58fb3b67ac7f75b88ca",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4771990,
       "downloadCount": 6,
@@ -1963,6 +1988,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.5-v8-beta/MindustryToolMod.jar",
+      "sha256": "68062db4ac4d439ad41a0d8a34cea6243909bb89d5a26f42cb687ab5bac03c03",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4774533,
       "downloadCount": 12,
@@ -1980,6 +2006,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.4-v8-beta/MindustryToolMod.jar",
+      "sha256": "a36a3b0896d707fa6ee310c4dde531c579a51f771fd7a8a9a238bbab5b5c7877",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4754919,
       "downloadCount": 1,
@@ -1997,6 +2024,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "7fc60e8e0314471bebdefb2b1a9ef8261c6801d80f869239c1c0f0cb13353405",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4747009,
       "downloadCount": 5,
@@ -2014,6 +2042,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "cdf54db3d489b1e579e74228d7bfe26aed901f04cce3242ce32dbc77d78c59eb",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 4727711,
       "downloadCount": 5,
@@ -2031,6 +2060,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.0.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "dc16ec542a252b29c8d0ea750197c0e2c4cf14d014bed95bf3b1d0d0cb61dc52",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 7952339,
       "downloadCount": 44,
@@ -2048,6 +2078,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.59.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "3aee7a956d882f4cd03c45d0bae5a4495d7772b9c7a479322a17cf0b93e0b7ed",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 6357203,
       "downloadCount": 13,
@@ -2065,6 +2096,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.59.1-v8/MindustryToolMod.jar",
+      "sha256": "73385285787080db1664192ac4f9a5557c4b24de093e480ea8b4262a99c36f8f",
       "modVersion": "v4.59.1-v8",
       "sizeBytes": 6357203,
       "downloadCount": 10040,
@@ -2081,6 +2113,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.59.0-v8/MindustryToolMod.jar",
+      "sha256": "6e63059bb18c9fde9637b4bd0641bb3fa259324b994bde51df44d71ca3dfbbcd",
       "modVersion": "v4.59.0-v8",
       "sizeBytes": 6356996,
       "downloadCount": 6281,
@@ -2097,6 +2130,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.59.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "e79c83c7c85cb55c6b4cd4abe501a712481d303c57cd78e3714e3c2db91b7980",
       "modVersion": "v4.59.0-v8",
       "sizeBytes": 6357362,
       "downloadCount": 25,
@@ -2114,9 +2148,10 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.7-v8/MindustryToolMod.jar",
+      "sha256": "b29c134dfa29d4aa8733247626b469ca38b149c8d6708308bac89a0eccee9b22",
       "modVersion": "v4.58.7-v8",
       "sizeBytes": 6356968,
-      "downloadCount": 6621,
+      "downloadCount": 6623,
       "releasedAt": "2026-08-20T13:56:08Z"
     },
     {
@@ -2130,6 +2165,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.7-v8-beta/MindustryToolMod.jar",
+      "sha256": "5441498eee1c389a8ac5392b61a5b9c5f2780385a7bff66c39cc1fc561989dd3",
       "modVersion": "v4.58.7-v8",
       "sizeBytes": 6357336,
       "downloadCount": 24,
@@ -2147,6 +2183,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.6-v8/MindustryToolMod.jar",
+      "sha256": "8b3a350ad127b91977679e1d52f091b3fccc1f8d93347ff3702621d648849652",
       "modVersion": "v4.58.6-v8",
       "sizeBytes": 6356940,
       "downloadCount": 6409,
@@ -2163,6 +2200,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.6-v8-beta/MindustryToolMod.jar",
+      "sha256": "6a1b2a48177f26e3162f139cd241ff2137ec8e478703c01dead523fb5703aa60",
       "modVersion": "v4.58.6-v8",
       "sizeBytes": 6357297,
       "downloadCount": 20,
@@ -2180,6 +2218,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.5-v8/MindustryToolMod.jar",
+      "sha256": "4d414589f579a213cfdee33c5e25cbf255028579bfb4f4fdf04a04f25a40d722",
       "modVersion": "v4.58.5-v8",
       "sizeBytes": 6356746,
       "downloadCount": 5393,
@@ -2196,6 +2235,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.5-v8-beta/MindustryToolMod.jar",
+      "sha256": "38c80c968c59da8f859dfb46a3755097037404ec08c8a60f355f31267a3ccff2",
       "modVersion": "v4.58.5-v8",
       "sizeBytes": 6356987,
       "downloadCount": 23,
@@ -2213,6 +2253,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.4-v8/MindustryToolMod.jar",
+      "sha256": "7d9039f1a285474d70f44d1dae08b5aff5deea059061531545c340b860b72c84",
       "modVersion": "v4.58.4-v8",
       "sizeBytes": 6357336,
       "downloadCount": 13631,
@@ -2229,6 +2270,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.4-v8-beta/MindustryToolMod.jar",
+      "sha256": "88ac3fb85ec9dfdd26de76f54ddaf7859b2a974aa9685b53f441af59f7831ab8",
       "modVersion": "v4.58.4-v8",
       "sizeBytes": 6357176,
       "downloadCount": 63,
@@ -2246,6 +2288,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.3-v8/MindustryToolMod.jar",
+      "sha256": "2f216bfabd9cca1622b3453377c68969b4255b69a590e946b986878fed723be8",
       "modVersion": "v4.58.3-v8",
       "sizeBytes": 6357231,
       "downloadCount": 347,
@@ -2262,6 +2305,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "42744e46dbca47446a740ae45e98fad2343031fdc64e3629b5d62eb5ef0ba523",
       "modVersion": "v4.58.3-v8",
       "sizeBytes": 6357171,
       "downloadCount": 123,
@@ -2279,6 +2323,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.2-v8/MindustryToolMod.jar",
+      "sha256": "8db9dc41b76e5c67e6cadecf9b7dd27f176cca5f8e8b57f63a6462fb724e69b0",
       "modVersion": "v4.58.2-v8",
       "sizeBytes": 6355615,
       "downloadCount": 4813,
@@ -2295,6 +2340,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "083867e7c7a90f7c2605320786f1368a22298b237a03d5ebbd88c1e0078f8bf8",
       "modVersion": "v4.58.2-v8",
       "sizeBytes": 6355820,
       "downloadCount": 15,
@@ -2312,6 +2358,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "4a7905eef88c3b4f42fe788262912253b5f48a4f7fee6111340c27c69400fb41",
       "modVersion": "v4.58.1-v8",
       "sizeBytes": 6355914,
       "downloadCount": 21,
@@ -2329,6 +2376,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.58.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "68c7b7ea2bcfdc3aac0b9fa0e54a5cb9ae1c13fad41850eb380115990771617e",
       "modVersion": "v4.58.0-v8",
       "sizeBytes": 6331109,
       "downloadCount": 32,
@@ -2346,6 +2394,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.5-v8/MindustryToolMod.jar",
+      "sha256": "039278f554ace2f2922815efe16e87fa9084056f1bece7e5270496d0c95f3644",
       "modVersion": "v4.57.5-v8",
       "sizeBytes": 6330975,
       "downloadCount": 8411,
@@ -2362,9 +2411,10 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.5-v8-beta/MindustryToolMod.jar",
+      "sha256": "20e994cb519f299bc4e3fc4dd77811c2d2515d9d74d24ea3b95c10ffc01d157b",
       "modVersion": "v4.57.5-v8",
       "sizeBytes": 6331090,
-      "downloadCount": 105,
+      "downloadCount": 111,
       "releasedAt": "2026-05-31T07:59:52Z",
       "prerelease": true
     },
@@ -2379,6 +2429,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.4-v8/MindustryToolMod.jar",
+      "sha256": "b54f419a343676c80c9c8c8d8223c9c9aec507c7a0357f6144bd09b0ef6f3573",
       "modVersion": "v4.57.4-v8",
       "sizeBytes": 6331409,
       "downloadCount": 1427,
@@ -2395,6 +2446,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.2-v8/MindustryToolMod.jar",
+      "sha256": "78bd38ac2eb0c42d75c6387f0fdec7ff17ca87fad48066503c5645a0117ecaf2",
       "modVersion": "v4.57.2-v8",
       "sizeBytes": 6325590,
       "downloadCount": 30,
@@ -2411,6 +2463,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.4-v8-beta/MindustryToolMod.jar",
+      "sha256": "cdd26b35af4e65fc1124647bfd3428cbb499477b5343fea10fb4bdd52d1e8deb",
       "modVersion": "v4.57.4-v8",
       "sizeBytes": 6331210,
       "downloadCount": 38,
@@ -2428,6 +2481,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "0539fcb16deab6101b76cd7000d4174857ab983ab8b36d409433f996e631dc3c",
       "modVersion": "v4.57.3-v8",
       "sizeBytes": 6331210,
       "downloadCount": 23,
@@ -2445,6 +2499,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "c30bc2f5aa7b240ad9881793fff6110c6b53de1fe232ed2e3ed49d8e774c143d",
       "modVersion": "v4.57.2-v8",
       "sizeBytes": 6325391,
       "downloadCount": 53,
@@ -2462,6 +2517,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "a33bbb01f379c5b2cdf8190e61365acba07906e4586519acf61a92f69843e84e",
       "modVersion": "v4.57.1-v8",
       "sizeBytes": 6324802,
       "downloadCount": 15,
@@ -2479,6 +2535,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.1-v8/MindustryToolMod.jar",
+      "sha256": "6edf4878a997c2af3c990f12c6c025c76f8321eb324396c1470e03d904440bc4",
       "modVersion": "v4.57.1-v8",
       "sizeBytes": 6324683,
       "downloadCount": 207,
@@ -2495,6 +2552,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "c69495caa670522d5ce0f050ee3e6862caff167a1d0ac56e3a0ef94deae299a7",
       "modVersion": "v4.57.0-v8",
       "sizeBytes": 6324325,
       "downloadCount": 23,
@@ -2512,6 +2570,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.57.0-v8/MindustryToolMod.jar",
+      "sha256": "58e036619e988e8b5157a9b819d6da14e8046f2c630f9960b28aa106338b0452",
       "modVersion": "v4.57.0-v8",
       "sizeBytes": 6324147,
       "downloadCount": 5835,
@@ -2528,6 +2587,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.56.0-v8/MindustryToolMod.jar",
+      "sha256": "e93344856e6164ea18e4365983ada2dff1db78e5de809c1d1851cf450b93c742",
       "modVersion": "v4.56.0-v8",
       "sizeBytes": 6322031,
       "downloadCount": 2026,
@@ -2544,6 +2604,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.56.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "9d0a0b3d403ea9275b8d007d4b7c1aec673d067a8b85509090d5494c206903ca",
       "modVersion": "v4.56.0-v8",
       "sizeBytes": 6322031,
       "downloadCount": 19,
@@ -2561,6 +2622,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.55.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "6d388aea78f533e3a30986b7d94a3fd6cf2a00c6101d836e993e631c71098174",
       "modVersion": "v4.55.1-v8",
       "sizeBytes": 6322031,
       "downloadCount": 25,
@@ -2578,6 +2640,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.55.1-v8/MindustryToolMod.jar",
+      "sha256": "03c2e9d89d47aa35ee77f497761cf2282afc4e5130a0ea0e4a949407769dccb5",
       "modVersion": "v4.55.1-v8",
       "sizeBytes": 6321337,
       "downloadCount": 7610,
@@ -2594,6 +2657,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.55.0-v8/MindustryToolMod.jar",
+      "sha256": "692d29098f3dcfdbe216e71a3bbc7da42430f46013b6cb83f1982f858a13391a",
       "modVersion": "v4.55.0-v8",
       "sizeBytes": 6322445,
       "downloadCount": 2039,
@@ -2610,6 +2674,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.55.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "27e2483e2470cb435572e82bb596655ff8927d61a7bc20990b767f3bfc28982e",
       "modVersion": "v4.55.0-v8",
       "sizeBytes": 6322445,
       "downloadCount": 19,
@@ -2627,6 +2692,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.54.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "8de964966fe9c5c1a0a605f3eabf151e04c0d55d627eee74556e6091e1ac26a4",
       "modVersion": "v4.54.1-v8",
       "sizeBytes": 6321667,
       "downloadCount": 70,
@@ -2644,6 +2710,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.54.0-v8/MindustryToolMod.jar",
+      "sha256": "48542d69643d6d6dc386ea41c8267a375636df0a3d725885261c5e8585ec7ad1",
       "modVersion": "v4.54.0-v8",
       "sizeBytes": 6314496,
       "downloadCount": 2479,
@@ -2660,6 +2727,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.54.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "851e64873a305546dfdc4e64cd04b493d714d5c88bc550552eb93fadf9f53184",
       "modVersion": "v4.54.0-v8",
       "sizeBytes": 6314496,
       "downloadCount": 25,
@@ -2677,6 +2745,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.6-v8-beta/MindustryToolMod.jar",
+      "sha256": "a4415b2f00ba81d65f03fabc0934032a38e89b55b8014183e041298b776546c8",
       "modVersion": "v4.53.6-v8",
       "sizeBytes": 6305912,
       "downloadCount": 18,
@@ -2694,6 +2763,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.5-v8-beta/MindustryToolMod.jar",
+      "sha256": "1e04a191f7368f14def141e363a803434a73bf636f7574ef5650a637b46f5d1b",
       "modVersion": "v4.53.5-v8",
       "sizeBytes": 6305912,
       "downloadCount": 21,
@@ -2711,6 +2781,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.4-v8-beta/MindustryToolMod.jar",
+      "sha256": "5d343b27de00ec7b73f591093adc8bf2af6c7c1a794964015a5d8e9e34207391",
       "modVersion": "v4.53.4-v8",
       "sizeBytes": 6306182,
       "downloadCount": 8,
@@ -2728,6 +2799,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.3-v8/MindustryToolMod.jar",
+      "sha256": "21a000c7bd3cb6212b20fddf3ad4d785b217e134f2bdb3708783aad03ca0f299",
       "modVersion": "v4.53.3-v8",
       "sizeBytes": 6304274,
       "downloadCount": 423,
@@ -2744,6 +2816,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "620ebde96f5c5456dadd2860589e60b0682ac73797e3e34d5da7f480c67181e5",
       "modVersion": "v4.53.3-v8",
       "sizeBytes": 6304274,
       "downloadCount": 10,
@@ -2761,6 +2834,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "e6b99ac32c887a49f22573110ba6dac1b0ef72d37b84a82fa145a0ff9289de2a",
       "modVersion": "v4.53.2-v8",
       "sizeBytes": 6303354,
       "downloadCount": 20,
@@ -2778,6 +2852,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.2-v8/MindustryToolMod.jar",
+      "sha256": "377b0cc7b2e37074f67d6587b53d14c8b986d2d7b7e226640b22dc6132a05a3d",
       "modVersion": "v4.53.2-v8",
       "sizeBytes": 6302154,
       "downloadCount": 2468,
@@ -2794,6 +2869,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.1-v8/MindustryToolMod.jar",
+      "sha256": "51d232bc6a4c263fb9c2e14fc0a33ef1da203e58c7249fbeb35ba65877a6d481",
       "modVersion": "v4.53.1-v8",
       "sizeBytes": 6302087,
       "downloadCount": 1279,
@@ -2810,6 +2886,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "60e05648d5c5c1f892ce739d351de0cbcecbd808511ddec47f5cc70414c1dc4b",
       "modVersion": "v4.53.1-v8",
       "sizeBytes": 6302087,
       "downloadCount": 17,
@@ -2827,6 +2904,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "02b7a60539c17fa342873a4dced7ffe358e23027ee74170197f1c20ed4b48bfa",
       "modVersion": "v4.53.0-v8",
       "sizeBytes": 6302087,
       "downloadCount": 11,
@@ -2844,6 +2922,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.53.0-v8/MindustryToolMod.jar",
+      "sha256": "ebed6c97d148ba75e333e246275a973355de68321c7fbd268c239fe910073c30",
       "modVersion": "v4.53.0-v8",
       "sizeBytes": 6301894,
       "downloadCount": 182,
@@ -2860,6 +2939,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "a7f4cafd7a4861e9cb78c11923f773c7d0cdabbcb9c79c05ef4e58e7d61e992b",
       "modVersion": "v4.52.3-v8",
       "sizeBytes": 6293324,
       "downloadCount": 14,
@@ -2877,6 +2957,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.3-v8/MindustryToolMod.jar",
+      "sha256": "dcb239d810a663439a4b2c3018821c1ef32a094c3c5639a0a958b031ff2c554b",
       "modVersion": "v4.52.3-v8",
       "sizeBytes": 6279086,
       "downloadCount": 3002,
@@ -2893,6 +2974,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.2-v8/MindustryToolMod.jar",
+      "sha256": "e5552e5eb5f9e879494c5c5e2e75df28de0f23206596eaa87e2b452c6a1d7e98",
       "modVersion": "v4.52.2-v8",
       "sizeBytes": 6279086,
       "downloadCount": 43,
@@ -2909,6 +2991,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "57ba160bc9be0c6ffd1ef88bb055e7dd1d5ec7450d6ca131cdd5eab82c5e9a54",
       "modVersion": "v4.52.2-v8",
       "sizeBytes": 6279086,
       "downloadCount": 22,
@@ -2926,6 +3009,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.1-v8/MindustryToolMod.jar",
+      "sha256": "71568226163deb7eb13e32f1d0bceaa258b9228e0589bfd9c8f0eb9884680f93",
       "modVersion": "v4.52.1-v8",
       "sizeBytes": 6241154,
       "downloadCount": 686,
@@ -2942,6 +3026,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "b9e05e702bd967b0092a6caccb0ede55b95b056fef1b3f4eb538a4bbc2ca5b36",
       "modVersion": "v4.52.1-v8",
       "sizeBytes": 6241154,
       "downloadCount": 14,
@@ -2959,6 +3044,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "df695612f8b069decff4b0067584888ef80a2f78eb60df8d7d2ad9d8932daa48",
       "modVersion": "v4.52.0-v8",
       "sizeBytes": 6241111,
       "downloadCount": 12,
@@ -2976,6 +3062,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.52.0-v8/MindustryToolMod.jar",
+      "sha256": "1fae8843cb1d749b7c5a0309ae668b35f26093c00a0b79bb1d9d544bd667fac2",
       "modVersion": "v4.52.0-v8",
       "sizeBytes": 6241170,
       "downloadCount": 281,
@@ -2992,6 +3079,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "5bc7be61e340b84225135a0c52feccd1ed678c22e3704625237a5631512e55d5",
       "modVersion": "v4.51.3-v8",
       "sizeBytes": 6237085,
       "downloadCount": 11,
@@ -3009,6 +3097,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.3-v8/MindustryToolMod.jar",
+      "sha256": "22530164861b7c6520668957ef8c8c5009f00aaaecb51212cec6dff59ab9c98d",
       "modVersion": "v4.51.3-v8",
       "sizeBytes": 6234355,
       "downloadCount": 596,
@@ -3025,6 +3114,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "a5a005d13faccd24c9ddbefaf77d266b61e5f88a2f57ebe92ac5e5e887d0f9f8",
       "modVersion": "v4.51.2-v8",
       "sizeBytes": 6236076,
       "downloadCount": 10,
@@ -3042,6 +3132,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.2-v8/MindustryToolMod.jar",
+      "sha256": "77b82e74d01ce30cca64dffa858a7e9ff5b3d46e5def2b40f8d7cfeaf5a462a2",
       "modVersion": "v4.51.2-v8",
       "sizeBytes": 6235028,
       "downloadCount": 507,
@@ -3058,6 +3149,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "8f00f6d0fe6b7f15e68ce8c9c22d7f3cab5e6ce8d1bcc64dbca1c3c33526f79a",
       "modVersion": "v4.51.1-v8",
       "sizeBytes": 6228685,
       "downloadCount": 14,
@@ -3075,6 +3167,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "a389309e1a2290132bac870610502c43cbc89f4fbe1b17baa796706beb594407",
       "modVersion": "v4.51.0-v8",
       "sizeBytes": 6227560,
       "downloadCount": 5,
@@ -3092,6 +3185,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.51.0-v8/MindustryToolMod.jar",
+      "sha256": "6a40be6046430ff7069f9d8edc166ee9c7d4bdd58e25f9472c531c55b4e0d04a",
       "modVersion": "v4.51.0-v8",
       "sizeBytes": 6225458,
       "downloadCount": 945,
@@ -3108,6 +3202,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.4-v8-beta/MindustryToolMod.jar",
+      "sha256": "830840d9eed3f69205b27966f10c54ec1e860559ea5ac2d98554860f70d88c64",
       "modVersion": "v4.50.4-v8",
       "sizeBytes": 6222928,
       "downloadCount": 10,
@@ -3125,6 +3220,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "ff7d48eebd4af6cba4a12367456f26d2d9ca4185b0e0afb6acb6b9976ed7dd5f",
       "modVersion": "v4.50.3-v8",
       "sizeBytes": 6222331,
       "downloadCount": 8,
@@ -3142,6 +3238,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.3-v8/MindustryToolMod.jar",
+      "sha256": "66517514a564ec8b9cdf205cc41a92a159fefc0ad0c3d8e65fbd58c2003773d0",
       "modVersion": "v4.50.3-v8",
       "sizeBytes": 6218493,
       "downloadCount": 366,
@@ -3158,6 +3255,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "d93fd46784059732a8a4f91d937307c4de7d049b44d94980ba728b48bd99aaa9",
       "modVersion": "v4.50.2-v8",
       "sizeBytes": 6218235,
       "downloadCount": 6,
@@ -3175,6 +3273,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.2-v8/MindustryToolMod.jar",
+      "sha256": "cddeeedc260d81b441fb901a912eb56fdc5d928e3d7f191019b770b181d7216f",
       "modVersion": "v4.50.2-v8",
       "sizeBytes": 6218096,
       "downloadCount": 748,
@@ -3191,6 +3290,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.1-v8/MindustryToolMod.jar",
+      "sha256": "7231840f3bcc4e87d0d7240266b86196d1efbcd74ccc1092cd020ccc65eb67cb",
       "modVersion": "v4.50.1-v8",
       "sizeBytes": 6219809,
       "downloadCount": 434,
@@ -3207,6 +3307,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "73145e8b58a43b894e26d49f1af5adf2bd6f69a635807deaec928c2e068006d0",
       "modVersion": "v4.50.1-v8",
       "sizeBytes": 6219809,
       "downloadCount": 9,
@@ -3224,6 +3325,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.0-v8/MindustryToolMod.jar",
+      "sha256": "be4a71ab00ab6f051f9eb8ec1f001b05f8f5d314a4123891f544fb8befa77b54",
       "modVersion": "v4.50.0-v8",
       "sizeBytes": 6219410,
       "downloadCount": 142,
@@ -3240,6 +3342,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.50.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "4fae0776fb0c6ebb004a32e2de27b7c112b7f2c144ea7cfb47725cfe1f989bd6",
       "modVersion": "v4.50.0-v8",
       "sizeBytes": 6219410,
       "downloadCount": 7,
@@ -3257,6 +3360,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.49.0-v8/MindustryToolMod.jar",
+      "sha256": "f8ae831b1fc4e192c95506e83f3ddaae42f2c87a1d07feb50660f54b1d560257",
       "modVersion": "v4.49.0-v8",
       "sizeBytes": 6201368,
       "downloadCount": 529,
@@ -3273,6 +3377,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.49.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "85ddefccaa79f959da5b87e4e73b997d90d5f97cce8a3b94029caf94f8d8d951",
       "modVersion": "v4.49.0-v8",
       "sizeBytes": 6201368,
       "downloadCount": 13,
@@ -3290,6 +3395,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.48.0-v8-beta/MindustryToolMod.jar",
+      "sha256": "40f8cf016ee9abdb0901403a4a7868554b6bb7670331ed3045475a49233e17b9",
       "modVersion": "v4.48.0-v8",
       "sizeBytes": 6201368,
       "downloadCount": 5,
@@ -3307,6 +3413,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.5-v8-beta/MindustryToolMod.jar",
+      "sha256": "3f45238f38a125f52c2cfbd0216b7da3262ddab2e9b7a13ff97cd805f5b7cb3d",
       "modVersion": "v4.47.5-v8",
       "sizeBytes": 6191404,
       "downloadCount": 9,
@@ -3324,6 +3431,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.4-v8-beta/MindustryToolMod.jar",
+      "sha256": "2fc9b55a8e629932c36168dcbec70b89ad2ff31d3c99a407676b5204e7d64fc6",
       "modVersion": "v4.47.4-v8",
       "sizeBytes": 6187149,
       "downloadCount": 11,
@@ -3341,6 +3449,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.4-v8/MindustryToolMod.jar",
+      "sha256": "a4fc28ddb3cf92c4791050511e51bccfe29a37f4afb6b455059bfd327bf93cc3",
       "modVersion": "v4.47.4-v8",
       "sizeBytes": 6171406,
       "downloadCount": 919,
@@ -3357,6 +3466,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.3-v8/MindustryToolMod.jar",
+      "sha256": "228184fdfe274b8948cd765343bd0d83567f52f3a6c0eb82a81b7c19e6a77a33",
       "modVersion": "v4.47.3-v8",
       "sizeBytes": 6170875,
       "downloadCount": 79,
@@ -3373,6 +3483,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.3-v8-beta/MindustryToolMod.jar",
+      "sha256": "bbea43fe39703831e447f2796dc22cb6b069c87ccdae76f76666ea1003c95060",
       "modVersion": "v4.47.3-v8",
       "sizeBytes": 6170875,
       "downloadCount": 11,
@@ -3390,6 +3501,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.2-v8/MindustryToolMod.jar",
+      "sha256": "481bb94c87c52178e77f156a10b93b9bf93a35d25318f8d44b4ea3e39fc25f89",
       "modVersion": "v4.47.2-v8",
       "sizeBytes": 6169619,
       "downloadCount": 125,
@@ -3406,6 +3518,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.2-v8-beta/MindustryToolMod.jar",
+      "sha256": "14bf78e93781fa730028314ced4aadcdbc09ca26e4f2cf738fd60c0289974af3",
       "modVersion": "v4.47.2-v8",
       "sizeBytes": 6169619,
       "downloadCount": 8,
@@ -3423,6 +3536,7 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.1-v8/MindustryToolMod.jar",
+      "sha256": "a4b801bd436eff34788ce7495b342cc2e5045e69f901f6cc8b4a30b099180257",
       "modVersion": "v4.47.1-v8",
       "sizeBytes": 6164665,
       "downloadCount": 236,
@@ -3439,27 +3553,12 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.1-v8-beta/MindustryToolMod.jar",
+      "sha256": "65e7a74a8b64b11b685d5c8dcf413ab1bddc2d6e97769e0f04563f43d9b8aad8",
       "modVersion": "v4.47.1-v8",
       "sizeBytes": 6164665,
       "downloadCount": 6,
       "releasedAt": "2026-03-20T12:36:56Z",
       "prerelease": true
-    },
-    {
-      "tag": "v4.47.0-v8",
-      "kind": "release",
-      "minGameVersion": "154",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.0-v8/MindustryToolMod.jar",
-      "modVersion": "v4.47.0-v8",
-      "sizeBytes": 6158124,
-      "downloadCount": 15,
-      "releasedAt": "2026-03-20T11:20:36Z"
     }
   ],
   "pages": [
@@ -3498,7 +3597,7 @@
     },
     {
       "page": 4,
-      "count": 97,
+      "count": 98,
       "gameVersionRanges": [
         {
           "from": "140",

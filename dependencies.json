@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-14T06:37:02.272Z",
+  "generatedAt": "2026-11-14T15:23:26.961Z",
   "mods": {
     "scheme-size": {
       "repo": "itsxeroc/scheme-size",
@@ -371,6 +371,20 @@
       "source": "official",
       "name": "mindustry-ultimate-mod-pack",
       "version": "1.2",
+      "dependencies": []
+    },
+    "logic-speed-five": {
+      "repo": "andrewmaiorov2010-source/fast-logic",
+      "source": "official",
+      "name": "logic-speed-five",
+      "version": "1.3.2",
+      "dependencies": []
+    },
+    "sector-supply-redirect": {
+      "repo": "andrewmaiorov2010-source/sector-redirect",
+      "source": "official",
+      "name": "sector-supply-redirect",
+      "version": "1.0.3",
       "dependencies": []
     },
     "psammos": {
@@ -2918,7 +2932,7 @@
       "repo": "koctz34/modularis",
       "source": "official",
       "name": "modularis",
-      "version": "0.6",
+      "version": "0.6.1",
       "dependencies": []
     },
     "kokimada": {
@@ -3534,7 +3548,7 @@
       "repo": "mindustrytool/mindustrytoolmod",
       "source": "official",
       "name": "mindustry-tool",
-      "version": "v5.5.27-v8",
+      "version": "v5.5.28-v8",
       "dependencies": []
     },
     "new-universe": {
@@ -4604,6 +4618,13 @@
       "source": "official",
       "name": "fluxweave",
       "version": "1.11.8",
+      "dependencies": []
+    },
+    "project-synthesis": {
+      "repo": "ranii-reprograms/project-synthesis",
+      "source": "official",
+      "name": "project-synthesis",
+      "version": "0.1.0",
       "dependencies": []
     },
     "compactmachine": {
@@ -6530,6 +6551,8 @@
     "elementdustry": "element-dustry",
     "serpuloautodoor": "serpulo-auto-door",
     "mindustryultimatemodpack": "mindustry-ultimate-mod-pack",
+    "logicspeedfive": "logic-speed-five",
+    "sectorsupplyredirect": "sector-supply-redirect",
     "psammos": "psammos",
     "uniquegassprites": "unique-gas-sprites",
     "gecko": "gecko",
@@ -7116,6 +7139,7 @@
     "ln": "ln",
     "alterra": "alterra",
     "fluxweave": "fluxweave",
+    "projectsynthesis": "project-synthesis",
     "compactmachine": "compactmachine",
     "frostnova": "frostnova",
     "asextras": "as-extras",
