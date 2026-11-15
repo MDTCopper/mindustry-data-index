@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/logicsugar",
-  "generatedAt": "2026-11-15T09:22:24.313Z",
+  "generatedAt": "2026-11-15T17:07:43.538Z",
   "modType": "java",
   "meta": {
     "name": "LogicSugar",
     "author": "DeterMination-Wind",
     "description": "Adds structured for, while, switch, and function blocks to the logic editor while storing vanilla-compatible mlog.",
-    "version": "5.11.0",
+    "version": "5.12.0",
     "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v5.12.0",
+      "kind": "release",
+      "minGameVersion": "160.1",
+      "gameVersionRanges": [
+        {
+          "from": "160.1",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/LogicSugar/releases/download/v5.12.0/LogicSugar-v5.12.0.jar",
+      "sha256": "b41a4991fe66c75b214f7255947c4505a722727bda4362cef857cb95eb2e9f6c",
+      "modVersion": "5.12.0",
+      "sizeBytes": 3169229,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-15T15:39:44Z"
+    },
     {
       "tag": "v5.11.0",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "aa69c80ae71b881f265782fd65595172456fa373793fba6b88d9d101a1618397",
       "modVersion": "5.11.0",
       "sizeBytes": 3143843,
-      "downloadCount": 236,
+      "downloadCount": 240,
       "releasedAt": "2026-11-05T10:17:38Z"
     },
     {

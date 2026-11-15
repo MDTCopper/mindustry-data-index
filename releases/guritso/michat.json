@@ -1,0 +1,787 @@
+{
+  "formatVersion": 3,
+  "repo": "guritso/michat",
+  "generatedAt": "2026-11-15T17:07:43.538Z",
+  "modType": "java",
+  "meta": {
+    "name": "michat",
+    "author": "guritso",
+    "description": "Chat with friends over your VPN without joining or hosting the same Mindustry server. MiChat connects separate single-player and campaign sessions, shares schematics, and also works alongside the native chat when you host or join a server.",
+    "version": "1.7.0",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": "michat.MiChat",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "versions": [
+    {
+      "tag": "v1.7.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.7.0/michat.jar",
+      "sha256": "ce744455296ebfba44dc1a33a35770fcbfb0f42b840f665393e47fef854e633a",
+      "modVersion": "1.7.0",
+      "sizeBytes": 146874,
+      "downloadCount": 6,
+      "releasedAt": "2026-11-15T15:49:53Z"
+    },
+    {
+      "tag": "v1.6.5",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.6.5/michat.jar",
+      "sha256": "0e65900bd60e2880f39838553e519ac8d98e5212a9b224a493b503a27c82939f",
+      "modVersion": "1.6.5",
+      "sizeBytes": 141122,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T15:34:55Z"
+    },
+    {
+      "tag": "v1.6.4",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.6.4/michat.jar",
+      "sha256": "e8adfde6542c85e05dbdff3108031a9658a62521fba255f4f7737bb09a64f3bb",
+      "modVersion": "1.6.4",
+      "sizeBytes": 140922,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T15:07:47Z"
+    },
+    {
+      "tag": "v1.6.3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.6.3/michat.jar",
+      "sha256": "b298254830633c4f9174d33bf814d6dc175892034254d576e1f13b3c13fdf447",
+      "modVersion": "1.6.3",
+      "sizeBytes": 140988,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-15T15:03:36Z"
+    },
+    {
+      "tag": "v1.6.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.6.2/michat.jar",
+      "sha256": "2f58b4bd96d04119f66a3281df0e2632e5134bb0ebf91132a3699bd8c6b413dc",
+      "modVersion": "1.6.2",
+      "sizeBytes": 140648,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T14:51:48Z"
+    },
+    {
+      "tag": "v1.6.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.6.1/michat.jar",
+      "sha256": "8dcd4812c8911c4863cce6d4d78dc4591d33d53bfc7d177292d3d6ffcfac7465",
+      "modVersion": "1.6.1",
+      "sizeBytes": 124478,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T14:42:31Z"
+    },
+    {
+      "tag": "v1.6.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.6.0/michat.jar",
+      "sha256": "e0a0d9a8399be2c537ce53275a825c28c4bbc8d051fd504f59d51c288ac3b73a",
+      "modVersion": "1.6.0",
+      "sizeBytes": 124690,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T08:17:19Z"
+    },
+    {
+      "tag": "v1.5.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.5.0/michat.jar",
+      "sha256": "344831eca380ce667fa3faffefe917c965b7b67e3ffd90e695ec3c1065c0055e",
+      "modVersion": "1.5.0",
+      "sizeBytes": 102248,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T06:18:09Z"
+    },
+    {
+      "tag": "v1.4.9",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.9/michat.jar",
+      "sha256": "3b8978defb572df047bce17adbe898e5fd8639361015f4699fe939b38f2966b0",
+      "modVersion": "1.4.9",
+      "sizeBytes": 101012,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-15T05:21:23Z"
+    },
+    {
+      "tag": "v1.4.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.8/michat.jar",
+      "sha256": "1b7d8d9c13d212cfcbe4a1abeba725d4ddcb03511735c90858c5de52bbf681b6",
+      "modVersion": "1.4.8",
+      "sizeBytes": 100960,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T05:11:10Z"
+    },
+    {
+      "tag": "v1.4.7",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.7/michat.jar",
+      "sha256": "b6268fb69050d0893c294ac64a549a6c38f785f336f3a50685ed500688f8a531",
+      "modVersion": "1.4.7",
+      "sizeBytes": 107654,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T04:59:30Z"
+    },
+    {
+      "tag": "v1.4.6",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.6/michat.jar",
+      "sha256": "3ead20285bdaa7adf89c5ee98dec30f9d40fe12fefa8d5584e8854123d3fe691",
+      "modVersion": "1.4.6",
+      "sizeBytes": 105428,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T04:54:34Z"
+    },
+    {
+      "tag": "v1.4.5",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.5/michat.jar",
+      "sha256": "9b5b33ae63169159a95675f0c78c3cfcf82aed601d1ac39627688ba45948cec5",
+      "modVersion": "1.4.5",
+      "sizeBytes": 105360,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T04:44:20Z"
+    },
+    {
+      "tag": "v1.4.4",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.4/michat.jar",
+      "sha256": "b631bd065f83adeba89ca7c0824af5397aa934c7b94f06b4a325a78d80620be7",
+      "modVersion": "1.4.4",
+      "sizeBytes": 105514,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T04:32:57Z"
+    },
+    {
+      "tag": "v1.4.3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.3/michat.jar",
+      "sha256": "b3adb778b6e3fe29251c519dc7ad171451e2ffa7cb5c1176c60554f38ddaef24",
+      "modVersion": "1.4.3",
+      "sizeBytes": 108681,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T04:23:14Z"
+    },
+    {
+      "tag": "v1.4.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.2/michat.jar",
+      "sha256": "8b2fe2e2c1e0e969a7bb597cc4c691aa9686de6b6bf985a9c3afefdf305276e5",
+      "modVersion": "1.4.2",
+      "sizeBytes": 108626,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T04:08:48Z"
+    },
+    {
+      "tag": "v1.4.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.1/michat.jar",
+      "sha256": "fcb49c4514a3e5cbfd9a4d123be074359eef4c495797a9a50aa152d48d4a935d",
+      "modVersion": "1.4.1",
+      "sizeBytes": 108128,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T03:55:16Z"
+    },
+    {
+      "tag": "v1.4.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.4.0/michat.jar",
+      "sha256": "32cd053819075516715c06f7cec4a27964ebfd9886086a54ad79bbb30b6a6d7c",
+      "modVersion": "1.4.0",
+      "sizeBytes": 105124,
+      "downloadCount": 6,
+      "releasedAt": "2026-11-15T03:40:34Z"
+    },
+    {
+      "tag": "v1.3.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.3.2/michat.jar",
+      "sha256": "d2ceea0e7367ad4ee3c06a8172428a6034a0c2f3dcfe641200a3916086fd7df6",
+      "modVersion": "1.3.2",
+      "sizeBytes": 91950,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T02:48:14Z"
+    },
+    {
+      "tag": "v1.3.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.3.1/michat.jar",
+      "sha256": "c47b73114b5c74883e95e038ff55c2f26489c96d845cb80156bd711237fc61d5",
+      "modVersion": "1.3.1",
+      "sizeBytes": 88736,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T02:37:50Z"
+    },
+    {
+      "tag": "v1.3.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.3.0/michat.jar",
+      "sha256": "e9905d6074f808b35258d4177cccf637e1e386ea486fd6b3cbef0cc587f87487",
+      "modVersion": "1.3.0",
+      "sizeBytes": 87323,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T01:56:48Z"
+    },
+    {
+      "tag": "v1.2.10",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.10/michat.jar",
+      "sha256": "3df5432d5b091ee5bd5f86a15a9401aba915ccbaa6cc90c6c2122aae682d31d3",
+      "modVersion": "1.2.10",
+      "sizeBytes": 87152,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T01:20:29Z"
+    },
+    {
+      "tag": "v1.2.9",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.9/michat.jar",
+      "sha256": "ae6c88cb68b2002619f7e5f7a555576cc33bc8f6d0d9024263f0ca3da0f0c257",
+      "modVersion": "1.2.9",
+      "sizeBytes": 88032,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T01:12:49Z"
+    },
+    {
+      "tag": "v1.2.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.8/michat.jar",
+      "sha256": "abd84444a5379c6ab41e6c5cd9a0a6cb6000f93a4124a9a93c3d1bfcd69e1f6e",
+      "modVersion": "1.2.8",
+      "sizeBytes": 86866,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T00:45:17Z"
+    },
+    {
+      "tag": "v1.2.7",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.7/michat.jar",
+      "sha256": "a99b5651bb462406ea2fe804ed72fdab5fcc062886f88baadb6f27f1e433801e",
+      "modVersion": "1.2.7",
+      "sizeBytes": 86914,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T00:40:52Z"
+    },
+    {
+      "tag": "v1.2.6",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.6/michat.jar",
+      "sha256": "46e900900059f1e4f01eaf38125a063fe1bb882dca1fbb73f8d5aacef0b5c6ac",
+      "modVersion": "1.2.6",
+      "sizeBytes": 85976,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T00:39:58Z"
+    },
+    {
+      "tag": "v1.2.5",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.5/michat.jar",
+      "sha256": "7567909dac0c50f411dc69951a41913c95b21d46f0de29d6da1c81db26168c2a",
+      "modVersion": "1.2.5",
+      "sizeBytes": 82829,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T00:29:17Z"
+    },
+    {
+      "tag": "v1.2.4",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.4/michat.jar",
+      "sha256": "4372d8a1d9fd9afd23a6207248cc2ee55db6594c33c6ddb19dbdfeabdcd8f40f",
+      "modVersion": "1.2.4",
+      "sizeBytes": 82844,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-15T00:19:01Z"
+    },
+    {
+      "tag": "v1.2.3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.3/michat.jar",
+      "sha256": "e13cce3c3a73d1a682ec108fbe30efb138cc721a83e63f8da6167df98db4f1b1",
+      "modVersion": "1.2.3",
+      "sizeBytes": 82814,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T00:16:22Z"
+    },
+    {
+      "tag": "v1.2.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.2/michat.jar",
+      "sha256": "9afaabd564cd7afccfd4caf775953f29971944125d287ced40e73a5b3c43fbe6",
+      "modVersion": "1.2.2",
+      "sizeBytes": 82345,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-15T00:10:16Z"
+    },
+    {
+      "tag": "v1.2.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.1/michat.jar",
+      "sha256": "45e7fc978fb23f7f1258a5389b3215eb4f11f11307105876ade5be8152a4cb63",
+      "modVersion": "1.1.9",
+      "sizeBytes": 82345,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-15T00:00:45Z"
+    },
+    {
+      "tag": "v1.2.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.2.0/michat.jar",
+      "sha256": "94f8160f43862db810b981392591e0c772c0b42d207969d8ecbdec6405acedde",
+      "modVersion": "1.1.9",
+      "sizeBytes": 81614,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-14T23:56:14Z"
+    },
+    {
+      "tag": "v1.1.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.8/michat.jar",
+      "sha256": "de8492187e60381095612ca06bed10250c3732d0bc464143c9a11a7e867179a9",
+      "modVersion": "1.1.8",
+      "sizeBytes": 81641,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-14T23:51:24Z"
+    },
+    {
+      "tag": "v1.1.7",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.7/michat.jar",
+      "sha256": "12e22b35917e936bf7bc5b79a5ee173f95eb0fbe98308b035d69ee54a5d9f5a6",
+      "modVersion": "1.1.7",
+      "sizeBytes": 80976,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-14T23:47:02Z"
+    },
+    {
+      "tag": "v1.1.6",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.6/michat.jar",
+      "sha256": "39e71677e6d346dfa43c4cb7f970a984ba623facac811bd72106e6e04a7fe9b1",
+      "modVersion": "1.1.6",
+      "sizeBytes": 80148,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-14T23:41:23Z"
+    },
+    {
+      "tag": "v1.1.5",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.5/michat.jar",
+      "sha256": "bfe73587d9f61324cb35cfdc67c7dfd10799ec01f312531e7e2edc087a700253",
+      "modVersion": "1.1.5",
+      "sizeBytes": 80014,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-14T23:35:21Z"
+    },
+    {
+      "tag": "v1.1.4",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.4/michat.jar",
+      "sha256": "6ae054f8cecf3d803e11e5f133945d4cfd6fec5dc296ff26349b199014b90f19",
+      "modVersion": "1.1.4",
+      "sizeBytes": 56683,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-14T23:30:24Z"
+    },
+    {
+      "tag": "v1.1.3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.3/michat.jar",
+      "sha256": "37e9eebd541dee38dab3bdeee7896f443fd265734963cc0dc3dd73228fa74530",
+      "modVersion": "1.1.3",
+      "sizeBytes": 57487,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-14T23:29:36Z"
+    },
+    {
+      "tag": "v1.1.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.2/michat.jar",
+      "sha256": "05f6bab06c6abb1edba9d8d1c5cecbc123cc41a31c68a53a42fdb06c52502278",
+      "modVersion": "1.1.2",
+      "sizeBytes": 57769,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-14T23:22:46Z"
+    },
+    {
+      "tag": "v1.1.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.1/michat.jar",
+      "sha256": "83cfe5b84e1e1fd9f65dde9750ad92a2a8645c3be6b1b713d30912e386817ae6",
+      "modVersion": "1.1.1",
+      "sizeBytes": 33527,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-14T23:21:29Z"
+    },
+    {
+      "tag": "v1.1.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.1.0/michat.jar",
+      "sha256": "152bec8d69e3f569787ba0369957eecfd079537df57e228f4168d6d85a2457ed",
+      "modVersion": "1.1.0",
+      "sizeBytes": 33182,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-14T22:38:54Z"
+    },
+    {
+      "tag": "v1.0.7",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.0.7/michat.jar",
+      "sha256": "22331a13902a7a2360afe7fe3e0691ac7d6edf2b06e8fdff919369cae48d2ca0",
+      "modVersion": "1.0.7",
+      "sizeBytes": 11604,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-14T22:23:45Z"
+    },
+    {
+      "tag": "v1.0.6",
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.0.6/michat.jar",
+      "sha256": "10b2be2126af362a92412ba817f6c764e0a4847f2bfeca364b2fa89639804e22",
+      "modVersion": "1.0.6",
+      "sizeBytes": 11604,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-14T22:21:57Z"
+    },
+    {
+      "tag": "v1.0.5",
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.0.5/michat.jar",
+      "sha256": "f0d5deac56288b76a8625a6222f7881d78631993b5c26cdc4b2f2129cf0440ac",
+      "modVersion": "1.0.0",
+      "sizeBytes": 11247,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-14T22:20:31Z"
+    },
+    {
+      "tag": "v1.0.4",
+      "kind": "release",
+      "minGameVersion": "146",
+      "gameVersionRanges": [
+        {
+          "from": "146",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/archive/refs/tags/v1.0.4.zip",
+      "modVersion": "1.0.0",
+      "sizeBytes": 5690,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-14T21:50:02Z"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "mindustrytool/mindustrytoolmod",
-  "generatedAt": "2026-11-15T09:22:24.313Z",
+  "generatedAt": "2026-11-15T17:07:43.538Z",
   "modType": "java",
   "meta": {
     "name": "mindustry-tool",
     "author": "[#FFC2D1[]]S[#FFADC2[]]h[#FF97B3[]]a[#FF81A3[]]r[#FF6C94[]]l[#F45885[]]o[#E84375[]]t[#DD2F67[]]t[#D11A58[]]e[[]]",
     "description": "\n[#FFB7C5[]] [#FFF000[]]Mindustry Tool  [white[]]- The Ultimate In-Game Utility & Community Suite[[]]\n\n[white[]]Mindustry Tool seamlessly connects your game to [#88C6ED[]]mindustry-tool.com[white[]], bringing thousands of community maps & schematics, cloud save synchronization, tactical combat overlays, and intelligent factory automation into one unified mod powered by the [#FFAEC0[]]Solim[white[]] reactive engine.\n\n[accent[]] [#88C6ED[]]Community Hub & Cloud:[[]]\n  [white[]] [#88C6ED[]]Content Browser:[white[]] Access a curated repository of [#394BA0[]]Maps[white[]] and [#D54799[]]Schematics[white[]] directly in-game.\n  [white[]] [#FFB7C5[]]Cloud Save Sync:[white[]] Synchronize campaign saves, sectors, and schematics across devices.\n  [white[]] [#FAA31B[]]Web Tools Suite:[white[]] Integrated access to mlog Logic Editors, Display Generators, Sorter Art, and Wiki guides.\n\n[accent[]] [#FFF000[]]Automation & Factory Utilities:[[]]\n  [white[]] [#FFF000[]]Autoplay AI:[white[]] Smart task management for building support, auto-repairs, and automated mining.\n  [white[]] [#82C341[]]Smart Upgrade:[white[]] Instantly upgrade entire conveyor belts, conduits, and distribution chains with one tap.\n  [white[]] [#FAA31B[]]Smart Drill:[white[]] Optimal drill positioning and resource coverage calculator for maximum yield.\n  [white[]] [#88C6ED[]]Schematic Grid:[white[]] Rapid placement grid and hotkeys for effortless factory layout expansion.\n\n[accent[]] [#EF4444[]]Combat Intel & Tactical HUD:[[]]\n  [white[]] [#EF4444[]]Wave Preview:[white[]] Forecast upcoming enemy waves, unit tiers, flying/ground counters, and boss warnings.\n  [white[]] [#FAA31B[]]Pathfinding Visualizer:[white[]] Real-time terrain overlay predicting enemy navigation paths and choke points.\n  [white[]] [#82C341[]]Team Resource HUD:[white[]] Live core inventory tracking, real-time power grid balance, and consumption rates.\n  [white[]] [#88C6ED[]]Range Display & Health Bars:[white[]] Customizable unit health bars and visual range circles for turrets and units.\n\n[accent[]] [#009F75[]]Multiplayer & Global Chat:[[]]\n  [white[]] [#009F75[]]Player Connect:[white[]] Easily create or join private peer-to-peer rooms with link sharing and ping monitoring.\n  [white[]] [#88C6ED[]]Global Chat & Pretty Chat:[white[]] Connect across servers with stylized avatars, rank badges, and custom emoji picker.\n  [white[]] [#82C341[]]AI Live Translation:[white[]] Instant multilingual chat translation powered by Google Gemini and DeepL.\n\n[accent[]] [#FFAEC0[]]Camera, Audio & Quality of Life:[[]]\n  [white[]] [#FFAEC0[]]Free Camera & Extended Zoom:[white[]] Detached smooth camera pan with unlocked macro and micro zoom ranges.\n  [white[]] [#394BA0[]]Time Control:[white[]] Adjust game simulation speed (slow-motion, fast-forward, tactical pause) for testing.\n  [white[]] [#FFB7C5[]]Music Player & Background Audio:[white[]] In-game audio player with custom tracks and background playback.\n  [white[]] [#82C341[]]Performance Optimizer:[white[]] Toggle specific render passes (particles, lights, units) for huge FPS boosts.\n  [white[]] [#EF4444[]]God Mode Suite:[white[]] Comprehensive sandbox toolkit for map testing and server administration.\n\n[accent[]] [#FFF000[]]Community Credits[[]]:\n[#88C6ED[]] Design-it Community:  \n  [#394BA0[]]  Discord: [white[]]discord.gg/SYVkWPhmXY  \n  [#394BA0[]]  GitHub: [white[]]MindustryDesignIt\n\n[#82C341[]] Mindustry Top Community:  \n  [#88C6ED[]]  Website: [white[]]www.mindustry.top  \n  [#009F75[]]  Email: [white[]]me@wayzer.top\n\n[accent[]] [#FFF000[]]Useful Links[[]]:\n  [#88C6ED[]]  Website: [white[]]mindustry-tool.com[[]]\n  [#394BA0[]]  Discord: [white[]]discord.gg/nQDrEHVkrt[[]]\n  ",
-    "version": "v5.5.28-v8",
+    "version": "v5.5.31-v8",
     "minGameVersion": "160.7",
     "dependencies": {},
     "hidden": true,
@@ -28,6 +28,77 @@
   ],
   "versions": [
     {
+      "tag": "v5.5.31-v8-beta",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.5.31-v8-beta/MindustryToolMod.jar",
+      "sha256": "969d5172258bb1a97ab5d43a365a36faaca9716d2d18a022b32fa46c08c8bcb5",
+      "modVersion": "v5.5.31-v8",
+      "sizeBytes": 10456095,
+      "downloadCount": 18,
+      "releasedAt": "2026-11-15T16:01:10Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v5.5.30-v8-beta",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.5.30-v8-beta/MindustryToolMod.jar",
+      "sha256": "7072becbb193c2f5f5b3c0b2b29762b9590c6ad7c2e22af76f20b6c3419be291",
+      "modVersion": "v5.5.30-v8",
+      "sizeBytes": 10451438,
+      "downloadCount": 26,
+      "releasedAt": "2026-11-15T13:06:25Z",
+      "prerelease": true
+    },
+    {
+      "tag": "v5.5.29-v8",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.5.29-v8/MindustryToolMod.jar",
+      "sha256": "99b09d783d4447b9dab4dc0fea454e50e495c235c42ee045dcc66db924fb8d5b",
+      "modVersion": "v5.5.29-v8",
+      "sizeBytes": 10451618,
+      "downloadCount": 602,
+      "releasedAt": "2026-11-15T12:18:20Z"
+    },
+    {
+      "tag": "v5.5.29-v8-beta",
+      "kind": "release",
+      "minGameVersion": "160.7",
+      "gameVersionRanges": [
+        {
+          "from": "160.7",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.5.29-v8-beta/MindustryToolMod.jar",
+      "sha256": "d89bd481a962099ca89cec7a40563ef574d748c12578416f6ccb7586a4563806",
+      "modVersion": "v5.5.29-v8",
+      "sizeBytes": 10451420,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-15T12:10:07Z",
+      "prerelease": true
+    },
+    {
       "tag": "v5.5.28-v8-beta",
       "kind": "release",
       "minGameVersion": "160.7",
@@ -38,9 +109,10 @@
         }
       ],
       "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v5.5.28-v8-beta/MindustryToolMod.jar",
-      "sha256": "34efda97170e7142f6f44d07c1458e4293145fe64bd649a00180768a768dfd2d",
+      "sha256": "a781eb281c47f35d0a8ce42d9641ffbf345917959a52f89fadcc076b9044e7e0",
       "modVersion": "v5.5.28-v8",
-      "sizeBytes": 10426872,
+      "sizeBytes": 10429231,
+      "downloadCount": 12,
       "releasedAt": "2026-11-14T14:46:18Z",
       "prerelease": true
     },
@@ -58,7 +130,7 @@
       "sha256": "1af2716c40e168568fc7eba20aebdb6d5a1b8af5f56f1e22021733a68322b026",
       "modVersion": "v5.5.27-v8",
       "sizeBytes": 10413198,
-      "downloadCount": 4424,
+      "downloadCount": 4567,
       "releasedAt": "2026-11-10T09:05:23Z"
     },
     {
@@ -75,7 +147,7 @@
       "sha256": "dcad0aab7abdb9c737575884f838584b0b6d3bafbb20f39083705ceb07cef017",
       "modVersion": "v5.5.27-v8",
       "sizeBytes": 10413196,
-      "downloadCount": 7,
+      "downloadCount": 8,
       "releasedAt": "2026-11-10T09:00:10Z",
       "prerelease": true
     },
@@ -128,7 +200,7 @@
       "sha256": "31f039ec2b8e02eb25844c0504e1a7d6881cc13e5d6513ab8570a9929c90f8ab",
       "modVersion": "v5.5.25-v8",
       "sizeBytes": 10412661,
-      "downloadCount": 12,
+      "downloadCount": 13,
       "releasedAt": "2026-11-04T15:43:59Z",
       "prerelease": true
     },
@@ -146,7 +218,7 @@
       "sha256": "d07fecef90653dfa8200770eea6a787644d8802843c3781a58962865142eeb0e",
       "modVersion": "v5.5.23-v8",
       "sizeBytes": 10411883,
-      "downloadCount": 6800,
+      "downloadCount": 6801,
       "releasedAt": "2026-10-26T08:15:22Z"
     },
     {
@@ -163,7 +235,7 @@
       "sha256": "ffa2d63acd54df79b532b421d6e36605caad1e311e50a38225249eeb448a8c42",
       "modVersion": "v5.5.23-v8",
       "sizeBytes": 10411881,
-      "downloadCount": 40,
+      "downloadCount": 42,
       "releasedAt": "2026-10-25T19:37:02Z",
       "prerelease": true
     },
@@ -216,7 +288,7 @@
       "sha256": "2b058f1196c96d2ca2ec9809caacd8250ed247182821aab3bd6edc6bed0c17d9",
       "modVersion": "v5.5.19-v8",
       "sizeBytes": 10335327,
-      "downloadCount": 859,
+      "downloadCount": 861,
       "releasedAt": "2026-10-19T16:42:58Z",
       "prerelease": true
     },
@@ -377,7 +449,7 @@
       "sha256": "34ce28f35625f67de71c70fe18f923dd937da39029f52ddd1f782e1d8b2bc3d3",
       "modVersion": "v5.5.3-v8",
       "sizeBytes": 6695745,
-      "downloadCount": 43,
+      "downloadCount": 44,
       "releasedAt": "2026-10-10T19:21:17Z",
       "prerelease": true
     },
@@ -502,7 +574,7 @@
       "sha256": "40ccd237054e5e77bac76021a02c611ca5a89c6d6f6b460399139c11df9be904",
       "modVersion": "v5.1.10-v8",
       "sizeBytes": 6309114,
-      "downloadCount": 262,
+      "downloadCount": 263,
       "releasedAt": "2026-10-10T09:14:09Z"
     },
     {
@@ -572,7 +644,7 @@
       "sha256": "def2a3bef35b6cc5256f5b960d2cf8742e2c5c86be6a9e4ed0144d70de9b7722",
       "modVersion": "v5.2.7-v8",
       "sizeBytes": 6295753,
-      "downloadCount": 28,
+      "downloadCount": 29,
       "releasedAt": "2026-10-09T14:00:03Z",
       "prerelease": true
     },
@@ -3488,76 +3560,6 @@
       "downloadCount": 11,
       "releasedAt": "2026-03-27T17:13:33Z",
       "prerelease": true
-    },
-    {
-      "tag": "v4.47.2-v8",
-      "kind": "release",
-      "minGameVersion": "154",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.2-v8/MindustryToolMod.jar",
-      "sha256": "481bb94c87c52178e77f156a10b93b9bf93a35d25318f8d44b4ea3e39fc25f89",
-      "modVersion": "v4.47.2-v8",
-      "sizeBytes": 6169619,
-      "downloadCount": 125,
-      "releasedAt": "2026-03-21T20:37:21Z"
-    },
-    {
-      "tag": "v4.47.2-v8-beta",
-      "kind": "release",
-      "minGameVersion": "154",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.2-v8-beta/MindustryToolMod.jar",
-      "sha256": "14bf78e93781fa730028314ced4aadcdbc09ca26e4f2cf738fd60c0289974af3",
-      "modVersion": "v4.47.2-v8",
-      "sizeBytes": 6169619,
-      "downloadCount": 8,
-      "releasedAt": "2026-03-21T20:30:21Z",
-      "prerelease": true
-    },
-    {
-      "tag": "v4.47.1-v8",
-      "kind": "release",
-      "minGameVersion": "154",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.1-v8/MindustryToolMod.jar",
-      "sha256": "a4b801bd436eff34788ce7495b342cc2e5045e69f901f6cc8b4a30b099180257",
-      "modVersion": "v4.47.1-v8",
-      "sizeBytes": 6164665,
-      "downloadCount": 236,
-      "releasedAt": "2026-03-20T12:39:13Z"
-    },
-    {
-      "tag": "v4.47.1-v8-beta",
-      "kind": "release",
-      "minGameVersion": "154",
-      "gameVersionRanges": [
-        {
-          "from": "154",
-          "to": "160.7"
-        }
-      ],
-      "downloadUrl": "https://github.com/MindustryTool/MindustryToolMod/releases/download/v4.47.1-v8-beta/MindustryToolMod.jar",
-      "sha256": "65e7a74a8b64b11b685d5c8dcf413ab1bddc2d6e97769e0f04563f43d9b8aad8",
-      "modVersion": "v4.47.1-v8",
-      "sizeBytes": 6164665,
-      "downloadCount": 6,
-      "releasedAt": "2026-03-20T12:36:56Z",
-      "prerelease": true
     }
   ],
   "pages": [
@@ -3596,7 +3598,7 @@
     },
     {
       "page": 4,
-      "count": 98,
+      "count": 102,
       "gameVersionRanges": [
         {
           "from": "140",
