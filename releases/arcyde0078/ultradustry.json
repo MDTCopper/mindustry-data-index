@@ -1,0 +1,37 @@
+{
+  "formatVersion": 3,
+  "repo": "arcyde0078/ultradustry",
+  "generatedAt": "2026-11-15T22:47:38.065Z",
+  "modType": "js",
+  "meta": {
+    "name": "ultradustry",
+    "author": "ARCYDE",
+    "description": "Replaces the Mindustry soundtrack with ULTRAKILL music.\nThe main menu is a black terminal screen with big buttons, a typing diagnostics readout and social links (the standard menu is one click away).\nSector music follows the sector's threat level, guardians get their own themes, quiet moments and captured sectors get calm tracks.\nThe tracks are NOT inside the mod: they are downloaded from the ULTRAKILL wiki into a folder next to your game data (Settings -> ULTRAdustry -> Music pack), so the mod stays small and loads fast.",
+    "version": "2.4.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
+  "versions": [
+    {
+      "tag": "main",
+      "kind": "source",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/arcyde0078/ultradustry/archive/refs/heads/main.zip",
+      "modVersion": "2.4.0",
+      "committedAt": "2026-11-15T20:52:15Z"
+    }
+  ]
+}
