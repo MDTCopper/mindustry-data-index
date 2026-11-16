@@ -1,0 +1,74 @@
+{
+  "formatVersion": 3,
+  "repo": "redeagle0705/shinny-dustry",
+  "generatedAt": "2026-11-16T18:31:10.351Z",
+  "modType": "java",
+  "meta": {
+    "name": "mshaders",
+    "author": "REDEagle0705, Claude",
+    "description": "Visual effects only: water with reflections, ice and ground effects, directional block shadows, lights that blocks and units stop, metal glint, hand-drawn normal maps that light blocks by calculation, and a colour pass. Every effect can be switched off in Settings > Shaders. Client-side, adds no content. Desktop and Android. Tested on v160.7.",
+    "version": "0.1.2",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "mshaders.ShaderMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "versions": [
+    {
+      "tag": "v0.1.2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.2/mshaders.jar",
+      "sha256": "74e8c95637fe961f0d7446920458ae3f3546fcda046c5bf881c7643e74024bd4",
+      "modVersion": "0.1.2",
+      "sizeBytes": 359604,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-16T17:35:55Z"
+    },
+    {
+      "tag": "v0.1.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.1/mshaders.jar",
+      "sha256": "1b494f912ad982745c61497581e5a0dc4b6d75b73f42377f56f292b46c06d142",
+      "modVersion": "0.1.1",
+      "sizeBytes": 337566,
+      "downloadCount": 23,
+      "releasedAt": "2026-11-16T12:37:38Z"
+    },
+    {
+      "tag": "v0.1.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.0/mshaders.jar",
+      "sha256": "f820ff41c57ea060fdea3e7af7ede7230adaf38585dea57709a0f5f8a1d33f60",
+      "modVersion": "0.1.0",
+      "sizeBytes": 297426,
+      "downloadCount": 7,
+      "releasedAt": "2026-11-16T11:51:26Z"
+    }
+  ]
+}

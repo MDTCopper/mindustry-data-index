@@ -1,0 +1,57 @@
+{
+  "formatVersion": 3,
+  "repo": "ntt335/gamepad-support-mindustry-mod",
+  "generatedAt": "2026-11-16T18:31:10.351Z",
+  "modType": "java",
+  "meta": {
+    "name": "gamepad-support-mindustry-mod",
+    "author": "NTT & wareal-nah",
+    "description": "[accent]Full Cross-Platform Controller Support[] for Mindustry v154+ (Java 17).\nNative support for [lightgray]Linux, Windows 10/11, macOS, and Android (including legacy versions)[].\nWorks out of the box with DualSense, DualShock 4, Xbox One/Series, and standard USB/Bluetooth gamepads.\n\n[accent]Features:[]\n• [white]3 Gameplay Modes:[] Normal (L2), Build (R1), and Command (L1)\n• [white]Free Camera & Detachment:[] Scout anywhere on map with D-Pad; L2/L3 to snap back\n• [white]Smart Building & Derelict Repair:[] Empty-cursor R2 repairs abandoned derelicts & broken plans; line build, area deconstruct, pipette, schematics\n• [white]Full RTS Control:[] Box unit selection, target assignment, and command/stance cycling\n• [white]Per-Category Stick Inversion:[] Separate OX/OY stick inversion for all 6 categories\n• [white]UI & Menu Navigation:[] Virtual cursor with click, drag & scroll support\n• [white]Full In-Game Settings:[] Rebindable buttons, sensitivity sliders, deadzone & axis tuning",
+    "version": "v1.1.0",
+    "minGameVersion": "154",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "gamepad.GamepadMod",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "versions": [
+    {
+      "tag": "v1.1.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/NTT335/Gamepad-support-mindustry-mod/releases/download/v1.1.0/GamepadSupport.jar",
+      "sha256": "36aa1894f5742d27f42e0af11ab3abf925121fe2ea0c3c6ab9863024defe2aa3",
+      "modVersion": "v1.1.0",
+      "sizeBytes": 441609,
+      "downloadCount": 7,
+      "releasedAt": "2026-11-16T12:59:12Z"
+    },
+    {
+      "tag": "v1.0.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/NTT335/Gamepad-support-mindustry-mod/releases/download/v1.0.0/GamepadSupport.jar",
+      "sha256": "91149e89b5e71677c39c1535b6876e4f0a4837d087bfcc97efad1348eec6e1e1",
+      "modVersion": "v1.0.0",
+      "sizeBytes": 402703,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-11T18:52:53Z"
+    }
+  ]
+}
