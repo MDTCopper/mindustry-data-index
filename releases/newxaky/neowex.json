@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "newxaky/neowex",
-  "generatedAt": "2026-11-17T13:22:17.511Z",
+  "generatedAt": "2026-11-17T22:20:49.052Z",
   "modType": "java",
   "meta": {
     "name": "newex",
@@ -20,6 +20,23 @@
   },
   "versions": [
     {
+      "tag": "test",
+      "kind": "release",
+      "minGameVersion": "157",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/NewXaky/NeoWex/releases/download/test/NeoWex.jar",
+      "sha256": "c323269f438c2c016841dd6dd213a03af1881983df064990118d504dff78483f",
+      "modVersion": "1.0.4",
+      "sizeBytes": 17142790,
+      "downloadCount": 10,
+      "releasedAt": "2026-11-17T19:07:17Z"
+    },
+    {
       "tag": "v1.0.4",
       "kind": "release",
       "minGameVersion": "157",
@@ -33,7 +50,7 @@
       "sha256": "6230dd812fe8a87708b5ac95f053f70cd9d6b28f942b72e5cb2ac5c7857d007d",
       "modVersion": "1.0.4",
       "sizeBytes": 17132566,
-      "downloadCount": 12,
+      "downloadCount": 25,
       "releasedAt": "2026-11-17T11:50:04Z"
     },
     {
