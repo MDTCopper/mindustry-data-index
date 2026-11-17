@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "redeagle0705/shinny-dustry",
-  "generatedAt": "2026-11-16T18:31:10.351Z",
+  "generatedAt": "2026-11-17T02:55:11.346Z",
   "modType": "java",
   "meta": {
     "name": "mshaders",
     "author": "REDEagle0705, Claude",
     "description": "Visual effects only: water with reflections, ice and ground effects, directional block shadows, lights that blocks and units stop, metal glint, hand-drawn normal maps that light blocks by calculation, and a colour pass. Every effect can be switched off in Settings > Shaders. Client-side, adds no content. Desktop and Android. Tested on v160.7.",
-    "version": "0.1.2",
+    "version": "0.1.4",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,40 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v0.1.4",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.4/mshaders.jar",
+      "sha256": "3007043cc130c843c798b5809b1a498624091af6bd2886696b73f1f25350fde8",
+      "modVersion": "0.1.4",
+      "sizeBytes": 385884,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-16T22:19:21Z"
+    },
+    {
+      "tag": "v0.1.3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.3/mshaders.jar",
+      "sha256": "7c91c5a5d41adcb41ace7b68b2de4838bed408566fc58f88002782de8455bcc5",
+      "modVersion": "0.1.3",
+      "sizeBytes": 361110,
+      "downloadCount": 19,
+      "releasedAt": "2026-11-16T19:39:43Z"
+    },
     {
       "tag": "v0.1.2",
       "kind": "release",
@@ -33,7 +67,7 @@
       "sha256": "74e8c95637fe961f0d7446920458ae3f3546fcda046c5bf881c7643e74024bd4",
       "modVersion": "0.1.2",
       "sizeBytes": 359604,
-      "downloadCount": 3,
+      "downloadCount": 8,
       "releasedAt": "2026-11-16T17:35:55Z"
     },
     {
@@ -67,7 +101,7 @@
       "sha256": "f820ff41c57ea060fdea3e7af7ede7230adaf38585dea57709a0f5f8a1d33f60",
       "modVersion": "0.1.0",
       "sizeBytes": 297426,
-      "downloadCount": 7,
+      "downloadCount": 8,
       "releasedAt": "2026-11-16T11:51:26Z"
     }
   ]
