@@ -1,14 +1,14 @@
 {
   "formatVersion": 3,
   "repo": "idupe/delivarica-mod",
-  "generatedAt": "2026-11-17T22:20:49.052Z",
+  "generatedAt": "2026-11-18T07:24:51.728Z",
   "modType": "java",
   "meta": {
     "name": "Delivarica-mod",
     "author": "\"[coral]Revision [accent]Team [gray]\"",
     "description": "\n\nOur first full-fledged mod makes a significant contribution to the expansion of game content by adding a new planet. Despite potential technical errors or flaws. I am sure that this mod will enrich the user's gaming experience. I would appreciate any feedback that will help improve the quality of the mod.\n    \n    [stat]Authors:\n       Sprites -  Splinter  (Split) \n        Code - iÐupe\n        Maps- Yartera \n        Music- 深淵\n        \n    [stat]Special Thanks:\n        Bloody Ocean\n        Afarius\n",
     "version": "v0.1",
-    "minGameVersion": "160.7",
+    "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
     "legacyCompatible": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "0.1.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/iDupe/Delivarica-mod/releases/download/0.1.1/Delivarica-mod.jar",
+      "sha256": "a6bcfaf56b0663075956e73c7eb0477bd765b27b1b12cc2b956efe148e7085db",
+      "modVersion": "v0.1",
+      "sizeBytes": 314220,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-18T06:09:45Z"
+    },
     {
       "tag": "0.1.0",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "6566dcdfb15704aabe3857d3c504c0c5e00a3d1363c83edbcbbd294738764468",
       "modVersion": "v0.1",
       "sizeBytes": 241547,
-      "downloadCount": 11,
+      "downloadCount": 14,
       "releasedAt": "2026-11-15T17:18:05Z"
     }
   ]

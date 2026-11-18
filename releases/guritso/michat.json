@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "guritso/michat",
-  "generatedAt": "2026-11-17T22:20:49.052Z",
+  "generatedAt": "2026-11-18T07:24:51.728Z",
   "modType": "java",
   "meta": {
     "name": "michat",
     "author": "guritso",
     "description": "Peer-to-peer chat over WireGuard, Tailscale, or your local LAN. Chat across separate single-player and campaign sessions without hosting the same server, share schematics, and use native chat alongside MiChat when hosting or joining a server.",
-    "version": "1.8.8",
+    "version": "1.8.9",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v1.8.9",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/guritso/michat/releases/download/v1.8.9/michat.jar",
+      "sha256": "07e230de6c4d59359b66d74ac87b60d7291f678ac45ed5105bb2a68fa9443470",
+      "modVersion": "1.8.9",
+      "sizeBytes": 166522,
+      "downloadCount": 7,
+      "releasedAt": "2026-11-18T03:18:08Z"
+    },
     {
       "tag": "v1.8.8",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "d139683bd12489baaa59714ad294fbf1e44200ff745371b088cd17577cf6072e",
       "modVersion": "1.8.8",
       "sizeBytes": 164162,
-      "downloadCount": 21,
+      "downloadCount": 22,
       "releasedAt": "2026-11-16T17:36:57Z"
     },
     {
