@@ -8,6 +8,9 @@ export const VERSIONS_API =
 export const BUILDS_API =
   'https://api.github.com/repos/Anuken/MindustryBuilds/releases';
 export const VERSIONS_REL_PATH = 'mindustry/versions.json';
+export const BE_DIR = 'mindustry/be';
+export const BE_INDEX_REL_PATH = 'mindustry/be/index.json';
+export const BE_PAGE_SIZE = 50;
 
 const PER_PAGE = 100;
 const MAX_PAGES = 30;
@@ -267,5 +270,68 @@ export async function fetchLatestBe(client, { etag = null } = {}) {
     notModified: false,
     release: usable ? trimLatestBe(usable) : null,
     etag: response.etag ?? null,
+  };
+}
+
+export function beReleasesApiUrl(page, perPage = PER_PAGE) {
+  return `${assertApiUrl(BUILDS_API)}?per_page=${perPage}&page=${page}`;
+}
+
+// 拉取 BE 历史列表（最多 maxPages 页，每页 100 条）；失败时返回已拿到的部分
+export async function fetchBeReleases(client, { maxPages = 10, log = () => {} } = {}) {
+  const releases = [];
+  for (let page = 1; page <= maxPages; page += 1) {
+    let response;
+    try {
+      response = await client.get(beReleasesApiUrl(page));
+    } catch (error) {
+      log(`[be] 第 ${page} 页失败：${error.message}`);
+      break;
+    }
+    if (response.status !== 200) {
+      log(`[be] 第 ${page} 页 HTTP ${response.status}`);
+      break;
+    }
+    let items;
+    try {
+      items = JSON.parse(response.text);
+    } catch (error) {
+      log(`[be] 第 ${page} 页 JSON 解析失败：${error.message}`);
+      break;
+    }
+    if (!Array.isArray(items) || items.length === 0) break;
+    for (const item of items) {
+      if (isUsableBeRelease(item)) releases.push(trimLatestBe(item));
+    }
+    if (items.length < PER_PAGE) break;
+  }
+  return releases;
+}
+
+export function buildBePageFiles({ releases, pageSize = BE_PAGE_SIZE, updateTime }) {
+  const pages = [];
+  for (let offset = 0; offset < releases.length; offset += pageSize) {
+    pages.push({
+      formatVersion: 1,
+      page: pages.length + 1,
+      pageSize,
+      update_time: updateTime,
+      builds: releases.slice(offset, offset + pageSize),
+    });
+  }
+  return {
+    index: {
+      formatVersion: 1,
+      update_time: updateTime,
+      source: BUILDS_API,
+      pageSize,
+      total: releases.length,
+      pages: pages.map((item) => ({
+        page: item.page,
+        count: item.builds.length,
+        path: `${BE_DIR}/page-${item.page}.json`,
+      })),
+    },
+    pages,
   };
 }

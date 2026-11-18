@@ -10,6 +10,8 @@ import {
   fetchAllVersions,
   fetchVersionsIncremental,
   fetchLatestBe,
+  fetchBeReleases,
+  buildBePageFiles,
 } from '../src/versions.js';
 
 function rawRelease(index, overrides = {}) {
@@ -282,4 +284,31 @@ test('fetchVersionsIncremental：没有本地列表时全量翻页', async () =>
   assert.equal(result.rebuilt, true);
   assert.equal(result.fetchedPages, 2);
   assert.equal(result.releases.length, 105);
+});
+
+test('fetchBeReleases：翻页、过滤无 jar 的 build；buildBePageFiles 每 50 个一页', async () => {
+  const raw = Array.from({ length: 120 }, (_, index) => ({
+    ...rawRelease(1000 + index),
+    tag_name: `v${1000 + index}`,
+  }));
+  const failed = { ...rawRelease(2000), tag_name: 'v2000', assets: [] };
+  const pages = [[failed, ...raw.slice(0, 99)], raw.slice(99)];
+  const client = fakeClient((url) => {
+    const page = Number(new URL(url).searchParams.get('page'));
+    return pageResponse(pages[page - 1] ?? []);
+  });
+  const releases = await fetchBeReleases(client, { maxPages: 3 });
+  assert.equal(releases.length, 120);
+  assert.equal(releases[0].tag_name, 'v1000');
+  assert.equal(releases.at(-1).tag_name, 'v1119');
+
+  const files = buildBePageFiles({ releases, updateTime: '2026-11-18T00:00:00Z' });
+  assert.equal(files.index.total, 120);
+  assert.equal(files.index.pageSize, 50);
+  assert.equal(files.index.pages.length, 3);
+  assert.deepEqual(
+    files.index.pages.map((page) => page.count),
+    [50, 50, 20],
+  );
+  assert.equal(files.pages[2].builds.at(-1).tag_name, 'v1119');
 });

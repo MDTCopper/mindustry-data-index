@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/be-index.json",
+  "title": "be-index",
+  "description": "mindustry/be/index.json：BE build 列表分页索引（每页 50）",
+  "type": "object",
+  "properties": {
+    "formatVersion": { "const": 1 },
+    "update_time": { "type": "string" },
+    "source": { "type": "string" },
+    "pageSize": { "type": "integer", "minimum": 1 },
+    "total": { "type": "integer", "minimum": 0 },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": { "type": "integer", "minimum": 1 },
+          "count": { "type": "integer", "minimum": 0 },
+          "path": { "type": "string" }
+        },
+        "required": ["page", "count", "path"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["formatVersion", "update_time", "pageSize", "total", "pages"],
+  "additionalProperties": true
+}

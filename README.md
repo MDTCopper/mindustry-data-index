@@ -9,7 +9,7 @@ Mindustry 生态的公共数据索引：由 GitHub Actions 定时抓取并自动
 | --- | --- | --- |
 | 官方模组索引 | `index.json`（默认）、`index-full.json`（全量）、`releases/<owner>/<repo>.json`、`summary.json/csv` | 最新 100 tag 每 2h；第 2 页每周；全量每月 |
 | 社区模组索引 | `community/index.json`、`community/index-full.json`、`community/releases/...`、`community/summary.*` | 同官方；topic 发现/黑名单每天 |
-| 游戏版本 | `mindustry/versions.json`、`mindustry/recommended-java.json` | 约 30 分钟 |
+| 游戏版本 | `mindustry/versions.json`、`mindustry/recommended-java.json`、`mindustry/be/` | 约 30 分钟 |
 | 版本门禁 | `mindustry/mod-gate.json`、`mindustry/java-gate.json` | 约 30 分钟 |
 | 设置适配 | `mindustry/setting-adapter/index.json`、`current.json`、`changes.json` | 随版本列表（约 30 分钟） |
 | 依赖图 | `dependencies.json` | 随模组/社区刷新 |
@@ -29,6 +29,7 @@ https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/community/index-full.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/versions.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/recommended-java.json
+https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/be/index.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/mod-gate.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/mindustry/java-gate.json
 https://raw.githubusercontent.com/MDTCopper/mindustry-data-index/main/status.json
@@ -81,6 +82,8 @@ null 字段不写；没有 `minGameVersion` 的条目丢弃。
 - `mindustry/versions.json`：全部正式版 + 最新 BE，字段兼容启动器 `MindustryReleaseListSnapshot`；
   资产 `sha256` 为**可选**：GitHub API 只对新上传资产提供 digest，老资产/源码归档没有就不写。
   最新 BE 会自动跳过没有 jar 产物的失败 build。
+- `mindustry/be/`：BE build 历史列表，每 50 个 build 一页（`page-1.json`…），`index.json` 给分页信息；
+  当前抓最近 1000 个 build（10 页 API）。
 - `mindustry/recommended-java.json`：游戏主版本号（jar 内 `number`）→ 推荐 Java 大版本规则 +
   Copper 加载器最低 Java；启动器不用再硬编码。
 - `mindustry/setting-adapter/`：跟随最新 Mindustry 版本，从 `SettingsMenuDialog.java` +

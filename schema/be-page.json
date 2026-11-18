@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MDTCopper/mindustry-data-index/schema/be-page.json",
+  "title": "be-page",
+  "description": "mindustry/be/page-N.json：50 个 BE build 一页",
+  "type": "object",
+  "properties": {
+    "formatVersion": { "const": 1 },
+    "page": { "type": "integer", "minimum": 1 },
+    "pageSize": { "type": "integer", "minimum": 1 },
+    "update_time": { "type": "string" },
+    "builds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": ["string", "null"] },
+          "tag_name": { "type": "string" },
+          "published_at": { "type": ["string", "null"] },
+          "body": { "type": "string" },
+          "assets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "size": { "type": "integer" },
+                "download_count": { "type": "integer" },
+                "browser_download_url": { "type": "string" },
+                "sha256": { "type": ["string", "null"] }
+              },
+              "required": ["name", "size", "browser_download_url"],
+              "additionalProperties": true
+            }
+          }
+        },
+        "required": ["tag_name", "assets"],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["formatVersion", "page", "pageSize", "update_time", "builds"],
+  "additionalProperties": true
+}

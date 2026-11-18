@@ -149,13 +149,17 @@ import {
 import { writeDependencyIndex } from './dependencies.js';
 import { backfillMeta } from './meta-backfill.js';
 import {
+  BE_DIR,
+  BE_INDEX_REL_PATH,
   VERSIONS_REL_PATH,
+  buildBePageFiles,
   buildVersionsFile,
-  versionsBodyChanged,
   fetchAllVersions,
+  fetchBeReleases,
   fetchLatestBe,
   fetchVersionsIncremental,
   trimRelease,
+  versionsBodyChanged,
 } from './versions.js';
 import {
   RECOMMENDED_JAVA_REL_PATH,
@@ -2884,7 +2888,7 @@ async function runVersions(options, context) {
     },
     updateTime: isoSeconds(),
   });
-  const changed = versionsBodyChanged(previous, nextFile);
+  let changed = versionsBodyChanged(previous, nextFile);
   if (changed) {
     if (!options.dryRun) {
       await writeJsonAtomic(file, nextFile);
@@ -2912,6 +2916,48 @@ async function runVersions(options, context) {
     }
     log('[versions] 已更新推荐 Java 规则');
   }
+
+  // BE 历史列表：每 50 个 build 一页，供资源中继/启动器分页取
+  let beChanged = false;
+  try {
+    const beReleases = await fetchBeReleases(apiClient, { maxPages: 10, log });
+    if (beReleases.length > 0) {
+      const beFiles = buildBePageFiles({
+        releases: beReleases,
+        updateTime: isoSeconds(),
+      });
+      const beIndexPath = path.join(outDir, BE_INDEX_REL_PATH);
+      const previousBeIndex = await readJsonIfExists(beIndexPath).catch(() => null);
+      if (
+        !previousBeIndex ||
+        JSON.stringify({ ...previousBeIndex, update_time: '' }) !==
+          JSON.stringify({ ...beFiles.index, update_time: '' })
+      ) {
+        if (!options.dryRun) await writeJsonAtomic(beIndexPath, beFiles.index);
+        beChanged = true;
+      }
+      for (const page of beFiles.pages) {
+        const pagePath = path.join(outDir, BE_DIR, `page-${page.page}.json`);
+        const previousPage = await readJsonIfExists(pagePath).catch(() => null);
+        if (
+          !previousPage ||
+          JSON.stringify({ ...previousPage, update_time: '' }) !==
+            JSON.stringify({ ...page, update_time: '' })
+        ) {
+          if (!options.dryRun) await writeJsonAtomic(pagePath, page);
+          beChanged = true;
+        }
+      }
+      log(
+        `[versions] BE 列表 ${beReleases.length} 个 build，${beFiles.pages.length} 页（每页 50）` +
+          `${options.dryRun ? '（dry-run 未写入）' : ''}`,
+      );
+    }
+  } catch (error) {
+    log(`[versions] BE 列表更新失败：${error.message}`);
+  }
+  if (beChanged) changed = true;
+
   return {
     code: 0,
     releases,

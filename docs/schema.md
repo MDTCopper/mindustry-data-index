@@ -761,3 +761,8 @@ mindustry/setting-adapter/changes.json：{formatVersion,update_time,entries:[{fr
 `{formatVersion,generatedAt,mods:{internalName:{repo,source,name,version,dependencies}},`
 `reverse:{dep:[dependents]},missing:[{id,repo,source,dependency}]}`。
 index 条目：`dependencies: [internalName]`、`mindustryDependency: "..."`（Copper）。
+
+### be/
+
+`mindustry/be/index.json`：`{formatVersion,update_time,source,pageSize,total,pages:[{page,count,path}]}`。
+`mindustry/be/page-N.json`：`{formatVersion,page,pageSize,update_time,builds:[{name,tag_name,published_at,body,assets}]}`，每页 50。
