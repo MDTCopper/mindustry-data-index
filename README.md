@@ -57,7 +57,14 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
   列表顶层有 `sortOptions` 与 `defaultSort="recommended"`。
 - 推荐权重在 `src/heat.js` 的 `RECOMMEND_WEIGHTS`：下载 0.25 / 星标 0.3 / 更新 0.3 /
   6 小时时间桶随机 0.3 / 新 mod 加成 0.325 / 长期不更新扣分 0.4。
-  `heat` 是旧热度权重预设；`updated`/`downloads`/`stars`/`newest` 是单一字段排序。
+  **随机只用于 `recommended`，`heat` 没有随机因素**。
+- 热度权重（`heat` 排名）：组件分 下载 0.4 / 星标 0.5 / 更新 0.1；
+  `downloadsScore = 0.45 总下载量 + 0.30 近期变化 + 0.25 tag 平均下载量`，
+  `starsScore = 0.6 总星标 + 0.4 近期变化`；更新分 Java 为 0.7 release + 0.3 commit，
+  非 Java 为 0.8 commit。tag 平均下载量只统计有首选资源的 Release，tag-only/source 不计入；
+  没有任何可用资源的模组下载项按缺失处理，剩余权重归一。
+  `heat` 排名再乘新 mod 倍率（最高 1.325）并减长期不更新扣分。
+  `updated`/`downloads`/`stars`/`newest` 是单一字段排序。
 - **Copper 原生模组**：用 `copper.mod.json`/`copper.mod.hjson`；index 条目带 `copper: true`，`modType` 为 `java`。
 - **`gameVersionRanges`**：实际游戏版本闭区间（如 `[{from:"154",to:"160.7"}]`），按 `minGameVersion`
   与各版本门禁计算；可有多个不连续段。

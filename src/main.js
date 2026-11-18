@@ -94,6 +94,7 @@ import {
   snapshotValue,
 } from './heat.js';
 import { computeModStats } from './stats.js';
+import { tagDownloadStats } from './stats.js';
 import {
   buildSummary,
   summaryBodyChanged,
@@ -2422,6 +2423,7 @@ async function runHeat(options, context) {
   for (const mod of mods) {
     const totals = summary.get(mod.repo);
     const releases = await releaseFor(mod);
+    const tagStats = tagDownloadStats(releases, mod.hasJava === true);
     const createdAt = createdState.repos[mod.repo];
     const createdMs = createdAt ? Date.parse(createdAt) : null;
     const earliestRelease = earliestReleasePublishedAt(releases);
@@ -2480,6 +2482,8 @@ async function runHeat(options, context) {
       source: mod.source,
       totalDownloads: Number(totals?.totalDownloads) || 0,
       totalStars: Number(totals?.stars) || 0,
+      tagDownloadAvg: tagStats.tagDownloadAvg,
+      tagDownloadCount: tagStats.tagDownloadCount,
       hasJava: mod.hasJava === true,
       maintenance,
       downloadChanges,

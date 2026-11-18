@@ -11,6 +11,10 @@ export const STAR_WINDOW_WEIGHTS = { 1: 0.2, 7: 0.45, 30: 0.3, 180: 0.05 };
 export const UPDATE_WINDOW_WEIGHTS = { 7: 0.15, 30: 0.35, 90: 0.25, 180: 0.25 };
 export const TOTAL_WEIGHT = 0.6;
 export const CHANGE_WEIGHT = 0.4;
+// 下载组件内部权重：总下载量 / 近期变化 / tag 平均下载量（限制高频低下载的更新）
+export const DOWNLOAD_TOTAL_WEIGHT = 0.45;
+export const DOWNLOAD_CHANGE_WEIGHT = 0.3;
+export const DOWNLOAD_TAG_AVG_WEIGHT = 0.25;
 export const STOCK_MAG_WEIGHT = 0.8;
 export const STOCK_PERCENTILE_WEIGHT = 0.2;
 export const COMPONENT_WEIGHTS = { downloads: 0.4, stars: 0.5, update: 0.1 };
@@ -414,6 +418,9 @@ export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = 
   const count = mods.length;
   const downloadStock = stockScores(mods.map((mod) => mod.totalDownloads));
   const starStock = stockScores(mods.map((mod) => mod.totalStars));
+  const tagAvgStock = stockScores(
+    mods.map((mod) => Number(mod.tagDownloadAvg) || 0),
+  );
 
   const downloadPercentiles = {};
   const starPercentiles = {};
@@ -449,7 +456,11 @@ export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = 
       STAR_WINDOW_WEIGHTS,
     );
     const downloadsScore =
-      TOTAL_WEIGHT * downloadStock.scores[index] + CHANGE_WEIGHT * downloadChangeScore;
+      Number.isFinite(Number(mod.tagDownloadCount))
+        ? DOWNLOAD_TOTAL_WEIGHT * downloadStock.scores[index] +
+          DOWNLOAD_CHANGE_WEIGHT * downloadChangeScore +
+          DOWNLOAD_TAG_AVG_WEIGHT * tagAvgStock.scores[index]
+        : TOTAL_WEIGHT * downloadStock.scores[index] + CHANGE_WEIGHT * downloadChangeScore;
     const starsScore =
       TOTAL_WEIGHT * starStock.scores[index] + CHANGE_WEIGHT * starChangeScore;
     const updateScore =
@@ -463,8 +474,11 @@ export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = 
       daysSinceCommit: mod.daysSinceCommit ?? null,
     });
     // 非 Java 且没有任何 release 资产下载量：下载项视为缺失（不是 0 分），剩余权重按比例重归一
-    const downloadsMissing =
-      mod.hasJava === false && (Number(mod.totalDownloads) || 0) === 0;
+    // 有 tag 统计时，只有「没有可用资源的 tag」才算缺失；有资源但下载量为 0 仍参与平均分
+    const hasTagStats = Number.isFinite(Number(mod.tagDownloadCount));
+    const downloadsMissing = hasTagStats
+      ? Number(mod.tagDownloadCount) <= 0
+      : mod.hasJava === false && (Number(mod.totalDownloads) || 0) === 0;
     const availableWeight =
       COMPONENT_WEIGHTS.stars + COMPONENT_WEIGHTS.update;
     const effectiveWeights = downloadsMissing
@@ -515,6 +529,8 @@ export function computeHeat(mods, { recommendOptions = {}, now = new Date() } = 
       source: mod.source,
       totalDownloads: mod.totalDownloads ?? 0,
       totalStars: mod.totalStars ?? 0,
+      tagDownloadAvg: mod.tagDownloadAvg ?? null,
+      tagDownloadCount: mod.tagDownloadCount ?? null,
       downloadsMissing,
       effectiveWeights,
       stockShare: {
@@ -639,6 +655,8 @@ export const HEAT_SUMMARY_COLUMNS = [
   'source',
   'totalDownloads',
   'totalStars',
+  'tagDownloadAvg',
+  'tagDownloadCount',
   'stockShareDownloads',
   'stockShareStars',
   'stockMagDownloads',
@@ -683,6 +701,8 @@ export function heatSummaryRow(entry) {
     source: entry.source,
     totalDownloads: entry.totalDownloads,
     totalStars: entry.totalStars,
+    tagDownloadAvg: entry.tagDownloadAvg ?? null,
+    tagDownloadCount: entry.tagDownloadCount ?? null,
     stockShareDownloads: entry.stockShare?.downloads ?? 0,
     stockShareStars: entry.stockShare?.stars ?? 0,
     stockMagDownloads: entry.stockMag?.downloads ?? 0,

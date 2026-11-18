@@ -73,3 +73,23 @@ export function computeModStats(releases, hasJava) {
     totalSizeBytes,
   };
 }
+
+// tag 平均下载量：只统计真正有首选资源的 Release，tag-only / source / 无资源条目不计入分母。
+// 用于限制「更新很频繁、但每个 tag 下载量很低」的模组。
+export function tagDownloadStats(releases, hasJava) {
+  let sum = 0;
+  let count = 0;
+  for (const release of Array.isArray(releases) ? releases : []) {
+    if (release?.hasRelease === false) continue;
+    const assets = Array.isArray(release?.assets) ? release.assets : [];
+    const preferred = preferredAsset(assets, hasJava);
+    if (!preferred) continue;
+    sum += toCount(preferred.downloadCount);
+    count += 1;
+  }
+  return {
+    tagDownloadAvg: count > 0 ? sum / count : null,
+    tagDownloadCount: count,
+    tagDownloadTotal: sum,
+  };
+}

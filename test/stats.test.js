@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { preferredAsset, computeModStats } from '../src/stats.js';
+import { preferredAsset, computeModStats, tagDownloadStats } from '../src/stats.js';
 
 function release(assets, extra = {}) {
   return { tag: 'v1', assets, ...extra };
@@ -119,4 +119,32 @@ test('computeModStats：tag-only 条目不影响统计与 latest（按有 Releas
       totalSizeBytes: null,
     },
   );
+});
+
+test('tagDownloadStats：只按有首选资源的 Release 求平均，tag-only/无资源不计入', () => {
+  const releases = [
+    {
+      tag: 'v3',
+      hasRelease: true,
+      assets: [
+        { name: 'mod.jar', size: 10, downloadCount: 30 },
+        { name: 'other.zip', size: 20, downloadCount: 99 },
+      ],
+    },
+    {
+      tag: 'v2',
+      hasRelease: true,
+      assets: [{ name: 'mod.jar', size: 10, downloadCount: 10 }],
+    },
+    { tag: 'v1', hasRelease: false, assets: [] },
+    { tag: 'source', hasRelease: true, assets: [] },
+  ];
+  const stats = tagDownloadStats(releases, true);
+  assert.equal(stats.tagDownloadCount, 2);
+  assert.equal(stats.tagDownloadTotal, 40);
+  assert.equal(stats.tagDownloadAvg, 20);
+
+  const noAssets = tagDownloadStats([{ hasRelease: false, assets: [] }], false);
+  assert.equal(noAssets.tagDownloadCount, 0);
+  assert.equal(noAssets.tagDownloadAvg, null);
 });
