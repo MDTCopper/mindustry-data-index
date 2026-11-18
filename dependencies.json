@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-18T07:33:23.956Z",
+  "generatedAt": "2026-11-18T17:28:57.553Z",
   "mods": {
     "scheme-size": {
       "repo": "itsxeroc/scheme-size",
@@ -683,7 +683,7 @@
       "version": "0.2.3.1A",
       "dependencies": []
     },
-    "visual-addition": {
+    "line-sorter-helper": {
       "repo": "azuredx/linesorter",
       "source": "official",
       "name": "line-sorter-helper",
@@ -1333,6 +1333,13 @@
       "version": "2",
       "dependencies": []
     },
+    "icon-type": {
+      "repo": "darkjeanne/icontype",
+      "source": "official",
+      "name": "icon-type",
+      "version": "1.0.0",
+      "dependencies": []
+    },
     "schempack-manager": {
       "repo": "darkjeanne/schempack-manager",
       "source": "official",
@@ -1372,6 +1379,13 @@
       "repo": "darkv-p3nt4/erekir-package-pack",
       "source": "official",
       "name": "dvep",
+      "version": "1.0",
+      "dependencies": []
+    },
+    "visual-addition": {
+      "repo": "darkv-p3nt4/visual-addition-pack",
+      "source": "official",
+      "name": "visual-addition",
       "version": "1.0",
       "dependencies": []
     },
@@ -1981,13 +1995,6 @@
       "source": "official",
       "name": "smp",
       "version": "1.1",
-      "dependencies": []
-    },
-    "scheme-size-god": {
-      "repo": "fallavalon/scheme-size-god",
-      "source": "official",
-      "name": "scheme-size-god",
-      "version": "0.5.4",
       "dependencies": []
     },
     "gier-java": {
@@ -2777,6 +2784,13 @@
       "source": "official",
       "name": "埃里克卫星",
       "version": "1.0",
+      "dependencies": []
+    },
+    "scheme-size-god": {
+      "repo": "karg-nacht/scheme-size-god",
+      "source": "official",
+      "name": "scheme-size-god",
+      "version": "0.5.4",
       "dependencies": []
     },
     "scheme-size-plus": {
@@ -4255,7 +4269,7 @@
       "repo": "palle00/eclipse-build",
       "source": "official",
       "name": "eclipse",
-      "version": "0.3.1",
+      "version": "0.5.0",
       "dependencies": []
     },
     "emerald-mod": {
@@ -4558,13 +4572,6 @@
       "source": "official",
       "name": "fluxweave",
       "version": "1.11.8",
-      "dependencies": []
-    },
-    "project-synthesis": {
-      "repo": "ranii-reprograms/project-synthesis",
-      "source": "official",
-      "name": "project-synthesis",
-      "version": "0.1.0",
       "dependencies": []
     },
     "compactmachine": {
@@ -6217,7 +6224,7 @@
       "repo": "xerxes-anominus/nevix",
       "source": "official",
       "name": "nevix",
-      "version": "Beta: 0.1.2",
+      "version": "Beta: 0.2.0",
       "dependencies": []
     },
     "bettermindustry": {
@@ -6521,7 +6528,7 @@
     "arxkhimeris": "arx-khimeris",
     "eventide": "eventide",
     "azaria": "azaria",
-    "visualaddition": "visual-addition",
+    "linesorterhelper": "line-sorter-helper",
     "b919waterreflection": "b919-waterreflection",
     "vanillaextended": "vanilla extended",
     "smalladditionenergy": "small-addition-energy",
@@ -6611,12 +6618,14 @@
     "sbchostguard": "sbc-host-guard",
     "sbcsharedresearch": "sbc-shared-research",
     "mindurkacompat": "mindurkacompat",
+    "icontype": "icon-type",
     "schempackmanager": "schempack-manager",
     "customdifficulty159": "custom-difficulty-159",
     "hardernumbersectors": "harder-number-sectors",
     "squareshield": "square shield",
     "cmtc": "cmtc",
     "dvep": "dvep",
+    "visualaddition": "visual-addition",
     "copperdoors": "copperdoors",
     "greenlogic": "greenlogic",
     "farborneindustries": "farborne-industries",
@@ -6703,7 +6712,6 @@
     "newturrets": "new-turrets",
     "mm": "mm",
     "smp": "smp",
-    "schemesizegod": "scheme-size-god",
     "gierjava": "gier-java",
     "gr": "gr",
     "infestation": "infestation",
@@ -6814,6 +6822,7 @@
     "advdiff": "advdiff",
     "unicorptechnologies": "unicorp-technologies",
     "hostpause": "host-pause",
+    "schemesizegod": "scheme-size-god",
     "schemesizeplus": "scheme-size-plus",
     "kadust": "kadust",
     "mindustrysurvivors": "mindustry-survivors",
@@ -7057,7 +7066,6 @@
     "mo": "mo",
     "ln": "ln",
     "fluxweave": "fluxweave",
-    "projectsynthesis": "project-synthesis",
     "compactmachine": "compactmachine",
     "moredrill": "moredrill",
     "asextras": "as-extras",
