@@ -1,5 +1,32 @@
 {
   "formatVersion": 1,
-  "update_time": "2026-11-09T12:09:23.337Z",
-  "entries": []
+  "update_time": "2026-11-19T01:27:20.712Z",
+  "entries": [
+    {
+      "formatVersion": 1,
+      "update_time": "2026-11-19T01:27:20.712Z",
+      "from_version": "v160.7",
+      "to_version": "v160.8",
+      "build": 160,
+      "add": [],
+      "changed": [
+        {
+          "key": "destroyedblocks",
+          "name": {
+            "en": "Display Destroyed Blocks",
+            "zh_CN": "显示已摧毁的建筑"
+          },
+          "description": {
+            "en": "When enabled, ghost plans of destroyed blocks are shown for rebuilding.",
+            "zh_CN": "启用后，被摧毁的方块会留下废墟。"
+          },
+          "type": "bool",
+          "categories": [
+            "graphics"
+          ]
+        }
+      ],
+      "remove": []
+    }
+  ]
 }
