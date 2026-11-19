@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "redeagle0705/shinny-dustry",
-  "generatedAt": "2026-11-19T10:17:29.655Z",
+  "generatedAt": "2026-11-19T20:33:50.080Z",
   "modType": "java",
   "meta": {
     "name": "mshaders",
     "author": "REDEagle0705, Claude",
     "description": "Visual effects only: water with reflections, ice and ground effects, directional block shadows, lights that blocks and units stop, metal glint, hand-drawn normal maps that light blocks and units by calculation, engines of units as streaks of light, and a colour pass. Every effect can be switched off in Settings > Shaders. Client-side, adds no content. Desktop and Android. Tested on v160.7.",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v0.1.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.8/mshaders.jar",
+      "sha256": "af5dfe334c176d65e461c18bbaaf4a88dbfdfb6ae31402ecaf04575f9717d82b",
+      "modVersion": "0.1.8",
+      "sizeBytes": 608990,
+      "downloadCount": 8,
+      "releasedAt": "2026-11-19T17:11:13Z"
+    },
     {
       "tag": "v0.1.7",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "e6c9d5b83c654512c2cdbed37c5abb04e00e1fc732a9ec160469e2045d5c5484",
       "modVersion": "0.1.7",
       "sizeBytes": 500816,
-      "downloadCount": 40,
+      "downloadCount": 55,
       "releasedAt": "2026-11-18T05:10:42Z"
     },
     {
