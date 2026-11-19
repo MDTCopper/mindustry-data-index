@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "wang-0-1/random-enhancement",
-  "generatedAt": "2026-11-17T22:20:49.052Z",
+  "generatedAt": "2026-11-19T00:21:25.153Z",
   "modType": "java",
   "meta": {
     "name": "raen",
     "author": "WaNg-0-1",
-    "description": "一个给敌军提供随机强化的Java模组\n A Java mod that gives random buffs to the enemy army",
-    "version": "160.3.5",
+    "description": "一个给单位或子弹提供随机强化的Java模组\n A Java mod that gives random buffs to units or bullets",
+    "version": "160.3.92",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v160.3.93",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.7"
+        }
+      ],
+      "downloadUrl": "https://github.com/WaNg-0-1/Random-Enhancement/releases/download/v160.3.93/Random-Enhancement.jar",
+      "sha256": "b375fdc3f6b3a1f219d15ede61b49d30be36b0c5034b39e756d77e9d1276f00e",
+      "modVersion": "160.3.92",
+      "sizeBytes": 451629,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T21:11:07Z"
+    },
     {
       "tag": "v160.3.5",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "2417965685a8ae6a59c43c83d8b484609353594c845a1fc6ef339a447e9c616b",
       "modVersion": "160.3.5",
       "sizeBytes": 204816,
-      "downloadCount": 61,
+      "downloadCount": 64,
       "releasedAt": "2026-10-23T11:13:55Z"
     },
     {
@@ -50,7 +67,7 @@
       "sha256": "1afb4347ceddd8f5c2d07b897d3167b8c0aafc184b1b3f55ffcc610ea21be851",
       "modVersion": "160.3.4",
       "sizeBytes": 107761,
-      "downloadCount": 34,
+      "downloadCount": 35,
       "releasedAt": "2026-10-16T13:29:55Z"
     }
   ]
