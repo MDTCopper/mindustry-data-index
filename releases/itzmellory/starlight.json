@@ -1,0 +1,1077 @@
+{
+  "formatVersion": 3,
+  "repo": "itzmellory/starlight",
+  "generatedAt": "2026-11-19T10:17:29.655Z",
+  "modType": "java",
+  "meta": {
+    "name": "starlight",
+    "author": "[[]#ffffff]⚠ eyeless[[]] [[]#b3b3b3]and[[]] [[]#666666]VI Clan [[]]",
+    "description": "\n[[]#ffffff] Sta[[]][[]#e6e6e6]rlight[[]] [[]#b3b3b3]Hybrid Mapmaking Toolkit[[]] [[]]\n\n[[]#cccccc]A hybrid editor combining advanced map generators, terrain editing utilities, visual tools, and workflow features inspired by Map Filter Ext, Testing Utilities, and Better Terrain Gen v2.[[]]\n\n[[]#ffffff]Maps made with Starlight remain[[]] [[]#b3b3b3]compatible with the original game.[[]]\n\n[[]#ffffff] Fea[[]][[]#cccccc]tures[[]]:[[]]\n\n[[]#ffffff]- Adv[[]][[]#e6e6e6]anced[[]] [[]#808080]Generators[[]] [[]#666666] -[[]]\n\n[[]#b3b3b3]Procedural terrain tools with noise, octaves, falloff, tilt, and distortion controls; water generation with shallow-water, shoal, and depth-warp options; ruin scatter and structured ruins with rooms, corridors, and step controls; and block rotation tools.[[]]\n\n[[]#ffffff]- Ter[[]][[]#e6e6e6]rain[[]] [[]#808080]Editing and Clipboard[[]] [[]#666666] -[[]]\n\n[[]#b3b3b3]Select, copy, cut, paste, rotate, and flip terrain regions. Save and reuse terrain schemes, use rectangular or shaped brushes, edit cliffs, draw strict 45-degree lines, and work with terrain-focused erase and editing tools.[[]]\n\n[[]#ffffff]- Map[[]][[]#e6e6e6]Art[[]], [[]#808080]Stencils and Image Tools[[]] [[]#666666] -[[]]\n\n[[]#b3b3b3]Convert images into map terrain or colored-block structures. Place translucent reference stencils over the map to trace or recreate artwork with precision.[[]]\n\n[[]#ffffff]- Map[[]][[]#e6e6e6]Utilities[[]] and Editor Workflow[[]] [[]#666666] -[[]]\n\n[[]#b3b3b3]Additional map-editor utilities and workflow enhancements, including extended editing controls and tools adapted from the UpperUi and Testing Utilities concepts.[[]]\n\n[[]#ffffff]- Map[[]][[]#e6e6e6]Filter Tools[[]] [[]#666666] -[[]]\n\n[[]#b3b3b3]Filter and map inspection features based on the Map Filter Ext concept, integrated into the hybrid toolkit.[[]]\n\n[[]#ffffff]- Rem[[]][[]#e6e6e6]oved Size Limits[[]] [[]#666666] -[[]]\n\n[[]#b3b3b3]The built-in map-size unlocker removes standard minimum and maximum size restrictions when creating maps.[[]]\n\n[[]#ffffff]───────[[]][[]#e6e6e6]───────[[]][[]#b3b3b3]───  ───[[]][[]#808080]───────[[]][[]#4d4d4d]───────[[]]\n\n[[]#ffffff] Гиб[[]][[]#e6e6e6]ридный[[]] [[]#b3b3b3]Инструментарий Карт[[]] [[]]\n\n[[]#cccccc]Starlight объединяет генераторы карт, инструменты редактирования рельефа, визуальные утилиты и функции рабочего процесса. Вдохновлён и объединяет идеи Map Filter Ext, Testing Utilities и Better Terrain Gen v2.[[]]\n\n[[]#ffffff]Карты Starlight[[]] [[]#b3b3b3]совместимы с оригинальной игрой.[[]]\n\n[[]#ffffff] Возможности:[[]]\n\n[[]#ffffff]- Про[[]][[]#e6e6e6]двинутые генераторы[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]Процедурная генерация рельефа с настройками шума, октав, спада, наклона и искажения; генерация воды с мелководьем, отмелями и искривлением глубины; разброс руин и создание структур с комнатами, коридорами и настройкой шагов; инструменты вращения блоков.[[]]\n\n[[]#ffffff]- Ред[[]][[]#e6e6e6]актирование рельефа и буфер[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]Выделение, копирование, вырезание, вставка, поворот и отражение участков рельефа. Сохранение и повторное использование схем рельефа, прямоугольные и фигурные кисти, редактор скал, линии строго под 45 градусов и инструменты работы с рельефом.[[]]\n\n[[]#ffffff]- Мап[[]][[]#e6e6e6] арты, трафареты и изображения[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]Преобразование изображений в рельеф карты или структуры из цветных блоков. Полупрозрачные трафареты поверх карты помогают точно переносить и обводить изображения.[[]]\n\n[[]#ffffff]- Ут[[]][[]#e6e6e6]илиты и улучшения редактора[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]Дополнительные инструменты и улучшения рабочего процесса редактора карт, включая функции на основе идей UpperUi и Testing Utilities.[[]]\n\n[[]#ffffff]- Фи[[]][[]#e6e6e6]льтры карты[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]Инструменты фильтрации и анализа карты на основе концепции Map Filter Ext, интегрированные в общий гибридный набор инструментов.[[]]\n\n[[]#ffffff]- Сня[[]][[]#e6e6e6]тие ограничений размера[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]Встроенный модуль разблокировки снимает стандартные ограничения минимального и максимального размера создаваемых карт.[[]]\n\n[[]#ffffff]───────[[]][[]#e6e6e6]───────[[]][[]#b3b3b3]───  ───[[]][[]#808080]───────[[]][[]#4d4d4d]───────[[]]\n\n[[]#ffffff] 高级[[]][[]#e6e6e6]地图编辑器[[]] [[]#b3b3b3]混合工具集[[]] [[]]\n\n[[]#cccccc]Starlight 是一款混合地图编辑工具，整合高级地图生成器、地形编辑、视觉工具与编辑流程功能。灵感及部分功能概念来自 Map Filter Ext、Testing Utilities 和 Better Terrain Gen v2。[[]]\n\n[[]#ffffff]使用 Starlight 创建的地图[[]] [[]#b3b3b3]与原版游戏兼容。[[]]\n\n[[]#ffffff] 功能介绍：[[]]\n\n[[]#ffffff]- 高级生成器[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]程序化地形生成，提供噪声、八度、衰减、倾斜和扭曲参数；水域生成支持浅水、浅滩和深度扭曲；废墟散布与带房间、走廊及步进参数的结构生成；方块旋转工具。[[]]\n\n[[]#ffffff]- 地形编辑与剪贴板[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]支持地形区域选择、复制、剪切、粘贴、旋转和翻转。可保存并复用地形方案，使用矩形及形状画笔、悬崖编辑器、严格45度直线和专用地形编辑工具。[[]]\n\n[[]#ffffff]- 地图绘图、模板与图像工具[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]将图像转换为地图地形或彩色方块结构，并通过半透明参考模板辅助精准绘制。[[]]\n\n[[]#ffffff]- 编辑器扩展工具[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]整合额外地图编辑工具与流程优化功能，包含基于 UpperUi 和 Testing Utilities 概念的扩展能力。[[]]\n\n[[]#ffffff]- 地图过滤工具[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]整合基于 Map Filter Ext 概念的地图过滤及检查功能，融入统一的混合工具集。[[]]\n\n[[]#ffffff]- 解除地图尺寸限制[[]] [[]#808080] -[[]]\n\n[[]#b3b3b3]内置解锁功能移除创建地图时的标准最小与最大尺寸限制。[[]]\n\n[[]#ffffff]───────[[]][[]#e6e6e6]───────[[]][[]#b3b3b3]───  ───[[]][[]#808080]───────[[]][[]#4d4d4d]───────[[]]\n\n[[]#ffffff]⚠ Glory to VI — Brothers and Sisters! [[]]\n",
+    "version": "1.0",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "starlight.Starlight",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "versions": [
+    {
+      "tag": "v1.69",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.69/Starlight.jar",
+      "sha256": "2d7ce3a667c63213be6eade4c37a606c1a3a885752de307bb0c8c33b5045353b",
+      "modVersion": "1.0",
+      "sizeBytes": 724527,
+      "downloadCount": 8,
+      "releasedAt": "2026-11-19T08:29:09Z"
+    },
+    {
+      "tag": "v1.68",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.68/Starlight.jar",
+      "sha256": "e08b7985a8f3ebf640cb760ba63b81d986378440f01372c1287f6006504bb395",
+      "modVersion": "1.0",
+      "sizeBytes": 724535,
+      "downloadCount": 12,
+      "releasedAt": "2026-11-19T06:05:22Z"
+    },
+    {
+      "tag": "v1.67",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.67/Starlight.jar",
+      "sha256": "b369fc55814a034fa7099bafe48fd9546823546b99651a782e2eb329d799c65c",
+      "modVersion": "1.0",
+      "sizeBytes": 724523,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T06:04:08Z"
+    },
+    {
+      "tag": "v1.66",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.66/Starlight.jar",
+      "sha256": "2e6c84cbd0624ca108cbe38496b59828b79151272dc871884ce78d1e373d5e68",
+      "modVersion": "1.0",
+      "sizeBytes": 724519,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T06:02:15Z"
+    },
+    {
+      "tag": "v1.65",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.65/Starlight.jar",
+      "sha256": "38630ec6a7967cbb40f7ae0e5ac63b1cba45dff34ce98946e97e9a42043309ea",
+      "modVersion": "1.0",
+      "sizeBytes": 723911,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-19T05:28:18Z"
+    },
+    {
+      "tag": "v1.64",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.64/Starlight.jar",
+      "sha256": "a8bd5e2eb8926a44237e3044f16545867fcc68fc36341b3a67dcf8adfcdb39f5",
+      "modVersion": "1.0",
+      "sizeBytes": 724648,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T04:21:03Z"
+    },
+    {
+      "tag": "v1.63",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.63/Starlight.jar",
+      "sha256": "2a7d4c7744575c3647bc3846605c5a196324d9860c2094d76802a253c4c77f4a",
+      "modVersion": "1.0",
+      "sizeBytes": 725945,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T02:59:07Z"
+    },
+    {
+      "tag": "v1.62",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.62/Starlight.jar",
+      "sha256": "99f2854ca3cf6e53fccb69d9b998ee8196b2b5557d92f0a810a1b544e38c8542",
+      "modVersion": "1.0",
+      "sizeBytes": 723911,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-19T02:48:54Z"
+    },
+    {
+      "tag": "v1.61",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.61/Starlight.jar",
+      "sha256": "10a37a9f6b0ad6d9fff76810499d41e76bcf05d4c49d17a38a61227403a9e1bc",
+      "modVersion": "1.0",
+      "sizeBytes": 721871,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-19T02:33:16Z"
+    },
+    {
+      "tag": "v1.60",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.60/Starlight.jar",
+      "sha256": "9ddda880d8b5e32a748001be084bb500c84df66e0beec7d1c58d5688b7217530",
+      "modVersion": "1.0",
+      "sizeBytes": 723312,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T01:39:41Z"
+    },
+    {
+      "tag": "v1.59",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.59/Starlight.jar",
+      "sha256": "750de73974676a8f8e51addcd1517f1e910d74c69a74d64f94bc82bee1c2b297",
+      "modVersion": "1.0",
+      "sizeBytes": 723911,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-19T01:38:04Z"
+    },
+    {
+      "tag": "v1.58",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.58/Starlight.jar",
+      "sha256": "324518f4e62927b73a169da97cfe1ea48cf5d0097a1aedd6c8c5b46459e2c225",
+      "modVersion": "1.0",
+      "sizeBytes": 723876,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-19T01:37:09Z"
+    },
+    {
+      "tag": "v1.57",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.57/Starlight.jar",
+      "sha256": "eb22adcab75ec3920abbe58cb8463d8c6b7cedbf198c868db22327c5fbac5320",
+      "modVersion": "1.0",
+      "sizeBytes": 723867,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T01:24:22Z"
+    },
+    {
+      "tag": "v1.56",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.56/Starlight.jar",
+      "sha256": "4b4ed2fd536a69f9773b3b5b52cc3b5231a8544833706f4e8504593bbb9b11e2",
+      "modVersion": "1.0",
+      "sizeBytes": 723777,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-19T01:16:53Z"
+    },
+    {
+      "tag": "v1.55",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.55/Starlight.jar",
+      "sha256": "937ec8a1f408c569df1a576f4a821c51f425de93b5eb440e3c641b74d9f78dbc",
+      "modVersion": "1.0",
+      "sizeBytes": 723770,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-19T01:16:04Z"
+    },
+    {
+      "tag": "v1.54",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.54/Starlight.jar",
+      "sha256": "c5dd52ca065fcf348ffe4272e689c8107c202676a8d268a7ac1aee59368d1d14",
+      "modVersion": "1.0",
+      "sizeBytes": 721561,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-19T01:01:06Z"
+    },
+    {
+      "tag": "v1.53",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.53/Starlight.jar",
+      "sha256": "071c4a8ff2330ba5ef8443c1c093abd543d2bd946c81108b2cc481b5657ea716",
+      "modVersion": "1.0",
+      "sizeBytes": 720600,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-19T00:09:45Z"
+    },
+    {
+      "tag": "v1.52",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.52/Starlight.jar",
+      "sha256": "84b1cdc90ecf1b51050fa68ef8577e67e66258d3d5ffad2ef3846e27f5bae07a",
+      "modVersion": "1.0",
+      "sizeBytes": 720979,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T23:17:41Z"
+    },
+    {
+      "tag": "v1.51",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.51/Starlight.jar",
+      "sha256": "3502a0682f623102142748ae4e72e9b4264a074052b7a9fda7e4f2c1ed88201c",
+      "modVersion": "1.0",
+      "sizeBytes": 721572,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T23:02:37Z"
+    },
+    {
+      "tag": "v1.50",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.50/Starlight.jar",
+      "sha256": "ef7a8978ff52ce3f6e333dbfadb3b3a974c27fae863ceef010d6b14c7514d5e6",
+      "modVersion": "1.0",
+      "sizeBytes": 720409,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T23:01:37Z"
+    },
+    {
+      "tag": "v1.49",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.49/Starlight.jar",
+      "sha256": "8f8f7a87d6aec2cfdfa5e27bcd32db44f0b3b4404825e368cccc1ab4df24d9b9",
+      "modVersion": "1.0",
+      "sizeBytes": 719076,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T23:00:26Z"
+    },
+    {
+      "tag": "v1.48",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.48/Starlight.jar",
+      "sha256": "e9eedea00d57ac09ff3256756271e45cd26a2892697d7d16c2b15199012731a7",
+      "modVersion": "1.0",
+      "sizeBytes": 717560,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T22:36:59Z"
+    },
+    {
+      "tag": "v1.47",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.47/Starlight.jar",
+      "sha256": "7a001cb898df2b175247d94139b866ef6216b94422fac362e52863f5fb2b7c70",
+      "modVersion": "1.0",
+      "sizeBytes": 717466,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T22:36:06Z"
+    },
+    {
+      "tag": "v1.46",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.46/Starlight.jar",
+      "sha256": "8261c65959e9e2dd7fa8a5781c4952016a2a08afdd3d9b291e95b177d7071769",
+      "modVersion": "1.0",
+      "sizeBytes": 717336,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T22:35:11Z"
+    },
+    {
+      "tag": "v1.45",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.45/Starlight.jar",
+      "sha256": "8abac97fc7c9e7cf7c104645b82222a2028669d2cbf2a7a0b74abc4e06f8bd9a",
+      "modVersion": "1.0",
+      "sizeBytes": 717216,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-18T03:28:53Z"
+    },
+    {
+      "tag": "v1.44",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.44/Starlight.jar",
+      "sha256": "d3097cdccc642f61ef483c48a9d6513bd8e047a1e0a7c6eaf77da5853954bb8a",
+      "modVersion": "1.0",
+      "sizeBytes": 717110,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T03:27:51Z"
+    },
+    {
+      "tag": "v1.43",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.43/Starlight.jar",
+      "sha256": "b848fb0991664e8ee44fa41c3734e98cc475588072bc2dd231e93ca5b436e851",
+      "modVersion": "1.0",
+      "sizeBytes": 716609,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T03:26:37Z"
+    },
+    {
+      "tag": "v1.42",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.42/Starlight.jar",
+      "sha256": "d8bfd759a31f4e2c069c7d9276388934d6c30330f9b0fe48d5c38b9f8bc1d08a",
+      "modVersion": "1.0",
+      "sizeBytes": 716333,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T03:13:17Z"
+    },
+    {
+      "tag": "v1.41",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.41/Starlight.jar",
+      "sha256": "92063676d38dfc8d87e33e274a3be937188d4e08401f03096748cbfe158d014f",
+      "modVersion": "1.0",
+      "sizeBytes": 449682,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T02:12:07Z"
+    },
+    {
+      "tag": "v1.40",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.40/Starlight.jar",
+      "sha256": "87ac7837a0e2be035351dc072eca4f0b0533bd4d0cca2df72be68fe4880e78a8",
+      "modVersion": "1.0",
+      "sizeBytes": 449681,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T02:01:26Z"
+    },
+    {
+      "tag": "v1.39",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.39/Starlight.jar",
+      "sha256": "6011e04c013dede5c6e0cde9edbad8186df78f784a67f10a2c1a421e334070d8",
+      "modVersion": "1.0",
+      "sizeBytes": 449667,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-18T02:00:31Z"
+    },
+    {
+      "tag": "v1.38",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.38/Starlight.jar",
+      "sha256": "7b5da1e11e9c657857c76279aa0ec509d46eba0eb815d20849d4b1d17162d74c",
+      "modVersion": "1.0",
+      "sizeBytes": 449296,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T01:56:04Z"
+    },
+    {
+      "tag": "v1.37",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.37/Starlight.jar",
+      "sha256": "9ee5eaa78b3fa9989c06ce697e45a6da6bd8180457def5a6d99237339882cc24",
+      "modVersion": "1.0",
+      "sizeBytes": 449082,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-18T01:27:06Z"
+    },
+    {
+      "tag": "v1.36",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.36/Starlight.jar",
+      "sha256": "7f8a35cdd340c8983d7e2d2e65054377d37841d74747d44368836af295c8ead0",
+      "modVersion": "1.0",
+      "sizeBytes": 345776,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-17T03:50:10Z"
+    },
+    {
+      "tag": "v1.35",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.35/Starlight.jar",
+      "sha256": "ac7669a4a353aaaee49582cf7c7fac2c869b8f4520bb6cf17a1347719f23d37e",
+      "modVersion": "1.0",
+      "sizeBytes": 345720,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-17T00:28:31Z"
+    },
+    {
+      "tag": "v1.34",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.34/Starlight.jar",
+      "sha256": "635b4f2593bc5e3d5fc09abcd1cb1686b21f214413787f3ef4d80972456cd639",
+      "modVersion": "1.0",
+      "sizeBytes": 288932,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-16T22:24:47Z"
+    },
+    {
+      "tag": "v1.33",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.33/Starlight.jar",
+      "sha256": "f980fcd3dec6b52dc4a86d7d0dc6f145585538e4d8f7bd5a0c8d9386d857a212",
+      "modVersion": "1.0",
+      "sizeBytes": 281829,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T13:28:48Z"
+    },
+    {
+      "tag": "v1.32",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.32/Starlight.jar",
+      "sha256": "5992f1f4ef02fdcfc49d59e8f25c896a14ee1bd3e1e9ad229e123e806f828614",
+      "modVersion": "1.0",
+      "sizeBytes": 290133,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T13:15:13Z"
+    },
+    {
+      "tag": "v1.31",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.31/Starlight.jar",
+      "sha256": "c38b0296ed7238926c9bacb72d8a746451b77cfece47ec1944e53c5c8e529df9",
+      "modVersion": "1.0",
+      "sizeBytes": 287374,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T12:45:44Z"
+    },
+    {
+      "tag": "v1.30",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.30/Starlight.jar",
+      "sha256": "1b04f53c2031a75808e18f3a4cb820bb597924e89b8d4a1b1a8d4dab60fd2bce",
+      "modVersion": "1.0",
+      "sizeBytes": 287804,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T12:08:37Z"
+    },
+    {
+      "tag": "v1.29",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.29/Starlight.jar",
+      "sha256": "b1728dd68db844ac17d2c63f4438524cecf96f72b385a058e8314b31c1e2ae4b",
+      "modVersion": "1.0",
+      "sizeBytes": 289689,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T12:07:35Z"
+    },
+    {
+      "tag": "v1.28",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.28/Starlight.jar",
+      "sha256": "c584db2e8554dd3c4f7129d3b9fac20760a2be29ed0247f4236ed503fee31a44",
+      "modVersion": "1.0",
+      "sizeBytes": 290369,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-16T11:55:15Z"
+    },
+    {
+      "tag": "v1.27",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.27/Starlight.jar",
+      "sha256": "a3a5df96c1546b55d818726a90e900d8688f119c8998daae77a9492828239548",
+      "modVersion": "1.0",
+      "sizeBytes": 290421,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:54:12Z"
+    },
+    {
+      "tag": "v1.26",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.26/Starlight.jar",
+      "sha256": "45432afcdce20603e6440ffeb19c111840ae6d2f175af30e1b35607f7221260d",
+      "modVersion": "1.0",
+      "sizeBytes": 290490,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T11:34:10Z"
+    },
+    {
+      "tag": "v1.25",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.25/Starlight.jar",
+      "sha256": "f60bb107984efe2090d143d1cfe3d96673978d71ad1696ab5d43e3ca81967b5d",
+      "modVersion": "1.0",
+      "sizeBytes": 290260,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:32:28Z"
+    },
+    {
+      "tag": "v1.24",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.24/Starlight.jar",
+      "sha256": "be05b56b6482b4a3c0b5bc1b89492dab0ffd199ce8305c11bef2edd4745269d2",
+      "modVersion": "1.0",
+      "sizeBytes": 290227,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:28:21Z"
+    },
+    {
+      "tag": "v1.23",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.23/Starlight.jar",
+      "sha256": "f19626149314214c63935570903859c95ad7680db9ffff39781409f0deece261",
+      "modVersion": "1.0",
+      "sizeBytes": 289902,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:26:54Z"
+    },
+    {
+      "tag": "v1.22",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.22/Starlight.jar",
+      "sha256": "d1f355c4fad328939003292f64fbd25d1cb12f35ecc549b2ca0b3858247f850a",
+      "modVersion": "1.0",
+      "sizeBytes": 290429,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:20:09Z"
+    },
+    {
+      "tag": "v1.21",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.21/Starlight.jar",
+      "sha256": "7f59705c6a9c3950d22a87a467069ec9b8e209c3b1f2ffcfaa62ef650709d807",
+      "modVersion": "1.0",
+      "sizeBytes": 290454,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:18:55Z"
+    },
+    {
+      "tag": "v1.20",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.20/Starlight.jar",
+      "sha256": "20f17c7e4d46d851baf6e19bfd5c0ac6ece52d0c9d88a1d360b45eea54209f64",
+      "modVersion": "1.0",
+      "sizeBytes": 290473,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T11:16:46Z"
+    },
+    {
+      "tag": "v1.19",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.19/Starlight.jar",
+      "sha256": "6537f67890817273956c8b2811305f75bada7e3ffb60ffbcd8f8cb1603f64723",
+      "modVersion": "1.0",
+      "sizeBytes": 290333,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-16T10:40:17Z"
+    },
+    {
+      "tag": "v1.18",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.18/Starlight.jar",
+      "sha256": "9165db42ed5762e2ba8ed9ed0fe2b89cb377ca6d9a1f2e2d51b1199b95be1984",
+      "modVersion": "1.0",
+      "sizeBytes": 294525,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T10:20:43Z"
+    },
+    {
+      "tag": "v1.17",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.17/Starlight.jar",
+      "sha256": "640c2741aa2b5d8ca159d2bb8bd5146c06c6aa870a389acb98a397d7426752b9",
+      "modVersion": "1.0",
+      "sizeBytes": 290168,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T07:28:52Z"
+    },
+    {
+      "tag": "v1.16",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.16/Starlight.jar",
+      "sha256": "d98cb4b46d38914bc1e1b935a5f385b8b590ca8c7e203af957af52a40d2e818e",
+      "modVersion": "1.0",
+      "sizeBytes": 290175,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T07:25:44Z"
+    },
+    {
+      "tag": "v1.15",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.15/Starlight.jar",
+      "sha256": "09baec7e59fb33092f9fda05042d6a45694f723d35184efdc8d4a93880d7bd8f",
+      "modVersion": "1.0",
+      "sizeBytes": 290251,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T07:24:39Z"
+    },
+    {
+      "tag": "v1.14",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.14/Starlight.jar",
+      "sha256": "23915e207910c206a7cefba6deaa1cba370153443a76594f373bb5741d997062",
+      "modVersion": "1.0",
+      "sizeBytes": 294463,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T07:21:25Z"
+    },
+    {
+      "tag": "v1.13",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.13/Starlight.jar",
+      "sha256": "ee450e9ef06e38f5371dd7593b491afb01c88590d455d6b86267a1be314d51d6",
+      "modVersion": "1.0",
+      "sizeBytes": 302847,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T07:20:27Z"
+    },
+    {
+      "tag": "v1.12",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.12/Starlight.jar",
+      "sha256": "1dd5232533b9d07a86834f8ad14eb3b74d530cb68902f60a21db76a337afe8ec",
+      "modVersion": "1.0",
+      "sizeBytes": 305463,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T07:17:21Z"
+    },
+    {
+      "tag": "v1.11",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.11/Starlight.jar",
+      "sha256": "58f73c7bfbec152ec01c504bc1fdd8e442129feed7a78fbe0b6dae69ab5f5dd9",
+      "modVersion": "1.0",
+      "sizeBytes": 304744,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T07:03:14Z"
+    },
+    {
+      "tag": "v1.10",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.10/Starlight.jar",
+      "sha256": "6c4b6fe8a27bfbe9e9f205bdaea5f9fe91a43736b905aa609f4f766e9addfde3",
+      "modVersion": "1.0",
+      "sizeBytes": 304642,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-16T05:56:06Z"
+    },
+    {
+      "tag": "v1.9",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.9/Starlight.jar",
+      "sha256": "62ff293a6cb16257a285d2672bdf5a1fc8a723c5be34348cfc81787febd998ba",
+      "modVersion": "1.0",
+      "sizeBytes": 304642,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-16T05:26:22Z"
+    },
+    {
+      "tag": "v1.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/itzmellory/Starlight/releases/download/v1.8/Starlight-1.0.jar",
+      "sha256": "c6890ff6c64244ed7d821d5056f96a2e3531ba861cbdfa6a3a34cc01682e1f07",
+      "modVersion": "1.0",
+      "sizeBytes": 198188,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-16T04:04:15Z"
+    }
+  ]
+}

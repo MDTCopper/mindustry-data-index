@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "wang-0-1/random-enhancement",
-  "generatedAt": "2026-11-19T00:21:25.153Z",
+  "generatedAt": "2026-11-19T10:17:29.655Z",
   "modType": "java",
   "meta": {
     "name": "raen",
     "author": "WaNg-0-1",
     "description": "一个给单位或子弹提供随机强化的Java模组\n A Java mod that gives random buffs to units or bullets",
-    "version": "160.3.92",
+    "version": "160.3.94",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
@@ -20,20 +20,37 @@
   },
   "versions": [
     {
+      "tag": "v160.3.94",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/WaNg-0-1/Random-Enhancement/releases/download/v160.3.94/Random-Enhancement.jar",
+      "sha256": "771b8e088975ca043f1d0c688756adf9c0c651ae249673c00b2b1cafc546c1dd",
+      "modVersion": "160.3.94",
+      "sizeBytes": 450635,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-19T09:45:15Z"
+    },
+    {
       "tag": "v160.3.93",
       "kind": "release",
       "minGameVersion": "160",
       "gameVersionRanges": [
         {
           "from": "160",
-          "to": "160.7"
+          "to": "160.8"
         }
       ],
       "downloadUrl": "https://github.com/WaNg-0-1/Random-Enhancement/releases/download/v160.3.93/Random-Enhancement.jar",
       "sha256": "b375fdc3f6b3a1f219d15ede61b49d30be36b0c5034b39e756d77e9d1276f00e",
       "modVersion": "160.3.92",
       "sizeBytes": 451629,
-      "downloadCount": 2,
+      "downloadCount": 14,
       "releasedAt": "2026-11-18T21:11:07Z"
     },
     {
@@ -43,7 +60,7 @@
       "gameVersionRanges": [
         {
           "from": "160",
-          "to": "160.7"
+          "to": "160.8"
         }
       ],
       "downloadUrl": "https://github.com/WaNg-0-1/Random-Enhancement/releases/download/v160.3.5/Random-Enhancement.jar",
@@ -60,7 +77,7 @@
       "gameVersionRanges": [
         {
           "from": "160",
-          "to": "160.7"
+          "to": "160.8"
         }
       ],
       "downloadUrl": "https://github.com/WaNg-0-1/Random-Enhancement/releases/download/v160.3.4/Random-Enhancement.jar",

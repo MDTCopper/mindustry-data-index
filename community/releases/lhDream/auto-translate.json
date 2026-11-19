@@ -1,14 +1,14 @@
 {
   "formatVersion": 3,
   "repo": "lhDream/auto-translate",
-  "generatedAt": "2026-11-12T18:28:00.604Z",
+  "generatedAt": "2026-11-19T10:30:09.421Z",
   "modType": "java",
   "meta": {
     "name": "auto-translate",
     "author": "lhDream",
     "description": "A Mindustry auto translate mod.",
-    "version": "1",
-    "minGameVersion": "147",
+    "version": "0.2.0",
+    "minGameVersion": "136",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
@@ -19,6 +19,24 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "V0.2.0-alpha",
+      "kind": "release",
+      "minGameVersion": "136",
+      "gameVersionRanges": [
+        {
+          "from": "136",
+          "to": "146"
+        }
+      ],
+      "downloadUrl": "https://github.com/lhDream/auto-translate/releases/download/V0.2.0-alpha/auto-translate-v7.jar",
+      "sha256": "bd19b3c288c9a89b29ce0b1ce8137fe423e1c23e2b88169af948f6abe8939a1f",
+      "modVersion": "0.2.0",
+      "sizeBytes": 9766098,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-19T05:48:35Z",
+      "prerelease": true
+    },
     {
       "tag": "V0.1.0-alpha",
       "kind": "release",
@@ -33,7 +51,7 @@
       "sha256": "825e1e38439bf7e5f1b878bfb5181d60ccb0e6847af666b46a666ee8ff07cd4e",
       "modVersion": "1",
       "sizeBytes": 2871065,
-      "downloadCount": 106,
+      "downloadCount": 107,
       "releasedAt": "2025-08-21T17:41:09Z",
       "prerelease": true
     },
@@ -51,7 +69,7 @@
       "sha256": "ccb13ab4513bd5c2d8930a77fa8ffe072e1d0f643aa505eebfb7b14575b8e779",
       "modVersion": "1",
       "sizeBytes": 2839623,
-      "downloadCount": 25,
+      "downloadCount": 26,
       "releasedAt": "2025-08-18T13:30:04Z",
       "prerelease": true
     },
@@ -69,7 +87,7 @@
       "sha256": "d26ae17361717d44095110354304ab50ca90e11f17fa3595e71b34779825d94a",
       "modVersion": "1",
       "sizeBytes": 2834239,
-      "downloadCount": 11,
+      "downloadCount": 12,
       "releasedAt": "2025-08-16T21:51:52Z",
       "prerelease": true
     }
