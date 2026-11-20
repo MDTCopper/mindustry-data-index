@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "xerxes-anominus/nevix",
-  "generatedAt": "2026-11-19T20:33:50.080Z",
+  "generatedAt": "2026-11-20T03:11:51.996Z",
   "modType": "java",
   "meta": {
     "name": "nevix",
     "author": "[#9B59D0[]]X[#B56BE8[]]e[#D86FEA[]]a[#FF69B4[]]n[[]]",
     "description": "Nevix—a mod inspired by Newex—introduces a turret system with a vast array of upgrade options, opening up an entirely new playstyle.",
-    "version": "Beta: 0.2.0",
+    "version": "Beta: 0.2.1",
     "minGameVersion": "160",
     "dependencies": [],
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "Beta021",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/Xerxes-Anominus/Nevix/releases/download/Beta021/Nevix.jar",
+      "sha256": "1e1c83dfbacf320cec3e7414625249b6762330d23a7bb0ec972dae96a45690a9",
+      "modVersion": "Beta: 0.2.1",
+      "sizeBytes": 4333441,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-20T01:53:04Z"
+    },
     {
       "tag": "Beta020",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "3c60ba6e628d54de37aad341211697d300ed87f138a19b50fa0d24cb4d8b95b0",
       "modVersion": "Beta: 0.2.0",
       "sizeBytes": 2628463,
-      "downloadCount": 16,
+      "downloadCount": 18,
       "releasedAt": "2026-11-18T16:54:58Z"
     },
     {
