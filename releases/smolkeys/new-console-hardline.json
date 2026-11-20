@@ -1,14 +1,14 @@
 {
   "formatVersion": 3,
   "repo": "smolkeys/new-console-hardline",
-  "generatedAt": "2026-11-19T20:33:50.080Z",
+  "generatedAt": "2026-11-20T12:52:08.151Z",
   "modType": "java",
   "meta": {
     "name": "newconsole-hardline",
     "author": "Mnemotechnician (original developer), SMOLKEYS (port maintainer)",
     "description": "\nThe officially acknowledged port of New Console for v147-above.\n\nAdds a console UI superior to the built-in one and the ones provided by any other mods.\nUser-friendly interface, an actual code editor with [accent]syntax highlighting[] and indentation guides, assistance and more:\nA good log panel, execution history - all of that is included in this mod.\n\nIn addition to the console, this mod offers:\n- An ability to save as many scripts as you want and to either execute them or copy to the console\n- An ability to execute scripts when certain events get fired\n- A full-blown file browser (be careful, you can cause real harm with that!)\n\nSee README.md for more info.\n",
-    "version": "2.3",
-    "minGameVersion": "154",
+    "version": "2.31",
+    "minGameVersion": "155.4",
     "dependencies": {},
     "hidden": true,
     "legacyCompatible": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v2.31",
+      "kind": "release",
+      "minGameVersion": "155.4",
+      "gameVersionRanges": [
+        {
+          "from": "155.4",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.31/new-console-hardline.jar",
+      "sha256": "23f8024f402882532d32db756d66cd7870438a42907d807b491618b22a3ffd1b",
+      "modVersion": "2.31",
+      "sizeBytes": 223989,
+      "downloadCount": 17,
+      "releasedAt": "2026-11-20T03:36:09Z"
+    },
     {
       "tag": "v2.3-b155.4",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "4128f5cab32a954f0fd02e81ad02f9c987df22ed1411875effb87fd63f71e957",
       "modVersion": "2.3",
       "sizeBytes": 220522,
-      "downloadCount": 6062,
+      "downloadCount": 6063,
       "releasedAt": "2026-02-19T14:15:49Z"
     },
     {
@@ -50,7 +67,7 @@
       "sha256": "9708ebed7875bfab9c6f31d807e076f10870cf597f230bbb086de6d874eca695",
       "modVersion": "2.3",
       "sizeBytes": 220520,
-      "downloadCount": 1870,
+      "downloadCount": 1871,
       "releasedAt": "2025-12-24T03:30:31Z"
     },
     {
@@ -66,7 +83,7 @@
       "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.2/new-console-hardline.jar",
       "modVersion": "2.2",
       "sizeBytes": 224051,
-      "downloadCount": 4626,
+      "downloadCount": 4627,
       "releasedAt": "2025-04-28T06:51:54Z"
     },
     {
@@ -82,7 +99,7 @@
       "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.1/new-console-hardline.jar",
       "modVersion": "2.1",
       "sizeBytes": 218466,
-      "downloadCount": 315,
+      "downloadCount": 316,
       "releasedAt": "2025-04-19T15:25:06Z"
     },
     {
@@ -98,7 +115,7 @@
       "downloadUrl": "https://github.com/SMOLKEYS/new-console-hardline/releases/download/v2.0/new-console-hardline.jar",
       "modVersion": "2",
       "sizeBytes": 216203,
-      "downloadCount": 287,
+      "downloadCount": 288,
       "releasedAt": "2025-04-19T05:47:14Z"
     }
   ]

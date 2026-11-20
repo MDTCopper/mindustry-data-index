@@ -1,11 +1,11 @@
 {
   "formatVersion": 3,
   "repo": "idupe/delivarica-mod",
-  "generatedAt": "2026-11-20T03:11:51.996Z",
+  "generatedAt": "2026-11-20T12:52:08.151Z",
   "modType": "java",
   "meta": {
     "name": "Delivarica-mod",
-    "author": "[[]#e06c4f]Revision[[]] [[]#fed570]Team[[]] [[]#808080][[]]",
+    "author": "[[]#e06c4f]Remind[[]][[]#fed570]Team[[]] [[]#808080][[]]",
     "description": "\n[[]#fed570]Delivarica...[[]][[]#ffffff][[]] Everyone loves a good campaign on a brand-new planet. We know how annoying those [[]#fed570]cookie-cutter JSON mods[[]][[]#ffffff][[]] can get, so... Our mod brings a full-fledged playable planet to the table:\n\n• [[]#fed570]Brand-new, unique mechanics[[]][[]#ffffff][[]] (WIP)\n• [[]#fed570]40+ sectors[[]][[]#ffffff][[]] (WIP)\n• [[]#fed570]Custom polished visuals[[]][[]#ffffff][[]] (WIP)\n\nWe really went all out to pack this with as much awesome gameplay as possible. As this is our team's [[]#fed570]first-ever Java project[[]][[]#ffffff][[]], we'd hugely appreciate any feedback you've got!\n    \n\n    [[]#ffffff]-[[]] [[]#fed570] AUTHORS[[]] [[]#ffffff]-[[]]\n\n    [[]#ffffff][[]] [[]#787878]Splinter[[]]  (Split)[[]#ffffff][[]] \n    [[]#ffffff][[]]i[[]#d6cc94]Ð[[]][[]#cfbd5b]u[[]][[]#d1b930]p[[]#ffca2b]e[[]][[]#ffffff][[]]\n    [[]#bd0029]Charizard[[]][[]#ffffff][[]]\n    [[]#0052f7]Me[[]][[]#39a5f7]ch[[]][[]#39bbf7]an[[]][[]#00f7d2]ic[[]][[]#ffffff][[]]\n    [[]#6ae861]Yartera[[]][[]#ffffff][[]]\n    [[]#b681db]深[[]][[]#4d2e63]淵[[]][[]#ffffff][[]]\n\n\n    [[]#ffffff]-[[]] [[]#fed570] SPECIAL THANKS [[]#ffffff]-[[]]\n\n    [[]#fed570][[]] [[]#ffffff]Bloody Ocean[[]]\n    [[]#fed570][[]] [[]#ffffff]Afarius[[]]\n",
     "version": "v0.1",
     "minGameVersion": "160",
@@ -20,6 +20,58 @@
   },
   "versions": [
     {
+      "tag": "0.2.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/iDupe/Delivarica-mod/releases/download/0.2.1/Delivarica-mod.jar",
+      "sha256": "41cff6f1e7d84927ad403a220050ea7515f697c41f695c43979bc856ab8777e7",
+      "modVersion": "v0.1",
+      "sizeBytes": 417125,
+      "downloadCount": 9,
+      "releasedAt": "2026-11-20T11:51:11Z"
+    },
+    {
+      "tag": "Test-builds",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/iDupe/Delivarica-mod/releases/download/Test-builds/Delivarica-mod.jar",
+      "sha256": "5761099ed39950ca859f4f2613f5d94ea0dbd6ee7dd3561ce08a7c24967f61a3",
+      "modVersion": "v0.1",
+      "sizeBytes": 414335,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-20T09:24:06Z",
+      "prerelease": true
+    },
+    {
+      "tag": "0.1.3",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/iDupe/Delivarica-mod/releases/download/0.1.3/Delivarica-mod.jar",
+      "sha256": "2afb398c7e7dec4b6e4e16ef15f6258ed43bbe537c691e3c04584113708c696b",
+      "modVersion": "v0.1",
+      "sizeBytes": 416563,
+      "downloadCount": 38,
+      "releasedAt": "2026-11-20T06:55:43Z"
+    },
+    {
       "tag": "0.1.2",
       "kind": "release",
       "minGameVersion": "160",
@@ -33,7 +85,7 @@
       "sha256": "dbcece045c9661104937107fac7284b2362fa6f6ab95b90ac4e95ea1cf2ba5e5",
       "modVersion": "v0.1",
       "sizeBytes": 416584,
-      "downloadCount": 40,
+      "downloadCount": 45,
       "releasedAt": "2026-11-19T14:11:37Z"
     },
     {
@@ -50,7 +102,7 @@
       "sha256": "a6bcfaf56b0663075956e73c7eb0477bd765b27b1b12cc2b956efe148e7085db",
       "modVersion": "v0.1",
       "sizeBytes": 314220,
-      "downloadCount": 115,
+      "downloadCount": 117,
       "releasedAt": "2026-11-18T10:24:51Z"
     },
     {
