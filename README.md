@@ -59,7 +59,7 @@ per-mod 文件：`releases/<owner>/<repo>.json`（≤200 个版本）或
   6 小时时间桶随机 0.3 / 新 mod 加成 0.325 / 长期不更新扣分 0.4。
   **随机只用于 `recommended`，`heat` 没有随机因素**。
 - 热度权重（`heat` 排名）：组件分 下载 0.4 / 星标 0.5 / 更新 0.1；
-  `downloadsScore = 0.45 总下载量 + 0.30 近期变化 + 0.25 tag 平均下载量`，
+  `downloadsScore = 0.40 总下载量 + 0.35 近期变化 + 0.25 tag 平均下载量`，
   `starsScore = 0.6 总星标 + 0.4 近期变化`；更新分 Java 为 0.7 release + 0.3 commit，
   非 Java 为 0.8 commit。tag 平均下载量只统计有首选资源的 Release，tag-only/source 不计入；
   没有任何可用资源的模组下载项按缺失处理，剩余权重归一。

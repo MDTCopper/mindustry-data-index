@@ -12,8 +12,8 @@ export const UPDATE_WINDOW_WEIGHTS = { 7: 0.15, 30: 0.35, 90: 0.25, 180: 0.25 };
 export const TOTAL_WEIGHT = 0.6;
 export const CHANGE_WEIGHT = 0.4;
 // 下载组件内部权重：总下载量 / 近期变化 / tag 平均下载量（限制高频低下载的更新）
-export const DOWNLOAD_TOTAL_WEIGHT = 0.45;
-export const DOWNLOAD_CHANGE_WEIGHT = 0.3;
+export const DOWNLOAD_TOTAL_WEIGHT = 0.4;
+export const DOWNLOAD_CHANGE_WEIGHT = 0.35;
 export const DOWNLOAD_TAG_AVG_WEIGHT = 0.25;
 export const STOCK_MAG_WEIGHT = 0.8;
 export const STOCK_PERCENTILE_WEIGHT = 0.2;
