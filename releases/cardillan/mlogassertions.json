@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "cardillan/mlogassertions",
-  "generatedAt": "2026-11-21T12:41:46.845Z",
+  "generatedAt": "2026-11-21T20:30:50.307Z",
   "modType": "java",
   "meta": {
     "name": "mlog-assertions-8",
     "author": "cardillan",
     "description": "\nThis mod aims to make debugging in Mindustry Logic a bit easier:[[]lightgray]\n\nEnhanced [[]accent]Vars[[]] screen: full precision values, sorting and filtering variables, copying variables to the clipboard.\n\n[[]accent]Memory[[]] screen for inspecting contents of memory blocks, using the same interface as the [[]accent]Vars[[]] screen.\n\nSettings for overriding instruction limit, by up to 1000 instructions, to make space for additional debugging code.\n\n[[]accent]Snapshots[[]] allow saving, reviewing and restoring the state of logic processors, memory blocks and other entities.\n\nA [[]accent]profiler[[]] for gathering statistics about program execution.\n\n[[]accent]Logging[[]]: a custom `log` instruction creates logging messages that can be inspected from the UI.\n\nCustom mlog instructions for performing runtime checks, logging messages, reporting errors, triggering a breakpoint, taking snapshots and managing profiling.\n\nVisual indication of stopped processors, processors executing a [[]accent]wait[[]] instruction, and failed runtime checks, directly on the map.\n\n[[]white]Using this mod on maps with lots of processors may impact the game's performance.[[]]\n\nSee the [[]accent]README.md[[]] file in the mod's GitHub repository for more information.\n",
-    "version": "0.12.2",
+    "version": "0.12.3",
     "minGameVersion": "160.5",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v0.12.3",
+      "kind": "release",
+      "minGameVersion": "160.5",
+      "gameVersionRanges": [
+        {
+          "from": "160.5",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/cardillan/MlogDevTools/releases/download/v0.12.3/MlogDevTools.jar",
+      "sha256": "3bcc5f3f3d2949e065100e410b9cf897ca157d7451eb910767d79373ca0d5388",
+      "modVersion": "0.12.3",
+      "sizeBytes": 389034,
+      "downloadCount": 27,
+      "releasedAt": "2026-11-21T14:37:24Z"
+    },
     {
       "tag": "v0.12.2",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "22442c30dff3272bb9707362a2f7cbefe4100dced6548f2dba52f6bb19770b9f",
       "modVersion": "0.12.2",
       "sizeBytes": 387124,
-      "downloadCount": 7,
+      "downloadCount": 23,
       "releasedAt": "2026-11-21T11:02:08Z"
     },
     {
@@ -340,7 +357,7 @@
       "sha256": "5c55b8453ef3a21b334e7681e39c53804498029b5ff3146c76fe97c6591bd4fd",
       "modVersion": "0.9.0",
       "sizeBytes": 123580,
-      "downloadCount": 169,
+      "downloadCount": 170,
       "releasedAt": "2026-09-16T11:22:26Z"
     },
     {
@@ -357,7 +374,7 @@
       "sha256": "d357ff6907c3043806b767bf032b98a3dfddd592a3491e20f9e8419bbc5cc851",
       "modVersion": "0.9.0",
       "sizeBytes": 123622,
-      "downloadCount": 7,
+      "downloadCount": 8,
       "releasedAt": "2026-09-16T11:21:53Z"
     },
     {
@@ -577,7 +594,7 @@
       "downloadUrl": "https://github.com/cardillan/MlogDevTools/releases/download/v0.3.0/MlogAssertions.jar",
       "modVersion": "0.3.0",
       "sizeBytes": 55585,
-      "downloadCount": 185,
+      "downloadCount": 186,
       "releasedAt": "2025-04-24T11:50:22Z"
     }
   ]
