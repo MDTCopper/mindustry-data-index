@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-21T03:27:33.015Z",
+  "generatedAt": "2026-11-21T12:54:48.028Z",
   "mods": {
     "scheme-size": {
       "repo": "itsxeroc/scheme-size",
@@ -28,6 +28,13 @@
       "source": "official",
       "name": "proxima",
       "version": "1",
+      "dependencies": []
+    },
+    "1662666test": {
+      "repo": "16626661626236/mod-helper",
+      "source": "official",
+      "name": "1662666test",
+      "version": "2.2.2",
       "dependencies": []
     },
     "痕迹日": {
@@ -973,7 +980,7 @@
       "repo": "cardillan/mlogassertions",
       "source": "official",
       "name": "mlog-assertions-8",
-      "version": "0.12.1",
+      "version": "0.12.2",
       "dependencies": []
     },
     "sector-logic": {
@@ -1598,14 +1605,14 @@
       "repo": "determination-wind/neon",
       "source": "official",
       "name": "Neon",
-      "version": "180004",
+      "version": "180005",
       "dependencies": []
     },
     "patchviewer": {
       "repo": "determination-wind/patchviewer",
       "source": "official",
       "name": "patchviewer",
-      "version": "2.4.1",
+      "version": "2.5.0",
       "dependencies": []
     },
     "pinyinsearchsupport-dev": {
@@ -2755,7 +2762,7 @@
       "repo": "johnnywu2k/void",
       "source": "official",
       "name": "void",
-      "version": "1.4",
+      "version": "1.4.1",
       "dependencies": []
     },
     "multicrafter": {
@@ -3892,7 +3899,7 @@
       "repo": "newxaky/neowex",
       "source": "official",
       "name": "newex",
-      "version": "1.0.8",
+      "version": "1.0.8s",
       "dependencies": []
     },
     "ci": {
@@ -5754,6 +5761,13 @@
         "new-horizon"
       ]
     },
+    "batch-config": {
+      "repo": "undefined-1026/mindustry_batchconfigurationmod",
+      "source": "official",
+      "name": "batch-config",
+      "version": "1",
+      "dependencies": []
+    },
     "fieldmodifier": {
       "repo": "undefined-1026/mindustry_fieldmodifiermod",
       "source": "official",
@@ -6464,6 +6478,7 @@
     "emelia": "emelia",
     "erekirmods": "erekir-mods",
     "proxima": "proxima",
+    "1662666test": "1662666test",
     "": "痕迹日",
     "sapphirium": "sapphirium",
     "vne": "vne",
@@ -7255,6 +7270,7 @@
     "fire": "fire",
     "calamity": "calamity",
     "cnh": "cnh",
+    "batchconfig": "batch-config",
     "fieldmodifier": "fieldmodifier",
     "mdimension": "mdimension",
     "bbunit": "bbunit",

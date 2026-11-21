@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/neon",
-  "generatedAt": "2026-11-21T03:12:29.958Z",
+  "generatedAt": "2026-11-21T12:41:46.845Z",
   "modType": "java",
   "meta": {
     "name": "Neon",
     "author": "DeterMination (BEK)",
     "description": "All-in-one QoL toolkit: map editing, minimap, radial build, RTS formation, pinyin search, stealth path, terrain generation, auto pruning, duct coloring, logic sugar, tripwire alert, screenshot, projector overlay, logistics monitor, hotkeys, player database, patch viewer, marker, server translator, poly AI, advanced replace, mod updater, Random, and lock-on focus fire. / 全能辅助模组集：地图编辑、小地图、圆盘菜单、RTS 编队、拼音搜索、偷袭小道、地形生成、智能拆除、导管染色、LogicSugar、地理围栏、截图、投影覆盖、物流监控、快捷键、玩家数据库、补丁查看器、自定义标记、服务器翻译、Poly AI、高级替换、模组更新、随机化和锁定攻击。",
-    "version": "180004",
+    "version": "180005",
     "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,24 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "B18.5",
+      "kind": "release",
+      "minGameVersion": "160.1",
+      "gameVersionRanges": [
+        {
+          "from": "160.1",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Neon/releases/download/B18.5/Neon-B18.5.jar",
+      "sha256": "6ef542ab3e7d796255025ea2b6bebaa3f0cfc70e22e4b6f517a85947f29425c0",
+      "modVersion": "180005",
+      "sizeBytes": 23785904,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-21T11:50:01Z",
+      "prerelease": true
+    },
     {
       "tag": "B18.4",
       "kind": "release",
@@ -33,7 +51,7 @@
       "sha256": "31b3a03eef8a0813d7c63d416bf9667adda9f8e5f6a5f92404b8b98091ad9eae",
       "modVersion": "180004",
       "sizeBytes": 23748470,
-      "downloadCount": 70,
+      "downloadCount": 77,
       "releasedAt": "2026-11-06T02:10:20Z",
       "prerelease": true
     },
@@ -105,7 +123,7 @@
       "sha256": "790b6dcf9919daf512ff2989677e6e558c623e990520ff4d8d37c71b69615413",
       "modVersion": "180000",
       "sizeBytes": 45373426,
-      "downloadCount": 2688,
+      "downloadCount": 2717,
       "releasedAt": "2026-10-15T11:12:50Z"
     },
     {
