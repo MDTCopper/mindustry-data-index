@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "redeagle0705/shinny-dustry",
-  "generatedAt": "2026-11-21T20:30:50.307Z",
+  "generatedAt": "2026-11-22T02:12:46.701Z",
   "modType": "java",
   "meta": {
     "name": "mshaders",
     "author": "REDEagle0705, Claude",
-    "description": "Visual effects only: water with reflections, ice and ground effects, directional block shadows, lights that blocks and units stop, metal glint, hand-drawn normal maps that light blocks and units by calculation, engines of units as streaks of light, and a colour pass. Every effect can be switched off in Settings > Shaders. Client-side, adds no content. Desktop and Android. Tested on v160.7.",
-    "version": "0.1.8",
+    "description": "Visual effects only: water with reflections, ice and ground effects, directional block shadows, lights that blocks and units stop, metal glint, hand-drawn normal maps that light blocks and units by calculation, engines of units as streaks of light, shields like glass bubbles, and a colour pass. Every effect can be switched off in Settings > Shaders. Client-side, adds no content. Desktop and Android. Tested on v160.7.",
+    "version": "0.1.9",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,22 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v0.1.9",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/Shinny-Dustry/releases/download/v0.1.9/mshaders-0.1.9-release.jar",
+      "sha256": "81e4e3a61ead0906cb0c5b8858ca62876faee387e50067c723839517c30b2a8b",
+      "modVersion": "0.1.9",
+      "sizeBytes": 682422,
+      "releasedAt": "2026-11-22T02:11:11Z"
+    },
     {
       "tag": "v0.1.8",
       "kind": "release",
@@ -33,7 +49,7 @@
       "sha256": "af5dfe334c176d65e461c18bbaaf4a88dbfdfb6ae31402ecaf04575f9717d82b",
       "modVersion": "0.1.8",
       "sizeBytes": 608990,
-      "downloadCount": 104,
+      "downloadCount": 112,
       "releasedAt": "2026-11-19T17:11:13Z"
     },
     {
