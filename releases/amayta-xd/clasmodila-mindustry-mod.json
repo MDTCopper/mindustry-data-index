@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "amayta-xd/clasmodila-mindustry-mod",
-  "generatedAt": "2026-11-22T02:12:46.701Z",
+  "generatedAt": "2026-11-22T17:48:54.062Z",
   "modType": "json",
   "meta": {
     "name": "clasmodila",
@@ -19,6 +19,20 @@
     "hasJava": false
   },
   "versions": [
+    {
+      "tag": "Second-Unstable-Release",
+      "kind": "tag",
+      "minGameVersion": "159.7",
+      "gameVersionRanges": [
+        {
+          "from": "159.7",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/amayta-xd/clasmodila-mindustry-mod/archive/refs/tags/Second-Unstable-Release.zip",
+      "modVersion": "3.0.0",
+      "releasedAt": "2026-11-22T16:50:59Z"
+    },
     {
       "tag": "Unstable-Release",
       "kind": "tag",
@@ -45,7 +59,8 @@
       ],
       "downloadUrl": "https://github.com/amayta-xd/clasmodila-mindustry-mod/archive/refs/tags/WIP.zip",
       "modVersion": "3.0.0",
-      "releasedAt": "2026-10-12T13:12:22Z"
+      "releasedAt": "2026-10-12T13:12:22Z",
+      "prerelease": true
     }
   ]
 }

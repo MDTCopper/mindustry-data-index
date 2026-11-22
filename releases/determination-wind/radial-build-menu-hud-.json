@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/radial-build-menu-hud-",
-  "generatedAt": "2026-11-22T09:45:39.375Z",
+  "generatedAt": "2026-11-22T17:48:54.062Z",
   "modType": "java",
   "meta": {
     "name": "radial-build-menu",
     "author": "DeterMination",
     "description": "Hold a hotkey to open a radial build HUD around the cursor with configurable 16-slot layouts, profile switching, and rule-based auto slot sets. / 按住热键在鼠标周围打开圆盘建造 HUD，支持 16 槽位配置、配置组切换与规则自动切盘。",
-    "version": "5.7.1",
+    "version": "5.7.2",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v5.7.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Radial-Build-Menu-hud-/releases/download/v5.7.2/radial-build-menu.jar",
+      "sha256": "adc4491b65b05ccfeed7b35df3e8d3301c0bbb824f0b7f379a47468c393d861f",
+      "modVersion": "5.7.2",
+      "sizeBytes": 464360,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-22T14:21:38Z"
+    },
     {
       "tag": "v5.7.1",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "6b659ae5f400b2530456e0b30cf3c332e3b83d9e4dc1d96b73b54b615032dda0",
       "modVersion": "5.7.1",
       "sizeBytes": 461952,
-      "downloadCount": 632,
+      "downloadCount": 634,
       "releasedAt": "2026-08-08T03:40:02Z"
     },
     {
@@ -50,7 +67,7 @@
       "sha256": "2a8bcf44d937373bcb62fd2c28f8c58dca67e069f2e7851136a3b4b878506cb0",
       "modVersion": "5.7.0",
       "sizeBytes": 461954,
-      "downloadCount": 397,
+      "downloadCount": 399,
       "releasedAt": "2026-06-28T10:06:44Z"
     },
     {
@@ -67,7 +84,7 @@
       "sha256": "6c1b0b965569876220e891e15e4ccab7ff031bc47cfcd3bbc9f5165b5b294da9",
       "modVersion": "5.6.0",
       "sizeBytes": 372084,
-      "downloadCount": 3963,
+      "downloadCount": 3965,
       "releasedAt": "2026-04-27T10:04:17Z"
     },
     {
@@ -84,7 +101,7 @@
       "sha256": "4e0fb6d6da69b893f9fddc8ffbbc950cc6627e17a91b3412abea1ddbaec2bc3a",
       "modVersion": "5.5.2",
       "sizeBytes": 345796,
-      "downloadCount": 226,
+      "downloadCount": 228,
       "releasedAt": "2026-02-20T10:19:51Z"
     }
   ]

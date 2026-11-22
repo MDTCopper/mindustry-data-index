@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/betterlogisticsspeed",
-  "generatedAt": "2026-11-22T09:45:39.375Z",
+  "generatedAt": "2026-11-22T17:48:54.062Z",
   "modType": "java",
   "meta": {
     "name": "betterlogisticsspeed",
     "author": "DeterMination",
     "description": "Add long-window moving-average logistics speed rows under vanilla item speed display. / 在原版物流速度显示下方追加长窗口滑动平均行。",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v2.0.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/betterLogisticsSpeed/releases/download/v2.0.2/betterLogisticsSpeed.jar",
+      "sha256": "b9461d100e3598b5a7d877527ebae5b2fecddc22e71240a1cb19b81f6cefac4d",
+      "modVersion": "2.0.2",
+      "sizeBytes": 69444,
+      "downloadCount": 1,
+      "releasedAt": "2026-11-22T14:21:27Z"
+    },
     {
       "tag": "v2.0.1",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "5ec033c072b3611985e1240c9a7412e3f5e7ae9b93c1edc3dbc8f5a2a53961cb",
       "modVersion": "2.0.1",
       "sizeBytes": 70197,
-      "downloadCount": 868,
+      "downloadCount": 870,
       "releasedAt": "2026-08-08T04:03:10Z"
     },
     {
@@ -50,7 +67,7 @@
       "sha256": "19ee47d045770159fb91b1a64387857630abfd76a5f97ee76aa9682474c8f662",
       "modVersion": "2.0.0",
       "sizeBytes": 69634,
-      "downloadCount": 339,
+      "downloadCount": 340,
       "releasedAt": "2026-07-09T03:46:46Z"
     },
     {
@@ -67,7 +84,7 @@
       "sha256": "728e6b4f5ba480c0b87a2a3357bf835a0ee8b482e4a2a9769552c3d92b6f78fe",
       "modVersion": "1.1.0",
       "sizeBytes": 33628,
-      "downloadCount": 3667,
+      "downloadCount": 3669,
       "releasedAt": "2026-05-17T11:03:34Z"
     }
   ]

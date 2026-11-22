@@ -1,0 +1,40 @@
+{
+  "formatVersion": 3,
+  "repo": "redeagle0705/MAX_THAT_FPS",
+  "generatedAt": "2026-11-22T18:00:07.818Z",
+  "modType": "java",
+  "meta": {
+    "name": "fastlogic",
+    "author": "REDEagle0705, Claude",
+    "description": "Higher frame rates on large bases, same game.\n\nSmooth frames: the game calculates 60 times a second (as it does at 60 fps) and only draws the frames in between, with units, players and bullets drawn between their last two positions. The game runs at the same speed; the frame rate is no longer held down by the calculation (largest campaign map: about 155 -> 550-680 fps).\n\nFaster calculations with the same results (overflow/underflow gates, item and liquid bridges, unloaders with no item set, menders, overdrive projectors): the same items go the same way, in the same order, so it stays in step with servers and players without it.\n\nEach part can be switched off in Settings > Fast Logic. Client-side, adds no content. Tested on v160.7.",
+    "version": "0.1.0",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "fastlogic.FastLogic",
+    "java": true,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "versions": [
+    {
+      "tag": "v0.1.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/redeagle0705/MAX_THAT_FPS/releases/download/v0.1.0/FastLogic-0.1.0.jar",
+      "sha256": "bbcdf847cb5904ebfb90f0514dca3b5841b0459760cd96612cafce16316e8ae9",
+      "modVersion": "0.1.0",
+      "sizeBytes": 66005,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-22T17:35:38Z"
+    }
+  ]
+}

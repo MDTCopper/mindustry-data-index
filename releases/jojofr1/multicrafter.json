@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "jojofr1/multicrafter",
-  "generatedAt": "2026-11-22T09:45:39.375Z",
+  "generatedAt": "2026-11-22T17:48:54.062Z",
   "modType": "java",
   "meta": {
     "name": "multicrafter",
     "author": "Jojo\n[gray[]]Original Author:[[]]\nLiplum\n[gray[]]Icon:[[]]\nPatou",
     "description": "\nA library for mods that allows you to create factories with [yellow[]]multiple recipes[[]] in a single block.\n\n[lightgray[]]Official port and rewrite of the original library [gray[]]MutliCrafterLib[[]].[[]]\n\n[red[]]⚠[[]] Does [red[]]NOT[[]] add any content on its own, but is [gold[]]required[[]] for mods that want to use the library.\n",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "minGameVersion": "160",
     "dependencies": [],
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v1.5.4",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/JojoFR1/MultiCrafter/releases/download/v1.5.4/MultiCrafter.jar",
+      "sha256": "e7529b656e73e9a2064198b2f7170850dac63368d12ee2c45565bc2efaf4ef1b",
+      "modVersion": "1.5.4",
+      "sizeBytes": 105271,
+      "downloadCount": 68,
+      "releasedAt": "2026-11-22T12:45:47Z"
+    },
     {
       "tag": "v1.5.3",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "e60e2626b812377939a5b61c67912217829ac4d81ae6a8eb82c0a09ec09271cc",
       "modVersion": "1.5.3",
       "sizeBytes": 103524,
-      "downloadCount": 2534,
+      "downloadCount": 2552,
       "releasedAt": "2026-11-01T01:32:11Z"
     },
     {
