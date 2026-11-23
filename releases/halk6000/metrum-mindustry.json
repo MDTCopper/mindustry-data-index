@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "halk6000/metrum-mindustry",
-  "generatedAt": "2026-11-22T23:35:52.003Z",
+  "generatedAt": "2026-11-23T07:33:46.305Z",
   "modType": "java",
   "meta": {
     "name": "metrum",
     "author": "AkinoxPl (Steam) / halk6000 (Discord)",
     "description": "Industry, drones, fuel logistics and particle physics for a new planet.",
-    "version": "2.3.2",
+    "version": "2.4.0",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v2.4.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/halk6000/metrum-mindustry/releases/download/v2.4.0/Metrum-2.4.0.jar",
+      "sha256": "747d6473fdf26fb19dc6c341f2f426357d77297b922fc13612206c9548c25df8",
+      "modVersion": "2.4.0",
+      "sizeBytes": 440305,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-23T04:50:17Z"
+    },
     {
       "tag": "v2.3.2",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "4865759d31eed035bc3984db57013ed60138c630f98b9b3a92a030d126edbcf7",
       "modVersion": "2.3.2",
       "sizeBytes": 432242,
-      "downloadCount": 9,
+      "downloadCount": 16,
       "releasedAt": "2026-11-22T17:17:12Z"
     },
     {

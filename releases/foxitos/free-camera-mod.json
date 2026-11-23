@@ -1,0 +1,40 @@
+{
+  "formatVersion": 3,
+  "repo": "foxitos/free-camera-mod",
+  "generatedAt": "2026-11-23T07:33:46.305Z",
+  "modType": "java",
+  "meta": {
+    "name": "free-camera-java",
+    "author": "Community",
+    "description": "Client-side Alt+WASD free camera. Home returns to player.",
+    "version": "1",
+    "minGameVersion": "158",
+    "dependencies": {},
+    "hidden": true,
+    "legacyCompatible": false,
+    "main": "freecamera.FreeCameraMod",
+    "java": false,
+    "copper": false,
+    "hasScripts": false,
+    "hasJava": true
+  },
+  "versions": [
+    {
+      "tag": "v1.0.0",
+      "kind": "release",
+      "minGameVersion": "158",
+      "gameVersionRanges": [
+        {
+          "from": "158",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/foxitOS/Free-Camera-mod/releases/download/v1.0.0/free-camera-java.jar",
+      "sha256": "b5030e0d811f0e2074867a822e4ba203eb1b5ebcf9362a0beb0fc73258e79dc1",
+      "modVersion": "1",
+      "sizeBytes": 4298,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-23T05:10:08Z"
+    }
+  ]
+}
