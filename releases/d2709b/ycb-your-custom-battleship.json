@@ -1,0 +1,37 @@
+{
+  "formatVersion": 3,
+  "repo": "d2709b/ycb-your-custom-battleship",
+  "generatedAt": "2026-11-23T20:12:13.851Z",
+  "modType": "js",
+  "meta": {
+    "name": "Your custom battleship",
+    "author": "2709",
+    "description": "Build flying ships out of ordinary blocks. A ship is a core or storage hull plus any blocks attached to it. In flight every block keeps working (conveyors, drills, pumps, factories, turrets), and turrets fire together.\n\nPress G to enter build mode, Y to move blocks between the ground and the ship, WASD to fly. The YCB guide button in the build menu explains every block, key and mechanic.\n\nNeeded on the server and on every client in multiplayer.",
+    "version": "8.4",
+    "minGameVersion": "160",
+    "dependencies": {},
+    "hidden": false,
+    "legacyCompatible": false,
+    "main": null,
+    "java": false,
+    "copper": false,
+    "hasScripts": true,
+    "hasJava": false
+  },
+  "versions": [
+    {
+      "tag": "main",
+      "kind": "source",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/d2709b/ycb-your-custom-battleship/archive/refs/heads/main.zip",
+      "modVersion": "8.4",
+      "committedAt": "2026-11-23T13:55:04Z"
+    }
+  ]
+}

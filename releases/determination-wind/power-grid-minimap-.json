@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/power-grid-minimap-",
-  "generatedAt": "2026-11-23T07:33:46.305Z",
+  "generatedAt": "2026-11-23T20:12:13.851Z",
   "modType": "java",
   "meta": {
     "name": "powergrid-minimap",
     "author": "DeterMination",
     "description": "Color each independent power grid on minimap/full map, show live power balance, detect split outages, and suggest reconnect links. / 在小地图与全图按电网分色显示，实时展示电力盈亏，检测断网并给出快速重连建议。",
-    "version": "1.18.4",
+    "version": "1.19.2",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,57 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v1.19.2",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.19.2/powergrid-minimap.jar",
+      "sha256": "752d9dc207284978df20903f10b7333d5e576355c887901d34a83cda5ed90aa2",
+      "modVersion": "1.19.2",
+      "sizeBytes": 571854,
+      "downloadCount": 29,
+      "releasedAt": "2026-11-23T11:30:29Z"
+    },
+    {
+      "tag": "v1.19.1",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.19.1/powergrid-minimap.jar",
+      "sha256": "5657b445e4f640ce66a1884e0042d6cb1c2b24b6df409b874cde162acb14cd26",
+      "modVersion": "1.19.1",
+      "sizeBytes": 569860,
+      "downloadCount": 13,
+      "releasedAt": "2026-11-23T09:38:43Z"
+    },
+    {
+      "tag": "v1.19.0",
+      "kind": "release",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Power-Grid-Minimap-/releases/download/v1.19.0/powergrid-minimap.jar",
+      "sha256": "76f88730989943d8eef908d8df4bcfd4ed21426143a8ee4f1d2fb4e38bbfdda1",
+      "modVersion": "1.19.0",
+      "sizeBytes": 568912,
+      "downloadCount": 2,
+      "releasedAt": "2026-11-23T09:29:48Z"
+    },
     {
       "tag": "v1.18.4",
       "kind": "release",

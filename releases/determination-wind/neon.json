@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/neon",
-  "generatedAt": "2026-11-23T07:33:46.305Z",
+  "generatedAt": "2026-11-23T20:12:13.851Z",
   "modType": "java",
   "meta": {
     "name": "Neon",
     "author": "DeterMination (BEK)",
     "description": "All-in-one QoL toolkit: map editing, minimap, radial build, RTS formation, pinyin search, stealth path, terrain generation, auto pruning, duct coloring, logic sugar, tripwire alert, screenshot, projector overlay, logistics monitor, hotkeys, player database, patch viewer, marker, server translator, poly AI, advanced replace, mod updater, Random, and lock-on focus fire. / 全能辅助模组集：地图编辑、小地图、圆盘菜单、RTS 编队、拼音搜索、偷袭小道、地形生成、智能拆除、导管染色、LogicSugar、地理围栏、截图、投影覆盖、物流监控、快捷键、玩家数据库、补丁查看器、自定义标记、服务器翻译、Poly AI、高级替换、模组更新、随机化和锁定攻击。",
-    "version": "190001",
+    "version": "190003",
     "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,42 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "B19.3",
+      "kind": "release",
+      "minGameVersion": "160.1",
+      "gameVersionRanges": [
+        {
+          "from": "160.1",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Neon/releases/download/B19.3/Neon-B19.3.jar",
+      "sha256": "c6a54c6091031994a568d5a4ec86a2e43de0469f6b3d2733c20bfa95b11378ca",
+      "modVersion": "190003",
+      "sizeBytes": 23458998,
+      "downloadCount": 10,
+      "releasedAt": "2026-11-23T11:33:47Z",
+      "prerelease": true
+    },
+    {
+      "tag": "B19.2",
+      "kind": "release",
+      "minGameVersion": "160.1",
+      "gameVersionRanges": [
+        {
+          "from": "160.1",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Neon/releases/download/B19.2/Neon-B19.2.jar",
+      "sha256": "51762abac60462aca80d09a013080ce3ae4052287da8818fd8a6b522dc69c026",
+      "modVersion": "190002",
+      "sizeBytes": 23456234,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-23T09:42:37Z",
+      "prerelease": true
+    },
     {
       "tag": "B19.1",
       "kind": "release",
@@ -33,7 +69,7 @@
       "sha256": "87bd6cd7773244cd4e4dfbc0e4817cd5bb2f7960e9b4ba15a9540e4f2f44cbfd",
       "modVersion": "190001",
       "sizeBytes": 23394982,
-      "downloadCount": 9,
+      "downloadCount": 10,
       "releasedAt": "2026-11-22T14:28:03Z",
       "prerelease": true
     },
@@ -51,7 +87,7 @@
       "sha256": "1f81af2c10e9d64258e0d536442bf52fb0e85d369bc5f58fb0a0fa888a78be96",
       "modVersion": "190000",
       "sizeBytes": 23384710,
-      "downloadCount": 138,
+      "downloadCount": 169,
       "releasedAt": "2026-11-21T15:49:15Z"
     },
     {
