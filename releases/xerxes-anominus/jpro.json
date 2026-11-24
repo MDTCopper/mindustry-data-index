@@ -1,7 +1,7 @@
 {
   "formatVersion": 3,
   "repo": "xerxes-anominus/jpro",
-  "generatedAt": "2026-11-24T04:46:25.878Z",
+  "generatedAt": "2026-11-24T17:40:19.487Z",
   "modType": "java",
   "meta": {
     "name": "java-processor",
@@ -20,6 +20,23 @@
   },
   "versions": [
     {
+      "tag": "2",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/Xerxes-Anominus/JPro/releases/download/2/JPro.jar",
+      "sha256": "103b45273abe5ffe636c6e23d9a0c186f5062d15a3558e1d18a18941af67bf34",
+      "modVersion": "1",
+      "sizeBytes": 210678,
+      "downloadCount": 3,
+      "releasedAt": "2026-11-24T13:32:01Z"
+    },
+    {
       "tag": "1",
       "kind": "release",
       "minGameVersion": "160",
@@ -33,7 +50,7 @@
       "sha256": "a4c063bf5640759139b989fe4e7202eab5822b6e17a577b5bfb00e7665bd772b",
       "modVersion": "1",
       "sizeBytes": 179598,
-      "downloadCount": 8,
+      "downloadCount": 15,
       "releasedAt": "2026-11-23T13:43:52Z"
     }
   ]
