@@ -1,12 +1,12 @@
 {
   "formatVersion": 1,
-  "generatedAt": "2026-11-25T02:33:22.778Z",
+  "generatedAt": "2026-11-25T14:42:50.583Z",
   "mods": {
     "scheme-size": {
       "repo": "itsxeroc/scheme-size",
       "source": "official",
       "name": "scheme-size",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "dependencies": []
     },
     "emelia": {
@@ -1559,6 +1559,13 @@
       "version": "1.1.3",
       "dependencies": []
     },
+    "chineseredstone": {
+      "repo": "determination-wind/chineseredstone",
+      "source": "official",
+      "name": "ChineseRedstone",
+      "version": "1.0.1",
+      "dependencies": []
+    },
     "color-the-ducts": {
       "repo": "determination-wind/color-the-duct",
       "source": "official",
@@ -2274,7 +2281,7 @@
       "repo": "gghanera/mp-sectors",
       "source": "official",
       "name": "mp-sectors",
-      "version": "0.7.3",
+      "version": "0.7.5",
       "dependencies": []
     },
     "env-alloc": {
@@ -4414,13 +4421,6 @@
       "version": "1.0.0",
       "dependencies": []
     },
-    "advanced-chemistry": {
-      "repo": "placeholder-chem/advancedchemistry",
-      "source": "official",
-      "name": "advanced-chemistry",
-      "version": "1.0.3",
-      "dependencies": []
-    },
     "funipowdermod": {
       "repo": "plsubfarm61/breaking-mindustry",
       "source": "official",
@@ -4794,7 +4794,7 @@
       "repo": "redeagle0705/shinny-dustry",
       "source": "official",
       "name": "mshaders",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "dependencies": []
     },
     "redeagle0705-titanium-is-not-lead": {
@@ -5619,6 +5619,15 @@
       "version": "v0.4.43",
       "dependencies": []
     },
+    "更多设施": {
+      "repo": "theplastanium/more.facilities",
+      "source": "official",
+      "name": "更多设施",
+      "version": "1.14",
+      "dependencies": [
+        "adaptivecoredatabase"
+      ]
+    },
     "starter buffer": {
       "repo": "thesmal/starter-buffer",
       "source": "official",
@@ -5885,13 +5894,6 @@
       "source": "official",
       "name": "unfog",
       "version": "0.2",
-      "dependencies": []
-    },
-    "fading-revelations-remake": {
-      "repo": "unquis/fading-revelations-remake",
-      "source": "official",
-      "name": "fading-revelations-remake",
-      "version": "2.5.0",
       "dependencies": []
     },
     "erekir-upgrades": {
@@ -6776,6 +6778,7 @@
     "betterprojectoroverlay": "betterprojectoroverlay",
     "betterrtsformation": "betterrtsformation",
     "betterterraingenv2dev": "betterterraingen-v2-dev",
+    "chineseredstone": "chineseredstone",
     "colortheducts": "color-the-ducts",
     "foreignservertranslatordev": "foreignservertranslator-dev",
     "hidewhatprocessorsshow": "hidewhatprocessorsshow",
@@ -7172,7 +7175,6 @@
     "athens": "athens",
     "serpulopayloaddronealternative": "serpulo-payload-drone-alternative",
     "showhiddencontent": "show-hidden-content",
-    "advancedchemistry": "advanced-chemistry",
     "funipowdermod": "funipowdermod",
     "spaceexpansion": "space-expansion",
     "pocchistuffs": "pocchistuffs",
@@ -7372,7 +7374,6 @@
     "sporepod": "sporepod",
     "jp": "jp",
     "unfog": "unfog",
-    "fadingrevelationsremake": "fading-revelations-remake",
     "erekirupgrades": "erekir-upgrades",
     "tankdustry": "tankdustry",
     "machindustry": "machindustry",
@@ -7573,6 +7574,9 @@
       "cnh",
       "starline-lab"
     ],
+    "adaptivecoredatabase": [
+      "更多设施"
+    ],
     "calamity": [
       "infinity"
     ]
@@ -7589,6 +7593,12 @@
       "repo": "piggychu620/mindustryrandomplanet",
       "source": "official",
       "dependency": "mineable-alloys"
+    },
+    {
+      "id": "更多设施",
+      "repo": "theplastanium/more.facilities",
+      "source": "official",
+      "dependency": "adaptivecoredatabase"
     }
   ]
 }
