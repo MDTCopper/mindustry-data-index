@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "palle00/eclipse-build",
-  "generatedAt": "2026-11-25T14:18:49.616Z",
+  "generatedAt": "2026-11-26T00:19:00.900Z",
   "modType": "java",
   "meta": {
     "name": "eclipse",
     "author": "palle00",
     "description": "A new era of industry: deep chemical engineering, advanced materials and expanded warfare.",
-    "version": "0.5.1",
+    "version": "1.0.1",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,40 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v1.0.1",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/palle00/ECLIPSE-build/releases/download/v1.0.1/Eclipse.jar",
+      "sha256": "b053f777bca9504cbc75dee66fe684e23a4e74f466024de81112e158514fc5cd",
+      "modVersion": "1.0.1",
+      "sizeBytes": 3099878,
+      "downloadCount": 47,
+      "releasedAt": "2026-11-25T20:10:57Z"
+    },
+    {
+      "tag": "v1.0.0",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/palle00/ECLIPSE-build/releases/download/v1.0.0/Eclipse.jar",
+      "sha256": "6a6b4646fd4646ac86accc673c964800c4b710617bf7d4612bea29aa5033266d",
+      "modVersion": "1.0.0",
+      "sizeBytes": 3092310,
+      "downloadCount": 58,
+      "releasedAt": "2026-11-25T16:28:24Z"
+    },
     {
       "tag": "v0.5.1",
       "kind": "release",
@@ -33,7 +67,7 @@
       "sha256": "9740ec6dbacf58c2566e718e35e0da1b17868abedaafc4c467a4b679646a1d52",
       "modVersion": "0.5.1",
       "sizeBytes": 2035431,
-      "downloadCount": 304,
+      "downloadCount": 318,
       "releasedAt": "2026-11-20T07:13:39Z"
     },
     {
