@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "gghanera/mp-sectors",
-  "generatedAt": "2026-11-27T13:52:51.169Z",
+  "generatedAt": "2026-11-27T22:41:34.614Z",
   "modType": "java",
   "meta": {
     "name": "mp-sectors",
     "author": "GGhanera",
     "description": "Runs one campaign sector per server instance, with a shared campaign folder (sector saves, sector info, research). Server-side only. Part of the multi-sector campaign setup.",
-    "version": "0.7.5",
+    "version": "0.7.8",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,57 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v2.5.8",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.5.8/server-release.jar",
+      "sha256": "faeaf247a8b622de940181a96cb21cb20692d3c3da4e8ac3f79cb4af5059aa6c",
+      "modVersion": "0.7.8",
+      "sizeBytes": 38781256,
+      "downloadCount": 6,
+      "releasedAt": "2026-11-27T21:50:50Z"
+    },
+    {
+      "tag": "v2.5.7",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.5.7/server-release.jar",
+      "sha256": "faeaf247a8b622de940181a96cb21cb20692d3c3da4e8ac3f79cb4af5059aa6c",
+      "modVersion": "0.7.7",
+      "sizeBytes": 38780340,
+      "downloadCount": 9,
+      "releasedAt": "2026-11-27T16:01:20Z"
+    },
+    {
+      "tag": "v2.5.6",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/gghanera/mp-sectors/releases/download/v2.5.6/server-release.jar",
+      "sha256": "faeaf247a8b622de940181a96cb21cb20692d3c3da4e8ac3f79cb4af5059aa6c",
+      "modVersion": "0.7.6",
+      "sizeBytes": 38770178,
+      "downloadCount": 5,
+      "releasedAt": "2026-11-27T15:09:49Z"
+    },
     {
       "tag": "v2.5.5",
       "kind": "release",

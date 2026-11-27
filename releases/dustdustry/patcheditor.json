@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "dustdustry/patcheditor",
-  "generatedAt": "2026-11-27T13:52:51.169Z",
+  "generatedAt": "2026-11-27T22:41:34.614Z",
   "modType": "java",
   "meta": {
     "name": "patch-editor",
     "author": "minRi2",
     "description": "Provide an in-game GUI for DataPatcher.",
-    "version": "1.18",
+    "version": "1.19",
     "minGameVersion": "160",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v1.19",
+      "kind": "release",
+      "minGameVersion": "160",
+      "gameVersionRanges": [
+        {
+          "from": "160",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.19/PatchEditor-v1.19.jar",
+      "sha256": "159d2e19192b94fd11b05554af5948db75410b1772d45334ced6af9ab62a678d",
+      "modVersion": "1.19",
+      "sizeBytes": 494151,
+      "downloadCount": 38,
+      "releasedAt": "2026-11-27T14:57:58Z"
+    },
     {
       "tag": "v1.18",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "b9e30de44251e28596514cf61a4070da86257e796cc2bb9b9d0b0a0210e15bfc",
       "modVersion": "1.18",
       "sizeBytes": 492464,
-      "downloadCount": 956,
+      "downloadCount": 957,
       "releasedAt": "2026-10-29T01:42:57Z"
     },
     {
@@ -559,7 +576,7 @@
       "downloadUrl": "https://github.com/Dustdustry/PatchEditor/releases/download/v1.0/ContentsEditor.jar",
       "modVersion": "1",
       "sizeBytes": 145698,
-      "downloadCount": 885,
+      "downloadCount": 886,
       "releasedAt": "2024-02-19T07:35:12Z"
     }
   ]
