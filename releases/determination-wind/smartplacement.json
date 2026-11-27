@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/smartplacement",
-  "generatedAt": "2026-11-27T04:14:20.261Z",
+  "generatedAt": "2026-11-27T13:52:51.169Z",
   "modType": "java",
   "meta": {
     "name": "SmartPlacement",
     "author": "DeterMination-Wind",
     "description": "Smart item-line placement for mixed-tech maps while preserving vanilla placement elsewhere.",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "minGameVersion": "157",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,23 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "v1.1.1",
+      "kind": "release",
+      "minGameVersion": "157",
+      "gameVersionRanges": [
+        {
+          "from": "157",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/SmartPlacement/releases/download/v1.1.1/SmartPlacement-v1.1.1.jar",
+      "sha256": "aba31fa75062b457d59c9681cf5ffc0bd749e9fdb141be347fe03a0dc0dcde18",
+      "modVersion": "1.1.1",
+      "sizeBytes": 51362,
+      "downloadCount": 4,
+      "releasedAt": "2026-11-27T13:24:19Z"
+    },
     {
       "tag": "v1.0.0",
       "kind": "release",
@@ -33,7 +50,7 @@
       "sha256": "f65346adff34e7f4303924fa5e2f45a8c76fdfec89abbf6189ebbbcbb9739640",
       "modVersion": "1.0.0",
       "sizeBytes": 22216,
-      "downloadCount": 270,
+      "downloadCount": 273,
       "releasedAt": "2026-08-17T17:42:29Z"
     }
   ]

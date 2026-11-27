@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "determination-wind/neon",
-  "generatedAt": "2026-11-27T04:14:20.261Z",
+  "generatedAt": "2026-11-27T13:52:51.169Z",
   "modType": "java",
   "meta": {
     "name": "Neon",
     "author": "DeterMination (BEK)",
     "description": "All-in-one QoL toolkit: map editing, minimap, radial build, RTS formation, pinyin search, stealth path, terrain generation, auto pruning, duct coloring, logic sugar, tripwire alert, screenshot, projector overlay, logistics monitor, hotkeys, player database, patch viewer, marker, server translator, poly AI, advanced replace, mod updater, Random, and lock-on focus fire. / 全能辅助模组集：地图编辑、小地图、圆盘菜单、RTS 编队、拼音搜索、偷袭小道、地形生成、智能拆除、导管染色、LogicSugar、地理围栏、截图、投影覆盖、物流监控、快捷键、玩家数据库、补丁查看器、自定义标记、服务器翻译、Poly AI、高级替换、模组更新、随机化和锁定攻击。",
-    "version": "190010",
+    "version": "190011",
     "minGameVersion": "160.1",
     "dependencies": {},
     "hidden": true,
@@ -19,6 +19,24 @@
     "hasJava": true
   },
   "versions": [
+    {
+      "tag": "B19.11",
+      "kind": "release",
+      "minGameVersion": "160.1",
+      "gameVersionRanges": [
+        {
+          "from": "160.1",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/DeterMination-Wind/Neon/releases/download/B19.11/Neon-B19.11.jar",
+      "sha256": "78a26aab957bca4a6b9d79ef5a68bf29229fb5cc79586a61c27470be8bdfcbd1",
+      "modVersion": "190011",
+      "sizeBytes": 23490376,
+      "downloadCount": 12,
+      "releasedAt": "2026-11-27T13:28:34Z",
+      "prerelease": true
+    },
     {
       "tag": "B19.10",
       "kind": "release",
@@ -33,7 +51,7 @@
       "sha256": "2f34dcc318cb4809bed6edd653937d1adb53bfe360583d11ca932ded524a5e43",
       "modVersion": "190010",
       "sizeBytes": 23484014,
-      "downloadCount": 3,
+      "downloadCount": 5,
       "releasedAt": "2026-11-26T09:42:07Z",
       "prerelease": true
     },
@@ -51,7 +69,7 @@
       "sha256": "4ce22b6598aa6fdc3b4c106cb934fed4f5d4a1421004f4c7fb040d29a1b15649",
       "modVersion": "190009",
       "sizeBytes": 23481624,
-      "downloadCount": 5,
+      "downloadCount": 19,
       "releasedAt": "2026-11-26T08:29:33Z",
       "prerelease": true
     },
@@ -213,7 +231,7 @@
       "sha256": "1f81af2c10e9d64258e0d536442bf52fb0e85d369bc5f58fb0a0fa888a78be96",
       "modVersion": "190000",
       "sizeBytes": 23384710,
-      "downloadCount": 333,
+      "downloadCount": 371,
       "releasedAt": "2026-11-21T15:49:15Z"
     },
     {
