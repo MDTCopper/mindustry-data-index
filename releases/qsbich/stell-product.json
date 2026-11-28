@@ -1,13 +1,13 @@
 {
   "formatVersion": 3,
   "repo": "qsbich/stell-product",
-  "generatedAt": "2026-11-19T10:17:29.655Z",
+  "generatedAt": "2026-11-28T07:44:23.819Z",
   "modType": "js",
   "meta": {
     "name": "原版拓展",
     "author": "Lock创作室",
-    "description": "当你在在行星发射终端击退最后敌人时，他们小部分部队逃逸到了更遥远的星球，他们用极快的时间打败了原住民，当你发现他们的时候他们早已占领整个星球以及他旁边的卫星",
-    "version": "2.4.2",
+    "description": "当你在在行星发射终端击退最后敌人时，他们小部分部队逃逸到了更遥远的星系，他们用极快的时间打败了原住民，当你发现他们的时候他们早已占领整个星球以及他旁边的卫星\n为维护 赛普勒斯的和平 我们决定出征 科沃德星系 铲除敌人的残党",
+    "version": "beta2.5",
     "minGameVersion": "154",
     "dependencies": {},
     "hidden": false,
@@ -19,6 +19,20 @@
     "hasJava": false
   },
   "versions": [
+    {
+      "tag": "beta2.5",
+      "kind": "tag",
+      "minGameVersion": "154",
+      "gameVersionRanges": [
+        {
+          "from": "154",
+          "to": "160.8"
+        }
+      ],
+      "downloadUrl": "https://github.com/qsbich/stell-product/archive/refs/tags/beta2.5.zip",
+      "modVersion": "beta2.5",
+      "releasedAt": "2026-11-28T04:31:28Z"
+    },
     {
       "tag": "2.4Finally",
       "kind": "tag",
